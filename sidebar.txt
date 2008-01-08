@@ -8,8 +8,8 @@
 === My Twitter tweets ===
 ...
 
-=== Categories ===
-...
+=== Tags===
+~~TAGCLOUD~~
 
 === Links ===
 ...
