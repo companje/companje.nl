@@ -1,5 +1,5 @@
 ====== Globe4D ======
-Globe4D is an interactive, four-dimensional globe. Its a projection of the Earths surface on a physical sphere. It shows the historical movement of the continents as its main feature, but it is also capable of displaying all kinds of other geographical data such as climate changes, plant growth, radiation, rainfall, forest fires, seasons, airplane routes, and more.
+Globe4D is an interactive, four-dimensional globe. Its a projection of the Earth' surface on a physical sphere. It shows the historical movement of the continents as its main feature, but it is also capable of displaying all kinds of other geographical data such as climate changes, plant growth, radiation, rainfall, forest fires, seasons, airplane routes, and more.
 
 ===== Enhanced Life =====
 Globe4D extends the functionality of traditional globes found in many households and schools by allowing people of all ages and backgrounds to learn in an entertaining way about how a planet changes over time.
@@ -8,12 +8,12 @@ Globe4D extends the functionality of traditional globes found in many households
 Globe4D is designed to be a simple but highly educational entertaining multi-user device for globe viewing. We want people, especially kids, to learn about the earth, let them realize in a playful and tactile manner how earth changed and still changes over time. On long term (continental drift) as well on short term (e.g.daylight changes).
 
 ===== Innovations =====
-Globe4Ds main innovation is its method of mapping spatio-temporal geographic data on a physical sphere. It is not a flat representation of a changing planet but a real physical globe featuring hands-on interactivity. All kinds of spherical data can be displayed and interacted with as a result of creating our own flexible software engine. The significance of touch combined with a new perspective on showing geographic data makes using Globe4D both entertaining and highly educational.
+Globe4D's main innovation is its method of mapping spatio-temporal geographic data on a physical sphere. It is not a flat representation of a changing planet but a real physical globe featuring hands-on interactivity. All kinds of spherical data can be displayed and interacted with as a result of creating our own flexible software engine. The significance of touch combined with a new perspective on showing geographic data makes using Globe4D both entertaining and highly educational.
 
 ===== Vision =====
 Flat screens in classrooms and museums are outdated when it comes to learning about the earth. The earth is a sphere, and so is Globe4D. The earth changes over time, and so does Globe4D. You can play on earth, and you can play with Globe4D. You can learn on earth, and you can learn from Globe4D.
 
-Dont put kids behind computers. Put computers behind things!
+Don't put kids behind computers. Put computers behind things!
 
 ===== Contributors =====
 Nico van Dijk
