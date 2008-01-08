@@ -55,3 +55,26 @@ The Globe4D software application and Data Model make it possible to project vari
 We encourage you to think of new applications or animations. Ideas and suggestions are very welcome.
 
 Globe4D, the four dimensional direct manipulation device on a physical sphere!
+
+====== Events ======
+===== 2008 =====
+*[[Globe4D:IPON 2008]] (23/24 jan 2008)
+*[[Globe4D:Kshitij 2008]] (India)
+*[[Globe4D:InnovAction 2008]] (Italië)
+*Lezing in Leiden (16 april 2008)
+
+===== 2007 =====
+*[[Globe4D:Echangeur]] 10th anniversary 2007
+*[[Globe4D:MuseumN8 2007 in NEMO]]
+*[[Globe4D:Lezing op Hogeschool van Amsterdam 2007]]
+*[[Globe4D:Lunchlezing Leidsche Flesch 2007]]
+*[[Globe4D:Wetenschapsdag 2007]]
+*[[Globe4D:Cinekid 2007]]
+*[[Globe4D:Todays Art 2007]]
+*[[Globe4D:Wired Nextfest 2007]]
+*[[Globe4D:ACM Siggraph 2007]]
+*[[Globe4D:Laval Virtual 2007]]
+
+===== 2006 =====
+*[[Globe4D:ACM Multimedia 2006]]
+*[[Globe4D:Kunstroute 2006]]
