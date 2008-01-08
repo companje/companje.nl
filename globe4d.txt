@@ -80,6 +80,9 @@ Globe4D, the four dimensional direct manipulation device on a physical sphere!
 *[[Globe4D:Kunstroute 2006]]
 
 ====== Software ======
-Since the first version the Globe4D software has been fully written in C++ using [[OpenGL]] for the graphics. Currently I'm working at version 3 software. This one will be built on top of [[openFrameworks]]. Version 3 will be released in Februari and be installed at the Globe4D installation in the [[Natuurhistorisch Museum Maastricht|Museum for Natural History in Maastricht]], The Netherlands.
+Since the first version the Globe4D software has been fully written in C++ using [[OpenGL]] for the graphics. Currently we're working at version 3 of the software. This one will be built on top of [[openFrameworks]]. Version 3 will be released in Februari and be installed at the Globe4D installation in the [[Natuurhistorisch Museum Maastricht|Museum for Natural History in Maastricht]], The Netherlands.
+
+====== Hardware ======
+Globe4D is currently at hardware version 3. The first version has been used backstage at [[Naturalis]] Museum for Natural History in Leiden, The Netherlands and was used in the video demonstration show at [[ACM Multimedia 2006]]. Version 2 has been shown on several festivals and conferences in Europe and the United States. Version 3 is the first professional production model which is being sold to museums and shown at festivals all around the world.
 
 {{tag>Globe4D}}
