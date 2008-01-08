@@ -1,10 +1,10 @@
 ====== Globe4D ======
 Globe4D is an interactive, four-dimensional globe. Its a projection of the Earth's surface on a physical sphere. It shows the historical movement of the continents as its main feature, but it is also capable of displaying all kinds of other geographical data such as climate changes, plant growth, radiation, rainfall, forest fires, seasons, airplane routes, and more.
 
-{{en:globe4d:globe4d.jpg|Globe4D, Jurassic 180 million years ago}}
-
 ===== Enhanced Life =====
 Globe4D extends the functionality of traditional globes found in many households and schools by allowing people of all ages and backgrounds to learn in an entertaining way about how a planet changes over time.
+
+{{en:globe4d:globe4d.jpg|Globe4D, Jurassic 180 million years ago}}
 
 ===== Goal =====
 Globe4D is designed to be a simple but highly educational entertaining multi-user device for globe viewing. We want people, especially kids, to learn about the earth, let them realize in a playful and tactile manner how earth changed and still changes over time. On long term (continental drift) as well on short term (e.g.daylight changes).
