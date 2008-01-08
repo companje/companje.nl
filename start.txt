@@ -1,5 +1,5 @@
 ====== Lorem ipsum dolor sit amet ======
-{{kshitij-2008.png|shit ei}}[[Consectetuer adipiscing]] elit. Maecenas mollis malesuada diam. Morbi a risus. Quisque nunc diam, sagittis ac, sodales in, sodales nec, libero. Praesent eleifend mi eget ipsum. Aenean et sapien at eros laoreet adipiscing. 
+{{ kshitij-2008.png?200&align=right|shit ei}}[[Consectetuer adipiscing]] elit. Maecenas mollis malesuada diam. Morbi a risus. Quisque nunc diam, sagittis ac, sodales in, sodales nec, libero. Praesent eleifend mi eget ipsum. Aenean et sapien at eros laoreet adipiscing. 
 
 ===== Phasellus =====
 Semper turpis ut arcu. Suspendisse viverra nisl non lacus. Nullam consectetuer, elit volutpat blandit accumsan, mi quam viverra risus, ac pretium eros quam hendrerit ipsum. Mauris vel metus. Quisque eros. 
