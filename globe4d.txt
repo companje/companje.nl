@@ -1,8 +1,6 @@
 ====== Globe4D ======
 Globe4D is an interactive, four-dimensional globe. Its a projection of the Earth's surface on a physical sphere. It shows the historical movement of the continents as its main feature, but it is also capable of displaying all kinds of other geographical data such as climate changes, plant growth, radiation, rainfall, forest fires, seasons, airplane routes, and more.
 
-{{tag>Globe4D}}
-
 ===== Enhanced Life =====
 Globe4D extends the functionality of traditional globes found in many households and schools by allowing people of all ages and backgrounds to learn in an entertaining way about how a planet changes over time.
 
@@ -83,3 +81,5 @@ Globe4D, the four dimensional direct manipulation device on a physical sphere!
 
 ====== Software ======
 Since the first version the Globe4D software has been fully written in C++ using [[OpenGL]] for the graphics. Currently I'm working at version 3 software. This one will be built on top of [[openFrameworks]]. Version 3 will be released in Februari and be installed at the Globe4D installation in the [[Natuurhistorisch Museum Maastricht|Museum for Natural History in Maastricht]], The Netherlands.
+
+{{tag>Globe4D}}
