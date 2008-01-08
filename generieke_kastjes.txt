@@ -5,6 +5,6 @@ Voltage Regulator
 
 Universal Solid State Relais
 
-{{tag>Electronica "Physical Computing"}}
+{{tag>Elektronica "Physical Computing"}}
 
 ~~DISCUSSION~~
