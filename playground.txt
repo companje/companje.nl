@@ -1,2 +1,1 @@
 ====== PlayGround ======
-{{rss>http://twitter.com/statuses/friends_timeline/4182371.rss 5 author date 1h }}
