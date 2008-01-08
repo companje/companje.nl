@@ -1,8 +1,8 @@
 {{rick-companje.jpg|Rick Companje}}
-<html><small>Rick Companje / Tuinbouwstraat 22 /
-3513 ED Utrecht / The Netherlands /
-+31(0)6-2851 6908 / rick@companje.nl
-- BSc Interaction Design
+<html><small>Rick Companje / Tuinbouwstraat 22 /<br/>
+3513 ED Utrecht / The Netherlands /<br/>
++31(0)6-2851 6908 / rick at companje . nl<br/>
+- BSc Interaction Design<br/>
 - MSc Media Technology</small></html>
 
 === My Twitter tweets ===
