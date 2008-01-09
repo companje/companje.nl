@@ -21,7 +21,7 @@ tpl_searchform();
 
 ==== Categories ====
 *[[Globe4D]]
-*[[Afstuderen]]
+*[[Afstuderen:]]
 *[[Processing]]
 *[[Flex & Flash]]
 *[[Electronics]]
