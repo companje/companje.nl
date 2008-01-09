@@ -4,7 +4,7 @@ Ik heb vandaag twee elektronische schakelingen gebouwd en in behuizingen gestopt
 **Voltage Regulator**
 **Universal Solid State Relais**
 
-{{blog:voltage-regulator-500.jpg?270|Voltage Regulator}} {{blog:universal-solid-state-relais-500.jpg?270|Universal Solid State Relais}}
+{{blog:voltage-regulator-500.jpg?280|Voltage Regulator}} {{blog:universal-solid-state-relais-500.jpg?280|Universal Solid State Relais}}
 
 {{tag>Elektronica "Physical Computing"}}
 
