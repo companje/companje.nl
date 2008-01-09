@@ -6,6 +6,8 @@
 *Flex & Flash Developer
 *Interactive Media Designer
 
+[[/data/pdfex/PDF_start.pdf]]
+
 ==== Blog posts ====
 ...
 {{archive>?2008-01}}
