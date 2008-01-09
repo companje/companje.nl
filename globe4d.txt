@@ -1,3 +1,3 @@
 ====== Globe4D ======
 
-Zie [[Globe4D:start]]
+Zie [[Globe4D:start|Globe4D]]
