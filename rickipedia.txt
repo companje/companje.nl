@@ -1,7 +1,7 @@
 ====== RickiPedia ======
 RickiPedia is een encyclopedie over mezelf waarin ik wil onderzoeken wat voor soort data ik nou persoonlijk allemaal op mijn computer bij hou en die in eerste instantie niet bedoelt was te delen. Ik wil dus gaan testen wat er allemaal bij komt kijken wanneer ik die data dus wel ga delen. Al m'n bevindingen hierbij noteer ik in dezelfde wiki. RickiPedia draait momenteel op een afgeschermd deel op mijn webserver.
 
-Het is een kort experiment binnen mijn [[Media Technology]] [[Media Technology afstudeeronderzoek|afstudeeronderzoek]] waarbij ik onderzoek in hoeverre Wiki een geschikte technologie is om op een zo makkelijk mogelijke zoveel mogelijk van mijn persoonlijke data te kunnen delen. Bij RickiWiki is het wel zo dat ik selectief ben in wat ik online zet en wat niet. Dit gaat in tegen het oorspronkelijke idee waarbij uitga van standaard 'al' je data delen en de data die je niet wilt delen specifiek verbergen.
+Het is een kort experiment binnen mijn Media Technology afstudeeronderzoek. In korte tijd wil ik onderzoeken in hoeverre Wiki een geschikte technologie is om op een zo makkelijk mogelijke zoveel mogelijk van mijn persoonlijke data te kunnen delen. Bij RickiWiki is het wel zo dat ik selectief ben in wat ik online zet en wat niet. Dit gaat in tegen het oorspronkelijke idee waarbij uitga van standaard 'al' je data delen en de data die je niet wilt delen specifiek verbergen.
 
 Het gaat om data die ik eerste instantie niet gecreeërd heb om te delen die ik nu 'standaard' zou willen gaan delen.
 
