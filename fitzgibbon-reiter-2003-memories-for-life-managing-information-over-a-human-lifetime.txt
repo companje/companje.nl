@@ -71,9 +71,9 @@ how can we support people with disabilities or skill impairments, or people in s
 *our memories are what define us, and we believe that with careful presentation, the general public would be excited and inspired by our vision of computing with digital memories.
 *the media consider this topic to be of widespread interest. People will certainly be concerned about the extent to which information about them is captured, and about who owns and has access rights to this information. Such issues are already being widely debated in the popular press. This is a public policy issue, not a scientific one, but people may be hostile to this challenge unless they feel confident that they have sufficient control over their memories.
 
+
 ===Does it avoid duplicating evolutionary development of commercial products?
-*Although most commercial R&D is focused on short-term incremental improvements to search technology, Microsoft in particular is also working on longer-term research in this area, in
-the MyLifeBits project mentioned above.
+*Although most commercial R&D is focused on short-term incremental improvements to search technology, Microsoft in particular is also working on longer-term research in this area, in the MyLifeBits project mentioned above.
 *any exemplar will involve many false starts, and will require many minds working in parallel to achieve results.
 
 ===When was it first proposed as a challenge? Why has it been so difficult so far?
