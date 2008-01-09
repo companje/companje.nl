@@ -11,9 +11,6 @@
 tpl_searchform();
 </php>
 
-==== My Twitter tweets ====
-...
-
 ==== Categories ====
 *[[Globe4D]]
 *[[Processing]]
@@ -21,9 +18,6 @@ tpl_searchform();
 *[[Electronics]]
 *[[Math]]
 *[[Travel]]
-
-==== Tags ====
-~~TAGCLOUD~~
 
 ==== Blogroll ====
 *[[http://annica.web-log.nl/|Annica's weblog]]
