@@ -3,6 +3,7 @@ ID: Smith (2005)
 PDF: {{afstuderen:Smith (2005) Eternal Bits - how Can We Preserve Digital Files and Save Our Collective Memory.pdf|PDF}}
 
 ===== Summary =====
+<blockquote>
  While far from perfect, emulation as an approach to
  preservation has generated some creative ideas. One
  offshoot is the. Universal Virtual Computer. In 2000,
@@ -16,6 +17,7 @@ PDF: {{afstuderen:Smith (2005) Eternal Bits - how Can We Preserve Digital Files 
  systems, programmers would just rewrite the Universal
  Virtual Computer as computer platforms evolve, and
  everything else would just work.
+</blockquote>
 
 *It took two centuries to fill the U.S. Library of Congress in Washington,  D.C., with more than 29 million books and periodicals, 2.7 million recordings, 12 million photographs, 4.8 million maps, and 57 million manuscripts. Today it takes about 15 minutes for the world to churn out an equivalent amount of new digital information. 
 *It does so about 100 times every day, for a grand total of five exabytes annually.
