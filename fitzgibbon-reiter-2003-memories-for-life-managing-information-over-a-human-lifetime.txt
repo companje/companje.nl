@@ -49,10 +49,10 @@ Exemplars of the Challenge  This proposal develops this programme using illustra
 *Aid for Elderly with Short-Term Memory Problems
 *Virtual Memories: For example, a 3D birthday party, or an action replay of ones greatest sporting moment.
 
+
 ===Overcoming limits.
 *Database systems: We need to store many different types of data (text, audio, visual, log files) over a very long period of time (a lifetime and beyond). How can we do this in a manner which easily adapts to new hardware and software, which easily allows new types of information to be integrated when technology advances,
-*Security: How can we protect peoples privacy, especially when one persons memories contain information about someone else? How can we prove both to the scientific community
-and to the general public that memories are secure from attackers?
+*Security: How can we protect peoples privacy, especially when one persons memories contain information about someone else? How can we prove both to the scientific community and to the general public that memories are secure from attackers?
 *Operating systems: A persons memories will contain petabytes of data and last for decades. How should this data be distributed across physical filestores, in a way that maximises accessibility and reliability (including reliability in the face of once in a century disasters)?
 *Artificial intelligence: How can we interpret audio and visual data, with a minimal amount of annotation and guidance from the person? How can we learn useful generalisations from the interpreted data, and how can we represent and reason with these generalisations?
 *User modelling: How can we represent peoples knowledge, experiences, beliefs, emotions, intents, abilities, and so forth in a coherent and unified fashion? How should we update such models when people change? 
