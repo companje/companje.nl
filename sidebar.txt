@@ -7,7 +7,7 @@
 *Interactive Media Designer
 
 <php>
-tpl_searchform()
+tpl_searchform();
 </php>
 
 === My Twitter tweets ===
