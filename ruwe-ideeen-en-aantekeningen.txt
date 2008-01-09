@@ -161,6 +161,7 @@ Toch groeien HD's nog steeds, je produceert nog steeds veel en het meeste daarva
 
 
 
+
 =====What if everybody would share their data?=====
 *Willen we dat wel?
 *Wat levert het op?
@@ -186,8 +187,6 @@ Toch groeien HD's nog steeds, je produceert nog steeds veel en het meeste daarva
 *Zijn er al dit soort initiatieven? Open ftp's, mydrive, vrij: indexof.nl?
 *Identiteitsroof
 
-
-
 *Liever tech probleem dan theoretisch probleem
 
 *TShirts
@@ -203,7 +202,26 @@ Toch groeien HD's nog steeds, je produceert nog steeds veel en het meeste daarva
 *Share your disk
 *All your discs are belong to us.
 *One global disc.
-*[[Data donor by default]]
+
+===== Data donor by default =====
+Met Data Donor by Default bedoel ik het standaard afstaan van je data (na je dood?) tenzij anders aangegeven. Aan wie het afgestaan wordt weet ik nog niet. Ik gebruik de term binnen mijn [[Media Technology afstudeeronderzoek]].
+
+*Heb je daar dan ook een 'internet notaris' voor nodig?
+*Digitale kringloop
+*Nabestaanden archiveren
+*Digitaal invriezen
+*Don passed away
+*Thans is van ons heengegaan, wie is Thans? ;-p
+*We are a nation of undertakers
+*Six feet under
+*Gravedigger
+*Computer Cemetery
+*Nu al je dingen uploaden die na je dood vrijgegeven moeten/mogen worden.
+*Webcammen vanuit je kist
+*Digitaal automatisch voortleven
+*Data uitvaart. Afscheidsdienst waar je digitial life online afgesloten wordt. Mensen met z'n allen in de chatbox samen rouwen.
+*'You must has felt so lonely without a digital life'
+*Beroemde mensen leven wel door omdat anderen een studie van hun leven maakten en blijven maken.
 
 =====Kwaliteiten en interesses=====
 *Kwaliteiten:
