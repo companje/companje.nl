@@ -11,7 +11,7 @@
 
 ==== Blog posts ====
 ...
-{{archive>?*}}
+{{archive>blog?*}}
 
 ==== Search ====
 <php>
