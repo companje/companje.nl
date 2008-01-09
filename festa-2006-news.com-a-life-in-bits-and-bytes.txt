@@ -2,10 +2,8 @@
 ID: Festa (2006) News.com
 PDF: {{afstuderen:Festa (2006) News.com - A life in bits and bytes.pdf|}}
 
-*"Consider a future device for individual use, which is a sort of mechanized private file and library,"
-wrote information technology visionary [[Vannevar Bush]] in the July 1945 issue of the Atlantic Monthly.
-*Jim and I ([[Gordon Bell]]) wrote an article on the 50-year outlook for computing, and that's when we realized that the amount of storage was
-so vast that we in principle could capture everything--everything you read, every picture you've ever taken, everything you've said. We're past the point where your laptop can capture everything somebody's read. With digital photography coming in, it allows you to easily store all that stuff, and everything you've heard in terms of music.
+*"Consider a future device for individual use, which is a sort of mechanized private file and library," wrote information technology visionary [[Vannevar Bush]] in the July 1945 issue of the Atlantic Monthly.
+*Jim and I ([[Gordon Bell]]) wrote an article on the 50-year outlook for computing, and that's when we realized that the amount of storage was so vast that we in principle could capture everything--everything you read, every picture you've ever taken, everything you've said. We're past the point where your laptop can capture everything somebody's read. With digital photography coming in, it allows you to easily store all that stuff, and everything you've heard in terms of music.
 *I started this in 1998. I had all this material, and was even moving around with boxes of stuff, some of it going back to Digital Equipment days, and I thought, I'm going to start capturing it. Jim humored me, and we ended up with all this material, and we thought, this is starting to get interesting, and this is something that people should naturally do in their life.
 *Why? I break this problem in a two-by-two quadrant. There's personal information, then professional information, and there's today.
 *There's really so much material, but the only thing I really trust is my computer. We really need machines to help us search, organize and hold and to be able to retrieve the vast amount of information that's come into our visual cortex.
