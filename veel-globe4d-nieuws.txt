@@ -1,0 +1,16 @@
+====== Veel Globe4D nieuws! ======
+Er is een hoop nieuws wat betreft Globe4D. Ten eerste is versie 3 van de software bijna af. Deze nieuwe versie maakt gebruik van openFrameworks, een C++ framework vergelijkbaar met Processing maar dan een stuk sneller.
+
+Verder is het grote nieuws dat Globe4D vanaf begin februari in de vaste collectie van het Natuurhistorisch Museum Maastricht wordt opgenomen. Oftewel, het eerste exemplaar is echt verkocht. Alles is rond!
+
+Om te vieren dat er één verkocht is hebben we maar besloten er meteen 3 te laten bouwen. We hebben contact met Hal 3 Projects die momenteel voor ons de modellen produceren.
+
+Verder zijn we gisteren nog bij NEMO geweest, die hebben grote plannen voor volgend jaar en wij van Globe4D denken met hen mee.
+
+Ook hebben we nog rond de tafel gezeten met Hans van Maarel, een cartograaf die het wel ziet zitten om ons te helpen bij het in kaart brengen van een veranderd wereldbeeld sinds de ontdekkingsreizen.
+
+Tenslotte heb ik ook weer een heleboel nieuwe Globe4D experimenten gedaan waarvan ik binnenkort wel weer even nieuwe filmpjes online zal zetten. Alvast een voorproefje hier van een nieuw interface idee gebaseerd op een rapport van ESA uit november 2006.
+
+{{tag>Globe4D Museums}}
+
+~~DISCUSSION~~
