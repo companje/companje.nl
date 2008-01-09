@@ -6,6 +6,8 @@ Want: Er is zoveel data die prima gedeeld zou kunnen worden maar die in stoffige
 
 Stelling: Hoe meer data we delen hoe meer bruikbare informatie/kennis via te internet te vinden is. Ruis zal door de huidige kwaliteit van zoekmachines verwaarloosbaar zijn.
 
+[[Ruwe ideeën en aantekeningen]]
+
 ====== Relevante artikelen ======
 *[[Ahmed (2004) - SemanticLIFE-a-framework-for..human-lifetime]]
 *[[Appleton (2004) in Spiked Online - Slices of life]]
