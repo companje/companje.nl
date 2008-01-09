@@ -1,4 +1,5 @@
 ====== Math ======
+<blockquote>"Natural numbers are better for your health."<blockquote>
 
 ====== Links to this page ======
 {{backlinks>.}}
