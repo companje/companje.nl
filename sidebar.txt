@@ -34,7 +34,7 @@
 *Wilfried Houjebek
 
 === Blog posts ===
-{{archive>blog?*}}
+{{archive>?*}}
 
 === Etc. ===
 [[Ut porta]]. Donec mattis. Fusce velit nulla, feugiat ac, gravida nec, sagittis nec, elit. Nam mollis. Curabitur ultricies eleifend odio. Donec cursus accumsan nibh. Quisque tincidunt. Donec metus magna, semper consequat, venenatis ac, dapibus sit amet, nulla. Nullam sodales accumsan nibh. In ac velit a lectus sagittis sodales. Pellentesque in dolor nec felis sagittis laoreet. Vivamus suscipit erat vel sapien. Etiam bibendum leo nec ipsum lobortis ultrices. Nunc egestas. Fusce a ante id nisl hendrerit commodo. Aliquam at erat nec libero fermentum imperdiet.
