@@ -1,10 +1,10 @@
 {{rick-companje.jpg|Rick Companje}}
 
 [[Rick Companje]]
-*BSc Interaction Design
-*MSc Media Technology
-*Flex & Flash Developer
-*Interactive Media Designer
+- BSc Interaction Design
+- MSc Media Technology
+- Flex & Flash Developer
+- Interactive Media Designer
 
 === My Twitter tweets ===
 ...
