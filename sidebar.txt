@@ -6,6 +6,10 @@
 *Flex & Flash Developer
 *Interactive Media Designer
 
+<php>
+tpl_searchform()
+</php>
+
 === My Twitter tweets ===
 ...
 
