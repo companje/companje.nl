@@ -223,24 +223,29 @@ Met Data Donor by Default bedoel ik het standaard afstaan van je data (na je doo
 *'You must has felt so lonely without a digital life'
 *Beroemde mensen leven wel door omdat anderen een studie van hun leven maakten en blijven maken.
 
+
 =====Kwaliteiten en interesses=====
-*Kwaliteiten:
-**[[Programmeren]]
-**Brede interesse
-**Doorzettingsvermogen
-**Ambitie
-**Publiciteitsgeil
-*Interesses:
-**[[Data visualisatie]]
-**[[Globe4D]]
-**[[Apparaten]]
-**Tijd
-**[[Dimensies]]
-**Interactie / interfaces
-**[[Geometrische vormen]]
-**[[Musea]]
-**[[Herinneringen]]
-**Algoritmes (soms)
+== Kwaliteiten==
+*Programmeren
+*Brede interesse
+*Doorzettingsvermogen
+*Ambitie
+*Media
+
+== Valkuilen ==
+*Snel afgeleid
+
+== Interesses ==
+*Data visualisatie
+*Globe4D
+*Apparaten
+*Tijd
+*Dimensies
+*Interactie / interfaces
+*Geometrische vormen
+*Musea
+*Herinneringen
+*Algoritmes
 
 =====Wat wil ik niet=====
 *Ik wil geen spelletje maken.
