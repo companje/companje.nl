@@ -15,7 +15,7 @@ command.shortcut.1.*=Ctrl+Space
 
 === En dit in je home directory als WikiMacro.lua: ===
 
-<code>
+<code lua>
 editor.AutoCSeparator = string.byte(';')
 editor:UserListShow(12,"Internal Link;H1;H2;H3;External Link")
 editor.AutoCSeparator = string.byte(' ')
@@ -44,8 +44,8 @@ end
 </code>
 
 === Zie ook: ===
-http://lua-users.org/wiki/UsingLuaWithScite
-http://www.lua.org/about.html
+*http://lua-users.org/wiki/UsingLuaWithScite
+*http://www.lua.org/about.html
 
 
 
