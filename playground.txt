@@ -3,6 +3,5 @@
 ===== Twitter Tweets =====
 {{rss>http://twitter.com/statuses/friends_timeline/4182371.rss 5 author date 1h }}
 
-<key>C-S-Right</key>
-<key>C-A-del</key>
-<key>C-PageUp</key>
+===== Keyboard Plugin =====
+Druk dan op <key>C-S-Right</key> en daarna op <key>C-A-del</key>. Sluit af met <key>C-PageUp</key>.
