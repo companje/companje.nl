@@ -6,6 +6,9 @@
 *Flex & Flash Developer
 *Interactive Media Designer
 
+==== Twitter Tweets ====
+{{rss>http://twitter.com/statuses/friends_timeline/4182371.rss 10 10m}}
+
 ==== Blog posts ====
 ...
 {{archive>?2008-01}}
