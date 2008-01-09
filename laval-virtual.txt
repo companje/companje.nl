@@ -2,4 +2,4 @@
 
 Laval Virtual ReVolution is an annual honor to the world's finest VR project, by Laval Virtual. This is a hall of fame award that decides the best Virtual Reality demonstration and/or application from all over the world. Virtual Reality is not only a technology but also a never ending story between computers and human history.</blockquote>
 
-{{tags>Globe4D Events}}
+{{tag>Globe4D Events}}
