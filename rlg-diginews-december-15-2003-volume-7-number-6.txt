@@ -2,10 +2,11 @@
 ID: LeFurgy 2003
 PDF: {{afstuderen:RLG DigiNews December 15, 2003, Volume 7, Number 6.pdf|PDF}}
 
+
 ===== Summary =====
 *Association for Information and Image Management (AIIM)
 *Association for Suppliers of Printing, Publishing and Converting Technologies (NPES)
-*[[PDF/A]] would be ideally suited for documents whose content and appearance must remain stable over long periods of time: approved standard
+*PDF/A would be ideally suited for documents whose content and appearance must remain stable over long periods of time: approved standard
 *One potential solution is to rely on text with markup language such as the Extensible Markup Language ([[XML]]) to preserve documents.
 *But use of [[XML]] does not always ensure reproduction of the original visual appearance of documents.
 #The needs of document producers.
