@@ -6,6 +6,10 @@
 *Flex & Flash Developer
 *Interactive Media Designer
 
+==== Blog posts ====
+...
+{{archive>blog?2008-01}}
+
 ==== Search ====
 <php>
 tpl_searchform();
@@ -38,7 +42,3 @@ tpl_searchform();
 *[[http://www.project-euh.com/|Sylvain Vriens]]
 *[[http://www.mondayrunner.com/|Tim van den Bosch]]
 *[[http://www.socialfiction.org/|Wilfried Houjebek]]
-
-==== Blog posts ====
-...
-{{archive>2008-01}}
