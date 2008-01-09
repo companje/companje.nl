@@ -1,0 +1,13 @@
+De papier verscanneraar / scanner vs. schredder (Je stopt iets in een apparaat dat lijkt op een papier versnipperaar maar in werkelijkheid wordt het gescand en direct online geplaatst klaar om te worden voorzien van beschrijving/metadata door de eigenaar maar ook misschien door anderen.
+
+Ik heb wel een erg klein ideetje voor een (sub)product wat er uit zou kunnen rollen. Ik noem het de 
+
+Papierverscanneraar: Een schredder met ingebouwde scanner. (Je stopt iets in een apparaat dat lijkt op een papier versnipperaar. Het apparaat scant het papier waardoor het direct getransformeerd wordt van fysiek naar virtueel. Het fysieke object wordt door het apparaat echt versnippert/vernietigd om de transformatie onomkeerbaar te maken.
+
+Je helpt het fysieke object letterlijk naar een andere wereld. Van physical naar virtual. 
+
+De vraag is hoe dicht het nog bij m'n originele afstudeeridee staat aangezien het niet gaat om digital born content maar om content uit de echte wereld die digitaal gemaakt wordt... Maar bijv. een boodschappenlijstje is net zo goed data die niet gecreëerd is om te delen maar die op deze manier toch digitaal wordt.
+
+Het zou direct online geplaatst kunnen worden om te worden voorzien van metadata door de eigenaar maar ook misschien door anderen. Ik kan me er een soort game in de trend van Google Image Labeler of de ESP game bij voorstellen. Een foto, concertkaartje, boodschappenlijstje die wordt verscand komt direct naar boven in een online labeler spel (Human/Social Computation) en mensen zouden het object kunnen gaan taggen voorzien van metadata in de vorm van een spel.
+
+Koert: Wat een grappig idee van die scanner/versnipperaar. Dat is een fijne installatie, leuk om mooi uit te voeren ook. Het toont ook mooi hoe ons digitale informatie tijdperk misschien wel het slechts gedocumenteerde tijdperk ooit wordt, als je begrijpt wat ik bedoel.
