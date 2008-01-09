@@ -6,6 +6,7 @@ Want: Er is zoveel data die prima gedeeld zou kunnen worden maar die in stoffige
 
 Stelling: Hoe meer data we delen hoe meer bruikbare informatie/kennis via te internet te vinden is. Ruis zal door de huidige kwaliteit van zoekmachines verwaarloosbaar zijn.
 
+
 ===== Beschrijving =====
 Ging het tweeduizend jaar geleden om ruwe teksten en tekeningen vastgelegd op een grof stuk papyrus, dierenhuid of ander materiaal, tegenwoordig kost een terrabyte aan computergeheugen bijna niks meer. Een groot deel van de mensen zit een groot deel van de dag gegevens te verzamelen, te verwerken en te genereren binnen het informatietijdperk waarin we leven maar ik denk dat door onze huidige manier van werken het merendeel van deze gegevens nooit aan de oppervlakte zal verschijnen, dat deze wellicht nooit door iemand anders dan de maker zelf zal worden gezien. Aantekeningen, notities, vroege schetsen, tekeningen, foto's, video's, sourcecode, datasets, verzamelingen, noem maar op.
 
@@ -27,11 +28,14 @@ Wanneer 'iedereen' het grootste deel van hun data zou delen zou dit grote voorde
 
 Het moet zo automatisch mogelijk gaan, [[data donor by default]] met de mogelijkheid bepaalde [[digitale organen]] niet te willen afstaan.
 
-Stap 1 is dat ik op zoek ga naar bestaande initiatieven op dit gebied. Op dit moment ken ik een aantal tools/services die op een of andere manier een rol zouden kunnen spelen bij dit onderzoek. [[MyDisk.co.uk]], [[Onlife]] ([[Slife]]), [[Slifeshare]], [[Multiply.com]], [[Google Desktop]], [[Zurpy]], ...... (dat tooltje wat statistieken over je software gebruik online zet). Ik ben benieuwd of er al mensen een eigen manier hebben gevonden om hun data delen by default en hoe. 
+==== Bestaande initiatieven ====
+Stap 1 is dat ik op zoek ga naar bestaande initiatieven op dit gebied. Op dit moment ken ik een aantal tools/services die op een of andere manier een rol zouden kunnen spelen bij dit onderzoek. [[MyDisk.co.uk]], [[Onlife]] ([[Slife]]), [[Slifeshare]], [[Multiply.com]], [[Google Desktop]], [[Zurpy]], [[Wakoopa]]. Ik ben benieuwd of er al mensen een eigen manier hebben gevonden om hun data delen by default en hoe. 
 
+==== Cijfers ====
 Stap 2 is dat ik ga onderzoeken wat de verhouding gedeelde data tov niet gedeelde data is bij de gemiddelde medemens. Hoeveel mensen zouden aan dit initiatief mee moeten werken wil het internet bijv. twee keer zo veel data gaan bevatten.
 "the average webpage is only active 44 days (Lyman, 2002)"
 
+==== Gerelateerd onderzoek ====
 Stap 3 ik ga nog meer artikelen zoeken en lezen over de volgende onderwerpen
 - [[Personal Information Management]] ([[PIM]]). Hoe gaan personen om met data. Daarbinnen zijn drie belangrijke aspecten te onderscheiden: technisch, sociaal en legaal.
 - [[Digitale Duurzaamheid]]:. Hoe lang duurt het voordat bepaalde data niet meer te bekijken is en welke effords zijn zullen nog steeds belangrijk blijven in dit geval: storage media (reliability, durability, format), hardware & software environments (OS, driver, shared libraries), application-specific formats and functionality (file formats, codecs), display capabilities (resolution, fonts, colors)
@@ -44,16 +48,12 @@ Stap 3 ik ga nog meer artikelen zoeken en lezen over de volgende onderwerpen
 #bij overleiden van de eigenaar.
 - Waar bewaren mensen hun data. Thuis, mobile devices, webservices zoals Gmail, Flickr.
 
+==== Mogelijke redenen waarom het nog niet gebeurd. ====
 Het punt dat ik wil maken is dat er nog steeds zoveel schrijfsels, tekeningen en in deze tijd nog veel meer zoals foto's, video's, muziek etc die zich in prive collecties bevinden. Niet omdat ze geheim zijn maar omdat het veel tijd en moeite kost om ze beschikbaar te stellen aan elkaar. En stel dat het beschikbaar zou zijn dan nog moet het goed doorzoekbaar zijn en moet het door mens en computer verrijkt kunnen worden met metadata.
 
 We leven al een hele tijd in het informatietijdperk. Constatering: we zijn heel selectief met wat we delen. Ik denk dat dat voortkomt uit het feit dat het veel tijd en moeite kost. Als die drempel overwonnen zou zijn
 
-Er is zoveel ongedeelde data. 
-
-Je zou bepaalde emailberichten in een public folder kunnen zetten.
-
 keywords: [[transparent society]], [[data donor]], [[harddisk sharing]]
-
 
 ===== Diversen =====
 *[[Ruwe ideeën en aantekeningen]]
