@@ -36,10 +36,3 @@
 === Blog posts ===
 ...
 {{archive>2008-01}}
-
-=== Etc. ===
-[[Ut porta]]. Donec mattis. Fusce velit nulla, feugiat ac, gravida nec, sagittis nec, elit. Nam mollis. Curabitur ultricies eleifend odio. Donec cursus accumsan nibh. Quisque tincidunt. Donec metus magna, semper consequat, venenatis ac, dapibus sit amet, nulla. Nullam sodales accumsan nibh. In ac velit a lectus sagittis sodales. Pellentesque in dolor nec felis sagittis laoreet. Vivamus suscipit erat vel sapien. Etiam bibendum leo nec ipsum lobortis ultrices. Nunc egestas. Fusce a ante id nisl hendrerit commodo. Aliquam at erat nec libero fermentum imperdiet.
-
-Aliquam sit amet elit. Aenean egestas diam vitae erat. Praesent eu orci a felis posuere semper. Suspendisse adipiscing, elit eu pulvinar malesuada, lorem nisi pulvinar sem, tempor lobortis leo elit eget risus. Aliquam nec risus. Maecenas vulputate gravida velit. Duis cursus. Curabitur sed ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc ac odio. Aliquam erat volutpat. Nullam odio nunc, blandit in, aliquet et, bibendum in, purus. Etiam in urna. Quisque pretium neque sed nisi. Mauris mattis. Fusce eu massa eget mauris faucibus sollicitudin. Praesent rutrum rutrum nunc.
-
-In hac habitasse platea dictumst. Donec vitae metus. Aliquam aliquet elementum lacus. Sed blandit lacus. Morbi nonummy, odio ac imperdiet pulvinar, enim nulla porta tortor, sed fermentum erat ipsum nec libero. Vivamus sollicitudin elementum nisi. Vivamus pretium diam at nunc. Aliquam dictum, velit id viverra varius, neque est rhoncus odio, sed viverra nunc purus ac nisi. Donec iaculis. Sed a magna. Pellentesque tellus. Donec placerat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam quis mauris. Suspendisse quam erat, varius at, vehicula sed, sodales ac, tellus. 
