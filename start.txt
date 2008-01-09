@@ -35,12 +35,16 @@ Stap 1 is dat ik op zoek ga naar bestaande initiatieven op dit gebied. Op dit mo
 Stap 2 is dat ik ga onderzoeken wat de verhouding gedeelde data tov niet gedeelde data is bij de gemiddelde medemens. Hoeveel mensen zouden aan dit initiatief mee moeten werken wil het internet bijv. twee keer zo veel data gaan bevatten.
 "the average webpage is only active 44 days (Lyman, 2002)"
 
+
 ==== Gerelateerd onderzoek ====
 Stap 3 ik ga nog meer artikelen zoeken en lezen over de volgende onderwerpen
 - [[Personal Information Management]] ([[PIM]]). Hoe gaan personen om met data. Daarbinnen zijn drie belangrijke aspecten te onderscheiden: technisch, sociaal en legaal.
 - [[Digitale Duurzaamheid]]:. Hoe lang duurt het voordat bepaalde data niet meer te bekijken is en welke effords zijn zullen nog steeds belangrijk blijven in dit geval: storage media (reliability, durability, format), hardware & software environments (OS, driver, shared libraries), application-specific formats and functionality (file formats, codecs), display capabilities (resolution, fonts, colors)
 - [[DRM]]: [[Digital Rights Management]].
-- Storing the data. Het persoonlijk bewaren van al je data heeft als grote voordeel dat alle harddisks 'ter wereld' benut worden en je niet afhankelijk bent van servers. Daar staat tegenover dat:
+- Storing the data.
+
+
+Het persoonlijk bewaren van al je data heeft als grote voordeel dat alle harddisks 'ter wereld' benut worden en je niet afhankelijk bent van servers. Daar staat tegenover dat:
 #thuiscomputers 's nachts uit staan, 
 #thuisverbindingen trager zijn dan servers, 
 #thuiscomputers eerder zullen crashen, 
