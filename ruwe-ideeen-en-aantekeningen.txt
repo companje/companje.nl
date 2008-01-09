@@ -68,6 +68,7 @@ Ik heb dit overgenomen omdat het qua opbouw erg goed in elkaar zit. Kan ik wat v
 *http://www.zengestrom.com/blog/2007/04/this_easter_the.html
 *http://cl1-www2.suddenly.se/msn/innovate2/sniffer_innovate_hyperboard_450x240.html
 
+
 =====Data as a social object=====
 Mijn social object zou dus algemene data zijn. Alles wat je in de loop der jaren hebt verzameld, en waarmee je niet perse gemaakt hebt om te delen in tegenstelling tot blogposts:
 *filmpjes
@@ -105,7 +106,7 @@ Toch groeien HD's nog steeds, je produceert nog steeds veel en het meeste daarva
 *Tip van [[Koert]]: Boek: [[Elise van Hoven - Recollecting Physical Objects]] (over herinneringen die fysieke objecten oproepen)
 *Eigenlijk is je HD een filter, een buffer waar alle ruwe data op staat en zelf kies je welke in aanmerking komen om te delen
 *Firefox plugin waarmee je relevante stukken tekst kunt selecteren en daarmee voeg je [[metadata]] omdat je voor jezelf de kern uit een verhaal haalt.
-*De [[papier verscanneraar]] / scanner vs. schredder  (Je stopt iets in een apparaat dat lijkt op een papier versnipperaar maar in werkelijkheid wordt het gescand en direct online geplaatst klaar om te worden voorzien van beschrijving/metadata door de eigenaar maar ook misschien door anderen.
+*De [[Papierverscanneraar]] / scanner vs. schredder  (Je stopt iets in een apparaat dat lijkt op een papier versnipperaar maar in werkelijkheid wordt het gescand en direct online geplaatst klaar om te worden voorzien van beschrijving/metadata door de eigenaar maar ook misschien door anderen.
 *[[Screenhunter]] moet screenshots annoteren met tekst die binnen de selectie zichtbaar is en met evt. andere metadata zoals webadres waarvan het screenshot gemaakt is, naam van het window waarvan een screenshot gemaakt is, datum/tijd. Dit zou allemaal in [[EXIF]] data kunnen.
 *Koop m'n huis leeg punt nl en colums schrijven over wat je die week allemaal bent kwijt geraakt.
 
