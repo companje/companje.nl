@@ -1,8 +1,8 @@
-Musea...
+====== Musea ======
+*[[Natuurhistorisch Museum Maastricht]]
+*[[Naturalis]]
+*[[Rijksmuseum Amsterdam]]
+*[[Museum voor Beeld en Geluid]] 
 
-*Natuurhistorisch Museum Maastricht
-*Naturalis
-*Rijksmuseum Amsterdam
-*Beeld en Geluidsmuseum
-
+====== Backlinks naar deze pagina ======
 {{backlinks>.}}
