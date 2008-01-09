@@ -62,6 +62,11 @@ keywords: [[transparent society]], [[data donor]], [[harddisk sharing]]
 ===== Diversen =====
 *[[Ruwe ideeën en aantekeningen]]
 
+====== Experimenten ======
+*[[Rickipedia]]
+*[[Papierverscanneraar]]
+*...
+
 ====== Relevante artikelen ======
 *[[Ahmed (2004) - SemanticLIFE-a-framework-for..human-lifetime]]
 *[[Appleton (2004) in Spiked Online - Slices of life]]
