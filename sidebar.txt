@@ -6,6 +6,7 @@
 *Flex & Flash Developer
 *Interactive Media Designer
 
+==== Search ====
 <php>
 tpl_searchform();
 </php>
@@ -13,7 +14,7 @@ tpl_searchform();
 ==== My Twitter tweets ====
 ...
 
-=== Categories ===
+==== Categories ====
 *[[Globe4D]]
 *[[Processing]]
 *[[Flex & Flash]]
@@ -21,10 +22,10 @@ tpl_searchform();
 *[[Math]]
 *[[Travel]]
 
-=== Tags ===
+==== Tags ====
 ~~TAGCLOUD~~
 
-=== Links ===
+==== Blogroll ====
 *Annica's weblog
 *Arie-Jan van Berkum
 *Arvid Bergstrom
@@ -36,16 +37,15 @@ tpl_searchform();
 *Joost Korngold
 *Julia in Japan
 *Klaas Jan Mollema
-*Kobes-Companje
 *Marcel de Jong
 *Marcel Kampman
 *Michael de Vries
 *Ralph Kok
 *Sander van de Graaf
-*Sylvain Vriens - Project Euh?
+*Sylvain Vriens
 *Tim van den Bosch
 *Wilfried Houjebek
 
-=== Blog posts ===
+==== Blog posts ====
 ...
 {{archive>2008-01}}
