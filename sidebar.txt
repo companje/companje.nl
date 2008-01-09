@@ -9,9 +9,10 @@
 === My Twitter tweets ===
 ...
 
-=== Projects ===
+=== Categories ===
 *[[Globe4D]]
-*...
+*[[Processing]]
+*[[Flex & Flash]]
 
 === Tags ===
 ~~TAGCLOUD~~
