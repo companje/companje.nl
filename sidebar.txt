@@ -26,25 +26,24 @@ tpl_searchform();
 ~~TAGCLOUD~~
 
 ==== Blogroll ====
-*Annica's weblog
-*Arie-Jan van Berkum
-*Arvid Bergstrom
-*Brain Bubbles
-*Informationlab
-*Jasper van der Schaaf
-*Jedidjah's webblog
-*Jonas Hielscher
-*Joost Korngold
-*Julia in Japan
-*Klaas Jan Mollema
-*Marcel de Jong
-*Marcel Kampman
-*Michael de Vries
-*Ralph Kok
-*Sander van de Graaf
-*Sylvain Vriens
-*Tim van den Bosch
-*Wilfried Houjebek
+*[[http://annica.web-log.nl/|Annica's weblog]]
+*[[http://www.volvolvo.nl/|Arie-Jan van Berkum]]
+*[[http://home.wanadoo.nl/arvidbergstrom|Arvid Bergstrom]]
+*[[http://brain-bubbles.com/|Brain Bubbles]]
+*[[http://www.informationlab.org/|Informationlab]]
+*[[http://jaspervanderschaaf.nl/|Jasper van der Schaaf]]
+*[[http://jedidjah.punt.nl/|Jedidjah's weblog]]
+*[[http://www.pixelsix.org/|Jonas Hielscher]]
+*[[http://www.renascent.nl/|Joost Korngold]]
+*[[http://www.zijlmo.nl/mo/du/|Klaas Jan Mollema]]
+*[[http://marceldejong.info/|Marcel de Jong]]
+*[[http://www.kampman.nl/|Marcel Kampman]]
+*[[http://www.likemike.net/|Michael de Vries]]
+*[[http://www.rockabit.com/|Ralph Kok]]
+*[[http://www.svdgraaf.nl/|Sander van de Graaf]]
+*[[http://www.project-euh.com/|Sylvain Vriens]]
+*[[http://www.mondayrunner.com/|Tim van den Bosch]]
+*[[http://www.socialfiction.org/|Wilfried Houjebek]]
 
 ==== Blog posts ====
 ...
