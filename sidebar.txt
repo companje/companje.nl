@@ -10,7 +10,7 @@
 tpl_searchform();
 </php>
 
-=== My Twitter tweets ===
+==== My Twitter tweets ====
 ...
 
 === Categories ===
