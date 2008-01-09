@@ -4,7 +4,7 @@ Vraag: Was als we allemaal zoveel mogelijk van onze data zouden delen?
 
 Want: Er is zoveel data die prima gedeeld zou kunnen worden maar die in stoffige mappen op persoonlijke harddisks staat en waar niemand zo iets aan heeft. 
 
-Stelling: Hoe meer data we delen hoe meer bruikbare informatie/kennis via te internet te vinden is. De ruis zal door de huidige kwaliteit van zoekmachines verwaarloosbaar zijn.
+Stelling: Hoe meer data we delen hoe meer bruikbare informatie/kennis via te internet te vinden is. Ruis zal door de huidige kwaliteit van zoekmachines verwaarloosbaar zijn.
 
 ====== Relevante artikelen ======
 *[[Ahmed (2004) - SemanticLIFE-a-framework-for..human-lifetime]]
