@@ -1,6 +1,6 @@
 {{rick-companje.jpg|Rick Companje}}
 
-[[Rick Companje]]
+====== Rick Companje ======
 *BSc Interaction Design
 *MSc Media Technology
 *Flex & Flash Developer
