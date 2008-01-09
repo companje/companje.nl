@@ -11,7 +11,7 @@
 
 ==== Blog posts ====
 ...
-{{archive>?2008-01}}
+{{archive>}}
 
 ==== Search ====
 <php>
