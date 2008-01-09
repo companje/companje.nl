@@ -3,6 +3,6 @@ Globe4D is een vierdimensionale wereldbol: een installatie bestaande uit een bol
 
 http://www.globe4d.com
 
-English translation: [[en:Globe4D]]
+English translation: [[Globe4D in English]]
 
 {{tag>Globe4D}}
