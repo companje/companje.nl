@@ -4,10 +4,8 @@
 *[[Tijdslijn]] voor het Rijksmuseum
 *[[ScriptMachine]] voor het Museum voor Beeld en Geluid
 
-==== Flex ====
+===== Flex =====
 *[[Frame Digital Magazine]]
 *[[Creatieve Kaart Leiden]]
 *[[TravelTrace]]
 *[[Bashi]]
-
-==== ActionScript ====
