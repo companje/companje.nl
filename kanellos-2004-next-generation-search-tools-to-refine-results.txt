@@ -2,6 +2,7 @@
 ID: Kanellos (2004)
 PDF: {{afstuderen:Kanellos (2004) - Next-generation search tools to refine results.pdf|PDF}}
 
+===== Summary =====
 *Calif.--The vast corpus of human knowledge could soon be published on the Internet. The problem now is how to wade through it.
 *Although search engines have greatly enhanced access to information, and storage technology has made it cheap to digitize nearly everything, search tools need to be refined to make it easier to digest information or conduct queries. That was the word from researchers and speakers at the New Paradigms for Using Computers Conference, held at IBM's Almaden research lab here last week.
 *On the desktop, companies such as Ingenuity Software, founded by former Apple Computer developer Bruce Horn, are creating tools designed to make it easier for people to index their photos and documents for subsequent Google-like searches on their hard drive.
