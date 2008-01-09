@@ -25,7 +25,7 @@ Fijn om te weten is misschien waar die twee getalletjes (1.2732395 en 0.4052847)
 
 Sourcecode:
 *Zie [[http://companje.nl/processing/Alternatieve-Sinus-Functie.html|source Alternatieve-Sinus-Functie]]
-*[[http://companje.nl/processing/qSin-Color-Wave-Demo.html|Zie source qSin-Color-Wave-Demo]]
+*Zie [[http://companje.nl/processing/qSin-Color-Wave-Demo.html|source qSin-Color-Wave-Demo]]
 
 Zoals je ziet is voor zoiets als het onderstaande de grove benadering prima voldoende:
 
