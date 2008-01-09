@@ -1,1 +1,1 @@
-~~GOTO>Laval Virtual~~
+#redirect Laval Virtual
