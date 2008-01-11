@@ -27,6 +27,7 @@ tpl_searchform();
 *[[Electronics]]
 *[[Math]]
 *[[Travel]]
+*[[Events]]
 
 ==== Blogroll ====
 *[[http://annica.web-log.nl/|Annica's weblog]]
