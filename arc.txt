@@ -5,14 +5,19 @@ Dat met die hoek zie je goed in het bovenste plaatje. Je berekent heel gemakkeli
 
 Klik op het onderstaande screenshot voor een interactieve versie waarbij je met de slidertjes de variabelen kunt instellen.
 
-[[http://www.companje.nl/projects/ArcText/index.html|{{http://www.companje.nl/wp-content/uploads/2008/01/screenshot.jpg |ArcText, Text on Arc / circle, Processing / Flash}}]]
+[[http://www.companje.nl/projects/ArcText/index.html|{{http://www.companje.nl/wp-content/uploads/2008/01/screenshot.jpg|ArcText, Text on Arc / circle, Processing / Flash}}]]
+
+<code java>
+float adjacent=radius;
+float opposite=textWidth(letter)/2;
+angle += atan(opposite/adjacent);
+</code>
 
 *[[http://www.companje.nl/projects/ArcText/index.html|View demo]]
 *[[http://www.companje.nl/projects/ArcText/source.html|View source]]
 *[[http://www.companje.nl/projects/ArcText/source.pdf|Source as PDF]]
 
-
-{{tag>}}
+{{tag>Math Processing}}
 
 
 ~~DISCUSSION~~
