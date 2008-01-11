@@ -38,6 +38,6 @@ Zoals je ziet is voor zoiets als het onderstaande de grove benadering prima vold
 *http://lab.polygonal.de/
 *http://lab.polygonal.de/wp-content/articles/fast_trig/fastTrig.as
 
-{{tag>Math}}
+{{tag>Math Processing}}
 
 ~~DISCUSSION~~
