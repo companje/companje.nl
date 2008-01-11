@@ -1,25 +1,18 @@
 ====== Events ======
 
 ===== 2008 =====
-*[[IPON 2008]] (23/24 jan 2008)
-*[[Kshitij 2008]] (India)
-*[[InnovAction 2008]] (Italië)
-*Lezing in Leiden (16 april 2008)
+*[[Kshitij 2008]] - India
+*[[Adobe Usergroup meeting]] - Amsterdam
+*[[FITC Amsterdam 2008]] - Amsterdam
+*[[Innovaction 2008]] - Italy
 
 ===== 2007 =====
-*[[Echangeur]] 10th anniversary 2007
-*[[MuseumN8 2007 in NEMO]]
-*[[Lezing op Hogeschool van Amsterdam 2007]]
-*[[Lunchlezing Leidsche Flesch 2007]]
-*[[Wetenschapsdag 2007]]
-*[[Cinekid 2007]]
-*[[Todays Art 2007]]
-*[[Wired Nextfest 2007]]
-*[[ACM Siggraph 2007]]
-*[[Laval Virtual 2007]]
+*[[Wired NextFest 2007]] - Los Angeles
+*[[ACM Siggraph 2007]] - San Diego
 
 ===== 2006 =====
-*...
+*[[ACM Multimedia 2006]] - Santa Barbara
+*[[BrightLive 2006]] - Amsterdam
 
-====== Links to this page ======
-{{backlinks>.}}
+===== 2005 =====
+*...
