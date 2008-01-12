@@ -18,5 +18,6 @@ This list is never complete, so please let me know if you want to be added.
 *[[Sylvain Vriens]]
 
 
+
 ====== Links to this page ======
-{{backlinks>Friends}}
+{{backlinks>friends}}
