@@ -1,5 +1,8 @@
-test
+====== test ======
 
-[[:Globe4D]]
+Hallo ik ben Rick ♣
 
-{{blog:2008:01:figure3-custom.jpg|}}
+{{tag>}}
+
+
+~~DISCUSSION~~
