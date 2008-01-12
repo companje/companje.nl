@@ -71,3 +71,5 @@ function getTextAfterLastIndexOf(s,needle) { return s.substr(s.lastIndexOf(needl
 function replaceString(inString,findString,replaceBy) { return inString.replace(new RegExp(findString,"g"),replaceBy); }
 function getFileExtension(s) { /*input as string!*/ return getTextAfterLastIndexOf(s,"."); }
 </code>
+
+See: [[projects:Verscanneraar]]
