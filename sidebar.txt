@@ -28,6 +28,8 @@ tpl_searchform();
 *[[Math]]
 *[[Travel]]
 *[[Events]]
+*[[Art]]
+*[[Ideas]]
 
 ==== Blogroll ====
 *[[http://annica.web-log.nl/|Annica's weblog]]
