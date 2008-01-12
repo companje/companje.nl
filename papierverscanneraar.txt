@@ -1,6 +1,8 @@
 ====== Papierverscanneraar ======
 De Papierverscanneraar is een nieuw apparaat: Een schredder met ingebouwde scanner, of een scanner met ingebouwde schredder, hoe je het maar bekijkt. De verscanneraar scant een papiertje (bijvoorbeeld een concertkaartje, boodschappenlijstje of foto) en transformeert het in één keer van fysiek tastbaar naar virtueel op internet. Het fysieke object wordt door het apparaat echt versnippert / vernietigd om de transformatie onomkeerbaar te maken. Je helpt het fysieke object letterlijk naar een andere wereld. Van de fysieke naar de virtuele. Is de herinnering nu nog net zo bijzonder nu je het niet meer kunt vastpakken?
 
+{{afstuderen:papierverscanneraar-1.jpg?550|Papierverscanneraar}}
+
 ===
 Het zou direct online geplaatst kunnen worden om te worden voorzien van metadata door de eigenaar maar ook misschien door anderen. Je kunt het voorheen fysieke object als nieuw een soort social object zien net als LastFM de muziek, bij Flickr de foto's en bij Twitter en Jaiku de tweets. Om die sociale objecten zit je community die het maar al te leuk vindt om te kijken naar de social objects van vrienden of eventuele vrienden. Het hoeft niet eens bij kijken te blijven want mensen vinden taggen leuk als het in de vorm van een soort spel is zoals te zien is bij de ESP Game van Yahoo of de Google Image Labeler.
 
@@ -9,3 +11,5 @@ Koert: Wat een grappig idee van die scanner/versnipperaar. Dat is een fijne inst
 
 ===
 Rick: Ik vraag me wel af of het nog dicht genoeg bij m'n originele afstudeeridee staat waarbij ik wil onderzoeken wat er gebeurd als we al onze digitale data die niet gecreëerd is om te delen publiekelijk beschikbaar maken. Bij de verscanneraar gaat het niet om digital born content maar om content uit de echte wereld die digitaal gemaakt wordt... Maar bijv. een boodschappenlijstje is net zo goed data die niet gecreëerd is om te delen maar die op deze manier toch digitaal wordt.
+
+{{tag>Ideas}}
