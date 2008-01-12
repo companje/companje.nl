@@ -6,3 +6,4 @@
 <blockquote>{{ events:wired-nextfest-2007.png|Globe4D at Wired Nextfest 2007}}WIRED Magazine is bringing its vision of a new world’s fair to Los Angeles. Experience more than 160 exciting exhibits from scientists, researchers, and inventors around the globe. WIRED NextFest features innovations in communication, design, entertainment, exploration, health, play, robots, transportation, security, and green living.</blockquote>
 
 http://www.wirednextfest.com
+{{tag>Events Globe4D}}
