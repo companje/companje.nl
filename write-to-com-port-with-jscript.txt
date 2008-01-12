@@ -2,6 +2,13 @@
 
 It's quite easy to write to a COM port through JScript. You don't need any ActiveX components if you just 'echo' to a port.
 
+===== The Trick =====
+<code javascript>
+function comInit(port) { exec("mode "+port+"9600,N,8,1") }
+function comWrite(s,port) { exec("echo "+s+" > " + port); }
+</code>
+
+===== Complete script =====
 <code javascript>
 //Rick Companje
 //23-12-2007
