@@ -9,6 +9,7 @@ function comWrite(s,port) { exec("echo "+s+" > " + port); }
 </code>
 
 
+
 ===== Complete script =====
 <code javascript>
 //Rick Companje
@@ -80,6 +81,6 @@ function replaceString(inString,findString,replaceBy) { return inString.replace(
 function getFileExtension(s) { /*input as string!*/ return getTextAfterLastIndexOf(s,"."); }
 </code>
 
-See: [[afstuderen:Papierverscanneraar]]
-
 {{tag>tech}}
+
+See: [[afstuderen:Papierverscanneraar]]
