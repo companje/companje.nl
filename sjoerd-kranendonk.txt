@@ -1,6 +1,7 @@
 ====== Sjoerd Kranendonk ======
 Sjoerd is een studievriend en samen met hem en [[Ralph Kok]] ben ik verantwoordelijk voor het visueel mediakunstproject project [[projects:Agents in Motion]]. Op [[http://brain-bubbles.com/|BrainBubbles.com]] kun je zijn verdere herspenspinsels volgen.
 
+
 ===== Agents in Motion =====
-=== An Excursion in Video Art Using Flies, Max/MSP and Jitter ===
-{{ projects:agents-in-motion.jpg?300||Agents in Motion}}This project aims to use virtual agents to analyze video input and locate the highest intensity of perceived movement within it. The agents, symbolized here as fruit flies perform video analysis based on natural rules of interaction, which creates an organic swarming effect. To give an impression of the movement of the flies over time, a 3D visualization is provided.
+{{ projects:agents-in-motion.jpg?200||Agents in Motion}}=== An Excursion in Video Art Using Flies, Max/MSP and Jitter ===
+This project aims to use virtual agents to analyze video input and locate the highest intensity of perceived movement within it. The agents, symbolized here as fruit flies perform video analysis based on natural rules of interaction, which creates an organic swarming effect. To give an impression of the movement of the flies over time, a 3D visualization is provided.
