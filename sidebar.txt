@@ -40,6 +40,7 @@ tpl_searchform();
 *[[http://www.pixelsix.org/|Jonas Hielscher]]
 *[[http://www.renascent.nl/|Joost Korngold]]
 *[[http://www.zijlmo.nl/mo/du/|Klaas Jan Mollema]]
+*[[http://waks.nl/|Lisa Dalhuijsen]]
 *[[http://marceldejong.info/|Marcel de Jong]]
 *[[http://www.kampman.nl/|Marcel Kampman]]
 *[[http://www.likemike.net/|Michael de Vries]]
