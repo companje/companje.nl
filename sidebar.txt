@@ -25,6 +25,7 @@ tpl_searchform();
 *[[Friends:]]
 *[[Study]]
 *[[Projects]]
+*[[Fun]]
 
 ==== My other pages ====
 *[[http://twitter.com/companje/|My Tweets on Twitter]]
