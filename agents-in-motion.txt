@@ -4,4 +4,4 @@ This project aims to use virtual agents to analyze video input and locate the hi
 ===
 *{{projects:kok-kranendonk-companje-2007-agents-in-motion.pdf|Download article as PDF}}
 
-{{tags>Art Study}}
+{{tag>Art Study}}
