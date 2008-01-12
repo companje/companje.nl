@@ -22,7 +22,7 @@ tpl_searchform();
 *[[Events]]
 *[[Art]]
 *[[Ideas]]
-*[[Friends]]
+*[[Friends:]]
 
 ==== My other pages ====
 *[[http://twitter.com/companje/|My Tweets on Twitter]]
