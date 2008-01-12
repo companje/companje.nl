@@ -1,3 +1,5 @@
 test
 
 [[:Globe4D]]
+
+{{blog:2008:01:figure3-custom.jpg|}}
