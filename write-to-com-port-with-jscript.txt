@@ -8,6 +8,7 @@ function comInit(port) { exec("mode "+port+"9600,N,8,1") }
 function comWrite(s,port) { exec("echo "+s+" > " + port); }
 </code>
 
+
 ===== Complete script =====
 <code javascript>
 //Rick Companje
@@ -80,3 +81,5 @@ function getFileExtension(s) { /*input as string!*/ return getTextAfterLastIndex
 </code>
 
 See: [[afstuderen:Papierverscanneraar]]
+
+{{tag>tech}}
