@@ -6,17 +6,6 @@
 *Flex & Flash Developer
 *Interactive Media Designer
 
-
-==== My other pages ====
-*[[http://twitter.com/companje/|My Tweets on Twitter]]
-*[[http://youtube.com/profile?user=companje|My Movies on YouTube]]
-*[[http://flickr.com/photos/25601555@N00/|My Photos on Flickr]]
-*[[http://www.last.fm/user/companje|My Music on LastFM]]
-
-==== Blog posts ====
-...
-{{archive>blog?*}}
-
 ==== Search ====
 <php>
 tpl_searchform();
@@ -33,6 +22,12 @@ tpl_searchform();
 *[[Events]]
 *[[Art]]
 *[[Ideas]]
+
+==== My other pages ====
+*[[http://twitter.com/companje/|My Tweets on Twitter]]
+*[[http://youtube.com/profile?user=companje|My Movies on YouTube]]
+*[[http://flickr.com/photos/25601555@N00/|My Photos on Flickr]]
+*[[http://www.last.fm/user/companje|My Music on LastFM]]
 
 ==== Blogroll ====
 *[[http://annica.web-log.nl/|Annica's weblog]]
