@@ -1,6 +1,6 @@
 ====== test ======
 
-Hallo ik ben Rick ♣
+Hallo ik ben Rick
 
 {{tag>}}
 
