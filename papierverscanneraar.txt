@@ -2,7 +2,7 @@
 De Papierverscanneraar is een nieuw apparaat: Een schredder met ingebouwde scanner, of een scanner met ingebouwde schredder, hoe je het maar bekijkt. De verscanneraar scant een papiertje (bijvoorbeeld een concertkaartje, boodschappenlijstje of foto) en transformeert het in één keer van fysiek tastbaar naar virtueel op internet. Het fysieke object wordt door het apparaat echt versnippert / vernietigd om de transformatie onomkeerbaar te maken. Je helpt het fysieke object letterlijk naar een andere wereld. Van de fysieke naar de virtuele. Is de herinnering nu nog net zo bijzonder nu je het niet meer kunt vastpakken?
 
 {{afstuderen:papierverscanneraar-1.jpg?550|Papierverscanneraar}}
-Tekening: [[:Kris Kobes]]
+Tekening: [[friends:Kris Kobes]]
 
 ===
 Het zou direct online geplaatst kunnen worden om te worden voorzien van metadata door de eigenaar maar ook misschien door anderen. Je kunt het voorheen fysieke object als nieuw een soort social object zien net als [[:LastFM]] de muziek, bij [[:Flickr]] de foto's en bij [[:Twitter]] de tweets. Om die sociale objecten zit je community die het maar al te leuk vindt om te kijken naar de social objects van vrienden of eventuele vrienden. Het hoeft niet eens bij kijken te blijven want mensen vinden taggen leuk als het in de vorm van een soort spel is zoals te zien is bij de [[:ESP Game]] of de [[:Google Image Labeler]].
