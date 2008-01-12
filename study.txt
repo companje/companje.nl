@@ -3,7 +3,7 @@
 
 The programme is a joint initiative of Leiden University’s computer science institute (LIACS) and the Faculty of Creative and Performing Arts.</blockquote>
 
-*[[http://mediatechnology.leiden.edu/?Media Technology website]]
+*[[http://mediatechnology.leiden.edu/|Media Technology website]]
 
 ====== Links to this page ======
 {{backlinks>.}}
