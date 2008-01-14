@@ -1,3 +1,5 @@
+====== Batch file for running Processing pde files from Scite. ======
+
 <code batch>
 @echo off
 
