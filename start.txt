@@ -3,4 +3,4 @@ Op deze pagina staan afbeeldingen (screenshots, scans en foto's) die automatisch
 
 {{tag>Ideas}}
 
-{{gallery>autoblog}}
+{{gallery>autoblog?3&noshowname}}
