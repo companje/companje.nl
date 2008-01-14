@@ -6,4 +6,4 @@ Wellicht kan vanuit zo'n auto blogpost weer doorgelinkt worden naar een pagina o
 
 {{tag>Ideas}}
 
-{{gallery>autoblog?2&250x250&noshowname&reverse}}
+{{gallery>autoblog?2&240x240&noshowname&reverse}}
