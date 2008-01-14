@@ -15,7 +15,8 @@ command.help.*.pde="http://processing.org/reference/$(CurrentWord)_.html"
 command.help.subsystem.*.pde=2
 </code>
 
-F1 invokes help for the current selected word and shows the right page in the reference at the Processing website.
+*F5 will run the batch-file using the name the current PDE file as the classname. So be sure to select your sketch's main pde when pressing F5.
+*F1 invokes help for the current selected word and shows the right page in the reference at the Processing website.
 
 {{tag>Processing Tech}}
 
