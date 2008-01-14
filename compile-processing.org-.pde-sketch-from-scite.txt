@@ -5,7 +5,7 @@ You need {{projects:processing-for-scite.zip|this ZIP-file}} and put it into you
 
 The batchfile generates a temporary .java file as a wrapper for the   pde files. All your pde files in the sketch directory will be included in .java file within a class that extends PApplet.
 
-View source: [[Batch file for running Processing pde files from Scite]].
+View source: [[projects:Batch file for running Processing pde files from Scite]].
 
 Add this to your SciTEUser.properties:
 <code properties>
