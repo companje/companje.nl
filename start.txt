@@ -4,6 +4,8 @@ Op deze pagina staan afbeeldingen (screenshots, scans en foto's) die automatisch
 De volgende stap is een Automatisch Clipboard Blogger. Een scriptje zal in de gaten houden wat er op m'n clipboard staat en zal dit delen met de wereld. Een clipboard zo intensief als ik 'm gebruik manier zou een heel goed beeld moeten geven van je doet op een dag.  En vaak zal er ook een hoop relevante nieuwe kennis op staan. Tricky is dat er ook regelmatig dingen als wachtwoorden of zakelijke content op m'n clipboard staat. De redigatie-slag is daarvoor om het ergste te voorkomen, maar ook hier geldt. Delen by Default.
 Wellicht kan vanuit zo'n auto blogpost weer doorgelinkt worden naar een pagina over het onderwerp. Op één of andere manier moeten de foto's ook goed te taggen zijn om ze vindbaar te maken.
 
+Misschien kan ik bezoekers afbeeldingen laten verwijderen. Bijvoorbeeld democratisch. Dat een afbeelding wordt verwijderd als er tenminste twee mensen dit hebben willen doen. De verwijderde foto's zouden op een pagina met 'Verwijderde blogitems' kunnen komen waar mensen het ook weer de andere kant op kunnen sturen. Een Undelete functie.
+
 {{tag>Ideas}}
 
 {{gallery>autoblog?2&240x240&noshowname&reverse}}
