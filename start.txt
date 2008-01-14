@@ -1,3 +1,6 @@
-====== Autoblog ======
+====== AutoBlog ======
+Op deze pagina staan afbeeldingen (screenshots, scans en foto's) die automatisch zijn geblogged.
 
+{{tag>Ideas}}
 
+{{gallery>autoblog}}
