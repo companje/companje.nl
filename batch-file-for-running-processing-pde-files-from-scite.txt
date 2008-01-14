@@ -1,4 +1,4 @@
-<code batch>
+<code bat>
 @echo off
 
 ::Use Scite to run Processing.org PDE sketches
