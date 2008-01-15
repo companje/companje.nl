@@ -10,4 +10,5 @@ Misschien kan ik bezoekers afbeeldingen laten verwijderen. Bijvoorbeeld democrat
 
 {{tag>Ideas}}
 
-{{gallery>autoblog?2&240x240&noshowname&reverse}}
+
+{{gallery>autoblog?magazine&240x5&reverse&pageAmount=20}}
