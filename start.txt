@@ -12,4 +12,4 @@ Let op! Er zullen een hoop beelden tussen zitten waarvan het copyright bij ieman
 {{tag>Ideas}}
 
 
-{{gallery>autoblog?240x240&2&reverse&pageAmount=100 }}
+{{gallery>autoblog?240x240&2&reverse&pageAmount=20 }}
