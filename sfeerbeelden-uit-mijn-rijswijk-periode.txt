@@ -1,6 +1,6 @@
 ====== Sfeerbeelden uit mijn Rijswijk periode ======
 
-{{gallery>rijswijk-periode?240x240&2&reverse&pageAmount=40}}
+{{gallery>rijswijk-periode?240x240&2}}
 
 {{tag>Art Photos}}
 
