@@ -39,7 +39,7 @@ tpl_searchform();
 ==== Blogroll ====
 *[[http://annica.web-log.nl/|Annica's weblog]]
 *[[http://www.volvolvo.nl/|Arie-Jan van Berkum]]
-*[[http://home.wanadoo.nl/arvidbergstrom|Arvid Bergstrom]]
+*[[http://arvidbergstrom.nl|Arvid Bergstrom]]
 *[[http://brain-bubbles.com/|Brain Bubbles]]
 *[[http://www.informationlab.org/|Informationlab]]
 *[[http://jaspervanderschaaf.nl/|Jasper van der Schaaf]]
