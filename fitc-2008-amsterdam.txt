@@ -18,9 +18,8 @@
 Overige offtopic notes:
 MAMP is een soort XAMPP die ik nog niet ken.
 
-=====Zondag 24-2-2008=====
-==== Papervision3D workshop ====
-Notes by [[friends:Ralph Kok]].
+=====Zondag 24-2-2008, Papervision3D workshop=====
+**Notes by [[friends:Ralph Kok]].**
 
 === Tim Knip ===
 frustrum camera:
