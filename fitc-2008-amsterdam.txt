@@ -91,9 +91,7 @@ is additive, so to set to a specific value, use rotationX/rotationY/rotationZ
 DisplayObject3D extends Sprite: "Think of it as the Sprite of Papervision"
 
 Universe demo (primitiveDemos/PrimitivesDemo.fla):
- add earth and moon to 'universe' displayobject and rotate universe,
-  it will rotate all its children right along
- nest universe-like objects to make a solar system
+ add earth and moon to 'universe' displayobject and rotate universe, it will rotate all its children right along nest universe-like objects to make a solar system
 
 MaterialObject3D is base class for all materials in PV3D
 MovieMaterial: use MC with timeline animation and map that onto 3D object as a material, uses Sprite/MovieClip(/DisplayObject?) instance as material
