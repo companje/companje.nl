@@ -18,7 +18,144 @@
 Overige offtopic notes:
 MAMP is een soort XAMPP die ik nog niet ken.
 
-{{tag>}}
+24-2-2008
+==== Papervision3D workshop ====
+Notes by [[friends:Ralph Kok]].
+
+=== Tim Knip ===
+frustrum camera:
+* define near plane, far plane, fov (viewing angle in degrees)
+* only renders objects within the viewing frustrum
+
+DAE describes 3d model
+* use model = new DAE(); model.load("pathToDAEFile");
+* listen for loading complete with Event.COMPLETE event
+* contains joints which are automatically created as DisplayObject3D instances
+* contains animation description per joint
+* if you want animation, pass 'true' in the constructor of Scene3D
+* no implementation yet for control over DAE-defined animation
+* approach joint through model.getChildByName("nameAsSetInDAEFile");
+* as joints are just DisplayObject3D objects, you can also just animate yourself with for example Tweener
+* when using animation defined in your 3D application, export with paper matrices on!
+
+Do not use Blender for complex objects; export to collada does not work very well
+Don't use complex, intricate, nested skinning
+
+=== Carlos Ulloa ===   
+Performance
+
+* framerate: rather have lower framerate than jumpy framerate
+* stage quality: higher == slower
+* bitmap smoothing: on == slower
+* polygon count: more == slower
+* polygon size: bigger == slower
+* polygon overlap: more == slower
+* animated materials: they update, so complexity slows down, use cacheAsBitmap
+
+Flash player automatically applies mip mapping
+* keep texture sizes a power of two (384 also works, which is 128 + 256!!!)
+
+Group objects in a container object, manipulate just the container
+
+Change registration point:
+* move object into a new empty object with an offset
+
+Traverse custom array to manipulate children, in stead of looping with getChild
+
+Create all objects at once, keep them visible false until they need to show
+
+BRILJANT!!!:
+Van dynamische naar fixed camera:
+* variable userControl:Number tussen 0 en 1
+* vermenigvuldig userControl met mouseX en mouseY als je de camera positie update
+* tween userControl naar 0 of 1 voor een geleidelijke overgang
+
+=== John Grden ===
+* viewport
+* scene
+* camera
+* BasicRenderEngine
+
+Camera:
+* target camera always looks at target (Camera3D)
+* free camera extends DisplayObject3D (FreeCamera3D)
+
+Higher res geometry (more fragments) increases quality,
+ precision helps cutting processor weight
+
+DisplayObject3D: lookAt method makes it rotate towards other object.
+  you can have stuff follow other, non visible, stuff to create an illusion
+  of one object knowing where another object is in the scene.
+
+chase cam example:
+1. move object forward
+2. move cam to same location
+3. move camera back a bit (moveBack(350))
+4. move camera up
+
+yaw, pitch and roll: z is kept as depth into the screen
+yaw rotates around y axis, pitch around x axis, roll around z axis
+is additive, so to set to a specific value, use rotationX/rotationY/rotationZ
+
+Geom objects available: Cone, Cube, Cylinder, Plane, Sphere
+
+DisplayObject3D extends Sprite
+"Think of it as the Sprite of Papervision"
+
+Universe demo (primitiveDemos/PrimitivesDemo.fla):
+ add earth and moon to 'universe' displayobject and rotate universe,
+  it will rotate all its children right along
+ nest universe-like objects to make a solar system
+
+MaterialObject3D is base class for all materials in PV3D
+MovieMaterial: use MC with timeline animation and map that onto 3D object as a material, uses Sprite/MovieClip(/DisplayObject?) instance as material
+
+materialsDemo/MaterialsDemo.fla:
+use any object in library with linkage, or any on stage object as material
+
+if you want alpha, use alpha property of the material, not of the DisplayObject3D
+Using MC material: tell the MC displayobject class about the displayobject and material
+
+Collada: interactive 3d file communication, exports 3d model to xml file, PV3D can parse it
+
+zoom = 11; focus = 100; => shows up as 1 to 1 pixel representation of what you created in 2D
+
+=== Ralph Hauwert ===
+Something can be 'shaded' and a material can HAVE a 'shader'
+
+A shader modifies how an object looks, without modifying its geometry
+plugin for 3D Studio Max exports class that contains the selected shape!
+
+use BasicView to handle simple stuff in PaperVision
+* it provides scene, camera and other stuff
+* override protected function onRenderTick(event:Event):void
+
+FlatShadeMaterial asks for a light, diffuse and ambient light colors
+PointLight3D is the only light object existing in PV3D right now
+
+GouraudMaterial: simplest material that applies lighting smoothing on each triangle
+* calculates lighting direction on a vertex by averaging the directions of all connecting faces
+* normals are under construction, so material doesn't work on cubes or planes
+
+PhongShader: next step beyond GouraudMaterial
+* allows specification of specular value for lighting, the higher the value the narrower the light
+
+EnvMapMaterial: environment map
+* wants a lightmap, you can use bitmapdata object for this
+* front and back will be lit the same way
+* backEnvMap allows specification of a map for the back to prevent this problem
+
+CellMaterial: for cell shading
+* parameter 'steps', defines smoothness of color transitions
+
+new ShadedMaterial(material, shader, compositeMode)
+* compositeMode
+
+EnvMapShader
+* allows for a bumpmap and a specularmap (the latter doesn't work yet right now)
+
+
+{{tag>Flash Flex 3D Tech Adobe}}
 
 
 ~~DISCUSSION~~
