@@ -11,7 +11,7 @@
 * H264 support, HD video up to 1080px in Fash 9. Fullscreen hw scaling
 * Astro en Diesel... 
 * Flash Player 10? nog ff niet... :-) z-axis en wat perspectief dingen. Maar geen echte 3D nog.  Wel support voor pixelshaders. (Hydra Kit). 
--Meer over Hydra Kit morgen in FlashNow FlashFuture session hier op het festival.
+* Meer over Hydra Kit morgen in FlashNow FlashFuture session hier op het festival.
 * Hele goeie zichtbare tween/animaties maken. Object based animation model. Minder timeline achter maar meer volgens paths/grafiekjes
 * 30onair.com nieuwe site van Ted Patrick.
 
@@ -27,7 +27,7 @@ frustrum camera:
 * define near plane, far plane, fov (viewing angle in degrees)
 * only renders objects within the viewing frustrum
 
-DAE describes 3d model
+* DAE describes 3d model
 * use model = new DAE(); model.load("pathToDAEFile");
 * listen for loading complete with Event.COMPLETE event
 * contains joints which are automatically created as DisplayObject3D instances
@@ -37,13 +37,11 @@ DAE describes 3d model
 * approach joint through model.getChildByName("nameAsSetInDAEFile");
 * as joints are just DisplayObject3D objects, you can also just animate yourself with for example Tweener
 * when using animation defined in your 3D application, export with paper matrices on!
-
-Do not use Blender for complex objects; export to collada does not work very well
-Don't use complex, intricate, nested skinning
+* Do not use Blender for complex objects; export to collada does not work very well
+* Don't use complex, intricate, nested skinning
 
 === Carlos Ulloa ===   
-Performance
-
+**Performance:**
 * framerate: rather have lower framerate than jumpy framerate
 * stage quality: higher == slower
 * bitmap smoothing: on == slower
@@ -51,18 +49,14 @@ Performance
 * polygon size: bigger == slower
 * polygon overlap: more == slower
 * animated materials: they update, so complexity slows down, use cacheAsBitmap
-
-Flash player automatically applies mip mapping
+* Flash player automatically applies mip mapping
 * keep texture sizes a power of two (384 also works, which is 128 + 256!!!)
+* Group objects in a container object, manipulate just the container
 
-Group objects in a container object, manipulate just the container
-
-Change registration point:
+**Change registration point:**
 * move object into a new empty object with an offset
-
-Traverse custom array to manipulate children, in stead of looping with getChild
-
-Create all objects at once, keep them visible false until they need to show
+* Traverse custom array to manipulate children, in stead of looping with getChild
+* Create all objects at once, keep them visible false until they need to show
 
 BRILJANT!!!:
 Van dynamische naar fixed camera:
@@ -76,16 +70,12 @@ Van dynamische naar fixed camera:
 * camera
 * BasicRenderEngine
 
-Camera:
+**Camera:**
 * target camera always looks at target (Camera3D)
 * free camera extends DisplayObject3D (FreeCamera3D)
+* DisplayObject3D: lookAt method makes it rotate towards other object. you can have stuff follow other, non visible, stuff to create an illusion of one object knowing where another object is in the scene.
 
-Higher res geometry (more fragments) increases quality,
- precision helps cutting processor weight
-
-DisplayObject3D: lookAt method makes it rotate towards other object.
-  you can have stuff follow other, non visible, stuff to create an illusion
-  of one object knowing where another object is in the scene.
+* Higher res geometry (more fragments) increases quality, precision helps cutting processor weight
 
 chase cam example:
 1. move object forward
@@ -97,10 +87,9 @@ yaw, pitch and roll: z is kept as depth into the screen
 yaw rotates around y axis, pitch around x axis, roll around z axis
 is additive, so to set to a specific value, use rotationX/rotationY/rotationZ
 
-Geom objects available: Cone, Cube, Cylinder, Plane, Sphere
+* Geom objects available: Cone, Cube, Cylinder, Plane, Sphere
 
-DisplayObject3D extends Sprite
-"Think of it as the Sprite of Papervision"
+DisplayObject3D extends Sprite: "Think of it as the Sprite of Papervision"
 
 Universe demo (primitiveDemos/PrimitivesDemo.fla):
  add earth and moon to 'universe' displayobject and rotate universe,
@@ -121,9 +110,8 @@ Collada: interactive 3d file communication, exports 3d model to xml file, PV3D c
 zoom = 11; focus = 100; => shows up as 1 to 1 pixel representation of what you created in 2D
 
 === Ralph Hauwert ===
-Something can be 'shaded' and a material can HAVE a 'shader'
-
-A shader modifies how an object looks, without modifying its geometry
+* Something can be 'shaded' and a material can HAVE a 'shader'
+* A shader modifies how an object looks, without modifying its geometry
 plugin for 3D Studio Max exports class that contains the selected shape!
 
 use BasicView to handle simple stuff in PaperVision
@@ -154,8 +142,7 @@ new ShadedMaterial(material, shader, compositeMode)
 EnvMapShader
 * allows for a bumpmap and a specularmap (the latter doesn't work yet right now)
 
-
-{{tag>Flash Flex 3D Tech Adobe}}
+{{tag>Flash Flex 3D Tech Adobe Papervision3D}}
 
 
 ~~DISCUSSION~~
