@@ -2,6 +2,7 @@
 
 =====Maandag 25-2-2008=====
 
+
 ====Particles in Flash, Seb Dee Lisle====
 * http://www.sebleedelisle.com/
 * Het werkt heel fijn om eigenschappen zoals drag/friction, shrink, gravity, fade, spin in te stellen die dan vervolgens worden toegepast op de snelheid etc.
@@ -13,8 +14,7 @@
 * bij iedere particle.update() worden die waarden toegepast bijv. snelheid van de huidige waarde. Dus niet op de positie maar op de snelheid.
 * BlurFilter op container plaatsen. Niet op de afzonderlijke particles. Zie voorbeeld Particles62.fla. this.filters = [new BlurFilter(8,8,1)]; Wel in een macht van 2 voor drastische performance verbetering.
 * Recyclen van Particles is heel veel sneller dan nieuwe genereren.
-* Slim: Hij gebruikt atan2 om een vonkjesparticle te draaien in de richting waarin ie 
-clip.rotation = Math.atan2(yVel,xVel)*RadToDeg
+* Slim: Hij gebruikt atan2 om een vonkjesparticle te draaien in de richting waarin ie clip.rotation = Math.atan2(yVel,xVel)*RadToDeg
 * bmData.draw(this);  om de huidige stand van de movieclip in een bitmap te stoppen
 
 ====Renacsent, Joost Korngold====
