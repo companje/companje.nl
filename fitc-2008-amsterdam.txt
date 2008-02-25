@@ -1,22 +1,22 @@
 ====== FITC 2008 Amsterdam ======
 
 25-2-2008 
+
 ==== Adobe Keynote ====
-- Vandaag (3 uur geleden) zijn Flex 3 en AIR 1.0 gereleased.
-- Adobe Air Marketplace Beta is een site met veel AIR apps.
-- Vanuit het Flex menu een nieuw menuitem: Create Application From Database
-- Toch ook wel even in modules duiken van flex. Soort loadMovie... Serge liet 4 manieren zien om je Flex app honderden kilobytes kleiner te maken.
-- import ArtWork kijkt naar folder naar de afbeeldingen en als je die op de juiste manier benoemd hebt zoals Button_upSkin.png dan kan ie op basis daarvan automatisch een CSS maken en je hele app skinnen. Vanuit Photoshop makkelijk slices opslaan for the web.
-- H264 support, HD video up to 1080px in Fash 9. Fullscreen hw scaling
-- Astro en Diesel... 
-- Flash Player 10? nog ff niet... :-) z-axis en wat perspectief dingen. Maar geen echte 3D nog.  Wel support voor pixelshaders. (Hydra Kit). 
+* Vandaag (3 uur geleden) zijn Flex 3 en AIR 1.0 gereleased.
+* Adobe Air Marketplace Beta is een site met veel AIR apps.
+* Vanuit het Flex menu een nieuw menuitem: Create Application From Database
+* Toch ook wel even in modules duiken van flex. Soort loadMovie... Serge liet 4 manieren zien om je Flex app honderden kilobytes kleiner te maken.
+* import ArtWork kijkt naar folder naar de afbeeldingen en als je die op de juiste manier benoemd hebt zoals Button_upSkin.png dan kan ie op basis daarvan automatisch een CSS maken en je hele app skinnen. Vanuit Photoshop makkelijk slices opslaan for the web.
+* H264 support, HD video up to 1080px in Fash 9. Fullscreen hw scaling
+* Astro en Diesel... 
+* Flash Player 10? nog ff niet... :-) z-axis en wat perspectief dingen. Maar geen echte 3D nog.  Wel support voor pixelshaders. (Hydra Kit). 
 -Meer over Hydra Kit morgen in FlashNow FlashFuture session hier op het festival.
-- Hele goeie zichtbare tween/animaties maken. Object based animation model. Minder timeline achter maar meer volgens paths/grafiekjes
-- 30onair.com nieuwe site van Ted Patrick.
+* Hele goeie zichtbare tween/animaties maken. Object based animation model. Minder timeline achter maar meer volgens paths/grafiekjes
+* 30onair.com nieuwe site van Ted Patrick.
 
 Overige offtopic notes:
 MAMP is een soort XAMPP die ik nog niet ken.
-
 
 {{tag>}}
 
