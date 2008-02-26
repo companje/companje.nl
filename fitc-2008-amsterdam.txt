@@ -2,7 +2,7 @@
 
 =====Dinsdag 26-2-2008====
 
-====Koen De Weggheieire over BitmapData====
+====Koen De Weggheieire over BitmapData, Matrices en Filters====
 * http://www.newmovieclip.com
  a b tx
  c d ty
