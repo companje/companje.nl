@@ -22,8 +22,12 @@
 * Convolution Kernel (3x3 matrix). je legt de kernal matrix over een pixel heen. dus op de pixel zelf en z'n 8 neighbours (in het geval van 3x3). Kan ook groter. De mexicanHat bijvoorbeeld wat een edge detection met dikke lijnen geeft.
 * Veel research gedaan al op convolution filters. Er zijn bijv. smooth, high pass filters, egdes, blur, 5 sharp, 9 shart, extrude, embos.
 * Eigenlijk wel te maken met 'game of life' zo'n convolution filter.
-
-
+* Je kunt BitmapData niet meteen opnemen in de displaylist. Je stopt de BitmapData in een Bitmap object en dan doe je addChild.
+* copying pixes: clone, copyPixels, copyChannel, draw
+* other interesting methods: applyFilter, colorTransform compare, threshold
+* DispacementMapFilter. Nodig: source bitmap + dispacement map. Op basis van de kleur binnen de displace map worden de pixels uit de source verschoven over x of y. 
+* DisplacementMapFilterMode.WRAP om te repeaten.
+* Binnen de pixels van een displacemaps wordt gekeken naar 2 kleurenkanalen. Bijv. rood en groen. De roodwaarde wordt bijv. gebruikt voor X en de groen voor Y. bijv. roodwaarde 0 betekent 128 naar links de kleurwaarde ophalen? Bij roodwaarde 128 gebruikt verandert er niks. 255 gaat de pixel 128 pixels naar rechts.
 
 =====Maandag 25-2-2008=====
 
