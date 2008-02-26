@@ -1,7 +1,71 @@
 ====== FITC 2008 Amsterdam ======
 
+=====Dinsdag 26-2-2008====
+
+====Koen De Weggheieire over BitmapData====
+* http://www.newmovieclip.com
+ a b tx
+ c d ty
+ u v w
+ * a en d voor scale
+ * b en c voor skew
+ * tx en ty voor translation
+ * rotation is a combination of a,b,c en d:
+* Matrix.createBox(scaleX, scaleY, rotation, tx, ty);
+* Matrix.rotate, scale, translate
+* Transform object or object.transform.matrix = matrix
+* flash.geom.ColorTransform
+* greenMultiplier, colortransformobject.blueMuliplier=...
+* ColorMatrixFilter 4x5 matrix: R G B A Offset x R G B A
+* 0xFF123456, R=(1*0x12) + (0*0x34) + (0*0x56) + (0*0xFF) + 120
+* ConvolutionFilter combines pixel data in a bitmap with data from neighboring pixels. full control at pixel level.
+* Convolution Kernel (3x3 matrix). je legt de kernal matrix over een pixel heen. dus op de pixel zelf en z'n 8 neighbours (in het geval van 3x3). Kan ook groter. De mexicanHat bijvoorbeeld wat een edge detection met dikke lijnen geeft.
+* Veel research gedaan al op convolution filters. Er zijn bijv. smooth, high pass filters, egdes, blur, 5 sharp, 9 shart, extrude, embos.
+* Eigenlijk wel te maken met 'game of life' zo'n convolution filter.
+
+
+
 =====Maandag 25-2-2008=====
 
+====Joa Ebert over Hydra====
+* Werkt aan (en met?) popforge, WiiFlash, ImageProcessing, FlashMate, AS3C, AS3Doc, Speedcoding
+* Hydra allows you to manipulate pictures on the graphics card (in Flash en AfterEffect)
+* Hydra is nog niet gereleased. Wanneer dan?
+* What is a pixel? Not a square, not a dot. More like an abstract point. Can carry various information CMYK/RGB/(Alpha ook toch?), ...
+a pixel on the screen does not move. movement is een illusion by setting the color value.
+* PixelShader is a program written in a shader language that is executed on the graphics hardware.  Part of the GPU to save processing time on the CPU.
+* The unit on the hardware executing the shader is also called pixel shader.
+* Common shader languages are currently HLSL (3dfx) and GLSL (opengl).
+* !!!!!!!!!!!!!!!!!!!!!!!!!!! Tip: Download Shader Designer voor OpenGL of het alternatief voor 3dfx.
+* Hydra Shader Language helps to forget: red<<16 | green << 8 | blue  :-) 
+* Colors are used normalized. 0..1
+* HSL (Hydra Shader Language) is very common to GLSL.
+* Belangrijk: het is limited, strict and type-safe.
+* Identity shader doet niks:  kernal Identity { void evaluatePixel(in image4 src, out pixel4 dst) { dst - sampleNearest(src, outCoord()); }}
+* sampleLinear vs sampleNearest
+* Belangrijk: You do not place a pixel - you take a pixel.
+* Hydra is compiled using LLVM architecture. Low level compiler. Moeite waard om eens in te duiken volgens Joa.
+* AIF Runtime has nothing to do with the Flash Runtime.
+* Het werk ook als je gfx card geen shaders ondersteund maar dan is het je cpu die het overneemt.
+* ondersteund geen loops en geen if-then-else. maakt het niet al te makkelijk om te gebruiken. Daarom gaan ze het er wel inbouwen.
+* Heeft geen random functie (nog)
+* Joa gebruikt de grafische kaart ook om supersnelle audio bewerkingen te doen.
+* Joa's blog: http://blog.je2050.de
+* Voorbeeld zonder Hydra van iets waar je wel hydra voor zou willen gebruiken: http://www.bit-101.com/blog/?p=1167
+ parameter float width <
+  minValue: 1.0;
+  maxValue: 2288.0;
+  defaultValue 1024.0;
+ >
+* adobe image foundation toolkit technology preview: http://labs.adobe.com/wiki/index.php/AIF_Toolkit
+* parameter pixel4 multiplier; dan verschijnt multiplier rechts in beld met 4 sliders om de waarden van de pixel4 te veranderen.
+* color.rgba * multiplier.abgr
+* let op dat je wanneer je bijv. minValue: 1 zegt dat 1 dan een integer is en niet een float. Je moet 1.0 zeggen voor een float net als in C.
+* labs.polygonal.de
+* http://www.je2050.de/imageprocessing/
+
+====Tali Krakowsky ====
+* Super coole presentatie met heel veel inspirererende (media) kunst en architectuur.
 
 ====Particles in Flash, Seb Dee Lisle====
 * http://www.sebleedelisle.com/
@@ -14,7 +78,8 @@
 * bij iedere particle.update() worden die waarden toegepast bijv. snelheid van de huidige waarde. Dus niet op de positie maar op de snelheid.
 * BlurFilter op container plaatsen. Niet op de afzonderlijke particles. Zie voorbeeld Particles62.fla. this.filters = [new BlurFilter(8,8,1)]; Wel in een macht van 2 voor drastische performance verbetering.
 * Recyclen van Particles is heel veel sneller dan nieuwe genereren.
-* Slim: Hij gebruikt atan2 om een vonkjesparticle te draaien in de richting waarin ie clip.rotation = Math.atan2(yVel,xVel)*RadToDeg
+* Slim: Hij gebruikt atan2 om een vonkjesparticle te draaien in de richting waarin ie 
+clip.rotation = Math.atan2(yVel,xVel)*RadToDeg
 * bmData.draw(this);  om de huidige stand van de movieclip in een bitmap te stoppen
 
 ====Renacsent, Joost Korngold====
@@ -174,8 +239,8 @@ EnvMapShader
 {{tag>Flash Flex 3D Tech Adobe Papervision3D}}
 
 Overige offtopic notes:
-- MAMP is een soort XAMPP die ik nog niet ken.
-- Misschien eens een treemap van m'n HD maken maar wel anders dan Sequoiaview
-
+* MAMP is een soort XAMPP die ik nog niet ken.
+* Misschien eens een treemap van m'n HD maken maar wel anders dan Sequoiaview
+* Ik heb Directory Opus 9 leren kennen. Een extreem goed alternatief voor de Windows Verkenner / Explorer. Beetje Norton Commander achtig. Heel fijn en snel.
 
 ~~DISCUSSION~~
