@@ -1,5 +1,6 @@
 ====== Ideas ======
 *[[USB Infuus]] om eten binnen te krijgen tijdens het emailen... (credits to [[friends:Nico van Dijk|Nico]])
+*Is het een idee om wetenschappelijk te onderzoeken of het gevoel 'Clipboard in your head' bij meer mensen dan mij alleen aanwezig is? En hoe het werkt? Het voelt als een soort 'binary flag'. Een soort bitje in je hoofd die op 1 staat als er nog iets op je clipboard zit in je computer... vreemd.
 
 ====== Links to this page ======
 {{backlinks>.}}
