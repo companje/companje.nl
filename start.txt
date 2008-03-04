@@ -1,4 +1,8 @@
-====== Blog ======
-{{blog>}}
+====== Dates ======
 
-Welkom op Ricksmuseum.
+===== Special dates by year =====
+*[[1979]]
+
+
+====== Links to this page ======
+{{backlinks>dates}}
