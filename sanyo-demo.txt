@@ -1,7 +1,7 @@
-De originele sourcecode van DEMO.BAS op de bijgeleverde [[Sanyo Basic]] diskette voor de [[Sanyo MBC 555]]
-
-<pre>
-100 ' *** PROGRAM NAME "DEMO.BAS" REV 1.0 (9/27/1983)***
+====== Sany Basic - DEMO.BAS ======
+De originele sourcecode van DEMO.BAS op de bijgeleverde [[Sanyo Basic]] diskette voor de [[Sanyo MBC 555]].
+ 
+<code>100 ' *** PROGRAM NAME "DEMO.BAS" REV 1.0 (9/27/1983)***
 1000  COLOR 3,0: CLS:DIM A(17),B(17)
 1010 LOCATE 10,15:INPUT "DO YOU USE A COLOR DISPLAY MONITOR ? (Y/N) ",Y$
 1020 IF Y$<>"Y" THEN CCC=0:MASK=3 ELSE CCC=1:MASK=7
@@ -319,4 +319,4 @@ De originele sourcecode van DEMO.BAS op de bijgeleverde [[Sanyo Basic]] diskette
 6220 '
 ....220,10,280,50,340,10,420,10,490,10: '==MBC-5000=
 6210 D 
-</pre>
+</code>
