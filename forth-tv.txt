@@ -1,11 +1,11 @@
 ====== META ForthTV Workshop ======
-1 juni 2007: Afgelopen weekend deed ik mee aan een META Workshop in Amsterdam. META staat voor Making-Electronic-Thingies- in-Amsterdam. De workshop onder leiding van Tom Schouten ging over het genereren van televisie signaal met behulp van de programmeertaal Forth en een PIC chip. Bekijk het filmpje voor een sfeerimpressie.
+1 juni 2007: Afgelopen weekend deed ik mee aan een META Workshop in Amsterdam. META staat voor [[Making Electronic Thingies in Amsterdam]]. De workshop onder leiding van Tom Schouten ging over het genereren van televisie signaal met behulp van de programmeertaal Forth en een PIC chip. Bekijk het filmpje voor een sfeerimpressie.
 
 <blockquote>Date: 26th-27th of May
 Time: 10.00h - 18.00h.
-Place: Steim
+Place: [[Steim]]
 
-Subject: Forth TV
+===== Subject: Forth TV =====
 This workshop will stand in the light of the forth interpreter on the pic chip. Forth enables you to program your pic life and thus edit and see the changes in behavior right away. By learning to control tv tubes with forth this workshop will cover..
 
 * introduction forth, the forth toolchain.
@@ -18,11 +18,10 @@ This workshop will stand in the light of the forth interpreter on the pic chip. 
 
 [[http://en.wikipedia.org/wiki/Forth_%28programming_language%29|Forth on Wikipedia]]
 
-forthtv-tom-schouten.pngTeacher: Tom Schouten
+Teacher: Tom Schouten
 Tom Schouten is an independent software developer and artist based in Leuven, Belgium. His main interests are in generative systems, more specificly programs and devices that produce artistic works. His current efforts are concentrated on creating a series of special purpose programming languages. One of them is based on FORTH and runs on a pic microcontroller. Tom at goto10
 
-Participants:
-
+===== Participants: =====
 * Niels Wolf
 * Heerko van der Kooij
 * Marc Boon
