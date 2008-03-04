@@ -4,8 +4,8 @@
 <blockquote>Date: 26th-27th of May
 Time: 10.00h - 18.00h.
 Place: [[Steim]]
-
-===== Subject: Forth TV =====
+ 
+Subject: Forth TV
 This workshop will stand in the light of the forth interpreter on the pic chip. Forth enables you to program your pic life and thus edit and see the changes in behavior right away. By learning to control tv tubes with forth this workshop will cover..
 
 * introduction forth, the forth toolchain.
@@ -15,9 +15,9 @@ This workshop will stand in the light of the forth interpreter on the pic chip. 
 * logic, PAL sync & stuff
 * software, interrupts (hsync timer) & multitasking
 * individual project, build some pic powered visuals with the knowledge gained.
-
+ 
 [[http://en.wikipedia.org/wiki/Forth_%28programming_language%29|Forth on Wikipedia]]
-
+ 
 Teacher: Tom Schouten
 Tom Schouten is an independent software developer and artist based in Leuven, Belgium. His main interests are in generative systems, more specificly programs and devices that produce artistic works. His current efforts are concentrated on creating a series of special purpose programming languages. One of them is based on FORTH and runs on a pic microcontroller. Tom at goto10
  
