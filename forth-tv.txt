@@ -20,8 +20,8 @@ This workshop will stand in the light of the forth interpreter on the pic chip. 
 
 Teacher: Tom Schouten
 Tom Schouten is an independent software developer and artist based in Leuven, Belgium. His main interests are in generative systems, more specificly programs and devices that produce artistic works. His current efforts are concentrated on creating a series of special purpose programming languages. One of them is based on FORTH and runs on a pic microcontroller. Tom at goto10
-
-===== Participants: =====
+ 
+Participants:
 * Niels Wolf
 * Heerko van der Kooij
 * Marc Boon
