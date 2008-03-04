@@ -28,6 +28,7 @@ tpl_searchform();
 *[[Fun]]
 *[[Blog]]
 *[[Photos]]
+*[[Dates:]]
 
 ==== My other pages ====
 *[[http://twitter.com/companje/|My Tweets on Twitter]]
