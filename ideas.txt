@@ -1,6 +1,10 @@
 ====== Ideas ======
 *[[USB Infuus]] om eten binnen te krijgen tijdens het emailen... (credits to [[friends:Nico van Dijk|Nico]])
 *Is het een idee om wetenschappelijk te onderzoeken of het gevoel '[[Clipboard in your head]]' bij meer mensen dan mij alleen aanwezig is? En hoe het werkt? Het voelt als een soort 'binary flag'. Een soort bitje in je hoofd die op 1 staat als er nog iets op je clipboard zit in je computer... vreemd.
+* Bij het gebrek aan een paste functie voor images op internet zou je afbeeldingen in je OS moeten kunnen opslaan op je clipboard als BASE64 tekst en die vervolgens moeten kunnen plakken op het web. In deze Wiki bijvoorbeeld. Dat ie in ieder geval op die manier automatisch 'geupload' wordt bij het saven van je pagina.
+* Klok die een sinus achterlaat per wijzer met een pennetje op een voorbijscrollende rol. [[http://www.cs.sbcc.net/%7Ephysics/flash/optics/phasors4.html|1]]. Misschien wel leuk om ook de klepel/pendulum te registreren. En ook de terugkerende cycli in het jaar.
+* Gisteravond (17-11-2007) bedacht ik dat het ontzettend fijn kan zijn om een soort grafische editor a la aquabrowser/mindmapping te gebruiken om een wiki in te vullen. Ik kan me voorstellen dat wanneer je in bijvoorbeeld Flex een editor maakt die gebruik maakt van graven dat je dan een super gebruiksvriendelijke en snelle Wiki editor kunt maken.
+* Het idee van Harmen van een soort hyperhypertext waarbij ieder (relevant) woord in een tekst linkt naar alle pagina's waarop dat woord voorkomt. Of als rollover menu of als een stapel semi transparante 'A4'tjes' die waarbij de woorden op elkaar gestapeld zijn. 
 
 ====== Links to this page ======
 {{backlinks>.}}
