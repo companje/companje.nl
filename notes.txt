@@ -1,2 +1,2 @@
 ====== Notes ======
-[[https://help.ubuntu.com/community/SwitchingToUbuntu/FromWindows|Switching to Ubuntu from Windows]]
+*[[https://help.ubuntu.com/community/SwitchingToUbuntu/FromWindows|Switching to Ubuntu from Windows]]
