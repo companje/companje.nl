@@ -7,4 +7,4 @@ Others are simply interested without belonging to one of these categories.</bloc
 
 [[http://www.makingelectronicthingiesinamsterdam.nl]]
 
-I attended a workshop here on [[Forth TV]] in [[2007]] and visited some of the monthly meetings where in one of them [[http://fritzing.org|Fritzing]] was presented.
+I attended a workshop here on [[electronics:Forth TV]] in [[dates:2007]] and visited some of the monthly meetings where in one of them [[http://fritzing.org|Fritzing]] was presented.
