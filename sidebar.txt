@@ -20,6 +20,7 @@ tpl_searchform();
 *[[Math]]
 *[[Travel]]
 *[[Events]]
+*[[Tech]]
 *[[Art]]
 *[[Ideas]]
 *[[Friends:]]
