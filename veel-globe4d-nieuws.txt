@@ -1,17 +1,23 @@
 ====== Veel Globe4D nieuws! ======
-Er is een hoop nieuws wat betreft Globe4D. Ten eerste is versie 3 van de software bijna af. Deze nieuwe versie maakt gebruik van openFrameworks, een C++ framework vergelijkbaar met Processing maar dan een stuk sneller.
 
-Verder is het grote nieuws dat Globe4D vanaf begin februari in de vaste collectie van het Natuurhistorisch Museum Maastricht wordt opgenomen. Oftewel, het eerste exemplaar is echt verkocht. Alles is rond!
+==== Eureka! ====
+{{ http://www.globe4d.com/wp-content/uploads/2008/03/eureka%21.png?150|Globe4D in Eureka!}}Eureka!, a Dutch scientific magazine did an [[http://www.physics.leidenuniv.nl/eureka/pdf-magazines/eureka20.pdf|article on Globe4D]] which is now available as PDF. Two pages about our four-dimensional globe with detailed information about how it all started and about our future plans.
 
-Om te vieren dat er één verkocht is hebben we maar besloten er meteen 3 te laten bouwen. We hebben contact met Hal 3 Projects die momenteel voor ons de modellen produceren.
+==== Carribean Cinekid ====
+Cinekid (The Netherlands) and The Back Lot (Suriname) organize a film and new media festival in Paramaribo, Suriname. Globe4D will be there as part of the festival from April 3rd till 6th.
 
-Verder zijn we gisteren nog bij NEMO geweest, die hebben grote plannen voor volgend jaar en wij van Globe4D denken met hen mee.
+==== Surfspot TV ====
+{{ http://www.globe4d.com/wp-content/uploads/2008/03/surfspot.png|Globe4D at SurfspotTV}}During [[http://www.magevents.nl/ipon|IPON 2008]], APS IT-diensten from The Netherlands did a documentary on the fair for SurfspotTV with a nice item about Globe4D. It's online available now at [[http://v3.quadiatv.com/pres/|Surfspot TV]] or as [[http://portal.quadia.nl/template/podcast/SurfJournaal/Surf_Journaal3.m4v|video podcast]].
 
-Ook hebben we nog rond de tafel gezeten met Hans van Maarel, een cartograaf die het wel ziet zitten om ons te helpen bij het in kaart brengen van een veranderd wereldbeeld sinds de ontdekkingsreizen.
+==== Innovaction Fair, Italy ====
+Globe4D has been exhibited at InnovAction, Italy in February. The third InnovAction Fair of Knowledge, Ideas and Innovation was a big success. In total 45,000 visitors attended the fair and thousands of them got to play and learn from one of the four currently existing Globe4D models.
 
-Tenslotte heb ik ook weer een heleboel nieuwe Globe4D experimenten gedaan waarvan ik binnenkort wel weer even nieuwe filmpjes online zal zetten. Alvast een voorproefje hier van een nieuw interface idee gebaseerd op een rapport van ESA uit november 2006.
+==== Museum for Natural history in Maastricht ====
+Since February, one of our Globe4D models is on permanent display in Maastricht in The Netherlands. First as part of the China Dino exhibition in Centre Céramique. After April as part of the collection of the Museum for Natural History in Maastricht.
 
-{{http://www.companje.nl/wp-content/uploads/2007/11/globe4d-esa-changing-earth-2.jpg}}
-{{tag>Globe4D Museums}}
+{{http://www.globe4d.com/wp-content/uploads/2008/03/chinadino.jpg|Globe4D at China Dino in Maastricht}}
+
+{{tag>Globe4D}}
+
 
 ~~DISCUSSION~~
