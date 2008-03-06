@@ -18,6 +18,7 @@ tpl_searchform();
 *[[Flex & Flash]]
 *[[Electronics]]
 *[[Math]]
+*[[Museums]]
 *[[Travel]]
 *[[Events]]
 *[[Tech]]
