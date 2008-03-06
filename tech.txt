@@ -21,3 +21,5 @@
 {{backlinks>Electronics}}
 
 
+== Linux ==
+* [[tech:Problem booting Vista after installing Ubuntu]]
