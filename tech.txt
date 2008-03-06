@@ -24,4 +24,4 @@
 == Linux ==
 * [[tech:Problem booting Vista after installing Ubuntu]]
 * [[Using multiple monitors for in Ubuntu]]
-* [[Installing Code::Blocks on Ubuntu]]
+* [[Installing Code-Blocks on Ubuntu]]
