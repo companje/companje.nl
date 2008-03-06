@@ -5,8 +5,9 @@
 * Klok die een sinus achterlaat per wijzer met een pennetje op een voorbijscrollende rol. [[http://www.cs.sbcc.net/%7Ephysics/flash/optics/phasors4.html|1]]. Misschien wel leuk om ook de klepel/pendulum te registreren. En ook de terugkerende cycli in het jaar.
 * Gisteravond (17-11-2007) bedacht ik dat het ontzettend fijn kan zijn om een soort grafische editor a la aquabrowser/mindmapping te gebruiken om een wiki in te vullen. Ik kan me voorstellen dat wanneer je in bijvoorbeeld Flex een editor maakt die gebruik maakt van graven dat je dan een super gebruiksvriendelijke en snelle Wiki editor kunt maken.
 * Het idee van Harmen van een soort hyperhypertext waarbij ieder (relevant) woord in een tekst linkt naar alle pagina's waarop dat woord voorkomt. Of als rollover menu of als een stapel semi transparante 'A4'tjes' die waarbij de woorden op elkaar gestapeld zijn. 
-*armbandjes van vroeger fluoriserend die je zo om je arm kon slaan.
-Wellicht te combineren met epaper??? Teken je eigen print.
+*armbandjes van vroeger fluoriserend die je zo om je arm kon slaan. Wellicht te combineren met epaper??? Teken je eigen print.
+*Experiment waarbij ik alles wat ik in m'n huis heb staan te koop zet voor de emotionele waarde. Alles wat je hebt opnieuw inventariseren en op waarde inschatten.
+
 
 ====== Links to this page ======
 {{backlinks>.}}
