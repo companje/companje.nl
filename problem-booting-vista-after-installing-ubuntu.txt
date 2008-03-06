@@ -9,11 +9,11 @@ Units = cylinders of 16065 * 512 = 8225280 bytes
 Disk identifier: 0xc0534fd9
 
    Device Boot      Start         End      Blocks   Id  System
-/dev/sda1   *           1       31983   256900609    7  HPFS/NTFS
-/dev/sda2           33799       60802   216902656    7  HPFS/NTFS
-/dev/sda3           31984       33716    13920322+  83  Linux
-/dev/sda4           33717       33798      658665    5  Extended
-/dev/sda5           33717       33798      658633+  82  Linux swap / Solaris
+ /dev/sda1   *           1       31983   256900609    7  HPFS/NTFS
+ /dev/sda2           33799       60802   216902656    7  HPFS/NTFS
+ /dev/sda3           31984       33716    13920322+  83  Linux
+ /dev/sda4           33717       33798      658665    5  Extended
+ /dev/sda5           33717       33798      658633+  82  Linux swap  / Solaris
 
 Partition table entries are not in disk order
 
@@ -23,7 +23,7 @@ Units = cylinders of 16065 * 512 = 8225280 bytes
 Disk identifier: 0x5c875c87
 
    Device Boot      Start         End      Blocks   Id  System
-/dev/sdb1   *           1       36484   293056296+  42  SFS
+ /dev/sdb1   *           1       36484   293056296+  42  SFS
 
 Disk /dev/sdc: 320.0 GB, 320072933376 bytes
 255 heads, 63 sectors/track, 38913 cylinders
@@ -31,4 +31,4 @@ Units = cylinders of 16065 * 512 = 8225280 bytes
 Disk identifier: 0x52baeaa3
 
    Device Boot      Start         End      Blocks   Id  System
-/dev/sdc1               1       38914   312570168+  42  SFS
+ /dev/sdc1               1       38914   312570168+  42  SFS
