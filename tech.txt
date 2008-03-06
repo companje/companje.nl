@@ -23,3 +23,4 @@
 
 == Linux ==
 * [[tech:Problem booting Vista after installing Ubuntu]]
+* [[Installing multiple monitors for in Ubuntu]]
