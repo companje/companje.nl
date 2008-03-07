@@ -48,8 +48,17 @@ Inventarisatie van onderwerpen die aan bod zouden kunnen komen in een TOKO sessi
     * webdesign, sql, php, javascript, html
     * premiere, after-effects, codecs 
 
-
-
+====== Participants ======
+* Harmen Zijp
+* Diana Wildschut
+* Rick Companje
+* Erik Groen
+* Lucas Steenhuis
+* Nicolette Lelieveld
+* Danica Mast
+* Theo van Delft
+* Jeroen Zijp
+* Maarten Lamers
 
  ===== TOKO sessie 1 =====
 27-2-2008
@@ -62,8 +71,6 @@ In deze sessie heb ik een introductie gegeven over Processing, een veelzijdige p
 
 {{blog:2008:03:workshop1.jpg?550}}
 
-
-
 ===== TOKO sessie 2 =====
 5-3-2008
 Deze sessie ging over een aantal concepten die handig zijn bij gestructureerd programmeren (arrays, pointers, classes) en de vormen die ze aannemen in verschillende programmeertalen (processing/java, c/c++, pascal/delphi, php...).
@@ -72,7 +79,3 @@ This time we went into structural programming. We started with assembly code (by
 
 ===== TOKO sessie 3 =====
 About existing libraries/toolkits (for ie. C++ or Processing) and how they help you not to re-invent the wheel.
-
-
-
-
