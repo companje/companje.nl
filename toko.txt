@@ -12,19 +12,18 @@ De eerste sessie is op woensdag 27 februari 2008. Rick Companje zal dan een intr
 
 We zullen deze taal gebruiken om wegwijs te worden in een aantal basis programmeertechnieken. Het is ook een uitstekende opstap naar andere programmeertalen als java of C++. Het enige wat je voor deze workshop mee moet nemen is een laptop. Halverwege de avond wordt er gekookt of gesnackt.
 
+
 ===== TODO =====
 Inventarisatie van onderwerpen die aan bod zouden kunnen komen in een TOKO sessie:
 
-gestructureerd programmeren
-
+=== gestructureerd programmeren ===
     * processing
     * ide's
     * pointers/by ref, arrays, classes
     * callbacks, events, streams
     * toolkits: gui ala fltk, gtk, openframeworks, processing, opengl, etc 
 
-software specials
-
+== software specials ==
     * dataset conversie
     * grafisch werk: matrix transformaties
     * 3d programmeren
@@ -35,15 +34,13 @@ software specials
     * crossplatform: linux, mac, windows
     * compiler optimalisatie 
 
-hardware
-
+=== hardware ===
     * mcu-programmeren
     * rfid
     * theremin
     * foutzoeken in elektronica 
 
-basic skills
-
+=== basic skills ===
     * flash, action script
     * photoshop
     * webdesign, sql, php, javascript, html
