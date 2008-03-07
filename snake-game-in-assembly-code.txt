@@ -1,50 +1,14 @@
 ====== Snake game in assembly code ======
 GSnake is een in assembly geschreven grafische Snake variant die ik heb gemaakt. Heel lang heb ik gedacht dat de originele sourcecode verloren was gegaan maar op 14-11-2007 ontdekte ik in een mapje met de naam ASMLAB een kopie van de source.
 
- SNAKE.COM v1.00  by Rick Companje 17/12/1996
- Copyright (C) 1996  TMR Software Productions
- The last update was on 06/01/97 at 22:37:07
+<blockquote>SNAKE.COM v1.00  by Rick Companje 17/12/1996
+Copyright (C) 1996  TMR Software Productions
+The last update was on 06/01/97 at 22:37:07</blockquote>
 
-{{toko:gsnake.jpg|GSNAKE.COM - Snake in Assembly Code}}
-
-== Dirlisting ==
-<pre>\2005\School\MTS TI\1ste en 2e semester\ASMLAB
-14-11-2007  03:36    <DIR>          .
-14-11-2007  03:36    <DIR>          ..
-26-12-1996  18:00               868 1ANOTHER.DB
-26-12-1996  18:00             1.009 1DEAD.DB
-26-12-1996  18:00               924 1STOMPIC.DB
-23-06-1998  23:34             4.345 ALAB.CFG
-13-12-1996  13:03           313.168 ALAB.EXE
-02-12-1996  14:40             2.736 COMPILE.EXE
-14-11-2007  03:36                 0 dirlist.txt
-23-11-1996  20:22           214.737 E2A.EXE
-23-11-1996  20:22           198.500 E2C.EXE
-31-05-1994  07:22             8.424 EXE2BIN.EXE
-23-06-1998  23:31                83 GSN.BAT
-23-06-1998  23:34            49.366 GSNAKE.ASM
-23-06-1998  23:31            49.349 GSNAKE.BAK
-23-06-1998  23:34            38.250 GSNAKE.COM
-23-06-1998  23:34               103 GSNAKE.MAP
-23-06-1998  23:34            32.492 GSNAKE.OBJ
-26-12-1996  18:00               557 HAPPYPIC.DB
-19-12-1996  16:21             1.965 HEX.ASM
-29-12-1996  23:16            70.083 MENU.DB
-15-01-1997  21:55                59 MOUSECUR.COM
-15-01-1997  21:03                41 NEWL.COM
-26-12-1996  18:00               566 NORMPIC.DB
-28-12-1996  21:43             2.353 PALETTE.DB
-28-12-1996  21:43            20.007 PICTURE.DB
-31-12-1996  17:12                81 PSPR.BAT
-31-12-1996  17:17             2.382 PUTSPR.ASM
-31-12-1996  17:15                89 PUTSPR.COM
-03-03-1993  08:01            57.776 TEMC.EXE
-26-12-1996  17:46             3.792 TOTAAL.LBM
-              29 bestand(en)        1.074.105 bytes
-</pre>
+{{toko:gsnake.jpg?550|GSNAKE.COM - Snake in Assembly Code}}
 
 == Sourcecode ==
-<pre>
+<code asm>
 code    Segment para public 'code'
         assume cs:code,ds:code,es:code
         locals                          ; remove if you want to assemble
@@ -1191,5 +1155,5 @@ endif
      
 code    Ends
 End     start
-</pre>
+</code>
 
