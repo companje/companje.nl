@@ -73,6 +73,7 @@ In deze sessie heb ik een introductie gegeven over Processing, een veelzijdige p
 
 
 
+
 ===== TOKO sessie 2 - Structural Programming =====
 5-3-2008
 Deze sessie ging over een aantal concepten die handig zijn bij gestructureerd programmeren (arrays, pointers, classes) en de vormen die ze aannemen in verschillende programmeertalen (processing/java, c/c++, pascal/delphi, php...).
@@ -81,7 +82,7 @@ This time we went into structural programming. We started with assembly code (by
 
 *[[http://giplt.nl/?id=4|Creating a minimalist C/C++ development environment]]
 *http://en.wikipedia.org/wiki/Obfuscated_code
-*[[Snake game in Assembly Code]]
+*[[:Snake game in Assembly Code]]
 
 ===== TOKO sessie 3 =====
 About existing libraries/toolkits (for ie. C++ or Processing) and how they help you not to re-invent the wheel.
