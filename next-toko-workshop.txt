@@ -1,7 +1,7 @@
 ====== Next TOKO workshop ======
 Next TOKO workshop will be at Wednesday 12th from 15h till 22h.
 
-Last time we went into structural programming. We started with assembly code (by Maarten) soon followed by pointers and ended with object oriented programming in c++ and did a lot in between.
+Last time we went into structural programming. We started with assembly code (by Maarten) soon followed by pointers (by Harmen) and ended with object oriented programming in c++ (by me) and did a lot in between.
 
 Next session will be about existing libraries/toolkits (for ie. C++ or Processing) and how they help you not to re-invent the wheel.
 
