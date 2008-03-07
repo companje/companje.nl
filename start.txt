@@ -71,11 +71,14 @@ In deze sessie heb ik een introductie gegeven over Processing, een veelzijdige p
 
 {{blog:2008:03:workshop1.jpg?550}}
 
-===== TOKO sessie 2 =====
+
+===== TOKO sessie 2 - Structural Programming =====
 5-3-2008
 Deze sessie ging over een aantal concepten die handig zijn bij gestructureerd programmeren (arrays, pointers, classes) en de vormen die ze aannemen in verschillende programmeertalen (processing/java, c/c++, pascal/delphi, php...).
 
 This time we went into structural programming. We started with assembly code (by Maarten) soon followed by pointers (by Harmen) and ended with object oriented programming in c++ (by me) and did a lot in between.
+
+*[[http://giplt.nl/?id=4|Creating a minimalist C/C++ development environment]]
 
 ===== TOKO sessie 3 =====
 About existing libraries/toolkits (for ie. C++ or Processing) and how they help you not to re-invent the wheel.
