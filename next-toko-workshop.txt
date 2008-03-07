@@ -1,5 +1,5 @@
 ====== Next TOKO workshop ======
-Next [[TOKO]] workshop will be at Wednesday 12th from 15h till 22h.
+Next [[:TOKO]] workshop will be at Wednesday 12th from 15h till 22h.
 
 Last time we went into structural programming. We started with assembly code (by Maarten) soon followed by pointers (by Harmen) and ended with object oriented programming in c++ (by me) and did a lot in between.
 
