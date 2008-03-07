@@ -3,10 +3,10 @@ De TOKO is een bijeenkomst om je te verdiepen in verschillende technieken, hard-
 
 Het idee is dat er steeds iemand wordt uitgenodigd om een workshop te geven over een bepaald (techniek) onderwerp waar je misschien wel eens over gehoord hebt, of al wel wat over weet maar niet het fijne, of waar je het fijne al wel over weet maar toch steeds tegen een aantal dingen aan loopt. In eerste instantie zal het veel over software en programmeren gaan, later willen we het uitbreiden met hardware/elektronica en eventueel ook andere (mechanische) technieken. Voor een lijst met mogelijke onderwerpen zie hier onder. Degene die de workshop vormgeeft kan iemand zijn van uit de groep geinteresseerden die we hopen te verzamelen, of een externe crack op een bepaald gebied.
 
-De workshops zijn vooralsnog op een vaste plek en op een vaste tijd: op woensdagen van 15 uur tot 22 uur, in de War. Wil je erbij zijn, laat het ons weten. Kun je er deze keer niet bij zijn maar wil je wel op de hoogte gehouden worden van volgende keren, laat het ook weten. Wil je er niet bij zijn maar ken je iemand die dat misschien wel wil, zegt het voort. Wil je niks, doe dan ook niks. TOKO mailt via toko at dewar dot nl
+De workshops zijn vooralsnog op een vaste plek en op een vaste tijd: op woensdagen van 15 uur tot 22 uur, in de War. Wil je erbij zijn, laat het ons weten. Kun je er deze keer niet bij zijn maar wil je wel op de hoogte gehouden worden van volgende keren, laat het ook weten. Wil je er niet bij zijn maar ken je iemand die dat misschien wel wil, zegt het voort. TOKO mailt via toko at dewar dot nl
  
 {{blog:2008:03:dewar.jpg}}
- 
+
 ===== TOGO =====
 De eerste sessie is op woensdag 27 februari 2008. Rick Companje zal dan een introductie geven in Processing, een veelzijdige programmeertaal, met een eenvoudige gebruiksaanwijzing waarin je snel ideeen kunt uitwerken, of zoals de website van Processing vermeldt:
 
@@ -50,6 +50,13 @@ Inventarisatie van onderwerpen die aan bod zouden kunnen komen in een TOKO sessi
 
 
 
+ ===== TOKO sessie 1 =====
+27-2-2008
+In deze sessie heb ik een introductie gegeven over Processing, een veelzijdige programmeertaal, met een eenvoudige gebruiksaanwijzing waarin je snel ideeen kunt uitwerken, of zoals de website van Processing vermeldt:
+
+"Processing is an open source programming language and environment for people who want to program images, animation, and interactions. It is used by students, artists, designers, researchers, and hobbyists for learning, prototyping, and production. It is created to teach fundamentals of computer programming within a visual context and to serve as a software sketchbook and professional production tool. Processing is developed by artists and designers as an alternative to proprietary software tools in the same domain."
+
+{{blog:2008:03:workshop1.jpg?550}}
 
 
 
