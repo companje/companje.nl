@@ -84,7 +84,12 @@ This time we went into structural programming. We started with assembly code (by
 *http://en.wikipedia.org/wiki/Obfuscated_code
 *[[:Snake game in Assembly Code]]
 
+
 ===== TOKO sessie 3 =====
 About existing libraries/toolkits for C++ or Processing and how they help you not to re-invent the wheel.
 *[[http://processing.org/reference/libraries/index.html|Processing Libraries]]
 *[[http://www.fltk.org/|FLTK]]
+*[[http://www.opengl.org/|OpenGL]]
+*[[http://www.ogre3d.org/|Ogre3D]]
+*[[http://opencvlibrary.sourceforge.net/|OpenCV]]
+*[[http://openframeworks.cc/|OpenFrameworks]]
