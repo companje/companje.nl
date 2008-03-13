@@ -48,6 +48,7 @@ Inventarisatie van onderwerpen die aan bod zouden kunnen komen in een TOKO sessi
     * webdesign, sql, php, javascript, html
     * premiere, after-effects, codecs 
 
+
 ====== Participants ======
 * Harmen Zijp
 * Diana Wildschut
@@ -59,6 +60,7 @@ Inventarisatie van onderwerpen die aan bod zouden kunnen komen in een TOKO sessi
 * Theo van Delft
 * Jeroen Zijp
 * Maarten Lamers
+* Stelios Giannoulis
 
  ===== TOKO sessie 1 =====
 27-2-2008
