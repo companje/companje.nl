@@ -1,5 +1,5 @@
 ====== Cool Cucumbers; Privacy, Security & RFID ======
-MediaTechnology and Art&Science present an informal evening with inspiring speakers, discussions and drinks.
+{{  blog:2008:03:cool-cucumbers:komkommer03.jpg?200|}}MediaTechnology and Art&Science present an informal evening with inspiring speakers, discussions and drinks.
 
 This is the first of a series of evenings that aim to inspire, refresh and surprise you with topics that explore the boundaries of art and technology. This first evening is focused around ambient technology; computers that are all around us, yet invisible. What ethical questions do these developments raise? How does art use or abuse these emerging technologies? And what do cucumbers have to do with it?
 
