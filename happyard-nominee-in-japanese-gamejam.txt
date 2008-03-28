@@ -10,8 +10,8 @@ http://www.nieuwsbank.nl/inp/2008/03/18/G016.htm
 http://www.florusvanbeek.nl/blog 
 http://www.blog.thingsdesigner.com 
 http://www.rockabit.com 
-http://www.happyard.jp
-http://www.gamejam.nl
+http://www.happyard.jp 
+http://www.gamejam.nl 
 
 {{tag>Games Tech Mobile Interaction}}
 
