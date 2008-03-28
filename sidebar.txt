@@ -28,7 +28,7 @@ tpl_searchform();
 *[[Art]]
 *[[Ideas]]
 *[[Study]]
-*[[Projects]]
+*[[Projects:]]
 *[[Fun]]
 *[[Blog]]
 *[[Photos]]
