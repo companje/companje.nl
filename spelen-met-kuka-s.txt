@@ -15,6 +15,9 @@ Thanks again for last week, and see you all soon,
 
 Wiki for the robot club: [[http://www.companje.nl/robotclub/|Robotclub Wiki]]
 
-{{tag>Tech Art Electronics}}
+===== Movie of our experiments =====
+{{youtube>large:jM7crZU6kyM}}
+
+{{tag>Robots Tech Art Electronics}}
 
 ~~DISCUSSION~~
