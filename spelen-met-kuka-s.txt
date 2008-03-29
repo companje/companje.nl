@@ -15,8 +15,14 @@ Thanks again for last week, and see you all soon,
 
 Wiki for the robot club: [[http://www.companje.nl/robotclub/|Robotclub Wiki]]
 
+
 ===== Movie of our experiments =====
 {{youtube>large:jM7crZU6kyM}}
+
+===== More info =====
+On the Robotclub Wiki I wrote down some info about how to communicate with the [[http://www.companje.nl/robotclub/doku.php?id=scorbot_er-v_plus|Scorbot ER-V Plus with Processing or C++]].
+
+
 
 {{tag>Robots Tech Art Electronics}}
 
