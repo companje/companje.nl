@@ -1,25 +1,11 @@
 ====== Tech ======
 
-==Programmeertalen==
-*[[Sanyo Basic]]
-*[[QBasic]]
-*[[MSX Basic]]
-*[[Assembly]]
-*[[Pascal]]
-*[[Delphi]]
-*[[C++]]
-*[[Flash]]
-*[[Flex]]
-*[[Forth]]
-*[[Java]]
-*[[Processing]]
-*[[HTML]]
-*[[Javascript]]
-*[[Visual Basic]]
+==Programming==
+See [[Programming]]  
+{{backlinks>Programming}}
 
 ==Electronics==
 {{backlinks>Electronics}}
-
 
 == Linux ==
 * [[tech:Problem booting Vista after installing Ubuntu]]
