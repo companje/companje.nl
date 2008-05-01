@@ -3,9 +3,11 @@ Globe4D is een vierdimensionale wereldbol: een installatie bestaande uit een bol
  
 {{en:globe4d:globe4d.jpg|Globe4D, Jurassic 180 million years ago}}
  
+
 ===== Meer info =====
 *http://www.globe4d.com
 *Globe4D is sinds Februari [[:2008]] opgenomen in de vaste collectie van het [[:Natuurhistorisch Museum Maastricht]].
+*Globe4D is een project van [[people:Rick Companje]], [[people:Nico van Dijk]], [[people:Hanco Hogenbirk]], [[people:Danica Mast]]
 
 English translation: [[Globe4D in English]]
 
