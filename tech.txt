@@ -5,8 +5,8 @@ See [[Programming]]
 {{backlinks>Programming}}  
 
 =====Electronics=====
-{{backlinks>Electronics}}
 See [[Electronics]]  
+{{backlinks>Electronics}}
 
 ===== Linux =====
 * [[tech:Problem booting Vista after installing Ubuntu]]
