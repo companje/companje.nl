@@ -4,7 +4,7 @@
 With this openFrameworks addon you can easily read values from multiple mouse devices. 
 
 You can find it here:
-[[http://companje.nl/downloads/openFrameworks/ofxManyMouse/addon_ofxManyMouse.zip|download addon (200KB)]]
+[[http://companje.nl/downloads/openFrameworks/ofxManyMouse/addon_ofxManyMouse.zip|download addon (200KB)]]  
 [[http://companje.nl/downloads/openFrameworks/ofxManyMouse/ofxManyMouseExample.zip|download example app (6.5MB)]] (in Code::Blocks on Win32)
 
 One things I really want to add in the future is event handling, being able to for example register for an onMouseDown event.
