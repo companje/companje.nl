@@ -1,5 +1,5 @@
 ====== C++ ======
-Since October [[2005]] I'm writing a lot C++. The [[Globe4D]] software is fully programmed in C++ using [[OpenFrameworks]] and [[OpenGL]].
+Since October [[Dates:2005]] I'm writing a lot C++. The [[Globe4D]] software is fully programmed in C++ using [[OpenFrameworks]] and [[OpenGL]].
 
 My favorite IDE's for writing C++ software:
 *[[CodeBlocks|Code::Blocks]] 
