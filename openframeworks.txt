@@ -1,5 +1,5 @@
 ====== OpenFrameworks ======
-Since I met [[Theodore Watson] at [[Cinekid 2007]] I'm aware of the power of openFrameworks. Since then I'm using it as base for the [[Globe4D]] software.
+Since I met [[Theodore Watson]] at [[Cinekid 2007]] I'm aware of the power of openFrameworks. Since then I'm using it as base for the [[Globe4D]] software.
 
 Those who like the philosophy of the [[Processing]] framework but prefer [[C++]] because of its speed really should check out openFrameworks.
 
