@@ -4,7 +4,7 @@ I have been working on a mini globe last week as an input device while I'm devel
 {{blog:miniglobe1024.jpg?550|}}
 
 **Second version**  
-{{blog:2008:05:globe4d-mini-globe.jpg?500|Mini Globe4D for testing purposes}}
+{{blog:2008:05:globe4d-mini-globe.jpg?550|Mini Globe4D for testing purposes}}
 
 
 {{tag>Globe4D Tech Experiments}}
