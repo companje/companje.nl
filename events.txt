@@ -2,6 +2,7 @@
 
 
 
+
 ===== 2008 =====
 *[[Bessensap 2008]] - Amsterdam
 *[[HappyChaos 2008]] - Amsterdam
@@ -10,8 +11,7 @@
 *[[Kshitij 2008]] - India
 *[[FITC Amsterdam 2008]] - Amsterdam
 *[[Innovaction 2008]] - Italy
-
-
+*...
 
 ===== 2007 =====
 *[[Wired NextFest 2007]] - Los Angeles
