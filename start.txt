@@ -1,24 +1,15 @@
-====== Friends ======
-This list is never complete, so please let me know if you want to be added.
+====== Globe4D ======
+Globe4D is een vierdimensionale wereldbol: een installatie bestaande uit een bol met daaromheen een ring. Op de bol wordt het aardoppervlak geprojecteerd en door aan de ring te draaien kan de tijd worden beïnvloed. Met Globe4D kun je dus tijdreizen. Je leert op een hele interactieve manier over de veranderingen die een planeet (in dit geval de aarde) doormaakt tijdens het verstrijken van de tijd. Zowel op korte als lange termijn. Snelle veranderingen als dag/nacht, seizoenen, waterstanden, vliegtuigroutes, verspreiding van volkeren etc.) als ook veranderingen die plaatsvinden over een veel langere periode: je kunt er namelijk 750 miljoen jaar mee terug in de tijd waarbij je een goed beeld krijgt van de continentale verschuiving die heeft plaatsgevonden. Door het tijdwiel de ene kant op te draaien reis je terug in de tijd, draai je de andere kant op dan kom je langzaam weer in het heden en kun je zelfs door tot in de toekomst!
+ 
+{{en:globe4d:globe4d.jpg|Globe4D, Jurassic 180 million years ago}}
+ 
 
-*[[Annica Peters]]
-*[[Kris Kobes]]
-*[[Dora Hermes]]
-*[[Ralph Kok]]
-*[[Sjoerd Kranendonk]]
-*[[Alex Reuneker]]
-*[[Michael de Vries]]
-*[[Arno Winkel]]
-*[[Lisa Dalhuijsen]]
-*[[Nico van Dijk]]
-*[[Danica Mast]]
-*[[Hanco Hogenbirk]]
-*[[Sander van der Graaf]]
-*[[Jedidjah Companje]]
-*[[Sylvain Vriens]]
-*[[De Spullenmannen]]
-*[[Rick Companje]]
+===== Meer info =====
+*http://www.globe4d.com
+*Globe4D is sinds Februari [[:2008]] opgenomen in de vaste collectie van het [[:Natuurhistorisch Museum Maastricht]].
+*Globe4D is een project van [[people:Rick Companje]], [[people:Nico van Dijk]], [[people:Hanco Hogenbirk]], [[people:Danica Mast]]
+*Artikel over Globe4D in [[Eureka]]
 
+English translation: [[Globe4D in English]]
 
-====== Links to this page ======
-{{backlinks>people}}
+{{tag>Globe4D}}
