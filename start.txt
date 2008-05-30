@@ -5,9 +5,9 @@ Globe4D is een vierdimensionale wereldbol: een installatie bestaande uit een bol
 \\
 ===== Meer info =====
 *http://www.globe4d.com
-*Globe4D is sinds Februari [[2008]] opgenomen in de vaste collectie van het [[Natuurhistorisch Museum Maastricht]].
-*Globe4D is een project van [[Rick Companje]], [[Nico van Dijk]], [[Hanco Hogenbirk]], [[Danica Mast]]
-*Artikel over Globe4D in [[Eureka]]
+*Globe4D is sinds Februari [[:2008]] opgenomen in de vaste collectie van het [[:Natuurhistorisch Museum Maastricht]].
+*Globe4D is een project van [[:Rick Companje]], [[:Nico van Dijk]], [[:Hanco Hogenbirk]], [[:Danica Mast]]
+*Artikel over Globe4D in [[:Eureka]]
 \\
 English translation: [[Globe4D in English]]
 
