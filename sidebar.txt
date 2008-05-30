@@ -34,7 +34,7 @@ tpl_searchform();
 *[[Photos]]
 *[[Dates]]
 *[[Notes]]
-*[[People:]]
+*[[People]]
 
 ==== My other pages ====
 *[[http://twitter.com/companje/|My Tweets on Twitter]]
