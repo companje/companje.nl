@@ -15,7 +15,7 @@ tpl_searchform();
 </php>
 
 ==== Categories ====
-*[[Globe4D:]]
+*[[Globe4D]]
 *[[Afstuderen:]]
 *[[Processing]]
 *[[Flex & Flash]]
