@@ -7,6 +7,9 @@
 * Laptop beeldscherm knippert / flikkert in Ubuntu. Mogelijke oplossing: Probeer bij Administration/Screen and Graphics de 'Intel Experimental mode' te veranderen in i810.
 * [[Using multiple monitors for in Ubuntu]]
 
+===== Terminal =====
+* find an application's location: whereis mozilla 
+
 ===== Arduino =====
 * [[http://javiervalcarce.es/wiki/Program_Arduino_with_AVR-GCC|Installing AVR-GCC for compiling and uploading C code to Arduino]]
 *[[http://javiervalcarce.es/wiki/TV_Video_Signal_Generator_with_Arduino|TV Video Signal Generator with Arduino]] 
