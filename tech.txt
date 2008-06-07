@@ -10,9 +10,11 @@ See [[Electronics]]
 
 
 
+
 ===== Linux =====
 * [[tech:Problem booting Vista after installing Ubuntu]]
 * [[Using multiple monitors for in Ubuntu]]
 * [[Installing Code-Blocks on Ubuntu]]
 * Log off: Ctrl Alt Backspace
 * Laptop beeldscherm knippert / flikkert in Ubuntu. Mogelijke oplossing: Probeer bij Administration/Screen and Graphics de 'Intel Experimental mode' te veranderen in i810.
+* [[Installing AVR-GCC for compiling c-code for Arduino|http://javiervalcarce.es/wiki/Program_Arduino_with_AVR-GCC]] 
