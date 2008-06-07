@@ -8,7 +8,9 @@ See [[Programming]]
 See [[Electronics]]  
 {{backlinks>Electronics}}
 
+
 ===== Linux =====
 * [[tech:Problem booting Vista after installing Ubuntu]]
 * [[Using multiple monitors for in Ubuntu]]
 * [[Installing Code-Blocks on Ubuntu]]
+* Log off: Ctrl Alt Backspace
