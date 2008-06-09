@@ -1,9 +1,9 @@
 ====== Media Technology ======
 The Media Technology master-of-science (MSc) program is a place where students are encouraged to formulate their own scientific questions, and to translate personal inspirations and curiosities into their own research projects. To answer these questions, students create actual products, because we are convinced that by doing and creating, new scientific insights into the underlying question are encountered.
-
+\\
 The program is a joint initiative of Leiden University’s computer science institute (LIACS) and the Faculty of Creative and Performing Arts. Leiden is located in The Netherlands, between Amsterdam and The Hague.
-
-http://mediatechnology.leiden.edu/
+\\
+http://mediatechnology.leiden.edu/  
 The Netherlands
 
 ===== Info =====
