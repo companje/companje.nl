@@ -10,13 +10,16 @@ http://mediatechnology.leiden.edu/
 *[[Globe4D]] is ontwikkeld tijdens het introductie vak [[Multimedia Systems]] binnen de studie Media Technology.
 *Ik ben gestart met Media Technology in september [[2005]].
 
-===== Vakken op Media Technology =====
-*[[Multimedia Systems]]
-*[[Creative Research]]
-*[[Human Computer Interaction]]
-*[[Science Practice]]
-*[[Cool Science]]
-*[[Sound, Space and Interaction]]
-*[[Image and Vision]]
-*[[Second Semester Project]]
+
+===== Courses I took at Media Technology =====
+*[[Multimedia Systems]] by [[Michael Lew]]
+*[[Creative Research]] by [[Bas Haring]] and [[Maarten Lamers]]
+*[[Human Computer Interaction]] by [[Fonds Verbeek]]
+*[[Science Practice]] by [[Bas Haring]]
+*[[Sound, Space and Interaction]] by [[Edwin van der Heide]]
+*[[Image and Vision]] by [[Joost Rekveld]]
+*[[Second Semester Project]] supervised by [[Charlotte Lemmens]] and [[Joost Broekens]]
+*[[Physical Computing]] or [[Hardware]] by [[Paul Jansen Klomp]]
+*[[Artificial Intelligence for cocktailparties]] by [[Maarten Lamers]]
+*[[Playing to the gallery]] workshop by [[Charlotte Lemmens]]
 *...
