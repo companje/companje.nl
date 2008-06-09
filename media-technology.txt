@@ -14,18 +14,22 @@ http://mediatechnology.leiden.edu/
 
 ===== Courses I took at Media Technology =====
 *[[Multimedia Systems]] by [[Michael Lew]]
+*[[Introduction to Programming]] by [[Maarten Lamers]]
+*[[Multimedia Programming]]
+*[[Sense Interference]] by [[Robin Deirkauf]]
 *[[Creative Research]] by [[Bas Haring]] and [[Maarten Lamers]]
-*[[Human Computer Interaction]] by [[Fonds Verbeek]]
+*[[Human Computer Interaction]] by [[Fons Verbeek]]
 *[[Science Practice]] by [[Bas Haring]]
-*[[Sound, Space and Interaction]] by [[Edwin van der Heide]]
-*[[Image and Vision]] by [[Joost Rekveld]]
+*[[Sound, Space &Interaction]] by [[Edwin van der Heide]]
+*[[Image & Vision: Embodied Vision]] by [[Joost Rekveld]]
 *[[Second Semester Project]] supervised by [[Charlotte Lemmens]] and [[Joost Broekens]]
-*[[Physical Computing]] or [[Hardware]] by [[Paul Jansen Klomp]]
-*[[Artificial Intelligence for cocktailparties]] by [[Maarten Lamers]]
+*[[Hardware & Physical Computing]] by [[Paul Jansen Klomp]]
+*[[Meta Media]] by [[Taco Stolk]]
+*[[Research Seminar: Artificial Intelligence]] by [[Maarten Lamers]]
+*[[Web Technology]] by [[Maarten Lamers]]
 *[[Playing to the gallery]] workshop by [[Charlotte Lemmens]]
 *[[Language and Text]] by [[Crit Cremers]]
 *[[Tools]] workshop by [[Ianus Keller]]
-*...
 
 ===== Elective courses I took =====
 *[[Making Art of Databases]] by [[Joel Ryan]], [[Crit Cremers]] and [[Jan Peter van der Wenden]]
