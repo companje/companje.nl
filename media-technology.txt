@@ -11,6 +11,7 @@ http://mediatechnology.leiden.edu/
 *Ik ben gestart met Media Technology in september [[2005]].
 
 
+
 ===== Courses I took at Media Technology =====
 *[[Multimedia Systems]] by [[Michael Lew]]
 *[[Creative Research]] by [[Bas Haring]] and [[Maarten Lamers]]
@@ -22,4 +23,10 @@ http://mediatechnology.leiden.edu/
 *[[Physical Computing]] or [[Hardware]] by [[Paul Jansen Klomp]]
 *[[Artificial Intelligence for cocktailparties]] by [[Maarten Lamers]]
 *[[Playing to the gallery]] workshop by [[Charlotte Lemmens]]
+*[[Language and Text]] by [[Crit Cremers]]
+*[[Tools]] workshop by [[Ianus Keller]]
 *...
+
+===== Elective courses I took =====
+*[[Making Art of Databases]] by [[Joel Ryan]], [[Crit Cremers]] and [[Jan Peter van der Wenden]]
+*[[Liever de Gifbeker]] asspecten van Academische Vorming by [[André Klukhuhn]]
