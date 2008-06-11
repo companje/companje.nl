@@ -12,9 +12,9 @@
 * find an application's location: whereis firefox
 * reboot the system: reboot 
 
+
 ===== Shell scripts =====
 *.sh extensie
-*#!/bin/bash als eerste regel
 *execute commando: xterm -e /home/fileToExecute
 
 ===== Arduino =====
