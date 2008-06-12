@@ -7,8 +7,6 @@
 * Laptop beeldscherm knippert / flikkert in Ubuntu. Mogelijke oplossing: Probeer bij Administration/Screen and Graphics de 'Intel Experimental mode' te veranderen in i810.
 * [[Using multiple monitors for in Ubuntu]]
 
-
-
 ===== Terminal =====
 * find an application's location: whereis firefox
 * reboot the system: reboot 
@@ -17,6 +15,9 @@
 ===== Shell scripts =====
 *.sh extensie
 *execute commando: xterm -e /home/fileToExecute
+
+===== Network directory sharing =====
+*You can use NFS for this with adding the share to /etc/exports on sharing computer. You can then mount to that from the client computer by creating an empty folder (ie. /mnt/testfolder) and then say: mount 192.1680.104:/home/rick/srcfolder /mnt/testfolder.
 
 ===== Arduino =====
 * [[http://javiervalcarce.es/wiki/Program_Arduino_with_AVR-GCC|Installing AVR-GCC for compiling and uploading C code to Arduino]]
