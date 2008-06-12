@@ -8,10 +8,11 @@
 * [[Using multiple monitors for in Ubuntu]]
 
 
+
 ===== Terminal =====
 * find an application's location: whereis firefox
 * reboot the system: reboot 
-
+* to tar a folder (with all subfolders and files): tar czf backup.tgz thefolder
 
 ===== Shell scripts =====
 *.sh extensie
