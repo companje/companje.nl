@@ -15,10 +15,11 @@ I compiled this code with a C compiler, so not from the Arduino IDE but you can 
 #include <avr/io.h>
 #include <util/delay.h>
 
-#define sync(u)  PORTD = 0b00000000; usec(u);  // 0 0   0.0V - Sync level  0
-#define black(u) PORTD = 0b01000000; usec(u);  // 0 1   0.3V - Black level 64
-#define grey(u)  PORTD = 0b10000000; usec(u);  // 1 0   0.6V - Grey level  128
-#define white(u) PORTD = 0b11000000; usec(u);  // 1 1   1.0V - White level 192
+//using digital output pins 6 & 7
+#define sync(u)  PORTD = 0b00000000; usec(u);  // 0 0  0.0V - Sync - 0
+#define black(u) PORTD = 0b01000000; usec(u);  // 0 1  0.3V - Black - 64
+#define grey(u)  PORTD = 0b10000000; usec(u);  // 1 0  0.6V - Grey - 128
+#define white(u) PORTD = 0b11000000; usec(u);  // 1 1  1.0V - White - 192
 
 #define usec(u) _delay_us(u);
 #define vsync() sync(28); black(5); sync(28); black(5);
