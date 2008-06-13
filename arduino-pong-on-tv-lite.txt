@@ -1,7 +1,12 @@
 ====== Arduino Pong on TV (lite) ======
 {{  blog:2008:06:arduino-pong-television-signal.jpg?200|Arduino Pong Composite Television Signal}}
 I did some experiments with the Arduino board to let it generate television signal and play a pong game. I gave up at the point where I succeeded to have a ball bouncing to the walls, no player interaction yet but may be it's somehow useful for you. It shows at least that it is quite a job to get the timing right for generating the video signal. Since the Arduino chip is relatively slow it forces you to keep your code as compact as possible. Every micro second counts.
+
 I compiled this code with a C compiler, so not from the Arduino IDE but you can easily translate it to Arduino by adding a setup() and a loop() function and pasting the code into there.
+
+**Resources:**
+* [[http://javiervalcarce.es/wiki/Program_Arduino_with_AVR-GCC|Installing AVR-GCC for compiling and uploading C code to Arduino]]
+*[[http://javiervalcarce.es/wiki/TV_Video_Signal_Generator_with_Arduino|TV Video Signal Generator with Arduino]] 
 
 <code c>
 //Arduino-Pong-TV-signal experiment by Rick Companje, 9-June-2008
@@ -61,16 +66,9 @@ int main() {
 		whitelines(10);  //p2
 		
 		blanklines(18); //offscreen bottom
-		
 	}
-	
 }
 </code>
-
-**Resources:**
-* [[http://javiervalcarce.es/wiki/Program_Arduino_with_AVR-GCC|Installing AVR-GCC for compiling and uploading C code to Arduino]]
-*[[http://javiervalcarce.es/wiki/TV_Video_Signal_Generator_with_Arduino|TV Video Signal Generator with Arduino]] 
-
 
 {{tag>Tech Electronics C++ Programming Retro}}
 
