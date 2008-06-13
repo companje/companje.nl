@@ -1,12 +1,12 @@
 ====== Arduino Pong on TV (lite) ======
-  {{blog:2008:06:arduino-pong-television-signal.jpg?200|Arduino Pong Composite Television Signal}}I did some experiments with the Arduino board to let it generate television signal and play a pong game. I gave up at the point where I succeeded to have a ball bouncing to the walls, no player interaction yet but may be it's somehow useful for you. It shows at least that it is quite a job to get the timing right for generating the video signal. Since the Arduino chip is relatively slow it forces you to keep your code as compact as possible. Every micro second counts.
+{{  blog:2008:06:arduino-pong-television-signal.jpg?200|Arduino Pong Composite Television Signal}}
+I did some experiments with the Arduino board to let it generate television signal and play a pong game. I gave up at the point where I succeeded to have a ball bouncing to the walls, no player interaction yet but may be it's somehow useful for you. It shows at least that it is quite a job to get the timing right for generating the video signal. Since the Arduino chip is relatively slow it forces you to keep your code as compact as possible. Every micro second counts.
 I compiled this code with a C compiler, so not from the Arduino IDE but you can easily translate it to Arduino by adding a setup() and a loop() function and pasting the code into there.
-
 
 <code c>
 //Arduino-Pong-TV-signal experiment by Rick Companje, 9-June-2008
-#define F_CPU 16000000L
 
+#define F_CPU 16000000L
 #include <avr/io.h>
 #include <util/delay.h>
 
@@ -50,17 +50,17 @@ int main() {
 		by1+=dy;
 		by2=200-by1;
 		
-		
 		vsync9();
-		blanklines(45);
+
+		blanklines(45); //offscreen top
 		
-		whitelines(14); //p1
+		whitelines(14);  //p1
 		blanklines(by1); //no ball
-		ball(bx1,1,bx2);
+		ball(bx1,1,bx2); //ball
 		blanklines(by2); //no ball
-		whitelines(10); //p2
+		whitelines(10);  //p2
 		
-		blanklines(18);
+		blanklines(18); //offscreen bottom
 		
 	}
 	
