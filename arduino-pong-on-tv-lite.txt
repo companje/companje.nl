@@ -45,26 +45,26 @@ int main() {
 	DDRD = 0xff; //set port d to output
 	
 	while (1) {
-		
+
+		//ball horizontal movement
 		if (bx1>40 || bx1<0) dx=-dx; 
 		bx1+=dx;
 		bx2=40-bx1;
-		
+
+		//ball vertical movement
 		if (by1>190 || by1<1) dy=-dy; 
 		by1+=dy;
 		by2=200-by1;
 		
-		vsync9();
+		vsync9(); //vertical sync, beam returns to left-top
 
-		blanklines(45); //offscreen top
-		
+		blanklines(45);  //offscreen top
 		whitelines(14);  //p1
 		blanklines(by1); //no ball
 		ball(bx1,1,bx2); //ball
 		blanklines(by2); //no ball
 		whitelines(10);  //p2
-		
-		blanklines(18); //offscreen bottom
+		blanklines(18);  //offscreen bottom
 	}
 }
 </code>
