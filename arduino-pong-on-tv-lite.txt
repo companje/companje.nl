@@ -5,8 +5,8 @@ I did some experiments with the Arduino board to let it generate television sign
 I compiled this code with a C compiler, so not from the Arduino IDE but you can easily translate it to Arduino by adding a setup() and a loop() function and pasting the code into there.
 
 **Resources:**
-* [[http://javiervalcarce.es/wiki/Program_Arduino_with_AVR-GCC|Installing AVR-GCC for compiling and uploading C code to Arduino]]
 *[[http://javiervalcarce.es/wiki/TV_Video_Signal_Generator_with_Arduino|TV Video Signal Generator with Arduino]] 
+* [[http://javiervalcarce.es/wiki/Program_Arduino_with_AVR-GCC|Installing AVR-GCC for compiling and uploading C code to Arduino]]
 
 <code c>
 //Arduino-Pong-TV-signal experiment by Rick Companje, 9-June-2008
