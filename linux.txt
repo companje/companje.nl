@@ -37,3 +37,7 @@
 
 ===== C++ =====
 *Time time; time.fileNameTag()
+
+===== Hardware / USB =====
+*zoeken naar usb apparaten met 'ph' in de naam: 'lsusb -vvvv | grep ph' (-vvvv is extra verbose)
+
