@@ -15,5 +15,5 @@ then
   exit
 fi
 
-/home/tdc/TDC/protected/devel/stick/stick 1>>log.txt 2>&1
+./executable 1>>log.txt 2>&1
 </code>
