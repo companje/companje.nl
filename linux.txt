@@ -34,3 +34,6 @@
 
 ===== Scite =====
 *[[My favorite Scite User properties]]
+
+===== C++ =====
+*Time time; time.fileNameTag()
