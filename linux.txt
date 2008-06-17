@@ -16,10 +16,11 @@
 *You can use 'sudo apt-get install thunderbird' for installing software like thunderbird or any other program.
 *You can use 'sudo apt-build install libfreetype6' for installing a library. You can also use apt-get for that by saying: 'apt-get build-dep libfreetype6'
 
+
 ===== Shell scripts =====
 *.sh extensie
 *execute commando: xterm -e /home/fileToExecute
-
+*[[Checking errorcode / errorlevel / return value in a shell script]]
 
 ===== Network directory sharing =====
 *"If you want to mount your NFS and samba file systems on ubuntu client machines you need to use the /etc/fstab file (short for filesystem table) keeps track of filesystems that you want to mount in static locations."
