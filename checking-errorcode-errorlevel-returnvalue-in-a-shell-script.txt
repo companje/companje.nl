@@ -1,0 +1,19 @@
+====== Checking-errorcode-errorlevel-returnvalue-in-a-shell-script ======
+
+<code>
+#!/bin/sh
+
+export TOPDIR=`pwd`/..
+
+echo Compiling...
+
+make
+
+if [ $? -ne 0 ]
+then
+  echo Error compiling...
+  exit
+fi
+
+/home/tdc/TDC/protected/devel/stick/stick 1>>log.txt 2>&1
+</code>
