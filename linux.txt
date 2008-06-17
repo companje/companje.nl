@@ -7,10 +7,12 @@
 * Laptop beeldscherm knippert / flikkert in Ubuntu. Mogelijke oplossing: Probeer bij Administration/Screen and Graphics de 'Intel Experimental mode' te veranderen in i810.
 * [[Using multiple monitors for in Ubuntu]]
 
+
 ===== Terminal =====
 * find an application's location: whereis firefox
 * reboot the system: reboot 
 * to tar a folder (with all subfolders and files): tar czf backup.tgz thefolder
+* search for a phrase in all files: 'grep something *'
 
 ===== Installing software or libraries =====
 *You can use 'sudo apt-get install thunderbird' for installing software like thunderbird or any other program.
