@@ -1,0 +1,31 @@
+====== Scite User Properties file ======
+
+<code>
+#check.if.already.open=1
+
+open.filter=\
+$(all.files)\
+All Source|$(source.files)|\
+
+line.margin.visible=1
+line.margin.width=1+
+
+position.width=1280
+position.height=800
+
+output.horizontal.size=300
+
+default.file.ext=.txt
+
+find.files=*.c *.cxx *.h *.cpp *.cc *.txt
+
+tabsize=2
+indent.size=2
+use.tabs=0
+#indent.auto=1
+indent.automatic=1
+indent.opening=0
+indent.closing=0
+tab.indents=0
+
+</code>
