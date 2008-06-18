@@ -14,6 +14,7 @@
 * reboot the system: reboot 
 * to tar a folder (with all subfolders and files): tar czf backup.tgz thefolder
 * search for a phrase in all files: 'grep something *'
+* to start ubuntu without GUI empty '/etc/X11/default-display-manager'. If you want to start it from the shell type 'gdm'
 
 ===== Installing software or libraries =====
 *You can use 'sudo apt-get install thunderbird' for installing software like thunderbird or any other program.
