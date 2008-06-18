@@ -6,7 +6,7 @@
 ===== Display problems / tips =====
 * Laptop beeldscherm knippert / flikkert in Ubuntu. Mogelijke oplossing: Probeer bij Administration/Screen and Graphics de 'Intel Experimental mode' te veranderen in i810.
 * [[Using multiple monitors for in Ubuntu]]
-
+* displayconfig-gtk start screen and graphic preferences
 
 ===== Terminal =====
 * find an application's location: whereis firefox
