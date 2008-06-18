@@ -3,7 +3,7 @@
 * [[Installing Code-Blocks on Ubuntu]]
 * Killing the xserver ('fast logout'): Ctrl Alt Backspace
 * 'gksudo gedit /boot/grub/menu.lst' to edit the ubuntu boot menu
-* Booting from USB drive: http://www.pendrivelinux.com/2008/04/09/usb-ubuntu-804-installation-from-windows/
+* [[http://www.pendrivelinux.com/2008/04/09/usb-ubuntu-804-installation-from-windows/|Booting from USB drive]]
 
 ===== Display problems / tips =====
 * Laptop beeldscherm knippert / flikkert in Ubuntu. Mogelijke oplossing: Probeer bij Administration/Screen and Graphics de 'Intel Experimental mode' te veranderen in i810.
