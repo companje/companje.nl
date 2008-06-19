@@ -1,0 +1,6 @@
+====== iPhone ======
+
+===== Ideas for iPhone apps =====
+*It would be nice to have a webinterface to the iphone phonebook.  Eventually with the ability to change details, do imports, exports.
+
+
