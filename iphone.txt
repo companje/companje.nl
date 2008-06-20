@@ -1,6 +1,7 @@
 ====== iPhone ======
 
 *[[http://www.iphoneclub.nl/5345/iphone-gekocht-wat-nu-handleiding-beginners/|Goede beginners handleiding voor de iPhone]]
+*[[http://www.iphoneclub.nl/3788/ihome-startpagina-voor-de-iphone/iHome startpagina voor de iPhone]]
 
 ===== Ideas for iPhone apps =====
 *It would be nice to have a webinterface to the iphone phonebook.  Eventually with the ability to change details, do imports, exports. Or is this already implemented in the Contacts application for Mac, and/or Windows Address book / Outlook?
