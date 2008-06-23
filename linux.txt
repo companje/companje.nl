@@ -48,3 +48,6 @@
 ===== Hardware / USB =====
 *zoeken naar usb apparaten met 'ph' in de naam: 'lsusb -vvvv | grep ph' (-vvvv is extra verbose)
 
+===== Advanced =====
+*To disable gdm, from Gnome click System/Administration/Services and unclick Graphical Logic Manager (gdm) 
+
