@@ -19,11 +19,11 @@
 * to start ubuntu without GUI empty '/etc/X11/default-display-manager'. If you want to start it from the shell type 'gdm'
 * If you want to use 'locate' and it gives the error 'can not open `/var/lib/mlocate/mlocate.db': No such file or directory' then run 'sudo updatedb' and it will work again.
 
+
 ===== Installing software or libraries =====
 *You can use 'sudo apt-get install thunderbird' for installing software like thunderbird or any other program.
 *You can use 'sudo apt-build install libfreetype6' for installing a library. You can also use apt-get for that by saying: 'apt-get build-dep libfreetype6'
-
-
+*Use 'sudo dpkg -i filename.deb' to install a download .deb file.
 
 ===== Shell scripts =====
 *.sh extensie
