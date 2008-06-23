@@ -52,6 +52,8 @@
 ===== Advanced =====
 *To disable gdm, from Gnome click System/Administration/Services and unclick Graphical Logic Manager (gdm) 
 
+
 ===== Video =====
 *Exporteer de eerste 9 files uit een AVI naar losse jpg's: mplayer test.avi -vo jpeg -ao null -frames 9
 *Speel test.avi af in een x11 venster, maar het kan ook bijv. een video-out zijn: mplayer test.avi -vo x11
+*[[http://www.sjoerd-visser.demon.nl/mplayer/mencoder.html|Goede Nederlandse handleiding over video]]
