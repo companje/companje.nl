@@ -11,6 +11,7 @@
 * displayconfig-gtk start screen and graphic preferences
 
 
+
 ===== Terminal =====
 * find an application's location: whereis firefox
 * reboot the system: reboot 
@@ -18,7 +19,7 @@
 * search for a phrase in all files: 'grep something *'
 * to start ubuntu without GUI empty '/etc/X11/default-display-manager'. If you want to start it from the shell type 'gdm'
 * If you want to use 'locate' and it gives the error 'can not open `/var/lib/mlocate/mlocate.db': No such file or directory' then run 'sudo updatedb' and it will work again.
-
+*cat - Concatenates files, or standard input, to standard output: cat newmpeg.txt >> daily.txt
 
 ===== Installing software or libraries =====
 *You can use 'sudo apt-get install thunderbird' for installing software like thunderbird or any other program.
