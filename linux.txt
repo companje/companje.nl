@@ -35,10 +35,15 @@
 *execute commando: xterm -e /home/fileToExecute
 *[[Checking errorCode, errorLevel, returnValue in a shell script]]
 
-===== Network directory sharing =====
+
+===== Networking =====
 *"If you want to mount your NFS and samba file systems on ubuntu client machines you need to use the /etc/fstab file (short for filesystem table) keeps track of filesystems that you want to mount in static locations."
 *You can use NFS for this with adding the share to /etc/exports on sharing computer. You can then mount to that from the client computer by creating an empty folder (ie. /mnt/testfolder) and then say: mount 192.1680.104:/home/rick/srcfolder /mnt/testfolder.
 
+*Na een wijziging in het /etc/networking/interfaces moet er een restart worden gegeven
+<code>sudo /etc/init.d/networking restart</code>
+*Het instellen kan ook met ifconfig.
+<code>sudo ifconfig eth0 192.168.1.50 netmask 255.255.255.0 up</code>
 
 ===== Arduino =====
 * [[http://javiervalcarce.es/wiki/Program_Arduino_with_AVR-GCC|Installing AVR-GCC for compiling and uploading C code to Arduino]]
