@@ -36,9 +36,11 @@
 *[[Checking errorCode, errorLevel, returnValue in a shell script]]
 
 
+
 ===== Networking =====
 *"If you want to mount your NFS and samba file systems on ubuntu client machines you need to use the /etc/fstab file (short for filesystem table) keeps track of filesystems that you want to mount in static locations."
-*You can use NFS for this with adding the share to /etc/exports on sharing computer. You can then mount to that from the client computer by creating an empty folder (ie. /mnt/testfolder) and then say: mount 192.1680.104:/home/rick/srcfolder /mnt/testfolder.
+*You can use NFS for this with adding the share to /etc/exports on sharing computer. You can then mount to that from the client computer by creating an empty folder (ie. /mnt/testfolder) and then say:
+<code>mount 192.1680.104:/home/rick/srcfolder /mnt/testfolder</code>
 
 *Na een wijziging in het /etc/networking/interfaces moet er een restart worden gegeven
 <code>sudo /etc/init.d/networking restart</code>
