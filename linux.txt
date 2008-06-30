@@ -17,6 +17,7 @@
 
 
 
+
 ===== Terminal =====
 * find an application's location: 
 <code>whereis firefox</code>
@@ -37,7 +38,8 @@
 <code>ps -C naam</code>
 *een proces beeindigen:
 <code>sudo kill 5943</code>
-
+*copy a directory:
+<code>cp -r /home/hope/files/* /home/hope/backup</code>
 
 ===== Installing software or libraries =====
 *You can use 'sudo apt-get install thunderbird' for installing software like thunderbird or any other program.
