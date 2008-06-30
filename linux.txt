@@ -13,16 +13,25 @@
 
 
 
+
 ===== Terminal =====
-* find an application's location: whereis firefox
-* reboot the system: reboot 
-* to tar a folder (with all subfolders and files): tar czf backup.tgz thefolder
-* search for a phrase in all files: 'grep something *'
+* find an application's location: 
+<code>whereis firefox</code>
+* reboot the system: 
+<code>reboot</code>
+* to tar a folder (with all subfolders and files): 
+<code>tar czf backup.tgz thefolder</code>
+* search for a phrase in all files:
+<code>grep something *</code>
 * to start ubuntu without GUI empty '/etc/X11/default-display-manager'. If you want to start it from the shell type 'gdm'
-* If you want to use 'locate' and it gives the error 'can not open `/var/lib/mlocate/mlocate.db': No such file or directory' then run 'sudo updatedb' and it will work again.
-*cat - Concatenates files, or standard input, to standard output: cat newmpeg.txt >> daily.txt
-*'ps -A' geeft alle processen weer met hun PID's
-*'ps -C naam' zoekt naar naam
+* What to do when 'locate' gives the following error 'can not open `/var/lib/mlocate/mlocate.db': No such file or directory'?
+<code>sudo updatedb</code>
+* cat - Concatenates files, or standard input, to standard output: 
+<code>cat newmpeg.txt >> daily.txt</code>
+*Alle processen weergeven met hun PID's
+<code>ps -A</code>
+*zoekt naar naam binnen de actieve processen
+<code>ps -C naam</code>
 *'sudo kill 5943' beeindigd een process
 
 
