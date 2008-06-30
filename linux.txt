@@ -14,6 +14,7 @@
 
 
 
+
 ===== Terminal =====
 * find an application's location: 
 <code>whereis firefox</code>
@@ -32,7 +33,8 @@
 <code>ps -A</code>
 *zoekt naar naam binnen de actieve processen
 <code>ps -C naam</code>
-*'sudo kill 5943' beeindigd een process
+*een proces beeindigen:
+<code>sudo kill 5943</code>
 
 
 ===== Installing software or libraries =====
