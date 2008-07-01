@@ -2,7 +2,8 @@
 * [[tech:Problem booting Vista after installing Ubuntu]]
 * [[Installing Code-Blocks on Ubuntu]]
 * Killing the xserver ('fast logout'): Ctrl Alt Backspace
-* 'gksudo gedit /boot/grub/menu.lst' to edit the ubuntu boot menu
+* to edit the ubuntu boot menu
+<code>gksudo gedit /boot/grub/menu.lst</code>
 * [[http://www.pendrivelinux.com/2008/04/09/usb-ubuntu-804-installation-from-windows/|Booting from USB drive]]
 
 
