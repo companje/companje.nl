@@ -44,7 +44,8 @@
 <code>sudo kill 5943</code>
 *copy a directory:
 <code>cp -r /home/hope/files/* /home/hope/backup</code>
-
+*show last system messages:
+<code>tail /var/log/messages</code>
 
 
 ===== Installing software or libraries =====
@@ -75,6 +76,11 @@
 <code>sudo /etc/init.d/networking restart</code>
 *Het instellen kan ook met ifconfig.
 <code>sudo ifconfig eth0 192.168.1.50 netmask 255.255.255.0 up</code>
+*Networkadapter down:
+<code>ifdown eth1</code>
+*Networkadapter up:
+<code>ifup eth1</code>
+
 
 ===== Arduino =====
 * [[http://javiervalcarce.es/wiki/Program_Arduino_with_AVR-GCC|Installing AVR-GCC for compiling and uploading C code to Arduino]]
