@@ -19,9 +19,12 @@
 
 
 
+
 ===== Terminal =====
 * find an application's location: 
 <code>whereis firefox</code>
+* find a file's location:
+<code>locate menu.lst</code>
 * reboot the system: 
 <code>reboot</code>
 * to tar a folder (with all subfolders and files): 
