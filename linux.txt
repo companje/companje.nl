@@ -48,7 +48,8 @@
 <code>cp -r /home/hope/files/* /home/hope/backup</code>
 *show last system messages:
 <code>tail /var/log/messages</code>
-
+*get computer name / hostname
+<code>hostname</code>
 
 ===== Installing software or libraries =====
 *You can use 'sudo apt-get install thunderbird' for installing software like thunderbird or any other program.
