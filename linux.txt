@@ -51,6 +51,7 @@
 *get computer name / hostname
 <code>hostname</code>
 
+
 ===== Installing software or libraries =====
 *You can use 'sudo apt-get install thunderbird' for installing software like thunderbird or any other program.
 *You can use 'sudo apt-build install libfreetype6' for installing a library. You can also use apt-get for that by saying: 'apt-get build-dep libfreetype6'
@@ -61,6 +62,8 @@
 <code>alien -i filename.rpm</code>
 *In case of the following message //"error while loading shared libraries: libstdc++-libc6.2-2.so.3: cannot open shared object file: No such file or directory"// while installing/running something install the glibc library:
 <code>sudo apt-get build-dep glibc</code>
+*7-Zip installeren op Ubuntu
+<code>sudo apt-get install p7zip</code>
 
 ===== Shell scripts =====
 *.sh extensie
