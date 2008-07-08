@@ -70,6 +70,7 @@
 
 
 
+
 ===== Networking =====
 *"If you want to mount your NFS and samba file systems on ubuntu client machines you need to use the /etc/fstab file (short for filesystem table) keeps track of filesystems that you want to mount in static locations."
 *You can use NFS for this with adding the share to /etc/exports on sharing computer. You can then mount to that from the client computer by creating an empty folder (ie. /mnt/testfolder) and then say:
@@ -84,6 +85,7 @@
 *Networkadapter up:
 <code>ifup eth1</code>
 
+*For permanent changes in your network address change your network configuration file '/etc/network/interfaces'. [[http://www.cyberciti.biz/tips/howto-ubuntu-linux-convert-dhcp-network-configuration-to-static-ip-configuration.html|more info]]
 
 ===== Arduino =====
 * [[http://javiervalcarce.es/wiki/Program_Arduino_with_AVR-GCC|Installing AVR-GCC for compiling and uploading C code to Arduino]]
