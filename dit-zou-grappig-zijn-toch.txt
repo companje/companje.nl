@@ -13,6 +13,28 @@ $cd /
 $rm -rf
 </code>
 
+of
+
+<code>
+login as: admin
+password: ********
+Wrong password
+password: ****
+Wrong password
+password: *********
+Wrong password
+password: *****
+Wrong password
+password: *******
+Wrong password
+password: ********
+Wrong password... but ok...
+this time you'll come away with it...
+
+admin@local$ 
+admin@local# ~
+#sudo rm -rf
+</code>
 {{tag>Fun Nerd}}
 
 
