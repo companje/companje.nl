@@ -5,7 +5,8 @@ Ik vond zojuist dat ik grappigs bedacht had:
 login as: admin
 password: ******
  
-Eigenlijk heeft u niet het goede wachtwoord ingevoerd... maar vooruit dan maar, we zien het dit keer door de vingers.
+Eigenlijk heeft u niet het goede wachtwoord ingevoerd... 
+maar vooruit dan maar, we zien het dit keer door de vingers.
 
 $admin@local ~
 $cd /
