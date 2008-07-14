@@ -8,9 +8,9 @@ password: ******
 Eigenlijk heeft u niet het goede wachtwoord ingevoerd... 
 maar vooruit dan maar, we zien het dit keer door de vingers.
 
-$admin@local ~
-$cd /
-$rm -rf
+admin@local# ~
+#cd /
+#rm -rf
 </code>
 
 of
