@@ -6,8 +6,9 @@
 
 *BSc Interaction Design
 *MSc Media Technology
-*Flex & Flash Developer
 *Interactive Media Designer
+*Multimedia Consultant
+*Flex & Flash Developer
 
 ==== Search ====
 <php>
