@@ -70,6 +70,7 @@ Ik heb dit overgenomen omdat het qua opbouw erg goed in elkaar zit. Kan ik wat v
 
 
 
+
 =====Data as a social object=====
 Mijn social object zou dus algemene data zijn. Alles wat je in de loop der jaren hebt verzameld, en waarmee je niet perse gemaakt hebt om te delen in tegenstelling tot blogposts:
 *filmpjes
@@ -105,8 +106,7 @@ Slifeshare makes it easy for you to express what's happening in your digital lif
 *[[Human Computation]]. Andermans data taggen terwijl er 'lekker' naar mag kijken, doorheen kunt lopen tag je zoveel mogelijk. Netals bij Google Image labels of [[ESP game]].
 *Boek: [[Bruce Sterling - Shaping things]]
 *[[Share the Unshared]]
-*Hoeveel doen mensen nog op hun HD binnenkort? Is m'n idee niet achterhaald voor het af is? Als iedereen alles al online doet, google docs enzo en dat ook niet gedeeld heeft wat heeft die HD er dan nog mee te maken?
-Toch groeien HD's nog steeds, je produceert nog steeds veel en het meeste daarvan komt niet online.
+*Hoeveel doen mensen nog op hun HD binnenkort? Is m'n idee niet achterhaald voor het af is? Als iedereen alles al online doet, google docs enzo en dat ook niet gedeeld heeft wat heeft die HD er dan nog mee te maken? Toch groeien HD's nog steeds, je produceert nog steeds veel en het meeste daarvan komt niet online.
 *Tip van [[Koert]]: Boek: [[Elise van Hoven - Recollecting Physical Objects]] (over herinneringen die fysieke objecten oproepen)
 *Eigenlijk is je HD een filter, een buffer waar alle ruwe data op staat en zelf kies je welke in aanmerking komen om te delen
 *Firefox plugin waarmee je relevante stukken tekst kunt selecteren en daarmee voeg je [[metadata]] omdat je voor jezelf de kern uit een verhaal haalt.
