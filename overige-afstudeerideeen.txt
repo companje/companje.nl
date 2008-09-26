@@ -152,3 +152,7 @@ Geometrische vormen en tijd
 
 =====Emotionele waarde=====
 *Experiment waarbij ik alles wat ik in m'n huis heb staan te koop zet voor de emotionele waarde. Alles wat je hebt opnieuw inventariseren en op waarde inschatten.
+
+===== Shephards tone =====
+A Shepard tone, named after Roger Shepard, is a sound consisting of a superposition of sine waves separated by octaves. When played with the base pitch of the tone moving upwards or downwards, it is referred to as the Shepard scale. This creates the auditory illusion of a tone that continually ascends or descends in pitch, yet which ultimately seems to get no higher or lower.[1]
+
