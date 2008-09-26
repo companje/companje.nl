@@ -69,6 +69,7 @@ Ik heb dit overgenomen omdat het qua opbouw erg goed in elkaar zit. Kan ik wat v
 *http://cl1-www2.suddenly.se/msn/innovate2/sniffer_innovate_hyperboard_450x240.html
 
 
+
 =====Data as a social object=====
 Mijn social object zou dus algemene data zijn. Alles wat je in de loop der jaren hebt verzameld, en waarmee je niet perse gemaakt hebt om te delen in tegenstelling tot blogposts:
 *filmpjes
@@ -95,6 +96,9 @@ Slifeshare makes it easy for you to express what's happening in your digital lif
 
 *Hans Rosling [http://futurefeeder.com/index.php/archives/2007/06/26/hans-rosling/] of [http://www.ted.com/index.php/talks/view/id/140]
 
+*[[http://www.nrcnext.nl/nieuws/wetenschap/article1183602.ece|Tip van Annica]]
+*[[http://www.opentaste.net|OpenTaste]] is an open standard for making your online persona portable. OpenTaste profiles allow you to capture your preferences, store them online, and share them --- or not --- with OpenTaste-enabled websites.
+
 *Er is zoveel data die prima gedeeld zou kunnen worden maar die in stoffige mappen op persoonlijke harddisks staat. Daar moet wat aan gedaan worden!
 *p2p backup: back me up, and I will back you up :-)
 *MyData.cc - http://mydata.cc ([[Creative Common]]) (volgens mij bestaat ie niet echt maar had ik die naam bedacht) maar domein is niet vrij.
@@ -109,6 +113,22 @@ Toch groeien HD's nog steeds, je produceert nog steeds veel en het meeste daarva
 *De [[Papierverscanneraar]] / scanner vs. schredder  (Je stopt iets in een apparaat dat lijkt op een papier versnipperaar maar in werkelijkheid wordt het gescand en direct online geplaatst klaar om te worden voorzien van beschrijving/metadata door de eigenaar maar ook misschien door anderen.
 *[[Screenhunter]] moet screenshots annoteren met tekst die binnen de selectie zichtbaar is en met evt. andere metadata zoals webadres waarvan het screenshot gemaakt is, naam van het window waarvan een screenshot gemaakt is, datum/tijd. Dit zou allemaal in [[EXIF]] data kunnen.
 *Koop m'n huis leeg punt nl en colums schrijven over wat je die week allemaal bent kwijt geraakt.
+
+==== Inkomende reactie ====
+'k Zat net even op je site te neuzen (altijd leuk!) en las je data-zoekt-baasje-verhandeling. Boeiend, boeiend. We hebben het er geloof ik op een van de feestjes wel eens over gehad, maar is het niet aardig als we daar op enig moment nog eens flinke boom over opzetten. Vooral omdat ik het op tal van punten totaal met je oneens ben!
+ 
+Even een paar gedachten.
+In een poging om jouw voorstel - zoveel mogelijk van onze data delen - wat plastischer te maken: vergelijk het met het openzetten van je huis. Dus niet pas opendoen als er wordt aangebeld, nee de deur wagenwijd open, net als alle kasten, lades, ordners, zolders en kelders. Dat doen we natuurlijk niet, gewoon omdat je huis als een soort van binnenste, en daarmee veiligste cirkel van je leven is.
+Een huis is beperkt van omvang. Als je zolder uitpuilt van de zooi moet je opruimen en gooi je die dingen weg waarvan je vermoedt dat je ze nimmer meer gebruikt, en waar je geen emotionele waarde (meer) aan hecht. Dat doen we niet met onze harde schijven. Om de eenvoudige reden dat de bewaarmogelijkheden daar veel oneindiger zijn. En is dat niet juist problematisch? Die onbeperkte ruimte zorgt ervoor dat we er amper toe gedwongen worden onze rommel op te ruimen. Gevolg: je hebt geen zicht meer op je eigen data, hebt nog allerlei data in bezit die we allang niet meer interessant vinden. Nodeloze rotzooi dus. Zou je pleidooi niet moeten zijn: zet een begrenzer op je dataruimte?
+Nog een ander argument: wie zit er te wachten op al die bergen en bergen aan data? Een voorbeeld. Komende zomer gaan we weer een wandeltocht maken (Ierland dit keer!). Ter voorbereiding hebben we al wat zitten googlen e.d. Daarbij stuitten we onder andere op reisverslagen van mensen die dezelfde tocht al eens gelopen hebben. Dat heeft voordelen: je kunt je nog beter voorbereiden, je kunt goede tips tegen het lijf lopen. Maar tegelijkertijd moet je je daarbij door allerlei non-informatie worstelen (over de blaren die de wandelaars opliepen, over de zon die scheen (of juist niet), over die vervelende mensen in de pub aan het eind van een wandeldag, over de tent die lekte). Daar zit ik helemaal niet op te wachten. Om dezelfde vergelijking nog maar eens te gebruiken: de zolder puilt uit van informatie en er wordt niet opgeruimd. En ook al is het handig zo'n reisverslag, is het ook niet heel aardig om je maar gewoon te laten verrassen daar in Ierland?
+Als je ziet hoeveel non-informatie er nu al bewust op internet wordt gezet, hoeveel troep zal er dan wel niet beschikbaar komen als iedereen zijn eigen data voor jan en alleman openzet!
+Kennis is van het allergrootste belang, maar het is misverstand te denken dat meer informatie ook meer kennis oplevert.
+Naarmate de informatieberg groeit wordt het vermogen om de juiste informatie te vinden belangrijker dan het hebben van de juiste kennis. En dat lijkt me geen goede ontwikkeling.
+ 
+Nu goed, zo maar wat gedachten die door m'n hoofd schoten bij je verhaal.
+Wilde je daar trouwens niet je scriptieonderwerp van maken?
+ 
+Misschien binnenkort nog eens doordiscussiëren? Vind het een enorm fascinerend onderwerp!
 
 =====Dialoog tussen Socrates en Plato=====
 *NB: Socrates schijnt zelf niks op papier gezet te hebben zelf dus eigenlijk is het een heel slecht voorbeeld. Misschien even een andere filosoof pakken die wel schreef.
