@@ -1,5 +1,6 @@
 ====== Afstuderen: Ruwe ideeën en aantekeningen ======
 
+
 =====What if people shared all their data?=====
 *What if people shared almost all their data
 *What if people shared all their digital data
@@ -7,7 +8,7 @@
 *What kind of data? Harddisks, sms, calender, email, photos, video
 *Why would people share their all data?
 *What problems occur when people share all their data?
-**Privacy issues
+**Privacy issues, dangerous...
 **Extreme amount of data. [[Peer to Peer]]?
 *ow should people share their data?
 *Would it be usefull if people did?
