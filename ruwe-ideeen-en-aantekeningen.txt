@@ -68,10 +68,6 @@ Ik heb dit overgenomen omdat het qua opbouw erg goed in elkaar zit. Kan ik wat v
 *http://www.zengestrom.com/blog/2007/04/this_easter_the.html
 *http://cl1-www2.suddenly.se/msn/innovate2/sniffer_innovate_hyperboard_450x240.html
 
-
-
-
-
 =====Data as a social object=====
 Mijn social object zou dus algemene data zijn. Alles wat je in de loop der jaren hebt verzameld, en waarmee je niet perse gemaakt hebt om te delen in tegenstelling tot blogposts:
 *filmpjes
@@ -95,6 +91,9 @@ Mijn social object zou dus algemene data zijn. Alles wat je in de loop der jaren
 Slifeshare makes it easy for you to express what's happening in your digital life. When you run the Slife desktop client, the top of your Slifeshare shows a visualization that depicts your daily computer activities graphically. Each small dot in your "Live View" represents a web page you visited, a chat session you had, an email you read, etc. If you are having a busy day, your "Live View" will be full of colorful tiny dots
 
 *3D Live Stats in action in Smartboard mode. Visualises what people search for on a global scale in real-time. [http://www.3dlivestats.com]
+
+*[[Share the Unshared]]
+*Hoeveel doen mensen nog op hun HD binnenkort? Is m'n idee niet achterhaald voor het af is? Als iedereen alles al online doet, google docs enzo en dat ook niet gedeeld heeft wat heeft die HD er dan nog mee te maken? Toch groeien HD's nog steeds, je produceert nog steeds veel en het meeste daarvan komt niet online.
 
 *Hans Rosling [http://futurefeeder.com/index.php/archives/2007/06/26/hans-rosling/] of [http://www.ted.com/index.php/talks/view/id/140]
 
@@ -187,6 +186,7 @@ Misschien binnenkort nog eens doordiscussiëren? Vind het een enorm fascinerend 
 *Wat zou je doen met de data van onbekenden?
 *Wat heeft dit voor gevolgen voor bedrijven?
 *Wat levert het jezelf op?
+
 *Heb je grotere kans om door te breken zo? 
 *Of vinden mensen je juist minder bijzonder als ze zien dat je hele denk proces wel meevalt?
 *Om wat voor data gaat het eigenlijk?
