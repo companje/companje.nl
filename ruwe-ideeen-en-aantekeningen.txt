@@ -114,7 +114,8 @@ Toch groeien HD's nog steeds, je produceert nog steeds veel en het meeste daarva
 *[[Screenhunter]] moet screenshots annoteren met tekst die binnen de selectie zichtbaar is en met evt. andere metadata zoals webadres waarvan het screenshot gemaakt is, naam van het window waarvan een screenshot gemaakt is, datum/tijd. Dit zou allemaal in [[EXIF]] data kunnen.
 *Koop m'n huis leeg punt nl en colums schrijven over wat je die week allemaal bent kwijt geraakt.
 
-==== Inkomende reactie ====
+
+===== Inkomende reactie =====
 'k Zat net even op je site te neuzen (altijd leuk!) en las je data-zoekt-baasje-verhandeling. Boeiend, boeiend. We hebben het er geloof ik op een van de feestjes wel eens over gehad, maar is het niet aardig als we daar op enig moment nog eens flinke boom over opzetten. Vooral omdat ik het op tal van punten totaal met je oneens ben!
  
 Even een paar gedachten.
