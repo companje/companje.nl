@@ -175,6 +175,7 @@ Misschien binnenkort nog eens doordiscussiëren? Vind het een enorm fascinerend 
 
 
 
+
 =====What if everybody would share their data?=====
 *Willen we dat wel?
 *Wat levert het op?
@@ -215,6 +216,11 @@ Misschien binnenkort nog eens doordiscussiëren? Vind het een enorm fascinerend 
 *Share your disk
 *All your discs are belong to us.
 *One global disc.
+
+===== Kennis manipuleren =====
+Manipuleren van iemands kennis over de wereld door m vragenlijsten te laten invullen en vervolgens fake results van anderen te laten zien. Ik verwacht dat wanneer je na afloop nog een keer de vragenlijst zou laten invullen dat ie dan de 'kennis' die hij heeft opgedaan door het bekijken van fake results meeneemt in z'n overwegingen. Volgens mij zou je uiteindelijk helemaal moeten kunnen sturen welke antwoorden iemand geeft. Eigenlijk is het gewoon iemand verkeerde nieuwe kennis aanleren...
+
+Ook interessant: Gaan mensen aan zichzelf twijfelen en laten ze zich leiden door fake hints als die zichtbaar zijn tijdens het invullen. En laten ze zich eerder leiden wanneer ze denken dat ze die fake results perongeluk/stiekem zien liggen.
 
 ===== Data donor by default =====
 Met Data Donor by Default bedoel ik het standaard afstaan van je data (na je dood?) tenzij anders aangegeven. Aan wie het afgestaan wordt weet ik nog niet. Ik gebruik de term binnen mijn [[Media Technology afstudeeronderzoek]].
