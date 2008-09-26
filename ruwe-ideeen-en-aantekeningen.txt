@@ -269,14 +269,4 @@ Met Data Donor by Default bedoel ik het standaard afstaan van je data (na je doo
 ===== Andere onderwerpen =====
 *[[Overige afstudeerideeen]]
 
-===== Verder =====
-*Boek: [[Bruce Sterling - Shaping things]]
-*[[Share the Unshared]]
-*Hoeveel doen mensen nog op hun HD binnenkort? Is m'n idee niet achterhaald voor het af is? Als iedereen alles al online doet, google docs enzo en dat ook niet gedeeld heeft wat heeft die HD er dan nog mee te maken? Toch groeien HD's nog steeds, je produceert nog steeds veel en het meeste daarvan komt niet online.
-*Tip van [[Koert]]: Boek: [[Elise van Hoven - Recollecting Physical Objects]] (over herinneringen die fysieke objecten oproepen)
-*Eigenlijk is je HD een filter, een buffer waar alle ruwe data op staat en zelf kies je welke in aanmerking komen om te delen
-*Firefox plugin waarmee je relevante stukken tekst kunt selecteren en daarmee voeg je [[metadata]] omdat je voor jezelf de kern uit een verhaal haalt.
-*De [[Papierverscanneraar]] / scanner vs. schredder  (Je stopt iets in een apparaat dat lijkt op een papier versnipperaar maar in werkelijkheid wordt het gescand en direct online geplaatst klaar om te worden voorzien van beschrijving/metadata door de eigenaar maar ook misschien door anderen.
-*[[Screenhunter]] moet screenshots annoteren met tekst die binnen de selectie zichtbaar is en met evt. andere metadata zoals webadres waarvan het screenshot gemaakt is, naam van het window waarvan een screenshot gemaakt is, datum/tijd. Dit zou allemaal in [[EXIF]] data kunnen.
-*Koop m'n huis leeg punt nl en colums schrijven over wat je die week allemaal bent kwijt geraakt.
 
