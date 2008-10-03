@@ -1,0 +1,4 @@
+==== Globe4D ====
+Iets binnen Globe4D en dan de data visualisatie kant van de interface:
+*Maakt het toevoegen van een extra ring het navigeren door datasets met periodieken mogelijk?
+*Zou er een Globe5D te bedenken zijn?
