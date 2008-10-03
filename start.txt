@@ -5,18 +5,23 @@
 
 
 
+
 ===== Nieuwe poging tot vinden van goede onderzoeksvraag =====
 3 oktober 2008: Bij Maarten geweest en gepraat over mijn afstuderen. Welke kant ik er mee op moet. We kwamen tot de conclusie dat ik best wel vast zit. Binnen mijn oorspronkelijke onderwerp (zie onder) maar ook wanneer ik zou besluiten een nieuwe weg in te gaan. Ik heb een brede interesse maar na die langs gelopen te hebben, hebben we nog niet een onderwerp kunnen vinden waaruit ik voor mezelf een gedegen wetenschappelijke vraag zou kunnen formuleren.
 
 Nu hebben we wel een selectie gemaakt waarbinnen ik het zou moeten gaan zoeken:
 
-*Iets binnen Globe4D en dan de data visualisatie kant van de interface.
-**Maakt het toevoegen van een extra ring het navigeren door complexere datasets mogelijk?
-**
+==== Globe4D ====
+*Iets binnen Globe4D en dan de data visualisatie kant van de interface:
+*Maakt het toevoegen van een extra ring het navigeren door datasets met periodieken mogelijk?
+*Zou er een Globe5D te bedenken zijn?
 
+==== Data ====
 *Een nieuwe data visualisatie methode die op willekeurige datasets toepasbaar is.
 *Iets met het platslaan van multidimensionale data.
-*Iets met persoonlijke herinneringen en ervaringen en het passief vastleggen ervan. (Zie ook mijn [[http://www.companje.nl/mediatech/Companje_(2007)_-_Who,_What,_Where,_When....pdf|AI paper]]
+
+==== Memory Thing ====
+*Iets met persoonlijke herinneringen en ervaringen en het passief vastleggen ervan door te kijken naar context. (Zie ook mijn [[http://www.companje.nl/mediatech/Companje_(2007)_-_Who,_What,_Where,_When....pdf|AI paper]]. Ook al zou ik dit 
 
 ===== Oorspronkelijk onderwerp =====
 Vraag: Wat als we allemaal zoveel mogelijk van onze data zouden delen?
