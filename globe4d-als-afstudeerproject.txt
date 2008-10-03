@@ -6,10 +6,14 @@ Iets binnen Globe4D en dan de data visualisatie kant van de interface:
 
 ===== Relevante artikelen =====
 
-==== Temporal data on spirals ====
+
+==== Temporal data (on spirals) ====
 *[[http://www.sims.berkeley.edu:8000/courses/is247/f05/readings/Carlis_SerialPeriodicData_UIST98.pdf|Interactive Visualization of Serial Periodic Data]]
 *[[http://ieg.ifs.tuwien.ac.at/~aigner/teaching/ws06/infovis_ue/papers/spiralgraph_weber01visualizing.pdf|Visualizing Time-Series on Spirals]]
 *[[http://www.ifs.tuwien.ac.at/~silvia/wien/vu-infovis/articles/WISE2000_silva.PDF|Visualization of Linear Time-Oriented Data: a Survey]]
 *[[http://www.donau-uni.ac.at/imperia/md/content/department/ike/ike_publications/2007/refereedjournalarticles/aigner_2007_cg_visualizing-time-oriented-data.pdf|Visualizing Time-Oriented Data – A Systematic View]]
 *[[http://www.cs.ucr.edu/~jessica/KDD04_VizTree.pdf|Visually Mining and Monitoring Massive Time Series]]
 *[[http://www.informatik.uni-rostock.de/~ct/Publications/iv05.pdf|3D Information Visualization for Time Dependent Data on Maps]]
+*[[http://www.ias.ac.in/sadhana/Pdf2006Apr/173.pdf|A survey of temporal data mining]]
+*[[http://ieg.ifs.tuwien.ac.at/projects/timeviz/aigner_thesis_proposal.pdf|Interactive Information Visualization
+to Explore Temporal Data (thesis proposal)]]
