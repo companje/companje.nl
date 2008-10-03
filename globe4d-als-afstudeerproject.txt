@@ -3,6 +3,8 @@ Iets binnen Globe4D en dan de data visualisatie kant van de interface:
 *Maakt het toevoegen van een extra ring het navigeren door datasets met periodieken mogelijk?
 *Zou er een Globe5D te bedenken zijn?
 
+*Op de ring van de globe zou je heel goed een spiraal vormige tijduitzetting kunnen afbeelden zoals die te zien zijn in [[dit]] artikel.
+
 
 ===== Relevante artikelen =====
 
