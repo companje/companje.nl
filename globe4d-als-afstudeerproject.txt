@@ -1,4 +1,9 @@
-==== Globe4D ====
+====== Globe4D ======
 Iets binnen Globe4D en dan de data visualisatie kant van de interface:
 *Maakt het toevoegen van een extra ring het navigeren door datasets met periodieken mogelijk?
 *Zou er een Globe5D te bedenken zijn?
+
+===== Relevante artikelen =====
+*[[http://www.sims.berkeley.edu:8000/courses/is247/f05/readings/Carlis_SerialPeriodicData_UIST98.pdf|Interactive Visualization of Serial Periodic Data]]
+*[[http://ieg.ifs.tuwien.ac.at/~aigner/teaching/ws06/infovis_ue/papers/spiralgraph_weber01visualizing.pdf|Visualizing Time-Series on Spirals]]
+*
