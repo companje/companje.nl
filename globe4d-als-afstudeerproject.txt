@@ -26,12 +26,13 @@ Stel je tijdschaal gaat over miljoenen jaren. Bepaalde terugkerende periodes zie
 ===== Globe4D voor het visualiseren van multi-dimensionale datasets =====
 *Astro data van Gijs Verdoes Kleijn
 
+
 ===== Globe4D als tool om NIEUWE patronen te ontdekken =====
 *Zoals de tool van [[http://www.youtube.com/watch?v=YpKbO6O3O3M|Hans Rosling]]
 *=Atlas4D idee waar ik al veel met de Spullenmannen over gepraat heb.
 *Met globe4d nu laten we feitjes zien over de aarde. Dingen die al ontdekt zijn, nu begrijpelijk gemaakt voor de gewone man. Wat ik wil is met Globe4D nieuwe patronen ontdekken. Net als Hans Rosling met zijn software.
-
-
+*Worldmapper
+*Wat kan ik onderzoeken met Globe4D wat op een andere manier niet te onderzoeken is (of moeilijk ofzo)
 
 ===== Relevante artikelen =====
 
