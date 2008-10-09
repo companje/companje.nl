@@ -19,9 +19,11 @@ Stel je tijdschaal gaat over miljoenen jaren. Bepaalde terugkerende periodes zie
 *Daar moet iets mee te doen zijn.
 *Wat voor data wil je oneindig weergeven? Een circulair speelveld van bijv. Game of Life. 
 
+
 ===== Tijd als spiraal op de ring =====
 *...
-
+*[[http://www.youtube.com/watch?v=EpBmSQFaGcw&feature=related|MmmTsss]]
+*...
 
 ===== Globe4D voor het visualiseren van multi-dimensionale datasets =====
 *Astro data van Gijs Verdoes Kleijn
