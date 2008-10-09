@@ -12,7 +12,7 @@
 =====Filosofie=====
 *[[Filosofie]]: Is het aantal dingen om over te denken eindig? Op een bepaald moment een eindig aantal bestaande/denkbare dingen? Zo ja, dan komt er een tijd dat op internet alle mogelijke gedachten en combi's voorkomen. Alle denkwijzen?
 
-Geometrische vormen en tijd
+===== Geometrische vormen en tijd =====
 *Nieuwe inzichten op het gebruik van geometrische vormen bij het tonen van data over tijd.
 **Dynamische data visualiseren op/in 3 dimensionale objecten (kubus, bol, cylinder). En interactie hebben met deze data
 *Boek schrijven "De cirkel, de bol en de cylinder voor dummies"
