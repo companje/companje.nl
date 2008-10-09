@@ -22,8 +22,9 @@ Stel je tijdschaal gaat over miljoenen jaren. Bepaalde terugkerende periodes zie
 ===== Tijd als spiraal op de ring =====
 *...
 
+
 ===== Globe4D voor het visualiseren van multi-dimensionale datasets =====
-*...
+*Astro data van Gijs Verdoes Kleijn
 
 ===== Globe4D als tool om NIEUWE patronen te ontdekken =====
 *Zoals de tool van [[http://www.youtube.com/watch?v=YpKbO6O3O3M|Hans Rosling]]
