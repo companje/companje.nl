@@ -5,48 +5,29 @@ Mijn vraag is nu is: **Kan Globe4D** ook gebruikt worden om **nieuwe patronen te
 \\
 Ik wil pleiten voor een toepassing binnen Globe4D waarmee multi-dimensionale datasets gevisualiseerd worden en waarmee het mogelijk is verschillende datasets met elkaar te kunnen vergelijken zodat het een **tool** wordt **om wetenschap mee te bedrijven ipv de resultaten over te brengen**.
 \\
+\\
 -------
 \\
-Iets binnen Globe4D en dan de data visualisatie kant van de interface:
+\\
+===== Subvragen over Globe4D als wetenschappelijke tool =====
 *Maakt het toevoegen van een extra ring het navigeren door datasets met periodieken mogelijk?
-*Zou er een Globe5D te bedenken zijn?
+*Wat zou je met een Globe5D kunnen en hoe zou dat er uit moeten zien?
+*Wat voor datasets zouden in aanmerking kunnen komen om te bestuderen?
+*Welke tools bestaan er al om wetenschap mee te bedrijven?
+**Statistiek programma's (SPSS etc)
+**Wiskunde programma's (Matlab etc)
+**...
+*Zijn er voorbeelden van andere direct-feedback-devices zoals Globe4D waarmee onderzoek gedaan wordt?
 
-Op de ring van de globe zou je heel goed een spiraal vormige tijduitzetting kunnen afbeelden zoals die te zien zijn in [[http://www2.sims.berkeley.edu/courses/is247/f05/readings/Carlis_SerialPeriodicData_UIST98.pdf|dit]] artikel (pg.7). Op de bol kun je dan een plek over aarde kiezen. Op de ring zie je dan data over die plek uitgezet in tijd. Door aan de ring te draaien kun je voor of achteruit in de tijd. De afbeelding op de ring verandert dan niet (draait evt wel mee) maar het beeld op de bal verandert wel omdat je de veranderingen op en om die plek hebt in hoe het er uitziet. Hmm.. niet duidelijk verwoord.
-
-Stel: Je hebt over een plek op aarde (zoals Amsterdam) een hele bak data verzameld over tijd. Bijvoorbeeld alle schilderijen die er ooit in Amsterdam zijn gemaakt. Op de ring zie een spiraal die bijv per eeuw/jaar/maand afrolt. Zo zie je de dichtheid van de data, de terugkerende events in de periodieken. Je zou bijv kunnen zien dat er rond eeuwwisselingen meer geschilderd is bijv... etc.
-Draai je aan de bal verschuif je het punt waar je naar kijkt. Je gaat bijv. naar Parijs om over parijs het zelfde op te vragen. Nu zou je eigenlijk ook Amsterdam en Parijs met elkaar willen kunnen vergelijken. Zou de data op de ring half transparant over elkaar heengelegd kunnen worden?
-Wat is de functie van de bal nog behalve het selecteren van een plaats? Bij bijvoorbeeld schilderijen veranderd de aarde niet als je aan de tijd draait.
-
-Een ander voorbeeld over bijvoorbeeld fossielen of diersoorten. 
-Stel je tijdschaal gaat over miljoenen jaren. Bepaalde terugkerende periodes zie je dan. Je zou heel makkelijk een bepaalde zoeker op een periodiek moeten kunnen zetten en op die manier door de tijd reizen. Dus niet lineair maar periodieken volgend... hmm...
-
-===== Eigenschappen van de bol en de ring =====
+===== Eigenschappen van de Globe4D interface (bol+ring) =====
 *Beide geometrische vormen. Verschillend van aard.
-*Bol: geen begin en einde in alle richtingen
-*Ring: alleen een begin en einde in een richting. De andere is oneindig.
-*Daar moet iets mee te doen zijn.
-*Wat voor data wil je oneindig weergeven? Een circulair speelveld van bijv. Game of Life. 
+**Bol: geen begin en einde in alle richtingen
+**Ring: alleen een begin en einde in een richting. De andere is oneindig.
+*Wat voor data leent zich goed om oneindig weergeven? Flatland / Game of Life speelveld
 
-
-===== Tijd als spiraal op de ring =====
-*...
-*[[http://www.youtube.com/watch?v=EpBmSQFaGcw&feature=related|MmmTsss]]
-*...
-
-===== Globe4D voor het visualiseren van multi-dimensionale datasets =====
-*Astro data van Gijs Verdoes Kleijn
-
-
-===== Globe4D als tool om NIEUWE patronen te ontdekken =====
-*Zoals de tool van [[http://www.youtube.com/watch?v=YpKbO6O3O3M|Hans Rosling]]
-*=Atlas4D idee waar ik al veel met de Spullenmannen over gepraat heb.
-*Met globe4d nu laten we feitjes zien over de aarde. Dingen die al ontdekt zijn, nu begrijpelijk gemaakt voor de gewone man. Wat ik wil is met Globe4D nieuwe patronen ontdekken. Net als Hans Rosling met zijn software.
-*Worldmapper
-*Wat kan ik onderzoeken met Globe4D wat op een andere manier niet te onderzoeken is (of moeilijk ofzo)
-*Hoe kan Globe4D ´iets´ bijdragen aan de wetenschap en niet voor een klant...
-
-===== Relevante artikelen =====
-
+===== Related work =====
+*de tool van [[http://www.youtube.com/watch?v=YpKbO6O3O3M|Hans Rosling]] - "Trendalyzer software that converts international statistics into moving, interactive and enjoyable graphics."
+*[[http://www.worldmapper.org/|Worldmapper]]
 
 ==== Temporal data (ie. on spirals) ====
 *[[http://www.sims.berkeley.edu:8000/courses/is247/f05/readings/Carlis_SerialPeriodicData_UIST98.pdf|Interactive Visualization of Serial Periodic Data]]
@@ -61,3 +42,13 @@ to Explore Temporal Data (thesis proposal)]]
 
 ==== Multi-dimensional scaling ====
 *[[afstuderen:demers-nonlinear-dim-reduction.pdf|Non–Linear Dimensionality Reduction]]
+*Email contact met astro data van Gijs Verdoes Kleijn
+
+===== Voorbeelden uit de kunst of uit de praktijk =====
+*[[http://www.youtube.com/watch?v=EpBmSQFaGcw&feature=related|MmmTsss]]
+*...
+
+
+*=Atlas4D idee waar ik al veel met de Spullenmannen over gepraat heb.
+*Worldmapper
+*Hoe kan Globe4D ´iets´ bijdragen aan de wetenschap en niet voor een klant...
