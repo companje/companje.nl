@@ -44,8 +44,8 @@ Ik wil pleiten voor een toepassing binnen Globe4D waarmee multi-dimensionale dat
 to Explore Temporal Data (thesis proposal)]]
 
 ==== Multi-dimensional scaling ====
-*[[afstuderen:demers-nonlinear-dim-reduction.pdf|Non–Linear Dimensionality Reduction]]
-*Email contact met astro data van Gijs Verdoes Kleijn
+*{{afstuderen:demers-nonlinear-dim-reduction.pdf|Non–Linear Dimensionality Reduction}}
+*Email contact met astronomy data van Gijs Verdoes Kleijn
 
 ===== Voorbeelden uit de kunst of uit de praktijk =====
 *[[http://www.youtube.com/watch?v=EpBmSQFaGcw&feature=related|MmmTsss]]
