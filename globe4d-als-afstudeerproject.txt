@@ -1,9 +1,9 @@
 ====== Globe4D als afstudeerproject ======
-De ervaring tot nu is dat __Globe4D__ een geschikt apparaat is om geanimeerde kaarten over het __veranderen van een planeet__ aan een brede groep mensen __over te brengen__. Het gaat hierbij altijd om kaarten die door wetenschappers zijn gemaakt en die met Globe4D enkel een stuk __beter te bekijken en te bespreken__ zijn.
+De ervaring tot nu is dat **Globe4D** een geschikt apparaat is om geanimeerde kaarten over het **veranderen van een planeet** aan een brede groep mensen **over te brengen**. Het gaat hierbij altijd om kaarten die door wetenschappers zijn gemaakt en die met Globe4D enkel een stuk **beter te bekijken en te bespreken** zijn.
 \\
-Mijn vraag is nu is: __Kan Globe4D__ ook gebruikt worden om __nieuwe patronen te ontdekken__ in wetenschappelijke datasets? Patronen die op dit moment met de huidige visualisatiemethoden (nog) niet zijn ontdekt.
+Mijn vraag is nu is: **Kan Globe4D** ook gebruikt worden om **nieuwe patronen te ontdekken** in wetenschappelijke datasets? Patronen die op dit moment met de huidige visualisatiemethoden (nog) niet zijn ontdekt.
 \\
-Ik wil pleiten voor een toepassing binnen Globe4D waarmee multi-dimensionale datasets gevisualiseerd worden en waarmee het mogelijk is verschillende datasets met elkaar te kunnen vergelijken zodat het een __tool__ wordt __om wetenschap mee te bedrijven ipv de resultaten over te brengen__.
+Ik wil pleiten voor een toepassing binnen Globe4D waarmee multi-dimensionale datasets gevisualiseerd worden en waarmee het mogelijk is verschillende datasets met elkaar te kunnen vergelijken zodat het een **tool** wordt **om wetenschap mee te bedrijven ipv de resultaten over te brengen**.
 \\
 -------
 \\
