@@ -9,15 +9,18 @@ Ik wil pleiten voor een toepassing binnen Globe4D waarmee multi-dimensionale dat
 -------
 \\
 \\
+
 ===== Subvragen over Globe4D als wetenschappelijke tool =====
 *Maakt het toevoegen van een extra ring het navigeren door datasets met periodieken mogelijk?
 *Wat zou je met een Globe5D kunnen en hoe zou dat er uit moeten zien?
 *Wat voor datasets zouden in aanmerking kunnen komen om te bestuderen?
+*Zijn plaats+tijd noodzakelijke factoren binnen de datasets?
 *Welke tools bestaan er al om wetenschap mee te bedrijven?
 **Statistiek programma's (SPSS etc)
 **Wiskunde programma's (Matlab etc)
 **...
 *Zijn er voorbeelden van andere direct-feedback-devices zoals Globe4D waarmee onderzoek gedaan wordt?
+*Op welke manieren behalve 'platslaan' wordt er nog meer met multi-dimensionale data gewerkt?
 
 ===== Eigenschappen van de Globe4D interface (bol+ring) =====
 *Beide geometrische vormen. Verschillend van aard.
