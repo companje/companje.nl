@@ -47,6 +47,7 @@ Stel je tijdschaal gaat over miljoenen jaren. Bepaalde terugkerende periodes zie
 
 ===== Relevante artikelen =====
 
+
 ==== Temporal data (ie. on spirals) ====
 *[[http://www.sims.berkeley.edu:8000/courses/is247/f05/readings/Carlis_SerialPeriodicData_UIST98.pdf|Interactive Visualization of Serial Periodic Data]]
 *[[http://ieg.ifs.tuwien.ac.at/~aigner/teaching/ws06/infovis_ue/papers/spiralgraph_weber01visualizing.pdf|Visualizing Time-Series on Spirals]]
@@ -57,3 +58,6 @@ Stel je tijdschaal gaat over miljoenen jaren. Bepaalde terugkerende periodes zie
 *[[http://www.ias.ac.in/sadhana/Pdf2006Apr/173.pdf|A survey of temporal data mining]]
 *[[http://ieg.ifs.tuwien.ac.at/projects/timeviz/aigner_thesis_proposal.pdf|Interactive Information Visualization
 to Explore Temporal Data (thesis proposal)]]
+
+==== Multi-dimensional scaling ====
+*[[afstuderen:demers-nonlinear-dim-reduction.pdf|Non–Linear Dimensionality Reduction]]
