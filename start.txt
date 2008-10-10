@@ -6,17 +6,16 @@
 Nu hebben we wel een selectie gemaakt waarbinnen ik het zou moeten gaan zoeken:
 
 ==== Globe4D ====
-Iets binnen Globe4D en dan de data visualisatie kant van de interface:
-*Maakt het toevoegen van een extra ring het navigeren door datasets met periodieken mogelijk?
-*Zou er een Globe5D te bedenken zijn?
-*[[Globe4D als afstudeerproject]]
+*[[Globe4D als afstudeerproject]] ingezet als tool om wetenschap mee te bedrijven ipv de resultaten over te brengen.
 
 ==== Data ====
 *Een nieuwe data visualisatie methode
 *Iets met het platslaan van multidimensionale data.
 
 ==== Memory Thing ====
-*Iets met persoonlijke herinneringen en ervaringen en het passief vastleggen ervan door te kijken naar context. (Zie ook mijn [[http://www.companje.nl/mediatech/Companje_(2007)_-_Who,_What,_Where,_When....pdf|AI paper]]. Ik wil sowiezo een mobiele app hiervoor gaan maken voor mezelf ook al gebruik ik het niet voor m'n afstuderen.
+*Een mobiele applicatie om persoonlijke ervaringen en herinneringen zonder dat het veel tijd kost te kunnen vastleggen. Zie ook mijn [[http://www.companje.nl/mediatech/Companje_(2007)_-_Who,_What,_Where,_When....pdf|AI paper]]. Misschien is het niet zo geschikt om op af te sturen, maar ik wil het sowieso nog een keer maken.
+
+-----------
 
 ===== Oorspronkelijk onderwerp =====
 Vraag: Wat als we allemaal zoveel mogelijk van onze data zouden delen?
@@ -24,7 +23,6 @@ Vraag: Wat als we allemaal zoveel mogelijk van onze data zouden delen?
 Want: Er is zoveel data die prima gedeeld zou kunnen worden maar die in stoffige mappen op persoonlijke harddisks staat en waar niemand zo iets aan heeft. 
 
 Stelling: Hoe meer data we delen hoe meer bruikbare informatie/kennis via te internet te vinden is. Ruis zal door de huidige kwaliteit van zoekmachines verwaarloosbaar zijn.
-
 
 ===== Data zoekt nieuw baasje =====
 Je kent ze wel, die mappen op je computer waar je al jaren niet naar gekeken hebt. Niet dat je er bewust niet meer inkijkt, maar 't verdwijnt gewoon met de tijd en heel af en toe kom je misschien nog weer eens iets tegen maar het meeste zal nooit meer aan de oppervlakte verschijnen. Misschien nog wel het best te vergelijken met een rommelzolder. Je tekeningen van de kleuterschool in een grote doos, oude brieven van vroeger, bewaarde concertkaartjes, fotoalbums... Allemaal herinneringen uit een ver verleden, een tijd die je achter je ligt en waar niemand behalve jijzelf hooguit om nostalgische redenen nog iets aan hebt, toch? Of zou het misschien nog eens van pas kunnen komen?
