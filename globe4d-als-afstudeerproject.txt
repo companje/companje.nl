@@ -22,9 +22,10 @@ Ik wil pleiten voor een toepassing binnen Globe4D waarmee multi-dimensionale dat
 *Zijn er voorbeelden van andere direct-feedback-devices zoals Globe4D waarmee onderzoek gedaan wordt?
 *Op welke manieren behalve 'platslaan' wordt er nog meer met multi-dimensionale data gewerkt?
 
+
 ===== Eigenschappen van de Globe4D interface (bol+ring) =====
 *Beide geometrische vormen. Verschillend van aard.
-**Bol: geen begin en einde in alle richtingen
+**Bol: geen begin en einde in alle richtingen.
 **Ring: alleen een begin en einde in een richting. De andere is oneindig.
 *Wat voor data leent zich goed om oneindig weergeven? Flatland / Game of Life speelveld
 
