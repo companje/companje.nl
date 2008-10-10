@@ -45,13 +45,8 @@ to Explore Temporal Data (thesis proposal)]]
 
 ==== Multi-dimensional scaling ====
 *{{afstuderen:demers-nonlinear-dim-reduction.pdf|Non–Linear Dimensionality Reduction}}
-*Email contact met astronomy data van Gijs Verdoes Kleijn
+*Email contact met astronomy data van Gijs Verdoes Kleijn over multi-dimensionale datasets binnen de sterrenkunde.
 
 ===== Voorbeelden uit de kunst of uit de praktijk =====
 *[[http://www.youtube.com/watch?v=EpBmSQFaGcw&feature=related|MmmTsss]]
 *...
-
-
-*=Atlas4D idee waar ik al veel met de Spullenmannen over gepraat heb.
-*Worldmapper
-*Hoe kan Globe4D ´iets´ bijdragen aan de wetenschap en niet voor een klant...
