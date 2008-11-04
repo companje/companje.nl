@@ -1,9 +1,9 @@
 ====== ESA Lunar Robotics Challenge in Tenerife ======
 Vorige week was ik een dagje naar Tenerife om de ESA uitgeschreven wedstrijd voor maan robotjes te filmen met een 3D camera. Erg gaaf! 
+\\  
+Lees ook het [[http://www.esa.int/esaCP/SEMBXQ4KXMF_index_0.html|nieuwsbericht op de ESA website]].
 
-Lees ook het [[http://www.esa.int/esaCP/SEMBXQ4KXMF_index_0.html|nieuwsbericht]] op de ESA website.
-
-{{http://www.esa.int/images/ERBprototype_L.jpg}}
+[[http://www.esa.int/esaCP/SEMBXQ4KXMF_index_0.html|{{http://www.esa.int/images/ERBprototype_L.jpg}}]]
 
 {{tag>Tech Projects 3D}}
 
