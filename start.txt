@@ -197,6 +197,7 @@ keywords: [[transparent society]], [[data donor]], [[harddisk sharing]]
 *[[Wired News (2005) - Ray Kurzweil - Never Say Die Live Forever]]
 
 ===== Roger Frank Malina  =====
+[[http://www.aec.at/en/archives/festival_archive/festival_catalogs/festival_artikel.asp?iProjectID=12927|Essay at Ars Electronica archive]]  
 
 *“With the emergence of scientific visualization, large scale simulation techniques, and “virtual observatory” approaches to analysis of massive heterogeneous databases, we already see evolution within the scientific method itself.” 
 *"...in 1967 you could fit all the artists using computers into one living room; most of them would have been musicians." ... "Today you can fit all the artists who have manipulated genetic material, and all the artists who have created art in zero gravity, into one conference room."
