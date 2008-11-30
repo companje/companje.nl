@@ -3,7 +3,7 @@ Vorige week was ik een dagje naar Tenerife om de ESA uitgeschreven wedstrijd voo
 \\
 [[http://www.esa.int/esaHS/SEMTOH4KXMF_index_0.html|{{http://www.esa.int/images/3dcamera_large,0.png}}]]
 \\
-Lees het [[http://www.esa.int/esaCP/SEMBXQ4KXMF_index_0.html|nieuwsbericht op de ESA website]] en [[http://www.esa.int/esaHS/SEMTOH4KXMF_index_0.html |hier?]].
+Lees het [[http://www.esa.int/esaHS/SEMTOH4KXMF_index_0.html|nieuwsbericht op de ESA website]].
 
 {{tag>Tech Projects 3D}}
 
