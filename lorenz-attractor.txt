@@ -1,5 +1,6 @@
 ====== Lorenz Attractor ======
-/*
+<blockquote>The Lorenz attractor, named for Edward N. Lorenz, is a 3-dimensional structure corresponding to the long-term behavior of a chaotic flow, noted for its butterfly shape. The map shows how the state of a dynamical system (the three variables of a three-dimensional system) evolves over time in a complex, non-repeating pattern. [[http://en.wikipedia.org/wiki/Lorenz_attractor|Wikipedia]]</blockquote>
+
  * Lorenz Attractor
  * by Rick Companje, 5 december 2008, for Processing 1.0.1
  * based on a Processing sketch by Sunghun Kim
@@ -8,7 +9,6 @@
  *   dx/dt = s ( y - x )
  *   dy/dt = r x - y - xz
  *   dz/dt = xy - b z
- */
 
 <html>
 <!--[if !IE]> -->
