@@ -33,6 +33,8 @@
 <code>tar xvzf file.tar.gz</code>
 * search for a phrase in all files:
 <code>grep something *</code>
+*search for a phrase in all files (recursive):
+<code>find . | xargs grep -s phrase</code>
 * to start ubuntu without GUI empty '/etc/X11/default-display-manager'. If you want to start it from the shell type 'gdm'
 * What to do when 'locate' gives the following error 'can not open `/var/lib/mlocate/mlocate.db': No such file or directory'?
 <code>sudo updatedb</code>
