@@ -1,0 +1,63 @@
+====== ofxIniSettings ======
+openFrameworks  addon: Read and Write .ini files.
+
+{{:ofxinisettings.zip|download ofxIniSettings v0.1}}
+
+/*
+ofxIniSettings - Version 0.1 - released 22-1-2009 - by Rick Companje
+This code was developped for Globe4D - www.globe4d.com
+
+Installation:
+- Follow the regular [[http://openframeworks.cc|openFrameworks]] methods for adding addons.
+
+Notes:
+- Have a look at the functions I copied from my ofxExtra addon 
+  like ofFileExists, ofSplitString and a lot of casting functions like ofToBoolean
+
+Example Usage:
+
+<code>
+////////////////////////////////////////////////
+
+ofxIniSettings ini;
+ini.load("settings.ini");
+
+cout << ini.get("myBoolean",true) << endl;
+cout << ini.get("section1.myString",(string)"") << endl;
+cout << ini.get("section1.myFloat",0.0f) << endl;
+cout << ini.get("section1.myInteger",0) << endl;
+cout << ini.get("section1.subsection.myInteger",0) << endl;
+cout << ini.get("section1.myVec3f",ofxVec3f(0,0,0)) << endl;
+
+ini.outputFilename="settings.ini";
+ini.set("myBoolean",true);
+
+//you can load an additional ini file to override certain settings by
+
+ini.load("subsettings.ini",false);
+
+//now values from subsettings overwrite existing values with the same name in the same section of settings.ini
+
+////////////////////////////////////////////////
+
+ini file layout:
+
+;myBoolean is not inside a section but is on root level above the sections
+myBoolean=1
+
+[section1]
+keyInsideSection1=this is a string value
+myString=hello word
+myFloat=1.0023424
+myInterger=5
+myVec3f=.001,.5,0
+subsection.myInteger=6
+
+[section1.subsection]
+;overwrites subsection.myInteger=6
+myInteger=7
+
+[section2]
+window=0,0,1024,768
+
+</code>
