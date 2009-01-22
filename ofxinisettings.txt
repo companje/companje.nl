@@ -58,3 +58,222 @@ myInteger=7
 window=0,0,1024,768
 
 </code>
+=== Source ofxIniSettings.h ===
+<code>
+#ifndef OFX_INISETTINGS_H
+#define OFX_INISETTINGS_H
+
+/************************************************************
+
+OpenFrameworks Library
+
+File: 			ofxIniSettings.h
+Description: 	Read and Write .ini files for openFrameworks
+
+Last Modified: 2009.01.22
+Creator: Rick Companje
+Version: 0.1
+
+************************************************************/
+
+#include <conio.h>
+#include <fstream>
+#include <iostream>
+#include <map>
+
+#include "ofMain.h"
+#include "ofxVectorMath.h"
+
+class ofxIniSettings {
+public:
+
+    ofxIniSettings() {}
+    ofxIniSettings(string filename) { load(filename); }
+
+    //rick 15-1-2009! i changed clearFirst default to true
+    bool load(string filename, bool clearFirst=true); // you can call multiple times with different files, incremental
+    bool has(string key) { return keys[key]!=""; };
+    void clear();
+
+    map<string,string> keys;
+    string outputFilename;
+
+    //getters
+    int get(string key, int defaultValue);
+    bool get(string key, bool defaultValue);
+    float get(string key, float defaultValue);
+    string get(string key, string defaultValue);
+    ofxVec2f get(string key, ofxVec2f defaultValue);
+    ofxVec3f get(string key, ofxVec3f defaultValue);
+    ofxVec4f get(string key, ofxVec4f defaultValue);
+    ofRectangle get(string key, ofRectangle defaultValue);
+
+    //setters
+    void setString(string id, string value);
+
+    template <typename T> void set(string id, string key, T value) { set(id=="" ? key : (id+"."+key), value); } //returntype void
+    template <typename T> void set(string key, T value) { setString(key, ofToString(value)); } //returntype void
+
+};
+
+#endif
+</code>
+=== ofxIniSettings.cpp ===
+<code>
+#include "ofxIniSettings.h"
+/* These functions are from my ofxExtras */
+int die(string str) {
+    cout << str.c_str() << endl;
+    _getch();
+    std::exit(1);
+}
+
+bool ofFileExists(string filename) { //rick
+	ifstream inp;
+	inp.open(filename.c_str(), ifstream::in);
+	inp.close();
+	return !inp.fail();
+}
+
+int ofToInteger(string str) { //rick
+    //works also for hex: 0xff0000....
+    istringstream stream(str);
+    stream.unsetf(ios_base::dec);
+    int result; stream >> result; return result;
+}
+
+float ofToFloat(string str) { //rick 3-1-2008, updated: 1-5-2008
+	istringstream stream(str);
+    float result; stream >> result; return result;
+}
+
+bool ofToBoolean(string str) { //rick 3-1-2008
+	return str=="true" || str=="True" || str=="TRUE" || str=="1";
+}
+
+vector<string> ofSplitString(string str, string delim=",") {
+    vector<string> results;
+    int cut;
+    while ((cut=str.find_first_of(delim))!=string::npos) {
+        if (cut>0) results.push_back(str.substr(0,cut));
+        str = str.substr(cut+1);
+    }
+    if (str.length()>0) results.push_back(str);
+    return results;
+}
+
+ofxVec2f ofToVec2f(string str) {
+    vector <string> v = ofSplitString(str);
+    if (v.size()==1) return ofxVec2f(ofToFloat(v[0]),ofToFloat(v[0])); ///is dit gewenst?
+    if (v.size()!=2) return ofxVec2f(0,0);
+    else return ofxVec2f(ofToFloat(v[0]),ofToFloat(v[1]));
+}
+
+ofxVec3f ofToVec3f(string str) {
+    vector <string> v = ofSplitString(str);
+    if (v.size()==1) return ofxVec3f(ofToFloat(v[0]),ofToFloat(v[0]),ofToFloat(v[0])); ///is dit gewenst? .5 wordt dus (.5,.5,.5) wordt oa gebruikt voor scale.
+    if (v.size()!=3) return ofxVec3f(0,0,0);
+    else return ofxVec3f(ofToFloat(v[0]),ofToFloat(v[1]),ofToFloat(v[2]));
+}
+
+ofxVec3f ofToVec3f(float *a) {
+    return ofxVec3f(a[0],a[1],a[2]);
+}
+
+ofxVec4f ofToVec4f(string str) {
+    vector <string> v = ofSplitString(str);
+    if (v.size()!=4) return ofxVec4f(0,0,0,0);
+    else return ofxVec4f(ofToFloat(v[0]),ofToFloat(v[1]),ofToFloat(v[2]),ofToFloat(v[3]));
+}
+
+ofRectangle ofToRectangle(ofxVec4f v) {
+    return ofRectangle(v.x,v.y,v.z,v.w);
+}
+
+ofRectangle ofToRectangle(string str) {
+    return ofToRectangle(ofToVec4f(str));
+}
+
+bool ofxIniSettings::load(string filename, bool clearFirst) {
+    //filename = ofToDataPath(filename);
+    if (filename=="") die("ofxIniSettings::no filename");
+    if (!ofFileExists(filename)) die ("file not found: " + filename);
+
+    string cmd,section,key,value,id;
+    ifstream f(filename.c_str(),ios::in);
+
+    if (clearFirst) clear();
+
+    while (getline(f,cmd)) {
+        switch (cmd[0]) {
+            case 0: break;   //empty first line?
+            case '#': break; //comment
+            case ';': break; //comment
+            case '[': section = cmd.substr(1,cmd.length()-2); break; //section, remove brackets
+            default:
+                int pos = cmd.find("=", 0);
+                if (pos==string::npos) break;
+                key = cmd.substr(0, pos);
+                value = cmd.substr(pos+1);
+                id = section!="" ? (section + "." + key) : key;
+                keys[id] = value;
+                //cout << "ini: " << id << " = " << value << endl;
+        }
+    }
+
+    f.close();
+    return true;
+}
+
+void ofxIniSettings::clear() {
+    keys.clear();
+}
+
+string   ofxIniSettings::get(string key, string   defaultValue) { return has(key) ? keys[key] : defaultValue; }
+int      ofxIniSettings::get(string key, int      defaultValue) { return has(key) ? ofToInteger(keys[key]) : defaultValue; }
+float    ofxIniSettings::get(string key, float    defaultValue) { return has(key) ? ofToFloat(keys[key]) : defaultValue; }
+bool     ofxIniSettings::get(string key, bool     defaultValue) { return has(key) ? ofToBoolean(keys[key]) : defaultValue; }
+ofxVec2f ofxIniSettings::get(string key, ofxVec2f defaultValue) { return has(key) ? ofToVec2f(keys[key]) : defaultValue; }
+ofxVec3f ofxIniSettings::get(string key, ofxVec3f defaultValue) { return has(key) ? ofToVec3f(keys[key]) : defaultValue; }
+ofxVec4f ofxIniSettings::get(string key, ofxVec4f defaultValue) { return has(key) ? ofToVec4f(keys[key]) : defaultValue; }
+ofRectangle ofxIniSettings::get(string key, ofRectangle defaultValue) { return has(key) ? ofToRectangle(keys[key]) : defaultValue; }
+
+void ofxIniSettings::setString(string newID, string newValue) {
+    if (outputFilename=="") die("ofxIniSettings::setString: outputFilename undefined");
+    bool foundKey = false;
+    //outputFilename = ofToDataPath(outputFilename);
+    if (!ofFileExists(outputFilename)) die("ofxIniSettings::setString: file not found: " + outputFilename);
+    string cmd,section,key,value,id;
+    ifstream fileInput(outputFilename.c_str(),ios::in);
+    vector<string> lines;
+
+    while (getline(fileInput,cmd)) {
+        switch (cmd[0]) {
+            case 0: break;   //empty first line?
+            case '#': break; //comment
+            case ';': break; //comment
+            case '[': section = cmd.substr(1,cmd.length()-2); break; //section, remove brackets
+            default:
+                int pos = cmd.find("=", 0);
+                if (pos==string::npos) break;
+                key = cmd.substr(0, pos);
+                id = section!="" ? (section + "." + key) : key;
+                if (id==newID) {
+                    foundKey=true;
+                    cmd=key+"="+newValue;  //change the value if found
+                }
+        }
+        lines.push_back(cmd); //write to output list
+    }
+    fileInput.close();
+
+    if (!foundKey) die("ofxIniSettings: Key '"+newID+"' should exist in '"+outputFilename+"'");
+    ofstream fileOutput(outputFilename.c_str(),ios::out);
+    for (int i=0; i<lines.size(); i++) fileOutput << lines[i] << endl;
+    fileOutput.close();
+}
+
+</code>
+
+
+
