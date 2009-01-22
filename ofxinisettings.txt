@@ -1,20 +1,18 @@
 ====== ofxIniSettings ======
-openFrameworks  addon: Read and Write .ini files.
-\\  
-{{:ofxinisettings.zip|download ofxIniSettings v0.1}}
+ofxIniSettings - v0.1 - released 22-1-2009 - by Rick Companje
+openFrameworks  addon for reading and writing .ini files.
+This code was developped for [[http://www.globe4d.com| Globe4D ]]
 
+=== Download ===
+ {{:ofxinisettings.zip|download ofxIniSettings v0.1}}  
 
-ofxIniSettings - Version 0.1 - released 22-1-2009 - by Rick Companje
-This code was developped for Globe4D - www.globe4d.com
+===  Installation === 
+Follow the regular [[http://openframeworks.cc|openFrameworks]] methods for adding addons.
 
-Installation:
-- Follow the regular [[http://openframeworks.cc|openFrameworks]] methods for adding addons.
+===  Notes === 
+Have a look at the functions I copied from my ofxExtra addon  like ofFileExists, ofSplitString and a lot of casting functions like ofToBoolean
 
-Notes:
-- Have a look at the functions I copied from my ofxExtra addon  like ofFileExists, ofSplitString and a lot of casting functions like ofToBoolean
-
-Example Usage:
-
+===  Example Usage === 
 <code>
 ////////////////////////////////////////////////
 
