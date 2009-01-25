@@ -46,8 +46,9 @@ openFrameworks is a free application framework designed for "creative coding". O
 When: 30-1-2009 @ 10:00
 Where: Spullenmannen, Kleine Koppel 40, Amersfoort ([[http://www.spullenmannen.nl/media/route_en.pdf|routedescription]]  
 More info: [[http://dewar.nl/toko/]] or call Rick @ 06 2851 6908  
-Subscribe: Email to {toko at dewar.nl} to subscribe for this toko workshop or [[http://tinyurl.com/au7n6c|fill in the form]].
-
+Subscribe: 
+*email to {toko at dewar.nl} or
+*[[http://tinyurl.com/au7n6c|fill in the form]]
 {{tag>Art Math tech Events Projects}}
 
 ~~DISCUSSION~~
