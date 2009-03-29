@@ -1,4 +1,5 @@
 ====== Programming ======
+*[[Batch]]
 *[[Sanyo Basic]]
 *[[QBasic]]
 *[[MSX Basic]]
