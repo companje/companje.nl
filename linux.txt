@@ -3,7 +3,7 @@
 * [[Installing Code-Blocks on Ubuntu]]
 * Killing the xserver ('fast logout'): Ctrl Alt Backspace
 * to edit the ubuntu boot menu
-<code>gksudo gedit /boot/grub/menu.lst</code>
+<code>gksudo gedit /boot/grub/menu.lst</code> (kdesu heeft hetzelfde effect?)
 * [[http://www.pendrivelinux.com/2008/04/09/usb-ubuntu-804-installation-from-windows/|Booting from USB drive]]
 
 
