@@ -1,7 +1,13 @@
 ====== About Rick Companje ======
+Rick Companje onderzoekt de ruimte tussen kunst, wetenschap en technologie. Met een achtergrond in Computer Science, Interaction Design en Media Technology werkt hij momenteel als media kunstenaar en uitvinder. Recentelijk ontwikkelde hij Globe4D, een fysieke interactieve wereldbol met tijd als extra dimensie. Ook ontwierp hij voor het Rijksmuseum Amsterdam een interactieve tijdlijn. Onlangs werkte hij aan de doorontwikkeling van een stereoscopische videocamera voor de European Space Agency (ESA). In 2007 was hij te zien als een van de nerds in het KRO televisieprogramma Het Lab.
+Rick's werk is wereldwijd tentoongesteld in musea, op conferenties en op festivals waaronder NEMO Science Center, ACM Siggraph, Wired Nextfest, Laval Virtual, TodaysArt en Cinekid. Zie ricksmuseum.nl en globe4d.com.
+
+----
+
 Rick Companje (1979) likes to explore the space between art, science and technology. With a background in Computer Science, Interaction Design and Media Technology and working as a media artist and inventor, Rick Companje tries to combine the forces of his favorite disciplines.
 His recent work includes [[Globe4D]], an interactive physical globe with time as extra dimension showing in a very direct and intuitive way how a planet changes over time. Another notable project is the Interactive Historical Timeline for [[Rijksmuseum Amsterdam]] (Royal Museum of Art).
 Companje's work has been exhibited at [[Laval Virtual]], [[ACM Siggraph]], [[Wired Nextfest]], [[Cinekid]] and [[TodaysArt]].
+
 ====== Contact ======
 Address: <del>Zeewoldtstraat 10, 2223 ET Katwijk ZH, The Netherlands</del>
 Address: 't Goylaan 63-1, 3525 AA Utrecht
