@@ -8,7 +8,8 @@
 *MSc Media Technology
 *Interactive Media Designer
 *Multimedia Consultant
-*Flex & Flash Developer
+*OpenFrameworks Developer
+*Lecturer / Teacher
 
 ==== Search ====
 <php>
