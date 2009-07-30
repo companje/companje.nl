@@ -7,8 +7,8 @@ Rick Companje (1979) likes to explore the space between art, science and technol
 His recent work includes [[Globe4D]], an interactive physical globe with time as extra dimension showing in a very direct and intuitive way how a planet changes over time. Another notable project is the Interactive Historical Timeline for [[Rijksmuseum Amsterdam]] (Royal Museum of Art).
 Companje's work has been exhibited at [[Laval Virtual]], [[ACM Siggraph]], [[Wired Nextfest]], [[Cinekid]] and [[TodaysArt]].
 ====== Contact ======
-Address: <del>Zeewoldtstraat 10, 2223 ET Katwijk ZH, The Netherlands</del>
-Address: <del>'t Goylaan 63-1, 3525 AA Utrecht</del>
+Address: <del>Zeewoldtstraat 10, 2223 ET Katwijk ZH, The Netherlands</del>  
+Address: <del>'t Goylaan 63-1, 3525 AA Utrecht</del>  
 Address: Nicolaasweg 54, 3581 VK Utrecht
 Phone: +31(0)6-2851 6908
 E-Mail: rick at companje.nl
