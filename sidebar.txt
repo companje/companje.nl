@@ -46,6 +46,7 @@ tpl_searchform();
 *[[http://www.last.fm/user/companje|My Music on LastFM]]
 
 ==== Blogroll ====
+*[[http://hildepeters.nl|Hilde Peters]]
 *[[http://annica.web-log.nl/|Annica's weblog]]
 *[[http://www.volvolvo.nl/|Arie-Jan van Berkum]]
 *[[http://arvidbergstrom.nl|Arvid Bergstrom]]
