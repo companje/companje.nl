@@ -11,6 +11,7 @@
 *Idee: zoek machine die met je meedenkt. Je kunt wel 'refinen' maar als je bepaalde dingen hebt weggefiltert dan zou ie eigenlijk bij de volgende refine wel even weer moeten checken of 't nog steeds klopt.
 *Eigenlijk wil ik een website die altijd in edit-mode staat en waarbij iedere pagina die nog niet bestaat meteen aangemaakt wordt en waar je kunt gaan typen in wikistijl met lookup functie voor links en een paste functie voor plaatjes.
 *Idee: 100 woorden die mijn huidige leven typeren en dat ieder kwartaal doen en visualiseren.
+*De hoeveelheid beweging in een reeks beeld om de snelheid van het filmpje te bepalen. Als er veel gebeurd gaat het filmpje trager. Als er weinig gebeurd versneld het filmpje. Uiteraard moet dit geleidelijk / smooth gaan. 
 
 ====== Links to this page ======
 {{backlinks>.}}
