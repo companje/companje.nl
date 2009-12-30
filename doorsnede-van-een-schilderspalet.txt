@@ -11,9 +11,11 @@ Het palet is rechthoekig en 100x50cm groot. In de loop der tijd is er een laag v
 
 De gebruikte frees heeft een platte kop en is 6mm dik. Er was ook een veel grotere frees van ongeveer 1,5cm maar ik achte de kans te groot dat er stukken verf zouden afbreken. In eerste instantie wou ik de frees in 4 lagen van 2.5mm laten frezen maar al snel bleek dat de acrylverf zacht genoeg was om de frees er in één keer door te kunnen laten gaan. Er kwamen ontzettend veel groffe vezelfs vanaf en ik moest dan ook met de stofzuigerslang vlak bij de freeskop zitten om het object en de ruimte schoon te houden.
 
+<html><object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/oPEJDoHsDZM&hl=nl_NL&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/oPEJDoHsDZM&hl=nl_NL&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object></html>
+
 Ik ben tevreden over het resultaat. Ik had een dergelijke structuur (marmer/oester-achtig) wel verwacht maar dat wit de overheersende kleur zou zijn aan de binnenkant daar had ik niet op gerekend. Ik weet nog niet precies hoe dit komt. Een mogelijk vervolg op dit experiment zou zijn om een nieuw pallet per millimeter af te frezen en dat proces (wat dagen zal duren) te filmen en na afloop de snelheid en periodieken binnen de film variabel te maken. Foto's en filmpjes van het proces tot nu toe zijn te vinden op www.companje.nl.
 
-{{tag>}}
+{{tag>Art Projects}}
 
 
 ~~DISCUSSION~~
