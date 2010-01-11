@@ -1,8 +1,8 @@
 ====== Globe4D - ICT Delta 2010 ======
-<blockquote>ICTDelta 2010 wordt het North Sea Jazz van ICT-onderzoek en -innovatie in Nederland: een bruisend festival met een mix van activiteiten op talloze terreinen! 
-
+ICTDelta 2010 wordt het North Sea Jazz van ICT-onderzoek en -innovatie in Nederland: een bruisend festival met een mix van activiteiten op talloze terreinen! 
+\\
 De expositie en het interactieve congres zijn gegroepeerd rond 9 thema’s, op allerlei gebieden. Deelnemers kunnen ter plekke hun eigen programma samenstellen. Van games naar databases, van 3-D naar medische toepassingen, van een kijkje in de onderzoekskeuken naar de gebruiksaspecten.
-
+\\
 ICTDelta is voor iedereen die betrokken is bij ICT-onderzoek en –innovatie: bedrijven (ook buiten de ICT!), overheid, universiteiten, hogescholen en onderzoeksinstituten, maatschappelijke organisaties.  <blockquote>
 
 <html><embed 
@@ -29,7 +29,7 @@ bgcolor='undefined'
 allowscriptaccess='always'
 allowfullscreen='true'
 wmode='transparent'
-flashvars='file=http://www.itzit.tv/ictdelta/ictdelta2009.flv&image=http://www.itzit.tv/ictdelta2010/technologie/globe4d.jpg&abouttext=iTZiT multimedia&aboutlink=http://www.itzit.com&plugins=tweetit-1&dock=true&link=http://www.itzit.tv/ictdelta2010/technologie/globe4d.html'/></html>
+flashvars='file=http://www.itzit.tv/ictdelta/ictdelta2009.flv&image=http://www.ictdelta2010.nl/ictdelta/images/001.png&abouttext=iTZiT multimedia&aboutlink=http://www.itzit.com&plugins=tweetit-1&dock=true&link=http://www.itzit.tv/ictdelta2010/technologie/globe4d.html'/></html>
 
 {{tag>Globe4D Events}}
 
