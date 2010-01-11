@@ -1,5 +1,4 @@
 ====== Globe4D - ICT Delta 2010 ======
-ICTDelta2010, 18 maart 2010 in Beurs-WTC te Rotterdam !
 ICTDelta 2010 wordt het North Sea Jazz van ICT-onderzoek en -innovatie in Nederland: een bruisend festival met een mix van activiteiten op talloze terreinen! 
 
 De expositie en het interactieve congres zijn gegroepeerd rond 9 thema’s, op allerlei gebieden. Deelnemers kunnen ter plekke hun eigen programma samenstellen. Van games naar databases, van 3-D naar medische toepassingen, van een kijkje in de onderzoekskeuken naar de gebruiksaspecten.
@@ -8,8 +7,8 @@ ICTDelta is voor iedereen die betrokken is bij ICT-onderzoek en –innovatie: be
 
 <html><embed 
 src='http://www.itzit.tv/iTZiTplayer.swf'
-width='640'
-height='384' align="top"
+width='550'
+height='330' align="top"
 type='application/x-shockwave-flash'
 id='single2'
 name='single2'
@@ -21,8 +20,8 @@ flashvars='file=http://www.itzit.tv/ictdelta2010/technologie/globe4d.flv&image=h
 
 <html><embed 
 src='http://www.itzit.tv/iTZiTplayer.swf'
-width='640'
-height='384' align="top"
+width='550'
+height='330' align="top"
 type='application/x-shockwave-flash'
 id='single2'
 name='single2'
