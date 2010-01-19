@@ -9,6 +9,7 @@
 *Interactive Media Designer
 *Multimedia Consultant
 *OpenFrameworks Developer
+*Flex / Flash Developer
 *Lecturer / Teacher
 
 ==== Search ====
