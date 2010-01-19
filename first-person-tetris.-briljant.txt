@@ -1,0 +1,9 @@
+====== First person tetris. Briljant! ======
+Dit is heel leuk: http://www.firstpersontetris.com/
+
+[[http://www.firstpersontetris.com/|{{:blog:first-person-tetris.jpg|}}]]
+
+{{tag>Fun}}
+
+
+~~DISCUSSION~~
