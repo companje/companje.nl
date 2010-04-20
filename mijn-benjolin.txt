@@ -1,5 +1,5 @@
 ====== Mijn Benjolin ======
-Een paar weken geleden volgde ik samen met Ralph een workshop @STEIM in Amsterdam waar we onze eigen electronic noisebox in bouwden onder leiding van Rob Hordijk en Joker Nies: De [[http://web.me.com/klangbureau/DIY/Benjolin.html|Benjolin]]. Zie hier het resultaat. Met de acht draaiknoppen die er op zitten kun je de meest bizarre geluiden uit het ding laten komen. Erg gaaf! Ik plaats misschien nog wel een filmpje of een geluidsfragment.
+Een paar weken geleden volgde ik samen met Ralph een workshop @STEIM in Amsterdam waar we onze eigen electronic noisebox in bouwden onder leiding van Rob Hordijk en Joker Nies: De [[http://web.me.com/klangbureau/DIY/Benjolin.html|Benjolin]]. Zie hier het resultaat. Met de acht draaiknoppen die er op zitten kun je de meest bizarre geluiden uit het ding laten komen. Erg gaaf! Ik plaats misschien nog wel een filmpje of een geluidsfragment. Ik heb er zelf een versterker met speaker aan toegevoegd zodat ik er nu binnen en buiten mee kan freaken.
 \\
 {{:blog:benjolin-back.jpg?550}}
 \\
