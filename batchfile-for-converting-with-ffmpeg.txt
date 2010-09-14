@@ -1,0 +1,44 @@
+====== Batchfile for converting with ffmpeg ======
+<code>
+@echo off
+cd /d %0\..
+
+set size=1024x512
+color 1f
+
+cls
+echo Globe4D - The interactive four dimensional globe
+echo Copyright (c) 2005-2009 www.globe4d.com
+echo.
+echo This movie converter script uses ffmpeg to add
+echo the maximum amount of keyframes to a (mpg) movie.
+echo.
+
+:inputfile
+if (%1)==() ( 
+  set /p in=Enter input file name ^(use TAB to select^): 
+) else (
+  set in=%~1
+)
+
+if not exist "%in%" echo File '%in%' not found && goto :inputfile
+
+set /p size=Enter output resolution (default=%size%): 
+
+set inNoExt=%in:~0,-4%
+set out=%inNoExt%-%size%-gop1.mov
+
+set /p out=Enter output filename (default=%out%): 
+
+echo.
+ffmpeg -i "%in%" -s %size% -sameq -g 1 -y "%out%"
+
+pause
+</code>
+
+
+
+{{tag>}}
+
+
+~~DISCUSSION~~
