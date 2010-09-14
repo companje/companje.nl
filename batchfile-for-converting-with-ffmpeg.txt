@@ -1,4 +1,6 @@
 ====== Batchfile for converting with ffmpeg ======
+Dit scriptje post ik eigenlijk voor mezelf omdat ik dit batchfile vaak net kwijt ben als ik 'm zoek. Maar als het je van pas komt voel je vrij om het te gebruiken. Het script roept het conversie programma ffmpeg aan om vervolgens het input filmpje te voorzien van zoveel mogelijk keyframes waardoor je makkelijk snel heen en weer kunt scrubben door een mpeg bestand. We gebruiken het voor Globe4D omdat je bij uitstek daar kriskras door een videobestand wilt scrollen.
+
 <code>
 @echo off
 cd /d %0\..
@@ -8,7 +10,7 @@ color 1f
 
 cls
 echo Globe4D - The interactive four dimensional globe
-echo Copyright (c) 2005-2009 www.globe4d.com
+echo Copyright (c) 2005-2010 www.globe4d.com
 echo.
 echo This movie converter script uses ffmpeg to add
 echo the maximum amount of keyframes to a (mpg) movie.
