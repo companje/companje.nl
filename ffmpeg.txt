@@ -1,0 +1,4 @@
+====== FFMPEG ======
+-r 1 sets input framerate to 1
+''ffmpeg -r 1 -i image-%d.PNG -sameq -g 1 -y  A2-vegetation.mov''
+
