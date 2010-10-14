@@ -4,9 +4,10 @@ Rick Companje (1979) onderzoekt de ruimte tussen kunst, wetenschap en technologi
 Rick's werk wordt wereldwijd tentoongesteld in musea, op conferenties en op festivals waaronder NEMO Science Center, ACM Siggraph, Wired Nextfest, Laval Virtual, TodaysArt en Cinekid. Zie ook [[http://globe4d.com]].
 
 ====English====
-Rick Companje (1979) likes to explore the space between art, science and technology. With a background in Computer Science, Interaction Design and Media Technology and working as a media artist and inventor, Rick Companje tries to combine the forces of his favorite disciplines.
-His recent work includes [[Globe4D]], an interactive physical globe with time as extra dimension showing in a very direct and intuitive way how a planet changes over time. Another notable project is the Interactive Historical Timeline for [[Rijksmuseum Amsterdam]] (Royal Museum of Art).
-Companje's work has been exhibited at [[Laval Virtual]], [[ACM Siggraph]], [[Wired Nextfest]], [[Cinekid]] and [[TodaysArt]].
+Rick Companje (1979) loves Art, Science and Technology. With a background in Computer Science, Interaction Design and Media Technology at Leiden University he currently work as media artist, developer and Inventor. In 2005 he invented Globe4D, an interactive physical globe with Time as extra dimension. Rick also developed an interactive timeline for the Rijksmuseum Amsterdam and worked at a stereoscopic videocamera for the European Space Agency (ESA). In 2007 Rick was one of the nerds in the KRO tv‐program “Het Lab”. Since a while Rick is a member of artist collective “De Spullenmannen” where he works on inventions‐nobody‐is‐asking‐for. Within this context he is cofounder
+of the open‐knowledge community OpenToko.org and recently raising FabLab Amersfoort. Furthermore he is a teacher at the HKU and gives programming workshops about Processing, OpenFrameworks and Arduino. Rick’s work has been exhibited worldwide in museums, conferences and during festivals like NEMO Science Center, ACM Siggraph, Wired Nexfest, Laval Virtual, TodaysArt, Cinekid and ScienceLinx.
+
+
 ====== Contact ======
 Address: <del>Zeewoldtstraat 10, 2223 ET Katwijk ZH, The Netherlands</del>  
 Address: <del>'t Goylaan 63-1, 3525 AA Utrecht</del>  
