@@ -39,6 +39,30 @@ pause
 </code>
 
 
+Nog eentje die ik ook dikwijls nodig heb:
+
+<code>
+@echo off
+cd /d %0\..
+cd
+set log=Globe4D.log
+title Globe4D - the interactive four dimensional globe
+echo Globe4D - The interactive four dimensional globe
+echo Copyright (c) 2005-2010 www.globe4d.com
+rem -------------------------------------------------
+echo Computer started: %DATE% %TIME% >> %log%
+:BEGIN
+echo Software started: %DATE% %TIME% >> %log%
+call Globe4D.exe >> %log%
+if "%ERRORLEVEL%"=="0" goto EXPLORER
+echo Software stopped: %DATE% %TIME% (err=%ERRORLEVEL%) >> %log%
+echo. >> %log%
+pause
+goto BEGIN
+
+:EXPLORER
+start explorer %CD%
+</code>
 
 {{tag>}}
 
