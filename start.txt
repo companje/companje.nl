@@ -1,24 +1,5 @@
-====== Globe4D ======
-Globe4D is een interactieve wereldbol die een compleet nieuwe dimensie geeft aan vakken als geschiedenis en aardrijkskunde. Op de wereldbol in het midden van de tafel kunnen interactieve kaarten worden geprojecteerd, die meedraaien als je de wereldbol vastpakt. Niet alleen projecties van de aarde, maar ook van tal van andere planeten. De kaarten worden mede ontwikkeld door wetenschappers en onderzoekers. De Globe4D startte als onderzoeksproject van de Universiteit Leiden, en reist inmiddels de wereld rond naar conferenties en musea. Deze 4D wereldbol staat in natuurhistorische musea in Maastricht, Portugal en Seoel.
-\\
---------
-\\
-Globe4D is een vierdimensionale wereldbol: een installatie bestaande uit een bol met daaromheen een ring. Op de bol wordt het aardoppervlak geprojecteerd en door aan de ring te draaien kan de tijd worden beïnvloed. Met Globe4D kun je dus tijdreizen. Je leert op een hele interactieve manier over de veranderingen die een planeet (in dit geval de aarde) doormaakt tijdens het verstrijken van de tijd. Zowel op korte als lange termijn. Snelle veranderingen als dag/nacht, seizoenen, waterstanden, vliegtuigroutes, verspreiding van volkeren etc.) als ook veranderingen die plaatsvinden over een veel langere periode: je kunt er namelijk 750 miljoen jaar mee terug in de tijd waarbij je een goed beeld krijgt van de continentale verschuiving die heeft plaatsgevonden. Door het tijdwiel de ene kant op te draaien reis je terug in de tijd, draai je de andere kant op dan kom je langzaam weer in het heden en kun je zelfs door tot in de toekomst!
-\\
-{{en:globe4d:globe4d.jpg|Globe4D, Jurassic 180 million years ago}}
-\\
+====== Blog ======
+<html><script src="http://code.v2.nl/nederland/schreeuwt-om-cultuur.js"></script></html>
+~~NOTOC~~
 
-
-
-
-
-===== Meer info =====
-*http://www.globe4d.com
-*Globe4D is sinds Februari [[:2008]] onderdeel van de vaste collectie van het [[:Natuurhistorisch Museum Maastricht]].
-*Globe4D is een project van [[:Rick Companje]], [[:Nico van Dijk]], [[:Hanco Hogenbirk]], [[:Danica Mast]]
-*Artikel over Globe4D in [[:Eureka]]
-*Op [[:5 juni 2008]] verscheen [[http://www.leidenuniv.nl/mare/vervolg.php?y=2008&e=32&pg=10|een stuk over Globe4D in Mare]], het Leids Universitair Weekblad, geschreven door Hans Klis.
-\\
-English translation: [[Globe4D in English]]
-
-{{tag>Globe4D}}
+{{blog>}}
