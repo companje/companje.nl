@@ -1,5 +1,5 @@
 ====== Blog ======
-<html><script src="http://code.v2.nl/nederland/schreeuwt-om-cultuur.js"></script></html>
+<html><XXXscript src="http://code.v2.nl/nederland/schreeuwt-om-cultuur.js"></XXXscript></html>
 ~~NOTOC~~
 
 {{blog>}}
