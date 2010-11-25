@@ -6,6 +6,11 @@
 <code>gksudo gedit /boot/grub/menu.lst</code> (kdesu heeft hetzelfde effect?)
 * [[http://www.pendrivelinux.com/2008/04/09/usb-ubuntu-804-installation-from-windows/|Booting from USB drive]]
 
+===== GIT =====
+If you are just after tracking someone else's project, this get you started quickly:
+
+git clone url = svn checkout url
+git pull	= svn update
 
 ===== Display problems / tips =====
 * Laptop beeldscherm knippert / flikkert in Ubuntu. Mogelijke oplossing: Probeer bij Administration/Screen and Graphics de 'Intel Experimental mode' te veranderen in i810.
