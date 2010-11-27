@@ -7,7 +7,7 @@
 * [[http://www.pendrivelinux.com/2008/04/09/usb-ubuntu-804-installation-from-windows/|Booting from USB drive]]
 
 ===== .htaccess =====
-.AIR bestanden als binary laten dowloaden in .htaccess:
+.AIR bestanden als binary laten downloaden in .htaccess:
 <code> AddType application/vnd.adobe.air-application-installer-package+zip .air </code>
 
 ===== GIT =====
