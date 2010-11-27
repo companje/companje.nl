@@ -6,6 +6,10 @@
 <code>gksudo gedit /boot/grub/menu.lst</code> (kdesu heeft hetzelfde effect?)
 * [[http://www.pendrivelinux.com/2008/04/09/usb-ubuntu-804-installation-from-windows/|Booting from USB drive]]
 
+===== .htaccess =====
+.AIR bestanden als binary laten dowloaden:
+<code> AddType application/vnd.adobe.air-application-installer-package+zip .air </code>
+
 ===== GIT =====
 If you are just after tracking someone else's project, this get you started quickly:
 
