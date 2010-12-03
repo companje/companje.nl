@@ -39,11 +39,13 @@ tpl_searchform();
 *[[People]]
 
 ==== My other pages ====
+*[[http://http://www.facebook.com/profile.php?id=784037264|My Facebook]]
 *[[http://twitter.com/companje/|My Tweets on Twitter]]
 *[[http://youtube.com/profile?user=companje|My Movies on YouTube]]
 *[[http://flickr.com/photos/25601555@N00/|My Photos on Flickr]]
 *[[http://picasaweb.google.com/rick.companje|My Photos on Picasa Web]]
 *[[http://www.last.fm/user/companje|My Music on LastFM]]
+*[[http://nl.linkedin.com/pub/rick-companje/0/636/945|My LinkedIn]]
 
 ==== Blogroll ====
 *[[http://hildepeters.nl|Hilde Peters]]
