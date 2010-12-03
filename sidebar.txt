@@ -69,3 +69,4 @@ tpl_searchform();
 *[[http://www.mondayrunner.com/|Tim van den Bosch]]
 *[[http://www.socialfiction.org/|Wilfried Houjebek]]
 *[[http://www.tactile.nl/|Danica Mast]]
+*[[http://roy-t.nl/|Roy Triesscheijn]]
