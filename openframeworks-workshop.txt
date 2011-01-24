@@ -1,5 +1,5 @@
-====== openFrameworks Workshop in Auckland======
-{{  :blog:of.jpg?100|}}This week an [[http://openframeworks.cc|OpenFrameworks]] workshop / meeting will take place in Auckland, New Zealand. The exact date/time and location are currently unknown.
+====== openFrameworks workshop in Auckland======
+{{  :blog:of.jpg?100|}}This week an [[http://openframeworks.cc|OpenFrameworks]] workshop / meeting will take place in Auckland, New Zealand. The exact date/time and location will be announced later this week.
 
 <blockquote>openFrameworks is a free application framework designed for creative coding. It’s a c++ library designed to assist the creative process by providing a simple and intuitive framework for experimentation.
 
@@ -20,9 +20,9 @@ If possible, bring a laptop with Mac OSX, Windows or Linux and download XCode (m
 Location: Somewhere in Auckland
 Date/time: Somewhere between Jan 26th and Jan 31st
 
-[[http://openframeworks.cc/gallery|{{:openframeworks.jpg|}}]
+[[http://openframeworks.cc/gallery|{{:openframeworks.jpg|}}]]
 
-For inspiration more examples visit the [[http://vimeo.com/tag:openframeworks|openFrameworks channel on Vimeo]].
+For inspiration and more examples visit the [[http://vimeo.com/tag:openframeworks|openFrameworks channel on Vimeo]].
 
 {{tag>Art Tech Events}}
 
