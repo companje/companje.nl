@@ -1,38 +1,30 @@
-====== OpenFrameworks workshop ======
-Sunday, May 23rd there will be an OpenFrameworks beginners workshop at SETUP in Utrecht (the new media lab at Neude). The workshop is a collaboration between OpenToko, OF Freakdays and Setup Utrecht.
-OpenFrameworks is a free application framework designed for creative coding. It’s a c++ library designed to assist the creative process by providing a simple and intuitive framework for experimentation.
+====== openFrameworks Workshop in Auckland======
+{{  :blog:of.jpg?100|}}This week an [[http://openframeworks.cc|OpenFrameworks]] workshop / meeting will take place in Auckland, New Zealand. The exact date/time and location are currently unknown.
 
-with:
-RICK COMPANJE, DIEDERICK HUIJBERS
-Sunday, May 23rd there will be an OpenFrameworks beginners workshop at SETUP in Utrecht (the new media lab at Neude). The workshop is a collaboration between OpenToko, OF Freakdays and Setup Utrecht.
-
-OpenFrameworks is a free application framework designed for creative coding. It’s a c++ library designed to assist the creative process by providing a simple and intuitive framework for experimentation.
+<blockquote>openFrameworks is a free application framework designed for creative coding. It’s a c++ library designed to assist the creative process by providing a simple and intuitive framework for experimentation.
 
 OpenFrameworks is designed to work as a general purpose glue, and wraps together several commonly used libraries under a tidy interface: openGL for graphics, rtAudio for audio input and output, freeType for fonts, freeImage for image input and output, quicktime for video playing and sequence grabbing.
 
-The code is written to be both cross platform (PC, Mac, Linux, iPhone) and cross compiler. The API is designed to be minimal and easy to grasp. There are very few classes, and inside of those classes, there are very few functions.
+The code is written to be both cross platform (PC, Mac, Linux, iPhone) and cross compiler. The API is designed to be minimal and easy to grasp. There are very few classes, and inside of those classes, there are very few functions.</blockquote>
 
-The day starts at 10.00h with a ‘Introduction to OpenFrameworks’ lecture by Rick Companje followed by a talk by Diederick Huijbers showing the work he created at the OFLab in Breda at the Graphic Design Museum. The afternoon will be “hands-on” where everyone (beginners and experienced users, in groups or alone) can work on their own OpenFrameworks projects. Several experienced OpenFrameworks users will be there to help out.
+Topics that might being addressed during the session:
+ * What is openFrameworks? Who made it and what can you do with it?
+ * Some interactive art projects made with openFrameworks will be discussed.
+ *How to create your own openFrameworks projects?
+ *How to use OpenFrameworks for text, audio, vector graphics, 3D graphics, vector math, images, movies, live video, xml files, hardware (ie. Arduino), network (ie. Open Sound Control), hi-res PDF or Illustrator output etc.
+ *How to build a simple Particle System and also how to create some nice graphic design effects for creating printable posters.
+ *How to use Microsoft's Kinect in openFrameworks
 
-Topics being adressed during the talks:
+If possible, bring a laptop with Mac OSX, Windows or Linux and download XCode (mac) or CodeBlocks (windows, linux) and download the OpenFrameworks version 0.062. Download and get instructions at: [[http://www.openframeworks.cc]].
 
-- What is OpenFrameworks and how to use it?
-- Understanding the code examples and how to modify them for your own needs.
-- How to use OpenFrameworks for text, audio, vector graphics, 3D graphics, vector math, images, movies, live video, xml files, hardware (ie. Arduino), network (ie. Open Sound Control), hi-res PDF or Illustrator output etc.
-- We will teach you how to build a simple Particle System and also how to create some nice graphic design effects for creating printable posters.
+Location: Somewhere in Auckland
+Date/time: Somewhere between Jan 26th and Jan 31st
 
-Please bring a laptop with Mac OSX, Windows or Linux and download XCode (mac) or CodeBlocks (windows, linux) and download the OpenFrameworks version 0.061.
+[[http://openframeworks.cc/gallery|{{:openframeworks.jpg|}}]
 
-There will be coffee, tea and cookies and we will arrange a basic lunch. There is no fixed entrance fee but instead we ask you for a donation for what the knowlegde you gained is worth to you helping us to cover our expenses.
+For inspiration more examples visit the [[http://vimeo.com/tag:openframeworks|openFrameworks channel on Vimeo]].
 
-There is a maximum of 25 participants so please register now if you want to join.
-
-Location: SETUP Utrecht, the old ABN-AMRO building at Neude 4, Utrecht
-Date/time: May 23rd 2010 – 10.00h – 17.00h
-
-{{:blog:of.jpg|}}
-
-{{tag>}}
+{{tag>Art Tech Events}}
 
 
 ~~DISCUSSION~~
