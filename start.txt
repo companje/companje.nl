@@ -2,4 +2,4 @@
 <html><!--<script src="http://code.v2.nl/nederland/schreeuwt-om-cultuur.js"></script>--></html>
 ~~NOTOC~~
 
-{{blog>}}
+{{blog>?1}}
