@@ -14,6 +14,7 @@ Topics that might being addressed during the session:
  *How to use OpenFrameworks for text, audio, vector graphics, 3D graphics, vector math, images, movies, live video, xml files, hardware (ie. Arduino), network (ie. Open Sound Control), hi-res PDF or Illustrator output etc.
  *How to build a simple Particle System and also how to create some nice graphic design effects for creating printable posters.
  *How to use Microsoft's Kinect in openFrameworks
+ *How to contribute by creating addons?
 
 If possible, bring a laptop with Mac OSX, Windows or Linux and download XCode (mac) or CodeBlocks (windows, linux) and download the OpenFrameworks version 0.062. Download and get instructions at: [[http://www.openframeworks.cc]].
 
