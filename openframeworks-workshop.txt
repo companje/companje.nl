@@ -26,5 +26,4 @@ For inspiration and more examples visit the [[http://vimeo.com/tag:openframework
 
 {{tag>Art Tech Events}}
 
-
 ~~DISCUSSION~~
