@@ -17,12 +17,16 @@ Topics that might be addressed during the workshop:
  *How to contribute to the community by creating addons?
  *How to make an iPhone App with openFrameworks?
 
+OpenFrameworks is often considered as being 'the older brother of [[http://processing.org]] Processing' and is used a lot by artists for interactive artworks.
+
 If possible please bring a laptop:
 * Mac: **Be sure** to have XCode / Developer Tools installed (it's on the 'application DVD' you got when you bought your mac).
 * Windows or Linux: if you can please download and install CodeBlocks.
 
 Location: Auckland University of Technology - AUT Tower
 Date/time: Thursday 27th, January, 2011 from 16:00 until 21:00.
+
+The workshop is free to attend but a '[[http://en.wikipedia.org/wiki/Koha_(custom)|koha]] would be nice  (chips, cookies, drink etc). Please register for the workshop by email: [[openframeworks@go.to]]
 
 [[http://openframeworks.cc/gallery|{{:openframeworks.jpg|}}]]
 
