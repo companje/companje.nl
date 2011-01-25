@@ -24,7 +24,7 @@ tpl_searchform();
 *[[http://www.flickr.com/photos/companje/|Flickr]]
 *[[http://picasaweb.google.com/rick.companje|Picasa]]
 *[[http://www.last.fm/user/companje|LastFM]]
-*[[http://nl.linkedin.com/pub/rick-companje/0/636/945|My LinkedIn]]
+*[[http://nl.linkedin.com/pub/rick-companje/0/636/945|LinkedIn]]
 
 ==== Categories ====
 *[[Globe4D]]
