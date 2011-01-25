@@ -7,7 +7,9 @@ OpenFrameworks is designed to work as a general purpose glue, and wraps together
 \\
 The code is written to be both cross platform (PC, Mac, Linux, iPhone) and cross compiler. The API is designed to be minimal and easy to grasp. There are very few classes, and inside of those classes, there are very few functions.</blockquote>
 
-Topics that might be addressed during the workshop:
+{{:blog:2011:01:kylepointclouddepth-640x391.gif|}}
+
+Topics that will be addressed during the workshop:
  * What is openFrameworks? Who made it and what can you do with it?
  * Some interactive art projects made with openFrameworks will be discussed.
  *How to create your own openFrameworks projects?
@@ -17,7 +19,7 @@ Topics that might be addressed during the workshop:
  *How to contribute to the community by creating addons?
  *How to make an iPhone App with openFrameworks?
 
-OpenFrameworks is often considered as being 'the older brother of [[http://processing.org]] Processing' and is used a lot by artists for interactive artworks.
+OpenFrameworks is often considered as being 'the older brother of [[http://processing.org]] Processing' and is used a lot by interactive media artists.
 
 If possible please bring a laptop:
 * Mac: **Be sure** to have XCode / Developer Tools installed (it's on the 'application DVD' you got when you bought your mac).
