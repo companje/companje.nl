@@ -11,13 +11,15 @@
 *Flash / Flex Developer
 *Lecturer / Teacher
 
+[[rick-companje|Read more...]]
+
 ==== Search ====
 <php>
 tpl_searchform();
 </php>
 
 ==== Follow me  ====
-*[[http://twitter.com/companje/|Twitter: @companje]]
+*[[http://twitter.com/companje/|Twitter]]
 *[[http://www.facebook.com/profile.php?id=784037264|Facebook]]
 *[[http://companje.tumbler.com/|Thumblr]]
 *[[http://www.youtube.com/user/companje|YouTube]]
