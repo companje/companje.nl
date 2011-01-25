@@ -7,9 +7,14 @@ Rick's werk wordt wereldwijd tentoongesteld in musea, op conferenties en op fest
 Rick Companje (1979) loves Art, Science and Technology. With a background in Computer Science, Interaction Design and Media Technology at Leiden University he currently work as media artist, developer and Inventor. In 2005 he invented Globe4D, an interactive physical globe with Time as extra dimension. Rick also developed an interactive timeline for the Rijksmuseum Amsterdam and worked at a stereoscopic videocamera for the European Space Agency (ESA). In 2007 Rick was one of the nerds in the KRO tv‐program “Het Lab”. Since a few years Rick is a member of artist collective “De Spullenmannen” where he works on inventions‐nobody‐is‐asking‐for. Within this context he is cofounder
 of the open‐knowledge community OpenToko.org and FabLab Amersfoort. Furthermore he is a teacher at the HKU and gives programming workshops about Processing, OpenFrameworks and Arduino. Rick’s work has been exhibited worldwide in museums, conferences and during festivals like NEMO Science Center, ACM Siggraph, Wired Nexfest, Laval Virtual, TodaysArt, Cinekid and ScienceLinx.
 
+==== Profile ====
+likes | art, science, technology, coding, teaching
+founder of | Globe4D - interactive globe 
+founder of | OpenToko - open knowledge community
+founder of | FabLab Amersfoort - fabrication laboratory
+member of | De Spullenmannen - artist collective
+
 ====== Contact ======
-Address: <del>Zeewoldtstraat 10, 2223 ET Katwijk ZH, The Netherlands</del>  
-Address: <del>'t Goylaan 63-1, 3525 AA Utrecht</del>  
 Address: Nicolaasweg 54, 3581 VK Utrecht
 Phone: +31(0)6-2851 6908
 E-Mail: rick at companje.nl
