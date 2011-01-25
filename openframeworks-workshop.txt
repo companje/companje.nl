@@ -1,5 +1,5 @@
 ====== openFrameworks workshop in Auckland======
-{{  :blog:of.jpg?100|}}An [[http://openframeworks.cc|openFrameworks]] workshop will take place at [[www.colab.org.nz|CoLab]] at the Auckland University of Technology (AUT), New Zealand this Thursday (27th January @16h). 
+{{  :blog:of.jpg?100|}}An [[http://openframeworks.cc|openFrameworks]] workshop will take place at [[http://www.colab.org.nz|CoLab]] at the Auckland University of Technology (AUT), New Zealand this Thursday (27th January @16h). 
 
 <blockquote>openFrameworks is a free application framework designed for **creative coding**. It’s a c++ library designed to assist the creative process by providing a simple and intuitive framework for experimentation.
 \\
