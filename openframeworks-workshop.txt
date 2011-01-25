@@ -21,7 +21,7 @@ Topics that will be addressed during the workshop:
  *How to contribute to the community by creating addons?
  *How to make an iPhone App with openFrameworks?
 
-OpenFrameworks is often considered as being 'the big brother of [[http://processing.org]] Processing' and is used a lot by interactive media artists.
+OpenFrameworks is often considered as being 'the big brother of [[http://processing.org|Processing]]' and is used a lot by interactive media artists.
 
 If possible please bring a laptop:
 * Mac: Make sure (!) to have XCode (Developer Tools) installed (it's on the 'application DVD' you got when you bought your mac).
