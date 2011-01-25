@@ -40,7 +40,7 @@ For inspiration and more examples visit the [[http://vimeo.com/tag:openframework
 
 An example OpenFrameworks project in Auckland: [[http://www.creativeapplications.net/openframeworks/night-lights-openframeworks/|NightLights]]
 
-This workshop is an collaboration between [http://OpenToko.org]] and [[http://www.colab.org.nz|CoLab]] .
+This workshop is an collaboration between [[http://OpenToko.org]] and [[http://www.colab.org.nz|CoLab]] .
 
 {{tag>Art Tech Events}}
 
