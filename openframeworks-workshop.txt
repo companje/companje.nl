@@ -7,7 +7,7 @@ OpenFrameworks is designed to work as a general purpose glue, and wraps together
 \\
 The code is written to be both cross platform (PC, Mac, Linux, iPhone) and cross compiler. The API is designed to be minimal and easy to grasp. There are very few classes, and inside of those classes, there are very few functions.</blockquote>
 
-{{:blog:2011:01:kylepointclouddepth-640x391.gif|}}
+{{:blog:2011:01:kylepointclouddepth-640x391.gif?500|}}
 
 Topics that will be addressed during the workshop:
  * What is openFrameworks? Who made it and what can you do with it?
