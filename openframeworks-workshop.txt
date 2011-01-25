@@ -1,5 +1,7 @@
 ====== openFrameworks workshop in Auckland======
-{{  :blog:of.jpg?100|}}An [[http://openframeworks.cc|openFrameworks]] workshop will take place at [[http://www.colab.org.nz|CoLab]] at the Auckland University of Technology (AUT), New Zealand this Thursday (January, 27th @16:00h). 
+{{:blog:2011:01:openframeworks.gif|}}
+\\
+An [[http://openframeworks.cc|openFrameworks]] workshop will take place at [[http://www.colab.org.nz|CoLab]] at the Auckland University of Technology (AUT), New Zealand this Thursday (January, 27th @16:00h). 
 
 <blockquote>openFrameworks is a free application framework designed for **creative coding**. It’s a c++ library designed to assist the creative process by providing a simple and intuitive framework for experimentation.
 \\
@@ -7,7 +9,7 @@ OpenFrameworks is designed to work as a general purpose glue, and wraps together
 \\
 The code is written to be both cross platform (PC, Mac, Linux, iPhone) and cross compiler. The API is designed to be minimal and easy to grasp. There are very few classes, and inside of those classes, there are very few functions.</blockquote>
 
-{{:blog:2011:01:kylepointclouddepth-640x391.gif?500|}}
+{{:blog:2011:01:kylepointclouddepth-640x391.gif?500|Kyle McDonald's ofxKinect Depth of Field point cloud}}
 
 Topics that will be addressed during the workshop:
  * What is openFrameworks? Who made it and what can you do with it?
@@ -19,7 +21,7 @@ Topics that will be addressed during the workshop:
  *How to contribute to the community by creating addons?
  *How to make an iPhone App with openFrameworks?
 
-OpenFrameworks is often considered as being 'the older brother of [[http://processing.org]] Processing' and is used a lot by interactive media artists.
+OpenFrameworks is often considered as being 'the big brother of [[http://processing.org]] Processing' and is used a lot by interactive media artists.
 
 If possible please bring a laptop:
 * Mac: **Be sure** to have XCode / Developer Tools installed (it's on the 'application DVD' you got when you bought your mac).
@@ -28,7 +30,9 @@ If possible please bring a laptop:
 Location: Auckland University of Technology - AUT Tower
 Date/time: Thursday 27th, January, 2011 from 16:00 until 21:00.
 
-The workshop is free to attend but a '[[http://en.wikipedia.org/wiki/Koha_(custom)|koha]] would be nice  (chips, cookies, drink etc). Please register for the workshop by email: [[openframeworks@go.to]]
+This is a FREE workshop but '[[http://en.wikipedia.org/wiki/Koha_(custom)|koha]] would be nice (chips, cookies, drink etc). Please register for the workshop by email [[openframeworks@go.to]].
+
+Please check: [[http://bit.ly/openframeworks]] for updates
 
 [[http://openframeworks.cc/gallery|{{:openframeworks.jpg|}}]]
 
