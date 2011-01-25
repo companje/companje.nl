@@ -30,7 +30,7 @@ If possible please bring a laptop:
 Where: Auckland University of Technology, AUT Tower, corner Wakefield/Rutland st.
 When: Thursday 27th, January, 2011 from 16:00 until 21:00.
 
-This is a FREE workshop organized [[http://www.OpenToko.org]] but '[[http://en.wikipedia.org/wiki/Koha_(custom)|koha]] would be nice (chips, cookies, drink etc). Please register for the workshop by email [[openframeworks@go.to]].
+This is a FREE workshop but a '[[http://en.wikipedia.org/wiki/Koha_(custom)|koha]] would be nice (chips, cookies, drink etc). Please register for the workshop by email [[openframeworks@go.to]].
 
 Please check [[http://bit.ly/openframeworks]] for possible updates.
 
