@@ -18,8 +18,8 @@ tpl_searchform();
 
 ==== Categories ====
 *[[Globe4D]]
-*[[Afstuderen:]]
 *[[Processing]]
+*[[OpenFrameworks]]
 *[[Flex & Flash]]
 *[[Electronics]]
 *[[Math]]
@@ -33,10 +33,7 @@ tpl_searchform();
 *[[Projects:]]
 *[[Fun]]
 *[[Blog]]
-*[[Photos]]
-*[[Dates]]
-*[[Notes]]
-*[[People]]
+*[[Data]]
 
 ==== My other pages ====
 *[[http://http://www.facebook.com/profile.php?id=784037264|My Facebook]]
