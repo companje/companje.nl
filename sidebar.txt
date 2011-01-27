@@ -25,6 +25,7 @@ tpl_searchform();
 *[[http://picasaweb.google.com/rick.companje|Picasa]]
 *[[http://www.last.fm/user/companje|LastFM]]
 *[[http://nl.linkedin.com/pub/rick-companje/0/636/945|LinkedIn]]
+*[[http://www.delicious.com/companje|Delicious]]
 
 ==== Categories ====
 *[[Globe4D]]
