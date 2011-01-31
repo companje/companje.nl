@@ -1,5 +1,6 @@
 ====== openFrameworks workshop in Auckland======
 {{:blog:2011:01:openframeworks2.gif|}}
+\\
 Check [[https://sites.google.com/site/ofauckland/|http://of.opentoko.org]] for the slides, example code and notes.
 \\
 An [[http://openframeworks.cc|openFrameworks]] workshop will take place at [[http://www.colab.org.nz|CoLab]] at the Auckland University of Technology (AUT), New Zealand this Thursday (January, 27th @16:00h). 
