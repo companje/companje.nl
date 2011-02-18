@@ -1,5 +1,5 @@
 ====== Duck ======
-{{:blog:0.68542.gif?500|}}
+{{:blog:0.68542.gif?512|}}
 <html>
 <pre style='color:#000000;background:#ffffff;'>PImage img <span style='color:#808030; '>=</span> loadImage<span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>duck.jpg</span><span style='color:#800000; '>"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
 
