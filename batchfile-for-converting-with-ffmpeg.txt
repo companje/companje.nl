@@ -69,6 +69,11 @@ goto BEGIN
 start explorer %CD%
 </code>
 
+Filmpje van je camera omzetten naar MPEG.
+<code>
+ffmpeg -i MVI_0131.AVI -r 25 -sameq output.mov
+</code>
+
 {{tag>}}
 
 
