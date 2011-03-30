@@ -1,4 +1,4 @@
-====== Duck ======
+====== Harig eendje ======
 {{:blog:2011:02:duck512.gif|}}
 
 =====Processing code=====
