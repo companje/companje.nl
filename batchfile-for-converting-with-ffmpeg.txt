@@ -79,6 +79,10 @@ Remove audio from a movie with ffmpeg:
 ffmpeg -i input.mov -an output.mov
 </code>
 
+Combine jpg and mp3 audio to mpg (in this case portrait). Be sure to use RGB jpg's instead of CMYK.
+<code>
+ffmpeg -y -i vogels.jpg -loop_input -i vogels.mp3 -s 320x480 vogels320x480.mpg
+</code>
 
 {{tag>}}
 
