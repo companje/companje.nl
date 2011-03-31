@@ -82,6 +82,8 @@ ffmpeg -i input.mov -an output.mov
 Combine jpg and mp3 audio to mpg (in this case portrait). Be sure to use RGB jpg's instead of CMYK.
 <code>
 ffmpeg -y -i vogels.jpg -loop_input -i vogels.mp3 -s 320x480 vogels320x480.mpg
+of:
+ffmpeg -y -b 2500k -r 30 -i yellow-brick-road.jpg -i brand-new-day.mp3 -map 0:0 -map 1:0 -vsync 1 -sameq  -vcodec mpeg4 -s 320x480 result2.mp4
 </code>
 
 {{tag>}}
