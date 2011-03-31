@@ -74,6 +74,12 @@ Filmpje van je camera omzetten naar MPEG.
 ffmpeg -i MVI_0131.AVI -r 25 -sameq output.mov
 </code>
 
+Remove audio from a movie with ffmpeg:
+<code>
+ffmpeg -i input.mov -an output.mov
+</code>
+
+
 {{tag>}}
 
 
