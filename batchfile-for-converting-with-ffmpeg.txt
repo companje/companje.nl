@@ -74,6 +74,11 @@ Filmpje van je camera omzetten naar MPEG.
 ffmpeg -i MVI_0131.AVI -r 25 -sameq output.mov
 </code>
 
+Een filmpje van je camera 90 graden roteren (met mencoder).
+<code>
+mencoder -vf rotate=1 -o OUTPUT.AVI -oac copy -ovc lavc MVI_7590.AVI 
+</code>
+
 Remove audio from a movie with ffmpeg:
 <code>
 ffmpeg -i input.mov -an output.mov
