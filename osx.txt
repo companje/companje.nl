@@ -1,5 +1,5 @@
 ======Mac OSX tips======
-Show or hide hidden files/folders in Mac OSX
+===Show or hide hidden files/folders===
 <code>
 defaults write com.apple.finder AppleShowAllFiles TRUE
 </code>
