@@ -1,0 +1,11 @@
+======Mac OSX tips======
+Show or hide hidden files/folders in Mac OSX
+<code>
+defaults write com.apple.finder AppleShowAllFiles TRUE
+</code>
+
+===SizeUp===
+[[http://www.irradiatedsoftware.com|SizeUp]] allows you to quickly position a window to fill exactly half the screen (splitscreen), a quarter of the screen (quadrant), full screen, or centered via the menu bar or configurable system-wide shortcuts (hotkeys).  Similar to "tiled windows" functionality available on other operating systems.
+
+===Visor===
+Install [[http://visor.binaryage.com/|Visor]] to have a system-wide terminal on a hot-key.
