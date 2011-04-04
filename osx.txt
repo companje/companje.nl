@@ -2,7 +2,10 @@
 ===Show or hide hidden files/folders===
 <code>
 defaults write com.apple.finder AppleShowAllFiles TRUE
+or
+defaults write com.apple.finder AppleShowAllFiles FALSE
 </code>
+(and reload Finder)
 
 ===SizeUp===
 [[http://www.irradiatedsoftware.com|SizeUp]] allows you to quickly position a window to fill exactly half the screen (splitscreen), a quarter of the screen (quadrant), full screen, or centered via the menu bar or configurable system-wide shortcuts (hotkeys).  Similar to "tiled windows" functionality available on other operating systems.
