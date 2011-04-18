@@ -8,3 +8,6 @@
 
 ===Visor===
 Install [[http://visor.binaryage.com/|Visor]] to have a system-wide terminal on a hot-key.
+
+===Rotate an image===
+<code>sips input.jpg -r 90 --out output.jpg</code>
