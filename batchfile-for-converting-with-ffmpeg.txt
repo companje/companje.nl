@@ -91,6 +91,7 @@ of:
 ffmpeg -y -b 2500k -r 30 -i yellow-brick-road.jpg -i brand-new-day.mp3 -map 0:0 -map 1:0 -vsync 1 -sameq  -vcodec mpeg4 -s 320x480 result2.mp4
 </code>
 
+Split video: see [[http://ubuntuforums.org/showthread.php?t=480343]]
 {{tag>}}
 
 
