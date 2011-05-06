@@ -13,10 +13,10 @@ Install [[http://visor.binaryage.com/|Visor]] to have a system-wide terminal on 
 <code>sips input.jpg -r 90 --out output.jpg</code>
 
 ===~/.profile===
-[code]
+<code>
 alias dir="ls -lGa"
-[/code]
+</code>
 
-[code]
+<code>
 alias tocaf="afconvert -f caff -d LEI16"
-[/code]
+</code>
