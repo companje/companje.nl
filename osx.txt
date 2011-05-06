@@ -11,3 +11,12 @@ Install [[http://visor.binaryage.com/|Visor]] to have a system-wide terminal on 
 
 ===Rotate an image===
 <code>sips input.jpg -r 90 --out output.jpg</code>
+
+===~/.profile===
+[code]
+alias dir="ls -lGa"
+[/code]
+
+[code]
+alias tocaf="afconvert -f caff -d LEI16"
+[/code]
