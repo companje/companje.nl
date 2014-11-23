@@ -1,0 +1,162 @@
+====== Bash ======
+
+==read line from netcat==
+<code bash>
+while:
+do
+  echo listening...
+
+  nc 10.0.0.134 8081 | while read line
+  do
+
+    if [ ! -f /root/bel.txt ]
+    then
+      echo $line > /root/bel.txt
+    fi
+
+    grep -q bel.txt -e $line
+    if [ $? -eq 0 ]; then
+      echo "gevonden: $line"
+    fi
+
+    #echo test:$line
+  done
+done
+</code>
+
+==infinite while==
+<code>while :
+do
+  echo tick
+  sleep 1
+done
+</code>
+
+==tee==
+Use tee command to redirect the content to file:
+  telnet google.com 80 | tee outfile
+Then grep the file
+
+==notes from BEAA talk by Johan at 26 june==
+Bash
+
+all chmod a+r  
+user chmod u+w
+group chmod g-x
+owner/ chmod o-w
+chmod 755
+
+
+shell expansion
+
+  {a..z}{0..9} = a1 a2 a3 … z7 z8 z9
+  /pad/naar/{file1,file2} == /pad/naar/file{1,2}
+  echo ~  toont home dir
+  echo ~- toont vorige
+  echo ~+ volgende
+
+  $(command) == `command`
+
+  echo $((2+2))
+  A=test; echo A; echoe $(A:=foo}
+  echo *
+  echo Do*
+  echo {a..z}
+
+  cp bestand{,.bak}
+
+sterretje kan ook midden in pad
+  sudo ls /home/*/Maildir/new
+  sudo ls /home/user{1,2,3}/Maildir/new
+  mkdir {2012..2014}-{1..12} && ls
+  ls -la `whereis ls`
+
+shell expansion vindt plaats voor het commando wordt uitgevoerd
+
+  mkdir tmp && cd tmp
+  >cp
+  >foobar
+  * test
+  ls
+
+  echo ls ${foo:=*}
+  echo “ls ${foo:=*}”
+  echo ‘ls ${foo:=*}’  (wordt niks mee gedaan, komt koud als string naar de terminal
+
+  || is exclusieve OR. 1 van de 2 moet waar zijn andere mag niet waar zijn
+
+  [ is eigenlijk een alias naar test
+  man test voor hulp over de if control structures.
+
+  cat nonexistingfile && echo 123
+  cat nonexistingfile || echo 123
+
+  history
+  !123 voert bepaald history commando uit
+  !-2 voert twee-na-laatste commando uit
+  !begintmet
+  !?bevat
+  control+R
+  fc (fix command) opent je laatste commando in vi en voert ‘m uit na :q.
+  sudo !! voert laatste commando uit met sudo ervoor
+
+  lsof -p $$ (lijst van alle open bestanden maar alleen die door jouw PID geopend zijn)
+
+  ls &> file
+
+inhoud van een file gebruiken als std input
+
+  mysql database <<<“SELECT * FROM TABLE”
+
+  mysql database < <(sql_generator)
+je koppelt hier de std out van het ene commando aan de std in van het andere commando. Dit is hetzelfde als pipe
+
+LPI 1 boeken zijn heel fijn om bash te leren
+
+rev draait in een bestand voor elke regel alle karakters om
+
+==ncal==
+<code>
+cal
+ncal
+ncal -wy
+</code>
+
+==bash-completion==
+for advanced code completion (also reads from makefiles)
+<code bash>sudo port install bash-completion</code>
+add this to ~/.profile
+<code bash>
+export BASH_COMPLETION=/opt/local/etc/profile.d/bash_completion.sh
+if [ -f $BASH_COMPLETION ]; then
+        . $BASH_COMPLETION
+fi
+shopt -s no_empty_cmd_completion
+ 
+export GIT_PS1_SHOWDIRTYSTATE=true
+export GIT_PS1_SHOWSTASHSTATE=true
+export GIT_PS1_SHOWUNTRACKEDFILES=true
+source /opt/local/share/doc/git-core/contrib/completion/git-completion.bash
+source /opt/local/share/doc/git-core/contrib/completion/git-prompt.sh
+</code>
+
+== Checking errorcode / errorlevel / returnvalue in a shell script ==
+See [[linux]]
+
+<code>
+#!/bin/sh
+
+export TOPDIR=`pwd`/..
+
+echo Compiling...
+
+make
+
+if [ $? -ne 0 ]
+then
+  echo Error compiling...
+  exit
+fi
+
+./executable 1>>log.txt 2>&1
+</code>
