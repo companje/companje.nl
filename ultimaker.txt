@@ -2,10 +2,6 @@
 
 See [[3DPrinting]]
 
-==help==
-* https://ultimaker.com/nl/support/view/11703-extrusion-problems
-* https://ultimaker.com/nl/support/view/223-atomic-method
-
 ==boutjes en moertjes==
 * http://rvspaleis.nl
 
