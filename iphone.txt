@@ -1,8 +1,7 @@
 ====== iPhone ======
 
 ==sleep/wake button problem==
-* https://ssl.apple.com/nl/support/iphone5-sleepwakebutton/
-* iFixit: https://www.ifixit.com/Guide/iPhone+5+Power+Button+Replacement/10703
+https://ssl.apple.com/nl/support/iphone5-sleepwakebutton/
 
 ==battery replacement iphone5==
 my serial nr: DNQJWMKBDTWD
