@@ -1,2 +1,2 @@
 ====== Rick's notes ======
-%pagecloud%
+%pagecloud()%
