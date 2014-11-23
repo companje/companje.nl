@@ -1,19 +1,12 @@
-=============== Javascript notes ===============
+====== Javascript notes ======
 
-=====EcmaScript 6=====
-Zeer interessant praatje over de toekomst van Javascript, de nieuwe versie: EcmaScript 6. Dingen als generators, arrow functions, template strings. Veel hiervan is nu al bruikbaar door compilers als Traceur.  
-https://www.youtube.com/watch?v=mPq5S27qWW8
-
-=====Over ES6 compilers===== 
-http://stackoverflow.com/questions/6506519/ecmascriptharmony-es6-to-javascript-compiler
-https://github.com/google/traceur-compiler
-=====safely access nested properties in object=====
+==safely access nested properties in object==
 *http://stackoverflow.com/questions/18178406/access-javascript-nested-objects-safely
 
-=====assertType function=====
+==assertType function==
 <code javascript>
 function assertType(variable,typename) {
-  if (typeof variable ===== typename) return true;
+  if (typeof variable == typename) return true;
   var s = [].splice.call(arguments,2).join(' ');
   console.error(s+': Unexpected type: '+typeof variable+', expected: '+typename);
   return false;
@@ -29,7 +22,7 @@ function assert(a,b) {
 </code>
 
 
-=====Scaling down an image to fit in a element of a certain size=====
+==Scaling down an image to fit in a element of a certain size==
 <code javascript>
   var iw = img[0].naturalWidth;
   var ih = img[0].naturalHeight;
@@ -51,31 +44,31 @@ function assert(a,b) {
   img.height(ih*scale);
 </code>
 
-=====lectures=====
+==lectures==
 * https://www.destroyallsoftware.com/talks
 
-=====JavaScript closure inside loops – simple practical example=====
+==JavaScript closure inside loops – simple practical example==
 * http://stackoverflow.com/questions/750486/javascript-closure-inside-loops-simple-practical-example
 
 
-=====Access-Control-Allow-Origin=====
+==Access-Control-Allow-Origin==
 <code>
 header("Access-Control-Allow-Origin: *");
 </code>
 
-=====more=====
+==more==
 * http://doodle3d.com/help/javascript-optimization
 * http://msdn.microsoft.com/en-us/scriptjunkie/ee819093
 * http://raphaeljs.com/
 * paperjs
 
-=====classes=====
+==classes==
 Mochten jullie nog opzoek zijn naar manieren om een soort classes te maken in javascript, ik heb wat onderzoek gedaan:
 http://doodle3d.com/help/simple-class-pattern
 En de pagina's in het algemeen onder:
 http://doodle3d.com/help/javascript
 
-=====disable dragging=====
+==disable dragging==
 <code javascript>
 function disableDragging() {
   $(document).bind("dragstart", function(event) {
@@ -85,7 +78,7 @@ function disableDragging() {
 }
 </code>
 
-=====getParameterByName=====
+==getParameterByName==
 <code javascript>
 function getParameterByName(name) {
     var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
