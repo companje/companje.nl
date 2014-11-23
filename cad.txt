@@ -28,8 +28,3 @@
 
 ==from pointcloud to mesh==
 from Wikipedia: There are many techniques for converting a point cloud to a 3D surface. Some approaches, like Delaunay triangulation, alpha shapes, and ball pivoting, build a network of triangles over the existing vertices of the point cloud, while other approaches convert the point cloud into a volumetric distance field and reconstruct the implicit surface so defined through a marching cubes algorithm.[2]
-
-==Voxelbuilder==
-Ook een leuk 3D ontwerp programmaatje: 
-http://voxelbuilder.com/
-(Werkt met Canvas, werkt dus ook op oudere iPhones en iPad's)
