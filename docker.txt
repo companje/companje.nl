@@ -1,11 +1,7 @@
 ====== Docker ======
-
 * http://doodle3d.com/help/docker
 
-=====kitematic=====
-* https://kitematic.com/
-  
-====='run'======
+=='run'==
 start een nieuwe container
 
 =='start' opent een bestaande==
