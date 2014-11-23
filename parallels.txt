@@ -5,7 +5,3 @@
 
 ==network bridge==
 bridge the nework through Virtual Machine->Configure->Network to get in the same subnet as the Host operating system.
-
-==connect from OSX terminal to Ubuntu terminal==
-* make sure `ssh` is installed on Ubuntu
-* just use the VM's ip address to connect `ssh you@10.1.2.3`
