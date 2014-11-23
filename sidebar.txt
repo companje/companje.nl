@@ -1,10 +1,8 @@
-[[Rick Companje|{{:rick-companje-foto.jpg|Rick Companje}}]]
+[[Rick Companje|{{:rick-companje-3.jpg?225|Rick Companje}}]]
 ====== Rick Companje ======
-*+31(0)6-2851 6908
-*rick at companje.nl
-
 *art, science, technology, coding, teaching
 *founder of | Globe4D
+*founder of | Doodle3D
 *founder of | OpenToko.org
 *founder of | FabLab Amersfoort
 *member of | De Spullenmannen
@@ -20,17 +18,15 @@ tpl_searchform();
 ==== Follow me  ====
 *[[http://twitter.com/companje/|Twitter]]
 *[[http://www.facebook.com/profile.php?id=784037264|Facebook]]
-*[[http://companje.tumbler.com/|Thumblr]]
+*[[http://companje.tumblr.com/|Thumblr]]
 *[[http://www.youtube.com/user/companje|YouTube]]
 *[[http://www.flickr.com/photos/companje/|Flickr]]
 *[[http://picasaweb.google.com/rick.companje|Picasa]]
-*[[http://www.last.fm/user/companje|LastFM]]
 *[[http://nl.linkedin.com/pub/rick-companje/0/636/945|LinkedIn]]
-*[[http://www.delicious.com/companje|Delicious]]
 
 ==== Categories ====
 *[[Globe4D]]
-*[[OpenFrameworks]]
+*[[openFrameworks]]
 *[[Processing]]
 *[[Electronics]]
 *[[Travel]]
@@ -40,8 +36,22 @@ tpl_searchform();
 *[[Ideas]]
 *[[Study]]
 *[[Math]]
-*[[Flex & Flash]]
-*[[Projects:]]
+*[[Projects]]
 *[[Fun]]
 *[[Museums]]
 *[[Data]]
+*[[FabLab]]
+*[[OpenToko]]  
+*[[Code]]
+
+==== Notes ====
+*[[linux]]
+*[[osx]]
+*[[ffmpeg]]
+*[[git]]
+*[[gdb]]
+*[[make]]
+*[[cmake]]
+*[[irc]]
+*[[xcode]]
+*[[homebrew]]
