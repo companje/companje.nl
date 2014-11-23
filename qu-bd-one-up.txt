@@ -1,7 +1,5 @@
 ====== QU-BD One Up ======
 
-See [[3dprinting]]
-
 *[[http://www.fabric8r.com/forums/showthread.php?1316-TIPS-Getting-it-to-print|Important info before using the printer]]
 * [[http://www.fabric8r.com/forums/showthread.php?1308-Customizing-Marlin-Firmware-for-the-One-Up-and-Two-Up|Uploading customized firmware]]
 * [[http://www.fabric8r.com/forums/showthread.php?1247-Assembly-videos-and-other-resources|Assembly videos and other resources]]
