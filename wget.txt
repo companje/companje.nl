@@ -1,8 +1,5 @@
 ====== wget ======
 
-==don't download if file exists==
-wget -nc   # or --no-clobber: skip downloads that would download to existing files.
-
 ==download url's from file==
 <code bash>
 wget -i file.txt
