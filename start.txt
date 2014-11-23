@@ -1,4 +1,3 @@
-====== Blog ======
 ~~NOTOC~~
 
-{{blog>?20}}
+dit is een test
