@@ -1,9 +1,9 @@
-======iOS======
+=====iOS=====
 
-=====libobjc.A.dylib`objc_msgSend:=====
+==libobjc.A.dylib`objc_msgSend:==
 see [[phonegap]]
 
-=====URL handling (in .plist)=====
+==URL handling (in .plist)==
 <code>
     <key>CFBundleURLTypes</key>
     <array>
@@ -18,7 +18,7 @@ see [[phonegap]]
     </array>
 </code>
 
-=====file handling (in .plist)=====
+==file handling (in .plist)==
 <code>    
     <key>UTExportedTypeDeclarations</key>
     <array>
@@ -63,23 +63,23 @@ see [[phonegap]]
     </array>
 </code>
 
-=====How to obtain Certificate Signing Request=====
+==How to obtain Certificate Signing Request==
   - [[http://stackoverflow.com/questions/12126496/how-to-obtain-certificate-signing-request|Create a certificate with 'Keychain Access']]
   - [[https://developer.apple.com/account/ios/certificate/certificateCreate.action|Upload the CertificateSigningRequest file to Apple's Dev center]]
   - [[https://developer.apple.com/account/ios/profile/profileDownload.action|Create a mobile provisioning profile]]
 
-=====disable select in webpages with css=====
+==disable select in webpages with css==
 <code css>
 -webkit-user-select: none;
 </code>
 
-=====disable glow effect for home screen icons of webpages=====
+==disable glow effect for home screen icons of webpages==
 <code html>
 <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-72x72-precomposed.png" />
 </code>
 more info: http://mathiasbynens.be/notes/touch-icons
 
-=====anti-aliasing on ios with openFrameworks=====
+==anti-aliasing on ios with openFrameworks==
 <code c>
 int main(){
     ofAppiPhoneWindow * iOSWindow = new ofAppiPhoneWindow();
@@ -90,44 +90,44 @@ int main(){
 }
 </code>
 
-=====openFramworks for ios setup info=====
+==openFramworks for ios setup info==
 * http://www.openframeworks.cc/setup/iphone/
 
-=====in-app email=====
+==in-app email==
 * http://blog.mugunthkumar.com/coding/iphone-tutorial-in-app-email/
 
-=====in-app purchase=====
+==in-app purchase==
 * [[http://stackoverflow.com/questions/11200549/upgrade-free-app-to-paid-with-in-app-purchase|stackoverflow on upgrade-free-app-to-paid-with-in-app-purchase]]
 * [[http://www.raywenderlich.com/2797/introduction-to-in-app-purchases|Introduction]]
 * [[http://www.raywenderlich.com/21081/introduction-to-in-app-purchases-in-ios-6-tutorial|Introduction IOS6]]
 * openFrameworks [[http://forum.openframeworks.cc/index.php?topic=11197.15|ofxInAppProduct]]
 
-=====line smoothing=====
+==line smoothing==
 * http://answers.oreilly.com/topic/1669-how-to-render-anti-aliased-lines-with-textures-in-ios-4/
 
-=====cross compiling=====
+==cross compiling==
 http://shift.net.nz/2010/09/compiling-freetype-for-iphoneios/
 
-=====problem=====
+==problem==
 <code>file is universal but does not contain a(n) armv7 slice for architecture armv7</code>
 try to remove armv7s from the build settings
 
-=====crash logs=====
+==crash logs==
 <code>
 ~/Library/Logs/CrashReporter/MobileDevice/
 </code>
 
-=====ld: symbol(s) not found for architecture armv7=====
+==ld: symbol(s) not found for architecture armv7==
 dit betekent dat er een sourcefile (.m / .mm of .cpp) niet gevonden kan worden of niet wordt mee-gecompiled. Ook al zit deze misschien wel in je projectree.
 Oplossing: ga naar je Project settings klik op de juiste Target en ga dan naar ''Compile sources''. Sleep de ontbrekende source file hier naar toe.
 
-=====enable redpark serial cable in your iOS project=====
+==enable redpark serial cable in your iOS project==
 Be sure to add 'Supported external accessory protocol' = 'com.redpark.hobdb9' to your project's .plist file
 
-=====Undefined symbols ...  _OBJC_CLASS_$_EAAccessoryManager=====
+==Undefined symbols ...  _OBJC_CLASS_$_EAAccessoryManager==
 Add ''ExternalAccessory.framework'' to your project's Target Linked Libraries.
 
-=====snippets of basic usage of redparkWrapper=====
+==snippets of basic usage of redparkWrapper==
 <code objc>
 //
 //  ViewController.h
