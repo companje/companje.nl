@@ -1,9 +1,9 @@
 ====== node.js ======
 
-=====doorbell=====
+==doorbell==
 * https://gist.github.com/companje/b3de8f5028c1dd1eb0ca
 
-=====gpio's on Raspberry Pi with nodejs=====
+==gpio's on Raspberry Pi with nodejs==
 <code>
 var Gpio = require('onoff').Gpio;
 
@@ -33,20 +33,20 @@ setInterval(function() {
 },100);
 </code>
 
-=====info about semantic versions=====
+==info about semantic versions==
 http://semver.org/
   
-=====olimex through serial monitor=====
+==olimex through serial monitor==
   screen /dev/tty.NoZAP-PL2303-00001014 115200
   pm2 logs
   
-=====pm2 log=====
+==pm2 log==
   cd ~/......./.....
   DEBUG=cloud* pm2 start —name=cloud -o /tmp/cloud.log -e /tmp/cloud.error.log index.js
 
   pm2 logs cloud
 
-=====nodejs http client example=====
+==nodejs http client example==
 <code javascript>
 var http = require('http');
 
@@ -66,7 +66,7 @@ http.get("........", function(res) {
   console.log("Got error: " + e.message);
 });
 </code>
-=====http client using node request module=====
+==http client using node request module==
 <code javascript>
 var request = require('request');
 var fs = require('fs');
@@ -74,27 +74,27 @@ var fs = require('fs');
 request("http://10.0.0.71:8080/?action=snapshot").pipe(fs.createWriteStream('doodle.png'))
 </code>
 
-=====nodejs webcam proxy=====
+==nodejs webcam proxy==
 * http://stackoverflow.com/questions/14035864/pipe-an-mjpeg-stream-through-a-node-js-proxy
 * https://www.npmjs.org/package/mjpeg-proxy
 * see [[mjpgstreamer]]
 
-=====nodejs webcam stream with EventSource=====
+==nodejs webcam stream with EventSource==
 https://github.com/koajs/webcam-mjpeg-stream
 
-=====nvm=====
+==nvm==
   curl https://raw.githubusercontent.com/creationix/nvm/v0.11.1/install.sh | bash
 => Close and reopen your terminal to start using NVM
   nvm install 0.11
   
-=====socket.io-redis module=====
+==socket.io-redis module==
 https://www.npmjs.org/package/socket.io-redis
 
-=====Access-Control-Allow-Origin=====
+==Access-Control-Allow-Origin==
   res.header('Access-Control-Allow-Origin', '*')
   res.status(200).send(user.toObject());
   
-=====create a NodeJS client=====
+==create a NodeJS client==
 <code javascript>
 var io = require('socket.io-client'); 
 var socket = io.connect('http://cloud.doodle3d.com:5000');
@@ -112,20 +112,20 @@ socket.on("connect", function() {
 })
 </code>
   
-=====pm2=====
+==pm2==
 https://github.com/Unitech/pm2
   npm install pm2
   node_modules/pm2/bin/pm2 start server.js
   pm2 list
   pm2 describe ...
   
-=====install module from github=====
+==install module from github==
   npm install --save git+https://github.com/nkzawa/socket.io-stream.git
 
-=====stream handbook=====
+==stream handbook==
 https://github.com/substack/stream-handbook
 
-=====serve=====
+==serve==
 <code javascript>
 var express = require('express');
 var app = express();
@@ -138,7 +138,7 @@ http.listen(3000, function(){
 });
 </code>
 
-=====nodejs & ajax image loading=====
+==nodejs & ajax image loading==
 dit nog lezen: http://blog.marcon.me/post/31143865164/send-images-through-websockets
 
 
@@ -187,13 +187,13 @@ $(document).ready(function() {
 <img id="img">
 </code>
 
-=====binaries over socket.io (wouter)=====
+==binaries over socket.io (wouter)==
 * https://github.com/Doodle3D/round-trip-test/blob/master/printer/index.js
 * binaryjs (arne)
 * https://github.com/liamks/Delivery.js
 * http://socket.io/blog/introducing-socket-io-1-0/#binary
 
-=====send an image=====
+==send an image==
 <code javascript>
 fs.readFile('test.png', function(err, data) {
   if (err) throw err; // Fail if the file can't be read.
@@ -202,7 +202,7 @@ fs.readFile('test.png', function(err, data) {
 });
 </code>
 
-=====body-parser=====
+==body-parser==
 <code javascript>
 var bodyParser = require('body-parser');
 //....
@@ -214,24 +214,24 @@ app.post('/stl', function(req, res){
 })
 </code>
 
-=====stljs=====
+==stljs==
   https://github.com/cubehero/stljs/blob/master/template/povray.tmpl
 needs [[povray]]  and needs a change in '''node_modules/stljs/lib/to/image.js''': remove '-s' in command.
   
   
-=====debug=====
+==debug==
   DEBUG=socket.io* nodemon
 
-=====webcam stream via websockets=====
+==webcam stream via websockets==
 * http://phoboslab.org/log/2013/09/html5-live-video-streaming-via-websockets
   
-=====RPC using socket.io (with angular example)=====
+==RPC using socket.io (with angular example)==
 * https://www.npmjs.org/package/socket.io-rpc
 
-=====bower=====
+==bower==
   sudo npm install -g bower
 
-=====webserver example with express=====
+==webserver example with express==
 <code javascript>
 var app = require('express')();
 var http = require('http').Server(app);
@@ -246,7 +246,7 @@ http.listen(3000, function(){
 });
 </code>
 
-=====socket.io example with express=====
+==socket.io example with express==
 <code javascript>
 var app = require('express')();
 var http = require('http').Server(app);
@@ -285,16 +285,16 @@ http.listen(3000, function(){
 </code>
 
 
-=====nodejs socket.io with SSL=====
+==nodejs socket.io with SSL==
 * http://stackoverflow.com/questions/6599470/node-js-socket-io-with-ssl
 
-=====websocket chat=====
+==websocket chat==
 * http://socket.io/get-started/chat/
 
-=====install via package managers=====
+==install via package managers==
 * https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager
 
-=====install===== 
+==install== 
 https://github.com/joyent/node/wiki/backports.debian.org    
 \
 1. Install Node and NPM
@@ -308,17 +308,17 @@ https://github.com/joyent/node/wiki/backports.debian.org
   chmod +x install.sh
   sudo ./install.sh
       
-=====edit nodejs files remotely with sublimetext (and sftp package) and use nodemon for restarting node server on file change=====
+==edit nodejs files remotely with sublimetext (and sftp package) and use nodemon for restarting node server on file change==
 note: nodemon likes to be installed globally with -g but it also works in your local folder
   npm install  nodemon
   export PATH=$PATH:`pwd`/node_modules/nodemon/bin
   nodemon.js
   
-=====make nodemon only watch single file=====
+==make nodemon only watch single file==
   nodemon -w server.js server.js
 
-=====nodejs socket.io with angular=====
+==nodejs socket.io with angular==
 * http://stackoverflow.com/questions/14700865/node-js-angularjs-socket-io-connect-state-and-manually-disconnect
 
-=====socket.io with token authentication=====
+==socket.io with token authentication==
 * http://wlkns.co/node-js/socket-io-authentication-tutorial-server-and-client/
