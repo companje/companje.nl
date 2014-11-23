@@ -1,2 +1,7 @@
 Sidebar
-~~INDEXEVERYWHERE~~
+
+INDEXEVERYWHERE~~
+
+<pagelist&header&comments>
+    //an unordered list of pages to display//
+</pagelist>
