@@ -4,6 +4,3 @@
 * http://123d.circuits.io/
 * http://www.eleshop.nl/
 * https://oshpark.com/
-
-=='Scratching' PCB's on an Ultimaker==
-* http://randomdata.nl/wiki/index.php/PCB_fabrication_from_scratch
