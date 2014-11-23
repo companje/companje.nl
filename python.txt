@@ -1,8 +1,5 @@
 ====== Python ======
 
-==kivy==
-http://kivy.org/#home
-
 ==ImportError: No module named NK.gui.app==
 In NinjaKittens folder:
 <code>
