@@ -2,7 +2,6 @@
 
 ==mouse rotating globe with conversion from quaternions to latitude longitude==
 * https://gist.github.com/companje/13209c678d5720347169
-%gist(13209c678d5720347169)%
 
 ==render and rotate a globe in openFrameworks==
 * https://gist.github.com/companje/82c1b5d4885a83b48f84
