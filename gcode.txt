@@ -1,6 +1,4 @@
 =====GCode=====
-
-* M25: stoppen SD-kaart print
 * http://reprap.org/wiki/G-code
 * M109 Sxxxx temperatuur instellen en wachten tot ie warm is (+ nog een paar seconden)
 * M105 get temperature
