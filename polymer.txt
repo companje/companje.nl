@@ -5,8 +5,3 @@
 * https://www.chromestatus.com/features
 * http://customelements.io/
 * http://googlewebcomponents.github.io
-
-===== Starter project =====
-* https://www.polymer-project.org/0.5/docs/start/tutorial/intro.html
-start webserver with:
-  python -m SimpleHTTPServer
