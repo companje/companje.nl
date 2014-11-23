@@ -1,10 +1,5 @@
 ======netcat======
 
-==netcat for windows==
-part of nmap project (nmap.org).
-Same syntax: `ncat -lu 192.168.2.123 8888`
-
-
 ==read line from netcat==
 <code bash>
 while:
