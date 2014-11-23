@@ -1,9 +1,5 @@
 =====jQuery=====
 
-==Getting over jQuery==
-http://blog.ponyfoo.com/2013/07/09/getting-over-jquery
-(Staat ook op: http://doodle3d.com/help/javascript )
-
 ==Hello World==
 <code jquery>
 
