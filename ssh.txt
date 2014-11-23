@@ -1,13 +1,6 @@
 ====== SSH ======
 see also: [[linux]], [[git]]
 
-
-==ssh agent forwarding==
-De volgende tutorial omschrijft duidelijk hoe je ssh agent forwarding kan instellen. Hiermee kan je (via ssh) op een ander apparaat een git pull doen met jou eigen ssh key. 
-https://developer.github.com/guides/using-ssh-agent-forwarding/
-
-Het vereist wel dat de remote een ssh url is. Dit kan je bijv. doen door het te klonen vanaf de SSH clone URL (git@github.com:...)
-
 ==openssh in cygwin==
 https://www.youtube.com/watch?v=CwYSvvGaiWU
 
