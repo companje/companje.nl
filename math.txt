@@ -1,7 +1,8 @@
 ====== Math ======
+<blockquote>"Natural numbers are better for your health."</blockquote>
 
-=====matrix & quaternion FAQ=====
+==matrix & quaternion FAQ==
 * http://www.j3d.org/matrix_faq/matrfaq_latest.html
 
-=====e=====
-http://nl.wikipedia.org/wiki/E_(wiskunde)
+====== Links to this page ======
+{{backlinks>.}}
