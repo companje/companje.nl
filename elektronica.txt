@@ -1,10 +1,5 @@
 ======Elektronica======
 
-==condensatoren==
-* http://www.justradios.com/uFnFpF.html
-
-
-
 *http://reichelt.de
 * **R = U / I**
   * ofwel: Weerstand = Spanning / Stroom 
