@@ -1,8 +1,5 @@
 ====== Android ======
 
-==adb devices==
-  adb devices
-
 ==web debugging in chrome browser==
   chrome://inspect/#devices
 turn on USB webdebugging on device Settings->DeveloperTools
