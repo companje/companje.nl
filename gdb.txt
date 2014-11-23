@@ -1,7 +1,5 @@
 =====GDB (GNU Debugger) =====
 
-see [[lldb]]
-
 <code>
 gdb datamining
 (gdb) run
