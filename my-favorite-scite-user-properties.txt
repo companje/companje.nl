@@ -1,7 +1,7 @@
 ====== Scite User Properties file ======
 
 <code>
-#check.if.already.open=1
+check.if.already.open=1
 
 open.filter=\
 $(all.files)\
@@ -13,7 +13,7 @@ line.margin.width=1+
 position.width=1280
 position.height=800
 
-output.horizontal.size=300
+#output.horizontal.size=300
 
 default.file.ext=.txt
 
