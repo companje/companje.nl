@@ -1,31 +1,31 @@
-=============== Google Docs ===============
+====== Google Docs ======
 
-=====tips=====
+==tips==
 http://woorkup.com/2010/02/19/10-useful-google-spreadsheet-formulas-you-must-know/
 
-=====unique() and continue() functions=====
+==unique() and continue() functions==
 <code>
 =UNIQUE(A:A)
 =CONTINUE(B1; 2; 1)
 ...etc..
 </code>
 
-=====append row=====
+==append row==
 <code>sheet.appendRow(['hello',true,5.5,new Date()]);</code>
 
-=====fetch from url=====
+==fetch from url==
 <code>var text = UrlFetchApp.fetch("http://companje.nl").getContentText();</code>
 
-=====documentation=====
+==documentation==
 * https://developers.google.com/apps-script/
 
-=====spreadsheet as csv=====
+==spreadsheet as csv==
 * https://docs.google.com/spreadsheet/pub?key=0Ag0qaBCRDtdydEV2eHVIZWRwRkRRY0l0d2o0eWtzZ1E&output=csv
 
-=====scripting with csv=====
+==scripting with csv==
 * https://developers.google.com/apps-script/articles/docslist_tutorial#section2
 
-=====advanced scripting=====
+==advanced scripting==
 <code javascript>
 
 function onOpen() {
@@ -52,13 +52,13 @@ function soortValidator() {
 function btwBerekening() {
   var range = SpreadsheetApp.getActiveRange();
 
-  if (range.getColumnIndex()=====6 && range.getNumColumns()=====1) range.setFormula("=(R[0]C[3]/(R[0]C[1]*100+100))*100");
-  else if (range.getColumnIndex()=====8 && range.getNumColumns()=====1) range.setFormula("=R[0]C[-1]*R[0]C[-2]");
+  if (range.getColumnIndex()==6 && range.getNumColumns()==1) range.setFormula("=(R[0]C[3]/(R[0]C[1]*100+100))*100");
+  else if (range.getColumnIndex()==8 && range.getNumColumns()==1) range.setFormula("=R[0]C[-1]*R[0]C[-2]");
   else Browser.msgBox("Selecteer één van de volgende kolommen: excl. BTW óf BTW bedrag.");
 }
 
 function layoutKolommen() {
-  if (SpreadsheetApp.getActiveSheet().getName()====="Overzicht") {
+  if (SpreadsheetApp.getActiveSheet().getName()=="Overzicht") {
     Browser.msgBox("'Layout verbeteren' is bedoeld voor Inkomsten en Uitgaven bladen");
     return;
   }
@@ -87,7 +87,7 @@ function layoutKolommen() {
 }
 </code>
 
-=====new insights=====
+==new insights==
 <code javascript>
 function onOpen() {
   var sheet = SpreadsheetApp.getActiveSpreadsheet();
@@ -137,7 +137,7 @@ function importCsv(filename) {
     var day = csv[i][2].substr(6,2);
     var isodate= year+"-"+month+"-"+day;
     var quarter = "K"+Math.ceil(month/3);        
-    var credit=(csv[i][3]====="C");
+    var credit=(csv[i][3]=="C");
     var amount=csv[i][4].replace(".",",");
     var name=csv[i][6];
     var invoicenr="";
