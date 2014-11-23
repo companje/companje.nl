@@ -1,8 +1,5 @@
 ====== OpenWrt ======
 
-==add public key to authorized_keys on openwrt==
-  cat ~/.ssh/id_rsa.pub | ssh root@192.168.5.1 'cat >> /etc/dropbear/authorized_keys'
-
 ==building==
 * http://www.doodle3d.com/help/wiki/building-openwrt-wifibox
 
