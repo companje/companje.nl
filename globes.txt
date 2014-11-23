@@ -12,7 +12,6 @@
 * http://www.evl.uic.edu/pape/data/Earth/
 * http://astro.uchicago.edu/cosmus/technotes.html
 * https://www.youtube.com/watch?v=xS8vDVCHF9c
-* http://www.pufferfishdisplays.co.uk/products/puffersphere-xl/
 
 
 * texture and lighting sphere with WebGL: [[http://blog.thematicmapping.org/2013/09/creating-webgl-earth-with-threejs.html|tutorial]], [[http://thematicmapping.org/playground/webgl/earth/|demo ]]
