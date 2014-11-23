@@ -23,4 +23,3 @@ see [[nodejs]]
 ==npm install specific version==
 Use this syntax to install a specific version listed there:
   sudo npm install -g phonegap@2.9.0-rc1-0.12.2
-  npm install gulp-sass@1.3.3 --save
