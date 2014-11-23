@@ -1,0 +1,3 @@
+====== Technical notes on Doodle3D ======
+
+* see [[openwrt]]
