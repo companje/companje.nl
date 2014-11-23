@@ -1,7 +1,3 @@
-=====Use Gmail SMTP workaround======
-* problem: http://googlesystem.blogspot.nl/2014/08/external-addresses-no-longer-use-gmail.html
-* workaround: enable 2step authentication and add the service as an app (https://security.google.com/settings/security/apppasswords)
-
 ======gmail shortcut keys======
 ? shortcut keys help
 
