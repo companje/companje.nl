@@ -1,10 +1,5 @@
 =====CSS=====
 
-==initial==
-h1 {
-    color: initial; 
-}
-
 ==Foundation==
 * http://foundation.zurb.com/index.html
 * [[http://foundation.zurb.com/learn/video-started-with-foundation.html|video]]
