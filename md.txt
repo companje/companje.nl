@@ -2,4 +2,3 @@
 * http://jrmoran.com/playground/markdown-live-editor/
 * http://md.kaihatsubu.com/
 * [[https://github.com/rentzsch/markdownlive/downloads|markdownlive by Jonathan 'Wolf' Rentzsch]]
-* tips van oF: Mac OSX: Mou (OSX 10.7) or MarkEdit (OSX 10.6+)
