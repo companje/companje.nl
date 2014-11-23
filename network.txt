@@ -2,6 +2,3 @@
 
 ==get ip + mac address of all connected network devices==
 <code>arp -an</code>
-
-==kismet wireless network detector, sniffer, and intrusion detection system==
-* https://kismetwireless.net/
