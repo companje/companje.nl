@@ -1,12 +1,12 @@
-=============== Apache ===============
+====== Apache ======
 
-=====debug your virtual host configuration=====
+==debug your virtual host configuration==
   /usr/sbin/httpd -S
   
-=====follow apache log=====
+==follow apache log==
 <code>tail -f /private/var/log/apache2/error_log</code>
 
-=====Symbolic link not allowed or link target not accessible=====
+==Symbolic link not allowed or link target not accessible==
 Solution: https://romaimperator.com/?p=9
 Rights need to be set for every folder (also parent folders):
 <code>
@@ -15,10 +15,10 @@ chmod a+x /Users/rick/Documents/Doodle3D
 chmod a+x /Users/rick/Documents 
 </code>
 
-=====http status info=====
+==http status info==
 <code>httpd -S</code>
 
-=====create virtual host on mac=====
+==create virtual host on mac==
 * add hostname to /etc/hosts (pointing to 127.0.0.1)
  * check location of httpd config:
 <code>
@@ -37,56 +37,56 @@ chmod a+x /Users/rick/Documents
 sudo apachectl stop && sudo apachectl restart
 </code>
 
-=====autostart apache on mac=====
+==autostart apache on mac==
 * http://brettterpstra.com/fixing-virtual-hosts-and-web-sharing-in-mountain-lion/
 
-=====httpd per virtual host=====
+==httpd per virtual host==
 ''/usr/local/directadmin/data/users/''
 
-=====meerdere logfiles monitoren=====
+==meerdere logfiles monitoren==
 * http://www.fr3nd.net/projects/apache-top/
 * ''<Location /server-status>'' aanzetten.
 * alleen access van localhost en external ip toestaan
 
-=====httpd info=====
+==httpd info==
 /usr/sbin/httpd -V
 
-=====find which httpd.conf=====
+==find which httpd.conf==
 <code>
 /usr/sbin/httpd -V |grep SERVER_CONFIG
 </code>
 
-=====autostart wamp server on windows=====
+==autostart wamp server on windows==
 Run services.msc
 Set wampapache and wampmysqld to Startup type 'Automatic'
 
-=====htaccess=====
+==htaccess==
 zie ook [[htaccess]]
 
-=====apache opnieuw opstarten=====
+==apache opnieuw opstarten==
 <code bash>
 sudo /etc/init.d/httpd restart
 </code>
 
-=====op mac=====
+==op mac==
 <code bash>
 sudo apachectl stop
 sudo apachectl start
 </code>
 
-=====default site op onze server=====
+==default site op onze server==
 <code>
 /var/www/html
 </code>
 
-=====Allow access to the webserver through the network=====
+==Allow access to the webserver through the network==
 allow access from other computers than localhost
 turn off 'deny from all' in httpd.conf
 <code apache>
 #Deny from all
 </code>
 
-=====virtual hosts=====
+==virtual hosts==
 Virtual hosts kun je toevoegen in:
 <code>
 apache/conf/extra/httpd-vhosts.conf
@@ -97,7 +97,7 @@ but be sure to turn on the include in httpd.conf
 Include conf/extra/httpd-vhosts.conf
 </code>
 
-=====Virtualhost: Forbidden, You don't have permission to access / on this server=====
+==Virtualhost: Forbidden, You don't have permission to access / on this server==
 The problem is that the extra/httpd-vhosts.conf is missing the directive to allow access to the directory.
 Allow access by adding a <directory> section inside the <vhost> section.
 <code>
@@ -106,12 +106,12 @@ allow from all
 </directory>
 </code>
 
-=====Virtualhost: Forbidden, You don't have permission to access / on this server=====
+==Virtualhost: Forbidden, You don't have permission to access / on this server==
 This can also be caused by a wrong DocumentRoot and directory settings for the DocumentRoot. Check the ''/private/etc/apache2/httpd.conf'' file  and search for DocumentRoot. Make sure the paths are set to the right location.
   DocumentRoot "/Users/rick/Sites/"
   <Directory "/Users/rick/Sites/">
 
-=====error_log=====
+==error_log==
 location of the error_log file:
 <code>
 tail -f /var/log/httpd/error_log
