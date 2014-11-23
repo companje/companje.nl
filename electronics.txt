@@ -1,3 +1,4 @@
 ====== Electronics ======
 
-David: Ik heb een filmpje gevonden waar een Duitser uitlegt en laat zien waarom je bij elke chip een klein condensatortje moet plaatsen: https://www.youtube.com/watch?feature=player_embedded&v=M2tJpEMIkWM
+====== Links to this page ======
+{{backlinks>.}}
