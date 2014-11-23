@@ -1,8 +1,5 @@
 ====== Angular ======
 
-==tutorial on angularjs.org==
-https://docs.angularjs.org/tutorial/step_00
-
 ==sorting==
    ...ng-repeat="printer in printers | orderBy:['-online','-name']"
 *https://docs.angularjs.org/api/ng/filter/orderBy
