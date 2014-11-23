@@ -1,1 +1,388 @@
 ====== openFrameworks ======
+
+==mouse rotating globe with conversion from quaternions to latitude longitude==
+* https://gist.github.com/companje/13209c678d5720347169
+%gist(13209c678d5720347169)%
+
+==render and rotate a globe in openFrameworks==
+* https://gist.github.com/companje/82c1b5d4885a83b48f84
+
+==good old alpha trail with two FBO's==
+* https://gist.github.com/companje/2395e3b955d9472cfc22
+
+==utf8==
+somehow certain characters 'recently' added to ISO_8859_15 are shown as their predecessor in ISO_8859_1 by openFrameworks ofTrueTypeFont. It looks like the Latin9Encoding::convert function called by ofTrueTypeFont::drawString is causing this problem. Read [[http://www.i18nqa.com/debug/table-iso8859-1-vs-iso8859-15.html|here]] about the differences. <del>The only solution I've been able to find so far is to not use ofTrueTypeFont but to use the ofxTrueTypeFontUC addon</del>: **See solution below**.
+The loaded text-file is encoded as UTF-8 by notepad with the BOM character removed.
+
+<code>
+Nejhmotnejší objekt v naší...
+</code>
+
+<code c>
+#include "ofxTrueTypeFontUC.h"
+
+class ofApp : public ofBaseApp {
+public:
+
+  ofxTrueTypeFontUC font;
+
+  void setup() {
+    font.loadFont("arial.ttf",13,true,true);
+  }
+
+  void draw() {
+    string s = ofBufferFromFile("UTF8-without-BOM.txt").getText();
+    font.drawString(s,20,50);
+  }
+};
+</code>
+
+==Update: ofTrueTypeFont ISO-8859-15==
+" In 1999, ISO needed to make the Euro currency symbol available. There were also a few other characters that were desired. So ISO created ISO-8859-15, which is identical to ISO-8859-1 except for 8 characters." source: http://www.i18nqa.com/debug/table-iso8859-1-vs-iso8859-15.html
+
+ofTrueTypeFont shows the characters as they were in ISO-8859-1. A fix was added by @kylemcdonald at Jun 15, 2013 to support the euro sign but the other 7 characters that were introduced can be supported the same way by using the following code in ofTrueTypeFont::loadFont.
+
+<code>
+if (glyph == 0xA4) glyph = 0x20AC;   //  Currency Sign -> Euro Sign
+if (glyph == 0xA6) glyph = 0x0160;   //  Broken Bar -> Latin Capital Letter S With Caron
+if (glyph == 0xA8) glyph = 0x0161;   //  Diaeresis -> Latin Small Letter S With Caron
+if (glyph == 0xB4) glyph = 0x017D;   //  Acute Accent -> Latin Capital Letter Z With Caron
+if (glyph == 0xB8) glyph = 0x017E;   //  Cedilla -> Latin Small Letter Z With Caron
+if (glyph == 0xBC) glyph = 0x0152;   //  Vulgar Fraction One Quarter -> Latin Capital Ligature OE
+if (glyph == 0xBD) glyph = 0x0153;   //  Vulgar Fraction One Half -> Latin Small Ligature OE
+if (glyph == 0xBE) glyph = 0x0178;   //  Vulgar Fraction Three Quarters -> Latin Capital Letter Y With 
+</code>
+
+more characters: http://doc.infosnel.nl/extreme_utf-8.html
+
+there were more characters with problems but these problems were 'deeper' (probably in the Poco convert from UTF8 to Latin9. We solved it this way:
+
+<code>
+ě	[
+ů	]
+č	{
+Č	}
+ř	<
+ň	>
+ť	_
+
+if (glyph == '[') glyph = 0x11B;       // e met dakje op de kop
+if (glyph == ']') glyph = 0x16F;       // u met rondje
+if (glyph == '{') glyph = 0x10D;       // c met dakje op de kop
+if (glyph == '}') glyph = 0x10C;       // C met dakje op de kop
+if (glyph == '<') glyph = 0x159;       // r met dakje op de kop
+if (glyph == '>') glyph = 0x148;       // n met dakje op de kop
+if (glyph == '_') glyph = 0x165;       // t met accentje er naast
+</code>
+==ftgl font==
+http://ftgl.sourceforge.net/docs/html/ftgl-tutorial.html
+
+==tr1/memory error==
+Set 'Buid Settings -> Base SDK' to a lower version, for example 10.8
+
+==write to a file==
+<code c>
+ofFile file("tmp.txt",ofFile::WriteOnly);
+file << "A" << endl;
+file << "B" << endl;
+file.close();
+</code>
+
+==gamuza==
+* http://gamuza.d3cod3.org/
+
+==fbo depthbuffer==
+nog uitzoeken
+
+==stringify==
+Multiline syntax highlighted hardcoded strings in je code.
+<code c>
+#define STRINGIFY(A) #A
+
+	
+static string myString = STRINGIFY(
+				 bla die bla1
+				 bla die bla2
+				 bla die bla3
+				 bla die bla4
+				 bla die bla5);
+</code>
+
+
+==blending crosshair/bullseye==
+<code c>
+ofPushMatrix(); //bullseye
+ofTranslate(0,0,radius);
+ofSetColor(255);
+ofNoFill();
+glEnable(GL_BLEND);
+glBlendFunc(GL_ONE_MINUS_DST_COLOR, GL_ZERO);
+ofCircle(0,0,5);
+ofLine(0,1,0,6);
+ofLine(0,-1,0,-6);
+ofLine(1,0,6,0);
+ofLine(-1,0,-6,0);
+ofPopMatrix(); //bullseye
+</code>
+
+==fbo's / ortho projection with WIDTH,HEIGHT==
+<code c>
+fbo.allocate(1200,1200);
+
+void drawMainScreen() {
+    fbo.begin();
+    ofClear(255,0,0,255);
+
+    ofSetupScreenOrtho(1200,1200,OF_ORIENTATION_UNKNOWN,true,-700,0);
+    ofScale(1,-1);
+    ofTranslate(fbo.getWidth()/2,-fbo.getHeight()/2);
+
+    ofPushMatrix();
+    ofRotate(angle,axis.x,axis.y,axis.z);
+    bg.getTextureReference().bind();
+    ofxEnableDepthTest();
+    ofxQuadricSphere(600,128);
+    ofPopMatrix();
+
+    ofxDisableDepthTest();
+    menu.draw();
+
+    fbo.end();
+
+    ofScale(.5,.5);
+    fbo.draw(0,0);
+}
+</code>
+
+==params==
+<code c>
+int main(int argc, const char** argv){
+    for (int i=0; i<argc; i++) {
+        vector<string> keyvalue = ofSplitString(argv[i], "=");
+        if (keyvalue.size()==2) params[keyvalue[0]] = keyvalue[1];
+    }
+   // ...
+}
+</code>
+
+=='old' codeblocks version: 10.05==
+* http://www.codeblocks.org/downloads/5
+
+==splines==
+* http://forum.libcinder.org/topic/creating-catmull-rom-spline-from-the-bspline-class
+
+==warping==
+* [[https://github.com/paulhoux/Cinder-Samples/blob/master/PerspectiveWarping/src/PerspectiveWarpingApp.cpp|OpenCv 		getPerspectiveTransform]] example by Paul Houx
+
+==debugging with gdb==
+You can also running the gcc debugger from terminal:
+view plaincopy to clipboardprint?
+<code>
+gdb myFolder/openFrameworksDebug.app/Contents/MacOS/openFrameworksDebug   
+>run  
+</code>
+
+==personal note:==
+in ofxBlobsManager::update()
+<code c>
+//remember prev pos for existing blobs
+for( int i = 0; i < blobs.size(); i++ ) {
+	ofxStoredBlobVO& b = blobs.at(i);
+	b.pCentroid = b.centroid;
+	b.pTip = b.tip;
+	b.pTail = b.tail;
+}
+</code>
+    
+==CL-Eye Test==
+* http://codelaboratories.com/kb/CL-Eye-Platform-Documentation/
+
+==draggable earth with easing==
+<code c>
+#include "ofMain.h"
+#include "ofAppGlutWindow.h"
+
+class testApp : public ofBaseApp {
+public:
+
+    ofImage earth;
+    ofQuaternion qTo;
+
+    void setup() {
+        ofBackground(0);
+        glEnable(GL_DEPTH_TEST);
+        ofDisableArbTex();
+        earth.loadImage("earth2k.jpg");
+        earth.bind();
+    }
+
+    void draw() {
+        static ofVec3f fromAxis,toAxis;
+        static float fromAngle=0,toAngle;
+
+        qTo.getRotate(toAngle,toAxis);
+
+        fromAxis += (toAxis-fromAxis) * .1;
+        fromAngle += (toAngle-fromAngle) * .1;
+
+        ofTranslate(ofGetWidth()/2, ofGetHeight()/2);
+        ofRotate(fromAngle, fromAxis.x, fromAxis.y, fromAxis.z);
+        quadricSphere(ofGetHeight()/3,32);
+    }
+
+    void mouseDragged(int x, int y, int button){
+        ofPoint from(ofGetPreviousMouseX(), ofGetPreviousMouseY());
+        ofPoint to(ofGetMouseX(), ofGetMouseY());
+
+        from = toSphere(from / ofGetWidth() - 0.5f);
+        to = toSphere(to / ofGetWidth() - 0.5f);
+        ofPoint axis = from.crossed(to);
+
+        qTo *= ofQuaternion(axis.x,axis.y,axis.z,from.dot(to));
+    }
+
+    ofPoint toSphere(ofPoint v) {  //-0.5 ... +0.5
+        float mag = v.x*v.x + v.y*v.y;
+        if (mag>1.0f) v.normalize();
+        else v.z = sqrt(1.0f - mag);
+        return v;
+    }
+
+    void quadricSphere(float radius, int resolution) {
+        static GLUquadricObj *quadric = gluNewQuadric(); //because it's static, it's created only once
+        gluQuadricTexture(quadric, GL_TRUE);
+        gluQuadricNormals(quadric, GLU_SMOOTH);
+        gluSphere(quadric, radius, resolution, resolution);
+    }
+};
+
+//--------------------------------------------------------------
+int main(){
+	ofAppGlutWindow window;
+	ofSetupOpenGL(&window, 500, 500, OF_WINDOW);
+	ofRunApp(new testApp());
+}
+</code>
+
+* see [[Quaternion]]
+
+==possible bug in ofxCvGrayScaleImage with ofSaveImage or img.saveImage()==
+work around: convert the ofxCvGrayScaleImage to ofxCvColorImage and then save the color image.
+<code c>
+ofImage img;
+ofxCvColorImage tmp;
+tmp = bg; //bg is the ofxCvGrayScaleImage 
+img.setFromPixels(tmp.getPixelsRef());
+img.saveImage("cam_bg.png");
+</code>
+
+the same for load:
+<code c>
+ofImage img;
+img.loadImage("cam_bg.png");
+ofxCvColorImage tmp;
+tmp.setFromPixels(img.getPixelsRef());
+bg = tmp;  //bg is the ofxCvGrayScaleImage 
+</code>
+
+==install_name_tool usage on commandline==
+<code bash>
+install_name_tool -change ./libfmodex.dylib @executable_path/libfmodex.dylib libfmodex.dylib
+</code>
+to get .app running:
+<code bash>
+install_name_tool -change ./libfmodex.dylib @executable_path/libfmodex.dylib emptyExample.app/Contents/MacOS/emptyExample 
+</code>
+
+==openframeworks program crashes on glActiveTexture==
+Check if glActiveTexture is available:
+<code c>
+if(glActiveTexture==NULL) {
+      printf("glActiveTexture not supported\n");
+      std::exit(1);
+}
+</code>
+This was the case with me running Windows through Parallels on a Mac.
+
+==ofSetupScreenOrtho==
+<code c>
+ofSetupScreenOrtho(0,0,OF_ORIENTATION_UNKNOWN,true,-100,100);
+</code>
+
+==serial 250000 / 250K baudrate==
+* http://forum.openframeworks.cc/index.php?topic=4254.0
+
+==some nice std::vector functions in ofUtils.h==
+<code c>
+template<class T>
+void ofRandomize(vector<T>& values) {
+	random_shuffle(values.begin(), values.end());
+}
+
+template<class T, class BoolFunction>
+void ofRemove(vector<T>& values, BoolFunction shouldErase) {
+	values.erase(remove_if(values.begin(), values.end(), shouldErase), values.end());
+}
+
+template<class T>
+void ofSort(vector<T>& values) {
+	sort(values.begin(), values.end());
+}
+
+template <class T>
+unsigned int ofFind(const vector<T>& values, const T& target) {
+	return distance(values.begin(), find(values.begin(), values.end(), target));
+}
+
+template <class T>
+bool ofContains(const vector<T>& values, const T& target) {
+	return ofFind(values, target) != values.size();
+}
+</code>
+
+==main.cpp==
+<code c>
+#include "ofAppGlutWindow.h"
+#include "testApp.h"
+
+int main() {
+    ofAppGlutWindow window; 
+    window.setGlutDisplayString("rgba double samples>=4"); 
+    ofSetupOpenGL(&window, 500, 500, OF_WINDOW);
+    ofRunApp(new testApp()); 
+}
+</code>
+
+==Ugly ofTrueTypeFont text after rotation==
+Use ''drawStringAsShapes'' instead of ''drawString''
+
+==ofImage problems==
+* in case of BAD_ACCESS error see: [[http://forum.openframeworks.cc/index.php/topic,7910.0.html]]
+* in case of EXIF error EXC_BAD_ACCESS by FreeImage use a new version of FreeImage.a: http://sourceforge.net/projects/freeimage/forums/forum/36110/topic/5012811
+* or use exiftool (win & osx) to strip exif data: https://owl.phy.queensu.ca/~phil/exiftool/
+<code bash>
+exiftool -all= image.jpg
+</code>
+    
+==Backlinks==
+{{backlinks>.}}
+
+==notes==
+openframeworks.h
+<code cpp>
+#pragma once
+
+#include "ofMain.h"
+#include "ofAppGlutWindow.h"
+
+class ofGlutApp : public ofBaseApp {
+public:
+    
+    ofGlutApp() {
+        ofSetupOpenGL(new ofAppGlutWindow(), 500, 500, OF_WINDOW);
+    }
+    
+};
+
+
+</code>
