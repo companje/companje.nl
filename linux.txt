@@ -1,26 +1,415 @@
 ====== Linux ======
+
+==rights==
+  chmod +x filename   # user,group and others execute rights
+  chmod u+x filename  # user execute rights
+  chmod go-x filename # group and others no execute rights
+  chmod u+rwx,go+rw   # user read/write/execute, groups and others only read/write
+more info: https://www.linode.com/docs/tools-reference/linux-users-and-groups
+
+==add ssh access for user==
+check /etc/passwd to see if the shell is set.
+
+==primary and supplementary groups==
+  id -a <user>
+The supplementary groups give access to resources, but any new files are created with primary group.
+
+==newgrp==
+You can change a users currently active primary group using the newgrp command.
+
+==see which groups a user belongs to==
+  groups username
+or check:
+  /etc/group
+  
+==add user to group==
+  usermod -g group username
+  
+==less with color interpretation==
+  less -r filename
+
+==install libpng==
+  sudo apt-get install libpng++-dev
+
+==install autoconf2.59==
+  sudo apt-get install autoconf2.59
+
+==nmap portscanner==
+  nmap localhost
+
+==who==
+  w
+  who
+  whoami
+  
+==remove last line from known_hosts (on MacOSX)==
+<code>sed -i '' -e '$ d' ~/.ssh/known_hosts </code>
+
+==hostname==
+<code>
+/etc/hosts
+/etc/sysconfig/network
+/etc/HOSTNAME
+hostname
+hostname -f
+</code>
+
+==mail==
+<code>
+/var/log/maillog
+</code>
+<code>
+postqueue -p
+</code>
+==find lines not starting with #==
+<code bash>
+grep -v '^#' filename
+</code>
+
+==remove reoccurring lines from textfile==
+<code bash>
+sort file.txt > sorted.txt
+uniq sorted.txt > uniq.txt
+</code>
+
+==recursive touch==
+<code bash>
+find . -exec touch {} \;
+</code>
+
+==hex characters to port==
+<code>
+echo -e -n "\xFF\x01\x00\x04\x3F\x00" > /dev/tts/1
+</code>
+-e enable interpretation of backslash escapes
+-n do not output the trailing newline
+
+==execute a script in the current shell==
+<code>
+. .profile
+</code>
+
+==terminal type / colors / characters==
+<code>
+export TERM=xterm-256color
+</code>
+
+==less==
+in less kun je zoeken door '/' te typen
+
+==copy mysql database from one server to another==
+<code bash>
+mysqldump -u user -p db-name > db-name.out
+scp db-name.out user@remote.box.com:/backup
+</code>
+on other server:
+<code bash>
+mysql -u user -p db-name < db-name.out
+</code>
+
+==zip a folder excluding a subfolder==
+<code bash>
+zip -r kadaster.zip kadaster -x kadaster/clouds**\*
+</code>
+
+==login as different user==
+<code bash>
+su -
+</code>
+
+==list all files with full path==
+<code>
+ls -lad $PWD/**
+</code>
+
+==list of all running processes==
+<code>ps auxw</code>
+
+==see open ports per process==
+<code bash>
+netstat -nlp
+</code>
+-n = no name lookup
+
+==see processes as a tree=
+<code bash>
+pstree -a|less
+</code>
+
+==get server date/time==
+<code>
+date
+</code>
+
+==set server date/time==
+<code bash>
+sudo date -s 'Sun Feb 10 14:00:00 CET 2013'
+</code>
+
+==chmod htaccess to make it writable by wordpress==
+<code>
+chmod 666 .htaccess 
+</code>
+
+==read==
+<code>
+read -a VERSION -p "Version number: "
+echo $VERSION
+</code>
+
+==zip==
+<code>
+zip -r file.zip folderToZip
+</code>
+
+==get dir of script==
+<code>
+BASEDIR=$(dirname $0)
+</code>
+
+==cd to homedir==
+<code>cd</code>
+
+==cd back to previous folder==
+<code>cd -</code>
+
+==empty a textfile==
+<code>
+: > clouds.log
+</code>
+
+==log files==
+* http://servertune.com/kbase/entry/157/
+
+==exim==
+see [[exim]]
+
+==broadcom wifi driver info==
+* http://wireless.kernel.org/en/users/Drivers/b43
+
+==extra info over een PID==
+<code>
+sudo strace -p 28976
+</code>
+
+==color file listing==
+<code bash>alias ls='ls -G</code>
+
+==recursive find==
+<code bash>find / -name laoscfg.ps</code>
+
+==find string in files==
+<code bash>
+find . | xargs grep 'string' -sl
+</code>
+
+==follow tail of file and cut lines that are too long==
+<code>
+tail -f filename | cut -c -$COLUMNS
+</code>
+
+==robots.txt==
+<code>
+# no search engine indexing
+User-agent: *
+Disallow: /
+</code>
+
+==apache access_log==
+de [[apache]] access_log files per domein staan hier: ''/var/log/httpd/domains''. Als je in deze map ''ls -altr'' uitvoert zie je welke bestanden het laatst gewijzigd zijn.
+
+==ftp==
+de ftp server logt hier: ''/var/log/proftpd/access.log''
+
+==long file list sorted by time==
+<code>
+ls -altr
+</code>
+
+==see who's logged in==
+<code>
+w
+</code>
+
+==add /usr/sbin to path==
+add this to ~/.bash_profile
+<code>
+PATH=$PATH:$HOME/bin:/usr/sbin
+export PATH
+</code>
+
+==moving files starting with certain letter==
+<code bash>
+mv [a-l]* ../directory2
+</code>
+
+==find folders over 1GB==
+<code bash>
+du -h / | grep ^[0-9.]*G
+</code>
+
+==free space on disk==
+<code bash>
+df -h
+</code>
+
+==size of folder==
+disk usage human readable format
+<code bash>
+du -h folder/
+</code>
+
+==taskmanager in the terminal==
+<code>top or htop</code>
+
+==get the folder in which a script resides==
+<code bash>
+$(dirname $0)
+</code>
+
+==edit desktop system monitor in crunchbang==
+<code bash>
+~/.conkyrc
+</code>
+
+==don't see characters when typing in terminal==
+<code bash>stty -echo</code>
+or
+<code bash>stty echo</code>
+
+==list files==
+Force output to be one entry per line.
+<code bash>
+ls -1
+</code>
+(-1 = 'number one')
+
+==symbolic links==
+<code bash>
+[test@server korea]$ ln -s ../clouds.mov clouds.mov
+[test@server korea]$ ln -s ../seasons.mov seasons.mov
+[test@server korea]$ ln -s ../oneday.mov oneday.mov
+</code>
+
+==ps & grep==
+grep -x matches exact line
+<code bash>
+ps ax -o cmd | grep -x 'php crawler.php'
+</code>
+
+==empty a textfile==
+<code bash>
+echo "" > clouds.log
+</code>
+
+==find location of executable==
+<code bash>
+type php
+</code>
+or
+<code bash>
+which php
+</code>
+
+gives:
+<code>
+php is /usr/local/bin/php
+</code>
+
+or 
+<code bash>type ls</code>
+<code>
+ls is aliased to `ls --color=tty'
+</code>
+
+==nohup==
+Keep a process running after closing your ssh connection (ignore the SIGHUP):
+<code bash>
+nohup php crawler.php > foo.out 2> foo.err < /dev/null &
+</code>
+
+==AVR / avrdude etc==
+Zie [[Arduino]]
+
+==list open files==
+<code bash>
+lsof
+</code>
+
+==ugly way to rename files in a folder to a sequence==
+put this in a .sh script.
+<code bash>
+counter=0
+for file in *.jpg
+do
+counter=`echo "$counter + 1" | bc`
+mv "$file" $counter.jpg
+done
+</code>
+
+==other way rename files to sequence depending on file count in folder==
+<code bash>
+for file in folderA/*.png
+do
+	counter=`ls -1 folderB/ | wc -l | tr -d ' '`
+	mv $file folderB/$counter.png
+done
+</code>
+==remove files older than 7 days==
+<code bash>
+find /home/user/*.jpg  -mtime +7 -exec rm -f {} \;
+</code>
+
+==Tips==
+Een hoop linux tips en trucks zijn aan bod gekomen tijdens [[http://www.opentoko.org/tokos/toko-20-linux|OpenToko 20 over Linux]]
+
+==get the name and version of your linux distribution==
+<code bash>lsb_release -d -s -c</code>
+
+==handig tooltje om chmod getallen/letters uit te rekenen==
+ * [[http://catcode.com/teachmod/numeric2.html]]
+
+==reset file rights recursively==
+<code bash>find . -type f -print | xargs chmod 644</code>
+
+==reset folder rights recursively==
+<code bash>find . -type d -print0 | xargs -0 chmod 755</code>
+
+==Install font on crunchbang==
+<code bash>sudo mv fontname.ttf /usr/share/fonts/truetype</code>
+
+==Verder==
 * [[tech:Problem booting Vista after installing Ubuntu]]
 * [[Installing Code-Blocks on Ubuntu]]
 * Killing the xserver ('fast logout'): Ctrl Alt Backspace
 * to edit the ubuntu boot menu
-<code>gksudo gedit /boot/grub/menu.lst</code> (kdesu heeft hetzelfde effect?)
+<code bash>gksudo gedit /boot/grub/menu.lst</code> (kdesu heeft hetzelfde effect?)
 * [[http://www.pendrivelinux.com/2008/04/09/usb-ubuntu-804-installation-from-windows/|Booting from USB drive]]
+
+==ls==
+list with one column
+<code bash>
+export COLUMNS=1
+ls
+</code>
+
+=====useradd=====
+Als ie useradd bijvoorbeeld niet kan vinden of iets anders essentieels kan dat komen omdat soms /usr/sbin niet in het zoekpad staat.
+
+=====restart ssh deamon=====
+see [[ssh]]
 
 ===== .htaccess =====
 .AIR bestanden als binary laten downloaden in .htaccess:
-<code> AddType application/vnd.adobe.air-application-installer-package+zip .air </code>
+<code bash> AddType application/vnd.adobe.air-application-installer-package+zip .air </code>
 
 ===== GIT =====
-If you are just after tracking someone else's project, this get you started quickly:
-
-git clone url = svn checkout url
-git pull	= svn update
-
+See [[git]]
 ===== Display problems / tips =====
 * Laptop beeldscherm knippert / flikkert in Ubuntu. Mogelijke oplossing: Probeer bij Administration/Screen and Graphics de 'Intel Experimental mode' te veranderen in i810.
 * [[Using multiple monitors for in Ubuntu]]
 * start screen and graphic preferences:
-<code>displayconfig-gtk</code>
+<code bash>displayconfig-gtk</code>
 
 
 
@@ -31,36 +420,38 @@ git pull	= svn update
 
 ===== Terminal =====
 * find an application's location: 
-<code>whereis firefox</code>
+<code bash>whereis firefox</code>
 * find a file's location:
-<code>locate menu.lst</code>
+<code bash>locate menu.lst</code>
 * reboot the system: 
-<code>reboot</code>
+<code bash>reboot</code>
 * to tar a folder (with all subfolders and files): 
-<code>tar czf backup.tgz thefolder</code>
+<code bash>tar czf backup.tgz thefolder</code>
 * to untar a file:
-<code>tar xvzf file.tar.gz</code>
+<code bash>tar xvzf file.tar.gz</code>
 * search for a phrase in all files:
-<code>grep something *</code>
+<code bash>grep something *</code>
 *search for a phrase in all files (recursive):
-<code>find . | xargs grep -s phrase</code>
+<code bash>find . | xargs grep -s phrase</code>
 * to start ubuntu without GUI empty '/etc/X11/default-display-manager'. If you want to start it from the shell type 'gdm'
 * What to do when 'locate' gives the following error 'can not open `/var/lib/mlocate/mlocate.db': No such file or directory'?
-<code>sudo updatedb</code>
+<code bash>sudo updatedb</code>
 * cat - Concatenates files, or standard input, to standard output: 
-<code>cat newmpeg.txt >> daily.txt</code>
+<code bash>cat newmpeg.txt >> daily.txt</code>
 *Alle processen weergeven met hun PID's
-<code>ps -A</code>
+<code bash>ps -A</code>
 *zoekt naar naam binnen de actieve processen
-<code>ps -C naam</code>
+<code bash>ps -C naam</code>
 *een proces beeindigen:
-<code>sudo kill 5943</code>
+<code bash>sudo kill 5943</code>
 *copy a directory:
-<code>cp -r /home/hope/files/* /home/hope/backup</code>
+<code bash>cp -r /home/hope/files/* /home/hope/backup</code>
 *show last system messages:
-<code>tail /var/log/messages</code>
+<code bash>tail /var/log/messages</code>
+*tail and keep watching (follow)
+<code bash>tail -f foo.out</code>
 *get computer name / hostname
-<code>hostname</code>
+<code bash>hostname</code>
 
 
 ===== Installing software or libraries =====
@@ -68,18 +459,18 @@ git pull	= svn update
 *You can use 'sudo apt-build install libfreetype6' for installing a library. You can also use apt-get for that by saying: 'apt-get build-dep libfreetype6'
 *Use 'sudo dpkg -i filename.deb' to install a download .deb file.
 *Install RPM packages:
-<code>rpm -i software-2.3.4.rpm</code>
+<code bash>rpm -i software-2.3.4.rpm</code>
 *of gebruik:
-<code>alien -i filename.rpm</code>
+<code bash>alien -i filename.rpm</code>
 *In case of the following message //"error while loading shared libraries: libstdc++-libc6.2-2.so.3: cannot open shared object file: No such file or directory"// while installing/running something install the glibc library:
-<code>sudo apt-get build-dep glibc</code>
+<code bash>sudo apt-get build-dep glibc</code>
 *7-Zip installeren op Ubuntu
-<code>sudo apt-get install p7zip</code>
+<code bash>sudo apt-get install p7zip</code>
 
 ===== Shell scripts =====
 *.sh extensie
 *execute a script in a terminal:
-<code>xterm -e /home/fileToExecute</code>
+<code bash>xterm -e /home/fileToExecute</code>
 *[[Checking errorCode, errorLevel, returnValue in a shell script]]
 
 
@@ -88,16 +479,16 @@ git pull	= svn update
 ===== Networking =====
 *"If you want to mount your NFS and samba file systems on ubuntu client machines you need to use the /etc/fstab file (short for filesystem table) keeps track of filesystems that you want to mount in static locations."
 *You can use NFS for this with adding the share to /etc/exports on sharing computer. You can then mount to that from the client computer by creating an empty folder (ie. /mnt/testfolder) and then say:
-<code>mount 192.1680.104:/home/rick/srcfolder /mnt/testfolder</code>
+<code bash>mount 192.1680.104:/home/rick/srcfolder /mnt/testfolder</code>
 
 *Na een wijziging in het /etc/networking/interfaces moet er een restart worden gegeven
-<code>sudo /etc/init.d/networking restart</code>
+<code bash>sudo /etc/init.d/networking restart</code>
 *Het instellen kan ook met ifconfig.
-<code>sudo ifconfig eth0 192.168.1.50 netmask 255.255.255.0 up</code>
+<code bash>sudo ifconfig eth0 192.168.1.50 netmask 255.255.255.0 up</code>
 *Networkadapter down:
-<code>ifdown eth1</code>
+<code bash>ifdown eth1</code>
 *Networkadapter up:
-<code>ifup eth1</code>
+<code bash>ifup eth1</code>
 
 *For permanent changes in your network address change your network configuration file '/etc/network/interfaces'. [[http://www.cyberciti.biz/tips/howto-ubuntu-linux-convert-dhcp-network-configuration-to-static-ip-configuration.html|more info]]
 
@@ -114,9 +505,9 @@ git pull	= svn update
 
 ===== Hardware / USB =====
 *zoeken naar usb apparaten met 'ph' in de naam. (-vvvv is extra verbose)
-<code>lsusb -vvvv | grep ph</code> 
+<code bash>lsusb -vvvv | grep ph</code> 
 *list all devices?
-<code>ls /dev/</code>
+<code bash>ls /dev/</code>
 
 ===== Advanced =====
 *To disable gdm, from Gnome click System/Administration/Services and unclick Graphical Logic Manager (gdm) 
@@ -126,3 +517,54 @@ git pull	= svn update
 *Exporteer de eerste 9 files uit een AVI naar losse jpg's: mplayer test.avi -vo jpeg -ao null -frames 9
 *Speel test.avi af in een x11 venster, maar het kan ook bijv. een video-out zijn: mplayer test.avi -vo x11
 *[[http://www.sjoerd-visser.demon.nl/mplayer/mencoder.html|Goede Nederlandse handleiding over video]]
+
+===== Swap Control + Command on Linux on Mac ======
+<code bash>
+xmodmap -e 'keycode 133=Control_L'
+xmodmap -e 'keycode 37=Super_L'
+xmodmap -e 'keycode 134=Control_R'
+xmodmap -e 'keycode 109=Super_R'
+</code>
+
+==using wine==
+Use wine to run Windows programs on linux.
+<code bash>
+sudo apt-get install wine
+winecfg
+sudo usermod -aG dialout <myuser>
+sudo ln -sf /dev/ttyUSB0 ~/.wine/dosdevices/com1 
+sudo ln -sf /dev/ttyACM0 ~/.wine/dosdevices/com2 
+unzip Minibloq.v0.8.Beta.zip
+cd Minibloq.v0.8.Beta
+wine MinibloqRun.exe
+</code>
+
+==changing .htaccess to get rid of doku.php==
+<code bash>
+RewriteEngine on
+ 
+RewriteBase /
+ 
+RewriteRule ^_media/(.*)              lib/exe/fetch.php?media=$1  [QSA,L]
+RewriteRule ^_detail/(.*)             lib/exe/detail.php?media=$1  [QSA,L]
+RewriteRule ^_export/([^/]+)/(.*)     doku.php?do=export_$1&id=$2  [QSA,L]
+RewriteRule ^$                        doku.php  [L]
+RewriteCond %{REQUEST_FILENAME}       !-f
+RewriteCond %{REQUEST_FILENAME}       !-d
+RewriteRule (.*)                      doku.php?id=$1  [QSA,L]
+</code>
+
+====== Using multiple monitors for in Ubuntu ======
+* http://ubuntuforums.org/showthread.php?t=221174
+* for nvidia: 
+<code>gksudo nvidia-settings</code>
+
+===== install other window manager=====
+* [[http://news.softpedia.com/news/Install-Alternative-Desktop-Managers-in-Ubuntu-48586.shtml]]
+
+== how to kill the screen command==
+Ctrl+A, Ctrl+\
+more tips [[http://ss64.com/osx/screen.html]]
+
+==replace characters==
+<code bash>tr '\n' ' ' < doit.sh> out.sh && ./out.sh</code>
