@@ -554,11 +554,6 @@ RewriteCond %{REQUEST_FILENAME}       !-d
 RewriteRule (.*)                      doku.php?id=$1  [QSA,L]
 </code>
 
-====== Using multiple monitors for in Ubuntu ======
-* http://ubuntuforums.org/showthread.php?t=221174
-* for nvidia: 
-<code>gksudo nvidia-settings</code>
-
 ===== install other window manager=====
 * [[http://news.softpedia.com/news/Install-Alternative-Desktop-Managers-in-Ubuntu-48586.shtml]]
 
