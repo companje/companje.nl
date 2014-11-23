@@ -1,6 +1,4 @@
-====== BTW ======
 NL128.420.613.B01
-KvK 30259538
 
 ==ex btw bedrag uitrekenen van inc btw bedrag==
 <code>100 x inc / 121 = ex btw</code>
