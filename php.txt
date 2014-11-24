@@ -1,12 +1,13 @@
-=====PHP=====
+======PHP======
 
-==online code testen==
+test
+=====online code testen=====
 http://runnable.com/
 
-==socket server with php==
+=====socket server with php=====
 http://devzone.zend.com/209/writing-socket-servers-in-php/
 
-==upload script==
+=====upload script=====
 based on: http://www.w3schools.com/php/php_file_upload.asp
 permissions: 755
 <code php>
@@ -29,7 +30,7 @@ else
 ?>
 </code>
 
-==Solve the following problem om CentOS==
+=====Solve the following problem om CentOS=====
 '''PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib64/php/modules/module.so' - /usr/lib64/php/modules/module.so: cannot open shared object file: No such file or directory in Unknown on line 0'''
 
 edit /etc/php.d/mcrypt.ini and change
@@ -41,25 +42,25 @@ to
 extension=mcrypt.so
 </code>
 
-==AMPPS==
+=====AMPPS=====
 * http://www.ampps.com/
 
-==last item from array==
+=====last item from array=====
 <code php>
 $item = end($array);
 </code>
 
-==strip illegal characters from string==
+=====strip illegal characters from string=====
 <code php>
 $location = preg_replace('/[^(\x20-\x7F)]*/','', $location);
 </code>
 
-==append or create if not exists==
+=====append or create if not exists=====
 <code php>
 file_put_contents($path, $data, FILE_APPEND);
 </code>
 
-==get random string==
+=====get random string=====
 <code php>
 function getRandomKey($count) { 
   $chars = "abcdefghijklmopqrstuvwxyz1234567890";
@@ -77,36 +78,36 @@ or if you only need a hex string:
 echo substr(md5(rand()), 0, 6);
 </code>
 
-==get url info ie. in 404.php==
+=====get url info ie. in 404.php=====
 <code php>
 echo $_SERVER["REDIRECT_URL"];
 </code>
 
-==remove links with regexp==
+=====remove links with regexp=====
 <code php>
 $result = preg_replace('/\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|$!:,.;]*[A-Z0-9+&@#\/%=~_|$]/i', '', $input);
 </code>
 
-==auto include==
+=====auto include=====
 <code php>
 function __autoload($class_name) {
     include $class_name . '.php';
 }
 </code>
 
-==extract, stripslashes & sqlite escape==
+=====extract, stripslashes & sqlite escape=====
 <code php>
 if (get_magic_quotes_gpc() ) {
-	$_GET = array_map('stripslashes', $_GET);
+  $_GET = array_map('stripslashes', $_GET);
 }
 $_GET = array_map('sqlite_escape_string', $_GET);
 extract($_GET);
 </code>
 
-==json header==
+=====json header=====
 <code php>header("Content-type: application/json");</code>
 
-==file_get_contents_utf8==
+=====file_get_contents_utf8=====
 <code php>
 function file_get_contents_utf8($fn) {
     $content = file_get_contents($fn);
@@ -114,15 +115,15 @@ function file_get_contents_utf8($fn) {
 }
 </code>
 
-==encoding of non utf-8 content to json==
+=====encoding of non utf-8 content to json=====
 http://www.php.net/manual/en/function.json-encode.php#99837
 
-==Convert PHP Object to array==
+=====Convert PHP Object to array=====
 <code php>
 $eventArray = (array)$event;
 </code>
 
-==Encoding==
+=====Encoding=====
 als je last van rare tekens hebt (zoals ë wordt Ã«) dan staat misschien de encoding van je pagina verkeerd.
 <code php>
 header("Content-Type: text/plain; charset=utf-8"); //iso-8859-1
@@ -132,41 +133,41 @@ Bij het inserten van UTF-8 tekst in een MySQL datebase dien je eerst een utf8_de
 $event->description = utf8_decode($tweet->text);
 </code>
 
-==Als de tijd niet goed staat in PHP staat misschien je timezone verkeerd==
+=====Als de tijd niet goed staat in PHP staat misschien je timezone verkeerd=====
 <code php>
 setlocale(LC_ALL, "nl_NL");
 date_default_timezone_set("Europe/Amsterdam");
 </code>
 
-==ssl disabled?==
+=====ssl disabled?=====
 if ssl seems to be disabled in php just enable it like this in your php.ini:
 <code>
 extension=php_openssl.dll
 </code>
 
-==short open tags==
+=====short open tags=====
 in php.ini
 <code>
 short_open_tag = On
 </code>
 http://www.php.net/manual/en/ini.core.php#ini.short-open-tag
 
-==connect to mysql through console/command line PHP but without Apache==
+=====connect to mysql through console/command line PHP but without Apache=====
 if you get this error:
 <code>
 PHP Warning:  mysql_connect(): [2002] No such file or directory (trying to connect via unix:///var/mysql/mysql.sock) 
 </code>
 try to connect to 127.0.0.1 instead of localhost
 
-==twitter==
+=====twitter=====
 twitter uitlezen met PHP? zie [[Twitter]]
 
-==php versie opvragen==
+=====php versie opvragen=====
 <code bash>
 php -v
 </code>
 
-==if else endif==
+=====if else endif=====
 <code php>
 <?php if( condition ): ?>
 ...  
@@ -175,27 +176,27 @@ php -v
 <?php endif; ?>
 </code>
 
-==PEAR==
+=====PEAR=====
 Ik moet me nog steeds eens verdiepen in PEAR: http://pear.php.net/manual/en/package.database.db.intro-fetch.php
 
-==while / list / each==
+=====while / list / each=====
 
 <code php>
 while (list($k, $v) = each($_GET)) {
-	echo $k . '=' . $v . ', ';
+  echo $k . '=' . $v . ', ';
 }
 </code>
 
-==mysql transactions in php==
+=====mysql transactions in php=====
 <code php>
 $this->db->startTransaction();
 foreach($userIds as $id) {
-	$this->db->update("INSERT INTO ......");
+  $this->db->update("INSERT INTO ......");
 }
 $this->db->commit();
 </code>
 
-==Internal Server Error 500 door PHP in Apache==
+=====Internal Server Error 500 door PHP in Apache=====
 Als Apache error 500 geeft kan dat liggen aan een fout in de syntax van een PHP script. Door het aanzetten van display_errors in php.ini of door het gebruiken van de ini_set functie in php kun je de exacte foutmelding achterhalen.
 <code php>
 ini_set('display_errors', 'On');
@@ -205,12 +206,12 @@ Als dat niet helpt kun je ook je php.ini aanpassen. In mijn geval stond die hier
 /Applications/MAMP/bin/php/php5.3.6/conf/php.ini
 </code>
 
-==php error log==
+=====php error log=====
 <code>
-/Applications/MAMP/logs/php_error.log	
+/Applications/MAMP/logs/php_error.log  
 </code>
 
-==import_request_variables icm sqlite vs extract==
+=====import_request_variables icm sqlite vs extract=====
 Problemen met quotes in sqlite zelfs na SQLite3::escapeString of sqlite_escape_string?
 * zie post van brian at enchanter in de [[http://php.net/manual/en/function.import-request-variables.php|php reference]]
 * maar vooral ook: [[http://www.dirac.org/linux/databases/sql_quoting/|sql quoting]]
@@ -226,12 +227,12 @@ $_GET = array_map('sqlite_escape_string', $_GET);
 extract($_GET);
 </code>
 
-==Content-type voor json==
+=====Content-type voor json=====
 <code php>
 header("Content-type: application/json");
 </code>
 
-==Scraper==
+=====Scraper=====
 <code php>
 require 'scraperwiki/simple_html_dom.php';
 
@@ -267,7 +268,7 @@ scraperwiki::save_sqlite($unique_keys, $records, $table_name);
 print "done\n";
 </code>
 
-==mini api==
+=====mini api=====
 <code php>
 <?
 header("Content-type: text/plain");
@@ -275,16 +276,16 @@ header("Content-type: text/plain");
 extract($_GET);
 
 if (isset($pinguin)) {
-	$html = file_get_contents("http://www.pinguinradio.nl/");
-	$parts = explode("Nu op PinguinRadio.nl:</strong> <I>", $html);
-	$parts = explode("</I>",$parts[1]);
-	$artist = $parts[0];
-	$parts = explode("</h2>", substr($parts[1],3));
-	$title = $parts[0];
-	die("$artist\n$title");
+  $html = file_get_contents("http://www.pinguinradio.nl/");
+  $parts = explode("Nu op PinguinRadio.nl:</strong> <I>", $html);
+  $parts = explode("</I>",$parts[1]);
+  $artist = $parts[0];
+  $parts = explode("</h2>", substr($parts[1],3));
+  $title = $parts[0];
+  die("$artist\n$title");
 }
 
 if (isset($time)) {
-	die(date('Y-m-d h:i:s'));
+  die(date('Y-m-d h:i:s'));
 }
 </code>
