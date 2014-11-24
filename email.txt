@@ -1,3 +1,4 @@
 ====== Email ======
 
-* https://www.inboxapp.com/faq
+* https://www.inboxapp.com
+* https://www.mailpile.is
