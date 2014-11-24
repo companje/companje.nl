@@ -1,0 +1,18 @@
+====== Globes ======
+* [[http://www.supinemusic.net/Files%20for%20Cloud%20projects/Cinema%204D/plugins/Planet%20X%20Generator%20R12/presets/|Planet Textures]]
+* http://eclecti.cc/computergraphics/snow-globe-part-one-cheap-diy-spherical-projection
+* http://vterrain.org/Textures/spherical.html
+* https://code.google.com/p/jdem846/
+* http://celestia.h-schmidt.net/earth-vt/
+* http://data-arts.appspot.com/globe/
+* http://blog.apoapsys.com/2013/05/23/bored-then-create-a-planet/
+* http://www.globe4d.com
+* http://cesium.agi.com/
+* http://www.virtualglobebook.com
+* http://www.evl.uic.edu/pape/data/Earth/
+* http://astro.uchicago.edu/cosmus/technotes.html
+* https://www.youtube.com/watch?v=xS8vDVCHF9c
+* http://www.pufferfishdisplays.co.uk/products/puffersphere-xl/
+
+
+* texture and lighting sphere with WebGL: [[http://blog.thematicmapping.org/2013/09/creating-webgl-earth-with-threejs.html|tutorial]], [[http://thematicmapping.org/playground/webgl/earth/|demo ]]
