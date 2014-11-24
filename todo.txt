@@ -9,4 +9,4 @@ Over ES6 compilers:
 * https://github.com/google/traceur-compiler
 
 Misschien ook wel leuk, hoe Angular's Dependency injection stiekem intern: 
-* https://www.youtube.com/watch?v=Jyhz2e4grHo
+* https://www.youtube.com/watch?v=Jyhz2e4grHo (16 min)
