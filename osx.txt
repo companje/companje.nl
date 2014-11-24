@@ -1,4 +1,4 @@
-======Mac OSX tips======
+======Mac OSX======
 
 =====list open ports=====
   lsof -i -P | grep -i "listen"
