@@ -41,7 +41,7 @@ public:
 
 ofTrueTypeFont shows the characters as they were in ISO-8859-1. A fix was added by @kylemcdonald at Jun 15, 2013 to support the euro sign but the other 7 characters that were introduced can be supported the same way by using the following code in ofTrueTypeFont::loadFont.
 
-<code>
+<code c>
 if (glyph == 0xA4) glyph = 0x20AC;   //  Currency Sign -> Euro Sign
 if (glyph == 0xA6) glyph = 0x0160;   //  Broken Bar -> Latin Capital Letter S With Caron
 if (glyph == 0xA8) glyph = 0x0161;   //  Diaeresis -> Latin Small Letter S With Caron
@@ -56,7 +56,7 @@ more characters: http://doc.infosnel.nl/extreme_utf-8.html
 
 there were more characters with problems but these problems were 'deeper' (probably in the Poco convert from UTF8 to Latin9. We solved it this way:
 
-<code>
+<code c>
 ě	[
 ů	]
 č	{
