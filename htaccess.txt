@@ -1,5 +1,8 @@
 ====== .htaccess ======
 
+===== Examples in Dutch =====
+* http://andrescholten.nl/voorbeelden-veel-gebruikte-htaccess-regels/
+
 ===== internal server error while using 'Header add' =====
 enable Apache's headers module:
   sudo a2enmod headers && sudo service apache2 restart
