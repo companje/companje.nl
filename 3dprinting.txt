@@ -1,0 +1,14 @@
+====== 3D printing ======
+* https://github.com/nneves/3DPrinterInterface
+* https://github.com/whpthomas/GPX
+* [[http://www.reprap.org/wiki/List_of_Firmware|List of firmware]]
+* http://diy3dprinting.blogspot.nl/2012/12/3d-printing-with-raspberry-pi.html
+* [[https://www.youtube.com/watch?v=A2dozQqbcf8|WHIP - Web Enabled 3D Print Controller
+]]
+
+==gcode==
+see [[gcode]]
+
+====my QU-BD One Up====
+See [[QU-BD One Up]]
+
