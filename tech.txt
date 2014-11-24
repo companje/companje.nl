@@ -1,15 +1,2 @@
 ====== Tech ======
-
-=====Programming=====
-See [[Programming]]  
-{{backlinks>Programming}}  
-
-=====Electronics=====
-See [[Electronics]]  
-{{backlinks>Electronics}}
-
-===== Linux =====
-See [[Linux]]
-
-===== ffmpeg =====
-See [[ffmpeg]]
+{{backlinks>.}}
