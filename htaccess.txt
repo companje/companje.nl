@@ -1,5 +1,9 @@
 ====== .htaccess ======
 
+===== internal server error while using 'Header add' =====
+enable Apache's headers module:
+  sudo a2enmod headers && sudo service apache2 restart
+
 =====Access-Control-Allow-Origin=====
 http://enable-cors.org/server_apache.html
 
