@@ -1,7 +1,7 @@
 ====== Electronics ======
 
 =====Capacitors=====
-David: Ik heb een filmpje gevonden waar een Duitser uitlegt en laat zien waarom je bij elke chip een klein condensatortje moet plaatsen: https://www.youtube.com/watch?feature=player_embedded&v=M2tJpEMIkWM
+*[[https://www.youtube.com/watch?feature=player_embedded&v=M2tJpEMIkWM|waarom je bij elke chip een klein condensatortje moet plaatsen]]
 
 =====Electronic cars=====
 * http://e-volks.com/
