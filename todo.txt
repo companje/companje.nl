@@ -3,13 +3,9 @@
 * [[https://www.youtube.com/watch?v=CMdHDHEuOUE|Google and NASA's Quantum Artificial Intelligence Lab
 ]] (6 min)
 * [[https://www.youtube.com/watch?v=mPq5S27qWW8|toekomst van Javascript, de nieuwe versie: EcmaScript 6. Dingen als generators, arrow functions, template strings. Veel hiervan is nu al bruikbaar door compilers als Traceur.]] (31 min)
-
-Over ES6 compilers: 
-* http://stackoverflow.com/questions/6506519/ecmascriptharmony-es6-to-javascript-compiler
-* https://github.com/google/traceur-compiler
-
-Misschien ook wel leuk, hoe Angular's Dependency injection stiekem intern: 
-* https://www.youtube.com/watch?v=Jyhz2e4grHo (16 min)
-
-Multi-Colored 3D Printing from a Single Extruder
-* http://3dprint.com/24581/mosaic-manufacturing-color-3d/
+ 
+* [[http://stackoverflow.com/questions/6506519/ecmascriptharmony-es6-to-javascript-compiler|Over ES6 compilers]]
+* [[https://github.com/google/traceur-compiler|Over ES6 compilers]]
+* [[https://www.youtube.com/watch?v=Jyhz2e4grHo|Angular's Dependency injection (16 min)]]
+* [[http://3dprint.com/24581/mosaic-manufacturing-color-3d/|Multi-Colored 3D Printing from a Single Extruder]]
+* [[http://dewerelddraaitdoor.vara.nl/media/322626|Leren programmeren voor kinderen DWDD]]
