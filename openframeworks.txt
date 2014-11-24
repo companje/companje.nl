@@ -363,8 +363,6 @@ Use ''drawStringAsShapes'' instead of ''drawString''
 exiftool -all= image.jpg
 </code>
     
-=====Backlinks=====
-{{backlinks>.}}
 
 =====notes=====
 openframeworks.h
