@@ -34,3 +34,8 @@ from Wikipedia: There are many techniques for converting a point cloud to a 3D s
 Ook een leuk 3D ontwerp programmaatje: 
 http://voxelbuilder.com/
 (Werkt met Canvas, werkt dus ook op oudere iPhones en iPad's)
+
+==openjscad.org==
+* openjscad.org
+* [[https://github.com/Spiritdude/OpenJSCAD.org/wiki/User-Guide|Guide]]
+Ondersteund drag en drop van stl, amf en openscad bestanden. OpenjsCad gebruikt trouwens ook dat csg.js, waar bijv. ook http://shapesmith.net/ gebruikt van maakt.
