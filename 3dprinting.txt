@@ -10,4 +10,5 @@
 see [[gcode]]
 
 ====my QU-BD One Up====
-See [[QU-BD One Up]]
+See [[qu-bd-one-up]]
+
