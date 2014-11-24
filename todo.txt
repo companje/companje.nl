@@ -3,7 +3,7 @@
 * [[https://www.youtube.com/watch?v=CMdHDHEuOUE|Google and NASA's Quantum Artificial Intelligence Lab
 ]] 6min
 
-=====Javascript====
+=====de toekomst van Javascript====
 Zeer interessant praatje over de toekomst van Javascript, de nieuwe versie: EcmaScript 6. Dingen als generators, arrow functions, template strings. Veel hiervan is nu al bruikbaar door compilers als Traceur.  
 * https://www.youtube.com/watch?v=mPq5S27qWW8
 
