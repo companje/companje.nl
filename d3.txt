@@ -2,6 +2,7 @@
 
 ===== Tag Cloud script for dokuwiki (work in progress)=====
 thanks to: http://jsfiddle.net/adiioo7/RUTpJ/light/
+\\
 see also: [[dokuwiki]]
 
 <code php>
