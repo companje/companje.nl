@@ -1,6 +1,8 @@
 ======PHP======
 
-test
+===== Install GD =====
+  apt-get install php5-gd
+
 =====online code testen=====
 http://runnable.com/
 
