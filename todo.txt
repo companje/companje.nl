@@ -1,11 +1,8 @@
 ====== TODO: things to watch, read or listen ======
 
 * [[https://www.youtube.com/watch?v=CMdHDHEuOUE|Google and NASA's Quantum Artificial Intelligence Lab
-]] 6min
-
-=====de toekomst van Javascript====
-Zeer interessant praatje over de toekomst van Javascript, de nieuwe versie: EcmaScript 6. Dingen als generators, arrow functions, template strings. Veel hiervan is nu al bruikbaar door compilers als Traceur.  
-* https://www.youtube.com/watch?v=mPq5S27qWW8
+]] (6 min)
+* [[https://www.youtube.com/watch?v=mPq5S27qWW8|toekomst van Javascript, de nieuwe versie: EcmaScript 6. Dingen als generators, arrow functions, template strings. Veel hiervan is nu al bruikbaar door compilers als Traceur.]] (31 min)
 
 Over ES6 compilers: 
 * http://stackoverflow.com/questions/6506519/ecmascriptharmony-es6-to-javascript-compiler
