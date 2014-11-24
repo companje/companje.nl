@@ -393,19 +393,19 @@ export COLUMNS=1
 ls
 </code>
 
-===========useradd===========
+=====useradd=====
 Als ie useradd bijvoorbeeld niet kan vinden of iets anders essentieels kan dat komen omdat soms /usr/sbin niet in het zoekpad staat.
 
-===========restart ssh deamon===========
+=====restart ssh deamon=====
 see [[ssh]]
 
-=========== .htaccess ===========
+===== .htaccess =====
 .AIR bestanden als binary laten downloaden in .htaccess:
 <code bash> AddType application/vnd.adobe.air-application-installer-package+zip .air </code>
 
-=========== GIT ===========
+===== GIT =====
 See [[git]]
-=========== Display problems / tips ===========
+===== Display problems / tips =====
 * Laptop beeldscherm knippert / flikkert in Ubuntu. Mogelijke oplossing: Probeer bij Administration/Screen and Graphics de 'Intel Experimental mode' te veranderen in i810.
 * [[Using multiple monitors for in Ubuntu]]
 * start screen and graphic preferences:
@@ -418,7 +418,7 @@ See [[git]]
 
 
 
-=========== Terminal ===========
+===== Terminal =====
 * find an application's location: 
 <code bash>whereis firefox</code>
 * find a file's location:
@@ -454,7 +454,7 @@ See [[git]]
 <code bash>hostname</code>
 
 
-=========== Installing software or libraries ===========
+===== Installing software or libraries =====
 *You can use 'sudo apt-get install thunderbird' for installing software like thunderbird or any other program.
 *You can use 'sudo apt-build install libfreetype6' for installing a library. You can also use apt-get for that by saying: 'apt-get build-dep libfreetype6'
 *Use 'sudo dpkg -i filename.deb' to install a download .deb file.
@@ -467,7 +467,7 @@ See [[git]]
 *7-Zip installeren op Ubuntu
 <code bash>sudo apt-get install p7zip</code>
 
-=========== Shell scripts ===========
+===== Shell scripts =====
 *.sh extensie
 *execute a script in a terminal:
 <code bash>xterm -e /home/fileToExecute</code>
@@ -476,7 +476,7 @@ See [[git]]
 
 
 
-=========== Networking ===========
+===== Networking =====
 *"If you want to mount your NFS and samba file systems on ubuntu client machines you need to use the /etc/fstab file (short for filesystem table) keeps track of filesystems that you want to mount in static locations."
 *You can use NFS for this with adding the share to /etc/exports on sharing computer. You can then mount to that from the client computer by creating an empty folder (ie. /mnt/testfolder) and then say:
 <code bash>mount 192.1680.104:/home/rick/srcfolder /mnt/testfolder</code>
@@ -492,33 +492,33 @@ See [[git]]
 
 *For permanent changes in your network address change your network configuration file '/etc/network/interfaces'. [[http://www.cyberciti.biz/tips/howto-ubuntu-linux-convert-dhcp-network-configuration-to-static-ip-configuration.html|more info]]
 
-=========== Arduino ===========
+===== Arduino =====
 * [[http://javiervalcarce.es/wiki/Program_Arduino_with_AVR-GCC|Installing AVR-GCC for compiling and uploading C code to Arduino]]
 *[[http://javiervalcarce.es/wiki/TV_Video_Signal_Generator_with_Arduino|TV Video Signal Generator with Arduino]] 
 
-=========== Scite ===========
+===== Scite =====
 *[[My favorite Scite User properties]]
 
-=========== C++ ===========
+===== C++ =====
 *Time time; time.fileNameTag()
 
 
-=========== Hardware / USB ===========
+===== Hardware / USB =====
 *zoeken naar usb apparaten met 'ph' in de naam. (-vvvv is extra verbose)
 <code bash>lsusb -vvvv | grep ph</code> 
 *list all devices?
 <code bash>ls /dev/</code>
 
-=========== Advanced ===========
+===== Advanced =====
 *To disable gdm, from Gnome click System/Administration/Services and unclick Graphical Logic Manager (gdm) 
 
 
-=========== Video ===========
+===== Video =====
 *Exporteer de eerste 9 files uit een AVI naar losse jpg's: mplayer test.avi -vo jpeg -ao null -frames 9
 *Speel test.avi af in een x11 venster, maar het kan ook bijv. een video-out zijn: mplayer test.avi -vo x11
 *[[http://www.sjoerd-visser.demon.nl/mplayer/mencoder.html|Goede Nederlandse handleiding over video]]
 
-=========== Swap Control + Command on Linux on Mac ===============
+===== Swap Control + Command on Linux on Mac =========
 <code bash>
 xmodmap -e 'keycode 133=Control_L'
 xmodmap -e 'keycode 37=Super_L'
@@ -554,12 +554,12 @@ RewriteCond %{REQUEST_FILENAME}       !-d
 RewriteRule (.*)                      doku.php?id=$1  [QSA,L]
 </code>
 
-=============== Using multiple monitors for in Ubuntu ===============
+========= Using multiple monitors for in Ubuntu =========
 * http://ubuntuforums.org/showthread.php?t=221174
 * for nvidia: 
 <code>gksudo nvidia-settings</code>
 
-=========== install other window manager===========
+===== install other window manager=====
 * [[http://news.softpedia.com/news/Install-Alternative-Desktop-Managers-in-Ubuntu-48586.shtml]]
 
 ===== how to kill the screen command=====
