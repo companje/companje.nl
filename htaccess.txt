@@ -1,5 +1,24 @@
 ====== .htaccess ======
 
+<code apache>
+RewriteEngine On
+
+##############################
+# redirect /doku.php?id=xxx  #
+###############################
+RewriteCond %{QUERY_STRING} ^id=(.*)$
+RewriteRule ^doku\.php$ http://wiki.companje.nl/%1? [R=302,L]
+##############################
+
+##############################
+# redirect if file not found #
+##############################
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ http://wiki\.companje\.nl/$1 [L,R=301]
+#############################
+</code>
+
 ===== Examples in Dutch =====
 http://andrescholten.nl/voorbeelden-veel-gebruikte-htaccess-regels/
 
