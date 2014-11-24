@@ -10,3 +10,6 @@ Over ES6 compilers:
 
 Misschien ook wel leuk, hoe Angular's Dependency injection stiekem intern: 
 * https://www.youtube.com/watch?v=Jyhz2e4grHo (16 min)
+
+Multi-Colored 3D Printing from a Single Extruder
+* http://3dprint.com/24581/mosaic-manufacturing-color-3d/
