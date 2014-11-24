@@ -1,15 +1,15 @@
 ====== openFrameworks ======
 
-==mouse rotating globe with conversion from quaternions to latitude longitude==
+=====mouse rotating globe with conversion from quaternions to latitude longitude=====
 * https://gist.github.com/companje/13209c678d5720347169
 
-==render and rotate a globe in openFrameworks==
+=====render and rotate a globe in openFrameworks=====
 * https://gist.github.com/companje/82c1b5d4885a83b48f84
 
-==good old alpha trail with two FBO's==
+=====good old alpha trail with two FBO's=====
 * https://gist.github.com/companje/2395e3b955d9472cfc22
 
-==utf8==
+=====utf8=====
 somehow certain characters 'recently' added to ISO_8859_15 are shown as their predecessor in ISO_8859_1 by openFrameworks ofTrueTypeFont. It looks like the Latin9Encoding::convert function called by ofTrueTypeFont::drawString is causing this problem. Read [[http://www.i18nqa.com/debug/table-iso8859-1-vs-iso8859-15.html|here]] about the differences. <del>The only solution I've been able to find so far is to not use ofTrueTypeFont but to use the ofxTrueTypeFontUC addon</del>: **See solution below**.
 The loaded text-file is encoded as UTF-8 by notepad with the BOM character removed.
 
@@ -36,7 +36,7 @@ public:
 };
 </code>
 
-==Update: ofTrueTypeFont ISO-8859-15==
+=====Update: ofTrueTypeFont ISO-8859-15=====
 " In 1999, ISO needed to make the Euro currency symbol available. There were also a few other characters that were desired. So ISO created ISO-8859-15, which is identical to ISO-8859-1 except for 8 characters." source: http://www.i18nqa.com/debug/table-iso8859-1-vs-iso8859-15.html
 
 ofTrueTypeFont shows the characters as they were in ISO-8859-1. A fix was added by @kylemcdonald at Jun 15, 2013 to support the euro sign but the other 7 characters that were introduced can be supported the same way by using the following code in ofTrueTypeFont::loadFont.
@@ -73,13 +73,13 @@ if (glyph == '<') glyph = 0x159;       // r met dakje op de kop
 if (glyph == '>') glyph = 0x148;       // n met dakje op de kop
 if (glyph == '_') glyph = 0x165;       // t met accentje er naast
 </code>
-==ftgl font==
+=====ftgl font=====
 http://ftgl.sourceforge.net/docs/html/ftgl-tutorial.html
 
-==tr1/memory error==
+=====tr1/memory error=====
 Set 'Buid Settings -> Base SDK' to a lower version, for example 10.8
 
-==write to a file==
+=====write to a file=====
 <code c>
 ofFile file("tmp.txt",ofFile::WriteOnly);
 file << "A" << endl;
@@ -87,13 +87,13 @@ file << "B" << endl;
 file.close();
 </code>
 
-==gamuza==
+=====gamuza=====
 * http://gamuza.d3cod3.org/
 
-==fbo depthbuffer==
+=====fbo depthbuffer=====
 nog uitzoeken
 
-==stringify==
+=====stringify=====
 Multiline syntax highlighted hardcoded strings in je code.
 <code c>
 #define STRINGIFY(A) #A
@@ -108,7 +108,7 @@ static string myString = STRINGIFY(
 </code>
 
 
-==blending crosshair/bullseye==
+=====blending crosshair/bullseye=====
 <code c>
 ofPushMatrix(); //bullseye
 ofTranslate(0,0,radius);
@@ -124,7 +124,7 @@ ofLine(-1,0,-6,0);
 ofPopMatrix(); //bullseye
 </code>
 
-==fbo's / ortho projection with WIDTH,HEIGHT==
+=====fbo's / ortho projection with WIDTH,HEIGHT=====
 <code c>
 fbo.allocate(1200,1200);
 
@@ -153,7 +153,7 @@ void drawMainScreen() {
 }
 </code>
 
-==params==
+=====params=====
 <code c>
 int main(int argc, const char** argv){
     for (int i=0; i<argc; i++) {
@@ -164,16 +164,16 @@ int main(int argc, const char** argv){
 }
 </code>
 
-=='old' codeblocks version: 10.05==
+====='old' codeblocks version: 10.05=====
 * http://www.codeblocks.org/downloads/5
 
-==splines==
+=====splines=====
 * http://forum.libcinder.org/topic/creating-catmull-rom-spline-from-the-bspline-class
 
-==warping==
+=====warping=====
 * [[https://github.com/paulhoux/Cinder-Samples/blob/master/PerspectiveWarping/src/PerspectiveWarpingApp.cpp|OpenCv 		getPerspectiveTransform]] example by Paul Houx
 
-==debugging with gdb==
+=====debugging with gdb=====
 You can also running the gcc debugger from terminal:
 view plaincopy to clipboardprint?
 <code>
@@ -181,7 +181,7 @@ gdb myFolder/openFrameworksDebug.app/Contents/MacOS/openFrameworksDebug
 >run  
 </code>
 
-==personal note:==
+=====personal note:=====
 in ofxBlobsManager::update()
 <code c>
 //remember prev pos for existing blobs
@@ -193,10 +193,10 @@ for( int i = 0; i < blobs.size(); i++ ) {
 }
 </code>
     
-==CL-Eye Test==
+=====CL-Eye Test=====
 * http://codelaboratories.com/kb/CL-Eye-Platform-Documentation/
 
-==draggable earth with easing==
+=====draggable earth with easing=====
 <code c>
 #include "ofMain.h"
 #include "ofAppGlutWindow.h"
@@ -265,7 +265,7 @@ int main(){
 
 * see [[Quaternion]]
 
-==possible bug in ofxCvGrayScaleImage with ofSaveImage or img.saveImage()==
+=====possible bug in ofxCvGrayScaleImage with ofSaveImage or img.saveImage()=====
 work around: convert the ofxCvGrayScaleImage to ofxCvColorImage and then save the color image.
 <code c>
 ofImage img;
@@ -284,7 +284,7 @@ tmp.setFromPixels(img.getPixelsRef());
 bg = tmp;  //bg is the ofxCvGrayScaleImage 
 </code>
 
-==install_name_tool usage on commandline==
+=====install_name_tool usage on commandline=====
 <code bash>
 install_name_tool -change ./libfmodex.dylib @executable_path/libfmodex.dylib libfmodex.dylib
 </code>
@@ -293,7 +293,7 @@ to get .app running:
 install_name_tool -change ./libfmodex.dylib @executable_path/libfmodex.dylib emptyExample.app/Contents/MacOS/emptyExample 
 </code>
 
-==openframeworks program crashes on glActiveTexture==
+=====openframeworks program crashes on glActiveTexture=====
 Check if glActiveTexture is available:
 <code c>
 if(glActiveTexture==NULL) {
@@ -303,15 +303,15 @@ if(glActiveTexture==NULL) {
 </code>
 This was the case with me running Windows through Parallels on a Mac.
 
-==ofSetupScreenOrtho==
+=====ofSetupScreenOrtho=====
 <code c>
 ofSetupScreenOrtho(0,0,OF_ORIENTATION_UNKNOWN,true,-100,100);
 </code>
 
-==serial 250000 / 250K baudrate==
+=====serial 250000 / 250K baudrate=====
 * http://forum.openframeworks.cc/index.php?topic=4254.0
 
-==some nice std::vector functions in ofUtils.h==
+=====some nice std::vector functions in ofUtils.h=====
 <code c>
 template<class T>
 void ofRandomize(vector<T>& values) {
@@ -339,7 +339,7 @@ bool ofContains(const vector<T>& values, const T& target) {
 }
 </code>
 
-==main.cpp==
+=====main.cpp=====
 <code c>
 #include "ofAppGlutWindow.h"
 #include "testApp.h"
@@ -352,10 +352,10 @@ int main() {
 }
 </code>
 
-==Ugly ofTrueTypeFont text after rotation==
+=====Ugly ofTrueTypeFont text after rotation=====
 Use ''drawStringAsShapes'' instead of ''drawString''
 
-==ofImage problems==
+=====ofImage problems=====
 * in case of BAD_ACCESS error see: [[http://forum.openframeworks.cc/index.php/topic,7910.0.html]]
 * in case of EXIF error EXC_BAD_ACCESS by FreeImage use a new version of FreeImage.a: http://sourceforge.net/projects/freeimage/forums/forum/36110/topic/5012811
 * or use exiftool (win & osx) to strip exif data: https://owl.phy.queensu.ca/~phil/exiftool/
@@ -363,10 +363,10 @@ Use ''drawStringAsShapes'' instead of ''drawString''
 exiftool -all= image.jpg
 </code>
     
-==Backlinks==
+=====Backlinks=====
 {{backlinks>.}}
 
-==notes==
+=====notes=====
 openframeworks.h
 <code cpp>
 #pragma once
