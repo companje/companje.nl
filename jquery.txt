@@ -1,5 +1,8 @@
 =====jQuery=====
 
+==Getting over jQuery==
+http://blog.ponyfoo.com/2013/07/09/getting-over-jquery
+
 ==Hello World==
 <code jquery>
 
