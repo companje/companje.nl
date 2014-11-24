@@ -1,6 +1,8 @@
 ====== d3 ======
 
 ===== Tag Cloud script for dokuwiki (work in progress)=====
+thanks to: http://jsfiddle.net/adiioo7/RUTpJ/light/
+
 <code php>
 <?php
 
