@@ -1,5 +1,8 @@
 ====== Linux ======
 
+===== count number of files in directory =====
+  ls -1 | wc -l
+
 =====rights=====
   chmod +x filename   # user,group and others execute rights
   chmod u+x filename  # user execute rights
