@@ -1,6 +1,9 @@
-=====Windows=====
+======Windows=======
 
-==control commands==
+=====See Boot history=====
+filter in `eventvwr` on event ID 12
+
+=====control commands=====
 http://support2.microsoft.com/kb/192806
 <code>
 Control panel tool             Command
@@ -35,50 +38,50 @@ Control panel tool             Command
    System Properties              control sysdm.cpl
 </code>
 
-==deactivate windows==
+=====deactivate windows=====
   slmgr.vbs -upk
   
-==event viewer==
+=====event viewer=====
   eventvwr
   
-==Shuttle SH61R BIOS update==
+=====Shuttle SH61R BIOS update=====
 * http://global.shuttle.com/main/productsDownload?productId=1555
 
-==ignore windows recovery==
+=====ignore windows recovery=====
 <code>
 bcdedit /set {current} bootstatuspolicy ignoreallfailures
 </code>
 
-==windows info==
+=====windows info=====
 <code>MSinfo32 </code>
 
-==Disabling “Has stopped working” dialogs==
+=====Disabling “Has stopped working” dialogs=====
 In '''HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting''' create a DWORD 'DontShowUI' with value 1
 
-==start task scheduler==
+=====start task scheduler=====
 <code>
 control schedtasks
 </code>
 
-==reboot computer==
+=====reboot computer=====
 <code>
 shutdown -r -f -t 00
 </code>
 
-==shutdown computer==
+=====shutdown computer=====
 <code>
 shutdown -s -f -t 00
 </code>
 
-==windows 8 startup folder==
+=====windows 8 startup folder=====
 <code>
 %AppData%\Microsoft\Windows\Start Menu\Programs\Startup
 </code>
 
-==clear diskspace==
+=====clear diskspace=====
 http://www.howtogeek.com/174705/how-to-reduce-the-size-of-your-winsxs-folder-on-windows-7-or-8/
 
-==always on top==
+=====always on top=====
 <code c>
 void setAlwaysOnTop() {
   HWND hwnd = FindWindowA("GLUT","");
@@ -86,19 +89,19 @@ void setAlwaysOnTop() {
 }
 </code>
 
-==verberg start menu bij starten windows 8==
+=====verberg start menu bij starten windows 8=====
 * http://stackoverflow.com/questions/19047257/show-auto-started-desktop-app-in-fullscreen-on-windows-8
 
-==com ports==
+=====com ports=====
 * http://tim.cexx.org/?p=912
 
-==convert png to icon==
+=====convert png to icon=====
 * http://converticon.com/
 
-==How to Customize Keyboard Speed in Windows==
+=====How to Customize Keyboard Speed in Windows=====
 * http://www.sevenforums.com/hardware-devices/8712-keyboard-repeat-delay-repeat-rate.html
 
-==which dll's used by running programs==
+=====which dll's used by running programs=====
 <code>
 tasklist /m
 </code>
@@ -107,10 +110,10 @@ or
 tasklist /m /fi "imagename eq [programname]"
 </code>
 
-==Batch files==
+=====Batch files=====
 Zie [[batch]] files.
 
-==change computer name==
+=====change computer name=====
 Change Your Computer Name in Windows 7 or Vista:
 Run:
 <code>
@@ -120,6 +123,6 @@ go to advanced system settings
 open the Computer Name tab
 Click change...
 
-==disable detection of serial mouse==
+=====disable detection of serial mouse=====
 * XP: Add the /NoSerialMice option to the end of each entry in the [operating systems] section of Boot.ini: http://support.microsoft.com/kb/131976
 * Windows 7? Plug & Play Blocker - http://forum.ssca.org/phpBB3/viewtopic.php?f=5&t=11203
