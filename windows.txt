@@ -1,7 +1,7 @@
 ======Windows=======
 
-=====See Boot history=====
-filter in '''eventvwr''' on event ID 12
+=====See Windows boot history=====
+filter in ''eventvwr'' on event ID 12
 
 =====control commands=====
 http://support2.microsoft.com/kb/192806
