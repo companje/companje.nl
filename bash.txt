@@ -116,7 +116,7 @@ LPI 1 boeken zijn heel fijn om bash te leren
 rev draait in een bestand voor elke regel alle karakters om
 
 =====ncal=====
-<code>
+<code bash>
 cal
 ncal
 ncal -wy
@@ -143,7 +143,7 @@ source /opt/local/share/doc/git-core/contrib/completion/git-prompt.sh
 ===== Checking errorcode / errorlevel / returnvalue in a shell script =====
 See [[linux]]
 
-<code>
+<code bash>
 #!/bin/sh
 
 export TOPDIR=`pwd`/..
