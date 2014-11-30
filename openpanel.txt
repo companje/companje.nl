@@ -1,0 +1,63 @@
+====== OpenPanel ======
+  * A typical location for all log files is /var/log and subdirectories. 
+  * sudo /etc/init.d/apache2 start
+  * sudo /etc/init.d/apache2 start
+  * ps -A | grep 'httpd'
+  * pgrep apache
+  * aptitude show apache2
+  * apachectl status
+  * sudo lsof -i :443
+  * sudo lsof -i :80
+  * sudo lsof -i:3306
+  * sudo lsof -i:4089
+  * cat /etc/apache2/ports.conf
+  * netstat -plan | grep :443
+  * sudo apache2ctl configtest        #     Syntax OK
+  * ps -e | grep apache
+  * sudo iptables -L
+  * ??? tail -f /var
+  * tail -f /var/log/apache2/error.log
+  * # The Apache error log may have more information.   #   cd /var/log/apache2
+  * cat /var/log/apache2/error.log
+  * sudo nano /etc/apache2/sites-available/default-ssl
+  * /etc/apache2/apache2.conf
+  * sudo apt-get purge openpanel.*
+  * sudo -i
+  * ls -la / | grep var
+  * ls -la /var/ | grep lib
+  * ls -la /var/lib/ | grep mysql
+  * ps aux | grep openpanel
+  * find . | xargs grep 'itemGridViewContents' -sl
+  * A commenter mentioned that you can install md5sum using HomeBrew by runningbrew install coreutils.
+  * sudo chown -R www-data:www-data wp-content 
+  * OR even sudo chown -R www-data:www-data public_html
+  * /etc/apache2/conf.d/openpanel.conf
+  * enable apache modules: sudo a2enmod rewrite # for mod_rewrite.so
+  * root@vps:/var/openpanel/modules/Apache2.module/apache2module.app/Contents/Configuration Defaults# cat openpanel.module.apache2.conf.xml
+
+<code xml>
+<openpanel.module.domain>
+  <config>
+    <varpath>/var/openpanel/conf/staging/Apache2/</varpath>
+    <htservice:vhosts_dir>/etc/apache2/openpanel.d/</htservice:vhosts_dir>
+    <htservice:name>apache2</htservice:name>
+    <htservice:confdir>/etc/apache2</htservice:confdir>
+    <htservice:conffile>apache2.conf</htservice:conffile>
+    <phpini>/etc/php5/apache2/php.ini</phpini>
+  </config>
+</openpanel.module.domain>
+</code>
+
+  telnet localhost 80
+  HEAD / HTTP/1.0
+  <extra carriage return>
+
+===== OpenPanel GUI render error with ItemGrid=====
+I found a workaround for this issue by adding the following html/css to /var/openpanel/http/index.html. It's an ugly hack but it works for me.
+<code css>
+<style>
+.itemGridViewContents[style] {
+position: initial !important;
+}
+</style>
+</code>
