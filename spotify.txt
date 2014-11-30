@@ -3,4 +3,4 @@
 ===== Search API =====
 * [[https://developer.spotify.com/web-api/search-item/|documentation]]
 * example:
-  curl -X GET "https://api.spotify.com/v1/search?q=Gorki+-+Mia&type=artist,track" -H "Accept: application/json"
+   curl -X GET "https://api.spotify.com/v1/search?q=Gorki+-+Mia&type=artist,track" -H "Accept: application/json"
