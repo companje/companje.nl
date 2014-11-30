@@ -270,20 +270,20 @@
   * Weezer - Memories
   * Meg Myers - Monster
   * Jake Bugg - Lightning bolt
-  * Odissee - Ready to rock
-  * Anne Soldaat - May be
+  * Oddisee - Ready to rock
+  * Anne Soldaat - Maybe
   * Pearl Jam - The Fixer
   * Matt Corby - Brother
-  * Sufjan Stevens - Steven Swans
+  * Sufjan Stevens - Seven Swans
   * Japan - Nightporter
   * Kasabian - Goodbye Kiss
   * The Lumineers - Ho Hey
-  * Audio Slave - Like A Stone
+  * Audioslave - Like a Stone
   * Daily Bread - Loverst
   * Blur - Under The Westway
   * Beck - Looking for a Sign
   * Hot Chip - Look at where we are
-  * Frank Ocean - Bad Relegion
+  * Frank Ocean - Bad Religion
   * Deus - Smokers Reflect
   * Family of the year - stairs
   * Blur - Under the westway
@@ -291,7 +291,7 @@
   * Absynthe Minded - Space
   * Jungle by Night - Ethiopino
   * Metric - Youth without Youth
-  * Staff Bendi Bilili - Osali Mabe
+  * Staff Benda Bilili - Osali Mabe
   * Delta Spirit - California
   * Purity Ring - Obedear
   * Mister and Mississippi - Northern Sky
