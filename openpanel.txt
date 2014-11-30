@@ -61,3 +61,22 @@ position: initial !important;
 }
 </style>
 </code>
+
+===== OpenPanel install your own SSL certificate for the admin panel =====
+  * buy a certificate (in my case I ordered one through TransIP (Comodo Positive SSL 12,50 p/y. Request it, store the passphrase on a safe place, confirm the email, go back to transip to download the certificate).
+  * upload two files to your home dir: certificate.crt and certificate.key
+  * convert the encrypted key file to RSA format (right?): openssl rsa  -in certificate.key  (use the passphrase)
+  * make backup of /etc/ssl/private/ssl-openpanel.key
+  * replace the contents of /etc/ssl/private/ssl-openpanel.key by the new RSA private key just created.
+  * make backup of /etc/ssl/certs/ssl-openpanel.pem
+  * replace the contents of /etc/ssl/certs/ssl-openpanel.pem with the contents of ~/certificate.crt
+  * backup /etc/openpanel/certificate.pem
+  * remove /etc/openpanel/certificate.pem
+  * remove certificate.crt and certificate.key from your home folder
+  * reboot
+
+==== OpenPanel set SSL certificate for default HTTPS site (‘It works! page’ in /var/www) ====
+cd /etc  * /apache2/conf.d
+  * nano openpanel.conf
+  * set SSLCertificateFile and SSLCertificateKeyFile to resp. /etc/ssl/certs/certificate-companje-nl.pem and /etc/ssl/private/ssl-cert-companje-nl-rsa.key (Where RSA.key file is created with 'openssl rss -in encrypted-certificate.key > ssl-cert-companje-nl-rsa.key’. First download your certificates (in my case from TransIP after requesting it from Comodo.
+  * sudo /etc/init.d/apache2 restart
