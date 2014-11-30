@@ -1,0 +1,7 @@
+======esp8266======
+* [[http://zeflo.com/2014/esp8266-weather-display/|Zeflo's Arduino code + wiring example]]
+* [[https://nurdspace.nl/ESP8266|NURDspace on ESP8266]]
+* [[http://www.seeedstudio.com/depot/WiFi-Serial-Transceiver-Module-w-ESP8266-p-1994.html|ESP8266 at seeedstudio.com]]
+* [[http://www.instructables.com/howto/ESP8266/|ESP8266 projects on instructables]]
+* [[http://www.esp8266.com/|user forum]]
+* [[https://www.sparkfun.com/products/12009]] (of 3.3 voltage regulator van pc moederbord afsolderen bijv BA033)
