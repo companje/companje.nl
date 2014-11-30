@@ -76,7 +76,7 @@ position: initial !important;
   * reboot
 
 ==== OpenPanel set SSL certificate for default HTTPS site (‘It works! page’ in /var/www) ====
-cd /etc  * /apache2/conf.d
+  * cd /etc  * /apache2/conf.d
   * nano openpanel.conf
   * set SSLCertificateFile and SSLCertificateKeyFile to resp. /etc/ssl/certs/certificate-companje-nl.pem and /etc/ssl/private/ssl-cert-companje-nl-rsa.key (Where RSA.key file is created with 'openssl rss -in encrypted-certificate.key > ssl-cert-companje-nl-rsa.key’. First download your certificates (in my case from TransIP after requesting it from Comodo.
   * sudo /etc/init.d/apache2 restart
