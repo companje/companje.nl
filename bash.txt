@@ -1,6 +1,6 @@
 ====== Bash ======
 
-==read line from netcat==
+=====read line from netcat=====
 <code bash>
 while:
 do
@@ -24,7 +24,7 @@ do
 done
 </code>
 
-==infinite while==
+=====infinite while=====
 <code>while :
 do
   echo tick
@@ -32,12 +32,12 @@ do
 done
 </code>
 
-==tee==
+=====tee=====
 Use tee command to redirect the content to file:
   telnet google.com 80 | tee outfile
 Then grep the file
 
-==notes from BEAA talk by Johan at 26 june==
+=====notes from BEAA talk by Johan at 26 june=====
 Bash
 
 all chmod a+r  
@@ -115,14 +115,14 @@ LPI 1 boeken zijn heel fijn om bash te leren
 
 rev draait in een bestand voor elke regel alle karakters om
 
-==ncal==
+=====ncal=====
 <code>
 cal
 ncal
 ncal -wy
 </code>
 
-==bash-completion==
+=====bash-completion=====
 for advanced code completion (also reads from makefiles)
 <code bash>sudo port install bash-completion</code>
 add this to ~/.profile
@@ -138,4 +138,25 @@ export GIT_PS1_SHOWSTASHSTATE=true
 export GIT_PS1_SHOWUNTRACKEDFILES=true
 source /opt/local/share/doc/git-core/contrib/completion/git-completion.bash
 source /opt/local/share/doc/git-core/contrib/completion/git-prompt.sh
+</code>
+
+===== Checking errorcode / errorlevel / returnvalue in a shell script =====
+See [[linux]]
+
+<code>
+#!/bin/sh
+
+export TOPDIR=`pwd`/..
+
+echo Compiling...
+
+make
+
+if [ $? -ne 0 ]
+then
+  echo Error compiling...
+  exit
+fi
+
+./executable 1>>log.txt 2>&1
 </code>
