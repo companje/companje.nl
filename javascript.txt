@@ -1,5 +1,8 @@
 =============== Javascript notes ===============
 
+=====webworkers=====
+* http://www.w3schools.com/html/html5_webworkers.asp
+
 =====EcmaScript 6=====
 Zeer interessant praatje over de toekomst van Javascript, de nieuwe versie: EcmaScript 6. Dingen als generators, arrow functions, template strings. Veel hiervan is nu al bruikbaar door compilers als Traceur.  
 https://www.youtube.com/watch?v=mPq5S27qWW8
