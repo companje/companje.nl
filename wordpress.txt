@@ -5,3 +5,7 @@
 * http://lifesplash.nl/
 * http://wpshower.com/demo/?preview_theme=sight
 * http://wpshower.com/demo/?preview_theme=imbalance-2
+
+===== Facebook Page Photo Gallery plugin not showing thumbnails ====
+From https://wordpress.org/support/topic/thumbnails-didnt-load-any-more: Since WordPress 4.0 the thumbnails didn't load any more. So began searching for the loading of thumbnails in your code and tried commented out line 7 and 8 of single-album.php and line 3 and 4 of single-album-ajax.php and added
+  $picture = $photo->picture;
