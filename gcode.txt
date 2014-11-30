@@ -1,5 +1,6 @@
 =====GCode=====
-* http://reprap.org/wiki/G-code
+
+* M25: stoppen SD-kaart print
 * M109 Sxxxx temperatuur instellen en wachten tot ie warm is (+ nog een paar seconden)
 * M105 get temperature
 * M104: Set Extruder Temperature: M104 S190
@@ -13,7 +14,10 @@
 * M20: list files on SD-card
 * G28: Move to Origin
 
-==tools==
+=====documentation=====
+* http://reprap.org/wiki/G-code
+
+=====tools=====
 * http://sourceforge.net/projects/pycam/
 * http://tmpvar.com/project/gcode-simulator/
 * http://wiki.linuxcnc.org/cgi-bin/wiki.pl?Simple_LinuxCNC_G-Code_Generators
