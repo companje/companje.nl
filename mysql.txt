@@ -14,7 +14,7 @@ or
 ==== Import SQL file ====
   mysql -u DB_USER -p -h localhost DB_NAME < /tmp/dump.sql
 
-=====Where are the MySQL data files on CentOS?=====
+=====MySQL data files on CentOS=====
   /var/lib/mysql/
   
 =====Location of MySQL files on Mac OSX installed with Homebrew=====
