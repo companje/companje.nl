@@ -12,6 +12,7 @@ expr "ok T:83.4 /0.0 B:0.0 /0.0 @:0" : 'ok T:\([0-9]*\.[0-9]*\)'
 =====sed & cut=====
 <code bash>
 grep -o '\(T:\)\([0-9]*\.[0-9]*\)' /tmp/UltiFi/ttyACM0/ temp.out | cut -c 3-
+grep "spotify:track:" spotify.json | cut -c 16-51
 </code>
 
 =====awk=====
