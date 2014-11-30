@@ -298,26 +298,26 @@
   * Blonds - Run
   * Killers - When you were young
   * We Are Augustines - Juarez
-  * Passion Pit - I'll be allright
-  * Neil Young - Southern Night
-  * Artic Monkeys - R U Mine
+  * Passion Pit - I'll be alright
+  * Neil Young - Southern Man
+  * Arctic Monkeys - R U Mine
   * Boy & Bear - Feeding Line
   * The XX - Chained
   * We Trust - Once at a Time
   * Hot Chip - Night and Day
-  * S O H N - The Wheel
+  * SOHN - The Wheel
   * Bettie Serveert - Palomine
   * Blood Red Shoes - In Time To Voices
   * Arctic Monkeys - I Bet You Look Good On The Dancefloor
   * Miles Kane - First of my kind
   * St. Vincent - The Strangers
   * Tom Waits - OL'55
-  * Michael Kiwunaka - Home Again
+  * Michael Kiwanuka - Home Again
   * Doors - 20th Century Fox
-  * Bad Relegion - Los Angeles is Burning
+  * Bad Religion - Los Angeles is Burning
   * Kasabian - Days Are Forgotten
   * Them - Baby Please Don't Go
-  * The Tallast Man On Earth - 1904
+  * The Tallest Man On Earth - 1904
   * Lisa Hannigan - Knots
   * Frank Turner - Peggy Sang The Blues
   * Young Wonder - To You
@@ -325,15 +325,15 @@
   * Cults - You know what I mean
   * Cold War Kids - We Used To Vacation
   * Seasick Steve - It's a Long Long Way
-  * The Tempel Trap - Trembling Hands
+  * The Temple Trap - Trembling Hands
   * Killers - Spaceman
   * Michael The Blind - Sympathies
   * Kodaline - All I Want
-  * Todos Somos Illegalis - We Are All Illegals
+  * Todos Somos Ilegales - We Are All Illegals
   * Tom Petty - Mary Jane's Last Dance
   * Ms Mr - Dark Doo Wop
-  * Eddie Front - Gigantic
-  * Lianne La Havas - Is you love big enough
+  * Eddi Front - Gigantic
+  * Lianne La Havas - Is your love big enough
   * Haim - Don't save me
   * Bob Dylan - Just Like A Woman
   * Blur - Charmless Man
@@ -345,12 +345,12 @@
   * Sir Sly - Gold
   * Flaming Lips - She Don't Use Jelly
   * Moody Blues - Question
-  * Serge Gainsbourgh - Ballade Demelody Nelson
+  * Serge Gainsbourgh - Ballade De melody Nelson
   * Bombay Show Pig - Shackles and chains
   * Anna Calvi - Suzanne and I
   * Jayhawks - Take me with you (when you go)
   * Autre ne veut - Counting
-  * I am dynamite - Stereo
+  * Iamdynamite - Stereo
   * Sonic Youth - Superstar
   * Local Natives - Breakers
   * Violent Soho - Neighbour Neighbour
@@ -358,21 +358,20 @@
   * Willy Mason - I got gold
   * Weezer - Say it ain't so
   * The Lumineers - Ho Hey
-  * The Kiteman Orchestra - The Mushroom Cloud
-  * Jake Bugg - Lightning Bold
+  * The Kyteman Orchestra - The Mushroom Cloud
   * Public Service Broadcasting - Spitfire
-  * Sweet - Love is like oxigen
+  * Sweet - Love is like oxygen
   * Santigold - Disparate Youth
   * Brick + Mortar - Bangs
   * Katzenjammer - I will dance (when I walk away)
   * Kalle Mattson - Water Falls
   * Ben Howard - Oats in the water
   * Public Service Broadcasting - London Can take it
-  * Buffalo Tim - Taillights Fade
+  * Buffalo Tom - Taillights Fade
   * Atoms For Peace - Default
-  * Kristin Hersh - Michael Stipe - Your Ghost
+  * Kristin Hersh Your Ghost
   * The Memies - Porch Song
-  * Grandaddy - The Chrystal Lake
+  * Grandaddy - The Crystal Lake
   * Portishead - Wandering Star
   * Grizzly Bear - Sleeping Ute
   * Young Dreams - Fog of war
@@ -383,9 +382,9 @@
   * Bombay Show Pig - Timewaster
   * Canned Heat - Going Up The Country
   * Louis Brennan - The Towpath
-  * Edward Sharpe & The Magnetic Zeroes - Man On Fire
+  * Edward Sharpe & The Magnetic Zeros - Man On Fire
   * Menahan Street Band - Lights Out
-  * Major Laser - Get Free (ft Amber of Dirty Projector)
+  * Major Lazer - Get Free
   * Belle And Sebastian - Piazza, New York Catcher
   * Badly Drawn Boy - You were right
   * Gabriel Bruce - Perfect Weather
@@ -393,19 +392,19 @@
   * This Many Boyfriends - Number One
   * Kensington - We Are The Young
   * The Majority Says - Kings of the night
-  * We Show Up On The Radar - The Anchors in you
+  * We Show Up On Radar - The Anchors In Your Heart
   * Burn The Negative - Wonder Why
-  * Snoop lion ft Angela Hunte - Here Come
-  * Bart Constant - Do Better (animals make m..)
+  * Snoop Lion - Here Comes the King
+  * Bart Constant - Do Better
   * Nick Cave & The Bad Seeds - We no who U R
   * Daft Punk - Harder Better Faster Stronger (Alive 2007)
   * Handsome Poets - Dance (The War Is Over)
   * Django Django - Life's a beach (10 edit)
-  * G-Eazy - Plastic Dreams (ft Johanna Fay)
-  * Young The Giant - Cough Sirop
+  * G-Eazy - Plastic Dreams
+  * Young The Giant - Cough Syrup
   * Tom Petty And The Heartbreakers - Into the great wide open
-  * Ramm - Dááánsû Live
-  * First Aid Kit - Emmylou (Radio edit)
+  * RAMM - Dááánsù Live (mt-yidaki.com)
+  * First Aid Kit - Emmylou
   * Cults - You Know What I mean
   * The Black Keys - Gold on the Ceiling
   * Living Colour - Love Rears It's Ugly Head
@@ -416,14 +415,14 @@
   * Stefka - Achter de wanden
   * Nada Surf - When I was Young
   * Cribs - Chi-town
-  * Blonde Redheat - Misery is a butterfly
+  * Blonde Redhead - Misery is a butterfly
   * Kasabian - Goodbye Kiss
-  * American Pin-up - Boarding House
+  * Boarding House - American Pinup
   * Fountains of Wayne - Stacey's Mom
   * Beastie Boys - Sabotage
   * Sundelay - Love Won't bring me down
   * 2 Bears - Work
-  * Live Poets Society - Pretty Compilicated
+  * Live Poets Society - Pretty Complicated
   * C2C - Down The Road
   * Creed - Higher
   * Of Monsters And Men - Dirty Paws
@@ -434,21 +433,20 @@
   * Nancy Sinatra - Some Velvet Morning
   * Ease My Mind
   * Razika - Vondt i hjertet
-  * S.C.U.M - Fait Unfolds
+  * S.C.U.M - Faith Unfolds
   * M Ward - Primitive Girl
-  * Meg Meyers - Monster
+  * Meg Myers - Monster
   * Black Keys - Minutes
   * Slow Club - If we're still alive
   * REM - Man on the moon
   * Turbowolf - Let's die
   * Portishead - Roads
   * Menzingers - Gates
-  * S O H N - The Wheel
   * White Denim - Keys
   * Soko - I'll kill her
-  * Soko - First Love Will Never Die
+  * Soko - First Love Never Die
   * Miike Snow - Devil's Work
-  * Lee Renaldo - Off The Wall
+  * Lee Ranaldo - Off The Wall
   * Tribes - We were children
   * Mew - The Zookeepers Boy
   * Diagrams - Ghost Lit
