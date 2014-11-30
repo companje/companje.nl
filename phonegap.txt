@@ -1,7 +1,7 @@
 ====== Phonegap ======
 
 =====android run=====
-phonegap run android --device
+  phonegap run android --device
 
 =====angular directive with templateUrl=====
 be careful with templateUrl's in angular directives. iPhone (and probably Android) is case-sensitive. So not exactly matching templateUrl's don't show up on iPhone but do show up on OSX!
