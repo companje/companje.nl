@@ -35,7 +35,7 @@
   * enable apache modules: sudo a2enmod rewrite # for mod_rewrite.so
   * root@vps:/var/openpanel/modules/Apache2.module/apache2module.app/Contents/Configuration Defaults# cat openpanel.module.apache2.conf.xml
 
-<code xml>
+<code>
 <openpanel.module.domain>
   <config>
     <varpath>/var/openpanel/conf/staging/Apache2/</varpath>
