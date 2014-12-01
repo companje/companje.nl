@@ -1,5 +1,7 @@
 ====== openFrameworks ======
 
+=====tools and templates by Gene Kogan=====
+https://github.com/genekogan/OF-tools-and-templates
 =====mouse rotating globe with conversion from quaternions to latitude longitude=====
 * https://gist.github.com/companje/13209c678d5720347169
 
