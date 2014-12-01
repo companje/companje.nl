@@ -1,4 +1,2 @@
-=====openFrameworks=====
-See [[openFrameworks]]  
-\\
-See also [[c++]]
+====== openFrameworks ======
+see [[openFrameworks]]
