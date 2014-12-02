@@ -1,3 +1,10 @@
-====== Technical notes on Doodle3D ======
+====== Doodle3D ======
 
-* see [[openwrt]]
+===== API =====
+* http://connect.doodle3d.com/api/list.php
+* http://wifibox/d3dapi/network/signin
+* http://192.168.7.216/d3dapi/network/alive?_=1417511804341
+* http://192.168.7.216/
+* http://wifibox/d3dapi/network/status
+* http://wifibox/d3dapi/info/status
+* last number of IP at daVinci exhibition: from left to right: 132, 194, 110, 164
