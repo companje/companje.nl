@@ -1,10 +1,10 @@
 ====== Doodle3D ======
 
-===== API =====
+===== notes @ DaVinci exhibition =====
 * http://connect.doodle3d.com/api/list.php
 * http://wifibox/d3dapi/network/signin
 * http://192.168.7.216/d3dapi/network/alive?_=1417511804341
 * http://192.168.7.216/
 * http://wifibox/d3dapi/network/status
 * http://wifibox/d3dapi/info/status
-* last number of IP at daVinci exhibition: from left to right: 132, 194, 110, 164
+* last number of IP's from left to right: 132, 194, 110, 164
