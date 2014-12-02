@@ -12,3 +12,5 @@ see [[gcode]]
 ====my QU-BD One Up====
 See [[qu-bd-one-up]]
 
+====3D printing with chocolate=====
+* http://www.boredpanda.com/chocolate-lego-bricks-akihiro-mizuuchi/
