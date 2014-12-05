@@ -1,8 +1,2 @@
-====== test ======
-
-
-
-{{tag>}}
-
-
-~~DISCUSSION~~
+====== Test ======
+This is a test...
