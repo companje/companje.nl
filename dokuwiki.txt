@@ -1,7 +1,7 @@
 ====== dokuwiki ======
 
 =====Update plugin=====
-after running an update you might need to 'touch' doku.php to get rid of the 'upgrade now' message.
+after running an update you might need to 'touch' doku.php to get rid of the 'upgrade now' message. If this doesn't work remove data/cache/messages.txt
 
 =====TagCloud script=====
 TagCloud script see [[d3]]
