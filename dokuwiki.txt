@@ -1,5 +1,9 @@
 ====== dokuwiki ======
 
+=====Update plugin=====
+after running an update you might need to 'touch' doku.php to get rid of the 'upgrade now' message.
+
+=====TagCloud script=====
 TagCloud script see [[d3]]
 
 ===== PageList script =====
