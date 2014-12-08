@@ -5,6 +5,25 @@
 after that it easy to scp files without entering passwords.
   scp /Users/rick/Documents/Doodle3D/3dprintserver/doodle3d-firmware/src/rest/api/api_sketch.lua wifibox:/usr/share/lua/wifibox/rest/api
 
+==scp file when local file changes==
+<code bash>
+#!/bin/bash
+
+while true    
+do
+   ATIME=`stat -f %Z $1`
+
+   echo $ATIME --- $LTIME
+   if [[ "$ATIME" != "$LTIME" ]]
+   then    
+       echo "scp $1 $2"
+       scp $1 $2
+       LTIME=$ATIME
+   fi
+   sleep 1
+done
+</code>
+
 ==building==
 * http://www.doodle3d.com/help/wiki/building-openwrt-wifibox
 
