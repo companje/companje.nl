@@ -6,6 +6,7 @@ after that it easy to scp files without entering passwords.
   scp /Users/rick/Documents/Doodle3D/3dprintserver/doodle3d-firmware/src/rest/api/api_sketch.lua wifibox:/usr/share/lua/wifibox/rest/api
 
 ==scp file when local file changes==
+[[http://superuser.com/questions/181517/how-to-execute-a-command-whenever-a-file-changes|source]]
 <code bash>
 #!/bin/bash
 
