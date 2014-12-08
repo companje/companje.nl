@@ -14,7 +14,7 @@ while true
 do
    ATIME=`stat -f %Z $1`
 
-   echo $ATIME --- $LTIME
+   #echo $ATIME --- $LTIME
    if [[ "$ATIME" != "$LTIME" ]]
    then    
        echo "scp $1 $2"
