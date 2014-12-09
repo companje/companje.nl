@@ -1,5 +1,8 @@
 =============== Javascript notes ===============
 
+===== codepen =====
+* http://codepen.io/
+
 ===== creative coding framework =====
 * http://soulwire.github.io/sketch.js/
 
