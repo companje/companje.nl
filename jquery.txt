@@ -1,10 +1,10 @@
 ===============jQuery===============
 
 ===== Get =====
-<code>
-$.get( "ajax/test.html", function( data ) {
-  $( ".result" ).html( data );
-  alert( "Load was performed." );
+<code jquery>
+$.get("ajax/test.html", function(data) {
+  $(".result").html(data);
+  alert("Load was performed.");
 });
 </code>
 
