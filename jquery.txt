@@ -1,9 +1,9 @@
-=====jQuery=====
+===============jQuery===============
 
-==Getting over jQuery==
+=====Getting over jQuery=====
 http://blog.ponyfoo.com/2013/07/09/getting-over-jquery
 
-==Hello World==
+=====Hello World=====
 <code jquery>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
@@ -15,25 +15,25 @@ $(document).ready(function() {
 </script>
 </code>
 
-==parsing html table (not finished)==
+=====parsing html table (not finished)=====
 <code jquery>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 
 <script>
 $(document).ready(function() {
-	
-	$('#result').load('index.php', function(data) {
-	 	
-		var rows = $("td[bgcolor=#00ffff]").parent();
-		$(rows).each(function(index) {
-		  var cols = $(this).children("th,td");
-		  $(cols).each(function(index) {
-			console.log($(this).html());//.replace(/n/g, '&nbsp;'));
-			console.log($(this));
-		  });
-		  console.log("===========");
-		});
-	});
+  
+  $('#result').load('index.php', function(data) {
+     
+    var rows = $("td[bgcolor=#00ffff]").parent();
+    $(rows).each(function(index) {
+      var cols = $(this).children("th,td");
+      $(cols).each(function(index) {
+      console.log($(this).html());//.replace(/n/g, '&nbsp;'));
+      console.log($(this));
+      });
+      console.log("==========================");
+    });
+  });
 
 });
 </script>
@@ -41,14 +41,14 @@ $(document).ready(function() {
 <div id="result">Loading...</div>
 </code>
 
-==headless browser==
+=====headless browser=====
 * http://stackoverflow.com/questions/5940557/how-can-i-use-jquery-on-server-side-javascript
 * http://phantomjs.org/
 * http://zombie.labnotes.org/
 
-==this & children==
+=====this & children=====
 <code jquery>
-//$(e.currentTarget)  == $(this)
+//$(e.currentTarget)  ===== $(this)
 $(this).children(".description").text()
 </code>
 
@@ -57,32 +57,32 @@ $(this).children(".description").text()
 
 <code jquery>
 <script id="todo-list-item" type="text/x-jquery-tmpl">
-	<li {{if done}}class="done"{{/if}}>
-		<label>
-			<input type="checkbox" id="todo-${id}" {{if done}}checked="checked"{{/if}} />
-			${title}
-		</label>
-	</li>
+  <li {{if done}}class="done"{{/if}}>
+    <label>
+      <input type="checkbox" id="todo-${id}" {{if done}}checked="checked"{{/if}} />
+      ${title}
+    </label>
+  </li>
 </script>
 </code>
 
-==hover menuitems in wordpress==
+=====hover menuitems in wordpress=====
 <code jquery>
 jQuery(document).ready(function() {
 
-	jQuery(".menu-item img").hover(
-		function () {
-			if (jQuery(this).parents().hasClass("current_page_item")) return;
-			jQuery(this).attr("src",jQuery(this).attr("src").replace(".png", "_over.png"));
-		},
-		function () {
-			if (jQuery(this).parents().hasClass("current_page_item")) return;
-			jQuery(this).attr("src",jQuery(this).attr("src").replace("_over.png", ".png"));
-		}
-	);
+  jQuery(".menu-item img").hover(
+    function () {
+      if (jQuery(this).parents().hasClass("current_page_item")) return;
+      jQuery(this).attr("src",jQuery(this).attr("src").replace(".png", "_over.png"));
+    },
+    function () {
+      if (jQuery(this).parents().hasClass("current_page_item")) return;
+      jQuery(this).attr("src",jQuery(this).attr("src").replace("_over.png", ".png"));
+    }
+  );
 
-	var img = jQuery('.current_page_item img');
-	img.attr("src",img.attr("src").replace(".png", "_active.png"));
+  var img = jQuery('.current_page_item img');
+  img.attr("src",img.attr("src").replace(".png", "_active.png"));
 
 });
 </code>
