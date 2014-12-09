@@ -3,6 +3,7 @@
 =====Links=====
 * http://snapsvg.io/
 * http://svgjs.com/
+* http://documentup.com/wout/svg.js#plugins
 * [[http://jsbin.com/ehayep/65/edit#javascript,live|SVG tekening van enkele Globe4D onderdelen]]
 * [[http://jsbin.com/ehayep/67/edit#javascript,live|Recentere versie van mijn SVG editor gebaseerd op SVGKit]]
 * http://raphaeljs.com/
