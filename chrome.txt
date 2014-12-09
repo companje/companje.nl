@@ -1,0 +1,5 @@
+====== Chrome ======
+* [[https://chrome.google.com/webstore/detail/ljgkhjkajfkphkgndbhokcoglecihaia|Code Highlight App]]
+* RESTclient, beter nog is POSTMAN
+* JSONview
+* http://www.forensicswiki.org/wiki/Google_Chrome#Configuration
