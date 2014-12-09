@@ -1,5 +1,8 @@
 =============== Javascript notes ===============
 
+===== creative coding framework =====
+* http://soulwire.github.io/sketch.js/
+
 =====webworkers=====
 * http://www.w3schools.com/html/html5_webworkers.asp
 
