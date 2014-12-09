@@ -4,6 +4,7 @@
 * http://codepen.io/
 * http://sketchpad.cc/
 * http://www.openprocessing.org/
+* http://jsfiddle.net/
 
 ===== creative coding framework =====
 * http://soulwire.github.io/sketch.js/
