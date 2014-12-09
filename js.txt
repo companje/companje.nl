@@ -1,7 +1,9 @@
 =============== Javascript notes ===============
 
-===== codepen =====
+===== online IDEs =====
 * http://codepen.io/
+* http://sketchpad.cc/
+* http://www.openprocessing.org/
 
 ===== creative coding framework =====
 * http://soulwire.github.io/sketch.js/
