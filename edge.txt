@@ -1,2 +1,5 @@
 ====== Edge ======
 * http://tv.adobe.com/watch/adobe-edge-preview/what-is-edge-animate/
+
+===== cheat sheet =====
+* http://download.macromedia.com/pub/learn/start/start_animate_cheatsheet.pdf
