@@ -9,11 +9,6 @@
 * [[http://stackoverflow.com/questions/6506519/ecmascriptharmony-es6-to-javascript-compiler|Over ES6 compilers]]
 * [[https://github.com/google/traceur-compiler|traceur-compiler on github]]
 
-===== other =====
-* DONE [[http://on.ted.com/q0GjH|TED Will Marshall: Tiny satellites show us the Earth as it changes in near-real-time]] tip van Peter voor op Globe4D
-* [[https://decorrespondent.nl/1795/De-ingeloste-beloften-na-16-jaar-Google-nul-resultaten/82746121810-f2344d8d|Google beloftes, artikel uit De Correspondent]]
-* [[https://www.youtube.com/watch?feature=player_embedded&v=M2tJpEMIkWM|waarom je bij elke chip een klein condensatortje moet plaatsen]]
-
 ===== movies =====
 tips van Ralph
 * predestination
@@ -41,3 +36,9 @@ tip van Nico
 ==other==
 * DONE http://minicut2d.com/ (https://www.youtube.com/watch?v=Fd5DYLPdb1s)
 * http://www.cel-robox.com/
+
+===== other =====
+* DONE [[http://on.ted.com/q0GjH|TED Will Marshall: Tiny satellites show us the Earth as it changes in near-real-time]] tip van Peter voor op Globe4D
+* [[https://decorrespondent.nl/1795/De-ingeloste-beloften-na-16-jaar-Google-nul-resultaten/82746121810-f2344d8d|Google beloftes, artikel uit De Correspondent]]
+* [[https://www.youtube.com/watch?feature=player_embedded&v=M2tJpEMIkWM|waarom je bij elke chip een klein condensatortje moet plaatsen]]
+* http://www.radio1.nl/item/246346-Facebook%20mag%20vanaf%201%20januari%20prive-gegevens%20aan%20derden%20verkopen.html
