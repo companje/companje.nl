@@ -1,4 +1,6 @@
 ====== Chrome ======
+* [[https://www.google.com/intl/en/chrome/browser/canary.html|Google Chrome Canary]]
 * [[https://chrome.google.com/webstore/detail/ljgkhjkajfkphkgndbhokcoglecihaia|Code Highlight App]]
 * RESTclient, beter nog is POSTMAN
 * JSONview
+* http://www.forensicswiki.org/wiki/Google_Chrome#Configuration
