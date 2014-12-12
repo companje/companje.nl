@@ -7,6 +7,8 @@
 * [[http://phaser.io/|phaser.io]] gaming framework
 * [[http://www.soundstep.com/blog/experiments/jstracking/js/libs/matrix.js|matrix.js]]
 * [[http://fhtr.org/JSARToolKit/|jsARtoolkit]]
+* glMatrix.js - High performance matrix and vector operations for WebGL
+
 ===== online IDEs =====
 * http://codepen.io/
 * http://sketchpad.cc/
