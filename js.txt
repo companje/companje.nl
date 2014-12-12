@@ -4,7 +4,8 @@
 * [[http://trackingjs.com|tracking.js, video processing/tracking library]]
 * [[https://code.google.com/p/dat-gui/|dat.GUI]] A lightweight graphical user interface for changing variables in JavaScript.
 * [[http://somajs.github.io/|soma.js]]
-* [[http://phaser.io/]]
+* [[http://phaser.io/|phaser.io]] gaming framework
+* [[http://www.soundstep.com/blog/experiments/jstracking/js/libs/matrix.js|matrix.js]]
 
 ===== online IDEs =====
 * http://codepen.io/
