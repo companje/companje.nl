@@ -1,7 +1,7 @@
 =============== Javascript notes ===============
 
 =====libraries & frameworks=====
-* [[http://trackingjs.com|trackingJS, video processing/tracking library]]
+* [[http://trackingjs.com|tracking.js, video processing/tracking library]]
 * [[https://code.google.com/p/dat-gui/|dat.GUI]] A lightweight graphical user interface for changing variables in JavaScript.
 * [[http://somajs.github.io/|soma.js]]
 
