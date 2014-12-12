@@ -9,7 +9,7 @@
 * [[http://fhtr.org/JSARToolKit/|jsARtoolkit]]
 * [[https://github.com/kig/magi|magi / glMatrix.js]] - High performance matrix and vector operations for WebGL
 * [[https://raw.githubusercontent.com/mrdoob/three.js/master/examples/js/libs/tween.min.js|tween.js]]
-[[https://raw.githubusercontent.com/mrdoob/three.js/master/examples/js/renderers/CSS3DRenderer.js||CSS3DRenderer.js for three.js]]
+* [[https://raw.githubusercontent.com/mrdoob/three.js/master/examples/js/renderers/CSS3DRenderer.js||CSS3DRenderer.js for three.js]]
 * [[https://chili-research.epfl.ch/AR.js/chilitags.js/|chillitags]] AR library
 
 ===== online IDEs =====
