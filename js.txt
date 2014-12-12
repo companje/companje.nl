@@ -1,5 +1,8 @@
 =============== Javascript notes ===============
 
+===== Libraries =====
+* [[http://trackingjs.com|trackingJS, video processing/tracking library]]
+
 ===== online IDEs =====
 * http://codepen.io/
 * http://sketchpad.cc/
