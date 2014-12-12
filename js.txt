@@ -12,6 +12,10 @@
 * [[https://raw.githubusercontent.com/mrdoob/three.js/master/examples/js/renderers/CSS3DRenderer.js||CSS3DRenderer.js for three.js]]
 * [[https://chili-research.epfl.ch/AR.js/chilitags.js/|chillitags]] AR library
 
+==yeoman==
+Yeoman helps you start new projects, prescribing best practices and tools to help you stay productive.
+* http://yeoman.io/
+
 ===== online IDEs =====
 * http://codepen.io/
 * http://sketchpad.cc/
