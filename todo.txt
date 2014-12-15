@@ -9,22 +9,6 @@
 * [[http://stackoverflow.com/questions/6506519/ecmascriptharmony-es6-to-javascript-compiler|Over ES6 compilers]]
 * [[https://github.com/google/traceur-compiler|traceur-compiler on github]]
 
-===== movies =====
-tips van Ralph
-* predestination
-* zero theorem
-* under the skin (langzaam, duister, grauw)
-* her (!)
-* true romance
-* neighbours
-tip van Nico
-* nightcrawler
-
-NL
-* nena
-* aanmodderfakker
-* hemel en aarde
-
 ===== 3D printing =====
 ==reviews==
 * http://printers.reviewed.com/features/robox-takes-the-3d-printer-crown
