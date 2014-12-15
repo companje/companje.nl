@@ -1,5 +1,8 @@
 ====== Linux ======
 
+===== List All Environment Variables ===
+  env
+  
 ===== count number of files in directory =====
   ls -1 | wc -l
 
