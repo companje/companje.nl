@@ -3,3 +3,6 @@
 
 ===== cheat sheet =====
 * http://download.macromedia.com/pub/learn/start/start_animate_cheatsheet.pdf
+
+===== edge inspect =====
+* https://creative.adobe.com/nl/products/inspect
