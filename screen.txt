@@ -1,0 +1,11 @@
+====== screen ======
+
+=====keys=====
+Kill = Ctrl+A k
+Detach = Ctrl+A d
+
+=====Resume a detached screen session=====
+  screen -r
+  
+=====man page=====
+https://www.gnu.org/software/screen/manual/screen.html
