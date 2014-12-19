@@ -30,7 +30,7 @@ Een samenvatting van suggesties waar design software heen zou moeten gaan. Er zi
 Zie: Paper http://www.fiftythree.com/paper
 Umake: https://www.youtube.com/watch?v=zD5NRPk_7g4
 
-Je kunt heirbij niet rechtstreeks naar een 3D vorm maar dat zou zeer  gaaf zijn, Umake komt al aardig in de buurt.
+Je kunt hierbij niet rechtstreeks naar een 3D vorm maar dat zou zeer  gaaf zijn, Umake komt al aardig in de buurt.
 
 ==other==
 * DONE http://minicut2d.com/ (https://www.youtube.com/watch?v=Fd5DYLPdb1s)
