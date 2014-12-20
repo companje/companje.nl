@@ -17,4 +17,4 @@ http://html.adobe.com/edge/reflow/photoshop-plug-in.html
 ===== Edge Animate =====
 * all files in the 'media' folder of your project will be automatically visible in the library
 * filmpje: http://www.edgedocks.com/content/2014/03/adding-audio-scripts-and-responsive-scaling-edge-animate
-* ''\'': scale timeline to fit
+* ''\'' key: scale timeline to fit
