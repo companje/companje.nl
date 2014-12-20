@@ -7,6 +7,12 @@
 ===== edge inspect =====
 * https://creative.adobe.com/nl/products/inspect
 
-==== Edge Commons ====
+===== Edge Commons =====
 Dirty Little Helpers for Edge Animate
 * http://www.edgedocks.com/edgecommons
+
+===== Edge Reflow =====
+http://html.adobe.com/edge/reflow/photoshop-plug-in.html
+
+==== Edge Animate =====
+filmpje: http://www.edgedocks.com/content/2014/03/adding-audio-scripts-and-responsive-scaling-edge-animate
