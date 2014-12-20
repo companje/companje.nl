@@ -1,5 +1,45 @@
 ====== Processing ======
 
+===== Starfield 2D perspective =====
+<code java>
+class Star extends PVector {
+  float speed;
+  
+  Star(float x, float y, float z) {
+    super(x, y, z);
+    speed = random(.1,5);
+  }
+}
+
+ArrayList<Star> stars = new ArrayList();
+
+void setup() {
+  size(1280, 800); 
+  noStroke();
+  for (int i=0; i<300; i++) {
+    float x = random(-width*2,width*2);
+    float y = random(-height*2,height*2);
+    float z = random(-1000,0);
+    stars.add(new Star(x,y,z));  
+  }
+}
+
+void draw() {
+  background(0);
+  
+  translate(width/2, height/2);
+  for (Star s : stars) {
+    float x = s.x * 100/s.z;
+    float y = s.y * 100/s.z;
+    float d = 1000. / -s.z;
+    ellipse(x, y, d, d);
+    
+    s.z+=s.speed;
+    if (s.z>0) s.z=-1000;
+  }
+}
+</code>
+
 ===== Mandelbrot set =====
 <code java>
 // Interactive Mandelbrot Set
