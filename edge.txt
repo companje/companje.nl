@@ -18,3 +18,16 @@ http://html.adobe.com/edge/reflow/photoshop-plug-in.html
 * all files in the 'media' folder of your project will be automatically visible in the library
 * filmpje: http://www.edgedocks.com/content/2014/03/adding-audio-scripts-and-responsive-scaling-edge-animate
 * ''\'' key: scale timeline to fit
+
+===== Random stars =====
+<code java>
+for (var i=0; i<40; i++) {
+  var x = Math.floor(Math.random()*1920)+"px";
+  var y = Math.floor(Math.random()*700)+"px";
+  var ms = Math.floor(Math.random()*5000);
+
+  var star = sym.createChildSymbol('Star',sym.getSymbolElement());
+  star.getSymbolElement().css({position:"absolute",left:x,top:y});  
+  star.play(ms);
+}
+</code>
