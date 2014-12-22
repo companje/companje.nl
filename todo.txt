@@ -1,5 +1,8 @@
 ====== TODO: things to watch, read or listen ======
 
+===== Fosdem =====
+Fosdem '15 conference
+
 ===== Programming =====
 * DONE: [[https://www.youtube.com/watch?v=CMdHDHEuOUE|Google and NASA's Quantum Artificial Intelligence Lab
 ]] (6 min)
