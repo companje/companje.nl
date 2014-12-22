@@ -25,3 +25,7 @@ See [[qu-bd-one-up]]
 ===== 3D Scanning =====
 * structure.io
 * http://itseez.com/products/itseez3d/
+
+==== Formlabs PreForm software ====
+* preForm
+
