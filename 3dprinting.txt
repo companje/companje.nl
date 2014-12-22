@@ -21,3 +21,7 @@ See [[qu-bd-one-up]]
 
 =====3D Printers=====
 * sharebot.it
+
+===== 3D Scanning =====
+* structure.io
+* http://itseez.com/products/itseez3d/
