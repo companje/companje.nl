@@ -1,5 +1,8 @@
 ======iOS======
 
+=====Reflector App=====
+* [[http://www.airsquirrels.com/reflector/|via AirPlay het beeld van je telefoon naar je computer streamen]]
+
 =====iPhone 6 sensor hacks=====
 * http://www.redmondpie.com/video-demo-shows-off-a-very-cool-iphone-trick-that-you-likely-dont-know-about/
 
