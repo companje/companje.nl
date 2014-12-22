@@ -1,5 +1,6 @@
 ====== Tools ======
 
-===== Collaboration / Groupware =====
+===== Teams =====
 * https://www.sqwiggle.com/
 * https://www.hipchat.com/
+* Atlessian met bitbucket, en ... Gira? Confluence voor docu
