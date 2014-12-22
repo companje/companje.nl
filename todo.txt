@@ -8,7 +8,6 @@
 * DONE [[http://dewerelddraaitdoor.vara.nl/media/322626|Leren programmeren voor kinderen DWDD]]
 * [[http://stackoverflow.com/questions/6506519/ecmascriptharmony-es6-to-javascript-compiler|Over ES6 compilers]]
 * [[https://github.com/google/traceur-compiler|traceur-compiler on github]]
-* http://www.airsquirrels.com/reflector/
 
 ===== 3D printing & design=====
 ==reviews==
