@@ -21,6 +21,8 @@
 * DONE [[https://www.youtube.com/watch?v=Gc3uwKHf4tI|Lulzbot TAZ 4 Review Intensive - Part 2 of 3D Printer Trifecta Review Eggstravaganza +2]]
 * DONE [[http://3dprint.com/24581/mosaic-manufacturing-color-3d/|Multi-Colored 3D Printing from a Single Extruder]]
 * [[https://www.youtube.com/watch?v=Wylk4W64opo|Ultimaker 2 Review Intensive - Part 3 of 3D Printer Trifecta Review Extravaganza +2]] (resume at 24:00)
+* 3D Print Coating Epoxy XTC-3D® from Smooth-On for ABS, SLA & other 3D Print Media
+XTC-3D is a protective epoxy coating for smoothing and finishing 3D printed parts. Two liquids are mixed together and brushed onto any 3D print. Coating self-levels... http://SMOOTH-ON.COM
 
 ==future of design tools==
 http://www.inside3dp.com/design-software-stuck-80s-much-longer/
