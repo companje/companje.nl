@@ -1,5 +1,9 @@
 ====== Lua ======
 
+=====Doodle3D install script error: "This script requires the Penlight library"=====
+  export LUA_CPATH=/opt/local/share/luarocks/lib/lua/5.2/?.so
+  export LUA_PATH=/opt/local/share/luarocks/share/lua/5.2/?.lua
+
 =====use the luarocks package manager to install a package / library=====
 <code>sudo luarocks install luasocket</code>
 
