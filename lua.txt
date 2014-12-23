@@ -1,6 +1,6 @@
 ====== Lua ======
 
-=====Doodle3D install script error: "This script requires the Penlight library"=====
+=====Doodle3D publish-wifibox-release.lua "This script requires the Penlight library"=====
   export LUA_CPATH=/opt/local/share/luarocks/lib/lua/5.2/?.so
   export LUA_PATH=/opt/local/share/luarocks/share/lua/5.2/?.lua
 
