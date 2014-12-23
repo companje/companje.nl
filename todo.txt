@@ -38,6 +38,7 @@ Je kunt hierbij niet rechtstreeks naar een 3D vorm maar dat zou zeer  gaaf zijn,
 * http://www.cel-robox.com/
 
 ===== other =====
+* https://www.facebook.com/video.php?v=10153454679638986&fref=nf
 * DONE [[http://on.ted.com/q0GjH|TED Will Marshall: Tiny satellites show us the Earth as it changes in near-real-time]] tip van Peter voor op Globe4D
 * [[https://decorrespondent.nl/1795/De-ingeloste-beloften-na-16-jaar-Google-nul-resultaten/82746121810-f2344d8d|Google beloftes, artikel uit De Correspondent]]
 * [[https://www.youtube.com/watch?feature=player_embedded&v=M2tJpEMIkWM|waarom je bij elke chip een klein condensatortje moet plaatsen]]
@@ -59,3 +60,4 @@ Fosdem '15 conference (weekend van 31 jan)
 ===== Getting over jQuery =====
 * http://ponyfoo.com/articles/getting-over-jquery
 * http://microjs.com/#ajax
+
