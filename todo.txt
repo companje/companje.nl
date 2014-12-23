@@ -43,6 +43,7 @@ Je kunt hierbij niet rechtstreeks naar een 3D vorm maar dat zou zeer  gaaf zijn,
 * [[https://www.youtube.com/watch?feature=player_embedded&v=M2tJpEMIkWM|waarom je bij elke chip een klein condensatortje moet plaatsen]]
 * http://www.radio1.nl/item/246346-Facebook%20mag%20vanaf%201%20januari%20prive-gegevens%20aan%20derden%20verkopen.html
 * DONE http://new.livestream.com/bigbrotherawards/live
+* [[http://www.ted.com/talks/jeremy_howard_the_wonderful_and_terrifying_implications_of_computers_that_can_learn|TED talk via Peter over Machine Learning]]
 
 Sonic Highways docu over foofighters. tip van sas.
 
