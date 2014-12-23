@@ -1,7 +1,7 @@
 =============== SSH ===============
 see also: [[linux]], [[git]]
 
-==add self to authorized_keys oneliner==
+=====add self to authorized_keys oneliner=====
   cat ~/.ssh/id_rsa.pub | ssh SERVER 'cat >> ~/.ssh/authorized_keys'
 
 =====ssh agent forwarding=====
