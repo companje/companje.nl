@@ -55,3 +55,7 @@ Rick, hier een stukje hoe Texas Instruments 'Smart Config' werkt. het zou heel m
 ===== Fosdem =====
 Fosdem '15 conference (weekend van 31 jan)
 * http://fosdem.org
+
+===== Getting over jQuery =====
+* http://ponyfoo.com/articles/getting-over-jquery
+* http://microjs.com/#ajax
