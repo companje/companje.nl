@@ -1,5 +1,25 @@
 ======Mac OSX======
 
+=====.bash_profile=====
+<code bash>
+export PATH=/opt/local/bin:/opt/local/sbin:~/bin:$PATH
+
+export ANDROID_HOME=~/Documents/android-sdk-macosx
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/20.0.0
+
+export LUA_CPATH=/opt/local/share/luarocks/lib/lua/5.2/?.so
+export LUA_PATH=/opt/local/share/luarocks/share/lua/5.2/?.lua
+
+alias d="ls -lGa"
+alias ls="ls -G"
+alias um="cd ~/Sites/Ultimaker"
+alias untar="tar xvzf "
+
+if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
+   . /opt/local/etc/profile.d/bash_completion.sh
+fi
+</code>
+
 =====list open ports=====
   lsof -i -P | grep -i "listen"
 
