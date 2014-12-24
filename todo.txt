@@ -45,8 +45,6 @@ Je kunt hierbij niet rechtstreeks naar een 3D vorm maar dat zou zeer  gaaf zijn,
 <del>* DONE http://new.livestream.com/bigbrotherawards/live</del>
 * [[http://www.ted.com/talks/jeremy_howard_the_wonderful_and_terrifying_implications_of_computers_that_can_learn|TED talk via Peter over Machine Learning]]
 
-Sonic Highways docu over foofighters. tip van sas.
-
 =====Smart Config=====
 Rick, hier een stukje hoe Texas Instruments 'Smart Config' werkt. het zou heel mooi zijn als we dit b.v. achter de schermen kunnen laten werken voordat we ueberhaubt verbinding maken. (Volgens mij werkt dit zelfs als de printer een Accesspoint is namelijk, omdat dit op de UDP/IP laag gebeurd). Haalbaarheid etc is een tweede, maar lees het eens door, zeker niet oninteressant.
 * http://processors.wiki.ti.com/index.php/CC3000_Smart_Config
