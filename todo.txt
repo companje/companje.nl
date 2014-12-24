@@ -17,33 +17,31 @@
 * http://3dprinterblog.net/robox-3d-printer-review/
 * http://www.tomsguide.com/us/best-3d-printers,review-2236.html
 * http://www.cel-robox.com/
-* DONE [[https://www.youtube.com/watch?v=zMJ1kDnB5CY|MakerBot or MakerNot? Part 1 of 3D Printer Trifecta Review Extravaganza +2]]
+<del>* DONE [[https://www.youtube.com/watch?v=zMJ1kDnB5CY|MakerBot or MakerNot? Part 1 of 3D Printer Trifecta Review Extravaganza +2]]
 * DONE [[https://www.youtube.com/watch?v=Gc3uwKHf4tI|Lulzbot TAZ 4 Review Intensive - Part 2 of 3D Printer Trifecta Review Eggstravaganza +2]]
 * DONE [[http://3dprint.com/24581/mosaic-manufacturing-color-3d/|Multi-Colored 3D Printing from a Single Extruder]]
-* [[https://www.youtube.com/watch?v=Wylk4W64opo|Ultimaker 2 Review Intensive - Part 3 of 3D Printer Trifecta Review Extravaganza +2]] (resume at 24:00)
+</del>* [[https://www.youtube.com/watch?v=Wylk4W64opo|Ultimaker 2 Review Intensive - Part 3 of 3D Printer Trifecta Review Extravaganza +2]] (resume at 24:00)
 * 3D Print Coating Epoxy XTC-3D® from Smooth-On for ABS, SLA & other 3D Print Media. XTC-3D is a protective epoxy coating for smoothing and finishing 3D printed parts. Two liquids are mixed together and brushed onto any 3D print. Coating self-levels... http://SMOOTH-ON.COM
 
-==future of design tools==
+<del>==future of design tools==
 http://www.inside3dp.com/design-software-stuck-80s-much-longer/
-
 Een samenvatting van suggesties waar design software heen zou moeten gaan. Er zitten links in naar een aantal zeer gave sketch/moddeling interfaces
-
 Zie: Paper http://www.fiftythree.com/paper
 Umake: https://www.youtube.com/watch?v=zD5NRPk_7g4
-
 Je kunt hierbij niet rechtstreeks naar een 3D vorm maar dat zou zeer  gaaf zijn, Umake komt al aardig in de buurt.
+</del>
 
 ==other==
-* DONE http://minicut2d.com/ (https://www.youtube.com/watch?v=Fd5DYLPdb1s)
+<del>* DONE http://minicut2d.com/ (https://www.youtube.com/watch?v=Fd5DYLPdb1s)</del>
 * http://www.cel-robox.com/
 
 ===== other =====
 * https://www.facebook.com/video.php?v=10153454679638986&fref=nf
-* DONE [[http://on.ted.com/q0GjH|TED Will Marshall: Tiny satellites show us the Earth as it changes in near-real-time]] tip van Peter voor op Globe4D
+<del>* DONE [[http://on.ted.com/q0GjH|TED Will Marshall: Tiny satellites show us the Earth as it changes in near-real-time]] tip van Peter voor op Globe4D</del>
 * [[https://decorrespondent.nl/1795/De-ingeloste-beloften-na-16-jaar-Google-nul-resultaten/82746121810-f2344d8d|Google beloftes, artikel uit De Correspondent]]
 * [[https://www.youtube.com/watch?feature=player_embedded&v=M2tJpEMIkWM|waarom je bij elke chip een klein condensatortje moet plaatsen]]
 * http://www.radio1.nl/item/246346-Facebook%20mag%20vanaf%201%20januari%20prive-gegevens%20aan%20derden%20verkopen.html
-* DONE http://new.livestream.com/bigbrotherawards/live
+<del>* DONE http://new.livestream.com/bigbrotherawards/live</del>
 * [[http://www.ted.com/talks/jeremy_howard_the_wonderful_and_terrifying_implications_of_computers_that_can_learn|TED talk via Peter over Machine Learning]]
 
 Sonic Highways docu over foofighters. tip van sas.
