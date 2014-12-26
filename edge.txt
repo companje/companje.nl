@@ -45,7 +45,7 @@ context.drawImage(video, 0, 0, 640, 480);
 saveImage();
 
 function saveImage(){
-	var baseURL = "http://SERVER/post.php"; //see http://wiki.companje.nl/php for samples
+    var baseURL = "http://SERVER/post.php"; //see http://wiki.companje.nl/php for samples
 
     var xmlhttp;
     xmlhttp=((window.XMLHttpRequest)?new XMLHttpRequest():new ActiveXObject("Microsoft.XMLHTTP"));
