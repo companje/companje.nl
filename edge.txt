@@ -1,4 +1,70 @@
 ====== Edge ======
+
+=====use html5 webcam video in edge animate====
+<code javascript>
+console.log('enable webcam');
+
+var getUserMedia = function(t, onsuccess, onerror) {
+  if (navigator.getUserMedia) {
+    return navigator.getUserMedia(t, onsuccess, onerror);
+  } else if (navigator.webkitGetUserMedia) {
+    return navigator.webkitGetUserMedia(t, onsuccess, onerror);
+  } else if (navigator.mozGetUserMedia) {
+    return navigator.mozGetUserMedia(t, onsuccess, onerror);
+  } else if (navigator.msGetUserMedia) {
+    return navigator.msGetUserMedia(t, onsuccess, onerror);
+  } else {
+    onerror(new Error("No getUserMedia implementation found."));
+  }
+};
+
+var vid = sym.$("Rectangle2");
+vid.html('<video id="video" width= "640" height= "480" type= "video/mp4" autoplay loop</video><canvas id="cv" width="640" height="480"></canvas>'); 
+
+var URL = window.URL || window.webkitURL;
+var createObjectURL = URL.createObjectURL || webkitURL.createObjectURL;
+if (!createObjectURL) {
+  throw new Error("URL.createObjectURL not found.");
+}
+
+getUserMedia({'video': true},
+  function(stream) {
+    var url = createObjectURL(stream);
+    video.src = url;
+  },
+  function(error) {
+    alert("Couldn't access webcam.");
+  }
+);
+
+//////////
+
+var canvas = document.getElementById('cv');
+var context = canvas.getContext("2d");
+context.drawImage(video, 0, 0, 640, 480);
+saveImage();
+
+function saveImage(){
+	var baseURL = "http://SERVER/post.php"; //see http://wiki.companje.nl/php for samples
+
+    var xmlhttp;
+    xmlhttp=((window.XMLHttpRequest)?new XMLHttpRequest():new ActiveXObject("Microsoft.XMLHTTP"));
+    xmlhttp.onreadystatechange=function(){
+        if (xmlhttp.readyState==4){
+            if(xmlhttp.status==200){
+                console.log('success');             
+            }
+        }
+    }
+    xmlhttp.open("POST",baseURL,true);
+    var oldCanvas = canvas.toDataURL("image/png");
+    var params=oldCanvas;
+    xmlhttp.send(params);
+}
+</code>
+
+
+=====edge animate=====
 * http://tv.adobe.com/watch/adobe-edge-preview/what-is-edge-animate/
 
 ===== cheat sheet =====
