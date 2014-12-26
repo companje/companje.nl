@@ -1,0 +1,5 @@
+====== Cut ======
+
+=====remove all text after a character=====
+  cut -f1 -d":"
+This will convert "hello: world" into "hello".
