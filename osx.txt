@@ -1,7 +1,7 @@
 ======Mac OSX======
 
 =====chmod in Sites folder=====
-  chmod 755 folder_with_wrong_permissions
+  chmod -R 755 folder_with_wrong_permissions
   
 =====.bash_profile=====
 <code bash>
