@@ -419,8 +419,12 @@ or type ''ls -G'' or put the following in your ''~/.profile'' file for a permane
 <code bash>defaults write com.apple.finder AppleShowAllFiles TRUE</code>
 (and reload Finder)
 
-=====Change screenshots folder=====
-<code bash>defaults write com.apple.screencapture location /Users/rick/Desktop/screenshots</code>
+=====Change screenshots folder (and other settings)=====
+* http://www.tekrevue.com/tip/how-to-customize-screenshot-options-in-mac-os-x/
+<code bash>
+defaults write com.apple.screencapture location /Users/rick/Desktop/screenshots
+killall SystemUIServer
+</code>
 
 =====SizeUp=====
 [[http://www.irradiatedsoftware.com|SizeUp]] allows you to quickly position a window to fill exactly half the screen (splitscreen), a quarter of the screen (quadrant), full screen, or centered via the menu bar or configurable system-wide shortcuts (hotkeys).  Similar to "tiled windows" functionality available on other operating systems.
