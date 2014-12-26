@@ -1,5 +1,16 @@
 ======PHP======
 
+=====Save Base64 encoded raw data from post as image===== 
+<code php>
+header("Access-Control-Allow-Origin: *");
+$img = $GLOBALS["HTTP_RAW_POST_DATA"];
+$img = str_replace('data:image/png;base64,', '', $img);
+$img = str_replace(' ', '+', $img);
+$data = base64_decode($img);
+$file = 'test.png';
+$success = file_put_contents($file, $data);
+</code>
+
 ===== Install GD =====
   apt-get install php5-gd
 
