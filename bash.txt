@@ -1,5 +1,11 @@
 ====== Bash ======
 
+=====list files recursive with full path
+  find .
+  
+=====manipulating strings=====
+  find.txt | sort | cut -f1 -d"." | uniq | rev | sort > sorted.txt
+
 =====read line from netcat=====
 <code bash>
 while:
