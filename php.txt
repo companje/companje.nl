@@ -1,5 +1,25 @@
 ======PHP======
 
+=====Use PHPMailer for sending email with attachment=====
+<code php>
+///send image as email
+require 'PHPMailerAutoload.php';
+
+$bodytext = "Testing...";
+$email = new PHPMailer();
+$email->From      = 'rick.companje@gmail.com';
+$email->FromName  = 'Rick Companje';
+$email->Subject   = 'Message Subject';
+$email->Body      = $bodytext;
+$email->AddAddress( 'rick.companje@gmail.com' );
+
+$file_to_attach = 'test.png';
+
+$email->AddAttachment( $file_to_attach , 'test.png' );
+
+return $email->Send();
+</code>
+
 =====Save Base64 encoded raw data from post as image===== 
 <code php>
 header("Access-Control-Allow-Origin: *");
