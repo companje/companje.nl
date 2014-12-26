@@ -1,6 +1,6 @@
 ====== Cut ======
 
-=====all characters after position x=====
+=====all characters from position x=====
   cut -c 27-
 
 =====remove all text after a character=====
