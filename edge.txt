@@ -1,5 +1,11 @@
 ====== Edge ======
 
+=====javascript API=====
+ * http://www.adobe.com/devnet-docs/edgeanimate/api/current/index.html
+
+=====access nested symbols from action=====
+  sym.getSymbol("Pinguins").getSymbol("Pinguin1").getSymbol("Snavel").play("zingen");
+  
 =====use html5 webcam video in edge animate====
 <code javascript>
 console.log('enable webcam');
