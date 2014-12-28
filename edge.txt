@@ -1,4 +1,11 @@
-====== Edge ======
+====== Edge Animate======
+
+===== functions in symbols =====
+<code javascript>
+sym.zingen = function() {
+	console.log("zingen");
+}
+</code>
 
 =====javascript API=====
  * http://www.adobe.com/devnet-docs/edgeanimate/api/current/index.html
