@@ -2,8 +2,12 @@
 
 ===== functions in symbols =====
 <code javascript>
+//on stage timeline:
+sym.getSymbol("Pinguins").zingen();
+
+//on symbol timeline
 sym.zingen = function() {
-	console.log("zingen");
+  console.log("zingen");
 }
 </code>
 
