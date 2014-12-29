@@ -1,5 +1,8 @@
 ====== Edge Animate======
 
+=====upload======
+* http://stackoverflow.com/questions/793014/jquery-trigger-file-input
+
 =====Javascript error in event handler! Event Type = element====
 in case of these kind of unhelpful errors use an exception handler to get the actual error.
 <code javascript>
