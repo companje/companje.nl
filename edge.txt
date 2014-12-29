@@ -1,5 +1,15 @@
 ====== Edge Animate======
 
+=====show/hide/composition/stage/symbol====
+<code javascript>
+// hide this symbol
+sym.getSymbolElement().hide();
+
+// show the next symbol and play it
+sym.getComposition().getStage().$("Symbol_2").show();
+sym.getComposition().getStage().getSymbol("Symbol_2").play();
+</code>
+
 =====upload======
 * http://stackoverflow.com/questions/793014/jquery-trigger-file-input
 
