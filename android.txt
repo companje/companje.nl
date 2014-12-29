@@ -4,7 +4,7 @@
   Instellingen -> Apparaat -> Geluid -> Meldingen --> stil
   
 ==delete app on Samsung Galaxy Tab==
-  Instellingen -> Applicatiebeheer
+  Instellingen -> Algemeen -> Applicatiebeheer
 
 ==adb devices==
   adb devices
