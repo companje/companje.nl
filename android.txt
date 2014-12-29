@@ -1,5 +1,11 @@
 ====== Android ======
 
+==delete app on Samsung Galaxy Tab==
+  Instellingen -> Applicatiebeheer
+
+==adb devices==
+  adb devices
+
 ==web debugging in chrome browser==
   chrome://inspect/#devices
 turn on USB webdebugging on device Settings->DeveloperTools
