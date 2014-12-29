@@ -1,5 +1,15 @@
 ====== Edge Animate======
 
+=====Javascript error in event handler! Event Type = element====
+in case of these kind of unhelpful errors use an exception handler to get the actual error.
+<code javascript>
+try {
+  sym.$("upload").trigger("click");
+} catch (e) {
+  console.log(e);
+}
+</code>
+
 ===== functions in symbols =====
 <code javascript>
 //on stage timeline:
