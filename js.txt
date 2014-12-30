@@ -3,13 +3,13 @@
 =====FileReader=====
 * [[https://developer.mozilla.org/en-US/docs/Web/API/FileReader.readAsDataURL|readAsDataURL!!!]]
 <code javascript>
-var files = $("#uploads")[0].files
+<del>var files = $("#uploads")[0].files
 var reader = new FileReader();
 reader.readAsText(files[0], "UTF-8");
 reader.onload = function (evt) {
   console.log(evt.target.result);
 }        
-//$("#frmUpload")[0].reset();
+//$("#frmUpload")[0].reset();</del>
 </code>
 
 =====libraries & frameworks=====
