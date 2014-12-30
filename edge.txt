@@ -1,5 +1,9 @@
 ====== Edge Animate======
 
+===== $ confusion =====
+In newer versions of Adobe Edge, the $ symbol is a *limited* implementation of jQuery. If you want full jQuery add an external script to your library. (ie. from https://code.jquery.com/jquery-2.1.1.min.js)
+[[http://www.adobe.com/devnet-docs/edgeanimate/api/current/index.html#edge_jquery|Read more]]
+
 ===== audio =====
   sym.$("oinkbeest-intro")[0].play();
 
