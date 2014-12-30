@@ -1,5 +1,8 @@
 ====== Edge Animate======
 
+===== audio =====
+  sym.$("oinkbeest-intro")[0].play();
+
 =====show/hide/composition/stage/symbol====
 <code javascript>
 // hide this symbol
