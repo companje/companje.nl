@@ -1,6 +1,13 @@
 ===============jQuery===============
 
-===== Get =====
+===== POST =====
+<code jquery>
+$.post( "ajax/test.html", function( data ) {
+  $( ".result" ).html( data );
+});
+</code>
+
+===== GET =====
 <code jquery>
 $.get("ajax/test.html", function(data) {
   $(".result").html(data);
