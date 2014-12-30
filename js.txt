@@ -1,5 +1,17 @@
 =============== Javascript notes ===============
 
+=====FileReader=====
+<code javascript>
+var files = $("#uploads")[0].files
+var reader = new FileReader();
+reader.readAsText(files[0], "UTF-8");
+reader.onload = function (evt) {
+  console.log(evt.target.result);
+}
+        
+//$("#frmUpload")[0].reset();
+</code>
+
 =====libraries & frameworks=====
 * [[http://trackingjs.com|tracking.js, video processing/tracking library]]
 * [[https://code.google.com/p/dat-gui/|dat.GUI]] A lightweight graphical user interface for changing variables in JavaScript.
