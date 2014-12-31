@@ -1,0 +1,6 @@
+====== Icons ======
+
+* http://www.iconutils.com/free-icons/
+
+===== favicon generator =====
+* http://realfavicongenerator.net/
