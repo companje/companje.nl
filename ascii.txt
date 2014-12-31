@@ -1,0 +1,12 @@
+====== ASCII ======
+
+===== subset of characters =====
+<code>
+!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+</code>
+
+=====ASCII logo / tags=====
+http://patorjk.com/software/taag
+
+===== picture to ascii =====
+http://picascii.com/
