@@ -1,4 +1,6 @@
 ====== Globes ======
+* http://dagik.org/screen_shots/movies/
+* http://www.dagik.net/app/download/6998569390/dagikearth_eng_2014.pdf
 * [[http://www.supinemusic.net/Files%20for%20Cloud%20projects/Cinema%204D/plugins/Planet%20X%20Generator%20R12/presets/|Planet Textures]]
 * http://eclecti.cc/computergraphics/snow-globe-part-one-cheap-diy-spherical-projection
 * http://vterrain.org/Textures/spherical.html
