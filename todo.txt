@@ -8,6 +8,7 @@
 * DONE [[http://dewerelddraaitdoor.vara.nl/media/322626|Leren programmeren voor kinderen DWDD]]
 * DONE: [[http://stackoverflow.com/questions/6506519/ecmascriptharmony-es6-to-javascript-compiler|Over ES6 compilers]]
 * DONE [[https://github.com/google/traceur-compiler|traceur-compiler on github]]
+* APL [[http://nl.wikipedia.org/wiki/APL_(programmeertaal)|wikipedia]], [[http://www.dyalog.com/|dyalog]], [[https://www.youtube.com/watch?v=_DTpQ4Kk2wA|APL demo 1975]], [[https://www.youtube.com/watch?hl=en-GB&gl=GB&fmt=18&v=a9xAKttWgP4|game of life in APL]]
 
 ===== 3D printing & design=====
 ==reviews==
