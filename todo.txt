@@ -21,11 +21,10 @@
 * DONE: [[http://3dprint.com/24581/mosaic-manufacturing-color-3d/|Multi-Colored 3D Printing from a Single Extruder]]
 
 ==future of design tools==
-http://www.inside3dp.com/design-software-stuck-80s-much-longer/
-Een samenvatting van suggesties waar design software heen zou moeten gaan. Er zitten links in naar een aantal zeer gave sketch/moddeling interfaces
-Zie: Paper http://www.fiftythree.com/paper
-Umake: https://www.youtube.com/watch?v=zD5NRPk_7g4
-Je kunt hierbij niet rechtstreeks naar een 3D vorm maar dat zou zeer  gaaf zijn, Umake komt al aardig in de buurt.
+* DONE: http://www.inside3dp.com/design-software-stuck-80s-much-longer/
+* DONE: Een samenvatting van suggesties waar design software heen zou moeten gaan. Er zitten links in naar een aantal zeer gave sketch/moddeling interfaces
+* DONE: Zie: Paper http://www.fiftythree.com/paper
+* DONE: Umake: https://www.youtube.com/watch?v=zD5NRPk_7g4 - Je kunt hierbij niet rechtstreeks naar een 3D vorm maar dat zou zeer  gaaf zijn, Umake komt al aardig in de buurt.
 
 
 ==other==
@@ -53,4 +52,3 @@ Fosdem '15 conference (weekend van 31 jan)
 ===== Getting over jQuery =====
 * http://ponyfoo.com/articles/getting-over-jquery
 * http://microjs.com/#ajax
-
