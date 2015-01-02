@@ -1,5 +1,6 @@
 ====== APL ======
-  * [[http://nl.wikipedia.org/wiki/APL_(programmeertaal)|op wikipedia]]
+  * [[http://nl.wikipedia.org/wiki/APL_(programmeertaal)|nl.wikipedia over APL]]
   * [[http://www.dyalog.com/|dyalog]]
   * [[https://www.youtube.com/watch?v=_DTpQ4Kk2wA|APL demo 1975]]
   * [[https://www.youtube.com/watch?hl=en-GB&gl=GB&fmt=18&v=a9xAKttWgP4|game of life in APL]]
+  * [[https://www.youtube.com/watch?v=DmT80OseAGs|sudoku solver in APL]]
