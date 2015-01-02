@@ -1,5 +1,70 @@
 ====== Processing ======
 
+===== Globe intro in ProcessingJS for Khan Academy =====
+<code javascript>
+var planet = getImage("space/planet");
+var logoY,sloganX,globeY,webY;
+
+var resetAnimation = function() {
+    logoY=-50;
+    sloganX=-1000;
+    webY=1000;
+    globeY=300;
+};
+
+resetAnimation();
+
+var draw = function() {
+    //drawing a semi transparent rect instead of
+    //using background() creates the nice fading effect.
+    noStroke();
+    fill(128,128,128,50);
+    rect(0,0,width,height);
+    
+    //restart the aimation every 300 frames
+    if ((frameCount % 300)===0) {
+        resetAnimation();
+    }
+    
+    //animate
+    if (logoY<50)        { logoY+=3;    }
+    if (sloganX<width/2) { sloganX+=20; }
+    if (webY>120)        { webY-=10;    }
+    if (globeY>120)      { globeY-=10;  }
+    
+    //text
+    fill(255);
+    textAlign(CENTER);
+    textFont(createFont("sans-serif",50));
+    text("Globe4D",width/2,logoY);
+    textFont(createFont("serif",20));
+    text("interactive four-dimensional globes",sloganX,90);
+    textFont(createFont("sans-serif",15));
+    text("www.globe4d.com",width/2,webY);
+    
+    //draw globe
+    fill(255);
+    ellipse(200,250,300,140);
+    image(planet,100,globeY,220,220);
+
+    //draw pedestal
+    stroke(255);
+    fill(0);
+    rect(95,260,220,190);
+    
+    //mask ring
+    strokeWeight(70); //for a very thick arc
+    stroke(255); //make red to see mask
+    noFill();
+    arc(200,223,260,130,30,150);
+    
+    //draw thin gray arc for table
+    strokeWeight(1);
+    stroke(0,0,0,50);
+    arc(201,240,299,140,0,180);
+};
+</code>
+
 ===== Monstertje in ProcessingJS voor Khan Academy=====
 <code javascript>
 var eye = function(cx,cy,eyeX,eyeY) {
