@@ -16,7 +16,7 @@
 * http://www.t3.com/features/best-3d-printers-to-buy
 * http://3dprinterblog.net/robox-3d-printer-review/
 * http://www.tomsguide.com/us/best-3d-printers,review-2236.html
-* http://www.cel-robox.com/
+* DONE: http://www.cel-robox.com/
 * DONE: [[https://www.youtube.com/watch?v=zMJ1kDnB5CY|MakerBot or MakerNot? Part 1 of 3D Printer Trifecta Review Extravaganza +2]]
 * DONE: [[https://www.youtube.com/watch?v=Gc3uwKHf4tI|Lulzbot TAZ 4 Review Intensive - Part 2 of 3D Printer Trifecta Review Eggstravaganza +2]]
 * DONE: [[https://www.youtube.com/watch?v=Wylk4W64opo|Ultimaker 2 Review Intensive - Part 3 of 3D Printer Trifecta Review Extravaganza +2]] (resume at 24:00)
