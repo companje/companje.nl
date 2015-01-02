@@ -1,5 +1,9 @@
 =============== Javascript notes ===============
 
+===== ECMAScript 6 =====
+* http://peter.michaux.ca/articles/javascript-is-dead-long-live-javascript
+* https://github.com/google/traceur-compiler/wiki/LanguageFeatures
+
 =====FileReader=====
 * [[https://developer.mozilla.org/en-US/docs/Web/API/FileReader.readAsDataURL|readAsDataURL!!!]]
 
