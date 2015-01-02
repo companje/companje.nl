@@ -17,15 +17,15 @@ var eye = function(cx,cy,eyeX,eyeY) {
 };
 
 var animate = function(f) {
-    return sin(millis()*f);
+    return sin(millis()*f); //use sine function for smooth animation
 };
 
 var draw = function() {
     background(0);
     
     //cx,cy = center of body
-    var cx = 220+50*animate(0.1);
-    var cy = 200+10*animate(1);
+    var cx = width/2+50*animate(0.1);
+    var cy = height/2+10*animate(1);
 
     //feet
     var footY = 10*animate(0.5);
