@@ -11,11 +11,8 @@
 
 ===== 3D printing & design=====
 ==reviews==
-* http://printers.reviewed.com/features/robox-takes-the-3d-printer-crown
-* http://www.usatoday.com/videos/tech/2014/01/10/4404727/
-* http://www.t3.com/features/best-3d-printers-to-buy
-* http://3dprinterblog.net/robox-3d-printer-review/
-* http://www.tomsguide.com/us/best-3d-printers,review-2236.html
+* DONE: http://printers.reviewed.com/features/robox-takes-the-3d-printer-crown
+* DONE: http://www.tomsguide.com/us/best-3d-printers,review-2236.html
 * DONE: http://www.cel-robox.com/
 * DONE: [[https://www.youtube.com/watch?v=zMJ1kDnB5CY|MakerBot or MakerNot? Part 1 of 3D Printer Trifecta Review Extravaganza +2]]
 * DONE: [[https://www.youtube.com/watch?v=Gc3uwKHf4tI|Lulzbot TAZ 4 Review Intensive - Part 2 of 3D Printer Trifecta Review Eggstravaganza +2]]
