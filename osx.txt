@@ -1,5 +1,12 @@
 ======Mac OSX======
 
+=====to enter unicode character on osx=====
+  # System preferences-> input menu
+  # check the box next to "Unicode hex".
+  # add Unicode hex as a language
+  # Switch to unicode input in the menu bar.
+  # Hold Alt followed by a 4 digit hexadecimal unicode value to get the character.
+  
 =====chmod in Sites folder=====
   chmod -R 755 folder_with_wrong_permissions
   
