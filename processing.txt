@@ -1,7 +1,7 @@
 ====== Processing ======
 
 ===== Monstertje in ProcessingJS voor Khan Academy=====
-<code javaascript>
+<code javascript>
 var eye = function(cx,cy,eyeX,eyeY) {
     fill(126, 242, 149);
     triangle(eyeX-10,eyeY,eyeX+10,eyeY,cx,cy);
