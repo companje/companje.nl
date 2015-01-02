@@ -1,0 +1,5 @@
+====== APL ======
+  * [[http://nl.wikipedia.org/wiki/APL_(programmeertaal)|op wikipedia]]
+  * [[http://www.dyalog.com/|dyalog]]
+  * [[https://www.youtube.com/watch?v=_DTpQ4Kk2wA|APL demo 1975]]
+  * [[https://www.youtube.com/watch?hl=en-GB&gl=GB&fmt=18&v=a9xAKttWgP4|game of life in APL]]
