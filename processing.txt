@@ -1,5 +1,75 @@
 ====== Processing ======
 
+===== Monstertje in ProcessingJS voor Khan Academy=====
+<code javaascript>
+var eye = function(cx,cy,eyeX,eyeY) {
+    fill(126, 242, 149);
+    triangle(eyeX-10,eyeY,eyeX+10,eyeY,cx,cy);
+    ellipse(eyeX,eyeY,35,35);
+    fill(255);
+    stroke(0);
+    ellipse(eyeX,eyeY,24,24);
+    fill(0);
+    ellipse(eyeX,eyeY+2,12,12);
+    fill(255);
+    noStroke();
+    ellipse(eyeX,eyeY+4,4,4);
+};
+
+var animate = function(f) {
+    return sin(millis()*f);
+};
+
+var draw = function() {
+    background(0);
+    
+    //cx,cy = center of body
+    var cx = 220+50*animate(0.1);
+    var cy = 200+10*animate(1);
+
+    //feet
+    var footY = 10*animate(0.5);
+    fill(126, 242, 149);
+    triangle(cx,cy,cx+10,cy+100+footY,cx+20,cy+100+footY);
+    triangle(cx,cy,cx-10,cy+100-footY,cx-20,cy+100-footY);
+    rect(cx+10,cy+90+footY,30,10,20);
+    rect(cx-40,cy+90-footY,30,10,20);
+   
+    //body
+    ellipse(cx,cy,100,70);
+    ellipse(cx,cy+0,90,90);
+    ellipse(cx,cy+10,80,70);
+    ellipse(cx,cy+20,70,60);
+    ellipse(cx,cy+30,60,50);
+    ellipse(cx,cy+40,50,40);
+    
+    //eyes
+    eye(cx,cy,cx-30,cy-70+10*animate(1));
+    eye(cx,cy,cx+30,cy-90+20*animate(0.5));
+    
+    //mouth
+    strokeWeight(3);
+    stroke(0);
+    noFill();
+    fill(255);
+    var mouthW = 15*abs(animate(0.3))+5;
+    var mouthH = 10*abs(animate(0.3))+5;
+    ellipse(cx,cy+25,mouthW,mouthH);
+    strokeWeight(2);
+    noStroke();
+    
+    //freckles
+    fill(0);
+    ellipse(cx-2,cy-16,4,4);
+    ellipse(cx-8,cy-25,3,3);
+    ellipse(cx+8,cy-21,4,4);
+    ellipse(cx+18,cy-19,3,3);
+    ellipse(cx-19,cy-22,3,3);
+    ellipse(cx+13,cy-7,3,4);
+    ellipse(cx-16,cy-9,4,4);
+};
+</code>
+
 ===== Starfield 2D perspective =====
 <code java>
 class Star extends PVector {
