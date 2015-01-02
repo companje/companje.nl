@@ -1,0 +1,8 @@
+====== Unicode ======
+
+=====to enter unicode character on osx=====
+  1. System preferences-> input menu
+  2. check the box next to "Unicode hex".
+  3. add Unicode hex as a language
+  4. Switch to unicode input in the menu bar.
+  5. Hold Alt followed by a 4 digit hexadecimal unicode value to get the character. [[https://discussions.apple.com/thread/1899290?tstart=0|source]]
