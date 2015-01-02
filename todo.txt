@@ -36,8 +36,8 @@
 * [[https://decorrespondent.nl/1795/De-ingeloste-beloften-na-16-jaar-Google-nul-resultaten/82746121810-f2344d8d|Google beloftes, artikel uit De Correspondent]]
 * [[https://www.youtube.com/watch?feature=player_embedded&v=M2tJpEMIkWM|waarom je bij elke chip een klein condensatortje moet plaatsen]]
 * http://www.radio1.nl/item/246346-Facebook%20mag%20vanaf%201%20januari%20prive-gegevens%20aan%20derden%20verkopen.html
-* DONE http://new.livestream.com/bigbrotherawards/live
-* [[http://www.ted.com/talks/jeremy_howard_the_wonderful_and_terrifying_implications_of_computers_that_can_learn|TED talk via Peter over Machine Learning]]
+* DONE: http://new.livestream.com/bigbrotherawards/live
+* DONE: [[http://www.ted.com/talks/jeremy_howard_the_wonderful_and_terrifying_implications_of_computers_that_can_learn|TED talk via Peter over Machine Learning]]
 
 =====Smart Config=====
 Rick, hier een stukje hoe Texas Instruments 'Smart Config' werkt. het zou heel mooi zijn als we dit b.v. achter de schermen kunnen laten werken voordat we ueberhaubt verbinding maken. (Volgens mij werkt dit zelfs als de printer een Accesspoint is namelijk, omdat dit op de UDP/IP laag gebeurd). Haalbaarheid etc is een tweede, maar lees het eens door, zeker niet oninteressant.
