@@ -15,7 +15,7 @@ Dog.prototype.bark = function() {
 }
 </code>
 call the super constructor
-<code javasript>
+<code javascript>
 var Dog = function(name,color) {
   Animal.call(this,name);
   this.color = color; //where to declare color?
