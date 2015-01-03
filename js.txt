@@ -20,7 +20,7 @@ var Dog = function(name,color) {
   Animal.call(this,name);
   this.color = color; //where to declare color?
 }
-
+</code>
 ===== ECMAScript 6 =====
 * http://stackoverflow.com/questions/6506519/ecmascriptharmony-es6-to-javascript-compiler
 * http://peter.michaux.ca/articles/javascript-is-dead-long-live-javascript
