@@ -1,5 +1,20 @@
 =============== Javascript notes ===============
 
+=====inheritance with prototypes=====
+<code javascript>
+var Animal = function(name) {
+  this.name= name;
+}
+Animal.prototype.breath = function() {
+  //do breath
+}
+
+Dog.prototype = Object.create(Animal.prototype);
+Dog.prototype.bark = function() {
+  //do bark
+}
+</code>
+
 ===== ECMAScript 6 =====
 * http://stackoverflow.com/questions/6506519/ecmascriptharmony-es6-to-javascript-compiler
 * http://peter.michaux.ca/articles/javascript-is-dead-long-live-javascript
