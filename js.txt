@@ -14,7 +14,7 @@ Dog.prototype.bark = function() {
   //do bark
 }
 </code>
-call the super constructor
+call the Animal super constructor from the Dog constructor
 <code javascript>
 var Dog = function(name,color) {
   Animal.call(this,name);
