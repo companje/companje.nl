@@ -1,3 +1,6 @@
 ====== TI CC3000 ======
   * http://bergcloud.com/devcenter/tutorials/cc3000-smart-config
   * http://processors.wiki.ti.com/index.php/CC3000_Wi-Fi_Downloads
+  * https://learn.adafruit.com/adafruit-cc3000-wifi/smartconfigtest
+  * https://learn.sparkfun.com/tutorials/cc3000-hookup-guide
+  * 
