@@ -3,4 +3,4 @@
   * http://processors.wiki.ti.com/index.php/CC3000_Wi-Fi_Downloads
   * https://learn.adafruit.com/adafruit-cc3000-wifi/smartconfigtest
   * https://learn.sparkfun.com/tutorials/cc3000-hookup-guide
-  * 
+
