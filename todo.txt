@@ -48,8 +48,7 @@
 * [[cc3000]]
 
 ===== Fosdem =====
-Fosdem '15 conference (weekend van 31 jan)
-* http://fosdem.org
+* http://fosdem.org: Fosdem '15 conference (weekend van 31 jan)
 
 ===== Getting over jQuery =====
 * http://ponyfoo.com/articles/getting-over-jquery
