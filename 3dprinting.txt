@@ -26,6 +26,9 @@ See [[qu-bd-one-up]]
 * structure.io
 * http://itseez.com/products/itseez3d/
 
-==== Formlabs PreForm software ====
+===== Formlabs PreForm software =====
 * preForm
+
+===== Review Print Platforms =====
+* http://www.3dpxp.com/test-verschillende-3d-printplatforms-met-elkaar-vergeleken/
 
