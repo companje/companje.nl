@@ -1,6 +1,6 @@
 ====== TODO: things to watch, read or listen ======
 
-===== News (tech) =====
+===== Hacker News =====
 * https://news.ycombinator.com/
 * https://news.ycombinator.com/shownew
 
@@ -61,3 +61,4 @@ Tips van Nico: see [[business]]
 
 ===== Books =====
 * Eriksson & Sundquist - Het Hongerig Vuur
+* Eric von Hippel - Democratizing Innovation
