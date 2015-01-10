@@ -2,8 +2,7 @@
 
 ==use css3 features if supported==
 <code>
-///////// css
-///////////////////////////////
+//// css
 .css3 img { /* if css3 supported */
   object-fit: cover; /* Do not scale the image */
   object-position: center; /* Center the image within the element */
@@ -14,8 +13,7 @@ img {
   /* default */
 }
  
-////////// javscript
-///////////////////////////////
+//// javscript
 // detect CSS text-shadow support in JavaScript
 if (document.createElement("detect").style.objectFit === "") {
   console.log("supported!");
