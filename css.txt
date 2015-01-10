@@ -1,6 +1,11 @@
 =====CSS=====
 
 ==use css3 features if supported==
+<code javascript>
+var css3_support = (document.createElement("detect").style.objectFit === "");
+document.getElementsByTagName("html")[0].className += (css3_support ? " css3" : " nocss3");
+</code>
+
 <code css>
 .css3 img { 
   /* css3 support */
@@ -11,10 +16,6 @@
 img {
   /* always */
 }
-</code>
-<code javascript>
-var css3_support = (document.createElement("detect").style.objectFit === "");
-document.getElementsByTagName("html")[0].className += (css3_support ? " css3" : " nocss3");
 </code>
 
 ==css names in javascript==
