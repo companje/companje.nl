@@ -13,7 +13,7 @@ img {
 }
 </code>
 <code javascript>
-// detect CSS text-shadow support in JavaScript
+// detect CSS object-fit support in JavaScript
 if (document.createElement("detect").style.objectFit === "") {
   console.log("supported!");
   document.getElementsByTagName("html")[0].className += " css3";
