@@ -2,7 +2,7 @@
 
 ==use css3 features if supported==
 <code javascript>
-var css3_support = (document.createElement("detect").style.objectFit === "");
+var css3_support = (document.createElement("detect").style.objectFit === ""); //'objectFit' or other css3 tag
 document.getElementsByTagName("html")[0].className += (css3_support ? " css3" : " nocss3");
 </code>
 
