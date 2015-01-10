@@ -3,14 +3,14 @@
 ==use css3 features if supported==
 <code>
 //// css
-.css3 img { /* if css3 supported */
+.css3 img { /* only if css3 supported */
   object-fit: cover; /* Do not scale the image */
   object-position: center; /* Center the image within the element */
   height: 200px;
   width: 200px;
 }
 img {
-  /* default */
+  /* always */
 }
  
 //// javscript
