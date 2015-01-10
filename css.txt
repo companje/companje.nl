@@ -1,5 +1,29 @@
 =====CSS=====
 
+==use css3 features if supported==
+<code>
+///////// css
+///////////////////////////////
+.css3 img { /* if css3 supported */
+  object-fit: cover; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  height: 200px;
+  width: 200px;
+}
+img {
+  /* default */
+}
+ 
+////////// javscript
+///////////////////////////////
+// detect CSS text-shadow support in JavaScript
+if (document.createElement("detect").style.objectFit === "") {
+  console.log("supported!");
+  document.getElementsByTagName("html")[0].className += " css3";
+}
+
+</code>
+
 ==css names in javascript==
 "background-color" becomes "backgroundColor", and "list-style-type" becomes "listStyleType"
 
