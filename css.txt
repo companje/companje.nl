@@ -2,22 +2,19 @@
 
 ==use css3 features if supported==
 <code css>
-.css3 img { /* only if css3 supported */
-  object-fit: cover; /* Do not scale the image */
-  object-position: center; /* Center the image within the element */
-  height: 200px;
-  width: 200px;
+.css3 img { 
+  /* css3 support */
+}
+.nocss3 img {
+  /* no css3 support */
 }
 img {
   /* always */
 }
 </code>
 <code javascript>
-// detect CSS object-fit support in JavaScript
-if (document.createElement("detect").style.objectFit === "") {
-  console.log("supported!");
-  document.getElementsByTagName("html")[0].className += " css3";
-}
+var css3_support = (document.createElement("detect").style.objectFit === "");
+document.getElementsByTagName("html")[0].className += (css3_support ? " css3" : " nocss3");
 </code>
 
 ==css names in javascript==
