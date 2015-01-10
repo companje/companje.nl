@@ -1,5 +1,8 @@
 =====CSS=====
 
+==detect css3==
+* http://www.sitepoint.com/detect-css3-property-browser-support/
+
 ==initial==
   h1 {
     color: initial; 
