@@ -1,5 +1,8 @@
 =====CSS=====
 
+==css names in javascript==
+"background-color" becomes "backgroundColor", and "list-style-type" becomes "listStyleType"
+
 ==detect css3==
 * http://www.sitepoint.com/detect-css3-property-browser-support/
 
