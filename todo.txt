@@ -1,5 +1,8 @@
 ====== TODO: things to watch, read or listen ======
 
+===== openFrameworks community survey =====
+* http://blog.openframeworks.cc/post/104672042124/2014-community-survey
+
 ===== Hacker News =====
 * https://news.ycombinator.com/
 * https://news.ycombinator.com/shownew
@@ -14,7 +17,10 @@
 * DONE [[https://github.com/google/traceur-compiler|traceur-compiler on github]]
 * DONE: [[APL]] [[http://nl.wikipedia.org/wiki/APL_(programmeertaal)|op wikipedia]], [[http://www.dyalog.com/|dyalog]], [[https://www.youtube.com/watch?v=_DTpQ4Kk2wA|APL demo 1975]], [[https://www.youtube.com/watch?hl=en-GB&gl=GB&fmt=18&v=a9xAKttWgP4|game of life in APL]]
 
-===== 3D printing & design=====
+===== 3D printing, design & making=====
+* [[https://www.youtube.com/watch?v=k0DNnyknWKM&feature=youtu.be&list=PLOcrXzpA0W83uyr5LX-U47F3V5IfAZ-UP|Let’s build our own personalized open textile production line]]
+
+
 ==reviews==
 * DONE: http://printers.reviewed.com/features/robox-takes-the-3d-printer-crown
 * DONE: http://www.tomsguide.com/us/best-3d-printers,review-2236.html
