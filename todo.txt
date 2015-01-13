@@ -1,5 +1,7 @@
 ====== TODO: things to watch, read or listen ======
 
+* http://ghtorrent.org/
+
 ===== openFrameworks community survey =====
 * http://blog.openframeworks.cc/post/104672042124/2014-community-survey
 
