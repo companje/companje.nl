@@ -1,5 +1,7 @@
-====== ASCII ======
+====== ASCII (and other character sets) ======
 
+=====search for html entities=====
+* http://www.amp-what.com/
 ===== subset of characters =====
 <code>
 !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
