@@ -1,6 +1,8 @@
 ====== TODO: things to watch, read or listen ======
 
 * http://ghtorrent.org/
+* https://www.npmjs.com/package/connman-api
+* https://www.npmjs.com/package/connman-simplified
 
 ===== openFrameworks community survey =====
 * http://blog.openframeworks.cc/post/104672042124/2014-community-survey
