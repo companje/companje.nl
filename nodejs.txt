@@ -25,8 +25,7 @@ Nadelen:
 * Er is nog geen goed support voor meertaligheid, zijn ze wel mee bezig. [[https://github.com/keystonejs/keystone/issues/802|#802]]
 * Je kan eigenlijk nog niet de admin ui tweaken, maar hier zijn ze hard mee bezig.
 * Je kan nog geen tags gebruiken, zijn ze mee bezig. [[https://github.com/keystonejs/keystone/issues/153|#153]] [[https://github.com/keystonejs/keystone/issues/282|#282]]
-* Nog geen themes, al kun je met bootstrap tweaks (Bootswatch http://bootswatch.com/) heel ver komen: #548
-https://github.com/keystonejs/keystone/issues/548#issuecomment-69845660
+* Nog geen themes, al kun je met bootstrap tweaks (Bootswatch http://bootswatch.com/) heel ver komen: [[https://github.com/keystonejs/keystone/issues/548#issuecomment-69845660|#548]]
 
 Voor puur blogging/publishing is Ghost waarschijnlijk interessanter, maar daar heb ik nog niet echt naar gekeken.
 https://ghost.org/
