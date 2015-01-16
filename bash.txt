@@ -1,6 +1,7 @@
 ====== Bash ======
 
 =====move jpg script based on exif data=====
+using ''imagemagick''.
 <code bash>
 #!/bin/bash
 
