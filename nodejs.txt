@@ -2,32 +2,32 @@
 
 ===== Node.js CMS: Keystone =====
 Mail van Peter: Hey Rick, Dat op Node.js CMS waar ik het over had was Keystone. http://keystonejs.com/
-Interessante slides: Moving from PHP to a nodejs full stack CMS <https://s3.amazonaws.com/mnb_keystone/slidedecks/keystonejs.pdf>
+Interessante slides: Moving from PHP to a nodejs full stack CMS https://s3.amazonaws.com/mnb_keystone/slidedecks/keystonejs.pdf
 
 Een aantal toffe dingen:
-- Je genereert de basis met Yeoman <http://yeoman.io> wat je dan vervolgens kan gaan customizen. Dit is eigenlijk bijna de hele frontend.
-- De daadwerkelijke Keystone CMS is gewoon een dependency (npm package)
-- Doordat het veel bekende bouwstenen gebruikt zoals Express en Mongoose
+* Je genereert de basis met Yeoman http://yeoman.io wat je dan vervolgens kan gaan customizen. Dit is eigenlijk bijna de hele frontend.
+* De daadwerkelijke Keystone CMS is gewoon een dependency (npm package)
+* Doordat het veel bekende bouwstenen gebruikt zoals Express en Mongoose
 (MongoDB) is het sneller te leren en zijn er stiekem al veel resources.
-- Doordat het Express gebruikt kun je allerlei template talen <https://github.com/strongloop/express/wiki#template-engines> gebruiken.
-- Content types, routes (url's) en overzicht pagina's (denk aan de fabmoments pagina)) beschrijf je met overzichtelijke stukjes javascript.
-- Doordat bijna alles met bestanden werkt (behalve de content) kun je normaal versie beheer doen. (Voor content hebben ze csv export mogelijkheden.)
-- Doordat je werkt met Mongoose en template talen kun je heel makkelijk overzicht pagina's (views) maken.
-- Doordat de flow achter het generen van pagina's heel overzichtelijk is heb ik gisteren al fabpublication pagina's kunnen maken.
-- Stiekem zijn er al veel field types, Relations (verwijzingen naar andere soorten content types), TextField met eventueel wysiwyg editor, intern of extern gehoste afbeeldingen of bestanden, datum.
-- Het lijkt een hele actieve community.
-- Prima docs <http://keystonejs.com/docs/>.
+* Doordat het Express gebruikt kun je allerlei template talen https://github.com/strongloop/express/wiki#template-engines gebruiken.
+* Content types, routes (url's) en overzicht pagina's (denk aan de fabmoments pagina)) beschrijf je met overzichtelijke stukjes javascript.
+* Doordat bijna alles met bestanden werkt (behalve de content) kun je normaal versie beheer doen. (Voor content hebben ze csv export mogelijkheden.)
+* Doordat je werkt met Mongoose en template talen kun je heel makkelijk overzicht pagina's (views) maken.
+* Doordat de flow achter het generen van pagina's heel overzichtelijk is heb ik gisteren al fabpublication pagina's kunnen maken.
+* Stiekem zijn er al veel field types, Relations (verwijzingen naar andere soorten content types), TextField met eventueel wysiwyg editor, intern of extern gehoste afbeeldingen of bestanden, datum.
+* Het lijkt een hele actieve community.
+* Prima docs http://keystonejs.com/docs/.
 
 Nadelen:
-- Vereist Node.js en MongoDB (wat nog altijd minder makkelijk is dan php en mySQL)
-- Admin UI is nog erg beperkt. Je kan eigenlijk alleen content beheren. Zelfs het menu is nu nog in javascript beschreven.
-- Nog geen permissions / rollen systeem. Je kan bijv nog geen verschillen maken tussen lid, moderator en admin. Wat bijv bij fablab amersfoort erg belangrijk is. #803 https://github.com/keystonejs/keystone/issues/803>
-- Er is nog geen goed support voor meertaligheid, zijn ze wel mee bezig. #802 https://github.com/keystonejs/keystone/issues/802>
-- Je kan eigenlijk nog niet de admin ui tweaken, maar hier zijn ze hard mee bezig.
-- Je kan nog geen tags gebruiken, zijn ze mee bezig. #153 <https://github.com/keystonejs/keystone/issues/153> #282
-<https://github.com/keystonejs/keystone/issues/282>
-- Nog geen themes, al kun je met bootstrap tweaks (Bootswatch <http://bootswatch.com/>) heel ver komen: #548
-<https://github.com/keystonejs/keystone/issues/548#issuecomment-69845660>
+* Vereist Node.js en MongoDB (wat nog altijd minder makkelijk is dan php en mySQL)
+* Admin UI is nog erg beperkt. Je kan eigenlijk alleen content beheren. Zelfs het menu is nu nog in javascript beschreven.
+* Nog geen permissions / rollen systeem. Je kan bijv nog geen verschillen maken tussen lid, moderator en admin. Wat bijv bij fablab amersfoort erg belangrijk is. #803 https://github.com/keystonejs/keystone/issues/803
+* Er is nog geen goed support voor meertaligheid, zijn ze wel mee bezig. #802 https://github.com/keystonejs/keystone/issues/802
+* Je kan eigenlijk nog niet de admin ui tweaken, maar hier zijn ze hard mee bezig.
+* Je kan nog geen tags gebruiken, zijn ze mee bezig. #153 https://github.com/keystonejs/keystone/issues/153 #282
+https://github.com/keystonejs/keystone/issues/282
+* Nog geen themes, al kun je met bootstrap tweaks (Bootswatch http://bootswatch.com/) heel ver komen: #548
+https://github.com/keystonejs/keystone/issues/548#issuecomment-69845660
 
 Voor puur blogging/publishing is Ghost waarschijnlijk interessanter, maar daar heb ik nog niet echt naar gekeken.
 https://ghost.org/
