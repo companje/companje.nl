@@ -1,5 +1,25 @@
 ====== Bash ======
 
+=====move jpg script based on exif data=====
+<code bash>
+#!/bin/bash
+
+for i in *.JPG; do
+    echo -n "Processing '$i'..."
+
+    YEAR=`identify -verbose "$i" | grep "exif:DateTime:" | cut -c 20-23`
+    
+    if [[ "$YEAR" == "" ]]; then
+      echo "NO_YEAR"
+    else
+      echo "YEAR=$YEAR"
+      mkdir -p $YEAR
+      mv "$i" "$YEAR"
+    fi
+    
+done
+</code>
+
 =====list files recursive with full path
   find .
   
