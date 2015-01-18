@@ -1,5 +1,8 @@
 ======Editors======
-*sublime text2  
-*http://www.codelite.org/ en http://sourceforge.net/projects/codelite/ 
-*http://netbeans.org/features/cpp/index.html 
-
+* sublime text2  
+* brackets
+* http://www.codelite.org/
+* http://sourceforge.net/projects/codelite/ 
+* http://netbeans.org/features/cpp/index.html 
+* https://github.com/ajaxorg/cloud9
+* https://atom.io/
