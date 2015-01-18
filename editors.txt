@@ -1,5 +1,5 @@
 ======Editors======
-* sublime text2  
+* sublime text2.
 * brackets
 * http://www.codelite.org/
 * http://sourceforge.net/projects/codelite/ 
