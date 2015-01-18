@@ -1,6 +1,6 @@
 ======Editors======
-* sublime text2.
-* brackets
+* SublimeText
+* Brackets
 * http://www.codelite.org/
 * http://sourceforge.net/projects/codelite/ 
 * http://netbeans.org/features/cpp/index.html 
