@@ -1,6 +1,7 @@
 ====== Wordpress ======
 
 ===== Themes =====
+* http://www.kriesi.at/
 * [[http://themeforest.net/item/dante-responsive-multipurpose-wordpress-theme/6175269|Dante]]
 * http://lifesplash.nl/
 * http://wpshower.com/demo/?preview_theme=sight
