@@ -1,13 +1,13 @@
 ====== TODO: things to watch, read or listen ======
 
 * http://www.totenmet.net/2014/10/hoe-gebruik-ik-linkedin-optimaal/
-* https://www.youtube.com/watch?v=VXIws_v1fS8
+* DONE: https://www.youtube.com/watch?v=VXIws_v1fS8
 * http://ghtorrent.org/
 * https://www.npmjs.com/package/connman-api
 * https://www.npmjs.com/package/connman-simplified
-* https://www.youtube.com/watch?v=WT3772yhr0o
-* https://www.youtube.com/watch?v=peoZJRtnPiA
-* http://enablingthefuture.org/
+* DONE: https://www.youtube.com/watch?v=WT3772yhr0o
+* DONE: https://www.youtube.com/watch?v=peoZJRtnPiA
+* DONE: http://enablingthefuture.org/
 
 ===== openFrameworks community survey =====
 * http://blog.openframeworks.cc/post/104672042124/2014-community-survey
