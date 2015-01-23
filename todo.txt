@@ -1,5 +1,6 @@
 ====== TODO: things to watch, read or listen ======
 
+* Swift
 * Foundation
 * http://www.totenmet.net/2014/10/hoe-gebruik-ik-linkedin-optimaal/
 * DONE: https://www.youtube.com/watch?v=VXIws_v1fS8
