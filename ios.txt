@@ -7,7 +7,7 @@ First: To install OS X/iOS docsets you need to open Xcode and go to Preferences 
   [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"prefs:root=WIFI"]];
   [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
 * http://stackoverflow.com/questions/8246070/ios-launching-settings-restrictions-url-scheme
-* 'As of iOS8 you can open the built-in Settings app with'
+* As of iOS8 you can open the built-in Settings app with
 ```
 NSURL *url = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
 if ([[UIApplication sharedApplication] canOpenURL:url]) {
