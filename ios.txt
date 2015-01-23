@@ -1,5 +1,12 @@
 ======iOS======
 
+=====install iOS docs in Dash=====
+First: To install OS X/iOS docsets you need to open Xcode and go to Preferences > Downloads > Documentation.
+
+=====open Settings from your app=====
+  [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"prefs:root=WIFI"]];
+  [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+
 =====Reflector App=====
 * [[http://www.airsquirrels.com/reflector/|via AirPlay het beeld van je telefoon naar je computer streamen]]
 
