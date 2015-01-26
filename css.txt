@@ -1,5 +1,8 @@
 =====CSS=====
 
+==flexbox==
+* http://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
 ==use css3 features if supported==
 <code javascript>
 var css3_support = (document.createElement("detect").style.objectFit === ""); //'objectFit' or other css3 tag
