@@ -11,6 +11,14 @@
 * DONE: https://www.youtube.com/watch?v=peoZJRtnPiA
 * DONE: http://enablingthefuture.org/
 
+===== Network Service Discovery in the browser =====
+Network Service Discovery is a specification, an API that might be implemented in browsers. We should probably implement this when this becomes available, this could be more robust than our current connect.doodle3d.com system. It's makes the detour through the internet unnecessary. When it's available our current system could still be used as a backup.
+http://www.w3.org/TR/discovery-api/#zeroconf-mdns-dns-sd
+https://bugzilla.mozilla.org/show_bug.cgi?id=914579
+https://www.youtube.com/watch?v=dujaAWwGVB4
+
+Abstract
+This specification defines a mechanism for an HTML document to discover and subsequently communicate with HTTP-based services advertised via common discovery protocols within the current network.
 ===== openFrameworks community survey =====
 * http://blog.openframeworks.cc/post/104672042124/2014-community-survey
 
