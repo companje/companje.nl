@@ -1,7 +1,7 @@
 ====== Bash ======
 
 =====update Date Modified based on EXIF data=====
-<code>
+<code bash>
 #!/bin/bash
 
 while [[ "$1" != "" ]] ; do
