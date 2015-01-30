@@ -1,5 +1,18 @@
 ====== Bash ======
 
+=====update Date Modified based on EXIF data=====
+<code>
+#!/bin/bash
+
+while [[ "$1" != "" ]] ; do
+  echo -n "Processing '$1'..."
+  DATE=`identify -verbose "$1" | grep "exif:DateTimeOriginal:" | cut -c 28- | tr -d : | tr -d ' ' | cut -c -12`
+  echo $DATE
+  touch -t $DATE "$1"
+  shift
+done
+</code>
+
 =====move jpg script based on exif data=====
 using ''imagemagick''.
 <code bash>
