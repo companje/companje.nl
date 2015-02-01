@@ -1,7 +1,7 @@
 =============== Javascript notes ===============
 
 =====future of javascript (ES6)=====
-talk at FOSDEM 15: Hannes Verschore (H4writer.com)
+talk at FOSDEM 15: Hannes Verschore (http://H4writer.com)
 compilers: traceur and 6to5
 ==generators==
 generate a sequence, one item at a time. a function that can be paused in the middle
