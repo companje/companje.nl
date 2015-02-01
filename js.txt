@@ -1,7 +1,8 @@
 =============== Javascript notes ===============
 
 =====future of javascript (ES6)=====
-* compilers: traceur and 6to5
+talk at FOSDEM 15: Hannes Verschore (H4writer.com)
+compilers: traceur and 6to5
 ==generators==
 generate a sequence, one item at a time. a function that can be paused in the middle
 <code javascript>
@@ -78,6 +79,65 @@ lists:
 <code javascript>
 var [a,b] = [1,2];
 
+var [a,b ...c] = [1,2,3,4,5]
+//result a=1, b=2, c=[3,4,5]
+
+var { data:var1 } = {data : 50 }
+//var1 = 50
+
+var {m:month, y:year } =  { d:1, m:2,y:2015}
+//month=2, year=2015
+
+var { data }= { data:50 } 
+//result: data=50
+
+function g({name:x}) {
+  console.log(x);
+}
+g({name:5, foo:0})
+//console: 5
+</code>
+
+var [a] = []
+a===undefined
+
+==modules==
+///lib.js
+var privateProperty =1 ;
+export var publicProperty = 2
+
+function privateFunction() { ... }
+export function publicFunction() { ...}
+export default function() { ... }
+
+/////main.js
+import { publicProperty, publicFunction } from 'lib';
+//..........
+
+import (publicFunction  as libfunc } from 'lib'
+//libfunc = function() {....}
+
+module loader: 
+System.import('some_module')
+//returns a promise? that loads the module async
+
+==promises==
+<code javascript>
+function executor(resolve, reject) {
+  ////
+
+  if (....) reject();
+  
+  resolve(); //if success
+}
+
+img.then(function() {
+  return imgs[1].getReadyPromise(); 
+}).then(function() {
+  ...
+});
+
+//Promise.all...... ?
 </code>
 
 =====inheritance with prototypes=====
