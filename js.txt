@@ -1,5 +1,85 @@
 =============== Javascript notes ===============
 
+=====future of javascript (ES6)=====
+* compilers: traceur and 6to5
+==generators==
+generate a sequence, one item at a time. a function that can be paused in the middle
+<code javascript>
+function *foo() {
+   console.log("running");
+   var x = yield 1;
+   var y = yield 2;
+   return 3;
+}
+var generator = foo();
+//generator = { next: unction() { }, throw: function() { } }
+var result1 = geneator.next();
+//console: "running"
+//result =  {value:1, done:false}
+var result 2 = generator.next();
+//result = {value: 2, done: false}
+var result3 = generator.next();
+//result3 = {value:3, done:true }
+
+var result 2= generator.next(10);
+//result = {value:2, done:false}
+var result = genrator.next(20);
+
+function *range(start,end) {
+  while(start!=end) {
+    yield start;
+    start++;
+  }
+}
+
+for (let i of range(0,10)) {
+  console.log(i);
+}
+//result
+>0
+>1
+>2
+>......
+
+function *fibonacci() {
+....
+}
+</code>
+
+==classes==
+(with inheritance)
+<code javascript>
+class Animal() {
+  constructor() {
+    this.cuteness = 0
+  }
+  approach() {
+    //...
+  } 
+  get fullness() {
+    return 100-this....
+  }
+  set
+.......
+</code>
+
+==arrow function==
+(alternative for 'self' and/or 'bind')
+<code javascript>function Archer() {
+this.arrows = 100;
+setInterval() => {
+this.arrows--;
+}, 5 * 10000);
+.....
+</code>
+
+==destructuring==
+lists:
+<code javascript>
+var [a,b] = [1,2];
+
+</code>
+
 =====inheritance with prototypes=====
 <code javascript>
 var Animal = function(name) {
