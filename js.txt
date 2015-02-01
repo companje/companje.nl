@@ -17,7 +17,7 @@ function *foo() {
    return 3;
 }
 var generator = foo();
-//generator = { next: unction() { }, throw: function() { } }
+//generator = { next: function() { }, throw: function() { } }
 var result1 = geneator.next();
 //console: "running"
 //result =  {value:1, done:false}
@@ -28,7 +28,7 @@ var result3 = generator.next();
 
 var result 2= generator.next(10);
 //result = {value:2, done:false}
-var result = genrator.next(20);
+var result = generator.next(20);
 
 function *range(start,end) {
   while(start!=end) {
