@@ -96,10 +96,10 @@ function g({name:x}) {
 }
 g({name:5, foo:0})
 //console: 5
-</code>
 
 var [a] = []
 a===undefined
+</code>
 
 ==modules==
 ///lib.js
