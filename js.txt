@@ -3,11 +3,11 @@
 =====future of javascript (ES6)=====
 talk at FOSDEM 15: Hannes Verschore (http://H4writer.com)
 
-==compilers==
+====compilers====
 * traceur
 * 6to5
 
-==generators==
+===generators====
 generate a sequence, one item at a time. a function that can be paused in the middle
 <code javascript>
 function *foo() {
@@ -51,7 +51,7 @@ function *fibonacci() {
 }
 </code>
 
-==classes==
+====classes====
 (with inheritance)
 <code javascript>
 class Animal() {
@@ -68,7 +68,7 @@ class Animal() {
 .......
 </code>
 
-==arrow function==
+====arrow function====
 (alternative for 'self' and/or 'bind')
 <code javascript>function Archer() {
 this.arrows = 100;
@@ -78,7 +78,7 @@ this.arrows--;
 .....
 </code>
 
-==destructuring==
+====destructuring====
 lists:
 <code javascript>
 var [a,b] = [1,2];
@@ -105,7 +105,7 @@ var [a] = []
 a===undefined
 </code>
 
-==modules==
+====modules====
 ///lib.js
 var privateProperty =1 ;
 export var publicProperty = 2
@@ -125,7 +125,7 @@ module loader:
 System.import('some_module')
 //returns a promise? that loads the module async
 
-==promises==
+====promises====
 <code javascript>
 function executor(resolve, reject) {
   ////
