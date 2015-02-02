@@ -1,5 +1,28 @@
 ====== Phonegap ======
 
+=====ZeroConf=====
+* https://github.com/vstirbu/ZeroConf
+* [[http://www.tildesoft.com/|Bonjour Browser]]
+* add plugin and run this code:
+<code javascript>
+ZeroConf.list("_3dprinter._tcp.local.", 6000,
+  function(success) {
+    console.log("list succes");
+    console.log(arguments);
+    console.log(success);
+  },
+  function(error) {
+    console.log(error);
+  }
+);  
+
+ZeroConf.watch("_3dprinter._tcp.local.", function(result) {
+  console.log('>>>>>>>>>>>>>>>>> _3dprinter._tcp.local.');
+  console.log(JSON.stringify(result, null, 4));
+  //console.log(util.inspect(service, false, null));
+});
+</code>
+
 =====android run=====
   phonegap run android --device
 
