@@ -1,6 +1,7 @@
 ====== Phonegap ======
 
 =====ZeroConf=====
+* only for Android???
 * https://github.com/vstirbu/ZeroConf
 * [[http://www.tildesoft.com/|Bonjour Browser]]
 * add plugin and run this code:
