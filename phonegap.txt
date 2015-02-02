@@ -1,5 +1,8 @@
 ====== Phonegap ======
 
+=====Bonjour=====
+* https://github.com/rossmartin/BonjourPlugin
+
 =====ZeroConf=====
 * only for Android???
 * https://github.com/vstirbu/ZeroConf
