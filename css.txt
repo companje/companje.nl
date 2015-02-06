@@ -1,5 +1,8 @@
 =====CSS=====
 
+==web==
+see [[web]]
+
 ==flexbox==
 * http://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
