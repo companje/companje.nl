@@ -1,5 +1,6 @@
 ====== TODO: things to watch, read or listen ======
 
+* [[http://bohemiancoding.com/sketch/|sketch for mac]]
 * [[https://learn.adafruit.com/what-is-the-command-line?view=all|Leuke voor nieuwe stagiaires? Terminal]]
 * [[http://www.element14.com/community/community/raspberry-pi/blog/2012/09/08/raspberry-pi-laptop|Daarnaast, tof projectje: raspberry pi laptop]]
 * Gebruikt: [[http://www.amazon.com/gp/product/B004M17D62/ref=oh_details_o05_s01_i00|AT&T Laptop Dock for Motorola ATRIX 4G]] Misschien zelfs bruikbaar om op lokatie met "headles" computers in Globe4D's te werken?
