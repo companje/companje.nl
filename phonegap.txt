@@ -1,5 +1,8 @@
 ====== Phonegap ======
 
+=====statusbar plugin=====
+* http://plugins.cordova.io/#/package/org.apache.cordova.statusbar
+
 =====Bonjour (ios)=====
 * https://github.com/rossmartin/BonjourPlugin
 
