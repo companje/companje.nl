@@ -5,9 +5,9 @@
 * Try out the different statusbar possibilities: http://devgirl.org/2014/07/31/phonegap-developers-guid/
 
 <code>
-    <preference name="StatusBarOverlaysWebView" value="false"/>
-    <preference name="StatusBarBackgroundColor" value="#000000"/>
-    <preference name="StatusBarStyle" value="lightcontent" />
+<preference name="StatusBarOverlaysWebView" value="false"/>
+<preference name="StatusBarBackgroundColor" value="#000000"/>
+<preference name="StatusBarStyle" value="lightcontent" />
 </code>
 
 =====Bonjour (ios)=====
