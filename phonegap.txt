@@ -2,6 +2,7 @@
 
 =====statusbar plugin=====
 * http://plugins.cordova.io/#/package/org.apache.cordova.statusbar
+* Try out the different statusbar possibilities: http://devgirl.org/2014/07/31/phonegap-developers-guid/
 
 =====Bonjour (ios)=====
 * https://github.com/rossmartin/BonjourPlugin
