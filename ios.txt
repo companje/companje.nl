@@ -3,8 +3,14 @@
 =====install iOS docs in Dash=====
 First: To install OS X/iOS docsets you need to open Xcode and go to Preferences > Downloads > Documentation.
 
-=====get WiFi network name=====
-  NSLog(@"%@",CNCopyCurrentNetworkInfo(@"en0"));
+=====get name of currently connected WiFi network=====
+<code objc>
+  CFArrayRef myArray = CNCopySupportedInterfaces();
+  CFDictionaryRef myDict = CNCopyCurrentNetworkInfo(CFArrayGetValueAtIndex(myArray, 0));
+  NSDictionary *ssidList = (__bridge NSDictionary*)myDict;
+  NSString *SSID = [ssidList valueForKey:@"SSID"];
+  NSLog(@"%@",SSID);
+</code>
 
 =====open Settings from your app=====
   [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"prefs:root=WIFI"]];
