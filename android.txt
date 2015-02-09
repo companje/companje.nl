@@ -17,6 +17,7 @@ turn on USB webdebugging on device Settings->DeveloperTools
   adb logcat
 filteren
   adb logcat cordova:D *:S
+  adb logcat | grep Cordova
 
 ==path==
   export ANDROID_HOME=~/Documents/android-sdk-macosx
