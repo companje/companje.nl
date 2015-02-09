@@ -1,5 +1,8 @@
 ====== TODO: things to watch, read or listen ======
 
+* CommonJS, Browsify en NPM en vooral de combinatie ertussen: http://ampersandjs.com/learn/npm-browserify-and-modules
+* Ook interessant: http://blog.andyet.com/2014/08/13/opinionated-rundown-of-js-frameworks
+* rem: http://www.stubbornella.org/content/2013/07/01/easy-peasy-rem-conversion-with-sass/ en http://snook.ca/archives/html_and_css/font-size-with-rem
 * [[http://bohemiancoding.com/sketch/|sketch for mac]]
 * [[https://learn.adafruit.com/what-is-the-command-line?view=all|Leuke voor nieuwe stagiaires? Terminal]]
 * [[http://www.element14.com/community/community/raspberry-pi/blog/2012/09/08/raspberry-pi-laptop|Daarnaast, tof projectje: raspberry pi laptop]]
