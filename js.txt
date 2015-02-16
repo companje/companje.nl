@@ -1,5 +1,8 @@
 =============== Javascript notes ===============
 
+====objectInfo====
+console.log(JSON.stringify(result, null, 4));
+
 =====future of javascript (ES6)=====
 talk at FOSDEM 15: Hannes Verschore (http://H4writer.com)
 
