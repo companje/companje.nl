@@ -2,6 +2,9 @@
 
 =====TODO======
 
+==tip van pedeka==
+* kingsman
+
 ==tips van Ralph==
 * predestination
 * zero theorem
