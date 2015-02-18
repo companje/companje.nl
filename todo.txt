@@ -1,5 +1,6 @@
 ====== TODO: things to watch, read or listen ======
 
+* [[https://github.com/tosqa/Plotter/issues/1|warning/info messages]]
 * CommonJS, Browsify en NPM en vooral de combinatie ertussen: http://ampersandjs.com/learn/npm-browserify-and-modules
 * Ook interessant: http://blog.andyet.com/2014/08/13/opinionated-rundown-of-js-frameworks
 * rem: http://www.stubbornella.org/content/2013/07/01/easy-peasy-rem-conversion-with-sass/ en http://snook.ca/archives/html_and_css/font-size-with-rem
