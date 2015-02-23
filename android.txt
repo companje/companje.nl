@@ -1,5 +1,8 @@
 ====== Android ======
 
+==targets==
+  android list target -c
+  
 ==disable notification sound on Samsung Galaxy Tab==
   Instellingen -> Apparaat -> Geluid -> Meldingen --> stil
   
