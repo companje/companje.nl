@@ -3,6 +3,7 @@
 ==webgl==
   chrome://flags
   Enable under “Enable WebGL” on the flags menu.
+  chrome://gpu
   
 ==targets==
   android list target -c
