@@ -1,5 +1,8 @@
 ====== Phonegap ======
 
+=====crosswalk=====
+* https://www.npmjs.com/package/cordova-android-crosswalk
+
 =====hooks=====
 * http://devgirl.org/2013/11/12/three-hooks-your-cordovaphonegap-project-needs/
 
