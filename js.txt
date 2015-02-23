@@ -1,5 +1,8 @@
 =============== Javascript notes ===============
 
+====compile c code to javascript=====
+* http://kripken.github.io/emscripten-site/
+
 ====objectInfo====
   console.log(JSON.stringify(result, null, 4));
 
