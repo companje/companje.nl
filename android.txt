@@ -1,5 +1,9 @@
 ====== Android ======
 
+==webgl==
+  chrome://flags
+  Enable under “Enable WebGL” on the flags menu.
+  
 ==targets==
   android list target -c
   
