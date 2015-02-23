@@ -1,9 +1,11 @@
 ====== Android ======
 
 ==webgl==
-  chrome://flags
-  Enable under “Enable WebGL” on the flags menu.
-  chrome://gpu
+chrome://flags
+Enable under “Enable WebGL” on the flags menu.
+chrome://gpu
+The message "WebGL is disabled on Android unless GPU reset notification is supported" in about://gpu means that the GPU on your Android device does not provide certain functionality that Chrome requires for WebGL. On these kind of devices we cannot safely enable WebGL, so it is turned off. 
+You can still turn on WebGL manually by going to about://flags an turning on "Override software rendering list". In response to comment #4, at least Nexus 7 (both old and new) should support WebGL. Could you paste the output from about://gpu? The "Override software rendering list" option works (#ignore-gpu-blacklist, for those using non-english language).
   
 ==targets==
   android list target -c
