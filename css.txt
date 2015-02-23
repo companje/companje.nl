@@ -3,6 +3,10 @@
 ==web==
 see [[web]]
 
+
+==css tricks==
+* http://css-tricks.com/snippets/html/base64-encode-of-1x1px-transparent-gif/
+
 ==flexbox==
 * http://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
