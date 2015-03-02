@@ -1,5 +1,36 @@
 ======PHP======
 
+=====youmagine missing API call: get image preview for document=====
+<code php>
+header("Access-Control-Allow-Origin: *");
+header("Content-type: text/plain");
+if (empty($_GET['id'])) die("id is undefined");
+if (!is_numeric($_GET['id'])) die("id should be a valid number");
+$id = $_GET["id"];
+
+//get id of this file's parent design
+$json = json_decode(file_get_contents("https://www.youmagine.com/documents/$id.json"));
+$documentable_id = $json->documentable_id;
+$url = getDesignURLById($documentable_id);
+$html = file_get_contents($url);
+
+preg_match("/<article data-id=\"".$id."\" .+?id=\"(\d+)\"/", $html, $matches);
+
+echo $matches[1];
+
+function getDesignURLById($designId) {
+  $url = "https://www.youmagine.com/designs/$designId";
+  $ch = curl_init($url);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+  curl_setopt($ch, CURLOPT_HEADER, TRUE); // We'll parse redirect url from header.
+  curl_setopt($ch, CURLOPT_FOLLOWLOCATION, FALSE); // We want to just get redirect url but not to fo$
+  $response = curl_exec($ch);
+  preg_match_all('/^Location:(.*)$/mi', $response, $matches);
+  curl_close($ch);
+  return !empty($matches[1]) ? trim($matches[1][0]) : 'No redirect found';
+}
+</code>
+
 =====PHP.INI on OpenPanel=====
   /etc/php5/apache2/php.ini
 
