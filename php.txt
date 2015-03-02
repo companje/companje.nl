@@ -8,7 +8,6 @@ if (empty($_GET['id'])) die("id is undefined");
 if (!is_numeric($_GET['id'])) die("id should be a valid number");
 $id = $_GET["id"];
 
-//get id of this file's parent design
 $json = json_decode(file_get_contents("https://www.youmagine.com/documents/$id.json"));
 $documentable_id = $json->documentable_id;
 $url = getDesignURLById($documentable_id);
