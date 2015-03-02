@@ -3,6 +3,7 @@
 ===== Online tools =====
 * http://regexr.com/
 * http://txt2re.com/
+* http://www.phpliveregex.com/ (php)
 
 ===== expr =====
 <code bash>
