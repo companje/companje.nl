@@ -235,6 +235,8 @@ ini_set('display_errors', 'On');
 Als dat niet helpt kun je ook je php.ini aanpassen. In mijn geval stond die hier (het pad kun je opvragen mbv ''phpinfo()'':
 <code>
 /Applications/MAMP/bin/php/php5.3.6/conf/php.ini
+of hier (op OpenPanel):
+/etc/php5/apache2/php.ini
 </code>
 
 =====php error log=====
