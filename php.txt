@@ -1,5 +1,8 @@
 ======PHP======
 
+=====PHP.INI on OpenPanel=====
+  /etc/php5/apache2/php.ini
+
 =====Use PHPMailer for sending email with attachment=====
 <code php>
 require 'PHPMailerAutoload.php';
