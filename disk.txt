@@ -4,3 +4,5 @@
 * http://jope.fi/drives/
 * http://www.thpc.info/how/editbootini.html
 * http://www.allbootdisks.com/download/iso.html
+* https://www.schoonepc.nl/nieuwsbrief/multiboot_systeem_opzetten.html
+* https://www.schoonepc.nl/instal/multibt.html
