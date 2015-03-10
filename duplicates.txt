@@ -1,0 +1,7 @@
+====== Duplicate files ======
+
+===== find duplicates =====
+  fdupes .
+  
+===== install fdupes on mac =====
+  brew install fdupes
