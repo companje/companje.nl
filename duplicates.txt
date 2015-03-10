@@ -8,3 +8,6 @@
   
 ===== find and delete duplicates (removing the first one)=====
   fdupes -dN .
+
+===== dupeGuru Picture Edition =====
+* http://www.macupdate.com/app/mac/22724/dupeguru-picture-edition
