@@ -2,7 +2,7 @@
 
 =====warning 'Implicit declaration of function'=====
 This was caused by a missing import statement in my fork of org.apache.cordova.wifiinfo.
-see https://github.com/companje/org.apache.cordova.wifiinfo/commit/e416e337e674336013248b0ac493362d23660a36
+see [[https://github.com/companje/org.apache.cordova.wifiinfo/commit/e416e337e674336013248b0ac493362d23660a36]]
 
 =====install iOS docs in Dash=====
 First: To install OS X/iOS docsets you need to open Xcode and go to Preferences > Downloads > Documentation.
