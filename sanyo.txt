@@ -2,4 +2,5 @@
 * http://www.seasip.info/VintagePC/sanyo.html
 * Capacitor C9 on the board may need to be dealt with if disk access is slow or erratic (it was installed backwards at the factory)."
 * http://www.vintage-computer.com/vcforum/showthread.php?24281-Teac-FD-54A
+* "The PC floppy cable (assuming that you don't have any drives with a READY/ line on pin 34) can be a bit problematical to fabricate. On the other hand, if you can find a Teac FD235HF with the appropriate jumpers or a FD235F (which does have a READY/ line), you're in business, sort of." [[http://www.vintage-computer.com/vcforum/archive/index.php/t-23641.html?s=382f5103d732b9ff22b19f0dcba42069|source]]
 * see [[disk]]
