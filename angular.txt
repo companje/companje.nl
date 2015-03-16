@@ -1,5 +1,8 @@
 ====== Angular ======
 
+==events & scopes pub/sub==
+* http://toddmotto.com/all-about-angulars-emit-broadcast-on-publish-subscribing/
+
 ==directives==
 https://docs.angularjs.org/guide/directive
 
