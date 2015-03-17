@@ -1,0 +1,3 @@
+======Hex editors======
+* prima maar antieke hex viewer/editor: xvi32
+* [[http://www.suavetech.com/0xed/0xed.html|0xED]] for osx 
