@@ -7,7 +7,8 @@
 * https://www.schoonepc.nl/nieuwsbrief/multiboot_systeem_opzetten.html
 * https://www.schoonepc.nl/instal/multibt.html
 * http://www.masterbooter.com/
-* http://apps.tempel.org/iBored/
+* http://apps.tempel.org/iBored/  
+
 * 160k raw to imd [[ https://winworldpc.com/winboards//viewtopic.php?f=36&t=6931|source]]: <code>BIN2IMD <image.img> <image.imd> DM=5 N=40 SS=512 SM=1-8 /1</code>
 
 * "Some image utilities will get confused and die on 8-sector or single sided formats - Especially if the disks were created by DOS 1.x and missing the media descriptor information. ImageDisk can handle those OK. " [[http://www.vintage-computer.com/vcforum/archive/index.php/t-36239.html|source]]
