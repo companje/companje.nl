@@ -6,7 +6,7 @@
 * http://www.forensicswiki.org/wiki/Google_Chrome#Configuration
 
 =====colors=====
-* In Chrome & Firefox (with Firebug 11.2+) you can add CSS in console.log messages
+In Chrome & Firefox (with Firebug 11.2+) you can add CSS in console.log messages
   console.log('%c Oh my heavens! ', 'background: #222; color: #bada55');
 
 =====documentation=====
