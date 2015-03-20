@@ -4,3 +4,6 @@
 * RESTclient, beter nog is POSTMAN
 * JSONview
 * http://www.forensicswiki.org/wiki/Google_Chrome#Configuration
+* colors in console:
+In Chrome & Firefox (with Firebug 11.2+) you can add CSS in console.log messages:
+  console.log('%c Oh my heavens! ', 'background: #222; color: #bada55');
