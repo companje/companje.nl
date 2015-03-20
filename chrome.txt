@@ -14,3 +14,7 @@ In Chrome & Firefox (with Firebug 11.2+) you can add CSS in console.log messages
 
 =====printf formatting=====
   console.error("Error: %s (%i)", "Server is  not responding",500);
+  
+=====breakpoints in code zetten=====
+  debugger;
+  
