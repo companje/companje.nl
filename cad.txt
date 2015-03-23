@@ -1,11 +1,9 @@
 ====== CAD / CAM======
-* [[https://www.youmagine.com/users/morphi|morphi]]
-* http://3dprintingindustry.com/2015/01/01/3d-modeling-3d-printing-morphi/
-* http://www.thingiverse.com/thing:596506
-* http://www.3dracers.com/
-* http://authentise.com/
-* http://www.secured3d.com/
-* http://www.printtopeer.com/
+
+===== Design tools =====
+* [[https://www.youmagine.com/users/morphi|Morphi App (ios8)]] ([[http://3dprintingindustry.com/2015/01/01/3d-modeling-3d-printing-morphi/|review]])
+* [[http://www.thingiverse.com/thing:596506|Parametric drawing and picture for Vase, Box, Box Cap]] (customizer on Thingiverse)
+* [[http://www.3dracers.com/|3D Racers]]
 * http://5axismaker.com/
 * http://modio3d.com/
 * http://www.makersempire.com/
@@ -16,16 +14,11 @@
 * http://www.makerbot.com/readyapps
 * http://leopoly.com/
 * http://minicut2d.com/ (https://www.youtube.com/watch?v=Fd5DYLPdb1s)
-* http://chilipeppr.com/
-* http://jscut.org/
 * http://voxelbuilder.com/
 * http://shapesmith.net/
-* http://octoprint.org/
 * https://n-e-r-v-o-u-s.com/cellCycle/
-* http://openjscad.org
-* https://www.madewithcode.com/projects
 * http://shapeshifter.io/
-* www.simplify3d.com/
+* http://www.simplify3d.com/
 * http://doodle3d.com
 * http://www.3dtin.com/
 * http://sourceforge.net/projects/free-cad/
@@ -34,16 +27,28 @@
 * http://cubify.com/
 * http://kaosat-dev.github.com/CoffeeSCad/
 * http://www.ground3d.nl/aan-de-slag/
-* http://daid.mine.nu/~daid/3d/
-* http://fablabamersfoort.nl/svg
-* http://www.implicitcad.org/
 * http://gcode.joewalnes.com/
 * vcarve pro (duur maar wel goed, zit bij shopbots)
 * http://grabcad.com/
 * ponoco
 * sparkmechanical
 * http://modio3d.com/
+
+
+==== Scripting ====
 * https://www.madewithcode.com/projects
+* http://daid.mine.nu/~daid/3d/
+* http://fablabamersfoort.nl/svg
+* http://openjscad.org
+* http://www.implicitcad.org/
+
+==== Online print platforms / hardware ====
+* http://authentise.com/
+* http://www.secured3d.com/
+* http://www.printtopeer.com/
+* http://chilipeppr.com/
+* http://jscut.org/
+* http://octoprint.org/
 
 ==from pointcloud to mesh==
 from Wikipedia: There are many techniques for converting a point cloud to a 3D surface. Some approaches, like Delaunay triangulation, alpha shapes, and ball pivoting, build a network of triangles over the existing vertices of the point cloud, while other approaches convert the point cloud into a volumetric distance field and reconstruct the implicit surface so defined through a marching cubes algorithm.[2]
