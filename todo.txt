@@ -1,5 +1,14 @@
 ====== TODO: things to watch, read or listen ======
 
+
+* http://robotswillstealyourjob.com/
+* http://tegenlicht.vpro.nl/afleveringen/2014-2015/gratis-geld.html
+* Rutger Bregman over basisinkomen: https://www.youtube.com/watch?v=aIL_Y9g7Tg0
+* https://decorrespondent.nl/10/Waarom-we-iedereen-gratis-geld-moeten-geven/962457760-6d1573a7
+* https://decorrespondent.nl/1161/Dit-unieke-onderzoek-laat-zien-wat-er-gebeurt-als-je-een-arme-indiaan-zomaar-6000-dollar-per-jaar-geeft/111741345936-f25e6f1d
+* http://kiosk.decorrespondent.nl/products/rutger-bregman-gratis-geld-voor-iedereen-boek
+
+
 * [[https://github.com/tosqa/Plotter/issues/1|warning/info messages]]
 * CommonJS, Browsify en NPM en vooral de combinatie ertussen: http://ampersandjs.com/learn/npm-browserify-and-modules
 * Ook interessant: http://blog.andyet.com/2014/08/13/opinionated-rundown-of-js-frameworks
