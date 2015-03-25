@@ -15,3 +15,5 @@
 =====list traffic on certain port=====
   sudo tcpdump port 443
   
+=====show ip-addresses instead of DNS names=====
+  sudo tcpdump -n
