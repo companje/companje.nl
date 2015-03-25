@@ -17,3 +17,6 @@
   
 =====show ip-addresses instead of DNS names=====
   sudo tcpdump -n
+
+=====traffic from src ip on port=====
+  sudo tcpdump port 443 and src 217.149.135.12
