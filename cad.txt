@@ -1,6 +1,7 @@
 ====== CAD / CAM======
 
 ===== Design tools =====
+* http://www.dildo-generator.com/
 * http://3dprint.com/53319/treebuild-cube-app-beta/
 * [[https://www.youmagine.com/users/morphi|Morphi App (ios8)]] ([[http://3dprintingindustry.com/2015/01/01/3d-modeling-3d-printing-morphi/|review]])
 * [[http://www.thingiverse.com/thing:596506|Parametric drawing and picture for Vase, Box, Box Cap]] (customizer on Thingiverse)
