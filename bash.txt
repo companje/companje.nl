@@ -1,5 +1,18 @@
 ====== Bash ======
 
+=====log file processing=====
+<code bash>
+cut -f4,10 EnecsysLogfile.txt | sort -r | rev | uniq -f 1 | rev | cut -f 2 | egrep [0-9.] | xargs  | sed -e 's/\ /+/g' | bc
+</code>
+
+En hier een stukje log van Duinsels perlscript:
+<code>
+04-01-2015      09:38:42        WZ=PfI1dwCaxjQAAO5EIQEAAEIGClPyGJAGAJrGNEg=03,S=2000024125
+04-01-2015      09:39:17        WS=gfaPBgCaxjQAAO6KIQEAAABsFDADiAABPAEpA6syAOYUA3wBkwAACF       110098049       297     0.939   278.883 7.9     37.59   403.892 238     108     230     50      20      81F68F06009AC6340000EE8A21010000006C1430038800013C012903AB3200E614037C01930000085
+04-01-2015      09:39:33        WS=dvaPBgCaxjQAAO6pIQEAAABwFDADiAABGQEKA7IyAOYTAwYBWgAAED       110098038       266     0.946   251.636 7.025   37.86   346.774 238     112     230     50      19      76F68F06009AC6340000EEA921010000007014300388000119010A03B23200E6130306015A0000103
+04-01-2015      09:39:35        WS=8hiQBgCaxjQAAO6wIQEAAAB0FDADiAABVwFDA60yAOUUAwsBxgAAC1       110106866       323     0.941   303.943 8.575   37.67   454.779 238     116     229     50      20      F2189006009AC6340000EEB021010000007414300388000157014303AD3200E514030B01C600000B5
+</code>
+
 =====move files by year=====
 <code bash>
 #!/usr/bin/env bash
