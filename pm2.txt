@@ -5,6 +5,8 @@
   pm2 logs
   pm2 logs YourTopic
   pm2 monit
+  
+  ~/.pm2/logs
 
 ===== om je eigen workspace versie te starten =====
   pm2 stop 0 (om de automatische gestarte HostModule service uit de root te stoppen)
