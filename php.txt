@@ -1,5 +1,10 @@
 ======PHP======
 
+=====array_map & str_getcsv=====
+  //"07","Week 3","54.jpg"
+  $a = array_map('str_getcsv', file('info.txt'));
+
+
 =====glob=====
 <code php>
 foreach (glob("fotos/$folder/*.jpg") as $filename) {
