@@ -1,5 +1,10 @@
 ======PHP======
 
+=====json header=====
+<code php>
+header('Content-type: application/json');
+</code>
+
 =====array_map & str_getcsv=====
 <code php>
 //"07","Week 3","54.jpg"
