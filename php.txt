@@ -1,9 +1,10 @@
 ======PHP======
 
 =====array_map & str_getcsv=====
-  //"07","Week 3","54.jpg"
-  $a = array_map('str_getcsv', file('info.txt'));
-
+<code php>
+//"07","Week 3","54.jpg"
+$a = array_map('str_getcsv', file('info.txt'));
+</code>
 
 =====glob=====
 <code php>
