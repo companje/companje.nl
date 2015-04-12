@@ -6,7 +6,7 @@ foreach (glob("fotos/$folder/*.jpg") as $filename) {
   list($width, $height, $type, $attr) = getimagesize($filename);
   $items[] = "{ src: '$filename', w:$width, h:$height }";
 }
-</php
+</code>
 
 =====youmagine missing API call: get image preview for document=====
 <code php>
