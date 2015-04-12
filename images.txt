@@ -1,2 +1,2 @@
 ====== Images ======
-* [[https://imageoptim.com/|optimize images]]
+* [[https://imageoptim.com/|ImageOptim]] (optimizes images)
