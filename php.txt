@@ -1,5 +1,35 @@
 ======PHP======
 
+=====list files as json=====
+<code php>
+<?php
+header('Content-type: application/json');
+$rootfolder = "photos/*";
+$albums = [];
+
+foreach (glob($rootfolder) as $folder) {
+  $album = [];
+  $album["folder"] = basename($folder);
+  $album["title"] = basename($folder);
+
+  $items = [];
+  foreach (glob($folder."/*.jpg") as $filename) {
+    list($width, $height, $type, $attr) = getimagesize($filename);
+    $item = [];
+    $item["filename"] = basename($filename);
+    $item["src"] = $filename;
+    $item["w"] = $width;
+    $item["h"] = $height;
+    $items[] = $item;
+  }
+  $album["photos"] = $items;
+  $albums[] = $album;
+}
+
+echo json_encode($albums);
+?>
+</code>
+
 =====json header=====
 <code php>
 header('Content-type: application/json');
