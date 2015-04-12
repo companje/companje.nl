@@ -1,6 +1,6 @@
 ======PHP======
 
-=====list files as json=====
+=====list images in folders as JSON=====
 <code php>
 <?php
 header('Content-type: application/json');
