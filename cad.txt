@@ -1,6 +1,7 @@
 ====== CAD / CAM======
 
 ===== Design tools =====
+* freecad
 * [[http://makerclub.org/]]
 * http://www.dildo-generator.com/
 * http://3dprint.com/53319/treebuild-cube-app-beta/
