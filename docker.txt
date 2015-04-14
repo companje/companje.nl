@@ -1,6 +1,7 @@
 ====== Docker ======
 
 * http://doodle3d.com/help/docker
+* http://www.doodle3d.com/help/build-environment-docker
 
 =====kitematic=====
 * https://kitematic.com/
