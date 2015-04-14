@@ -8,7 +8,7 @@
 vanuit kitematic de terminal openen opent bash met extra ENV variables.
   bash -c "clear && DOCKER_HOST=tcp://192.168.99.100:2376 DOCKER_CERT_PATH=/Users/rick/.docker/machine/machines/dev DOCKER_TLS_VERIFY=1 $SHELL"
 je kunt ook vanuit de 'gewone' terminal deze variabelen setten met export:
-  export DOCKER_HOST=tcp://192.168.99.100:2376 DOCKER_CERT_PATH=/Users/rick/.docker/machine/machines/dev DOCKER_TLS_VERIFY=1 $SHELL"
+  export DOCKER_HOST=tcp://192.168.99.100:2376 DOCKER_CERT_PATH=/Users/rick/.docker/machine/machines/dev DOCKER_TLS_VERIFY=1
 
 ====='run'======
 start een nieuwe container
