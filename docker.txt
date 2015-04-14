@@ -1,0 +1,17 @@
+====== Docker ======
+
+* http://doodle3d.com/help/docker
+
+=====kitematic=====
+* https://kitematic.com/
+  
+====='run'======
+start een nieuwe container
+
+=='start' opent een bestaande==
+   docker start -i prickly_poincare
+   
+==start boot2docker==
+  boot2docker start
+  
+  
