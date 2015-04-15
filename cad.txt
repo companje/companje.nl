@@ -8,7 +8,6 @@
 * [[https://www.youmagine.com/users/morphi|Morphi App (ios8)]] ([[http://3dprintingindustry.com/2015/01/01/3d-modeling-3d-printing-morphi/|review]])
 * [[http://www.thingiverse.com/thing:596506|Parametric drawing and picture for Vase, Box, Box Cap]] (customizer on Thingiverse)
 * [[http://www.3dracers.com/|3D Racers]]
-* http://5axismaker.com/
 * http://modio3d.com/
 * http://www.makersempire.com/
 * http://robotfactory.thinkerthing.com/
@@ -66,3 +65,6 @@ http://voxelbuilder.com/
 * openjscad.org
 * [[https://github.com/Spiritdude/OpenJSCAD.org/wiki/User-Guide|Guide]]
 Ondersteund drag en drop van stl, amf en openscad bestanden. OpenjsCad gebruikt trouwens ook dat csg.js, waar bijv. ook http://shapesmith.net/ gebruikt van maakt.
+
+==machines==
+* http://5axismaker.com/
