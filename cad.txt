@@ -37,6 +37,10 @@
 * sparkmechanical
 * http://modio3d.com/
 
+====education=====
+* http://www.maakonderwijs.nl/
+* 3dkanjers
+* makersempire.com
 
 ==== Scripting ====
 * https://www.madewithcode.com/projects
