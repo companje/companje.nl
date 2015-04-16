@@ -88,6 +88,7 @@ This specification defines a mechanism for an HTML document to discover and subs
 * http://www.radio1.nl/item/246346-Facebook%20mag%20vanaf%201%20januari%20prive-gegevens%20aan%20derden%20verkopen.html
 * DONE: http://new.livestream.com/bigbrotherawards/live
 * DONE: [[http://www.ted.com/talks/jeremy_howard_the_wonderful_and_terrifying_implications_of_computers_that_can_learn|TED talk via Peter over Machine Learning]]
+* http://blog.scoutapp.com/articles/2009/07/31/understanding-load-averages
 
 =====Smart Config=====
 * DONE: Rick, hier een stukje hoe Texas Instruments [[cc3000|Smart Config]] werkt. het zou heel mooi zijn als we dit b.v. achter de schermen kunnen laten werken voordat we ueberhaubt verbinding maken. (Volgens mij werkt dit zelfs als de printer een Accesspoint is namelijk, omdat dit op de UDP/IP laag gebeurd). Haalbaarheid etc is een tweede, maar lees het eens door, zeker niet oninteressant.
