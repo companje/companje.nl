@@ -1,5 +1,8 @@
 ====== OpenWrt ======
 
+==list installed packages==
+  opkg list
+
 ==make & scp & sysupgrade==
   make
   scp /Volumes/OpenWRT/trunk/bin/ar71xx/openwrt-ar71xx-generic-tl-mr3020-v1-squashfs-sysupgrade.bin wifibox:/tmp
