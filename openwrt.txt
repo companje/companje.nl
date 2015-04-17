@@ -1,5 +1,10 @@
 ====== OpenWrt ======
 
+==packages==
+* http://downloads.openwrt.org/barrier_breaker/14.07/ar71xx/generic/packages/base/
+* [[http://downloads.openwrt.org/barrier_breaker/14.07/ar71xx/generic/packages/base/libpthread_0.9.33.2-1_ar71xx.ipk|libpthread]]
+* [[http://downloads.openwrt.org/barrier_breaker/14.07/ar71xx/generic/packages/base/librt_0.9.33.2-1_ar71xx.ipk|librt]]
+
 ==image generator==
 * http://wiki.openwrt.org/doc/howto/obtain.firmware.generate
 
