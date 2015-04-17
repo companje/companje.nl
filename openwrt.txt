@@ -400,9 +400,9 @@ config 'mount'
 <code>
 locate mke2fs
 diskutil list
-diskutil unmount /dev/disk1s1
-mke2fs /dev/disk1s1
-mkfs.ext2 /dev/disk1s1
+diskutil unmount /dev/disk{...}
+mke2fs /dev/disk{...}
+mkfs.ext2 /dev/disk{...}
 </code>
 (not tested: or install ''http://garr.dl.sourceforge.net/project/fuse-ext2/fuse-ext2/fuse-ext2-0.0.7/fuse-ext2-0.0.7.dmg'' and use the Mac OSX Disk Utility to erase the usb-drive using fuse-ext2)
 
