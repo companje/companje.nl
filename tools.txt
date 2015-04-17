@@ -6,3 +6,6 @@
 * Atlessian met bitbucket, en ... Gira? Confluence voor docu
 * toggle
 * https://www.openproject.org/
+
+===== Coding in parallel with a team ====
+* https://www.plasticscm.com
