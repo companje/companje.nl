@@ -1,5 +1,14 @@
 ====== OpenWrt ======
 
+==image generator==
+* http://wiki.openwrt.org/doc/howto/obtain.firmware.generate
+
+==extroot==
+* http://wiki.openwrt.org/doc/howto/extroot
+
+==fstab==
+* http://wiki.openwrt.org/doc/uci/fstab
+
 ==boot from USB==
 * http://www.loganmarchione.com/2014/10/openwrt-with-openvpn-client-on-tp-link-tl-mr3020/
 
