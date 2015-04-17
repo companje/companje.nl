@@ -1,5 +1,8 @@
 ====== OpenWrt ======
 
+==boot from USB==
+* http://www.loganmarchione.com/2014/10/openwrt-with-openvpn-client-on-tp-link-tl-mr3020/
+
 ==list installed packages==
   opkg list
 
