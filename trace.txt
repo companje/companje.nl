@@ -5,3 +5,4 @@
 
 ==== Autotrace ====
 * [[http://autotrace.sourceforge.net/|Autotrace]] can do centerline trace
+* http://www.roitsystems.com/cgi-bin/autotrace/tracer.pl
