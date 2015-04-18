@@ -28,6 +28,7 @@ docker push learn/ping
 # next steps:
 #   sign up for a docker hub account: https://hub.docker.com/account/signup/
 #   install docker engine: https://docs.docker.com/installation/
+</code>
 
 ====='run'======
 start een nieuwe container
