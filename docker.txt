@@ -10,6 +10,24 @@ vanuit kitematic de terminal openen opent bash met extra ENV variables.
   bash -c "clear && DOCKER_HOST=tcp://192.168.99.100:2376 DOCKER_CERT_PATH=/Users/rick/.docker/machine/machines/dev DOCKER_TLS_VERIFY=1 $SHELL"
 je kunt ook vanuit de 'gewone' terminal deze variabelen setten met export:
   export DOCKER_HOST=tcp://192.168.99.100:2376 DOCKER_CERT_PATH=/Users/rick/.docker/machine/machines/dev DOCKER_TLS_VERIFY=1
+  
+=====tutorial steps======
+<code bash>
+docker version
+docker search tutorial
+docker pull learn/tutorial #learn is the username, tutorial the image name
+docker run learn/tutorial echo "hello world"
+docker run learn/tutorial apt-get install -y ping
+docker ps -l
+docker commit 698 learn/ping #698 are the first letters of the ID of the container. This command returns the *image ID*
+docker run learn/ping ping www.google.com
+docker ps
+docker inspect efe #efe are the first letters of the ID (container ID or image ID?)
+docker images #shows a list of the images on your system
+docker push learn/ping
+# next steps:
+#   sign up for a docker hub account: https://hub.docker.com/account/signup/
+#   install docker engine: https://docs.docker.com/installation/
 
 ====='run'======
 start een nieuwe container
