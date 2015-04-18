@@ -3,6 +3,9 @@
 * http://doodle3d.com/help/docker
 * http://www.doodle3d.com/help/build-environment-docker
 
+=====uninstall docker on osx (for later reinstall)=====
+* http://therealmarv.com/blog/how-to-fully-uninstall-the-offical-docker-os-x-installation/
+
 =====kitematic=====
 * https://kitematic.com/
   
