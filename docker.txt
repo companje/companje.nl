@@ -27,7 +27,7 @@ docker images #shows a list of the images on your system
 docker push learn/ping
 # next steps:
 #   sign up for a docker hub account: https://hub.docker.com/account/signup/
-#   install docker engine: https://docs.docker.com/installation/
+#   install docker engine: https://docs.docker.com/installation/ (https://docs.docker.com/installation/mac/)
 </code>
 
 ====='run'======
