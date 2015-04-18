@@ -37,7 +37,7 @@ docker push learn/ping
 start een nieuwe container
 
 ====='start' opent een bestaande=====
-   docker start -i prickly_poincare #-i means interactive
+   docker start -i prickly_poincare     # -i means interactive
    
 =====start boot2docker=====
   boot2docker start
