@@ -42,4 +42,11 @@ start een nieuwe container
 =====start boot2docker=====
   boot2docker start
   
+=====pull & run debian=====
+<code bash>
+docker pull debian
+docker run -i -t debian /bin/bash
+</code>
+
+  
   
