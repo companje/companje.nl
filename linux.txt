@@ -1,5 +1,13 @@
 ====== Linux ======
 
+===== add user======
+<code bash>
+useradd jsmith
+passwd jsmith
+mkdir /home/jsmith
+chown jsmith:users /home/jsmith
+</code>
+
 ===== List All Environment Variables ===
   env
   
