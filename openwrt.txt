@@ -1,6 +1,6 @@
 ====== OpenWrt ======
 
-==black-swift-tiny-wireless-computer
+==black-swift-tiny-wireless-computer==
 * https://www.kickstarter.com/projects/1133560316/black-swift-tiny-wireless-computer/
 
 ==packages==
