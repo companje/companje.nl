@@ -1,0 +1,13 @@
+=====Use Gmail SMTP workaround======
+* problem: http://googlesystem.blogspot.nl/2014/08/external-addresses-no-longer-use-gmail.html
+* workaround: enable 2step authentication and add the service as an app (https://security.google.com/settings/security/apppasswords)
+
+======gmail shortcut keys======
+? shortcut keys help
+
+gk voor goto tasks
+U mark as unread
+I (hoofdletter i) mark as read
+~ en ` vorige en volgende inbox section
+TAB in tekstveld om focus te verliezen zodat de shortcuts werken
+, ga naar toolbar en dan met TAB wisselen tussen buttons
