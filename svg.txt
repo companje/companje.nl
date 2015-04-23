@@ -13,6 +13,7 @@
 =====interactive svg with gestures on iPad=====
 * http://techblog.floorplanner.com/interactive-svg-on-the-ipad/
 * http://lab.floorplanner.com/ipad/touch.svg
+* http://interactjs.io/
 
 =====animated lines=====
 * http://jakearchibald.com/2013/animated-line-drawing-svg/
