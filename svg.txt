@@ -10,6 +10,9 @@
 * http://ianli.com/sketchpad/
 * http://doodle3d.com/help/svg
 
+=====interactive svg with gestures on iPad=====
+* http://lab.floorplanner.com/ipad/touch.svg
+
 =====animated lines=====
 * http://jakearchibald.com/2013/animated-line-drawing-svg/
 * http://css-tricks.com/svg-line-animation-works/
