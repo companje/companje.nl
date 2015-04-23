@@ -11,6 +11,7 @@
 * http://doodle3d.com/help/svg
 
 =====interactive svg with gestures on iPad=====
+* http://techblog.floorplanner.com/interactive-svg-on-the-ipad/
 * http://lab.floorplanner.com/ipad/touch.svg
 
 =====animated lines=====
