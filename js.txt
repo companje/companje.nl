@@ -1,7 +1,7 @@
 =============== Javascript notes ===============
 
 ====Array filter=====
-<code js>
+<code javascript>
 function removeShortPaths(minLength,minPoints) {
   if (!minLength) minLength = 10;
   if (!minPoints) minPoints = 1;
