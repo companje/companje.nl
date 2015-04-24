@@ -1,5 +1,18 @@
 =============== Javascript notes ===============
 
+====Array filter=====
+<code js>
+function removeShortPaths(minLength,minPoints) {
+  if (!minLength) minLength = 10;
+  if (!minPoints) minPoints = 1;
+
+  path.setPolylines(path.getPolylines().filter(function(polyline) {
+    return polyline.getPoints().length>minPoints && polyline.getPerimeter()>minLength;
+  }));
+
+}
+</code>
+
 ====compile c code to javascript=====
 * http://kripken.github.io/emscripten-site/
 
