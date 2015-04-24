@@ -1,5 +1,8 @@
 ===============jQuery===============
 
+===== jQuery alternatives =====
+* http://www.sitepoint.com/top-5-jquery-ui-alternatives/
+
 ===== POST =====
 <code jquery>
 $.post( "ajax/test.html", function( data ) {
