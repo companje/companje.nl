@@ -12,7 +12,7 @@
 * https://decorrespondent.nl/1161/Dit-unieke-onderzoek-laat-zien-wat-er-gebeurt-als-je-een-arme-indiaan-zomaar-6000-dollar-per-jaar-geeft/111741345936-f25e6f1d
 * http://kiosk.decorrespondent.nl/products/rutger-bregman-gratis-geld-voor-iedereen-boek
 
-=====
+=====other======
 
 * [[https://github.com/tosqa/Plotter/issues/1|warning/info messages]]
 * CommonJS, Browsify en NPM en vooral de combinatie ertussen: http://ampersandjs.com/learn/npm-browserify-and-modules
