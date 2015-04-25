@@ -1,5 +1,9 @@
 =============== Javascript notes ===============
 
+====rendering====
+* http://www.graphycalc.com/
+* http://ego.deanmcnamee.com/pre3d/
+
 ====Array filter=====
 <code javascript>
 function removeShortPaths(minLength,minPoints) {
