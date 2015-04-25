@@ -3,6 +3,7 @@
 ====rendering====
 * http://www.graphycalc.com/
 * http://ego.deanmcnamee.com/pre3d/
+* http://canonical.org/~kragen/sw/torus.js
 
 ====Array filter=====
 <code javascript>
