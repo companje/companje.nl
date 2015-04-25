@@ -1,1 +1,2 @@
-see [[cad]]
+====== 3D ======
+* [[http://canonical.org/~kragen/sw/torus.js]]!!
