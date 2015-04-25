@@ -1,7 +1,7 @@
 ====== TODO: things to watch, read or listen ======
 
 =====3D theory=====
-* [[http://canonical.org/~kragen/sw/torus.js|Very nice!]]
+* rendering a torus 'theory': [[http://canonical.org/~kragen/sw/torus.js]]!!!
 
 
 =====About work in the future:=====
