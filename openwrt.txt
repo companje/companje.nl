@@ -34,6 +34,9 @@ https://forum.openwrt.org/viewtopic.php?pid=264395#p264395
   
 ==add public key to authorized_keys on openwrt==
   cat ~/.ssh/id_rsa.pub | ssh root@192.168.5.1 'cat >> /etc/dropbear/authorized_keys'
+or
+  cat ~/.ssh/id_rsa.pub | ssh wifibox 'cat >> /etc/dropbear/authorized_keys'
+  
 after that it easy to scp files without entering passwords.
   scp /Users/rick/Documents/Doodle3D/3dprintserver/doodle3d-firmware/src/rest/api/api_sketch.lua wifibox:/usr/share/lua/wifibox/rest/api
 
