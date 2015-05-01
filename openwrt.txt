@@ -32,6 +32,9 @@ https://forum.openwrt.org/viewtopic.php?pid=264395#p264395
   scp /Volumes/OpenWRT/trunk/bin/ar71xx/openwrt-ar71xx-generic-tl-mr3020-v1-squashfs-sysupgrade.bin wifibox:/tmp
   ssh wifibox sysupgrade -v -n /tmp/openwrt-ar71xx-generic-tl-mr3020-v1-squashfs-sysupgrade.bin
   
+onliner:
+  scp /Volumes/OpenWRT/trunk/bin/ar71xx/openwrt-ar71xx-generic-tl-mr3020-v1-squashfs-factory.bin wifibox:/tmp && ssh wifibox sysupgrade -n -v /tmp/openwrt-ar71xx-generic-tl-mr3020-v1-squashfs-factory.bin
+
 ==add public key to authorized_keys on openwrt==
   cat ~/.ssh/id_rsa.pub | ssh root@192.168.5.1 'cat >> /etc/dropbear/authorized_keys'
 or
