@@ -3,7 +3,6 @@
 =====3D theory=====
 * rendering a torus 'theory': [[http://canonical.org/~kragen/sw/torus.js]]!!!
 
-
 =====About work in the future:=====
 * http://robotswillstealyourjob.com/
 * http://tegenlicht.vpro.nl/afleveringen/2014-2015/gratis-geld.html
@@ -107,6 +106,7 @@ This specification defines a mechanism for an HTML document to discover and subs
 
 ===== Business =====
 Tips van Nico: see [[business]]
+* https://www.youtube.com/watch?v=HHjgK6p4nrw (guy kawasaki, leuke speech tip v Nico)
 
 ===== Books =====
 * Eriksson & Sundquist - Het Hongerig Vuur
