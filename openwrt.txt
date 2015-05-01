@@ -32,7 +32,7 @@ https://forum.openwrt.org/viewtopic.php?pid=264395#p264395
   scp /Volumes/OpenWRT/trunk/bin/ar71xx/openwrt-ar71xx-generic-tl-mr3020-v1-squashfs-sysupgrade.bin wifibox:/tmp
   ssh wifibox sysupgrade -v -n /tmp/openwrt-ar71xx-generic-tl-mr3020-v1-squashfs-sysupgrade.bin
   
-onliner:
+oneliner: scp & ssh sysupgrade
   scp /Volumes/OpenWRT/trunk/bin/ar71xx/openwrt-ar71xx-generic-tl-mr3020-v1-squashfs-factory.bin wifibox:/tmp && ssh wifibox sysupgrade -n -v /tmp/openwrt-ar71xx-generic-tl-mr3020-v1-squashfs-factory.bin
 
 ==add public key to authorized_keys on openwrt==
