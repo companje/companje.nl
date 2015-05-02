@@ -1,2 +1,3 @@
 ====== Amiga ======
 * http://nl.wikipedia.org/wiki/AmigaOS
+* http://wiki.classicamiga.com/Formatting_a_720KB_Double_Density_Floppy_Disk_in_XP/Vista
