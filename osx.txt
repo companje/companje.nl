@@ -3,7 +3,7 @@
 =====mv command=====
 by default it seems to replace a file.
   mv -n src dst  # Do not overwrite an existing file.
-https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/mv.1.html
+[[https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/mv.1.html|man]]
 
 =====to enter unicode character on osx=====
   # System preferences-> input menu
