@@ -1,6 +1,8 @@
 =====Illustrator=====
 
 ==Shortcut keys==
+|''F7''|Show/hide Layers|
+|''Cmd+Y''|Outline View|
 |'', . /''|wisselen tussen 3 soorten fills (solid, gradient, transparent)|
 |''Shift+c''|convert anchor point tool (wisselen tussen rechte hoeken of curves)|
 |''p''|pen tool|
