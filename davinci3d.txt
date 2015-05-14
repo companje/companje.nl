@@ -4,7 +4,7 @@
 * https://www.youtube.com/watch?v=V1UhqT5iOXk
 * http://3dprintingindustry.com/2014/02/05/unboxing-printing-da-vinci-1-0-3d-printer/
 
-Printing to directly to davinci
+=====Printing to directly to davinci=====
 https://github.com/jasongao/DaVinci1.0/blob/master/print-to-davinci.py
 
 calculate checksum:
