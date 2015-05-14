@@ -1,0 +1,4 @@
+====== Davinci 3D printer ======
+* https://github.com/jasongao/DaVinci1.0/blob/master/print-to-davinci.py
+* http://hackaday.com/2014/04/17/using-non-crappy-software-with-the-da-vinci-printer/
+* https://www.youtube.com/watch?v=V1UhqT5iOXk
