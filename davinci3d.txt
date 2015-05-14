@@ -2,3 +2,19 @@
 * https://github.com/jasongao/DaVinci1.0/blob/master/print-to-davinci.py
 * http://hackaday.com/2014/04/17/using-non-crappy-software-with-the-da-vinci-printer/
 * https://www.youtube.com/watch?v=V1UhqT5iOXk
+* http://3dprintingindustry.com/2014/02/05/unboxing-printing-da-vinci-1-0-3d-printer/
+
+Printing to directly to davinci
+https://github.com/jasongao/DaVinci1.0/blob/master/print-to-davinci.py
+
+calculate checksum:
+[[http://www.soliforum.com/topic/6279/xyzprinting-da-vinci-10-hacking/page/4/|DanNsk says]]: BTW - just realized checksum is just a sum (only gcode part, after replacing '\n' => '\r\n')
+that gives 4 bytes - 00 00 b9 2e for minimal.gcode exact as hardcoded in print-to-davinci.py
+<code java>
+public static int checksum(byte[] arr, int start, int len) {
+  int num = 0;
+  for (int index = start; index < start + len; ++index)
+    num = (int)arr[index] + num;
+  return num;
+}
+</code>
