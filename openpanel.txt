@@ -8,7 +8,7 @@
   * /usr/sbin/apachectl status
   * sudo lsof -i :443
   * sudo lsof -i :80
-  * sudo lsof -i:3306
+  * sudo lsof -i:3306 (mysql)
   * sudo lsof -i:4089
   * cat /etc/apache2/ports.conf
   * netstat -plan | grep :443
