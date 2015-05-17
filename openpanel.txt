@@ -5,7 +5,7 @@
   * ps -A | grep 'httpd'
   * pgrep apache
   * aptitude show apache2
-  * apachectl status
+  * /usr/sbin/apachectl status
   * sudo lsof -i :443
   * sudo lsof -i :80
   * sudo lsof -i:3306
