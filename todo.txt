@@ -1,5 +1,27 @@
 ====== TODO: things to watch, read or listen ======
 
+=====todo=====
+* https://medium.com/javascript-scene/javascript-training-sucks-284b53666245
+* https://www.3dhubs.com/teleport
+* https://vimeo.com/100010922
+* mail van Peter op 8 mei 2015:
+Interessante blog post over modulair frontend ontwikkeling: 
+https://blog.andyet.com/2015/04/14/frontend-frameworks-to-pair-with-node
+Sowieso een goed blog om in de gaten te houden. Ik doe dat met hun mailinglist: https://andyet.com/andyou
+
+Artikels / tools waar ze naar doorverwijzen, zoals de volgende kan ik ook aanraden. 
+https://ampersandjs.com/learn/npm-browserify-and-modules
+React (framework voor de V van een MVC)
+React-hot-loader (video)
+Webpack (Code Splitting) (alternatief van Browserify) 
+Moonboots (alternatief op gulp / grunt?)
+http://humanjavascript.com/
+ 
+Misschien ook interessant:
+Vorlon.js (msdn blog post) (andyet blog post)
+Begrijp alleen nog niet wanneer dat interessant is, of dat handiger is dan GapDebug. Misschien is het vooral handig als je WindowsPhone dingen wilt doen. 
+Zie ook: https://github.com/phonegap/phonegap/wiki/Debugging-in-PhoneGap
+
 =====3D theory=====
 * rendering a torus 'theory': [[http://canonical.org/~kragen/sw/torus.js]]!!!
 
