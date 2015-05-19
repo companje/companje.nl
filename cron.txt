@@ -4,4 +4,4 @@
   crobtab -e
   
 =====restart cron service======
-sudo service cron restart
+  sudo service cron restart
