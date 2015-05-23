@@ -1,5 +1,8 @@
 ===============jQuery===============
 
+===== jChartFX =====
+http://www.jchartfx.com/
+
 ===== jQuery alternatives =====
 * http://www.sitepoint.com/top-5-jquery-ui-alternatives/
 
