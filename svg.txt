@@ -1,5 +1,8 @@
 ====== SVG ======
 
+=====Clipart=====
+* https://openclipart.org/
+
 =====Online SVG editors=====
 * [[http://www.janvas.com/site/home_en.php|Janvas]]
 * [[http://www.drawsvg.org/|DrawSVG]]
