@@ -334,3 +334,139 @@ function CSVToArray(strData, strDelimiter) {
   return arrData;
 }
 </code>
+
+===== Bugfix when description is undefined (May 27 2015)=====
+<code javascript>
+function onOpen() {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet();
+  var entries = [ {name: "Upload Rabobank bestand...", functionName: "upload"} ];
+  sheet.addMenu("Administratie", entries);
+}
+
+function upload() {
+  app = UiApp.createApplication().setTitle("Upload Rabobank transactions.txt");
+  form = app.createFormPanel().setId("frm").setEncoding("multipart/form-data");
+  panel = app.createVerticalPanel();
+  panel.add(app.createLabel("Ga naar www.rabobank.nl en download transactions.txt (nieuwe formaat) voor het juiste kwartaal. Bijvoorbeeld voor K3: 01-07-2012 t/m 30-09-2012."));
+  panel.add(app.createFileUpload().setName("thefile"));
+  panel.add(app.createSubmitButton("Upload"));
+  form.add(panel);  
+  app.add(form);
+  SpreadsheetApp.getActiveSpreadsheet().show(app);
+}
+
+function doPost(e) {
+  /*Logger.log("TEST");
+
+  var files = DriveApp.getFilesByName("transactions.txt");
+  if (files.hasNext()) {
+    var file = files.next();
+    var blob = file.getAs(MimeType.PLAIN_TEXT);
+    csv = CSVToArray(blob.getDataAsString());
+    Logger.log(csv.length);
+    addTransactions(csv);
+    return;
+  } else {
+    Logger.log("no file");
+    return
+  }*/
+  
+  var fileBlob = e.parameter.thefile;
+  csv = CSVToArray(fileBlob.contents);  
+  Browser.msgBox("Klik op OK om te beginnen met het verwerken van " + csv.length + " transacties. Dit kan enkele minuten duren en geeft geen tussentijdse feedback.");
+  addTransactions(csv);
+}
+
+function addTransactions(csv) {
+  var inkomsten = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Inkomsten"); ///getSheets()[2]; //getSheetByName("Inkomsten");
+  var uitgaven = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Uitgaven"); //getSheets()[1]; //getSheetByName("Uitgaven");
+
+  for (var i=0; i<csv.length; i++) {
+    
+    Logger.log("Bezig met regel " + (i+1));
+
+    if (csv[i].length!=19) {
+      Logger.log("Fout op regel " + (i+1));
+      continue;
+    }
+                
+    var year = csv[i][2].substr(0,4);
+    var month = csv[i][2].substr(4,2);
+    var day = csv[i][2].substr(6,2);   
+    var isodate= year+"-"+month+"-"+day;
+    var quarter = "K"+Math.ceil(month/3);        
+    var credit=(csv[i][3]=="C");
+    
+    var amount=csv[i][4].replace(".",",");
+    var name=csv[i][6];
+    
+    if (name==undefined) name="";
+    
+    var invoicenr="";
+    var exvat=""; //=R[0]C[3]/(R[0]C[1]+1)";
+    var vatpct=""; //0;
+    var vatamt=""; //=R[0]C[-2]*R[0]C[-1]";
+    
+    var category="";
+        
+    var description = csv[i][10] || "";
+    
+    if (csv[i][11]) description=description.trim()+" "+csv[i][11];
+    if (csv[i][12]) description=description.trim()+" "+csv[i][12];
+    if (csv[i][13]) description=description.trim()+" "+csv[i][13];
+    
+    description = description.toLowerCase();
+    
+    var sheet = credit ? inkomsten : uitgaven;
+    var nextRow = sheet.getLastRow()+1;
+      
+//    Logger.log(description);
+    
+    sheet.appendRow([isodate,quarter,invoicenr,name,description,exvat,vatpct,vatamt,amount,category]);
+  }
+
+  layoutSheet(inkomsten);
+  layoutSheet(uitgaven);
+  
+  Browser.msgBox("Klaar met verwerken van " + csv.length + " transacties");
+}
+
+function layoutSheet(sheet) {  
+  Logger.log(sheet.getName());
+  sheet.setFrozenRows(1);
+  sheet.setColumnWidth(1,80); //datum
+  sheet.setColumnWidth(2,50); //kwartaal
+  sheet.setColumnWidth(3,80); //factuur nr
+  sheet.setColumnWidth(4,250); //debiteur/crediteur
+  sheet.setColumnWidth(5,270); //omschrijving
+  sheet.setColumnWidth(6,70); //excl
+  sheet.setColumnWidth(7,70); //%
+  sheet.setColumnWidth(8,70); //btw bedrag
+  sheet.setColumnWidth(9,70); //inc
+  sheet.setColumnWidth(10,120); //soort
+  sheet.setColumnWidth(11,270); //soort
+  sheet.getRange("A:A").setNumberFormat("yyyy-MM-dd");
+  sheet.getRange("F:F").setNumberFormat("€ #,##0.00");
+  sheet.getRange("G:G").setNumberFormat("0.00%");
+  sheet.getRange("H:H").setNumberFormat("€ #,##0.00");
+  sheet.getRange("I:I").setNumberFormat("€ #,##0.00");
+}
+
+function CSVToArray(strData, strDelimiter) {
+  strDelimiter = (strDelimiter || ",");
+  var arrData = [[]];
+  var arrMatches = null;
+  var objPattern = new RegExp((
+      "(\\" + strDelimiter + "|\\r?\\n|\\r|^)" +    // Delimiters.
+      "(?:\"([^\"]*(?:\"\"[^\"]*)*)\"|" +           // Quoted fields.
+      "([^\"\\" + strDelimiter + "\\r\\n]*))"       // Standard fields.
+    ),"gi");
+  while (arrMatches = objPattern.exec(strData)) {
+    var strMatchedDelimiter = arrMatches[1];
+    if (strMatchedDelimiter.length && (strMatchedDelimiter != strDelimiter)) arrData.push([]);
+    var strMatchedValue = arrMatches[2] ? arrMatches[2].replace(new RegExp( "\"\"", "g" ), "\"") : arrMatches[3];
+    arrData[ arrData.length - 1 ].push( strMatchedValue );
+  }
+  return arrData;
+}
+</code>
