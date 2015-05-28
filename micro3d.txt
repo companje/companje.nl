@@ -2,5 +2,5 @@
 * http://micro3dfans.com/viewtopic.php?f=11&t=215&sid=4794fde495311e3792fd8e2dc65986b0&start=10
 * https://printm3d.com/portal/forum/index#/discussion/27/open-g-code/p1
 * communicates over Virtual COM/Serial with 115200 bps.
-* sending 'S' returns `x>PE!ïffæ>âÿb?ö¡¾Ø8\>"¾ª´N¿"Bn±îÃ)\7AôWCGR15051501100055`
+* sending `S` returns `x>PE!ïffæ>âÿb?ö¡¾Ø8\>"¾ª´N¿"Bn±îÃ)\7AôWCGR15051501100055`
 
