@@ -13,6 +13,7 @@
 * ''M110'': Set Current Line Number‎
 * ''M20'': list files on SD-card
 * ''G28'': Move to Origin
+* ''M115'': Get Firmware Version and Capabilities
 
 =====documentation=====
 * http://reprap.org/wiki/G-code
