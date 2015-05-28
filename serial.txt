@@ -5,4 +5,5 @@
 *max232 board from goodluckbuy: [[http://www.goodluckbuy.com/jy-r2t-v1-2-rs232-serial-port-converter-w-cable.html|JY-R2T V1.2 Rs232 Serial Port Converter w/ Cable]]
 
 =====Tools=====
+* overview: http://www.rau-deaver.org/MacTerminals.html
 * SerialTools [[https://itunes.apple.com/us/app/serialtools/id611021963?mt=8|for osx]]
