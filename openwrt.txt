@@ -1,5 +1,43 @@
 ====== OpenWrt ======
 
+==steps to get started with extroot==
+* flash the wifibox with a regular OpenWrt image
+* connect an ethernet cable between the wifibox and your computer
+* setup your computer's ethernet interface to 192.168.1.2/24 (/24 means subnetmask 255.255.255.0)
+* `telnet to 192.168.1.1`
+* set a password with `passwd` to enable ssh
+* exit telnet
+* `ssh root@192.168.1.1`
+* `vi /etc/config/network`
+* optional: choose another static ipaddress for the LAN connection (for example 192.168.5.1)
+* add an interface for wlan setting the protocol to dhcp:  
+```
+  config interface 'wlan'
+    option proto 'dhcp'
+```
+* exit vi (`ESC`, `:`, `w`, `q`)
+* `vi /etc/config/wireless`
+* remove the `disabled` option (in vi use `dd` to remove a line)
+* add the `country` option and set to `NL` (or other country code) (don't know why this is needed but otherwise 'Network is unreachable')
+* change the `mode` of the wifi-iface to 'sta' (to become a WiFi client/station instead of an accesspoint)
+* change the wifi-iface `network` to `wlan`
+* set the `ssid` option to that of your home WiFi network.
+* set the `key` to your network's password.
+* choose the right `encryption` for example `psk2`.
+* exit vi
+* `reboot`
+* set your computer's ethernet interface to receive a DHCP address.
+* connect with ssh
+* update the packages list: `opkg update`
+* `opkg install block-mount kmod-usb-storage kmod-fs-ext4`
+* on your computer setup a ext3 or ext4 filesystem on a USB drive
+<code>
+diskutil list
+diskutil unmount /dev/disk{...}
+mkfs.ext4 /dev/disk{...}
+</code>
+... more to come ... I got stuck here in connecting to the USB drive
+
 ==a5v11==
 * http://wiki.openwrt.org/toh/unbranded/a5-v11
 
