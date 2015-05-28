@@ -1,4 +1,4 @@
-e====== Micro3D printer ======
+====== Micro3D printer ======
 * http://micro3dfans.com/viewtopic.php?f=11&t=215&sid=4794fde495311e3792fd8e2dc65986b0&start=10
 * https://printm3d.com/portal/forum/index#/discussion/27/open-g-code/p1
 * https://printm3d.com/portal/forum/index#/discussion/27/open-g-code/p2
@@ -60,8 +60,8 @@ The following info is stored in the EEPROM. The number in front indicates the st
 * according to the sourcecode the printer uses the following microcontroller: ATxmega32C4
 * WriteFirmwareToFlash: When a firmware update is done by the M3D software multiple packets are send in the following form: 'B' + byte1 + byte2 + payload.
 * to check if the controller is in 'Bootloader' mode the software sends an 'M115\r\n'. If the result is 'B' followed by 3 numeric characters then it's in Bootloader mode otherwise it's in 'Firmware/Application' mode.
-* sending 'Q' leaves the 'Bootloader' mode and goes into 'Firmware/Application' mode. However, it seems to Disconnect/Connect the serial port and then comes back in 'Bootloader' mode.
-* when you receive 'wait' messages you know that you're in 'Application' mode. Sending a gcode command like 'M115\r\n' returns 'e1' which is an error message meaning "Process parser returned not supported protocol."
-* the software contains the following hardcoded serial numbers (BK=black, GR=green, OR=orange, SL=silver). Possibly followed by some date/time stamp: YYMMDD_hhmm?
+* sending 'Q' (0x51) leaves the 'Bootloader' mode and goes into 'Firmware/Application' mode. However, sometimes it seems to Disconnect/Connect the serial port and then comes back in 'Bootloader' mode.
+* when you receive 'wait' messages you know that you're in 'Application' mode. Sending a gcode command like 'M115\r\n' returns 'e1' which is an error message meaning "Process parser returned not supported protocol.". I guess this is because the microcontroller expects a binary format (in the form of Repetier binary gcode?)
+* btw: the software contains the following hardcoded serial numbers (BK=black, GR=green, OR=orange, SL=silver). Possibly followed by some date/time stamp: YYMMDD_hhmm?
 BK15033001100, BK15040201050, BK15040301050, BK15040602050, BK15040801050, BK15040802100, GR15032702100, GR15033101100, GR15040601100, GR15040701100, OR15032701100, SL15032601050
 
