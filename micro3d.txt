@@ -17,7 +17,8 @@
 * SetAddress: sending 'A' followed by two bytes sets some kind of address.
 * according to the sourcecode the printer uses the following microcontroller: ATxmega32C4
 * WriteFirmwareToFlash: When a firmware update is done by the M3D software multiple packets are send in the following form: 'B' + byte1 + byte2 + payload.
-* to check if the controller is in 'Bootloader' mode the software sends an 'M115\r\n'. If the result is 'B004' then it's in Bootloader mode otherwise it's in 'Firmware' or 'Application' mode.
-* sending 'Q' leaves the 'Bootloader' mode and goes into 'Firmware' or 'Application' mode.
+* to check if the controller is in 'Bootloader' mode the software sends an 'M115\r\n'. If the result is 'B' followed by 3 numeric characters then it's in Bootloader mode otherwise it's in 'Firmware/Application' mode.
+* sending 'Q' leaves the 'Bootloader' mode and goes into 'Firmware/Application' mode. However, it seems to Disconnect/Connect the serial port and then comes back in 'Bootloader' mode.
+
 
 
