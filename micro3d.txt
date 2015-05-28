@@ -63,7 +63,7 @@ The seemingly raw data contains some interesting settings. You can see your seri
 * sending 'Q' (0x51) leaves the 'Bootloader' mode and goes into 'Firmware/Application' mode. However, sometimes it seems to Disconnect/Connect the serial port and then comes back in 'Bootloader' mode.
 * when you receive 'wait' messages you know that you're in 'Application' mode. Sending a gcode command like 'M115\r\n' returns 'e1' which is an error message meaning "Process parser returned not supported protocol.". I guess this is because the microcontroller expects a binary format (in the form of Repetier binary gcode?)
 * btw: the software contains the following hardcoded serial numbers (BK=black, GR=green, OR=orange, SL=silver). Possibly followed by some date/time stamp: YYMMDD_hhmm?
-BK15033001100, BK15040201050, BK15040301050, BK15040602050, BK15040801050, BK15040802100, GR15032702100, GR15033101100, GR15040601100, GR15040701100, OR15032701100, SL15032601050.
+<code>BK15033001100, BK15040201050, BK15040301050, BK15040602050, BK15040801050, BK15040802100, GR15032702100, GR15033101100, GR15040601100, GR15040701100, OR15032701100, SL15032601050.</code>
 * Based on the experiments of evanchsa on the M3D forum I guess '0x82 0x10 0x00 0x00 0x73 0x00 0x06 0x46' is the binary version of M115 since it indeed returns the following when I send it to my Micro3D:
 <code>ok REPETIER_PROTOCOL:2 FIRMWARE_NAME:Micro3D FIRMWARE_VERSION:2015042701 MACHINE_TYPE:The_Micro X-SERIAL_NUMBER:GR150515011000550</code>
 You can see mine is green and was installed/shipped at May 15th 2015. The firmware version on the machine dates from 2015-04-27 which is weird since it should have been updated two days ago by the M3D software. Anyway, we're getting somewhere.
