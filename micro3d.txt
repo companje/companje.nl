@@ -1,14 +1,55 @@
-====== Micro3D printer ======
+e====== Micro3D printer ======
 * http://micro3dfans.com/viewtopic.php?f=11&t=215&sid=4794fde495311e3792fd8e2dc65986b0&start=10
 * https://printm3d.com/portal/forum/index#/discussion/27/open-g-code/p1
 * https://printm3d.com/portal/forum/index#/discussion/27/open-g-code/p2
 * communicates over Virtual COM/Serial with 115200 bps.
-* sending `S` (0x53) returns the 768 bytes of data stored in the Atmega EEPROM:
+* sending `S` (0x53) returns 768 bytes of data stored in the Atmega EEPROM:
 <code>
 ç··x>·PE!Ô··ffÊ>‚ˇb?ˆ·°æÿ8\>é"îæ™¥Nø"···Bn·················································································································································································································································································································································································································································································································································································································································································±Ó√··)\7A····································Ù·ûWôC·GR15051501100055·
 </code>
-* it can be useful to look at the .NET source code of the M3D software using for example the 'JetBrains dotPeek' software.
-* "e1" is an error message meaning "Process parser returned not supported protocol."
+The following info is stored in the EEPROM. The number in front indicates the start position of the variable (it can be multiple bytes)
+<code>
+0: FirmwareVersion
+4: FirmwareCRC
+8: LastRecordedZValue
+12: BacklashX
+16: BacklashY
+20: BedCompensationBackRight
+24: BedCompensationBackLeft
+28: BedCompensationFrontLeft
+32: BedCompensationFrontRight
+36: SpoolRecordID
+40: FilimentTypeID
+41: FilimentTemperature
+42: FilamentAmount
+46: BacklashExpansionXPlus
+50: BacklashExpansionYLPlus
+54: BacklashExpansionYRPlus
+58: BacklashExpansionYRMinus
+62: BacklashExpansionZ
+66: BacklashExpansionE
+70: ZCalibrationBLO
+74: ZCalibrationBRO
+78: ZCalibrationFRO
+82: ZCalibrationFLO
+86: ZCalibrationZO
+689: HeaterCalibrationMode
+690: XMotorCurrent
+692: YMotorCurrent
+694: ZMotorCurrent
+696: HardwareStatus
+698: HeaterTemperatureMeasurement_B
+704: HoursCounterSpooler
+726: XAxisStepsPerMM
+730: YAxisStepsPerMM
+734: ZAxisStepsPerMM
+738: EAxisStepsPerMM
+742: SavedZState
+744: ExtruderCurrent
+746: HeaterResistance_M
+751: SerialNumber
+</code>
+
 * send 'M115\r\n' (or other M codes) returns 'B004'.
 * looking at the sourcecode 'B001' and 'B5' are also possible return values.
 * looking at the source the Micro3D seems to have 2 modes: Bootloader-mode and Firmware-mode.
@@ -19,6 +60,7 @@
 * WriteFirmwareToFlash: When a firmware update is done by the M3D software multiple packets are send in the following form: 'B' + byte1 + byte2 + payload.
 * to check if the controller is in 'Bootloader' mode the software sends an 'M115\r\n'. If the result is 'B' followed by 3 numeric characters then it's in Bootloader mode otherwise it's in 'Firmware/Application' mode.
 * sending 'Q' leaves the 'Bootloader' mode and goes into 'Firmware/Application' mode. However, it seems to Disconnect/Connect the serial port and then comes back in 'Bootloader' mode.
-
-
+* when you receive 'wait' messages you know that you're in 'Application' mode. Sending a gcode command like 'M115\r\n' returns 'e1' which is an error message meaning "Process parser returned not supported protocol."
+* the software contains the following hardcoded serial numbers (BK=black, GR=green, OR=orange, SL=silver). Possibly followed by some date/time stamp: YYMMDD_hhmm?
+BK15033001100, BK15040201050, BK15040301050, BK15040602050, BK15040801050, BK15040802100, GR15032702100, GR15033101100, GR15040601100, GR15040701100, OR15032701100, SL15032601050
 
