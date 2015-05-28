@@ -3,9 +3,21 @@
 * https://printm3d.com/portal/forum/index#/discussion/27/open-g-code/p1
 * https://printm3d.com/portal/forum/index#/discussion/27/open-g-code/p2
 * communicates over Virtual COM/Serial with 115200 bps.
-* sending `S` returns:
+* sending `S` (0x53) returns the 768 bytes of data stored in the Atmega EEPROM:
 <code>
 ç··x>·PE!Ô··ffÊ>‚ˇb?ˆ·°æÿ8\>é"îæ™¥Nø"···Bn·················································································································································································································································································································································································································································································································································································································································································±Ó√··)\7A····································Ù·ûWôC·GR15051501100055·
 </code>
 * it can be useful to look at the .NET source code of the M3D software using for example the 'JetBrains dotPeek' software.
 * "e1" is an error message meaning "Process parser returned not supported protocol."
+* send 'M115\r\n' (or other M codes) returns 'B004'.
+* looking at the sourcecode 'B001' and 'B5' are also possible return values.
+* looking at the source the Micro3D seems to have 2 modes: Bootloader-mode and Firmware-mode.
+* GetCRCFromChip: sending 'CA' returns 4 bytes (0x45 0x50 0x1A 0x3E) which is some kind of CRC check of the chip. These 4 bytes are parsed to an Integer: 1162877502
+* EraseChip: sending 'E' erases the EEPROM.
+* SetAddress: sending 'A' followed by two bytes sets some kind of address.
+* according to the sourcecode the printer uses the following microcontroller: ATxmega32C4
+* WriteFirmwareToFlash: When a firmware update is done by the M3D software multiple packets are send in the following form: 'B' + byte1 + byte2 + payload.
+* to check if the controller is in 'Bootloader' mode the software sends an 'M115\r\n'. If the result is 'B004' then it's in Bootloader mode otherwise it's in 'Firmware' or 'Application' mode.
+* sending 'Q' leaves the 'Bootloader' mode and goes into 'Firmware' or 'Application' mode.
+
+
