@@ -22,6 +22,7 @@ See [[qu-bd-one-up]]
 =====3D Printers=====
 * sharebot.it
 * Polar3D
+* ST3DI 3D PRINTER
 
 ===== 3D Scanning =====
 * structure.io
