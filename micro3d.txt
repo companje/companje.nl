@@ -5,6 +5,8 @@
 * http://wiki.micro3dfans.com/index.php?title=M3D_Software_-_The_official_Slicer
 * https://printm3d.com/portal/forum/index#/discussion/893/where-is-the-open-source-software-support/p1
 * https://printm3d.com/portal/forum/index#/discussion/893/where-is-the-open-source-software-support/p2
+* https://github.com/repetier/Repetier-Firmware/blob/master/repetier%20communication%20protocol.txt
+* https://github.com/repetier/Repetier-Host/blob/master/src/RepetierHost/model/GCode.cs
 * communicates over Virtual COM/Serial with 115200 bps.
 * collected info by using JetBrains dotPeek.
 * sending `S` (0x53) returns 768 bytes of data stored in the Atmega EEPROM:
