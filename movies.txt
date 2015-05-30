@@ -2,6 +2,9 @@
 
 =====TODO======
 
+==tip v gerard==
+* nanelle (zus van mozart)
+
 ==tips van sylvain==
 * wolf
 * simon
