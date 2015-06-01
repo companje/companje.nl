@@ -4,6 +4,7 @@
 img {
   width: 50vw;
   height: 50vh;
+  //object-fit: cover;
 }
 </code>
 ==web==
