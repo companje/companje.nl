@@ -1,2 +1,4 @@
-====== Scratch (and other educational visual programming tool) ======
+====== Scratch ======
+(and other educational visual programming tool)
+
 * http://ericrosenbaum.github.io/BeetleBlocks/beetleblocks.html
