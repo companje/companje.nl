@@ -6,6 +6,7 @@
 * [[https://www.youtube.com/watch?v=A2dozQqbcf8|WHIP - Web Enabled 3D Print Controller
 ]]
 * https://www.iprototype.nl/products/3d-printing/udelta-3d-printer
+* http://cannybots.com/
 
 ==gcode==
 see [[gcode]]
