@@ -1,5 +1,8 @@
 ====== node.js ======
 
+===== node-webkit =====
+* What is nw.js (previously node-webkit) ?
+
 ===== Node.js CMS: Keystone =====
 Mail van Peter: Hey Rick, Dat op Node.js CMS waar ik het over had was Keystone. http://keystonejs.com/
 Interessante slides: Moving from PHP to a nodejs full stack CMS https://s3.amazonaws.com/mnb_keystone/slidedecks/keystonejs.pdf
