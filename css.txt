@@ -1,5 +1,11 @@
 =====CSS=====
-
+==width/height of viewport==
+<code css>
+img {
+  width: 50vw;
+  height: 50vh;
+}
+</code>
 ==web==
 see [[web]]
 
