@@ -1,7 +1,7 @@
 ====== TODO: things to watch, read or listen ======
 
 =====todo=====
-* DONE: https://vimeo.com/110257380
+* DONE: [[https://vimeo.com/110257380|Coastermelt Part 1 from Micah Scot]]
 * [[http://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html|What Every Computer Scientist Should Know About Floating-Point Arithmetic]]
 * https://medium.com/javascript-scene/javascript-training-sucks-284b53666245
 * https://www.3dhubs.com/teleport
