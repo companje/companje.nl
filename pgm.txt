@@ -1,0 +1,5 @@
+====== PGM - Portable Gray Map======
+
+<code>
+(echo "P5 512 4096 255"; cat filename) > foo.pgm
+</code>
