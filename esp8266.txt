@@ -6,3 +6,14 @@
 * [[http://www.esp8266.com/|user forum]]
 * [[https://www.sparkfun.com/products/12009]] (of 3.3 voltage regulator van pc moederbord afsolderen bijv BA033)
 * http://www.esp8266.com/wiki/doku.php?id=getting-started-with-the-esp8266
+
+<code>
+>>AT\r\n
+<<OK
+</code>
+
+<code>
+>>AT+GMR
+<<00150900
+</code>
+
