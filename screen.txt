@@ -12,3 +12,8 @@ https://www.gnu.org/software/screen/manual/screen.html
 
 =====connect to hostmodule=====
   screen /dev/tty.usbserial
+  
+=====reset=====
+<code>
+reset
+</code>
