@@ -1,5 +1,13 @@
 ====== TODO: things to watch, read or listen ======
 
+=====peter=====
+Om een idee te krijgen van hoe hardware ontwikkeling bij andere kleine bedrijfjes / startups ging kan ik de volgende twee blogs aanraden:
+- https://pinocc.io/blog/
+- http://behind.airtame.com/
+Bijv: 
+- https://pinocc.io/blog/open-source-hardware/hardware-is-hard/
+- https://pinocc.io/blog/open-source-hardware-business/testing-before-shipping/
+- http://behind.airtame.com/post/100096574596/an-update-from-our-manufacturing-facility-whilst
 =====todo=====
 * https://vimeo.com/scanlime
 * DONE: [[https://vimeo.com/110257380|Coastermelt Part 1 from Micah Scot]]
