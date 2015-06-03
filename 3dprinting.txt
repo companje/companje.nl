@@ -1,5 +1,5 @@
 ====== 3D printing ======
-* https://www.youtube.com/watch?v=iViGKYLi-1c
+* [[https://www.youtube.com/watch?v=iViGKYLi-1c|Anyprint 3D Printing Innovation Education Training Center and Demonstration Base]]
 * https://github.com/nneves/3DPrinterInterface
 * https://github.com/whpthomas/GPX
 * [[http://www.reprap.org/wiki/List_of_Firmware|List of firmware]]
