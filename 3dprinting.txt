@@ -1,4 +1,5 @@
 ====== 3D printing ======
+* http://www.hobbyking.com/hobbyking/store/__76148__Turnigy_Fabrikator_3D_Printer_UK_Plug_.html
 * http://3dprint.com/70242/blueprinter-m3/
 * [[https://www.youtube.com/watch?v=iViGKYLi-1c|Anyprint 3D Printing Innovation Education Training Center and Demonstration Base]] / [[https://www.youtube.com/watch?v=iViGKYLi-1c|software]]
 * https://github.com/nneves/3DPrinterInterface
