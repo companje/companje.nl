@@ -1,5 +1,8 @@
 ======Mac OSX======
 
+=====SiteSucker=====
+recursive download van een website. http://www.sitesucker.us
+
 =====mv command=====
 by default it seems to replace a file.
   mv -n src dst  # Do not overwrite an existing file.
