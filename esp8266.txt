@@ -29,4 +29,10 @@ restart the module
 check SSID of connected network
   AT+CWJAP?
 
-  
+==send something to a UDP server running on your computer==
+- on your computer run a UDP server: `nc -lu 10.0.0.161 9999`
+- then connect to the UDP server and send 5 bytes:
+  AT+CIPSTART=4,"UDP","10.0.0.161",9999
+  AT+CIPSEND=4,5
+  > 12345
+  SEND OK
