@@ -44,6 +44,8 @@ get IP address
   AT+CIPSERVER=1,9999
   AT+CIFSR
   
+=====NodeMCU firmware=====
+
 ==Flashing==
 * GPIO0 needs to be connected to ground to flash the chip.
 * Download NodeMCU firmware from: https://github.com/nodemcu/nodemcu-firmware/releases
@@ -54,3 +56,8 @@ get IP address
 ==NodeMCU API documentation==
 * http://www.nodemcu.com/docs/
 * https://github.com/nodemcu/nodemcu-firmware/wiki/nodemcu_api_en
+
+  > =wifi.sta.getip()
+  10.0.0.209	255.255.255.0	10.0.0.1
+  > =wifi.ap.getip()
+  192.168.4.1	255.255.255.0	192.168.4.1
