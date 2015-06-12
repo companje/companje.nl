@@ -52,4 +52,5 @@ get IP address
 * download [[http://benlo.com/esp8266/LuaLoader.zip|LuaLoader]]
 
 ==NodeMCU API documentation==
+* http://www.nodemcu.com/docs/
 * https://github.com/nodemcu/nodemcu-firmware/wiki/nodemcu_api_en
