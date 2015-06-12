@@ -28,6 +28,8 @@ restart the module
   AT+RST
 check SSID of connected network
   AT+CWJAP?
+get IP address
+  AT+CIFSR
 
 ==send something to a UDP server running on your computer==
 - on your computer run a UDP server: `nc -lu 10.0.0.161 9999`
@@ -36,3 +38,8 @@ check SSID of connected network
   AT+CIPSEND=4,5
   > 12345
   SEND OK
+
+==setup a tcp server==
+  AT+CIPMUX=1
+  AT+CIPSERVER=1,9999
+  AT+CIFSR
