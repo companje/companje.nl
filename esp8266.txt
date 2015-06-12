@@ -9,12 +9,12 @@
 * http://www.esp8266.com/wiki/doku.php?id=getting-started-with-the-esp8266
 
 <code>
->>AT\r\n
-<<OK
+>> AT\r\n
+<< OK
 </code>
 
 <code>
->>AT+GMR
-<<00150900
+>> AT+GMR
+<< 00150900
 </code>
 
