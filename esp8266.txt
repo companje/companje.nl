@@ -46,5 +46,8 @@ get IP address
   
 ==Flashing==
 * GPIO0 needs to be connected to ground to flash the chip.
+* Download NodeMCU firmware from: https://github.com/nodemcu/nodemcu-firmware/releases
 * `sudo ./esptool.py --port /dev/tty.usbserial write_flash 0x00000 nodemcu.bin`
+* run examples from https://github.com/nodemcu/nodemcu-firmware
+* download [[http://benlo.com/esp8266/LuaLoader.zip|LuaLoader]]
 
