@@ -26,6 +26,7 @@ get the connection status
   AT+CIPSTATUS
 restart the module
   AT+RST
-check SSID and key of AP
-  AT+CWSAP?
+check SSID of connected network
+  AT+CWJAP?
+
   
