@@ -18,3 +18,7 @@
 << 00150900
 </code>
 
+Set Wifi mode to both Access Point and STAtion:
+  AT+CWMODE=3
+List Access Points:
+  AT+CWLAP
