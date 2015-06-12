@@ -1,0 +1,2 @@
+====== FTDI ======
+* alternatives: CH340G or CP2102
