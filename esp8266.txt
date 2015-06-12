@@ -43,3 +43,8 @@ get IP address
   AT+CIPMUX=1
   AT+CIPSERVER=1,9999
   AT+CIFSR
+  
+==Flashing==
+* GPIO0 needs to be connected to ground to flash the chip.
+* `sudo ./esptool.py --port /dev/tty.usbserial write_flash 0x00000 nodemcu.bin`
+
