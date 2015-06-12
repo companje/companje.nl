@@ -14,7 +14,7 @@
 </code>
 
 <code>
->> AT+GMR
+>> AT+GMR\r\n
 << 00150900
 </code>
 
