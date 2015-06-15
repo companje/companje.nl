@@ -1,5 +1,8 @@
 ====== Arduino / AVR ======
 
+=====Ethernet Shield v2=====
+* http://www.arduino.org/products/arduino-ethernet-shield-2
+
 =====Arduino game consoles=====
 * https://www.kickstarter.com/projects/903888394/arduboy-card-sized-gaming
 * http://gamebuino.com/shop/en/home/1-gamebuino-console.html
