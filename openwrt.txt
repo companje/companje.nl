@@ -47,6 +47,7 @@ mkfs.ext4 /dev/disk{...}
 * https://www.kickstarter.com/projects/onion/onion-omega-invention-platform-for-the-internet-of?ref=category
 * Ook interessant is die Node.js port van Tessel (http://tessel.io/). Ben benieuwd of we daarmee dingen zoals socket.io kunnen doen zonder USB stick. Same goes for Espruino (http://www.espruino.com), zie:
 https://forum.openwrt.org/viewtopic.php?pid=264395#p264395
+* http://sodaq.com/ (arduino based)
 
 ==packages==
 * http://downloads.openwrt.org/barrier_breaker/14.07/ar71xx/generic/packages/base/
