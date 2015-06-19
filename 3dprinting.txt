@@ -1,6 +1,7 @@
 
 
 ====== 3D printing ======
+* https://pinshape.com/ (thingiverse alternatief)
 * [[http://www.5-5designstudio.com/en/project/2015-print-your-duralex|addons voor Duralex drinkglazen]]
 * [[http://3dprint.com/71156/3d-support-material-and-processes-for-abs-printing/|betere support structuren]]
 * [[http://www.hobbyking.com/hobbyking/store/__76148__Turnigy_Fabrikator_3D_Printer_UK_Plug_.html
