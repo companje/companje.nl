@@ -2,6 +2,9 @@
 
 =====TODO======
 
+==tip van ramon==
+* Print the Legend 
+
 ==tips van peter==
 * kung fury
 
