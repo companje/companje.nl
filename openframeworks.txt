@@ -61,6 +61,13 @@ public:
 };
 </code>
 
+=====my fork of ofxTrueTypeFontUC=====
+- In 2014 I made a fork of ofxTrueTypeFontUC and added some functions to access the character meshes.
+- June 22th 2015: I can't get the original ofxTrueTypeFontUC to compile on of0084 (and some older versions) codeblocks 12.11: fatal error: codecvt: No such file or directory. More people seem to have a [[http://stackoverflow.com/questions/28516238/codeblocks-13-12-on-windows-not-recognizing-stdcodecvt-even-with-std-c11|similar problem]]. My 'old' fork of ofxTrueTypeFontUC works but is 15 commits behind at this moment.
+     
+     
+     
+
 =====Update: ofTrueTypeFont ISO-8859-15=====
 " In 1999, ISO needed to make the Euro currency symbol available. There were also a few other characters that were desired. So ISO created ISO-8859-15, which is identical to ISO-8859-1 except for 8 characters." source: http://www.i18nqa.com/debug/table-iso8859-1-vs-iso8859-15.html
 
