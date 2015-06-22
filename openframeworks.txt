@@ -89,6 +89,11 @@ file << "B" << endl;
 file.close();
 </code>
 
+=====read text file=====
+<code c>
+ofBufferFromFile("file.txt").getText()
+</code>
+
 =====gamuza=====
 * http://gamuza.d3cod3.org/
 
