@@ -91,7 +91,7 @@ file.close();
 
 =====read text file=====
 <code c>
-ofBufferFromFile("file.txt").getText()
+ofBufferFromFile("file.txt").getText();
 </code>
 
 =====gamuza=====
