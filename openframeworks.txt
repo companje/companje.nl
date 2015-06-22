@@ -1,5 +1,28 @@
 ====== openFrameworks ======
 
+=====main.cpp template=====
+<code c>
+#include "ofMain.h"
+
+class ofApp : public ofBaseApp {
+public:
+
+  void setup() {
+  }
+
+  void update() {
+  }
+
+  void draw() {
+  }
+};
+
+int main( ){
+  ofSetupOpenGL(1024,768,OF_WINDOW);
+  ofRunApp(new ofApp());
+}
+</code>
+
 =====tools and templates by Gene Kogan=====
 https://github.com/genekogan/OF-tools-and-templates
 =====mouse rotating globe with conversion from quaternions to latitude longitude=====
