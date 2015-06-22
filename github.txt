@@ -1,0 +1,7 @@
+====== Github ======
+
+=====github flavored markdown formatting=====
+* https://help.github.com/articles/github-flavored-markdown/
+
+==== tips ====
+* Updated in the last three days: updated:>2015-06-19.
