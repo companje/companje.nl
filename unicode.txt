@@ -1,6 +1,6 @@
 ====== Unicode ======
 
-see [[utf8]]
+see [[encoding]]
 
 ===== unicode character lookup =====
 * http://unicodelookup.com/
