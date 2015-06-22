@@ -1,4 +1,9 @@
 ====== Unicode ======
 
+see [[utf8]]
+
+===== unicode character lookup =====
+* http://unicodelookup.com/
+
 =====to enter unicode character on osx=====
 see [[osx]]
