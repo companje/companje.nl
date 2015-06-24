@@ -1,5 +1,10 @@
 ======Windows=======
 
+=====Windows 8 startup folder=====
+<code>
+shell:startup
+</code>
+
 =====See Windows boot history=====
 filter in ''eventvwr'' on event ID 12
 
