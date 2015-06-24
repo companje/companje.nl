@@ -82,7 +82,10 @@ shutdown -s -f -t 00
 <code>
 %AppData%\Microsoft\Windows\Start Menu\Programs\Startup
 </code>
-
+or
+<code>
+shell:startup
+</code>
 =====clear diskspace=====
 http://www.howtogeek.com/174705/how-to-reduce-the-size-of-your-winsxs-folder-on-windows-7-or-8/
 
