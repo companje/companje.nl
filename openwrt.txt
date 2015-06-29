@@ -1,5 +1,8 @@
 ====== OpenWrt ======
 
+==replace dropbear by openssh-server==
+http://wiki.openwrt.org/inbox/replacingdropbearbyopensshserver
+
 ==ubus==
 Accessing utilities like iwinfo through ubus might also be interesting, see: 
 http://wiki.openwrt.org/doc/techref/ubus#lua_module_for_ubus
