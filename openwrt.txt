@@ -1,5 +1,8 @@
 ====== OpenWrt ======
 
+==Multiple Access Points per radios (Multiple SSID's)==
+http://trac.gateworks.com/wiki/OpenWrt/wireless/access_point
+
 ==replace dropbear by openssh-server==
 http://wiki.openwrt.org/inbox/replacingdropbearbyopensshserver
 
