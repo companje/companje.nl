@@ -1,5 +1,13 @@
 ====== Linux ======
 
+===== read lines from file =====
+<code bash>
+#!/bin/bash
+while read url; do
+   #do something with $url
+done < file.txt
+</code>
+
 ===== add user======
 <code bash>
 useradd jsmith
