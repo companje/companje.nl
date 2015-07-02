@@ -1,5 +1,9 @@
 ====== OpenWrt ======
 
+==lua serial on openwrt==
+* http://lua-users.org/lists/lua-l/2013-03/msg00929.html
+
+
 ==veel handige info==
 * http://thebird.nl/hardware/OpenWRT_On_Netgear_WNDR3700.html
 * http://wiki.acemonstertoys.org/Tp-link_router
