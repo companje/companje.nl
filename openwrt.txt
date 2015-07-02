@@ -1,5 +1,20 @@
 ====== OpenWrt ======
 
+==USB-drive support on a Doodle3D WiFi-Box==
+* have the box join an existing WiFi network to get internet access
+* `opkg update`
+* `opkg install block-mount`
+* `opkg install kmod-usb-storage`
+Error: 
+ collected errors:
+ satisfy_dependencies_for: Cannot satisfy the following dependencies for kmod-usb-storage:
+ kernel (= 3.10.49-1-0114c71ed85677c9c1e4911437af4743) - kernel (= 3.10.49-1-0114c71ed85677c9c1e4911437af4743) 
+ opkg_install_cmd: Cannot install package kmod-usb-storage.
+
+Help?
+
+* https://kbu.freifunk.net/2015/04/Building-OpenWRT/
+
 ==mDNS, ZeroConf, Bonjour etc...==
 * http://wiki.openwrt.org/doc/howto/zeroconf
 * http://wiki.openwrt.org/doc/howto/sftp.server
