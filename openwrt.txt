@@ -51,7 +51,7 @@ diskutil list
 diskutil unmount /dev/disk#s#
 mkfs.ext4 /dev/disk#s#
 </code>
-... more to come ... I got stuck here in connecting to the USB drive
+follow more steps on https://www.loganmarchione.com/2014/10/openwrt-with-openvpn-client-on-tp-link-tl-mr3020/
 
 ==a5v11==
 * http://wiki.openwrt.org/toh/unbranded/a5-v11
