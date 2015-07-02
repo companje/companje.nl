@@ -11,7 +11,11 @@ Error:
  kernel (= 3.10.49-1-0114c71ed85677c9c1e4911437af4743) - kernel (= 3.10.49-1-0114c71ed85677c9c1e4911437af4743) 
  opkg_install_cmd: Cannot install package kmod-usb-storage.
 
-Help?
+This is because Doodle3D creates a custom firmware image. Because of this the kernel version/id is different. kmod-usb-storage needs the exact right kernel version.
+
+Solution:
+1) Install all the Doodle3D packages on a clean OpenWrt image.
+2) Add zkmod-usb-storagez by adding it to the kernel (in `make menuconfig`)
 
 * https://kbu.freifunk.net/2015/04/Building-OpenWRT/
 
