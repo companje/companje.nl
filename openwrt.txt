@@ -81,6 +81,7 @@ EOF
 * reboot the device.
 * type `mount` to see if your usb drive (`/dev/sda1`) is mounted to `/`
 * use `df -h` to see the large amount of space available now!
+* note that the contents of `/etc/config/fstab` is now different. This is normal because the contents of the file on the device is different then the one on the usb drive. The usb drive is installed 'on top of' the original filesystem. When booting the device without the usb drive you will get your original files.
 
 * Thanks to https://www.loganmarchione.com/2014/10/openwrt-with-openvpn-client-on-tp-link-tl-mr3020/
 
