@@ -1,5 +1,9 @@
 ====== OpenWrt ======
 
+==mDNS, ZeroConf, Bonjour etc...==
+* http://wiki.openwrt.org/doc/howto/zeroconf
+* http://wiki.openwrt.org/doc/howto/sftp.server
+
 ==Multiple Access Points per radios (Multiple SSID's)==
 http://trac.gateworks.com/wiki/OpenWrt/wireless/access_point
 
