@@ -56,7 +56,16 @@ diskutil unmount /dev/disk#s#
 mkfs.ext4 /dev/disk#s#
 </code>
 follow more steps on https://www.loganmarchione.com/2014/10/openwrt-with-openvpn-client-on-tp-link-tl-mr3020/
-
+* add this to `/etc/config/fstab`:
+<code>
+config mount
+        option target        /
+        option device        /dev/sda1
+        option fstype        ext4
+        option options       rw,sync
+        option enabled       1
+        option enabled_fsck  0
+</code>
 ==a5v11==
 * http://wiki.openwrt.org/toh/unbranded/a5-v11
 
