@@ -1,5 +1,8 @@
 ====== OpenWrt ======
 
+==veel handige info==
+* http://thebird.nl/hardware/OpenWRT_On_Netgear_WNDR3700.html
+
 ==USB-drive support on a Doodle3D WiFi-Box==
 * have the box join an existing WiFi network to get internet access
 * `opkg update`
