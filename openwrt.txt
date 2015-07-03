@@ -1,5 +1,8 @@
 ====== OpenWrt ======
 
+==luci2==
+* http://wiki.openwrt.org/doc/techref/luci2
+
 ==lua serial on openwrt==
 * http://lua-users.org/lists/lua-l/2013-03/msg00929.html
 
