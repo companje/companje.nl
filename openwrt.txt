@@ -1,6 +1,7 @@
 ====== OpenWrt ======
 
 ==buttons on the mr3020
+http://wiki.openwrt.org/doc/howto/hardware.button
 <code>
 opkg update
 opkg install kmod-button-hotplug --force-depends
