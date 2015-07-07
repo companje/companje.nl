@@ -10,7 +10,7 @@ create a file `/etc/hotplug.d/button/my-script` with your script:
 <code>
 #!/bin/sh
 sleep 1
-logger "log: $BUTTON -- $ACTION"
+logger "log: $BUTTON -- $ACTION  -- $SEEN"
 </code>
 
 ==luci2==
