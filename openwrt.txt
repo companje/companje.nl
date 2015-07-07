@@ -1,5 +1,18 @@
 ====== OpenWrt ======
 
+==buttons on the mr3020
+<code>
+opkg update
+opkg install kmod-button-hotplug --force-depends
+mkdir /etc/hotplug.d/button
+</code>
+create a file `/etc/hotplug.d/button/my-script` with your script:
+<code>
+#!/bin/sh
+sleep 1
+logger "log: $BUTTON -- $ACTION"
+</code>
+
 ==luci2==
 * http://wiki.openwrt.org/doc/techref/luci2
 
