@@ -683,7 +683,7 @@ wifi
 - take a fixed ip on your computer: 192.168.1.2 (mask: 255.255.255.0)
 - Power on device
 - Wait for blinking led
-- Press reset -> led flashes like crazy
+- Press reset -> led flashes like crazy (THIS MIGHT BE DIFFERENT ON BARRIER BREAKER: ACCORDING TO WIKI SLIDE SWITCH)
 - wait a minute
 - telnet 192.168.1.1
 - you're in.
