@@ -1,7 +1,7 @@
 ====== OpenWrt ======
 
 ==serial pins on the mr3020==
-{{::mr3020-serial-pins.jpg?direct&200|}}
+{{::mr3020-serial-pins.jpg?direct&450|}}
 
 ==buttons on the mr3020==
 http://wiki.openwrt.org/doc/howto/hardware.button
