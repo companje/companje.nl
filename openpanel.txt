@@ -11,7 +11,7 @@
   * `sudo lsof -i:4089`
   * `cat /etc/apache2/ports.conf`
   * `netstat -plan | grep :443`
-  * `sudo apache2ctl configtest`        #     Syntax OK
+  * `sudo apache2ctl configtest        #     Syntax OK`
   * `ps -e | grep apache`
   * `sudo iptables -L`
   * ??? tail -f /var
