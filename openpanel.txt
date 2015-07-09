@@ -87,4 +87,5 @@ http://documentation.openpanel.com/index.php/OpenPanel-CLI_Administration_Guide
 openpanel-cli
 configure email cult-lab.nl
 show address
+exit
 </code>
