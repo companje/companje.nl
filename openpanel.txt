@@ -81,11 +81,19 @@ position: initial !important;
   * set SSLCertificateFile and SSLCertificateKeyFile to resp. /etc/ssl/certs/certificate-companje-nl.pem and /etc/ssl/private/ssl-cert-companje-nl-rsa.key (Where RSA.key file is created with 'openssl rss -in encrypted-certificate.key > ssl-cert-companje-nl-rsa.key’. First download your certificates (in my case from TransIP after requesting it from Comodo.
   * sudo /etc/init.d/apache2 restart
 
-==== configure openpanel via openpanel-cli====
+==== configure openpanel email aliasses via openpanel-cli====
 http://documentation.openpanel.com/index.php/OpenPanel-CLI_Administration_Guide
 <code>
 openpanel-cli
+configure domain cult-lab.nl
 configure email cult-lab.nl
 show address
+configure alias info@cult-lab.nl
+show dest
+delete dest 2
+create dest address=EMAIL@DOMAIN.COM
+exit
+exit
+exit
 exit
 </code>
