@@ -4,7 +4,7 @@
 https://www.youtube.com/watch?v=iukBMY4apvI
 * http://voxel.js
 * http://curran.github.io/screencasts/jsModulesAndBuildTools/examples/viewer
-* browser-sync (webserver met ingebouwde watch)
+* browser-sync (webserver met ingebouwde watch die ook de browser refresht)
 
 ====rendering====
 * http://www.graphycalc.com/
