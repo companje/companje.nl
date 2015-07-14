@@ -2,6 +2,9 @@
 
 =====Javascript in 2015=====
 https://www.youtube.com/watch?v=iukBMY4apvI
+* http://voxel.js
+* http://curran.github.io/screencasts/jsModulesAndBuildTools/examples/viewer
+* browser-sync (webserver met ingebouwde watch)
 
 ====rendering====
 * http://www.graphycalc.com/
