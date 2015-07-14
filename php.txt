@@ -1,5 +1,9 @@
 ======PHP======
 
+=====composer=====
+  curl -sS https://getcomposer.org/installer | php
+  php composer.phar
+
 =====list images in folders as JSON=====
 <code php>
 <?php
