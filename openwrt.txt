@@ -1,5 +1,8 @@
 ====== OpenWrt ======
 
+==octoprint on OpenWrt==
+* http://csmatt.com/notes/?p=154
+
 ==serial pins on the mr3020==
 {{::mr3020-serial-pins.jpg?direct&450|}}
 
