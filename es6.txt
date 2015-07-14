@@ -1,1 +1,1 @@
-see [[javascript]]
+see [[js]]
