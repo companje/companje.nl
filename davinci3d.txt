@@ -43,4 +43,6 @@ public static int checksum(byte[] arr, int start, int len) {
   MCH_STATE:26
   LANG:0
 
+  > XYZ_@3D:4
+  < OFFLINE_OK
   
