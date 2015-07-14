@@ -5,7 +5,7 @@ https://www.youtube.com/watch?v=iukBMY4apvI
 * http://voxel.js
 * [[http://curran.github.io/screencasts/jsModulesAndBuildTools/examples/viewer|voorbeelden van formats en tools]]
 * browser-sync (webserver met ingebouwde watch die ook de browser refresht)
-* serve (simpelere webserver)
+* `sudo npm install -g serve` (simpelere webserver)
 * `jspm init`
 * atom
 * `jspm install npm:voxel-demo`
