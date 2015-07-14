@@ -2,7 +2,7 @@
 
 =====composer=====
   curl -sS https://getcomposer.org/installer | php
-  php composer.phar
+  php composer.phar install
 
 =====list images in folders as JSON=====
 <code php>
