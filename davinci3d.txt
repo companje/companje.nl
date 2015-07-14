@@ -18,3 +18,15 @@ public static int checksum(byte[] arr, int start, int len) {
   return num;
 }
 </code>
+
+=====Serial communication on 115200=====
+  > XYZ_@3D:
+  < XYZ_@3D:start
+  MDU:dvF100A000
+  FW_V:1.0.1
+  MCH_ID:3F10APEU4TH4AN0085
+  PROTOCOL:2
+
+  > XYZ_@3D:6
+  < EE1:5a,41,5a0000,344241,120000,115003,210,90,5448,4742,30323237,52
+
