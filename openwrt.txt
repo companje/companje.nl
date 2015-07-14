@@ -1,5 +1,8 @@
 ====== OpenWrt ======
 
+==get list of installed packages==
+  echo $(opkg list_installed | awk '{ print $1 }')
+
 ==image generator==
 * http://wiki.openwrt.org/doc/howto/obtain.firmware.generate
 
