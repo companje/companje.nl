@@ -1,2 +1,1 @@
-====== EcmaScript 6 ======
-* https://github.com/google/traceur-compiler/wiki/LanguageFeatures
+see [[javascript]]
