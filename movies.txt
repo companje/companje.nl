@@ -2,6 +2,9 @@
 
 =====TODO======
 
+==tip van Arne==
+* citizen4
+
 ==tip van ramon==
 * Print the Legend 
 
