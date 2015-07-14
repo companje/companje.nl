@@ -30,3 +30,17 @@ public static int checksum(byte[] arr, int start, int len) {
   > XYZ_@3D:6
   < EE1:5a,41,5a0000,344241,120000,115003,210,90,5448,4742,30323237,52
 
+  > XYZ_@3D:5
+  < MCHLIFE:305
+  MCHEXDUR_LIFE:117
+  
+  > XYZ_@3D:8
+  < WORK_PARSENT:0
+  WORK_TIME:0
+  EST_TIME:0
+  ET0:31
+  BT:27
+  MCH_STATE:26
+  LANG:0
+
+  
