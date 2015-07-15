@@ -3,7 +3,7 @@
 ==Build dependency: Please install the openssl library (with development headers)==
 (in doodle3d buildroot with ubuntu when trying to `make menuconfig` after deleting Barrier Breaker trunk and cloning 15.05 Chaos Calmer)
   sudo apt-get update
-  sudo apt-get install openssl-dev
+  sudo apt-get install libssl-dev
 
 ==get list of installed packages==
   echo $(opkg list_installed | awk '{ print $1 }')
