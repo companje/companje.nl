@@ -13,8 +13,10 @@ http://buildroot.uclibc.org/ is een losstaand project
 
 ==openwrt sdk==
 * http://wiki.openwrt.org/doc/howto/obtain.firmware.sdk
-  ./scripts/feeds update
-  ./scripts/feeds install -a
+<code>
+./scripts/feeds update
+./scripts/feeds install -a
+</code>
 
 ==image generator / imagebuilder==
 * http://wiki.openwrt.org/doc/howto/obtain.firmware.generate
