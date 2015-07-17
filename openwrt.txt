@@ -10,7 +10,7 @@
 * http://wiki.openwrt.org/zh-cn/doc/techref/ubus
 * `ubus list`
 * `ubus -v list network.interface.lan`
-* `ubus -S call iwinfo scan '{"device":"wlan0"}'`
+* `ubus call iwinfo scan '{"device":"wlan0"}'`
 
 ==buildroot==
 http://buildroot.uclibc.org/ is een losstaand project
