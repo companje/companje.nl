@@ -1,5 +1,10 @@
 ====== OpenWrt ======
 
+==ubus over http==
+* uhttpd-mod-ubus
+* /usr/share/rpcd/acl.d
+* /etc/init.d/rpcd restart
+
 ==buildroot==
 http://buildroot.uclibc.org/ is een losstaand project
 
