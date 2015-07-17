@@ -11,7 +11,12 @@ http://buildroot.uclibc.org/ is een losstaand project
 ==get list of installed packages==
   echo $(opkg list_installed | awk '{ print $1 }')
 
-==image generator==
+==openwrt sdk==
+* http://wiki.openwrt.org/doc/howto/obtain.firmware.sdk
+  ./scripts/feeds update
+  ./scripts/feeds install -a
+
+==image generator / imagebuilder==
 * http://wiki.openwrt.org/doc/howto/obtain.firmware.generate
 
 ==octoprint on OpenWrt==
