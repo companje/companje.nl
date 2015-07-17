@@ -1,5 +1,8 @@
 ====== OpenWrt ======
 
+==jsonfilter!!!==
+uitproberen!
+
 ==ubus over http==
 * `uhttpd-mod-ubus`
 * `/usr/share/rpcd/acl.d`
