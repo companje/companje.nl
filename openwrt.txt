@@ -1,5 +1,8 @@
 ====== OpenWrt ======
 
+==buildroot==
+http://buildroot.uclibc.org/ is een losstaand project
+
 ==Build dependency: Please install the openssl library (with development headers)==
 (in doodle3d buildroot with ubuntu when trying to `make menuconfig` after deleting Barrier Breaker trunk and cloning 15.05 Chaos Calmer)
   sudo apt-get update
