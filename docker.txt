@@ -1,5 +1,9 @@
 ====== Docker ======
 
+  docker ps -a
+  docker ps -a -s
+
+
 * http://doodle3d.com/help/docker
 * http://www.doodle3d.com/help/build-environment-docker
 
