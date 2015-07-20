@@ -1,5 +1,8 @@
 ======iOS======
 
+=====maggap - make iOS apps=====
+* https://github.com/MacGapProject/MacGap1
+
 =====warning 'Implicit declaration of function'=====
 This was caused by a missing import statement in my fork of org.apache.cordova.wifiinfo. See [[https://github.com/companje/org.apache.cordova.wifiinfo/commit/e416e337e674336013248b0ac493362d23660a36|github]]
 
