@@ -4,6 +4,12 @@
 * nico: http://techcrunch.com/2015/07/19/exposing-every-student-to-stem/
 * peter: https://youtu.be/RvFcWXrSlHE)
 
+=====peter: paper prototyping=====
+* Voorbeeld sessie: https://www.youtube.com/watch?v=9wQkLthhHKA (met kind) (7 min)
+* Korte lezing over prototyping https://www.youtube.com/watch?v=lgEm67KLIIM (tip: zet speed iets hoger)
+* Een filmpje met highlights van een test: https://youtu.be/kAWRLEtNBvI
+* Kort filmpje over paper prototyping: https://www.youtube.com/watch?v=JC9B0gIhcrQ
+
 =====lezen=====
 * http://techcrunch.com/2015/07/05/the-netherlands-a-look-at-the-worlds-high-tech-startup-capital/
 
