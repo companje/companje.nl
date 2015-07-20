@@ -1,6 +1,6 @@
 ====== OpenWrt ======
 
-==AP+STA tegelijk (Gargoyl)==
+==AP+STA tegelijk (Gargoyle)==
 ...
 
 ==jsonfilter!!!==
