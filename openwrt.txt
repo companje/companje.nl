@@ -1,5 +1,14 @@
 ====== OpenWrt ======
 
+==uci defaults==
+create `/etc/uci-defaults/my-uci-defaults`. It will be executed once when the router boots. When it exits with 0 the file will be deleted.
+<code>
+#!/bin/sh
+uci set network.lan.ipaddr=192.168.5.1
+uci commit network
+exit 0
+</code>
+
 ==AP+STA tegelijk (Gargoyle)==
 ...
 
