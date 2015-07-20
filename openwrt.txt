@@ -10,7 +10,7 @@ exit 0
 </code>
 
 ==AP+STA tegelijk==
-* [[https://www.gargoyle-router.com/gargoyle/projects/gargoyle/repository/revisions/master/entry/patches-generic/04-arpnat.patch|Gargoyle patch]
+* [[https://www.gargoyle-router.com/gargoyle/projects/gargoyle/repository/revisions/master/entry/patches-generic/04-arpnat.patch|Gargoyle patch]]
 
 ==jsonfilter!!!==
 uitproberen!
