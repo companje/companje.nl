@@ -1,5 +1,8 @@
 ====== TODO: things to watch, read or listen ======
 
+=====kijken=====
+* http://blog.loomio.org/2015/07/07/design-for-developers/ (filmpje: https://youtu.be/RvFcWXrSlHE)
+
 =====lezen=====
 * http://techcrunch.com/2015/07/05/the-netherlands-a-look-at-the-worlds-high-tech-startup-capital/
 
