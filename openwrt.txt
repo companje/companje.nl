@@ -62,6 +62,8 @@ uitproberen!
 * `curl -d '{ "jsonrpc": "2.0", "id": 1, "method": "call", "params": [ "00000000000000000000000000000000", "network.interface.lan", "status", { } ] }'  http://wifibox/ubus`
 
 ==ubus==
+* how to join a network with ubus?
+* how to open een AP with ubus?
 * http://wiki.openwrt.org/zh-cn/doc/techref/ubus
 * `ubus list`
 * `ubus -v list network.interface.lan`
