@@ -1,5 +1,8 @@
 ====== OpenWrt ======
 
+==openwrt mirror op github==
+* https://github.com/openwrt-mirror/openwrt/
+
 ==setup wireless AccessPoint & connect as a station to an existing WiFi network (simultaneously)==
 <code>
 # remove default OpenWrt AccessPoint
@@ -62,7 +65,8 @@ uitproberen!
 * `ubus list`
 * `ubus -v list network.interface.lan`
 * `ubus call iwinfo scan '{"device":"wlan0"}'`
-
+* `ubus call network.interface.lan up`
+* `ubus call network.interface.wan up`
 ==buildroot==
 http://buildroot.uclibc.org/ is een losstaand project
 
