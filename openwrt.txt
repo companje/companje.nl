@@ -37,8 +37,8 @@ uci commit
 </code>
 
 ==restore from rom==
-  mtd -r erase rootfs_data
-  better solution: `firstboot`
+`mtd -r erase rootfs_data`
+better solution: `firstboot`
 
 ==uci defaults==
 create `/etc/uci-defaults/my-uci-defaults`. It will be executed once when the router boots. When it exits with 0 the file will be deleted.
