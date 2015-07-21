@@ -1,5 +1,38 @@
 ====== OpenWrt ======
 
+==setup wireless AccessPoint & connect as a station to an existing WiFi network (simultaneously)==
+<code>
+# remove default OpenWrt AccessPoint
+uci delete wireless.@wifi-device[0].disabled
+uci delete wireless.@wifi-iface[0]
+
+# Wireless AccessPoint
+uci set wireless.ap=wifi-iface
+uci set wireless.ap.device=radio0
+uci set wireless.ap.network=lan
+uci set wireless.ap.mode=ap
+uci set wireless.ap.encryption=none
+uci set wireless.ap.ssid=Doodle3D
+
+# Wireless Station
+uci set wireless.sta=wifi-iface
+uci set wireless.sta.network=wan
+uci set wireless.sta.mode=sta
+uci set wireless.sta.ssid=Baksteen
+uci set wireless.sta.key=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+uci set wireless.sta.encryption=psk2
+uci set wireless.sta.device=radio0
+
+# Setup network interface ‘lan’ to be used by Wireless AccessPoint
+uci delete network.lan.ifname
+uci set network.wan=interface
+uci set network.wan.proto=dhcp
+uci set network.lan.ipaddr=192.168.10.1
+
+# Save settings
+uci commit
+</code>
+
 ==restore from rom==
   mtd -r erase rootfs_data
 
