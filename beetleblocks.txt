@@ -1,0 +1,5 @@
+====== Beetle Blocks ======
+* http://beetleblocks.com/
+* [[https://twitter.com/search?f=tweets&vertical=default&q=%23beetleblocks&src=typd|tweets about Beetle Blocks]]
+* [[http://tinkering.exploratorium.edu/tags/beetleblocks|blog posts by Exploratorium about Beetle Blocks]]
+* [[http://joshburker.blogspot.nl/2015/05/programming-organic-shapes-in-beetle.html|example generate shells]]
