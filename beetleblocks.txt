@@ -6,4 +6,4 @@
 * [[http://web.media.mit.edu/~ericr/|Eric Rosenbaum's page]]
 
 questions:
-* what does 'Warp' do
+* what does 'Warp' do?
