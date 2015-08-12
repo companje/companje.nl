@@ -3,6 +3,9 @@
 =====Babel playground=====
 * https://babeljs.io/repl/
 
+=====blogpost React on ES6 plus=====
+http://babeljs.io/blog/2015/06/07/react-on-es6-plus/
+
 =====Javascript in 2015=====
 https://www.youtube.com/watch?v=iukBMY4apvI
 * http://voxel.js
