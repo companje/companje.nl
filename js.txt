@@ -1,5 +1,8 @@
 =============== Javascript notes ===============
 
+=====Babel playground=====
+* https://babeljs.io/repl/
+
 =====Javascript in 2015=====
 https://www.youtube.com/watch?v=iukBMY4apvI
 * http://voxel.js
