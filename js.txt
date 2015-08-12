@@ -1,5 +1,8 @@
 =============== Javascript notes ===============
 
+=====React.js=====
+see [[reactjs]]
+
 =====Peter's presentation======
 * [[https://docs.google.com/presentation/d/1AqDrZH5RyiYpTeoCbevKUHNh_YaPX05vOjLBL8FFv8E/edit#slide=id.p|Peter's presentation]]
 
