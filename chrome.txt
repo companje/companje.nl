@@ -1,4 +1,6 @@
 ====== Chrome ======
+
+=====Store as global variable in Console=====
 {{::screen_shot_2015-08-12_at_19.58.17.png?500|}}
 
 * [[https://chrome.google.com/webstore/detail/chrome-dev-editor-develop/pnoffddplpippgcfjdhbmhkofpnaalpg/|Chrome Dev Editor]]
