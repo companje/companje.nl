@@ -316,8 +316,7 @@ header("Access-Control-Allow-Origin: *");
 * http://raphaeljs.com/
 * paperjs
 
-=====classes=====
-Mochten jullie nog opzoek zijn naar manieren om een soort classes te maken in javascript, ik heb wat onderzoek gedaan:
+=====classes (the old way)=====
 http://doodle3d.com/help/simple-class-pattern
 En de pagina's in het algemeen onder:
 http://doodle3d.com/help/javascript
