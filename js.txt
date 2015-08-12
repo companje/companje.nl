@@ -1,7 +1,7 @@
 =============== Javascript notes ===============
 
 =====Peter's presentation======
-* https://docs.google.com/presentation/d/1AqDrZH5RyiYpTeoCbevKUHNh_YaPX05vOjLBL8FFv8E/edit#slide=id.p
+* [[https://docs.google.com/presentation/d/1AqDrZH5RyiYpTeoCbevKUHNh_YaPX05vOjLBL8FFv8E/edit#slide=id.p|Peter's presentation]]
 
 =====Babel playground=====
 https://babeljs.io/repl/
