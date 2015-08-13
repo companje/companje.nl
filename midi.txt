@@ -1,2 +1,2 @@
 ====== Midi ======
-- [[http://www.m-audio.com/support/download/drivers/midi-usb-driver-v3.5.3-mac1|David's M-AUDIO USB MIDIsport 2x2 (driver)]]
+* [[http://www.m-audio.com/support/download/drivers/midi-usb-driver-v3.5.3-mac1|David's M-AUDIO USB MIDIsport 2x2 (driver)]]
