@@ -1,6 +1,6 @@
 ====== Phonegap ======
 
-=====maggap - make iOS apps=====
+=====macgap - make iOS apps=====
 * https://github.com/MacGapProject/MacGap1
 
 =====crosswalk=====
