@@ -1,0 +1,2 @@
+====== Altair ======
+- [[http://altairclone.com/downloads/manuals/8080%20Programmers%20Manual.pdf|8080 Programmers Manual]]
