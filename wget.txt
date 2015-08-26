@@ -1,5 +1,8 @@
 ====== wget ======
 
+==wildcards==
+  wget http://site.com/c={a..z}
+
 ==don't download if file exists==
   wget -nc   # or --no-clobber: skip downloads that would download to existing files.
 
