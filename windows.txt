@@ -1,5 +1,8 @@
 ======Windows=======
 
+=====kill not responding windows====
+  taskkill /f /fi "status eq not responding"
+
 =====Windows 8 startup folder=====
 <code>
 shell:startup
