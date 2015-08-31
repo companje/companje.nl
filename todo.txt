@@ -2,7 +2,8 @@
 
 =====kijken / lezen=====
 * peter: https://youtu.be/RvFcWXrSlHE)
-* peter: https://medium.com/javascript-scene/how-to-build-a-high-velocity-development-team-4b2360d34021
+* peter: [[https://medium.com/javascript-scene/how-to-build-a-high-velocity-development-team-4b2360d34021|How to Build a High Velocity Development Team — JavaScript Scene
+]]
 
 =====peter: paper prototyping=====
 * Voorbeeld sessie: https://www.youtube.com/watch?v=9wQkLthhHKA (met kind) (7 min)
