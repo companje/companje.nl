@@ -1,3 +1,3 @@
 ====== Altair ======
-- [[http://altairclone.com/downloads/manuals/8080%20Programmers%20Manual.pdf|8080 Programmers Manual]]
-- [[https://www.youtube.com/watch?v=FKNayPnZT54|loading basic from papertape using a teletype]]
+* [[http://altairclone.com/downloads/manuals/8080%20Programmers%20Manual.pdf|8080 Programmers Manual]]
+* [[https://www.youtube.com/watch?v=FKNayPnZT54|loading basic from papertape using a teletype]]
