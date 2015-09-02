@@ -28,6 +28,11 @@ enable Apache's headers module:
 
 =====Access-Control-Allow-Origin=====
 http://enable-cors.org/server_apache.html
+or put this header in your php script:
+<code php>
+header('Access-Control-Allow-Origin: *');  
+</code>
+
 
 =====show php errors=====
 <code apache>
