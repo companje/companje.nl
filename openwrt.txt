@@ -1,5 +1,8 @@
 ====== OpenWrt ======
 
+==documentation for 'iw'==
+https://wireless.wiki.kernel.org/en/users/Documentation/iw
+
 ==change ip temporary==
   ifconfig eth0 192.168.5.1
 
