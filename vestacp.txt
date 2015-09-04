@@ -2,6 +2,8 @@
 http://vestacp.com/
 
 ==Install==
+<code bash>
 ssh root@your.server
 curl -O http://vestacp.com/pub/vst-install.sh
 bash vst-install.sh
+</code>
