@@ -1,4 +1,4 @@
-==Vesta Control Panel==
+======Vesta Control Panel======
 http://vestacp.com/
 
 ==Install==
