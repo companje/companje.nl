@@ -1,7 +1,5 @@
 ====== CentOS ======
 
-see [[adminpanels]]
-
 ==Opvragen CentOS versie==
 <code bash>
 cat /etc/*elease*
