@@ -1,5 +1,9 @@
 ====== OpenWrt ======
 
+==hostapd==
+/lib/netifd
+/var/run
+
 ==documentation for 'iw'==
 https://wireless.wiki.kernel.org/en/users/Documentation/iw
 
