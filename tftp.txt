@@ -1,3 +1,6 @@
 ====== tftp ======
 
-...
+  sudo port install tftp-hpa
+
+== ingebouwde tftp server gebruiken op Mac ==
+http://www.appletips.nl/tftp-deamon-activeren-onder-os-x/
