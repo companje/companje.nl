@@ -1,3 +1,6 @@
 ====== Sandstorm.io ======
 
-https://sandstorm.io/install/
+https://sandstorm.io
+
+==Install==
+  curl https://install.sandstorm.io | bash
