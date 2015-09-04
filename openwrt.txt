@@ -1,5 +1,8 @@
 ====== OpenWrt ======
 
+==change ip temporary==
+  ifconfig eth0 192.168.5.1
+
 ==failsafe tftp==
 * on OSX start TFTP server: http://www.appletips.nl/tftp-deamon-activeren-onder-os-x/
 * put openwrt factory firmware in your tftp folder
