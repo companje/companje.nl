@@ -5,4 +5,4 @@
 * http://sentora.org/
 * http://www.froxlor.org/
 * http://www.ispconfig.org/page/home.html
-* http://vestacp.com/
+* [[Vesta Control Panel]] (http://vestacp.com/)
