@@ -2,6 +2,7 @@
 
 ==failsafe tftp==
 * on OSX start TFTP server: http://www.appletips.nl/tftp-deamon-activeren-onder-os-x/
+* put openwrt factory firmware in your tftp folder
 * Then follow the steps for the MR3020: http://wiki.openwrt.org/toh/tp-link/tl-mr3020
 
 ==nexx3020==
