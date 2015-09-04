@@ -1,5 +1,8 @@
 ====== CentOS ======
 
+==Admin panels==
+see [[adminpanels]]
+
 ==Opvragen CentOS versie==
 <code bash>
 cat /etc/*elease*
@@ -19,3 +22,7 @@ Comment the following line:
 <code>
 SendEnv LANG LC_*
 </code>
+
+==remove Apache from CentOS==
+  sudo yum erase httpd httpd-tools apr apr-util
+  
