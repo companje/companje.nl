@@ -1,5 +1,11 @@
 ====== OpenWrt ======
 
+==failsafe tftp==
+* on OSX start TFTP server: http://www.appletips.nl/tftp-deamon-activeren-onder-os-x/
+* Then follow the steps for the MR3020: http://wiki.openwrt.org/toh/tp-link/tl-mr3020
+
+==nexx3020==
+* http://wiki.openwrt.org/toh/nexx/wt3020
 ==wifi status==
   wifi status
   
