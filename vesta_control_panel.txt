@@ -1,0 +1,7 @@
+====== Vesta Control Panel ======
+http://vestacp.com/
+
+==Install==
+ssh root@your.server
+curl -O http://vestacp.com/pub/vst-install.sh
+bash vst-install.sh
