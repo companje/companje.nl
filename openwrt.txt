@@ -1,5 +1,8 @@
 ====== OpenWrt ======
 
+==netwerk status==
+  cat /var/state/network
+
 ==openwrt mirror op github==
 * https://github.com/openwrt-mirror/openwrt/
 
