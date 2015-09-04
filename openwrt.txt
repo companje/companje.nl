@@ -1,5 +1,8 @@
 ====== OpenWrt ======
 
+==wifi status==
+  wifi status
+  
 ==netwerk status==
   cat /var/state/network
 
