@@ -1,6 +1,5 @@
 ====== CentOS ======
 
-==Admin panels==
 see [[adminpanels]]
 
 ==Opvragen CentOS versie==
