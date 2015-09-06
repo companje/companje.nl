@@ -52,3 +52,6 @@ A> debug test.com
 -w
 -q
 </code>
+
+==asm.com==
+* http://www.datapackrat.com/86dos/index.shtml
