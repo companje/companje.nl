@@ -36,3 +36,16 @@ The following Basic program can be used to select Driva A or B, select side 0 or
 
 ==wordstar manual==
 http://www.textfiles.com/bitsavers/pdf/microPro/Wordstar_3.3/Wordstar_3.3_Reference_Manual_1983.pdf
+
+==debug.com==
+* fill memory with 0's: `e 0 ffff 0`
+* `rcx` sets cx register. This register is used in debug.com to store the amount of bytes to write to the loaded (or newly created file).
+<code>
+debug test.com
+e 100
+B8 space 00 space 4C space CD space 21 enter
+u
+:0100 B8004C    MOV    AX,4C00
+:0103 CD21      INT    21
+w
+</code>
