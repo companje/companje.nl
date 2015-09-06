@@ -55,3 +55,6 @@ A> debug test.com
 
 ==asm.com==
 * http://www.datapackrat.com/86dos/index.shtml
+
+==technical info==
+* http://www.seasip.info/VintagePC/sanyo.html
