@@ -1,3 +1,6 @@
 ====== QMedia TV ======
 
 * USB lijkt alleen 'oude' MPG te ondersteunen.
+
+beeld is hierbij goed, maar geluid nog niet:
+  ffmpeg -i input.file -c:v mpeg2video -q:v 3 -c:a ac3 -b:a 150k output.vob
