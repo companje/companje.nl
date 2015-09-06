@@ -48,4 +48,5 @@ u
 :0100 B8004C    MOV    AX,4C00
 :0103 CD21      INT    21
 w
+q
 </code>
