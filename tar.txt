@@ -1,0 +1,14 @@
+====== TAR ======
+
+==tar without compression==
+<code>tar cf backup.tar folder</code>
+
+==to tar a folder (with all subfolders and files):==
+<code>tar czf backup.tgz thefolder</code>
+
+==to untar a file==
+<code>tar xvzf file.tar.gz</code>
+
+==untar to current folder (removing first component of path in archive)==
+removes 'wordpress/' from path
+<code>tar xvzf latest.tar.gz --strip-components=1</code>
