@@ -1,7 +1,7 @@
 =============== Javascript notes ===============
 
 =====Printable bulletlist=====
-<code html>
+<code javascript>
 <div id="data">
 # Section 1
 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
