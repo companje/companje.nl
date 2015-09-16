@@ -1,5 +1,90 @@
 =============== Javascript notes ===============
 
+=====Printable bulletlist=====
+<code>
+<div id="data">
+# Section 1
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+- Nam eu ligula eu felis placerat consectetur quis eu arcu. 
+- Duis tempus ex nec bibendum consequat. Suspendisse at mi ut mi mattis mollis in a leo.
+
+# Section 2
+-  In mollis est nec tempor scelerisque. 
+- Nulla augue velit, commodo in feugiat et, suscipit vitae nisi. Quisque augue justo.
+- tincidunt quis mattis sit amet, tincidunt et felis.
+</div>
+
+<style>
+  div#data {
+    display: none;
+  }
+  table {
+    border: 1px solid black;
+    width: 100%;
+    width: 800px;
+    page-break-inside:avoid;
+  }
+  td,th {
+    text-align: left;
+    font-family: Abel;
+    border: 1px solid black;
+  }
+  h2 {
+    font-family: 'Arial Black';
+    font-size: 30px;
+  }
+  th {
+    font-size: 30px;
+    padding: 10px 10px 10px 10px;
+  }
+  table {
+    margin-bottom: 30px;
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+  td.section {
+    font-size: 24px;
+    font-family: 'Arial Black';
+  }
+  td {
+    width: 25%;
+    padding: 10px 10px 10px 10px;
+  }
+  @media print {
+    div.section {page-break-after: always;}
+  }
+  .color0 { background-color: #fdf; }
+  .color1 { background-color: #dff; }
+  .color2 { background-color: #fdd; }
+  .color3 { background-color: #dfd; }
+  .color4 { background-color: #ddf; }
+  .color5 { background-color: #ffd; }
+  .color6 { background-color: #fcc; }
+  .color7 { background-color: #cff; }
+  }
+</style>
+
+<script type="text/javascript">
+  var sections = [];
+  var lines = data.innerHTML.split('\n');
+  for (var i in lines) {
+    if (lines[i].charAt(0)=='#') sections.push({title:lines[i].substr(2),items:[]});
+    if (lines[i].charAt(0)=='-') sections[sections.length-1].items.push(lines[i].substr(2));
+  }
+
+  for (var i in sections) {
+    var section = sections[i];
+    document.write('<div class="section color'+i+'">');
+    document.write('<h2>'+section.title+'</h2>');
+    for (var j in section.items) {
+      var item = section.items[j].trim();
+      document.write('<table><tr><th colspan=4>'+item+'</th></tr><td class="section">'+section.title+'</td><td>Prioriteit:</td><td>Tijd:</td><td>Sprint #</td><//tr></table>');
+    }
+    document.write('</div>');
+  }
+
+</script>
+</code>
 =====React.js=====
 see [[reactjs]]
 
