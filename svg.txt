@@ -1,5 +1,32 @@
 ====== SVG ======
 
+Algemeen:
+http://www.webdesignerdepot.com/2015/01/the-ultimate-guide-to-svg/
+http://tympanus.net/codrops/2013/11/27/svg-icons-ftw/
+
+Animation
+https://css-tricks.com/svg-shape-morphing-works/
+https://css-tricks.com/guide-svg-animations-smil/
+http://tutorials.jenkov.com/svg/svg-animation.html
+
+http://slides.com/sarasoueidan/styling-animating-svgs-with-css--2
+
+Buttons
+http://metafizzy.co/blog/making-svg-buttons/
+http://tavmjong.free.fr/blog/?p=36
+
+Responsive icons
+http://designmodo.com/responsive-icons/
+
+Exporting a SVG file from Illustrator
+fontastic.me/faq
+http://www.adobe.com/inspire/2013/09/exporting-svg-illustrator.html
+Export multiple script: http://blog.iconfinder.com/how-to-export-multiple-layers-to-svg-files-in-adobe-illustrator/
+
+SVG's als CSS background-image:
+http://caniuse.com/#feat=svg-css
+http://www.smashingmagazine.com/2012/01/resolution-independence-with-svg/ (edited)
+
 =====Elastic SVG elements====
 * http://tympanus.net/Development/ElasticSVGElements/button.html
 
