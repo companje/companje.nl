@@ -1,5 +1,4 @@
 
-
 ====== 3D printing ======
 * https://pinshape.com/ (thingiverse alternatief)
 * [[http://www.5-5designstudio.com/en/project/2015-print-your-duralex|addons voor Duralex drinkglazen]]
@@ -15,6 +14,10 @@
 ]]
 * https://www.iprototype.nl/products/3d-printing/udelta-3d-printer
 * http://cannybots.com/
+
+===== filament =====
+* http://www.plasticz.nl/
+* http://colorfabb.com
 
 ==gcode==
 see [[gcode]]
@@ -42,4 +45,3 @@ See [[qu-bd-one-up]]
 
 ===== Review Print Platforms =====
 * http://www.3dpxp.com/test-verschillende-3d-printplatforms-met-elkaar-vergeleken/
-
