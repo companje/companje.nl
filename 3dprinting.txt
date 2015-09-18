@@ -15,7 +15,7 @@
 * https://www.iprototype.nl/products/3d-printing/udelta-3d-printer
 * http://cannybots.com/
 
-===== filament =====
+== filament ==
 * http://www.plasticz.nl/
 * http://colorfabb.com
 
