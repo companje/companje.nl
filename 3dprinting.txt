@@ -18,6 +18,7 @@
 == filament ==
 * http://www.plasticz.nl/
 * http://colorfabb.com
+* http://www.3d4makers.com/
 
 ==gcode==
 see [[gcode]]
