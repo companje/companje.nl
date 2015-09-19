@@ -1,6 +1,4 @@
 ======esp8266======
-* [[http://www.banggood.com/NodeMcu-Lua-ESP-12E-WIFI-Development-Board-p-985891.html|esp8266 development board on banggood.com]]
-  * When turning on, this board will create a wifi network (doitWifi). The password is 12345678 You can very easily upload your own LUA scripts with [[https://github.com/4refr0nt/ESPlorer|ESPlorer]].
 * [[http://www.electrodragon.com/w/Wi07c|ElectroDragon ESP8266 Wiki]]
 * [[http://zeflo.com/2014/esp8266-weather-display/|Zeflo's Arduino code + wiring example]]
 * [[https://nurdspace.nl/ESP8266|NURDspace on ESP8266]]
@@ -63,3 +61,8 @@ get IP address
   10.0.0.209	255.255.255.0	10.0.0.1
   > =wifi.ap.getip()
   192.168.4.1	255.255.255.0	192.168.4.1
+
+==NodeMCU Lua ESP8266 ESP-12E WiFi Development Board==
+* http://www.bitsandparts.eu/NodeMCU_Lua_ESP8266_ESP-12E_WiFi_Development_Board_IoT_v2_(Arduinos_en_andere_microcontrollers)-p110565.html
+* [[http://www.banggood.com/NodeMcu-Lua-ESP-12E-WIFI-Development-Board-p-985891.html|esp8266 development board on banggood.com]]
+  * When turning on, this board will create a wifi network (doitWifi). The password is 12345678 You can very easily upload your own LUA scripts with [[https://github.com/4refr0nt/ESPlorer|ESPlorer]].
