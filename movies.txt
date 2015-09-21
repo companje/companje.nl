@@ -3,7 +3,7 @@
 =====TODO======
 
 ==tip van Toon==
-* Mr Robot (serie over hacker)
+* DONE: Mr Robot (serie over hacker)
 
 ==tip van Arne==
 * citizen4 over Edward Snowden
@@ -12,7 +12,7 @@
 * Print the Legend 
 
 ==tips van peter==
-* kung fury
+* DONE: kung fury
 
 ==tip v gerard==
 * nanelle (zus van mozart)
@@ -21,24 +21,24 @@
 * wolf
 * !simon
 * !broken circle breakdown
-* guardians of the galaxy
-* the immitation game (over alan turing)
-* theory of everything (stephen hawkins)
+* DONE: guardians of the galaxy
+* DONE: the immitation game (over alan turing)
+* DONE: theory of everything (stephen hawkins)
 * serie: black mirror
 * whiplash
 
 ==tip van pedeka==
-* kingsman
+* DONE: kingsman
 
 ==tips van Ralph==
 * predestination
 * zero theorem
 * under the skin (langzaam, duister, grauw)
-* her (!)
+* DONE: her (!)
 * true romance
 * neighbours
 * [[http://m.imdb.com/title/tt0434409/|V for Vendetta]]
-* birdman
+* DONE: birdman
 * inherent vice
 * the final member (docu)
 * Jiro dreams of sushi
@@ -52,15 +52,13 @@ Sonic Highways docu over foofighters.
 
 ==NL==
 * nena
-* aanmodderfakker
+* DONE: aanmodderfakker
 * hemel en aarde
 
 ==Diversen==
 * the anchorman
 * tip uit de Estafette Loper: gezinsfilm 'Un film de wouf' met Renault Estafette(s)
-* Her (tip van Nanda)
+* DONE: Her (tip van Nanda)
 
 ==Films van Tom Tykwer==
 * http://nl.wikipedia.org/wiki/Tom_Tykwer
-
-=====DONE=====
