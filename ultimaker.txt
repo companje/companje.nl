@@ -1,0 +1,41 @@
+=====Ultimaker=====
+
+See [[3DPrinting]]
+
+==help==
+* https://ultimaker.com/nl/support/view/11703-extrusion-problems
+* https://ultimaker.com/nl/support/view/223-atomic-method
+
+==boutjes en moertjes==
+* http://rvspaleis.nl
+
+==build marlin firmware==
+* http://daid.mine.nu/~daid/marlin_build/
+* http://wiki.ultimaker.com/Marlin_firmware_for_the_Ultimaker
+
+==Cura==
+* http://daid.github.com/Cura/
+
+* firmware backuppen:
+<code bash>
+avrdude -c stk500v1 -b57600 -p atmega1280 -P /dev/tty.usbserial-A600f8w2 -D -Uflash:r:firmware.hex:i
+</code>
+of
+<code bash>
+avrdude -c stk500v2 -b115200 -p atmega2560 -P /dev/tty.usbmodem411 -D -Uflash:r:firmware.hex:i
+</code>
+
+* writing firmware
+<code bash>
+avrdude -c stk500v2 -b115200 -p atmega2560 -P /dev/tty.usbmodem411 -D -Uflash:w:firmware.hex:i
+</code>
+<code bash>
+avrdude -c stk500v2 -b115200 -p atmega2560 -P /dev/tty.usbmodem621 -D -Uflash:w:cfg_4fd875a44fb67.hex.txt:i
+</code>
+
+<code bash>
+avrdude -c stk500v1 -b57600 -p atmega1280 -P /dev/tty.usbserial-A9005d8c -D -Uflash:w:firmware.hex:i
+</code>
+
+==PLA==
+* www.faberdashery.co.uk
