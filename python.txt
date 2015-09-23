@@ -1,5 +1,41 @@
 ====== Python ======
 
+===4 interessante stukjes Python===
+```def logUser(name, age, length):
+    print('name: ', name)
+    print('age: ', age)
+    print('length: ', length)
+
+#logUser('alex', 29, 1.75)
+user = ('alex', 29, 1.75)
+logUser(*user)
+```
+```def logUser(name, age, length):
+    print('name: ', name)
+    print('age: ', age)
+    print('length: ', length)
+
+# logUser(age=28, length=1.75, name='alex')
+user = {'age':28, 'length':1.75, 'name':'alex'}
+logUser(**user)
+```
+```def log(*args):
+    print(args)
+    message = ""
+    for item in args:
+        message += item+' ';
+    print(message)
+
+log('hallo', '2134', 'fsfdsf')
+```
+```def logUser(**kwargs):
+    print('name: ', kwargs['name'])
+    print('age: ', kwargs['age'])
+    print('length: ', kwargs['length'])
+
+logUser(age=28, length=1.75, name='alex')
+```
+
 ==SimpleHTTPServer==
   python -m SimpleHTTPServer 8000
   
