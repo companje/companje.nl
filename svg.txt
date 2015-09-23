@@ -1,5 +1,9 @@
 ====== SVG ======
 
+==Optimize SVG's==
+http://petercollingridge.appspot.com/svg-editor
+
+==Tips van Peter==
 Algemeen:
 http://www.webdesignerdepot.com/2015/01/the-ultimate-guide-to-svg/
 http://tympanus.net/codrops/2013/11/27/svg-icons-ftw/
