@@ -1,4 +1,4 @@
 ====== Holborn ======
 
 
-* [[CP/M Assembler User Guide|http://www.cpm.z80.de/randyfiles/DRI/ASM.pdf]]
+* [[http://www.cpm.z80.de/randyfiles/DRI/ASM.pdf|CP/M Assembler User Guide]]
