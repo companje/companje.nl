@@ -2,6 +2,7 @@
 
 ==wildcards==
   wget http://site.com/c={a..z}
+  wget http://site.com/c={3000..4000}
 
 ==don't download if file exists==
   wget -nc   # or --no-clobber: skip downloads that would download to existing files.
