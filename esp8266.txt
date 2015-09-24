@@ -68,6 +68,7 @@ get IP address
   * When turning on, this board will create a wifi network (doitWifi). The password is 12345678 You can very easily upload your own LUA scripts with [[https://github.com/4refr0nt/ESPlorer|ESPlorer]].
 
 ==dir==
+<code lua>
 function dir()
   l = file.list();
   for k,v in pairs(l) do
@@ -76,4 +77,4 @@ function dir()
 end
 
 =dir()
-
+</code>
