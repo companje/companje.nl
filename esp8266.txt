@@ -87,3 +87,19 @@ print(wifi.sta.getip())
 --192.168.18.110
 </code>
 
+==create a http get function==
+<code>
+function dns(domain,cb)
+  sk=net.createConnection(net.TCP, 0) 
+  sk:dns(domain,function(conn,ip) cb(ip) end) 
+end
+
+function httpget(domain,file)
+  dns(domain, function(ip) 
+    sk=net.createConnection(net.TCP, 0)
+    sk:on("receive", function(sck, c) print(c) end )
+    sk:connect(80,ip)
+    sk:send("GET " .. file .. " HTTP/1.1\r\nHost: " .. domain .. "\r\nConnection: keep-alive\r\nAccept: */*\r\n\r\n")
+  end)
+end
+</code>
