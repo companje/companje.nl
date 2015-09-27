@@ -78,3 +78,12 @@ end
 
 dir()
 </code>
+
+==connect to your wifi network==
+<code>
+wifi.setmode(wifi.STATION)
+wifi.sta.config("SSID","password")
+print(wifi.sta.getip())
+--192.168.18.110
+</code>
+
