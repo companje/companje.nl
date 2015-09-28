@@ -1,5 +1,8 @@
 ====== Lua ======
 
+=====Sample code=====
+http://lua-users.org/wiki/SampleCode
+
 =====Doodle3D publish-wifibox-release.lua "This script requires the Penlight library"=====
   export LUA_CPATH=/opt/local/share/luarocks/lib/lua/5.2/?.so
   export LUA_PATH=/opt/local/share/luarocks/share/lua/5.2/?.lua
