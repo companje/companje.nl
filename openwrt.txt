@@ -1,5 +1,10 @@
 ====== OpenWrt ======
 
+==set baudrate in uboot==
+http://www.denx.de/wiki/view/DULG/UBootEnvVariables: baudrate: a decimal number that selects the console baudrate (in bps). Only a predefined list of baudrate settings is available. 
+When you change the baudrate (using the "setenv baudrate ..." command), U-Boot will switch the baudrate of the console terminal and wait for a newline which must be entered with the new speed setting. This is to make sure you can actually type at the new speed. If this fails, you have to reset the board (which will operate at the old speed since you were not able to saveenv the new settings.) 
+If no "baudrate" variable is defined, the default baudrate of 115200 is used.
+
 ==Allow SSH on WAN interface==
 Add to /etc/config/firewall
 <code>
