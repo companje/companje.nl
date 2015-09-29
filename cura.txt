@@ -1,0 +1,6 @@
+====== Cura ======
+See [[Ultimaker]]
+
+=====log file location=====
+windows: `C:\Users\user\AppData\Local\cura\cura.log`
+
