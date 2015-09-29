@@ -7,4 +7,4 @@
 =====Lattice Mach XO=====
 {{::machxo2280-breakout_board_front.png?nolink&400|}}
 * [[http://www.farnell.com/datasheets/1673547.pdf|datasheet]]
-* http://www.latticesemi.com/Breakoutboards/
+* [[http://www.latticesemi.com/latticediamond|Lattice Diamond Software]]
