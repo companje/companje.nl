@@ -5,6 +5,6 @@
 * tip van David: [[http://nl.farnell.com/lattice-semiconductor/lcmxo2280c-b-evn/board-breakout-machxo-2280/dp/2253065|Deze]] zit in de Pristitrope.
 
 =====Lattice Mach XO=====
-{{::machxo2280-breakout_board_front.png?nolink&200|}}
+{{::machxo2280-breakout_board_front.png?nolink&400|}}
 * [[http://www.farnell.com/datasheets/1673547.pdf|datasheet]]
 * http://www.latticesemi.com/Breakoutboards/
