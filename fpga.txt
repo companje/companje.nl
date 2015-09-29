@@ -3,3 +3,7 @@
 * tip van harmen: http://papilio.cc/
 * tip van David: [[http://www.ht-lab.com/freecores/cpu8086/cpu86.html|8086 in VHDK]]
 * tip van David: [[http://nl.farnell.com/lattice-semiconductor/lcmxo2280c-b-evn/board-breakout-machxo-2280/dp/2253065|Deze]] zit in de Pristitrope.
+
+=====Lattice Mach XO=====
+* [[http://www.farnell.com/datasheets/1673547.pdf|datasheet]]
+* http://www.latticesemi.com/Breakoutboards/
