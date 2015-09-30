@@ -10,4 +10,6 @@
 * [[http://www.latticesemi.com/latticediamond|Lattice Diamond Software]] (windows+linux)
 * [[http://hackaday.com/2015/07/28/open-source-fpga-toolchain-builds-cpu/|Hackaday: Open Source FPGA Toolchain]]
 
-https://en.wikipedia.org/wiki/C-One
+=====Jeri Ellsworth=====
+* https://en.wikipedia.org/wiki/Jeri_Ellsworth
+* https://en.wikipedia.org/wiki/C-One
