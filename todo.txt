@@ -1,5 +1,10 @@
 ====== TODO: things to watch, read or listen ======
 
+=====video bloggers=====
+* https://www.youtube.com/user/jeriellsworth
+* https://www.youtube.com/user/EEVblog
+* https://vimeo.com/scanlime
+
 =====kijken / lezen=====
 * peter: https://youtu.be/RvFcWXrSlHE)
 * peter: [[https://medium.com/javascript-scene/how-to-build-a-high-velocity-development-team-4b2360d34021|How to Build a High Velocity Development Team — JavaScript Scene]]
