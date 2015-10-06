@@ -9,6 +9,8 @@
 * [[http://www.farnell.com/datasheets/1673547.pdf|datasheet (MachXO2280 Breakout Board Evaluation Kit)]]
 * [[http://www.latticesemi.com/latticediamond|Lattice Diamond Software]] (windows+linux)
 * [[http://hackaday.com/2015/07/28/open-source-fpga-toolchain-builds-cpu/|Hackaday: Open Source FPGA Toolchain]]
+* http://www.latticesemi.com/en/Products/DevelopmentBoardsAndKits/MachXOBreakoutBoard.aspx
+* [[http://www.latticesemi.com/view_document?document_id=40502|voorbeeld code]]
 
 =====Jeri Ellsworth=====
 * https://en.wikipedia.org/wiki/Jeri_Ellsworth
