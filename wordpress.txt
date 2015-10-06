@@ -22,7 +22,7 @@ On Mac OS X (Leopard), the Apache HTTP Server runs under the user account, _www 
 
 One way to do this is to change the owner of the wordpress directory and its contents to _www. Keep the group as staff, a group to which your user account belongs and give write permissions to the group.
 
-$ cd /<wherever>/Sites/<thesite>
-$ sudo chown -R _www wordpress
-$ sudo chmod -R g+w wordpress
+  $ cd /<wherever>/Sites/<thesite>
+  $ sudo chown -R _www wordpress
+  $ sudo chmod -R g+w wordpress
 This way, the WordPress directories have a permission level of 775 and files have a permission level of 664. No file nor directory is world-writeable.
