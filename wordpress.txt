@@ -1,10 +1,8 @@
 ====== Wordpress ======
 
 =====wordpress on localhost lamp doesn't let me install plugins=====
-add this to wp-config.php.
+add this to wp-config.php. But don't use this on production servers.
   define('FS_METHOD','direct');
-Don't use this on production servers
-
 
 ===== Themes =====
 * http://www.kriesi.at/
