@@ -11,6 +11,8 @@
 * [[http://hackaday.com/2015/07/28/open-source-fpga-toolchain-builds-cpu/|Hackaday: Open Source FPGA Toolchain]]
 * http://www.latticesemi.com/en/Products/DevelopmentBoardsAndKits/MachXOBreakoutBoard.aspx
 * [[http://www.latticesemi.com/view_document?document_id=40502|voorbeeld code]]
+* met 'IP' bedoelen ze source code
+* 'Process' tab links onder in Lattice Diamond. Dan Export Files -> JEDEC File. Dan rechter muisknop 'Run'. Dan 'programmer' icoontje in toolbar (chipje met een geel pijltje er op). Dan nog de chip met het groene pijltje.
 
 =====Jeri Ellsworth=====
 * https://en.wikipedia.org/wiki/Jeri_Ellsworth
