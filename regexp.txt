@@ -21,3 +21,6 @@ grep "spotify:track:" spotify.json | head -n 1 | cut -c 16-51    # only first re
 
 =====awk=====
 see [[awk]]
+
+=====turing machine with SED=====
+http://sed.sourceforge.net/grabbag/scripts/turing.sed
