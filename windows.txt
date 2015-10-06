@@ -1,5 +1,8 @@
 ======Windows=======
 
+=====Element not found (when fixing boot problems)=====
+  bcdboot c:\windows /l en-us /s C:\
+
 =====kill not responding windows====
   taskkill /f /fi "status eq not responding"
 
