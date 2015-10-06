@@ -15,3 +15,14 @@ add this to wp-config.php. But don't use this on production servers.
 ===== Facebook Page Photo Gallery plugin not showing thumbnails ====
 From https://wordpress.org/support/topic/thumbnails-didnt-load-any-more: Since WordPress 4.0 the thumbnails didn't load any more. So began searching for the loading of thumbnails in your code and tried commented out line 7 and 8 of single-album.php and line 3 and 4 of single-album-ajax.php and added
   $picture = $photo->picture;
+
+===== Set file permissions =====
+https://wordpress.org/support/topic/auto-upgradeupdate-on-mac-os-x
+On Mac OS X (Leopard), the Apache HTTP Server runs under the user account, _www which belongs to the group _www. To allow WordPress to configure wp-config.php during installation, update files during upgrades, and update the .htaccess file for pretty permalinks, give the server write permission on the files.
+
+One way to do this is to change the owner of the wordpress directory and its contents to _www. Keep the group as staff, a group to which your user account belongs and give write permissions to the group.
+
+$ cd /<wherever>/Sites/<thesite>
+$ sudo chown -R _www wordpress
+$ sudo chmod -R g+w wordpress
+This way, the WordPress directories have a permission level of 775 and files have a permission level of 664. No file nor directory is world-writeable.
