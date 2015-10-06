@@ -1,0 +1,2 @@
+====== SPI ======
+* https://nl.wikipedia.org/wiki/Serial_Peripheral_Interface
