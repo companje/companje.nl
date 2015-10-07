@@ -1,4 +1,7 @@
 ====== Quota ======
 
-==show quota for user human readable==
+==show quota for user (v) human readable (s)==
   quota -vs USERNAME
+  
+==show quota for group (g) human readable (s)==
+  quota -gs GROUP
