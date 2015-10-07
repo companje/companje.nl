@@ -1,5 +1,8 @@
 ====== Wordpress ======
 
+=====Query Monitor debug plugin=====
+https://wordpress.org/plugins/query-monitor/
+
 =====wordpress on localhost lamp doesn't let me install plugins=====
 add this to wp-config.php. But don't use this on production servers.
   define('FS_METHOD','direct');
