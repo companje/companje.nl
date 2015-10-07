@@ -10,5 +10,6 @@
 * http://www.hobbyelectronica.nl/
 * http://www.geekbuying.com/
 
-======e-commerce======
+=====e-commerce solutions=====
 * http://pasary.com/ 
+* http://shopify.com
