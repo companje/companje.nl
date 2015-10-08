@@ -1,5 +1,8 @@
 ====== Arduino / AVR ======
 
+=====Shift registers=====
+* https://www.arduino.cc/en/Tutorial/ShiftOut
+
 =====Ethernet Shield v2=====
 * http://www.arduino.org/products/arduino-ethernet-shield-2
 
