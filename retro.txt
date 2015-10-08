@@ -1,9 +1,7 @@
-==retrocode==
-* [[retro-computers]]
+======Retro Computing / Retro Coding ======
 * https://archive.org/details/softwarelibrary_msdos_games/v2
 * http://www.spelcomputermuseum.nl/ in Epe
 * http://www.computermuseum.nl/ in Epe
-
 * vette emulators: http://www.pcjs.org/
 * MESS emulator - http://sdlmame.lngn.net/
 * roms: https://ia601808.us.archive.org/zipview.php?zip=/2/items/MESS-0.149.BIOS.ROMs/MESS-0.149.BIOS.ROMs.zip
@@ -12,3 +10,16 @@
 * [[https://www.youtube.com/watch?v=XXBxV6-zamM|Micro Men 2009 BBC]]
 * Triumph of the nerds [[https://www.youtube.com/watch?v=HuBXbvl1Sg4|part 1]], [[https://www.youtube.com/watch?v=PWylb_5IOw0|part 2]], [[https://www.youtube.com/watch?v=VjDofliudFY|part 3]]
 * http://vcfmw.org/index.html
+
+=====Museums=====
+* http://www.computer-museum.nl/
+* http://hblankes.home.xs4all.nl/Museum/
+* http://www.rotterdamsradiomuseum.nl
+* http://www.spelcomputermuseum.nl/
+* http://www.bejaardecomputers.nl/
+* http://technischmuseum.nl
+* http://hack42.nl
+
+=====Communities=====
+* http://awesomespace.nl/
+* http://retrocomputerdag.nl
