@@ -2,5 +2,7 @@
 http://github.com/gaearon/redux
 
 =====2 big advantages=====
+https://rackt.github.io/redux/docs/introduction/ThreePrinciples.html
 * one single 'store' object
-* pure reducer functions
+* state is read-only
+* mutations are written as pure functions
