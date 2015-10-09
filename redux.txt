@@ -1,10 +1,7 @@
 ====== Redux ======
-http://github.com/gaearon/redux
-
+* http://github.com/gaearon/redux
+* http://rackt.github.io/redux/index.html
 * 'state' is de huidige staat van alle data
-
-=====principles=====
-https://rackt.github.io/redux/docs/introduction/ThreePrinciples.html
 * one single 'store' object
 * state is read-only
 * mutations are written as pure functions
