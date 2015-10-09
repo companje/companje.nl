@@ -1,5 +1,13 @@
 =============== Javascript notes ===============
 
+=====reducers=====
+* http://devdocs.io/javascript/global_objects/array/reduce
+<code javascript>
+[0, 1, 2, 3, 4].reduce(function(previousValue, currentValue, index, array) {
+  return previousValue + currentValue;
+});
+</code>
+
 =====immutable=====
 * immutable.js
 
