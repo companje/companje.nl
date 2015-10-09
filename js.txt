@@ -1,5 +1,8 @@
 =============== Javascript notes ===============
 
+=====immutable=====
+* immutable.js
+
 =====Printable bulletlist=====
 <code javascript>
 <div id="data">
