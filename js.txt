@@ -228,7 +228,7 @@ lists:
 <code javascript>
 var [a,b] = [1,2];
 
-var [a,b ...c] = [1,2,3,4,5]
+var [a,b, ...c] = [1,2,3,4,5]
 //result a=1, b=2, c=[3,4,5]
 
 var { data:var1 } = {data : 50 }
