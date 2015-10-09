@@ -1,2 +1,6 @@
 ====== Redux ======
 http://github.com/gaearon/redux
+
+=====2 big advantages=====
+- single 'store' object
+- pure reducer functions
