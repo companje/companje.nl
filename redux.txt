@@ -3,6 +3,9 @@ http://github.com/gaearon/redux
 
 * 'state' is de huidige staat van alle data
 
+
+http://rackt.github.io/redux/index.html
+
 =====principles=====
 https://rackt.github.io/redux/docs/introduction/ThreePrinciples.html
 * one single 'store' object
