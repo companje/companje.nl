@@ -25,7 +25,7 @@
 * DONE: guardians of the galaxy
 * DONE: the immitation game (over alan turing)
 * DONE: theory of everything (stephen hawkins)
-* serie: black mirror
+* DONE: serie: black mirror
 * whiplash
 
 ==tip van pedeka==
