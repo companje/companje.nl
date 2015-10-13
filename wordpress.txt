@@ -1,5 +1,8 @@
 ====== Wordpress ======
 
+=====Sync DB's=====
+not tested: https://github.com/wp-sync-db/wp-sync-db
+
 =====Query Monitor debug plugin=====
 https://wordpress.org/plugins/query-monitor/
 
