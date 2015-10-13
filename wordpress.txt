@@ -1,5 +1,10 @@
 ====== Wordpress ======
 
+=====fix permissions on OSX=====
+  cd ~/Sites/yoursite
+  sudo chown -R _www .
+  sudo chmod -R g+w .
+  
 =====Sync DB's=====
 not tested: https://github.com/wp-sync-db/wp-sync-db
 
