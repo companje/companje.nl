@@ -79,6 +79,9 @@ Set wampapache and wampmysqld to Startup type 'Automatic'
 =====htaccess=====
 zie ook [[htaccess]]
 
+=====htaccess ignored on osx=====
+make sure that 'AllowOverride All' is set in `/private/etc/apache2/httpd.conf` and/or `/etc/apache2/users/USERNAME.conf`
+
 =====apache opnieuw opstarten=====
 <code bash>
 sudo /etc/init.d/httpd restart
