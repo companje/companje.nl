@@ -1,5 +1,9 @@
 ====== Wordpress ======
 
+====="connection refused" in WooCommerce=====
+when testing locally without HTTPS you can disable SSL otherwise all pages with personal info are served through HTTPS.
+* Disable `Force secure checkout` in `WooCommerce > Settings > Checkout`
+
 =====site url=====
   define('WP_HOME','http://site');
   define('WP_SITEURL','http://site');
