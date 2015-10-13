@@ -1,8 +1,14 @@
 =============== Apache ===============
 
-=====group settings=====
+=====fix permissions on OSX=====
+  cd ~/Sites/yoursite
+  sudo chown -R _www .
+  sudo chmod -R g+w .
+  
+<del>=====group settings=====
   sudo dseditgroup -o edit -a rick -t user _www    # become a member of the _www group
   sudo chgrp -R _www .    # set group of current folder and subfolders to _www
+</del>
 
 =====Apache guide on OSX=====
 * http://coolestguidesontheplanet.com/get-apache-mysql-php-phpmyadmin-working-osx-10-10-yosemite/
