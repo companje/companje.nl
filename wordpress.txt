@@ -1,8 +1,8 @@
 ====== Wordpress ======
 
 =====site url=====
- define('WP_HOME','http://site');
- define('WP_SITEURL','http://site');
+  define('WP_HOME','http://site');
+  define('WP_SITEURL','http://site');
   
 =====fix permissions on OSX=====
   cd ~/Sites/yoursite
