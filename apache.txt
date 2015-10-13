@@ -1,5 +1,9 @@
 =============== Apache ===============
 
+=====group settings=====
+  sudo dseditgroup -o edit -a rick -t user _www    # become a member of the _www group
+  sudo chgrp -R _www .    # set group of current folder and subfolders to _www
+
 =====Apache guide on OSX=====
 * http://coolestguidesontheplanet.com/get-apache-mysql-php-phpmyadmin-working-osx-10-10-yosemite/
 
