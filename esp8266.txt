@@ -103,3 +103,6 @@ function httpget(domain,file)
   end)
 end
 </code>
+
+======Compile NodeMCU firmware yourself to disable certain modules======
+* http://www.allaboutcircuits.com/projects/guts-of-the-iot-part-1-building-nodemcu-from-source-for-the-esp8266/
