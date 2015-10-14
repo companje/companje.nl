@@ -1,5 +1,5 @@
 ======esp8266======
-* the ESP8266 is actually a 32-bit Tensilica Xtensa LX106 processor r
+* the ESP8266 is actually a 32-bit Tensilica Xtensa LX106 processor running at 80 MHz with a full WiFi stack.
 * [[http://www.electrodragon.com/w/Wi07c|ElectroDragon ESP8266 Wiki]]
 * [[http://zeflo.com/2014/esp8266-weather-display/|Zeflo's Arduino code + wiring example]]
 * [[https://nurdspace.nl/ESP8266|NURDspace on ESP8266]]
