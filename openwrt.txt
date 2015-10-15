@@ -138,7 +138,9 @@ http://buildroot.uclibc.org/ is een losstaand project
 
 ==image generator / imagebuilder==
 * http://wiki.openwrt.org/doc/howto/obtain.firmware.generate
-
+  make info
+  (geeft naam van de PROFILES en welke Packages daar standaard bij zitten. Daar kun je packages aan toevoegen en verwijderen met bijv `-luci`
+  
 ==octoprint on OpenWrt==
 * http://csmatt.com/notes/?p=154
 
