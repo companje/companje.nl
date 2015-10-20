@@ -17,3 +17,6 @@
 =====Jeri Ellsworth=====
 * https://en.wikipedia.org/wiki/Jeri_Ellsworth
 * https://en.wikipedia.org/wiki/C-One
+
+=====FPGA for RaspberryPI======
+* http://hackaday.com/2015/10/18/fpgas-for-the-raspberry-pi/
