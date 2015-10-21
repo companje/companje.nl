@@ -20,6 +20,10 @@
 * http://colorfabb.com
 * http://www.3d4makers.com/
 
+==duet==
+"The software supports receiving GCode from over the USB serial port, from the SD card and from the ethernet interface" http://reprap.org/wiki/Duet
+
+
 ==gcode==
 see [[gcode]]
 
