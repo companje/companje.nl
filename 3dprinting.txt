@@ -23,7 +23,7 @@
 ==duet==
 "The software supports receiving GCode from over the USB serial port, from the SD card and from the ethernet interface" http://reprap.org/wiki/Duet
 
-==RepRap Fisher kit delta 3d printer gekocht.==
+==RepRap Fisher kit delta 3d printer==
 < 400 euro
 dit is een RepRap bordje met netwerkaansluiting die blijkbaar in steeds meer printers zit. Het is Open Source Hardware. http://reprap.org/wiki/File:Duet_0.8.5_Opensource_32bit_Electronics_for_3dprinters.jpg
 
