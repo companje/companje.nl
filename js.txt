@@ -1,5 +1,25 @@
 =============== Javascript notes ===============
 
+=====Local Storage=====
+Klein browser storage onderzoekje afgerond, conclusies en links:
+
+​*Local storage*​: Limited from 2 MB (android browser) to 10 MB (besides opera there is no option to expand this). There is no nice way to check the available space (left). Bad performance & synchronous. 
+​*WebSQL*​: Deprecated, but supported on iOS and Android browser. Usually up to 50MB. 
+​*IndexedDB*​: The future, but less supported (iOS8 has gotten buggy support). Generally at least 50 MB. More space can be requested. There is a polyfill that uses WebSQL.
+
+Advies; Gebruik IndexedDB met Polyfill. Minder enge limieten, beschikbare ruimte is te controlleren, betere performance. Liefst via een library die het makkelijker maakt zoals Dexie.
+
+
+http://www.html5rocks.com/en/tutorials/offline/quota-research/
+http://www.smashingmagazine.com/2014/09/building-simple-cross-browser-offline-todo-list-indexeddb-websql/
+http://stackoverflow.com/questions/3027142/calculating-usage-of-localstorage-space
+IndexedDB Polyfill: https://github.com/axemclion/IndexedDBShim
+IndexedDB wrapper: http://www.dexie.org/ (can work with polyfill)
+http://diveintohtml5.info/storage.html
+http://caniuse.com/#search=indexeddb
+https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Browser_storage_limits_and_eviction_criteria
+https://developers.google.com/web/updates/2011/11/Quota-Management-API-Fast-Facts
+
 =====reducers=====
 * http://devdocs.io/javascript/global_objects/array/reduce
 <code javascript>
