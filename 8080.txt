@@ -1,0 +1,4 @@
+====== 8080 ======
+zie ook [[Altair]]
+
+* https://nl.wikipedia.org/wiki/Instructieset_van_8080_en_Z80
