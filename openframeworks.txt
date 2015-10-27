@@ -343,7 +343,7 @@ This was the case with me running Windows through Parallels on a Mac.
 =====ofSetupScreenOrtho=====
 <del>ofSetupScreenOrtho(0,0,OF_ORIENTATION_UNKNOWN,true,-100,100);</del>
 <code c>
-ofSetupScreenOrtho(ofGetWidth(),ofGetHeight(),OF_ORIENTATION_UNKNOWN);
+ofSetupScreenOrtho();
 </code>
 
 =====serial 250000 / 250K baudrate=====
