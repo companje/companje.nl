@@ -1,5 +1,8 @@
 ====== Git ======
 
+=====Github Compare - compare two branches=====
+* https://github.com/USER/REPO/compare
+
 =====Documentation=====
 * https://www.gitbook.com/@companje/dashboard
 
