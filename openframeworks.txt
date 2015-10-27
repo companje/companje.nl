@@ -341,8 +341,8 @@ if(glActiveTexture==NULL) {
 This was the case with me running Windows through Parallels on a Mac.
 
 =====ofSetupScreenOrtho=====
-<code c>
 <del>ofSetupScreenOrtho(0,0,OF_ORIENTATION_UNKNOWN,true,-100,100);</del>
+<code c>
 ofSetupScreenOrtho(ofGetWidth(),ofGetHeight(),OF_ORIENTATION_UNKNOWN);
 </code>
 
