@@ -1,2 +1,4 @@
 ====== Shift Register 74HC959 ======
+* [[http://www.nxp.com/documents/data_sheet/74HC_HCT595.pdf|datasheet]]
+* [[https://www.arduino.cc/en/Tutorial/ShiftOut|example code and schematics by Arduino]]
 {{:74hc959-shift-register.png?direct&700|}}
