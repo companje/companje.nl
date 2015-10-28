@@ -1,0 +1,2 @@
+====== Shift Register 74HC959 ======
+{{:74hc959-shift-register.png?direct&700|}}
