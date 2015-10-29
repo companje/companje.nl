@@ -6,3 +6,6 @@
 =====My example on 123d.circuits.io==
 https://123d.circuits.io/circuits/1166640-74hc595-shift-register-exercise
 {{:74hc959-shift-register.png?direct&700|}}
+
+=====My second example on 123d.circuits.io (with 2x 74hc595)==
+{{::74hc959-2x-shift-register.png?direct&700|}}
