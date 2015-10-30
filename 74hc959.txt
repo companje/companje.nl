@@ -15,7 +15,6 @@ https://123d.circuits.io/circuits/1166640-74hc595-shift-register-exercise
 int clockPin = 10; //SH_CP (SHift register Clock Pulse)
 int latchPin = 11; //ST_CP (STorage Clock Pulse)
 int dataPin = 12; //DS
-byte counter = 0;
 int address = 0;
 byte data = 0;
 
@@ -27,8 +26,6 @@ void setup() {
 }
 
 void loop() {
-  unsigned long value = 1L << counter;
-  counter = (counter + 1) % 32;
   digitalWrite(latchPin, LOW);   //ground latchPin and hold low for as long as you are transmitting
   shiftOut(dataPin, clockPin, MSBFIRST, 0); //flags enzo
   shiftOut(dataPin, clockPin, MSBFIRST, address >> 8); //address HIGH
