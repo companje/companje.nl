@@ -9,3 +9,35 @@ https://123d.circuits.io/circuits/1166640-74hc595-shift-register-exercise
 
 =====My second example on 123d.circuits.io (with 2x 74hc595)==
 {{::74hc959-2x-shift-register.png?direct&700|}}
+
+=====Binary counter=====
+<code c>
+int clockPin = 10; //SH_CP (SHift register Clock Pulse)
+int latchPin = 11; //ST_CP (STorage Clock Pulse)
+int dataPin = 12; //DS
+byte counter = 0;
+int address = 0;
+byte data = 0;
+
+void setup() {
+  pinMode(latchPin, OUTPUT);
+  pinMode(clockPin, OUTPUT);
+  pinMode(dataPin, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  unsigned long value = 1L << counter;
+  counter = (counter + 1) % 32;
+  digitalWrite(latchPin, LOW);   //ground latchPin and hold low for as long as you are transmitting
+  shiftOut(dataPin, clockPin, MSBFIRST, 0); //flags enzo
+  shiftOut(dataPin, clockPin, MSBFIRST, address >> 8); //address HIGH
+  shiftOut(dataPin, clockPin, MSBFIRST, address); //address LOW
+  shiftOut(dataPin, clockPin, MSBFIRST, data); // data
+  digitalWrite(latchPin, HIGH);
+  delay(50);
+  
+  data++;
+  address++;
+}
+</code>
