@@ -1,5 +1,8 @@
 ====== node.js ======
 
+====Long polling====
+* [[http://book.mixu.net/node/ch3.html|Long polling example in NodeJS]]
+
 =====
 <code>
 Node.js was installed at
