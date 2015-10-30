@@ -1,0 +1,2 @@
+====== 74LS165 ======
+* http://pdf.datasheetcatalog.com/datasheets/90/375463_DS.pdf
