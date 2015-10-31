@@ -12,6 +12,9 @@
 * http://vcfmw.org/index.html
 * [[https://www.pinterest.com/blakespot/keyboards/|Pinterest pagina met bijzondere toetsenborden]]
 
+=====computer op ATMEGA chip=====
+http://searle.hostei.com/grant/MonitorKeyboard/index.html
+
 =====Museums=====
 * http://www.computer-museum.nl/
 * http://hblankes.home.xs4all.nl/Museum/
