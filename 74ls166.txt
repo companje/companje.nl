@@ -1,0 +1,3 @@
+====== 74HC166 ======
+
+* http://forum.arduino.cc/index.php?topic=22117.0
