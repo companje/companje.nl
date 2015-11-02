@@ -2,6 +2,7 @@
 * [[http://www.nxp.com/documents/data_sheet/74HC_HCT595.pdf|datasheet]]
 * [[https://www.arduino.cc/en/Tutorial/ShiftOut|example code and schematics by Arduino]]
 * [[https://www.youtube.com/watch?v=nXl4fb_LbcI|movie about reading buttons with the 74HC959]]
+* https://www.youtube.com/watch?v=6fVbJbNPrEU
 
 =====My example on 123d.circuits.io==
 https://123d.circuits.io/circuits/1166640-74hc595-shift-register-exercise
