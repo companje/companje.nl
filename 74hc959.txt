@@ -39,7 +39,7 @@ void loop() {
 }
 </code>
 
-=====74HC959 and 74HC166 combined=====
+=====read from 74HC166 and write to 74HC959=====
 <code c>
 int CLOCK = 10; // SH_CP on 74HC959 and CP on 74HC166
 int DATA_OUT = 9; // DS on 74HC959
