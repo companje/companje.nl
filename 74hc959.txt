@@ -41,33 +41,34 @@ void loop() {
 
 =====read from 74HC166 and write to 74HC959=====
 <code c>
-int CLOCK = 10; // SH_CP on 74HC959 and CP on 74HC166
-int DATA_OUT = 9; // DS on 74HC959
-int DATA_IN = 12; // Q7 on 74HC166
-int SELECT_LEDS = 8; // ST_CP on 74HC959
-int SELECT_SWITCHES = 11; // !PE on 74HC166
+const byte CLOCK = 8;         // CP   on 74hc166 and SHCP on 74hc959
+const byte SWITCH_SELECT = 9; // !PE  on 74hc166
+const byte SWITCH_DATA = 10;  // Q7   on 74hc166
+const byte LED_SELECT = 11;   // STCP on 74hc959
+const byte LED_DATA = 12;     // DS   on 74hc959
 
 void setup() {
-  pinMode(SELECT_SWITCHES, OUTPUT);
-  pinMode(SELECT_LEDS, OUTPUT);
   pinMode(CLOCK, OUTPUT);
-  pinMode(DATA_OUT, OUTPUT);  
-  pinMode(DATA_IN, INPUT);  
-  Serial.begin(9600);
+  pinMode(SWITCH_SELECT, OUTPUT);
+  pinMode(SWITCH_DATA, INPUT);
+  pinMode(LED_SELECT, OUTPUT);
+  pinMode(LED_DATA, OUTPUT);  
 }
 
 void loop() {
-  digitalWrite(SELECT_SWITCHES, LOW);
+  //read switches
+  digitalWrite(SWITCH_SELECT, LOW);
   digitalWrite(CLOCK, HIGH);
-  digitalWrite(SELECT_SWITCHES, HIGH);
-  byte al = shiftIn(DATA_IN, CLOCK, MSBFIRST);
-  byte ah = shiftIn(DATA_IN, CLOCK, MSBFIRST);
-  
-  digitalWrite(SELECT_LEDS, LOW);
-  shiftOut(DATA_OUT, CLOCK, MSBFIRST, 0); //flags
-  shiftOut(DATA_OUT, CLOCK, MSBFIRST, ah); //address high
-  shiftOut(DATA_OUT, CLOCK, MSBFIRST, al); //address low
-  shiftOut(DATA_OUT, CLOCK, MSBFIRST, 0); //data
-  digitalWrite(SELECT_LEDS, HIGH);
+  digitalWrite(SWITCH_SELECT, HIGH);
+  byte al = shiftIn(SWITCH_DATA, CLOCK, MSBFIRST);
+  byte ah = shiftIn(SWITCH_DATA, CLOCK, MSBFIRST);
+    
+  //write leds
+  digitalWrite(LED_SELECT, LOW);
+  shiftOut(LED_DATA, CLOCK, MSBFIRST, 0);  //flags
+  shiftOut(LED_DATA, CLOCK, MSBFIRST, ah); //address high
+  shiftOut(LED_DATA, CLOCK, MSBFIRST, al); //address low
+  shiftOut(LED_DATA, CLOCK, MSBFIRST, 0);  //data
+  digitalWrite(LED_SELECT, HIGH);
 }
 </code>
