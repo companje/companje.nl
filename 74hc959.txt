@@ -38,3 +38,36 @@ void loop() {
   address++;
 }
 </code>
+
+=====74HC959 and 74HC166 combined=====
+<code c>
+int CLOCK = 10; // SH_CP on 74HC959 and CP on 74HC166
+int DATA_OUT = 9; // DS on 74HC959
+int DATA_IN = 12; // Q7 on 74HC166
+int SELECT_LEDS = 8; // ST_CP on 74HC959
+int SELECT_SWITCHES = 11; // !PE on 74HC166
+
+void setup() {
+  pinMode(SELECT_SWITCHES, OUTPUT);
+  pinMode(SELECT_LEDS, OUTPUT);
+  pinMode(CLOCK, OUTPUT);
+  pinMode(DATA_OUT, OUTPUT);  
+  pinMode(DATA_IN, INPUT);  
+  Serial.begin(9600);
+}
+
+void loop() {
+  digitalWrite(SELECT_SWITCHES, LOW);
+  digitalWrite(CLOCK, HIGH);
+  digitalWrite(SELECT_SWITCHES, HIGH);
+  byte al = shiftIn(DATA_IN, CLOCK, MSBFIRST);
+  byte ah = shiftIn(DATA_IN, CLOCK, MSBFIRST);
+  
+  digitalWrite(SELECT_LEDS, LOW);
+  shiftOut(DATA_OUT, CLOCK, MSBFIRST, 0); //flags
+  shiftOut(DATA_OUT, CLOCK, MSBFIRST, ah); //address high
+  shiftOut(DATA_OUT, CLOCK, MSBFIRST, al); //address low
+  shiftOut(DATA_OUT, CLOCK, MSBFIRST, 0); //data
+  digitalWrite(SELECT_LEDS, HIGH);
+}
+</code>
