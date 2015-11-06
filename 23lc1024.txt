@@ -1,0 +1,5 @@
+====== 23LC1024 ======
+1024 bits RAM chip
+
+* https://ucexperiment.wordpress.com/2013/02/26/more-memory-arduino-and-23lc1024/
+{{::screen_shot_2015-11-06_at_14.02.56.png?nolink&300|}}
