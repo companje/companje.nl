@@ -1,5 +1,9 @@
 ======Windows=======
 
+=====cleanup WinSxS folder======
+"KB 2852386 adds the ability to cleanup all the obsolete updates in the WinSxS folder"
+http://lifehacker.com/recover-tons-of-wasted-disk-space-with-the-new-windows-1442937625
+
 =====disable hibernate in Windows 7=====
 run as admin:
   powercfg -h off
