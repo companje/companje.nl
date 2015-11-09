@@ -1,5 +1,7 @@
 ======Windows=======
 
+=====automatisch inloggen op Windows=====
+  Ctrl+R -> netplwiz
 =====Windows USB/DVD Download Tool=====
 * http://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool
 
