@@ -1,5 +1,10 @@
 ======Windows=======
 
+=====disable hibernate in Windows 7=====
+run as admin:
+  powercfg -h off
+Check Start->Shutdown->... Hibernate should be gone.
+
 =====Windows resource checker=====
   sfc /scannow
   
