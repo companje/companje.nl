@@ -2,7 +2,7 @@
 A light-weight full feature text/code editor for OSX, Windows and Linux.
 
 ===== multiple select with keyboard =====
-https://www.sublimetext.com/docs/2/multiple_selection_with_the_keyboard.html
+[[https://www.sublimetext.com/docs/2/multiple_selection_with_the_keyboard.html|link]]
 
 =====Search function within a file=====
   Cmd+R
