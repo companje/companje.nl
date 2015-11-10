@@ -7,4 +7,4 @@
 * https://facebook.github.io/react/docs/thinking-in-react.html
 * https://github.com/ptmt/react-native-desktop
 * https://facebook.github.io/react/docs/interactivity-and-dynamic-uis.html
-
+* http://babeljs.io/blog/2015/06/07/react-on-es6-plus/
