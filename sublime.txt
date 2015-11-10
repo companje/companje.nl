@@ -1,36 +1,42 @@
-==SublimeText2==
+===============SublimeText2===============
 A light-weight full feature text/code editor for OSX, Windows and Linux.
 
-==shortcut for reindent==
+===== multiple select with keyboard =====
+https://www.sublimetext.com/docs/2/multiple_selection_with_the_keyboard.html
+
+=====Search function within a file=====
+  Cmd+R
+
+=====shortcut for reindent=====
 in Preferences->User
   [ 
     { "keys": ["super+alt+enter"], "command": "reindent" , "args": { "single_line": false } }
   ]
   
-==don't open new window==
+=====don't open new window=====
 In Preferences->Settings User change add:
 <code>
     "open_files_in_new_window": false,
 </code>
 
-==tips==
+=====tips=====
 * install [[http://wbond.net/sublime_packages/package_control/installation|package control]]
 
-==formatting code==
+=====formatting code=====
 * [[https://github.com/SublimeText/Tag|Tag package]]
 * [[https://github.com/victorporof/Sublime-HTMLPrettify|HTML-prettify]] (needs [[http://nodejs.org/#download|NodeJS]])
 
-==use sublime from terminal in osx==
+=====use sublime from terminal in osx=====
 See [[http://www.sublimetext.com/docs/2/osx_command_line.html|this page]]
 
-==compile c++ files==
+=====compile c++ files=====
 see https://gist.github.com/1566100
 
-==Splitting the Selection into Lines==
+=====Splitting the Selection into Lines=====
 Select a block of lines, and then split it into many selections, one per line, using Ctrl+Shift+L, or Command+Shift+L on OS X. [[http://www.sublimetext.com/docs/2/multiple_selection_with_the_keyboard.html|source]]
 
-==Build using makefile and getting this error: No targets specified and no makefile found. Stop.==
+=====Build using makefile and getting this error: No targets specified and no makefile found. Stop.=====
 the current directory might be wrong.
 
-==openscad==
+=====openscad=====
 see [[openscad]]
