@@ -1,5 +1,23 @@
 ====== node.js ======
 
+=====app.use & app.get/post combined====
+<code javascript>
+var express = require('express');
+var app = express();
+var http = require('http').Server(app);
+
+app.use(express.static(__dirname + '/www'));
+
+app.post('/api/v1/call/:roomName', function(req, res) {
+  res.send("Hoi: " + req.params.roomName);
+});
+
+http.listen(8081, function(){
+  console.log('listening on *:8081');
+});
+</code>
+
+
 ====Long polling====
 * [[http://book.mixu.net/node/ch3.html|Long polling example in NodeJS]]
 
