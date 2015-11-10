@@ -69,7 +69,7 @@ http://www.smashingmagazine.com/2012/01/resolution-independence-with-svg/ (edite
 * http://product.voxmedia.com/2013/11/25/5426880/polygon-feature-design-svg-animations-for-fun-and-profit
 * http://tympanus.net/codrops/2013/12/30/svg-drawing-animation/
 
-===== Creating WordArt font =====
+===== Creating WordArt font for Doodle3D=====
   * Type the following string in InkScape, with a height of about 37.346 pixels:
 <code>!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~</code>
   * Object > Object to path
