@@ -8,3 +8,17 @@
 * https://github.com/ptmt/react-native-desktop
 * https://facebook.github.io/react/docs/interactivity-and-dynamic-uis.html
 * http://babeljs.io/blog/2015/06/07/react-on-es6-plus/
+
+===== propTypes =====
+Het is ook handig de mogelijke proptypes te omschrijven. dit kan bijv zo:
+```class Input {
+    static propTypes = {
+      placeholder: PropTypes.string,
+      onSubmit: PropTypes.func.isRequired
+   }
+}
+```
+Hiervoor moet je nog wel stage 0 enablen in de babel config, dit kan door in de `config.js`, in `babelOptions`, `stage: 0` toe te voegen.
+
+peteruithoven [4:19 PM]
+zie ook: https://facebook.github.io/react/docs/reusable-components.html
