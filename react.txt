@@ -11,7 +11,8 @@
 
 ===== propTypes =====
 Het is ook handig de mogelijke proptypes te omschrijven. dit kan bijv zo:
-```class Input {
+```
+class Input {
     static propTypes = {
       placeholder: PropTypes.string,
       onSubmit: PropTypes.func.isRequired
