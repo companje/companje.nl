@@ -11,3 +11,7 @@ solution:
   ulimit -n        #returns 256 on my Mac
   ulimit -n 1024   #increased the max number of open files.
   
+=====steps=====
+  npm install
+  jspm install
+  
