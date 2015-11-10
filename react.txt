@@ -22,3 +22,6 @@ class Input {
 Hiervoor moet je nog wel stage 0 enablen in de babel config, dit kan door in de `config.js`, in `babelOptions`, `stage: 0` toe te voegen.
 
 zie ook: https://facebook.github.io/react/docs/reusable-components.html
+
+==== Bind a component's onClick event ====
+https://github.com/peteruithoven/todo/blob/master/src/components/Input.js#L11
