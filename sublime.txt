@@ -1,11 +1,10 @@
 ===============SublimeText2===============
-A light-weight full feature text/code editor for OSX, Windows and Linux.
+A light-weight full feature text/code editor for OSX, Windows and Linux
 
-===== multiple select with keyboard =====
-[[https://www.sublimetext.com/docs/2/multiple_selection_with_the_keyboard.html|multiple select with keyboard]]
-
-=====Search function within a file=====
-  Cmd+R
+=====Keyboard shortcuts=====
+* [[https://www.sublimetext.com/docs/2/multiple_selection_with_the_keyboard.html|multiple select with keyboard]]
+* Cmd+R: Search function within a file
+* Cmd+T: open file by fuzzy search
 
 =====shortcut for reindent=====
 in Preferences->User
