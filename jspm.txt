@@ -4,7 +4,7 @@
 * my exercises are in the 'Doodle3D/react-jspm' folder 
 
 =====Error 'Spawn EMFILE'=====
-command: `jpsm install react`.
+command: `jspm install react`.
 error: 'Spawn EMFILE'
 solution:
   ulimit -n        #returns 256 on my Mac
