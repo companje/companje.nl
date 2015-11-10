@@ -76,7 +76,7 @@ Peter
 * https://gist.github.com/companje/b3de8f5028c1dd1eb0ca
 
 =====gpio's on Raspberry Pi with nodejs=====
-<code>
+<code javascript>
 var Gpio = require('onoff').Gpio;
 
 var cols = [
