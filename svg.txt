@@ -68,3 +68,20 @@ http://www.smashingmagazine.com/2012/01/resolution-independence-with-svg/ (edite
 * http://24ways.org/2013/animating-vectors-with-svg/
 * http://product.voxmedia.com/2013/11/25/5426880/polygon-feature-design-svg-animations-for-fun-and-profit
 * http://tympanus.net/codrops/2013/12/30/svg-drawing-animation/
+
+===== Creating WordArt font =====
+  * Type the following string in InkScape, with a height of about 37.346 pixels:
+<code>!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~</code>
+  * Object > Object to path
+  * Ungroup
+  * Select all
+  * Edit path by nodes
+  * Select all
+  * Add segments 3 / 4 times
+  * Save and open in Illustrator
+  * Simplity with straigt lines
+  * Save and open in Inkscape
+  * Save to svg, with points in 2 decimals
+  * Open svg in text editor with regular expression support
+  * remove path's: id, inkscape, sodipodi:nodetypes
+  * Save
