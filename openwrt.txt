@@ -1,5 +1,8 @@
 ====== OpenWrt ======
 
+==ch340 driver info==
+http://www.ibuyopenwrt.com/index.php/8-yun-compatible/146-usb-serial-adapter-ch340
+
 ==updated sources list for barrier_breaker==
 `/etc/opkg.conf`
 <code>
