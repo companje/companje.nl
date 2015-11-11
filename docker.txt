@@ -1,5 +1,15 @@
 ====== Docker ======
 
+== error: Host "dev" does not exist==
+docker is configured to use the default machine with IP 192.168.99.100
+For help getting started, check out the docs at https://docs.docker.com
+  Host "dev" does not exist
+  
+solution:
+  # Run this command to configure your shell:
+  eval "$(docker-machine env dev)"
+
+== ps ==
   docker ps -a
   docker ps -a -s
 
