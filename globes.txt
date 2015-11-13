@@ -20,3 +20,5 @@
 * texture and lighting sphere with WebGL: [[http://blog.thematicmapping.org/2013/09/creating-webgl-earth-with-threejs.html|tutorial]], [[http://thematicmapping.org/playground/webgl/earth/|demo ]]
 
 * [[projection mapping]]
+
+* Panoramatic 360 globe
