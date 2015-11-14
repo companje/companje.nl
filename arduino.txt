@@ -1,9 +1,9 @@
 ====== Arduino / AVR ======
 
 =====MACRO for printing multiple arguments with sprintf=====
-<code cpp>
+```c
 #define ECHO(s,x...) { char buf[100]; sprintf(buf,s,x); Serial.println(buf);}
-</code>
+```
 
 =====Shift registers=====
 * https://www.arduino.cc/en/Tutorial/ShiftOut
