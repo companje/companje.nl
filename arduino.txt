@@ -1,7 +1,7 @@
 ====== Arduino / AVR ======
 
 =====MACRO for printing multiple arguments with sprintf=====
-<code c>
+<code cpp>
 #define ECHO(s,x...) { char buf[100]; sprintf(buf,s,x); Serial.println(buf);}
 </code>
 
