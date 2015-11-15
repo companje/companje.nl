@@ -1,7 +1,7 @@
 ====== Altair ======
 * [[http://altairclone.com/downloads/manuals/8080%20Programmers%20Manual.pdf|8080 Programmers Manual]]
 * [[https://www.youtube.com/watch?v=FKNayPnZT54|loading basic from papertape using a teletype]]
-* [[http://dankar.github.io/emulator/2015/04/12/altair-8800-emulator/|Altair Emulator on Atmega328]]
+* [[http://dankar.github.io/emulator/2015/04/12/altair-8800-emulator/|Altair Emulator on Atmega328]] ([[https://github.com/dankar/altair8800|on github]])
 
 ==opcodes intel 8080==
 * http://pastraiser.com/cpu/i8080/i8080_opcodes.html
