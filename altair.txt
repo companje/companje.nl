@@ -14,3 +14,4 @@
 
 ==programs==
 * http://www.vintagecomputer.net/mits/Software/?sort=size
+* http://altairclone.com/downloads/basic/Paper%20Tape%20and%20Cassette/
