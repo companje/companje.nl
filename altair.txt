@@ -11,3 +11,6 @@
   * [[74HC959]]
   * [[74LS165]] / [[74LS166]]  of 74HC166?
   * CD4021B
+
+==programs==
+* http://www.vintagecomputer.net/mits/Software/?sort=size
