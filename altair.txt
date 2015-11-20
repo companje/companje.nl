@@ -15,3 +15,6 @@
 ==programs==
 * http://www.vintagecomputer.net/mits/Software/?sort=size
 * http://altairclone.com/downloads/basic/Paper%20Tape%20and%20Cassette/
+
+==hex==
+* https://en.wikipedia.org/wiki/Intel_HEX
