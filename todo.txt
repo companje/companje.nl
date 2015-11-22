@@ -1,8 +1,9 @@
 ====== TODO: things to watch, read or listen ======
 
-==write your own OS==
+=====write your own OS=====
 * http://mikeos.sourceforge.net/write-your-own-os.html
 
+===== Other =====
 * http://hackertyper.com/
 * Nash: https://m.youtube.com/watch?v=oM1SflhJDoc
 * http://www.tnmoc.org
