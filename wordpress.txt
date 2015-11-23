@@ -1,7 +1,7 @@
 ====== Wordpress ======
 
 =====database (woocommerce) reports======
-<code>
+<code html>
 <?php
 header("Content-type: text/plain");
 
