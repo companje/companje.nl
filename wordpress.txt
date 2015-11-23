@@ -1,5 +1,30 @@
 ====== Wordpress ======
 
+=====database (woocommerce) reports======
+<code>
+<?php
+header("Content-type: text/plain");
+
+$db = mysql_connect('SERVER', 'USER', 'PASS');
+mysql_select_db('DATABASE', $db);
+
+echo("VAT Numbers\n-------------------------------------\n");
+$sql = "SELECT post_id,meta_value FROM wp_postmeta WHERE meta_key='VAT Number'";
+//$sql = "SELECT post_id,meta_value FROM wp_postmeta WHERE meta_key='_billing_country'";
+
+$result = mysql_query($sql);
+
+if (!$result) {
+    $message  = 'Invalid query: ' . mysql_error() . "\n";
+    $message .= 'Whole query: ' . $sql;
+    die($message);
+}
+
+while ($row = mysql_fetch_assoc($result)) {
+    echo $row['post_id'] . " " . $row['meta_value'] . "\n";
+}
+</code>
+
 ====="connection refused" in WooCommerce=====
 when testing locally without HTTPS you can disable SSL otherwise all pages with personal info are served through HTTPS.
 * Disable `Force secure checkout` in `WooCommerce > Settings > Checkout`
