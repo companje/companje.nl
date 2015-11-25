@@ -23,6 +23,9 @@
 * http://colorfabb.com
 * http://www.3d4makers.com/
 * [[http://www.blackmagic3d.com/Conductive-Graphene-3D-Printing-PLA-Filament-p/grphn-175.htm|conductive filament]]
+
+== combine filament ==
+* http://www.thingiverse.com/thing:9850
 * http://www.mosaicmanufacturing.com/
 
 ==duet==
