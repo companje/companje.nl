@@ -24,9 +24,16 @@
 * http://www.3d4makers.com/
 * [[http://www.blackmagic3d.com/Conductive-Graphene-3D-Printing-PLA-Filament-p/grphn-175.htm|conductive filament]]
 
-== combine filament ==
+== combine / join / weld filament ==
 * http://www.thingiverse.com/thing:9850
 * http://www.mosaicmanufacturing.com/
+* http://www.3ders.org/articles/20150716-new-easywelder-tool-welds-multiple-types-of-3d-printing-filaments.html
+* http://hackaday.com/2014/01/20/a-quick-and-simple-filament-joiner-for-multi-color-prints/
+* http://forums.reprap.org/read.php?1,205562,587223
+* http://www.instructables.com/id/Welding-tool-for-plastic-filaments/
+* [[https://www.indiegogo.com/projects/fuse-welding-filament-clamp-for-3d-printers#/|FUSE op indiegogo]],[[(http://www.3ders.org/articles/20140725-fuse-filament-welding-clamp-for-3d-printers.html|FUSE op 3ders.org]]
+* http://3dprint.com/66283/easywelder-filament-weld/
+* https://www.kickstarter.com/projects/i3d-inno/easywelder-filament-welding-tool-for-3d-printing
 
 ==duet==
 "The software supports receiving GCode from over the USB serial port, from the SD card and from the ethernet interface" http://reprap.org/wiki/Duet
