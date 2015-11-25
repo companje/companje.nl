@@ -1,5 +1,33 @@
 ====== Arduino / AVR ======
 
+=====serial readLine=====
+<code c>
+char buf[100];
+
+bool readLine(char *buf) {
+  static int index = 0;
+  while (Serial.available()) {
+    byte ch = Serial.read();
+    buf[index] = ch;
+    if (ch=='\n') {
+      buf[index] = 0;
+      index = 0;
+      return true;
+    } else {
+      index++;
+    }
+  }
+  return false;
+}
+
+void update() {
+  if (readLine(buf)) {
+    Serial.print(buf);
+    Serial.print(" ");
+    Serial.println(strlen(buf));
+  }
+}
+</code>
 =====MACRO for printing multiple arguments with sprintf=====
 ```c
 #define ECHO(s,x...) { char buf[100]; sprintf(buf,s,x); Serial.println(buf);}
