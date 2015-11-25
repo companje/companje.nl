@@ -23,6 +23,7 @@
 * http://colorfabb.com
 * http://www.3d4makers.com/
 * [[http://www.blackmagic3d.com/Conductive-Graphene-3D-Printing-PLA-Filament-p/grphn-175.htm|conductive filament]]
+* http://www.mosaicmanufacturing.com/
 
 ==duet==
 "The software supports receiving GCode from over the USB serial port, from the SD card and from the ethernet interface" http://reprap.org/wiki/Duet
