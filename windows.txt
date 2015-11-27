@@ -1,5 +1,8 @@
 ======Windows=======
 
+=====Cmder=====
+MinGW / Bash voor Windows: Cmder.exe
+
 =====automatisch inloggen op Windows=====
   Ctrl+R -> netplwiz
 =====Windows USB/DVD Download Tool=====
