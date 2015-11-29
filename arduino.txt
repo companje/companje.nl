@@ -1,6 +1,6 @@
 ====== Arduino / AVR ======
 
-=====Bus Contention=====
+=====Serial Bus Contention: no more than one transmitting device=====
 https://learn.sparkfun.com/tutorials/serial-communication
 
 =====serial readLine=====
