@@ -1,5 +1,8 @@
 ====== Arduino / AVR ======
 
+=====Bus Contention=====
+https://learn.sparkfun.com/tutorials/serial-communication
+
 =====serial readLine=====
 <code c>
 char buf[100];
