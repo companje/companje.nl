@@ -10,6 +10,7 @@ windows: `C:\Users\user\AppData\Local\cura\cura.log`
 
 =====error building cura-build on osx=====
 <code>
+...
 copying scipy/_lib/_version.py -> build/lib.macosx-10.10-x86_64-3.4/scipy/_lib
 copying scipy/_lib/decorator.py -> build/lib.macosx-10.10-x86_64-3.4/scipy/_lib
 copying scipy/_lib/setup.py -> build/lib.macosx-10.10-x86_64-3.4/scipy/_lib
