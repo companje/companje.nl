@@ -8,3 +8,38 @@ windows: `C:\Users\user\AppData\Local\cura\`
 =====log file location=====
 windows: `C:\Users\user\AppData\Local\cura\cura.log`
 
+=====error building cura-build on osx=====
+<code>
+copying scipy/_lib/_version.py -> build/lib.macosx-10.10-x86_64-3.4/scipy/_lib
+copying scipy/_lib/decorator.py -> build/lib.macosx-10.10-x86_64-3.4/scipy/_lib
+copying scipy/_lib/setup.py -> build/lib.macosx-10.10-x86_64-3.4/scipy/_lib
+copying scipy/_lib/six.py -> build/lib.macosx-10.10-x86_64-3.4/scipy/_lib
+running build_clib
+customize UnixCCompiler
+customize UnixCCompiler using build_clib
+customize Gnu95FCompiler
+Could not locate executable gfortran
+Could not locate executable f95
+customize NAGFCompiler
+customize AbsoftFCompiler
+Could not locate executable f90
+Could not locate executable f77
+customize IBMFCompiler
+Could not locate executable xlf90
+Could not locate executable xlf
+customize IntelFCompiler
+Could not locate executable ifort
+Could not locate executable ifc
+customize GnuFCompiler
+Could not locate executable g77
+customize G95FCompiler
+Could not locate executable g95
+customize PGroupFCompiler
+Could not locate executable pgfortran
+don't know how to compile Fortran code on platform 'posix'
+building 'dfftpack' library
+error: library dfftpack has Fortran sources but no Fortran compiler found
+make[2]: *** [Scipy-prefix/src/Scipy-stamp/Scipy-build] Error 1
+make[1]: *** [CMakeFiles/Scipy.dir/all] Error 2
+make: *** [all] Error 2
+</code>
