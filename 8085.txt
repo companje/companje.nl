@@ -1,0 +1,2 @@
+====== 8085 ======
+http://www.eazynotes.com/notes/microprocessor/slides/pin-diagram-of-8085.pdf
