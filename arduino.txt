@@ -1,7 +1,7 @@
 ====== Arduino / AVR ======
 
 =====Pinout diagram=====
-{{::esqpm.png?direct&500|}}
+{{::esqpm.png?direct&450|}}
 
 =====Serial Bus Contention: no more than one transmitting device=====
 https://learn.sparkfun.com/tutorials/serial-communication
