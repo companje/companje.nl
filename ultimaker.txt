@@ -2,6 +2,57 @@
 
 See [[3DPrinting]]
 
+==doodle3d startcode/endcode for Doodle3D Ultimaker 2/2go==
+<code>
+;Generated with Doodle3D (ultimaker2)
+M10000
+G4 P200
+M10000
+M10001 X10 Y25 SHeating nozzle...
+M109 S{printingTemp} ;set target temperature 
+{if heatedBed}M190 S{printingBedTemp} ;set target bed temperature
+M10000
+G4 P200 
+M10000
+M10001 X3 Y25 SDoodle3D Printing...
+M10004 X1 Y56 W128 H8
+M10003 X1 Y56 W10 H8
+G21 ;metric values
+G90 ;absolute positioning
+M107 ;start with the fan off
+G28 ; home to endstops
+G1 Z15 F9000 ;move the platform down 15mm
+G92 E0 ;zero the extruded length
+G1 F200 E10 ;extrude 10mm of feed stock
+G92 E0 ;zero the extruded length again
+G1 F9000
+M117 Printing Doodle...   ;display message (20 characters to clear whole screen)
+</code>
+
+<code>
+M107 ;fan off
+G91 ;relative positioning
+G1 E-1 F300 ;retract the filament a bit before lifting the nozzle, to release some of the pressure
+G1 Z+5.5 E-5 X-20 Y-20 F9000 ;move Z up a bit and retract filament even more
+
+M10000
+;G4 P5
+M10000
+M10001 X10 Y25 SDoodle3D finished!
+
+G28 ;home the printer
+M84 ;disable axes / steppers
+G90 ;absolute positioning
+M104 S{preheatTemp}
+{if heatedBed}M140 S{preheatBedTemp}
+M117 Done                 ;display message (20 characters to clear whole screen)
+</code>
+
+
+==help==
+* https://ultimaker.com/nl/support/view/11703-extrusion-problems
+* https://ultimaker.com/nl/support/view/223-atomic-method
+
 ==boutjes en moertjes==
 * http://rvspaleis.nl
 
