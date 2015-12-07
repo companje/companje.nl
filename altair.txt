@@ -27,3 +27,6 @@
 
 ==emulator tests==
 * http://altairclone.com/downloads/cpu_tests/
+
+==8080 emulator in C==
+* https://github.com/begoon/i8080-core
