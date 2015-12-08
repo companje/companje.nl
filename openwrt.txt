@@ -1,5 +1,15 @@
 ====== OpenWrt ======
 
+==Stappen Image Builder==
+- (staat op : rick@ubuntu:~/Desktop/OpenWrt-ImageBuilder-15.05-ar71xx-generic.Linux-x86_64)
+- start Linux (bijv in Parallels met de mogelijkheid om vanaf OSX te verbinden via SSH)
+- download: https://downloads.openwrt.org/chaos_calmer/15.05/ar71xx/generic/OpenWrt-ImageBuilder-15.05-ar71xx-generic.Linux-x86_64.tar.bz2
+- untar: tar -xvjf OpenWrt-ImageBuilder-15.05-ar71xx-generic.Linux-x86_64.tar.bz2
+- zorg voor dependencies: apt-get install subversion build-essential libncurses5-dev zlib1g-dev gawk git ccache gettext libssl-dev xsltproc
+- voeg customfeeds toe aan de packages folder (maak een mapje customfeeds met daarin ipk bestanden van je customfeeds dus die moet je wel eerst ergens bouwen)
+- run image generator: make image PROFILE=TLMR3020 PACKAGES="wifibox -ppp -kmod-ipv6"
+- creates image in bin/ar71xx folder. scp ….squashfs-sysupgrade.bin file to the /tmp folder of the box and run sysupgrade -v- n /tmp/openwrt….squashfs-sysupgrade.bin
+
 ==ch340 driver info==
 http://www.ibuyopenwrt.com/index.php/8-yun-compatible/146-usb-serial-adapter-ch340
 
