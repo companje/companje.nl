@@ -22,7 +22,6 @@
 * http://www.gianlucaghettini.net/sidberry-raspberrypi-sid-player/
 
 ==pins==
-{{https://upload.wikimedia.org/wikipedia/commons/3/36/MOS6581.svg}}
-
+{{::screen_shot_2015-12-10_at_20.05.22.png?nolink&300|}}
 ==SID register map==
 {{http://www.gianlucaghettini.net/wp-content/uploads/2015/05/SID_registers_fit.png}}
