@@ -7,3 +7,4 @@
 * http://playground.arduino.cc/Main/SID-emulator
 * https://github.com/farvardin/C64-music/tree/master/sid_arduino
 * http://playground.arduino.cc/Main/SID-emulatorCode
+* https://github.com/cybernesto/sid-arduino-lib
