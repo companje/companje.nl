@@ -17,3 +17,6 @@
 
 ==parse SID files==
 * https://github.com/grappendorf/arduino-framework/blob/master/RealSIDShield/RealSIDpy/RealSID.py
+
+==SID chip connected to Raspberry PI==
+* http://www.gianlucaghettini.net/sidberry-raspberrypi-sid-player/
