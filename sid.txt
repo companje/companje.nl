@@ -13,5 +13,4 @@
 * https://github.com/atbrask/RealSIDShield
 
 ==Standalone SID-Player with real 6581 and 8580 SID-Chips==
-It can handle the whole HVSC and load Data from a 4GB Micro-SD-Card.
-https://www.youtube.com/watch?v=t06AAeSWako
+* It can handle the whole HVSC and load Data from a 4GB Micro-SD-Card: https://www.youtube.com/watch?v=t06AAeSWako
