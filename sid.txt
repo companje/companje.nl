@@ -1,0 +1,4 @@
+====== 6581 SID chip======
+* SIDuino
+* https://www.youtube.com/watch?v=h0GY_o1XKQA
+* [[http://www.sidmusic.org/sidplay/mac/|SIDPlay for OSX]]
