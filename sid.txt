@@ -2,3 +2,8 @@
 * SIDuino
 * https://www.youtube.com/watch?v=h0GY_o1XKQA
 * [[http://www.sidmusic.org/sidplay/mac/|SIDPlay for OSX]]
+
+==sid arduino emulator==
+* http://playground.arduino.cc/Main/SID-emulator
+* https://github.com/farvardin/C64-music/tree/master/sid_arduino
+* http://playground.arduino.cc/Main/SID-emulatorCode
