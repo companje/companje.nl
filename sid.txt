@@ -4,6 +4,7 @@
 * [[http://www.sidmusic.org/sidplay/mac/|SIDPlay for OSX]]
 
 ==datasheet==
+* http://archive.6502.org/datasheets/mos_6581_sid.pdf
 * http://www.waitingforfriday.com/index.php/Commodore_SID_6581_Datasheet
 * http://www.msarnoff.org/chipdb/6581
 
