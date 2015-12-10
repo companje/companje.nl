@@ -30,6 +30,9 @@
 ==SID chip connected to Raspberry PI==
 * http://www.gianlucaghettini.net/sidberry-raspberrypi-sid-player/
 
+==SID system==
+* https://github.com/miccolis/sidsystem
+
 ==pins==
 {{::screen_shot_2015-12-10_at_20.05.22.png?nolink&300|}}
 ==SID register map==
