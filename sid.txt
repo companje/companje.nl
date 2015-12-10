@@ -20,3 +20,6 @@
 
 ==SID chip connected to Raspberry PI==
 * http://www.gianlucaghettini.net/sidberry-raspberrypi-sid-player/
+
+==SID register map==
+{{http://www.gianlucaghettini.net/wp-content/uploads/2015/05/SID_registers_fit.png}}
