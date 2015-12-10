@@ -19,11 +19,11 @@
 * https://github.com/atbrask/RealSIDShield
 * http://kaput.retroarchive.org/Arduino_SID/
 
-
 ==Standalone SID-Player with real 6581 and 8580 SID-Chips==
 * It can handle the whole HVSC and load Data from a 4GB Micro-SD-Card: https://www.youtube.com/watch?v=t06AAeSWako
 
 ==parse SID files==
+* http://cpansearch.perl.org/src/LALA/Audio-SID-3.02/SID_file_format.txt
 * https://github.com/grappendorf/arduino-framework/blob/master/RealSIDShield/RealSIDpy/RealSID.py
 
 ==SID chip connected to Raspberry PI==
