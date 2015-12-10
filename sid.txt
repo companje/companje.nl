@@ -4,7 +4,7 @@
 * [[http://www.sidmusic.org/sidplay/mac/|SIDPlay for OSX]]
 
 ==datasheet==
-http://www.waitingforfriday.com/index.php/Commodore_SID_6581_Datasheet
+* http://www.waitingforfriday.com/index.php/Commodore_SID_6581_Datasheet
 
 ==sid arduino emulator==
 * http://playground.arduino.cc/Main/SID-emulator
