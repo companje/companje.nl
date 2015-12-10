@@ -1,5 +1,5 @@
 ====== 6581 SID chip======
-* https://www.youtube.com/watch?v=h0GY_o1XKQA
+* [[https://www.youtube.com/watch?v=h0GY_o1XKQA|video SIDuino Improved Test - playing SIDs]
 * [[http://www.sidmusic.org/sidplay/mac/|SIDPlay for OSX]]
 * http://www.joogn.de/sid.html
 * SIDuino
