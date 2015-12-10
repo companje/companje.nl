@@ -12,6 +12,7 @@
 * http://vcfmw.org/index.html
 * [[https://www.pinterest.com/blakespot/keyboards/|Pinterest pagina met bijzondere toetsenborden]]
 * http://www.brielcomputers.com/wordpress/
+* http://kaput.retroarchive.org/
 
 =====Monitor and keyboard controller=====
 http://searle.hostei.com/grant/MonitorKeyboard/index.html
