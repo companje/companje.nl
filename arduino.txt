@@ -1,5 +1,8 @@
 ====== Arduino / AVR ======
 
+=====MIDI input=====
+* http://www.notesandvolts.com/2012/01/fun-with-arduino-midi-input-basics.html
+
 =====Pinout diagram=====
 {{::esqpm.png?direct&450|}}
 
