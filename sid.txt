@@ -5,6 +5,7 @@
 
 ==datasheet==
 * http://www.waitingforfriday.com/index.php/Commodore_SID_6581_Datasheet
+* http://www.msarnoff.org/chipdb/6581
 
 ==sid arduino emulator==
 * http://playground.arduino.cc/Main/SID-emulator
