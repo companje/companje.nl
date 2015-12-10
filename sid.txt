@@ -15,8 +15,10 @@
 * http://playground.arduino.cc/Main/SID-emulatorCode
 * https://github.com/cybernesto/sid-arduino-lib
 
-==real sid shield==
+==sid shield==
 * https://github.com/atbrask/RealSIDShield
+* http://kaput.retroarchive.org/Arduino_SID/
+
 
 ==Standalone SID-Player with real 6581 and 8580 SID-Chips==
 * It can handle the whole HVSC and load Data from a 4GB Micro-SD-Card: https://www.youtube.com/watch?v=t06AAeSWako
