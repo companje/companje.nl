@@ -33,3 +33,6 @@
 
 ==jeelabs about altair==
 * http://jeelabs.org/book/1549c/
+
+==8080 assembly language manual==
+* http://www.altair32.com/pdf/8080_Assembly_Language_Programming_Manual.pdf
