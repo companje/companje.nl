@@ -1,7 +1,7 @@
 ======CodeBlocks======
 
 ====="An exception has been raised! The application encountered an error at C:\Codeblocks\src\sdk\configmanager.cpp, on line 239.=====
-Delete this file: C:\Users\USERNAME\AppData\Roaming\codeblocks\default.conf
+Delete this file: ```C:\Users\USERNAME\AppData\Roaming\codeblocks\default.conf```
 
 ==other==
 * wizard scripting zie mailbox
