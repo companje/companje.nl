@@ -1,11 +1,14 @@
 ====== Lean ======
 * https://www.fiverr.com/
-* https://buffer.com/app
 * https://www.hotjar.com/
 * [[onlinetools]]
 
 ==hosting==
 * https://cloud.google.com/
+
+==social media==
+* https://www.thunderclap.it/
+* https://buffer.com/app
 
 ==Customer support==
 * https://www.zendesk.com/
