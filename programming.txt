@@ -1,4 +1,4 @@
-====== Programming ======
+====== Programming Languages======
 *[[Batch]]
 *[[Sanyo Basic]]
 *[[QBasic]]
@@ -15,4 +15,5 @@
 *[[HTML]]
 *[[Javascript]]
 *[[Visual Basic]]
+*[[https://www.rust-lang.org/]]
 
