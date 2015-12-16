@@ -13,7 +13,7 @@
 *[[Java]]
 *[[Processing]]
 *[[HTML]]
-*[[Javascript]]
+*[[js|Javascript]]
 *[[Visual Basic]]
 *[[https://www.rust-lang.org/]]
 
