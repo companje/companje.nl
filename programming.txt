@@ -15,5 +15,8 @@
 *[[HTML]]
 *[[js|Javascript]]
 *[[Visual Basic]]
-*[[https://www.rust-lang.org/]]
 
+==Want to learn==
+*[[https://www.rust-lang.org/]]
+*[[http://www.ponylang.org/]
+*[[https://golang.org/]]
