@@ -18,5 +18,5 @@
 
 ==Want to learn==
 *[[https://www.rust-lang.org/]]
-*[[http://www.ponylang.org/]
+*[[http://www.ponylang.org/]]
 *[[https://golang.org/]]
