@@ -15,4 +15,5 @@
 *[[HTML]]
 *[[Javascript]]
 *[[Visual Basic]]
+*[[https://www.rust-lang.org/]]
 
