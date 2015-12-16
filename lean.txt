@@ -3,6 +3,8 @@
 * https://buffer.com/app
 * https://www.hotjar.com/
 * [[onlinetools]]
+
+==hosting==
 * https://cloud.google.com/
 
 ==Customer support==
