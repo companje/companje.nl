@@ -20,3 +20,4 @@
 *[[https://www.rust-lang.org/]]
 *[[http://www.ponylang.org/]]
 *[[https://golang.org/]]
+*[[http://clojure.org/]]
