@@ -3,6 +3,7 @@
 * https://buffer.com/app
 * https://www.hotjar.com/
 * [[onlinetools]]
+* https://cloud.google.com/
 
 ==Customer support==
 * https://www.zendesk.com/
