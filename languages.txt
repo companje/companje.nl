@@ -1,2 +1,2 @@
 ====== Languages ======
-See [programming]
+See [[programming]]
