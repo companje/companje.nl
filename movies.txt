@@ -2,6 +2,10 @@
 
 =====TODO======
 
+==live coding tips van peter==
+* [[https://vimeo.com/20241649|docu]]
+* [[|TED talk]]
+
 ==mad men==
 [[http://www.imdb.com/title/tt0804503/|Mad Men]]
 
