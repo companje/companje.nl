@@ -1,5 +1,6 @@
 
 ====== 3D printing ======
+* http://3dprint.com/111623/lumifold-lumi-industries/
 * https://pinshape.com/ (thingiverse alternatief)
 * [[http://www.5-5designstudio.com/en/project/2015-print-your-duralex|addons voor Duralex drinkglazen]]
 * [[http://3dprint.com/71156/3d-support-material-and-processes-for-abs-printing/|betere support structuren]]
