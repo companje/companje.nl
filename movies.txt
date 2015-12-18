@@ -4,7 +4,7 @@
 
 ==live coding tips van peter==
 * [[https://vimeo.com/20241649|docu]]
-* [[|TED talk]]
+* [[https://www.youtube.com/watch?v=GSGKEy8vHqg|Vet voorbeeld van live coding: Andrew Sorensen at TEDxQUT]]
 
 ==mad men==
 [[http://www.imdb.com/title/tt0804503/|Mad Men]]
