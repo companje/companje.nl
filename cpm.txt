@@ -1,10 +1,15 @@
 ====== CP/M ======
+
+==CP/M on the Altair8800==
 * [[https://www.youtube.com/watch?v=BQq6ad9F3Xk|CP/M on the Altair8800]]
 
+==copy a file==
 ```
 PIP FILE.DST=FILE.SRC
 ```
 
-
-
+==hello world example using ASM.COM==
 * https://wiki.polaire.nl/doku.php?id=cp_m_assembler_example
+
+==WordMaster keyboard shortcuts==
+* [[wm]]
