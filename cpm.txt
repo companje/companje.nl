@@ -1,2 +1,6 @@
 ====== CP/M ======
 * [[https://www.youtube.com/watch?v=BQq6ad9F3Xk|CP/M on the Altair8800]]
+
+```
+PIP FILE.DST=FILE.SRC
+```
