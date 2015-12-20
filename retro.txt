@@ -36,3 +36,6 @@ http://searle.hostei.com/grant/MonitorKeyboard/index.html
 =====Overig=====
 * http://retro.hansotten.nl/
 * http://home.claranet.nl/users/pb0aia/
+
+=====CMOC compiler=====
+[[http://perso.b2b2c.ca/sarrazip/dev/cmoc.html|tip van Johan o.a. voor Vectrex]]
