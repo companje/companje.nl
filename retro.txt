@@ -26,6 +26,7 @@ http://searle.hostei.com/grant/MonitorKeyboard/index.html
 * http://technischmuseum.nl
 * http://hack42.nl
 * http://www.pdp-11.nl/ (Helmond)
+* http://utopia.knoware.nl/users/stuurmn (Albert, ontmoet bij HCC C64 dag)
 
 =====Communities=====
 * http://awesomespace.nl/
