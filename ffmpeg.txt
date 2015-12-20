@@ -1,5 +1,8 @@
 ====== FFMPEG ======
 
+=====resize video to 480p or 720p=====
+  ffmpeg -i INPUT.MOV -s hd480 OUTPUT.MOV
+
 =====create animated GIF from sequence and specify framerate=====
   ffmpeg -r 2 -i screen-%04d.tif -y kochcurve.gif
   
