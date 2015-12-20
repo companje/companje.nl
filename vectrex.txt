@@ -1,5 +1,8 @@
 ====== Vectrex ======
 
+==about the 6809 processor==
+* https://en.wikipedia.org/wiki/Motorola_6809
+
 ==cmoc compiler for 6809==
 * http://sarrazip.com/dev/cmoc.html
 * http://perso.b2b2c.ca/sarrazip/dev/cmoc-vectrex.html
