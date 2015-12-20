@@ -1,12 +1,15 @@
 ====== CP/M ======
 
-==CP/M on the Altair8800==
-* [[https://www.youtube.com/watch?v=BQq6ad9F3Xk|CP/M on the Altair8800 movie]]
-
 ==copy a file==
 ```
 PIP FILE.DST=FILE.SRC
 ```
+
+==CP/M on the Altair8800==
+* [[https://www.youtube.com/watch?v=BQq6ad9F3Xk|CP/M on the Altair8800 movie]]
+
+==very good explanation about the Assembler(s)==
+* http://www.shaels.net/index.php/cpm80-22-documents/using-cpm/9-asm-utility
 
 ==hello world example using ASM.COM==
 * https://wiki.polaire.nl/doku.php?id=cp_m_assembler_example
