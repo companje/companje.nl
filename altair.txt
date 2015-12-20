@@ -19,7 +19,7 @@
   * CD4021B
 
 ==programs==
-* http://www.vintagecomputer.net/mits/Software/?sort=size
+* http://www.vintagecomputer.net/MITS/Software/
 * http://altairclone.com/downloads/basic/Paper%20Tape%20and%20Cassette/
 
 ==hex==
@@ -36,9 +36,6 @@
 
 ==8080 assembly language manual==
 * http://www.altair32.com/pdf/8080_Assembly_Language_Programming_Manual.pdf
-
-==files==
-* http://www.vintagecomputer.net/MITS/Software/
 
 ==cp/m 2.2 and cp/m assembler==
 * see [[cpm]]
