@@ -1,7 +1,7 @@
 ====== CP/M ======
 
 ==CP/M on the Altair8800==
-* [[https://www.youtube.com/watch?v=BQq6ad9F3Xk|CP/M on the Altair8800]]
+* [[https://www.youtube.com/watch?v=BQq6ad9F3Xk|CP/M on the Altair8800 movie]]
 
 ==copy a file==
 ```
