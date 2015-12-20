@@ -5,4 +5,4 @@
 * [[https://help.github.com/articles/github-flavored-markdown/|github flavored markdown]]
 * tips van oF: Mac OSX: Mou (OSX 10.7) or MarkEdit (OSX 10.6+)
 * Markdown viewer for Mac: MacDown.app
-* [[https://github.com/gnab/remark/wiki/Markdown|github markdown documentatie]]
+* [[https://help.github.com/articles/github-flavored-markdown/|github markdown documentatie]]
