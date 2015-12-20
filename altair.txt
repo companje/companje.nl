@@ -40,5 +40,5 @@
 ==files==
 * http://www.vintagecomputer.net/MITS/Software/
 
-==cp/m 2.2==
+==cp/m 2.2 and cp/m assembler==
 * see [[cpm]]
