@@ -28,3 +28,6 @@ cmoc --vectrex hello_world.c
 ==emulators==
 * http://www.vectrex.fr/ParaJVE/
 * https://github.com/jhawthorn/vecx
+
+==bios==
+* http://www.playvectrex.com/designit/chrissalo/bios.htm
