@@ -7,6 +7,8 @@
 * unpack to ~/Documents/Arduino/hardware/Arduino_STM32
 * Install libusb from http://rudix.org/packages/libusb.html (in case of upload errors)
 * restart Arduino IDE
+* select tools -> board -> STM Nucleo F103RB (STLink)
+* select tools -> port -> usbserial or usbmodem1234
 * load Blink example
 * upload Blink example
 
