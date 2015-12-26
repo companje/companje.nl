@@ -7,6 +7,7 @@
 * https://github.com/rogerclarkmelbourne/Arduino_STM32/wiki/Installation
 * [[http://www.stm32duino.com/viewtopic.php?t=248|problems with nucleo with arduino ide]]
 * http://www.stm32duino.com/viewforum.php?f=29
+* http://www.rogerclark.net/
 
 ==read the docs==
 * [[https://github.com/rogerclarkmelbourne/Arduino_STM32/blob/master/STM32F1/variants/nucleo_f103rb/infos_pdf/Nucleo_F103RB_hardware_preparation.pdf|Nicleo F103RB hardware preparation PDF]]
