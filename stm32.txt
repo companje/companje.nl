@@ -1,4 +1,16 @@
 ====== STM32 / Nucleo ======
+==steps I took to get stm32nucleo mb1136 C-03 running in Arduion IDE on OSX 10.10 Yosemite==
+* no soldering/desoldering needed in my case.
+* install Arduino 1.6.5 (don't use 1.6.6 or 1.6.7 because of [[https://github.com/rogerclarkmelbourne/Arduino_STM32/issues/147|errors]])
+* tools -> board -> board manager... -> install 'Arduino Due'
+* download [[https://github.com/rogerclarkmelbourne/Arduino_STM32/archive/master.zip|Arduino_STM32]]
+* unpack to ~/Documents/Arduino/hardware/Arduino_STM32
+* Install libusb from http://rudix.org/packages/libusb.html (in case of upload errors)
+* restart Arduino IDE
+* load Blink example
+* upload Blink example
+
+==resources==
 * http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1847/PF259875?icmp=nucleo-ipf_pron_pr-nucleo_feb2014&sc=nucleoF103RB-pr
 * https://developer.mbed.org/platforms/ST-Nucleo-F103RB/
 * http://www.stm32duino.com/
@@ -12,17 +24,6 @@
 ==read the docs==
 * [[https://github.com/rogerclarkmelbourne/Arduino_STM32/blob/master/STM32F1/variants/nucleo_f103rb/infos_pdf/Nucleo_F103RB_hardware_preparation.pdf|Nicleo F103RB hardware preparation PDF]]
   * "Desolder the 0-Ohm-resistors on SB55 and SB54 (bottom right) to cut the trace. Solder a little bridge on: SB16(MCO) (top left) and SB50 (bottom middle)"
-
-==steps I took to get stm32nucleo mb1136 C-03 running in Arduion IDE on OSX 10.10 Yosemite==
-* no soldering/desoldering needed in my case.
-* install Arduino 1.6.5 (don't use 1.6.6 or 1.6.7 because of [[https://github.com/rogerclarkmelbourne/Arduino_STM32/issues/147|errors]])
-* tools -> board -> board manager... -> install 'Arduino Due'
-* download [[https://github.com/rogerclarkmelbourne/Arduino_STM32/archive/master.zip|Arduino_STM32]]
-* unpack to ~/Documents/Arduino/hardware/Arduino_STM32
-* Install libusb from http://rudix.org/packages/libusb.html (in case of upload errors)
-* restart Arduino IDE
-* load Blink example
-* upload Blink example
 
 ==dyld: Library not loaded: /usr/local/lib/libusb-1.0.0.dylib==
 "I got past the libusb issue with an OSX package here: http://rudix.org/packages/libusb.html"
