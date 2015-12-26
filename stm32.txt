@@ -31,3 +31,18 @@
 
 ==dyld: Library not loaded: /usr/local/lib/libusb-1.0.0.dylib==
 "I got past the libusb issue with an OSX package here: http://rudix.org/packages/libusb.html"
+
+==SPI_2==
+it is possible to use 2 SPI ports:
+    Using the first SPI port (SPI_1)
+    SS    <-->  PA4 <-->  BOARD_SPI1_NSS_PIN
+    SCK   <-->  PA5 <-->  BOARD_SPI1_SCK_PIN
+    MISO  <-->  PA6 <-->  BOARD_SPI1_MISO_PIN
+    MOSI  <-->  PA7 <-->  BOARD_SPI1_MOSI_PIN
+
+    Using the second SPI port (SPI_2)
+    SS    <-->  PB12 <-->  BOARD_SPI2_NSS_PIN
+    SCK   <-->  PB13 <-->  BOARD_SPI2_SCK_PIN
+    MISO  <-->  PB14 <-->  BOARD_SPI2_MISO_PIN
+    MOSI  <-->  PB15 <-->  BOARD_SPI2_MOSI_PIN
+    
