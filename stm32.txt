@@ -7,3 +7,7 @@
 * https://github.com/rogerclarkmelbourne/Arduino_STM32/wiki/Installation
 * [[http://www.stm32duino.com/viewtopic.php?t=248|problems with nucleo with arduino ide]]
 * http://www.stm32duino.com/viewforum.php?f=29
+
+==read the docs==
+* [[https://github.com/rogerclarkmelbourne/Arduino_STM32/blob/master/STM32F1/variants/nucleo_f103rb/infos_pdf/Nucleo_F103RB_hardware_preparation.pdf|Nicleo F103RB hardware preparation PDF]]
+  * "Desolder the 0-Ohm-resistors on SB55 and SB54 (bottom right) to cut the trace. Solder a little bridge on: SB16(MCO) (top left) and SB50 (bottom middle)"
