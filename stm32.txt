@@ -1,4 +1,8 @@
-====== STM32 ======
+====== STM32 / Nucleo ======
+* http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1847/PF259875?icmp=nucleo-ipf_pron_pr-nucleo_feb2014&sc=nucleoF103RB-pr
+* https://developer.mbed.org/platforms/ST-Nucleo-F103RB/
 * http://www.stm32duino.com/
-
 * https://www.youtube.com/watch?v=-zwGnytGT8M
+* https://github.com/rogerclarkmelbourne/Arduino_STM32
+* https://github.com/rogerclarkmelbourne/Arduino_STM32/wiki/Installation
+* [[http://www.stm32duino.com/viewtopic.php?t=248|problems with nucleo with arduino ide]]
