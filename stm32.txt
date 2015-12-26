@@ -14,6 +14,6 @@
   * "Desolder the 0-Ohm-resistors on SB55 and SB54 (bottom right) to cut the trace. Solder a little bridge on: SB16(MCO) (top left) and SB50 (bottom middle)"
 
 ==steps I took to get stm32nucleo mb1136 C-03 running in Arduion IDE==
-* install arduino 1.6.7
+* install arduino 1.6.5 (don't use 1.6.6 or 1.6.7 because of errors)
 * tools -> board -> board manager... -> install 'Arduino Due'
 * desolder SB54???
