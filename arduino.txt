@@ -1,5 +1,8 @@
 ====== Arduino / AVR ======
 
+=====TVOut (and AVR VideoBlaster)=====
+* https://www.hackster.io/janost/avr-videoblaster-8026fd?offset=5&ref=similar&ref_id=7651
+
 =====MIDI input=====
 * http://www.notesandvolts.com/2012/01/fun-with-arduino-midi-input-basics.html
 
