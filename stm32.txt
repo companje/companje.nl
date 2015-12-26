@@ -11,3 +11,8 @@
 ==read the docs==
 * [[https://github.com/rogerclarkmelbourne/Arduino_STM32/blob/master/STM32F1/variants/nucleo_f103rb/infos_pdf/Nucleo_F103RB_hardware_preparation.pdf|Nicleo F103RB hardware preparation PDF]]
   * "Desolder the 0-Ohm-resistors on SB55 and SB54 (bottom right) to cut the trace. Solder a little bridge on: SB16(MCO) (top left) and SB50 (bottom middle)"
+
+==steps I took to get stm32nucleo mb1136 C-03 running in Arduion IDE==
+* install arduino 1.6.7
+* tools -> board -> board manager... -> install 'Arduino Due'
+* desolder SB54???
