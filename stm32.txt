@@ -6,3 +6,4 @@
 * https://github.com/rogerclarkmelbourne/Arduino_STM32
 * https://github.com/rogerclarkmelbourne/Arduino_STM32/wiki/Installation
 * [[http://www.stm32duino.com/viewtopic.php?t=248|problems with nucleo with arduino ide]]
+* http://www.stm32duino.com/viewforum.php?f=29
