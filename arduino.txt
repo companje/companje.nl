@@ -1,5 +1,8 @@
 ====== Arduino / AVR ======
 
+=====i2c two Arduino's=====
+* https://www.arduino.cc/en/Tutorial/MasterWriter
+
 =====TVOut (and AVR VideoBlaster)=====
 * https://www.hackster.io/janost/avr-videoblaster-8026fd?offset=5&ref=similar&ref_id=7651
 
