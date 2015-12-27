@@ -10,6 +10,7 @@
 * https://www.hackster.io/janost/avr-videoblaster-8026fd?offset=5&ref=similar&ref_id=7651
 * http://www.circuitdb.com/?p=190
 * http://forum.arduino.cc/index.php?topic=325378.0
+* https://github.com/rossumur/Zorkduino
 
 =====MIDI input=====
 * http://www.notesandvolts.com/2012/01/fun-with-arduino-midi-input-basics.html
