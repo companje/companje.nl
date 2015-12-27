@@ -1,10 +1,14 @@
 ====== Arduino / AVR ======
 
+=====about Timers=====
+* https://sites.google.com/site/qeewiki/books/avr-guide/timers-on-the-atmega328
+
 =====i2c two Arduino's=====
 * https://www.arduino.cc/en/Tutorial/MasterWriter
 
-=====TVOut (and AVR VideoBlaster)=====
+=====TVOut etc.=====
 * https://www.hackster.io/janost/avr-videoblaster-8026fd?offset=5&ref=similar&ref_id=7651
+* http://www.circuitdb.com/?p=190
 
 =====MIDI input=====
 * http://www.notesandvolts.com/2012/01/fun-with-arduino-midi-input-basics.html
