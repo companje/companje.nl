@@ -14,7 +14,7 @@
 * to communicate with Serial Monitor in the Arduino IDE I had to use Serial1 (instead of just Serial). ([[http://stm32duino.com/viewtopic.php?f=3&t=512&start=20|more info]]) 
 
 ==pins==
-{{https://developer.mbed.org/media/uploads/bcostm/xnucleo64_revc_f103rb_mbed_pinout_v2_arduino.png.pagespeed.ic.aR9czWlWGY.webp}}
+{{::stm-nucleo-pins.jpg?direct&500|}}
 
 ==resources==
 * http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1847/PF259875?icmp=nucleo-ipf_pron_pr-nucleo_feb2014&sc=nucleoF103RB-pr
