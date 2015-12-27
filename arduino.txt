@@ -11,7 +11,7 @@
 * http://www.circuitdb.com/?p=190
 * http://forum.arduino.cc/index.php?topic=325378.0
 * https://github.com/rossumur/Zorkduino
-
+* http://martin.hinner.info/vga/pal.html (PAL info)
 =====MIDI input=====
 * http://www.notesandvolts.com/2012/01/fun-with-arduino-midi-input-basics.html
 
