@@ -1,5 +1,8 @@
 ====== FFMPEG ======
 
+=====change speed=====
+  ffmpeg -i input.mp4 -vf “setpts=(1/<speed>)*PTS” output.mp4
+
 =====resize video to 480p or 720p=====
   ffmpeg -i INPUT.MOV -s hd480 OUTPUT.MOV
 
