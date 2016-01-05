@@ -1,0 +1,17 @@
+====== SketchUp ======
+
+==Quick Reference Card==
+* http://dl.trimble.com/sketchup/2016/en/sketchup2016refcardmac.pdf
+
+==Camera==
+* Orbit: Cmd+B
+* Pan: Cmd+R
+
+==Tools==
+* Select: Cmd+/ (or space?)
+* Push/Pull: Cmd+=
+
+==measurement textfield==
+In the statusbar on the right bottom of the Window there's a measurement textfield. You can just type numbers without having focus on the textfield.
+
+
