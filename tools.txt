@@ -14,3 +14,6 @@
 
 ===== Coding in parallel with a team ====
 * https://www.plasticscm.com
+
+===== online c (and other language) compiler / sketchpad =====
+* http://codepad.org/
