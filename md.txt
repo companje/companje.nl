@@ -6,3 +6,5 @@
 * tips van oF: Mac OSX: Mou (OSX 10.7) or MarkEdit (OSX 10.6+)
 * Markdown viewer for Mac: MacDown.app
 * [[https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet|cheatsheet]]
+* https://help.github.com/articles/github-flavored-markdown/
+* https://guides.github.com/features/mastering-markdown/
