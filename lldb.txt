@@ -1,0 +1,8 @@
+====== LLDB debugger ======
+
+<code bash>
+lldb myExecutable
+> run
+# when program stops because of EXC_BAD_ACCESS type:
+> frame variable
+</code>
