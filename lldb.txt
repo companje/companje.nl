@@ -1,5 +1,9 @@
 ====== LLDB debugger ======
 
+first create a debug version of the app by compiling with `-g`
+* http://www.rapidtables.com/code/linux/gcc/gcc-g.htm
+* http://lldb.llvm.org/lldb-gdb.html
+
 <code bash>
 lldb myExecutable
 > run
