@@ -3,7 +3,8 @@
 * [[http://www.sidmusic.org/sidplay/mac/|SIDPlay for OSX]]
 * http://www.joogn.de/sid.html
 * SIDuino
-* Java SIDplay2
+* Java SIDplay2 / Java SID Player Music Library V2
+
 
 ==datasheet==
 * http://archive.6502.org/datasheets/mos_6581_sid.pdf
