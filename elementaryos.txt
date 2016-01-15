@@ -1,0 +1,11 @@
+====== Elementary OS ======
+Peter: Mochten jullie nieuwsgierig zijn naar Elementary OS, dit zijn mijn bronnen geweest om het te installeren:
+https://elementary.io/docs/installation
+http://www.elementarynow.com/dual-booting-elementary-os-and-osx/
+https://github.com/aroman/freya-on-a-mac
+Hiermee heb ik het kunnen installeren naast OS X. Na het installeren van behoorlijk wat dingen zoals onze openwrt Docker image, FreeCAD, Gimp etc etc gebruik ik nog steeds maar 25 GB.
+
+Ik koos Elementary OS over Ubuntu omdat het zich meer richt op gebruiksvriendelijkheid en aesthetics. Zie: https://elementary.io/get-involved#design
+Ook gebruikt en bouwen de ontwikkelaars aan goede single-focus applicaties, geen iTunes (muziek, store, telefoon sync, podcasts, ...) maar een losse muziek app, een losse podcasts app. Geen Thunderbird, maar losse E-mail en kalender apps. 
+
+Natuurlijk kan je het ook eerst even bekijken via iets als VirtualBox.
