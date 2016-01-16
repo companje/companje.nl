@@ -16,6 +16,7 @@
 * Erase: E
 * Move: Cmd+0
 * Scale: Cmd+9
+* Line: L
 
 ==measurement textfield==
 In the statusbar on the right bottom of the Window there's a measurement textfield. You can just type numbers without having focus on the textfield.
