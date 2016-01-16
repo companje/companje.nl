@@ -14,6 +14,8 @@
 * Select: Cmd+/ (or space?)
 * Push/Pull: Cmd+=
 * Erase: E
+* Move: Cmd+0
+* Scale: Cmd+9
 
 ==measurement textfield==
 In the statusbar on the right bottom of the Window there's a measurement textfield. You can just type numbers without having focus on the textfield.
