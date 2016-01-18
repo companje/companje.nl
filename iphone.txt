@@ -1,14 +1,12 @@
 ====== iPhone ======
 
-*[[http://www.iphoneclub.nl/5345/iphone-gekocht-wat-nu-handleiding-beginners/|Goede beginners handleiding voor de iPhone]]
-*[[http://www.iphoneclub.nl/3788/ihome-startpagina-voor-de-iphone/iHome startpagina voor de iPhone]]
+==sleep/wake button problem==
+* https://ssl.apple.com/nl/support/iphone5-sleepwakebutton/
+* iFixit: https://www.ifixit.com/Guide/iPhone+5+Power+Button+Replacement/10703
 
-===== Ideas for iPhone apps =====
-*It would be nice to have a webinterface to the iphone phonebook.  Eventually with the ability to change details, do imports, exports. Or is this already implemented in the Contacts application for Mac, and/or Windows Address book / Outlook?
-*[[Happyard]] for the iPhone
+==battery replacement iphone5==
+my serial nr: DNQJWMKBDTWD
+https://ssl.apple.com/nl/support/iphone5-battery/
 
 ===== Developing for the iPhone =====
 *HFSExplorer can be used to extract .dmg files in Windows. Also in [[Linux]]?
-
-===== iPhone op Ubuntu =====
-*[[http://ubuntuforum.nl/ubuntu-tutorial/ubuntu-tutorial-uw-iphone-op-ubuntu/|Tutorial iPhone synchroniseren met Ubuntu]]
