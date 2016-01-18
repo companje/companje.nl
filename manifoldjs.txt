@@ -23,5 +23,5 @@ One or more errors occurred when generating the application. For more informatio
 </code>
 
 ==ERROR: Failed to retrieve manifest from site.==
-This error is generated when HTTP response is not 200 OK. For example in case of 403 (Authentication).
+This error is generated when HTTP response is not 200 OK. For example in case of 401 or 403 (Authentication).
 https://github.com/manifoldjs/ManifoldJS/blob/510145f8c8c623d869174354cf2abe514d536395/lib/manifestTools.js#L67
