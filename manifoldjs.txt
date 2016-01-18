@@ -21,3 +21,7 @@ SUGGESTION: Manifest validation  (All Platforms) - It is recommended to specify 
 ERROR: Failed to create the base application. The Cordova project could not be created successfully.
 One or more errors occurred when generating the application. For more information, run manifoldjs with the diagnostics level set to debug (e.g. manifoldjs [...] -l debug)
 </code>
+
+==ERROR: Failed to retrieve manifest from site.==
+This error is generated when HTTP response is not 200 OK. So, also in case of redirects or authentication problems.
+https://github.com/manifoldjs/ManifoldJS/blob/510145f8c8c623d869174354cf2abe514d536395/lib/manifestTools.js#L67
