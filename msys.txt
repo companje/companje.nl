@@ -1,8 +1,11 @@
 ====== MSYS ======
 * https://msys2.github.io/
+* http://sourceforge.net/p/msys2/wiki/MSYS2%20installation/
+
 Update the system packages with
   pacman --needed -Sy bash pacman pacman-mirrors msys2-runtime
 Close MSYS2, run it again from Start menu and update the rest with
   pacman -Su
 MSYS2 shell with pacman's output about system upgrade 
 Now Pacman is fully committed to the windows cause :)
+
