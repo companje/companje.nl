@@ -1,0 +1,6 @@
+====== RaspberryPi ======
+
+====openFrameworks on Raspberry Pi====
+* [[http://openframeworks.cc/setup/raspberrypi/Raspberry-Pi-Getting-Started.html|getting started]]
+* [[http://openframeworks.cc/setup/raspberrypi/Raspberry-Pi-Cross-compiling-guide.html|cross compiling]]
+* [[http://www.openframeworks.cc/setup/raspberrypi/Raspberry-Pi-DISTCC-guide.html|distcc]]
