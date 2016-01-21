@@ -9,3 +9,6 @@ Ik koos Elementary OS over Ubuntu omdat het zich meer richt op gebruiksvriendeli
 Ook gebruikt en bouwen de ontwikkelaars aan goede single-focus applicaties, geen iTunes (muziek, store, telefoon sync, podcasts, ...) maar een losse muziek app, een losse podcasts app. Geen Thunderbird, maar losse E-mail en kalender apps. 
 
 Natuurlijk kan je het ook eerst even bekijken via iets als VirtualBox.
+
+====pogingen...====
+* http://askubuntu.com/questions/462360/macbook-air-how-to-install-a-dual-bootable-ubuntu-14-04-lts
