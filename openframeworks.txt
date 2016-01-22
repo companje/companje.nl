@@ -1,5 +1,12 @@
 ====== openFrameworks ======
 
+=====openframeworks 009=====
+* installing MSYS2 for openFrameworks 009.
+* follow the steps at http://openframeworks.cc/setup/msys2/
+  * you might need to set the HOME environment variable to your home folder (C:\Users\YOUR_USERNAME) to be able to access your files from the MSYS2 shell.
+  * there's a typo in the line `cd your_oF_directory/scripts/win_cb/msys2`. Remove the win_cb part.
+
+
 =====main.cpp template=====
 <code c>
 #include "ofMain.h"
