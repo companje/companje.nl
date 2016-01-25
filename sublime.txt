@@ -1,6 +1,10 @@
 ===============SublimeText2===============
 A light-weight full feature text/code editor for OSX, Windows and Linux
 
+=====On Linux=====
+* Alt+O: toggle Header/Source
+* Ctrl+P: jump to anything
+
 =====Keyboard shortcuts=====
 * [[https://www.sublimetext.com/docs/2/multiple_selection_with_the_keyboard.html|multiple select with keyboard]]
 * Cmd+R: Search function within a file
