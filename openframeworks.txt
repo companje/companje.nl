@@ -10,6 +10,7 @@
 C:\Windows\System32\cmd.exe /A /Q /K C:\msys64\mingw32_shell.bat
 </code>
 * add `c:\msys64\mingw32\bin;c:\msys64\usr\bin` to the start of the PATH.
+* OF recommends [[http://www.codecguide.com/download_k-lite_codec_pack_basic.htm|K-Lite codec]] for video support.
 
 =====main.cpp template=====
 <code c>
