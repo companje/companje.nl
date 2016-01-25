@@ -9,6 +9,7 @@
 <code>
 C:\Windows\System32\cmd.exe /A /Q /K C:\msys64\mingw32_shell.bat
 </code>
+* add `c:\msys64\mingw32\bin;c:\msys64\usr\bin` to the start of the PATH.
 
 =====main.cpp template=====
 <code c>
