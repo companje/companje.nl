@@ -15,3 +15,8 @@ Natuurlijk kan je het ook eerst even bekijken via iets als VirtualBox.
 
 ====right click on MacBook====
 * https://www.reddit.com/r/elementaryos/comments/2x259t/i_cant_right_click/
+
+====screen dpi====
+  gsettings set org.gnome.desktop.interface scaling-factor 1
+
+
