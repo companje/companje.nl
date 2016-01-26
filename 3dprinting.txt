@@ -16,6 +16,9 @@
 * https://www.iprototype.nl/products/3d-printing/udelta-3d-printer
 * http://cannybots.com/
 
+== guides ==
+* http://support.3dverkstan.se/article/23-a-visual-ultimaker-troubleshooting-guide#pillowing
+
 == disney research == 
 * http://www.disneyresearch.com/publication/autoconnect/
 
