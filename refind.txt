@@ -1,4 +1,4 @@
-====== Boot manager ======
+====== rEFInd boot manager ======
 
 ==skinning==
 * http://askubuntu.com/questions/565439/installing-a-theme-for-refind-and-finding-refind-file-mac
