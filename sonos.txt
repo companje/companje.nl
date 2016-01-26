@@ -3,3 +3,6 @@
 
 ===== AirSonos =====
 * https://medium.com/@stephencwan/hacking-airplay-into-sonos-93a41a1fcfbb
+
+===== SoCo =====
+* https://pypi.python.org/pypi/soco/
