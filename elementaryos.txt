@@ -19,4 +19,8 @@ Natuurlijk kan je het ook eerst even bekijken via iets als VirtualBox.
 ====screen dpi====
   gsettings set org.gnome.desktop.interface scaling-factor 1
 
+====replace 'Files' by nemo====
+how to install nemo and more tips here: https://www.linux.com/learn/tutorials/836297-7-elementary-os-freya-tweaks-to-make-the-platform-even-better
 
+no desktop window:
+  gsettings set org.nemo.desktop show-desktop-icons false
