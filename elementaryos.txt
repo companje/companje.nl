@@ -34,3 +34,6 @@ sudo apt-get install gdebi
 wget http://download.teamviewer.com/download/teamviewer_i386.deb
 sudo gdebi teamviewer_i386.deb
 </code>
+
+====terminal colors====
+http://mayccoll.github.io/Gogh/
