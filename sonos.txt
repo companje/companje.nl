@@ -6,3 +6,11 @@
 
 ===== SoCo =====
 * https://pypi.python.org/pypi/soco/
+* socos (command line player)
+  socos
+    > set 1
+    > play
+    > volume +10
+    > volume -10
+    
+  
