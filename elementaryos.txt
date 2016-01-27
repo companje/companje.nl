@@ -27,7 +27,7 @@ no desktop window:
 
 
 ====teamviewer====
-this worked for me:
+[[http://linuxg.net/install-teamviewer-on-ubuntu/|this]] worked for me:
 <code>
 sudo apt-get update
 sudo apt-get install gdebi
