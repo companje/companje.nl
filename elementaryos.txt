@@ -37,3 +37,6 @@ sudo gdebi teamviewer_i386.deb
 
 ====terminal colors====
 http://mayccoll.github.io/Gogh/
+
+====aliases====
+edit/create `~/.bash_aliases` and add your alias like this `alias dir="ls -al"`
