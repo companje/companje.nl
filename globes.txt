@@ -24,3 +24,4 @@
 * [[projection mapping]]
 
 * Panoramatic 360 globe
+* http://alteredqualia.com/xg/examples/earth_bathymetry.html
