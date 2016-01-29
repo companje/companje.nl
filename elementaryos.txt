@@ -33,3 +33,8 @@ edit/create `~/.bash_aliases` and add your alias like this `alias dir="ls -al"`
 
 ====keyboard mapping Ctrl/Cmd====
 * System Settings > Keyboard > Options > [x] Control is mapped to Win keys (and the usual Ctrl keys)
+
+====autostart apps====
+`Settings > Applications > Startup`
+or 
+or run `gnome-session-properties`
