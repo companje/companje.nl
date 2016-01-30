@@ -1,4 +1,5 @@
-====== PGM - Portable Gray Map======
+===== PPM (Portable PixMap), PGM (Portable GreyMap), PBM (Portable BitMap) ======
+* see also [[rgb]]
 
 <code>
 (echo "P5 512 4096 255"; cat filename) > foo.pgm
