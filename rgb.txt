@@ -1,0 +1,4 @@
+====== RGB files ======
+
+====Analyse RGB file====
+https://gist.github.com/companje/a70fe3b13e6269b1238f
