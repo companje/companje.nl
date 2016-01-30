@@ -2,4 +2,4 @@
 see also [[pgm]]
 
 ====Analyse RGB file with Processing====
-https://gist.github.com/companje/a70fe3b13e6269b1238f
+%gist(a70fe3b13e6269b1238f)%
