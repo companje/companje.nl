@@ -1,5 +1,8 @@
 ====== Docker ======
 
+== install docker on ElementaryOS (freya) ==
+https://github.com/docker/docker/issues/12863#issuecomment-110035351
+
 == error: Host "dev" does not exist==
 docker is configured to use the default machine with IP 192.168.99.100
 For help getting started, check out the docs at https://docs.docker.com
