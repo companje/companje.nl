@@ -1,4 +1,4 @@
-====== Elementary OS on Macbook Pro======
+====== Elementary OS======
 
 ====install java on elementaryos====
 <code>
