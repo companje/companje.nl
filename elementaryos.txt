@@ -1,5 +1,14 @@
 ====== Elementary OS on Macbook Pro======
 
+====install java on elementaryos====
+<code>
+sudo apt-get update
+sudo apt-get install python-software-properties
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+</code>
+
 ====pogingen...====
 * http://askubuntu.com/questions/462360/macbook-air-how-to-install-a-dual-bootable-ubuntu-14-04-lts
 
