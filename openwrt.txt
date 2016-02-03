@@ -18,11 +18,14 @@ apt-get install subversion build-essential libncurses5-dev zlib1g-dev gawk git c
 ...
 ```
 
-* run image generator: 
+* run image generator
 ```
 make image PROFILE=TLMR3020 PACKAGES="wifibox -ppp -kmod-ipv6"
 ```
-* creates image in bin/ar71xx folder. scp ….squashfs-sysupgrade.bin file to the /tmp folder of the box and run `sysupgrade -v- n /tmp/openwrt….squashfs-sysupgrade.bin`
+* creates image in bin/ar71xx folder. scp ….squashfs-sysupgrade.bin file to the /tmp folder of the box and run 
+```
+sysupgrade -v- n /tmp/openwrt….squashfs-sysupgrade.bin
+```
 
 * Er was nog een probleem met dat er iets niet geconfigureerd was als je het gemaakte image op een wifibox plaatste. Volgens mij werd de print3d niet automatisch opgestart of herstart. inotify ging niet goed ofzo omdat dat een SETTING was ipv een DEPENDENCY.
 
