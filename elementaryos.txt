@@ -9,7 +9,7 @@ sudo apt-get update
 sudo apt-get install oracle-java8-installer
 </code>
 
-====pogingen...====
+====install ElementaryOS os MacbookPro====
 * http://askubuntu.com/questions/462360/macbook-air-how-to-install-a-dual-bootable-ubuntu-14-04-lts
 
 ====right click on MacBook====
