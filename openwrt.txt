@@ -21,6 +21,7 @@ apt-get install subversion build-essential libncurses5-dev zlib1g-dev gawk git c
 * run image generator
 ```
 make image PROFILE=TLMR3020 PACKAGES="wifibox -ppp -kmod-ipv6"
+
 ```
 * creates image in bin/ar71xx folder. scp ….squashfs-sysupgrade.bin file to the /tmp folder of the box and run 
 ```
