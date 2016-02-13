@@ -54,7 +54,7 @@ http://searle.hostei.com/grant/MonitorKeyboard/index.html
 * [[Vectrex]]
 * [[panasonic rl h7000wb]]
 * [[IBM 5150]]
-* [[8080]], 8085, 8088 CPUs
+* [[8080]], [[8085]], [[8088]] CPUs
 * ringkerngeheugen
 * more...
 
