@@ -43,7 +43,7 @@ http://searle.hostei.com/grant/MonitorKeyboard/index.html
 =====CMOC compiler=====
 [[http://perso.b2b2c.ca/sarrazip/dev/cmoc.html|tip van Johan o.a. voor Vectrex]]
 
-=====My collection=====
+=====My computer collection=====
 * [[altair|Altair 8800]] (self made replica)
 * [[superbrain|Intertec SuperBrain]]
 * [[holborn|Holborn 6100]]
@@ -63,3 +63,10 @@ http://searle.hostei.com/grant/MonitorKeyboard/index.html
 * Tektronix 4010
 * VT-05
 * PDP11
+
+=====My pong collection=====
+* Blaupunkt TV-Action FM100 Color
+* ...
+
+=====TV's=====
+* Indesit TV
