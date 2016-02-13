@@ -28,7 +28,7 @@ http://searle.hostei.com/grant/MonitorKeyboard/index.html
 * http://hack42.nl
 * http://www.pdp-11.nl/ (Helmond)
 * http://utopia.knoware.nl/users/stuurmn (Albert, ontmoet bij HCC C64 dag)
-* http://obsolescence.wix.com/obsolescence (NL)
+* http://obsolescence.wix.com/obsolescence (Oscar, NL)
 * http://obsolescenceguaranteed.blogspot.ch/ (NL)
 
 =====Communities=====
@@ -62,7 +62,7 @@ http://searle.hostei.com/grant/MonitorKeyboard/index.html
 * Delay line memory (like https://ub.fnwi.uva.nl/computermuseum/tyco.php)
 * Tektronix 4010
 * VT-05
-* PDP11
+* PDP8 / PDP11
 
 =====My pong collection=====
 * Blaupunkt TV-Action FM100 Color
