@@ -7,3 +7,5 @@
 * [[http://classiccmp.org/dunfield/r/cpm22.pdf|CP/M version 2.2 Manual (0.5M PDF)]]
 * [[http://classiccmp.org/dunfield/r/z80tm.pdf|Z80 CPU Technical Manual (5M PDF)]]
 
+====Info from Ronald about the Superbrain computer I bought from him====
+* http://www.vintage-computer.com/vcforum/showthread.php?38289-Intertec-Superbrain-hard-disk
