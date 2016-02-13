@@ -3,8 +3,8 @@
 =====draw blocks with light-pen in low-res mode=====
 <code gwbasic>
 10 POKE 53280,0: POKE 53281,1
-20 PRINT “{Shift+CLR}”
-30 PRINT “                        DOODLE3D”
+20 PRINT "{Shift+CLR}"
+30 PRINT "                        DOODLE3D"
 
 50 GOSUB 200
 60 GOSUB 100
