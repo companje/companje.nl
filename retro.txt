@@ -43,8 +43,10 @@ http://searle.hostei.com/grant/MonitorKeyboard/index.html
 =====CMOC compiler=====
 [[http://perso.b2b2c.ca/sarrazip/dev/cmoc.html|tip van Johan o.a. voor Vectrex]]
 
-=====Computers=====
-* [[Altair8800]]
-* [[SuperBrain]]
-* [[Hoborn]]
+=====Computers in my collection=====
+* [[Altair8800]] (replica)
+* [[Intertec SuperBrain]]
+* [[Holborn]]
 * [[Commodore64]]
+* [[Sanyo MBC-555]]
+* more...
