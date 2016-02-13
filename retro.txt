@@ -18,7 +18,7 @@
 =====Monitor and keyboard controller=====
 http://searle.hostei.com/grant/MonitorKeyboard/index.html
 
-=====Museums=====
+=====Museums & verzamelaars=====
 * http://www.computer-museum.nl/
 * http://hblankes.home.xs4all.nl/Museum/
 * http://www.rotterdamsradiomuseum.nl
@@ -28,6 +28,8 @@ http://searle.hostei.com/grant/MonitorKeyboard/index.html
 * http://hack42.nl
 * http://www.pdp-11.nl/ (Helmond)
 * http://utopia.knoware.nl/users/stuurmn (Albert, ontmoet bij HCC C64 dag)
+* http://obsolescence.wix.com/obsolescence (NL)
+* http://obsolescenceguaranteed.blogspot.ch/ (NL)
 
 =====Communities=====
 * http://awesomespace.nl/
