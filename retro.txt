@@ -21,9 +21,10 @@
 =====Terminal Emulators=====
 * https://github.com/Swordfish90/cool-retro-term
 
-=====Retro Kits=====
+=====Retro Kits & community=====
 * http://www.brielcomputers.com/wordpress/
 * [[http://obsolescence.wix.com/obsolescence#!kim-uno-summary/c1uuh|Kim-1]]
+* [[http://www.retrobrewcomputers.org/doku.php|RetroBrew / N8VEM project / community]]
 
 =====Monitor and keyboard controller=====
 http://searle.hostei.com/grant/MonitorKeyboard/index.html
