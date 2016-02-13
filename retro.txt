@@ -44,9 +44,9 @@ http://searle.hostei.com/grant/MonitorKeyboard/index.html
 [[http://perso.b2b2c.ca/sarrazip/dev/cmoc.html|tip van Johan o.a. voor Vectrex]]
 
 =====Computers in my collection=====
-* [[Altair8800]] (replica)
+* [[altair|Altair 8800]] (replica)
 * [[Intertec SuperBrain]]
-* [[Holborn]]
-* [[Commodore64]]
+* [[Holborn 6500]]
+* [[c64|Commodore 64]]
 * [[Sanyo MBC-555]]
 * more...
