@@ -1,6 +1,6 @@
 ====== Intertec Superbrain Computer======
 
-==Links from Daves Old Computers==
+====Documents from Daves Old Computers====
 * [[http://classiccmp.org/dunfield/supbrain/manual.pdf|Superbrain Operators Manual (4M PDF)]]
 * [[http://classiccmp.org/dunfield/supbrain/techinfo.pdf|SuperBrain Technical Information (3M PDF)]]
 * [[http://classiccmp.org/dunfield/supbrain/schemati.pdf|SuperBrain Schematic Drawings (3.5M PDF)]]
