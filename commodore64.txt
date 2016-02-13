@@ -1,7 +1,7 @@
 ====== Commodore64 ======
 
 =====draw blocks with light-pen in low-res mode=====
-<code bas>
+<code gwbasic>
 10 POKE 53280,0: POKE 53281,1
 20 PRINT “{Shift+CLR}”
 30 PRINT “                        DOODLE3D”
