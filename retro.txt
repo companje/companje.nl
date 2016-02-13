@@ -43,10 +43,23 @@ http://searle.hostei.com/grant/MonitorKeyboard/index.html
 =====CMOC compiler=====
 [[http://perso.b2b2c.ca/sarrazip/dev/cmoc.html|tip van Johan o.a. voor Vectrex]]
 
-=====Computers in my collection=====
-* [[altair|Altair 8800]] (replica)
+=====Computers I own=====
+* [[altair|Altair 8800]] (self made replica)
 * [[superbrain|Intertec SuperBrain]]
 * [[holborn|Holborn 6100]]
 * [[c64|Commodore 64]]
+* [[MSX]]
 * [[Sanyo|Sanyo MBC-555]]
+* [[adm3a|Lear Siegler ADM-3A]]
+* [[Vectrex]]
+* [[panasonic rl h7000wb]]
+* [[IBM 5150]]
+* [[8080]] en 8085 CPU's
+* ringkerngeheugen
 * more...
+
+=====Wanted=====
+* Delay line memory (like https://ub.fnwi.uva.nl/computermuseum/tyco.php)
+* Tektronix 4010
+* VT-05
+* PDP11
