@@ -2,7 +2,7 @@
 * http://blog.tynemouthsoftware.co.uk/2013_09_01_archive.html
 * https://archive.org/details/softwarelibrary_msdos_games/v2
 * http://www.spelcomputermuseum.nl/ in Epe
-* http://www.computermuseum.nl/ in Epe
+* http://www.computermuseum.nl/
 * vette emulators: http://www.pcjs.org/
 * MESS emulator - http://sdlmame.lngn.net/
 * roms: https://ia601808.us.archive.org/zipview.php?zip=/2/items/MESS-0.149.BIOS.ROMs/MESS-0.149.BIOS.ROMs.zip
@@ -17,6 +17,9 @@
 
 =====Monitor and keyboard controller=====
 http://searle.hostei.com/grant/MonitorKeyboard/index.html
+
+=====Events====
+* [[http://www.vintage.org/2015/east/|VCF East X]] (US)
 
 =====Museums & verzamelaars=====
 * http://www.computer-museum.nl/
