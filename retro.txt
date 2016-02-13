@@ -60,9 +60,9 @@ http://searle.hostei.com/grant/MonitorKeyboard/index.html
 
 =====Wanted=====
 * Delay line memory (like https://ub.fnwi.uva.nl/computermuseum/tyco.php)
-* Tektronix 4010
-* VT-05
-* PDP8 / PDP11
+* [[Tektronix 4010]]
+* [[VT-05]]
+* [[pdp|PDP8 / PDP11]]
 
 =====My pong collection=====
 * Blaupunkt TV-Action FM100 Color
