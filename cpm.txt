@@ -1,5 +1,8 @@
 ====== CP/M ======
 
+==introduction to cpm==
+http://obsolescence.wix.com/obsolescence#!introduction-to-cpm/c12tf
+
 ==copy a file==
 ```
 PIP FILE.DST=FILE.SRC
