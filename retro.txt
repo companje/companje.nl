@@ -11,6 +11,9 @@
 * [[https://www.pinterest.com/blakespot/keyboards/|Pinterest pagina met bijzondere toetsenborden]]
 * http://kaput.retroarchive.org/
 
+====== Pioneers ======
+* [[http://obsolescence.wix.com/obsolescence#!kim-uno-summary/c1uuh|"...Steve Wozniak, Jim Butterfield and Peter Jennings"]]
+
 =====ROMs & Emulators=====
 * MESS emulator - http://sdlmame.lngn.net/
 * roms: https://ia601808.us.archive.org/zipview.php?zip=/2/items/MESS-0.149.BIOS.ROMs/MESS-0.149.BIOS.ROMs.zip
