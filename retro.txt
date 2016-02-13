@@ -23,6 +23,8 @@
 
 =====Retro Kits=====
 * http://www.brielcomputers.com/wordpress/
+* [[http://obsolescence.wix.com/obsolescence#!kim-uno-summary/c1uuh|Kim-1]]
+
 =====Monitor and keyboard controller=====
 http://searle.hostei.com/grant/MonitorKeyboard/index.html
 
