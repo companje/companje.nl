@@ -2,8 +2,14 @@
 
 =====make Debug openFrameworks 009=====
   make Debug
+then:
   make RunDebug
-  
+or:
+  cd bin
+  gdb Project_debug
+  r
+ 
+
 =====openframeworks 009=====
 * installing MSYS2 for openFrameworks 009.
 * follow the steps at http://openframeworks.cc/setup/msys2/
