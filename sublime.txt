@@ -1,6 +1,10 @@
 ===============SublimeText2===============
 A light-weight full feature text/code editor for OSX, Windows and Linux
 
+=====Disable Hex view for binary files====
+Add to settings:
+  "enable_hexadecimal_encoding": false
+
 =====On Linux=====
 * Alt+O: toggle Header/Source
 * Ctrl+P: jump to anything
