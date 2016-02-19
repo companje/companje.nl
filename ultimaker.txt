@@ -6,6 +6,7 @@ See [[3DPrinting]]
 * `git clone https://github.com/Ultimaker/cura-build`
 * set `PYTHONPATH=/usr/local/lib/python3/dist-packages`
 * https://github.com/trigrab/cura-build/commit/354befb7933626bb34ca2972e9fb1ea71743ba8c
+* https://github.com/Ultimaker/cura-build/issues/9
 
 ==doodle3d startcode/endcode for Doodle3D Ultimaker 2/2go==
 <code>
