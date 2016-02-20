@@ -1,2 +1,5 @@
 ====== Axoloti ======
-* possible to run on STM32F4DISCOVERY
+Harmen: "snel en makkelijk een stand-alone DSP-hardwaretoepassing mee bouwen, bv een synthesizer of effectpedaal, m.a.w. alles wat met MaxMSP of PureData kan, maar dan in een doosje dat direct opstart als je stroom op zet."
+
+* David: "run also on STM32F4DISCOVERY"
+
