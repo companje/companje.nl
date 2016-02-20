@@ -84,3 +84,6 @@ While in Wordstar mode, 6 keys are position dependent: the four arrow keys, CTRL
 
 ==Schematic==
 {{::screen_shot_2016-02-20_at_21.39.40.png?nolink|}}
+
+==Connector==
+{{:otrona_attache_keyboard_connector.png?nolink|}}
