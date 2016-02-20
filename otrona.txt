@@ -1,4 +1,4 @@
 ====== Otrona ======
 
 ===== Keyboard =====
- Fujitsu Leaf Spring 1st Generation
+* Fujitsu Leaf Spring 1st Generation
