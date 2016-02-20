@@ -18,7 +18,7 @@ The keyboard is designed to connect to the system iri a modular fashion. The con
 Keys on the top row of the keyboard are used to perform several functions in addition to numeric and special character typewriter functions. Multi-functions are activated by pressing two or more keys at the same time, as instructed by the keyboard template.
 The keys which activate the multi-functions are the CTRL key, SHIFT and CTRL keys, and C'l'RL and ESC keys.
 
-==lO-Key Mode==
+==1O-Key Mode==
 The Attache keyboard may be used as a 10-Key pad for entering columns of figures. Certain letter keys are converted to numbers when 10-Key Mode is activated and the letter keys are used in lower case.
 10-Key Mode is activated by pressing CTRL and CAPS LOCK simultaneously. Press CAPS LOCK to return to upper case, or press CTRL and CAPS LOCK simultaneously to return to lowercase.
 
