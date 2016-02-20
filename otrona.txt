@@ -62,3 +62,24 @@ U7 is a parallel-to-serial register. Pin 9 high latches parallel input; pin 9 lo
 U6 sends a signal to pin 2 of a NAND gate (U5) simultaneously with its load signal to U7. This pulls connector JI pin 4 to the PIO low, which signals the processor via the PIO that a key bas been pressed.
 
 The processor sends system clock pulses through connector Jl pin 3 to U7 pin 10, and simultaneously sends reset pulses to U6. Reset sets the U7 shift register's parallel load pin 9 low, enabling serial output. The data "bits are clocked out U7 pin 3, through Jl pin 4 to the processor via the PIO.
+
+==Additional Circuitry Functions==
+A feedback loop (U3 pin 2 to U4 pin 2), and a delay (C5 and R6) keep the state of U3 from changing too rapidly. This is an allowance for key bounce.
+
+Key repeat is a function of the counter, U2. U2 starts counting when a key is pressed. After a short period of time (set by the potentiometer at the back of the keyboard) U2 drives its output high. The next clock pulse enables the flip-flop (U6). U3 pin 14 goes low, which gates the output of U2 pin 13 through gate U4. This generates a string of pulses. Each pulse sets U6, sending the key code held down to the processor.·
+
+The line from the shift key goes through a diode. The diode prevents using the left Shift key and the Reset key to cause a system reset. (An accidental system reset from pressing both keys would otherwise be easy.)
+
+{{::screen_shot_2016-02-20_at_21.27.49.png?nolink|}}
+
+Additional information on keyboard layout is contained in the Software chapter of this manual. Refer to "Generating Keyboard Codes", page 3-53.
+
+==Generation of Keyboard Character Code==
+The following charts show the physical keyboard layout and character codes. Two keys, control and shift, affect the code which generates when a key is pressed.
+The character codes in the      and            tables are that of Wordstar. Multiple key strokes are automatically combined by the Wordstar version of character codes.
+While in Wordstar mode, 6 keys are position dependent: the four arrow keys, CTRL A, and CTRL -. An up arrow is 05 {hex}, left arrow is 13
+{hex}, right arrow is 04 {hex}, down arrow is 18 {hex},      A {hex}, and CTRL - is 86 {hex}.
+
+(tables not included. See Technical Manual)
+
+{{::screen_shot_2016-02-20_at_21.39.40.png?nolink|}}
