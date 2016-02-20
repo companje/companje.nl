@@ -3,6 +3,8 @@
 ===== Keyboard =====
 * [[https://deskthority.net/keyboards-f2/otrona-attache-keyboard-fujitsu-switches-t11728.html|...Fujitsu Leaf Spring 1st Generation...]]
 
+* http://bitsavers.trailing-edge.com/pdf/otrona/Otrona_Attache_Technical_Manual_Jul83.pdf
+
 ==Keyboard Interface==
 The I/O RTC section of the processor board contains the connector to the Attache keyboard (J502). Lines B6 and B7 of the PIO offer simple serial interface to the keyboard. Refer to "Keyboard" page 2-67 for additional logic information concerning the keyboard.
 The keyboard logic monitors all the keys. When the logic detects a pressed key, it pulls data line 4 of connector J502 to a low level. U511 is a voltage comparator which senses the low signal from line 4, and sends a high signal to B6 of the PIO. The internal PIO logic recognizes the B6 signal as an indication of a pressed key. .
