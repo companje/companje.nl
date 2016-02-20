@@ -34,3 +34,31 @@ Power for the keyboard is supplied by a +12 volt line on pin 2 of the keyboard c
 The keyboard is an Attache module that interfaces with the processor board through a four-wire connector (Jl). The major components of the keyboard module are the keyboard itself, a counter, a shift register, and an oscillator.
 
 {{::screen_shot_2016-02-20_at_21.21.52.png?nolink|}}
+
+===Theory of operations===
+
+==Introduction==
+The keyboard is set up in a grid pattern. Two multiplexers are attached to the keyboard grid lines. The multiplexers receives a binary counter's output which sequentially enables each grid line.
+
+{{::screen_shot_2016-02-20_at_21.24.05.png?nolink|}}
+
+A pressed key creates a short to output a high signal that stops the counter and enables a shift register. The character code from the corresponding key loads into this register in parallel. System clock pulses shift the data bits of the keycode out serially to the processor, via the Parallel Input/Output controller (PIO).
+
+==Basic Keyboard Logic==
+The NAND gate U5, combined with the resistor - capacitor components R9, RIO, and C9, form a 4 KHz oscillator. The oscillator drives a binary counter US, and flip-flop U3, at 4 KHz.
+
+The counter" inputs high pulses to twoS-channel analog multiplexer / demultiplexer. The multiplexers contain S bidirectional analog switches
+and connect to sides of the keyboard grid. The counter's pulses sequentially enable each of the switches, which connect to a grid line
+and to pin 3.
+
+When a key is pressed a short is created between the multiplexers which outputs the high enable from the counter through the corresponding grid lines, to U9 pin 3.
+
+This signal is gated into the flip-flop U3 (pin 6) by an oscillator clock pulse. The signal is inverted at U3 pin 2, so NOR gate U4 receives a low signal.
+
+This low signal couples an oscillator clock pulse into the flip-flop, U6. The flip-flop (U6) is now set, indicating a key is down. This drives the load input (pin 9) of the shift register (D7) high which loads the key code from counter (U8).
+
+U7 is a parallel-to-serial register. Pin 9 high latches parallel input; pin 9 low enables serial output. Each pressed key causes six data bits of keycode data to be loaded into the shift register (U7). Two more bits are added: one bit represents the status of the shift key, and the other represents the status of the control key.
+
+U6 sends a signal to pin 2 of a NAND gate (U5) simultaneously with its load signal to U7. This pulls connector JI pin 4 to the PIO low, which signals the processor via the PIO that a key bas been pressed.
+
+The processor sends system clock pulses through connector Jl pin 3 to U7 pin 10, and simultaneously sends reset pulses to U6. Reset sets the U7 shift register's parallel load pin 9 low, enabling serial output. The data "bits are clocked out U7 pin 3, through Jl pin 4 to the processor via the PIO.
