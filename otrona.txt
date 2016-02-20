@@ -45,7 +45,7 @@ The keyboard is set up in a grid pattern. Two multiplexers are attached to the k
 A pressed key creates a short to output a high signal that stops the counter and enables a shift register. The character code from the corresponding key loads into this register in parallel. System clock pulses shift the data bits of the keycode out serially to the processor, via the Parallel Input/Output controller (PIO).
 
 ==Basic Keyboard Logic==
-The NAND gate U5, combined with the resistor - capacitor components R9, RIO, and C9, form a 4 KHz oscillator. The oscillator drives a binary counter US, and flip-flop U3, at 4 KHz.
+The NAND gate U5, combined with the resistor - capacitor components R9, RIO, and C9, form a 4 KHz oscillator. The oscillator drives a binary counter U8, and flip-flop U3, at 4 KHz.
 
 The counter" inputs high pulses to twoS-channel analog multiplexer / demultiplexer. The multiplexers contain S bidirectional analog switches
 and connect to sides of the keyboard grid. The counter's pulses sequentially enable each of the switches, which connect to a grid line
