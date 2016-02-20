@@ -4,6 +4,24 @@
 * [[https://deskthority.net/keyboards-f2/otrona-attache-keyboard-fujitsu-switches-t11728.html|...Fujitsu Leaf Spring 1st Generation...]]
 * http://bitsavers.trailing-edge.com/pdf/otrona/Otrona_Attache_Technical_Manual_Jul83.pdf
 
+==Keyboard==
+The Attache keyboard is a full alphanumeric key set laid out in the IBM Selectrictm keyboard configuration. Additionally, cursor movement, delete, and multi-function keys are located on the keyboard.
+A 16 keystroke buffer handles the burst speed that can occur with short
+words. The key stroke speed capability is calculated at approximately 60
+key strokes per second, or 720 words per minute. •
+All keys will enter an auto-repeat mode if depressed for more than 1/2 second. This allows the user efficient data entry and system control capability. The repeat speed during auto-repeat is easily adjusted, on the rear of the keyboard, to the optimum needs of each user.
+The audible feedback of the keys are adjustable via Set-up Mode's "volume" and "click" options.
+The keyboard's construction makes the keys virtually impervious to contamination.
+The keyboard is designed to connect to the system iri a modular fashion. The connector on the system and the keyboard uses a telephone-style, 4- wire modular connector. A standard phone coil cord can be used to provide up to 10 feet of keyboard distance.
+
+==Multi-Function Keys==
+Keys on the top row of the keyboard are used to perform several functions in addition to numeric and special character typewriter functions. Multi-functions are activated by pressing two or more keys at the same time, as instructed by the keyboard template.
+The keys which activate the multi-functions are the CTRL key, SHIFT and CTRL keys, and C'l'RL and ESC keys.
+
+==lO-Key Mode==
+The Attache keyboard may be used as a 10-Key pad for entering columns of figures. Certain letter keys are converted to numbers when 10-Key Mode is activated and the letter keys are used in lower case.
+10-Key Mode is activated by pressing CTRL and CAPS LOCK simultaneously. Press CAPS LOCK to return to upper case, or press CTRL and CAPS LOCK simultaneously to return to lowercase.
+
 ==Keyboard Interface==
 The I/O RTC section of the processor board contains the connector to the Attache keyboard (J502). Lines B6 and B7 of the PIO offer simple serial interface to the keyboard. Refer to "Keyboard" page 2-67 for additional logic information concerning the keyboard.
 The keyboard logic monitors all the keys. When the logic detects a pressed key, it pulls data line 4 of connector J502 to a low level. U511 is a voltage comparator which senses the low signal from line 4, and sends a high signal to B6 of the PIO. The internal PIO logic recognizes the B6 signal as an indication of a pressed key. .
@@ -11,3 +29,8 @@ The processor monitors PIO line B6 to check for a character waiting. If a charac
 The voltage comparator (U511) is also used to detect system reset from the keyboard. The comparator checks for specific voltage levels from the keyboard. If the voltage level is below one and a half volts, this indicates a reset. The comparator then generates the signal RB Reset. The comparator also checks the POR (Power Okay) line and generates a PB Reset signal accordingly.
 The POK line is delayed through a resistor - capacitor network to         the EPROM Enable, CMOS RAM, and RTC from being written to erroneously while the power level is changing.
 Power for the keyboard is supplied by a +12 volt line on pin 2 of the keyboard connector. The line uses resistors to protect the keyboard.
+
+==Keyboard==
+The keyboard is an Attache module that interfaces with the processor board through a four-wire connector (Jl). The major components of the keyboard module are the keyboard itself, a counter, a shift register, and an oscillator.
+
+{{::screen_shot_2016-02-20_at_21.21.52.png?nolink|}}
