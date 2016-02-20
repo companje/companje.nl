@@ -72,6 +72,7 @@ http://searle.hostei.com/grant/MonitorKeyboard/index.html
 * [[IBM 5150]]
 * [[8080]], [[8085]], [[8088]] CPUs
 * ringkerngeheugen
+* [[Otrona]] keyboard
 * more...
 
 =====Wanted=====
