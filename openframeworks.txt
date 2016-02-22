@@ -1,5 +1,8 @@
 ====== openFrameworks ======
 
+=====openFrameworks 009 on ElementaryOS=====
+* https://forum.openframeworks.cc/t/cannot-install-of-0-9-0-on-elementary-os-freya-ubuntu-14-04/21616
+
 =====ArcText (curved text on circular path) with openFrameworks 009=====
 %gist(2defbb27726017b710e2)%
 
