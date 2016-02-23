@@ -1,5 +1,9 @@
 ====== openFrameworks ======
 
+=====Member function 'drawGlobe' not viable: 'this' argument has type 'const Globe', but function is not marked const=====
+???
+
+
 =====Field type '...' is an abstract class=====
 In openFrameworks 009 the declarations of some ofBase classes has changed. For example when your class inherits from  ofBaseDraws you need to add the `const` term after your function definition:
 <code>
