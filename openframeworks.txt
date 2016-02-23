@@ -1,7 +1,6 @@
 ====== openFrameworks ======
 
 =====opencv2/opencv.hpp file not found=====
-......addons/ofxCv/libs/ofxCv/include/ofxCv/Utilities.h:12:10: 'opencv2/opencv.hpp' file not found
 When you add ofxCv to your openFrameworks project make sure to also add ofxOpenCv. Because this adds the opencv2 folder to your project.
 
 =====openFrameworks 009 on ElementaryOS=====
