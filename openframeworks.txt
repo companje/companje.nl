@@ -1,6 +1,6 @@
 ====== openFrameworks ======
 
-=====extending ofBaseVideoDraws=====
+=====extending ofBaseVideoDraws in of009=====
 %gist(a006644bad4d187f0003)%
 
 =====inherit from ofBaseDrawsVideo class=====
