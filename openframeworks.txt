@@ -1,6 +1,10 @@
 ====== openFrameworks ======
 
-=====Member function 'drawGlobe' not viable: 'this' argument has type 'const Globe', but function is not marked const=====
+=====Member function '...' not viable:=====
+<code>
+Member function 'drawGlobe' not viable: 'this' argument has type 'const Globe', but function is not marked const
+</code>
+
 ???
 
 
