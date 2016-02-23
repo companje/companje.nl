@@ -1,5 +1,8 @@
 ====== Regular Expressions  ======
 
+===== Find all URLs starting with http and ending with .html =====
+  (http).*(.html)
+
 ===== Online tools =====
 * http://regexr.com/
 * http://txt2re.com/
