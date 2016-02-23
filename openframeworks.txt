@@ -1,5 +1,14 @@
 ====== openFrameworks ======
 
+=====what means 'const' after method definition?=====
+When you define a method like this in your class:
+<code>
+bool isReady() const
+</code>
+It means that it "will return a bool but it will not change the logic state of your object. So this is your getter."
+So by supplying const you promise the compiler you won't change any data inside your class instance.
+
+
 =====Member function '...' not viable:=====
 <code>
 Member function 'drawGlobe' not viable: 'this' argument has type 'const Globe', but function is not marked const
