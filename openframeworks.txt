@@ -1,7 +1,13 @@
 ====== openFrameworks ======
 
 =====Field type '...' is an abstract class=====
-uhm...
+In openFrameworks 009 the declarations of some ofBase classes has changed. For example when your class inherits from  ofBaseDraws you need to add the `const` term after your function definition:
+<code>
+  float getWidth() const { return 640; }
+  float getHeight() const { return 480; }
+  void draw(float x, float y) const { /*...*/ }
+  void draw(float x, float y, float w, float h) const { /*...*/ }
+</code>
 
 =====opencv2/opencv.hpp file not found=====
 When you add `ofxCv` to your openFrameworks project make sure to also add `ofxOpenCv`. Because this adds the `opencv2` folder to your project.
