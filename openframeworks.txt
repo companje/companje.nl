@@ -1,5 +1,8 @@
 ====== openFrameworks ======
 
+=====extending ofBaseVideoDraws=====
+%gist(a006644bad4d187f0003)%
+
 =====inherit from ofBaseDrawsVideo class=====
 In XCode when pressing Cmd+8 then click on Clock icon on bottom you get detailed info about build error message. It shows which functions you need to implement:
 {{::screen_shot_2016-02-23_at_12.02.44.png?nolink|}}
