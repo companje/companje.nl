@@ -1,7 +1,7 @@
 ====== Regular Expressions  ======
 
 ===== Find all URLs starting with http and ending with .html =====
-this works in the SublimeText search function
+this works in the SublimeText search function:
   (http).*(.html)
 
 ===== Online tools =====
