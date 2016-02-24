@@ -1,5 +1,27 @@
 ====== node.js ======
 
+=====parse HTML jQuery style=====
+https://github.com/cheeriojs/cheerio
+
+<code javascript>
+var request = require('request');
+var cheerio = require('cheerio');
+var url = 'http://www.marktplaats.nl/s/749032247370.html';
+
+request(url, function (error, response, body) {
+    if (!error) {
+		var $ = cheerio.load(body);
+        var url = $('.search-result span').attr('data-url');
+        var title = $('.search-result img').attr('title');
+        var img = $('.search-result img').attr('src').replace("_82","_83");
+        console.log("url:\t",url);
+        console.log("title:\t",title);
+        console.log("img:\t",img);
+    } else {
+        console.log(error);
+    }
+});
+</code>
 =====app.use & app.get/post combined====
 <code javascript>
 var express = require('express');
