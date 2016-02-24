@@ -1,5 +1,8 @@
 ====== Doodle3D ======
 
+===== adding a 3D-printer to Doodle3D =====
+* http://doodle3d.com/help/adding-3d-printer
+
 ===== notes @ DaVinci exhibition =====
 * http://connect.doodle3d.com/api/list.php
 * http://wifibox/d3dapi/network/signin
