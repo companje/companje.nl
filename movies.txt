@@ -2,6 +2,9 @@
 
 =====TODO======
 
+==tip from Kris Black==
+* Weird Science (80s classic)
+
 ==live coding tips van peter==
 * [[https://vimeo.com/20241649|docu]]
 * [[https://www.youtube.com/watch?v=GSGKEy8vHqg|Vet voorbeeld van live coding: Andrew Sorensen at TEDxQUT]]
