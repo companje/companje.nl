@@ -1,5 +1,33 @@
 =============== Google Docs ===============
 
+=====UrlFetchApp.fetch=====
+<code javascript>
+  var text = UrlFetchApp.fetch(URL).getContentText();
+</code>
+
+<code php>
+header("Content-type: text/plain");
+
+define('DB_NAME', '...');
+define('DB_USER', '...');
+define('DB_PASSWORD', '...');
+define('DB_HOST', '...');
+
+$db = mysql_connect(DB_HOST, DB_USER, DB_PASSWORD);
+mysql_select_db(DB_NAME, $db);
+
+$id = mysql_real_escape_string($_GET["id"]);
+if (!is_numeric($id)) die();
+
+if ($row = mysql_fetch_assoc(mysql_query("SELECT post_id,meta_value FROM wp_postmeta WHERE meta_key='_billing_country' AND post_id=$id"))) {
+    echo $row['meta_value'];
+}
+
+if ($row = mysql_fetch_assoc(mysql_query("SELECT post_id,meta_value FROM wp_postmeta WHERE meta_key='VAT Number' AND post_id=$id"))) {
+    echo " ".$row['meta_value'];
+}
+</code>
+
 =====tips=====
 http://woorkup.com/2010/02/19/10-useful-google-spreadsheet-formulas-you-must-know/
 
