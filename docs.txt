@@ -1,5 +1,9 @@
 =============== Google Docs ===============
 
+=====unique / sort / proper=====
+you can use this as a nice data validator
+  =sort(PROPER(unique(Inkomsten!D3:D)))
+
 =====UrlFetchApp.fetch=====
 <code javascript>
   var text = UrlFetchApp.fetch(URL).getContentText();
