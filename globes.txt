@@ -1,4 +1,5 @@
 ====== Globes ======
+see [[maps]]
 * http://mousebird.github.io/WhirlyGlobe/
 * http://mapmaker.education.nationalgeographic.com/
 
