@@ -2,3 +2,4 @@
 * micromappers
 * https://storymap.knightlab.com/
 * cartodb
+* http://battles.nodegoat.net/viewer.p/23/385/scenario/1/geo/fullscreen
