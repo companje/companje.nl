@@ -281,6 +281,8 @@ int main(int argc, const char** argv){
 * [[https://github.com/paulhoux/Cinder-Samples/blob/master/PerspectiveWarping/src/PerspectiveWarpingApp.cpp|OpenCv 		getPerspectiveTransform]] example by Paul Houx
 
 =====debugging with gdb=====
+see also [[lldb]]
+
 You can also running the gcc debugger from terminal:
 view plaincopy to clipboardprint?
 <code>
