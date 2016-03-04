@@ -1,5 +1,9 @@
 ====== openFrameworks ======
 
+=====Logitech C920 with IR blocker removed and red filter added. OpenCV code using BackgroundSubtractorMOG2
+Raw=====
+%gist(0ab635af72b7d0ef4421)%
+
 =====projectGenerator=====
 cmdline command:
 <code>
