@@ -6,6 +6,9 @@ cmdline command:
 "/Users/rick/Documents/openFrameworks/of0092/projectGenerator-osx/projectGenerator.app/Contents/Resources/app/app/projectGenerator"  -o"/Users/rick/Documents/openFrameworks/of0092" -a"ofxCv,ofxOpenCv" -p"osx" "/Users/rick/Documents/openFrameworks/of0092/apps/myApps/cvBgTest2"
 </code>
 
+I had a Segmentation Fault 11 when I changed the `scripts/templates/osx` xcodeProject. I removed ofApp.cpp and ofApp.h but that resulted in a lot of recursive calls in the `xcodeProject.cpp::addInclude function.
+I worked around this by manually removing the xml elements of ofApp.h and ofApp.cpp in `project.pbxproj` within the `emptyExample.xcodeproject` folder.
+
 =====extending ofBaseVideoDraws in of009=====
 %gist(a006644bad4d187f0003)%
 
