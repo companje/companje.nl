@@ -1,5 +1,11 @@
 ====== openFrameworks ======
 
+=====projectGenerator=====
+cmdline command:
+<code>
+"/Users/rick/Documents/openFrameworks/of0092/projectGenerator-osx/projectGenerator.app/Contents/Resources/app/app/projectGenerator"  -o"/Users/rick/Documents/openFrameworks/of0092" -a"ofxCv,ofxOpenCv" -p"osx" "/Users/rick/Documents/openFrameworks/of0092/apps/myApps/cvBgTest2"
+</code>
+
 =====extending ofBaseVideoDraws in of009=====
 %gist(a006644bad4d187f0003)%
 
