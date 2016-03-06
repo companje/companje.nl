@@ -1,0 +1,7 @@
+====== Asus K53Z laptop ======
+
+* After installing Windows 10 you need to install Chipset_AMD_Compal_Win7_64_Z121321 (PNPINST64.EXE) to get DVD GT51N back to work.
+
+* After installing Windows 10 you need to install Chipset_AMD_Compal_Win7_64_Z890300000 drivers.
+
+* After installing Windows 10 you need to reinstall SAMSUNG_USB_Driver_for_Mobile_Phones.zip (15.3MB) to recognize MTP USB-apparaat (Samsung Galaxy)
