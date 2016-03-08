@@ -2,6 +2,22 @@
 A light-weight full feature text/code editor for OSX, Windows and Linux
 
 =====build system=====
+```
+{
+   "cmd": ["make"],
+   "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+   "working_dir": "${project_path:${folder:${file_path}}}",
+   "selector": "source.makefile",
+   "shell": true,
+   "variants":
+    [
+      {
+        "name": "Run",
+        "cmd": ["make", "run"]
+      }
+    ]
+}
+```
 * http://docs.sublimetext.info/en/latest/file_processing/build_systems.html
 
 =====Disable Hex view for binary files====
