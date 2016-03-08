@@ -12,6 +12,16 @@ Aborted (core dumped)
 ```
 solution? https://github.com/openframeworks/openFrameworks/issues/4575
 
+ipv 'test' kan ik beter 'ppa' doen zegt peter. daar staat gcc-4.9 ook bij.
+```
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+sudo apt-get update
+sudo apt-get install g++-4.9
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 60
+gcc -v
+```
+
+
 =====Logitech C920 with IR blocker removed and red filter added. OpenCV code using BackgroundSubtractorMOG2=====
 %gist(0ab635af72b7d0ef4421)%
 
