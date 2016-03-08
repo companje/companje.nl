@@ -1,6 +1,9 @@
 ===============SublimeText2===============
 A light-weight full feature text/code editor for OSX, Windows and Linux
 
+=====build system=====
+* http://docs.sublimetext.info/en/latest/file_processing/build_systems.html
+
 =====Disable Hex view for binary files====
 Add to settings:
   "enable_hexadecimal_encoding": false
