@@ -3,8 +3,7 @@
 =====Projectgenerator on Linux: error projectgenerator not found=====
 first run `compilePG.sh`
 
-=====Projectgenerator on Linux: terminate called after throwing an instance of 'std::regex_error'
-=====
+=====Projectgenerator on Linux: terminate called after throwing an instance of std::regex_error=====
 ```
 Command failed: /bin/sh -c "projectGenerator"  -o"/home/globe4d/Documents/of0092" -a" " -p"linux64" "/home/globe4d/Documents/of0092/apps/myApps/mySketch"
 terminate called after throwing an instance of 'std::regex_error'
