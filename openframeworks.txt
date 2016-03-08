@@ -21,7 +21,7 @@ sudo apt-get remove g++-4.8
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 60 --slave /usr/bin/g++ g++ /usr/bin/g++-4.9
 gcc -v
 ```
-
+then run `compilePG.sh` again.
 
 =====Logitech C920 with IR blocker removed and red filter added. OpenCV code using BackgroundSubtractorMOG2=====
 %gist(0ab635af72b7d0ef4421)%
