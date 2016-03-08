@@ -1,5 +1,8 @@
 ====== Elementary OS======
 
+===='Alt-Tab' alternatives====
+(CMD+pijltjes toets naar beneden geeft een overzicht waarbij je wel met pijltjes toetsen kan wisselen)
+
 ====install processing on elementaryOS====
 (not success yet)
 * https://github.com/processing/processing/wiki/Supported%20Platforms
