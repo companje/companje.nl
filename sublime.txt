@@ -2,6 +2,8 @@
 A light-weight full feature text/code editor for OSX, Windows and Linux
 
 =====build system=====
+* https://github.com/sublimehq/Packages/blob/master/Makefile/Make.sublime-build
+
 ```
 {
    "cmd": ["make"],
