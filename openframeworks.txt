@@ -1,5 +1,15 @@
 ====== openFrameworks ======
 
+=====ofSetupScreenOrtho=====
+```cpp
+//--------------------------------------------------------------
+void ofApp::draw(){
+	ofSetupScreenOrtho(ofGetWidth(),ofGetHeight(),-1000,1000);
+	ofTranslate(mouseX,mouseY);
+	ofDrawSphere(ofGetHeight()/2);
+}
+```
+
 =====Projectgenerator on Linux: error projectgenerator not found=====
 first run `compilePG.sh`
 
