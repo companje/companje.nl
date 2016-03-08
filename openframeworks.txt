@@ -10,7 +10,7 @@ terminate called after throwing an instance of 'std::regex_error'
   what():  regex_error
 Aborted (core dumped)
 ```
-solution: ?
+solution? https://github.com/openframeworks/openFrameworks/issues/4575
 
 =====Logitech C920 with IR blocker removed and red filter added. OpenCV code using BackgroundSubtractorMOG2=====
 %gist(0ab635af72b7d0ef4421)%
