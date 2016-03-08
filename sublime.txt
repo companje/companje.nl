@@ -2,8 +2,6 @@
 A light-weight full feature text/code editor for OSX, Windows and Linux
 
 =====build system=====
-* https://github.com/sublimehq/Packages/blob/master/Makefile/Make.sublime-build
-
 ```
 {
    "cmd": ["make"],
@@ -19,6 +17,7 @@ A light-weight full feature text/code editor for OSX, Windows and Linux
     ]
 }
 ```
+* https://github.com/sublimehq/Packages/blob/master/Makefile/Make.sublime-build
 * http://docs.sublimetext.info/en/latest/file_processing/build_systems.html
 
 =====Disable Hex view for binary files====
