@@ -14,7 +14,7 @@ solution? https://github.com/openframeworks/openFrameworks/issues/4575
 
 ipv 'test' kan ik beter 'ppa' doen zegt peter. daar staat gcc-4.9 ook bij.
 ```
-sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+sudo add-apt-repository ppa:ubuntu-toolchain-r/ppa   # this one worked for me: ppa:ubuntu-toolchain-r/test
 sudo apt-get update
 sudo apt-get install g++-4.9
 sudo apt-get remove g++-4.8
