@@ -1,5 +1,8 @@
 ====== Linux ======
 
+=====important beginners info=====
+* http://plusbryan.com/my-first-5-minutes-on-a-server-or-essential-security-for-linux-servers
+
 =====find files recursively modified in the last 5 minutes=====
   find -cmin -5
 
