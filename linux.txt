@@ -231,8 +231,10 @@ sudo strace -p 28976
 
 =====find string in files=====
 <code bash>
-find . | xargs grep 'string' -sl
+#find . | xargs grep 'string' -sl
+grep -r "string" .
 </code>
+
 
 =====follow tail of file and cut lines that are too long=====
 <code>
