@@ -1,5 +1,8 @@
 ====== Linux ======
 
+=====find files recursively modified in the last 5 minutes=====
+  find -cmin -5
+
 =====vagrantup=====
 * https://www.vagrantup.com/
 
