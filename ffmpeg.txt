@@ -8,6 +8,7 @@
 
 =====create animated GIF from sequence and specify framerate=====
   ffmpeg -r 2 -i screen-%04d.tif -y kochcurve.gif
+more settings: http://superuser.com/questions/556029/how-do-i-convert-a-video-to-gif-using-ffmpeg-with-reasonable-quality/556031#556031
   
 =====convert image sequence to movie=====
   ffmpeg -i output/frame%d.jpg -g 1 -y -q:v 0 -r 10  output.mp4
