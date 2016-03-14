@@ -1,5 +1,18 @@
 ====== FFMPEG ======
 
+=====concat=====
+list.txt:
+<code>
+file 'a-ceno.mov'
+file 'b-cret.mov'
+file 'c-jurtrias.mov'
+file 'd-ltpaleo.mov'
+</code>
+commmand:
+<code>
+ffmpeg -f concat -i list.txt -c copy output.mov
+</code>
+
 =====change speed=====
   ffmpeg -i input.mp4 -vf “setpts=(1/<speed>)*PTS” output.mp4
 
