@@ -1,5 +1,10 @@
 ====== Github ======
 
+=====use image in markdown=====
+<code>
+![](doc/images/my-image.jpg)
+</code>
+
 =====github flavored markdown formatting=====
 * https://help.github.com/articles/github-flavored-markdown/
 * https://guides.github.com/features/mastering-markdown/
