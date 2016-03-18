@@ -6,6 +6,9 @@
 * https://wiki.hackerspace.pl/projects:zsun-wifi-card-reader
 * http://www.cnx-software.com/2016/01/25/zsun-wifi-card-reader-can-now-run-openwrt/
 
+==[Howto](AAP) Automated Wifi network change if the current fails==
+* https://forum.openwrt.org/viewtopic.php?pid=309131#p309131
+
 ==AP + STA at the same time==
 * https://wiki.openwrt.org/doc/recipes/ap_sta
 
