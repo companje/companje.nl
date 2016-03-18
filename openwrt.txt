@@ -6,6 +6,9 @@
 * https://wiki.hackerspace.pl/projects:zsun-wifi-card-reader
 * http://www.cnx-software.com/2016/01/25/zsun-wifi-card-reader-can-now-run-openwrt/
 
+==AP + STA at the same time==
+* https://wiki.openwrt.org/doc/recipes/ap_sta
+
 ==Stappen Image Builder==
 * staat op : rick@ubuntu:~/Desktop/OpenWrt-ImageBuilder-15.05-ar71xx-generic.Linux-x86_64
 
