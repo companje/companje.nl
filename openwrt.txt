@@ -1,6 +1,7 @@
 ====== OpenWrt ======
 
 ==zsun==
+* http://www.coyne.nu/blog/2016/01/31/installing-openwrt-on-the-zsun-wifi-card-reader-from-windows/
 * https://forum.openwrt.org/viewtopic.php?id=62555
 * https://wiki.hackerspace.pl/projects:zsun-wifi-card-reader
 * http://www.cnx-software.com/2016/01/25/zsun-wifi-card-reader-can-now-run-openwrt/
