@@ -1,5 +1,8 @@
 ====== openFrameworks ======
 
+=====enable errors to force checking return values=====
+  -Werror=return-type
+
 =====ofSetupScreenOrtho=====
 ```cpp
 //--------------------------------------------------------------
