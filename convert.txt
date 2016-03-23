@@ -3,4 +3,4 @@
   for i in *.jpg; do sips -s format bmp $i --out ../clouds-201509-bmp/$i.bmp;done
   
 =====Resize batch=====
-for i in *.jpg; do sips -z 2048 1024 $i --out ../clouds-201509-2k/$i;done
+  for i in *.jpg; do sips -z 2048 1024 $i --out ../clouds-201509-2k/$i;done
