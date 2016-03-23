@@ -17,6 +17,9 @@
 * http://cannybots.com/
 * http://potterygame.com/
 
+== Send gcode UP!Mini==
+https://github.com/MaikStohn/UP3D
+
 == guides ==
 * http://support.3dverkstan.se/article/23-a-visual-ultimaker-troubleshooting-guide#pillowing
 
