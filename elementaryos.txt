@@ -62,3 +62,6 @@ edit/create `~/.bash_aliases` and add your alias like this `alias dir="ls -al"`
 `Settings > Applications > Startup`
 and or run `gnome-session-properties`
 see also folder: `~/.config/autostart`
+
+====startup delay====
+* http://www.webupd8.org/2014/05/how-to-delay-startup-applications-in.html
