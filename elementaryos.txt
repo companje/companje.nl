@@ -61,3 +61,4 @@ edit/create `~/.bash_aliases` and add your alias like this `alias dir="ls -al"`
 ====autostart apps====
 `Settings > Applications > Startup`
 and or run `gnome-session-properties`
+see also folder: `~/.config/autostart`
