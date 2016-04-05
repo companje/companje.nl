@@ -1,5 +1,10 @@
 ====== Linux ======
 
+=====add user to dialout group for usb serial port write access=====
+<code>
+sudo usermod -aG dialout <myuser>
+</code>
+
 =====important beginners info=====
 * http://plusbryan.com/my-first-5-minutes-on-a-server-or-essential-security-for-linux-servers
 
