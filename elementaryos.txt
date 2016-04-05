@@ -1,5 +1,13 @@
 ====== Elementary OS======
 
+==xkill==
+xkill is great for killing a process by pointing to it's window
+
+==When Scratch Editor hangs because of previously opened files==
+You can open dconf-editor and go to:
+org -> pantheon -> scratch -> settings
+and change the value of "opened-files" field. There is list of files that scratch tries to open. And it probably that one of them has too big size. You have just to remove this file from list and relaunch scratch. (source: https://bugs.launchpad.net/scratch/+bug/1202886)
+
 ===='Alt-Tab' alternatives====
 (CMD+pijltjes toets naar beneden geeft een overzicht waarbij je wel met pijltjes toetsen kan wisselen)
 
