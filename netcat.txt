@@ -1,5 +1,15 @@
 ======netcat======
 
+==to receive data from Globe4D driver==
+<code>
+nc -lu -p 12345
+</code>
+
+==netcat for windows==
+part of nmap project (nmap.org).
+Same syntax: `ncat -lu 192.168.2.123 8888`
+
+
 ==read line from netcat==
 <code bash>
 while:
