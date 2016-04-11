@@ -23,7 +23,7 @@
 * The Inside Job (docu bankencrisis)
 
 ==tip van iedereen==
-* Cabin in the woods
+* DONE: Cabin in the woods
 
 ==tip van Toon==
 * DONE: Mr Robot (serie over hacker)
