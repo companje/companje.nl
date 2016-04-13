@@ -1,5 +1,26 @@
 ====== openFrameworks ======
 
+=====loading 16 bits grayscale images seems to be broken after version 008x====
+https://github.com/openframeworks/openFrameworks/issues/3249
+I modified some code in `putBmpIntoPixels` to be able to load 16 bits grayscale images:
+
+```cpp
+	if(sizeof(PixelType)==1 &&
+		(FreeImage_GetColorType(bmp) == FIC_PALETTE || FreeImage_GetBPP(bmp) < 8
+		||  imgType!=FIT_BITMAP)) {
+		if(FreeImage_IsTransparent(bmp)) {
+			bmpConverted = FreeImage_ConvertTo32Bits(bmp);
+////////////////////////////////////////////
+// added this to support 16 bit grayscale images
+		} else if (FreeImage_GetBPP(bmp)==16) {                     
+			bmpConverted = FreeImage_ConvertToType(bmp,FIT_UINT16); 
+////////////////////////////////////////////
+		} else {
+			bmpConverted = FreeImage_ConvertTo24Bits(bmp);
+		}
+		bmp = bmpConverted;
+```
+
 =====enable errors to force checking return values=====
 <code>
 -Werror=return-type
