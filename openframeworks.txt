@@ -1,5 +1,8 @@
 ====== openFrameworks ======
 
+=====openFrameworks code style guide=====
+* https://github.com/openframeworks/openFrameworks/wiki/oF-code-style
+
 =====loading 16 bits grayscale images seems to be broken after version 008x====
 https://github.com/openframeworks/openFrameworks/issues/3249
 I modified some code in `putBmpIntoPixels` to be able to load 16 bits grayscale images:
