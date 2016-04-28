@@ -1,7 +1,7 @@
 ====== openFrameworks ======
 
 ====read 16bit raw image into ofImage=====
-<code>
+<code cpp>
 ofImage heightmap;
 ofFile file("terra8M.raw", ofFile::ReadOnly, true);
 ofBuffer raw(file);
