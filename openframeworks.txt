@@ -1,5 +1,26 @@
 ====== openFrameworks ======
 
+====read 16bit raw image into ofImage=====
+<code>
+ofImage heightmap;
+ofFile file("terra8M.raw", ofFile::ReadOnly, true);
+ofBuffer raw(file);
+
+int w = 4096, h = 2048, wxh = w*h;    
+heightmap.allocate(w, h, OF_IMAGE_COLOR_ALPHA);
+
+int i = 0;
+for (int y = 0; y < h; y++) {
+  for (int x = 0; x < w; x++) {
+    int r = raw.getData()[i++];
+    int a = raw.getData()[i++];
+    heightmap.setColor(x, y, ofColor(r,0,0,a));
+  }
+}
+
+heightmap.update();
+</code>
+
 =====openFrameworks code style guide=====
 * https://github.com/openframeworks/openFrameworks/wiki/oF-code-style
 
