@@ -19,6 +19,8 @@ for (int y = 0; y < h; y++) {
 }
 
 heightmap.update();
+heightmap.save("output.png");
+
 </code>
 
 =====openFrameworks code style guide=====
