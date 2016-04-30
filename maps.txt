@@ -1,4 +1,5 @@
 ====== Maps ======
+* http://www.earthbrowser.com/
 * http://www.blenderguru.com/tutorials/earth-cycles/
 * http://www.earthbyte.org/ ("building a virtual earth")
 * https://decolonialatlas.wordpress.com/
