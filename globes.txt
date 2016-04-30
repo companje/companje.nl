@@ -1,5 +1,6 @@
-====== Globes ======
+====== (Virtual) Globes ======
 see [[maps]]
+* https://en.wikipedia.org/wiki/Virtual_globe
 * https://code.google.com/archive/p/jdem846/
 * http://planetmaker.wthr.us/
 * http://mousebird.github.io/WhirlyGlobe/
