@@ -2,6 +2,10 @@
 
 See [[3DPrinting]]
 
+==stillere fan==
+"dit is de fan: http://www.ebay.com/itm/Lufter-5V-0-38W-25x25x6mm-3-7m-h-23dBA-Sunon-MC25060V2-A99-/231085070846?hash=item35cdbe59fe
+(en dit is de bijbehorende thread: https://ultimaker.com/en/community/6442-feature-request-allow-to-turn-off-fan-behind-extruder)"
+
 ==cura-build==
 * `git clone https://github.com/Ultimaker/cura-build`
 * set `PYTHONPATH=/usr/local/lib/python3/dist-packages`
