@@ -5,6 +5,7 @@
 * https://forum.openwrt.org/viewtopic.php?id=62555
 * https://wiki.hackerspace.pl/projects:zsun-wifi-card-reader
 * http://www.cnx-software.com/2016/01/25/zsun-wifi-card-reader-can-now-run-openwrt/
+* < "is there a way to 'unmount' the SD card (by writing to a GPIO or so?) so it becomes available again to the computer that powers the device?" > "Setting GPIO21 to high should connect the reader to the PC, you may also need to toggle GPIO18 low and high to reset the card reader."
 
 ==[Howto](AAP) Automated Wifi network change if the current fails==
 * https://forum.openwrt.org/viewtopic.php?pid=309131#p309131
