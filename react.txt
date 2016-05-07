@@ -1,4 +1,5 @@
 ====== React ======
+* see also [[d3]] for visualisations with D3 in React
 * see also [[redux]]
 * http://reactcheatsheet.com/
 * [[https://facebook.github.io/react/docs/tutorial.html|tutorial]]
