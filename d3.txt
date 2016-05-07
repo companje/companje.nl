@@ -1,7 +1,7 @@
 ====== d3 ======
 
-===== Redux and D3 =====
-React-D3 is een library die je React met D3 laat combineren, wat volgens velen een ideale combinatie is om grafieken met JavaScript te maken. http://www.reactd3.org/
+===== React and D3 =====
+React-D3 is een library die je [[React]] met D3 laat combineren, wat volgens velen een ideale combinatie is om grafieken met JavaScript te maken. http://www.reactd3.org/
 Ik heb gedeeld hoe je de Getting started met behulp van JSPM ipv browsify of webpack kan doorlopen:
 https://github.com/react-d3/react-d3.github.io/issues/8 
 
