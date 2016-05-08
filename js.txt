@@ -1,5 +1,13 @@
 =============== Javascript notes ===============
 
+=====Parallel processing====
+Interessante technieken voor als we met de app meer parallel willen gaan doen, zoals die floodfill:
+http://www.htmlgoodies.com/html5/client/using-web-workers-to-improve-performance-of-image-manipulation.html
+https://developer.mozilla.org/en-US/docs/Web/API/Worker/terminate
+De toekomst ziet er nog beter uit:  
+https://hacks.mozilla.org/2016/01/webgl-off-the-main-thread/
+https://hacks.mozilla.org/2016/05/a-taste-of-javascripts-new-parallel-primitives/
+
 =====Local Storage=====
 Klein browser storage onderzoekje afgerond, conclusies en links:
 
