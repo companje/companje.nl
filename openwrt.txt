@@ -1,5 +1,10 @@
 ====== OpenWrt ======
 
+==build single package==
+`make package/print3d/compile`
+or
+`make -j1 V=s package/print3d/compile for more feedback.
+
 ==zsun==
 * http://www.coyne.nu/blog/2016/01/31/installing-openwrt-on-the-zsun-wifi-card-reader-from-windows/
 * https://forum.openwrt.org/viewtopic.php?id=62555
