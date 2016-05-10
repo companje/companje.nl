@@ -25,6 +25,8 @@ this was caused by having installed the downloaded binary of OpenWrt 15.05 inste
 probably because trying to install a package compiled on 15.05 to a 14.07.
 
 ==build single package==
+tutorial: https://manoftoday.wordpress.com/2007/10/11/writing-and-compiling-a-simple-program-for-openwrt/
+
 (different snippets)
 ```
 ./scripts/feeds update -a
