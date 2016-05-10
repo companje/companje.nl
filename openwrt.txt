@@ -17,9 +17,9 @@ file /Volumes/OpenWrt/openwrt/build_dir/target-mips_34kc_musl-1.1.14/testscript/
 ```
 /Volumes/OpenWrt/openwrt/build_dir/target-mips_34kc_musl-1.1.14/testscript/ipkg-ar71xx/testscript/bin/testscript: ELF 32-bit MSB executable, MIPS, MIPS32 rel2 version 1, 
 dynamically linked (uses shared libs), corrupted section header size
-
-
 ```
+
+this was caused by having installed the downloaded binary of OpenWrt 15.05 instead of the one I compiled against. Maybe the difference between uClibC vs musl?
 
 ==default_postinst: not found==
 probably because trying to install a package compiled on 15.05 to a 14.07.
