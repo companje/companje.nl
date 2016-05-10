@@ -25,11 +25,15 @@ this was caused by having installed the downloaded binary of OpenWrt 15.05 inste
 probably because trying to install a package compiled on 15.05 to a 14.07.
 
 ==build single package==
+(different snippets)
 ```
+./scripts/feeds update -a
+./scripts/feeds install testscript
+...
 make package/testscript/prepare
 make package/testscript/compile -j1 V=s
 make package/testscript/install
-
+...
 make package/print3d/prepare
 make package/print3d/compile
 make package/print3d/install
