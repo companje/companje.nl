@@ -29,8 +29,9 @@ tutorial: https://manoftoday.wordpress.com/2007/10/11/writing-and-compiling-a-si
 
 (different snippets)
 ```
-./scripts/feeds update -a
-./scripts/feeds install testscript
+./scripts/feeds update customfeeds
+# ? ./scripts/feeds update -a
+# ? ./scripts/feeds install testscript
 ...
 make package/testscript/prepare
 make package/testscript/compile -j1 V=s
