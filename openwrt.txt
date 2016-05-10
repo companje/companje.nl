@@ -1,5 +1,8 @@
 ====== OpenWrt ======
 
+==default_postinst: not found==
+probably because trying to install a package compiled on 15.05 to a 14.07.
+
 ==build single package==
 ```
 make package/print3d/compile
