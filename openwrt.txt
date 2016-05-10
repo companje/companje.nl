@@ -1,17 +1,16 @@
 ====== OpenWrt ======
 
-==experimenting with building a single packet==
-```
-make package/testscript/prepare
-make package/testscript/compile -j1 V=s
-make package/testscript/install
-```
 
 ==default_postinst: not found==
 probably because trying to install a package compiled on 15.05 to a 14.07.
 
 ==build single package==
 ```
+make package/testscript/prepare
+make package/testscript/compile -j1 V=s
+make package/testscript/install
+
+make package/print3d/prepare
 make package/print3d/compile
 make package/print3d/install
 make package/index
