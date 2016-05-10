@@ -6,6 +6,11 @@ strings testscript
 ```
 
 ==/bin/ash: testscript: not found==
+```
+/bin/ash: testscript: not found
+```
+`file not found` usually means that a dependant library wasn't found.
+
 ```bash
 file /Volumes/OpenWrt/openwrt/build_dir/target-mips_34kc_musl-1.1.14/testscript/ipkg-ar71xx/testscript/bin/testscript
 ```
