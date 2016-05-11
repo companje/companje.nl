@@ -1,7 +1,9 @@
 ====== OpenWrt ======
 
 ==./up3dload: line 1: syntax error: unexpected "("==
-make sure the .o files and the osx executable are not copied to the build_dir. Perform a make clean in the src/ folder of the package.
+Cause: When you get this error on the binary you try to run on your OpenWrt device has the wrong architecture. Run file up3dload to see the architecture.
+
+Solution: Make sure the .o files and the osx executable are not copied to the build_dir. Perform a make clean in the src/ folder of the package before make package/up3dload/compile when you did a make in your src folder to test locally.
 
 ==get all strings from a binary==
 ```bash
