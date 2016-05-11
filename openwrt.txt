@@ -1,5 +1,8 @@
 ====== OpenWrt ======
 
+==./up3dload: line 1: syntax error: unexpected "("==
+make sure the .o files and the osx executable are not copied to the build_dir. Perform a make clean in the src/ folder of the package.
+
 ==get all strings from a binary==
 ```bash
 strings testscript
