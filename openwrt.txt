@@ -1,7 +1,7 @@
 ====== OpenWrt ======
 
 ==clone package source==
-to have the make file clone from the PKG_SOURCE_URL update the PKG_VERSION==
+to have the make file clone from the `PKG_SOURCE_URL` update the `PKG_VERSION`
 
 
 ==./up3dload: line 1: syntax error: unexpected "("==
