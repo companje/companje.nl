@@ -2,6 +2,7 @@
 
 
 ==dev tutorials==
+* http://watchmysys.com/blog/2015/10/build-package-your-software-for-openwrt/
 * http://www.ccs.neu.edu/home/noubir/Courses/CS6710/S12/material/OpenWrt_Dev_Tutorial.pdf
 * http://wiki.prplfoundation.org/wiki/Creating_an_OpenWrt_package_for_a_web_page
 
