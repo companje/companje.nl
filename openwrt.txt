@@ -1,5 +1,10 @@
 ====== OpenWrt ======
 
+
+==dev tutorials==
+* http://www.ccs.neu.edu/home/noubir/Courses/CS6710/S12/material/OpenWrt_Dev_Tutorial.pdf
+* http://wiki.prplfoundation.org/wiki/Creating_an_OpenWrt_package_for_a_web_page
+
 ==clone package source==
 to have the make file clone from the `PKG_SOURCE_URL` update the `PKG_VERSION`
 
