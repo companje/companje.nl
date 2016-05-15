@@ -1,5 +1,15 @@
 =============== Apache ===============
 
+=====El Capitan Apache error message AH00526: Syntax error on line 20 of /private/etc/apache2/extra/httpd-mpm.conf: Invalid command 'LockFile'....=====
+http://apple.stackexchange.com/questions/211015/el-capitan-apache-error-message-ah00526
+```
+cd /etc/apache2/extra
+sudo mv httpd-mpm.conf httpd-mpm.conf.elcapitan
+sudo mv httpd-mpm.conf~orig httpd-mpm.conf
+sudo apachectl restart
+apachectl configtest
+```
+
 =====tips=====
 http://coolestguidesontheplanet.com/set-virtual-hosts-apache-mac-osx-10-10-yosemite/#apacheuser
 
