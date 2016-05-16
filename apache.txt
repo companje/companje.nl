@@ -46,6 +46,7 @@ chmod a+x /Users/rick/Documents
 
 =====http status info=====
 <code>httpd -S</code>
+on ubuntu: `apachectl -S`
 
 =====create virtual host on mac=====
 * add hostname to /etc/hosts (pointing to 127.0.0.1)
