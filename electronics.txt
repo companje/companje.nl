@@ -1,5 +1,7 @@
 ====== Electronics ======
 
+see [[elektronica]]
+
 =====Capacitors=====
 *[[https://www.youtube.com/watch?feature=player_embedded&v=M2tJpEMIkWM|waarom je bij elke chip een klein condensatortje moet plaatsen]]
 
