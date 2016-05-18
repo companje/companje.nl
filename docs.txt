@@ -1,5 +1,11 @@
 =============== Google Docs ===============
 
+=====add dates=====
+add 12 months to date
+<code>
+=edate(A11;12)
+</code>
+
 =====unique / sort / proper=====
 you can use this as a nice data validator
   =sort(PROPER(unique(Inkomsten!D3:D)))
