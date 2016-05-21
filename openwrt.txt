@@ -6,6 +6,10 @@
 * http://www.ccs.neu.edu/home/noubir/Courses/CS6710/S12/material/OpenWrt_Dev_Tutorial.pdf
 * http://wiki.prplfoundation.org/wiki/Creating_an_OpenWrt_package_for_a_web_page
 
+==own packages==
+* https://github.com/companje/doorbell
+* https://github.com/companje/up3dload
+
 ==clone package source==
 to have the make file clone from the `PKG_SOURCE_URL` update the `PKG_VERSION`
 
