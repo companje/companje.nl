@@ -1,5 +1,8 @@
 ====== OpenWrt ======
 
+==discussion about doodle3d network module==
+* https://github.com/Doodle3D/doodle3d-firmware/issues/32
+* https://github.com/Doodle3D/doodle3d-client/issues/224
 
 ==dev tutorials==
 * http://watchmysys.com/blog/2015/10/build-package-your-software-for-openwrt/
