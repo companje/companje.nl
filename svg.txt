@@ -1,7 +1,7 @@
 ====== SVG ======
 
 =====SVGnest=====
-* [[https://github.com/Jack000/SVGnest|SVGnest (SVG’s efficiënt stapelen voor de lasercutter)]
+* [[https://github.com/Jack000/SVGnest|SVGnest (SVG’s efficiënt stapelen voor de lasercutter)])
 
 =====Optimize SVG's=====
 http://petercollingridge.appspot.com/svg-editor
