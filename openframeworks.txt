@@ -1,5 +1,8 @@
 ====== openFrameworks ======
 
+====cheap tricks video====
+http://petewerner.blogspot.nl/2014/01/cheap-tricks-interactive-dance-floor.html
+
 ====read 16bit raw image into ofImage=====
 <code cpp>
 ofImage heightmap;
