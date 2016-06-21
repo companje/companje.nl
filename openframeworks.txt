@@ -1,6 +1,6 @@
 ====== openFrameworks ======
 
-====ofVideoPlayer====
+====recent problem with ofVideoPlayer====
 https://github.com/openframeworks/openFrameworks/issues/5114
 
 ====cheap tricks video====
