@@ -1,5 +1,8 @@
 ====== openFrameworks ======
 
+====ofVideoPlayer====
+https://github.com/openframeworks/openFrameworks/issues/5114
+
 ====cheap tricks video====
 http://petewerner.blogspot.nl/2014/01/cheap-tricks-interactive-dance-floor.html
 
