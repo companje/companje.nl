@@ -63,5 +63,33 @@ edit/create `~/.bash_aliases` and add your alias like this `alias dir="ls -al"`
 and or run `gnome-session-properties`
 see also folder: `~/.config/autostart`
 
+<code>
+globe4d@Globe4D-Leiden:~/Documents/of0093/apps/Globe4D/Globe4D/bin$ cd ~/.config/autostart
+globe4d@Globe4D-Leiden:~/.config/autostart$ ls
+custom-command1.desktop  Globe4D.desktop
+globe4d@Globe4D-Leiden:~/.config/autostart$ cat Globe4D.desktop 
+[Desktop Entry]
+Type=Application
+Exec=/home/globe4d/Documents/of0093/apps/Globe4D/Globe4D/bin/Globe4D
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+X-GNOME-Autostart-Delay=2
+Name[en_US]=Globe4D
+Name=Globe4D
+Comment[en_US]=
+Comment=
+globe4d@Globe4D-Leiden:~/.config/autostart$ cat custom-command1.desktop 
+[Desktop Entry]
+Name[en_US]=Globe4D Driver
+Comment[en_US]=/home/globe4d/Documents/of0093/apps/Globe4D/Globe4D-Driver/bin/Globe4D-Driver
+Exec=/home/globe4d/Documents/of0093/apps/Globe4D/Globe4D-Driver/bin/Globe4D-Driver
+Icon=application-default-icon
+X-GNOME-Autostart-enabled=true
+Type=Application
+Name=Globe4D Driver
+globe4d@Globe4D-Leiden:~/.config/autostart$ 
+</code>
+
 ====startup delay====
 * http://www.webupd8.org/2014/05/how-to-delay-startup-applications-in.html
