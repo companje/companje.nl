@@ -1,5 +1,8 @@
 ======Mac OSX======
 
+=====Kill Google Photo Uploader=====
+  kill -9 $(pgrep Photos)
+
 =====SiteSucker=====
 recursive download van een website. http://www.sitesucker.us
 
