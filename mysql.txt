@@ -19,7 +19,7 @@ or
   
 =====Location of MySQL files on Mac OSX installed with Homebrew=====
   /usr/local/var/mysql
-  
+  /usr/local/Cellar/mysql/5.7.12
 =====MariaDB=====
 installed with ''brew install mariadb''
 
