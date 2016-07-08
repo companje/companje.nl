@@ -1,4 +1,9 @@
 ====== Git ======
+
+=====delete a file from git history =====
+(for example when you already deleted it but github keeps complaining about LFS large files)
+  git filter-branch --tree-filter 'rm bin/data/images/BalloonChair-Field.psd' HEAD
+
 =====github software errors on windows=====
 <code>
 WARNING: git command could not be found. Please create an alias or add it to your PATH.
