@@ -1,5 +1,8 @@
 ====== Git ======
 
+=====clone with dept 1=====
+   git clone --depth 1 git@github.com:Globe4D/Globe4D.git
+
 =====delete a file from git history =====
 (for example when you already deleted it but github keeps complaining about LFS large files)
   git filter-branch --tree-filter 'rm bin/data/images/BalloonChair-Field.psd' HEAD
