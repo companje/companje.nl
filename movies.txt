@@ -7,7 +7,7 @@
 
 ==tip van Peter==
 * In de docu Racing Extinction zit rond 11:00 een korte maar hele mooie wereld geschiedenis animatie. Misschien interessant om te kijken wie die hebben gemaakt?
-* https://blog.sketchfab.com/add-another-layer-realism-depth-field/
+* DONE https://blog.sketchfab.com/add-another-layer-realism-depth-field/
 
 ==tip van Hilde==
 * https://www.youtube.com/watch?v=fxbCHn6gE3U
