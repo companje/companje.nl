@@ -1,5 +1,8 @@
 ====== FFMPEG ======
 
+=====set volume of audio=====
+  ffmpeg -i input.wav -af "volume=0.5" output.wav
+
 =====gifenc (with speed)=====
 <code>
 palette="/tmp/palette.png"
