@@ -1,5 +1,6 @@
 
 ====== 3D printing ======
+* https://simpl3d.com/
 * https://projectignite.autodesk.com/ (dit lijkt me een project / community site waar educators worden aangezet om dingen te gaan doen met autodesk 123d design suite.)
 * http://3dprint.com/111623/lumifold-lumi-industries/
 * https://pinshape.com/ (thingiverse alternatief)
