@@ -4,6 +4,7 @@
 You can do it with the Preview App as described here: http://osxdaily.com/2013/01/16/batch-image-conversion-mac-os-x-preview/
 
 =====Kill Google Photo Uploader=====
+(or anything containing the word 'Photos')
   kill -9 $(pgrep Photos)
 
 =====SiteSucker=====
