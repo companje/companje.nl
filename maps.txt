@@ -1,4 +1,5 @@
 ====== Maps ======
+* [[http://qgis.org/en/site/about/index.html|QGIS]]
 * https://www.shipmap.org/
 * [[http://csmres.jmu.edu/Geollab/pyle/GEOL272/398%20images/|planet textures]]
 * [[http://gizmodo.com/see-the-exact-moment-when-the-worlds-biggest-cities-wer-1782106715#_ga=1.32999102.1802093165.1454050536|birth of big cities]]
