@@ -1,5 +1,8 @@
 =============== Google Docs ===============
 
+=====polling spreadsheet with script=====
+* http://stackoverflow.com/questions/30628894/how-do-i-make-a-sidebar-display-values-from-cells
+
 =====add dates=====
 add 12 months to date
 <code>
