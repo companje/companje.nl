@@ -1,5 +1,6 @@
 
 ====== 3D printing ======
+* https://www.3dhubs.com/3d-printers
 * https://www.laykanics.com/
 * https://shapejs.shapeways.com/
 * https://beta.vectary.com
