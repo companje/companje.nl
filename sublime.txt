@@ -54,6 +54,9 @@ In Preferences->Settings User change add:
 
 =====use sublime from terminal in osx=====
 See [[http://www.sublimetext.com/docs/2/osx_command_line.html|this page]]
+```
+ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
+```
 
 =====compile c++ files=====
 see https://gist.github.com/1566100
