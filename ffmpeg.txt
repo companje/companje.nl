@@ -5,6 +5,14 @@
 ffmpeg -i FILENAME -f null /dev/null
 </code>
 
+or add this to ~/.bash_profile:
+<code bash>
+_fps() {
+    ffmpeg -i "$1" -f null /dev/null
+}
+alias fps=_fps
+</code>
+
 =====set volume of audio=====
   ffmpeg -i input.wav -af "volume=0.5" output.wav
 
