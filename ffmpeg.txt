@@ -5,7 +5,7 @@
 ffmpeg -i FILENAME -f null /dev/null
 </code>
 
-or add this to ~/.bash_profile:
+or add this to ~/.bash_profile
 <code bash>
 _fps() {
     ffmpeg -i "$1" -f null /dev/null
