@@ -1,5 +1,10 @@
 ====== FFMPEG ======
 
+=====get / calculate number of frames=====
+<code bash>
+ffmpeg -i FILENAME -f null /dev/null
+</code>
+
 =====set volume of audio=====
   ffmpeg -i input.wav -af "volume=0.5" output.wav
 
