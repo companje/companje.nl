@@ -1,5 +1,8 @@
 ====== TODO: things to watch, read or listen ======
 
+=====onderwijs tools bekijken (tip v Sander Gordijn)======
+http://onderwijs.tools/?p=808
+
 =====bekijken=====
 * https://readme.io
 * https://whsjs.io/#/
