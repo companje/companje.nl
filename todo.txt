@@ -1,5 +1,8 @@
 ====== TODO: things to watch, read or listen ======
 
+=====analytics=====
+* https://analyticsacademy.withgoogle.com/course/4
+
 =====onderwijs tools bekijken (tip v Sander Gordijn)======
 http://onderwijs.tools/?p=808
 
