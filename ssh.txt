@@ -11,6 +11,8 @@ SSHFS lijkt ook redelijk bruikbaar zonder gui te gebruiken. Mogelijk zelfs wel s
 ```
 mkdir local-folder
 sshfs -odebug,sshfs_debug,loglevel=debug user@server:/ local-folder
+...
+umount local-folder
 ```
 
 =====add self to authorized_keys oneliner=====
