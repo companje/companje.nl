@@ -1,6 +1,46 @@
 ====== C++ ======
 
 see also [[openFrameworks]]
+see also [[arduino]]
+
+=====Passing variables to member classes=====
+main.ino:
+<code cpp>
+#include "Slider.h"
+
+Slider slider1(2,3);
+Slider slider2(4,5);
+</code>
+
+Slider.h:
+<code cpp>
+#include "Sensor.h"
+
+class Slider {
+public:
+
+  Sensor a, b;  
+
+  Slider(int pinA, int pinB) : a(pinA), b(pinB) {
+    
+  }
+};
+</code>
+
+Sensor.h:
+<code cpp>
+class Sensor {
+  public:
+
+    int pin = 0;
+
+    Sensor(int pin) : pin(pin) {
+
+    }
+};
+
+</code>
+
 
 =====union=====
 <code c>
