@@ -3,7 +3,7 @@
 see also [[openFrameworks]]
 see also [[arduino]]
 
-=====Passing variables to member classes=====
+=====Passing consts to member classes=====
 main.ino:
 <code cpp>
 #include "Slider.h"
