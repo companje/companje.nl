@@ -1,5 +1,8 @@
 ====== Docker ======
 
+== on OSX ==
+https://docs.docker.com/docker-for-mac/
+
 == install docker on ElementaryOS (freya) ==
 * https://github.com/docker/docker/issues/12863#issuecomment-110035351
 
