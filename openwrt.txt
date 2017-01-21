@@ -231,6 +231,7 @@ exit 0
 
 ==jsonfilter!!!==
 uitproberen!
+http://git.openwrt.org/project/jsonpath.git?p=project/jsonpath.git;a=blob;f=main.c;h=85a53f4af40e4d02429ee2fdfda597780b7e1f96;hb=HEAD
 
 ==ubus over http==
 * `uhttpd-mod-ubus`
