@@ -154,6 +154,21 @@ config rule
 restart firewall service
   /etc/init.d/firewall reload
 
+==Allow HTTP on WAN interface==
+Add to /etc/config/firewall
+<code>
+config rule
+        option name             allow-HTTP-wan
+        option src              wan
+        option proto            tcp
+        option dest_port        80
+        option target           ACCEPT
+        option family           ipv4
+</code>
+restart firewall service
+  /etc/init.d/firewall reload
+
+
 ==hostapd==
   /lib/netifd
   /var/run
