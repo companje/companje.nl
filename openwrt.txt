@@ -1,5 +1,20 @@
 ====== OpenWrt ======
 
+==add custom Bonjour/mDNS/zeroconf etc service==
+/etc/avahi/services/3dprint.service
+<code xml>
+<?xml version="1.0" standalone='no'?><!--*-nxml-*-->
+<!DOCTYPE service-group SYSTEM "avahi-service.dtd">
+<service-group>
+ <name replace-wildcards="yes">%h</name>
+  <service>
+   <type>_3dprint._tcp</type>
+   <port>80</port>
+  </service>
+</service-group>
+</code>
+/etc/init.d/avahi-daemon reload
+
 ==discussion about doodle3d network module==
 * https://github.com/Doodle3D/doodle3d-firmware/issues/32
 * https://github.com/Doodle3D/doodle3d-client/issues/224
