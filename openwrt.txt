@@ -2,9 +2,12 @@
 
 ==minimale aanpak voor WiFi-Box (niet compleet)==
 stel ssh password in
+```
 passwd
+```
 
 verbind met internetverbinding van je router
+```
 uci set network.lan.ipaddr=192.168.5.1
 uci delete wireless.@wifi-device[0].disabled #enable radio
 uci set wireless.@wifi-iface[0].network=wan
@@ -16,17 +19,22 @@ uci set network.wan=interface
 uci set network.wan.proto=dhcp #get ip from router
 uci commit
 wifi
+```
 
 avahi voorbeelden toevoegen voor Bonjour/zeroconf:
+```
 opkg update
 opkg install avahi-daemon-service-ssh avahi-daemon-service-http
+```
 
 uhttpd installeren
+```
 opkg update
 opkg install uhttpd
 echo hoi > /www/index.html
 mkdir /www/cgi-bin
 #plaats een cgi script zie companje.nl/openwrt
+```
 
 wget
 standaard zit er al wget op. dat zit in busybox. maar het ondersteund geen SSL.
@@ -35,17 +43,22 @@ RAM
 tmpfs heeft ongeveer 13MB RAM vrij. dus wget zou in principe een bestand van die grootte moeten kunnen bewaren in /tmp. (getest met een GIFje, dat gaat goed). Maar beter wat ruimte overlaten.
 
 ser2net
+```
 opkg update
 opkg install ser2net
 #wat info hier: https://wiki.openwrt.org/doc/howto/fhem
-#end hier een filmpje: https://www.youtube.com/watch?v=_OVRr69Apl0
+#en hier een filmpje: https://www.youtube.com/watch?v=_OVRr69Apl0
 vi /etc/ser2net.conf
 #alle /dev devices uitcommenten behalve degene van jouw seriele poort, of die toevoegen:
 # 1234:raw:0:/dev/ttyACM0:9600
+```
+
 eerst misschien nog driver voor USBserieel installeren:
+```
 opkg install kmod-usb-acm
-# vervolgens kun je als ser2net draait letterlijk via telnet ontvangen en versturen.
-# maar ja.. je wil het liefst een groot bestand in stukje gaan binnenhalen vanaf het web en ook in stukjes sturen vanaf de box zelf naar de seriele poort… Dus misschien is UltiFi (https://github.com/daid/UltiFi) of iets anders zelf geschreven nog niet zo gek.
+```
+vervolgens kun je als ser2net draait letterlijk via telnet ontvangen en versturen.
+maar ja.. je wil het liefst een groot bestand in stukje gaan binnenhalen vanaf het web en ook in stukjes sturen vanaf de box zelf naar de seriele poort… Dus misschien is UltiFi (https://github.com/daid/UltiFi) of iets anders zelf geschreven nog niet zo gek.
 
 
 ==minimal settings for internet and lan==
