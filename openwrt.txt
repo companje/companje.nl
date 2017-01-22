@@ -1,11 +1,6 @@
 ====== OpenWrt ======
 
-==minimale aanpak voor WiFi-Box (niet compleet)==
-stel ssh password in
-```
-passwd
-```
-
+==minimale aanpak==
 verbind met internetverbinding van je router
 ```
 uci set network.lan.ipaddr=192.168.5.1
