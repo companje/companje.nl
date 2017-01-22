@@ -1,5 +1,19 @@
 ====== OpenWrt ======
 
+==minimal settings for internet and lan==
+<code>
+uci set network.lan.ipaddr=192.168.5.1
+uci delete wireless.@wifi-device[0].disabled #enable radio
+uci set wireless.@wifi-iface[0].network=wan
+uci set wireless.@wifi-iface[0].mode=sta
+uci set wireless.@wifi-iface[0].ssid=........
+uci set wireless.@wifi-iface[0].key=........
+uci set wireless.@wifi-iface[0].encryption=psk2
+uci set network.wan=interface 
+uci set network.wan.proto=dhcp #get ip from router
+uci commit
+</code>
+
 ==settings from Doodle3D WiFi-Box==
 * [[https://gist.github.com/companje/c2cc92a513bd5aae5f0ec54aaefded60#file-wireless|/etc/config/wireless]]
 * [[https://gist.github.com/companje/c2cc92a513bd5aae5f0ec54aaefded60#file-network|/etc/config/network]]
