@@ -1,5 +1,13 @@
 ====== OpenWrt ======
 
+==Disabling default route and DNS server for lan network interface==
+This way you don't have to set the order of WiFi and Ethernet.
+<code>
+uci set dhcp.lan.dhcp_option='3 6'
+uci commit dhcp
+/etc/init.d/dnsmasq reload
+</code>
+
 ==add custom Bonjour/mDNS/zeroconf etc service==
 /etc/avahi/services/3dprint.service
 <code xml>
