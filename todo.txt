@@ -1,5 +1,8 @@
 ====== TODO: things to watch, read or listen ======
 
+=====3D=====
+* https://3dprint.com/16788/pango-3d-print/
+
 =====analytics=====
 * https://analyticsacademy.withgoogle.com/course/4
 
