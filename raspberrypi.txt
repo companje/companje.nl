@@ -1,5 +1,8 @@
 ====== Raspbery Pi ======
 
+==OS distro for full screen webpage==
+* https://github.com/guysoft/FullPageOS
+
 Voor Globe4D misschien nog 2 interessante Raspberry Pi alternatieven: 
 * [[http://www.cnx-software.com/2014/04/21/solidrun-hummingboard-is-a-raspberry-pi-compatible-board-powered-by-freescale-i-mx6/|solidrun-hummingboard]]
 * [[http://www.cnx-software.com/2014/04/20/banana-pi-is-a-raspberry-pi-compatible-board-fitted-with-an-allwinner-a20-soc/|banana-pi]]
