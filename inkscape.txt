@@ -91,7 +91,7 @@ Bij resizen kun je met Affect aangeven dat ie bijv de lijndikte met rust moet la
 * menu extensions modify path - add nodes
 * make length 2 pixels (it makes a lot of nodes)
 * now there are still curves only shorter ones. You now need to make straight lines of it by using the 'make segment lines' button on the toolbar.
-* export as DXF
+* export as DXF (with units mm)
 
 [[OpenSCAD]] code:
 <code>linear_extrude(file = "file.dxf", height=5);</code>
