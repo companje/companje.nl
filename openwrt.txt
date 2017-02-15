@@ -505,6 +505,7 @@ sudo /usr/local/opt/e2fsprogs/sbin/mkfs.ext4/mkfs.ext4 /dev/disk#s#
 * connect the usb drive to the OpenWrt and type `block info` to get info about the block devices. Check if /dev/sda1 is listed.
 * create a folder to mount the drive to `mkdir /mnt/usb`
 * mount sda1 to the new folder `mount /dev/sda1 /mnt/usb`
+* (if you get a Segmentation Fault reboot the box first)
 * copy all files on the device to the usb drive:
 <code>
 mkdir -p /tmp/cproot
