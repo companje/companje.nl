@@ -1,5 +1,14 @@
 ====== OpenWrt ======
 
+==image generator osx==
+```
+docker run -it ubuntu /bin/bash
+apt-get update
+apt-get install subversion build-essential libncurses5-dev zlib1g-dev gawk git ccache gettext libssl-dev xsltproc
+make image PROFILE=TLMR3020 PACKAGES="kmod-usb-storage block-mount kmod-fs-ext4 kmod-usb-serial-ftdi kmod-usb-serial kmod-usb-acm uclibcxx liblua libuci luafilesystem libuci-lua libiwinfo-lua uhttpd uhttpd-mod-lua libusb-1.0 libncurses openssh-sftp-server -luci"
+#last step fails
+```
+
 ==minimale aanpak==
 verbind met internetverbinding van je router
 ```
