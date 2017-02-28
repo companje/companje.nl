@@ -1,5 +1,9 @@
 ====== FFMPEG ======
 
+=====quality=====
+-q:v 0 is highest quality
+-q:v 31 is lowest quality
+
 =====get / calculate number of frames=====
 <code bash>
 ffmpeg -i FILENAME -f null /dev/null
