@@ -1,5 +1,9 @@
 ====== OpenWrt ======
 
+==info about file upload/post to openwrt==
+* https://forum.piratebox.cc/read.php?3,15911,15911
+* ...
+
 ==image generator osx==
 ```
 docker run -it ubuntu /bin/bash
