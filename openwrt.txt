@@ -1,5 +1,8 @@
 ====== OpenWrt ======
 
+==read sliding switch on boot to select network configuration==
+* https://forum.openwrt.org/viewtopic.php?pid=172111#p172111
+
 ==info about file upload/post to openwrt==
 * https://forum.piratebox.cc/read.php?3,15911,15911
 * ...
