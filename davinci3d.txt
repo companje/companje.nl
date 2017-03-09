@@ -5,6 +5,9 @@
 * http://3dprintingindustry.com/2014/02/05/unboxing-printing-da-vinci-1-0-3d-printer/
 * https://github.com/m-look/daVinciF10/blob/master/Post-XYZ.sh
 
+==decrypt 3w==
+https://github.com/tai/decrypt-xyz3w
+
 =====Printing to directly to davinci=====
 https://github.com/jasongao/DaVinci1.0/blob/master/print-to-davinci.py
 
