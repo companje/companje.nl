@@ -17,7 +17,7 @@
 "Past release of XYZware used to generate *.3W file which is actually just a base64 encoded gcode file. However, recent XYZware hardened the format by AES-encrypting ZIP-ed gcode, instead of just encoding in base64." https://github.com/tai/decrypt-xyz3w
 issue: https://github.com/tai/decrypt-xyz3w/issues/1
 
-=====Printing to directly to davinci=====
+==Printing to directly to davinci==
 https://github.com/jasongao/DaVinci1.0/blob/master/print-to-davinci.py
 
 calculate checksum:
