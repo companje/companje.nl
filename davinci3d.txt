@@ -77,7 +77,7 @@ SENT: XYZv3/uploadDidFinish
   
   
 =====send 3w experiment based on py-threedub=====
-<code>
+<code python>
 import time, serial, sys
 import copy
 import string
