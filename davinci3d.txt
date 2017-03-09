@@ -75,3 +75,79 @@ SENT: XYZv3/uploadDidFinish
   > XYZ_@3D:4
   < OFFLINE_OK
   
+  
+=====send 3w experiment based on py-threedub=====
+<code>
+import time, serial, sys
+import copy
+import string
+import os
+from Crypto.Cipher.AES import AESCipher, MODE_ECB, MODE_CBC
+import logging
+import struct
+
+log = logging.getLogger(__name__)
+
+UploadCmd = "XYZv3/upload={filename},{size}{option}"
+UploadDidFinishCmd = "XYZv3/uploadDidFinish"
+
+ser = serial.Serial(
+    port="/dev/tty.usbmodem1411",
+    baudrate=115200,
+    parity=serial.PARITY_NONE,
+    stopbits=serial.STOPBITS_ONE,
+    bytesize=serial.EIGHTBITS
+)
+
+def write(data):
+    ser.write(data)
+    ser.flush()
+
+def writeline(data):
+    write(data+"\n")
+
+def readline():
+    return ser.readline()
+
+def readlines(expect=None):
+    buf = ""
+    line = None
+    while line is None or line:
+        line = readline()
+        if line:
+            buf += line
+            if line.strip() == expect:
+                break
+            elif line.strip() == "E0":
+                return buf
+    return buf
+
+def wait_for_ok(expect="ok"):
+    resp = readlines(expect=expect)
+    if not resp or resp.strip() != "ok":
+        raise Exception("Expected token not found: {}, got '{}' instead".format(expect,resp.strip()))
+    
+
+f = open("flatcube/flatcube-1-layer.3w", 'rb')
+data = f.read()
+size = os.fstat(f.fileno()).st_size
+
+writeline(UploadCmd.format(filename="temp.gcode", size=size, option=""))
+wait_for_ok();
+
+chunks = (len(data)+8191) / 8192
+prev = ""
+blocksize = 8192
+for n in range(0, chunks):
+    log.debug("Sending file chunk {}/{}".format(n, chunks))
+    chunk = struct.pack(">l", n) + struct.pack(">l", blocksize)
+    start = 8192*n
+    chunk += data[start:start+8192]
+    chunk += "\x00\x00\x00\x00"
+    write(chunk)
+    wait_for_ok()
+
+write(UploadDidFinishCmd)
+
+print "done"
+</code>
