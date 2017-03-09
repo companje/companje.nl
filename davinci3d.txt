@@ -6,6 +6,10 @@
 * https://github.com/m-look/daVinciF10/blob/master/Post-XYZ.sh
 * https://github.com/mwm/xyzify
 
+
+==threedub==
+* https://gitlab.com/anthem/py-threedub/blob/master/threedub/davinci.py
+
 ==decrypt 3w==
 "Past release of XYZware used to generate *.3W file which is actually just a base64 encoded gcode file. However, recent XYZware hardened the format by AES-encrypting ZIP-ed gcode, instead of just encoding in base64." https://github.com/tai/decrypt-xyz3w
 issue: https://github.com/tai/decrypt-xyz3w/issues/1
