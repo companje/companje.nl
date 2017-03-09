@@ -9,7 +9,9 @@
 
 ==threedub==
 * https://gitlab.com/anthem/py-threedub/blob/master/threedub/davinci.py
+* instructions: http://www.thingiverse.com/thing:1915076
 * `threedub -e /dev/tty.usbmodem1411 --status`
+
 
 ==decrypt 3w==
 "Past release of XYZware used to generate *.3W file which is actually just a base64 encoded gcode file. However, recent XYZware hardened the format by AES-encrypting ZIP-ed gcode, instead of just encoding in base64." https://github.com/tai/decrypt-xyz3w
