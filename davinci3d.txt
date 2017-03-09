@@ -32,6 +32,22 @@ public static int checksum(byte[] arr, int start, int len) {
 }
 </code>
 
+==upload from Simplify3D==
+<code>
+SENT: XYZv3/upload=temp.gcode,26272
+READ: ok
+SENT: 8204 bytes
+READ: ok
+SENT: 8204 bytes
+READ: ok
+SENT: 8204 bytes
+READ: ok
+SENT: 1708 bytes
+READ: ok
+SENT: XYZv3/uploadDidFinish
+</code>
+
+
 =====Serial communication on 115200=====
   > XYZ_@3D:
   < XYZ_@3D:start
