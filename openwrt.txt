@@ -1,8 +1,15 @@
 ====== OpenWrt ======
 
 ==How to transfer a file from OpenWrt to your computer in Failsafe mode==
-On OpenWrt: `nc 192.168.1.2 3333 < /tmp/backup.tar.gz`
-On your computer: `nc -l 192.168.1.2 3333 > backup.tar.gz`
+On OpenWrt
+```
+nc 192.168.1.2 3333 < /tmp/backup.tar.gz
+```
+
+On your computer: 
+```
+nc -l 192.168.1.2 3333 > backup.tar.gz
+```
 
 ==Flash new firmware in failsafe mode (via netcat)==
 https://wiki.openwrt.org/doc/howto/generic.failsafe#flash_new_firmware_in_failsafe_mode
