@@ -3,6 +3,7 @@
 ==How to transfer a file from OpenWrt to your computer in Failsafe mode==
 On OpenWrt
 ```
+sysupgrade --create-backup /tmp/backup.tar.gz
 nc 192.168.1.2 3333 < /tmp/backup.tar.gz
 ```
 
