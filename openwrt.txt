@@ -1,5 +1,8 @@
 ====== OpenWrt ======
 
+==Flash new firmware in failsafe mode (via netcat)==
+https://wiki.openwrt.org/doc/howto/generic.failsafe#flash_new_firmware_in_failsafe_mode
+
 ==read sliding switch on boot to select network configuration==
 * https://forum.openwrt.org/viewtopic.php?pid=172111#p172111
 
