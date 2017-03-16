@@ -1,5 +1,10 @@
 ======netcat======
 
+==upload file with curl to netcat server==
+  nc -l localhost 8000
+  curl -F "text=default" -F "file1=@a.html" -F "file1=@a.txt" localhost:8000
+
+
 ==to receive data from Globe4D driver==
 <code>
 nc -lu -p 12345
