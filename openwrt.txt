@@ -1,5 +1,8 @@
 ====== OpenWrt ======
 
+`cat > /dev/null` is `- > dev/null'
+
+
 ==tail logs through netcat==
 on router:
 ```logread -f | nc 192.168.5.111 8081```
