@@ -1,6 +1,6 @@
 ====== OpenWrt ======
 
-`cat > /dev/null` is `- > dev/null'
+`cat > /dev/null` is `- > dev/null`
 
 
 ==tail logs through netcat==
