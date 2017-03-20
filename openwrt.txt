@@ -1,7 +1,16 @@
 ====== OpenWrt ======
 
-`cat > /dev/null` is `- > dev/null`
-
+==write stdin to /dev/null (or usb)==
+```
+#!/bin/sh
+echo "Content-type: text/plain"
+echo ""
+env
+- > /dev/null  # or cat > /dev/null
+echo "ok"
+echo ""
+echo ""
+```
 
 ==tail logs through netcat==
 on router:
