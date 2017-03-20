@@ -1,7 +1,7 @@
 ====== OpenWrt ======
 
 ==minimal file upload using cgi script from stdin to /dev/null (or usb)==
-```
+```html
 <form target="frm" action="http://192.168.5.1/cgi-bin/test.sh" enctype="multipart/form-data" method="post">
 <input type="file" name="datafile" size="40">
 <input type="submit" value="Send">
@@ -10,7 +10,7 @@
 </iframe>
 ```
 
-```
+```bash
 #!/bin/sh
 echo "Content-type: text/plain"
 echo ""
