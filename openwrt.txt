@@ -1,5 +1,8 @@
 ====== OpenWrt ======
 
+==system.lua source==
+* https://github.com/openwrt/luci/blob/f7ec630913a4eadea0b9927881f62b095bc95563/modules/luci-mod-admin-full/luasrc/controller/admin/system.lua#L233
+
 ==How to transfer a file from OpenWrt to your computer in Failsafe mode==
 On OpenWrt
 ```
