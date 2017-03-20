@@ -1,5 +1,12 @@
 ====== OpenWrt ======
 
+==tail logs through netcat==
+on router:
+```logread -f | nc 192.168.5.111 8081```
+
+on pc:
+```nc -l 192.168.5.111 8081```
+
 ==system.lua source==
 * https://github.com/openwrt/luci/blob/f7ec630913a4eadea0b9927881f62b095bc95563/modules/luci-mod-admin-full/luasrc/controller/admin/system.lua#L233
 
