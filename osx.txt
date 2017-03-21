@@ -1,5 +1,8 @@
 ======Mac OSX======
 
+=====iTerm2 keyboard shortcuts and tips======
+https://www.iterm2.com/documentation-one-page.html
+
 =====convert multiple PNG's to JPG=====
 You can do it with the Preview App as described here: http://osxdaily.com/2013/01/16/batch-image-conversion-mac-os-x-preview/
 
