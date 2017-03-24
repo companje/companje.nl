@@ -455,7 +455,9 @@ http://buildroot.uclibc.org/ is een losstaand project
 {{::mr3020-serial-pins.jpg?direct&450|}}
 
 ==buttons on the mr3020==
-http://wiki.openwrt.org/doc/howto/hardware.button
+* http://wiki.openwrt.org/doc/howto/hardware.button
+* change network settings with slider switch: http://www.linux-magazine.com/Online/Features/The-One-Watt-Server
+
 <code>
 opkg update
 opkg install kmod-button-hotplug --force-depends
