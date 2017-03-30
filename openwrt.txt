@@ -1,5 +1,8 @@
 ====== OpenWrt ======
 
+==SDK: configure: error: C compiler cannot create executables
+solution: install 'ccache' on the host system (Ubuntu in my case)
+
 ==minimal file upload using cgi script from stdin to /dev/null (or usb)==
 ```html
 <form target="frm" action="http://192.168.5.1/cgi-bin/test.sh" enctype="multipart/form-data" method="post">
