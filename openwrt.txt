@@ -4,7 +4,7 @@
 possible solution:
 `ln -s ../feeds/base/package/utils package/utils`
 
-==SDK: configure: error: C compiler cannot create executables
+==SDK: configure: error: C compiler cannot create executables==
 solution: install 'ccache' on the host system (Ubuntu in my case)
 
 ==minimal file upload using cgi script from stdin to /dev/null (or usb)==
