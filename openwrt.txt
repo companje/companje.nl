@@ -1,5 +1,22 @@
 ====== OpenWrt ======
 
+==install print3d==
+```bash
+
+scripts/feeds update customfeeds
+scripts/feeds install print3d
+make package/print3d/compile
+```
+
+==install doodle3d-firmware (package name = wifibox)
+```bash
+scripts/feeds update customfeeds
+scripts/feeds install wifibox   #where 'wifibox' is actually the package in 'doodle3d-firmware' repo
+make package/doodle3d-firmware/compile # but make seems the name of the folder instead of the name of the package
+```
+
+
+
 ==Makefile:5: *** missing separator.  Stop.==
 this might indicate spaces instead of tabs in one of your Makefile
 
