@@ -1,5 +1,8 @@
 ====== OpenWrt ======
 
+==Makefile:5: *** missing separator.  Stop.==
+this might indicate spaces instead of tabs in one of your Makefile
+
 ==SDK: glob failed: No files found "package/utils/busybox/config/libbb/Config.in"==
 (possible) solution:
 `ln -s ../feeds/base/package/utils package/utils`
