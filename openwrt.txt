@@ -1,5 +1,10 @@
 ====== OpenWrt ======
 
+==BIN_DIR: custom output folder for packages==
+```
+make package/doodle3d-firmware/compile BIN_DIR="/home/openwrt/shared/bin/" V=s
+```
+
 ==install print3d==
 ```bash
 
