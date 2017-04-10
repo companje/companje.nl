@@ -15,3 +15,6 @@ http://www.jsoneditoronline.org/
 
 ==validate json==
 * http://jsonlint.com/
+
+==online yaml to json converter with colors==
+*http://nodeca.github.io/js-yaml/
