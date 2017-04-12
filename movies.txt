@@ -2,8 +2,9 @@
 
 =====TODO======
 
-*passengers
-*life (tip v Jeroen)
+* Toffe korte video over machine learning: https://youtu.be/qv6UVOQ0F44
+* DONE: passengers
+* life (tip v Jeroen)
 
 ==Find my phone==
 * http://thenextweb.com/mobile/2016/12/16/film-student-tricked-thief-lifting-phone-spied-weeks/
