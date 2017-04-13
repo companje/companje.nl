@@ -6,7 +6,7 @@
 ```
 ln -s "$1" /Users/rick/Documents/Websites/
 ```
-{{::screen_shot_2017-04-13_at_16.55.11.png?nolink&500|}}
+{{::screen_shot_2017-04-13_at_16.55.11.png?nolink&450|}}
 
 =====iTerm2 keyboard shortcuts and tips======
 https://www.iterm2.com/documentation-one-page.html
