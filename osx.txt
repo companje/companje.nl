@@ -1,5 +1,13 @@
 ======Mac OSX======
 
+=====Use Automator for making Symbolic Links=====
+1 Create an Application
+2 add task `Run Shell Script` with 'pass input as arguments'
+```
+ln -s "$1" /Users/rick/Documents/Websites/
+```
+{{::screen_shot_2017-04-13_at_16.55.11.png?nolink&200|}}
+
 =====iTerm2 keyboard shortcuts and tips======
 https://www.iterm2.com/documentation-one-page.html
 
