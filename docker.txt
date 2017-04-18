@@ -1,5 +1,10 @@
 ====== Docker ======
 
+==Docker Compose==
+"Compose is a tool for defining and running multi-container Docker applications."
+Configure containers using YAML
+https://docs.docker.com/compose/
+
 == on OSX ==
 https://docs.docker.com/docker-for-mac/
 
