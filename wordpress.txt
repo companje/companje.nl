@@ -32,6 +32,8 @@ $ wp plugin activate woocommerce
 
 $ wp plugin install enfold
 Segmentation fault: 11
+$ wp plugin update --all
+Segmentation fault: 11
 </code>
 
 =====database (woocommerce) reports======
