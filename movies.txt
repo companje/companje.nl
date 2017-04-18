@@ -2,6 +2,7 @@
 
 =====TODO======
 
+* Ghost in the shell (kijken in Kinepolis)
 * Toffe korte video over machine learning: https://youtu.be/qv6UVOQ0F44
 * DONE: passengers
 * life (tip v Jeroen)
