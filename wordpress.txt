@@ -1,5 +1,9 @@
 ====== Wordpress ======
 
+===== WP-CLI =====
+WP-CLI is a set of command-line tools for managing WordPress installations. You can update plugins, configure multisite installs and much more, without using a web browser.
+http://wp-cli.org/
+
 =====database (woocommerce) reports======
 <code php>
 <?php
