@@ -4,6 +4,36 @@
 WP-CLI is a set of command-line tools for managing WordPress installations. You can update plugins, configure multisite installs and much more, without using a web browser.
 http://wp-cli.org/
 
+<code>
+Wordpress CLI 
+
+Quickstart: https://make.wordpress.org/cli/handbook/quick-start/
+
+$ source  /Applications/XAMPP/ds-plugins/ds-cli/platform/mac/boot.sh
+$ wp core install --url=www.doodle3d.dev --title=Doodle3D --admin_user=doodle3d --admin_email=www-doodle3d-dev@companje.nl
+Admin password: 4cUfKVY5ajyX
+$ wp --info
+PHP binary:	/Applications/XAMPP/xamppfiles/bin/php-5.5.24
+PHP version:	5.5.24
+php.ini used:	/Applications/XAMPP/xamppfiles/etc/php.ini
+WP-CLI root dir:	/Applications/XAMPP/ds-plugins/ds-cli/vendor/wp-cli/wp-cli
+WP-CLI packages dir:
+WP-CLI global config:
+WP-CLI project config:
+WP-CLI version:	1.0.0
+
+
+$ source /Users/rick/Documents/Doodle3D/wordpress/wp-completion.bash  #from: https://raw.githubusercontent.com/wp-cli/wp-cli/master/utils/wp-completion.bash
+
+$ wp plugin install akismet --activate
+
+$ wp plugin install woocommerce
+$ wp plugin activate woocommerce
+
+$ wp plugin install enfold
+Segmentation fault: 11
+</code>
+
 =====database (woocommerce) reports======
 <code php>
 <?php
