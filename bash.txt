@@ -1,5 +1,20 @@
 ====== Bash ======
 
+=====colors in ~/.profile=====
+git_branch () { git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'; }
+HOST='\033[01;32m\]';
+LOCATION='`pwd | sed "s#\(/[^/]\{1,\}/[^/]\{1,\}/[^/]\{1,\}/\).*\(/[^/]\{1,\}/[^/]\{1,\}\)/\{0,1\}#\1_\$
+BRANCH=' \033[00;33m\]$(git_branch)\[\033[00m\]\n\$ '
+PS1=$HOST$LOCATION$BRANCH
+PS2='\[\033[01;36m\]>'
+
+ls --color=al > /dev/null 2>&1 && alias ls='ls -F --color=al' || alias ls='ls -G'
+
+TERM=xterm-color
+alias d='ls -la --color'
+cd /domains/doodle3d.com/DEFAULT
+</code>
+
 =====log file processing=====
 <code bash>
 cut -f4,10 EnecsysLogfile.txt | sort -r | rev | uniq -f 1 | rev | cut -f 2 | egrep [0-9.] | xargs  | sed -e 's/\ /+/g' | bc
