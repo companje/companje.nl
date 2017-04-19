@@ -1,7 +1,7 @@
 ====== Movies ======
 
 =====TODO======
-
+* goed filmpje over neural networks: https://youtu.be/ILsA4nyG7I0
 * Ghost in the shell (kijken in Kinepolis)
 * Toffe korte video over machine learning: https://youtu.be/qv6UVOQ0F44
 * DONE: passengers
