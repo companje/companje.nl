@@ -9,6 +9,7 @@ AuthType Basic
 require valid-user
 </code>
 
+== redirect ==
 <code apache>
 RewriteEngine On
 
