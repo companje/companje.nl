@@ -1,5 +1,14 @@
 ====== .htaccess ======
 
+==Basic Auth==
+<code apache>
+AuthName "Login"
+AuthGroupFile /dev/null
+AuthUserFile /domains/....../.htpasswd
+AuthType Basic
+require valid-user
+</code>
+
 <code apache>
 RewriteEngine On
 
