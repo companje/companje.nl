@@ -8,4 +8,6 @@ rsync -a src/ dest
 "A trailing slash on the source [...] avoid[s] creating an additional directory level at the destination."
 
 ====== clone folder and exclude git folder =====
+```
 rsync -a --progress shop/ shopdev --exclude .git
+```
