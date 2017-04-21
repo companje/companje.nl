@@ -3,13 +3,13 @@
 =====TODO======
 * goed filmpje over neural networks: https://youtu.be/ILsA4nyG7I0
 * Ghost in the shell (kijken in Kinepolis)
-* Toffe korte video over machine learning: https://youtu.be/qv6UVOQ0F44
+* DONE: Toffe korte video over machine learning: https://youtu.be/qv6UVOQ0F44
 * DONE: passengers
 * life (tip v Jeroen)
 * hotfuzz (tip v Casper)
 
 ==Find my phone==
-* http://thenextweb.com/mobile/2016/12/16/film-student-tricked-thief-lifting-phone-spied-weeks/
+* DONE http://thenextweb.com/mobile/2016/12/16/film-student-tricked-thief-lifting-phone-spied-weeks/
 
 ==tip v radio==
 * The Circle (april 2017)
