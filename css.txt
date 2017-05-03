@@ -1,4 +1,8 @@
 =====CSS=====
+
+nog lezen: https://www.mozilla.org/en-US/developer/css-grid/
+
+
 ==width/height of viewport==
 <code css>
 img {
