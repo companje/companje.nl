@@ -1,11 +1,7 @@
 ====== node.js ======
 
 ====="Redis is ready"=====
-Het bericht "Redis is ready" weten jullie of ik dat uit kan zetten, dat ie dat niet naar stdout stuurt?
-[12:56 PM] 
-het zit in "RedisAdapter.js"
-[12:56 PM] 
-Doodle3D-App/node_modules/superlogin/lib/sessionAdapters/RedisAdapter.js
+generate by: `Doodle3D-App/node_modules/superlogin/lib/sessionAdapters/RedisAdapter.js`
 
 =====parse HTML jQuery style=====
 https://github.com/cheeriojs/cheerio
