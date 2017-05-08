@@ -1,6 +1,7 @@
 ====== Movies ======
 
 =====TODO======
+* guardians of the galaxy 2
 * Swiss army man (tip v Nico)
 * goed filmpje over neural networks: https://youtu.be/ILsA4nyG7I0
 * Ghost in the shell (kijken in Kinepolis)
