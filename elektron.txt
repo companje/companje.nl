@@ -1,4 +1,3 @@
 ====== Elektron ======
 
-===== light version =====
-https://medium.com/dailyjs/put-your-electron-app-on-a-diet-with-electrino-c7ffdf1d6297
+* https://medium.com/dailyjs/put-your-electron-app-on-a-diet-with-electrino-c7ffdf1d6297
