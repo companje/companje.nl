@@ -23,7 +23,7 @@ HTTPPort 8090
 </Stream>
 </code>
 
-en over server: even een snelle file in elkaar gezet als voorbeeld, zie config
+even een snelle file in elkaar gezet als voorbeeld, zie config
 
 als je dan start: ffserver -f bunny.conf
 
