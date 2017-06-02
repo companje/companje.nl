@@ -1,5 +1,45 @@
 ======PHP======
 
+=====parse cloudant json through template=====
+<code php>
+<?
+$db = "https://.....cloudant.com/....";
+
+//check requested URL for doc_id of 32 chars
+preg_match('/^\/(.*)/',$_SERVER["REDIRECT_URL"], $matches, PREG_OFFSET_CAPTURE);
+if (count($matches)!=2 || strlen($matches[1][0])!=32) all($db);
+else single($db,$matches[1][0]);
+
+function single($db,$id) {
+  $status = get_headers("$db/$id")[0];
+  if ($status!="HTTP/1.0 200 OK") die ("ERR:db");
+
+  $obj = json_decode(file_get_contents("$db/$id"));
+
+  $template = file_get_contents("single.html");
+  $template = str_replace("{db}", $db, $template);
+  $template = str_replace("{id}", $id, $template);
+  $template = str_replace("{url}", "https://share.doode3d.com/$id", $template);
+  $template = str_replace("{image}", "$db/$id/img", $template);
+  $template = str_replace("{title}", $obj->name, $template);
+  $template = str_replace("{author}", $obj->author, $template);
+
+  echo $template . "\n";
+}
+
+function all($db) {
+  $json = file_get_contents('https://......cloudant.com/......?limit=25&reduce=false&descending=true');
+  $obj = json_decode($json);
+  foreach  ($obj->rows as $row) {
+    $id = $row->id;
+    $thumb = $row->value->thumb;
+    echo "<a href='https://......./$id'><img src='$thumb'></a>\n";
+  } 
+}
+
+?>
+</code>
+
 =====composer=====
 https://getcomposer.org/doc/00-intro.md
   curl -sS https://getcomposer.org/installer | php
