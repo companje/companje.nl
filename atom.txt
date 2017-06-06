@@ -4,9 +4,11 @@
   apm install glsl-preview
   
 ==shortcuts==
+```
 Cmd P
 Cmd Shift P
 Cmd ,
+```
 
 ==packages==
   * https://atom.io/packages/linter
