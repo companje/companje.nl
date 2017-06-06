@@ -2,3 +2,8 @@
 
 ==install packages via CLI==
   apm install glsl-preview
+  
+==shortcuts==
+Cmd P
+Cmd Shift P
+Cmd ,
