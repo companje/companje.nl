@@ -1,7 +1,7 @@
 ======Mac OSX======
 
 =====z as alternative for cd=====
-```
+```bash
 brew install z
 # add this to ~/.bash_profile: . /usr/local/etc/profile.d/z.sh
 ```
