@@ -1,5 +1,13 @@
 ======Mac OSX======
 
+=====z as alternative for cd=====
+```
+brew install z
+# add this to ~/.bash_profile: . /usr/local/etc/profile.d/z.sh
+```
+https://github.com/rupa/z
+
+
 =====Make automatic screenshots=====
 
 ```xml
