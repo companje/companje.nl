@@ -1,7 +1,7 @@
 ======Mac OSX======
 
 =====my updated .bash_profile=====
-```
+```bash
 export PATH=~/bin:$PATH
 alias d="ls -lGa"
 alias ls="ls -G"
