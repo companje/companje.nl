@@ -1,5 +1,25 @@
 ======Mac OSX======
 
+=====my updated .bash_profile=====
+```
+export PATH=~/bin:$PATH
+alias d="ls -lGa"
+alias ls="ls -G"
+alias untar="tar xvzf "
+alias lsr="ls -ltr"  #recent files ordered ascending
+
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
+
+. /usr/local/etc/profile.d/z.sh
+  
+git_branch () { git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'; }
+LOCATION='\033[01;34m\]`pwd | sed "s#\(/[^/]\{1,\}/[^/]\{1,\}/[^/]\{1,\}/\).*\(/[^/]\{1,\}/[^/]\{1,\}\)/\{0,1\}#\1...\2#g"`'
+BRANCH=' \033[00;33m\]$(git_branch)\[\033[00m\]\n\$ '
+PS1=$LOCATION$BRANCH
+PS2='\[\033[01;36m\]>'
+```
+
 =====z as alternative for cd=====
 ```bash
 brew install z
