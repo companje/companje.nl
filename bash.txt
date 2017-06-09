@@ -1,5 +1,20 @@
 ====== Bash ======
 
+=====Check parameters=====
+```
+if [[ $# -eq 0 ]] ; then
+    echo 'Usage: ./toMovie.sh FOLDER'
+    exit 0
+fi
+
+```
+
+=====get foldername from folderpath=====
+```
+folderpath=$1
+foldername=${folderpath##*/}
+```
+
 =====colors in ~/.profile=====
 <code bash>
 git_branch () { git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'; }
