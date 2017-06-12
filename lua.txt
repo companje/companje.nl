@@ -1,5 +1,13 @@
 ====== Lua ======
 
+=====check args=====
+```lua
+if (table.getn(arg) == 0) then
+    print("Usage: ./print-fetch {printerSocket} {remoteURL} {id}")
+    return
+end
+```
+
 =====Sample code=====
 http://lua-users.org/wiki/SampleCode
 
