@@ -1,5 +1,11 @@
 ====== Doodle3D ======
 
+===== doodle3d firmware readme =====
+https://github.com/Doodle3D/Doodle3D-firmware
+```
+d3dapi p=/network/scan r=GET
+```
+
 ===== adding a 3D-printer to Doodle3D =====
 * http://doodle3d.com/help/adding-3d-printer
 
