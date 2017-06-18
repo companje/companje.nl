@@ -1,5 +1,22 @@
 ====== node.js ======
 
+=====get all links from file using cheerio=====
+<code javascript>
+var fs = require('fs')
+var cheerio = require('cheerio');
+
+fs.readFile('index.html', 'utf8', function (err,data) {
+    if (err) return console.log(err);
+
+    var $ = cheerio.load(data);
+
+    $('a').each(function(i, elem) {
+        console.log($(this).attr('href'));
+    });
+
+});
+</code>
+
 ====="Redis is ready"=====
 generate by: `Doodle3D-App/node_modules/superlogin/lib/sessionAdapters/RedisAdapter.js`
 
