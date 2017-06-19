@@ -1,5 +1,11 @@
 ====== Regular Expressions  ======
 
+=====javascript parse whitespace=====
+```
+let wc = ”        7      1312";
+wc.split(/,?\s+/).filter(Boolean);
+```
+
 =====Shiffman about regex=====
 http://shiffman.net/a2z/regex/
 
