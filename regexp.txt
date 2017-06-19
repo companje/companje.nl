@@ -2,7 +2,7 @@
 
 =====javascript parse whitespace=====
 ```javascript
-let wc = ”        7      1312";
+let wc = "        7      1312";
 wc.split(/,?\s+/).filter(Boolean);
 ```
 
