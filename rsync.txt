@@ -6,7 +6,7 @@ rsync -av localfolder/ server:/remotefolder/
 ```
 
 ===== clone folder =====
-```
+```bash
 rsync -a src/ dest
 
 ```
