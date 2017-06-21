@@ -1,5 +1,21 @@
 ====== OpenWrt ======
 
+=====wifibox .profile=====
+```bash
+root@wifibox:~# cat .profile
+# DO NOT MODIFY - this block of lines has been added by the wifibox package.
+alias d='ls -la'
+alias encore='ulimit -c unlimited'
+alias wopkg='opkg -f /usr/share/lua/wifibox/opkg.conf'
+
+alias tailfw='loglite /tmp/wifibox.log firmware'
+tailp3d() {
+  logfile=/tmp/print3d-ttyACM0.log
+  if [ $# -gt 0 ]; then logfile=$1; fi
+  loglite "$logfile" print3d
+}
+```
+
 ==image generator test doodle3d with docker==
 https://github.com/Doodle3D/openwrt-buildroot/tree/image-generator-test
 
