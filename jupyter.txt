@@ -1,2 +1,2 @@
 ====== Jupyter Notebook ======
-http://try.jupyter.org/
+http://jupyter.org/
