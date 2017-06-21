@@ -1,6 +1,6 @@
 ====== OpenWrt ======
 
-=====install doodle3d-client in container=====
+=====install doodle3d-client in docker container=====
 ```
 scripts/feeds update customfeeds
 scripts/feeds install doodle3d-client
