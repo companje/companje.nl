@@ -1,2 +1,2 @@
 ====== Jupyter Notebook ======
-http://jupyter.org/
+http://jupyter.org/ (tip v Simon)
