@@ -4,9 +4,11 @@
 ```bash
 scripts/feeds update customfeeds
 scripts/feeds install doodle3d-client
-#cat /home/openwrt/config/diffconfig >> .config
-#make defconfig
-make V=s package/doodle3d-client/compile
+cat /home/openwrt/config/diffconfig >> .config
+make defconfig
+#make V=s package/doodle3d-client/compile
+#make V=s
+cp -r bin /home/openwrt/shared/
 ```
 but check also [[https://github.com/Doodle3D/openwrt-buildroot/blob/master/dockerfile/Build.sh|build.sh]]
    
