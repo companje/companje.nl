@@ -1,7 +1,7 @@
 ====== OpenWrt ======
 
 =====install doodle3d-client in docker container=====
-```
+```bash
 scripts/feeds update customfeeds
 scripts/feeds install doodle3d-client
 #cat /home/openwrt/config/diffconfig >> .config
