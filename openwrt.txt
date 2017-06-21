@@ -1,5 +1,13 @@
 ====== OpenWrt ======
 
+=====install doodle3d-client in container=====
+```
+scripts/feeds update customfeeds
+scripts/feeds install doodle3d-client
+make package/doodle3d-client/compile
+```
+but check also build.sh
+   
 =====wifibox .profile=====
 ```bash
 root@wifibox:~# cat .profile
