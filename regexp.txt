@@ -1,10 +1,12 @@
 ====== Regular Expressions  ======
 
 =====javascript math id= parameter in querystring=====
+```javascript
 var link = "http://aap.com?nav_id=3-1&id=138622&index=14";
 var matches = link.match(/&id=([^&]*)/);
 var id = matches ? matches[1] : null;
-result: 138622
+//result: 138622
+```
 
 =====regexp pal=====
 http://www.regexpal.com/
