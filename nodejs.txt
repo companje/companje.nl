@@ -1,5 +1,11 @@
 ====== node.js ======
 
+=====express params=====
+```javascript
+app.get('/detail/:id/:index', function(req, res) {
+res.send(req.params);
+```
+
 =====get all links from file using cheerio=====
 <code javascript>
 var fs = require('fs')
