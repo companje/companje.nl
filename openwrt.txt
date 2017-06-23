@@ -20,13 +20,13 @@ host=$1
 firmware=$2
 
 #add myself to the autorized keys on the wifibox
-cat ~/.ssh/id_rsa.pub | ssh $host 'cat > /etc/dropbear/authorized_keys'
+cat ~/.ssh/id_rsa.pub | ssh root@$host 'cat > /etc/dropbear/authorized_keys'
 
 #upload the file to the wifibox:/tmp/
-scp "$2" $host:/tmp/
+scp "$2" root@$host:/tmp/
 
 #sysupgrade the wifibox
-ssh $host sysupgrade -v /tmp/$(basename $2)
+ssh root@$host sysupgrade -v /tmp/$(basename $2)
 ```
 
 =====install doodle3d-client in docker container=====
