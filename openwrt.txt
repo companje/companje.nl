@@ -1,7 +1,7 @@
 ====== OpenWrt ======
 
 =====auto flash wifibox=====
-```flash.bash
+```bash
 #!/bin/bash
 
 ln -s `realpath $0` ~/bin/flash > 2&>null #installs this script as executable 'flash'
