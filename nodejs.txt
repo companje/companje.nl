@@ -1,5 +1,10 @@
 ====== node.js ======
 
+=====Debuggen via Chrome Dev Console=====
+```
+node --inspect-brk index.js
+```
+
 =====Session JAR for 302 redirects====
 ```javascript
 var request = require('request').defaults({
