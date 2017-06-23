@@ -1,5 +1,34 @@
 ====== OpenWrt ======
 
+=====auto flash wifibox=====
+```bash
+#!/bin/bash
+
+ln -s `realpath $0` ~/bin/flash > 2&>null #installs this script as executable 'flash'
+
+if [[ $# -ne 2 ]] ; then
+    echo "Usage: flash {HOST} {FILE.BIN}"
+    exit 1
+fi
+
+if [ ! -f $2 ]; then
+    echo "File not found: $2"
+    exit 1
+fi
+
+host=$1
+firmware=$2
+
+#add myself to the autorized keys on the wifibox
+cat ~/.ssh/id_rsa.pub | ssh $host 'cat > /etc/dropbear/authorized_keys'
+
+#upload the file to the wifibox:/tmp/
+scp "$2" $host:/tmp/
+
+#sysupgrade the wifibox
+ssh $host sysupgrade -v /tmp/$(basename $2)
+```
+
 =====install doodle3d-client in docker container=====
 ```bash
 scripts/feeds update customfeeds
