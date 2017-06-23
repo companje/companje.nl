@@ -11,9 +11,7 @@ var request = require('request').defaults({
 var url = "http://URL";
 
 request(url, function (error, response, body) {
-
 	console.log(body);
-
 });
 ```
 
