@@ -1,5 +1,22 @@
 ====== node.js ======
 
+=====Session JAR for 302 redirects====
+```javascript
+var request = require('request').defaults({
+	followRedirect: true,
+	followAllRedirects: true,
+	jar: true // this creates session 'jar'
+});
+
+var url = "http://URL";
+
+request(url, function (error, response, body) {
+
+	console.log(body);
+
+});
+```
+
 =====express params=====
 ```javascript
 app.get('/detail/:id/:index', function(req, res) {
