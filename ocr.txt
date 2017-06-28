@@ -5,11 +5,11 @@
 =====OCRAD !!!!====
 ```bash
 brew install ocrad
-brew install netpbm
-
 convert 14.16.12.png img.ppm
 ocrad img.ppm > output.txt
+
 #or
+brew install netpbm
 pngtopnm filename.png | ocrad
 
 
