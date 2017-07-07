@@ -1,5 +1,9 @@
 ====== OpenWrt ======
 
+=====loglite voor wifibox=====
+firmware / web server  api logs: `cat /tmp/wifibox.log | loglite`
+print3d logs: `cat /tmp/print3d-ttyACM0.log | loglite`
+
 =====auto flash wifibox=====
 ```bash
 #!/bin/bash
