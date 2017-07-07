@@ -1,5 +1,10 @@
 ====== Atom Editor ======
 
+==Select Next: Cmd+D==
+```
+Cmd+D
+```
+
 ==add project==
 ```
 atom -a .
