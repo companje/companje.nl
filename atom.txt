@@ -1,5 +1,10 @@
 ====== Atom Editor ======
 
+==add project==
+```
+atom -a .
+```
+
 ==install packages via CLI==
   apm install glsl-preview
   
