@@ -1,0 +1,7 @@
+====== Go ======
+
+==globe example==
+* https://github.com/mmcloughlin/globe
+
+==docs==
+* http://learnxinyminutes.com/docs/go/
