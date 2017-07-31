@@ -1,6 +1,6 @@
 =============== Javascript notes ===============
 
-====== GPU Accelerated JavaScript ======
+===== GPU Accelerated JavaScript =====
 http://gpu.rocks/
 
 =====Parallel processing====
