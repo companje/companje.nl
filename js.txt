@@ -1,5 +1,8 @@
 =============== Javascript notes ===============
 
+====== GPU Accelerated JavaScript ======
+http://gpu.rocks/
+
 =====Parallel processing====
 Interessante technieken voor als we met de app meer parallel willen gaan doen, zoals die floodfill:
 http://www.htmlgoodies.com/html5/client/using-web-workers-to-improve-performance-of-image-manipulation.html
