@@ -1,2 +1,3 @@
-attic-combi-flat/
-*.zip
+_site
+.sass-cache
+.jekyll-metadata
