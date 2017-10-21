@@ -1,16 +1,15 @@
 ---
-layout: default
 title: NodeJS
+layout: default
 ---
 
-====== node.js ======
-
-=====Debuggen via Chrome Dev Console=====
-```
+# test2
+## Debuggen via Chrome Dev Console
+```bash
 node --inspect-brk index.js
 ```
 
-=====Session JAR for 302 redirects====
+## Session JAR for 302 redirects
 ```javascript
 var request = require('request').defaults({
 	followRedirect: true,
@@ -25,14 +24,15 @@ request(url, function (error, response, body) {
 });
 ```
 
-=====express params=====
+## express params
 ```javascript
 app.get('/detail/:id/:index', function(req, res) {
-res.send(req.params);
+  res.send(req.params);
+});
 ```
 
-=====get all links from file using cheerio=====
-<code javascript>
+## get all links from file using cheerio
+```javascript
 var fs = require('fs')
 var cheerio = require('cheerio');
 
@@ -46,15 +46,15 @@ fs.readFile('index.html', 'utf8', function (err,data) {
     });
 
 });
-</code>
+```
 
-====="Redis is ready"=====
+## Redis is ready
 generate by: `Doodle3D-App/node_modules/superlogin/lib/sessionAdapters/RedisAdapter.js`
 
-=====parse HTML jQuery style=====
+## parse HTML jQuery style
 https://github.com/cheeriojs/cheerio
 
-<code javascript>
+```javascript
 var request = require('request');
 var cheerio = require('cheerio');
 var url = 'http://www.marktplaats.nl/s/749032247370.html';
@@ -72,9 +72,10 @@ request(url, function (error, response, body) {
         console.log(error);
     }
 });
-</code>
-=====app.use & app.get/post combined====
-<code javascript>
+```
+
+## app.use & app.get/post combined
+```javascript
 var express = require('express');
 var app = express();
 var http = require('http').Server(app);
@@ -88,14 +89,14 @@ app.post('/api/v1/call/:roomName', function(req, res) {
 http.listen(8081, function(){
   console.log('listening on *:8081');
 });
-</code>
+```
 
 
-====Long polling====
+## Long polling
 * [[http://book.mixu.net/node/ch3.html|Long polling example in NodeJS]]
 
-====Install log====
-<code>
+## Install log
+```
 Node.js was installed at
 
    /usr/local/bin/node
@@ -105,12 +106,12 @@ npm was installed at
    /usr/local/bin/npm
 
 Make sure that /usr/local/bin is in your $PATH.
-</code>
+```
 
-===== node-webkit =====
+## node-webkit
 * What is nw.js (previously node-webkit) ?
 
-===== Node.js CMS: Keystone =====
+## Node.js CMS: Keystone
 Mail van Peter: Hey Rick, Dat op Node.js CMS waar ik het over had was Keystone. http://keystonejs.com/
 Interessante slides: Moving from PHP to a nodejs full stack CMS https://s3.amazonaws.com/mnb_keystone/slidedecks/keystonejs.pdf
 
@@ -142,14 +143,14 @@ https://ghost.org/
 
 Peter
 
-===== Express extensions + templates =====
+## Express extensions + templates
 * https://github.com/strongloop/express/wiki#template-engines
 
-=====doorbell=====
+## doorbell
 * https://gist.github.com/companje/b3de8f5028c1dd1eb0ca
 
-=====gpio's on Raspberry Pi with nodejs=====
-<code javascript>
+## gpio's on Raspberry Pi with nodejs
+```javascript
 var Gpio = require('onoff').Gpio;
 
 var cols = [
@@ -176,23 +177,23 @@ setInterval(function() {
   }
   console.log(s);
 },100);
-</code>
+```
 
-=====info about semantic versions=====
+## info about semantic versions
 http://semver.org/
-  
-=====olimex through serial monitor=====
+
+## olimex through serial monitor
   screen /dev/tty.NoZAP-PL2303-00001014 115200
   pm2 logs
-  
-=====pm2 log=====
+
+## pm2 log
   cd ~/......./.....
   DEBUG=cloud* pm2 start —name=cloud -o /tmp/cloud.log -e /tmp/cloud.error.log index.js
 
   pm2 logs cloud
 
-=====nodejs http client example=====
-<code javascript>
+## nodejs http client example
+```javascript
 var http = require('http');
 
 http.get("........", function(res) {
@@ -210,40 +211,41 @@ http.get("........", function(res) {
 }).on('error', function(e) {
   console.log("Got error: " + e.message);
 });
-</code>
-=====http client using node request module=====
-<code javascript>
+```
+
+## http client using node request module
+```javascript
 var request = require('request');
 var fs = require('fs');
 
 request("http://10.0.0.71:8080/?action=snapshot").pipe(fs.createWriteStream('doodle.png'))
-</code>
+```
 
-=====nodejs webcam proxy=====
+## nodejs webcam proxy
 * http://stackoverflow.com/questions/14035864/pipe-an-mjpeg-stream-through-a-node-js-proxy
 * https://www.npmjs.org/package/mjpeg-proxy
 * see [[mjpgstreamer]]
 
-=====nodejs webcam stream with EventSource=====
+## nodejs webcam stream with EventSource
 https://github.com/koajs/webcam-mjpeg-stream
 
-=====nvm=====
+## nvm
   curl https://raw.githubusercontent.com/creationix/nvm/v0.11.1/install.sh | bash
 => Close and reopen your terminal to start using NVM
   nvm install 0.11
-  
-=====socket.io-redis module=====
+
+## socket.io-redis module
 https://www.npmjs.org/package/socket.io-redis
 
-=====Access-Control-Allow-Origin=====
+## Access-Control-Allow-Origin
   res.header('Access-Control-Allow-Origin', '*')
   res.status(200).send(user.toObject());
-  
-=====create a NodeJS client=====
-<code javascript>
-var io = require('socket.io-client'); 
+
+## create a NodeJS client
+```javascript
+var io = require('socket.io-client');
 var socket = io.connect('http://cloud.doodle3d.com:5000');
- 
+
 socket.on("error", function(data) {
   console.log("error",data);
 })
@@ -255,23 +257,23 @@ socket.on("connect_error", function() {
 socket.on("connect", function() {
   console.log("connected");
 })
-</code>
-  
-=====pm2=====
+```
+
+## pm2
 https://github.com/Unitech/pm2
   npm install pm2
   node_modules/pm2/bin/pm2 start server.js
   pm2 list
   pm2 describe ...
-  
-=====install module from github=====
+
+## install module from github
   npm install --save git+https://github.com/nkzawa/socket.io-stream.git
 
-=====stream handbook=====
+## stream handbook
 https://github.com/substack/stream-handbook
 
-=====serve=====
-<code javascript>
+## serve
+```javascript
 var express = require('express');
 var app = express();
 var http = require('http').Server(app);
@@ -281,13 +283,13 @@ app.use(express.static(__dirname, '/'));
 http.listen(3000, function(){
   console.log('listening on *:3000');
 });
-</code>
+```
 
-=====nodejs & ajax image loading=====
+## nodejs & ajax image loading
 dit nog lezen: http://blog.marcon.me/post/31143865164/send-images-through-websockets
 
 
-<code javascript>
+```javascript
 //server
 
 var app = require('express')();
@@ -298,7 +300,7 @@ var fs = require('fs');
 app.get('/', function(req, res){
   res.sendFile(__dirname+'/index.html');
 })
- 
+
 app.get('/image', function(req, res){
   //res.sendFile(__dirname+"/image.png");
   //return;
@@ -313,15 +315,14 @@ http.listen(3000, function(){
   console.log('listening on *:3000');
 });
 
-</code>
+```
 
-<code>
-<!--client-->
+```html
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 
 <script>
 $(document).ready(function() {
-  
+
   $.get("/image", function(data) {
     $("#img").attr("src",data); //"data:image/jpeg;base64,"+b64;
   });
@@ -330,25 +331,25 @@ $(document).ready(function() {
 </script>
 
 <img id="img">
-</code>
+```
 
-=====binaries over socket.io (wouter)=====
+## binaries over socket.io (wouter)
 * https://github.com/Doodle3D/round-trip-test/blob/master/printer/index.js
 * binaryjs (arne)
 * https://github.com/liamks/Delivery.js
 * http://socket.io/blog/introducing-socket-io-1-0/#binary
 
-=====send an image=====
-<code javascript>
+## send an image
+```javascript
 fs.readFile('test.png', function(err, data) {
   if (err) throw err; // Fail if the file can't be read.
     res.writeHead(200, {'Content-Type': 'image/png'});
     res.end(data); // Send the file data to the browser.
 });
-</code>
+```
 
-=====body-parser=====
-<code javascript>
+## body-parser
+```javascript
 var bodyParser = require('body-parser');
 //....
 app.use(bodyParser.json());
@@ -357,27 +358,27 @@ app.post('/stl', function(req, res){
   res.send('<h1>Hello world</h1>');
   console.log(req.body);
 })
-</code>
+```
 
-=====stljs=====
+## stljs
   https://github.com/cubehero/stljs/blob/master/template/povray.tmpl
-needs [[povray]]  and needs a change in '''node_modules/stljs/lib/to/image.js''': remove '-s' in command.
-  
-  
-=====debug=====
+needs [[povray]] and needs a change in '''node_modules/stljs/lib/to/image.js''': remove '-s' in command.
+
+
+## debug
   DEBUG=socket.io* nodemon
 
-=====webcam stream via websockets=====
+## webcam stream via websockets
 * http://phoboslab.org/log/2013/09/html5-live-video-streaming-via-websockets
-  
-=====RPC using socket.io (with angular example)=====
+
+## RPC using socket.io (with angular example)
 * https://www.npmjs.org/package/socket.io-rpc
 
-=====bower=====
+## bower
   sudo npm install -g bower
 
-=====webserver example with express=====
-<code javascript>
+## webserver example with express
+```javascript
 var app = require('express')();
 var http = require('http').Server(app);
 
@@ -389,10 +390,10 @@ app.get('/', function(req, res){
 http.listen(3000, function(){
   console.log('listening on *:3000');
 });
-</code>
+```
 
-=====socket.io example with express=====
-<code javascript>
+## socket.io example with express
+```javascript
 var app = require('express')();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
@@ -400,7 +401,7 @@ var io = require('socket.io')(http);
 //default namespace
 io.on('connection', function(socket) {
   console.log('a user connected');
-  
+
   socket.on('disconnect', function(){
     console.log('user disconnected');
   });
@@ -427,24 +428,24 @@ io.of("/printers").on('connection', function(socket) {
 http.listen(3000, function(){
   console.log('listening on *:3000');
 });
-</code>
+```
 
 
-=====nodejs socket.io with SSL=====
+## nodejs socket.io with SSL
 * http://stackoverflow.com/questions/6599470/node-js-socket-io-with-ssl
 
-=====websocket chat=====
+## websocket chat
 * http://socket.io/get-started/chat/
 
-=====install via package managers=====
+## install via package managers
 * https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager
 
-=====install===== 
-https://github.com/joyent/node/wiki/backports.debian.org    
-\
+## install
+[https://github.com/joyent/node/wiki/backports.debian.org]()
+
 1. Install Node and NPM
 2. Run the following (as root):
-
+```bash
   sudo echo "deb http://ftp.us.debian.org/debian wheezy-backports main" >> /etc/apt/sources.list
   sudo apt-get update
   sudo apt-get install nodejs-legacy
@@ -452,18 +453,21 @@ https://github.com/joyent/node/wiki/backports.debian.org
   curl --insecure https://www.npmjs.org/install.sh > install.sh
   chmod +x install.sh
   sudo ./install.sh
-      
-=====edit nodejs files remotely with sublimetext (and sftp package) and use nodemon for restarting node server on file change=====
+```
+
+## edit nodejs files remotely with sublimetext (and sftp package) and use nodemon for restarting node server on file change
 note: nodemon likes to be installed globally with -g but it also works in your local folder
+```bash
   npm install  nodemon
   export PATH=$PATH:`pwd`/node_modules/nodemon/bin
   nodemon.js
-  
-=====make nodemon only watch single file=====
-  nodemon -w server.js server.js
+```
 
-=====nodejs socket.io with angular=====
+## make nodemon only watch single file
+```nodemon -w server.js server.js```
+
+## nodejs socket.io with angular
 * http://stackoverflow.com/questions/14700865/node-js-angularjs-socket-io-connect-state-and-manually-disconnect
 
-=====socket.io with token authentication=====
+## socket.io with token authentication
 * http://wlkns.co/node-js/socket-io-authentication-tutorial-server-and-client/
