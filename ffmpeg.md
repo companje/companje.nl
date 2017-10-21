@@ -1,3 +1,8 @@
+---
+layout: default
+title: ffmpeg
+---
+
 ====== FFMPEG ======
 
 =====image sequence / slideshow to gif====
