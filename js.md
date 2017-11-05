@@ -1,4 +1,7 @@
-=============== Javascript notes ===============
+---
+title: Javascript
+layout: default
+---
 
 ===== Chart.js =====
 Simple yet flexible JavaScript charting for designers & developers

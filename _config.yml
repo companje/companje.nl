@@ -24,13 +24,23 @@ github_username:  companje
 
 # Build settings
 markdown: kramdown
-# theme: minima
-theme: jekyll-theme-minimal
+theme: minima
+# theme: jekyll-theme-minimal
 # theme: minimal-mistakes-jekyll
+
+# gems:
 
 plugins:
   - jekyll-feed
+  - jekyll-last-modified-at  
 
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+      
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

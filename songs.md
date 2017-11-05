@@ -1,4 +1,8 @@
-====== Songs ====== 
+---
+title: Songs
+layout: default
+---
+
   * Unity - TheFatRat
   * Linde Schöne - Liefde van de vloer
   * N'to - Carrousel
