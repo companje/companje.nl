@@ -1,4 +1,6 @@
-====== Microsoft Creating Virtual Brain ======
+---
+title: Microsoft Creating Virtual Brain
+---
 ID: Maguire (2002)
 PDF: {{afstuderen:Maguire (2002) - Microsoft Creating Virtual Brain.pdf|PDF}}
 

@@ -1,10 +1,13 @@
-=============== MySQL ===============
+---
+title: ========= MySQL =========
+---
 
 =====ERROR 1045 (28000): Access denied for user...=====
   mysql -u root -p
 
 =====export table to CSV file=====
-  SELECT * FROM uren INTO OUTFILE '~/Documents/backup/rick.csv' FIELDS ENCLOSED BY '"' TERMINATED BY ';' ESCAPED BY '"' LINES TERMINATED BY '\r\n';
+  SELECT * FROM uren INTO OUTFILE '~/Documents/backup/rick.csv' FIELDS ENCLOSED BY '"' TERMINATED BY ';' ESCAPED BY '"' LINES TERMINATED BY '
+';
 
 =====make backup of SQL database=====
   mysqldump -uroot db_name > backup.sql

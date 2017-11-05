@@ -1,1 +1,4 @@
-~~REDIRECT>Globe4D:~~
+---
+title: ~~REDIRECT>Globe4D:~~
+---
+

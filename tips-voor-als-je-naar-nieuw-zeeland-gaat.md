@@ -1,4 +1,6 @@
-====== Tips voor als je naar Nieuw Zeeland gaat ======
+---
+title: Tips voor als je naar Nieuw Zeeland gaat
+---
 Omdat [[http://downunder.sylvain.nl|Sylvain en Saskia]] momenteel in Australie en straks Nieuw Zeeland zijn en ze mij vroegen om wat tips omdat de buurt er een beetje ken heb ik een lijstje gemaakt met must-see's op het noorder en zuidereiland van Nieuw Zeeland:
 
 

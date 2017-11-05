@@ -1,4 +1,6 @@
-====== YouMagine ======
+---
+title: YouMagine
+---
 
 =====API documentation=====
 https://api.youmagine.com/

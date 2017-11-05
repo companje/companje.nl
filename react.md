@@ -1,4 +1,6 @@
-====== React ======
+---
+title: React
+---
 * https://github.com/jakubgarfield/expenses
 * see also [[d3]] for visualisations with D3 in React
 * see also [[redux]]

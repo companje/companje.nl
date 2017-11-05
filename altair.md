@@ -1,4 +1,6 @@
-====== Altair 8800======
+---
+title: Altair 8800
+---
 * [[http://github.com/companje/altair8800|My Altair 8800 on Github]].
 
 * [[8080]]

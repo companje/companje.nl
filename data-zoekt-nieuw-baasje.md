@@ -1,4 +1,6 @@
-====== Data zoekt nieuw baasje ======
+---
+title: Data zoekt nieuw baasje
+---
 Je kent ze wel, die mappen op je computer waar je al jaren niet naar gekeken hebt. Niet dat je er bewust niet meer inkijkt, maar 't verdwijnt gewoon met de tijd en heel af en toe kom je misschien nog weer eens iets tegen maar het meeste zal nooit meer aan de oppervlakte verschijnen. Misschien nog wel het best te vergelijken met een rommelzolder. Je tekeningen van de kleuterschool in een grote doos, oude brieven van vroeger, bewaarde concertkaartjes, fotoalbums... Allemaal herinneringen uit een ver verleden, een tijd die je achter je ligt en waar niemand behalve jijzelf hooguit om nostalgische redenen nog iets aan hebt, toch? Of zou het misschien nog eens van pas kunnen komen?
 
 {{blog:2008:03:datahond.gif?550|Datahond tekening door Kris Kobes}}

@@ -1,4 +1,6 @@
-====== Problem booting Vista after installing Ubuntu ======
+---
+title: Problem booting Vista after installing Ubuntu
+---
 
 6-3-2008: Windows Vista did not boot after installing Ubuntu. To get back to Windows I booted from the Vista DVD and got myself a commandprompt. From there I entered:
 

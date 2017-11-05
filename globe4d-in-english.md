@@ -1,4 +1,6 @@
-====== Globe4D ======
+---
+title: Globe4D
+---
 Globe4D is an interactive, four-dimensional globe. Its a projection of the Earth's surface on a physical sphere. It shows the historical movement of the continents as its main feature, but it is also capable of displaying all kinds of other geographical data such as climate changes, plant growth, radiation, rainfall, forest fires, seasons, airplane routes, and more.
 
 ===== Enhanced Life =====

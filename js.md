@@ -1,4 +1,6 @@
 ---
+title: ---
+---
 title: Javascript
 layout: default
 ---
@@ -115,7 +117,8 @@ https://developers.google.com/web/updates/2011/11/Quota-Management-API-Fast-Fact
 
 <script type="text/javascript">
   var sections = [];
-  var lines = data.innerHTML.split('\n');
+  var lines = data.innerHTML.split('
+');
   for (var i in lines) {
     if (lines[i].charAt(0)=='#') sections.push({title:lines[i].substr(2),items:[]});
     if (lines[i].charAt(0)=='-') sections[sections.length-1].items.push(lines[i].substr(2));

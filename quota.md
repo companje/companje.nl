@@ -1,4 +1,6 @@
-====== Quota ======
+---
+title: Quota
+---
 
 ==show quota for user (v) human readable (s)==
   quota -vs USERNAME

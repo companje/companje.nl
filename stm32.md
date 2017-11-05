@@ -1,4 +1,6 @@
-====== STM32 / Nucleo ======
+---
+title: STM32 / Nucleo
+---
 ==steps I took to get stm32nucleo mb1136 C-03 running in Arduion IDE on OSX 10.10 Yosemite==
 * no soldering/desoldering needed in my case.
 * install Arduino 1.6.5 (don't use 1.6.6 or 1.6.7 because of [[https://github.com/rogerclarkmelbourne/Arduino_STM32/issues/147|errors]])

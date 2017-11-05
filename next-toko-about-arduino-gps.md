@@ -1,6 +1,8 @@
-====== Next TOKO about Arduino & GPS ======
+---
+title: Next TOKO about Arduino & GPS
+---
 Next TOKO is about Arduino (and similar boards) and will be held in Amersfoort on the 6th of June. Here's the program:
-\\
+\
 10.00 - 12.00
 'This Is Wiring (and Arduino)' by Maarten Lamers. A crash course on how to get started with Arduino.
 

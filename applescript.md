@@ -1,1 +1,4 @@
-====== AppleScript ======
+---
+title: AppleScript
+---
+

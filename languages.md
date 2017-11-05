@@ -1,2 +1,4 @@
-====== Languages ======
+---
+title: Languages
+---
 See [[programming]]

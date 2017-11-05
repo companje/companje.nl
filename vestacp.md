@@ -1,4 +1,6 @@
-======Vesta Control Panel======
+---
+title: Vesta Control Panel
+---
 http://vestacp.com/
 
 (Ubuntu 15.04 not supported currently 2015-09-5)

@@ -1,4 +1,6 @@
-====== Mediamatic geeft al haar boeken weg ======
+---
+title: Mediamatic geeft al haar boeken weg
+---
 We heffen onze bibliotheek op...
 Zaterdag 28 juni, 16.00 tot 21.00 uur
 Zondag 29 juni, 12.00 tot 17.00 uur

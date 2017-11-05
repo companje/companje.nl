@@ -1,4 +1,6 @@
-====== Marktplaats ======
+---
+title: Marktplaats
+---
 * https://github.com/companje/Marktplaats
 * https://www.marktplaats.nl/mymp/zoekopdrachten/index.html (persoonlijke lijst met queries HTML)
 * https://www.marktplaats.nl/mymp/zoekopdrachten/lijst.json (persoonlijke lijst met queries JSON, met parser errors.)

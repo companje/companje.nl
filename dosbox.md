@@ -1,4 +1,6 @@
-====== DOSBOX ======
+---
+title: DOSBOX
+---
 
   intro mount
   

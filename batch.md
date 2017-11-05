@@ -1,4 +1,6 @@
-====== Batch files ======
+---
+title: Batch files
+---
 
 
 ===== passing arguments using set  =====

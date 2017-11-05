@@ -1,4 +1,6 @@
-====== Markdown ======
+---
+title: Markdown
+---
 * http://jrmoran.com/playground/markdown-live-editor/
 * http://md.kaihatsubu.com/
 * [[https://github.com/rentzsch/markdownlive/downloads|markdownlive by Jonathan 'Wolf' Rentzsch]]

@@ -1,4 +1,6 @@
-======Editors======
+---
+title: Editors
+---
 * SublimeText
 * Brackets
 * http://www.codelite.org/

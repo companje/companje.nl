@@ -1,4 +1,6 @@
-====== wget ======
+---
+title: wget
+---
 
 ==wildcards==
   wget http://site.com/c={a..z}

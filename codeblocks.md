@@ -1,14 +1,5 @@
-======CodeBlocks======
+---
+title: CodeBlocks
+---
 
-====="An exception has been raised! The application encountered an error at C:\Codeblocks\src\sdk\configmanager.cpp, on line 239.=====
-Delete this file: ```C:\Users\USERNAME\AppData\Roaming\codeblocks\default.conf```
-
-==other==
-* wizard scripting zie mailbox
-* [[http://wiki.codeblocks.org/index.php?title=Installing_a_supported_compiler#Mac_OS_X|Installing_a_supported_compiler on Mac_OS_X]]
-
-=====compiler settings: -pg (profile code when executed)=====
-this seems to be responsible for the file called: gmon.out.
-
-===== Installing Code Blocks on Ubuntu =====
-* http://wiki.codeblocks.org/index.php?title=Installing_Code::Blocks_nightly_build_on_Ubuntu
+====="An exception has been raised! The application encountered an error at C:\Codeblocks\src\sdk

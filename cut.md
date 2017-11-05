@@ -1,4 +1,6 @@
-====== Cut ======
+---
+title: Cut
+---
 
 =====all characters from position x=====
   cut -c 27-

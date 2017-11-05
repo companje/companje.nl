@@ -1,2 +1,4 @@
-====== Gadgets ======
+---
+title: Gadgets
+---
 * http://www.thync.com

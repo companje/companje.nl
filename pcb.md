@@ -1,4 +1,6 @@
-====== PCB ======
+---
+title: PCB
+---
 * http://www.seeedstudio.com/
 * http://www.eurocircuits.nl/
 * http://www.eleshop.nl/

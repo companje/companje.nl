@@ -1,4 +1,6 @@
-====== Snake game in assembly code ======
+---
+title: Snake game in assembly code
+---
 GSnake is een in assembly geschreven grafische Snake variant die ik heb gemaakt in 1996. Heel lang heb ik gedacht dat de originele sourcecode verloren was gegaan maar op 14-11-2007 ontdekte ik in een mapje met de naam ASMLAB een kopie van de source.
 
 <blockquote>SNAKE.COM v1.00  by Rick Companje 17/12/1996
@@ -1156,4 +1158,3 @@ endif
 code    Ends
 End     start
 </code>
-

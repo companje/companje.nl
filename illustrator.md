@@ -1,4 +1,6 @@
-=====Illustrator=====
+---
+title: =====Illustrator=====
+---
 
 ==Shortcut keys==
 |''F7''|Show/hide Layers|

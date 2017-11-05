@@ -1,4 +1,6 @@
-====== het koesteren en delen van herinneringen in een digitaal tijdperk ======
+---
+title: het koesteren en delen van herinneringen in een digitaal tijdperk
+---
 
 Een essay door Rick Companje - 18 augustus 2009  
 

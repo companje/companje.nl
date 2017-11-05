@@ -1,4 +1,6 @@
-====== SVG ======
+---
+title: SVG
+---
 
 =====SVGnest=====
 * [[https://github.com/Jack000/SVGnest|SVGnest (SVG’s efficiënt stapelen voor de lasercutter)]]

@@ -1,4 +1,6 @@
-====== sftp ======
+---
+title: sftp
+---
 
 * [[https://wiki.filezilla-project.org/Command-line_arguments_(Client)]]
 

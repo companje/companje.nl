@@ -1,4 +1,6 @@
-====== Dates ======
+---
+title: Dates
+---
 
 
 ===== Special dates by year =====

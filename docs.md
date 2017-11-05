@@ -1,4 +1,6 @@
-=============== Google Docs ===============
+---
+title: ========= Google Docs =========
+---
 
 =====polling spreadsheet with script=====
 * http://stackoverflow.com/questions/30628894/how-do-i-make-a-sidebar-display-values-from-cells
@@ -230,9 +232,9 @@ function CSVToArray(strData, strDelimiter) {
   var arrData = [[]];
   var arrMatches = null;
   var objPattern = new RegExp((
-      "(\\" + strDelimiter + "|\\r?\\n|\\r|^)" +    // Delimiters.
+      "(\" + strDelimiter + "|\r?\n|\r|^)" +    // Delimiters.
       "(?:\"([^\"]*(?:\"\"[^\"]*)*)\"|" +           // Quoted fields.
-      "([^\"\\" + strDelimiter + "\\r\\n]*))"       // Standard fields.
+      "([^\"\" + strDelimiter + "\r\n]*))"       // Standard fields.
     ),"gi");
   while (arrMatches = objPattern.exec(strData)) {
     var strMatchedDelimiter = arrMatches[1];
@@ -362,9 +364,9 @@ function CSVToArray(strData, strDelimiter) {
   var arrData = [[]];
   var arrMatches = null;
   var objPattern = new RegExp((
-      "(\\" + strDelimiter + "|\\r?\\n|\\r|^)" +    // Delimiters.
+      "(\" + strDelimiter + "|\r?\n|\r|^)" +    // Delimiters.
       "(?:\"([^\"]*(?:\"\"[^\"]*)*)\"|" +           // Quoted fields.
-      "([^\"\\" + strDelimiter + "\\r\\n]*))"       // Standard fields.
+      "([^\"\" + strDelimiter + "\r\n]*))"       // Standard fields.
     ),"gi");
   while (arrMatches = objPattern.exec(strData)) {
     var strMatchedDelimiter = arrMatches[1];
@@ -498,9 +500,9 @@ function CSVToArray(strData, strDelimiter) {
   var arrData = [[]];
   var arrMatches = null;
   var objPattern = new RegExp((
-      "(\\" + strDelimiter + "|\\r?\\n|\\r|^)" +    // Delimiters.
+      "(\" + strDelimiter + "|\r?\n|\r|^)" +    // Delimiters.
       "(?:\"([^\"]*(?:\"\"[^\"]*)*)\"|" +           // Quoted fields.
-      "([^\"\\" + strDelimiter + "\\r\\n]*))"       // Standard fields.
+      "([^\"\" + strDelimiter + "\r\n]*))"       // Standard fields.
     ),"gi");
   while (arrMatches = objPattern.exec(strData)) {
     var strMatchedDelimiter = arrMatches[1];

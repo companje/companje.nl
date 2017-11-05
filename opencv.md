@@ -1,4 +1,6 @@
-====== OpenCV ======
+---
+title: OpenCV
+---
 
 ====Thresholding====
 * http://docs.opencv.org/3.1.0/d7/d4d/tutorial_py_thresholding.html#gsc.tab=0

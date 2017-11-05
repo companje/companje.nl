@@ -1,4 +1,6 @@
-====== Ublad Online - Digitaal Erfgoed ======
+---
+title: Ublad Online - Digitaal Erfgoed
+---
 ID: Heijnen
 PDF: {{afstuderen:Heijnen - Ublad Online - Digitaal Erfgoed.pdf|}}
 

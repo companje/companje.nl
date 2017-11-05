@@ -1,4 +1,6 @@
-====== QMedia TV ======
+---
+title: QMedia TV
+---
 
 * USB lijkt alleen 'oude' MPG te ondersteunen.
 

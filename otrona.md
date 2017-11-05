@@ -1,4 +1,6 @@
-====== Otrona Attache======
+---
+title: Otrona Attache
+---
 
 ===== Keyboard =====
 * [[https://deskthority.net/keyboards-f2/otrona-attache-keyboard-fujitsu-switches-t11728.html|...Fujitsu Leaf Spring 1st Generation...]]

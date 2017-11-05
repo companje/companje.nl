@@ -1,4 +1,6 @@
-====== LLDB debugger ======
+---
+title: LLDB debugger
+---
 
 first create a debug version of the app by compiling with `-g`
 * http://www.rapidtables.com/code/linux/gcc/gcc-g.htm

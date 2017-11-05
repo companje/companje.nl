@@ -1,4 +1,6 @@
-====== Convert images ======
+---
+title: Convert images
+---
 =====Convert multiple jpg's into bmp's=====
   for i in *.jpg; do sips -s format bmp $i --out ../clouds-201509-bmp/$i.bmp;done
   

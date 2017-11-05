@@ -1,4 +1,6 @@
-====== Beyond the Electronic Portfolio - a lifetime personal webspace ======
+---
+title: Beyond the Electronic Portfolio - a lifetime personal webspace
+---
 ID: Cohn-Hibbitts (2004)
 PDF: {{afstuderen:cohn-hibbitts-2004-beyond-the-electronic-portfolio-a-lifetime-personal-webspace.pdf|}}
 

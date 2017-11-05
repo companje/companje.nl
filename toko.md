@@ -1,4 +1,6 @@
-====== TOKO ======
+---
+title: TOKO
+---
 De TOKO is een bijeenkomst om je te verdiepen in verschillende technieken, hard- en software, profijt te hebben van elkaars kennis en vaardigheden, truuks en tips uit te wisselen, en beter te worden in al die dingen waar je nooit echt voor hebt gestudeerd maar waar je inmiddels wel zoveel mee doet (of zou willen doen) dat je er meer over wilt weten.
 
 Het idee is dat er steeds iemand wordt uitgenodigd om een workshop te geven over een bepaald (techniek) onderwerp waar je misschien wel eens over gehoord hebt, of al wel wat over weet maar niet het fijne, of waar je het fijne al wel over weet maar toch steeds tegen een aantal dingen aan loopt. In eerste instantie zal het veel over software en programmeren gaan, later willen we het uitbreiden met hardware/elektronica en eventueel ook andere (mechanische) technieken. Voor een lijst met mogelijke onderwerpen zie hier onder. Degene die de workshop vormgeeft kan iemand zijn van uit de groep geinteresseerden die we hopen te verzamelen, of een externe crack op een bepaald gebied.
@@ -68,7 +70,3 @@ This time we went into structural programming. We started with assembly code (by
 
 ===== TOKO sessie 3 =====
 About existing libraries/toolkits (for ie. C++ or Processing) and how they help you not to re-invent the wheel.
-
-
-
-

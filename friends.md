@@ -1,1 +1,4 @@
-~~REDIRECT>friends:Start~~
+---
+title: ~~REDIRECT>friends:Start~~
+---
+

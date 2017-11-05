@@ -1,4 +1,6 @@
-====== Cool ======
+---
+title: Cool
+---
 
 ===== Find cool things =====
 * [[https://news.ycombinator.com|Hacker News]]

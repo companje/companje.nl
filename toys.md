@@ -1,2 +1,4 @@
-====== Toys ======
+---
+title: Toys
+---
 * http://cannybots.com/

@@ -1,4 +1,6 @@
-=====There's Plenty of Room at the Bottom=====
+---
+title: 
+---
 Een mooi en heel beroemd artikel over wat we nu nano technologie noemen. Verschenen in 1960 door Richard Feynman. Zowel inhoudelijk als qua opbouw een leerzaam artikel.
 
 ID: Feynman (1960)

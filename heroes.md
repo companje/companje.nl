@@ -1,4 +1,6 @@
-====== Heroes ======
+---
+title: Heroes
+---
 
 ===== Coding =====
 * [[http://mrl.nyu.edu/~perlin/|Ken Perlin]]

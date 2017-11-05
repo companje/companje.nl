@@ -1,4 +1,6 @@
-====== People ======
+---
+title: People
+---
 *[[Hilde Peters]]
 *[[Annica Peters]]
 *[[Kris Kobes]]

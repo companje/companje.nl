@@ -1,4 +1,6 @@
-======PHP======
+---
+title: PHP
+---
 
 =====parse cloudant json through template=====
 <code php>
@@ -24,7 +26,8 @@ function single($db,$id) {
   $template = str_replace("{title}", $obj->name, $template);
   $template = str_replace("{author}", $obj->author, $template);
 
-  echo $template . "\n";
+  echo $template . "
+";
 }
 
 function all($db) {
@@ -33,7 +36,8 @@ function all($db) {
   foreach  ($obj->rows as $row) {
     $id = $row->id;
     $thumb = $row->value->thumb;
-    echo "<a href='https://......./$id'><img src='$thumb'></a>\n";
+    echo "<a href='https://......./$id'><img src='$thumb'></a>
+";
   } 
 }
 
@@ -207,7 +211,7 @@ $item = end($array);
 
 =====strip illegal characters from string=====
 <code php>
-$location = preg_replace('/[^(\x20-\x7F)]*/','', $location);
+$location = preg_replace('/[^( -)]*/','', $location);
 </code>
 
 =====append or create if not exists=====
@@ -240,7 +244,7 @@ echo $_SERVER["REDIRECT_URL"];
 
 =====remove links with regexp=====
 <code php>
-$result = preg_replace('/\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|$!:,.;]*[A-Z0-9+&@#\/%=~_|$]/i', '', $input);
+$result = preg_replace('/(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|$!:,.;]*[A-Z0-9+&@#\/%=~_|$]/i', '', $input);
 </code>
 
 =====auto include=====
@@ -412,17 +416,20 @@ foreach ($html->find("div.category") as $categories) {
         $category = $categories->find("h2 a");
         $category = $category[0]->plaintext;
     
-        //print $category . " - " . $name . " - " . $author . " - " . $link . "\n";
+        //print $category . " - " . $name . " - " . $author . " - " . $link . "
+";
     
         $records[] = array("link"=>$link, "name"=>$name, "author"=>$author, "category"=>$category);
     }
 }
 
-print "saving...\n";
+print "saving...
+";
 $unique_keys = array("link");
 $table_name = "repos";
 scraperwiki::save_sqlite($unique_keys, $records, $table_name);
-print "done\n";
+print "done
+";
 </code>
 
 =====mini api=====
@@ -439,7 +446,8 @@ if (isset($pinguin)) {
   $artist = $parts[0];
   $parts = explode("</h2>", substr($parts[1],3));
   $title = $parts[0];
-  die("$artist\n$title");
+  die("$artist
+$title");
 }
 
 if (isset($time)) {

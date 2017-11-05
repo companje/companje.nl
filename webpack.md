@@ -1,4 +1,6 @@
-====== Webpack ======
+---
+title: Webpack
+---
 
 ===== webpack-cli =====
 De nieuwe `webpack-cli` maakt starteb met webpack makkelijk met een init commando: `webpack-cli init`

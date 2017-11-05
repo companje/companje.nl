@@ -1,4 +1,6 @@
-====== Arduino / AVR ======
+---
+title: Arduino / AVR
+---
 
 =====about Timers=====
 * https://sites.google.com/site/qeewiki/books/avr-guide/timers-on-the-atmega328
@@ -30,7 +32,8 @@ bool readLine(char *buf) {
   while (Serial.available()) {
     byte ch = Serial.read();
     buf[index] = ch;
-    if (ch=='\n') {
+    if (ch=='
+') {
       buf[index] = 0;
       index = 0;
       return true;

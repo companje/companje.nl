@@ -1,4 +1,6 @@
-====== .htaccess ======
+---
+title: .htaccess
+---
 
 ==Basic Auth==
 <code apache>

@@ -1,4 +1,6 @@
-====== Flex & Flash ======
+---
+title: Flex & Flash
+---
 Ik werk sinds november 2004 met Flash en sinds november 2005 met Flex.
 
 ===== Flash =====

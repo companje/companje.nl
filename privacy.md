@@ -1,4 +1,6 @@
-====== Privacy ======
+---
+title: Privacy
+---
 *https://www.youtube.com/watch?v=vILAlhwUgIU
 *https://www.youtube.com/watch?v=Cu6accTBjfs
 *https://www.youtube.com/watch?v=12OxkX3IVVo

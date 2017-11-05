@@ -1,3 +1,5 @@
-====== Art ======
+---
+title: Art
+---
 
 {{backlinks>.}}

@@ -1,2 +1,4 @@
-====== Javascript ======
+---
+title: Javascript
+---
 See [[js]]

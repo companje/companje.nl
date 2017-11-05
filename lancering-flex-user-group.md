@@ -1,4 +1,6 @@
-====== Lancering Flex User Group ======
+---
+title: Lancering Flex User Group
+---
 Lancering Flex User Group (FLUGR) - eerste meeting 13 juni 2008
 
 De eerste meeting van de Nederlandse Flex User Group vindt 13 juni plaats. De User Group is bedoeld voor Flex- en AIR developers die kennis willen delen en inspiratie opdoen over deze onderwerpen, maar ook over BlazeDS en Actionscript 3. Op deze eerste meeting zullen internationale Flex-guru's spreken.

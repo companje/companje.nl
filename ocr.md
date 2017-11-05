@@ -1,4 +1,6 @@
-====== OCR ======
+---
+title: OCR
+---
 * http://www.free-ocr.com/
 * http://projectnaptha.com javascript library en chrome addon voor OCR van plaatjes (tip v Simon)
 

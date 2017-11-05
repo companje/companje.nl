@@ -1,4 +1,6 @@
-====== Sfeerbeelden uit mijn Rijswijk periode ======
+---
+title: Sfeerbeelden uit mijn Rijswijk periode
+---
 
 {{gallery>photos:rijswijk-periode?240x240&2}}
 

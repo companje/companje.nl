@@ -1,4 +1,6 @@
-====== Character Encoding ======
+---
+title: Character Encoding
+---
 
 * http://www.motobit.com/util/charset-codepage-conversion.asp
 * http://www.joelonsoftware.com/articles/Unicode.html

@@ -1,4 +1,6 @@
-====== Bash ======
+---
+title: Bash
+---
 
 =====script install itself as executable=====
 ```bash
@@ -31,11 +33,12 @@ foldername=${folderpath##*/}
 =====colors in ~/.profile=====
 <code bash>
 git_branch () { git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'; }
-HOST='\033[01;32m\]';
+HOST='[01;32m\]';
 LOCATION='`pwd | sed "s#\(/[^/]\{1,\}/[^/]\{1,\}/[^/]\{1,\}/\).*\(/[^/]\{1,\}/[^/]\{1,\}\)/\{0,1\}#\1_\2#g"`'
-BRANCH=' \033[00;33m\]$(git_branch)\[\033[00m\]\n\$ '
+BRANCH=' [00;33m\]$(git_branch)\[[00m\]
+\$ '
 PS1=$HOST$LOCATION$BRANCH
-PS2='\[\033[01;36m\]>'
+PS2='\[[01;36m\]>'
 
 ls --color=al > /dev/null 2>&1 && alias ls='ls -F --color=al' || alias ls='ls -G'
 

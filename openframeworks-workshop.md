@@ -1,14 +1,16 @@
-====== openFrameworks workshop in Auckland======
+---
+title: openFrameworks workshop in Auckland
+---
 {{:blog:2011:01:openframeworks2.gif|}}
-\\
+\
 **Check [[https://sites.google.com/site/ofauckland/|http://of.opentoko.org]] for the slides, example code and notes.**
-\\
+\
 An [[http://openframeworks.cc|openFrameworks]] workshop will take place at [[http://www.colab.org.nz|CoLab]] at the Auckland University of Technology (AUT), New Zealand this Thursday (January, 27th @16:00h). 
 
 <blockquote>openFrameworks is a free application framework designed for **creative coding**. It’s a c++ library designed to assist the creative process by providing a simple and intuitive framework for experimentation.
-\\
+\
 OpenFrameworks is designed to work as a general purpose glue, and wraps together several commonly used libraries under a tidy interface: openGL for graphics, rtAudio for audio input and output, freeType for fonts, freeImage for image input and output, quicktime for video playing and sequence grabbing.
-\\
+\
 The code is written to be both cross platform (PC, Mac, Linux, iPhone) and cross compiler. The API is designed to be minimal and easy to grasp. There are very few classes, and inside of those classes, there are very few functions.</blockquote>
 
 {{:blog:2011:01:kylepointclouddepth-640x391.gif?500|Kyle McDonald's ofxKinect Depth of Field point cloud}}

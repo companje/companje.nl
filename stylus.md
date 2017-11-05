@@ -1,4 +1,6 @@
-====== Stylus ======
+---
+title: Stylus
+---
 Peter:
 De pen die ik heb gekocht:
 http://www.adonit.net/jot/mini/

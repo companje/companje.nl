@@ -1,4 +1,6 @@
-====== Telnet ======
+---
+title: Telnet
+---
 
 ===== pipe telnet output to file =====
 <code bash>

@@ -1,4 +1,6 @@
-====== OpenPanel ======
+---
+title: OpenPanel
+---
   * A typical location for all log files is `/var/log` and subdirectories. 
   * `sudo /etc/init.d/apache2 start`
   * `ps -A | grep 'httpd'`

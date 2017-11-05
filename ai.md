@@ -1,4 +1,6 @@
-====== AI / Machine learning ======
+---
+title: AI / Machine learning
+---
 * http://www.wekinator.org/
 
 ===== Google AI =====

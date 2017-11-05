@@ -1,4 +1,6 @@
-====== A Digital Dark Ages ======
+---
+title: A Digital Dark Ages
+---
 
 Lang artikel, niet helemaal gelezen.
 

@@ -1,4 +1,6 @@
-====== Wired NextFest 2007 ======
+---
+title: Wired NextFest 2007
+---
 === SEPT. 13-16, 2007, LOS ANGELES ===
 
 [[Globe4D]] has been exhibited at [[Wired Nextfest 2007]] in San Diego, California in [[September 2007]].

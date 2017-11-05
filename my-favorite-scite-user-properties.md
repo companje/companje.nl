@@ -1,4 +1,6 @@
-====== Scite User Properties file ======
+---
+title: Scite User Properties file
+---
 
 <code>
 check.if.already.open=1

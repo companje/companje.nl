@@ -1,4 +1,6 @@
-====== Harig badeendje ======
+---
+title: Harig badeendje
+---
 {{:blog:2011:02:duck512.gif|}}
 
 =====Processing code=====

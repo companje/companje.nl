@@ -1,4 +1,6 @@
-====== CP/M ======
+---
+title: CP/M
+---
 
 ==introduction to cpm==
 http://obsolescence.wix.com/obsolescence#!introduction-to-cpm/c12tf

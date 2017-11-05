@@ -1,4 +1,6 @@
-====== APL ======
+---
+title: APL
+---
   * [[http://nl.wikipedia.org/wiki/APL_(programmeertaal)|nl.wikipedia over APL]]
   * [[http://www.dyalog.com/|dyalog]]
   * [[https://www.youtube.com/watch?v=_DTpQ4Kk2wA|APL demo 1975]]

@@ -1,4 +1,6 @@
-====== O!? Morgen? ======
+---
+title: O!? Morgen?
+---
 Gisteravond werd ik ineens gebeld door Joost van Cinekid of ik tijdens het GameJam weekend een (Java/Flash-) gameconcept voor de mobiele telefoon zou willen helpen te ontwikkelen... of ik mee ging doen. O!? Morgen? Ok...
  
 [[http://japangamejam.blogspot.com/

@@ -1,4 +1,6 @@
-====== Sandstorm.io ======
+---
+title: Sandstorm.io
+---
 
 https://sandstorm.io
 

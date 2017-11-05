@@ -1,2 +1,4 @@
-====== Tech ======
+---
+title: Tech
+---
 {{backlinks>.}}

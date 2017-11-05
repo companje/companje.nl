@@ -1,4 +1,6 @@
-e====== XCode ======
+---
+title: e XCode
+---
 
 =====see feedback from build phases=====
 Cmd+8  

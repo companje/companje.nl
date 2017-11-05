@@ -1,4 +1,6 @@
-====== Business ======
+---
+title: Business
+---
 Tips van Nico:
 * www.bhorowitz.com: Blog van venture capitalist Ben Horowitz, een kerel die steevast al z'n blogs begint met het linken naar een vers uit een rap lyric, iets waar hij groot fan van is. Schrijft interessante posts over businessmanagement
 * [[https://www.youtube.com/channel/UCxIJaCMEptJjxmmQgGFsnCg|youtube link]]: De 'How to start a startup' series van Stanford waar tal van goede sprekers, waaronder bovenstaande, lectures doen over verschillende aspecten van het runnen en opzetten van een tech bedrijf.

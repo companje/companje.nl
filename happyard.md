@@ -1,4 +1,6 @@
-====== Happyard ======
+---
+title: Happyard
+---
 In march [[2008]] a team of five: Joost Broersen, Matthijs Rouw, Florus van Beek, Ralph Kok and myself developed a gaming concept we called [[Projects:Happyard]] for the Japanese mobile market. We did this in the context of the GameJam competition which was organized with the intent of promoting dutch design in Japan through mobile gaming.
  
 <blockquote>[[http://www.happyard.jp|{{  blog:2008:03:logo-gamejam.png?250|Happyard}}]]

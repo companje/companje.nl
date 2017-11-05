@@ -1,4 +1,6 @@
-====== BBC Micro ======
+---
+title: BBC Micro
+---
 
 <code>
 cls
@@ -27,4 +29,3 @@ enveloppe: heeft veel parameters. maar kan samengestelde tonen genereren.
 alternatief voor PEEK en POKE op de BBC Micro:
 PEEK -> N = ?65088
 POKE -> ?65120 = 108
-

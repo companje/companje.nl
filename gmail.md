@@ -1,4 +1,6 @@
-======gmail shortcut keys======
+---
+title: gmail shortcut keys
+---
 ? shortcut keys help
 
 gk voor goto tasks

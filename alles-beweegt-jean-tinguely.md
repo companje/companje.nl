@@ -1,4 +1,6 @@
-====== Alles beweegt - Jean Tinguely ======
+---
+title: Alles beweegt - Jean Tinguely
+---
 Gisteren ben ik in de [[http://kunsthal.nl|Kunsthal]] in Rotterdam naar de expositie Alles beweegt! van de kunstenaar Jean Tinguely geweest. Erg gaaf! Wees snel als je nog wilt gaan. Het duurt nog t/m 27 januari!
 
 {{blog:jean-tinguely.png|Alles beweegt - Jean Tinguely}}

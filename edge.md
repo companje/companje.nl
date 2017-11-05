@@ -1,4 +1,6 @@
-====== Edge Animate======
+---
+title: Edge Animate
+---
 
 ===== $ does not refer to jQuery in newer versions of Edge Animate=====
 In newer versions of Adobe Edge, the $ symbol is a **limited** implementation of jQuery. If you want full jQuery add an external script to your library. (ie. from https://code.jquery.com/jquery-2.1.1.min.js)

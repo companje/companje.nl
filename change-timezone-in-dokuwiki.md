@@ -1,4 +1,6 @@
-====== Change Timezone in DokuWiki ======
+---
+title: Change Timezone in DokuWiki
+---
 To change the timezone in DokuWiki add the following to you conf/local.php (or create local.protected.php when you're using the config plugin and you probably do):
 
 In php4:

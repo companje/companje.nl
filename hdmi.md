@@ -1,4 +1,6 @@
-====== HDMI ======
+---
+title: HDMI
+---
 
 =====headless HDMI dongle=====
 * [[http://www.fit-pc.com/web/products/fit-headless/|fit-Headless - fit-PC]]

@@ -1,4 +1,6 @@
-====== Cron jobs ======
+---
+title: Cron jobs
+---
 
 =====editor the list of cronjobs=====
   crobtab -e

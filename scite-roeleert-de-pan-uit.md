@@ -1,4 +1,6 @@
-====== SciTE roeleert de pan uit! ======
+---
+title: SciTE roeleert de pan uit!
+---
 Ik heb vandaag ontdekt dat mijn favoriete tekst en sourcecode editor SciTE standaard een scripttaal onderdersteund die lua heet. Een heel simpel taaltje en super krachtig om bijvoorbeeld je eigen macro’s mee te schrijven. SciTE, echt briljant!
 
 Hieronder een zelfgeschreven scriptje om een Code Completion lijstje te tonen met daarin Wiki opmaak commando’s.

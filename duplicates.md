@@ -1,4 +1,6 @@
-====== Duplicate files ======
+---
+title: Duplicate files
+---
 
 ===== install fdupes on mac =====
   brew install fdupes

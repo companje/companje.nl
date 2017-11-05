@@ -1,10 +1,12 @@
-====== Hei Norge! ======
+---
+title: Hei Norge!
+---
 Morgen ga ik naar Noorwegen, Tromsø vlak bij de noordpool ! 4 dagen lang wetenschappers inspireren, lezingen geven en  samen exposeren met de [[http://www.spullenmannen.nl|Spullenmannen]]. Mijn onderdeel van de lezing is voornamelijk gericht op het inzetten van installaties (zoals Globe4D) ter ondersteuning van  wetenschappelijk onderzoek. Speciaal daarvoor heb ik een paar weken geleden de eerste mini-globe gemaakt, een mini-versie van [[http://www.globe4d.com|Globe4D]] speciaal voor onderweg.
-\\  
+\  
 Ha det bra!
-\\  
+\  
 PS.  Op [[http://www2.uit.no/www/startsida/tavla/arrangementsdetaljer?p_document_id=116976|deze website]]  staat het programma (in het Noors)
-\\  
+\  
 {{:blog:noorwegen-tromso.jpg|}}
 
 Hei alle sammen.

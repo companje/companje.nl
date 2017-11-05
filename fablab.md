@@ -1,2 +1,4 @@
-====== FabLab ======
+---
+title: FabLab
+---
 * http://www.fabacademy.org/

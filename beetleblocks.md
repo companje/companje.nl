@@ -1,4 +1,6 @@
-====== Beetle Blocks ======
+---
+title: Beetle Blocks
+---
 * http://beetleblocks.com
 * [[https://twitter.com/search?f=tweets&vertical=default&q=%23beetleblocks&src=typd|tweets]]
 * [[http://tinkering.exploratorium.edu/tags/beetleblocks|blog posts by Exploratorium]]

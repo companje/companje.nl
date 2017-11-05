@@ -1,4 +1,6 @@
-====== Flux lezing Tarik Barri ======
+---
+title: Flux lezing Tarik Barri
+---
 //Beelden horen, geluiden zien: over de kracht van audiovisuele compositie//  
 
 Flux-lezing door: Tarik Barri

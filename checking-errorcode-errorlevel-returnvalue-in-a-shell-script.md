@@ -1,4 +1,6 @@
-====== Checking errorcode / errorlevel / returnvalue in a shell script ======
+---
+title: Checking errorcode / errorlevel / returnvalue in a shell script
+---
 See [[linux]]
 
 <code>

@@ -1,4 +1,6 @@
-====== Spotify ======
+---
+title: Spotify
+---
 
 ===== Search API =====
 [[https://developer.spotify.com/web-api/search-item/|documentation]]
@@ -23,9 +25,9 @@ function spotify() {
     cut -c 16-51`
  
   if [ -z "$id" ] ; then
-    >&2 echo -e "\033[0;31m$1\033[0m"
+    >&2 echo -e "[0;31m$1[0m"
   else 
-    >&2 echo -e "\033[0;92m$1\033[0m"
+    >&2 echo -e "[0;92m$1[0m"
     echo $id
   fi
 }

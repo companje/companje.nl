@@ -1,24 +1,26 @@
-====== Busje te koop! ======
+---
+title: Busje te koop!
+---
 
 <html><font color=red size=+5>VERKOCHT</font><br/></html>
 Eigenlijk wil ik 't helemaal niet want hij is veel te leuk. Maar helaas, het moet... ik heb er twee (van de 200 die er nog in Nederland rondrijden) en dat is een beetje overdreven lijkt me... Bij deze bied ik dus mijn witte Renault Estafette camper-busje uit 1976 te koop aan!
-\\
+\
 **De koper moet voldoen aan de volgende eigenschappen:**  
-\\
+\
 *hij/zij zal goed voor het busje zorgen.
 *hij/zij is avontuurlijk ingesteld.
 *hij/zij zorgt dat het busje een mooie lik witte verf krijgt want het busje voelt zich nu een beetje kaal.
 *hij/zij geeft mij af en toe updates hoe het busje bevalt en welke avonturen er mee beleefd worden.
-\\
+\
 **Het busje belooft:**  
 *technisch zo goed mogelijk te functioneren.
 *te zorgen voor veel avontuur en twee-pits maaltijden tijdens mooie zonsondergangen op mooie plekjes. 
-\\
+\
 **De verkoper belooft:**
 *niet rijk te willen worden van de verkoop.
 *veel te vertellen over de avonturen die er mee beleefd zijn.
 *advies en documentatie te geven bij de verkoop en tijdens het gebruik.
-\\
+\
 //Wit Renault Estafette Camper Busje / Kampeerauto 1976, foto gemaakt op het 'Wilde Stukje' op Rijnfront nabij Leiden//
 {{blog:wit-renault-estafette-camper-busje-1976.jpg?550|Wit Renault Estafette Camper Busje / Kampeerauto 1976, foto gemaakt op het 'Wilde Stukje' op Rijnfront nabij Leiden}}
 

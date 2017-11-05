@@ -1,1 +1,4 @@
-see [[3dprinting]]
+---
+title: see [[3dprinting]]
+---
+

@@ -1,2 +1,4 @@
-====== Blog Index ======
+---
+title: Blog Index
+---
 {{nstoc blog }}

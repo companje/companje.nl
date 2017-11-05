@@ -1,2 +1,4 @@
-====== Rick's notes ======
+---
+title: 
+---
 %pagecloud()%

@@ -1,4 +1,6 @@
-====== tftp ======
+---
+title: tftp
+---
 
   sudo port install tftp-hpa
 

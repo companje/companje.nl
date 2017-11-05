@@ -1,4 +1,6 @@
-======Mac OSX======
+---
+title: Mac OSX
+---
 
 =====my updated .bash_profile=====
 ```bash
@@ -14,10 +16,11 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 . /usr/local/etc/profile.d/z.sh
   
 git_branch () { git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'; }
-LOCATION='\033[01;34m\]`pwd | sed "s#\(/[^/]\{1,\}/[^/]\{1,\}/[^/]\{1,\}/\).*\(/[^/]\{1,\}/[^/]\{1,\}\)/\{0,1\}#\1...\2#g"`'
-BRANCH=' \033[00;33m\]$(git_branch)\[\033[00m\]\n\$ '
+LOCATION='[01;34m\]`pwd | sed "s#\(/[^/]\{1,\}/[^/]\{1,\}/[^/]\{1,\}/\).*\(/[^/]\{1,\}/[^/]\{1,\}\)/\{0,1\}#\1...\2#g"`'
+BRANCH=' [00;33m\]$(git_branch)\[[00m\]
+\$ '
 PS1=$LOCATION$BRANCH
-PS2='\[\033[01;36m\]>'
+PS2='\[[01;36m\]>'
 ```
 
 =====z as alternative for cd=====
@@ -195,7 +198,7 @@ sudo port select --set python python27
 
 =====delete 'bands' files in Time Capsule .sparsebundle folder=====
 Removing your Time Capsule .sparsebundle can take multiple days (or weeks) if you use Finder or Terminal.
-The fastest way is by connecting to the TimeCapsule through Windows running in Parallels/VMWare etc and delete it using Windows Explorer (\\ipadress of time capsule). It took 'only' 80 minutes to remove 1.5TB (1.8 million files of 8MB)
+The fastest way is by connecting to the TimeCapsule through Windows running in Parallels/VMWare etc and delete it using Windows Explorer (\ipadress of time capsule). It took 'only' 80 minutes to remove 1.5TB (1.8 million files of 8MB)
 
 =====thumbsup=====
 een handige tool om snel afbeeldingen te bewerken
@@ -384,7 +387,7 @@ geen idee wat het doet maar het doet iets.
 
 =====network dump=====
 only loopback traffic: ''tcpdump -i lo0 -vv''  
-\\
+\
 en0 ethernet, en1 wifi
 
 =====tftp=====
@@ -554,7 +557,7 @@ alias cdd="cd ~/Desktop"
 
 =====ffmpeg for converting movie to iPad=====
 see [[:ffmpeg]]  
-\\
+\
 
 =====combine pdf's on mac osx (with pdftk) =====
 <code bash>

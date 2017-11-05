@@ -1,4 +1,6 @@
-====== Saving Your Bits for Posterity ======
+---
+title: Saving Your Bits for Posterity
+---
 ID: Wired News (2002) - Saving Your Bits for Posterity
 PDF: {{afstuderen:Wired News (2002) - Saving Your Bits for Posterity.pdf|PDF}}
 

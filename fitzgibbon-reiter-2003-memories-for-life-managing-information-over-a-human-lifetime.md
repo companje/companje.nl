@@ -1,4 +1,6 @@
-====== Memories for life Managing information over a human lifetime ======
+---
+title: Memories for life Managing information over a human lifetime
+---
 ID: Fitzgibbon-Reiter (2003)
 PDF: {{afstuderen:Fitzgibbon-Reiter (2003) - Memories for life Managing information over a human lifetime.pdf|PDF}}
 

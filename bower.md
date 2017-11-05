@@ -1,4 +1,6 @@
-====== Bower ======
+---
+title: Bower
+---
 
 ==bowerrc==
 * be careful for the ~/.bowerrc file

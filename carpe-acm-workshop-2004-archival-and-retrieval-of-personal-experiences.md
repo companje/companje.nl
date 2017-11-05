@@ -1,4 +1,6 @@
-====== Carpe ACM Workshop (2004) - Archival and Retrieval of Personal Experiences ======
+---
+title: Carpe ACM Workshop (2004) - Archival and Retrieval of Personal Experiences
+---
 ID: Carpe ACM Workshop (2004)
 PDF: {{afstuderen:carpe-acm-workshop-2004-archival-and-retrieval-of-personal-experiences.pdf|}}
 

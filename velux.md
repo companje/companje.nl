@@ -1,2 +1,4 @@
-====== Velux ======
+---
+title: Velux
+---
 zie [[glas]]

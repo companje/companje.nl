@@ -1,4 +1,6 @@
-====== Raspbery Pi ======
+---
+title: Raspbery Pi
+---
 
 ==OS distro for full screen webpage==
 * https://github.com/guysoft/FullPageOS

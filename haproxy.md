@@ -1,4 +1,6 @@
-====== Haproxy ======
+---
+title: Haproxy
+---
 
 ==logs==
   sudo tail -f /var/log/haproxy*.log

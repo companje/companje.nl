@@ -1,1 +1,4 @@
-[[globes]]
+---
+title: [[globes]]
+---
+

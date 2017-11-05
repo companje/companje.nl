@@ -1,8 +1,11 @@
-# sed -i '1i some string' YAML.md
+for f in *.md
+do
+  echo "Processing: $f"
 
-# find . -name '*.test' -exec sh -c '(echo ---\n---;cat {}) > {}.tmp && mv {}.tmp {}' \; -print
-# ;echo FOOT
+  title=`cat $f | head -n 1 | sed -e 's/======\(.*\)======/\1/' | xargs`
+  echo -e "$title\n-------"
 
-find . -mount -print0 | perl -ne 'INIT{ $/ = "\0"; use File::stat;} chomp; my $s = stat($_); next unless $s; print $s->ctime . "/" . $s->mtime . "/" . $s->atime ."/$_\0"; ' > dates.dat
+  # UNCOMMENT THIS LINE TO REPLACE ======TITLE====== BY ---\ntitle: TITLE\n---\n
+  # echo -e "---\ntitle: $title\n---\n$(tail -n +2 $f)" > $f
 
-cat dates.dat |  perl -ne 'INIT{ $/ = "\0";} chomp; m!^([0-9]+)/([0-9]+)/([0-9]+)/(.*)!s or next; my ($ct, $mt, $at, $f) = ($1, $2, $3, $4); utime $at, $mt, $f;'
+done

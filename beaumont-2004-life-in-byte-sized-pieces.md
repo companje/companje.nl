@@ -1,4 +1,6 @@
-====== Life in byte-sized pieces ======
+---
+title: Life in byte-sized pieces
+---
 ID: Beaumont (2004)
 PDF: {{afstuderen:beaumont-2004-life-in-byte-sized-pieces.pdf|}}
 

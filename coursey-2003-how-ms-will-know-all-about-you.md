@@ -1,4 +1,6 @@
-====== How MS will know ALL about you ======
+---
+title: How MS will know ALL about you
+---
 ID: Coursey (2003)
 PDF: {{afstuderen:coursey-2003-how-ms-will-know-all-about-you.pdf|}}
 

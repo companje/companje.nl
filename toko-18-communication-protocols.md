@@ -1,4 +1,6 @@
-====== Toko #18 - Communication Protocols ======
+---
+title: Toko #18 - Communication Protocols
+---
 On March 21st, 2010 there will be an OpenToko workshop about Communication Protocols.
 <blockquote>In the field of telecommunications, a communications protocol is the set of standard rules for data representation, signaling, authentication and error detection required to send information over a communications channel. ... Communication protocol is basically following certain rules so that the system works properly. [[http://en.wikipedia.org/wiki/Communications_protocol|wikipedia]]</blockquote>
 Lots of stuff out there communicates in certain electronic languages: internet, radio, television, telephones, computer screens, computer networks, USB devices, remote controls etc. This OpenToko will cover the similarities and differences between quite some protocols.

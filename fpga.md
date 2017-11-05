@@ -1,4 +1,6 @@
-====== fpga ======
+---
+title: fpga
+---
 
 * tip van harmen: http://papilio.cc/
 * tip van David: [[http://www.ht-lab.com/freecores/cpu8086/cpu86.html|8086 in VHDK]]

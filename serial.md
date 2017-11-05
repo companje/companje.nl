@@ -1,4 +1,6 @@
-======Serial communication======
+---
+title: Serial communication
+---
 
 *zie ook [[ftdi]], [[usbserial]], [[ios]]
 *[[http://www.hw-group.com/products/hercules/index_de.html]]

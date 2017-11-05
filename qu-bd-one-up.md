@@ -1,4 +1,6 @@
-====== QU-BD One Up ======
+---
+title: QU-BD One Up
+---
 
 See [[3dprinting]]
 

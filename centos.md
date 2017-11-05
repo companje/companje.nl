@@ -1,4 +1,6 @@
-====== CentOS ======
+---
+title: CentOS
+---
 
 ==Opvragen CentOS versie==
 <code bash>

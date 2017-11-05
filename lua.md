@@ -1,4 +1,6 @@
-====== Lua ======
+---
+title: Lua
+---
 
 =====check args=====
 ```lua
@@ -20,9 +22,9 @@ http://lua-users.org/wiki/SampleCode
 
 =====where are the LUA packages / libraries=====
 <code>
-print(package.path.."\n"..package.cpath)
+print(package.path.."
+"..package.cpath)
 </code>
 
 ===== Luv it =====
 Nodejs maar dan voor lua
-

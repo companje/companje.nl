@@ -1,3 +1,5 @@
-====== Projects ======
+---
+title: Projects
+---
 
 Zie category [[Projects:]]

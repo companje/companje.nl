@@ -1,4 +1,6 @@
-======  Size Matters - Web and Book Archiving ======
+---
+title: Size Matters - Web and Book Archiving
+---
 ID: Lesk 2003
 PDF: {{afstuderen:Lesk 2003 - Size Matters - Web and Book Archiving.pdf|PDF}}
 

@@ -1,4 +1,6 @@
-===============jQuery===============
+---
+title: =========jQuery=========
+---
 
 ===== jChartFX =====
 http://www.jchartfx.com/

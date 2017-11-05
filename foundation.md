@@ -1,4 +1,6 @@
-====== Foundation ======
+---
+title: Foundation
+---
 
 * 'mobile first'
 * row, column(s), panel

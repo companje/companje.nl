@@ -1,4 +1,6 @@
-====== Creative Coding ======
+---
+title: Creative Coding
+---
 * http://thi.ng/
 * http://toxiclibs.org/
 * [[http://mrl.nyu.edu/~perlin/|Ken Perlin]]

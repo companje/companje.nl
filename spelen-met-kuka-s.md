@@ -1,4 +1,6 @@
-====== Spelen met Kuka's ======
+---
+title: 
+---
 Van 19 t/m 23 maart zit ik samen met Dora en [[people:De Spullenmannen]] in Arhus in Denemarken om te spelen met twee gigantische Kuka's, mens-grote robots van het type die je op het plaatje ziet.
 
 {{blog:groeten-uit-arhus.jpg?550|Groeten uit Arhus}}

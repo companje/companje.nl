@@ -1,4 +1,6 @@
-====== Media Technology MSc exhibition, six years of creative research ======
+---
+title: Media Technology MSc exhibition, six years of creative research
+---
 {{blog:2008:07:mediatech_expo_flyer_web.png?300|Media Technology Exposition in V2 Rotterdam}}
 
 July 10th - 13th

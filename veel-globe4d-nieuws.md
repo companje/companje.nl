@@ -1,4 +1,6 @@
-====== Veel Globe4D nieuws! ======
+---
+title: Veel Globe4D nieuws!
+---
 
 ==== Eureka! ====
 {{ http://www.globe4d.com/wp-content/uploads/2008/03/eureka%21.png?150|Globe4D in Eureka!}}Eureka!, a Dutch scientific magazine did an [[http://www.physics.leidenuniv.nl/eureka/pdf-magazines/eureka20.pdf|article on Globe4D]] which is now available as PDF. Two pages about our four-dimensional globe with detailed information about how it all started and about our future plans.

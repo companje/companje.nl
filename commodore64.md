@@ -1,4 +1,6 @@
-====== Commodore64 ======
+---
+title: Commodore64
+---
 
 =====draw blocks with light-pen in low-res mode=====
 <code gwbasic>

@@ -1,1 +1,4 @@
-~~INDEXEVERYWHERE~~
+---
+title: ~~INDEXEVERYWHERE~~
+---
+

@@ -1,6 +1,8 @@
-====== New Zealand ======
+---
+title: New Zealand
+---
 In [[2005]] I travelled for six months in New Zealand.
-\\
+\
 *My travel journey is available as [[http://companje.nl/boek.pdf|PDF]] (in Dutch).
 *A lot of photo material is available at my [[http://picasaweb.google.com/rick.companje/NieuwZeeland|Picasa Web Album of my trip to New Zealand]]
 

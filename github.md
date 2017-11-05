@@ -1,4 +1,6 @@
-====== Github ======
+---
+title: Github
+---
 
 =====use image in markdown=====
 <code>

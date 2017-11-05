@@ -1,4 +1,6 @@
-====== Toko #17 - iPhone Programming ======
+---
+title: Toko #17 - iPhone Programming
+---
 <html>
 <p>At March 7th, 2010 there will be an OpenToko workshop about iPhone Programming.</p> 
 <p><a href="http://nr37.nl">Leo van der Veen</a> created the c74 App. c74 is an iPhone app that let&#8217;s you connect your device with Cycling &#8217;74&#8217;s Max/MSP 5 and create custom layouts which can be operated directly from your iPhone. (<a href="http://www.creativeapplications.net/iphone/c74-maxmsp-iphone/">read more&#8230;</a>). In this OpenToko Leo will share his expertise on designing and programming applications for the iPhone. He will be covering the Objective-C programming language, XCode, Interface Builder and how to install your application on your iPhone.</p> 

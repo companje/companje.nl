@@ -1,4 +1,6 @@
-====== Doodle3D ======
+---
+title: Doodle3D
+---
 
 ===== doodle3d firmware readme =====
 https://github.com/Doodle3D/Doodle3D-firmware

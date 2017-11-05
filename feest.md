@@ -1,4 +1,6 @@
-====== Feest! ======
+---
+title: Feest!
+---
 Hallo allemaal!
 
 Volgende week maandag 15 december ben ik jarig. Daarom en omdat ik al weer een paar maanden in het mooie Katwijk woon geef ik een feestje.

@@ -1,4 +1,6 @@
-====== Elementary OS======
+---
+title: Elementary OS
+---
 
 ==xkill==
 xkill is great for killing a process by pointing to it's window

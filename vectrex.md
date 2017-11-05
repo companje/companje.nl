@@ -1,4 +1,6 @@
-====== Vectrex ======
+---
+title: Vectrex
+---
 
 ==about the 6809 processor==
 * https://en.wikipedia.org/wiki/Motorola_6809

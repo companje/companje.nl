@@ -1,4 +1,6 @@
-====== Webshops ======
+---
+title: Webshops
+---
 
 =====gadget & hobby & elektronica webshops=====
 * http://www.reichelt.de/

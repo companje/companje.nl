@@ -1,2 +1,4 @@
-====== Vesta Control Panel ======
+---
+title: Vesta Control Panel
+---
 [[vestacp]]

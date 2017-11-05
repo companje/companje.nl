@@ -1,4 +1,6 @@
-====== TOKO, gratis workshops over Processing, C++, Elektronica en meer ======
+---
+title: TOKO, gratis workshops over Processing, C++, Elektronica en meer
+---
 
 
 ==== TOKO ====

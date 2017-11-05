@@ -1,4 +1,6 @@
-====== Atom Editor ======
+---
+title: Atom Editor
+---
 
 ==Select Next: Cmd+D==
 ```

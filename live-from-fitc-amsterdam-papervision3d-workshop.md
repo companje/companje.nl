@@ -1,4 +1,6 @@
-====== Live from FITC Amsterdam Papervision3D workshop ======
+---
+title: Live from FITC Amsterdam Papervision3D workshop
+---
 
 
 

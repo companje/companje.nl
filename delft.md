@@ -1,4 +1,6 @@
-====== Installatieproces Ubuntu Live CD Delft ======
+---
+title: Installatieproces Ubuntu Live CD Delft
+---
 
 - Open een browser venster en activeer de driver voor de draadloze internetverbinding indien nodig. Ubuntu zal hier automatisch om vragen.
 - Download de sourcecode vanaf http://.....
@@ -16,4 +18,3 @@ Indien nodig:
 - om universal sources the activeren: '''sudo nano /etc/apt/sources.list''' en goed lezen.
 - daarna een '''sudo apt-get update'''
 - daarna '''sudo apt-get install mesa-utils'''
-

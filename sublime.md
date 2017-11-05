@@ -1,4 +1,6 @@
-===============SublimeText2===============
+---
+title: =========SublimeText2=========
+---
 A light-weight full feature text/code editor for OSX, Windows and Linux
 
 =====build system=====

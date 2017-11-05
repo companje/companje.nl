@@ -1,4 +1,6 @@
-====== Lean ======
+---
+title: Lean
+---
 * https://www.fiverr.com/
 * https://www.hotjar.com/
 * [[onlinetools]]

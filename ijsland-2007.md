@@ -1,4 +1,6 @@
-====== IJsland 2007 ======
+---
+title: IJsland 2007
+---
 ===== IJsland / Iceland- Landmannalaugar =====
 {{youtube>large:sSRUPEX_TaE}}
 

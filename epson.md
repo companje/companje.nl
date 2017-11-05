@@ -1,4 +1,6 @@
-====== EPSON ======
+---
+title: EPSON
+---
 
 ===== EPSON printer =====
 * http://www.youtube.com/watch?v=AmRRiEFgr1Y

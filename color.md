@@ -1,2 +1,4 @@
-====== Color ======
+---
+title: Color
+---
 * http://flatuicolors.com/

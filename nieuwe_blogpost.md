@@ -1,4 +1,6 @@
-====== Nieuwe blogpost! ======
+---
+title: Nieuwe blogpost!
+---
 
 {{tag>nieuws festivals reizen fun}}
 

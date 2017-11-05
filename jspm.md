@@ -1,4 +1,6 @@
-====== JSPM ======
+---
+title: JSPM
+---
 * see [[react]]
 * `jspm install`
 * [[https://github.com/jspm/jspm-cli/blob/master/docs/registries.md#private-github|Setup private github access]] 

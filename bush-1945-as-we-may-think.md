@@ -1,4 +1,6 @@
-====== As we may think ======
+---
+title: As we may think
+---
 ID: Bush (1945)
 PDF: {{afstuderen:bush-1945-as-we-may-think.pdf|}}
 

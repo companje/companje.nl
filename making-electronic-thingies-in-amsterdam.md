@@ -1,4 +1,6 @@
-====== Making Electronic Thingies in Amsterdam ======
+---
+title: Making Electronic Thingies in Amsterdam
+---
 
 <blockquote>Meta (Making Electronic Thingies in Amsterdam) is sort of a self-help group for artists, designers & other (normal) people with an interest in electronics.</blockquote>
 

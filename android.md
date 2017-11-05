@@ -1,4 +1,6 @@
-====== Android ======
+---
+title: Android
+---
 
 ==force webgl to be enabled==
   chrome://flags  
@@ -77,9 +79,9 @@ may be you broke your AndroidManifest.xml. Make sure the following is in there:
     <category android:name="android.intent.category.BROWSABLE" />
     <data android:mimeType="application/vnd.ms-pki.stl" />
     <data android:mimeType="application/sla" />
-    <data android:scheme="file" android:mimeType="*/*" android:pathPattern=".*\\.stl" />
-    <data android:scheme="content" android:mimeType="*/*" android:pathPattern=".*\\.stl" />
-    <data android:scheme="http" android:mimeType="*/*" android:pathPattern=".*\\.stl" />
-    <data android:scheme="https" android:mimeType="*/*" android:pathPattern=".*\\.stl" />
+    <data android:scheme="file" android:mimeType="*/*" android:pathPattern=".*\.stl" />
+    <data android:scheme="content" android:mimeType="*/*" android:pathPattern=".*\.stl" />
+    <data android:scheme="http" android:mimeType="*/*" android:pathPattern=".*\.stl" />
+    <data android:scheme="https" android:mimeType="*/*" android:pathPattern=".*\.stl" />
 </intent-filter>
 </code>

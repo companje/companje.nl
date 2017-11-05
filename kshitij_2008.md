@@ -1,4 +1,6 @@
-====== Kshitij 2008 ======
+---
+title: Kshitij 2008
+---
 {{blog:kshitij-2008.png|Kshitij 2008}}
 
 Kshitij is the annual techno-management festival of IIT Kharagpur. We hold a series of technical and managerial events, guest lectures and workshops. Started in 2004, the 2007 edition was the largest of its kind in the whole of Asia, with 6000 odd student participation, around 300 participating colleges from all over the country and 25.3 lakh worth of prizes. Continuing the trend of previous years, Kshitij 2008 promises to be bigger than any of its predecessors. With over 30 lakh hits on this year's site and about 6000 registered users already, Kshitij'08 is showing signs of a prodigy. It will be held from the 31st January to 3rd February, 2008. Our official site is: www.ktj.in

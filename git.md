@@ -1,4 +1,6 @@
-====== Git ======
+---
+title: Git
+---
 
 ====undo last commit====
 [[http://stackoverflow.com/questions/927358/how-do-you-undo-the-last-commit|stackoverflow]]

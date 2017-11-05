@@ -1,4 +1,6 @@
-===== PPM (Portable PixMap), PGM (Portable GreyMap), PBM (Portable BitMap) ======
+---
+title: ===== PPM (Portable PixMap), PGM (Portable GreyMap), PBM (Portable BitMap) ======
+---
 * see also [[rgb]]
 
 <code>
@@ -11,4 +13,3 @@
 
 * https://vimeo.com/110257380
 * http://paulbourke.net/dataformats/ppm/
-

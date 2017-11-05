@@ -1,4 +1,6 @@
-====== Asus K53Z laptop ======
+---
+title: Asus K53Z laptop
+---
 
 * After installing Windows 10 you need to install `Chipset_AMD_Compal_Win7_64_Z121321` (PNPINST64.EXE) to get DVD GT51N back to work.
 

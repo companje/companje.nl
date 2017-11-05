@@ -1,4 +1,6 @@
-====== PDP8 / PDP11 computers======
+---
+title: PDP8 / PDP11 computers
+---
 
 ===== Dutch PDP8 replica =====
 * http://obsolescenceguaranteed.blogspot.ch/2015/01/new-project-pdp-8i-replica.html (Oscar)

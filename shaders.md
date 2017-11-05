@@ -1,4 +1,6 @@
-======Shaders======
+---
+title: Shaders
+---
 Zie ook [[OpenGL]]
 
 =====Online NormalMap creator=====

@@ -1,1 +1,4 @@
-see [[platetectonics|Plate Tectonics]]
+---
+title: see [[platetectonics|Plate Tectonics]]
+---
+

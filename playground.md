@@ -1,4 +1,6 @@
-====== PlayGround ======
+---
+title: PlayGround
+---
 
 ===== Twitter Tweets =====
 {{rss>http://twitter.com/statuses/friends_timeline/4182371.rss 10 10m}}

@@ -1,4 +1,6 @@
-====== Simple password holds the key ======
+---
+title: Simple password holds the key
+---
 {{afstuderen:bbc-news-2002-simple-password-holds-the-key.pdf|BBC News (2002) - Simple password holds the key}}
 
 ===== Summary =====

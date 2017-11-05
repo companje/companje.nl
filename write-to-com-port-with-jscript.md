@@ -1,4 +1,6 @@
-====== Write to COM port using JScript ======
+---
+title: Write to COM port using JScript
+---
 
 It's quite easy to write to a COM port through JScript. You don't need any ActiveX components if you just 'echo' to a port.
 
@@ -22,9 +24,9 @@ function comWrite(s,port) { exec("echo "+s+" > " + port); }
 //aangesloten via een seriele verbinding via de usb poort op de computer.
 
 var port = "COM3:";   //volledig, met dubbele punt
-var baseFolderName = "G:\\2007\\scans\\";    //gebruik geen fwd slashes, alleen dubbele backslases
-var queueFolderName = baseFolderName + "queue\\"     
-var outputFolderName = baseFolderName + "output\\"
+var baseFolderName = "G:\2007\scans\";    //gebruik geen fwd slashes, alleen dubbele backslases
+var queueFolderName = baseFolderName + "queue\"     
+var outputFolderName = baseFolderName + "output\"
 
 var fs = new ActiveXObject("Scripting.FileSystemObject");
 var shell = new ActiveXObject("WScript.Shell");

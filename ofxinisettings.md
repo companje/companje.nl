@@ -1,4 +1,6 @@
-====== ofxIniSettings ======
+---
+title: ofxIniSettings
+---
 ofxIniSettings - by Rick Companje
 openFrameworks  addon for reading and writing .ini files.
 This code was developped for [[http://www.globe4d.com| Globe4D ]]

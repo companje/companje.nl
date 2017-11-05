@@ -1,4 +1,6 @@
-====== Huis ======
+---
+title: Huis
+---
 {{::schutstraat89.jpg?550|}}
 
 * [[http://goo.gl/forms/JZfovSONWdCvEK7b2|kosten bijhouden]]

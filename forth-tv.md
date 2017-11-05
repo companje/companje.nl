@@ -1,4 +1,6 @@
-====== META ForthTV Workshop ======
+---
+title: META ForthTV Workshop
+---
 1 juni 2007: Afgelopen weekend deed ik mee aan een META Workshop in Amsterdam. META staat voor [[Making Electronic Thingies in Amsterdam]]. De workshop onder leiding van Tom Schouten ging over het genereren van televisie signaal met behulp van de programmeertaal Forth en een PIC chip. Bekijk het filmpje voor een sfeerimpressie.
 
 <blockquote>Date: 26th-27th of May

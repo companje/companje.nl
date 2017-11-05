@@ -1,4 +1,6 @@
-====== Metaal ======
+---
+title: Metaal
+---
 * http://quintall.nl plaatbewerking
 * http://www.rvspaleis.nl
 * [[http://metaalreus.nl/|Metaalreus]]

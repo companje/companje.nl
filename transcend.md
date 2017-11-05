@@ -1,4 +1,6 @@
-====== Transcend WiFi SD ======
+---
+title: Transcend WiFi SD
+---
 
 * http://haxit.blogspot.ch/2013/08/hacking-transcend-wifi-sd-cards.html
 * http://192.168.11.254/cgi-bin/kcard_edit_config_insup.pl

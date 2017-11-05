@@ -1,4 +1,6 @@
-====== JSON ======
+---
+title: JSON
+---
 
 ==format json on osx terminal==
 `brew install js`

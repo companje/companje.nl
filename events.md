@@ -1,4 +1,6 @@
-====== Events ======
+---
+title: Events
+---
 
 
 

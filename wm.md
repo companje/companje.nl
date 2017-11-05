@@ -1,4 +1,6 @@
-====== WordMaster 5.55A======
+---
+title: WordMaster 5.55A
+---
 <code>
         VIDEO MODE SUMMARY  (TYPE ^J FOR NEXT FRAME)
 

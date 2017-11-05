@@ -1,6 +1,8 @@
-====== Batchfile for converting with ffmpeg ======
+---
+title: Batchfile for converting with ffmpeg
+---
 Dit batch scriptje post ik eigenlijk voor mezelf omdat ik 'm vaak net kwijt ben als ik 'm zoek. Maar als het je van pas komt voel je vrij om het te gebruiken. Het script roept het conversie programma ffmpeg aan om vervolgens het input filmpje te voorzien van zoveel mogelijk keyframes waardoor je makkelijk snel heen en weer kunt scrubben door een mpeg bestand. We gebruiken het voor [[http://www.globe4d.com/|Globe4D]] omdat je bij uitstek daar kriskras door een videobestand wilt scrollen. Maar ik gebruik het ook voor de fiets installatie van [[http://www.groeninnovaties.nl|Erik Groen]] die nog tot november draait in het [[http://www.gorcumsmuseum.nl|Gorcums Museum]].
-\\
+\
 <code>
 @echo off
 cd /d %0\..

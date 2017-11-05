@@ -1,4 +1,6 @@
-====== Travel ======
+---
+title: Travel
+---
 *[[Renault Estafette]] kampeerbusje
 
 ===== 2008 =====

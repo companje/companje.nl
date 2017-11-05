@@ -1,4 +1,6 @@
-====== Belevenissen in India ======
+---
+title: Belevenissen in India
+---
 Kshitij 2008 is afgelopen nu. Het was geweldig. Op de eerste dag hebben we een lezing gegeven over Globe4D, daarna begon de expositie. Onze expositieruimte werd heel erg druk bezocht. Rijen dik aan mensen stonden buiten in een rij te wachten om naar binnen te mogen. Erg leuk om de Indiërs te vertellen en te laten zien hoe hun continentale plaat vanaf het zuiden van Afrika over de Indische oceaan richting Azië is gedreven en uiteindelijk door de botsing die 50 miljoen jaar geleden begonnen is volgens de theorie de Himalaya's heeft gevormd. Aan het eind van de tweede dag werden we gevraagd om in te vallen voor een grote act op het hoofdpodium. Toen hebben we binnen een uur de globe laten opbouwen op het hoofdpodium en de presentatie aangepast aan een publiek van 5000 studenten. Het ging echt heel erg goed! Vanaf dat moment werden we als celebs behandeld en hebben oneindig veel handtekeningen uitgedeeld en moesten steeds op de foto. We konden eigenlijk niet meer zelf lopen van A naar B want je werd continu staande gehouden dus moesten we steeds in een taxi over het universiteitsterrein. Erg maf.
  
 {{http://www.companje.nl/wp-content/uploads/2008/02/globe4d-lecture-kshitij-2008.jpg}} 

@@ -1,4 +1,6 @@
-======netcat======
+---
+title: netcat
+---
 
 ==upload file with curl to netcat server==
   nc -l localhost 8000

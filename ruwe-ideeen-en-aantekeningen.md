@@ -1,4 +1,6 @@
-====== Afstuderen: Ruwe ideeën en aantekeningen ======
+---
+title: Afstuderen: Ruwe ideeën en aantekeningen
+---
 
 
 =====What if people shared all their data?=====
@@ -269,5 +271,3 @@ Met Data Donor by Default bedoel ik het standaard afstaan van je data (na je doo
 
 ===== Andere onderwerpen =====
 *[[Overige afstudeerideeen]]
-
-

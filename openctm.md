@@ -1,2 +1,4 @@
-====== OpenCTM ======
+---
+title: OpenCTM
+---
 * ctmconv

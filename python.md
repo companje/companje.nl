@@ -1,4 +1,6 @@
-====== Python ======
+---
+title: Python
+---
 
 ===Guide to Python function decorators===
 http://thecodeship.com/patterns/guide-to-python-function-decorators/

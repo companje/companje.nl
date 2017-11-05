@@ -1,4 +1,6 @@
-====== Blog ======
+---
+title: Blog
+---
 {{blog>}}
 
 Welkom op Ricksmuseum.

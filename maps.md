@@ -1,4 +1,6 @@
-====== Maps ======
+---
+title: Maps
+---
 * [[http://qgis.org/en/site/about/index.html|QGIS]]
 * https://www.shipmap.org/
 * [[http://csmres.jmu.edu/Geollab/pyle/GEOL272/398%20images/|planet textures]]

@@ -1,4 +1,6 @@
-====== (Virtual) Globes ======
+---
+title: (Virtual) Globes
+---
 see [[maps]]
 * http://www.globalgeology.com/
 * https://worldview.gallery/
@@ -33,4 +35,3 @@ see [[maps]]
 
 * Panoramatic 360 globe
 * [[http://alteredqualia.com/xg/examples/earth_bathymetry.html|tip van Pieter]]
-

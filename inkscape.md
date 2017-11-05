@@ -1,4 +1,6 @@
-===========Inkscape===========
+---
+title: =====Inkscape=====
+---
 
 =====Hershey Text=====
 Single line font rendering for CNC / Laser

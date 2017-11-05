@@ -1,2 +1,4 @@
-====== React.JS ======
+---
+title: React.JS
+---
 see [[react]]

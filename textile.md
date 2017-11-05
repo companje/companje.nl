@@ -1,4 +1,6 @@
-======Textile ======
+---
+title: Textile
+---
 
 ====knityak====
 https://www.kickstarter.com/projects/fbz/knityak-custom-mathematical-knit-scarves/description

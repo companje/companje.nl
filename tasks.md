@@ -1,4 +1,6 @@
-====== taskwarrior ======
+---
+title: taskwarrior
+---
 
 ===== download =====
 * https://taskwarrior.org/download/

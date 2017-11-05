@@ -1,2 +1,4 @@
-====== SMS-Novel ======
+---
+title: SMS-Novel
+---
 See [[SMS Roman]]

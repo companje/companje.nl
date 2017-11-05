@@ -1,1 +1,4 @@
-see [[duplicates]]
+---
+title: see [[duplicates]]
+---
+

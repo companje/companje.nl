@@ -1,4 +1,6 @@
-====== AutoBlog ======
+---
+title: AutoBlog
+---
 Ik ben bezig met een experiment. Ik noem het AutoBloggen. Het gaat uit van mijn idee Data Sharing by Default. Alles wat ik scan of waar ik een screenshot van maakt wordt nu in principe standaard geupload naar mijn [[AutoBlog:]]. Ik wil met zo weinig moeite zo veel mogelijk 'relevante' data delen. 
 
  

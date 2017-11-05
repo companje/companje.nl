@@ -1,4 +1,6 @@
-====== Batch file for running Processing pde files from Scite. ======
+---
+title: Batch file for running Processing pde files from Scite.
+---
 
 <code batch>
 @echo off
@@ -27,41 +29,4 @@ type *.pde >> %javafile%
 
 echo static public void main(String args[]) { PApplet.main(new String[] {"%className%" }); }}>> %javafile%
 
-javac %javafile% -classpath processing\lib\core.jar
-IF NOT %ERRORLEVEL%==0 GOTO ERROR_COMPILE
-
-java %className%
-IF NOT %ERRORLEVEL%==0 GOTO ERROR_RUN
-
-del *.class
-del *.java
-
-goto END
-
-:ERROR_CLASSNAME
-echo ERROR_CLASSNAME
-goto END
-
-:ERROR_COMPILE
-echo ERROR_COMPILE
-::om te voorkomen dat je die perongeluk gaat editen...
-del *.java
-goto END
-
-:ERROR_RUN
-echo ERROR_RUN
-goto END
-
-:END
-
-::::::below some unused stuff to create JAR files. 
-::set mainclass=PAppletMain
-::set mainfile=%mainclass%.java
-::set manifestfile=MANIFEST.MF
-::echo Main-Class: %className% > %manifestfile%
-::echo Manifest-Version: 1.0 >> %manifestfile%
-::jar 0cfmv %className%.jar %manifestfile% *.class -C ----------------------./lib processing
-::java -jar %className%.jar
-</code>
-
-{{backlinks>.}}
+javac %javafile% -classpath processing\lib

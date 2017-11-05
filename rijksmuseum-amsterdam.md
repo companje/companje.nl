@@ -1,4 +1,6 @@
-====== Rijksmuseum Amsterdam ======
+---
+title: Rijksmuseum Amsterdam
+---
 Tijdens het laatste half jaar van mijn bachelor Interaction Design in 2004 ontwikkelde ik “De tijdslijn” voor het Rijksmuseum. Toen der tijd een presentatie van de Nederlandse Meesterwerken uit de Gouden Eeuw, maar zo gebouwd dat ie zo weer van de plank gehaald kon worden. En dat is nu gebeurd. En hoe!
 
 ‘De Tijdslijn’ is weer helemaal terug, en als nooit tevoren! Ontwerpbureau Fabrique heeft ‘m nieuw leven ingeblazen. Op basis van mijn oude code en gedachtengoed, maar wel met aantal sterke verbeteringen. Zo is de filter nu een stuk prominenter maar vooral intuitiever, staan de scrollbalkjes voor het reizen door de tijd en het kiezen het detailniveau op een betere plaats en valt er per kunstwerk een heleboel te lezen en te zien.

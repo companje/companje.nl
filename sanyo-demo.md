@@ -1,4 +1,6 @@
-====== Sany Basic - DEMO.BAS ======
+---
+title: Sany Basic - DEMO.BAS
+---
 De originele sourcecode van DEMO.BAS op de bijgeleverde [[Sanyo Basic]] diskette voor de [[Sanyo MBC 555]].
 
 {{:sanyo_mbc-550_demo_image.jpeg}}

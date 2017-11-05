@@ -1,2 +1,0 @@
-====== Danica Mast ======
-www.tactile.nl

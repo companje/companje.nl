@@ -1,4 +1,6 @@
-====== GCODE ======
+---
+title: GCODE
+---
 
 * ''M25'': stoppen SD-kaart print
 * ''M109'' Sxxxx temperatuur instellen en wachten tot ie warm is (+ nog een paar seconden)

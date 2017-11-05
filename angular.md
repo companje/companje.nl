@@ -1,4 +1,6 @@
-====== Angular ======
+---
+title: Angular
+---
 
 ==events & scopes pub/sub==
 * http://toddmotto.com/all-about-angulars-emit-broadcast-on-publish-subscribing/

@@ -1,1 +1,4 @@
-* https://baremetrics.com/blog/bootstrapped-to-funded
+---
+title: https://baremetrics.com/blog/bootstrapped-to-funded
+---
+

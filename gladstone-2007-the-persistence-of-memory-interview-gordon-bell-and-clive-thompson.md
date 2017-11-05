@@ -1,4 +1,6 @@
-====== The Persistence of Memory (Interview Gordon Bell and Clive Thompson) ======
+---
+title: The Persistence of Memory (Interview Gordon Bell and Clive Thompson)
+---
 ID: Gladstone (2007)
 PDF: {{afstuderen:Gladstone (2007) - The Persistence of Memory (Interview Gordon Bell and Clive Thompson).pdf|}}
 

@@ -1,4 +1,6 @@
-====== Intertec SuperBrain Computer======
+---
+title: Intertec SuperBrain Computer
+---
 
 ====Documents from 'Daves Old Computers' about the SuperBrain====
 * [[http://classiccmp.org/dunfield/supbrain/manual.pdf|Superbrain Operators Manual (4M PDF)]]

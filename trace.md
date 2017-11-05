@@ -1,4 +1,6 @@
-====== ImageTracing ======
+---
+title: ImageTracing
+---
 ===== Potrace =====
 * http://potrace.sourceforge.net
 * http://potrace.sourceforge.net/faq.html

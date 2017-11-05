@@ -1,4 +1,6 @@
-====== Khan Academy ======
+---
+title: Khan Academy
+---
 
 http://www.khanacademy.org
 

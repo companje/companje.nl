@@ -1,4 +1,6 @@
-====== Email ======
+---
+title: Email
+---
 
 * https://www.inboxapp.com
 * https://www.mailpile.is

@@ -1,3 +1,5 @@
-====== Joris Slob ======
+---
+title: Joris Slob
+---
 
 *http://joris.zestsoftware.nl

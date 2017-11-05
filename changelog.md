@@ -1,2 +1,4 @@
-====== Changelog ======
+---
+title: Changelog
+---
 * http://keepachangelog.com/

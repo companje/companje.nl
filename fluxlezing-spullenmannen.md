@@ -1,4 +1,6 @@
-====== Fluxlezing 'kunst en wetenschap' door de Spullenmannen ======
+---
+title: Fluxlezing kunst en wetenschap door de Spullenmannen
+---
 {{  :blog:fluxlezing200.jpg}}
 
 Nieuwsgierigheid is de gezamenlijke drijfveer van kunstenaars en wetenschappers. En de beste manier om deze nieuwsgierigheid te bevredigen is het doen van een experiment. De Spullenmannen vertellen in deze fluxlezing hoe ze een brug slaan tussen kunst en wetenschap en hoe met oude apparaten de wetten der natuur ontrafeld kunnen worden.

@@ -1,4 +1,6 @@
-====== Next-generation search tools to refine results ======
+---
+title: Next-generation search tools to refine results
+---
 ID: Kanellos (2004)
 PDF: {{afstuderen:Kanellos (2004) - Next-generation search tools to refine results.pdf|PDF}}
 

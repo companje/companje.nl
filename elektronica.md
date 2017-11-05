@@ -1,4 +1,6 @@
-======Elektronica======
+---
+title: Elektronica
+---
 
 see [[electronics]]
 

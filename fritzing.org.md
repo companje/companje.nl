@@ -1,4 +1,6 @@
-====== Fritzing.org ======
+---
+title: Fritzing.org
+---
 Yesterday I visited the monthly META meeting. META stands for [[:Making Electronic Thingies in Amsterdam]]. At this meeting I learned to know about a new initiative called Fritzing. In the spirit of Processing and Arduino, [[http://fritzing.org|Fritzing]] is an open-source initiative to support designers and artists to take the step from physical prototyping to actual product. So after you have a working prototype on your breadboard Fritzing comes in to get it from a prototype to a produced print.
  
 [[http://www.fritzing.org|{{blog:fritzing.png?500|Fritzing}}]]

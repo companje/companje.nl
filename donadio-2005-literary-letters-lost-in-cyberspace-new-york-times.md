@@ -1,4 +1,6 @@
-====== Literary Letters, Lost in Cyberspace - New York Times ======
+---
+title: Literary Letters, Lost in Cyberspace - New York Times
+---
 ID: Donadio (2005)
 PDF: {{afstuderen:Donadio (2005) - Literary Letters, Lost in Cyberspace - New York Times.pdf|}}
 

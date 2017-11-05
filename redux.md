@@ -1,4 +1,6 @@
-====== Redux ======
+---
+title: Redux
+---
 * http://github.com/gaearon/redux
 * http://rackt.github.io/redux/index.html
 * 'state' is de huidige staat van alle data

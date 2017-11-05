@@ -1,4 +1,6 @@
-====== PDF/A: Developing a File Format for Long-Term Preservation ======
+---
+title: PDF/A: Developing a File Format for Long-Term Preservation
+---
 ID: LeFurgy 2003
 PDF: {{afstuderen:RLG DigiNews December 15, 2003, Volume 7, Number 6.pdf|PDF}}
 

@@ -1,3 +1,5 @@
-====== Cinekid 2007 ======
+---
+title: Cinekid 2007
+---
 
 {{tag>Events Globe4D}}

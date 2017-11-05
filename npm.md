@@ -1,4 +1,6 @@
-======npm - node package manager======
+---
+title: npm - node package manager
+---
 see [[nodejs]]
 
 ==list all global packages without deps==

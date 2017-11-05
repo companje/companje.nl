@@ -1,2 +1,4 @@
-====== openFrameworks ======
+---
+title: openFrameworks
+---
 see [[openFrameworks]]

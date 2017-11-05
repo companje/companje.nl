@@ -1,4 +1,6 @@
-====== ManifoldJS ======
+---
+title: ManifoldJS
+---
 
 * http://www.html5hacks.com/blog/2015/08/06/manifoldjs-quick-start/
 * http://blog.npmjs.org/post/131244760570/guest-post-build-for-devices

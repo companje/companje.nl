@@ -1,4 +1,6 @@
-====== CRT ======
+---
+title: CRT
+---
 * http://www.repairfaq.org/sam/crtfaq.htm
 * http://www.instructables.com/id/How-To-Make-A-CRT-TV-Into-an-Oscilloscope/?ALLSTEPS
 * http://www.instructables.com/id/Fully-Functional-Television-Oscilloscope/

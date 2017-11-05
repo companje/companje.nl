@@ -1,4 +1,6 @@
-====== Computer Graphics ======
+---
+title: Computer Graphics
+---
 
 See also: [[shaders]]
 

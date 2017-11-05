@@ -1,4 +1,6 @@
-====== Overige afstudeerideeen ======
+---
+title: Overige afstudeerideeen
+---
 
 =====Wat wil ik niet=====
 *Ik wil geen spelletje maken.

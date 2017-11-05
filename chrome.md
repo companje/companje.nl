@@ -1,4 +1,6 @@
-====== Chrome ======
+---
+title: Chrome
+---
 
 =====Open html file from terminal=====
   open -a "Google Chrome" index.html

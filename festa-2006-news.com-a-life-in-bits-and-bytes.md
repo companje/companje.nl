@@ -1,4 +1,6 @@
-====== A life in bits and bytes ======
+---
+title: A life in bits and bytes
+---
 ID: Festa (2006) News.com
 PDF: {{afstuderen:Festa (2006) News.com - A life in bits and bytes.pdf|}}
 

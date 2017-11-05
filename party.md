@@ -1,4 +1,6 @@
-====== Party ======
+---
+title: Party
+---
 * [[https://www.youtube.com/watch?v=zi8ShAosqzI|compliments]]
 * [[https://www.youtube.com/watch?v=HMUDVMiITOU|HUORATRON - $$ TROOPERS]]
 * [[https://www.youtube.com/watch?v=v9AKH16--VE|M.I.A. & The Partysquad - Double Bubble Trouble]]

@@ -1,4 +1,6 @@
-NL128.420.613.B01
+---
+title: NL128.420.613.B01
+---
 
 ==ex btw bedrag uitrekenen van inc btw bedrag==
 <code>100 x inc / 121 = ex btw</code>

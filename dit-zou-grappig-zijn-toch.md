@@ -1,4 +1,6 @@
-====== Dit zou best grappig zijn toch? ======
+---
+title: Dit zou best grappig zijn toch?
+---
 Ik vond zojuist dat ik grappigs bedacht had:
 
 <code>

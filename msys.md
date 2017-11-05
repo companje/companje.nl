@@ -1,4 +1,6 @@
-====== MSYS ======
+---
+title: MSYS
+---
 * https://msys2.github.io/
 * http://sourceforge.net/p/msys2/wiki/MSYS2%20installation/
 

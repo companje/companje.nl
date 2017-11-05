@@ -1,4 +1,6 @@
-====== Eureka ======
+---
+title: Eureka
+---
 *Eureka is een beta wetenschappelijk tijdschrift van de [[Universiteit Leiden]]
 
 ===== Article about Globe4D in Eureka =====

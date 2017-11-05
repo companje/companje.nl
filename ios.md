@@ -1,4 +1,6 @@
-======iOS======
+---
+title: iOS
+---
 
 =====maggap - make iOS apps=====
 * https://github.com/MacGapProject/MacGap1

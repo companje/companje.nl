@@ -1,4 +1,6 @@
-====== OpenWrt ======
+---
+title: OpenWrt
+---
 
 =====loglite voor wifibox=====
 firmware / web server  api logs: `cat /tmp/wifibox.log | loglite`
@@ -1322,7 +1324,8 @@ iwlist wlan0 scan | grep ESSID  | cut -c 27- | tr -d '"'
   <script>
   $(document).ready(function(){
     $.get("cgi-bin/wifi-scan", function(data) {
-      data = data.split("\n");
+      data = data.split("
+");
       console.log(data.length);
       var options = $("#boxNetwork");
       options.empty();

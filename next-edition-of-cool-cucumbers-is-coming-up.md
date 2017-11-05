@@ -1,4 +1,6 @@
-====== Next edition of Cool Cucumbers is coming up! ======
+---
+title: Next edition of Cool Cucumbers is coming up!
+---
 Cool Cucumbers & HYPE
 Thursday the 12th of June
 at the [[http://eurodusnie.nl/index.php?option=com_eventlist&Itemid=616&func=shcatev1&categid=5|Linkse Kerk]], Leiden (see [[http://maps.google.com/maps?f=q&hl=en&geocode=&q=koppenhinksteeg+2,+leiden,+netherlands&sll=52.159611,4.494452&sspn=0.008793,0.021329&ie=UTF8&ll=52.161731,4.489396&spn=0.008793,0.021329&z=16&iwloc=addr|map]])

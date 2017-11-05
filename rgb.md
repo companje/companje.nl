@@ -1,4 +1,6 @@
-====== RGB files ======
+---
+title: RGB files
+---
 see also [[pgm]]
 
 ====Analyse RGB file with Processing====

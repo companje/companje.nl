@@ -1,4 +1,6 @@
 ---
+title: ---
+---
 title: NodeJS
 layout: default
 ---
@@ -65,9 +67,9 @@ request(url, function (error, response, body) {
         var url = $('.search-result span').attr('data-url');
         var title = $('.search-result img').attr('title');
         var img = $('.search-result img').attr('src').replace("_82","_83");
-        console.log("url:\t",url);
-        console.log("title:\t",title);
-        console.log("img:\t",img);
+        console.log("url:	",url);
+        console.log("title:	",title);
+        console.log("img:	",img);
     } else {
         console.log(error);
     }

@@ -1,4 +1,6 @@
-====== Threads ======
+---
+title: Threads
+---
 
 {{threads>*}}
 

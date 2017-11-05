@@ -1,4 +1,6 @@
-====== emulators ======
+---
+title: emulators
+---
 
 see [[retro]]
 

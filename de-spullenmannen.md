@@ -1,2 +1,4 @@
-====== De Spullenmannen ======
+---
+title: De Spullenmannen
+---
 www.spullenmannen.nl

@@ -1,2 +1,4 @@
-====== Places ======
+---
+title: Places
+---
 * http://awesomespace.nl/

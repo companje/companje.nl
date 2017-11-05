@@ -1,4 +1,6 @@
-====== Ideas ======
+---
+title: Ideas
+---
 *Bestaat er een 3D spiegel? Of is een spiegel altijd 3D als in stereoscopisch? Dat laatste denk ik. Is het niet cool om standaard in een laptop twee ingebouwde camera's te hebben om het gewebcamde beeld realistischer te maken? Heb je wel een speciaal scherm of goggles nodig...
 *[[USB Infuus]] om eten binnen te krijgen tijdens het emailen... (credits to [[friends:Nico van Dijk|Nico]])
 *Is het een idee om wetenschappelijk te onderzoeken of het gevoel '[[Clipboard in your head]]' bij meer mensen dan mij alleen aanwezig is? En hoe het werkt? Het voelt als een soort 'binary flag'. Een soort bitje in je hoofd die op 1 staat als er nog iets op je clipboard zit in je computer... vreemd. edit: Pas had ik zelfs de ervaring dat mijn hoofd onbewust aan het bijhouden was of er nog data op iemand anders' clipboard zat.

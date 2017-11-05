@@ -1,4 +1,6 @@
-====== Forth ======
+---
+title: Forth
+---
 
 ==intro==
 * https://youtu.be/gFE6oK7jkq4

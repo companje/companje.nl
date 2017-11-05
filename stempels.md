@@ -1,2 +1,4 @@
-====== Stempels ======
+---
+title: Stempels
+---
 * http://onlinestempels.nl

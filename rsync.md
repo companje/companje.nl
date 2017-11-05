@@ -1,4 +1,6 @@
-====== rsync ======
+---
+title: rsync
+---
 
 ===== rsync with remote =====
 ```bash

@@ -1,1 +1,4 @@
-See [[pgm]]
+---
+title: See [[pgm]]
+---
+

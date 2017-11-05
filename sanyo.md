@@ -1,4 +1,6 @@
-====== Sanyo MBC-550/555 ======
+---
+title: Sanyo MBC-550/555
+---
 * http://www.seasip.info/VintagePC/sanyo.html
 * Capacitor C9 on the board may need to be dealt with if disk access is slow or erratic (it was installed backwards at the factory)."
 * http://www.vintage-computer.com/vcforum/showthread.php?24281-Teac-FD-54A

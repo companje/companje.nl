@@ -1,4 +1,6 @@
-====== Creative Research ======
+---
+title: Creative Research
+---
 A study course at [[http://mediatechnology.leiden.edu]]
 
 ''To raise new questions, new possibilities, to regard old problems from a new angle, requires creative imagination and marks real advances in science." — Albert Einstein''

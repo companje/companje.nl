@@ -1,4 +1,6 @@
-====== Museums ======
+---
+title: Museums
+---
 
 === Museums exhibiting my work===
 *[[Perot Museum of Nature & Science]] (Dallas, USA, 2011)

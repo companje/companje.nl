@@ -1,4 +1,6 @@
-====== Admin Panels ======
+---
+title: Admin Panels
+---
 * http://ajenti.org/
 * OpenPanel (not maintained)
 * http://ehcp.net/

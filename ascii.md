@@ -1,4 +1,6 @@
-====== ASCII (and other character sets) ======
+---
+title: ASCII (and other character sets)
+---
 
 =====search for html entities=====
 * http://www.amp-what.com/

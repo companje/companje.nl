@@ -1,2 +1,4 @@
-====== Spullenmannen ======
+---
+title: Spullenmannen
+---
 Zie [[De Spullenmannen]]

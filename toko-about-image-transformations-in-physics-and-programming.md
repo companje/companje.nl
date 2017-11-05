@@ -1,4 +1,6 @@
-====== TOKO about image transformations in physics and programming ======
+---
+title: TOKO about image transformations in physics and programming
+---
 On Friday Januari 30th there will be another free Toko Workshop.
 
 Toko nr. 11 will deal with image bending. With simple mathematical fuctions, you can make an image or movie change shape. It will cover solid geometry, lensformula's and -calculation, application in image manipulation and lens like transformation of images. In the morning the math and physics behind image transformation will be explained followed by hands-on workshop image transformation with OpenFrameworks.

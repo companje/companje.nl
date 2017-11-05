@@ -1,4 +1,6 @@
-=============== SSH ===============
+---
+title: ========= SSH =========
+---
 see also: [[linux]], [[git]]
 
 =====ignore StrictHostKeyChecking for once =====

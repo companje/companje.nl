@@ -1,4 +1,6 @@
-====== Math ======
+---
+title: Math
+---
 
 =====matrix & quaternion FAQ=====
 * http://www.j3d.org/matrix_faq/matrfaq_latest.html

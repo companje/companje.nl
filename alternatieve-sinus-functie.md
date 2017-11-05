@@ -1,4 +1,6 @@
-====== Alternatieve Sinus Functie ======
+---
+title: Alternatieve Sinus Functie
+---
 Over het algemeen kost het aanroepen van een sinusfunctie binnen een programmeertaal een hoop clock-cycles. Daarvoor krijg je wel een hele nette benadering van de sinus van een getal. Vaak veel te netjes als het mij vraagt. Zijn er alternatieven voor wanneer je wat minder detail nodig hebt? Ja, en die zijn een stuk sneller. [1].
 
 Wat dacht je van:

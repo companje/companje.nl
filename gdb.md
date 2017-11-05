@@ -1,4 +1,6 @@
-=====GDB (GNU Debugger) =====
+---
+title: =====GDB (GNU Debugger) =====
+---
 
 <code>
 gdb datamining

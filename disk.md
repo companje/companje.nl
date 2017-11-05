@@ -1,4 +1,6 @@
-====== Disks / Floppy Drives / Boot ======
+---
+title: Disks / Floppy Drives / Boot
+---
 * http://support.microsoft.com/kb/140060
 * http://community.spiceworks.com/how_to/1175-how-to-install-ms-dos-6-22-after-installing-xp
 * http://jope.fi/drives/

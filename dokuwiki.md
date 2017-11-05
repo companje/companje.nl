@@ -1,4 +1,6 @@
-====== dokuwiki ======
+---
+title: dokuwiki
+---
 
 ===== markdown plugin =====
 * https://www.dokuwiki.org/plugin:markdowku

@@ -1,4 +1,6 @@
-====== TAR ======
+---
+title: TAR
+---
 
 ==tar without compression==
 <code>tar cf backup.tar folder</code>

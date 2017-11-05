@@ -1,4 +1,6 @@
-====== OpenFrameworks ofxManyMouse addon ======
+---
+title: OpenFrameworks ofxManyMouse addon
+---
 I finished a first version of my [[:ofxManyMouse]] addon for [[:OpenFrameworks]]. It's based on the ManyMouse library by Ryan C. Gordon.
 
 With this openFrameworks addon you can easily read values from multiple mouse devices. 

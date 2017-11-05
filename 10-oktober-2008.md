@@ -1,4 +1,6 @@
-====== 10 oktober 2008 ======
+---
+title: 10 oktober 2008
+---
 Overleg met Maarten bij mij in Utrecht
 
 TODO

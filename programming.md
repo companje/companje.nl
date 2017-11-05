@@ -1,4 +1,6 @@
-====== Programming Languages======
+---
+title: Programming Languages
+---
 
 ==Articles==
 * https://medium.com/@thi.ng/the-jacob-s-ladder-of-coding-4b12477a26c1#.iobrtpj0n

@@ -1,4 +1,6 @@
-====== C++ ======
+---
+title: C++
+---
 
 see also [[openFrameworks]]
 see also [[arduino]]

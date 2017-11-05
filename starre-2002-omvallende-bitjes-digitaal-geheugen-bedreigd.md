@@ -1,4 +1,6 @@
-====== Omvallende bitjes - Digitaal geheugen bedreigd ======
+---
+title: Omvallende bitjes - Digitaal geheugen bedreigd
+---
 ID: Starre (2002)
 PDF: {{afstuderen:Starre (2002) - Omvallende bitjes - Digitaal geheugen bedreigd.pdf|PDF}}
 

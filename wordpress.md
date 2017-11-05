@@ -1,4 +1,6 @@
-====== Wordpress ======
+---
+title: Wordpress
+---
 
 ===== WP-CLI =====
 WP-CLI is a set of command-line tools for managing WordPress installations. You can update plugins, configure multisite installs and much more, without using a web browser.
@@ -42,20 +44,24 @@ header("Content-type: text/plain");
 $db = mysql_connect('SERVER', 'USER', 'PASS');
 mysql_select_db('DATABASE', $db);
 
-echo("VAT Numbers\n-------------------------------------\n");
+echo("VAT Numbers
+-------------------------------------
+");
 $sql = "SELECT post_id,meta_value FROM wp_postmeta WHERE meta_key='VAT Number'";
 //$sql = "SELECT post_id,meta_value FROM wp_postmeta WHERE meta_key='_billing_country'";
 
 $result = mysql_query($sql);
 
 if (!$result) {
-    $message  = 'Invalid query: ' . mysql_error() . "\n";
+    $message  = 'Invalid query: ' . mysql_error() . "
+";
     $message .= 'Whole query: ' . $sql;
     die($message);
 }
 
 while ($row = mysql_fetch_assoc($result)) {
-    echo $row['post_id'] . " " . $row['meta_value'] . "\n";
+    echo $row['post_id'] . " " . $row['meta_value'] . "
+";
 }
 </code>
 

@@ -1,4 +1,6 @@
-====== Disk Usage ======
+---
+title: Disk Usage
+---
 
 ===== size of current folder =====
 ```

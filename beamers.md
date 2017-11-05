@@ -1,4 +1,6 @@
-====== Beamers ======
+---
+title: Beamers
+---
 
 * Groothoek wandprojectie Geofort: EIKI LC XSP 2600
 

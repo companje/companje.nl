@@ -1,2 +1,0 @@
-====== Danica ======
-Zie [[Danica Mast]]

@@ -1,4 +1,6 @@
-=====Photoshop=====
+---
+title: =====Photoshop=====
+---
 
 ==Paths==
 * hold spacebar while drawing a path (for example an ellipse) to move it

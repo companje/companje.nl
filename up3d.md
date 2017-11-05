@@ -1,4 +1,6 @@
-======PP3DP UP!Mini 3D Printer======
+---
+title: PP3DP UP!Mini 3D Printer
+---
 * http://doodle3d.com/help/up-support
 * https://github.com/MaikStohn/UP3D
 * https://www.up3d.com/dami/viewtopic.php?f=28&t=55250&start=20

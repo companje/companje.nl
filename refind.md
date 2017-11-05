@@ -1,4 +1,6 @@
-====== rEFInd boot manager ======
+---
+title: rEFInd boot manager
+---
 
 ==skinning==
 * http://www.rodsbooks.com/refind/themes.html

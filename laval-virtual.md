@@ -1,1 +1,4 @@
-~~REDIRECT>Laval-Virtual-2007~~
+---
+title: ~~REDIRECT>Laval-Virtual-2007~~
+---
+

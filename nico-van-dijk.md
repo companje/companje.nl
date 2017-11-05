@@ -1,2 +1,0 @@
-====== Nico van Dijk ======
-Nico is mede-Globe4D'er en een ster in het verzamelen van wetenschappelijke datasets voor op [[:Globe4D]].
