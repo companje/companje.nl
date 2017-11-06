@@ -1,5 +1,5 @@
 ---
-title: Afstuderen: Ruwe ideeën en aantekeningen
+title: Afstuderen - Ruwe ideeën en aantekeningen
 ---
 
 

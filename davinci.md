@@ -1,4 +1,4 @@
 ---
-title: [[davinci3d]]
+title: davinci3d
 ---
 

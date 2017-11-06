@@ -1,6 +1,4 @@
 ---
-title: ---
----
 title: Songs
 layout: default
 ---

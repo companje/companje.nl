@@ -1,6 +1,4 @@
 ---
-title: ---
----
 title: Javascript
 layout: default
 ---
