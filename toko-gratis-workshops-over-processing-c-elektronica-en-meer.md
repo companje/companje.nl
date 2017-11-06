@@ -55,7 +55,7 @@ Inventarisatie van onderwerpen die aan bod zouden kunnen komen in een TOKO sessi
     * webdesign, sql, php, javascript, html
     * premiere, after-effects, codecs 
 
-{{tag>Processing Electronics Tech Math}}
+(tag>Processing Electronics Tech Math)
 
 
 ~~DISCUSSION~~

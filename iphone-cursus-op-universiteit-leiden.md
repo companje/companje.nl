@@ -12,7 +12,7 @@ Het LIACS biedt een cursus aan van twee vrijdagmiddagen en week huiswerk, waarin
 
 Simonsz: ‘In de flyer staat dat we de voorkeur geven aan studenten en scholieren, dus we zullen straks moeten selecteren. Die vierhonderd mensen zijn vooral studenten van universiteit en HBO, maar ook scholieren. Daarnaast zijn het mensen uit de omgeving met kleine bedrijfjes, of gewoon belangstellenden. Die laatste groep wil je eigenlijk ook bedienen, maar het gaat gewoon niet. We zijn nog aan het overwegen of we de cursus later nog een keer gaan geven of dat het bij een eenmalige actie blijft.’ BB
 
-{{tag>Tech Study Teaching}}
+(tag>Tech Study Teaching)
 
 
 ~~DISCUSSION~~

@@ -38,7 +38,7 @@ admin@local$
 admin@local# ~
 #sudo rm -rf
 </code>
-{{tag>Fun Nerd}}
+(tag>Fun Nerd)
 
 
 ~~DISCUSSION~~

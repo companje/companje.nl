@@ -13,9 +13,9 @@ Voor meer informatie over de installaties en het tourschema, kijk op www.knopjes
 De Spullenmannen
 033 4481622
 \
-{{:blog:de-reis-van-de-vita-nova.pdf|De reis van de Vita Nova (pdf)}}
+(:blog:de-reis-van-de-vita-nova.pdf|De reis van de Vita Nova (pdf))
 
-{{tag>Projects Science Art Travel}}
+(tag>Projects Science Art Travel)
 
 
 ~~DISCUSSION~~

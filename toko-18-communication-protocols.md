@@ -31,6 +31,6 @@ Location: [[http://www.opentoko.org/contact|Kleine Koppel 40, 3812 PH Amersfoor
 
 If you have never visited a Toko before, please read the [[http://www.opentoko.org/about|about]] page. If you want to join, fill out the [[http://spreadsheets.google.com/viewform?hl=nl&amp;formkey=dGk1eXhvMXA5N3RsWDVMb1pucEhlb3c6MA|registration form]].
 
-{{tag>Tech}}
+(tag>Tech)
 
 ~~DISCUSSION~~

@@ -47,7 +47,7 @@ na afloop: (of eerder als we geen zin meer hebben): Rick: De bus halen, waar ie 
 **Dinsdag:**  
 5:45: Rick staat op en vertrekt na een sterke bak koffie gedronken te hebben met de bus naar Den Haag. Levert 'm in en rijdt met het OV door naar [[:Noordwijk]] voor z'n eerste echte dag intern bij [[:ESA]].
 
-{{tag>Globe4D}}
+(tag>Globe4D)
 
 
 ~~DISCUSSION~~

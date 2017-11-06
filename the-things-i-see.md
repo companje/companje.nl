@@ -5,7 +5,7 @@ Ik maak vaak screenshots. Als ik iets moois zie op een website of zelf iets goed
 
 Zie [[AutoBlog]]
 
-{{tag>Ideas}}
+(tag>Ideas)
 
 
 ~~DISCUSSION~~

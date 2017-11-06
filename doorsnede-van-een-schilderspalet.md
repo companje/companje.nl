@@ -3,9 +3,9 @@ title: Doorsnede van een schilderspalet
 ---
 Ik wilde een doorsnede maken van het schilderspalet van mijn vader omdat ik benieuwd was naar de innerlijke structuur van de aangebrachte verf op een palet.
 \
- [[http://www.companje.nl/projects/doorsnede-van-een-schilderspalet/fabmoment.pdf|{{:blog:palet-1-200.jpg?245}}]] [[http://www.companje.nl/projects/doorsnede-van-een-schilderspalet/fabmoment.pdf|{{:blog:palet-2-200.jpg?245|}}]]
+ [[http://www.companje.nl/projects/doorsnede-van-een-schilderspalet/fabmoment.pdf|(:blog:palet-1-200.jpg?245)]] [[http://www.companje.nl/projects/doorsnede-van-een-schilderspalet/fabmoment.pdf|(:blog:palet-2-200.jpg?245|)]]
 
- [[http://www.companje.nl/projects/doorsnede-van-een-schilderspalet/fabmoment.pdf|{{:blog:2009:12:palet-frees-500.jpg|}}]]
+ [[http://www.companje.nl/projects/doorsnede-van-een-schilderspalet/fabmoment.pdf|(:blog:2009:12:palet-frees-500.jpg|)]]
 
 Lees verder als [[http://www.companje.nl/projects/doorsnede-van-een-schilderspalet/fabmoment.pdf|PDF]].  
 
@@ -17,7 +17,7 @@ De gebruikte frees heeft een platte kop en is 6mm dik. Er was ook een veel grote
 
 Ik ben tevreden over het resultaat. Ik had een dergelijke structuur (marmer/oester-achtig) wel verwacht maar dat wit de overheersende kleur zou zijn aan de binnenkant daar had ik niet op gerekend. Ik weet nog niet precies hoe dit komt. Een mogelijk vervolg op dit experiment zou zijn om een nieuw pallet per millimeter af te frezen en dat proces (wat dagen zal duren) te filmen en na afloop de snelheid en periodieken binnen de film variabel te maken. Foto's en filmpjes van het proces tot nu toe zijn te vinden op www.companje.nl.
 
-{{tag>Art Projects}}
+(tag>Art Projects)
 
 
 ~~DISCUSSION~~

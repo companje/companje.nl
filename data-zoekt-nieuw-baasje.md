@@ -3,7 +3,7 @@ title: Data zoekt nieuw baasje
 ---
 Je kent ze wel, die mappen op je computer waar je al jaren niet naar gekeken hebt. Niet dat je er bewust niet meer inkijkt, maar 't verdwijnt gewoon met de tijd en heel af en toe kom je misschien nog weer eens iets tegen maar het meeste zal nooit meer aan de oppervlakte verschijnen. Misschien nog wel het best te vergelijken met een rommelzolder. Je tekeningen van de kleuterschool in een grote doos, oude brieven van vroeger, bewaarde concertkaartjes, fotoalbums... Allemaal herinneringen uit een ver verleden, een tijd die je achter je ligt en waar niemand behalve jijzelf hooguit om nostalgische redenen nog iets aan hebt, toch? Of zou het misschien nog eens van pas kunnen komen?
 
-{{blog:2008:03:datahond.gif?550|Datahond tekening door Kris Kobes}}
+(blog:2008:03:datahond.gif?550|Datahond tekening door Kris Kobes)
 
 Met de komst van het internet lijkt het wel of er een informatieverslaving en een algemene data-deel-drang is ontstaan. Digitale data kan gedeeld worden dus wórdt het ook gedeeld. Veel mensen delen al foto's op Flickr [] of PicasaWeb []. Bloggers houden weblogs bij. Veel mensen op Twitter [] tweeten tientallen berichten per dag, via Hyves [], Facebook [] en Myspace [] leg je contact met oude bekenden en wissel je roddels uit. Veel mensen hebben eigen filmpjes op YouTube staan, je kunt agenda delen via Google Calender [] en voor je professionele leven is natuurlijk nog LinkedIn [] zodat je toekomstige werkgever wel precies dat beeld van je krijgt dat jij wil geven over jezelf. De gegevens die we op al deze plekken met elkaar delen zijn heel selectief door onszelf online geplaatst. Je hebt even goed wat tijd uitgetrokken om bewust een bericht op je weblog te plaatsen, je hebt een mooie selectie vakantiefoto's op Flickr gezet of bent een paar uur hard aan het monteren geweest om vervolgens een filmpje op YouTube te zetten. Kortom je hebt er behoorlijk wat tijd en moeite ingestoken om anderen te laten zien wat jou bezig houdt en hiermee wil je een bepaalde indruk van jezelf achter laten in je sociale netwerk. De succesvolle sociale netwerken die je op internet ziet ontstaan lijken allemaal een gedeelde eigenschap te bevatten namelijk dat er altijd een 'social object' centraal staat binnen de groep waarover gecommuniceerd wordt, aldus Jyri Engeström de oprichter van Jaiku []. Bij LastFM staat muziek centraal, bij Flickr geldt dat voor foto's en bij YouTube voor filmpjes.
  
@@ -31,7 +31,7 @@ Maar stel nou dat iedereen het zou doen? Dat iedereen z’n data standaard zou a
 
 Ik pleit voor een situatie waarin we zoveel mogelijk van onze data kunnen delen op een makkelijke manier die weinig tijd kost, leuk is, sociaal, veilig en legaal. Verwaarloosde data zoekt nieuw baasje. Er is zoveel verwaarloosde data, daar wil ik wat aan doen!
 
-{{tag>Afstuderen Text Study}}
+(tag>Afstuderen Text Study)
 
 
 ~~DISCUSSION~~

@@ -17,7 +17,7 @@ Extra informatie:
 http://www.tarikbarri.nl  
 
 
-{{tag>Art Music Tech Events}}
+(tag>Art Music Tech Events)
 
 
 ~~DISCUSSION~~

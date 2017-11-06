@@ -4,7 +4,7 @@ title:
 Een mooi en heel beroemd artikel over wat we nu nano technologie noemen. Verschenen in 1960 door Richard Feynman. Zowel inhoudelijk als qua opbouw een leerzaam artikel.
 
 ID: Feynman (1960)
-PDF: {{afstuderen:Feynman (1960) - There's Plenty of Room at the Bottom.pdf|}}
+PDF: (afstuderen:Feynman (1960) - There's Plenty of Room at the Bottom.pdf|)
 
 ===About Richard Feynman
 Richard Phillips Feynman (New York, 11 mei 1918  Los Angeles, 15 februari 1988) was een Amerikaans natuurkundige. Richard Feynman was zeer invloedrijk op met name het gebied van de kwantumelektrodynamica (QED). In 1965 won hij de Nobelprijs voor Natuurkunde. Hij stond ook bekend als brandkastkraker, nachtclubgast, tekenaar, bongospeler en kenner van de Mayacultuur. Daarnaast schitterde hij kort voor zijn dood tijdens de openbare hoorzittingen na het ongeluk met de Space Shuttle Challenger. Niet in de laatste plaats was hij beroemd als didacticus. Door de meeste van zijn vakgenoten wordt hij zodanig vereerd, dat er veel uitspraken aan hem worden toegeschreven die waarschijnlijk niet van hem waren. (Wikipedia)

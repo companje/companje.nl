@@ -47,7 +47,7 @@ a pixel on the screen does not move. movement is een illusion by setting the col
 * Colors are used normalized. 0..1
 * HSL (Hydra Shader Language) is very common to GLSL.
 * Belangrijk: het is limited, strict and type-safe.
-* Identity shader doet niks:  kernal Identity { void evaluatePixel(in image4 src, out pixel4 dst) { dst - sampleNearest(src, outCoord()); }}
+* Identity shader doet niks:  kernal Identity { void evaluatePixel(in image4 src, out pixel4 dst) { dst - sampleNearest(src, outCoord()); )
 * sampleLinear vs sampleNearest
 * Belangrijk: You do not place a pixel - you take a pixel.
 * Hydra is compiled using LLVM architecture. Low level compiler. Moeite waard om eens in te duiken volgens Joa.
@@ -242,7 +242,7 @@ new ShadedMaterial(material, shader, compositeMode)
 EnvMapShader
 * allows for a bumpmap and a specularmap (the latter doesn't work yet right now)
 
-{{tag>Flash Flex 3D Tech Adobe Papervision3D}}
+(tag>Flash Flex 3D Tech Adobe Papervision3D)
 
 Overige offtopic notes:
 * MAMP is een soort XAMPP die ik nog niet ken.

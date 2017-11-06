@@ -6,7 +6,7 @@ Sinds vandaag is de kabel afgesloten... niet dat ik 'm ooit officieel had laten 
 <html><object width="500" height="280" ><param name="allowfullscreen" value="true" /><param name="movie" value="http://www.facebook.com/v/10150176292552265" /><embed src="http://www.facebook.com/v/10150176292552265" type="application/x-shockwave-flash" allowfullscreen="true" width="500" height="280"></embed></object></html>
 
 
-{{tag>Tech Art Projects Fun}}
+(tag>Tech Art Projects Fun)
 
 
 ~~DISCUSSION~~

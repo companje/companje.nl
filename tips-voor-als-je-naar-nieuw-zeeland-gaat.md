@@ -41,6 +41,6 @@ Omdat [[http://downunder.sylvain.nl|Sylvain en Saskia]] momenteel in Australie e
 Meer tips in mijn boek met reisverhalen uit Nieuw Zeeland: [[http://companje.nl/boek.pdf|Kiwi's en Autowrakken]]
 
 
-{{tag>Travel}}
+(tag>Travel)
 
 ~~DISCUSSION~~

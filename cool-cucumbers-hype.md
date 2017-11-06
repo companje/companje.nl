@@ -14,13 +14,13 @@ Bring your friends!
 [[http://mediatechnology.leiden.edu/|MediaTechnology Leiden University]]  
 [[http://www.kabk.nl/studierichtingen/as/index/-/en|ArtScience KABK The Hague]]  
 
-{{tag>Events Art MediaTech}}
+(tag>Events Art MediaTech)
 
 ~~DISCUSSION~~
 
 
 
-{{tag>}}
+(tag>)
 
 
 ~~DISCUSSION~~

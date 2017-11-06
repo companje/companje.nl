@@ -43,7 +43,7 @@ Participants:
 
 [[http://www.makingelectronicthingiesinamsterdam.nl/Past/ForthTVCode|ForthTVCode]] produced during the workshop.
 
-{{youtube>large:cNdic7pe5UU}}
+(youtube>large:cNdic7pe5UU)
 
 **Comment**
 Hee Rick, ik denk dat ik Kwon Byung Jun herkent heb in je filmpje!! :D  Comment by Annica — 2 June 2007 @ 22:52

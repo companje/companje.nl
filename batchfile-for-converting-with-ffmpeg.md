@@ -94,7 +94,7 @@ ffmpeg -y -b 2500k -r 30 -i yellow-brick-road.jpg -i brand-new-day.mp3 -map 0:0 
 </code>
 
 Split video: see [[http://ubuntuforums.org/showthread.php?t=480343]]
-{{tag>}}
+(tag>)
 
 
 ~~DISCUSSION~~

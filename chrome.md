@@ -6,7 +6,7 @@ title: Chrome
   open -a "Google Chrome" index.html
   
 ====='Store as global variable' in Console=====
-{{::screen_shot_2015-08-12_at_19.58.17.png?400|}}
+(::screen_shot_2015-08-12_at_19.58.17.png?400|)
 
 * [[https://chrome.google.com/webstore/detail/chrome-dev-editor-develop/pnoffddplpippgcfjdhbmhkofpnaalpg/|Chrome Dev Editor]]
 * [[https://www.google.com/intl/en/chrome/browser/canary.html|Google Chrome Canary]]

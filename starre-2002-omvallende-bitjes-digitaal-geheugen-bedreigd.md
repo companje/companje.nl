@@ -2,7 +2,7 @@
 title: Omvallende bitjes - Digitaal geheugen bedreigd
 ---
 ID: Starre (2002)
-PDF: {{afstuderen:Starre (2002) - Omvallende bitjes - Digitaal geheugen bedreigd.pdf|PDF}}
+PDF: (afstuderen:Starre (2002) - Omvallende bitjes - Digitaal geheugen bedreigd.pdf|PDF)
 
 ===Intro
 *Als we het over duurzaamheid hebben, dan spreken we in het dagelijks leven al gauw over een termijn van tien tot vijftien jaar (wasmachines, koelkasten). Maar digitale duurzaamheid kent een veel langere tijdsspanne. Het archiefbesluit spreekt in dit verband van een termijn van honderd jaar leesbaarheid en toegankelijkheid

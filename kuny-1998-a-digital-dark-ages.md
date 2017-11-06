@@ -5,7 +5,7 @@ title: A Digital Dark Ages
 Lang artikel, niet helemaal gelezen.
 
 ID: Kuny (1998)
-PDF: {{afstuderen:Kuny (1998) - A Digital Dark Ages.pdf|}}
+PDF: (afstuderen:Kuny (1998) - A Digital Dark Ages.pdf|)
 
 ===== Summary =====
 *Monks and monasteries played a vital role in the Middle Ages in preserving and distributing books. It was their work which provided much of our  present knowledge of the ancient past and of the rich heritage of Greek, Roman and Arabic traditions.

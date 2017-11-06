@@ -8,4 +8,4 @@ The programme is a joint initiative of Leiden University’s computer science in
 *[[http://mediatechnology.leiden.edu/|Media Technology website]]
 
 ====== Links to this page ======
-{{backlinks>.}}
+(backlinks>.)

@@ -5,10 +5,10 @@ Together with [[::Joris Slob]] I experimented with a [[http://en.wikipedia.org/w
 \
 [[http://companje.nl/processing/Triangular-Game-Of-Life/|Demo and source code]].
 \
-[[http://companje.nl/processing/Triangular-Game-Of-Life/|{{:blog:2009:08:triangular-cellular-automata.gif}}]]
+[[http://companje.nl/processing/Triangular-Game-Of-Life/|(:blog:2009:08:triangular-cellular-automata.gif)]]
 
 
-{{tag>Math Tech Processing}}
+(tag>Math Tech Processing)
 
 
 ~~DISCUSSION~~

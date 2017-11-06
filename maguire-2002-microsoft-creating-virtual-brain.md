@@ -2,7 +2,7 @@
 title: Microsoft Creating Virtual Brain
 ---
 ID: Maguire (2002)
-PDF: {{afstuderen:Maguire (2002) - Microsoft Creating Virtual Brain.pdf|PDF}}
+PDF: (afstuderen:Maguire (2002) - Microsoft Creating Virtual Brain.pdf|PDF)
 
 ===== Summary =====
 *Researchers at Microsoft 's Media Presence Lab are developing a "virtual brain," a PCbased database that holds a record of an individual's complete life experience. Called [[MyLifeBits]], the project aims to make this database of human memories searchable in the manner of a conventional search engine. 

@@ -11,8 +11,8 @@ Please come if you can. It can be very useful for your projects and there's very
 
 http://www.dewar.nl/toko
 
-{{blog:2008:03:workshop1.jpg?550}}
+(blog:2008:03:workshop1.jpg?550)
 
-{{tag>Tech Programming}}
+(tag>Tech Programming)
 
 ~~DISCUSSION~~

@@ -2,7 +2,7 @@
 title: PDFA - Developing a File Format for Long-Term Preservation
 ---
 ID: LeFurgy 2003
-PDF: {{afstuderen:RLG DigiNews December 15, 2003, Volume 7, Number 6.pdf|PDF}}
+PDF: (afstuderen:RLG DigiNews December 15, 2003, Volume 7, Number 6.pdf|PDF)
 
 
 ===== Summary =====

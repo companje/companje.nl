@@ -2,6 +2,6 @@
 title: Threads
 ---
 
-{{threads>*}}
+(threads>*)
 
 ====== ... ======

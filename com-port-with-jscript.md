@@ -5,6 +5,6 @@ It's quite easy to write to a COM port through JScript. You don't need any Activ
 
 See [[tech:Write to COM port with JScript]]
 
-{{tag>}}
+(tag>)
 
 ~~DISCUSSION~~

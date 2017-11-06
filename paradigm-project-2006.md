@@ -2,7 +2,7 @@
 title: Paradigm Project (2006)
 ---
 ID: Paradigm Project (2006)
-PDF: {{afstuderen:Paradigm Project (2006).pdf|}}
+PDF: (afstuderen:Paradigm Project (2006).pdf|)
 
 ===== Summary =====
 *Personal Archives Accessible in Digital Media (paradigm)

@@ -2,8 +2,8 @@
 title: Sfeerbeelden uit mijn Rijswijk periode
 ---
 
-{{gallery>photos:rijswijk-periode?240x240&2}}
+(gallery>photos:rijswijk-periode?240x240&2)
 
-{{tag>Art Photos}}
+(tag>Art Photos)
 
 ~~DISCUSSION~~

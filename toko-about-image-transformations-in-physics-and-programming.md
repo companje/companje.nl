@@ -51,6 +51,6 @@ More info: [[http://dewar.nl/toko/]] or call Rick (06 2851 6908 )
 To subscribe for this toko: 
 *email to {toko at dewar.nl} or
 *[[http://tinyurl.com/au7n6c|fill in the form]]
-{{tag>Art Math tech Events Projects}}
+(tag>Art Math tech Events Projects)
 
 ~~DISCUSSION~~

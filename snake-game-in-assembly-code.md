@@ -7,7 +7,7 @@ GSnake is een in assembly geschreven grafische Snake variant die ik heb gemaakt 
 Copyright (C) 1996  TMR Software Productions
 The last update was on 06/01/97 at 22:37:07</blockquote>
 
-{{toko:gsnake.jpg?550|GSNAKE.COM - Snake in Assembly Code}}
+(toko:gsnake.jpg?550|GSNAKE.COM - Snake in Assembly Code)
 
 == Sourcecode ==
 <code asm>

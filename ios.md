@@ -223,4 +223,4 @@ Add ''ExternalAccessory.framework'' to your project's Target Linked Libraries.
 @end
 </code>
 
-{{redpark-serial-cable-redparkwrapper.png?550}}
+(redpark-serial-cable-redparkwrapper.png?550)

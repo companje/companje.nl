@@ -1,7 +1,7 @@
 ---
 title: het succes van uitsterven
 ---
-{{:blog:companje-2009-het_succes_van_uitsterven.pdf|download deze column als PDF}}  
+(:blog:companje-2009-het_succes_van_uitsterven.pdf|download deze column als PDF)  
 \
 Veel mensen proberen tijdens hun leven ergens goed in zijn. Als je je onderscheid van de massa vinden anderen je interessant en wordt je gewaardeerd. Dat geeft je allerlei privileges die je verdere leven veraangenamen. Maar hoe komt het toch dat wij ons zo druk maken over hoe er later na ons leven aan ons teruggedacht wordt? Daar hebben we tegen die tijd toch niks meer aan? Waarom willen we perse iets achter laten voor het nageslacht? Zou het zijn omdat we het gewoon goed met ze voor hebben? Willen we het zo leuk mogelijk voor ze maken zonder dat we daar zelf iets aan hebben? Zouden zij dat werkelijk waarderen? We weten dat onze nakomelingen meer hebben aan ons dan wij hen dus dat zou wel erg onbaatzuchtig van ons zijn toch?
 \
@@ -17,7 +17,7 @@ Hetzelfde geldt voor uitgestorven diersoorten. Daar interesseren we ons tegenwoo
 \
 Ons zelfbewustzijn is nu al bezig om straks te willen doorleven als ons lichaam het opgegeven heeft. Onze herinneringen, kennis en denkwijzen leiden een eigen leventje. Als je beseft dat voortbestaan op drie manieren kan: onverwoestbaar zijn, goed onderhouden worden en/of gekopieerd worden dan staat niets ze in de weg zichzelf voortplanten net zo als andere succesvolle 'dingen' dat doen. Wij worden dus misschien wel compleet bestuurd door ons zelfbewustzijn. Net zo als dat micro-organismen samen ons lichaam vormen, vormen herinneringen onze identiteit. Beide soorten zullen er alles aan doen te overleven en de tand des tijd te overwinnen.
 
-{{tag> Stories  Study}}
+(tag> Stories  Study)
 
 
 ~~DISCUSSION~~

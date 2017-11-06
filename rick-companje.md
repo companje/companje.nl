@@ -1,7 +1,7 @@
 ---
 title: About Rick Companje
 ---
-{{::rickcompanje.jpg?nolink|}}
+(::rickcompanje.jpg?nolink|)
 
 likes | art, science, technology, coding, teaching
 founder of | Globe4D - interactive four-dimensional globe 

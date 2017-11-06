@@ -14,7 +14,7 @@ Location: <a href="http://www.opentoko.org/contact">Kleine Koppel 40, 3812 PH Am
 </html>
 
 
-{{tag>}}
+(tag>)
 
 
 ~~DISCUSSION~~

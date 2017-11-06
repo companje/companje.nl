@@ -1,4 +1,4 @@
 ---
 title: Tech
 ---
-{{backlinks>.}}
+(backlinks>.)

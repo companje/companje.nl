@@ -32,7 +32,7 @@ Zeewoldtstraat 10
 2223 ET Katwijk ZH
 telefoon: 06 2851 6908
 
-{{tag>Fun}}
+(tag>Fun)
 
 
 ~~DISCUSSION~~

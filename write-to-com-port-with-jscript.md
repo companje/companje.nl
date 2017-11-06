@@ -83,6 +83,6 @@ function replaceString(inString,findString,replaceBy) { return inString.replace(
 function getFileExtension(s) { /*input as string!*/ return getTextAfterLastIndexOf(s,"."); }
 </code>
 
-{{tag>tech}}
+(tag>tech)
 
 See: [[afstuderen:Papierverscanneraar]]

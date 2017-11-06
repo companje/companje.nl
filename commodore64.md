@@ -37,7 +37,7 @@ Shift+CommodoreKey
 =====clear screen=====
   print chr$(47)
 or
-  print "{{Shift+CLR}}"
+  print "(Shift+CLR)"
 
 =====print at location ROW,COL=====
 prints "X" at row=5, col=10

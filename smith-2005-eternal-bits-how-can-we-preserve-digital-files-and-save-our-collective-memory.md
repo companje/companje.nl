@@ -2,7 +2,7 @@
 title: Eternal Bits - how Can We Preserve Digital Files and Save Our Collective Memory
 ---
 ID: Smith (2005)
-PDF: {{afstuderen:Smith (2005) Eternal Bits - how Can We Preserve Digital Files and Save Our Collective Memory.pdf|PDF}}
+PDF: (afstuderen:Smith (2005) Eternal Bits - how Can We Preserve Digital Files and Save Our Collective Memory.pdf|PDF)
 
 ===== Summary =====
 <blockquote>

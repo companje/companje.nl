@@ -2,7 +2,7 @@
 title: Life in byte-sized pieces
 ---
 ID: Beaumont (2004)
-PDF: {{afstuderen:beaumont-2004-life-in-byte-sized-pieces.pdf|}}
+PDF: (afstuderen:beaumont-2004-life-in-byte-sized-pieces.pdf|)
 
 ===== Summary =====
 *Daniel Crooks is jealous of adult friends who have home movie reels of their childhoods. His two young sons will never have that problem.

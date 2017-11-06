@@ -12,7 +12,7 @@ Doel van de Flex User Group (FLUGR) is om jaarlijks een aantal meetings te organ
 
 Het evenement vindt 13 juni van 13.30 uur tot 18.00 uur plaats in Kasteel ter Horst, Loenen (Apeldoorn). Inschrijven is verplicht en dat kan gratis op www.flugr.nl.
 
-{{tag>Flex}}
+(tag>Flex)
 
 
 ~~DISCUSSION~~

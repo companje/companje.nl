@@ -5,9 +5,9 @@ De Papierverscanneraar is een nieuw apparaat: Een schredder met ingebouwde scann
  
 Lees verder over de [[afstuderen:Papierverscanneraar]]
 
-{{afstuderen:papierverscanneraar-1.jpg?550|Papierverscanneraar}}
+(afstuderen:papierverscanneraar-1.jpg?550|Papierverscanneraar)
 Tekening: [[friends:Kris Kobes]]
 
-{{tag>Ideas Afstuderen}}
+(tag>Ideas Afstuderen)
 
 ~~DISCUSSION~~

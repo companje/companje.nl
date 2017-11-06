@@ -2,7 +2,7 @@
 title: Ublad Online - Digitaal Erfgoed
 ---
 ID: Heijnen
-PDF: {{afstuderen:Heijnen - Ublad Online - Digitaal Erfgoed.pdf|}}
+PDF: (afstuderen:Heijnen - Ublad Online - Digitaal Erfgoed.pdf|)
 
 ===== Summary =====
 *'digital born material' en 'gedigitaliseerd erfgoed'

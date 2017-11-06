@@ -4,7 +4,7 @@ title: abc
 
 
 
-{{tag>}}
+(tag>)
 
 
 ~~DISCUSSION~~

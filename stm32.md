@@ -16,7 +16,7 @@ title: STM32 / Nucleo
 * to communicate with Serial Monitor in the Arduino IDE I had to use Serial1 (instead of just Serial). ([[http://stm32duino.com/viewtopic.php?f=3&t=512&start=20|more info]]) 
 
 ==pins==
-{{::stm-nucleo-pins.jpg?direct&700|}}
+(::stm-nucleo-pins.jpg?direct&700|)
 
 ==resources==
 * http://www.st.com/web/catalog/tools/FM116/SC959/SS1532/LN1847/PF259875?icmp=nucleo-ipf_pron_pr-nucleo_feb2014&sc=nucleoF103RB-pr

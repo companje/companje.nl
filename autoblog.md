@@ -8,6 +8,6 @@ De volgende stap is dat ik mijn clipboard op dezelfde manier wil gaan delen. Omd
 
 Bekijk wat er tot nu toe op m'n [[AutoBlog:]] staat.
 
-{{tag>Ideas Blog}}
+(tag>Ideas Blog)
 
 ~~DISCUSSION~~

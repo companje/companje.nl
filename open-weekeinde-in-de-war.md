@@ -15,7 +15,7 @@ En natuurlijk zijn er de projecten van de **SPULLENMANNEN** zelf, zoals afgelope
 
 Kijk voor meer info op [[http://dewar.nl]]
 
-{{tag>Events}}
+(tag>Events)
 
 
 ~~DISCUSSION~~

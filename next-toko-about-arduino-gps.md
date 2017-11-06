@@ -25,7 +25,7 @@ http://www.wiring.org.co/
 http://www.maartenlamers.com/ThisIsWiring/
 
 
-{{tag>Events Electronics Tech Projects}}
+(tag>Events Electronics Tech Projects)
 
 
 ~~DISCUSSION~~

@@ -35,7 +35,7 @@ allowfullscreen='true'
 wmode='transparent'
 flashvars='file=http://www.itzit.tv/ictdelta/ictdelta2009.flv&image=http://www.ictdelta2010.nl/ictdelta/images/001.png&abouttext=iTZiT multimedia&aboutlink=http://www.itzit.com&plugins=tweetit-1&dock=true&link=http://www.itzit.tv/ictdelta2010/technologie/globe4d.html'/></html>
 
-{{tag>Globe4D Events}}
+(tag>Globe4D Events)
 
 
 ~~DISCUSSION~~

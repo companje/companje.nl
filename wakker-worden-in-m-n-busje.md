@@ -5,10 +5,10 @@ Ik heb al bijna 3 maanden niet meer geblogd... Er is erg veel gebeurd in de tuss
 
 Onderstaande foto is gemaakt vanuit mijn bus de ochtend na het Dennestok '69 feest op de dag van de drinkende dieren in Baarn. Het feest waar tijdens een badkamerconcert van de broertjes Borger een nieuw tijdperk lijkt te zijn aangebroken...
 
-{{blog:wakker-worden-in-mn-busje-1024.jpg?550|}}
+(blog:wakker-worden-in-mn-busje-1024.jpg?550|)
 
-{{blog:dennestok.jpg?550|}}
+(blog:dennestok.jpg?550|)
 
-{{tag>}}
+(tag>)
 
 ~~DISCUSSION~~

@@ -16,7 +16,7 @@ Bring your friends!
 > [[http://www.kabk.nl/studierichtingen/as/index/-/en|ArtScience KABK The Hague]]
 
 
-{{tag>}}
+(tag>)
 
 
 ~~DISCUSSION~~

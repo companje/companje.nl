@@ -2,7 +2,7 @@
 title: Literary Letters, Lost in Cyberspace - New York Times
 ---
 ID: Donadio (2005)
-PDF: {{afstuderen:Donadio (2005) - Literary Letters, Lost in Cyberspace - New York Times.pdf|}}
+PDF: (afstuderen:Donadio (2005) - Literary Letters, Lost in Cyberspace - New York Times.pdf|)
 
 ===== Summary =====
 *Back in the 20th century ... it was often lamented that the telephone might put an end to literary biography. In lieu of letters, writers could just as easily gab on the phone, leaving no trace. 

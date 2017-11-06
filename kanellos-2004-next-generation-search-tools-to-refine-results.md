@@ -2,7 +2,7 @@
 title: Next-generation search tools to refine results
 ---
 ID: Kanellos (2004)
-PDF: {{afstuderen:Kanellos (2004) - Next-generation search tools to refine results.pdf|PDF}}
+PDF: (afstuderen:Kanellos (2004) - Next-generation search tools to refine results.pdf|PDF)
 
 ===== Summary =====
 *Calif.--The vast corpus of human knowledge could soon be published on the Internet. The problem now is how to wade through it.

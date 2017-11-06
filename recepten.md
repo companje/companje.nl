@@ -2,4 +2,4 @@
 title: Recepten
 ---
 
-{{::rodebiet-sinaasappel-salade.jpg}}
+(::rodebiet-sinaasappel-salade.jpg)

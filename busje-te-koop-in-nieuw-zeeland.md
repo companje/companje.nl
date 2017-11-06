@@ -12,9 +12,9 @@ Als je geinteresseerd bent kun je me bellen op +64 21 139 7460 of hieronder een 
 \
 Groetjes Rick
 
-{{http://farm6.static.flickr.com/5084/5284039936_71556cb569.jpg}}
+(http://farm6.static.flickr.com/5084/5284039936_71556cb569.jpg)
 
-{{tag>Travel}}
+(tag>Travel)
 
 
 ~~DISCUSSION~~

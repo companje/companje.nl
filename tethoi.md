@@ -4,7 +4,7 @@ title: hoi
 taasdfasdf
 
 
-{{tag>}}
+(tag>)
 
 
 ~~DISCUSSION~~

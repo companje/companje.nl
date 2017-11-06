@@ -2,7 +2,7 @@
 title: Beyond the Electronic Portfolio - a lifetime personal webspace
 ---
 ID: Cohn-Hibbitts (2004)
-PDF: {{afstuderen:cohn-hibbitts-2004-beyond-the-electronic-portfolio-a-lifetime-personal-webspace.pdf|}}
+PDF: (afstuderen:cohn-hibbitts-2004-beyond-the-electronic-portfolio-a-lifetime-personal-webspace.pdf|)
 
 ===== Summary =====
 *develop a model providing a personal Web space for everyone, for their lifetimes and beyond?

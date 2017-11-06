@@ -3,7 +3,7 @@ title:
 ---
 Van 19 t/m 23 maart zit ik samen met Dora en [[people:De Spullenmannen]] in Arhus in Denemarken om te spelen met twee gigantische Kuka's, mens-grote robots van het type die je op het plaatje ziet.
 
-{{blog:groeten-uit-arhus.jpg?550|Groeten uit Arhus}}
+(blog:groeten-uit-arhus.jpg?550|Groeten uit Arhus)
 
 <blockquote>We gaan daar met Mads Wahlberg werken aan een interactie met de Kuka robots die de Spullenmannen afgelopen najaar aan hem hebben overgedaan. Mads heeft in Aarhus een aantal technisch vaardige enthousiastelingen verzameld in een robot-clubje dat elke woensdagavond aan de robots sleutelt. Ze hebben inmiddels wat hardware gebakken die de servo-motoren van de robot direct kan aansturen en ook is het nu gelukt om de resolvers uit te lezen zodat er ook positie-data terug gestuurd kan worden. Dat betekent dat er een eigen robot-sturing gebouwd kan gaan worden die live is bij te sturen waardoor er een interessante real-time interactie mogelijk wordt.
 
@@ -19,13 +19,13 @@ Wiki for the robot club: [[http://www.companje.nl/robotclub/|Robotclub Wiki]]
 
 
 ===== Movie of our experiments =====
-{{youtube>large:jM7crZU6kyM}}
+(youtube>large:jM7crZU6kyM)
 
 ===== More info =====
 On the Robotclub Wiki I wrote down some info about how to communicate with the [[http://www.companje.nl/robotclub/doku.php?id=scorbot_er-v_plus|Scorbot ER-V Plus with Processing or C++]].
 
 
 
-{{tag>Robots Tech Art Electronics}}
+(tag>Robots Tech Art Electronics)
 
 ~~DISCUSSION~~

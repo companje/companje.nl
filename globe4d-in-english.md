@@ -9,7 +9,7 @@ Globe4D extends the functionality of traditional globes found in many households
 ===== Goal =====
 Globe4D is designed to be a simple but highly educational entertaining multi-user device for globe viewing. We want people, especially kids, to learn about the earth, let them realize in a playful and tactile manner how earth changed and still changes over time. On long term (continental drift) as well on short term (e.g.daylight changes).
 
-{{en:globe4d:globe4d.jpg|Globe4D, Jurassic 180 million years ago}}
+(en:globe4d:globe4d.jpg|Globe4D, Jurassic 180 million years ago)
 
 ===== Innovations =====
 Globe4D's main innovation is its method of mapping spatio-temporal geographic data on a physical sphere. It is not a flat representation of a changing planet but a real physical globe featuring hands-on interactivity. All kinds of spherical data can be displayed and interacted with as a result of creating our own flexible software engine. The significance of touch combined with a new perspective on showing geographic data makes using Globe4D both entertaining and highly educational.
@@ -89,4 +89,4 @@ Since the first version the Globe4D software has been fully written in C++ using
 ====== Hardware ======
 Globe4D is currently at hardware version 3. The first version has been used backstage at [[Naturalis]] Museum for Natural History in Leiden, The Netherlands and was used in the video demonstration show at [[ACM Multimedia 2006]]. Version 2 has been shown on several festivals and conferences in Europe and the United States. Version 3 is the first professional production model which is being sold to museums and shown at festivals all around the world.
 
-{{tag>Globe4D}}
+(tag>Globe4D)

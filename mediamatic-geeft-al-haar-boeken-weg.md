@@ -15,8 +15,8 @@ http://www.mediamatic.net/page/39326/nl
 
 Locatie: Mediamatic kantoor, Post CS gebouw, Oosterdokskade 5, vijfde verdieping, Amsterdam.
 
-{{blog:mediamatic-bibliotheek-39265-500-188.jpg?550|}}
+(blog:mediamatic-bibliotheek-39265-500-188.jpg?550|)
 
-{{tag>Media Books Tech Art Electronics}}
+(tag>Media Books Tech Art Electronics)
 
 ~~DISCUSSION~~

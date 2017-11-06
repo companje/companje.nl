@@ -80,9 +80,9 @@ $(this).children(".description").text()
 
 <code jquery>
 <script id="todo-list-item" type="text/x-jquery-tmpl">
-  <li {{if done}}class="done"{{/if}}>
+  <li (if done)class="done"(/if)>
     <label>
-      <input type="checkbox" id="todo-${id}" {{if done}}checked="checked"{{/if}} />
+      <input type="checkbox" id="todo-${id}" (if done)checked="checked"(/if) />
       ${title}
     </label>
   </li>

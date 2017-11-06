@@ -10,11 +10,11 @@ Datum: Donderdag 21 januari
 Tijd: 14.00 - 20.00 uur
 Locatie: Faculteit Kunst, Media & Technologie (KMT), Oude Amersfoortseweg 131, 1212 AA Hilversum
 
-[[http://www.hku.nl/web/show/id=107916|{{:blog:hku-e-banner.jpg|}}]]
+[[http://www.hku.nl/web/show/id=107916|(:blog:hku-e-banner.jpg|)]]
 
 [[http://www.hku.nl/web/show/id=107916|Meer informatie]] op de website van de HKU
 
-{{tag>Art Media Tech Events}}
+(tag>Art Media Tech Events)
 
 
 ~~DISCUSSION~~

@@ -4,12 +4,12 @@ title: O!? Morgen?
 Gisteravond werd ik ineens gebeld door Joost van Cinekid of ik tijdens het GameJam weekend een (Java/Flash-) gameconcept voor de mobiele telefoon zou willen helpen te ontwikkelen... of ik mee ging doen. O!? Morgen? Ok...
  
 [[http://japangamejam.blogspot.com/
-|{{blog:2008:03:moppy.gif|}}]]
+|(blog:2008:03:moppy.gif|)]]
  
 http://japangamejam.blogspot.com/
  
 <blockquote>
-{{ blog:2008:03:cibil.jpg}}Een Nederlandse mobiele game voor de Japanse markt
+( blog:2008:03:cibil.jpg)Een Nederlandse mobiele game voor de Japanse markt
  
 Om Nederland in Japan te promoten hebben de Nederlandse Ambassade in Tokio, de Dutch Game Garden en de stichting NLGD besloten een Nederlandse mobiele game te laten maken voor de Japanse markt. Hiervoor zijn wij op zoek naar de beste Nederlandse game developers. Gaat jouw game straks Nederland in Japan vertegenwoordigen tijdens de TGS 2008?
  
@@ -24,6 +24,6 @@ Achtergrond
  
 Twee belangrijke officiële festiviteiten staan aan de basis van deze Nederlandse mobiele game in Japan. In 2008 vieren Japan en Nederland 150 jaar diplomatieke relaties en volgend jaar, in 2009, vieren beide landen 400 jaar handelsbetrekkingen. De game gaat deel uitmaken van de officiële Nederlandse festiviteiten in Japan, dus de eisen zijn hoog! [[http://www.nieuwsbank.nl/inp/2008/02/28/G003.htm]]</blockquote>
 
-{{tag>}}
+(tag>)
 
 ~~DISCUSSION~~

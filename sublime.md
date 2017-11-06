@@ -8,7 +8,7 @@ A light-weight full feature text/code editor for OSX, Windows and Linux
 {
    "cmd": ["make"],
    "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
-   "working_dir": "${project_path:${folder:${file_path}}}",
+   "working_dir": "${project_path:${folder:${file_path)}",
    "selector": "source.makefile",
    "variants":
     [

@@ -7,7 +7,7 @@ title: fpga
 * tip van David: [[http://nl.farnell.com/lattice-semiconductor/lcmxo2280c-b-evn/board-breakout-machxo-2280/dp/2253065|Deze]] zit in de Pristitrope.
 
 =====Lattice Mach XO=====
-{{::machxo2280-breakout_board_front.png?nolink&400|}}
+(::machxo2280-breakout_board_front.png?nolink&400|)
 * [[http://www.farnell.com/datasheets/1673547.pdf|datasheet (MachXO2280 Breakout Board Evaluation Kit)]]
 * [[http://www.latticesemi.com/latticediamond|Lattice Diamond Software]] (windows+linux)
 * [[http://hackaday.com/2015/07/28/open-source-fpga-toolchain-builds-cpu/|Hackaday: Open Source FPGA Toolchain]]

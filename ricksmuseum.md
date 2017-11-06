@@ -1,6 +1,6 @@
 ---
 title: Blog
 ---
-{{blog>}}
+(blog>)
 
 Welkom op Ricksmuseum.

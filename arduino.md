@@ -18,7 +18,7 @@ title: Arduino / AVR
 * http://www.notesandvolts.com/2012/01/fun-with-arduino-midi-input-basics.html
 
 =====Pinout diagram=====
-{{::esqpm.png?direct&450|}}
+(::esqpm.png?direct&450|)
 
 =====Serial Bus Contention: no more than one transmitting device=====
 https://learn.sparkfun.com/tutorials/serial-communication

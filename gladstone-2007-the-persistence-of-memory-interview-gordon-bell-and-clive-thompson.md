@@ -2,7 +2,7 @@
 title: The Persistence of Memory (Interview Gordon Bell and Clive Thompson)
 ---
 ID: Gladstone (2007)
-PDF: {{afstuderen:Gladstone (2007) - The Persistence of Memory (Interview Gordon Bell and Clive Thompson).pdf|}}
+PDF: (afstuderen:Gladstone (2007) - The Persistence of Memory (Interview Gordon Bell and Clive Thompson).pdf|)
 
 ===== Summary =====
 *Gordon Bell is creating a complete virtual memory to supplement his own imperfect one, a defiant, Proustian reclamation of lost time that may be changing the very way we think about the past. But why?

@@ -1,7 +1,7 @@
 ---
 title: Huis
 ---
-{{::schutstraat89.jpg?550|}}
+(::schutstraat89.jpg?550|)
 
 * [[http://goo.gl/forms/JZfovSONWdCvEK7b2|kosten bijhouden]]
 * http://www.alles-over-een-huis-kopen.com/support-files/checklist-onderzoek-huis-kopen.pdf

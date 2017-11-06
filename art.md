@@ -2,4 +2,4 @@
 title: Art
 ---
 
-{{backlinks>.}}
+(backlinks>.)

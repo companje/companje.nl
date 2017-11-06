@@ -35,14 +35,14 @@ Power for the keyboard is supplied by a +12 volt line on pin 2 of the keyboard c
 ==Keyboard==
 The keyboard is an Attache module that interfaces with the processor board through a four-wire connector (Jl). The major components of the keyboard module are the keyboard itself, a counter, a shift register, and an oscillator.
 
-{{::screen_shot_2016-02-20_at_21.21.52.png?nolink|}}
+(::screen_shot_2016-02-20_at_21.21.52.png?nolink|)
 
 ===Theory of operations===
 
 ==Introduction==
 The keyboard is set up in a grid pattern. Two multiplexers are attached to the keyboard grid lines. The multiplexers receives a binary counter's output which sequentially enables each grid line.
 
-{{::screen_shot_2016-02-20_at_21.24.05.png?nolink|}}
+(::screen_shot_2016-02-20_at_21.24.05.png?nolink|)
 
 A pressed key creates a short to output a high signal that stops the counter and enables a shift register. The character code from the corresponding key loads into this register in parallel. System clock pulses shift the data bits of the keycode out serially to the processor, via the Parallel Input/Output controller (PIO).
 
@@ -72,7 +72,7 @@ Key repeat is a function of the counter, U2. U2 starts counting when a key is pr
 
 The line from the shift key goes through a diode. The diode prevents using the left Shift key and the Reset key to cause a system reset. (An accidental system reset from pressing both keys would otherwise be easy.)
 
-{{::screen_shot_2016-02-20_at_21.27.49.png?nolink|}}
+(::screen_shot_2016-02-20_at_21.27.49.png?nolink|)
 
 Additional information on keyboard layout is contained in the Software chapter of this manual. Refer to "Generating Keyboard Codes", page 3-53.
 
@@ -85,7 +85,7 @@ While in Wordstar mode, 6 keys are position dependent: the four arrow keys, CTRL
 (tables not included. See Technical Manual)
 
 ==Schematic==
-{{::screen_shot_2016-02-20_at_21.39.40.png?nolink|}}
+(::screen_shot_2016-02-20_at_21.39.40.png?nolink|)
 
 ==Connector==
-{{:otrona_attache_keyboard_connector.png?nolink|}}
+(:otrona_attache_keyboard_connector.png?nolink|)

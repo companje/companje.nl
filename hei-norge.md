@@ -7,7 +7,7 @@ Ha det bra!
 \  
 PS.  Op [[http://www2.uit.no/www/startsida/tavla/arrangementsdetaljer?p_document_id=116976|deze website]]  staat het programma (in het Noors)
 \  
-{{:blog:noorwegen-tromso.jpg|}}
+(:blog:noorwegen-tromso.jpg|)
 
 Hei alle sammen.
 
@@ -24,7 +24,7 @@ Les mer om denne unike forestillingen på Universitetet sine [[http://www2.uit.n
 116976| nettsider]]
 
 
-{{tag>Spullenmannen Globe4D Events Travel}}
+(tag>Spullenmannen Globe4D Events Travel)
 
 
 ~~DISCUSSION~~

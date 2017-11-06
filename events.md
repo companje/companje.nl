@@ -34,4 +34,4 @@ title: Events
 *...
 
 ====== Links to this page ======
-{{backlinks>.}}
+(backlinks>.)

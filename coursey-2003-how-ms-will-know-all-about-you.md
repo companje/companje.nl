@@ -2,7 +2,7 @@
 title: How MS will know ALL about you
 ---
 ID: Coursey (2003)
-PDF: {{afstuderen:coursey-2003-how-ms-will-know-all-about-you.pdf|}}
+PDF: (afstuderen:coursey-2003-how-ms-will-know-all-about-you.pdf|)
 
 ===== Summary =====
 *You're not that interesting (and neither am I).

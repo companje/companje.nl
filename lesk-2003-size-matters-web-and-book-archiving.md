@@ -2,7 +2,7 @@
 title: Size Matters - Web and Book Archiving
 ---
 ID: Lesk 2003
-PDF: {{afstuderen:Lesk 2003 - Size Matters - Web and Book Archiving.pdf|PDF}}
+PDF: (afstuderen:Lesk 2003 - Size Matters - Web and Book Archiving.pdf|PDF)
 
 ===Intro
 *Gathering material is cheap; selection is expensive. Search is cheap; manual organization is expensive; time and distance hardly matter. The Internet Archive is pursuing projects based on size, including its full sweeps of the Web back to 1996, and its help with the Million Book project that will put a million older books online.

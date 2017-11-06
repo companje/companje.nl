@@ -38,6 +38,6 @@ title: 6581 SID chip
 * https://github.com/miccolis/sidsystem
 
 ==pins==
-{{::screen_shot_2015-12-10_at_20.05.22.png?nolink&300|}}
+(::screen_shot_2015-12-10_at_20.05.22.png?nolink&300|)
 ==SID register map==
-{{http://www.gianlucaghettini.net/wp-content/uploads/2015/05/SID_registers_fit.png}}
+(http://www.gianlucaghettini.net/wp-content/uploads/2015/05/SID_registers_fit.png)

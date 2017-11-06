@@ -7,11 +7,11 @@ We zijn nu voorzien van alles wat we nodig hebben om Globe4D nog verder te kunne
 
 Hier enkele sfeerbeelden van onze ruimte.
 
-{{:blog:cultureel-verzamelkantoor-amersfoort.jpg}}
+(:blog:cultureel-verzamelkantoor-amersfoort.jpg)
 
 
 
-{{tag>}}
+(tag>)
 
 
 ~~DISCUSSION~~

@@ -1,7 +1,7 @@
 ---
 title: Wired News (2005) - Ray Kurzweil - Never Say Die Live Forever
 ---
-PDF: {{afstuderen:Wired News (2005) - Ray Kurzweil - Never Say Die Live Forever.pdf|PDF}}
+PDF: (afstuderen:Wired News (2005) - Ray Kurzweil - Never Say Die Live Forever.pdf|PDF)
 
 Info: Niet zo gerelateerd aan m'n afstudeeronderzoek. Wel cool. Ik mag die [[Ray Kurzweil]] wel.
 

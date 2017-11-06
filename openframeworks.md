@@ -115,7 +115,7 @@ I worked around this by manually removing the xml elements of `ofApp.h` and `ofA
 
 =====inherit from ofBaseDrawsVideo class=====
 In XCode when pressing Cmd+8 then click on Clock icon on bottom you get detailed info about build error message. It shows which functions you need to implement:
-{{::screen_shot_2016-02-23_at_12.02.44.png?nolink|}}
+(::screen_shot_2016-02-23_at_12.02.44.png?nolink|)
 
 =====what means 'const' after method definition?=====
 When you define a method like this in your class:

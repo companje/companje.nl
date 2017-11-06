@@ -1,7 +1,7 @@
 ---
 title: Globe4D lezing in RAP Architectuurcentrum in Leiden
 ---
-{{  blog:globe4d-highres-jurassic.jpg?200|Globe4D}}PERSBERICHT: Tijdreizen met een interactieve vierdimensionale wereldbol Lezing en demonstratie door Rick Companje e.a. 
+(  blog:globe4d-highres-jurassic.jpg?200|Globe4D)PERSBERICHT: Tijdreizen met een interactieve vierdimensionale wereldbol Lezing en demonstratie door Rick Companje e.a. 
  
 Woensdag 16 april 2008 zal Rick Companje in RAP Architectuurcentrum de vierdimensionale wereldbol 'Globe4D' demonstreren en vertellen wat daarmee allemaal mogelijk is. Globe4D is voortgekomen uit een onderzoek gedaan door vier studenten (Rick Companje, Nico van Dijk, Hanco Hogenbirk en Danica Mast) van de Master studie Media Technology aan de Universiteit van Leiden. De lezing/demonstratie begint om 20.00 uur, de toegang is vrij.
  
@@ -17,6 +17,6 @@ Na de lezing/demonstratie kunnen vragen worden gesteld. Na afloop is er gelegenh
  
 De lezing is onderdeel van het project ‘U BEVINDT ZICH HIER – Een reis door Leiden in 80 kaarten’. Meer informatie over de lezingenserie en het project zijn te vinden op http://www.ubevindtzichhier.nu. 
  
-{{tag>Globe4D Events}}
+(tag>Globe4D Events)
 
 ~~DISCUSSION~~

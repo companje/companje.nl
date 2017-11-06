@@ -2,7 +2,7 @@
 title: A life in bits and bytes
 ---
 ID: Festa (2006) News.com
-PDF: {{afstuderen:Festa (2006) News.com - A life in bits and bytes.pdf|}}
+PDF: (afstuderen:Festa (2006) News.com - A life in bits and bytes.pdf|)
 
 *"Consider a future device for individual use, which is a sort of mechanized private file and library," wrote information technology visionary [[Vannevar Bush]] in the July 1945 issue of the Atlantic Monthly.
 *Jim and I ([[Gordon Bell]]) wrote an article on the 50-year outlook for computing, and that's when we realized that the amount of storage was so vast that we in principle could capture everything--everything you read, every picture you've ever taken, everything you've said. We're past the point where your laptop can capture everything somebody's read. With digital photography coming in, it allows you to easily store all that stuff, and everything you've heard in terms of music.

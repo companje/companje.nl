@@ -1,7 +1,7 @@
 ---
 title: Arduino Pong (lite) on TV
 ---
-{{  blog:2008:06:arduino-pong-television-signal.jpg?200|Arduino Pong Composite Television Signal}}
+(  blog:2008:06:arduino-pong-television-signal.jpg?200|Arduino Pong Composite Television Signal)
 I did some experiments with the Arduino board to let it generate television signal and play a pong game. I gave up at the point where I succeeded to have a ball bouncing to the walls, no player interaction yet but may be it's somehow useful for you. It shows at least that it is quite a job to get the timing right for generating the video signal. Since the Arduino chip is relatively slow it forces you to keep your code as compact as possible. Every micro second counts.
 
 I compiled this code with a C compiler, so not from the Arduino IDE but you can easily translate it to Arduino by adding a setup() and a loop() function and pasting the code into there.
@@ -32,9 +32,9 @@ I compiled this code with a C compiler, so not from the Arduino IDE but you can 
 #define blankline() { hsync(); black(52); }
 #define whiteline() { hsync(); white(52); }
 #define greyline() { hsync(); grey(52); }
-#define blanklines(n) { int i=n; while (i-->0) { blankline(); }}
-#define whitelines(n) { int i=n; while (i-->0) { whiteline(); }}
-#define greylines(n) { int i=n; while (i-->0) { greyline(); }}
+#define blanklines(n) { int i=n; while (i-->0) { blankline(); )
+#define whitelines(n) { int i=n; while (i-->0) { whiteline(); )
+#define greylines(n) { int i=n; while (i-->0) { greyline(); )
 
 #define ball(a,b,c) hsync(); black(a); white(b); black(c); 
 
@@ -71,7 +71,7 @@ int main() {
 }
 </code>
 
-{{tag>Tech Electronics C++ Programming Retro}}
+(tag>Tech Electronics C++ Programming Retro)
 
 
 ~~DISCUSSION~~

@@ -6,9 +6,9 @@ Tip: druk tijdens het spel op spatie om je blokje te draaien.
 \
 http://www.firstpersontetris.com  
 \
-[[http://www.firstpersontetris.com/|{{:blog:first-person-tetris.jpg|}}]]
+[[http://www.firstpersontetris.com/|(:blog:first-person-tetris.jpg|)]]
 
-{{tag>Fun}}
+(tag>Fun)
 
 
 ~~DISCUSSION~~

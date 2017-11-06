@@ -1,4 +1,4 @@
 ---
 title: Blog Index
 ---
-{{nstoc blog }}
+(nstoc blog )

@@ -17,4 +17,4 @@ title: Ideas
 *De NS omroeper stem samplen en daarmee synthen met een [[http://www.youtube.com/watch?v=q9tmbrG7D-o|Auduino]]
 
 ====== Links to this page ======
-{{backlinks>.}}
+(backlinks>.)

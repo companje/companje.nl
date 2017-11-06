@@ -10,9 +10,9 @@ veel groeten,
 Harmen Zijp
 </blockquote>
 
-{{:blog:overshootparty2009-nl.pdf|Uitnodiging voor oud en nieuw feest}}
+(:blog:overshootparty2009-nl.pdf|Uitnodiging voor oud en nieuw feest)
 
-{{tag>Events Art}}
+(tag>Events Art)
 
 
 ~~DISCUSSION~~

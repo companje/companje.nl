@@ -11,7 +11,7 @@ putenv("TZ=Europe/Amsterdam");
 
 More info here: [[http://wiki.splitbrain.org/wiki:tips:timezone|wiki.splitbrain.org]]
 
-{{tag>}}
+(tag>)
 
 
 ~~DISCUSSION~~

@@ -6,7 +6,7 @@ Samen met Bas Haring verzorg ik op 9 en 16 april de gratis iPhone cursus @ Unive
 
 
 
-{{tag>}}
+(tag>)
 
 
 ~~DISCUSSION~~

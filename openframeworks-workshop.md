@@ -1,7 +1,7 @@
 ---
 title: openFrameworks workshop in Auckland
 ---
-{{:blog:2011:01:openframeworks2.gif|}}
+(:blog:2011:01:openframeworks2.gif|)
 \
 **Check [[https://sites.google.com/site/ofauckland/|http://of.opentoko.org]] for the slides, example code and notes.**
 \
@@ -13,7 +13,7 @@ OpenFrameworks is designed to work as a general purpose glue, and wraps together
 \
 The code is written to be both cross platform (PC, Mac, Linux, iPhone) and cross compiler. The API is designed to be minimal and easy to grasp. There are very few classes, and inside of those classes, there are very few functions.</blockquote>
 
-{{:blog:2011:01:kylepointclouddepth-640x391.gif?500|Kyle McDonald's ofxKinect Depth of Field point cloud}}
+(:blog:2011:01:kylepointclouddepth-640x391.gif?500|Kyle McDonald's ofxKinect Depth of Field point cloud)
 
 Topics that will be addressed during the workshop:
  * What is openFrameworks? Who made it and what can you do with it?
@@ -38,7 +38,7 @@ This is a FREE workshop but a '[[http://en.wikipedia.org/wiki/Koha_(custom)|koha
 
 Please check [[http://bit.ly/openframeworks]] for possible updates.
 
-[[http://openframeworks.cc/gallery|{{:openframeworks.jpg|}}]]
+[[http://openframeworks.cc/gallery|(:openframeworks.jpg|)]]
 
 For inspiration and more examples visit the [[http://vimeo.com/tag:openframeworks|openFrameworks channel on Vimeo]].
 
@@ -46,6 +46,6 @@ An example OpenFrameworks project in Auckland: [[http://www.creativeapplications
 
 This workshop is an initiative from [[http://OpenToko.org]] and is hosted by [[http://www.colab.org.nz|CoLab]].
 
-{{tag>Art Tech Events}}
+(tag>Art Tech Events)
 
 ~~DISCUSSION~~

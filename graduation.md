@@ -1,7 +1,7 @@
 ---
 title: Graduation...
 ---
-[[http://maartenlamers.com/rick-vs-danica/|{{  http://maartenlamers.com/rick-vs-danica/boxingposter2.jpg?150}}]]Dit bericht schijnt rond te gaan in de Media Technology mailgangen...
+[[http://maartenlamers.com/rick-vs-danica/|(  http://maartenlamers.com/rick-vs-danica/boxingposter2.jpg?150)]]Dit bericht schijnt rond te gaan in de Media Technology mailgangen...
 
 <blockquote>
 Hi everyone,
@@ -15,7 +15,7 @@ You really have to follow this site, its hilarious!
 gr Joey</blockquote>
 
 
-{{tag>fun afstuderen study}}
+(tag>fun afstuderen study)
 
 
 ~~DISCUSSION~~

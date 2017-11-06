@@ -1,7 +1,7 @@
 ---
 title: Harig badeendje
 ---
-{{:blog:2011:02:duck512.gif|}}
+(:blog:2011:02:duck512.gif|)
 
 =====Processing code=====
 <html>
@@ -29,7 +29,7 @@ noFill<span style='color:#808030; '>(</span><span style='color:#808030; '>)</spa
 </pre>
 </html>
 
-{{tag>Programming Art}}
+(tag>Programming Art)
 
 
 ~~DISCUSSION~~

@@ -5,8 +5,8 @@ Hier in LOODS 6 op het Amsterdamse KNSM eiland wordt momenteel hard door ons geh
  
 Update 22-4-2008: De uitslag is bekend. We zijn 2e geworden met Happyard.
 
-{{blog:happyard-foto.jpg?550|Happyard}}
+(blog:happyard-foto.jpg?550|Happyard)
 
-{{tag>Projects}}
+(tag>Projects)
 
 ~~DISCUSSION~~

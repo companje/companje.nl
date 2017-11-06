@@ -1,7 +1,7 @@
 ---
 title: Media Tech Expo
 ---
-{{  :blog:ttext.png?200|}}New Media New Technology 2011
+(  :blog:ttext.png?200|)New Media New Technology 2011
 Open Lab Expo
 Tuesday May 31, 2011
 4pm-9pm.
@@ -14,7 +14,7 @@ De expo is niet een traditionele statische expositie, maar meer een dynamisch  â
 Nieuwsgierig? Kijk op [[http://www.nmnt.nl]] voor voorbeelden van projecten en op [[http://mediatechnology.leiden.edu/]] voor meer informatie over the MSc Media Technologie als opleiding voor Creative Research. 
 
 
-{{tag>Events Study Tech Art}}
+(tag>Events Study Tech Art)
 
 
 ~~DISCUSSION~~

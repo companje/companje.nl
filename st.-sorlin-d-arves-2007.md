@@ -1,5 +1,5 @@
 ---
 title: 
 ---
-{{youtube>large:ePSYvQ-0Ca4}}
-{{tag>Travel}}
+(youtube>large:ePSYvQ-0Ca4)
+(tag>Travel)

@@ -2,7 +2,7 @@
 title: Personal Digital Libraries and Collections
 ---
 ID: Beagrie (2005)
-PDF: {{afstuderen:beagrie-2005-personal-digital-libraries-and-collections.pdf|}}
+PDF: (afstuderen:beagrie-2005-personal-digital-libraries-and-collections.pdf|)
 
 ===== Summary =====
 *Two major trends ... 

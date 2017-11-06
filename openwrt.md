@@ -550,7 +550,7 @@ http://buildroot.uclibc.org/ is een losstaand project
 * http://csmatt.com/notes/?p=154
 
 ==serial pins on the mr3020==
-{{::mr3020-serial-pins.jpg?direct&450|}}
+(::mr3020-serial-pins.jpg?direct&450|)
 
 ==buttons on the mr3020==
 * http://wiki.openwrt.org/doc/howto/hardware.button
@@ -869,7 +869,7 @@ document.getElementById('txt').value = xmlhttp.responseText;
 echo "Content-type: text/plain"
 echo ""
 killall madplay -q
-eval $(echo "$QUERY_STRING"|awk -F'&' '{for(i=1;i<=NF;i++){print $i}}')
+eval $(echo "$QUERY_STRING"|awk -F'&' '{for(i=1;i<=NF;i++){print $i)')
 url=`uhttpd -d $url`
 wget -O - $url | madplay - & 
 echo "ok"
@@ -883,7 +883,7 @@ echo ""
 #echo "Content-type: text/plain"
 #echo ""
 read QUERY_STRING
-eval $(echo "$QUERY_STRING"|awk -F'&' '{for(i=1;i<=NF;i++){print $i}}')
+eval $(echo "$QUERY_STRING"|awk -F'&' '{for(i=1;i<=NF;i++){print $i)')
 cp index.html index.bak
 uhttpd -d $txt > index.html
 #cat index.html
@@ -970,7 +970,7 @@ echo "Content-type: text/plain"
 echo ""
 #echo $QUERY_STRING     
 #read QUERY_STRING                                                      
-eval $(echo "$QUERY_STRING"|awk -F'&' '{for(i=1;i<=NF;i++){print $i}}') 
+eval $(echo "$QUERY_STRING"|awk -F'&' '{for(i=1;i<=NF;i++){print $i)') 
 #txtOutput=`uhttpd -d $b`         
 echo $b > /dev/ttyACM0
 echo ""
@@ -1082,7 +1082,7 @@ http://www.madox.net/blog/2013/01/04/tl-wr703n-example-project-3-wireless-3d-pri
 echo "Content-type: text/plain"
 echo ""
 read QUERY_STRING
-eval $(echo "$QUERY_STRING"|awk -F'&' '{for(i=1;i<=NF;i++){print $i}}')
+eval $(echo "$QUERY_STRING"|awk -F'&' '{for(i=1;i<=NF;i++){print $i)')
 
 txtOutput=`uhttpd -d $txtOutput`
 echo $txtOutput > /tmp/file.txt
@@ -1561,7 +1561,7 @@ echo ""
 echo "Content-type: text/plain"
 echo ""
 #???? read QUERY_STRING
-eval $(echo "$QUERY_STRING"|awk -F'&' '{for(i=1;i<=NF;i++){print $i}}')
+eval $(echo "$QUERY_STRING"|awk -F'&' '{for(i=1;i<=NF;i++){print $i)')
 
 #escaped
 #echo $txtOutput

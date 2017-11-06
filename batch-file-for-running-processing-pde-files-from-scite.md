@@ -27,6 +27,6 @@ echo import processing.core.*; import java.applet.*; import java.awt.*; import j
 
 type *.pde >> %javafile%
 
-echo static public void main(String args[]) { PApplet.main(new String[] {"%className%" }); }}>> %javafile%
+echo static public void main(String args[]) { PApplet.main(new String[] {"%className%" }); )>> %javafile%
 
 javac %javafile% -classpath processing\lib

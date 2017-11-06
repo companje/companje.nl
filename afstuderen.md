@@ -36,7 +36,7 @@ Globe4D has – because of it's shape and interaction model – certain interfac
 
 
 
-{{tag>}}
+(tag>)
 
 
 ~~DISCUSSION~~
