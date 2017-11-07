@@ -3,15 +3,13 @@ layout: default
 title: ffmpeg
 ---
 
-====== FFMPEG ======
-
 =====image sequence / slideshow to gif====
-```
+```bash
 ffmpeg -i %d.png -s hd480 -y -filter:v "setpts=15*PTS" output.gif
 ```
 
 =====glob=====
-```
+```bash
 ffmpeg -pattern_type glob -i "2017-06-07/*.png" -vcodec mpeg4 -y -q:v 0 test.mp4
 ```
 
@@ -68,18 +66,18 @@ ffmpeg -i FILENAME -f null /dev/null
 </code>
 
 or add this to ```~/.bash_profile```
-<code bash>
+```bash
 _fps() {
     ffmpeg -i "$1" -f null /dev/null
 }
 alias fps=_fps
-</code>
+```
 
 =====set volume of audio=====
   ffmpeg -i input.wav -af "volume=0.5" output.wav
 
 =====gifenc (with speed)=====
-<code>
+```bash
 palette="/tmp/palette.png"
 speed=5
 
@@ -87,14 +85,14 @@ filters="fps=15,scale=800:-1:flags=lanczos,setpts=(1/$speed)*PTS"
 
 ffmpeg -v warning -i $1 -vf "$filters,palettegen" -y $palette
 ffmpeg -v warning -i $1 -i $palette -lavfi "$filters [x]; [x][1:v] paletteuse" -y $2
-</code>
+```
 
 =====calculate framerate to get a desired number of frames=====
 say you have 2500 frames. You want to get 300 frames. 2500/300=8.3. Use 8.3 as input framerate and use 1 as output framerate. (or 83 as input framerate and 10 as output framerate)
 
-  ffmpeg -r 8.3 -i input.mp4 -vcodec mpeg4 -q:v 0 -r 1 output.mp4 
+  ffmpeg -r 8.3 -i input.mp4 -vcodec mpeg4 -q:v 0 -r 1 output.mp4
 or
-  ffmpeg -r 83 -i input.mp4 -vcodec mpeg4 -q:v 0 -r 10 output.mp4 
+  ffmpeg -r 83 -i input.mp4 -vcodec mpeg4 -q:v 0 -r 10 output.mp4
 
 
 =====etc=====
@@ -127,10 +125,10 @@ ffmpeg -f concat -i list.txt -c copy output.mov
 =====create animated GIF from sequence and specify framerate=====
   ffmpeg -r 2 -i screen-%04d.tif -y kochcurve.gif
 more settings: http://superuser.com/questions/556029/how-do-i-convert-a-video-to-gif-using-ffmpeg-with-reasonable-quality/556031#556031
-  
+
 =====convert image sequence to movie=====
   ffmpeg -i output/frame%d.jpg -g 1 -y -q:v 0 -r 10  output.mp4
-  
+
 =====lossless skip first x seconds of mp3=====
   ffmpeg -ss 54 -i input.mp3 -acodec copy -y output.mp3
 
@@ -182,7 +180,7 @@ ffmpeg -i one-hand-with-sleeve.mpg -sameq -g 1 -f mov -vcodec qtrle -pix_fmt rgb
 
 *http://ffmpeg-users.933282.n4.nabble.com/Outputting-uncompressed-8-bit-4-2-2-MOV-td3264815.html
 <code winbatch>
-ffmpeg -i input.mov -vcodec rawvideo -pix_fmt uyvy422 -vtag 2vuy  uncompressed.mov 
+ffmpeg -i input.mov -vcodec rawvideo -pix_fmt uyvy422 -vtag 2vuy  uncompressed.mov
 </code>
 =====combine jpg's with existing mjpeg movie (on Windows)=====
 <code winbatch>
