@@ -37,4 +37,3 @@ excerpt: "Because no one likes to repeat things here's a compilation of answers 
 <hr />
 {% endfor %}
 
-{% include affiliate-disclosure.html %}
