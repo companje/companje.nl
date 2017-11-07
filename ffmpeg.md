@@ -61,9 +61,9 @@ Ook fijn als je een camera achter een router hebt zitten en je wel ergens een se
 -q:v 31 is lowest quality
 
 =====get / calculate number of frames=====
-<code bash>
+```bash
 ffmpeg -i FILENAME -f null /dev/null
-</code>
+```
 
 or add this to ```~/.bash_profile```
 ```bash
@@ -90,9 +90,9 @@ ffmpeg -v warning -i $1 -i $palette -lavfi "$filters [x]; [x][1:v] paletteuse" -
 =====calculate framerate to get a desired number of frames=====
 say you have 2500 frames. You want to get 300 frames. 2500/300=8.3. Use 8.3 as input framerate and use 1 as output framerate. (or 83 as input framerate and 10 as output framerate)
 
-  ffmpeg -r 8.3 -i input.mp4 -vcodec mpeg4 -q:v 0 -r 1 output.mp4
+  `ffmpeg -r 8.3 -i input.mp4 -vcodec mpeg4 -q:v 0 -r 1 output.mp4`
 or
-  ffmpeg -r 83 -i input.mp4 -vcodec mpeg4 -q:v 0 -r 10 output.mp4
+  `ffmpeg -r 83 -i input.mp4 -vcodec mpeg4 -q:v 0 -r 10 output.mp4`
 
 
 =====etc=====
