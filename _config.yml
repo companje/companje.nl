@@ -30,6 +30,8 @@ theme: minima
 
 # gems:
 
+include: ["_pages"]
+
 plugins:
   - jekyll-feed
   - jekyll-last-modified-at  
@@ -46,7 +48,8 @@ collections:
     output: true
     permalink: /:collection/:path/
     title: FAQs
-     
+
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
