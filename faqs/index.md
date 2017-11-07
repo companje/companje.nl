@@ -17,6 +17,7 @@ excerpt: "Because no one likes to repeat things here's a compilation of answers 
 <li><a href="{{ faq.url }}">{{ faq.title }}</a></li>
 {% endfor %}
   </ul>
+  
 <h4 class="toc__title">Paper by FiftyThree</h4>
   <ul class="toc__menu">
 {% for faq in paper_faqs %}
