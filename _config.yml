@@ -30,7 +30,7 @@ theme: minima
 
 # gems:
 
-include: ["_pages"]
+# include: ["_pages"]
 
 # Pages
 - scope:
