@@ -37,8 +37,8 @@ include: ["_pages"]
     path: _pages
     type: pages
   values:
-    layout: article
-    
+    layout: default
+
 plugins:
   - jekyll-feed
   - jekyll-last-modified-at  
