@@ -5,6 +5,6 @@ layout: post
 
 # Hallo
 
-```
+```b
 code
 ```
