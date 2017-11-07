@@ -40,7 +40,13 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
-      
+
+collections:
+  faqs:
+    output: true
+    permalink: /:collection/:path/
+    title: FAQs
+     
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
