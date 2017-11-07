@@ -31,8 +31,6 @@ theme: minima
 
 # gems:
 
-# include: ["_pages"]
-
 # Pages
 - scope:
     path: _pages
