@@ -71,9 +71,6 @@ uci commit
 wifi
 ```
 
-
-
-
 # Connect
 ```bash
 #root@OpenWrt:~# cat connect
