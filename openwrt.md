@@ -263,13 +263,13 @@ uci commit
 wifi
 ```
 
-avahi voorbeelden toevoegen voor Bonjour/zeroconf:
+# avahi voorbeelden toevoegen voor Bonjour/zeroconf:
 ```bash
 opkg update
 opkg install avahi-daemon-service-ssh avahi-daemon-service-http
 ```
 
-uhttpd installeren
+# uhttpd installeren
 ```bash
 opkg update
 opkg install uhttpd
@@ -278,14 +278,14 @@ mkdir /www/cgi-bin
 #plaats een cgi script zie companje.nl/openwrt
 ```
 
-wget
+# wget
 standaard zit er al wget op. dat zit in busybox. maar het ondersteund geen SSL.
 
-RAM
+# RAM
 tmpfs heeft ongeveer 13MB RAM vrij. dus wget zou in principe een bestand van die grootte moeten kunnen bewaren in /tmp. (getest met een GIFje, dat gaat goed). Maar beter wat ruimte overlaten.
 
-ser2net
-```
+# ser2net
+```bash
 opkg update
 opkg install ser2net
 #wat info hier: https://wiki.openwrt.org/doc/howto/fhem
