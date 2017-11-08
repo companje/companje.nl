@@ -1036,6 +1036,7 @@ config interface lan
         option ifname   'eth0 eth1'
         option proto    'dhcp'
 ```
+
 ```bash
 #/etc/config/wireless
 ...
