@@ -1695,7 +1695,7 @@ opkg install kmod-usb-acm
 By default everything that comes to WR703N serial port is echoed back. 
 If you also want to send commands to Arduino, the buffer will be full with echoed data. 
 Need to set no echo option in sstty. 
-```bash/usr/bin/stty -F /dev/ttyACM0 raw speed 115200 -echo```
+`bash/usr/bin/stty -F /dev/ttyACM0 raw speed 115200 -echo`
 
 Arduino is reset every time it is read by command "head"
 To disable reset by DTR pin add option to stty 
