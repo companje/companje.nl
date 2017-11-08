@@ -218,13 +218,13 @@ on pc:
 
 # How to transfer a file from OpenWrt to your computer in Failsafe mode
 On OpenWrt
-```
+```bash
 sysupgrade --create-backup /tmp/backup.tar.gz   # create the file
 nc 192.168.1.2 3333 < /tmp/backup.tar.gz        # push the file to the netcat server on your computer
 ```
 
 On your computer: 
-```
+```bash
 nc -l 192.168.1.2 3333 > backup.tar.gz          # run a server to receive the file from the router
 ```
 
