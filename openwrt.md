@@ -17,7 +17,6 @@ scp * wifibox:/etc/config/
 
 (also checkout `sysupgrade --create-backup /tmp/backup.tar.gz` It creates a tar with the contents of the whole `/etc` folder)
 
-
 # UCI show
 
 ```bash
