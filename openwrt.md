@@ -752,7 +752,7 @@ tar -C /tmp/cproot -cvf - . | tar -C /mnt/usb -xf -
 umount /tmp/cproot
 ```
 * mount the drive on boot by adding settings to `/etc/config/fstab`:
-<code>
+```bash
 cat >> /etc/config/fstab << EOF
 config mount
         option target        /
@@ -762,7 +762,7 @@ config mount
         option enabled       1
         option enabled_fsck  0
 EOF
-</code>
+```
 * reboot the device.
 * type `mount` to see if your usb drive (`/dev/sda1`) is mounted to `/`
 * use `df -h` to see the large amount of space available now!
