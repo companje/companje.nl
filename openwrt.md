@@ -249,7 +249,7 @@ make image PROFILE=TLMR3020 PACKAGES="kmod-usb-storage block-mount kmod-fs-ext4 
 
 # minimale aanpak
 verbind met internetverbinding van je router
-```
+```bash
 uci set network.lan.ipaddr=192.168.5.1
 uci delete wireless.@wifi-device[0].disabled #enable radio
 uci set wireless.@wifi-iface[0].network=wan
