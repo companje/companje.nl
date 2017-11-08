@@ -1578,7 +1578,7 @@ EOF
 ```
 
 
-==cat <<==
+# cat <<
 ```bash
 cat << EOM >> tmp.txt
 .... paste text here
@@ -1586,7 +1586,7 @@ EOM
 ```
 
 ==getting started==
-*http://wiki.xinchejian.com/wiki/Install_OpenWRT_on_TPlink_WR703N
+* http://wiki.xinchejian.com/wiki/Install_OpenWRT_on_TPlink_WR703N
 
 ==running in wifi client mode==
 ''/etc/config/network''
