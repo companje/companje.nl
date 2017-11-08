@@ -742,7 +742,7 @@ option proto 'dhcp'
 diskutil list
 diskutil unmount /dev/disk#s#
 #brew install e2fsprogs   
-$(brew --prefix e2fsprogs)/sbin/mkfs.ext4 /dev/disk#s#
+sudo $(brew --prefix e2fsprogs)/sbin/mkfs.ext4 /dev/disk#s#
 ```
 
 * connect the usb drive to the OpenWrt and type `block info` to get info about the block devices. Check if /dev/sda1 is listed.
