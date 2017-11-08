@@ -966,7 +966,7 @@ document.getElementById('txt').value = xmlhttp.responseText;
 </html>
 ```
 
-''cgi-bin/play:''
+## cgi-bin/play:
 ```bash
 #!/bin/sh
 echo "Content-type: text/plain"
