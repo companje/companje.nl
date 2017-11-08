@@ -1691,6 +1691,7 @@ opkg install kmod-usb-serial
 opkg install coreutils-stty 
 opkg install kmod-usb-acm
 ```
+
 By default everything that comes to WR703N serial port is echoed back. 
 If you also want to send commands to Arduino, the buffer will be full with echoed data. 
 Need to set no echo option in sstty. 
