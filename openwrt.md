@@ -1750,7 +1750,7 @@ scp jquery.mobile-1.0.1.zip root@192.168.1.47:/mnt/
 ```
 
 # create large file with zeros (10MB)
-```bash
+```
 dd if=/dev/zero of=/mnt/largefile bs=1024 count=10240
 ```
 
