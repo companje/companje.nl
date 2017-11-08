@@ -1690,6 +1690,7 @@ kmod-usb-acm - 2.6.32.16-1 - Kernel support for USB ACM devices (modems/isdn con
 opkg install kmod-usb-serial
 opkg install coreutils-stty 
 opkg install kmod-usb-acm
+```
 
 By default everything that comes to WR703N serial port is echoed back. 
 If you also want to send commands to Arduino, the buffer will be full with echoed data. 
