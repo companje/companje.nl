@@ -36,6 +36,14 @@ uci add_list firewall.@zone[1].network='wwan'
 uci set network.wwan=interface
 uci set network.wwan.proto=dhcp
 
+config wifi-iface
+        option  device  radio0
+        option  network lan
+        option  mode    ap
+        option  ssid    Doodle3D
+        option  encryption 'psk2' # not recommended for deployment
+        option  key 1234567890
+        
 uci commit
 wifi
 ```
