@@ -2,6 +2,17 @@
 title: OpenWrt
 ---
 
+# backup and restore config files
+a nice workflow seems to be to backup config files using scp when you've got a working setup.
+```bash
+scp wifibox:/etc/config/* .
+```
+then, when you can mess up everything (even reflashing the device) and then to restore the configuration just run:
+```bash
+scp * wifibox:/etc/config/
+```
+
+
 # UCI show
 ```bash
 
