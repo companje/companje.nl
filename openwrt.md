@@ -296,7 +296,7 @@ vi /etc/ser2net.conf
 ```
 
 eerst misschien nog driver voor USBserieel installeren:
-```
+```bash
 opkg install kmod-usb-acm
 ```
 vervolgens kun je als ser2net draait letterlijk via telnet ontvangen en versturen.
