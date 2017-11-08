@@ -980,7 +980,7 @@ echo ""
 ```
 
 ''cgi-bin/save''
-```bash>
+```bash
 #!/bin/sh
 #echo "Content-type: text/plain"
 #echo ""
@@ -996,7 +996,7 @@ echo ""
 ```
 
 ''stop''
-```bash>
+```bash
 #!/bin/sh
 echo "Content-type: text/plain"
 echo ""
@@ -1011,7 +1011,7 @@ echo ""
 ```
 
 # environment variables including hostname in cgi-bin
-```bash>
+```bash
 #!/bin/sh
 echo "Content-type: text/plain"
 echo ""
@@ -1130,7 +1130,7 @@ OFF: echo 0 >/sys/class/gpio/gpio8/value
 
 # flash existing openwrt install from remote
 create a shell script:
-```bash>
+```bash
 if [ $# -eq 1 ]; then
 	IMAGE=$1
 	FILENAME=`basename $IMAGE`
@@ -1140,10 +1140,10 @@ fi
 ```
 
 # restart uhttpd
-```bash>/etc/init.d/uhttpd restart```
+```bash/etc/init.d/uhttpd restart```
 
 # scp a doodle3d file to the box
-```bash>
+```bash
 scp /Users/rick/Documents/Doodle3D/3dprintserver/doodle3d-firmware/src/conf_defaults.lua wifibox:/usr/share/lua/wifibox/
 scp /Users/rick/Documents/Doodle3D/3dprintserver/doodle3d-firmware/src/util/* wifibox:/usr/share/lua/wifibox/util/
 ```
@@ -1179,7 +1179,7 @@ http://www.madox.net/blog/2013/01/04/tl-wr703n-example-project-3-wireless-3d-pri
 ```
 
 /www/cgi-bin/save.sh
-```bash>
+```bash
 #!/bin/sh
 echo "Content-type: text/plain"
 echo ""
@@ -1286,7 +1286,7 @@ config wifi-iface
 
 # start up script
 not finished....
-```bash>
+```bash
 #!/bin/sh /etc/rc.common
 START=99
 start() {
@@ -1297,12 +1297,12 @@ start() {
 # enable wireless
 By default the wireless is OFF. You can turn it on in the /etc/config/wireless by changing disabled 1 to disabled 0
 In UCI CLI you do this with:
-```bash>
+```bash
 uci set wireless.@wifi-device[0].disabled=0; uci commit wireless; wifi
 ```
 
 # scan script
-```bash>
+```bash
 ifconfig wlan0 down
 iw phy phy0 interface add scan0 type station
 ifconfig scan0 up
@@ -1312,7 +1312,7 @@ ifconfig wlan0 up
 ```
 
 # connect script
-```bash>
+```bash
 uci set wireless.@wifi-iface[0].ssid=$1
 uci set wireless.@wifi-iface[0].encryption=$2
 uci set wireless.@wifi-iface[0].key=$3
@@ -1323,7 +1323,7 @@ wifi
 ```
 
 # accesspoint script
-```bash>
+```bash
 uci set wireless.@wifi-iface[0].ssid=Doodle3D
 uci set wireless.@wifi-iface[0].encryption=none
 uci set wireless.@wifi-iface[0].key=''
@@ -1345,12 +1345,12 @@ wifi
 - wait a minute
 - telnet 192.168.1.1
 - you're in.
-```bash>
+```bash
 mount_root
 passwd
 ```
 to find out your ip:
-```bash>
+```bash
 uci get network.lan.ipaddr
 ```
 * more info: http://wiki.openwrt.org/doc/howto/generic.failsafe#in.failsafe.mode
@@ -1410,7 +1410,7 @@ uci commit dhcp
 ```
 
 # wifi scan and show in list
-```bash>
+```bash
 #!/bin/sh
 echo "Content-type: text/plain"
 echo ""
@@ -1454,16 +1454,16 @@ iwlist wlan0 scan | grep ESSID  | cut -c 27- | tr -d '"'
 
 # cross compile on Mac
 Create case sensitive HFS:
-```bash>
+```bash
 hdiutil create -size 15g -fs "Case-sensitive HFS+" -volname OpenWRT ~/OpenWRT.sparsebundle
 hdiutil attach OpenWRT.sparsebundle 
 ```
 Checkout OpenWRT source:
-```bash>
+```bash
 cd /Volumes/OpenWRT && svn co svn://svn.openwrt.org/openwrt/trunk/;
 ```
 Run 'feeds update' script:
-```bash>
+```bash
 cd trunk; scripts/feeds update -a
 ```
 selfupdate & subversion
@@ -1471,7 +1471,7 @@ selfupdate & subversion
 sudo port -v selfupdate; sudo port install subversion
 ```
 install dependencies:
-```bash>
+```bash
 sudo port install coreutils e2fsprogs ossp-uuid asciidoc binutils bzip2 fastjar flex getopt gtk2 intltool jikes \ zlib openssl p5-extutils-makemaker python26 rsync ruby sdcc unzip gettext libxslt bison gawk autoconf wget \ gmake ncurses findutils
 ```
 make menu
@@ -1645,7 +1645,7 @@ echo $$
 
 # cgi
 * http://wiki.openwrt.org/doc/howto/http.httpd
-```bash>
+```bash
 #!/bin/sh
 echo "Content-type: text/html"
 echo ""
@@ -1658,7 +1658,7 @@ echo ""
 ```
 
 # cgi script extracting POST variables
-```bash>
+```bash
 #!/bin/sh
 echo "Content-type: text/plain"
 echo ""
@@ -1678,7 +1678,7 @@ Alleen ''opkg install kmod-usb-acm'' lijkt nodig.
 
 *http://wiki.acemonstertoys.org/Tp-link_router
 *http://lectroleevin.wordpress.com/2011/10/26/arduino-openwrt-usb-connection/
-```bash>
+```bash
 opkg update
 opkg install coreutils-stty 
 opkg install kmod-usb-serial
@@ -1705,7 +1705,7 @@ cat /dev/ttyACM0
 ```
 
 # sh scripting for serial
-```bash>
+```bash
 #!/bin/sh                                                                    
 echo "Content-type: text/html"                                               
 echo ""                                                                      
