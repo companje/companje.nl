@@ -399,7 +399,7 @@ probably because trying to install a package compiled on 15.05 to a 14.07.
 tutorial: https://manoftoday.wordpress.com/2007/10/11/writing-and-compiling-a-simple-program-for-openwrt/
 
 (different snippets)
-```
+```bash
 ./scripts/feeds update customfeeds
 ./scripts/feeds install up3dload
 
