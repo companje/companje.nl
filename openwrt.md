@@ -751,7 +751,7 @@ sudo $(brew --prefix e2fsprogs)/sbin/mkfs.ext4 /dev/disk#s#
 * create a folder to mount the drive to `mkdir /mnt/usb`
 * mount sda1 to the new folder `mount /dev/sda1 /mnt/usb`
 * (if you get a Segmentation Fault reboot the box first)
-* (if you get an 'Invalid Argument'... then what?)
+* (if you get an 'Invalid Argument'... then check if ext4 is listed in `cat /proc/filesystems`. If not then probably something went wrong while installing kmod-fs-ext4, out of diskspace for example.)
 * copy all files on the device to the usb drive:
 
 ```bash
