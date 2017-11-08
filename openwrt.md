@@ -88,11 +88,11 @@ uci commit
 wifi
 ```
 
-# ===loglite voor wifibox===
+# loglite voor wifibox
 firmware / web server  api logs: `cat /tmp/wifibox.log | loglite`
 print3d logs: `cat /tmp/print3d-ttyACM0.log | loglite`
 
-# ===auto flash wifibox===
+# auto flash wifibox
 ```bash
 #!/bin/bash
 
@@ -121,7 +121,7 @@ scp "$2" root@$host:/tmp/
 ssh root@$host sysupgrade -v /tmp/$(basename $2)
 ```
 
-# ===install doodle3d-client in docker container===
+# install doodle3d-client in docker container
 ```bash
 scripts/feeds update customfeeds
 scripts/feeds install doodle3d-client
@@ -133,7 +133,7 @@ cp -r bin /home/openwrt/shared/
 ```
 but check also [[https://github.com/Doodle3D/openwrt-buildroot/blob/master/dockerfile/Build.sh|build.sh]]
    
-# ===wifibox .profile===
+# wifibox .profile
 ```bash
 root@wifibox:~# cat .profile
 # DO NOT MODIFY - this block of lines has been added by the wifibox package.
