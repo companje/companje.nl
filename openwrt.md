@@ -2,6 +2,29 @@
 title: OpenWrt
 ---
 
+=====AP+STA=====
+```bash
+#root@OpenWrt:~# cat connect
+set -x
+uci set network.lan.ipaddr=192.168.5.1
+uci delete wireless.@wifi-device[0].disabled #enable radio
+uci set wireless.@wifi-iface[0].network=wan
+uci set wireless.@wifi-iface[0].mode=sta
+uci set wireless.@wifi-iface[0].ssid="Vechtclub XL F1.19"
+uci set wireless.@wifi-iface[0].key=XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+uci set wireless.@wifi-iface[0].encryption=psk2
+uci set network.wan=interface
+uci set network.wan.proto=dhcp #get ip from router
+
+uci set dhcp.@dnsmasq[0].rebind_protection=0
+
+uci commit
+wifi
+```
+
+
+
+
 =====connect=====
 ```bash
 #root@OpenWrt:~# cat connect
