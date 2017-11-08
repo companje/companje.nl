@@ -1699,7 +1699,6 @@ Need to set no echo option in sstty.
 
 Arduino is reset every time it is read by command "head"
 To disable reset by DTR pin add option to stty 
-```bash-hupcl```
 
 ```bash
 /usr/bin/stty -F /dev/ttyACM0 raw speed 115200 -echo
