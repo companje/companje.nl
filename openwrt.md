@@ -332,7 +332,7 @@ uci commit dhcp
 
 # add custom Bonjour/mDNS/zeroconf etc service
 /etc/avahi/services/3dprint.service
-<code xml>
+```xml
 <?xml version="1.0" standalone='no'?><!--*-nxml-*-->
 <!DOCTYPE service-group SYSTEM "avahi-service.dtd">
 <service-group>
@@ -343,6 +343,7 @@ uci commit dhcp
   </service>
 </service-group>
 ```
+
 /etc/init.d/avahi-daemon reload
 
 # discussion about doodle3d network module
