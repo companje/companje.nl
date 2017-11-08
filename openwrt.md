@@ -958,7 +958,7 @@ document.getElementById('txt').value = xmlhttp.responseText;
 ```
 
 ''cgi-bin/play:''
-```bash>
+```bash
 #!/bin/sh
 echo "Content-type: text/plain"
 echo ""
