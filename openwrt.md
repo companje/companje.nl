@@ -926,7 +926,7 @@ function get(url) {
 ```
 
 ''edit.html''
-```html>
+```html
 
 <html>
 <body>
