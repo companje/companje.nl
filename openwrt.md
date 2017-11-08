@@ -732,23 +732,25 @@ option proto 'dhcp'
 * `opkg install block-mount kmod-usb-storage kmod-fs-ext4`
 * in case you get this error: `kmod: failed to insert /lib/modules/3.10.49/ext4.ko` reboot your OpenWRT device
 * on your computer setup a ext3 or ext4 filesystem on a USB drive
-<code>
+
+```bash
 diskutil list
 diskutil unmount /dev/disk#s#
 #brew install e2fsprogs   
 sudo /usr/local/opt/e2fsprogs/sbin/mkfs.ext4/mkfs.ext4 /dev/disk#s#              
-</code>
+```
+
 * connect the usb drive to the OpenWrt and type `block info` to get info about the block devices. Check if /dev/sda1 is listed.
 * create a folder to mount the drive to `mkdir /mnt/usb`
 * mount sda1 to the new folder `mount /dev/sda1 /mnt/usb`
 * (if you get a Segmentation Fault reboot the box first)
 * copy all files on the device to the usb drive:
-<code>
+```bash
 mkdir -p /tmp/cproot
 mount --bind / /tmp/cproot
 tar -C /tmp/cproot -cvf - . | tar -C /mnt/usb -xf -
 umount /tmp/cproot
-</code>
+```
 * mount the drive on boot by adding settings to `/etc/config/fstab`:
 <code>
 cat >> /etc/config/fstab << EOF
