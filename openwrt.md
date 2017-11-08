@@ -745,13 +745,16 @@ sudo /usr/local/opt/e2fsprogs/sbin/mkfs.ext4/mkfs.ext4 /dev/disk#s#
 * mount sda1 to the new folder `mount /dev/sda1 /mnt/usb`
 * (if you get a Segmentation Fault reboot the box first)
 * copy all files on the device to the usb drive:
+
 ```bash
 mkdir -p /tmp/cproot
 mount --bind / /tmp/cproot
 tar -C /tmp/cproot -cvf - . | tar -C /mnt/usb -xf -
 umount /tmp/cproot
 ```
+
 * mount the drive on boot by adding settings to `/etc/config/fstab`:
+
 ```bash
 cat >> /etc/config/fstab << EOF
 config mount
@@ -763,6 +766,7 @@ config mount
         option enabled_fsck  0
 EOF
 ```
+
 * reboot the device.
 * type `mount` to see if your usb drive (`/dev/sda1`) is mounted to `/`
 * use `df -h` to see the large amount of space available now!
