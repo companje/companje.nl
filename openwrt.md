@@ -716,10 +716,12 @@ http://wiki.openwrt.org/doc/techref/ubus#access_to_ubus_over_http
 * `vi /etc/config/network`
 * optional: choose another static ipaddress for the LAN connection (for example 192.168.5.1)
 * add an interface for wlan setting the protocol to dhcp 
+
 ```
 config interface wlan
 option proto 'dhcp'
 ```
+
 * exit vi (`ESC`, `:`, `w`, `q`)
 * `vi /etc/config/wireless`
 * remove the `disabled` option (in vi use `dd` to remove a line)
