@@ -264,13 +264,13 @@ wifi
 ```
 
 avahi voorbeelden toevoegen voor Bonjour/zeroconf:
-```
+```bash
 opkg update
 opkg install avahi-daemon-service-ssh avahi-daemon-service-http
 ```
 
 uhttpd installeren
-```
+```bash
 opkg update
 opkg install uhttpd
 echo hoi > /www/index.html
