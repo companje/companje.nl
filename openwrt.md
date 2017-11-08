@@ -2,13 +2,19 @@
 title: OpenWrt
 ---
 
-# UCI
+# UCI show
 ```bash
+
 uci show firewall
 #result:
 #  firewall.@defaults[0]=defaults
 #  ...
-#  firewall.@zone[1].network='wan' 'wan6' 'wwan'
+#  firewall.@zone[1].network='wan' 'wan6' 'wwan'    #this is called a list
+```
+
+# UCI add_list
+```bash
+uci add_list firewall.@zone[1].network='TEST'
 ```
 
 # AP+STA
