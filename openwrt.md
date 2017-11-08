@@ -751,6 +751,7 @@ sudo $(brew --prefix e2fsprogs)/sbin/mkfs.ext4 /dev/disk#s#
 * create a folder to mount the drive to `mkdir /mnt/usb`
 * mount sda1 to the new folder `mount /dev/sda1 /mnt/usb`
 * (if you get a Segmentation Fault reboot the box first)
+* (if you get an 'Invalid Argument'... ?)
 * copy all files on the device to the usb drive:
 
 ```bash
