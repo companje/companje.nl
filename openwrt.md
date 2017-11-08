@@ -2,7 +2,16 @@
 title: OpenWrt
 ---
 
-=====AP+STA=====
+# UCI
+```bash
+uci show firewall
+#result:
+#  firewall.@defaults[0]=defaults
+#  ...
+#  firewall.@zone[1].network='wan' 'wan6' 'wwan'
+```
+
+# AP+STA
 ```bash
 #root@OpenWrt:~# cat connect
 set -x
@@ -25,7 +34,7 @@ wifi
 
 
 
-=====connect=====
+# Connect
 ```bash
 #root@OpenWrt:~# cat connect
 set -x
