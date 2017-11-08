@@ -461,7 +461,6 @@ sysupgrade -v- n /tmp/openwrt….squashfs-sysupgrade.bin
 * Er was nog een probleem met dat er iets niet geconfigureerd was als je het gemaakte image op een wifibox plaatste. Volgens mij werd de print3d niet automatisch opgestart of herstart. inotify ging niet goed ofzo omdat dat een SETTING was ipv een DEPENDENCY.
 
 
-
 # ch340 driver info
 http://www.ibuyopenwrt.com/index.php/8-yun-compatible/146-usb-serial-adapter-ch340
 
