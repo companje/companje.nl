@@ -866,6 +866,7 @@ make[2]: Leaving directory /Users/rick/Documents/VechtclubXL/door-bell
 make[1]: *** [package/feeds/bell/door-bell/compile] Error 2
 make[1]: Leaving directory /Volumes/OpenWRT/trunk'
 ```
+
 in our case the folder-name containing the package did not match the package name.
 
 # while adding packages: Ignoring feed 'bell' - index missing
