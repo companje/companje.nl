@@ -15,6 +15,8 @@ then you can mess up everything (even reflashing the device) and then to restore
 scp * wifibox:/etc/config/
 ```
 
+(also checkout `sysupgrade --create-backup /tmp/backup.tar.gz` It creates a tar with the contents of the whole `/etc` folder)
+
 
 # UCI show
 
