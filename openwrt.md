@@ -996,7 +996,7 @@ echo ""
 echo ""
 ```
 
-''stop''
+## stop
 ```bash
 #!/bin/sh
 echo "Content-type: text/plain"
