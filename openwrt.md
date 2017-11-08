@@ -3,7 +3,7 @@ title: OpenWrt
 ---
 
 =====connect=====
-```ini
+```
 #root@OpenWrt:~# cat connect
 set -x
 uci set network.lan.ipaddr=192.168.5.1
