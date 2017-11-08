@@ -300,7 +300,7 @@ maar ja.. je wil het liefst een groot bestand in stukje gaan binnenhalen vanaf h
 
 
 ==minimal settings for internet and lan==
-<code>
+```bash
 uci set network.lan.ipaddr=192.168.5.1
 uci delete wireless.@wifi-device[0].disabled #enable radio
 uci set wireless.@wifi-iface[0].network=wan
@@ -311,7 +311,7 @@ uci set wireless.@wifi-iface[0].encryption=psk2
 uci set network.wan=interface 
 uci set network.wan.proto=dhcp #get ip from router
 uci commit
-</code>
+```
 
 ==settings from Doodle3D WiFi-Box==
 * [[https://gist.github.com/companje/c2cc92a513bd5aae5f0ec54aaefded60#file-wireless|/etc/config/wireless]]
@@ -321,11 +321,11 @@ uci commit
 
 ==Disabling default route and DNS server for lan network interface==
 This way you don't have to set the order of WiFi and Ethernet.
-<code>
+```bash
 uci set dhcp.lan.dhcp_option='3 6'
 uci commit dhcp
 /etc/init.d/dnsmasq reload
-</code>
+```
 
 ==add custom Bonjour/mDNS/zeroconf etc service==
 /etc/avahi/services/3dprint.service
@@ -339,7 +339,7 @@ uci commit dhcp
    <port>80</port>
   </service>
 </service-group>
-</code>
+```
 /etc/init.d/avahi-daemon reload
 
 ==discussion about doodle3d network module==
@@ -457,7 +457,7 @@ http://www.ibuyopenwrt.com/index.php/8-yun-compatible/146-usb-serial-adapter-ch3
 
 ==updated sources list for barrier_breaker==
 `/etc/opkg.conf`
-<code>
+```bash
 dest root /
 dest ram /tmp
 lists_dir ext /var/opkg-lists
@@ -469,7 +469,7 @@ src/gz barrier_breaker_packages http://downloads.openwrt.org/barrier_breaker/14.
 src/gz barrier_breaker_routing http://downloads.openwrt.org/barrier_breaker/14.07/ar71xx/generic/packages/routing
 src/gz barrier_breaker_luci http://downloads.openwrt.org/barrier_breaker/14.07/ar71xx/generic/packages/luci
 src/gz barrier_breaker_management http://downloads.openwrt.org/barrier_breaker/14.07/ar71xx/generic/packages/managemen
-</code>
+```
 
 ==set baudrate in uboot==
 http://www.denx.de/wiki/view/DULG/UBootEnvVariables: baudrate: a decimal number that selects the console baudrate (in bps). Only a predefined list of baudrate settings is available. 
@@ -484,7 +484,7 @@ If no "baudrate" variable is defined, the default baudrate of 115200 is used.
 
 ==Allow SSH on WAN interface==
 Add to /etc/config/firewall
-<code>
+```bash
 config rule
         option name             allow-SSH-wan
         option src              wan
@@ -492,13 +492,13 @@ config rule
         option dest_port        22
         option target           ACCEPT
         option family           ipv4
-</code>
+```
 restart firewall service
   /etc/init.d/firewall reload
 
 ==Allow HTTP on WAN interface==
 Add to /etc/config/firewall
-<code>
+```bash
 config rule
         option name             allow-HTTP-wan
         option src              wan
@@ -506,7 +506,7 @@ config rule
         option dest_port        80
         option target           ACCEPT
         option family           ipv4
-</code>
+```
 restart firewall service
   /etc/init.d/firewall reload
 
@@ -538,7 +538,7 @@ https://wireless.wiki.kernel.org/en/users/Documentation/iw
 * https://github.com/openwrt-mirror/openwrt/
 
 ==setup wireless AccessPoint & connect as a station to an existing WiFi network (simultaneously)==
-<code>
+```bash
 # remove default OpenWrt AccessPoint
 uci delete wireless.@wifi-device[0].disabled
 uci delete wireless.@wifi-iface[0]
@@ -568,7 +568,7 @@ uci set network.lan.ipaddr=192.168.10.1
 
 # Save settings
 uci commit
-</code>
+```
 
 ==restore from rom==
 `mtd -r erase rootfs_data`
@@ -576,12 +576,12 @@ better solution: `firstboot`
 
 ==uci defaults==
 create `/etc/uci-defaults/my-uci-defaults`. It will be executed once when the router boots. When it exits with 0 the file will be deleted.
-<code>
+```bash
 #!/bin/sh
 uci set network.lan.ipaddr=192.168.5.1
 uci commit network
 exit 0
-</code>
+```
 
 ==AP+STA tegelijk==
 * [[https://www.gargoyle-router.com/gargoyle/projects/gargoyle/repository/revisions/master/entry/patches-generic/04-arpnat.patch|Gargoyle patch]]
@@ -618,10 +618,10 @@ http://buildroot.uclibc.org/ is een losstaand project
 
 ==openwrt sdk==
 * http://wiki.openwrt.org/doc/howto/obtain.firmware.sdk
-<code>
+```bash
 ./scripts/feeds update
 ./scripts/feeds install -a
-</code>
+```
 
 ==image generator / imagebuilder==
 * http://wiki.openwrt.org/doc/howto/obtain.firmware.generate
@@ -639,17 +639,17 @@ http://buildroot.uclibc.org/ is een losstaand project
 * http://wiki.openwrt.org/doc/howto/hardware.button
 * change network settings with slider switch: http://www.linux-magazine.com/Online/Features/The-One-Watt-Server
 
-<code>
+```bash
 opkg update
 opkg install kmod-button-hotplug --force-depends
 mkdir /etc/hotplug.d/button
-</code>
+```
 create a file `/etc/hotplug.d/button/my-script` with your script:
-<code>
+```bash
 #!/bin/sh
 sleep 1
 logger "log: $BUTTON -- $ACTION  -- $SEEN"
-</code>
+```
 
 ==luci2==
 * http://wiki.openwrt.org/doc/techref/luci2
@@ -840,19 +840,19 @@ do
    fi
    sleep 1
 done
-</code>
+```
 
 ==building==
 * http://www.doodle3d.com/help/wiki/building-openwrt-wifibox
 
 ==error building package==
-<code>
+```bash
 make[3]: *** No targets specified and no makefile found.  Stop.
 make[2]: *** [/Volumes/OpenWRT/trunk/build_dir/target-mips_34kc_uClibc-0.9.33.2/bell/.built] Error 2
 make[2]: Leaving directory `/Users/rick/Documents/VechtclubXL/door-bell'
 make[1]: *** [package/feeds/bell/door-bell/compile] Error 2
 make[1]: Leaving directory `/Volumes/OpenWRT/trunk'
-</code>
+```
 in our case the folder-name containing the package did not match the package name.
 
 ==while adding packages: Ignoring feed 'bell' - index missing==
@@ -865,23 +865,23 @@ instead of:
 * http://www.linux-magazine.com/Online/Features/The-One-Watt-Server
 
 ==opkg update fails==
-<code>
+```bash
 ~# opkg update
 Downloading http://downloads.openwrt.org/snapshots/trunk/ar71xx/packages/Packages.gz.
 wget: server returned error: HTTP/1.1 404 Not Found
 Collected errors:
 * opkg_download: Failed to download http://downloads.openwrt.org/snapshots/trunk/ar71xx/packages/Packages.gz, wget returned 1.
-</code>
+```
 solution:
 In a live Openwrt system, the last lines in /etc/opkg.conf should be:
-<code>
+```bash
 src/gz chaos_calmer_base http://downloads.openwrt.org/snapshots/trunk/ar71xx/packages/base
 src/gz chaos_calmer_luci http://downloads.openwrt.org/snapshots/trunk/ar71xx/packages/luci
 src/gz chaos_calmer_management http://downloads.openwrt.org/snapshots/trunk/ar71xx/packages/management
 src/gz chaos_calmer_packages http://downloads.openwrt.org/snapshots/trunk/ar71xx/packages/packages
 src/gz chaos_calmer_routing http://downloads.openwrt.org/snapshots/trunk/ar71xx/packages/routing
 src/gz chaos_calmer_telephony http://downloads.openwrt.org/snapshots/trunk/ar71xx/packages/telephony
-</code>
+```
 instead of that one line  src/gz something
   http://downloads.openwrt.org/snapshots/trunk/ar71xx/packages/Packages.gz  )
 
@@ -918,7 +918,7 @@ function get(url) {
   xmlhttp.send();
 }
 </script>
-</code>
+```
 
 ''edit.html''
 <code html>
@@ -950,7 +950,7 @@ document.getElementById('txt').value = xmlhttp.responseText;
 
 </body>
 </html>
-</code>
+```
 
 ''cgi-bin/play:''
 <code bash>
@@ -964,7 +964,7 @@ wget -O - $url | madplay - &
 echo "ok"
 echo ""
 echo ""
-</code>
+```
 
 ''cgi-bin/save''
 <code bash>
@@ -980,7 +980,7 @@ echo "Status: 301 Moved"
 echo "Location: /"                   
 echo ""                            
 echo ""
-</code>
+```
 
 ''stop''
 <code bash>
@@ -990,12 +990,12 @@ echo ""
 killall madplay -q
 echo ""
 echo ""
-</code>
+```
 
 ==FAT-fs (sda1): IO charset iso8859-1 not found (while mounting a usb device)==
-<code>
+```bash
 /sbin/insmod nls_iso8859-1
-</code>
+```
 
 ==environment variables including hostname in cgi-bin==
 <code bash>
@@ -1005,24 +1005,24 @@ echo ""
 export                                                              
 echo ""                                                             
 echo ""  
-</code>
+```
 
 ==uci==
-<code>
+```bash
 uci show
-</code>
+```
 
 ==create a dumb AP==
 * http://wiki.openwrt.org/doc/recipes/dumbap
-<code>
+```bash
 #/etc/config/network
 ...
 config interface lan
         option type     'bridge'
         option ifname   'eth0 eth1'
         option proto    'dhcp'
-</code>
-<code>
+```
+```bash
 #/etc/config/wireless
 ...
 config wifi-iface
@@ -1031,7 +1031,7 @@ config wifi-iface
         option mode     ap
         option ssid     OpenWrt
         option encryption none
-</code>
+```
 
 ==authorized keys instructions with dropbear==
 * put your public key string in '''/etc/dropbear/authorized_keys'''
@@ -1053,7 +1053,7 @@ draait geen OpenWrt maar kan wel als Arduino shield gebruikt worden:
 http://hackanerd.wordpress.com/2013/07/06/how-to-make-a-simple-arduino-wireless-shield/
 
 ==cgi-bin read GET QueryString==
-<code>
+```bash
 #!/bin/sh
 echo "Content-type: text/plain"
 echo ""
@@ -1064,14 +1064,14 @@ eval $(echo "$QUERY_STRING"|awk -F'&' '{for(i=1;i<=NF;i++){print $i)')
 echo $b > /dev/ttyACM0
 echo ""
 echo ""
-</code>
+```
 
 ==arduino connected to internal serial port==
 http://www.martinmelchior.be/2013/07/use-tp-link-tl-wr703n-to-send-arduino.html?m=1
 
 ==wifi settings==
 /etc/config/wireless:
-<code>
+```bash
 config wifi-device  radio1
 	option type     mac80211
 	option channel  11
@@ -1090,13 +1090,13 @@ config wifi-iface
 	option ssid     Globe4D
 	option encryption psk2
 	option key	.........
-</code>
+```
 
 ==toggle USB power on MR3020==
-<code>
+```bash
 ON: echo 1 >/sys/class/gpio/gpio8/value
 OFF: echo 0 >/sys/class/gpio/gpio8/value
-</code>
+```
 
 ==voip on openwrt==
 * the packages sipp & sipsak for OpenWRT
@@ -1124,33 +1124,33 @@ if [ $# -eq 1 ]; then
 	scp $IMAGE root@wifibox:/tmp
 	ssh -t root@wifibox "sysupgrade -v -n /tmp/$FILENAME"
 fi 
-</code>
+```
 
 ==restart uhttpd==
-<code bash>/etc/init.d/uhttpd restart</code>
+<code bash>/etc/init.d/uhttpd restart```
 
 ==scp a doodle3d file to the box==
 <code bash>
 scp /Users/rick/Documents/Doodle3D/3dprintserver/doodle3d-firmware/src/conf_defaults.lua wifibox:/usr/share/lua/wifibox/
 scp /Users/rick/Documents/Doodle3D/3dprintserver/doodle3d-firmware/src/util/* wifibox:/usr/share/lua/wifibox/util/
-</code>
+```
 
 ==stop a (doodle3d) process and start manually in verbose mode==
-<code>
+```bash
 /etc/init.d/print3d stop
 print3d -v
-</code>
+```
 
 ==updating firmware==
 local: 
-<code>
+```bash
 scp openwrt-ar71xx-generic-tl-mr3020-v1-squashfs-sysupgrade.bin root@192.168.5.1:/tmp
-</code>
+```
 remote:
-<code>
+```bash
 mtd -r write openwrt-ar71xx-generic-tl-mr3020-v1-squashfs-sysupgrade.b
 in firmware
-</code>
+```
 
 ==usb over IP==
 check if this works:
@@ -1163,7 +1163,7 @@ http://www.madox.net/blog/2013/01/04/tl-wr703n-example-project-3-wireless-3d-pri
 <textarea name="txtOutput" rows=50 cols=100></textarea>
 <input type="submit">
 </form>
-</code>
+```
 
 /www/cgi-bin/save.sh
 <code bash>
@@ -1178,7 +1178,7 @@ echo $txtOutput > /tmp/file.txt
 
 echo ""
 echo ""
-</code>
+```
 
 ==automatic install OpenWrt firmware on TPLink MR3020==
 * http://wiki.openwrt.org/toh/tp-link/tl-mr3020#oem.mass.flashing
@@ -1188,9 +1188,9 @@ echo ""
 * (http://ediy.com.my/index.php/blog/item/51-tp-link-tl-mr3020-restore-from-openwrt-to-original-firmware)
 
 ==get mac address==
-<code>
+```bash
 ifconfig wlan0 | awk '/HWaddr/ { print $5 }'
-</code>
+```
 
 ==replace dropbear by open-ssh-server==
 * http://wiki.openwrt.org/inbox/replacingdropbearbyopensshserver
@@ -1199,35 +1199,35 @@ ifconfig wlan0 | awk '/HWaddr/ { print $5 }'
 * http://wiki.openwrt.org/doc/uci/fstab
 
 in /etc/config/fstab
-<code>
+```bash
 config 'mount'
         option 'target'   '/mnt'
         option 'device'   '/dev/sda1'
         option 'fstype'   'ext2'
         option 'enabled'  '1'
         option 'enabled_fsck' '0'
-</code>
+```
 
 ==on osx to prepare a ext2 usbstick==
-<code>
+```bash
 locate mke2fs
 diskutil list
 diskutil unmount /dev/disk{...}
 mke2fs /dev/disk{...}
 mkfs.ext2 /dev/disk{...}
-</code>
+```
 (not tested: or install ''http://garr.dl.sourceforge.net/project/fuse-ext2/fuse-ext2/fuse-ext2-0.0.7/fuse-ext2-0.0.7.dmg'' and use the Mac OSX Disk Utility to erase the usb-drive using fuse-ext2)
 
 
 ==logread==
 follow log file
-<code>
+```bash
 logread -f
-</code>
+```
 
 ==network/wireless config files gemaakt op ohm2013==
 /etc/config/network
-<code>
+```bash
 config interface 'loopback'
 option ifname 'lo'
 option proto 'static'
@@ -1245,10 +1245,10 @@ config interface 'wan'
 option _orig_ifname 'wlan0'
 option _orig_bridge 'false'
 option proto 'dhcp'
-</code>
+```
 
 /etc/config/wireless
-<code>
+```bash
 config wifi-device  radio1
 	option type     mac80211
 	option channel  11
@@ -1269,7 +1269,7 @@ config wifi-iface
 	option ssid     OHM2013
 	option proto	dhcp
 	option encryption none
-</code>
+```
 
 ==start up script==
 not finished....
@@ -1279,14 +1279,14 @@ START=99
 start() {
         /Doodle3D/Doodle3D > /dev/null 2> /dev/null &
 }
-</code>
+```
 
 ==enable wireless==
 By default the wireless is OFF. You can turn it on in the /etc/config/wireless by changing disabled 1 to disabled 0
 In UCI CLI you do this with:
 <code bash>
 uci set wireless.@wifi-device[0].disabled=0; uci commit wireless; wifi
-</code>
+```
 
 ==scan script==
 <code bash>
@@ -1296,7 +1296,7 @@ ifconfig scan0 up
 iwlist scan0 scan | grep ESSID  | cut -c 27- | tr -d '"'
 iw dev scan0 del
 ifconfig wlan0 up
-</code>
+```
 
 ==connect script==
 <code bash>
@@ -1307,7 +1307,7 @@ uci set wireless.@wifi-iface[0].mode=sta
 uci set wireless.@wifi-iface[0].network=wan
 uci commit wireless
 wifi
-</code>
+```
 
 ==accesspoint script==
 <code bash>
@@ -1318,7 +1318,7 @@ uci set wireless.@wifi-iface[0].mode=ap
 uci set wireless.@wifi-iface[0].network=lan
 uci commit wireless
 wifi
-</code>
+```
 
 ==scan for wireless networks==
 * http://wiki.openwrt.org/doc/faq/faq.wireless#how.to.scan.for.wireless.networks
@@ -1335,20 +1335,20 @@ wifi
 <code bash>
 mount_root
 passwd
-</code>
+```
 to find out your ip:
 <code bash>
 uci get network.lan.ipaddr
-</code>
+```
 * more info: http://wiki.openwrt.org/doc/howto/generic.failsafe#in.failsafe.mode
 
 ==Regenerate Wireless Configuration==
 To rebuild the configuration file, e.g. after installing a new wireless driver, remove the existing wireless configuration (if any) and use the wifi detect command with stdout redirected to the /etc/config/wireless file:
 
-<code>
+```bash
 rm -f /etc/config/wireless
 wifi detect > /etc/config/wireless
-</code>
+```
 
 ==bootstrap skin for OpenWrt by nut&bolt==
 * download and install the 'luci-theme-bootstrap' package
@@ -1361,7 +1361,7 @@ wifi detect > /etc/config/wireless
 * http://wiki.openwrt.org/doc/uci/network
 * http://wiki.openwrt.org/doc/uci/wireless
 more from [[https://code.google.com/p/afrimesh/wiki/HowToBatmanAdvanced|batman]]
-<code>
+```bash
 uci delete wireless.wifi0.disabled
 uci delete wireless.@wifi-iface[0].network
 uci set wireless.wifi0.channel=1
@@ -1383,18 +1383,18 @@ uci set network.bat0.proto=none
 uci set network.bat0.mtu=1500
 uci set batman-adv.bat0.interfaces=ath0
 uci commit
-</code>
+```
 
 ==forward all DNS traffic to device==
 /etc/config/dhcp
-<code>
+```bash
 list address            '/#/192.168.3.1'
-</code>
+```
 
-<code>
+```bash
 uci add_list dhcp.@dnsmasq[0].address='/#/1.0.0.1'
 uci commit dhcp
-</code>
+```
 
 ==wifi scan and show in list==
 <code bash>
@@ -1402,7 +1402,7 @@ uci commit dhcp
 echo "Content-type: text/plain"
 echo ""
 iwlist wlan0 scan | grep ESSID  | cut -c 27- | tr -d '"'
-</code>
+```
 
 <code html>
 <html>
@@ -1437,49 +1437,49 @@ iwlist wlan0 scan | grep ESSID  | cut -c 27- | tr -d '"'
 
 </body>
 </html>
-</code>
+```
 
 ==cross compile on Mac==
 Create case sensitive HFS:
 <code bash>
 hdiutil create -size 15g -fs "Case-sensitive HFS+" -volname OpenWRT ~/OpenWRT.sparsebundle
 hdiutil attach OpenWRT.sparsebundle 
-</code>
+```
 Checkout OpenWRT source:
 <code bash>
 cd /Volumes/OpenWRT && svn co svn://svn.openwrt.org/openwrt/trunk/;
-</code>
+```
 Run 'feeds update' script:
 <code bash>
 cd trunk; scripts/feeds update -a
-</code>
+```
 selfupdate & subversion
-<code>
+```bash
 sudo port -v selfupdate; sudo port install subversion
-</code>
+```
 install dependencies:
 <code bash>
 sudo port install coreutils e2fsprogs ossp-uuid asciidoc binutils bzip2 fastjar flex getopt gtk2 intltool jikes \ zlib openssl p5-extutils-makemaker python26 rsync ruby sdcc unzip gettext libxslt bison gawk autoconf wget \ gmake ncurses findutils
-</code>
+```
 make menu
-<code>
+```bash
 make prereq; make defconfig; make menuconfig
-</code>
+```
 install everything for cross-compiler...
-<code>
+```bash
 make V=s
-</code>
+```
 
 ==mr3020==
 http://wolfgang.reutz.at/2012/04/12/openwrt-on-tp-link-mr3020-as-infopoint-with-local-webserver/
 
 ==reading and writing config values through uci (recommended)==
-<code>
+```bash
 uci get wireless.@wifi-iface[0].key
 uci set wireless.@wifi-iface[0].key=YOURKEY
-</code>
+```
 
-<code>
+```bash
 uci set wireless.radio0.channel=$wifichannel
 uci set wireless.wificlient.ssid="$wifissid"
 uci set wireless.wificlient.encryption=$wifimode
@@ -1487,28 +1487,28 @@ uci set wireless.wificlient.key=$wifipass
 uci commit wireless
 wifi down
 wifi
-</code>
+```
 
 ==how to debrick==
 * http://wiki.openwrt.org/doc/howto/generic.debrick
 
 ==show login intro text==
-<code>cat /etc/banner</code>
+```bashcat /etc/banner```
 
 ==How do I access the syslog messages?==
-<code> logread</code>
+```bash logread```
 
 ==list connected dhcp clients==
-<code>cat /tmp/dhcp.leases</code>
+```bashcat /tmp/dhcp.leases```
 
 ==hotplug==
 http://wiki.openwrt.org/doc/techref/hotplug
 
 ==scan for wifi networks==
-<code>iwlist wlan0 scan | grep ESSID  | cut -c 27- | tr -d '"'</code>
+```bashiwlist wlan0 scan | grep ESSID  | cut -c 27- | tr -d '"'```
 
 ==get current wifi configuration==
-<code>iwconfig wlan0</code>
+```bashiwconfig wlan0```
 
 ==ideale setup voor doodle3d box zou zijn==
 - eerst proberen te verbinden met een het laatst verbonden netwerk
@@ -1524,12 +1524,12 @@ http://wiki.openwrt.org/doc/uci
 * http://www.macfreek.nl/memory/OpenWRT_Network_Configuration
 
 ==network restart==
-<code>
+```bash
 /etc/init.d/network restart
-</code>
+```
 
 ==settings with cat==
-<code>
+```bash
 telnet 192.168.1.1
 
 
@@ -1575,29 +1575,29 @@ config wifi-iface
 	option key '...................................'
 	option network 'wan'
 EOF
-</code>
+```
 
 
 ==cat <<==
-<code>
+```bash
 cat << EOM >> tmp.txt
 .... paste text here
 EOM
-</code>
+```
 
 ==getting started==
 *http://wiki.xinchejian.com/wiki/Install_OpenWRT_on_TPlink_WR703N
 
 ==running in wifi client mode==
 ''/etc/config/network''
-<code>
+```bash
 config interface 'wan'
         option ifname 'wlan0'
         option proto 'dhcp'
-</code>
+```
 
 ''/etc/config/wireless''
-<code>
+```bash
 ...
 config wifi-iface                  
         option device radio0 
@@ -1607,11 +1607,11 @@ config wifi-iface
         option encryption psk2
         #or psk instead of psk2
         option key ....
-</code>
+```
 
 ==scan for wifi networks==
-<code>iwlist scanning</code>
-<code>iwlist wlan0 scan</code>
+```bashiwlist scanning```
+```bashiwlist wlan0 scan```
 
 ==sftp==
 * http://wiki.openwrt.org/doc/howto/sshfs.server
@@ -1621,14 +1621,14 @@ config wifi-iface
 * http://wiki.acemonstertoys.org/Tp-link_router
 
 ==list serial devices==
-<code>
+```bash
 ls -1 /dev/ttyACM*
-</code>
+```
 
 ==process ID==
-<code>
+```bash
 echo $$
-</code>
+```
 
 ==cgi==
 * http://wiki.openwrt.org/doc/howto/http.httpd
@@ -1642,7 +1642,7 @@ echo ""
 env
 echo ""
 echo ""
-</code>
+```
 
 ==cgi script extracting POST variables==
 <code bash>
@@ -1658,7 +1658,7 @@ eval $(echo "$QUERY_STRING"|awk -F'&' '{for(i=1;i<=NF;i++){print $i)')
 #unescaped
 txtOutput=`uhttpd -d $txtOutput`
 echo $txtOutput
-</code>
+```
 
 ==serial port==
 Alleen ''opkg install kmod-usb-acm'' lijkt nodig.
@@ -1676,20 +1676,20 @@ kmod-usb-acm - 2.6.32.16-1 - Kernel support for USB ACM devices (modems/isdn con
 opkg install kmod-usb-serial
 opkg install coreutils-stty 
 opkg install kmod-usb-acm
-</code>
+```
 By default everything that comes to WR703N serial port is echoed back. 
 If you also want to send commands to Arduino, the buffer will be full with echoed data. 
 Need to set no echo option in sstty. 
-<code>/usr/bin/stty -F /dev/ttyACM0 raw speed 115200 -echo</code>
+```bash/usr/bin/stty -F /dev/ttyACM0 raw speed 115200 -echo```
 
 Arduino is reset every time it is read by command "head"
 To disable reset by DTR pin add option to stty 
-<code>-hupcl</code>
+```bash-hupcl```
 
-<code>
+```bash
 /usr/bin/stty -F /dev/ttyACM0 raw speed 115200 -echo
 cat /dev/ttyACM0
-</code>
+```
 
 ==sh scripting for serial==
 <code bash>
@@ -1716,80 +1716,80 @@ if  [ -c $PORT ]; then
       echo "Arduino not attached"                                            
   fi                                                                         
 fi 
-</code>
+```
 
 ==disk usage==
-<code>
+```bash
 du * -sh
-</code>
+```
 
 ==symbolic link from www folder to /mnt==
-<code>
+```bash
 ln -s /mnt/jquery.mobile-1.0.1 www2
-</code>
+```
 
 ==install opkg packages on usb-stick==
 *http://wiki.openwrt.org/doc/recipes/install.packages.on.usb-stick
-add <code>dest usb /mnt/</code> to <code>/etc/opkg.conf</code>
-<code>
+add ```bashdest usb /mnt/``` to ```bash/etc/opkg.conf```
+```bash
 export USB=/mnt
 export PATH=$PATH:$USB/usr/bin:$USB/usr/sbin
 export LD_LIBRARY_PATH=$USB/lib:$USB/usr/lib
 #####
 opkg install unzip -d usb
-</code>
+```
 
 ==compilen vanaf windows of linux voor openwrt==
 *[[http://www.mentor.com/embedded-software/downloads/|Sourcery CodeBench Lite Edition]]
 
 ==scp (secure copy)==
 scp from to
-<code>
+```bash
 scp jquery.mobile-1.0.1.zip root@192.168.1.47:/mnt/ 
-</code>
+```
 
 ==create large file with zeros (10MB)==
-<code>
+```bash
 dd if=/dev/zero of=/mnt/largefile bs=1024 count=10240
-</code>
+```
 
 ==usb storage==
 http://wiki.openwrt.org/doc/howto/usb.storage
-<code>
+```bash
 opkg install kmod-usb-storage block-mount kmod-fs-vfat  kmod-nls-cp437 kmod-nls-iso8859-1 
 mount /dev/sda1 /mnt
-</code>
+```
 
 ==mount==
-<code>
+```bash
 mount
-</code>
+```
 
 ==writable permanent store==
-<code>
+```bash
 /overlay
-</code>
+```
 
 ==for humans diskfree info==
-<code>
+```bash
 df -h
-</code>
+```
 
 ==/proc/==
-bevat textfiles met info over je systeem zoals <code>cat /proc/filesystems </code>
+bevat textfiles met info over je systeem zoals ```bashcat /proc/filesystems ```
 
 ==mount usb drive==
-<code>
+```bash
 
-</code>
+```
 
 ==flush firewall settings==
-<code>
+```bash
 iptables -F
-</code>
-<code>
+```
+```bash
 iptables -L
-</code>
+```
 check INPUT, OUTPUT, FORWARD
 
 ==captive portals==
@@ -1800,24 +1800,24 @@ check INPUT, OUTPUT, FORWARD
 * http://dev.wifidog.org/wiki/doc/install/gateway
 
 ==various==
-<code>
+```bash
 opkg update
 opkg install openssh-sftp-server
-</code>
+```
 
-* ??? <code>gcom info -d /dev/ttyUSBx</code>
+* ??? ```bashgcom info -d /dev/ttyUSBx```
 
 *http://www.minipwner.com/index.php/forum/4-community-edition-installation/109-no-space-left-on-device
 
 * use '''kmod-usb-storage''' for usb drive support
 
 * config
-<code>
+```bash
 /etc/config/network
-</code>
+```
 
 ==cross compiling==
 using Sourcery_CodeBench_Lite_for_MIPS_GNU_Linux on Windows
-<code>
+```bash
  mips-linux-gnu-gcc -static -s -msoft-float -muclibc hello.c -o hello
-</code>
+```
