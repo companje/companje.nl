@@ -454,7 +454,6 @@ mkdir packages/customfeeds
 make image PROFILE=TLMR3020 PACKAGES="wifibox -ppp -kmod-ipv6"
 
 ```
-
 * creates image in bin/ar71xx folder. scp ….squashfs-sysupgrade.bin file to the /tmp folder of the box and run 
 ```bash
 sysupgrade -v- n /tmp/openwrt….squashfs-sysupgrade.bin
