@@ -239,7 +239,7 @@ nc -l 192.168.1.2 3333 > backup.tar.gz          # run a server to receive the fi
 * ...
 
 # image generator osx
-```
+```bash
 docker run -it ubuntu /bin/bash
 apt-get update
 apt-get install subversion build-essential libncurses5-dev zlib1g-dev gawk git ccache gettext libssl-dev xsltproc
