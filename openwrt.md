@@ -912,7 +912,7 @@ https://forum.openwrt.org/viewtopic.php?id=39077
 * http://wiki.openwrt.org/doc/devel/crosscompile
 
 # Hidden Sound System
-```html>
+```html
 ...
  <li><a href="javascript:play('http://pr128.pinguinradio.nl:80/')">Pinguin Radio</a>
 ...
@@ -1171,7 +1171,7 @@ http://www.madox.net/blog/2013/01/04/tl-wr703n-example-project-3-wireless-3d-pri
 
 # save contents of form variable to file in /tmp
 /www/index.html
-```html>
+```html
 <form method="post" action="cgi-bin/save.sh">
 <textarea name="txtOutput" rows=50 cols=100></textarea>
 <input type="submit">
@@ -1417,7 +1417,7 @@ echo ""
 iwlist wlan0 scan | grep ESSID  | cut -c 27- | tr -d '"'
 ```
 
-```html>
+```html
 <html>
 <head>
   <title>Doodle3D</title>
