@@ -912,7 +912,7 @@ https://forum.openwrt.org/viewtopic.php?id=39077
 * http://wiki.openwrt.org/doc/devel/crosscompile
 
 # Hidden Sound System
-```
+```html
 ...
  <li><a href="javascript:play('http://pr128.pinguinradio.nl:80/')">Pinguin Radio</a>
 ...
