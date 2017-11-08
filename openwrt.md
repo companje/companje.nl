@@ -430,7 +430,7 @@ make package/index
 * https://wiki.openwrt.org/doc/recipes/ap_sta
 
 # Stappen Image Builder
-* staat op : rick@ubuntu:~/Desktop/OpenWrt-ImageBuilder-15.05-ar71xx-generic.Linux-x86_64
+* staat op : `rick@ubuntu:~/Desktop/OpenWrt-ImageBuilder-15.05-ar71xx-generic.Linux-x86_64`
 
 * start Linux (bijv in Parallels met de mogelijkheid om vanaf OSX te verbinden via SSH)
 * download: https://downloads.openwrt.org/chaos_calmer/15.05/ar71xx/generic/OpenWrt-ImageBuilder-15.05-ar71xx-generic.Linux-x86_64.tar.bz2
