@@ -17,6 +17,7 @@ scp * wifibox:/etc/config/
 
 
 # UCI show
+
 ```bash
 
 uci show firewall
@@ -27,11 +28,13 @@ uci show firewall
 ```
 
 # UCI add_list
+
 ```bash
 uci add_list firewall.@zone[1].network='TEST'
 ```
 
 # AP+STA
+
 ```bash
 #root@OpenWrt:~# cat connect
 STA_SSID=Vechtclub XL F1.19
