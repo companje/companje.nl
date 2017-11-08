@@ -1428,7 +1428,7 @@ iwlist wlan0 scan | grep ESSID  | cut -c 27- | tr -d '"'
   <script>
   $(document).ready(function(){
     $.get("cgi-bin/wifi-scan", function(data) {
-      data = data.split("......");
+      data = data.split("....fixme.....");
       console.log(data.length);
       var options = $("#boxNetwork");
       options.empty();
