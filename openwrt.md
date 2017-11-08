@@ -324,6 +324,7 @@ uci commit
 
 # Disabling default route and DNS server for lan network interface
 This way you don't have to set the order of WiFi and Ethernet.
+
 ```bash
 uci set dhcp.lan.dhcp_option='3 6'
 uci commit dhcp
