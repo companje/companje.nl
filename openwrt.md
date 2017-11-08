@@ -385,7 +385,7 @@ strings testscript
 file /Volumes/OpenWrt/openwrt/build_dir/target-mips_34kc_musl-1.1.14/testscript/ipkg-ar71xx/testscript/bin/testscript
 ```
 
-```
+```bash
 /Volumes/OpenWrt/openwrt/build_dir/target-mips_34kc_musl-1.1.14/testscript/ipkg-ar71xx/testscript/bin/testscript: ELF 32-bit MSB executable, MIPS, MIPS32 rel2 version 1, 
 dynamically linked (uses shared libs), corrupted section header size
 ```
