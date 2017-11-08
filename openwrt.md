@@ -864,7 +864,7 @@ make[3]: *** No targets specified and no makefile found.  Stop.
 make[2]: *** [/Volumes/OpenWRT/trunk/build_dir/target-mips_34kc_uClibc-0.9.33.2/bell/.built] Error 2
 make[2]: Leaving directory /Users/rick/Documents/VechtclubXL/door-bell
 make[1]: *** [package/feeds/bell/door-bell/compile] Error 2
-make[1]: Leaving directory /Volumes/OpenWRT/trunk'
+make[1]: Leaving directory /Volumes/OpenWRT/trunk
 ```
 
 in our case the folder-name containing the package did not match the package name.
