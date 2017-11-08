@@ -26,22 +26,23 @@ AP_SSID=Doodle3D
 AP_KEY=1234567890
 
 set -x
+
+uci set dhcp.@dnsmasq[0].rebind_protection=0
+uci add_list firewall.@zone[1].network='wwan'
+
+uci add wireless wifi-iface
 uci set network.lan.ipaddr=192.168.5.1
+uci set network.wan=interface
+uci set network.wan.proto=dhcp
+uci set network.wwan=interface
+uci set network.wwan.proto=dhcp
+
 uci delete wireless.@wifi-device[0].disabled
-uci set wireless.@wifi-iface[0].network=wan
+uci set wireless.@wifi-iface[0].network=wwan
 uci set wireless.@wifi-iface[0].mode=sta
 uci set wireless.@wifi-iface[0].encryption=psk2
 uci set wireless.@wifi-iface[0].ssid="$STA_SSID"
 uci set wireless.@wifi-iface[0].key="$STA_KEY"
-uci set network.wan=interface
-uci set network.wan.proto=dhcp
-
-uci set dhcp.@dnsmasq[0].rebind_protection=0
-uci add_list firewall.@zone[1].network='wwan'
-uci set network.wwan=interface
-uci set network.wwan.proto=dhcp
-
-uci add wireless wifi-iface
 uci set wireless.@wifi-iface[1].device=radio
 uci set wireless.@wifi-iface[1].network=lan
 uci set wireless.@wifi-iface[1].mode=ap
