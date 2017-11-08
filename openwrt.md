@@ -443,11 +443,13 @@ tar -xvjf OpenWrt-ImageBuilder-15.05-ar71xx-generic.Linux-x86_64.tar.bz2
 ```bash
 apt-get install subversion build-essential libncurses5-dev zlib1g-dev gawk git ccache gettext libssl-dev xsltproc
 ```
+
 * voeg customfeeds toe aan de packages folder (maak een mapje customfeeds met daarin ipk bestanden van je customfeeds dus die moet je wel eerst ergens bouwen)
 ```bash
 mkdir packages/customfeeds
 ```
 * run image generator
+
 ```bash
 make image PROFILE=TLMR3020 PACKAGES="wifibox -ppp -kmod-ipv6"
 
