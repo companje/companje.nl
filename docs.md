@@ -1,5 +1,5 @@
 ---
-title: ========= Google Docs =========
+title: Google Docs
 ---
 
 =====polling spreadsheet with script=====
