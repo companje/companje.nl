@@ -33,6 +33,7 @@ uci set network.wan.proto=dhcp #get ip from router
 
 uci set dhcp.@dnsmasq[0].rebind_protection=0
 uci add_list firewall.@zone[1].network='wwan'
+uci set network.wwan=interface
 
 uci commit
 wifi
