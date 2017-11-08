@@ -448,8 +448,8 @@ apt-get install subversion build-essential libncurses5-dev zlib1g-dev gawk git c
 ```bash
 mkdir packages/customfeeds
 ```
-* run image generator
 
+* run image generator
 ```bash
 make image PROFILE=TLMR3020 PACKAGES="wifibox -ppp -kmod-ipv6"
 
