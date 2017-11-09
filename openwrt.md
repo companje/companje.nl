@@ -2,6 +2,21 @@
 title: OpenWrt
 ---
 
+# extroot summary
+on osx: 
+```bash
+diskutil list
+diskutil unmount /dev/disk#s#
+sudo $(brew --prefix e2fsprogs)/sbin/mkfs.ext4 /dev/disk#s#
+```
+
+on openwrt 
+```bash
+opkgupdate
+opkg install block-mount kmod-usb-storage kmod-fs-ext4
+```
+
+
 
 # backup and restore config files
 
