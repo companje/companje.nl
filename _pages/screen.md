@@ -5,8 +5,7 @@ title: screen
 The screen program allows you to use multiple windows (virtual VT100 terminals) in Unix.
 https://kb.iu.edu/d/acuy
 
-# 
-"Do whatever is needed to get a screen session."
+# "Do whatever is needed to get a screen session."
 ```
 screen -D ....
 ```
