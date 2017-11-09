@@ -14,6 +14,25 @@ on openwrt
 ```bash
 opkgupdate
 opkg install block-mount kmod-usb-storage kmod-fs-ext4
+block info
+mkdir /mnt/usb
+mount /dev/sda1 /mnt/usb
+#copy everything to usb
+mkdir -p /tmp/cproot
+mount --bind / /tmp/cproot
+tar -C /tmp/cproot -cvf - . | tar -C /mnt/usb -xf -
+umount /tmp/cproot
+
+#confiruge fstab
+cat >> /etc/config/fstab << EOF
+config mount
+        option target        /
+        option device        /dev/sda1
+        option fstype        ext4
+        option options       rw,sync
+        option enabled       1
+        option enabled_fsck  0
+EOF
 ```
 
 
