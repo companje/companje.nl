@@ -25,7 +25,7 @@ mount --bind / /tmp/cproot
 tar -C /tmp/cproot -cvf - . | tar -C /mnt/usb -xf -
 umount /tmp/cproot
 
-#confiruge fstab
+#confiure fstab
 cat >> /etc/config/fstab << EOF
 config mount
         option target        /
@@ -35,6 +35,7 @@ config mount
         option enabled       1
         option enabled_fsck  0
 EOF
+reboot
 ```
 
 
