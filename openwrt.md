@@ -18,6 +18,7 @@ reboot
 block info
 mkdir /mnt/usb
 mount /dev/sda1 /mnt/usb
+ls /mnt/usb # to check...
 #copy everything to usb
 mkdir -p /tmp/cproot
 mount --bind / /tmp/cproot
