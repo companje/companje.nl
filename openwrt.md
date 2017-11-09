@@ -2,6 +2,9 @@
 title: OpenWrt
 ---
 
+#ser2net
+
+
 # extroot summary
 on osx: 
 ```bash
