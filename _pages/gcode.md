@@ -16,8 +16,26 @@ title: GCODE
 * ''M20'': list files on SD-card
 * ''G28'': Move to Origin
 * ''M115'': Get Firmware Version and Capabilities
-* ''M300'': Make BEEP sound
-* 
+
+# Make BEEP sound
+```gcode
+M300
+```
+
+# Put text on screen
+```gcode
+M10000
+G4 P200
+M10000
+M10001 X10 Y25 SHeating nozzle...
+M10000
+;...
+G4 P200 
+M10000
+M10001 X3 Y25 SDoodle3D Printing...
+M10004 X1 Y56 W128 H8
+M10003 X1 Y56 W10 H8
+```
 
 =====current start/end gcode for Ultimaker Original=====
 startcode:
