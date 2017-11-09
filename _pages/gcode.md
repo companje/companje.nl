@@ -26,9 +26,11 @@ M42 S255    ;on
 
 # Make BEEP sound
 ```gcode
-M300 S300 P1000
-
+M300
+M300 S300 P1000    ;S=freq Hz, P=duration
 ```
+
+
 
 # Put text on screen
 ```gcode
