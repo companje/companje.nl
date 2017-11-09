@@ -26,7 +26,8 @@ M42 S255    ;on
 
 # Make BEEP sound
 ```gcode
-M300
+M300 S300 P1000
+
 ```
 
 # Put text on screen
