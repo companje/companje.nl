@@ -1,4 +1,0 @@
----
-title: Languages
----
-See [[programming]]

@@ -1,4 +1,0 @@
----
-title: openFrameworks
----
-see [[openFrameworks]]

@@ -1,4 +1,0 @@
----
-title: FTDI
----
-see [[serial]]
