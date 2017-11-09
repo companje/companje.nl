@@ -92,7 +92,7 @@ uci set dhcp.@dnsmasq[0].rebind_protection=0
 uci add_list firewall.@zone[1].network='wwan'
 
 uci add wireless wifi-iface
-uci set network.lan.ipaddr=192.168.5.1
+uci set network.lan.ipaddr=192.168.6.1
 uci set network.wan=interface
 uci set network.wan.proto=dhcp
 uci set network.wwan=interface
