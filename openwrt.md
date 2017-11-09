@@ -104,6 +104,7 @@ uci set wireless.@wifi-iface[0].mode=sta
 uci set wireless.@wifi-iface[0].encryption=psk2
 uci set wireless.@wifi-iface[0].ssid="$STA_SSID"
 uci set wireless.@wifi-iface[0].key="$STA_KEY"
+
 uci set wireless.@wifi-iface[1].device=radio
 uci set wireless.@wifi-iface[1].network=lan
 uci set wireless.@wifi-iface[1].mode=ap
