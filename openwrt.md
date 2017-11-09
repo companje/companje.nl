@@ -12,8 +12,9 @@ sudo $(brew --prefix e2fsprogs)/sbin/mkfs.ext4 /dev/disk#s#
 
 on openwrt 
 ```bash
-opkgupdate
+opkg update
 opkg install block-mount kmod-usb-storage kmod-fs-ext4
+reboot
 block info
 mkdir /mnt/usb
 mount /dev/sda1 /mnt/usb
