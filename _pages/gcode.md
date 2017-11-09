@@ -30,7 +30,17 @@ M300
 M300 S300 P1000    ;S=freq Hz, P=duration
 ```
 
-
+# Play tune
+```gcode
+M300 S100 P100
+M300 S200 P100
+M300 S300 P100
+M300 S400 P100
+M300 S500 P100
+M300 S600 P100
+M300 S700 P100
+M300 S800 P100
+```
 
 # Put text on screen
 ```gcode
