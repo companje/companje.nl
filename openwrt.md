@@ -36,6 +36,7 @@ config mount
         option enabled_fsck  0
 EOF
 reboot
+df -h
 ```
 
 
