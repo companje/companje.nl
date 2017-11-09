@@ -3,7 +3,7 @@ title: OpenWrt
 ---
 
 #ser2net
-
+ 1315 root       836 S    ser2net -C 8082 raw 600 /dev/ttyACM0 115200 NONE 1ST
 
 # extroot summary
 on osx: 
