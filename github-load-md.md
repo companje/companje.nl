@@ -8,7 +8,7 @@ zie ook:
 * rate limit: https://developer.github.com/v3/#increasing-the-unauthenticated-rate-limit-for-oauth-applications
 
 
-snapshot (laatste versie staat op server)
+snapshot (nieuwste versie staat op server)
 ```html
 
 <!DOCTYPE html>
