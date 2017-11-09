@@ -1,0 +1,4 @@
+---
+title: Javascript
+---
+See [[js]]
