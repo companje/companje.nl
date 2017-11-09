@@ -12,9 +12,7 @@ sudo diskutil eraseDisk FAT32 RASPBIAN MBRFormat /dev/diskX
 
 # Etcher
 Burn images to SD cards & USB drives, safely and easily.
-
-Download for macOS
-Toggle Dropdown
 * https://etcher.io/
-* 
+
+ 
 
