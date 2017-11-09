@@ -2,7 +2,10 @@
 title: companje.nl load md from github
 ---
 
-zie ook vps.companje.nl
+zie ook
+* http://vps.companje.nl
+* http://prismjs.com/download.html
+
 ```html
 
 <!DOCTYPE html>
