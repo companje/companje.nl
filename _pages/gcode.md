@@ -17,6 +17,13 @@ title: GCODE
 * ''G28'': Move to Origin
 * ''M115'': Get Firmware Version and Capabilities
 
+# Control LED brightness
+```gcode
+M42 S0      ;off
+M42 S128    ;half brightness
+M42 S255    ;on
+```
+
 # Make BEEP sound
 ```gcode
 M300
