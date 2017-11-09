@@ -6,7 +6,7 @@ zie ook:
 * http://vps.companje.nl
 * http://prismjs.com/download.html
 * rate limit: https://developer.github.com/v3/#increasing-the-unauthenticated-rate-limit-for-oauth-applications
-* 
+
 ```html
 
 <!DOCTYPE html>
