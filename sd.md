@@ -11,7 +11,10 @@ sudo diskutil eraseDisk FAT32 RASPBIAN MBRFormat /dev/diskX
 ```
 
 # Etcher
-Etcher is a graphical SD card writing tool that works on Mac OS, Linux and Windows, and is the easiest option for most users. Etcher also supports writing images directly from the zip file, without any unzipping required. To write your image with Etcher:
+Burn images to SD cards & USB drives, safely and easily.
+
+Download for macOS
+Toggle Dropdown
 * https://etcher.io/
 * 
 
