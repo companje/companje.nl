@@ -7,6 +7,8 @@ zie ook:
 * http://prismjs.com/download.html
 * rate limit: https://developer.github.com/v3/#increasing-the-unauthenticated-rate-limit-for-oauth-applications
 
+
+snapshot (laatste versie staat op server)
 ```html
 
 <!DOCTYPE html>
