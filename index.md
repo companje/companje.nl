@@ -1,1 +1,3 @@
-index.md
+---
+title: Hoi
+---
