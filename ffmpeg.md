@@ -126,6 +126,7 @@ ffmpeg -ss 00:01:22 -i Doodle3D.m4v -q 0 -vcodec copy -acodec copy -y tmp.mov
 ```bash
 ffmpeg -ss 00:01:14 -t 00:00:31 -i Doodle3D-kickstarter-movie.mp4 -q 0 -vcodec copy -acodec copy -y tmp2.mp4
 ```
+
 # offset & seek 
 offset video (0.5 sec) & seek/skip to position in audio (0.3 sec):
 ```bash
