@@ -139,6 +139,7 @@ ffmpeg -i input.mp4 -vcodec mpeg4 -vframes 500 -q:v 0 output.mp4
 ```bash
 ffmpeg -ss 00:01:22 -i Doodle3D.m4v -q 0 -vcodec copy -acodec copy -y tmp.mov
 ```
+
 ```bash
 ffmpeg -ss 00:01:14 -t 00:00:31 -i Doodle3D-kickstarter-movie.mp4 -q 0 -vcodec copy -acodec copy -y tmp2.mp4
 ```
