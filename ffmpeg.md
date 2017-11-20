@@ -259,5 +259,6 @@ ffmpeg -i in.mov -sameq -cropleft 104 -cropright 104 hands.mov
 
 ffmpeg -itsoffset 10 -i IMG_4699.MOV -s 640x360 -an -sameq hebbenEnHouden.mov
 ```
+
 # timelapse with ffmpeg / gstreamer 
 * see http://www.oz9aec.net/index.php/gstreamer/346-simple-time-lapse-video-with-gtreamer-and-ffmpeg
