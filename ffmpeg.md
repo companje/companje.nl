@@ -162,7 +162,7 @@ ffmpeg -i air_traffic_2048.mp4 -sameq -r 15 -vcodec rawvideo -y new.avi
 ```bash
 ffmpeg -i one-hand-with-sleeve.mpg -sameq -g 1 -f mov -vcodec qtrle -pix_fmt rgb24 output.mov
 ```
-*http://ffmpeg-users.933282.n4.nabble.com/Outputting-uncompressed-8-bit-4-2-2-MOV-td3264815.html
+* http://ffmpeg-users.933282.n4.nabble.com/Outputting-uncompressed-8-bit-4-2-2-MOV-td3264815.html
 ```bash
 ffmpeg -i input.mov -vcodec rawvideo -pix_fmt uyvy422 -vtag 2vuy  uncompressed.mov
 ```
