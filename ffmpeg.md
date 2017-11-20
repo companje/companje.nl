@@ -160,7 +160,6 @@ ffmpeg -i input.mov -vcodec rawvideo -pix_fmt uyvy422 -vtag 2vuy  uncompressed.m
 ```
 @echo off
 cd /d %0\..
-
 if exist clouds-queue\*.jpg (
   cat clouds-queue/*.jpg | ffmpeg -f image2pipe -vcodec mjpeg -i - -sameq -s 2048x1024 -f mjpeg -vcodec mjpeg -y new-clouds.mov
   ffmpeg -f mjpeg -i concat:"clouds2048.mov|new-clouds.mov" -c copy -y combined.mov
