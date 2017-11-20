@@ -156,7 +156,9 @@ ffmpeg -i one-hand-with-sleeve.mpg -sameq -g 1 -f mov -vcodec qtrle -pix_fmt rgb
 *http://ffmpeg-users.933282.n4.nabble.com/Outputting-uncompressed-8-bit-4-2-2-MOV-td3264815.html
 ```
 ffmpeg -i input.mov -vcodec rawvideo -pix_fmt uyvy422 -vtag 2vuy  uncompressed.mov
-```# combine jpg's with existing mjpeg movie (on Windows) 
+```
+
+# combine jpg's with existing mjpeg movie (on Windows) 
 ```
 @echo off
 cd /d %0\..
@@ -172,14 +174,15 @@ if exist combined.mov (
   move clouds-queue\*.jpg clouds-done\
 )
 ```
+
 # in case of segmentation faults you might need to add -vcoded 
 ```bash
 
 ffmpeg -i Globe4D-energy-related-content.mov -sameq -s 512x256 -vcodec mpeg4 Globe4D-energy-related-content-512.mov
 ```
+
 # combine multiple movies with ffmpeg 
 ```bash
-
 #!/bin/bash
 ffmpeg -f mjpeg -i <\
 (  ffmpeg -v 0 -i 07h.mov -f image2pipe -vcodec copy -y /dev/stdout;
