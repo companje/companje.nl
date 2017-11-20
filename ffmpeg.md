@@ -146,7 +146,9 @@ bash-q:v 0
 -q:a 0
 ```
 # add audio / soundtrack to movie 
-```bashffmpeg -i IMG_7966.MOV -i sound.mp3 -vcodec copy -acodec copy output.mov ```
+```bash
+ffmpeg -i IMG_7966.MOV -i sound.mp3 -vcodec copy -acodec copy output.mov 
+```
 # wellicht interessant 
 * http://rodrigopolo.com/ffmpeg/cheats.html
 * http://www.warpwood.com/wiki/ffmpeg/#index9h2
