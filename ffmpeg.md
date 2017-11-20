@@ -145,6 +145,7 @@ bash-q:v 0
 ```bash
 -q:a 0
 ```
+
 # add audio / soundtrack to movie 
 ```bash
 ffmpeg -i IMG_7966.MOV -i sound.mp3 -vcodec copy -acodec copy output.mov 
@@ -153,6 +154,7 @@ ffmpeg -i IMG_7966.MOV -i sound.mp3 -vcodec copy -acodec copy output.mov
 * http://rodrigopolo.com/ffmpeg/cheats.html
 * http://www.warpwood.com/wiki/ffmpeg/#index9h2
 * http://superuser.com/questions/347433/how-to-create-an-uncompressed-avi-from-a-series-of-1000s-of-png-images-using-ff
+
 # rawvideo / uncompressed avi 
 ```
 ffmpeg -i air_traffic_2048.mp4 -sameq -r 15 -vcodec rawvideo -y new.avi
