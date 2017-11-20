@@ -151,15 +151,14 @@ ffmpeg -itsoffset 0.3 -i video-input.mp4 -ss 0.5 -i audio-input.mp3 -vcodec copy
 ```
 
 # fix aspect ratio 
-```
-bash
+```bash
 ..... -s 900x720 -aspect 16:9 
 ```
 
 # -sameq vs -qscale 
 * for video
-```
-bash-q:v 0
+```bash
+-q:v 0
 ```
 * for audio
 ```bash
@@ -170,6 +169,7 @@ bash-q:v 0
 ```bash
 ffmpeg -i IMG_7966.MOV -i sound.mp3 -vcodec copy -acodec copy output.mov 
 ```
+
 # wellicht interessant 
 * http://rodrigopolo.com/ffmpeg/cheats.html
 * http://www.warpwood.com/wiki/ffmpeg/#index9h2
