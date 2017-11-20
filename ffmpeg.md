@@ -107,13 +107,19 @@ ffmpeg -f concat -i list.txt -c copy output.mov
 ```
 
 # change speed 
+```bash
   ffmpeg -i input.mp4 -vf "setpts=(1/<speed>)*PTS" output.mp4
+```
 
 # resize video to 480p or 720p 
+```bash
   ffmpeg -i INPUT.MOV -s hd480 OUTPUT.MOV
+```
 
 # create animated GIF from sequence and specify framerate 
+```bash
   ffmpeg -r 2 -i screen-%04d.tif -y kochcurve.gif
+```
 more settings: http://superuser.com/questions/556029/how-do-i-convert-a-video-to-gif-using-ffmpeg-with-reasonable-quality/556031#556031
 
 # convert image sequence to movie 
