@@ -126,7 +126,8 @@ more settings: http://superuser.com/questions/556029/how-do-i-convert-a-video-to
   ffmpeg -i output/frame%d.jpg -g 1 -y -q:v 0 -r 10  output.mp4
 
 # lossless skip first x seconds of mp3 
-```bash  ffmpeg -ss 54 -i input.mp3 -acodec copy -y output.mp3
+```bash
+  ffmpeg -ss 54 -i input.mp3 -acodec copy -y output.mp3
 
 # limit total number of frames (not changing framerate) 
 ```bash
