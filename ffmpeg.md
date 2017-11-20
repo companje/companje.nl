@@ -145,17 +145,21 @@ ffmpeg -itsoffset 0.3 -i video-input.mp4 -ss 0.5 -i audio-input.mp3 -vcodec copy
 * http://www.warpwood.com/wiki/ffmpeg/#index9h2
 * http://superuser.com/questions/347433/how-to-create-an-uncompressed-avi-from-a-series-of-1000s-of-png-images-using-ff
 # rawvideo / uncompressed avi 
-```ffmpeg -i air_traffic_2048.mp4 -sameq -r 15 -vcodec rawvideo -y new.avi
+```
+ffmpeg -i air_traffic_2048.mp4 -sameq -r 15 -vcodec rawvideo -y new.avi
 ```
 # more uncompressed info 
 * http://superuser.com/questions/347433/how-to-create-an-uncompressed-avi-from-a-series-of-1000s-of-png-images-using-ff
-```ffmpeg -i one-hand-with-sleeve.mpg -sameq -g 1 -f mov -vcodec qtrle -pix_fmt rgb24 output.mov
+```
+ffmpeg -i one-hand-with-sleeve.mpg -sameq -g 1 -f mov -vcodec qtrle -pix_fmt rgb24 output.mov
 ```
 
 *http://ffmpeg-users.933282.n4.nabble.com/Outputting-uncompressed-8-bit-4-2-2-MOV-td3264815.html
-```ffmpeg -i input.mov -vcodec rawvideo -pix_fmt uyvy422 -vtag 2vuy  uncompressed.mov
+```
+ffmpeg -i input.mov -vcodec rawvideo -pix_fmt uyvy422 -vtag 2vuy  uncompressed.mov
 ```# combine jpg's with existing mjpeg movie (on Windows) 
-```@echo off
+```
+@echo off
 cd /d %0\..
 
 if exist clouds-queue\*.jpg (
