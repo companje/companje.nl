@@ -176,9 +176,10 @@ ffmpeg -i IMG_7966.MOV -i sound.mp3 -vcodec copy -acodec copy output.mov
 * http://superuser.com/questions/347433/how-to-create-an-uncompressed-avi-from-a-series-of-1000s-of-png-images-using-ff
 
 # rawvideo / uncompressed avi 
-```
+```bash
 ffmpeg -i air_traffic_2048.mp4 -sameq -r 15 -vcodec rawvideo -y new.avi
 ```
+
 # more uncompressed info 
 * http://superuser.com/questions/347433/how-to-create-an-uncompressed-avi-from-a-series-of-1000s-of-png-images-using-ff
 ```bash
@@ -226,6 +227,7 @@ stty echo
 
 cat 2012050412*.jpg | ffmpeg -v 0 -f image2pipe -vcodec mjpeg -i  - -sameq -vcodec mjpeg -y 12h.mov
 ```
+
 # add new frames / image files to an existing mjpeg movie with ffmpeg 
 ```bash
 #!/bin/bash
