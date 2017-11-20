@@ -92,6 +92,7 @@ or
 # HQ animated gifs with custom palette 
 * http://blog.pkh.me/p/21-high-quality-gif-with-ffmpeg.html
 * http://superuser.com/questions/556029/how-do-i-convert-a-video-to-gif-using-ffmpeg-with-reasonable-quality/556031#556031
+
 # concat 
 list.txt:
 ```bash
@@ -104,15 +105,20 @@ commmand:
 ```bash
 ffmpeg -f concat -i list.txt -c copy output.mov
 ```
+
 # change speed 
   ffmpeg -i input.mp4 -vf "setpts=(1/<speed>)*PTS" output.mp4
+
 # resize video to 480p or 720p 
   ffmpeg -i INPUT.MOV -s hd480 OUTPUT.MOV
+
 # create animated GIF from sequence and specify framerate 
   ffmpeg -r 2 -i screen-%04d.tif -y kochcurve.gif
 more settings: http://superuser.com/questions/556029/how-do-i-convert-a-video-to-gif-using-ffmpeg-with-reasonable-quality/556031#556031
+
 # convert image sequence to movie 
   ffmpeg -i output/frame%d.jpg -g 1 -y -q:v 0 -r 10  output.mp4
+
 # lossless skip first x seconds of mp3 
   ffmpeg -ss 54 -i input.mp3 -acodec copy -y output.mp3
 
