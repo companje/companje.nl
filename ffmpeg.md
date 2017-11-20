@@ -197,7 +197,6 @@ cat 2012050412*.jpg | ffmpeg -v 0 -f image2pipe -vcodec mjpeg -i  - -sameq -vcod
 ```
 # add new frames / image files to an existing mjpeg movie with ffmpeg 
 ```bash
-
 #!/bin/bash
 ffmpeg -f mjpeg -i <\
 (  ffmpeg -v 0 -i clouds.mov -f image2pipe -vcodec copy -y /dev/stdout;
