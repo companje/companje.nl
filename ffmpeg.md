@@ -115,10 +115,12 @@ more settings: http://superuser.com/questions/556029/how-do-i-convert-a-video-to
   ffmpeg -i output/frame%d.jpg -g 1 -y -q:v 0 -r 10  output.mp4
 # lossless skip first x seconds of mp3 
   ffmpeg -ss 54 -i input.mp3 -acodec copy -y output.mp3
+
 # limit total number of frames (not changing framerate) 
 ```bash
 ffmpeg -i input.mp4 -vcodec mpeg4 -vframes 500 -q:v 0 output.mp4
 ```
+
 # cut / split video 
 ```bash
 ffmpeg -ss 00:01:22 -i Doodle3D.m4v -q 0 -vcodec copy -acodec copy -y tmp.mov
