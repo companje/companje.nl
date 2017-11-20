@@ -207,38 +207,47 @@ rm clouds.mov
 mv tmp.mov clouds.mov
 mv clouds-queue/*.jpg clouds-done/
 ```
+
 # losse plaatjes omzetten naar filmpje met framerate en veel keyframes 
 ```bash
-
 ffmpeg -f image2 -r 1 -i frame-%04d.png -r 5 -g 1 -y -sameq -s 1024x512 output.mov
 ```
+
 # output framerate 10, keyframe on everyframe 
 ```bash
 ffmpeg -i ring.mov -r 10 -g 1 -sameq -y ring-10.mov```
+
 # -r 1 sets input framerate to 1 
 ```bash
 ffmpeg -r 1 -i image-%d.PNG -sameq -g 1 -y  A2-vegetation.mov```
+
 # convert movie to iPad 
 ```bash
 ffmpeg -i input.mov -acodec libfaac -ac 2 -ab 160k -s 1024x768 -vcodec libx264 -vpre slow -vpre ipod640 -b 1200k -f mp4 -threads 10 output.mp4```
+
 # convert image sequence to movie 
 ```bash
 ffmpeg -f image2 -i frame%03d.png -s 1024x512 output.mov```
+
 # convert movie from canon ixus to mpeg 
 ```bash
 ffmpeg -i MVI_0131.AVI -r 25 -sameq output.mov```
+
 # rotate movie (with memcoder) 
 ```bash
 mencoder -vf rotate=1 -o OUTPUT.AVI -oac copy -ovc lavc MVI_7590.AVI ```
+
 # Remove audio from a movie 
 ```bash
 ffmpeg -i input.mov -an output.mov```
+
 # Combine jpg and mp3 audio to mpg 
 (in this case portrait). Be sure to use RGB jpg's instead of CMYK.
 ```bash
 ffmpeg -y -i vogels.jpg -loop_input -i vogels.mp3 -s 320x480 vogels320x480.mpg
 or:
 ffmpeg -y -b 2500k -r 30 -i yellow-brick-road.jpg -i brand-new-day.mp3 -map 0:0 -map 1:0 -vsync 1 -sameq  -vcodec mpeg4 -s 320x480 result2.mp4```
+
 # crop away black side bars 
 ```bash
 
