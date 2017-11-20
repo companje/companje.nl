@@ -116,7 +116,8 @@ more settings: http://superuser.com/questions/556029/how-do-i-convert-a-video-to
 # lossless skip first x seconds of mp3 
   ffmpeg -ss 54 -i input.mp3 -acodec copy -y output.mp3
 # limit total number of frames (not changing framerate) 
-<code bash>ffmpeg -i input.mp4 -vcodec mpeg4 -vframes 500 -q:v 0 output.mp4
+```bash
+ffmpeg -i input.mp4 -vcodec mpeg4 -vframes 500 -q:v 0 output.mp4
 ```
 # cut / split video 
 ```bash
@@ -127,7 +128,7 @@ ffmpeg -ss 00:01:14 -t 00:00:31 -i Doodle3D-kickstarter-movie.mp4 -q 0 -vcodec c
 ```
 # offset & seek 
 offset video (0.5 sec) & seek/skip to position in audio (0.3 sec):
-<code bash>
+```bash
 ffmpeg -itsoffset 0.3 -i video-input.mp4 -ss 0.5 -i audio-input.mp3 -vcodec copy -acodec copy -y output.mov
 ```
 # fix aspect ratio 
@@ -174,11 +175,13 @@ if exist combined.mov (
 )
 ```
 # in case of segmentation faults you might need to add -vcoded 
-<code bash>
+```bash
+
 ffmpeg -i Globe4D-energy-related-content.mov -sameq -s 512x256 -vcodec mpeg4 Globe4D-energy-related-content-512.mov
 ```
 # combine multiple movies with ffmpeg 
-<code bash>
+```bash
+
 #!/bin/bash
 ffmpeg -f mjpeg -i <\
 (  ffmpeg -v 0 -i 07h.mov -f image2pipe -vcodec copy -y /dev/stdout;
@@ -188,11 +191,13 @@ ffmpeg -f mjpeg -i <\
 ) -vcodec copy -an -y total.mov
 stty echo
 ```# add non-sequence images to movie with cat and ffmpeg 
-<code bash>
+```bash
+
 cat 2012050412*.jpg | ffmpeg -v 0 -f image2pipe -vcodec mjpeg -i  - -sameq -vcodec mjpeg -y 12h.mov
 ```
 # add new frames / image files to an existing mjpeg movie with ffmpeg 
-<code bash>
+```bash
+
 #!/bin/bash
 ffmpeg -f mjpeg -i <\
 (  ffmpeg -v 0 -i clouds.mov -f image2pipe -vcodec copy -y /dev/stdout;
@@ -204,35 +209,46 @@ mv tmp.mov clouds.mov
 mv clouds-queue/*.jpg clouds-done/
 ```
 # losse plaatjes omzetten naar filmpje met framerate en veel keyframes 
-<code bash>
+```bash
+
 ffmpeg -f image2 -r 1 -i frame-%04d.png -r 5 -g 1 -y -sameq -s 1024x512 output.mov
 ```
 # output framerate 10, keyframe on everyframe 
-<code bash>ffmpeg -i ring.mov -r 10 -g 1 -sameq -y ring-10.mov```
+```bash
+ffmpeg -i ring.mov -r 10 -g 1 -sameq -y ring-10.mov```
 # -r 1 sets input framerate to 1 
-<code bash>ffmpeg -r 1 -i image-%d.PNG -sameq -g 1 -y  A2-vegetation.mov```
+```bash
+ffmpeg -r 1 -i image-%d.PNG -sameq -g 1 -y  A2-vegetation.mov```
 # convert movie to iPad 
-<code bash>ffmpeg -i input.mov -acodec libfaac -ac 2 -ab 160k -s 1024x768 -vcodec libx264 -vpre slow -vpre ipod640 -b 1200k -f mp4 -threads 10 output.mp4```
+```bash
+ffmpeg -i input.mov -acodec libfaac -ac 2 -ab 160k -s 1024x768 -vcodec libx264 -vpre slow -vpre ipod640 -b 1200k -f mp4 -threads 10 output.mp4```
 # convert image sequence to movie 
-<code bash>ffmpeg -f image2 -i frame%03d.png -s 1024x512 output.mov```
+```bash
+ffmpeg -f image2 -i frame%03d.png -s 1024x512 output.mov```
 # convert movie from canon ixus to mpeg 
-<code bash>ffmpeg -i MVI_0131.AVI -r 25 -sameq output.mov```
+```bash
+ffmpeg -i MVI_0131.AVI -r 25 -sameq output.mov```
 # rotate movie (with memcoder) 
-<code bash>mencoder -vf rotate=1 -o OUTPUT.AVI -oac copy -ovc lavc MVI_7590.AVI ```
+```bash
+mencoder -vf rotate=1 -o OUTPUT.AVI -oac copy -ovc lavc MVI_7590.AVI ```
 # Remove audio from a movie 
-<code bash>ffmpeg -i input.mov -an output.mov```
+```bash
+ffmpeg -i input.mov -an output.mov```
 # Combine jpg and mp3 audio to mpg 
 (in this case portrait). Be sure to use RGB jpg's instead of CMYK.
-<code bash>ffmpeg -y -i vogels.jpg -loop_input -i vogels.mp3 -s 320x480 vogels320x480.mpg
+```bash
+ffmpeg -y -i vogels.jpg -loop_input -i vogels.mp3 -s 320x480 vogels320x480.mpg
 or:
 ffmpeg -y -b 2500k -r 30 -i yellow-brick-road.jpg -i brand-new-day.mp3 -map 0:0 -map 1:0 -vsync 1 -sameq  -vcodec mpeg4 -s 320x480 result2.mp4```
 # crop away black side bars 
-<code bash>
+```bash
+
 ffmpeg -i in.mov -sameq -cropleft 104 -cropright 104 hands.mov
 ```
 # set start / offset time of input movie 
 -itsoffset needs to go before -i filename
-<code bash>
+```bash
+
 ffmpeg -itsoffset 10 -i IMG_4699.MOV -s 640x360 -an -sameq hebbenEnHouden.mov
 ```
 # timelapse with ffmpeg / gstreamer 
