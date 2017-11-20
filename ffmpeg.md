@@ -250,7 +250,6 @@ ffmpeg -y -b 2500k -r 30 -i yellow-brick-road.jpg -i brand-new-day.mp3 -map 0:0 
 
 # crop away black side bars 
 ```bash
-
 ffmpeg -i in.mov -sameq -cropleft 104 -cropright 104 hands.mov
 ```
 # set start / offset time of input movie 
