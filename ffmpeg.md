@@ -132,12 +132,19 @@ offset video (0.5 sec) & seek/skip to position in audio (0.3 sec):
 ffmpeg -itsoffset 0.3 -i video-input.mp4 -ss 0.5 -i audio-input.mp3 -vcodec copy -acodec copy -y output.mov
 ```
 # fix aspect ratio 
-```bash..... -s 900x720 -aspect 16:9 ```
+```
+bash
+..... -s 900x720 -aspect 16:9 
+```
 # -sameq vs -qscale 
 * for video
-```bash-q:v 0```
+```
+bash-q:v 0
+```
 * for audio
-```bash-q:a 0```
+```bash
+-q:a 0
+```
 # add audio / soundtrack to movie 
 ```bashffmpeg -i IMG_7966.MOV -i sound.mp3 -vcodec copy -acodec copy output.mov ```
 # wellicht interessant 
