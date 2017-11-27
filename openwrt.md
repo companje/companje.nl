@@ -18,7 +18,7 @@ nc -l 192.168.1.2 3333 > backup.tar.gz &
 } | telnet 192.168.1.1
 ```
 
-#ser2net
+# ser2net
 * it looks to me like ser2net can not communicate on 250000 bps.
 * there is a version/fork of ser2net that can do http/websockets.
 
