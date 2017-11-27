@@ -2,7 +2,7 @@
 title: OpenWrt
 ---
 
-#backup script for saving settings and home folder in failsafe mode
+# backup script for saving settings and home folder in failsafe mode
 1. start the wifibox in failsafe mode
 2. set your local IP to 192.168.1.2
 3. run this script locally
