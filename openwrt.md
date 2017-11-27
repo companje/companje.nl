@@ -8,14 +8,13 @@ title: OpenWrt
 3. run this script locally
 (it starts a netcat server in the background and then executes remote commands through telnet)
 ```bash
-# LOCAL
 nc -l 192.168.1.2 3333 > backup.tar.gz &
 
 { 
-  echo "sysupgrade --create-backup /tmp/backup.tar.gz" ; # REMOTE
-  sleep 5;  # LOCAL
-  echo "nc 192.168.1.2 3333 < /tmp/backup.tar.gz" ; # REMOTE
-  sleep 5;  # LOCAL
+  echo "sysupgrade --create-backup /tmp/backup.tar.gz" ; # sysupgrade executed remotely
+  sleep 5;  # local
+  echo "nc 192.168.1.2 3333 < /tmp/backup.tar.gz" ; # # nc executed remotely
+  sleep 5;  # local
 } | telnet 192.168.1.1
 ```
 
