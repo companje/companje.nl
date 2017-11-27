@@ -11,7 +11,6 @@ title: OpenWrt
 # LOCAL
 nc -l 192.168.1.2 3333 > backup.tar.gz &
 
-# REMOTE
 { 
   echo "sysupgrade --create-backup /tmp/backup.tar.gz" ; # REMOTE
   sleep 5;  # LOCAL
