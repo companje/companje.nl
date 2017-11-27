@@ -2,6 +2,24 @@
 title: OpenWrt
 ---
 
+#backup script for saving settings and home folder in failsafe mode
+1. start the wifibox in failsafe mode
+2. set your local IP to 192.168.1.2
+3. run this script locally
+(it starts a netcat server in the background and then executes remote commands through telnet)
+```
+# LOCAL
+nc -l 192.168.1.2 3333 > backup.tar.gz &
+
+# REMOTE
+{ 
+  echo "sysupgrade --create-backup /tmp/backup.tar.gz" ; # REMOTE
+  sleep 5;  # LOCAL
+  echo "nc 192.168.1.2 3333 < /tmp/backup.tar.gz" ; # REMOTE
+  sleep 5;  # LOCAL
+} | telnet 192.168.1.1
+```
+
 #ser2net
 * it looks to me like ser2net can not communicate on 250000 bps.
 * there is a version/fork of ser2net that can do http/websockets.
