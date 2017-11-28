@@ -3,11 +3,12 @@ layout: default
 title: ffmpeg
 ---
 
-# cut mp3
+# convert mp4 to iPhone ringtone
 seek to 6:45 then take 30 seconds of input
 ```bash
-ffmpeg -ss 0:06:45 -t 30 -i cybernoid.mp4 cybernoid.mp3
-ffmpeg -i cybernoid.mp3 cybernoid.m4e
+ffmpeg -y -ss 0:06:45 -t 30 -i cybernoid.mp4 -vn cybernoid.m4a
+mv cybernoid.m4a cybernoid.m4r
+# then drag the result into the 'Tones' folder of the iPhone in iTunes
 ```
 
 
