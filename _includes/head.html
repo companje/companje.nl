@@ -1,0 +1,54 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+ -->
+<!--   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+ -->  
+  {% if jekyll.environment == 'production' and site.google_analytics %}
+  {% include google-analytics.html %}
+  {% endif %}
+
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/mdb.min.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
+  <link href="/css/prism.css" rel="stylesheet" />
+  <style>
+  body { 
+    background-color: black;
+    background: url('/img/chalk.jpg') no-repeat center center fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  } 
+  </style>
+
+  <script>
+      window.onkeydown = function(event) {
+        if (event.keyCode==69 && event.metaKey) { //cmd+E
+          console.log('edit');
+          var page = window.location.pathname;
+          page = page.replace(new RegExp("/", "g"), "");
+          page = page.replace(new RegExp(".html", "g"), "");
+          window.open("https://github.com/companje/companje.github.io/edit/master/" + page + ".md");
+          // console.log(page);
+        }
+
+        
+        //   //window.location = "http://prose.io/#companje/companje.github.io/edit/master/" + page + ".md";
+        //   window.location = "https://github.com/companje/companje.github.io/edit/master/" + page + ".md";
+        // } else if (event.keyCode==78) { //N
+        //     //console.log($('link[rel=canonical]').attr("href").indexOf("404.html")>-1);
+        //     window.location = "https://github.com/companje/companje.github.io/new/master";
+        // }
+      };
+  </script>
+
+
+</head>
