@@ -2,6 +2,10 @@
 title: =====Inkscape=====
 ---
 
+=====fill patterns=====
+how to adjust the pattern using the 'node tool':
+http://www.inkscapeforum.com/viewtopic.php?t=4756
+
 =====Hershey Text=====
 Single line font rendering for CNC / Laser
 Hershey Text is built into Inkscape as of version 0.91.0
