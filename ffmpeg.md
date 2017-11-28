@@ -2,6 +2,15 @@
 layout: default
 title: ffmpeg
 ---
+
+# cut mp3
+seek to 6:45 then take 30 seconds of input
+```bash
+ffmpeg -ss 0:06:45 -t 30 -i cybernoid.mp4 cybernoid.mp3
+ffmpeg -i cybernoid.mp3 cybernoid.m4e
+```
+
+
 # image sequence / slideshow to gif
 ```bash
 ffmpeg -i %d.png -s hd480 -y -filter:v "setpts=15*PTS" output.gif
