@@ -7,9 +7,9 @@ title: OpenWrt
 2. set your local IP to 192.168.1.2
 3. run this script locally
 (it starts a netcat server in the background and then executes remote commands through telnet)
+
 ```bash
 nc -l 192.168.1.2 3333 > backup.tar.gz &
-
 { 
   echo "sysupgrade --create-backup /tmp/backup.tar.gz" ; # sysupgrade executed remotely
   sleep 5;  # local
