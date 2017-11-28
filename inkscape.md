@@ -2,6 +2,10 @@
 title: =====Inkscape=====
 ---
 
+=====how to set the color of a pattern=====
+(edit the XML)
+https://graphicdesign.stackexchange.com/questions/15580/how-can-i-color-a-pattern-in-inkscape
+
 =====fill patterns=====
 how to adjust the pattern using the 'node tool':
 http://www.inkscapeforum.com/viewtopic.php?t=4756
