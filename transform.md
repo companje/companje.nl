@@ -3,22 +3,24 @@ layout: default
 title: Doodle3D Transform
 ---
 
-# duplicate
+
+# actions and keyboard shortcuts
+```js
 actions.duplicateSelection()
 
 actions.align(horizontal, vertical);
 horizontal = vertical = -1 || 0 || 1 || false;
-
+```
 
 in hotkeys.js
+```js
 
-            case 'd':
-              if (commandKey) {
-                dispatch(actions.duplicateSelection());
-              }
-              break;
-
-
+case 'd':
+  if (commandKey) {
+    dispatch(actions.duplicateSelection());
+  }
+  break;
+```
 
 # testje:
 ```js
