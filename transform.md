@@ -19,7 +19,6 @@ horizontal = vertical = -1 || 0 || 1 || false;
 
 in hotkeys.js
 ```js
-
 case 'd':
   if (commandKey) {
     dispatch(actions.duplicateSelection());
