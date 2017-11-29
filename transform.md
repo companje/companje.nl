@@ -3,7 +3,6 @@ layout: default
 title: Doodle3D Transform
 ---
 
-
 # actions and keyboard shortcuts
 ```js
 actions.duplicateSelection()
