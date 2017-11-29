@@ -15,10 +15,12 @@ mv cybernoid.m4a cybernoid.m4r
 ```bash
 ffmpeg -i %d.png -s hd480 -y -filter:v "setpts=15*PTS" output.gif
 ```
+
 # glob 
 ```bash
 ffmpeg -pattern_type glob -i "2017-06-07/*.png" -vcodec mpeg4 -y -q:v 0 test.mp4
 ```
+
 # ffserver 
 ```bash
 HTTPPort 8090
