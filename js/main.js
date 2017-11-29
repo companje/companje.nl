@@ -15,3 +15,7 @@ window.onkeydown = function(event) {
 };
 
 $("#frmSearch").submit()
+$( "#target" ).submit(function( event ) {
+  alert( "Handler for .submit() called." );
+  event.preventDefault();
+});
