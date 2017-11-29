@@ -11,7 +11,6 @@ mv cybernoid.m4a cybernoid.m4r
 # then drag the result into the 'Tones' folder of the iPhone in iTunes
 ```
 
-
 # image sequence / slideshow to gif
 ```bash
 ffmpeg -i %d.png -s hd480 -y -filter:v "setpts=15*PTS" output.gif
