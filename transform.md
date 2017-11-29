@@ -3,6 +3,23 @@ layout: default
 title: Doodle3D Transform
 ---
 
+# duplicate
+actions.duplicateSelection()
+
+actions.align(horizontal, vertical);
+horizontal = vertical = -1 || 0 || 1 || false;
+
+
+in hotkeys.js
+
+            case 'd':
+              if (commandKey) {
+                dispatch(actions.duplicateSelection());
+              }
+              break;
+
+
+
 # testje:
 ```js
 radi=[2.6,4,5,6.5,8]; for (var i in radi) actions.addObject({ type: 'CIRCLE', transform: new CAL.Matrix({x:i*10}), circle: { radius:radi[i]/2*10, segment: Math.PI * 2 } });
