@@ -3,7 +3,7 @@ title: Processing
 ---
 
 # PVector 3D rotation
-<code javascript>
+```js
 void applyRotation(PVector src, PVector axis, float angle) {
   PMatrix3D rMat = new PMatrix3D();
   PVector tmp = new PVector();
@@ -11,10 +11,10 @@ void applyRotation(PVector src, PVector axis, float angle) {
   rMat.mult(src, tmp);
   src.set(tmp);
 }
-</code>
+```
 
 # convert 16bit gray RAW image to 8 bit RGB png
-<code javascript>
+```js
 byte gray[] = loadBytes("/Users/rick/Documents/openFrameworks/of0093/apps/Globe4D/Globe4D/bin/data/maps/hull/terra8M.raw"); 
 
 PImage img = createImage(4096, 2048, RGB);
@@ -29,10 +29,10 @@ img.updatePixels();
 img.save("rgb.png");
 
 println("done");
-</code>
+```
 
 # Globe intro in ProcessingJS for Khan Academy 
-<code javascript>
+```js
 var planet = getImage("space/planet");
 var logoY,sloganX,globeY,webY;
 
@@ -94,10 +94,10 @@ var draw = function() {
     stroke(0,0,0,50);
     arc(201,240,299,140,0,180);
 };
-</code>
+```
 
 # Monstertje in ProcessingJS voor Khan Academy
-<code javascript>
+```js
 var eye = function(cx,cy,eyeX,eyeY) {
     fill(126, 242, 149);
     triangle(eyeX-10,eyeY,eyeX+10,eyeY,cx,cy);
@@ -164,10 +164,10 @@ var draw = function() {
     ellipse(cx+13,cy-7,3,4);
     ellipse(cx-16,cy-9,4,4);
 };
-</code>
+```
 
 # Starfield 2D perspective 
-<code java>
+```java
 class Star extends PVector {
   float speed;
   
@@ -204,10 +204,10 @@ void draw() {
     if (s.z>0) s.z=-1000;
   }
 }
-</code>
+```
 
 # Mandelbrot set 
-<code java>
+```java
 // Interactive Mandelbrot Set
 // Inspired by Daniel Shiffman's Processing example.
 // by Rick Companje - www.companje.nl - 6 december 2009
@@ -290,4 +290,4 @@ void draw() {
   }
   updatePixels();
 }
-</code>
+```
