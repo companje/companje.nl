@@ -11,4 +11,7 @@ window.onkeydown = function(event) {
     $('#txtSearch').focus();
     event.preventDefault();
   }
+
 };
+
+$("#frmSearch").submit()
