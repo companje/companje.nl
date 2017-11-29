@@ -15,6 +15,6 @@ window.onkeydown = function(event) {
 };
 
 $("#frmSearch").submit(function( event ) {
-  alert( "Handler for .submit() called." );
+  location.href = "/" + $('#txtSearch').val();
   event.preventDefault();
 });
