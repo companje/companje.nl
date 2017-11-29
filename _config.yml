@@ -18,9 +18,9 @@ email: rick@companje.nl
 description: >- # this means to ignore newlines until "baseurl:"
   Rick Companje's notes
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://companje.nl" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: companje
+github_username:  companje
 
 # Build settings
 markdown: kramdown
