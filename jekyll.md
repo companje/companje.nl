@@ -3,7 +3,7 @@ title: jekyll
 ---
 
 # run jekyll locally
-serve 
+serve l
  bundle exec jekyll serve --profile --incremental --verbose
 
 
