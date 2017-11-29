@@ -10,7 +10,7 @@ title: Redux
 
 
 =====myTodoApp=====
-<code>
+```
 jspm init    # make sure to choose 'Babel' as transpiler
 jspm install react redux react-redux react-dom
 </code>

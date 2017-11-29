@@ -7,7 +7,7 @@ title: Google Docs
 
 =====add dates=====
 add 12 months to date
-<code>
+```
 =edate(A11;12)
 </code>
 
@@ -47,17 +47,17 @@ if ($row = mysql_fetch_assoc(mysql_query("SELECT post_id,meta_value FROM wp_post
 http://woorkup.com/2010/02/19/10-useful-google-spreadsheet-formulas-you-must-know/
 
 =====unique() and continue() functions=====
-<code>
+```
 =UNIQUE(A:A)
 =CONTINUE(B1; 2; 1)
 ...etc..
 </code>
 
 =====append row=====
-<code>sheet.appendRow(['hello',true,5.5,new Date()]);</code>
+```sheet.appendRow(['hello',true,5.5,new Date()]);</code>
 
 =====fetch from url=====
-<code>var text = UrlFetchApp.fetch("http://companje.nl").getContentText();</code>
+```var text = UrlFetchApp.fetch("http://companje.nl").getContentText();</code>
 
 =====documentation=====
 * https://developers.google.com/apps-script/

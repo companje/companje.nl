@@ -36,7 +36,7 @@ title: OpenPanel
   * enable apache modules: `sudo a2enmod rewrite` # for mod_rewrite.so
   * root@vps:/var/openpanel/modules/Apache2.module/apache2module.app/Contents/Configuration Defaults# `cat openpanel.module.apache2.conf.xml`
 
-<code>
+```
 <openpanel.module.domain>
   <config>
     <varpath>/var/openpanel/conf/staging/Apache2/</varpath>
@@ -84,7 +84,7 @@ position: initial !important;
 
 ==== configure openpanel email aliasses via openpanel-cli====
 http://documentation.openpanel.com/index.php/OpenPanel-CLI_Administration_Guide
-<code>
+```
 openpanel-cli
 configure domain cult-lab.nl
 configure email cult-lab.nl

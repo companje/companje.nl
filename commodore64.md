@@ -41,7 +41,7 @@ or
 
 =====print at location ROW,COL=====
 prints "X" at row=5, col=10
-<code>
+```
 5 print chr$(147)
 10 poke 780,0
 20 poke 781,5
@@ -58,7 +58,7 @@ read values from 53267 and 53268 for X and Y ([[http://www.c64-wiki.com/index.ph
 
 =====serial communication in both directions at 1200 baud=====
 (send CAPITALS from the PC because the character-set of the c64 is different)
-<code>
+```
 10 OPEN 5,2,2,CHR$(8)
 20 GET#5,A$: IF A$<>"" THEN PRINT A$;
 30 GET B$: IF B$<>"" THEN PRINT#5,B$;

@@ -2,7 +2,7 @@
 title: =====GDB (GNU Debugger) =====
 ---
 
-<code>
+```
 gdb datamining
 (gdb) run
 (gdb) bt

@@ -15,7 +15,7 @@ title: Git
   git filter-branch --tree-filter 'rm bin/data/images/BalloonChair-Field.psd' HEAD
 
 =====github software errors on windows=====
-<code>
+```
 WARNING: git command could not be found. Please create an alias or add it to your PATH.
 WARNING: Could not find ssh-agent
 </code>
@@ -39,7 +39,7 @@ https://help.github.com/articles/syncing-a-fork/
 
 =====fatal: unable to access 'C:\Users\User/.gitconfig': Permission denied=====
 the HOME env variable might be wrong. Try 
-<code>set HOME</code>
+```set HOME</code>
 and fix it if needed by setting it to the right value or by removing it:
 <code bash>set HOME=c:\Users\YOUR_USER_NAME
 rem OR: set HOME=
@@ -47,7 +47,7 @@ rem OR: set HOME=
 
 =====flow for switching branches, removing untracked files, updating submodules=====
 Warning: this will remove ALL untracked files and directories!!
-<code>
+```
 git checkout master
 git clean -xfdf     # be careful with this!
 git checkout OtherBranchWithSubmodules
@@ -56,11 +56,11 @@ git submodule update --init --recursive
 
 
 =====remove all untracked files and folders including everything in .gitignore=====
-<code>git clean -xfdf</code>
+```git clean -xfdf</code>
 
 =====create alias for clone recursive=====
 in ~/.gitconfig
-<code>
+```
 [alias]
         clr = clone --recursive
 </code>
@@ -69,13 +69,13 @@ in ~/.gitconfig
 [[http://www.sourcetreeapp.com/download/|sourcetree]]
 
 =====set remote url=====
-<code>git remote set-url origin "git@github.com:USER/REPO.git"</code>
+```git remote set-url origin "git@github.com:USER/REPO.git"</code>
 
 =====info about remote url=====
-<code>git remote -v</code>
+```git remote -v</code>
 
 =====How to commit my current changes to a different branch in git=====
-<code>
+```
 git stash
 git checkout other-branch
 git stash pop
@@ -85,17 +85,17 @@ git stash pop
 <code bash>sudo port install git-core git-extras</code>
 
 =====undo 'git add' before commit=====
-<code>
+```
 git reset FILE
 </code>
 
 =====create a new branch=====
-<code>
+```
 git checkout -b Demo
 </code>
 
 =====een branch pushen die remote nog niet bestaat=====
-<code>
+```
 git push --all
 </code>
 
@@ -108,7 +108,7 @@ git clone --recursive -b BRANCHNAME git@github.com:..../.....git
 </code>
 
 =====compare two commits=====
-<code>
+```
 git diff HEAD HEAD~
 git diff HEAD HEAD~~
 </code>
@@ -181,7 +181,7 @@ git config --global color.ui true
 
 =====rollback /revert to last commit=====
 not tested yet. [[http://stackoverflow.com/questions/4407232/git-rollback-to-a-previous-commit|more info]]
-<code>
+```
 git reset --hard HEAD
 </code>
 
@@ -390,7 +390,7 @@ git config --global core.editor "nano"
 </code>
 
 =====in case of this error:=====
-<code>
+```
 error: src refspec master does not match any.
 error: failed to push some refs to ..
 </code>
@@ -435,8 +435,8 @@ git submodule update --init --recursive
 </code>
 
 =====remove traces of wrongly removed submodules=====
-<code>git config -e</code>
-<code>rm -rf .git/modules/*</code>
+```git config -e</code>
+```rm -rf .git/modules/*</code>
 
 =====fatal: Needed a single revision =====
 cloning probably resulted in an empty folder. Delete the folder and try to clone again.

@@ -8,7 +8,7 @@ http://wp-cli.org/
 
 Quickstart: https://make.wordpress.org/cli/handbook/quick-start/
 
-<code>
+```
 Wordpress CLI 
 $ source  /Applications/XAMPP/ds-plugins/ds-cli/platform/mac/boot.sh
 $ wp core install --url=www.doodle3d.dev --title=Doodle3D --admin_user=doodle3d --admin_email=www-doodle3d-dev@companje.nl

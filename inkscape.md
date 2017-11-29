@@ -41,11 +41,11 @@ This might work:
 edit /Applications/Inkscape.app/Contents/Resources/bin/inkscape
 
 add:
-<code>
+```
 export VERSIONER_PYTHON_VERSION=2.6
 </code>
 just before:
-<code>
+```
 export VERSIONER_PYTHON_PREFER_32_BIT=yes
 </code>
 
@@ -104,7 +104,7 @@ Bij resizen kun je met Affect aangeven dat ie bijv de lijndikte met rust moet la
 * export as DXF (with units mm)
 
 [[OpenSCAD]] code:
-<code>linear_extrude(file = "file.dxf", height=5);</code>
+```linear_extrude(file = "file.dxf", height=5);</code>
 
 =====templates (for bolds ie.)=====
 * make a clone through the edit menu

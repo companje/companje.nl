@@ -53,7 +53,7 @@ cut -f4,10 EnecsysLogfile.txt | sort -r | rev | uniq -f 1 | rev | cut -f 2 | egr
 </code>
 
 En hier een stukje log van Duinsels perlscript:
-<code>
+```
 date    time    ZigbeeString    deviceID        DCpower Efficiency      ACpower DCcurrent       DCVolt  LifetimeProduction      Time1   Time2   ACvolt  ACfreq  Temperature     HexZigbee
 04-01-2015      09:38:42        WZ=PfI1dwCaxjQAAO5EIQEAAEIGClPyGJAGAJrGNEg=03,S=2000024125
 04-01-2015      09:39:17        WS=gfaPBgCaxjQAAO6KIQEAAABsFDADiAABPAEpA6syAOYUA3wBkwAACF       110098049       297     0.939   278.883 7.9     37.59   403.892 238     108     230     50      20      81F68F06009AC6340000EE8A21010000006C1430038800013C012903AB3200E614037C01930000085
@@ -148,7 +148,7 @@ done
 </code>
 
 =====infinite while=====
-<code>while :
+```while :
 do
   echo tick
   sleep 1

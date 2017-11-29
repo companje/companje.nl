@@ -53,7 +53,7 @@ http://kivy.org/#home
 
 ==ImportError: No module named NK.gui.app==
 In NinjaKittens folder:
-<code>
+```
 export PYTHONPATH=.
 </code>
 
@@ -62,17 +62,17 @@ export PYTHONPATH=.
 
 ==libxml / libxml2 / lxml ==
 untested:
-<code>
+```
 brew install libxml2
 </code>
 or
-<code>
+```
 sudo port install py25-lxml
 </code>
 
 ==install easy_install==
 http://pypi.python.org/pypi/setuptools#downloads
-<code>
+```
 sh setuptools-0.6c9-py2.4.egg --prefix=~
 </code>
 

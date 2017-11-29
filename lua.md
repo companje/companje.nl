@@ -18,10 +18,10 @@ http://lua-users.org/wiki/SampleCode
   export LUA_PATH=/opt/local/share/luarocks/share/lua/5.2/?.lua
 
 =====use the luarocks package manager to install a package / library=====
-<code>sudo luarocks install luasocket</code>
+```sudo luarocks install luasocket</code>
 
 =====where are the LUA packages / libraries=====
-<code>
+```
 print(package.path.."
 "..package.cpath)
 </code>

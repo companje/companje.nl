@@ -42,7 +42,7 @@ http://www.textfiles.com/bitsavers/pdf/microPro/Wordstar_3.3/Wordstar_3.3_Refere
 ==debug.com==
 * fill memory with 0's: `e 0 ffff 0`
 * `rcx` sets cx register. This register is used in debug.com to store the amount of bytes to write to the loaded (or newly created file).
-<code>
+```
 
 ==create a program with debug.com==
 A> debug test.com

@@ -59,7 +59,7 @@ I modified some code in `putBmpIntoPixels` to be able to load 16 bits grayscale 
 ```
 
 =====enable errors to force checking return values=====
-<code>
+```
 -Werror=return-type
 </code>
 
@@ -102,7 +102,7 @@ see [[logitech]]
 
 =====projectGenerator=====
 cmdline command:
-<code>
+```
 "/Users/rick/Documents/openFrameworks/of0092/projectGenerator-osx/projectGenerator.app/Contents/Resources/app/app/projectGenerator"  -o"/Users/rick/Documents/openFrameworks/of0092" -a"ofxCv,ofxOpenCv" -p"osx" "/Users/rick/Documents/openFrameworks/of0092/apps/myApps/cvBgTest2"
 </code>
 
@@ -119,7 +119,7 @@ In XCode when pressing Cmd+8 then click on Clock icon on bottom you get detailed
 
 =====what means 'const' after method definition?=====
 When you define a method like this in your class:
-<code>
+```
 bool isReady() const
 </code>
 It means that it "will return a bool but it will not change the logic state of your object. So this is your getter."
@@ -127,7 +127,7 @@ So by supplying const you promise the compiler you won't change any data inside 
 
 
 =====Member function '...' not viable:=====
-<code>
+```
 Member function 'drawGlobe' not viable: 'this' argument has type 'const Globe', but function is not marked const
 </code>
 
@@ -136,7 +136,7 @@ Member function 'drawGlobe' not viable: 'this' argument has type 'const Globe', 
 
 =====Field type '...' is an abstract class=====
 In openFrameworks 009 the declarations of some ofBase classes has changed. For example when your class inherits from  ofBaseDraws you need to add the `const` term after your function definition:
-<code>
+```
   float getWidth() const { return 640; }
   float getHeight() const { return 480; }
   void draw(float x, float y) const { /*...*/ }
@@ -168,5 +168,5 @@ or:
   * you might need to set the HOME environment variable to your home folder (C:\Users\YOUR_USERNAME) to be able to access your files from the MSYS2 shell.
   * there's a typo in the line `cd your_oF_directory/scripts/win_cb/msys2`. Remove the win_cb part.
 * when the tutorial says: "Open a **MINGW32** shell" it means run the following batch file (from the Start Menu):
-<code>
+```
 C:\Windows\System32

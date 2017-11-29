@@ -444,7 +444,7 @@ function assert(a,b) {
 
 
 =====Access-Control-Allow-Origin=====
-<code>
+```
 header("Access-Control-Allow-Origin: *");
 </code>
 

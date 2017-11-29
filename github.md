@@ -3,7 +3,7 @@ title: Github
 ---
 
 =====use image in markdown=====
-<code>
+```
 ![](doc/images/my-image.jpg)
 </code>
 

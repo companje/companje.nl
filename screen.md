@@ -24,6 +24,6 @@ https://www.gnu.org/software/screen/manual/screen.html
   screen /dev/tty.usbserial
   
 =====reset=====
-<code>
+```
 reset
 </code>

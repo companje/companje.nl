@@ -94,10 +94,10 @@ http://www.arduinopassion.com/wp-content/uploads/2013/02/Arduino-uno-Pinout.png
 * [[https://www.youtube.com/watch?v=Wd22Gm6D2hI|Dan Nixon's youtube explanation]]
 
 =====sprintf=====
-<code>sprintf(charBuf, "%d,%d,%d", 5,3,2);</code>
+```sprintf(charBuf, "%d,%d,%d", 5,3,2);</code>
 
 =====float to char[]=====
-<code>dtostrf(floatVar, minStringWidthIncDecimalPoint, numVarsAfterDecimal, charBuf);</code>
+```dtostrf(floatVar, minStringWidthIncDecimalPoint, numVarsAfterDecimal, charBuf);</code>
 
 =====arduino mini USB=====
 http://www.arduino.cc/en/Main/MiniUSB
@@ -157,7 +157,7 @@ zie [[wifly]]
 
 =====watchdog arduino=====
 Ik heb pas zelf een [[http://en.wikipedia.org/wiki/Watchdog_timer|watchdog timer]] gebouwd voor Arduino met de TimerOne library zie ik nu. Maar het kan ook met standaard avr functies. Zie [[http://lifeboat.co.nz/arduino/sensor_water_working_v1.pde|dit voorbeeld]].
-<code>
+```
 #include <avr/wdt.h>
 ...
 wdt_enable(WDTO_8S); //start watchdog set for max 8 seconds
@@ -172,7 +172,7 @@ wdt_disable(); //turn off watchdog timer - if sketch gets this far it hasn't hun
 
 =====locatie van arduino hex file=====
 Op mijn mac was dit de locatie van de hex file:
-<code>
+```
 cd /private/var/folders/n9/n9UpGCFsHQW0bdm5gfLoRE+++TI/-Tmp-/console4814829202509611846.tmp
 </code>
 
@@ -193,7 +193,7 @@ pause
 ./avrdude -c arduino -b115200 -p ATMEGA328P -P /dev/tty.usbmodem411 -C avrdude.conf -D -Uflash:w:firmware.hex:i
 
 =====avrdude: parallel port access not available=====
-<code>
+```
 avrdude: parallel port access not available in this configuration
 avrdude: error at avrdude.conf:531: programmer type not specified
 </code>

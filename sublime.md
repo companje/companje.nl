@@ -43,7 +43,7 @@ in Preferences->User
   
 =====don't open new window=====
 In Preferences->Settings User change add:
-<code>
+```
     "open_files_in_new_window": false,
 </code>
 

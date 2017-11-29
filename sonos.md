@@ -9,7 +9,7 @@ title: Sonos
 ===== SoCo =====
 * https://pypi.python.org/pypi/soco/
 * socos (command line player)
-<code>
+```
 socos
   > set 1
   > play

@@ -15,7 +15,7 @@ title: Phonegap
 * http://plugins.cordova.io/#/package/org.apache.cordova.statusbar
 * Try out the different statusbar possibilities and read explanation: http://devgirl.org/2014/07/31/phonegap-developers-guid/
 
-<code>
+```
 <preference name="StatusBarOverlaysWebView" value="false"/>
 <preference name="StatusBarBackgroundColor" value="#000000"/>
 <preference name="StatusBarStyle" value="lightcontent" />
@@ -59,13 +59,13 @@ make sure to delete files in www/ and platforms/.../www/ folder since overwritin
 =====Overscroll / webview bounce background color=====
 * https://github.com/EddyVerbruggen/iOSWebViewColor-PhoneGap-Plugin
 or disable:
-<code>
+```
  <preference name="DisallowOverscroll" value="true" />
  <preference name="webviewbounce" value="false" />
 </code>
 
 in native Objective C code in MainViewController.m
-<code>
+```
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 - (void)webViewDidFinishLoad:(UIWebView*)theWebView
 {
@@ -84,7 +84,7 @@ in config.xml:
 
 =====splashscreen notation in config.xml=====
 Don't use '''gap:''' in front of '''splash''' because that doesn't work!
-<code>
+```
 <splash gap:platform="ios" src="assets/screen/ios/Default-568h@2x~iphone.png" width="640" height="1136" />
 <splash gap:platform="ios" src="assets/screen/ios/Default-Landscape@2x~ipad.png" width="2048" height="1536" />
 <splash gap:platform="ios" src="assets/screen/ios/Default-Landscape~ipad.png" width="1024" height="768" />
@@ -98,7 +98,7 @@ Don't use '''gap:''' in front of '''splash''' because that doesn't work!
   phonegap -d build ios > build.log
 
 =====toolchain info=====
-<code>
+```
 sw_vers -productVersion
 ios-deploy -V
 xcodebuild -version
@@ -169,7 +169,7 @@ update ios-deploy....?
   npm update -g ios-deploy
   
 =====init=====
-<code>
+```
 phonegap create MyApp -i com.myapp.app -n MyApp
 cd MyApp
 phonegap build ios

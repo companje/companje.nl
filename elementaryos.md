@@ -18,7 +18,7 @@ and change the value of "opened-files" field. There is list of files that scratc
 * https://github.com/processing/processing/wiki/Supported%20Platforms
 
 ====install java on elementaryos====
-<code>
+```
 sudo apt-get update
 sudo apt-get install python-software-properties
 sudo add-apt-repository ppa:webupd8team/java
@@ -44,7 +44,7 @@ no desktop window:
 
 ====teamviewer====
 [[http://linuxg.net/install-teamviewer-on-ubuntu/|this]] worked for me:
-<code>
+```
 sudo apt-get update
 sudo apt-get install gdebi
 wget http://download.teamviewer.com/download/teamviewer_i386.deb
@@ -65,7 +65,7 @@ edit/create `~/.bash_aliases` and add your alias like this `alias dir="ls -al"`
 and or run `gnome-session-properties`
 see also folder: `~/.config/autostart`
 
-<code>
+```
 globe4d@Globe4D-Leiden:~/Documents/of0093/apps/Globe4D/Globe4D/bin$ cd ~/.config/autostart
 globe4d@Globe4D-Leiden:~/.config/autostart$ ls
 custom-command1.desktop  Globe4D.desktop

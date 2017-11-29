@@ -8,7 +8,7 @@ title: netcat
 
 
 ==to receive data from Globe4D driver==
-<code>
+```
 nc -lu -p 12345
 </code>
 
@@ -49,7 +49,7 @@ done
 (somehow the word 'Hoi' needs to be followed by two linebreaks)
 
 in a while loop:
-<code>
+```
 while :
 do
   echo listening...
@@ -61,18 +61,18 @@ done
 </code>
 
 ==listen to port==
-<code>
+```
 nc -lu -p 7777
 </code>
 
-<code>
+```
 nc -lu 192.168.2.123 8888
 </code>
 
 ==send UDP==
-<code>
+```
 echo "hello" > /dev/udp/10.87.24.174/8888
 </code>
-<code>
+```
 ls > /dev/udp/10.87.24.174/8888
 </code>

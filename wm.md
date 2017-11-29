@@ -1,7 +1,7 @@
 ---
 title: WordMaster 5.55A
 ---
-<code>
+```
         VIDEO MODE SUMMARY  (TYPE ^J FOR NEXT FRAME)
 
 ^O   INSERTION ON/OFF           RUB  DELETE CHR LEFT

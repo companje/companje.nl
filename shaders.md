@@ -11,7 +11,7 @@ http://cpetry.github.io/NormalMap-Online/
 glGetString(GL_SHADING_LANGUAGE_VERSION)
 </code>
 
-<code>
+```
 color = light * mix(texture2D(night, textureCoord), 
    texture2D(day, textureCoord), 
    smoothstep(-0.25, 0.25, dot(N, L)));

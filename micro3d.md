@@ -12,11 +12,11 @@ title: Micro3D printer
 * communicates over Virtual COM/Serial with 115200 bps.
 * collected info by using JetBrains dotPeek.
 * sending `S` (0x53) returns 768 bytes of data stored in the Atmega EEPROM:
-<code>
+```
 ç··x>·PE!Ô··ffÊ>‚ˇb?ˆ·°æÿ8\>é"îæ™¥Nø"···Bn·················································································································································································································································································································································································································································································································································································································································································±Ó√··)\7A····································Ù·ûWôC·GR15051501100055·
 </code>
 The seemingly raw data contains some interesting settings. You can see your serial number at the end. The list below contains the start position of the variable in the EEPROM followed by it's meaning (they are mostly 4 byte integers).
-<code>
+```
 0: FirmwareVersion
 4: FirmwareCRC
 8: LastRecordedZValue
@@ -74,7 +74,7 @@ The seemingly raw data contains some interesting settings. You can see your seri
 ' returns 'e1' which is an error message meaning "Process parser returned not supported protocol.". I guess this is because the microcontroller expects a binary format (in the form of Repetier binary gcode?)
 * btw: the software contains some hardcoded serial numbers (BK=black, GR=green, OR=orange, SL=silver). Possibly followed by some date/time stamp: YYMMDD0hhmm: BK15033001100, BK15040201050, BK15040301050, BK15040602050, BK15040801050, BK15040802100, GR15032702100, GR15033101100, GR15040601100, GR15040701100, OR15032701100, SL15032601050.
 * Based on the experiments of evanchsa on the M3D forum I guess '0x82 0x10 0x00 0x00 0x73 0x00 0x06 0x46' is the binary version of M115 since it indeed returns the following when I send it to my Micro3D.
-<code>
+```
 ok REPETIER_PROTOCOL:2 FIRMWARE_NAME:Micro3D FIRMWARE_VERSION:2015042701 MACHINE_TYPE:The_Micro X-SERIAL_NUMBER:GR150515011000550
 </code>
 * You can see mine is green and seems to be installed/shipped at May 15th 2015. The firmware version on the machine dates from 2015-04-27 which is weird since it should have been updated two days ago by the M3D software. Anyway, we're getting somewhere.

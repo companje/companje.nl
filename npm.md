@@ -4,7 +4,7 @@ title: npm - node package manager
 see [[nodejs]]
 
 ==list all global packages without deps==
-<code>
+```
 $ npm list -g --depth=0
 /usr/local/lib
 ├── add-cors-to-couchdb@0.0.6

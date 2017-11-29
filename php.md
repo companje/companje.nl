@@ -193,11 +193,11 @@ else
 '''PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib64/php/modules/module.so' - /usr/lib64/php/modules/module.so: cannot open shared object file: No such file or directory in Unknown on line 0'''
 
 edit /etc/php.d/mcrypt.ini and change
-<code>
+```
 extension=module.so
 </code>
 to
-<code>
+```
 extension=mcrypt.so
 </code>
 
@@ -300,20 +300,20 @@ date_default_timezone_set("Europe/Amsterdam");
 
 =====ssl disabled?=====
 if ssl seems to be disabled in php just enable it like this in your php.ini:
-<code>
+```
 extension=php_openssl.dll
 </code>
 
 =====short open tags=====
 in php.ini
-<code>
+```
 short_open_tag = On
 </code>
 http://www.php.net/manual/en/ini.core.php#ini.short-open-tag
 
 =====connect to mysql through console/command line PHP but without Apache=====
 if you get this error:
-<code>
+```
 PHP Warning:  mysql_connect(): [2002] No such file or directory (trying to connect via unix:///var/mysql/mysql.sock) 
 </code>
 try to connect to 127.0.0.1 instead of localhost
@@ -361,14 +361,14 @@ Als Apache error 500 geeft kan dat liggen aan een fout in de syntax van een PHP 
 ini_set('display_errors', 'On');
 </code>
 Als dat niet helpt kun je ook je php.ini aanpassen. In mijn geval stond die hier (het pad kun je opvragen mbv ''phpinfo()'':
-<code>
+```
 /Applications/MAMP/bin/php/php5.3.6/conf/php.ini
 of hier (op OpenPanel):
 /etc/php5/apache2/php.ini
 </code>
 
 =====php error log=====
-<code>
+```
 /Applications/MAMP/logs/php_error.log  
 </code>
 

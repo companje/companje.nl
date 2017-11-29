@@ -38,7 +38,7 @@ Check Start->Shutdown->... Hibernate should be gone.
   taskkill /f /fi "status eq not responding"
 
 =====Windows 8 startup folder=====
-<code>
+```
 shell:startup
 </code>
 
@@ -47,7 +47,7 @@ filter in ''eventvwr'' on event ID 12
 
 =====control commands=====
 http://support2.microsoft.com/kb/192806
-<code>
+```
 Control panel tool             Command
    -----------------------------------------------------------------
    Accessibility Options          control access.cpl
@@ -90,37 +90,37 @@ Control panel tool             Command
 * http://global.shuttle.com/main/productsDownload?productId=1555
 
 =====ignore windows recovery=====
-<code>
+```
 bcdedit /set {current} bootstatuspolicy ignoreallfailures
 </code>
 
 =====windows info=====
-<code>MSinfo32 </code>
+```MSinfo32 </code>
 
 =====Disabling “Has stopped working” dialogs=====
 In '''HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting''' create a DWORD 'DontShowUI' with value 1
 
 =====start task scheduler=====
-<code>
+```
 control schedtasks
 </code>
 
 =====reboot computer=====
-<code>
+```
 shutdown -r -f -t 00
 </code>
 
 =====shutdown computer=====
-<code>
+```
 shutdown -s -f -t 00
 </code>
 
 =====windows 8 startup folder=====
-<code>
+```
 %AppData%\Microsoft\Windows\Start Menu\Programs\Startup
 </code>
 or
-<code>
+```
 shell:startup
 </code>
 =====clear diskspace=====
@@ -147,11 +147,11 @@ void setAlwaysOnTop() {
 * http://www.sevenforums.com/hardware-devices/8712-keyboard-repeat-delay-repeat-rate.html
 
 =====which dll's used by running programs=====
-<code>
+```
 tasklist /m
 </code>
 or
-<code>
+```
 tasklist /m /fi "imagename eq [programname]"
 </code>
 
@@ -161,7 +161,7 @@ Zie [[batch]] files.
 =====change computer name=====
 Change Your Computer Name in Windows 7 or Vista:
 Run:
-<code>
+```
 sysdm.cpl
 </code>
 go to advanced system settings

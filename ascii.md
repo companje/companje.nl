@@ -6,7 +6,7 @@ title: ASCII (and other character sets)
 * http://www.amp-what.com/
 
 ===== subset of characters =====
-<code>
+```
 !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
 </code>
 

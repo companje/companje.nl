@@ -125,14 +125,14 @@ s << doodle.vshape;
 printf("%s",s.str().c_str());
 </code>
 
-<code>
+```
 //copy(doodle.vshape.begin(),doodle.vshape.end(), ostream_iterator<string>(cout, ","));
  </code>
 
 
 =====DEFAULTLIB  warnings with CodeBlocks/MinGW=====
 /DEFAULTLIB is a directive that is Visual Studio specific. It is added by the compiler if source contains
-<code>#pragma comment(linker,"/DEFAULTLIB:something")</code>
+```#pragma comment(linker,"/DEFAULTLIB:something")</code>
 It is meant to be processed by the microsoft linker when creating final executable - microsoft linker understands the directive. MinGW does not understand it
 * source: http://bugs.mysql.com/bug.php?id=45318
 

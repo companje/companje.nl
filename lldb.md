@@ -20,6 +20,6 @@ lldb myExecutable
 </code>
 
 =====stacktrace=====
-<code>
+```
 > bt
 </code>

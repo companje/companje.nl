@@ -26,7 +26,7 @@ First: To install OS X/iOS docsets you need to open Xcode and go to Preferences 
 * http://stackoverflow.com/questions/8246070/ios-launching-settings-restrictions-url-scheme  
 * as of iOS8 you can open the built-in Settings app with
 
-<code>
+```
 NSURL *url = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
 if ([[UIApplication sharedApplication] canOpenURL:url]) {
    [[UIApplication sharedApplication] openURL:url];
@@ -43,7 +43,7 @@ if ([[UIApplication sharedApplication] canOpenURL:url]) {
 see [[phonegap]]
 
 =====URL handling (in .plist)=====
-<code>
+```
     <key>CFBundleURLTypes</key>
     <array>
       <dict>
@@ -58,7 +58,7 @@ see [[phonegap]]
 </code>
 
 =====file handling (in .plist)=====
-<code>    
+```    
     <key>UTExportedTypeDeclarations</key>
     <array>
       <dict>
@@ -148,11 +148,11 @@ int main(){
 http://shift.net.nz/2010/09/compiling-freetype-for-iphoneios/
 
 =====problem=====
-<code>file is universal but does not contain a(n) armv7 slice for architecture armv7</code>
+```file is universal but does not contain a(n) armv7 slice for architecture armv7</code>
 try to remove armv7s from the build settings
 
 =====crash logs=====
-<code>
+```
 ~/Library/Logs/CrashReporter/MobileDevice/
 </code>
 

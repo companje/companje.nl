@@ -125,7 +125,7 @@ fi
   lsof -i -P | grep -i "listen"
 
 =====my .bash_profile=====
-<code>
+```
 export PATH=/opt/local/bin:/opt/local/sbin:~/bin:$PATH
 alias d="ls -lGa"
 alias ls="ls -G"
@@ -149,10 +149,10 @@ http://wiki.openwrt.org/doc/howto/http.httpd
 http://wiki.openwrt.org/doc/recipes/dumbap
 
 =====diskutil on command line=====
-<code>
+```
 diskutil list</code>
 =====file info=====
-<code>
+```
 file
 otool
 gobjdump
@@ -164,7 +164,7 @@ gobjdump
 *Singlemizer (not tested yet)
 
 =====keyboard repeat rate / speed=====
-<code>
+```
 defaults write NSGlobalDomain KeyRepeat -int 0
 </code>
 try 0, 1 or 2: the lower the faster
@@ -178,15 +178,15 @@ sips -Z 640 *.jpg
 </code>
 
 =====serial communication with screen=====
-<code>screen /dev/[device name] 115200</code>
+```screen /dev/[device name] 115200</code>
 To quit screen, press CTRL-a, followed by CTRL-k, followed by y.
 
 =====follow system log=====
-<code>tail -f /private/var/log/system.log</code>
+```tail -f /private/var/log/system.log</code>
 
 =====macports / python=====
 To make python 2.7 the default (i.e. the version you get when you run 'python'), please run:
-<code>
+```
 sudo port select --set python python27
 </code>
 
@@ -206,16 +206,16 @@ een handige tool om snel afbeeldingen te bewerken
 =====alternative to spotlight=====
 * [[http://www.alfredapp.com/|Alfred]]
 =====get ip address=====
-<code>
+```
 ipconfig getifaddr en1
 </code>
 or
-<code>
+```
 ifconfig en1 | grep "inet " | cut -d " " -f2
 </code>
 
 =====convert png to ico=====
-<code>
+```
 convert file.png file.ico
 </code>
 
@@ -223,23 +223,23 @@ convert file.png file.ico
 * http://support.apple.com/kb/HT1343
 
 =====cls=====
-<code>
+```
 clear
 </code>
 
 =====show contents of clipboard=====
-<code>
+```
 pbpaste
 pbpaste | head -n 5
 </code>
 
 =====copy text to clipboard=====
-<code>
+```
 ls | pbcopy
 </code>
 
 =====Convert tabs to spaces for the lines in the Clipboard=====
-<code>
+```
 pbpaste | expand | pbcopy
 </code>
 
@@ -251,31 +251,31 @@ ls | uniq -d
 ls | uniq -u
 
 =====eject cd=====
-<code>
+```
 diskutil eject disk1
 </code>
 or
-<code>
+```
 drutil tray eject
 </code>
 
 =====dig=====
-<code>
+```
 dig companje.nl A
 </code>
 
 =====disable dashboard=====
-<code>
+```
 defaults write com.apple.dashboard mcx-disabled -boolean YES
 killall Dock
 </code>
 
 =====get name of current wifi network=====
-<code>
+```
 /System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport -I|grep " SSID: "|cut -c 18-
 </code>
 or
-<code>
+```
 networksetup -getairportnetwork en1
 networksetup -getairportnetwork en1 | cut -c 24-
 </code>
@@ -284,22 +284,22 @@ networksetup -getairportnetwork en1 | cut -c 24-
 * [[http://www.yourdailymac.net/2011/09/how-to-enable-os-x-lion-airdrop-on-every-mac/|enable OS X Lion AirDrop on every Mac]]
 
 =====restart Finder=====
-<code>
+```
 killall Finder
 </code>
 
 =====list all network hardware ports=====
-<code>
+```
 networksetup -listallhardwareports
 </code>
 
 =====get info about current wifi point=====
-<code>
+```
 /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport --getinfo
 </code>
 
 =====scan for wifi points=====
-<code>
+```
 /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -s
 </code>
 
@@ -315,18 +315,18 @@ ln -s fullpath-source-www /Users/rick/Sites/8
 Download [[http://qlcolorcode.googlecode.com/files/QLColorCode-2.0.2.tgz|QLColorCode]]. Create folder ''~/Library/QuickLook'' and copy QLColorCode.qlgenerator to that folder.
 
 =====SetFile=====
-<code>
+```
 SetFile
 </code>
 
 =====dmg create command line=====
-<code>
+```
 hdiutil create ....
 </code>
 * http://stackoverflow.com/questions/96882/how-do-i-create-a-nice-looking-dmg-for-mac-os-x-using-command-line-tools
 
 =====usb device info=====
-<code>
+```
 system_profiler SPUSBDataType
 </code>
 
@@ -335,24 +335,24 @@ system_profiler SPUSBDataType
 * In the Network Utility window, click the Ping tab. 
 
 =====broadcast ping=====
-<code>
+```
 ping -i 5 -c 2 192.168.1.255
 </code>
 
 =====using arp to find mac address=====
-<code>
+```
 ping IPADDRESS
 arp -a
 </code>
 
 =====fping range=====
-<code>
+```
 sudo fping -s -g 192.168.0.1 192.168.0.9 -r 1
 fping -ag 192.168.1.0/24
 </code>
 
 =====websharing is removed from Mountain Lion Preferences but still usable=====
-<code>
+```
 sudo apachectl start
 </code>
 
@@ -395,7 +395,7 @@ en0 ethernet, en1 wifi
 - een prima tftp server is [[http://ww2.unime.it/flr/tftpserver/|TftpServer]]
 
 =====Some dynamic linker tools that will come in handy=====
-<code>
+```
 otool -L
 install_name_tool
 libtool
@@ -409,7 +409,7 @@ ar -t libctest.a
 </code>
 
 =====Tijdelijk een header search path toevoegen via CFLAGS=====
-<del><code>
+<del>```
 export CFLAGS="-i /usr/local/include/libusb-1.0"
 </code></del>
 
@@ -439,14 +439,14 @@ CGEventPost(kCGHIDEventTap, mouseDownEv);
 CFRelease(mouseDownEv);
 </code>
 =====spoof your MAC address=====
-<code>sudo ifconfig en1 ether aa:bb:cc:dd:ee:ff</code>
+```sudo ifconfig en1 ether aa:bb:cc:dd:ee:ff</code>
 to check the result type: 
-<code>ifconfig en1 | grep ether</code>
+```ifconfig en1 | grep ether</code>
 for Lion you might need to change ether into Wi-Fi.
 When you reboot your computer the original address is restored.
 
 =====escape character in tenet on osx=====
-<code>
+```
 Escape character is '^]'
 </code>
 which means Ctrl+]

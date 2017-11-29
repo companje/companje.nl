@@ -37,7 +37,7 @@ check if user belongs to 'ssh' group (and decide if you want this :-)
 
 =====disable host strict checking=====
 in ''~/.ssh/config''
-<code>
+```
 Host wifibox
   User root
   Hostname 192.168.5.1
@@ -49,7 +49,7 @@ Host wifibox
 In ~/.ssh/config kun je aliassen aanmaken zodat je geen gebruikersnaam/obscure ip's etc meer in hoeft te typen. B.v. voor zowel gebruiker root als ortec (met bash-completion kun je zelfs tab gebruiken om het voor je in te vullen). Zie Wouter's mail van 1 mei '13
 
 =====kill an ssh connection=====
-<code>
+```
 Enter ~.
 </code>
 
@@ -57,7 +57,7 @@ Enter ~.
 <code bash>ssh -L 8080:localhost:80 192.168.0.1</code>
 
 =====restart ssh daemon=====
-<code>/etc/init.d/sshd restart</code>
+```/etc/init.d/sshd restart</code>
 
 You need to do this after manually adding a user to the sshd_config file ([[http://fixunix.com/ssh/74233-ssh-login-error-permission-denied-please-try-again.html|see this thread]])
 

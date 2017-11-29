@@ -5,9 +5,9 @@ title: ManifoldJS
 * http://www.html5hacks.com/blog/2015/08/06/manifoldjs-quick-start/
 * http://blog.npmjs.org/post/131244760570/guest-post-build-for-devices
 
-<code>sudo npm install -g manifoldjs</code>
+```sudo npm install -g manifoldjs</code>
 
-<code>
+```
 WARNING: No manifest found. A new manifest will be created.
 WARNING: Manifest validation  (Android) - Launcher icons of the following sizes are required: 48x48, 72x72, 96x96, 144x144, 192x192, 512x512[icons]
 WARNING: Manifest validation  (iOS) - An app icon of the following sizes is required: 76x76, 120x120, 152x152 and 180x180[icons]

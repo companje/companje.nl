@@ -2,7 +2,7 @@
 title: Scite User Properties file
 ---
 
-<code>
+```
 check.if.already.open=1
 
 open.filter=\
@@ -33,7 +33,7 @@ tab.indents=0
 </code>
 
 Onderstaande code kun je toevoegen aan een lua script dat automatisch geladen wordt. Zorg dat 'extman' ingeladen is om gebruik te kunnen maken van de scite_Command functie.
-<code>
+```
 scite_Command 'Wiki H1|markup H1|Shift+Ctrl+1'
 scite_Command 'Wiki H2|markup H2|Shift+Ctrl+2'
 scite_Command 'Wiki H3|markup H3|Shift+Ctrl+3'

@@ -24,7 +24,7 @@ Starting from Photoshop CC 14.2, you can create SVG files directly from Photosho
 * Rename your layer to <something>.svg.
 * The svg file will be created in the assets directory next to your PSD file.
 Content for ''generator.json'':
-<code>
+```
 {
     "generator-assets":  { 
         "svg-enabled": true

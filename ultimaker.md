@@ -19,7 +19,7 @@ See [[3DPrinting]]
 
 
 ==doodle3d startcode/endcode for Doodle3D Ultimaker 2/2go==
-<code>
+```
 ;Generated with Doodle3D (ultimaker2)
 M10000
 G4 P200
@@ -45,7 +45,7 @@ G1 F9000
 M117 Printing Doodle...   ;display message (20 characters to clear whole screen)
 </code>
 
-<code>
+```
 M107 ;fan off
 G91 ;relative positioning
 G1 E-1 F300 ;retract the filament a bit before lifting the nozzle, to release some of the pressure
