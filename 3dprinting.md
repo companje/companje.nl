@@ -1,7 +1,7 @@
 ---
-title: 
+title: 3D printing
 ---
-====== 3D printing ======
+
 * 3D apps: https://www.myminifactory.com/software/
 * https://github.com/sympli/autodraw-sketch (autodraw plugin for sketch)
 * https://hackernoon.com/launching-on-product-hunt-what-works-and-what-doesnt-guide-case-study-776c77d56e26
