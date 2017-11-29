@@ -10,22 +10,22 @@ title: wget
   wget -nc   # or --no-clobber: skip downloads that would download to existing files.
 
 ==download url's from file==
-<code bash>
+```bash
 wget -i file.txt
 ```
 
 ==download all files from ftp folder==
-<code bash>
+```bash
 wget -i ftp://domain.com/folder/*
 ```
 
 ==recursive rip a page or site==
-<code bash>
+```bash
 wget -r http://site.url
 ```
 
 ==basic auth==
 you can just supply the username and password in the URL like this:
-<code bash>
+```bash
 wget http://user:password@domain.com
 ```
