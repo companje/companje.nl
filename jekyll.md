@@ -2,6 +2,11 @@
 title: jekyll
 ---
 
+# get version
+```bash
+bundle exec jekyll -v
+```
+
 # serve locally
 ```bash
 bundle exec jekyll serve --profile --incremental --verbose
