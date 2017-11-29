@@ -21,12 +21,12 @@ fi
 ./executable 1>>log.txt 2>&1
 ```
 
-=====script install itself as executable=====
+#script install itself as executable
 ```bash
 ln -s `realpath $0` ~/bin/flash > 2&>null #installs this script as executable 'flash'
 ```
 
-=====logging=====
+#logging
 ```bash
 $ logger test
 $ logread
@@ -34,7 +34,7 @@ $ logread
 Mon Jun 12 09:08:51 2017 user.notice root: test
 ```
 
-=====Check parameters=====
+#Check parameters
 ```
 if [[ $# -eq 0 ]] ; then
     echo 'Usage: ./toMovie.sh FOLDER'
@@ -43,13 +43,13 @@ fi
 
 ```
 
-=====get foldername from folderpath=====
+#get foldername from folderpath
 ```
 folderpath=$1
 foldername=${folderpath##*/}
 ```
 
-=====colors in ~/.profile=====
+#colors in ~/.profile
 <code bash>
 git_branch () { git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'; }
 HOST='[01;32m\]';
@@ -66,7 +66,7 @@ alias d='ls -la --color'
 cd /domains/doodle3d.com/DEFAULT
 ```
 
-=====log file processing=====
+#log file processing
 <code bash>
 cut -f4,10 EnecsysLogfile.txt | sort -r | rev | uniq -f 1 | rev | cut -f 2 | egrep [0-9.] | xargs  | sed -e 's/\ /+/g' | bc
 ```
@@ -80,7 +80,7 @@ date    time    ZigbeeString    deviceID        DCpower Efficiency      ACpower 
 04-01-2015      09:39:35        WS=8hiQBgCaxjQAAO6wIQEAAAB0FDADiAABVwFDA60yAOUUAwsBxgAAC1       110106866       323     0.941   303.943 8.575   37.67   454.779 238     116     229     50      20      F2189006009AC6340000EEB021010000007414300388000157014303AD3200E514030B01C600000B5
 ```
 
-=====move files by year=====
+#move files by year
 <code bash>
 #!/usr/bin/env bash
 BASE_DIR=/Users/rick/Pictures/Diversen2/2004
@@ -99,10 +99,10 @@ done
 ```
 
 
-=====recursive remove empty folders=====
+#recursive remove empty folders
   find . -type d -empty -delete
 
-=====update Date Modified based on EXIF data=====
+#update Date Modified based on EXIF data
 <code bash>
 #!/bin/bash
 
@@ -115,7 +115,7 @@ while [[ "$1" != "" ]] ; do
 done
 ```
 
-=====move jpg script based on exif data=====
+#move jpg script based on exif data
 using ''imagemagick''.
 <code bash>
 #!/bin/bash
@@ -139,10 +139,10 @@ done
 =====list files recursive with full path
   find .
   
-=====manipulating strings=====
+#manipulating strings
   find.txt | sort | cut -f1 -d"." | uniq | rev | sort > sorted.txt
 
-=====read line from netcat=====
+#read line from netcat
 <code bash>
 while:
 do
@@ -166,7 +166,7 @@ do
 done
 ```
 
-=====infinite while=====
+#infinite while
 ```while :
 do
   echo tick
@@ -174,12 +174,12 @@ do
 done
 ```
 
-=====tee=====
+#tee
 Use tee command to redirect the content to file:
   telnet google.com 80 | tee outfile
 Then grep the file
 
-=====notes from BEAA talk by Johan at 26 june=====
+#notes from BEAA talk by Johan at 26 june
 Bash
 
 all chmod a+r  
@@ -257,14 +257,14 @@ LPI 1 boeken zijn heel fijn om bash te leren
 
 rev draait in een bestand voor elke regel alle karakters om
 
-=====ncal=====
+#ncal
 <code bash>
 cal
 ncal
 ncal -wy
 ```
 
-=====bash-completion=====
+#bash-completion
 for advanced code completion (also reads from makefiles)
 <code bash>sudo port install bash-completion```
 add this to ~/.profile
@@ -282,7 +282,7 @@ source /opt/local/share/doc/git-core/contrib/completion/git-completion.bash
 source /opt/local/share/doc/git-core/contrib/completion/git-prompt.sh
 ```
 
-===== Checking errorcode / errorlevel / returnvalue in a shell script =====
+# Checking errorcode / errorlevel / returnvalue in a shell script 
 See [[linux]]
 
 <code bash>
