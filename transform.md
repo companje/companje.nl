@@ -3,6 +3,12 @@ layout: default
 title: Doodle3D Transform
 ---
 
+# download Sketch from console
+(for example when due to an error the interface is gone)
+```
+actions.files.downloadSketch()
+```
+
 # see all actions
 type this in the console:
 ```js
