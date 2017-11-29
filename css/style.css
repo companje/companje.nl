@@ -1,15 +1,15 @@
-    /* Your custom styles */
+/* Your custom styles */
 
-    body { 
-    background-color: black;
-    background: url('/img/chalk.jpg') no-repeat center center fixed;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    } 
+body { 
+  background-color: black;
+  background: url('/img/chalk.jpg') no-repeat center center fixed;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  } 
 
-    .home-page-link {
-    color: black;
-    text-decoration: underline;
-    }
+.home-page-link {
+  color: black;
+  text-decoration: underline;
+  }
