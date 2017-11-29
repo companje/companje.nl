@@ -43,11 +43,11 @@ edit /Applications/Inkscape.app/Contents/Resources/bin/inkscape
 add:
 ```
 export VERSIONER_PYTHON_VERSION=2.6
-</code>
+```
 just before:
 ```
 export VERSIONER_PYTHON_PREFER_32_BIT=yes
-</code>
+```
 
 =====Connect multiple lines=====
 * http://superuser.com/questions/137887/inkscape-how-to-connect-several-lines-and-arcs-into-one-continuous-path
@@ -104,7 +104,7 @@ Bij resizen kun je met Affect aangeven dat ie bijv de lijndikte met rust moet la
 * export as DXF (with units mm)
 
 [[OpenSCAD]] code:
-```linear_extrude(file = "file.dxf", height=5);</code>
+```linear_extrude(file = "file.dxf", height=5);```
 
 =====templates (for bolds ie.)=====
 * make a clone through the edit menu

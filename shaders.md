@@ -9,13 +9,13 @@ http://cpetry.github.io/NormalMap-Online/
 =====get shader language version=====
 <code c>
 glGetString(GL_SHADING_LANGUAGE_VERSION)
-</code>
+```
 
 ```
 color = light * mix(texture2D(night, textureCoord), 
    texture2D(day, textureCoord), 
    smoothstep(-0.25, 0.25, dot(N, L)));
-</code>
+```
 
 =====Shaders on Mac=====
 * [[http://www.starstonesoftware.com/OpenGL/mac.htm|port 'recent' shaders to 'old GLSL 1.20' for OSX Lion]]
@@ -57,7 +57,7 @@ Ftransform is equivalent to this:
 <code glsl>
 gl_Position = ftransform();
 gl_Position = gl_ProjectionMatrix * gl_ModelViewMatrix * gl_Vertex;
-</code>
+```
 
 v will be a coordinate in projection (screen) space.
 =====Displacement with diffuse light=====
@@ -74,7 +74,7 @@ void main(void) {
    float diffuse_value = max(dot(normal, vertex_light_position), 0.0);
    gl_FragColor = diffuse_value * texture2D(colormap, TexCoord);
 }
-</code>
+```
 
 <code c>
 uniform sampler2D colormap;
@@ -94,7 +94,7 @@ void main(void) {
     norm = -1.0 * gl_NormalMatrix * gl_Normal;
     gl_TexCoord[0] = gl_MultiTexCoord0;
     gl_Position = gl_ModelViewProjectionMatrix * newVertexPos;
-</code>
+```
 
 openFrameworks:
 <code c>
@@ -151,4 +151,4 @@ void testApp::draw(){
     light.disable();
     ofDisableLighting();    
 }
-</code>
+```

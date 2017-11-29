@@ -32,7 +32,7 @@ for (int y = 0; y < h; y++) {
 heightmap.update();
 heightmap.save("output.png");
 
-</code>
+```
 
 =====openFrameworks code style guide=====
 * https://github.com/openframeworks/openFrameworks/wiki/oF-code-style
@@ -61,7 +61,7 @@ I modified some code in `putBmpIntoPixels` to be able to load 16 bits grayscale 
 =====enable errors to force checking return values=====
 ```
 -Werror=return-type
-</code>
+```
 
 =====ofSetupScreenOrtho=====
 ```cpp
@@ -104,7 +104,7 @@ see [[logitech]]
 cmdline command:
 ```
 "/Users/rick/Documents/openFrameworks/of0092/projectGenerator-osx/projectGenerator.app/Contents/Resources/app/app/projectGenerator"  -o"/Users/rick/Documents/openFrameworks/of0092" -a"ofxCv,ofxOpenCv" -p"osx" "/Users/rick/Documents/openFrameworks/of0092/apps/myApps/cvBgTest2"
-</code>
+```
 
 =====Segmentation Fault 11 with projectGenerator=====
 I got a Segmentation Fault 11 when I changed the `scripts/templates/osx` Xcode project. I removed ofApp.cpp and ofApp.h but that resulted in a lot of recursive calls in the `xcodeProject.cpp::addInclude` function.
@@ -121,7 +121,7 @@ In XCode when pressing Cmd+8 then click on Clock icon on bottom you get detailed
 When you define a method like this in your class:
 ```
 bool isReady() const
-</code>
+```
 It means that it "will return a bool but it will not change the logic state of your object. So this is your getter."
 So by supplying const you promise the compiler you won't change any data inside your class instance.
 
@@ -129,7 +129,7 @@ So by supplying const you promise the compiler you won't change any data inside 
 =====Member function '...' not viable:=====
 ```
 Member function 'drawGlobe' not viable: 'this' argument has type 'const Globe', but function is not marked const
-</code>
+```
 
 ???
 
@@ -141,7 +141,7 @@ In openFrameworks 009 the declarations of some ofBase classes has changed. For e
   float getHeight() const { return 480; }
   void draw(float x, float y) const { /*...*/ }
   void draw(float x, float y, float w, float h) const { /*...*/ }
-</code>
+```
 
 =====opencv2/opencv.hpp file not found=====
 When you add `ofxCv` to your openFrameworks project make sure to also add `ofxOpenCv`. Because this adds the `opencv2` folder to your project.

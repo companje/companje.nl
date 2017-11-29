@@ -16,7 +16,7 @@ $ npm list -g --depth=0
 ├── jspm@0.16.47
 ├── npm@4.2.0
 └── serve@1.4.0
-</code>
+```
 
 ==update npm itself==
   sudo npm install -g npm

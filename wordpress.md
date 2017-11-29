@@ -34,7 +34,7 @@ $ wp plugin install enfold
 Segmentation fault: 11
 $ wp plugin update --all
 Segmentation fault: 11
-</code>
+```
 
 =====database (woocommerce) reports======
 <code php>
@@ -63,7 +63,7 @@ while ($row = mysql_fetch_assoc($result)) {
     echo $row['post_id'] . " " . $row['meta_value'] . "
 ";
 }
-</code>
+```
 
 ====="connection refused" in WooCommerce=====
 when testing locally without HTTPS you can disable SSL otherwise all pages with personal info are served through HTTPS.

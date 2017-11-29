@@ -51,7 +51,7 @@ void update() {
     Serial.println(strlen(buf));
   }
 }
-</code>
+```
 =====MACRO for printing multiple arguments with sprintf=====
 ```c
 #define ECHO(s,x...) { char buf[100]; sprintf(buf,s,x); Serial.println(buf);}
@@ -94,10 +94,10 @@ http://www.arduinopassion.com/wp-content/uploads/2013/02/Arduino-uno-Pinout.png
 * [[https://www.youtube.com/watch?v=Wd22Gm6D2hI|Dan Nixon's youtube explanation]]
 
 =====sprintf=====
-```sprintf(charBuf, "%d,%d,%d", 5,3,2);</code>
+```sprintf(charBuf, "%d,%d,%d", 5,3,2);```
 
 =====float to char[]=====
-```dtostrf(floatVar, minStringWidthIncDecimalPoint, numVarsAfterDecimal, charBuf);</code>
+```dtostrf(floatVar, minStringWidthIncDecimalPoint, numVarsAfterDecimal, charBuf);```
 
 =====arduino mini USB=====
 http://www.arduino.cc/en/Main/MiniUSB
@@ -108,12 +108,12 @@ sdi12: protocol om over 1 draad half-duplex communicatie te hebben. Er is een Ar
 =====seeeduino atmega328 via avrdude=====
 <code bash>
 avrdude -cstk500v1 -b57600 -p m328p -P /dev/tty.usbserial-A600JGJZ -D -Uflash:w:Globe4D-demo-firmware.hex:i
-</code>
+```
 
 =====detect arduino bootloader=====
 <code python>
 if self.sendMessage([0x10, 0xc8, 0x64, 0x19, 0x20, 0x00, 0x53, 0x03, 0xac, 0x53, 0x00, 0x00]) != [0x10, 0x00]:
-</code>
+```
 
 =====rotary encoders=====
 * My Encoder class with lookup table: https://gist.github.com/3049050 (based on [[http://www.circuitsathome.com/mcu/reading-rotary-encoder-on-arduino|CircuitsAtHome]]'s code)
@@ -131,7 +131,7 @@ avrdude -c usbasp -p atmega1280 -t
 >> erase
 >> d hfuse
 >> d lfuse
-</code>
+```
 more: http://www.nongnu.org/avrdude/user-manual/avrdude_9.html
 use -u to enable writing of fuses
 
@@ -139,12 +139,12 @@ use -u to enable writing of fuses
 not sure
 <code bash>
 sudo avrdude -p atmega1280 -c usbasp -P usb -v  -U lfuse:w:0xef:m -U hfuse:w:0xc9:m
-</code>
+```
 
 =====bootloader with avrdude=====
 <code bash>
 /Applications/Arduino.app/Contents/Resources/Java/hardware/tools/avr/bin/avrdude -C/Applications/Arduino.app/Contents/Resources/Java/hardware/tools/avr/etc/avrdude.conf -v -v -v -v -patmega1280 -cusbasp -Pusb -Uflash:w:/Applications/Arduino.app/Contents/Resources/Java/hardware/arduino/bootloaders/atmega/ATmegaBOOT_168_atmega1280.hex:i -Ulock:w:0x0F:m 
-</code>
+```
 
 =====AVR documentatie=====
 * http://nongnu.org/avr-libc/
@@ -163,7 +163,7 @@ Ik heb pas zelf een [[http://en.wikipedia.org/wiki/Watchdog_timer|watchdog timer
 wdt_enable(WDTO_8S); //start watchdog set for max 8 seconds
 ...
 wdt_disable(); //turn off watchdog timer - if sketch gets this far it hasn't hung
-</code>
+```
 
 =====Seeeduino=====
  * Seeeduino 2.21 bevat een Atmega328 en is compatible met Arduino.
@@ -174,7 +174,7 @@ wdt_disable(); //turn off watchdog timer - if sketch gets this far it hasn't hun
 Op mijn mac was dit de locatie van de hex file:
 ```
 cd /private/var/folders/n9/n9UpGCFsHQW0bdm5gfLoRE+++TI/-Tmp-/console4814829202509611846.tmp
-</code>
+```
 
 Dit heb ik uitgezocht met lsof | grep -i 'tmp' (list open files).
 
@@ -187,7 +187,7 @@ mode %COMPORT%: DTR=on > NUL
 mode %COMPORT%: DTR=off > NUL
 avrdude -c stk500v2 -b115200 -p atmega2560 -P %COMPORT% -D -Uflash:w:firmware.hex:i
 pause
-</code>
+```
 
 =====avrdude commando=====
 ./avrdude -c arduino -b115200 -p ATMEGA328P -P /dev/tty.usbmodem411 -C avrdude.conf -D -Uflash:w:firmware.hex:i
@@ -196,5 +196,5 @@ pause
 ```
 avrdude: parallel port access not available in this configuration
 avrdude: error at avrdude.conf:531: programmer type not specified
-</code>
+```
 in het geval van deze melding kun je alle 'type = par' in de avrdude.conf  vervangen door 'type = serbb'. Ook al gebruik je de profielen helemaal niet. Zie [[http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?num=1288202459|deze]] forum post.

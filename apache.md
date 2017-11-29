@@ -41,7 +41,7 @@ http://coolestguidesontheplanet.com/set-virtual-hosts-apache-mac-osx-10-10-yosem
   /usr/sbin/httpd -S
   
 =====follow apache log=====
-```tail -f /private/var/log/apache2/error_log</code>
+```tail -f /private/var/log/apache2/error_log```
 
 =====Symbolic link not allowed or link target not accessible=====
 Solution: https://romaimperator.com/?p=9
@@ -50,10 +50,10 @@ Rights need to be set for every folder (also parent folders):
 chmod a+x /Users/rick/Documents/Doodle3D/3dprintserver
 chmod a+x /Users/rick/Documents/Doodle3D 
 chmod a+x /Users/rick/Documents 
-</code>
+```
 
 =====http status info=====
-```httpd -S</code>
+```httpd -S```
 on ubuntu: 
 ```
 apachectl -S
@@ -64,7 +64,7 @@ apachectl -S
  * check location of httpd config:
 ```
 /usr/sbin/httpd -V |grep SERVER_CONFIG
-</code>
+```
 * edit httpd.conf (probably at: ''/private/etc/apache2/httpd.conf''): uncomment the include for Virtual Host
 * edit httpd-vhosts.conf (probably at: ''/private/etc/apache2/extra/httpd-vhosts.conf'': add a virtual host like:
 ```
@@ -72,11 +72,11 @@ apachectl -S
     DocumentRoot "/Users/rick/Sites/lepetitgarage"
     ServerName lepetitgarage.nl
 </VirtualHost>
-</code>
+```
 * restart apace
 ```
 sudo apachectl stop && sudo apachectl restart
-</code>
+```
 
 =====autostart apache on mac=====
 * http://brettterpstra.com/fixing-virtual-hosts-and-web-sharing-in-mountain-lion/
@@ -95,7 +95,7 @@ sudo apachectl stop && sudo apachectl restart
 =====find which httpd.conf=====
 ```
 /usr/sbin/httpd -V |grep SERVER_CONFIG
-</code>
+```
 
 =====autostart wamp server on windows=====
 Run services.msc
@@ -110,36 +110,36 @@ make sure that 'AllowOverride All' is set in `/private/etc/apache2/httpd.conf` a
 =====apache opnieuw opstarten=====
 <code bash>
 sudo /etc/init.d/httpd restart
-</code>
+```
 
 =====op mac=====
 <code bash>
 sudo apachectl stop
 sudo apachectl start
-</code>
+```
 
 =====default site op onze server=====
 ```
 /var/www/html
-</code>
+```
 
 =====Allow access to the webserver through the network=====
 allow access from other computers than localhost
 turn off 'deny from all' in httpd.conf
 <code apache>
 #Deny from all
-</code>
+```
 
 =====virtual hosts=====
 Virtual hosts kun je toevoegen in:
 ```
 apache/conf/extra/httpd-vhosts.conf
-</code>
+```
 but be sure to turn on the include in httpd.conf
 <code apache>
 #Virtual hosts
 Include conf/extra/httpd-vhosts.conf
-</code>
+```
 
 =====Virtualhost: Forbidden, You don't have permission to access / on this server=====
 The problem is that the extra/httpd-vhosts.conf is missing the directive to allow access to the directory.
@@ -148,7 +148,7 @@ Allow access by adding a <directory> section inside the <vhost> section.
 <directory /vhost_document_root>
 allow from all
 </directory>
-</code>
+```
 
 =====Virtualhost: Forbidden, You don't have permission to access / on this server=====
 This can also be caused by a wrong DocumentRoot and directory settings for the DocumentRoot. Check the ''/private/etc/apache2/httpd.conf'' file  and search for DocumentRoot. Make sure the paths are set to the right location.
@@ -159,6 +159,6 @@ This can also be caused by a wrong DocumentRoot and directory settings for the D
 location of the error_log file:
 ```
 tail -f /var/log/httpd/error_log
-</code>
+```
 
 /var/log/apache2/error.log

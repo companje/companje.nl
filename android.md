@@ -69,7 +69,7 @@ may be you broke your AndroidManifest.xml. Make sure the following is in there:
   <action android:name="android.intent.action.MAIN" />
   <category android:name="android.intent.category.LAUNCHER" />
 </intent-filter>
-</code>
+```
 
 ==register STL files for open with app==
 <code xml>
@@ -84,4 +84,4 @@ may be you broke your AndroidManifest.xml. Make sure the following is in there:
     <data android:scheme="http" android:mimeType="*/*" android:pathPattern=".*\.stl" />
     <data android:scheme="https" android:mimeType="*/*" android:pathPattern=".*\.stl" />
 </intent-filter>
-</code>
+```

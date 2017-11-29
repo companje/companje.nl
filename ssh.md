@@ -43,7 +43,7 @@ Host wifibox
   Hostname 192.168.5.1
   StrictHostKeyChecking no
   UserKnownHostsFile=/dev/null
-</code>
+```
 
 =====aliases=====
 In ~/.ssh/config kun je aliassen aanmaken zodat je geen gebruikersnaam/obscure ip's etc meer in hoeft te typen. B.v. voor zowel gebruiker root als ortec (met bash-completion kun je zelfs tab gebruiken om het voor je in te vullen). Zie Wouter's mail van 1 mei '13
@@ -51,13 +51,13 @@ In ~/.ssh/config kun je aliassen aanmaken zodat je geen gebruikersnaam/obscure i
 =====kill an ssh connection=====
 ```
 Enter ~.
-</code>
+```
 
 =====ssh tunnel=====
-<code bash>ssh -L 8080:localhost:80 192.168.0.1</code>
+<code bash>ssh -L 8080:localhost:80 192.168.0.1```
 
 =====restart ssh daemon=====
-```/etc/init.d/sshd restart</code>
+```/etc/init.d/sshd restart```
 
 You need to do this after manually adding a user to the sshd_config file ([[http://fixunix.com/ssh/74233-ssh-login-error-permission-denied-please-try-again.html|see this thread]])
 
@@ -76,7 +76,7 @@ scp ~/.ssh/id_rsa.pub user@remote.example.com:/tmp/id_rsa.pub
 mkdir ~/.ssh
 chmod 700 ~/.ssh
 cat /tmp/id_rsa.pub >> ~/.ssh/authorized_keys
-</code>
+```
 
 hmm.. het lijkt dat je de id_dsa.pub moet toevoegen
 
@@ -85,9 +85,9 @@ op de client:
 <code bash>
 ssh-keygen -t dsa -f $HOME/.ssh/id_dsa -P ''
 scp ~/.ssh/id_dsa.pub SERVER:/tmp/id_dsa.pub
-</code>
+```
 
 op de server:
 <code bash>
 cat /tmp/id_dsa.pub >> ~/.ssh/authorized_keys
-</code>
+```

@@ -15,5 +15,5 @@ socos
   > play
   > volume +10
   > volume -10
-</code>    
+```    
   

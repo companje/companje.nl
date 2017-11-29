@@ -13,7 +13,7 @@ http://www.jchartfx.com/
 $.post( "ajax/test.html", function( data ) {
   $( ".result" ).html( data );
 });
-</code>
+```
 
 ===== GET =====
 <code jquery>
@@ -21,7 +21,7 @@ $.get("ajax/test.html", function(data) {
   $(".result").html(data);
   alert("Load was performed.");
 });
-</code>
+```
 
 =====Getting over jQuery=====
 http://blog.ponyfoo.com/2013/07/09/getting-over-jquery
@@ -36,7 +36,7 @@ $(document).ready(function() {
   alert("Hello World");
 })
 </script>
-</code>
+```
 
 =====parsing html table (not finished)=====
 <code jquery>
@@ -62,7 +62,7 @@ $(document).ready(function() {
 </script>
 
 <div id="result">Loading...</div>
-</code>
+```
 
 =====headless browser=====
 * http://stackoverflow.com/questions/5940557/how-can-i-use-jquery-on-server-side-javascript
@@ -73,7 +73,7 @@ $(document).ready(function() {
 <code jquery>
 //$(e.currentTarget)  ===== $(this)
 $(this).children(".description").text()
-</code>
+```
 
 * http://webdesignerwall.com/tutorials/jquery-tutorials-for-designers
 * http://view.jqueryui.com/grid/grid-editing/todo-app.html
@@ -87,7 +87,7 @@ $(this).children(".description").text()
     </label>
   </li>
 </script>
-</code>
+```
 
 =====hover menuitems in wordpress=====
 <code jquery>
@@ -108,4 +108,4 @@ jQuery(document).ready(function() {
   img.attr("src",img.attr("src").replace(".png", "_active.png"));
 
 });
-</code>
+```

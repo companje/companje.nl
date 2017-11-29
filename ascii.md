@@ -8,7 +8,7 @@ title: ASCII (and other character sets)
 ===== subset of characters =====
 ```
 !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
-</code>
+```
 
 =====ASCII logo / tags=====
 http://patorjk.com/software/taag

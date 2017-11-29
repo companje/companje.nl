@@ -10,7 +10,7 @@ http://www.jsoneditoronline.org/
 
 <code javascript>
     var url = "http://192.168.0.165/?jsoncallback=?";
-</code>
+```
 
 ==json formatter==
 * http://www.bodurov.com/JsonFormatter/

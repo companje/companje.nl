@@ -19,7 +19,7 @@ title: Phonegap
 <preference name="StatusBarOverlaysWebView" value="false"/>
 <preference name="StatusBarBackgroundColor" value="#000000"/>
 <preference name="StatusBarStyle" value="lightcontent" />
-</code>
+```
 
 =====Bonjour (ios)=====
 * https://github.com/rossmartin/BonjourPlugin
@@ -46,7 +46,7 @@ ZeroConf.watch("_3dprinter._tcp.local.", function(result) {
   console.log(JSON.stringify(result, null, 4));
   //console.log(util.inspect(service, false, null));
 });
-</code>
+```
 
 =====android run=====
   phonegap run android --device
@@ -62,7 +62,7 @@ or disable:
 ```
  <preference name="DisallowOverscroll" value="true" />
  <preference name="webviewbounce" value="false" />
-</code>
+```
 
 in native Objective C code in MainViewController.m
 ```
@@ -71,7 +71,7 @@ in native Objective C code in MainViewController.m
 {
     // Black base color for background matches the native apps
   theWebView.backgroundColor = UIColorFromRGB(0xF1EFF0);
-</code>
+```
 
 =====get rid of 'Started backup to iCloud! Please be careful...'=====
 in config.xml:
@@ -92,7 +92,7 @@ Don't use '''gap:''' in front of '''splash''' because that doesn't work!
 <splash gap:platform="ios" src="assets/screen/ios/Default-Portrait~ipad.png" width="768" height="1024" />
 <splash gap:platform="ios" src="assets/screen/ios/Default@2x~iphone.png" width="640" height="960" />
 <splash gap:platform="ios" src="assets/screen/ios/Default~iphone.png" width="320" height="480" />
-</code>
+```
 
 =====log verbose=====
   phonegap -d build ios > build.log
@@ -105,7 +105,7 @@ xcodebuild -version
 xcode-select --print-path
 gcc --version
 lldb --version
-</code>
+```
 
 =====Unable to mount developer disk image=====
 no solution yet.
@@ -177,7 +177,7 @@ export ANDROID_HOME=/Users/rick/Documents/android-sdk-macosx/
 export PATH=$PATH:$ANDROID_HOME/tools/
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 phonegap build android
-</code>
+```
 
 =====don't backup to iCloud=====
   <preference name="BackupWebStorage" value="local" />
@@ -225,7 +225,7 @@ function openInternalBrowser(id) {
 function openExternalBrowser(id) {
   var ref = window.open('http://10.0.0.161', '_system', 'location=yes');
 }
-</code>
+```
 
 =====phonegap remote build ios - PhoneGap 3.5.0 not supported....=====
 Solution from [[http://community.phonegap.com/nitobi/topics/phonegap_3_5_0_not_supported_is_there_a_fix_for_this_or_a_way_around_it|here]]. In your ''www/config.xml'' file add the following:

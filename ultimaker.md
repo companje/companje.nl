@@ -43,7 +43,7 @@ G1 F200 E10 ;extrude 10mm of feed stock
 G92 E0 ;zero the extruded length again
 G1 F9000
 M117 Printing Doodle...   ;display message (20 characters to clear whole screen)
-</code>
+```
 
 ```
 M107 ;fan off
@@ -62,7 +62,7 @@ G90 ;absolute positioning
 M104 S{preheatTemp}
 {if heatedBed}M140 S{preheatBedTemp}
 M117 Done                 ;display message (20 characters to clear whole screen)
-</code>
+```
 
 
 ==help==
@@ -82,23 +82,23 @@ M117 Done                 ;display message (20 characters to clear whole screen)
 * firmware backuppen:
 <code bash>
 avrdude -c stk500v1 -b57600 -p atmega1280 -P /dev/tty.usbserial-A600f8w2 -D -Uflash:r:firmware.hex:i
-</code>
+```
 of
 <code bash>
 avrdude -c stk500v2 -b115200 -p atmega2560 -P /dev/tty.usbmodem411 -D -Uflash:r:firmware.hex:i
-</code>
+```
 
 * writing firmware
 <code bash>
 avrdude -c stk500v2 -b115200 -p atmega2560 -P /dev/tty.usbmodem411 -D -Uflash:w:firmware.hex:i
-</code>
+```
 <code bash>
 avrdude -c stk500v2 -b115200 -p atmega2560 -P /dev/tty.usbmodem621 -D -Uflash:w:cfg_4fd875a44fb67.hex.txt:i
-</code>
+```
 
 <code bash>
 avrdude -c stk500v1 -b57600 -p atmega1280 -P /dev/tty.usbserial-A9005d8c -D -Uflash:w:firmware.hex:i
-</code>
+```
 
 ==PLA==
 * www.faberdashery.co.uk

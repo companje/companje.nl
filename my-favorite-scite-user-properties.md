@@ -30,7 +30,7 @@ indent.opening=0
 indent.closing=0
 tab.indents=0
 
-</code>
+```
 
 Onderstaande code kun je toevoegen aan een lua script dat automatisch geladen wordt. Zorg dat 'extman' ingeladen is om gebruik te kunnen maken van de scite_Command functie.
 ```
@@ -57,4 +57,4 @@ function tag(starttag,endtag)
 		editor:GotoPos(editor.CurrentPos-string.len(endtag))
 	end
 end
-</code>
+```

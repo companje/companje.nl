@@ -57,7 +57,7 @@ docker push learn/ping
 # next steps:
 #   sign up for a docker hub account: https://hub.docker.com/account/signup/
 #   install docker engine: https://docs.docker.com/installation/ (https://docs.docker.com/installation/mac/)
-</code>
+```
 
 ====='run'======
 start een nieuwe container
@@ -72,7 +72,7 @@ start een nieuwe container
 <code bash>
 docker pull debian
 docker run -i -t debian /bin/bash
-</code>
+```
 
   
   

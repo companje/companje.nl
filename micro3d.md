@@ -14,7 +14,7 @@ title: Micro3D printer
 * sending `S` (0x53) returns 768 bytes of data stored in the Atmega EEPROM:
 ```
 ç··x>·PE!Ô··ffÊ>‚ˇb?ˆ·°æÿ8\>é"îæ™¥Nø"···Bn·················································································································································································································································································································································································································································································································································································································································································±Ó√··)\7A····································Ù·ûWôC·GR15051501100055·
-</code>
+```
 The seemingly raw data contains some interesting settings. You can see your serial number at the end. The list below contains the start position of the variable in the EEPROM followed by it's meaning (they are mostly 4 byte integers).
 ```
 0: FirmwareVersion
@@ -56,7 +56,7 @@ The seemingly raw data contains some interesting settings. You can see your seri
 744: ExtruderCurrent
 746: HeaterResistance_M
 751: SerialNumber
-</code>
+```
 
 * send 'M115
 ' (or other M codes) returns 'B004'.
@@ -76,5 +76,5 @@ The seemingly raw data contains some interesting settings. You can see your seri
 * Based on the experiments of evanchsa on the M3D forum I guess '0x82 0x10 0x00 0x00 0x73 0x00 0x06 0x46' is the binary version of M115 since it indeed returns the following when I send it to my Micro3D.
 ```
 ok REPETIER_PROTOCOL:2 FIRMWARE_NAME:Micro3D FIRMWARE_VERSION:2015042701 MACHINE_TYPE:The_Micro X-SERIAL_NUMBER:GR150515011000550
-</code>
+```
 * You can see mine is green and seems to be installed/shipped at May 15th 2015. The firmware version on the machine dates from 2015-04-27 which is weird since it should have been updated two days ago by the M3D software. Anyway, we're getting somewhere.

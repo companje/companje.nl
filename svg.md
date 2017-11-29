@@ -76,7 +76,7 @@ http://www.smashingmagazine.com/2012/01/resolution-independence-with-svg/ (edite
 
 ===== Creating WordArt font for Doodle3D=====
   * Type the following string in InkScape, with a height of about 37.346 pixels:
-```!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~</code>
+```!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~```
   * Object > Object to path
   * Ungroup
   * Select all

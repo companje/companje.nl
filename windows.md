@@ -40,7 +40,7 @@ Check Start->Shutdown->... Hibernate should be gone.
 =====Windows 8 startup folder=====
 ```
 shell:startup
-</code>
+```
 
 =====See Windows boot history=====
 filter in ''eventvwr'' on event ID 12
@@ -78,7 +78,7 @@ Control panel tool             Command
    Scanners and Cameras           control sticpl.cpl
    Sound Properties               control mmsys.cpl sounds
    System Properties              control sysdm.cpl
-</code>
+```
 
 =====deactivate windows=====
   slmgr.vbs -upk
@@ -92,10 +92,10 @@ Control panel tool             Command
 =====ignore windows recovery=====
 ```
 bcdedit /set {current} bootstatuspolicy ignoreallfailures
-</code>
+```
 
 =====windows info=====
-```MSinfo32 </code>
+```MSinfo32 ```
 
 =====Disabling “Has stopped working” dialogs=====
 In '''HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting''' create a DWORD 'DontShowUI' with value 1
@@ -103,26 +103,26 @@ In '''HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\Windows Error Reporting''' c
 =====start task scheduler=====
 ```
 control schedtasks
-</code>
+```
 
 =====reboot computer=====
 ```
 shutdown -r -f -t 00
-</code>
+```
 
 =====shutdown computer=====
 ```
 shutdown -s -f -t 00
-</code>
+```
 
 =====windows 8 startup folder=====
 ```
 %AppData%\Microsoft\Windows\Start Menu\Programs\Startup
-</code>
+```
 or
 ```
 shell:startup
-</code>
+```
 =====clear diskspace=====
 http://www.howtogeek.com/174705/how-to-reduce-the-size-of-your-winsxs-folder-on-windows-7-or-8/
 
@@ -132,7 +132,7 @@ void setAlwaysOnTop() {
   HWND hwnd = FindWindowA("GLUT","");
   ::SetWindowPos(hwnd, HWND_TOPMOST, NULL, NULL, NULL, NULL, SWP_NOREPOSITION | SWP_NOSIZE);
 }
-</code>
+```
 
 =====verberg start menu bij starten windows 8=====
 * http://stackoverflow.com/questions/19047257/show-auto-started-desktop-app-in-fullscreen-on-windows-8
@@ -149,11 +149,11 @@ void setAlwaysOnTop() {
 =====which dll's used by running programs=====
 ```
 tasklist /m
-</code>
+```
 or
 ```
 tasklist /m /fi "imagename eq [programname]"
-</code>
+```
 
 =====Batch files=====
 Zie [[batch]] files.
@@ -163,7 +163,7 @@ Change Your Computer Name in Windows 7 or Vista:
 Run:
 ```
 sysdm.cpl
-</code>
+```
 go to advanced system settings
 open the Computer Name tab
 Click change...

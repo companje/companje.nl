@@ -30,7 +30,7 @@ Content for ''generator.json'':
         "svg-enabled": true
     }
 }
-</code>
+```
 Source: http://stackoverflow.com/questions/5413719/photoshop-custom-shape-to-svg-path-string
 Source: http://creativedroplets.com/generate-svg-with-photoshop-cc-beta/
 

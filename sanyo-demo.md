@@ -323,4 +323,4 @@ De originele sourcecode van DEMO.BAS op de bijgeleverde [[Sanyo Basic]] diskette
 6220 '
 ....220,10,280,50,340,10,420,10,490,10: '==MBC-5000=
 6210 D 
-</code>
+```

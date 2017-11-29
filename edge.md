@@ -17,7 +17,7 @@ sym.getSymbolElement().hide();
 // show the next symbol and play it
 sym.getComposition().getStage().$("Symbol_2").show();
 sym.getComposition().getStage().getSymbol("Symbol_2").play();
-</code>
+```
 
 =====upload======
 * http://stackoverflow.com/questions/793014/jquery-trigger-file-input
@@ -30,7 +30,7 @@ try {
 } catch (e) {
   console.log(e);
 }
-</code>
+```
 
 ===== functions in symbols =====
 <code javascript>
@@ -41,7 +41,7 @@ sym.getSymbol("Pinguins").zingen();
 sym.zingen = function() {
   console.log("zingen");
 }
-</code>
+```
 
 =====javascript API=====
  * http://www.adobe.com/devnet-docs/edgeanimate/api/current/index.html
@@ -49,7 +49,7 @@ sym.zingen = function() {
 =====access nested symbols from action=====
 <code javascript>
 sym.getSymbol("Pinguins").getSymbol("Pinguin1").getSymbol("Snavel").play("zingen");
-</code> 
+``` 
   
 =====use html5 webcam video in edge animate====
 <code javascript>
@@ -112,7 +112,7 @@ function saveImage(){
     var params=oldCanvas;
     xmlhttp.send(params);
 }
-</code>
+```
 
 
 =====edge animate=====
@@ -147,4 +147,4 @@ for (var i=0; i<40; i++) {
   star.getSymbolElement().css({position:"absolute",left:x,top:y});  
   star.play(ms);
 }
-</code>
+```

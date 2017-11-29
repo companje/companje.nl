@@ -21,11 +21,11 @@ int main() {
     printstr_c( 0x10, -0x50, "HELLO WORLD!" ); 
   } return 0; 
 }
-</code>
+```
 
 <code bash>
 cmoc --vectrex hello_world.c
-</code>
+```
 
 ==emulators==
 * http://www.vectrex.fr/ParaJVE/

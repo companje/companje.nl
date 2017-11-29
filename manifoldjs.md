@@ -5,7 +5,7 @@ title: ManifoldJS
 * http://www.html5hacks.com/blog/2015/08/06/manifoldjs-quick-start/
 * http://blog.npmjs.org/post/131244760570/guest-post-build-for-devices
 
-```sudo npm install -g manifoldjs</code>
+```sudo npm install -g manifoldjs```
 
 ```
 WARNING: No manifest found. A new manifest will be created.
@@ -22,7 +22,7 @@ SUGGESTION: Manifest validation  (Firefox) - It is recommended to provide icon s
 SUGGESTION: Manifest validation  (All Platforms) - It is recommended to specify a set of access rules that represent the navigation scope of the application[mjs_access_whitelist]
 ERROR: Failed to create the base application. The Cordova project could not be created successfully.
 One or more errors occurred when generating the application. For more information, run manifoldjs with the diagnostics level set to debug (e.g. manifoldjs [...] -l debug)
-</code>
+```
 
 ==ERROR: Failed to retrieve manifest from site.==
 This error is generated when HTTP response is not 200 OK. For example in case of 401 or 403 (Authentication).

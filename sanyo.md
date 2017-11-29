@@ -34,7 +34,7 @@ The following Basic program can be used to select Driva A or B, select side 0 or
 140 NEXT X: TS=T
 150 PRINT "PRESS ANY KEY TO STOP"
 160 A$=INKEY$: OUT 8,228: IF A$="" THEN 160 ELSE 70
-</code>
+```
 
 ==wordstar manual==
 http://www.textfiles.com/bitsavers/pdf/microPro/Wordstar_3.3/Wordstar_3.3_Reference_Manual_1983.pdf
@@ -53,7 +53,7 @@ A> debug test.com
 0AAC:0103 CD21      INT    21
 -w
 -q
-</code>
+```
 
 ==asm.com==
 * http://www.datapackrat.com/86dos/index.shtml

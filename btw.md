@@ -3,9 +3,9 @@ title: NL128.420.613.B01
 ---
 
 ==ex btw bedrag uitrekenen van inc btw bedrag==
-```100 x inc / 121 = ex btw</code>
+```100 x inc / 121 = ex btw```
 of
-```inc / 1,21</code>
+```inc / 1,21```
 
 ==kleine ondernemersregeling==
 [[http://download.belastingdienst.nl/belastingdienst/docs/de_kleineondernemersregeling_ob2011z15fd.pdf|brochure]]  

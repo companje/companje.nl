@@ -11,19 +11,19 @@ See [[3dprinting]]
 =====firmware info=====
 M119:
 ```FIRMWARE_NAME:Marlin V1; Sprinter/grbl mashup for gen6 FIRMWARE_URL:https://github.com/ErikZalm/Marlin/ PROTOCOL_VERSION:1.0 MACHINE_TYPE:RapidBot3 EXTRUDER_COUNT:1 UUID:00000000-0000-0000-0000-000000000000
-</code>
+```
 ---------
 =====after firmware update=====
 https://github.com/QU-BD/Up-Marlin
 ```
 FIRMWARE_NAME: Up-Marlin 1.1 (Marlin derivative) FIRMWARE_URL:https://github.com/QU-BD/Up-Marlin PROTOCOL_VERSION:1.0 MACHINE_TYPE:QUBD One-Up EXTRUDER_COUNT:1 UUID:00000000-0000-0000-0000-000000000000
-</code>
+```
 On Boot:
 ```
 Marlin1.0.0
 echo: Last Updated: Apr  4 2014 11:47:31 | Author: (none, default config)
 Compiled: Apr  echo:SD init fail
-</code>
+```
 M501
 ```echo:Hardcoded Default Settings Loaded
 echo:Steps per unit:
@@ -41,4 +41,4 @@ echo:  M206 X0.00 Y0.00 Z0.00
 echo:PID settings:
 echo:   M301 P22.00 I1.38 D87.57
 ok
-</code>
+```

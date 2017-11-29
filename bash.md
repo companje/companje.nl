@@ -45,12 +45,12 @@ ls --color=al > /dev/null 2>&1 && alias ls='ls -F --color=al' || alias ls='ls -G
 TERM=xterm-color
 alias d='ls -la --color'
 cd /domains/doodle3d.com/DEFAULT
-</code>
+```
 
 =====log file processing=====
 <code bash>
 cut -f4,10 EnecsysLogfile.txt | sort -r | rev | uniq -f 1 | rev | cut -f 2 | egrep [0-9.] | xargs  | sed -e 's/\ /+/g' | bc
-</code>
+```
 
 En hier een stukje log van Duinsels perlscript:
 ```
@@ -59,7 +59,7 @@ date    time    ZigbeeString    deviceID        DCpower Efficiency      ACpower 
 04-01-2015      09:39:17        WS=gfaPBgCaxjQAAO6KIQEAAABsFDADiAABPAEpA6syAOYUA3wBkwAACF       110098049       297     0.939   278.883 7.9     37.59   403.892 238     108     230     50      20      81F68F06009AC6340000EE8A21010000006C1430038800013C012903AB3200E614037C01930000085
 04-01-2015      09:39:33        WS=dvaPBgCaxjQAAO6pIQEAAABwFDADiAABGQEKA7IyAOYTAwYBWgAAED       110098038       266     0.946   251.636 7.025   37.86   346.774 238     112     230     50      19      76F68F06009AC6340000EEA921010000007014300388000119010A03B23200E6130306015A0000103
 04-01-2015      09:39:35        WS=8hiQBgCaxjQAAO6wIQEAAAB0FDADiAABVwFDA60yAOUUAwsBxgAAC1       110106866       323     0.941   303.943 8.575   37.67   454.779 238     116     229     50      20      F2189006009AC6340000EEB021010000007414300388000157014303AD3200E514030B01C600000B5
-</code>
+```
 
 =====move files by year=====
 <code bash>
@@ -77,7 +77,7 @@ while IFS= read -r file; do
   mv "$file" "$BASE_DIR/$year/"
 
 done
-</code>
+```
 
 
 =====recursive remove empty folders=====
@@ -94,7 +94,7 @@ while [[ "$1" != "" ]] ; do
   touch -t $DATE "$1"
   shift
 done
-</code>
+```
 
 =====move jpg script based on exif data=====
 using ''imagemagick''.
@@ -115,7 +115,7 @@ for i in *.JPG; do
     fi
     
 done
-</code>
+```
 
 =====list files recursive with full path
   find .
@@ -145,7 +145,7 @@ do
     #echo test:$line
   done
 done
-</code>
+```
 
 =====infinite while=====
 ```while :
@@ -153,7 +153,7 @@ do
   echo tick
   sleep 1
 done
-</code>
+```
 
 =====tee=====
 Use tee command to redirect the content to file:
@@ -243,11 +243,11 @@ rev draait in een bestand voor elke regel alle karakters om
 cal
 ncal
 ncal -wy
-</code>
+```
 
 =====bash-completion=====
 for advanced code completion (also reads from makefiles)
-<code bash>sudo port install bash-completion</code>
+<code bash>sudo port install bash-completion```
 add this to ~/.profile
 <code bash>
 export BASH_COMPLETION=/opt/local/etc/profile.d/bash_completion.sh
@@ -261,7 +261,7 @@ export GIT_PS1_SHOWSTASHSTATE=true
 export GIT_PS1_SHOWUNTRACKEDFILES=true
 source /opt/local/share/doc/git-core/contrib/completion/git-completion.bash
 source /opt/local/share/doc/git-core/contrib/completion/git-prompt.sh
-</code>
+```
 
 ===== Checking errorcode / errorlevel / returnvalue in a shell script =====
 See [[linux]]
@@ -282,4 +282,4 @@ then
 fi
 
 ./executable 1>>log.txt 2>&1
-</code>
+```

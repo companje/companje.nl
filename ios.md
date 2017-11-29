@@ -18,7 +18,7 @@ First: To install OS X/iOS docsets you need to open Xcode and go to Preferences 
   NSDictionary *ssidList = (__bridge NSDictionary*)myDict;
   NSString *SSID = [ssidList valueForKey:@"SSID"];
   NSLog(@"%@",SSID);
-</code>
+```
 
 =====open Settings from your app=====
   [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"prefs:root=WIFI"]];
@@ -31,7 +31,7 @@ NSURL *url = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
 if ([[UIApplication sharedApplication] canOpenURL:url]) {
    [[UIApplication sharedApplication] openURL:url];
 }
-</code>
+```
 
 =====Reflector App=====
 * [[http://www.airsquirrels.com/reflector/|via AirPlay het beeld van je telefoon naar je computer streamen]]
@@ -55,7 +55,7 @@ see [[phonegap]]
         <string>com.foo.xyz</string>
       </dict>
     </array>
-</code>
+```
 
 =====file handling (in .plist)=====
 ```    
@@ -100,7 +100,7 @@ see [[phonegap]]
         </array>
       </dict>
     </array>
-</code>
+```
 
 =====How to obtain Certificate Signing Request=====
   - [[http://stackoverflow.com/questions/12126496/how-to-obtain-certificate-signing-request|Create a certificate with 'Keychain Access']]
@@ -110,12 +110,12 @@ see [[phonegap]]
 =====disable select in webpages with css=====
 <code css>
 -webkit-user-select: none;
-</code>
+```
 
 =====disable glow effect for home screen icons of webpages=====
 <code html>
 <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-72x72-precomposed.png" />
-</code>
+```
 more info: http://mathiasbynens.be/notes/touch-icons
 
 =====anti-aliasing on ios with openFrameworks=====
@@ -127,7 +127,7 @@ int main(){
     ofSetupOpenGL(iOSWindow, 480, 320, OF_FULLSCREEN);
     ofRunApp(new testApp);
 }
-</code>
+```
 
 =====openFramworks for ios setup info=====
 * http://www.openframeworks.cc/setup/iphone/
@@ -148,13 +148,13 @@ int main(){
 http://shift.net.nz/2010/09/compiling-freetype-for-iphoneios/
 
 =====problem=====
-```file is universal but does not contain a(n) armv7 slice for architecture armv7</code>
+```file is universal but does not contain a(n) armv7 slice for architecture armv7```
 try to remove armv7s from the build settings
 
 =====crash logs=====
 ```
 ~/Library/Logs/CrashReporter/MobileDevice/
-</code>
+```
 
 =====ld: symbol(s) not found for architecture armv7=====
 dit betekent dat er een sourcefile (.m / .mm of .cpp) niet gevonden kan worden of niet wordt mee-gecompiled. Ook al zit deze misschien wel in je projectree.
@@ -184,7 +184,7 @@ Add ''ExternalAccessory.framework'' to your project's Target Linked Libraries.
 @property (nonatomic, retain) IBOutlet UITextView* res;
 
 @end
-</code>
+```
 
 <code objc>
 //
@@ -221,6 +221,6 @@ Add ''ExternalAccessory.framework'' to your project's Target Linked Libraries.
 }
 
 @end
-</code>
+```
 
 (redpark-serial-cable-redparkwrapper.png?550)

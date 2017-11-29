@@ -18,13 +18,13 @@ http://lua-users.org/wiki/SampleCode
   export LUA_PATH=/opt/local/share/luarocks/share/lua/5.2/?.lua
 
 =====use the luarocks package manager to install a package / library=====
-```sudo luarocks install luasocket</code>
+```sudo luarocks install luasocket```
 
 =====where are the LUA packages / libraries=====
 ```
 print(package.path.."
 "..package.cpath)
-</code>
+```
 
 ===== Luv it =====
 Nodejs maar dan voor lua

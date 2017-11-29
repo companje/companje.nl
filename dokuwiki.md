@@ -62,4 +62,4 @@ class CommandPluginExtension_pagelist extends CommandPluginExtension {
 }
 
 ?>
-</code>
+```

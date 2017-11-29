@@ -45,7 +45,7 @@ in Preferences->User
 In Preferences->Settings User change add:
 ```
     "open_files_in_new_window": false,
-</code>
+```
 
 =====tips=====
 * install [[http://wbond.net/sublime_packages/package_control/installation|package control]]

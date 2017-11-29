@@ -45,29 +45,29 @@ see [[linux]]
 =====format date from timestamp in mysql=====
 <code sql>
 SELECT DATE_FORMAT(FROM_UNIXTIME(beginDate),"%e-%m-%Y %H:%i")
-</code>
+```
 [[http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_date-format|more info]]
 
 =====change mysql password=====
 <code bash>
 mysqladmin -u root password root
-</code>
+```
 
 =====connect to mysql database=====
 <code bash>
 mysql -u rick -pXXXXXX
 mysql -u globe4d_user -pXXXX
-</code>
+```
 
 =====create database=====
 <code mysql>
 create database databasename;
-</code>
+```
 
 =====show grants=====
 <code mysql>
 show grants;
-</code>
+```
 
 =====ERROR 1044 (42000): Access denied for user=====
 het zou kunnen dat je op de server met mysql probeert te verbinden met je 'gewone' user en dat die geen toegang heeft. Vaak wordt er voor je database een aparte user gebruikt bijvoorbeeld 'globe4d_user' met z'n eigen wachtwoord.
@@ -75,29 +75,29 @@ het zou kunnen dat je op de server met mysql probeert te verbinden met je 'gewon
 =====show databases=====
 <code mysql>
 show databases;
-</code>
+```
 
 =====use database=====
 <code mysql>
 use db_name;
-</code>
+```
 
 =====show tables=====
 <code mysql>
 show tables;
-</code>
+```
 
 =====show columns=====
 <code mysql>
 show columns from uren;
-</code>
+```
 
 =====problem=====
 * ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)
 * try to start the mysql server:
 ```
 mysql.server start
-</code>
+```
 
 * ERROR! The server quit without updating PID file (/usr/local/var/mysql/rick.local.pid).''
 

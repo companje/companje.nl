@@ -28,7 +28,7 @@ ini.set("myBoolean",true);
 ini.load("subsettings.ini",false);
 
 //now values from subsettings overwrite existing values with the same name in the same section of settings.ini
-</code>
+```
 
 ini file layout:
 <code ini>
@@ -51,4 +51,4 @@ myInteger=7
 [section2]
 window=0,0,1024,768
 
-</code>
+```

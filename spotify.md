@@ -6,12 +6,12 @@ title: Spotify
 [[https://developer.spotify.com/web-api/search-item/|documentation]]
 <code bash>
   curl -X GET "https://api.spotify.com/v1/search?q=Gorki+-+Mia&type=artist,track" -H "Accept: application/json"
-</code>
+```
 
 <code bash>
 grep "spotify:track:" spotify.json | cut -c 16-51
 grep "spotify:track:" spotify.json | head -n 1 | cut -c 16-51    # only first result
-</code>
+```
 
 =====shell script for playlists=====
 https://gist.github.com/companje/3b229c4eb22a4d8199a5
@@ -61,4 +61,4 @@ then
 else
   spotify "${*:1}"
 fi
-</code>
+```

@@ -12,7 +12,7 @@ main.ino:
 
 Slider slider1(2,3);
 Slider slider2(4,5);
-</code>
+```
 
 Slider.h:
 <code cpp>
@@ -27,7 +27,7 @@ public:
     
   }
 };
-</code>
+```
 
 Sensor.h:
 <code cpp>
@@ -41,7 +41,7 @@ class Sensor {
     }
 };
 
-</code>
+```
 
 
 =====union=====
@@ -55,7 +55,7 @@ union
     uint8_t AH;
   };
 };
-</code>
+```
 
 =====read & write string=====
 <code c>
@@ -73,7 +73,7 @@ void saveString(string filename, string str) {
     file << str;
     file.close();
 }
-</code>
+```
 
 =====vies maar wel leuk=====
 <code c>
@@ -82,7 +82,7 @@ void saveString(string filename, string str) {
 int main() {
         1=====0 && printf("hoi");
 }
-</code>
+```
 
 =====read contents of a file=====
 <code c>
@@ -90,7 +90,7 @@ ifstream f("filename.txt",ios::in);
 stringstream buf;
 buf << f.rdbuf();
 string str = buf.str();
-</code>
+```
 
 =====popen() as alternative to system()=====
 <code c>
@@ -102,7 +102,7 @@ string ofxExecute(string cmd) {
     pclose(fp);
     return result;
 }
-</code>
+```
 * [[http://www.lix.polytechnique.fr/Labo/Leo.Liberti/public/computing/prog/c/C/FUNCTIONS/popen.html|info]]
 
 
@@ -116,23 +116,23 @@ template<typename T> string join(const vector<T>& vec, string t=",") {
     }
     return ss.str();
 }
-</code>
+```
 
 =====ostringstream=====
 <code cpp>
 ostringstream s;
 s << doodle.vshape;
 printf("%s",s.str().c_str());
-</code>
+```
 
 ```
 //copy(doodle.vshape.begin(),doodle.vshape.end(), ostream_iterator<string>(cout, ","));
- </code>
+ ```
 
 
 =====DEFAULTLIB  warnings with CodeBlocks/MinGW=====
 /DEFAULTLIB is a directive that is Visual Studio specific. It is added by the compiler if source contains
-```#pragma comment(linker,"/DEFAULTLIB:something")</code>
+```#pragma comment(linker,"/DEFAULTLIB:something")```
 It is meant to be processed by the microsoft linker when creating final executable - microsoft linker understands the directive. MinGW does not understand it
 * source: http://bugs.mysql.com/bug.php?id=45318
 
@@ -143,7 +143,7 @@ bool triggerSortByDate(const Trigger& a, const Trigger& b) {
 }
 //usage:
 std::sort(myvector.begin(), myvector.end(), triggerSortByDate);
-</code>
+```
 (never return -1 as a false)
 
 =====loop over std::map=====
@@ -152,7 +152,7 @@ for (map<int,Event>::iterator it=events.begin(); it!=events.end(); it++) {
     Event &e = events[it->first];
     //...
 }
-</code>
+```
 
 =====calling a function in the global namespace from within a class=====
 <code c>
@@ -173,7 +173,7 @@ int main() {
     A a;
     a.draw();
 }
-</code>
+```
 
 extra:
 
@@ -197,7 +197,7 @@ int main() {
     ofSetupOpenGL(new ofAppGlutWindow, 1280, 800, OF_WINDOW);
     ofRunApp(new App);
 }
-</code>
+```
 
 =====opvragen welke functies een compiled library bevat=====
 nm' in je terminal om van een compiled library (bijv freeimage.a) info opvragen over welke functies er aan te roepen zijn.
@@ -220,7 +220,7 @@ City newyork = { "new york", 40+47/60., -73 + 58/60. };
 
 //cast:
 return (ofxLatLon){lat,lon};
-</code>
+```
 
 =====good graphics and math stuff=====
 * http://www.iquilezles.org/www/
@@ -235,24 +235,24 @@ foreach (t,triangles) {
         cout << t.v << " " << s << endl;
     } endfor
 } endfor
-</code>
+```
 
 =====foreach macro with pointer p=====
 <code c>
 #define foreach(p,v) for(typeof(v.begin()) p=v.begin(); p!=v.end(); p++)
-</code>
+```
 
 =====get pointer as a reference to the object it's pointing to=====
 <code c>
 #define ref(a,b) &a=*b
-</code>
+```
 
 =====typeof to make a reference=====
 <code c>
 Triangle t;    
 typeof(t) &i = t;
 cout << i.v << endl;
-</code>
+```
 
 =====goede uitleg over references=====
 http://www.parashift.com/c++-faq-lite/references.html
@@ -265,10 +265,10 @@ back() is the same as *end()
 ClassName::operator bool() {
   return ....
 }
-</code>
+```
 hierdoor kun je zeggen: 
 <code c>
 ClassName instance;
 if (instance) { .... }
-</code>
+```
 zou ook voor string moeten werken waardoor je op die manier een object naar string kunt casten vergelijkbaar met een toString functie.

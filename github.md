@@ -5,7 +5,7 @@ title: Github
 =====use image in markdown=====
 ```
 ![](doc/images/my-image.jpg)
-</code>
+```
 
 =====github flavored markdown formatting=====
 * https://help.github.com/articles/github-flavored-markdown/

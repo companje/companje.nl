@@ -10,7 +10,7 @@ filter by time: left bottom clock icon
 To generate warnings in XCode when a non-void function lacks to return a value enable the return type warning:
 ```
 -Wreturn-type
-</code>
+```
 
 =====zie ook======
 * [[osx]]

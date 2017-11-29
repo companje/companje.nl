@@ -47,7 +47,7 @@ title: OpenPanel
     <phpini>/etc/php5/apache2/php.ini</phpini>
   </config>
 </openpanel.module.domain>
-</code>
+```
 
   telnet localhost 80
   HEAD / HTTP/1.0
@@ -61,7 +61,7 @@ I found a workaround for this issue by adding the following html/css to /var/ope
 position: initial !important;
 }
 </style>
-</code>
+```
 
 ===== OpenPanel install your own SSL certificate for the admin panel =====
   * buy a certificate (in my case I ordered one through TransIP (Comodo Positive SSL 12,50 p/y. Request it, store the passphrase on a safe place, confirm the email, go back to transip to download the certificate).
@@ -97,4 +97,4 @@ exit
 exit
 exit
 exit
-</code>
+```

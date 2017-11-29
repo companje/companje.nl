@@ -26,7 +26,7 @@ title: Commodore64
 240 IF Y<1 THEN Y=1
 250 IF(Y>25 THEN Y=25
 260 RETURN
-</code>
+```
 
 =====modulo=====
 use backslash
@@ -47,7 +47,7 @@ prints "X" at row=5, col=10
 20 poke 781,5
 30 poke 782,10
 40 sys 65520
-</code>
+```
 
 =====read X,Y coord of light-pen=====
 use a bright background with dark border
@@ -63,7 +63,7 @@ read values from 53267 and 53268 for X and Y ([[http://www.c64-wiki.com/index.ph
 20 GET#5,A$: IF A$<>"" THEN PRINT A$;
 30 GET B$: IF B$<>"" THEN PRINT#5,B$;
 40 GOTO 20
-</code>
+```
 CHR$(6) = 400 baud    (= bin 00000110)
 CHR$(8) = 1200 baud  (= bin 00001000)
 

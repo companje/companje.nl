@@ -9,7 +9,7 @@ title: Google Docs
 add 12 months to date
 ```
 =edate(A11;12)
-</code>
+```
 
 =====unique / sort / proper=====
 you can use this as a nice data validator
@@ -18,7 +18,7 @@ you can use this as a nice data validator
 =====UrlFetchApp.fetch=====
 <code javascript>
   var text = UrlFetchApp.fetch(URL).getContentText();
-</code>
+```
 
 <code php>
 header("Content-type: text/plain");
@@ -41,7 +41,7 @@ if ($row = mysql_fetch_assoc(mysql_query("SELECT post_id,meta_value FROM wp_post
 if ($row = mysql_fetch_assoc(mysql_query("SELECT post_id,meta_value FROM wp_postmeta WHERE meta_key='VAT Number' AND post_id=$id"))) {
     echo " ".$row['meta_value'];
 }
-</code>
+```
 
 =====tips=====
 http://woorkup.com/2010/02/19/10-useful-google-spreadsheet-formulas-you-must-know/
@@ -51,13 +51,13 @@ http://woorkup.com/2010/02/19/10-useful-google-spreadsheet-formulas-you-must-kno
 =UNIQUE(A:A)
 =CONTINUE(B1; 2; 1)
 ...etc..
-</code>
+```
 
 =====append row=====
-```sheet.appendRow(['hello',true,5.5,new Date()]);</code>
+```sheet.appendRow(['hello',true,5.5,new Date()]);```
 
 =====fetch from url=====
-```var text = UrlFetchApp.fetch("http://companje.nl").getContentText();</code>
+```var text = UrlFetchApp.fetch("http://companje.nl").getContentText();```
 
 =====documentation=====
 * https://developers.google.com/apps-script/
@@ -128,7 +128,7 @@ function layoutKolommen() {
   sheet.getRange("H:H").setNumberFormat("€ #,##0.00");
   sheet.getRange("I:I").setNumberFormat("€ #,##0.00");
 }
-</code>
+```
 
 =====new insights=====
 <code javascript>
@@ -257,7 +257,7 @@ function CSVToArray(strData, strDelimiter) {
   var to = SpreadsheetApp.getActiveRange();
   from.copyTo(to);
 }*/
-</code>
+```
 
 =====2015 versie=====
 <code javascript>
@@ -376,7 +376,7 @@ function CSVToArray(strData, strDelimiter) {
   }
   return arrData;
 }
-</code>
+```
 
 ===== Bugfix when description is undefined (May 27 2015)=====
 <code javascript>
@@ -512,4 +512,4 @@ function CSVToArray(strData, strDelimiter) {
   }
   return arrData;
 }
-</code>
+```

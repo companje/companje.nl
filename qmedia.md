@@ -7,4 +7,4 @@ title: QMedia TV
 Dit lijkt de oplossing:
 ```
   ffmpeg -i <movie.avi> -target pal-vcd <filename.mpg>
-</code>
+```

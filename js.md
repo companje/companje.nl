@@ -44,7 +44,7 @@ https://developers.google.com/web/updates/2011/11/Quota-Management-API-Fast-Fact
 [0, 1, 2, 3, 4].reduce(function(previousValue, currentValue, index, array) {
   return previousValue + currentValue;
 });
-</code>
+```
 
 =====immutable=====
 * immutable.js
@@ -134,7 +134,7 @@ https://developers.google.com/web/updates/2011/11/Quota-Management-API-Fast-Fact
   }
 
 </script>
-</code>
+```
 =====React.js=====
 see [[reactjs]]
 
@@ -176,7 +176,7 @@ function removeShortPaths(minLength,minPoints) {
   }));
 
 }
-</code>
+```
 
 ====compile c code to javascript=====
 * http://kripken.github.io/emscripten-site/
@@ -233,7 +233,7 @@ for (let i of range(0,10)) {
 function *fibonacci() {
 ....
 }
-</code>
+```
 
 ====classes====
 (with inheritance)
@@ -250,7 +250,7 @@ class Animal() {
   }
   set
 .......
-</code>
+```
 
 ====arrow function====
 (alternative for 'self' and/or 'bind')
@@ -260,7 +260,7 @@ setInterval( () => {
 this.arrows--;
 }, 5 * 10000);
 .....
-</code>
+```
 
 ====destructuring====
 lists:
@@ -287,7 +287,7 @@ g({name:5, foo:0})
 
 var [a] = []
 a===undefined
-</code>
+```
 
 ====modules====
 ///lib.js
@@ -326,7 +326,7 @@ img.then(function() {
 });
 
 //Promise.all...... ?
-</code>
+```
 
 =====inheritance with prototypes=====
 <code javascript>
@@ -341,14 +341,14 @@ Dog.prototype = Object.create(Animal.prototype);
 Dog.prototype.bark = function() {
   //do bark
 }
-</code>
+```
 call the Animal super constructor from the Dog constructor
 <code javascript>
 var Dog = function(name,color) {
   Animal.call(this,name);
   this.color = color; //where to declare color?
 }
-</code>
+```
 ===== ECMAScript 6 =====
 * http://stackoverflow.com/questions/6506519/ecmascriptharmony-es6-to-javascript-compiler
 * http://peter.michaux.ca/articles/javascript-is-dead-long-live-javascript
@@ -403,7 +403,7 @@ function assertType(variable,typename) {
   console.error(s+': Unexpected type: '+typeof variable+', expected: '+typename);
   return false;
 }
-</code>
+```
 This one is better:
 <code javascript>
 function assert(a,b) {
@@ -411,7 +411,7 @@ function assert(a,b) {
   var c = Array.prototype.slice.call(arguments,2).join('.');
   for (var i in b) if (typeof a[i]!=b[i]) throw new TypeError(c+" argument["+i+"] should be "+b[i]+" ");
 }
-</code>
+```
 
 
 =====Scaling down an image to fit in a element of a certain size=====
@@ -434,7 +434,7 @@ function assert(a,b) {
 
   img.width(iw*scale);
   img.height(ih*scale);
-</code>
+```
 
 =====lectures=====
 * https://www.destroyallsoftware.com/talks
@@ -446,7 +446,7 @@ function assert(a,b) {
 =====Access-Control-Allow-Origin=====
 ```
 header("Access-Control-Allow-Origin: *");
-</code>
+```
 
 =====more=====
 * http://doodle3d.com/help/javascript-optimization
@@ -467,7 +467,7 @@ function disableDragging() {
     event.preventDefault();
   });
 }
-</code>
+```
 
 =====getParameterByName=====
 <code javascript>
@@ -475,4 +475,4 @@ function getParameterByName(name) {
     var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
     return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
 }
-</code>
+```

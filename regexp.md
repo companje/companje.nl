@@ -34,16 +34,16 @@ this works in the SublimeText search function:
 ===== expr =====
 <code bash>
 expr "ok T:83.4 /0.0 B:0.0 /0.0 @:0" : 'ok T:\([0-9]*\.[0-9]*\)'
-</code>
+```
 
 =====sed & cut=====
 <code bash>
 grep -o '\(T:\)\([0-9]*\.[0-9]*\)' /tmp/UltiFi/ttyACM0/ temp.out | cut -c 3-
-</code>
+```
 <code bash>
 grep "spotify:track:" spotify.json | cut -c 16-51
 grep "spotify:track:" spotify.json | head -n 1 | cut -c 16-51    # only first result
-</code>
+```
 
 =====awk=====
 see [[awk]]

@@ -10,7 +10,7 @@ title: netcat
 ==to receive data from Globe4D driver==
 ```
 nc -lu -p 12345
-</code>
+```
 
 ==netcat for windows==
 part of nmap project (nmap.org).
@@ -39,7 +39,7 @@ do
     #echo test:$line
   done
 done
-</code>
+```
 
 ==tips==
 * http://www.homecomputerlab.com/netcat
@@ -58,21 +58,21 @@ do
   sleep 1
   echo Bel UIT
 done
-</code>
+```
 
 ==listen to port==
 ```
 nc -lu -p 7777
-</code>
+```
 
 ```
 nc -lu 192.168.2.123 8888
-</code>
+```
 
 ==send UDP==
 ```
 echo "hello" > /dev/udp/10.87.24.174/8888
-</code>
+```
 ```
 ls > /dev/udp/10.87.24.174/8888
-</code>
+```

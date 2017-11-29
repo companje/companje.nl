@@ -12,7 +12,7 @@ img {
   height: 50vh;
   /*object-fit: cover; */
 }
-</code>
+```
 ==web==
 see [[web]]
 
@@ -27,7 +27,7 @@ see [[web]]
 <code javascript>
 var css3_support = (document.createElement("detect").style.objectFit === ""); //'objectFit' or other css3 tag
 document.getElementsByTagName("html")[0].className += (css3_support ? " css3" : " nocss3");
-</code>
+```
 
 <code css>
 .css3 img { 
@@ -39,7 +39,7 @@ document.getElementsByTagName("html")[0].className += (css3_support ? " css3" : 
 img {
   /* always */
 }
-</code>
+```
 
 ==css names in javascript==
 "background-color" becomes "backgroundColor", and "list-style-type" becomes "listStyleType"
@@ -70,12 +70,12 @@ img {
 td[bgcolor="#00ffff"] {
 	border:5px solid green;
 }
-</code>
+```
 
 ==input type text==
 <code css>
 input[type="text"] 
-</code>
+```
 
 ==multiple columns==
 <code css>
@@ -88,7 +88,7 @@ input[type="text"]
 	column-gap:40px;
 	text-align: justify;
 }
-</code>
+```
 
 ==position:relative==
 * http://jsfiddle.net/DsTeK/2/
@@ -97,7 +97,7 @@ input[type="text"]
 <code css>
 li.page_item.current_page_item > a {
 }
-</code>
+```
 
 ==center div's vertically==
 <code css>
@@ -110,5 +110,5 @@ li.page_item.current_page_item > a {
 	margin-top:-150px;
 	margin-left:-200px;
 }
-</code>
+```
 [[http://demo.tutorialzine.com/2010/03/centering-div-vertically-and-horizontally/demo.html|source]]

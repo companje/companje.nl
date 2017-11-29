@@ -10,7 +10,7 @@ http://vestacp.com/
 ssh root@your.server
 curl -O http://vestacp.com/pub/vst-install.sh
 bash vst-install.sh
-</code>
+```
 
 ==uploading a website==
 http://www.servermom.org/add-new-website-vesta-cp/1066/

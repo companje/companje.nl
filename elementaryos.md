@@ -24,7 +24,7 @@ sudo apt-get install python-software-properties
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
 sudo apt-get install oracle-java8-installer
-</code>
+```
 
 ====install ElementaryOS os MacbookPro====
 * http://askubuntu.com/questions/462360/macbook-air-how-to-install-a-dual-bootable-ubuntu-14-04-lts
@@ -49,7 +49,7 @@ sudo apt-get update
 sudo apt-get install gdebi
 wget http://download.teamviewer.com/download/teamviewer_i386.deb
 sudo gdebi teamviewer_i386.deb
-</code>
+```
 
 ====terminal colors====
 http://mayccoll.github.io/Gogh/
@@ -91,7 +91,7 @@ X-GNOME-Autostart-enabled=true
 Type=Application
 Name=Globe4D Driver
 globe4d@Globe4D-Leiden:~/.config/autostart$ 
-</code>
+```
 
 ====startup delay====
 * http://www.webupd8.org/2014/05/how-to-delay-startup-applications-in.html

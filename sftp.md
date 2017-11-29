@@ -6,6 +6,6 @@ title: sftp
 
 ```
 sftp root@192.168.5.1:22
-</code>
+```
 
 error: /usr/libexec/sftp-server: not found

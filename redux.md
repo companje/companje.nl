@@ -13,7 +13,7 @@ title: Redux
 ```
 jspm init    # make sure to choose 'Babel' as transpiler
 jspm install react redux react-redux react-dom
-</code>
+```
 
 ====Persistant state=====
 * https://github.com/peteruithoven/redux-devtools-persistState-example

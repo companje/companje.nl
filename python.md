@@ -15,7 +15,7 @@ def logUser(name, age, length):
 #logUser('alex', 29, 1.75)
 user = ('alex', 29, 1.75)
 logUser(*user)
-</code>
+```
 <code python>
 def logUser(name, age, length):
     print('name: ', name)
@@ -25,7 +25,7 @@ def logUser(name, age, length):
 # logUser(age=28, length=1.75, name='alex')
 user = {'age':28, 'length':1.75, 'name':'alex'}
 logUser(**user)
-</code>
+```
 <code python>
 def log(*args):
     print(args)
@@ -35,7 +35,7 @@ def log(*args):
     print(message)
 
 log('hallo', '2134', 'fsfdsf')
-</code>
+```
 <code python>
 def logUser(**kwargs):
     print('name: ', kwargs['name'])
@@ -43,7 +43,7 @@ def logUser(**kwargs):
     print('length: ', kwargs['length'])
 
 logUser(age=28, length=1.75, name='alex')
-</code>
+```
 
 ==SimpleHTTPServer==
   python -m SimpleHTTPServer 8000
@@ -55,7 +55,7 @@ http://kivy.org/#home
 In NinjaKittens folder:
 ```
 export PYTHONPATH=.
-</code>
+```
 
 ==gui==
 * http://kivy.org
@@ -64,17 +64,17 @@ export PYTHONPATH=.
 untested:
 ```
 brew install libxml2
-</code>
+```
 or
 ```
 sudo port install py25-lxml
-</code>
+```
 
 ==install easy_install==
 http://pypi.python.org/pypi/setuptools#downloads
 ```
 sh setuptools-0.6c9-py2.4.egg --prefix=~
-</code>
+```
 
 ==Mogelijke oplossing voor problemen met Python op OSX Lion==
 * http://www.niconomicon.net/blog/2011/10/09/2120.wrestling.python.snow.leopard
@@ -83,24 +83,24 @@ sh setuptools-0.6c9-py2.4.egg --prefix=~
 ==version==
 <code bash>
 python --version
-</code>
+```
 
 ==location of python==
 <code bash>
 type python
-</code>
+```
 or
 <code bash>
 which python
-</code>
+```
 
 ==info about executable==
 <code bash>
 file /usr/local/bin/python
-</code>
+```
 
 ==set python path (for macports?)==
 see also: [[macports]]
 <code bash>
 export PYTHONPATH=/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages
-</code>
+```
