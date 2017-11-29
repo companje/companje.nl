@@ -54,7 +54,7 @@ Enter ~.
 ```
 
 =====ssh tunnel=====
-<code bash>ssh -L 8080:localhost:80 192.168.0.1```
+```bashssh -L 8080:localhost:80 192.168.0.1```
 
 =====restart ssh daemon=====
 ```/etc/init.d/sshd restart```
@@ -71,7 +71,7 @@ Some very usefull info about ssh keys etc: http://help.github.com/ssh-issues/
 just run ''ssh-keygen''
 
 =====Adding your public key to the server to remember your git user's password=====
-<code bash>
+```bash
 scp ~/.ssh/id_rsa.pub user@remote.example.com:/tmp/id_rsa.pub
 mkdir ~/.ssh
 chmod 700 ~/.ssh
@@ -80,14 +80,14 @@ cat /tmp/id_rsa.pub >> ~/.ssh/authorized_keys
 
 hmm.. het lijkt dat je de id_dsa.pub moet toevoegen
 
-<code bash>
+```bash
 op de client:
-<code bash>
+```bash
 ssh-keygen -t dsa -f $HOME/.ssh/id_dsa -P ''
 scp ~/.ssh/id_dsa.pub SERVER:/tmp/id_dsa.pub
 ```
 
 op de server:
-<code bash>
+```bash
 cat /tmp/id_dsa.pub >> ~/.ssh/authorized_keys
 ```

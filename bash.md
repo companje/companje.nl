@@ -50,7 +50,7 @@ foldername=${folderpath##*/}
 ```
 
 # colors in ~/.profile
-<code bash>
+```bash
 git_branch () { git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'; }
 HOST='[01;32m\]';
 LOCATION='`pwd | sed "s#\(/[^/]\{1,\}/[^/]\{1,\}/[^/]\{1,\}/\).*\(/[^/]\{1,\}/[^/]\{1,\}\)/\{0,1\}#\1_\2#g"`'
@@ -67,7 +67,7 @@ cd /domains/doodle3d.com/DEFAULT
 ```
 
 # log file processing
-<code bash>
+```bash
 cut -f4,10 EnecsysLogfile.txt | sort -r | rev | uniq -f 1 | rev | cut -f 2 | egrep [0-9.] | xargs  | sed -e 's/\ /+/g' | bc
 ```
 
@@ -81,7 +81,7 @@ date    time    ZigbeeString    deviceID        DCpower Efficiency      ACpower 
 ```
 
 # move files by year
-<code bash>
+```bash
 #!/usr/bin/env bash
 BASE_DIR=/Users/rick/Pictures/Diversen2/2004
 
@@ -103,7 +103,7 @@ done
   find . -type d -empty -delete
 
 # update Date Modified based on EXIF data
-<code bash>
+```bash
 #!/bin/bash
 
 while [[ "$1" != "" ]] ; do
@@ -117,7 +117,7 @@ done
 
 # move jpg script based on exif data
 using ''imagemagick''.
-<code bash>
+```bash
 #!/bin/bash
 
 for i in *.JPG; do
@@ -143,7 +143,7 @@ done
   find.txt | sort | cut -f1 -d"." | uniq | rev | sort > sorted.txt
 
 # read line from netcat
-<code bash>
+```bash
 while:
 do
   echo listening...
@@ -258,7 +258,7 @@ LPI 1 boeken zijn heel fijn om bash te leren
 rev draait in een bestand voor elke regel alle karakters om
 
 # ncal
-<code bash>
+```bash
 cal
 ncal
 ncal -wy
@@ -266,9 +266,9 @@ ncal -wy
 
 # bash-completion
 for advanced code completion (also reads from makefiles)
-<code bash>sudo port install bash-completion```
+```bashsudo port install bash-completion```
 add this to ~/.profile
-<code bash>
+```bash
 export BASH_COMPLETION=/opt/local/etc/profile.d/bash_completion.sh
 if [ -f $BASH_COMPLETION ]; then
         . $BASH_COMPLETION
@@ -285,7 +285,7 @@ source /opt/local/share/doc/git-core/contrib/completion/git-prompt.sh
 #  Checking errorcode / errorlevel / returnvalue in a shell script 
 See [[linux]]
 
-<code bash>
+```bash
 #!/bin/sh
 
 export TOPDIR=`pwd`/..

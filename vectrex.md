@@ -23,7 +23,7 @@ int main() {
 }
 ```
 
-<code bash>
+```bash
 cmoc --vectrex hello_world.c
 ```
 

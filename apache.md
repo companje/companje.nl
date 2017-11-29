@@ -108,12 +108,12 @@ zie ook [[htaccess]]
 make sure that 'AllowOverride All' is set in `/private/etc/apache2/httpd.conf` and/or `/etc/apache2/users/USERNAME.conf`
 
 =====apache opnieuw opstarten=====
-<code bash>
+```bash
 sudo /etc/init.d/httpd restart
 ```
 
 =====op mac=====
-<code bash>
+```bash
 sudo apachectl stop
 sudo apachectl start
 ```

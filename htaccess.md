@@ -79,7 +79,7 @@ AuthUserFile FOLDER/.htpasswd
 ```
 
 =====create SHA encrypted password for htpasswd=====
-<code bash>
+```bash
 htpasswd -s FOLDER/.htpasswd USERNAME
 ```
 

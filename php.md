@@ -322,7 +322,7 @@ try to connect to 127.0.0.1 instead of localhost
 twitter uitlezen met PHP? zie [[Twitter]]
 
 =====php versie opvragen=====
-<code bash>
+```bash
 php -v
 ```
 

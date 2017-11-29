@@ -81,26 +81,26 @@ sh setuptools-0.6c9-py2.4.egg --prefix=~
 * http://stackoverflow.com/questions/6886578/how-to-install-pycairo-1-10-on-mac-osx-with-default-python
 
 ==version==
-<code bash>
+```bash
 python --version
 ```
 
 ==location of python==
-<code bash>
+```bash
 type python
 ```
 or
-<code bash>
+```bash
 which python
 ```
 
 ==info about executable==
-<code bash>
+```bash
 file /usr/local/bin/python
 ```
 
 ==set python path (for macports?)==
 see also: [[macports]]
-<code bash>
+```bash
 export PYTHONPATH=/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages
 ```

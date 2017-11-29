@@ -49,12 +49,12 @@ SELECT DATE_FORMAT(FROM_UNIXTIME(beginDate),"%e-%m-%Y %H:%i")
 [[http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_date-format|more info]]
 
 =====change mysql password=====
-<code bash>
+```bash
 mysqladmin -u root password root
 ```
 
 =====connect to mysql database=====
-<code bash>
+```bash
 mysql -u rick -pXXXXXX
 mysql -u globe4d_user -pXXXX
 ```

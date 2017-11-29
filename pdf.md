@@ -6,7 +6,7 @@ title: PDF
 http://pdf2jpg.net/
 
 ===== text files to pdf =====
-<code bash>
+```bash
 #!/bin/bash
 for file in *.txt; do
     textutil -convert rtf -font 'Courier New' -fontsize 9 ${file} -output ${file}.rtf

@@ -80,23 +80,23 @@ M117 Done                 ;display message (20 characters to clear whole screen)
 * http://daid.github.com/Cura/
 
 * firmware backuppen:
-<code bash>
+```bash
 avrdude -c stk500v1 -b57600 -p atmega1280 -P /dev/tty.usbserial-A600f8w2 -D -Uflash:r:firmware.hex:i
 ```
 of
-<code bash>
+```bash
 avrdude -c stk500v2 -b115200 -p atmega2560 -P /dev/tty.usbmodem411 -D -Uflash:r:firmware.hex:i
 ```
 
 * writing firmware
-<code bash>
+```bash
 avrdude -c stk500v2 -b115200 -p atmega2560 -P /dev/tty.usbmodem411 -D -Uflash:w:firmware.hex:i
 ```
-<code bash>
+```bash
 avrdude -c stk500v2 -b115200 -p atmega2560 -P /dev/tty.usbmodem621 -D -Uflash:w:cfg_4fd875a44fb67.hex.txt:i
 ```
 
-<code bash>
+```bash
 avrdude -c stk500v1 -b57600 -p atmega1280 -P /dev/tty.usbserial-A9005d8c -D -Uflash:w:firmware.hex:i
 ```
 

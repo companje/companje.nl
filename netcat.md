@@ -18,7 +18,7 @@ Same syntax: `ncat -lu 192.168.2.123 8888`
 
 
 ==read line from netcat==
-<code bash>
+```bash
 while:
 do
   echo listening...

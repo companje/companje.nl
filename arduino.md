@@ -106,7 +106,7 @@ http://www.arduino.cc/en/Main/MiniUSB
 sdi12: protocol om over 1 draad half-duplex communicatie te hebben. Er is een Arduino library voor.
 
 =====seeeduino atmega328 via avrdude=====
-<code bash>
+```bash
 avrdude -cstk500v1 -b57600 -p m328p -P /dev/tty.usbserial-A600JGJZ -D -Uflash:w:Globe4D-demo-firmware.hex:i
 ```
 
@@ -123,7 +123,7 @@ if self.sendMessage([0x10, 0xc8, 0x64, 0x19, 0x20, 0x00, 0x53, 0x03, 0xac, 0x53,
 * my version based on the info above: https://gist.github.com/3049050
 
 =====terminal mode=====
-<code bash>
+```bash
 avrdude -c usbasp -p atmega1280 -t
 >> dump flash 0 512
 >> dump eeprom 0 16
@@ -137,12 +137,12 @@ use -u to enable writing of fuses
 
 =====reset fuses?=====
 not sure
-<code bash>
+```bash
 sudo avrdude -p atmega1280 -c usbasp -P usb -v  -U lfuse:w:0xef:m -U hfuse:w:0xc9:m
 ```
 
 =====bootloader with avrdude=====
-<code bash>
+```bash
 /Applications/Arduino.app/Contents/Resources/Java/hardware/tools/avr/bin/avrdude -C/Applications/Arduino.app/Contents/Resources/Java/hardware/tools/avr/etc/avrdude.conf -v -v -v -v -patmega1280 -cusbasp -Pusb -Uflash:w:/Applications/Arduino.app/Contents/Resources/Java/hardware/arduino/bootloaders/atmega/ATmegaBOOT_168_atmega1280.hex:i -Ulock:w:0x0F:m 
 ```
 

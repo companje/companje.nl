@@ -32,15 +32,15 @@ this works in the SublimeText search function:
 * http://www.phpliveregex.com/ (php)
 
 ===== expr =====
-<code bash>
+```bash
 expr "ok T:83.4 /0.0 B:0.0 /0.0 @:0" : 'ok T:\([0-9]*\.[0-9]*\)'
 ```
 
 =====sed & cut=====
-<code bash>
+```bash
 grep -o '\(T:\)\([0-9]*\.[0-9]*\)' /tmp/UltiFi/ttyACM0/ temp.out | cut -c 3-
 ```
-<code bash>
+```bash
 grep "spotify:track:" spotify.json | cut -c 16-51
 grep "spotify:track:" spotify.json | head -n 1 | cut -c 16-51    # only first result
 ```

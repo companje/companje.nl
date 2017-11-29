@@ -41,7 +41,7 @@ https://help.github.com/articles/syncing-a-fork/
 the HOME env variable might be wrong. Try 
 ```set HOME```
 and fix it if needed by setting it to the right value or by removing it:
-<code bash>set HOME=c:\Users\YOUR_USER_NAME
+```bashset HOME=c:\Users\YOUR_USER_NAME
 rem OR: set HOME=
 ```
 
@@ -82,7 +82,7 @@ git stash pop
 ```
 
 =====code completion for git=====
-<code bash>sudo port install git-core git-extras```
+```bashsudo port install git-core git-extras```
 
 =====undo 'git add' before commit=====
 ```
@@ -103,7 +103,7 @@ git push --all
 http://stackoverflow.com/questions/359424/detach-subdirectory-into-separate-git-repository
 
 =====clone specific branch recursively=====
-<code bash>
+```bash
 git clone --recursive -b BRANCHNAME git@github.com:..../.....git
 ```
 
@@ -114,32 +114,32 @@ git diff HEAD HEAD~~
 ```
 
 =====show all branches (local and remote)=====
-<code bash>
+```bash
 git branch -a
 ```
 
 =====show remote branches =====
-<code bash>
+```bash
 git branch -r
 ```
 
 =====clone a specific branch=====
-<code bash>
+```bash
 git clone -b experimental git@github.com:companje/ofxArcText.git
 ```
 
 =====existing repo=====
-<code bash>
+```bash
 cd existing_git_repo
 git remote add origin https://github.com/Doodle3D/Doodle3D.git
 git push -u origin master
 ```
 
 =====change url of remote origin=====
-<code bash>git config remote.origin.url git@github.com:USER/PROJECT.git```
+```bashgit config remote.origin.url git@github.com:USER/PROJECT.git```
 
 =====open git config in editor=====
-<code bash>git config -e```
+```bashgit config -e```
 
 =====git remote update=====
 a git remote update followed by a ''git diff'' shows the changes you will get for a ''git pull''
@@ -148,34 +148,34 @@ a git remote update followed by a ''git diff'' shows the changes you will get fo
 is a combination of ''git fetch'' and ''git merge''
 
 =====force a push=====
-<code bash>
+```bash
 git push -f origin RicksVersie
 ```
 
 =====show branches with more information=====
-<code bash>
+```bash
 git branch -av
 ```
 
 =====show listing of commits=====
-<code bash>
+```bash
 git reflog
 ```
 
 =====move a branch=====
-<code bash>
+```bash
 git branch -m master RicksVersie
 git branch -m PetersVersie master
 ```
 
 =====delete a local branch=====
-<code bash>git branch -D crazy-idea```
+```bashgit branch -D crazy-idea```
 
 =====rename a local branch=====
-<code bash>git branch -M oldname newname```
+```bashgit branch -M oldname newname```
 
 =====git with colors=====
-<code bash>
+```bash
 git config --global color.ui true
 ```
 
@@ -186,13 +186,13 @@ git reset --hard HEAD
 ```
 
 =====merge a branch into another branch=====
-<code bash>
+```bash
 git checkout experimental
 git merge master
 ```
 
 =====merge specific files/folder from another git branch=====
-<code bash>
+```bash
 #You are in the branch you want to merge to
 git checkout <branch_you_want_to_merge_from> <file_paths...>
 ```
@@ -200,45 +200,45 @@ git checkout <branch_you_want_to_merge_from> <file_paths...>
 
 =====git (on github) keeps asking for password when using pull or push=====
 You might have cloned the project over https. Check if this is the case using
-<code bash>
+```bash
 git config -l
 ```
 now change the remote origin to:
-<code bash>
+```bash
 git config remote.origin.url git@github.com:USER/PROJECT.git
 ```
 
 =====verwijder de 'Leiden' branch op de remote=====
-<code bash>
+```bash
 git push origin :Leiden
 ```
 
 =====verwijder een folder uit de cache=====
 (niet uit je directory structuur)
-<code bash>
+```bash
 git rm -r --cached libs/
 ```
 
 =====git push origin NAME=====
 als je een nieuwe branch hebt gemaakt op een andere computer dan moet je die branch nog handmatig pushen naar remote met:
-<code bash>
+```bash
 git push origin NAME
 ```
 
 =====If you are just after tracking someone else's project, this get you started quickly=====
-<code bash>
+```bash
 git clone url = svn checkout url
 git pull = svn update
 ```
 
 =====git clone depth=====
-<code bash>
+```bash
 git clone git://github.com/openframeworks/openFrameworks.git –depth 1
 ```
 
 =====GIT gui programs=====
 By default a couple of GUI programs are installed with git, for browsing through history  and committing etc.
-<code bash>
+```bash
 gitk
 git gui
 ```
@@ -249,13 +249,13 @@ you might first need to run ''sudo apt-get  install gitk''
 * http://brotherbard.com/blog/2010/03/experimental-gitx-fork/
 
 =====open git config editor=====
-<code bash>git config -e```
+```bashgit config -e```
 this opens the file .git/config
 if this not works because of an error in .git/config just open the file with nano:
-<code bash>nano .git/config```
+```bashnano .git/config```
 
 =====In je repository kun je zo iets pushen naar de server (bijv. github)=====
-<code bash>
+```bash
 cd addons_rick/
 git add ofxArcBall/
 git commit -am "added ofxArcBall"
@@ -264,23 +264,23 @@ git push origin master
 
 =====checkout=====
 to go back to a revision:
-<code bash>
+```bash
 git checkout revisionid
 ```
 
 to bring the repository back to it's most recent state
-<code bash>
+```bash
 git checkout master
 ```
 
 =====Set up git=====
-<code bash>
+```bash
   git config --global user.name "Your Name"
   git config --global user.email your@emailaddress.com
 ```
 
 =====Get started with a newly created github repository=====
-<code bash>
+```bash
   mkdir PROJECTNAME
   cd PROJECTNAME
   git init
@@ -292,7 +292,7 @@ git checkout master
 ```
 
 =====creating new remote git repository=====
-<code bash>
+```bash
 git init
 or
 git --bare init
@@ -308,7 +308,7 @@ Some very usefull info about ssh keys etc: http://help.github.com/ssh-issues/
 just run ''ssh-keygen''
 
 =====Adding your public key to the server to remember your git user's password=====
-<code bash>
+```bash
 scp ~/.ssh/id_rsa.pub user@remote.example.com:/tmp/id_rsa.pub
 mkdir ~/.ssh
 chmod 700 ~/.ssh
@@ -321,12 +321,12 @@ http://nvie.com/posts/a-successful-git-branching-model/
 
 =====uitchecken van git project op onze server=====
 hiervoor hebben we rick aan de 'git' groep toegevoegd met '''usermod -a -G git rick'''. Harmen deed ook nog iets met '''chgrp'''
-<code bash>
+```bash
 git clone rick@git.giplt.nl:/home/giplt/git/datamining
 ```
 
 =====Nieuw git project opzetten op onze server=====
-<code bash>
+```bash
 ssh username@giplt.nl
 cd git
 mkdir newproject
@@ -336,7 +336,7 @@ git --bare init
 
 =====automatically pull from master=====
 if you get this message:
-<code bash>
+```bash
 If you often merge with the same branch, you may want to
 configure the following variables in your configuration
 file:
@@ -349,7 +349,7 @@ file:
 
 open the .git/config file (ie. by ''git config -e'') and set the branch.master.remote to ''origin'' and the branch.master.merge to ''refs/heads/master''
 
-<code bash>
+```bash
 [core]
         repositoryformatversion = 0
         filemode = true
@@ -366,7 +366,7 @@ open the .git/config file (ie. by ''git config -e'') and set the branch.master.r
 (for the record, want is nu al gedaan)
 Dit zorgt er voor dat bij een commit de gepushde files als group niet de userid krijgen van degene die een bestand heeft aangemaakt, maar de gedeelde group (bij ons 'git') waarbinnen iedereen schrijfrechten heeft.
 
-<code bash>
+```bash
 sudo chmod -R g+ws *
 sudo chgrp -R mygroup *
 
@@ -374,18 +374,18 @@ git repo-config core.sharedRepository true
 ```
 
 =====remove origin from remote=====
-<code bash>
+```bash
 git remote rm origin
 ```
 
 =====git add=====
 first do a ''git --bare init'' on the server
-<code bash>
+```bash
 git remote add origin {url}
 ```
 
 =====change editor for git=====
-<code bash>
+```bash
 git config --global core.editor "nano"
 ```
 
@@ -395,7 +395,7 @@ error: src refspec master does not match any.
 error: failed to push some refs to ..
 ```
 you're commit might went wrong or you just forgot to commit:
-<code bash>
+```bash
 git commit -m 'first commit'
 ```
 
@@ -403,34 +403,34 @@ git commit -m 'first commit'
 see [[http://stackoverflow.com/questions/4161022/git-how-to-track-untracked-content/4162672#4162672|this page]]
 
 add submodule to a project (this means to clone another repo into a subfolder of your repo)
-<code bash>
+```bash
 git submodule add git://github.com/test/test.git subfolder/test
 ```
 
-<code bash>
+```bash
 git submodule update --init
 ```
 
 remove a submodule
-<code bash>
+```bash
 git rm --cached folder/submodule
 ```
 
 you can also clone your repo recursively, that way also submodules are cloned.
 
-<code bash>
+```bash
 git clone --recursive http://server/repo.git
 ```
 
 =====pull git submodules=====
 see the [[http://book.git-scm.com/5_submodules.html|git book]]
-<code bash>
+```bash
 git submodule init
 git submodule update
 ```
 
 nog niet getest:
-<code bash>
+```bash
 git submodule update --init --recursive
 ```
 
@@ -445,7 +445,7 @@ cloning probably resulted in an empty folder. Delete the folder and try to clone
 http://xinyustudio.wordpress.com/2011/12/11/a-brief-list-of-git-commands/
 
 =====git list files=====
-<code bash>git ls-files```
+```bashgit ls-files```
 
 =====git cheat sheet=====
 http://help.github.com/git-cheat-sheets/

@@ -102,7 +102,7 @@ by default it seems to replace a file.
   chmod -R 755 folder_with_wrong_permissions
   
 =====.bash_profile=====
-<code bash>
+```bash
 export PATH=/opt/local/bin:/opt/local/sbin:~/bin:$PATH
 
 export ANDROID_HOME=~/Documents/android-sdk-macosx
@@ -173,7 +173,7 @@ try 0, 1 or 2: the lower the faster
 *https://www.macupdate.com/app/mac/16357/unpkg
 
 =====batch resize images=====
-<code bash>
+```bash
 sips -Z 640 *.jpg
 ```
 
@@ -304,7 +304,7 @@ networksetup -listallhardwareports
 ```
 
 =====symbolic links=====
-<code bash>
+```bash
 ln -s fullpath-source-www /Users/rick/Sites/8
 ```
 
@@ -366,7 +366,7 @@ sudo apachectl start
 CoolTerm - http://www.macupdate.com/app/mac/31352/coolterm/
 
 =====stop cups=====
-<code bash>
+```bash
 sudo launchctl stop org.cups.cupsd
 ```
 
@@ -375,7 +375,7 @@ sudo launchctl stop org.cups.cupsd
 
 =====write disk image to sd card=====
 * [[http://www.thelinuxdaily.com/2010/01/writing-images-to-disk-on-mac-osx-with-dd/|read article on the linuxdaily]]
-<code bash>
+```bash
 diskutil list
 diskutil unmountDisk /dev/disk3
 dd if=debian6-19-04-2012.img of=/dev/disk3 bs=1m
@@ -404,7 +404,7 @@ libtool
 otool is an alternative for linux' 'ldd'
 
 =====List files in library=====
-<code bash>
+```bash
 ar -t libctest.a
 ```
 
@@ -417,7 +417,7 @@ export CFLAGS="-i /usr/local/include/libusb-1.0"
 see [[http://www.macworld.com/article/1161330/four_lion_terminal_hacks.html|this]] or [[http://reviews.cnet.com/8301-13727_7-20083707-263/managing-mac-os-x-lions-application-resume-feature/|this]]
 
 for Preview, Quicktime and XCode:
-<code bash>
+```bash
 defaults write com.apple.Preview NSQuitAlwaysKeepsWindows -bool false
 defaults write com.apple.QuickTimePlayerX NSQuitAlwaysKeepsWindows -bool false
 defaults write com.apple.dt.Xcode NSQuitAlwaysKeepsWindows -bool false
@@ -452,7 +452,7 @@ Escape character is '^]'
 which means Ctrl+]
 
 =====hosts file=====
-<code bash>
+```bash
 sudo nano -w /etc/hosts
 sudo dscacheutil -cachedump -entries Host
 dscacheutil -flushcache
@@ -461,7 +461,7 @@ dscacheutil -flushcache
 =====stty=====
 http://stackoverflow.com/questions/3918032/bash-serial-i-o-and-arduino
 can you run stty -a < /dev/tty.usbserial-A800eIUj while you have the serial port working on the Arduino IDE? That would give you the settings to use.
-<code bash>
+```bash
 stty -f /dev/tty.PL2303-00001004 19200
 ```
 
@@ -480,22 +480,22 @@ nog uitzoeken: launchd en lingon
 * http://www.bohemianalps.com/blog/2008/x11-control2command/
 
 =====searching in files recursively=====
-<code bash>
+```bash
 grep -ir "texttofind" *
 ```
 
 =====using the find command on the command line=====
-<code bash>
+```bash
 find . | grep -i ".cpp"
 ```
 
 =====use grep to search output of a program=====
-<code bash>
+```bash
 git diff | grep 'piano'
 ```
 
 =====compile a simple glut program written in c on mac=====
-<code bash>
+```bash
 g++ -Wall -O3 -g -framework OpenGL -framework GLUT bezmesh.c -o bezmesh
 ```
 
@@ -511,15 +511,15 @@ Don't forget to include OpenGL and GLUT like this:
 
 =====Enable colors in the terminal's ls command=====
 or type ''ls -G'' or put the following in your ''~/.profile'' file for a permanent solution.
-<code bash>export CLICOLOR=1```
+```bashexport CLICOLOR=1```
 
 =====Show hidden files/folders=====
-<code bash>defaults write com.apple.finder AppleShowAllFiles TRUE```
+```bashdefaults write com.apple.finder AppleShowAllFiles TRUE```
 (and reload Finder)
 
 =====Change screenshots folder (and other settings)=====
 * http://www.tekrevue.com/tip/how-to-customize-screenshot-options-in-mac-os-x/
-<code bash>
+```bash
 defaults write com.apple.screencapture location /Users/rick/Desktop/screenshots
 killall SystemUIServer
 ```
@@ -531,27 +531,27 @@ killall SystemUIServer
 Install [[http://visor.binaryage.com/|Visor]] to have a system-wide terminal on a hot-key.
 
 =====Rotate an image=====
-<code bash>sips input.jpg -r 90 --out output.jpg```
+```bashsips input.jpg -r 90 --out output.jpg```
 
 =====convert an image=====
-<code bash>
+```bash
 sips -s format jpeg 4.gif --out 4.jpg
 ```
 
 =====chmod recursive write access=====
-<code bash>chmod -R 777 data```
+```bashchmod -R 777 data```
 
 =====~/.profile=====
 on osx 10.9 I had to rename .profile to . bash_profile
-<code bash>
+```bash
 alias dir="ls -lGa"
 ```
 
-<code bash>
+```bash
 alias tocaf="afconvert -f caff -d LEI16"
 ```
 
-<code bash>
+```bash
 alias cdd="cd ~/Desktop"
 ```
 
@@ -560,7 +560,7 @@ see [[:ffmpeg]]
 \
 
 =====combine pdf's on mac osx (with pdftk) =====
-<code bash>
+```bash
 sudo port install pdftk
 pdftk 1.pdf 2.pdf 3.pdf cat output 123.pdf
 ```
@@ -573,7 +573,7 @@ Wireshark is a tool to analyze network traffic
 
 =====hexdump=====
 installed by default.
-<code bash>
+```bash
 hexdump filename
 ```
 
@@ -594,11 +594,11 @@ I managed to send an email but it's not working completely yet.
 Handige app om GCODES mee te bekijken in 3D
 
 =====Synergy2=====
-<code bash>
+```bash
 synergys --config synergy.conf
 ```
 synergy.conf:
-<code bash>
+```bash
 section: screens
         rick.local:
         User-PC:

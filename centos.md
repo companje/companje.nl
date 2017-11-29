@@ -3,12 +3,12 @@ title: CentOS
 ---
 
 ==Opvragen CentOS versie==
-<code bash>
+```bash
 cat /etc/*elease*
 ```
 
 ==warning: setlocale: LC_CTYPE: cannot change locale (UTF-8)==
-<code bash>
+```bash
 export LC_ALL="en_US.UTF-8"
 ```
 

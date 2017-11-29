@@ -41,7 +41,7 @@ je kunt ook vanuit de 'gewone' terminal deze variabelen setten met export:
   export DOCKER_HOST=tcp://192.168.99.100:2376 DOCKER_CERT_PATH=/Users/rick/.docker/machine/machines/dev DOCKER_TLS_VERIFY=1
   
 =====tutorial steps======
-<code bash>
+```bash
 docker version
 docker search tutorial
 docker pull learn/tutorial #learn is the username, tutorial the image name
@@ -69,7 +69,7 @@ start een nieuwe container
   boot2docker start
   
 =====pull & run debian=====
-<code bash>
+```bash
 docker pull debian
 docker run -i -t debian /bin/bash
 ```
