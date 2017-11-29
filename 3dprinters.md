@@ -2,4 +2,4 @@
 title: 3D Printers
 ---
 
-see [3D Printing](/3dprinting)
+see also [3D Printing](/3dprinting)
