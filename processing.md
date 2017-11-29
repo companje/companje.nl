@@ -13,7 +13,7 @@ void applyRotation(PVector src, PVector axis, float angle) {
 }
 </code>
 
-#convert 16bit gray RAW image to 8 bit RGB png
+# convert 16bit gray RAW image to 8 bit RGB png
 <code javascript>
 byte gray[] = loadBytes("/Users/rick/Documents/openFrameworks/of0093/apps/Globe4D/Globe4D/bin/data/maps/hull/terra8M.raw"); 
 
