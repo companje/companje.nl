@@ -2,7 +2,7 @@
 title: Processing
 ---
 
-=====PVector 3D rotation=====
+#PVector 3D rotation
 <code javascript>
 void applyRotation(PVector src, PVector axis, float angle) {
   PMatrix3D rMat = new PMatrix3D();
@@ -13,7 +13,7 @@ void applyRotation(PVector src, PVector axis, float angle) {
 }
 </code>
 
-=====convert 16bit gray RAW image to 8 bit RGB png=====
+#convert 16bit gray RAW image to 8 bit RGB png
 <code javascript>
 byte gray[] = loadBytes("/Users/rick/Documents/openFrameworks/of0093/apps/Globe4D/Globe4D/bin/data/maps/hull/terra8M.raw"); 
 
@@ -31,7 +31,7 @@ img.save("rgb.png");
 println("done");
 </code>
 
-===== Globe intro in ProcessingJS for Khan Academy =====
+# Globe intro in ProcessingJS for Khan Academy 
 <code javascript>
 var planet = getImage("space/planet");
 var logoY,sloganX,globeY,webY;
@@ -96,7 +96,7 @@ var draw = function() {
 };
 </code>
 
-===== Monstertje in ProcessingJS voor Khan Academy=====
+# Monstertje in ProcessingJS voor Khan Academy
 <code javascript>
 var eye = function(cx,cy,eyeX,eyeY) {
     fill(126, 242, 149);
@@ -166,7 +166,7 @@ var draw = function() {
 };
 </code>
 
-===== Starfield 2D perspective =====
+# Starfield 2D perspective 
 <code java>
 class Star extends PVector {
   float speed;
@@ -206,7 +206,7 @@ void draw() {
 }
 </code>
 
-===== Mandelbrot set =====
+# Mandelbrot set 
 <code java>
 // Interactive Mandelbrot Set
 // Inspired by Daniel Shiffman's Processing example.
