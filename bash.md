@@ -2,6 +2,25 @@
 title: Bash
 ---
 
+# Check return value
+```
+#!/bin/sh
+
+export TOPDIR=`pwd`/..
+
+echo Compiling...
+
+make
+
+if [ $? -ne 0 ]
+then
+  echo Error compiling...
+  exit
+fi
+
+./executable 1>>log.txt 2>&1
+```
+
 =====script install itself as executable=====
 ```bash
 ln -s `realpath $0` ~/bin/flash > 2&>null #installs this script as executable 'flash'
