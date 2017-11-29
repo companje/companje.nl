@@ -5,7 +5,7 @@ title: Doodle3D Transform
 
 # download sketch from console
 (for example when due to an error the interface is gone)
-```
+```js
 actions.files.downloadSketch()
 ```
 
