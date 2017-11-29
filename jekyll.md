@@ -2,10 +2,10 @@
 title: jekyll
 ---
 
-# run jekyll locally
-serve l
- bundle exec jekyll serve --profile --incremental --verbose
-
+# serve locally
+```bash
+bundle exec jekyll serve --profile --incremental --verbose
+```
 
 
 # defaults
