@@ -2,5 +2,5 @@
 title: Backup
 ---
 
-* see [[osx]], [[duplicates]]
-* [[http://bombich.com/|Carbon Copy Cloner]] for osx
+* see [osx](osx), [duplicates](duplicates)
+* [Carbon Copy Cloner](http://bombich.com/) for osx
