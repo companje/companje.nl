@@ -5,6 +5,8 @@ window.onkeydown = function(event) {
     page = page.replace(new RegExp("/", "g"), "");
     page = page.replace(new RegExp(".html", "g"), "");
     window.open("https://github.com/companje/companje.github.io/edit/master/" + page + ".md");
+    // var win = window.open("subl://open/?url=file:///Users/rick/Documents/wiki.companje.nl/"+page+".md");
+    setTimeout(function() { win.close(); },1000);
   }
 
   if (event.keyCode==191) { //  '/'

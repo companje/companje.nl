@@ -16,6 +16,5 @@ body {
 
 .page-link:hover {
   color: black;
-  /*text-decoration: none;*/
   font-weight: bold;
 }
