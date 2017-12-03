@@ -2,7 +2,7 @@
 title: Mac OSX
 ---
 
-=====my updated .bash_profile=====
+# my updated .bash_profile
 ```bash
 export PATH=~/bin:$PATH
 alias d="ls -lGa"
@@ -23,7 +23,7 @@ PS1=$LOCATION$BRANCH
 PS2='\[[01;36m\]>'
 ```
 
-=====z as alternative for cd=====
+# z as alternative for cd
 ```bash
 brew install z
 # add this to ~/.bash_profile: . /usr/local/etc/profile.d/z.sh
@@ -31,8 +31,7 @@ brew install z
 https://github.com/rupa/z
 
 
-=====Make automatic screenshots=====
-
+# Make automatic screenshots
 ```xml
 <!--
 ~/Library/LaunchAgents/RicksAutoScreenshots.plist
@@ -53,7 +52,6 @@ https://github.com/rupa/z
 </plist>
 ```
 
-
 ```bash
 vardate=$(date +%Y\-%m\-%d); 
 vartime=$(date +%H.%M.%S);
@@ -62,10 +60,10 @@ mkdir -p $folder
 screencapture -t png -x $folder/$vartime.png;
 ```
 
-=====Launchd=====
+# Launchd
 * https://developer.apple.com/library/content/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html#//apple_ref/doc/uid/10000172i-SW7-BCIEDDBJ
 
-=====Use Automator for making Symbolic Links=====
+# Use Automator for making Symbolic Links
 1 Create an Application
 2 add task `Run Shell Script` with 'pass input as arguments'
 ```
@@ -73,35 +71,35 @@ ln -s "$1" /Users/rick/Documents/Websites/
 ```
 (::screen_shot_2017-04-13_at_16.55.11.png?450|)
 
-=====iTerm2 keyboard shortcuts and tips======
+# iTerm2 keyboard shortcuts and tips
 https://www.iterm2.com/documentation-one-page.html
 
-=====convert multiple PNG's to JPG=====
+# convert multiple PNG's to JPG
 You can do it with the Preview App as described here: http://osxdaily.com/2013/01/16/batch-image-conversion-mac-os-x-preview/
 
-=====Kill Google Photo Uploader=====
+# Kill Google Photo Uploader
 (or anything containing the word 'Photos')
   kill -9 $(pgrep Photos)
 
-=====SiteSucker=====
+# SiteSucker
 recursive download van een website. http://www.sitesucker.us
 
-=====mv command=====
+# mv command
 by default it seems to replace a file.
   mv -n src dst  # Do not overwrite an existing file.
 [[https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/mv.1.html|man]]
 
-=====to enter unicode character on osx=====
-  # System preferences-> input menu
-  # check the box next to "Unicode hex".
-  # add Unicode hex as a language
-  # Switch to unicode input in the menu bar.
-  # Hold Alt followed by a 4 digit hexadecimal unicode value to get the character.
+# to enter unicode character on osx
+  - System preferences-> input menu
+  - check the box next to "Unicode hex".
+  - add Unicode hex as a language
+  - Switch to unicode input in the menu bar.
+  - Hold Alt followed by a 4 digit hexadecimal unicode value to get the character.
   
-=====chmod in Sites folder=====
+# chmod in Sites folder
   chmod -R 755 folder_with_wrong_permissions
   
-=====.bash_profile=====
+# .bash_profile
 ```bash
 export PATH=/opt/local/bin:/opt/local/sbin:~/bin:$PATH
 
@@ -121,11 +119,13 @@ if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
 fi
 ```
 
-=====list open ports=====
-  lsof -i -P | grep -i "listen"
-
-=====my .bash_profile=====
+# list open ports
+```bash
+lsof -i -P | grep -i "listen"
 ```
+
+# my .bash_profile
+```bash
 export PATH=/opt/local/bin:/opt/local/sbin:~/bin:$PATH
 alias d="ls -lGa"
 alias ls="ls -G"
@@ -133,10 +133,10 @@ alias um="cd ~/Sites/Ultimaker"
 alias untar="tar xvzf "
 ```
 
-=====SDL on OSX=====
+# SDL on OSX
 * http://www.libsdl.org/download-1.2.php
 
-=====own /usr/local=====
+# own /usr/local
   chown -R rick /usr/local
 
 =====convert DDS file to JPG on Mac OSX=====
