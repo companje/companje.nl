@@ -2,8 +2,13 @@
 title: PHP
 ---
 
-=====parse cloudant json through template=====
-<code php>
+# php serve
+```
+php -S localhost:8000
+```
+
+# parse cloudant json through template
+```php
 <?
 $db = "https://.....cloudant.com/....";
 
@@ -44,13 +49,15 @@ function all($db) {
 ?>
 ```
 
-=====composer=====
+# composer
 https://getcomposer.org/doc/00-intro.md
+```bash
   curl -sS https://getcomposer.org/installer | php
   php composer.phar install
+```
 
-=====list images in folders as JSON=====
-<code php>
+# list images in folders as JSON
+```php
 <?php
 header('Content-type: application/json');
 $rootfolder = "photos/*";
@@ -79,27 +86,27 @@ echo json_encode($albums);
 ?>
 ```
 
-=====json header=====
-<code php>
+# json header
+```php
 header('Content-type: application/json');
 ```
 
-=====array_map & str_getcsv=====
-<code php>
+# array_map & str_getcsv
+```php
 //"07","Week 3","54.jpg"
 $a = array_map('str_getcsv', file('info.txt'));
 ```
 
-=====glob=====
-<code php>
+# glob
+```
 foreach (glob("fotos/$folder/*.jpg") as $filename) {
   list($width, $height, $type, $attr) = getimagesize($filename);
   $items[] = "{ src: '$filename', w:$width, h:$height }";
 }
 ```
 
-=====youmagine missing API call: get image preview for document=====
-<code php>
+# youmagine missing API call: get image preview for document
+```php
 header("Access-Control-Allow-Origin: *");
 header("Content-type: text/plain");
 if (empty($_GET['id'])) die("id is undefined");
@@ -128,11 +135,13 @@ function getDesignURLById($designId) {
 }
 ```
 
-=====PHP.INI on OpenPanel=====
-  /etc/php5/apache2/php.ini
+# PHP.INI on OpenPanel
+```bash
+/etc/php5/apache2/php.ini
+```
 
-=====Use PHPMailer for sending email with attachment=====
-<code php>
+# Use PHPMailer for sending email with attachment
+```php
 require 'PHPMailerAutoload.php';
 $bodytext = "Testing...";
 $email = new PHPMailer();
@@ -146,8 +155,8 @@ $email->AddAttachment( $file_to_attach , 'test.png' );
 return $email->Send();
 ```
 
-=====Save Base64 encoded raw data from post as image===== 
-<code php>
+# Save Base64 encoded raw data from post as image
+```php
 header("Access-Control-Allow-Origin: *");
 $img = $GLOBALS["HTTP_RAW_POST_DATA"];
 $img = str_replace('data:image/png;base64,', '', $img);
@@ -157,19 +166,21 @@ $file = 'test.png';
 $success = file_put_contents($file, $data);
 ```
 
-===== Install GD =====
+# Install GD
+```bash
   apt-get install php5-gd
+```
 
-=====online code testen=====
+# online code testen
 http://runnable.com/
 
-=====socket server with php=====
+# socket server with php
 http://devzone.zend.com/209/writing-socket-servers-in-php/
 
-=====upload script=====
+# upload script
 based on: http://www.w3schools.com/php/php_file_upload.asp
 permissions: 755
-<code php>
+```php
 <?php
 if ($_FILES["file"]["error"] > 0)
   {
@@ -189,7 +200,7 @@ else
 ?>
 ```
 
-=====Solve the following problem om CentOS=====
+# Solve the following problem om CentOS
 '''PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib64/php/modules/module.so' - /usr/lib64/php/modules/module.so: cannot open shared object file: No such file or directory in Unknown on line 0'''
 
 edit /etc/php.d/mcrypt.ini and change
@@ -201,26 +212,26 @@ to
 extension=mcrypt.so
 ```
 
-=====AMPPS=====
+# AMPPS
 * http://www.ampps.com/
 
-=====last item from array=====
-<code php>
+# last item from array
+```
 $item = end($array);
 ```
 
-=====strip illegal characters from string=====
-<code php>
+# strip illegal characters from string
+```php
 $location = preg_replace('/[^( -)]*/','', $location);
 ```
 
-=====append or create if not exists=====
-<code php>
+# append or create if not exists
+```php
 file_put_contents($path, $data, FILE_APPEND);
 ```
 
-=====get random string=====
-<code php>
+# get random string
+```php
 function getRandomKey($count) { 
   $chars = "abcdefghijklmopqrstuvwxyz1234567890";
   for ($a=0; $a<$count; $a++) $str.=$chars[rand(0,strlen($chars)-1)];
@@ -229,33 +240,33 @@ function getRandomKey($count) {
 echo getRandomKey(6);
 ```
 or shorter and with no duplicate characters per string:
-<code php>
+```php
 echo substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyz"), 0, 6);
 ```
 or if you only need a hex string:
-<code php>
+```php
 echo substr(md5(rand()), 0, 6);
 ```
 
-=====get url info ie. in 404.php=====
-<code php>
+# get url info ie. in 404.php
+```php
 echo $_SERVER["REDIRECT_URL"];
 ```
 
-=====remove links with regexp=====
-<code php>
+# remove links with regexp
+```php
 $result = preg_replace('/(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|$!:,.;]*[A-Z0-9+&@#\/%=~_|$]/i', '', $input);
 ```
 
-=====auto include=====
-<code php>
+# auto include
+```php
 function __autoload($class_name) {
     include $class_name . '.php';
 }
 ```
 
-=====extract, stripslashes & sqlite escape=====
-<code php>
+# extract, stripslashes & sqlite escape
+```php
 if (get_magic_quotes_gpc() ) {
   $_GET = array_map('stripslashes', $_GET);
 }
@@ -263,71 +274,72 @@ $_GET = array_map('sqlite_escape_string', $_GET);
 extract($_GET);
 ```
 
-=====json header=====
-<code php>header("Content-type: application/json");```
+# json header
+```php
+  header("Content-type: application/json");```
 
-=====file_get_contents_utf8=====
-<code php>
+#file_get_contents_utf8
+```php
 function file_get_contents_utf8($fn) {
     $content = file_get_contents($fn);
     return mb_convert_encoding($content, 'UTF-8', mb_detect_encoding($content, 'UTF-8, ISO-8859-1', true));
 }
 ```
 
-=====encoding of non utf-8 content to json=====
+# encoding of non utf-8 content to json
 http://www.php.net/manual/en/function.json-encode.php#99837
 
-=====Convert PHP Object to array=====
-<code php>
+# Convert PHP Object to array
+```php
 $eventArray = (array)$event;
 ```
 
-=====Encoding=====
+# Encoding
 als je last van rare tekens hebt (zoals ë wordt Ã«) dan staat misschien de encoding van je pagina verkeerd.
-<code php>
+```php
 header("Content-Type: text/plain; charset=utf-8"); //iso-8859-1
 ```
 Bij het inserten van UTF-8 tekst in een MySQL datebase dien je eerst een utf8_decode te gebruiken zoals het er nu naar uitziet.
-<code php>
-$event->description = utf8_decode($tweet->text);
+```php
+  $event->description = utf8_decode($tweet->text);
 ```
 
 =====Als de tijd niet goed staat in PHP staat misschien je timezone verkeerd=====
-<code php>
+```php
 setlocale(LC_ALL, "nl_NL");
 date_default_timezone_set("Europe/Amsterdam");
 ```
 
-=====ssl disabled?=====
+# ssl disabled
 if ssl seems to be disabled in php just enable it like this in your php.ini:
 ```
 extension=php_openssl.dll
 ```
 
-=====short open tags=====
+# short open tags
 in php.ini
 ```
 short_open_tag = On
 ```
 http://www.php.net/manual/en/ini.core.php#ini.short-open-tag
 
-=====connect to mysql through console/command line PHP but without Apache=====
+# connect to mysql through console/command line PHP but without Apache
 if you get this error:
 ```
 PHP Warning:  mysql_connect(): [2002] No such file or directory (trying to connect via unix:///var/mysql/mysql.sock) 
 ```
 try to connect to 127.0.0.1 instead of localhost
 
-=====twitter=====
+# twitter
 twitter uitlezen met PHP? zie [[Twitter]]
 
-=====php versie opvragen=====
+# php versie opvragen
 ```bash
 php -v
 ```
 
-=====if else endif=====
-<code php>
+# if else endif
+```php
 <?php if( condition ): ?>
 ...  
 <?php else: ?>
@@ -335,19 +347,18 @@ php -v
 <?php endif; ?>
 ```
 
-=====PEAR=====
+# PEAR
 Ik moet me nog steeds eens verdiepen in PEAR: http://pear.php.net/manual/en/package.database.db.intro-fetch.php
 
-=====while / list / each=====
-
-<code php>
+# while / list / each
+```php
 while (list($k, $v) = each($_GET)) {
   echo $k . '=' . $v . ', ';
 }
 ```
 
-=====mysql transactions in php=====
-<code php>
+# mysql transactions in php
+```php
 $this->db->startTransaction();
 foreach($userIds as $id) {
   $this->db->update("INSERT INTO ......");
@@ -355,9 +366,9 @@ foreach($userIds as $id) {
 $this->db->commit();
 ```
 
-=====Internal Server Error 500 door PHP in Apache=====
+# Internal Server Error 500 door PHP in Apache
 Als Apache error 500 geeft kan dat liggen aan een fout in de syntax van een PHP script. Door het aanzetten van display_errors in php.ini of door het gebruiken van de ini_set functie in php kun je de exacte foutmelding achterhalen.
-<code php>
+```php
 ini_set('display_errors', 'On');
 ```
 Als dat niet helpt kun je ook je php.ini aanpassen. In mijn geval stond die hier (het pad kun je opvragen mbv ''phpinfo()'':
@@ -367,12 +378,12 @@ of hier (op OpenPanel):
 /etc/php5/apache2/php.ini
 ```
 
-=====php error log=====
+# php error log
 ```
 /Applications/MAMP/logs/php_error.log  
 ```
 
-=====import_request_variables icm sqlite vs extract=====
+# import_request_variables icm sqlite vs extract
 Problemen met quotes in sqlite zelfs na SQLite3::escapeString of sqlite_escape_string?
 * zie post van brian at enchanter in de [[http://php.net/manual/en/function.import-request-variables.php|php reference]]
 * maar vooral ook: [[http://www.dirac.org/linux/databases/sql_quoting/|sql quoting]]
@@ -388,13 +399,13 @@ $_GET = array_map('sqlite_escape_string', $_GET);
 extract($_GET);
 ```
 
-=====Content-type voor json=====
-<code php>
+# Content-type voor json
+```php
 header("Content-type: application/json");
 ```
 
-=====Scraper=====
-<code php>
+# Scraper
+```php
 require 'scraperwiki/simple_html_dom.php';
 
 $html_content = scraperwiki::scrape("http://ofxaddons.com/");
@@ -432,8 +443,8 @@ print "done
 ";
 ```
 
-=====mini api=====
-<code php>
+# mini api
+```php
 <?
 header("Content-type: text/plain");
 
