@@ -391,7 +391,7 @@ Problemen met quotes in sqlite zelfs na SQLite3::escapeString of sqlite_escape_s
 import_request_variables("g","_"); //kijkt niet naar $_GET dus negeert magic quotes.
 ```
 ik gebruik nu ipv daarvan extract (ik weet niet of dat veilig genoeg is maar het werkt wel):
-<code php>
+```php
 if (get_magic_quotes_gpc() ) {
   $_GET = array_map('stripslashes', $_GET);
 }
