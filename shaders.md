@@ -3,11 +3,11 @@ title: Shaders
 ---
 Zie ook [[OpenGL]]
 
-=====Online NormalMap creator=====
+# Online NormalMap creator
 http://cpetry.github.io/NormalMap-Online/
 
-=====get shader language version=====
-<code c>
+# get shader language version
+```c
 glGetString(GL_SHADING_LANGUAGE_VERSION)
 ```
 
@@ -17,10 +17,10 @@ color = light * mix(texture2D(night, textureCoord),
    smoothstep(-0.25, 0.25, dot(N, L)));
 ```
 
-=====Shaders on Mac=====
+# Shaders on Mac
 * [[http://www.starstonesoftware.com/OpenGL/mac.htm|port 'recent' shaders to 'old GLSL 1.20' for OSX Lion]]
 
-=====Links=====
+# Links
 *http://stackoverflow.com/questions/16984914/cross-fade-between-two-textures-on-a-sphere
 *http://www.gamedev.net/topic/594457-calculate-normals-from-a-displacement-map/
 *http://www.opengl.org/wiki/Sampler_(GLSL)
@@ -49,19 +49,19 @@ color = light * mix(texture2D(night, textureCoord),
 * http://www.clockworkcoders.com/oglsl/
 * http://companje.nl/wp/earthclouds-alphablending-shader-in-openframeworks/
 
-=====What does gl_TexCoord.st mean?=====
+# What does gl_TexCoord.st mean?
 st is a vec2 containing the x,y tex coord. It is exactly the same as xy or rg. It just returns the first two components of a float[4]. The letters are there for semantic reasons.
 
-=====ftransform is depricated=====
+# ftransform is depricated
 Ftransform is equivalent to this:
-<code glsl>
+```glsl
 gl_Position = ftransform();
 gl_Position = gl_ProjectionMatrix * gl_ModelViewMatrix * gl_Vertex;
 ```
 
 v will be a coordinate in projection (screen) space.
-=====Displacement with diffuse light=====
-<code c>
+# Displacement with diffuse light
+```c
 uniform sampler2D colormap;
 uniform sampler2D bumpmap;
 varying vec2  TexCoord;
@@ -76,7 +76,7 @@ void main(void) {
 }
 ```
 
-<code c>
+```c
 uniform sampler2D colormap;
 uniform sampler2D bumpmap;
 varying vec2 TexCoord;
@@ -97,8 +97,7 @@ void main(void) {
 ```
 
 openFrameworks:
-<code c>
-
+```c
 #include "testApp.h"
 #include "ofxExtras.h"
 
