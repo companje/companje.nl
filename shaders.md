@@ -21,14 +21,14 @@ color = light * mix(texture2D(night, textureCoord),
 * [[http://www.starstonesoftware.com/OpenGL/mac.htm|port 'recent' shaders to 'old GLSL 1.20' for OSX Lion]]
 
 # Links
-*http://stackoverflow.com/questions/16984914/cross-fade-between-two-textures-on-a-sphere
-*http://www.gamedev.net/topic/594457-calculate-normals-from-a-displacement-map/
-*http://www.opengl.org/wiki/Sampler_(GLSL)
-*http://poniesandlight.co.uk/notes/creating_normal_maps_from_nasa_depth_data/
-*http://data-arts.appspot.com/globe/
-*nog uitproberen: http://stackoverflow.com/questions/5281261/generating-a-normal-map-from-a-height-map
-*[[http://codeflow.org/entries/2012/aug/02/easy-wireframe-display-with-barycentric-coordinates/|creating a wireframe using barycentric coordinates]]
-*[[https://www.opengl.org/discussion_boards/showthread.php/162857-Computing-the-tangent-space-in-the-fragment-shader|computing tangent space in fragment shader]]
+* http://stackoverflow.com/questions/16984914/cross-fade-between-two-textures-on-a-sphere
+* http://www.gamedev.net/topic/594457-calculate-normals-from-a-displacement-map/
+* http://www.opengl.org/wiki/Sampler_(GLSL)
+* http://poniesandlight.co.uk/notes/creating_normal_maps_from_nasa_depth_data/
+* http://data-arts.appspot.com/globe/
+* nog uitproberen: http://stackoverflow.com/questions/5281261/generating-a-normal-map-from-a-height-map
+* [[http://codeflow.org/entries/2012/aug/02/easy-wireframe-display-with-barycentric-coordinates/|creating a wireframe using barycentric coordinates]]
+* [[https://www.opengl.org/discussion_boards/showthread.php/162857-Computing-the-tangent-space-in-the-fragment-shader|computing tangent space in fragment shader]]
 * https://github.com/tgfrerer?tab=repositories
 * !! http://www.songho.ca/opengl/gl_transform.html#modelview
 * http://www.opengl.org/sdk/docs/tutorials/TyphoonLabs/Chapter_3.pdf
@@ -36,7 +36,7 @@ color = light * mix(texture2D(night, textureCoord),
 * http://fabiensanglard.net/bumpMapping/index.php
 * https://github.com/kalwalt/OFexamples
 * [[http://www.iquilezles.org/apps/shadertoy/|Shader Toy!!!!]]
-*http://www.yaldex.com/open-gl/ch16lev1sec4.html
+* http://www.yaldex.com/open-gl/ch16lev1sec4.html
 * http://www.davidcornette.com/glsl/glsl.html
 * [[http://en.wikipedia.org/wiki/GLSL|Wikipedia]]
 * http://fabiensanglard.net/bumpMapping/index.php
