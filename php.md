@@ -387,7 +387,7 @@ of hier (op OpenPanel):
 Problemen met quotes in sqlite zelfs na SQLite3::escapeString of sqlite_escape_string?
 * zie post van brian at enchanter in de [[http://php.net/manual/en/function.import-request-variables.php|php reference]]
 * maar vooral ook: [[http://www.dirac.org/linux/databases/sql_quoting/|sql quoting]]
-<code php>
+```php
 import_request_variables("g","_"); //kijkt niet naar $_GET dus negeert magic quotes.
 ```
 ik gebruik nu ipv daarvan extract (ik weet niet of dat veilig genoeg is maar het werkt wel):
