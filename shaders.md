@@ -3,8 +3,11 @@ title: Shaders
 ---
 Zie ook [[OpenGL]]
 
+# The Book of Shaders
+* https://thebookofshaders.com
+
 # Online NormalMap creator
-http://cpetry.github.io/NormalMap-Online/
+* http://cpetry.github.io/NormalMap-Online/
 
 # get shader language version
 ```c
