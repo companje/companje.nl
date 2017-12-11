@@ -3,7 +3,7 @@ title: Bash
 ---
 
 # Check return value
-```
+```bash
 #!/bin/sh
 
 export TOPDIR=`pwd`/..
