@@ -63,7 +63,7 @@ mkdir -p $folder
 screencapture -t png -x $folder/$vartime.png;
 ```
 
-or add frame directly to mjpeg file:
+or add screenshot directly to mjpeg file:
 
 ```bash
 folder=$(dirname "$0")
