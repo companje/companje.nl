@@ -159,8 +159,8 @@ This can also be caused by a wrong DocumentRoot and directory settings for the D
 
 # error_log
 location of the error_log file:
-```
+```bash
 tail -f /var/log/httpd/error_log
-# /var/log/apache2/error.log
+#/var/log/apache2/error.log
 ```
 
