@@ -26,6 +26,7 @@ apachectl configtest
 http://coolestguidesontheplanet.com/set-virtual-hosts-apache-mac-osx-10-10-yosemite/#apacheuser
 
 # fix permissions on OSX
+
   cd ~/Sites/yoursite
   sudo chown -R _www .
   sudo chmod -R g+w .
