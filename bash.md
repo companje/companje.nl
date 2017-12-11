@@ -227,7 +227,7 @@ shell expansion vindt plaats voor het commando wordt uitgevoerd
   >foobar
   * test
   ls
-
+```
   echo ls ${foo:=*}
   echo “ls ${foo:=*}”
   echo ‘ls ${foo:=*}’  (wordt niks mee gedaan, komt koud als string naar de terminal
@@ -252,7 +252,6 @@ shell expansion vindt plaats voor het commando wordt uitgevoerd
   lsof -p $$ (lijst van alle open bestanden maar alleen die door jouw PID geopend zijn)
 
   ls &> file
-```
 
 inhoud van een file gebruiken als std input
 
