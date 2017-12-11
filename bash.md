@@ -221,13 +221,13 @@ sterretje kan ook midden in pad
   ```
 
 shell expansion vindt plaats voor het commando wordt uitgevoerd
-```
+
   mkdir tmp && cd tmp
   >cp
   >foobar
   * test
   ls
-```
+
   echo ls ${foo:=*}
   echo “ls ${foo:=*}”
   echo ‘ls ${foo:=*}’  (wordt niks mee gedaan, komt koud als string naar de terminal
