@@ -136,7 +136,6 @@ apache/conf/extra/httpd-vhosts.conf
 
 but be sure to turn on the include in httpd.conf
 ```
-
 Include conf/extra/httpd-vhosts.conf
 ```
 
