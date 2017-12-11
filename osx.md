@@ -63,6 +63,18 @@ mkdir -p $folder
 screencapture -t png -x $folder/$vartime.png;
 ```
 
+or add frame directly to mjpeg file:
+
+```bash
+folder=$(dirname "$0")
+vardate=$(date +%Y\-%m\-%d); 
+
+screencapture -t tif -x /tmp/tmp.tif
+/usr/local/bin/ffmpeg -i /tmp/tmp.tif -y /tmp/tmp.mjpeg
+cat /tmp/tmp.mjpeg >> $folder/$vardate.mjpeg
+```
+
+
 Install:
 ```bash
 # launchctl unload nl.companje.screenshots.plist
