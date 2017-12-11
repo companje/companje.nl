@@ -55,6 +55,11 @@ https://github.com/rupa/z
 ```
 
 ```bash
+#fixme
+launchctl start com.example.ricksscreenshots
+```
+
+```bash
 vardate=$(date +%Y\-%m\-%d); 
 vartime=$(date +%H.%M.%S);
 folder=~/screenshots/$vardate
