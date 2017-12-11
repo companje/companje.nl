@@ -36,10 +36,8 @@ https://github.com/rupa/z
 
 
 # Make automatic screenshots
+`~/Library/LaunchAgents/RicksAutoScreenshots.plist`
 ```xml
-<!--
-~/Library/LaunchAgents/RicksAutoScreenshots.plist
--->
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -65,7 +63,7 @@ screencapture -t png -x $folder/$vartime.png;
 ```
 
 # Launchd
-* https://developer.apple.com/library/content/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html#//apple_ref/doc/uid/10000172i-SW7-BCIEDDBJ
+* <https://developer.apple.com/library/content/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html#//apple_ref/doc/uid/10000172i-SW7-BCIEDDBJ>
 
 # Use Automator for making Symbolic Links
 1 Create an Application
