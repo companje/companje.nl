@@ -35,7 +35,7 @@ Mon Jun 12 09:08:51 2017 user.notice root: test
 ```
 
 # Check parameters
-```
+```bash
 if [[ $# -eq 0 ]] ; then
     echo 'Usage: ./toMovie.sh FOLDER'
     exit 0
@@ -44,7 +44,7 @@ fi
 ```
 
 # get foldername from folderpath
-```
+```bash
 folderpath=$1
 foldername=${folderpath##*/}
 ```
@@ -136,11 +136,15 @@ for i in *.JPG; do
 done
 ```
 
-=====list files recursive with full path
+#list files recursive with full path
+```bash
   find .
-  
+```
+
 # manipulating strings
+```bash
   find.txt | sort | cut -f1 -d"." | uniq | rev | sort > sorted.txt
+```
 
 # read line from netcat
 ```bash
@@ -167,7 +171,8 @@ done
 ```
 
 # infinite while
-```while :
+```bash
+while :
 do
   echo tick
   sleep 1
@@ -211,7 +216,9 @@ sterretje kan ook midden in pad
   sudo ls /home/*/Maildir/new
   sudo ls /home/user{1,2,3}/Maildir/new
   mkdir {2012..2014}-{1..12} && ls
+  ```
   ls -la `whereis ls`
+  ```
 
 shell expansion vindt plaats voor het commando wordt uitgevoerd
 
