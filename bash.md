@@ -219,7 +219,7 @@ sterretje kan ook midden in pad
   ```
   ls -la `whereis ls`
   ```
-`
+
 
 # shell expansion vindt plaats voor het commando wordt uitgevoerd
 ```
