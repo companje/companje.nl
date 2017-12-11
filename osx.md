@@ -76,7 +76,7 @@ cat /tmp/tmp.mjpeg >> $folder/$vardate.mjpeg
 Install:
 ```bash
 # launchctl unload nl.companje.screenshots.plist
-<!-- # launchctl load nl.companje.screenshots.plist -->
+launchctl load nl.companje.screenshots.plist
 launchctl start nl.companje.screenshots
 # tail /var/log/system.log
 ```
