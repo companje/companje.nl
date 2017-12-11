@@ -36,7 +36,6 @@ https://github.com/rupa/z
 
 
 # Make automatic screenshots
-
 `~/Documents/screenshots-auto/screenshot.sh`
 ```bash
 vardate=$(date +%Y\-%m\-%d); 
