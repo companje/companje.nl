@@ -127,10 +127,8 @@ sudo apachectl start
 # Allow access to the webserver through the network
 allow access from other computers than localhost
 turn off 'deny from all' in httpd.conf
-<code apache>
-# Deny from all
-```
-# virtual hosts
+
+# Virtual hosts
 Virtual hosts kun je toevoegen in:
 ```
 apache/conf/extra/httpd-vhosts.conf
