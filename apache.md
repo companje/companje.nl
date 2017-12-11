@@ -90,7 +90,7 @@ sudo apachectl stop && sudo apachectl restart
 * http://brettterpstra.com/fixing-virtual-hosts-and-web-sharing-in-mountain-lion/
 
 # httpd per virtual host
-`''/usr/local/directadmin/data/users/''
+``''/usr/local/directadmin/data/users/''
 
 # meerdere logfiles monitoren
 * http://www.fr3nd.net/projects/apache-top/
