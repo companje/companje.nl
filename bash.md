@@ -194,7 +194,7 @@ owner/ chmod o-w
 chmod 755
 
 
-#shell expansion
+# shell expansion
 ```
   {a..z}{0..9} = a1 a2 a3 … z7 z8 z9
   /pad/naar/{file1,file2} == /pad/naar/file{1,2}
@@ -219,7 +219,7 @@ sterretje kan ook midden in pad
   ```
   ls -la `whereis ls`
   ```
-
+`
 
 # shell expansion vindt plaats voor het commando wordt uitgevoerd
 ```
