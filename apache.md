@@ -62,19 +62,22 @@ apachectl -S
 
 # create virtual host on mac
 * add hostname to /etc/hosts (pointing to 127.0.0.1)
- * check location of httpd config:
+* check location of httpd config:
+```bash
+/usr/sbin/httpd -V | grep SERVER_CONFIG
 ```
-/usr/sbin/httpd -V |grep SERVER_CONFIG
-```
+
 * edit httpd.conf (probably at: ''/private/etc/apache2/httpd.conf''): uncomment the include for Virtual Host
 * edit httpd-vhosts.conf (probably at: ''/private/etc/apache2/extra/httpd-vhosts.conf'': add a virtual host like:
-```
+
+```xml
 <VirtualHost *:80>
     DocumentRoot "/Users/rick/Sites/lepetitgarage"
     ServerName lepetitgarage.nl
 </VirtualHost>
 ```
-* restart apache
+
+# restart apache
 ```
 sudo apachectl stop && sudo apachectl restart
 ```
