@@ -217,7 +217,7 @@ sterretje kan ook midden in pad
   sudo ls /home/user{1,2,3}/Maildir/new
   mkdir {2012..2014}-{1..12} && ls
   ls -la `whereis ls`
-
+```
 
 # shell expansion vindt plaats voor het commando wordt uitgevoerd
 ```
