@@ -9,7 +9,7 @@ sudo a2ensite gerard.companje.nl.conf
 ```
 
 # good tutorial to get Apache & PHP (& mySQL) working on OSX
-* https://coolestguidesontheplanet.com/get-apache-mysql-php-phpmyadmin-working-osx-10-10-yosemite/
+* <https://coolestguidesontheplanet.com/get-apache-mysql-php-phpmyadmin-working-osx-10-10-yosemite/>
 
 # Invalid command 'LockFile'
 El Capitan Apache error message AH00526: Syntax error on line 20 of /private/etc/apache2/extra/httpd-mpm.conf: Invalid command 'LockFile'....
