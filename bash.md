@@ -253,7 +253,7 @@ shell expansion vindt plaats voor het commando wordt uitgevoerd
 
   ls &> file
 
-inhoud van een file gebruiken als std input
+# inhoud van een file gebruiken als std input
 
   mysql database <<<“SELECT * FROM TABLE”
 
