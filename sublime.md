@@ -3,6 +3,25 @@ title: =========SublimeText2=========
 ---
 A light-weight full feature text/code editor for OSX, Windows and Linux
 
+https://support.shotgunsoftware.com/hc/en-us/articles/219031308-Launching-applications-using-custom-browser-protocols
+
+```xml
+<key>CFBundleIdentifier</key>
+<string>nl.companje.SublimeTextLauncher</string>
+<key>CFBundleURLTypes</key>
+<array>
+	<dict>
+	<key>CFBundleURLName</key>
+	<string>SublimeText Launcher</string>
+	<key>CFBundleURLSchemes</key>
+	<array>
+		<string>subl</string>
+	</array>
+</dict>
+</array>
+```
+
+
 =====build system=====
 ```
 {
