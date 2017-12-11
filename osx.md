@@ -2,6 +2,10 @@
 title: Mac OSX
 ---
 
+# disk usage visualisation
+* grandperspective (works well)
+* disk inventory x (not tried yet)
+
 # my updated .bash_profile
 ```bash
 export PATH=~/bin:$PATH
@@ -139,19 +143,19 @@ alias untar="tar xvzf "
 # own /usr/local
   chown -R rick /usr/local
 
-=====convert DDS file to JPG on Mac OSX=====
-*http://www.xnview.com/en/
+# convert DDS file to JPG on Mac OSX
+* http://www.xnview.com/en/
 
-=====busybox (shell & httpd)=====
+# busybox (shell & httpd)
 http://wiki.openwrt.org/doc/howto/http.httpd
 
-=====dumb AP=====
+# dumb AP
 http://wiki.openwrt.org/doc/recipes/dumbap
 
-=====diskutil on command line=====
+# diskutil on command line
 ```
 diskutil list```
-=====file info=====
+# file info
 ```
 file
 otool
@@ -159,53 +163,53 @@ gobjdump
 ...
 ```
 
-=====Folder/File sync tools=====
+# Folder/File sync tools
 *DeltaWalker
 *Singlemizer (not tested yet)
 
-=====keyboard repeat rate / speed=====
+# keyboard repeat rate / speed
 ```
 defaults write NSGlobalDomain KeyRepeat -int 0
 ```
 try 0, 1 or 2: the lower the faster
 
-=====unpack a .pkg file=====
+# unpack a .pkg file
 *https://www.macupdate.com/app/mac/16357/unpkg
 
-=====batch resize images=====
+# batch resize images
 ```bash
 sips -Z 640 *.jpg
 ```
 
-=====serial communication with screen=====
+# serial communication with screen
 ```screen /dev/[device name] 115200```
 To quit screen, press CTRL-a, followed by CTRL-k, followed by y.
 
-=====follow system log=====
+# follow system log
 ```tail -f /private/var/log/system.log```
 
-=====macports / python=====
+# macports / python
 To make python 2.7 the default (i.e. the version you get when you run 'python'), please run:
 ```
 sudo port select --set python python27
 ```
 
-=====mount ssh folders=====
+# mount ssh folders
 * http://osxfuse.github.io/
 
-=====PVR QuickLook plugin=====
+# PVR QuickLook plugin
 * http://www.limbic.com/quickpvr.html
 
-=====delete 'bands' files in Time Capsule .sparsebundle folder=====
+# delete 'bands' files in Time Capsule .sparsebundle folder
 Removing your Time Capsule .sparsebundle can take multiple days (or weeks) if you use Finder or Terminal.
 The fastest way is by connecting to the TimeCapsule through Windows running in Parallels/VMWare etc and delete it using Windows Explorer (\ipadress of time capsule). It took 'only' 80 minutes to remove 1.5TB (1.8 million files of 8MB)
 
-=====thumbsup=====
+# thumbsup
 een handige tool om snel afbeeldingen te bewerken
 
-=====alternative to spotlight=====
+# alternative to spotlight
 * [[http://www.alfredapp.com/|Alfred]]
-=====get ip address=====
+# get ip address
 ```
 ipconfig getifaddr en1
 ```
@@ -214,43 +218,43 @@ or
 ifconfig en1 | grep "inet " | cut -d " " -f2
 ```
 
-=====convert png to ico=====
+# convert png to ico
 ```
 convert file.png file.ico
 ```
 
-=====osx keyboard shortcuts=====
+# osx keyboard shortcuts
 * http://support.apple.com/kb/HT1343
 
-=====cls=====
+# cls
 ```
 clear
 ```
 
-=====show contents of clipboard=====
+# show contents of clipboard
 ```
 pbpaste
 pbpaste | head -n 5
 ```
 
-=====copy text to clipboard=====
+# copy text to clipboard
 ```
 ls | pbcopy
 ```
 
-=====Convert tabs to spaces for the lines in the Clipboard=====
+# Convert tabs to spaces for the lines in the Clipboard
 ```
 pbpaste | expand | pbcopy
 ```
 
-=====sorting etc=====
+# sorting etc
 ls | sort
 ls | rev
 ls | uniq
 ls | uniq -d
 ls | uniq -u
 
-=====eject cd=====
+# eject cd
 ```
 diskutil eject disk1
 ```
@@ -259,18 +263,18 @@ or
 drutil tray eject
 ```
 
-=====dig=====
+# dig
 ```
 dig companje.nl A
 ```
 
-=====disable dashboard=====
+# disable dashboard
 ```
 defaults write com.apple.dashboard mcx-disabled -boolean YES
 killall Dock
 ```
 
-=====get name of current wifi network=====
+# get name of current wifi network
 ```
 /System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport -I|grep " SSID: "|cut -c 18-
 ```
@@ -280,100 +284,100 @@ networksetup -getairportnetwork en1
 networksetup -getairportnetwork en1 | cut -c 24-
 ```
 
-=====airdrop info=====
+# airdrop info
 * [[http://www.yourdailymac.net/2011/09/how-to-enable-os-x-lion-airdrop-on-every-mac/|enable OS X Lion AirDrop on every Mac]]
 
-=====restart Finder=====
+# restart Finder
 ```
 killall Finder
 ```
 
-=====list all network hardware ports=====
+# list all network hardware ports
 ```
 networksetup -listallhardwareports
 ```
 
-=====get info about current wifi point=====
+# get info about current wifi point
 ```
 /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport --getinfo
 ```
 
-=====scan for wifi points=====
+# scan for wifi points
 ```
 /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -s
 ```
 
-=====symbolic links=====
+# symbolic links
 ```bash
 ln -s fullpath-source-www /Users/rick/Sites/8
 ```
 
-=====show display settings=====
+# show display settings
 ''alt+F2''
 
-=====QuickLook / Quick Preview / Syntax Highlighting / Color Code=====
+# QuickLook / Quick Preview / Syntax Highlighting / Color Code
 Download [[http://qlcolorcode.googlecode.com/files/QLColorCode-2.0.2.tgz|QLColorCode]]. Create folder ''~/Library/QuickLook'' and copy QLColorCode.qlgenerator to that folder.
 
-=====SetFile=====
+# SetFile
 ```
 SetFile
 ```
 
-=====dmg create command line=====
+# dmg create command line
 ```
 hdiutil create ....
 ```
 * http://stackoverflow.com/questions/96882/how-do-i-create-a-nice-looking-dmg-for-mac-os-x-using-command-line-tools
 
-=====usb device info=====
+# usb device info
 ```
 system_profiler SPUSBDataType
 ```
 
-=====network utilities=====
+# network utilities
 * From the Applications folder, open the Utilities folder, and then open the Network Utility application. 
 * In the Network Utility window, click the Ping tab. 
 
-=====broadcast ping=====
+# broadcast ping
 ```
 ping -i 5 -c 2 192.168.1.255
 ```
 
-=====using arp to find mac address=====
+# using arp to find mac address
 ```
 ping IPADDRESS
 arp -a
 ```
 
-=====fping range=====
+# fping range
 ```
 sudo fping -s -g 192.168.0.1 192.168.0.9 -r 1
 fping -ag 192.168.1.0/24
 ```
 
-=====websharing is removed from Mountain Lion Preferences but still usable=====
+# websharing is removed from Mountain Lion Preferences but still usable
 ```
 sudo apachectl start
 ```
 
-=====Repeatable crash of Time Capsule wifi=====
+# Repeatable crash of Time Capsule wifi
 * http://forums.macrumors.com/showthread.php?t=1324678
 
-=====Mac OSX Driver for Sweex Graphics Tablet USB TA006=====
+# Mac OSX Driver for Sweex Graphics Tablet USB TA006
 * The UC-Logic driver for Mac OSX works for me: http://www.uc-logic.com/
 
-=====serial terminal app=====
+# serial terminal app
 CoolTerm - http://www.macupdate.com/app/mac/31352/coolterm/
 
-=====stop cups=====
+# stop cups
 ```bash
 sudo launchctl stop org.cups.cupsd
 ```
 
-=====40 lion tips=====
+# 40 lion tips
 * http://mac.appstorm.net/roundups/utilities-roundups/40-super-secret-os-x-lion-features-and-shortcuts/
 
-=====write disk image to sd card=====
+# write disk image to sd card
 * [[http://www.thelinuxdaily.com/2010/01/writing-images-to-disk-on-mac-osx-with-dd/|read article on the linuxdaily]]
 ```bash
 diskutil list
@@ -382,19 +386,19 @@ dd if=debian6-19-04-2012.img of=/dev/disk3 bs=1m
 ```
 (...additional "bs" parameter to "1m"? This parameter is used to set both the input and output block size for the copy)
 
-=====jhbuild bootstrap --ignore-system=====
+# jhbuild bootstrap --ignore-system
 geen idee wat het doet maar het doet iets.
 
-=====network dump=====
+# network dump
 only loopback traffic: ''tcpdump -i lo0 -vv''  
 \
 en0 ethernet, en1 wifi
 
-=====tftp=====
+# tftp
 - er is standaard een tftp client geinstalleerd
 - een prima tftp server is [[http://ww2.unime.it/flr/tftpserver/|TftpServer]]
 
-=====Some dynamic linker tools that will come in handy=====
+# Some dynamic linker tools that will come in handy
 ```
 otool -L
 install_name_tool
@@ -403,17 +407,17 @@ libtool
 [[http://qin.laya.com/tech_coding_help/dylib_linking.html]]
 otool is an alternative for linux' 'ldd'
 
-=====List files in library=====
+# List files in library
 ```bash
 ar -t libctest.a
 ```
 
-=====Tijdelijk een header search path toevoegen via CFLAGS=====
+# Tijdelijk een header search path toevoegen via CFLAGS
 <del>```
 export CFLAGS="-i /usr/local/include/libusb-1.0"
 ```</del>
 
-=====disable OSX Lion remember open documents=====
+# disable OSX Lion remember open documents
 see [[http://www.macworld.com/article/1161330/four_lion_terminal_hacks.html|this]] or [[http://reviews.cnet.com/8301-13727_7-20083707-263/managing-mac-os-x-lions-application-resume-feature/|this]]
 
 for Preview, Quicktime and XCode:
@@ -423,13 +427,13 @@ defaults write com.apple.QuickTimePlayerX NSQuitAlwaysKeepsWindows -bool false
 defaults write com.apple.dt.Xcode NSQuitAlwaysKeepsWindows -bool false
 ```
 
-=====/etc/paths=====
+# /etc/paths
 this file contains the search paths
 
-=====goto home dir=====
+# goto home dir
 instead of ''cd ~'' you can just type ''cd''
 
-=====move mouse with code=====
+# move mouse with code
 <code cpp>
 CGPoint pt;
 pt.x = x;
@@ -438,63 +442,63 @@ CGEventRef mouseDownEv = CGEventCreateMouseEvent (NULL,kCGEventMouseMoved,pt,kCG
 CGEventPost(kCGHIDEventTap, mouseDownEv);
 CFRelease(mouseDownEv);
 ```
-=====spoof your MAC address=====
+# spoof your MAC address
 ```sudo ifconfig en1 ether aa:bb:cc:dd:ee:ff```
 to check the result type: 
 ```ifconfig en1 | grep ether```
 for Lion you might need to change ether into Wi-Fi.
 When you reboot your computer the original address is restored.
 
-=====escape character in tenet on osx=====
+# escape character in tenet on osx
 ```
 Escape character is '^]'
 ```
 which means Ctrl+]
 
-=====hosts file=====
+# hosts file
 ```bash
 sudo nano -w /etc/hosts
 sudo dscacheutil -cachedump -entries Host
 dscacheutil -flushcache
 ```
 
-=====stty=====
+# stty
 http://stackoverflow.com/questions/3918032/bash-serial-i-o-and-arduino
 can you run stty -a < /dev/tty.usbserial-A800eIUj while you have the serial port working on the Arduino IDE? That would give you the settings to use.
 ```bash
 stty -f /dev/tty.PL2303-00001004 19200
 ```
 
-=====otool=====
+# otool
 otool -L libopenFrameworks.dylib
 install_name_tool
 
-=====automatisch opstarten=====
+# automatisch opstarten
 nog uitzoeken: launchd en lingon
 
-=====launch application by keyboard shortcut=====
+# launch application by keyboard shortcut
 [[http://hints.macworld.com/article.php?story=20090903085255430|link]]
 
-=====swap alt+windows key on external keyboard=====
+# swap alt+windows key on external keyboard
 * [[http://www.gearhack.com/Forums/DisplayComments.php?file=Computer/Mac%20OS/Swapping_the_Windows_Key_and_the_Alt_Key_on_Mac_OS_X|link]]
 * http://www.bohemianalps.com/blog/2008/x11-control2command/
 
-=====searching in files recursively=====
+# searching in files recursively
 ```bash
 grep -ir "texttofind" *
 ```
 
-=====using the find command on the command line=====
+# using the find command on the command line
 ```bash
 find . | grep -i ".cpp"
 ```
 
-=====use grep to search output of a program=====
+# use grep to search output of a program
 ```bash
 git diff | grep 'piano'
 ```
 
-=====compile a simple glut program written in c on mac=====
+# compile a simple glut program written in c on mac
 ```bash
 g++ -Wall -O3 -g -framework OpenGL -framework GLUT bezmesh.c -o bezmesh
 ```
@@ -509,39 +513,39 @@ Don't forget to include OpenGL and GLUT like this:
 #endif
 ```
 
-=====Enable colors in the terminal's ls command=====
+# Enable colors in the terminal's ls command
 or type ''ls -G'' or put the following in your ''~/.profile'' file for a permanent solution.
 ```bashexport CLICOLOR=1```
 
-=====Show hidden files/folders=====
+# Show hidden files/folders
 ```bashdefaults write com.apple.finder AppleShowAllFiles TRUE```
 (and reload Finder)
 
-=====Change screenshots folder (and other settings)=====
+# Change screenshots folder (and other settings)
 * http://www.tekrevue.com/tip/how-to-customize-screenshot-options-in-mac-os-x/
 ```bash
 defaults write com.apple.screencapture location /Users/rick/Desktop/screenshots
 killall SystemUIServer
 ```
 
-=====SizeUp=====
+# SizeUp
 [[http://www.irradiatedsoftware.com|SizeUp]] allows you to quickly position a window to fill exactly half the screen (splitscreen), a quarter of the screen (quadrant), full screen, or centered via the menu bar or configurable system-wide shortcuts (hotkeys).  Similar to "tiled windows" functionality available on other operating systems.
 
-=====Visor=====
+# Visor
 Install [[http://visor.binaryage.com/|Visor]] to have a system-wide terminal on a hot-key.
 
-=====Rotate an image=====
+# Rotate an image
 ```bashsips input.jpg -r 90 --out output.jpg```
 
-=====convert an image=====
+# convert an image
 ```bash
 sips -s format jpeg 4.gif --out 4.jpg
 ```
 
-=====chmod recursive write access=====
+# chmod recursive write access
 ```bashchmod -R 777 data```
 
-=====~/.profile=====
+# ~/.profile
 on osx 10.9 I had to rename .profile to . bash_profile
 ```bash
 alias dir="ls -lGa"
@@ -555,45 +559,45 @@ alias tocaf="afconvert -f caff -d LEI16"
 alias cdd="cd ~/Desktop"
 ```
 
-=====ffmpeg for converting movie to iPad=====
+# ffmpeg for converting movie to iPad
 see [[:ffmpeg]]  
 \
 
-=====combine pdf's on mac osx (with pdftk) =====
+# combine pdf's on mac osx (with pdftk) 
 ```bash
 sudo port install pdftk
 pdftk 1.pdf 2.pdf 3.pdf cat output 123.pdf
 ```
 
-=====homebrew (brew) =====
+# homebrew (brew) 
 An alternative for macports
 
-=====Wireshark=====
+# Wireshark
 Wireshark is a tool to analyze network traffic
 
-=====hexdump=====
+# hexdump
 installed by default.
 ```bash
 hexdump filename
 ```
 
-=====sneltoetsen in nano console editor=====
+# sneltoetsen in nano console editor
 zie [[nano]]
 
-=====gmail berichten sturen via command line in osx=====
+# gmail berichten sturen via command line in osx
 See this page: [[http://www.amirwatad.com/blog/archives/2009/03/21/send-email-from-the-command-line-using-gmail-account/|link]]
 I managed to send an email but it's not working completely yet.
 
-=====terminal / iTerm2=====
+# terminal / iTerm2
 * Cmd+[ ] move between panels
 * Cmd+D new panel
 * Cmd+W close panel
 * ^A naar begin regel
 
-=====Pleasant3D.app=====
+# Pleasant3D.app
 Handige app om GCODES mee te bekijken in 3D
 
-=====Synergy2=====
+# Synergy2
 ```bash
 synergys --config synergy.conf
 ```
