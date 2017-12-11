@@ -130,7 +130,6 @@ turn off 'deny from all' in httpd.conf
 <code apache>
 # Deny from all
 ```
-
 # virtual hosts
 Virtual hosts kun je toevoegen in:
 ```
