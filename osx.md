@@ -55,6 +55,23 @@ screencapture -t tif -x /tmp/tmp.tif
 cat /tmp/tmp.mjpeg >> $folder/$vardate.mjpeg
 ```
 
+`~/Library/LaunchAgents/RicksAutoScreenshots.plist`
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>nl.companje.screenshots</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/rick/Documents/screenshots-auto/screenshot.sh</string>
+    </array>
+    <key>StartInterval</key>
+    <integer>10</integer>
+</dict>
+</plist>
+```
 
 Install:
 ```bash
