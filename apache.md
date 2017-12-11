@@ -4,7 +4,7 @@ title: Apache
 
 # create Virtual Hosts on Ubuntu
 * https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts
-```
+```bash
 sudo a2ensite gerard.companje.nl.conf
 ```
 
@@ -14,7 +14,7 @@ sudo a2ensite gerard.companje.nl.conf
 # Invalid command 'LockFile'
 El Capitan Apache error message AH00526: Syntax error on line 20 of /private/etc/apache2/extra/httpd-mpm.conf: Invalid command 'LockFile'....
 http://apple.stackexchange.com/questions/211015/el-capitan-apache-error-message-ah00526
-```
+```bash
 cd /etc/apache2/extra
 sudo mv httpd-mpm.conf httpd-mpm.conf.elcapitan
 sudo mv httpd-mpm.conf~orig httpd-mpm.conf
