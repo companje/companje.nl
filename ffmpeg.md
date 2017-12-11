@@ -3,6 +3,26 @@ layout: default
 title: ffmpeg
 ---
 
+# sequence folder to movie
+```bash
+if [[ $# -eq 0 ]] ; then
+    echo 'Usage: ./toMovie.sh FOLDER'
+    exit 0
+fi
+
+folderpath=$1
+foldername=${folderpath##*/}
+
+echo Combining $folderpath/'*.png' to $foldername.mp4
+
+ffmpeg \
+  -pattern_type glob -i "$folderpath/*.png" \
+  -vcodec mpeg4 \
+  -q:v 0 \
+  movies/$foldername.mp4
+
+```
+
 # convert mp4 to iPhone ringtone
 seek to 6:45 then take 30 seconds of input
 ```bash
