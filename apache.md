@@ -128,7 +128,7 @@ sudo apachectl start
 allow access from other computers than localhost
 turn off 'deny from all' in httpd.conf
 <code apache>
-#Deny from all
+# Deny from all
 ```
 
 # virtual hosts
