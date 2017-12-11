@@ -43,7 +43,7 @@ https://github.com/rupa/z
 <plist version="1.0">
 <dict>
     <key>Label</key>
-    <string>com.example.ricksscreenshots</string>
+    <string>nl.companje.screenshots</string>
     <key>ProgramArguments</key>
     <array>
         <string>/Users/rick/screenshot.sh</string>
@@ -56,7 +56,8 @@ https://github.com/rupa/z
 
 ```bash
 #fixme
-launchctl start com.example.ricksscreenshots
+launchctl load nl.companje.screenshots.plist
+launchctl start nl.companje.screenshots
 ```
 
 ```bash
