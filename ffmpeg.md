@@ -1,7 +1,27 @@
 ---
-layout: default
 title: ffmpeg
 ---
+
+# convert *.mjpeg to mp4
+```bash
+#!/bin/bash
+
+vardate=$(date +%Y\-%m\-%d); 
+
+for i in *.mjpeg; do
+    echo -n "Converting '$i'..."
+
+    if [[ "$vardate.mjpeg" == "$i" ]]; then
+        echo "SKIP"
+    else
+        name="${i%.*}"
+        ffmpeg -i $i -vcodec mpeg4 -q:v 0 -loglevel error movies/$name.mp4
+        # rm $i
+        echo "OK"
+    fi
+
+done
+```
 
 # sequence in folder to movie
 ```bash
