@@ -54,15 +54,7 @@ https://github.com/rupa/z
 </plist>
 ```
 
-```bash
-#fixme
-launchctl load nl.companje.screenshots.plist
-launchctl start nl.companje.screenshots
-#tail /var/log/system.log # for error messages.
-
-
-```
-
+`~/Documents/screenshots-auto/screenshot.sh`
 ```bash
 vardate=$(date +%Y\-%m\-%d); 
 vartime=$(date +%H.%M.%S);
@@ -70,6 +62,15 @@ folder=~/screenshots/$vardate
 mkdir -p $folder
 screencapture -t png -x $folder/$vartime.png;
 ```
+
+Install:
+```bash
+# launchctl unload nl.companje.screenshots.plist
+# launchctl load nl.companje.screenshots.plist
+launchctl start nl.companje.screenshots
+# tail /var/log/system.log
+```
+
 
 # Launchd
 * <https://developer.apple.com/library/content/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html#//apple_ref/doc/uid/10000172i-SW7-BCIEDDBJ>
