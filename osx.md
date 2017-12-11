@@ -64,7 +64,6 @@ screencapture -t png -x $folder/$vartime.png;
 ```
 
 or add screenshot directly to mjpeg file:
-
 ```bash
 folder=$(dirname "$0")
 vardate=$(date +%Y\-%m\-%d); 
