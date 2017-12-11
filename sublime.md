@@ -23,7 +23,7 @@ https://support.shotgunsoftware.com/hc/en-us/articles/219031308-Launching-applic
 ```
 
 
-=====build system=====
+# build system
 ```
 {
    "cmd": ["make"],
@@ -42,52 +42,52 @@ https://support.shotgunsoftware.com/hc/en-us/articles/219031308-Launching-applic
 * https://github.com/sublimehq/Packages/blob/master/Makefile/Make.sublime-build
 * http://docs.sublimetext.info/en/latest/file_processing/build_systems.html
 
-=====Disable Hex view for binary files====
+# Disable Hex view for binary files====
 Add to settings:
   "enable_hexadecimal_encoding": false
 
-=====On Linux=====
+# On Linux
 * Alt+O: toggle Header/Source
 * Ctrl+P: jump to anything
 
-=====Keyboard shortcuts=====
+# Keyboard shortcuts
 * [[https://www.sublimetext.com/docs/2/multiple_selection_with_the_keyboard.html|multiple select with keyboard]]
 * Cmd+R: Search function within a file
 * Cmd+T: open file by fuzzy search
 
-=====shortcut for reindent=====
+# shortcut for reindent
 in Preferences->User
   [ 
     { "keys": ["super+alt+enter"], "command": "reindent" , "args": { "single_line": false } }
   ]
   
-=====don't open new window=====
+# don't open new window
 In Preferences->Settings User change add:
 ```
     "open_files_in_new_window": false,
 ```
 
-=====tips=====
+# tips
 * install [[http://wbond.net/sublime_packages/package_control/installation|package control]]
 
-=====formatting code=====
+# formatting code
 * [[https://github.com/SublimeText/Tag|Tag package]]
 * [[https://github.com/victorporof/Sublime-HTMLPrettify|HTML-prettify]] (needs [[http://nodejs.org/#download|NodeJS]])
 
-=====use sublime from terminal in osx=====
+# use sublime from terminal in osx
 See [[http://www.sublimetext.com/docs/2/osx_command_line.html|this page]]
 ```
 ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
 ```
 
-=====compile c++ files=====
+# compile c++ files
 see https://gist.github.com/1566100
 
-=====Splitting the Selection into Lines=====
+# Splitting the Selection into Lines
 Select a block of lines, and then split it into many selections, one per line, using Ctrl+Shift+L, or Command+Shift+L on OS X. [[http://www.sublimetext.com/docs/2/multiple_selection_with_the_keyboard.html|source]]
 
-=====Build using makefile and getting this error: No targets specified and no makefile found. Stop.=====
+# Build using makefile and getting this error: No targets specified and no makefile found. Stop.
 the current directory might be wrong.
 
-=====openscad=====
+# openscad
 see [[openscad]]
