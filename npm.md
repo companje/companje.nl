@@ -3,8 +3,8 @@ title: npm - node package manager
 ---
 see [[nodejs]]
 
-==list all global packages without deps==
-```
+# list all global packages without deps
+```bash
 $ npm list -g --depth=0
 /usr/local/lib
 ├── add-cors-to-couchdb@0.0.6
@@ -18,26 +18,39 @@ $ npm list -g --depth=0
 └── serve@1.4.0
 ```
 
-==update npm itself==
-  sudo npm install -g npm
+# update npm itself
+```
+sudo npm install -g npm
+```
 
-==npm check for updates==
-  npm outdated
+# npm check for updates==
+```
+npm outdated
+```
 
-==npm update packages==
-  npm update
-  
-==npm init creates package.json==
-  npm init
-  npm install socket.io-client --save
+# npm update packages==
+```
+npm update
+```  
+# npm init creates package.json
+```
+npm init
+npm install socket.io-client --save
+```
 
-==install express and save it to package.json==
-  npm install --save express
+# install express and save it to package.json
+```
+npm install --save express
+```
 
-==become owner of the /Users/you/.npm folder==
-  sudo chown -R rick /Users/rick/.npm
+# become owner of the /Users/you/.npm folder
+```
+sudo chown -R rick /Users/rick/.npm
+```
 
-==npm install specific version==
+# npm install specific version
 Use this syntax to install a specific version listed there:
-  sudo npm install -g phonegap@2.9.0-rc1-0.12.2
-  npm install gulp-sass@1.3.3 --save
+```
+sudo npm install -g phonegap@2.9.0-rc1-0.12.2
+npm install gulp-sass@1.3.3 --save
+```
