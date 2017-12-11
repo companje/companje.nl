@@ -1,6 +1,0 @@
----
-title: DOSBOX
----
-
-  intro mount
-  

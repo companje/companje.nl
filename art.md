@@ -1,5 +1,0 @@
----
-title: Art
----
-
-(backlinks>.)
