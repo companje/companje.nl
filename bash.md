@@ -220,8 +220,9 @@ sterretje kan ook midden in pad
   ls -la `whereis ls`
   ```
 
-shell expansion vindt plaats voor het commando wordt uitgevoerd
 
+# shell expansion vindt plaats voor het commando wordt uitgevoerd
+```
   mkdir tmp && cd tmp
   >cp
   >foobar
@@ -239,8 +240,10 @@ shell expansion vindt plaats voor het commando wordt uitgevoerd
 
   cat nonexistingfile && echo 123
   cat nonexistingfile || echo 123
+```
 
-  history
+# history
+```bash
   !123 voert bepaald history commando uit
   !-2 voert twee-na-laatste commando uit
   !begintmet
@@ -252,12 +255,14 @@ shell expansion vindt plaats voor het commando wordt uitgevoerd
   lsof -p $$ (lijst van alle open bestanden maar alleen die door jouw PID geopend zijn)
 
   ls &> file
+```
 
 # inhoud van een file gebruiken als std input
-
+```bash
   mysql database <<<“SELECT * FROM TABLE”
 
   mysql database < <(sql_generator)
+```
 je koppelt hier de std out van het ene commando aan de std in van het andere commando. Dit is hetzelfde als pipe
 
 LPI 1 boeken zijn heel fijn om bash te leren
