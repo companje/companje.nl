@@ -54,9 +54,12 @@ chmod a+x /Users/rick/Documents
 ```
 
 # http status info
-```httpd -S```
-on ubuntu: 
+```bash
+httpd -S
 ```
+
+on ubuntu: 
+```bash
 apachectl -S
 ```
 
