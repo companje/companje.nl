@@ -47,7 +47,8 @@ http://coolestguidesontheplanet.com/set-virtual-hosts-apache-mac-osx-10-10-yosem
 # Symbolic link not allowed or link target not accessible
 Solution: https://romaimperator.com/?p=9
 Rights need to be set for every folder (also parent folders):
-```
+
+```bash
 chmod a+x /Users/rick/Documents/Doodle3D/3dprintserver
 chmod a+x /Users/rick/Documents/Doodle3D 
 chmod a+x /Users/rick/Documents 
