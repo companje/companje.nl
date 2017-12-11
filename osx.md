@@ -46,7 +46,7 @@ https://github.com/rupa/z
     <string>nl.companje.screenshots</string>
     <key>ProgramArguments</key>
     <array>
-        <string>/Users/rick/Documents/screenshot-auto/screenshot.sh</string>
+        <string>/Users/rick/Documents/screenshots-auto/screenshot.sh</string>
     </array>
     <key>StartInterval</key>
     <integer>10</integer>
