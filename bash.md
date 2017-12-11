@@ -186,13 +186,13 @@ Then grep the file
 
 # notes from BEAA talk by Johan at 26 june
 Bash
-
+```
 all chmod a+r  
 user chmod u+w
 group chmod g-x
 owner/ chmod o-w
 chmod 755
-
+```
 
 # shell expansion
 ```
@@ -217,7 +217,7 @@ sterretje kan ook midden in pad
   sudo ls /home/user{1,2,3}/Maildir/new
   mkdir {2012..2014}-{1..12} && ls
   ls -la `whereis ls`
-```
+````
 
 # shell expansion vindt plaats voor het commando wordt uitgevoerd
 ```
