@@ -192,7 +192,7 @@ user chmod u+w
 group chmod g-x
 owner/ chmod o-w
 chmod 755
-
+```
 
 # shell expansion
 ```
