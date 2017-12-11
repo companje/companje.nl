@@ -2,6 +2,11 @@
 title: Git
 ---
 
+# Symbolic link to github application
+```
+ln -s  /Applications/GitHub\ Desktop.app/Contents/MacOS/GitHub\ Desktop  ~/bin/github
+```
+
 ====undo last commit====
 [[http://stackoverflow.com/questions/927358/how-do-you-undo-the-last-commit|stackoverflow]]
   git reset HEAD~   
