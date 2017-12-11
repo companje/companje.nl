@@ -1,8 +1,9 @@
 ---
-title: =========SublimeText2=========
+title: SublimeText2
 ---
 A light-weight full feature text/code editor for OSX, Windows and Linux
 
+# subl:// protocol handler
 https://support.shotgunsoftware.com/hc/en-us/articles/219031308-Launching-applications-using-custom-browser-protocols
 
 ```xml
