@@ -136,8 +136,9 @@ Virtual hosts kun je toevoegen in:
 ```
 apache/conf/extra/httpd-vhosts.conf
 ```
+
 but be sure to turn on the include in httpd.conf
-<code apache>
+```
 #Virtual hosts
 Include conf/extra/httpd-vhosts.conf
 ```
