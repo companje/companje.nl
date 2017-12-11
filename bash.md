@@ -216,7 +216,6 @@ sterretje kan ook midden in pad
   sudo ls /home/*/Maildir/new
   sudo ls /home/user{1,2,3}/Maildir/new
   mkdir {2012..2014}-{1..12} && ls
-  ```
   ls -la `whereis ls`
   ```
 
