@@ -38,7 +38,7 @@ sudo chmod -R g+w .
 </del>
 
 # Apache guide on OSX
-* http://coolestguidesontheplanet.com/get-apache-mysql-php-phpmyadmin-working-osx-10-10-yosemite/
+* <http://coolestguidesontheplanet.com/get-apache-mysql-php-phpmyadmin-working-osx-10-10-yosemite/>
 
 # debug your virtual host configuration
   /usr/sbin/httpd -S
