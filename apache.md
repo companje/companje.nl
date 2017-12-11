@@ -47,7 +47,7 @@ sudo chmod -R g+w .
 ```tail -f /private/var/log/apache2/error_log```
 
 # Symbolic link not allowed or link target not accessible
-Solution: https://romaimperator.com/?p=9
+Solution: <https://romaimperator.com/?p=9>
 Rights need to be set for every folder (also parent folders):
 
 ```bash
