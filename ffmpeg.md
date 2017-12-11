@@ -3,7 +3,7 @@ layout: default
 title: ffmpeg
 ---
 
-# sequence folder to movie
+# sequence in folder to movie
 ```bash
 if [[ $# -eq 0 ]] ; then
     echo 'Usage: ./toMovie.sh FOLDER'
