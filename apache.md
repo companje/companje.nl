@@ -26,11 +26,12 @@ apachectl configtest
 http://coolestguidesontheplanet.com/set-virtual-hosts-apache-mac-osx-10-10-yosemite/#apacheuser
 
 # fix permissions on OSX
+```bash
+cd ~/Sites/yoursite
+sudo chown -R _www .
+sudo chmod -R g+w .
+```
 
-  cd ~/Sites/yoursite
-  sudo chown -R _www .
-  sudo chmod -R g+w .
-  
 <del># group settings
   sudo dseditgroup -o edit -a rick -t user _www    # become a member of the _www group
   sudo chgrp -R _www .    # set group of current folder and subfolders to _www
