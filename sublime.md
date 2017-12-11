@@ -22,6 +22,12 @@ https://support.shotgunsoftware.com/hc/en-us/articles/219031308-Launching-applic
 </array>
 ```
 
+```applescript
+on open location this_URL
+  do shell script "~/bin/sublimeTextLauncher.sh '" & this_URL & "'"
+end open location
+```
+
 
 # build system
 ```
