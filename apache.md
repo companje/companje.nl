@@ -82,9 +82,7 @@ apachectl -S
 ```
 
 # restart apache
-```
-sudo apachectl stop && sudo apachectl restart
-```
+`sudo apachectl stop && sudo apachectl restart`
 
 # autostart apache on mac
 * http://brettterpstra.com/fixing-virtual-hosts-and-web-sharing-in-mountain-lion/
