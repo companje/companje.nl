@@ -69,6 +69,7 @@ Install:
 # launchctl load nl.companje.screenshots.plist
 launchctl start nl.companje.screenshots
 # tail /var/log/system.log
+# more info http://www.launchd.info/
 ```
 
 
