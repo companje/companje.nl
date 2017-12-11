@@ -23,7 +23,7 @@ apachectl configtest
 ```
 
 # tips
-http://coolestguidesontheplanet.com/set-virtual-hosts-apache-mac-osx-10-10-yosemite/#apacheuser
+<http://coolestguidesontheplanet.com/set-virtual-hosts-apache-mac-osx-10-10-yosemite/#apacheuser>
 
 # fix permissions on OSX
 ```bash
