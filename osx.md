@@ -69,12 +69,12 @@ Install:
 # launchctl load nl.companje.screenshots.plist
 launchctl start nl.companje.screenshots
 # tail /var/log/system.log
-# more info http://www.launchd.info/
 ```
 
 
 # Launchd
 * <https://developer.apple.com/library/content/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html#//apple_ref/doc/uid/10000172i-SW7-BCIEDDBJ>
+* <http://www.launchd.info>
 
 # Use Automator for making Symbolic Links
 1 Create an Application
