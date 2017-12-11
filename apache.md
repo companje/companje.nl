@@ -142,7 +142,7 @@ Include conf/extra/httpd-vhosts.conf
 # Virtualhost: Forbidden, You don't have permission to access / on this server
 The problem is that the extra/httpd-vhosts.conf is missing the directive to allow access to the directory.
 Allow access by adding a <directory> section inside the <vhost> section.
-```
+```xml
 <directory /vhost_document_root>
 allow from all
 </directory>
