@@ -4,8 +4,10 @@ window.onkeydown = function(event) {
     var page = window.location.pathname;
     page = page.replace(new RegExp("/", "g"), "");
     page = page.replace(new RegExp(".html", "g"), "");
-    window.open("https://github.com/companje/companje.github.io/edit/master/" + page + ".md");
-    // var win = window.open("subl://open/?url=file:///Users/rick/Documents/wiki.companje.nl/"+page+".md");
+    //window.open("https://github.com/companje/companje.github.io/edit/master/" + page + ".md");
+    var win = window.open("subl://"+page);
+    //window.open("subl://hoi")
+
     setTimeout(function() { win.close(); },1000);
   }
 
