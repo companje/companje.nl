@@ -3,7 +3,7 @@ title: Apache
 ---
 
 # create Virtual Hosts on Ubuntu
-https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts
+<https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts>
 ```bash
 sudo a2ensite gerard.companje.nl.conf
 ```
