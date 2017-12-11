@@ -4,7 +4,7 @@ title: ffmpeg
 
 # convert *.mjpeg to mp4
 ```bash
-<!-- #!/bin/bash -->
+#!/bin/bash
 
 vardate=$(date +%Y\-%m\-%d); 
 
