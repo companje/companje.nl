@@ -58,6 +58,9 @@ https://github.com/rupa/z
 #fixme
 launchctl load nl.companje.screenshots.plist
 launchctl start nl.companje.screenshots
+#tail /var/log/system.log # for error messages.
+
+
 ```
 
 ```bash
