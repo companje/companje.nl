@@ -2,6 +2,7 @@
 title: Wacom
 ---
 
+# Wacom 
 Wacom CTE-630: The Sapphire CTE-630 uses the same drivers as Graphire4/Graphire3/Graphire Wireless/BambooFun
 
 # Wacom tablet van Peter
