@@ -74,7 +74,7 @@ apachectl -S
     ServerName lepetitgarage.nl
 </VirtualHost>
 ```
-* restart apace
+* restart apache
 ```
 sudo apachectl stop && sudo apachectl restart
 ```
