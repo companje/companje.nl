@@ -120,7 +120,7 @@ sudo apachectl start
 ```
 
 # default site op onze server
-```
+```conf
 /var/www/html
 ```
 
@@ -130,7 +130,7 @@ turn off 'deny from all' in httpd.conf
 
 # Virtual hosts
 Virtual hosts kun je toevoegen in:
-```
+```conf
 apache/conf/extra/httpd-vhosts.conf
 ```
 
