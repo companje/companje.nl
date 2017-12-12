@@ -55,7 +55,11 @@ screencapture -t tif -x /tmp/tmp.tif
 cat /tmp/tmp.mjpeg >> $folder/$vardate.mjpeg
 
 #OCR text
-/usr/local/bin/pngtopnm /tmp/tmp.png | /usr/local/bin/ocrad >> $folder/txt/$vardate.txt
+txt=$folder/txt/$vardate.txt
+echo ------------------------------------------------------ >> $txt
+echo $vardate $vartime                                      >> $txt
+echo ------------------------------------------------------ >> $txt
+/usr/local/bin/pngtopnm /tmp/tmp.png | /usr/local/bin/ocrad >> $txt
 ```
 
 `~/Library/LaunchAgents/RicksAutoScreenshots.plist`
