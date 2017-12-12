@@ -53,6 +53,9 @@ vardate=$(date +%Y\-%m\-%d);
 screencapture -t tif -x /tmp/tmp.tif
 /usr/local/bin/ffmpeg -i /tmp/tmp.tif -y /tmp/tmp.mjpeg
 cat /tmp/tmp.mjpeg >> $folder/$vardate.mjpeg
+
+#OCR text
+/usr/local/bin/pngtopnm /tmp/tmp.png | /usr/local/bin/ocrad >> $folder/txt/$vardate.txt
 ```
 
 `~/Library/LaunchAgents/RicksAutoScreenshots.plist`
