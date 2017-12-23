@@ -643,8 +643,6 @@ installed by default.
 hexdump filename
 ```
 
-# sneltoetsen in nano console editor
-zie [[nano]]
 
 # gmail berichten sturen via command line in osx
 See this page: [[http://www.amirwatad.com/blog/archives/2009/03/21/send-email-from-the-command-line-using-gmail-account/|link]]
