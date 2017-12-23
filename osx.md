@@ -489,6 +489,7 @@ CGEventRef mouseDownEv = CGEventCreateMouseEvent (NULL,kCGEventMouseMoved,pt,kCG
 CGEventPost(kCGHIDEventTap, mouseDownEv);
 CFRelease(mouseDownEv);
 ```
+
 # spoof your MAC address
 ```sudo ifconfig en1 ether aa:bb:cc:dd:ee:ff```
 to check the result type: 
