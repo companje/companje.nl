@@ -643,7 +643,6 @@ installed by default.
 hexdump filename
 ```
 
-
 # gmail berichten sturen via command line in osx
 See this page: [[http://www.amirwatad.com/blog/archives/2009/03/21/send-email-from-the-command-line-using-gmail-account/|link]]
 I managed to send an email but it's not working completely yet.
