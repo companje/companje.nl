@@ -2,7 +2,7 @@
 title: Mac OSX
 ---
 
-# How to fix: MediaKit reports not enough space on device for requested operation
+# MediaKit reports not enough space on device for requested operation
 This worked for me:
 ```bash
 diskutil list
