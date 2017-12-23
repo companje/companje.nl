@@ -4,13 +4,14 @@ title: Mac OSX
 
 # How to fix: MediaKit reports not enough space on device for requested operation
 This worked for me:
-* https://mycyberuniverse.com/web/how-fix-mediakit-reports-not-enough-space-on-device.html
 ```bash
 diskutil list
 diskutil unmountDisk force disk2
 sudo dd if=/dev/zero of=/dev/rdisk2 bs=1024 count=1024
 diskutil partitionDisk disk2 GPT JHFS+ "LABEL" 0g
 ```
+source: https://mycyberuniverse.com/web/how-fix-mediakit-reports-not-enough-space-on-device.html
+
 
 # disk usage visualisation
 * grandperspective (works well)
