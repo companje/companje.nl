@@ -446,7 +446,7 @@ en0 ethernet, en1 wifi
 - een prima tftp server is [[http://ww2.unime.it/flr/tftpserver/|TftpServer]]
 
 # Some dynamic linker tools that will come in handy
-```
+```bash
 otool -L
 install_name_tool
 libtool
