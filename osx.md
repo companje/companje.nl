@@ -495,12 +495,14 @@ CFRelease(mouseDownEv);
 sudo ifconfig en1 ether aa:bb:cc:dd:ee:ff
 ```
 to check the result type: 
-```ifconfig en1 | grep ether```
+```bash
+ifconfig en1 | grep ether
+```
 for Lion you might need to change ether into Wi-Fi.
 When you reboot your computer the original address is restored.
 
 # escape character in tenet on osx
-```
+```bash
 Escape character is '^]'
 ```
 which means Ctrl+]
@@ -520,8 +522,10 @@ stty -f /dev/tty.PL2303-00001004 19200
 ```
 
 # otool
+```bash
 otool -L libopenFrameworks.dylib
 install_name_tool
+```
 
 # automatisch opstarten
 nog uitzoeken: launchd en lingon
@@ -554,7 +558,7 @@ g++ -Wall -O3 -g -framework OpenGL -framework GLUT bezmesh.c -o bezmesh
 ```
 
 Don't forget to include OpenGL and GLUT like this:
-<code cpp>
+```cpp
 #ifdef __APPLE__
 #include <OpenGL/OpenGL.h>
 #include <GLUT/glut.h>
@@ -565,10 +569,14 @@ Don't forget to include OpenGL and GLUT like this:
 
 # Enable colors in the terminal's ls command
 or type ''ls -G'' or put the following in your ''~/.profile'' file for a permanent solution.
-```bashexport CLICOLOR=1```
+```bash
+bashexport CLICOLOR=1
+```
 
 # Show hidden files/folders
-```bashdefaults write com.apple.finder AppleShowAllFiles TRUE```
+```bash
+defaults write com.apple.finder AppleShowAllFiles TRUE
+```
 (and reload Finder)
 
 # Change screenshots folder (and other settings)
@@ -585,7 +593,9 @@ killall SystemUIServer
 Install [[http://visor.binaryage.com/|Visor]] to have a system-wide terminal on a hot-key.
 
 # Rotate an image
-```bashsips input.jpg -r 90 --out output.jpg```
+```bash
+sips input.jpg -r 90 --out output.jpg
+```
 
 # convert an image
 ```bash
@@ -593,7 +603,9 @@ sips -s format jpeg 4.gif --out 4.jpg
 ```
 
 # chmod recursive write access
-```bashchmod -R 777 data```
+```bash
+chmod -R 777 data
+```
 
 # ~/.profile
 on osx 10.9 I had to rename .profile to . bash_profile
