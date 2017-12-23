@@ -492,7 +492,8 @@ CFRelease(mouseDownEv);
 
 # spoof your MAC address
 ```bash
-sudo ifconfig en1 ether aa:bb:cc:dd:ee:ff```
+sudo ifconfig en1 ether aa:bb:cc:dd:ee:ff
+```
 to check the result type: 
 ```ifconfig en1 | grep ether```
 for Lion you might need to change ether into Wi-Fi.
