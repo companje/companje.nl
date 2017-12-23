@@ -12,7 +12,6 @@ diskutil partitionDisk disk2 GPT JHFS+ "LABEL" 0g
 ```
 source: https://mycyberuniverse.com/web/how-fix-mediakit-reports-not-enough-space-on-device.html
 
-
 # disk usage visualisation
 * grandperspective (works well)
 * disk inventory x (not tried yet)
