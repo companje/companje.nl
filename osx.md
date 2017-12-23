@@ -189,10 +189,12 @@ http://wiki.openwrt.org/doc/howto/http.httpd
 http://wiki.openwrt.org/doc/recipes/dumbap
 
 # diskutil on command line
+```bash
+diskutil list
 ```
-diskutil list```
+
 # file info
-```
+```bash
 file
 otool
 gobjdump
@@ -200,17 +202,17 @@ gobjdump
 ```
 
 # Folder/File sync tools
-*DeltaWalker
-*Singlemizer (not tested yet)
+* DeltaWalker
+* Singlemizer (not tested yet)
 
 # keyboard repeat rate / speed
-```
+```bash
 defaults write NSGlobalDomain KeyRepeat -int 0
 ```
 try 0, 1 or 2: the lower the faster
 
 # unpack a .pkg file
-*https://www.macupdate.com/app/mac/16357/unpkg
+* https://www.macupdate.com/app/mac/16357/unpkg
 
 # batch resize images
 ```bash
@@ -218,15 +220,19 @@ sips -Z 640 *.jpg
 ```
 
 # serial communication with screen
-```screen /dev/[device name] 115200```
+```bash
+screen /dev/[device name] 115200
+```
 To quit screen, press CTRL-a, followed by CTRL-k, followed by y.
 
 # follow system log
-```tail -f /private/var/log/system.log```
+```bash
+tail -f /private/var/log/system.log
+```
 
 # macports / python
 To make python 2.7 the default (i.e. the version you get when you run 'python'), please run:
-```
+```bash
 sudo port select --set python python27
 ```
 
@@ -245,17 +251,18 @@ een handige tool om snel afbeeldingen te bewerken
 
 # alternative to spotlight
 * [[http://www.alfredapp.com/|Alfred]]
+
 # get ip address
-```
-ipconfig getifaddr en1
+```bash
+ifconfig getifaddr en1
 ```
 or
-```
+```bash
 ifconfig en1 | grep "inet " | cut -d " " -f2
 ```
 
-# convert png to ico
-```
+# convert png to ico (imagemagick)
+```bash
 convert file.png file.ico
 ```
 
@@ -268,54 +275,56 @@ clear
 ```
 
 # show contents of clipboard
-```
+```bash
 pbpaste
 pbpaste | head -n 5
 ```
 
 # copy text to clipboard
-```
+```bash
 ls | pbcopy
 ```
 
 # Convert tabs to spaces for the lines in the Clipboard
-```
+```bash
 pbpaste | expand | pbcopy
 ```
 
 # sorting etc
+```bash
 ls | sort
 ls | rev
 ls | uniq
 ls | uniq -d
 ls | uniq -u
+```
 
 # eject cd
-```
+```bash
 diskutil eject disk1
 ```
 or
-```
+```bash
 drutil tray eject
 ```
 
 # dig
-```
+```bash
 dig companje.nl A
 ```
 
 # disable dashboard
-```
+```bash
 defaults write com.apple.dashboard mcx-disabled -boolean YES
 killall Dock
 ```
 
 # get name of current wifi network
-```
+```bash
 /System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport -I|grep " SSID: "|cut -c 18-
 ```
 or
-```
+```bash
 networksetup -getairportnetwork en1
 networksetup -getairportnetwork en1 | cut -c 24-
 ```
@@ -324,22 +333,22 @@ networksetup -getairportnetwork en1 | cut -c 24-
 * [[http://www.yourdailymac.net/2011/09/how-to-enable-os-x-lion-airdrop-on-every-mac/|enable OS X Lion AirDrop on every Mac]]
 
 # restart Finder
-```
+```bash
 killall Finder
 ```
 
 # list all network hardware ports
-```
+```bash
 networksetup -listallhardwareports
 ```
 
 # get info about current wifi point
-```
+```bash
 /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport --getinfo
 ```
 
 # scan for wifi points
-```
+```bash
 /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -s
 ```
 
@@ -349,24 +358,26 @@ ln -s fullpath-source-www /Users/rick/Sites/8
 ```
 
 # show display settings
-''alt+F2''
+```
+alt+F2
+```
 
 # QuickLook / Quick Preview / Syntax Highlighting / Color Code
 Download [[http://qlcolorcode.googlecode.com/files/QLColorCode-2.0.2.tgz|QLColorCode]]. Create folder ''~/Library/QuickLook'' and copy QLColorCode.qlgenerator to that folder.
 
 # SetFile
-```
+```bash
 SetFile
 ```
 
 # dmg create command line
-```
+```bash
 hdiutil create ....
 ```
 * http://stackoverflow.com/questions/96882/how-do-i-create-a-nice-looking-dmg-for-mac-os-x-using-command-line-tools
 
 # usb device info
-```
+```bash
 system_profiler SPUSBDataType
 ```
 
@@ -375,24 +386,24 @@ system_profiler SPUSBDataType
 * In the Network Utility window, click the Ping tab. 
 
 # broadcast ping
-```
+```bash
 ping -i 5 -c 2 192.168.1.255
 ```
 
 # using arp to find mac address
-```
+```bash
 ping IPADDRESS
 arp -a
 ```
 
 # fping range
-```
+```bash
 sudo fping -s -g 192.168.0.1 192.168.0.9 -r 1
 fping -ag 192.168.1.0/24
 ```
 
 # websharing is removed from Mountain Lion Preferences but still usable
-```
+```bash
 sudo apachectl start
 ```
 
