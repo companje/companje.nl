@@ -481,7 +481,7 @@ this file contains the search paths
 instead of ''cd ~'' you can just type ''cd''
 
 # move mouse with code
-```
+```cpp
 CGPoint pt;
 pt.x = x;
 pt.y = y;
