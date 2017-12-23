@@ -660,6 +660,7 @@ Handige app om GCODES mee te bekijken in 3D
 ```bash
 synergys --config synergy.conf
 ```
+
 synergy.conf:
 ```bash
 section: screens
