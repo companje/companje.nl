@@ -10,7 +10,7 @@ diskutil unmountDisk force disk2
 sudo dd if=/dev/zero of=/dev/rdisk2 bs=1024 count=1024
 diskutil partitionDisk disk2 GPT JHFS+ "LABEL" 0g
 ```
-https://mycyberuniverse.com/web/how-fix-mediakit-reports-not-enough-space-on-device.html
+[source](https://mycyberuniverse.com/web/how-fix-mediakit-reports-not-enough-space-on-device.html)
 
 # disk usage visualisation
 * grandperspective (works well)
