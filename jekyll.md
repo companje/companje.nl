@@ -2,6 +2,9 @@
 title: jekyll
 ---
 
+# Liquid Exception: no implicit conversion of Fixnum into String.
+caused by 'escape' liquid tag in `_layouts/x.html`.
+
 # get version
 ```bash
 bundle exec jekyll -v
