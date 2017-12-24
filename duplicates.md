@@ -12,7 +12,8 @@ brew install fdupes
 fdupes .
 ```
 
-# find and delete duplicates (removing the first one)
+# find and delete duplicates
+(together with --delete, preserve the first file in each set of duplicates and delete the rest without prompting the user)
 ```bash
 fdupes -dN .
 ```
