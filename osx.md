@@ -4,6 +4,7 @@ title: Mac OSX
 
 # MediaKit reports not enough space on device for requested operation
 This worked for me:
+(''watch out'', it formats the disk! make sure to select the right disk)
 ```bash
 diskutil list
 diskutil unmountDisk force disk2
