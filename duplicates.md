@@ -13,7 +13,7 @@ fdupes .
 ```
 
 # find and delete duplicates
-(preserve the first file in each set of duplicates and delete the rest without prompting the user)
+preserve the first file in each set of duplicates and delete the rest without prompting the user
 ```bash
 fdupes -dN .
 ```
