@@ -16,7 +16,6 @@ Hershey Text is built into Inkscape as of version 0.91.0
 > Extensions > Render > Herschey Text
 
 # fonts
-
 * http://understandingfonts.com/blog/2011/11/typography-extensions-in-inkscape-0-49/# stempelen
 tijdens slepen kun je met spatie duplicaten van je selectie achterlaten
 
