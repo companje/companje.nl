@@ -1,2 +1,2 @@
 language: ruby
-script: "bundle exec jekyll serve --profile --incremental --verbose"
+script: "bundle exec jekyll build --profile --incremental --verbose"
