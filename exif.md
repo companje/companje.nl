@@ -18,3 +18,9 @@ exiftool * '-filemodifydate<createdate' -if '($createdate and (not $createdate e
 exiftool * '-filemodifydate<datetimeoriginal' -if '($datetimeoriginal and (not $datetimeoriginal eq "0000:00:00 00:00:00"))'
 exiftool * '-filemodifydate<mediacreatedate' -if '($mediacreatedate and (not $mediacreatedate eq "0000:00:00 00:00:00"))'
 ```
+
+# exiftool: move based on date from exif data
+```bash
+exiftool -d %Y/%m "-directory<filemodifydate" "-directory<createdate" "-directory<datetimeoriginal" .
+```
+Move image files from the current directory (.) into a directory hierarchy based on year/month. In this command the Directory tag is set from multiple other date/time tags. ExifTool evaluates the command-line arguments left to right, and latter assignments to the same tag override earlier ones, so the Directory for each image is ultimately set by the rightmost copy argument that is valid for that image. Specifically, Directory is set from DateTimeOriginal if it exists, otherwise CreateDate if it exists, and finally FileModifyDate (which always exists) is used as a fallback.
