@@ -17,6 +17,10 @@ preserve the first file in each set of duplicates and delete the rest without pr
 ```bash
 fdupes -dN .
 ```
+recursive:
+```basH
+fdupes -dNr .
+```
 
 # dupeGuru Picture Edition 
 This great tool finds duplicate images based on content.
