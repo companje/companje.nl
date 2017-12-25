@@ -18,6 +18,11 @@ exiftool * '-filemodifydate<createdate' -if '($createdate and (not $createdate e
 exiftool * '-filemodifydate<datetimeoriginal' -if '($datetimeoriginal and (not $datetimeoriginal eq "0000:00:00 00:00:00"))'
 exiftool * '-filemodifydate<mediacreatedate' -if '($mediacreatedate and (not $mediacreatedate eq "0000:00:00 00:00:00"))'
 ```
+misschien werkt dit ook, maar niet getest:
+```bash
+#exiftool "-filemodifydate<filemodifydate" "-filemodifydate<createdate" "-filemodifydate<datetimeoriginal" *
+```
+
 
 # exiftool: move based on date from exif data
 ```bash
