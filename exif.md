@@ -12,7 +12,7 @@ brew install exiftool
 brew install media-info
 ```
 
-# ex update filemodifieddate based on exif data
+# exiftool update filemodifieddate based on exif data
 ```bash
 exiftool * '-filemodifydate<createdate' -if '($createdate and (not $createdate eq "0000:00:00 00:00:00"))'
 exiftool * '-filemodifydate<datetimeoriginal' -if '($datetimeoriginal and (not $datetimeoriginal eq "0000:00:00 00:00:00"))'
