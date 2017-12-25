@@ -18,7 +18,7 @@ preserve the first file in each set of duplicates and delete the rest without pr
 fdupes -dN .
 ```
 recursive:
-```basH
+```bash
 fdupes -dNr .
 ```
 
