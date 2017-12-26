@@ -16,6 +16,7 @@ done < not-imported.txt
 in `hoi`:
 ```bash
 echo $1
+...
 ```
 
 # Check return value
