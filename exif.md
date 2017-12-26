@@ -30,3 +30,8 @@ Move image files from the current directory (.) into a directory hierarchy based
 ```bash
 exiftool -tagsFromFile SRC DST
 ```
+
+# prefix file with date
+```bash
+exiftool '-filename<filemodifydate' '-filename<createdate' '-filename<datetimeoriginal' -d "%Y-%m-%d-%%f.%%e" *
+```
