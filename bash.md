@@ -2,6 +2,19 @@
 title: Bash
 ---
 
+# loop over filenames from file and execute other shell script
+```bash
+COUNTER=0
+
+while read p; do
+  echo $COUNTER
+  find . -name "$p" -exec ./hoi '{}' \;
+    COUNTER=$((COUNTER+1))
+    
+done < not-imported.txt
+```
+
+
 # Check return value
 ```bash
 #!/bin/sh
