@@ -9,7 +9,7 @@ title: Malyan m200 / Monoprice iiip v2 3D printer
 The Maylan m200 has Smart Config. This means that it can receive WiFi credentials 'over the air' (texas instruments cc3000?). On iOS you can install 'MP 3D Printer WiFi Connect'. You need to select the 'Move' menu on the printer and hold the push button down for a couple of seconds to get into Smart Config mode. Then the app can send the WiFi credentials. Then the printer will display it's IP address on its screen.
 
 # Web UI
-(I a)
+(I can't connect yet...)
 http://191.168.1.74
 http://191.168.1.74/set?code=G28
 
