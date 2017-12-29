@@ -14,4 +14,17 @@ http://192.168.1.74
 execute:
 http://192.168.1.74/set?code=G28
 
+# telnet / netcat
+```bash
+nc 192.168.1.74 23
+# > G28
+# < ok N0 P15 B15
+```
+
+# M115
+Sending M115 (using netcat) returns:
+```
+NAME. Malyan	VER: 3.5	MODEL: M200	HW: HH02
+BUILD: May 18 2017 20:24:25
+```
 
