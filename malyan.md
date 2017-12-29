@@ -15,6 +15,7 @@ execute:
 http://192.168.1.74/set?code=G28
 
 # telnet / netcat
+
 ```bash
 nc 192.168.1.74 23
 # > G28
