@@ -10,7 +10,7 @@ The Maylan m200 has Smart Config. This means that it can receive WiFi credential
 
 # Web UI
 (I can't connect yet... timeouts...)
-http://191.168.1.74
-http://191.168.1.74/set?code=G28
+http://192.168.1.74
+http://192.168.1.74/set?code=G28
 
 
