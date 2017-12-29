@@ -15,7 +15,7 @@ execute:
 http://192.168.1.74/set?code=G28
 
 # telnet / netcat
-you 
+you can use telnet or netcat on port 23 to get a direct TCP connection to the printer.
 ```bash
 nc 192.168.1.74 23
 # > G28
