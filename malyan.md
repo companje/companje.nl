@@ -25,8 +25,7 @@ nc 192.168.1.74 23
 ## REST API for single commands
 <https://www.mpselectmini.com/sample_webui#upload_custom_web_ui>
 
-home (G28):
- <http://192.168.1.74/set?code=G28>
+home (G28): <http://192.168.1.74/set?code=G28>
 
 ```js
 function start_p() {
