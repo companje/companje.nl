@@ -27,6 +27,7 @@ nc 192.168.1.74 23
 
 home (G28): <http://192.168.1.74/set?code=G28>
 
+start print, cancel print, emergency stop
 ```js
 function start_p() {
   $.ajax({
