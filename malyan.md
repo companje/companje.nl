@@ -40,6 +40,19 @@ function cancel_p() {
     cache: false
   }).done(function(html) {});
 }
+
+$('#eStop').click(function() {
+    $.ajax({
+        url: "set?code=M112\nM999",
+        cache: false
+    }).done(function(html) {
+        $('#gCodeLog').append("<br>M112; Emergency Stop!");
+        gCodeLog.scrollTop = gCodeLog.scrollHeight;
+        alert('Emergency Stop Sent! You will have to cycle power on the printer to get communications back up.');
+    });
+
+});
+
 ```
 
 ## WebSocket
