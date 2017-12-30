@@ -23,7 +23,8 @@ nc 192.168.1.74 23
 ```
 
 ## REST API for single commands
-http://192.168.1.74/set?code=G28
+
+home: <http://192.168.1.74/set?code=G28>
 
 ```js
 function start_p() {
