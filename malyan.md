@@ -11,7 +11,10 @@ The Maylan m200 has Smart Config. This means that it can receive WiFi credential
 # Web UI
 http://192.168.1.74
 
-# telnet / netcat
+# Communication
+<https://www.mpselectmini.com/communications>
+
+## telnet / netcat
 you can use telnet or netcat on port 23 to get a direct TCP connection to the printer.
 ```bash
 nc 192.168.1.74 23
@@ -19,10 +22,10 @@ nc 192.168.1.74 23
 # < ok N0 P15 B15
 ```
 
-# REST API for single commands
+## REST API for single commands
 http://192.168.1.74/set?code=G28
 
-# WebSocket
+## WebSocket
 you can communicate using a websocket:
 <script>
 var ws = new WebSocket('ws://192.168.1.74:81');
@@ -31,8 +34,7 @@ ws.onopen = function () {
 }
 </script>
 
-# M115
-get machine / firmware info.
+# Machine / firmware info: M115
 ```
 NAME. Malyan	VER: 3.5	MODEL: M200	HW: HH02
 BUILD: May 18 2017 20:24:25
