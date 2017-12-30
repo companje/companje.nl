@@ -25,6 +25,22 @@ nc 192.168.1.74 23
 ## REST API for single commands
 http://192.168.1.74/set?code=G28
 
+```js
+function start_p() {
+  $.ajax({
+    url: "set?code=M565",
+    cache: false
+  }).done(function(html) {});
+}
+
+function cancel_p() {
+  $.ajax({
+    url: "set?cmd={P:X}",
+    cache: false
+  }).done(function(html) {});
+}
+```
+
 ## WebSocket
 you can communicate using a websocket:
 <script>
