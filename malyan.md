@@ -22,6 +22,9 @@ nc 192.168.1.74 23
 # < ok N0 P15 B15
 ```
 
+## get status
+<http://192.168.1.74/inquiry>
+
 ## REST API for single commands
 <https://www.mpselectmini.com/sample_webui#upload_custom_web_ui>
 
