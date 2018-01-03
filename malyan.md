@@ -264,13 +264,13 @@ M564 url.gcode   # download file from server
 M565 url.gcode   # download and print
 ```
 
-# doodle3d test
+# Testing Doodle3D Sketch on Malyan M200
 sync: 
 ```bash
 rsync -av /Users/rick/Documents/Doodle3D/doodle3d-client/www/ doodle3d.com:/domains/doodle3d.com/draw/
 ```
 
-
+htaccess
 ```apache
 Header set Access-Control-Allow-Origin "*"
 Header set Access-Control-Allow-Headers "Origin, X-Requested-With, Content-Type, Accept"
