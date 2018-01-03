@@ -74,7 +74,10 @@ ws.onopen = function () {
 </script>
 
 # Machine / firmware info and config
-(the display shows: V35.115.2)
+(the display shows: V35.115.2) 
+V35 = Motion Controller Version
+115.2 = UI/LCD Controller Version
+
 
 ## M115:
 ```
