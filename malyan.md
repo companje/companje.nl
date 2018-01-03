@@ -222,4 +222,18 @@ https://github.com/MalyanSystem
 # Malyan on Alibaba
 http://malyansys.en.alibaba.com/
 
+# optimal layer heights
+<https://www.mpselectmini.com/optimal_layer>
+```
+Layer Height (mm)
+0.04375 (results may vary)*
+0.0875
+0.13125
+0.175
+0.21875
+0.2625
+0.30625
+```
+
+
 
