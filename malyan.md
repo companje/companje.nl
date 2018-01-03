@@ -74,6 +74,8 @@ ws.onopen = function () {
 </script>
 
 # Machine / firmware info and config
+(the display shows: V35.115.2)
+
 ## M115:
 ```
 NAME. Malyan	VER: 3.5	MODEL: M200	HW: HH02
