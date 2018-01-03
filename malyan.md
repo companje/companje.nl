@@ -175,4 +175,10 @@ G90                         ;absolute positioning
 ;CURA_PROFILE_STRING:eNrtWltv2zY.....==
 ```
 
+# Malyan's wiki
+http://www.wiki.malyansys.com/doku.php
+
+# Malyan's firmware sourcecode on github
+https://github.com/MalyanSystem
+
 
