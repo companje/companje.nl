@@ -185,4 +185,7 @@ http://www.wiki.malyansys.com/doku.php
 # Malyan's firmware sourcecode on github
 https://github.com/MalyanSystem
 
+# Malyan on Alibaba
+http://malyansys.en.alibaba.com/
+
 
