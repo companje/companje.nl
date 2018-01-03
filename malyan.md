@@ -121,5 +121,39 @@ function status() {
 }
 ```
 
+# start gcode for the demo print 'cat' on the SD card
+```gcode
+M109 S195.000000
+;Sliced at: Wed 15-06-2016 08:14:50
+;Basic settings: Layer height: 0.2 Walls: 1.2 Fill: 20
+;Print time: 2 hours 29 minutes
+;Filament used: 7.45m 22.0g
+;Filament cost: None
+;M190 S0 ;Uncomment to add your own bed temperature line
+;M109 S195 ;Uncomment to add your own temperature line
+G21        ;metric values
+G90        ;absolute positioning
+M82        ;set extruder to absolute mode
+M107       ;start with the fan off
+G28 X0 Y0  ;move X/Y to min endstops
+G28 Z0     ;move Z to min endstops
+G1 Z15.0 F6000 ;move the platform down 15mm
+G92 E0                  ;zero the extruded length
+G1 F200 E3              ;extrude 3mm of feed stock
+G92 E0                  ;zero the extruded length again
+G1 F6000
+;Put printing message on LCD screen
+M117 Printing...
+
+;Layer count: 299
+;LAYER:-2
+;RAFT
+G0 F6000 X43.681 Y44.418 Z0.300
+;TYPE:SUPPORT
+G1 F1200 X44.482 Y43.662 E0.13738
+G1 X44.847 Y43.323 E0.19951
+G1 X45.818 Y42.600 E0.35050
+G1 X46.870 Y41.930 E0.50606
+```
 
 
