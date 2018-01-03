@@ -271,6 +271,11 @@ rsync -av /Users/rick/Documents/Doodle3D/doodle3d-client/www/ doodle3d.com:/doma
 ```
 
 
+```apache
+Header set Access-Control-Allow-Origin "*"
+Header set Access-Control-Allow-Headers "Origin, X-Requested-With, Content-Type, Accept"
+```
+
 
 
 
