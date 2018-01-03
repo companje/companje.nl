@@ -1,6 +1,10 @@
 ---
-title: Malyan M200 3D printer / Monoprice Select Mini 3D Printer V2
+title: Malyan M200 3D printer
 ---
+(aka Monoprice Select Mini 3D Printer V2)
+
+# Documentation
+There's a manual on the SD card called `manual.pdf`
 
 # links
 * [MP Select Mini / ProFab Mini / Malyan M200 Wiki](https://www.mpselectmini.com/wifi/start)
