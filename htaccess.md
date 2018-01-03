@@ -3,9 +3,10 @@ title: .htaccess
 ---
 
 # Access-Control-Allow-Origin * with X-Requested-With
+```apache
 Header set Access-Control-Allow-Origin "*"
 Header set Access-Control-Allow-Headers "Origin, X-Requested-With, Content-Type, Accept"
-
+```
 
 # Basic Auth
 ```apache
