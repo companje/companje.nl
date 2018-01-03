@@ -258,6 +258,12 @@ V   Displays firmware versions on LCD
 W   Deletes WiFi SSID and password
 ```
 
+# Download from remote server
+```
+M564 address_without_http: = HTTP Download
+```
+
+
 
 
 
