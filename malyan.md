@@ -75,3 +75,51 @@ NAME. Malyan	VER: 3.5	MODEL: M200	HW: HH02
 BUILD: May 18 2017 20:24:25
 ```
 
+# uploading
+the uploaded file is stored on the SD card as 'cache.gc'
+```js
+function upload() {
+  var blob = new Blob([$("textarea").val()]);
+  var reader = new FileReader();
+
+  reader.onload = function(event){   // this function is triggered once a call to readAsDataURL returns
+      var fd = new FormData();
+      fd.append('fname', 'doodle.g');
+      fd.append('data', event.target.result);
+      $.ajax({
+          type: 'POST',
+          url: '/upload',
+          data: fd,
+          processData: false,
+          contentType: false
+      }).done(function(data) {
+          console.log(data);
+      });
+  };      
+  reader.readAsDataURL(blob); // trigger the read from the reader...
+
+}
+
+function get(cmd) {
+ $.get(cmd,function(successData) { console.log(cmd+": "+successData)} ); 
+}
+
+function start() {
+  get("/set?code=M565");
+}
+
+function home() {
+  get("/set?code=G28");
+}
+
+function stop() {
+  get("/set?cmd={P:X}");
+}
+
+function status() {
+  get("/inquiry");
+}
+```
+
+
+
