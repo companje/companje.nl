@@ -235,5 +235,26 @@ Layer Height (mm)
 0.30625
 ```
 
+# Available Commands
+<https://www.mpselectmini.com/communications>
+```
+P:X Cancel print
+P:H Homing
+P:P Pause print
+P:R Resume print
+P:M Print cache.gc
+
+C T0000 Set T0 temperature
+C P000  Set hotbed temperature
+
+e:e Return printing status
+e:M Return mac address
+
+J:X Moves the X-Axis
+J:Y Moves the Y-Axis
+J:Z Moves the Z-Axis
+S:I List files on the microSD card
+V   Displays firmware versions on LCD
+W   Deletes WiFi SSID and password
 
 
