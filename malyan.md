@@ -1,7 +1,7 @@
 ---
 title: Malyan M200 3D printer
 ---
-(aka Monoprice Select Mini 3D Printer V2, MP Select Mini,  ProFab Mini, PrimaCreator P120
+aka Monoprice Select Mini 3D Printer V2, MP Select Mini,  ProFab Mini, PrimaCreator P120
 
 # Documentation
 There's a manual on the SD card called `manual.pdf`
