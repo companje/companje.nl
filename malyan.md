@@ -1,5 +1,5 @@
 ---
-title: Malyan M200 / MP Select Mini 3D Printer V2 - 3D printer
+title: Malyan M200 / Monoprice Select Mini 3D Printer V2 - 3D printer
 ---
 
 # links
