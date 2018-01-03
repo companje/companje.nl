@@ -256,5 +256,8 @@ J:Z Moves the Z-Axis
 S:I List files on the microSD card
 V   Displays firmware versions on LCD
 W   Deletes WiFi SSID and password
+```
+
+
 
 
