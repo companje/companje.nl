@@ -265,7 +265,6 @@ M565 url.gcode   # download and print
 ```
 
 # Testing Doodle3D Sketch on Malyan M200
-
 rsync: 
 ```bash
 rsync -av /Users/rick/Documents/Doodle3D/doodle3d-client/www/ doodle3d.com:/domains/doodle3d.com/draw/
