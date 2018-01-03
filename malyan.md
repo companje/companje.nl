@@ -73,10 +73,39 @@ ws.onopen = function () {
 }
 </script>
 
-# Machine / firmware info: M115
+# Machine / firmware info and config
+## M115:
 ```
 NAME. Malyan	VER: 3.5	MODEL: M200	HW: HH02
 BUILD: May 18 2017 20:24:25
+```
+## M503
+```
+echo:Steps per unit:
+echo:  M92 X93.00 Y93.00 Z1097.50 E97.00
+echo:Maximum feedrates (mm/s):
+echo:  M203 X150.00 Y150.00 Z1.50 E50.00
+echo:Maximum Acceleration (mm/s2):
+echo:  M201 X800 Y800 Z20 E10000
+echo:Accelerations: P=printing, R=retract and T=travel
+echo:  M204 P3000.00 R3000.00 T3000.00
+echo:Advanced variables:
+S=Min feedrate (mm/s),
+T=Min travel feedrate (mm/s),
+B=minimum segment time (ms),
+X=maximum XY jerk (mm/s),
+Z=maximum Z jerk (mm/s),
+E=maximum E echo:  M205 S0.00 T0.00 B20000 X20.00 Z0.40 E5.00
+echo:Home offset (mm):
+echo:  M206 X0.00 Y0.00 Z0.00
+echo:Invert axis: M562 XYZE
+XYZABCD-+-+-+-
+echo:PID settings:
+echo:  M301 P20.00 I0.02 D250.00 C100.00 L20
+echo:  M304 P10.00 I0.02 D305.40
+echo:Filament settings: Disabled
+echo:  M200 D1.75
+echo:  M200 D0
 ```
 
 # uploading
