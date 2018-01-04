@@ -78,6 +78,7 @@ See qu-bd-one-up
 * sharebot.it
 * Polar3D
 * ST3DI 3D PRINTER
+* Wanhao i3 Mini
 
 # 3D Scanning 
 * structure.io
