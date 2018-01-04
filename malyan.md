@@ -291,8 +291,9 @@ not tried yet
 http://192.168.1.108/set?cmd={V:} 
 
 # SD card
-The SDCard that came with the printer is formatted FAT16 and has about 128MB.
-I tried with a Transcend Premium 300x 16GB card formatted FAT32. The display shows: "No files"
-I tried to format it exFAT but same result.
-try to resize the SD card: http://www.instructables.com/id/Format-USB-Flash-Drive-to-FATFAT16-not-FAT32/
+* The SDCard that came with the printer is formatted FAT16 and has about 128MB.
+* I tried with a Transcend Premium 300x 16GB card formatted FAT32. The display shows: "No files"
+* I tried to format it exFAT but same result.
+* I tried to resize SD card to 4GB FAT using Windows DISKPART: http://www.instructables.com/id/Format-USB-Flash-Drive-to-FATFAT16-not-FAT32/. Same result.
+* 
 
