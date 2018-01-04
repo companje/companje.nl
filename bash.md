@@ -5,7 +5,7 @@ title: Bash
 # recursively add file extension to all files
 not tried yet:
 ```bash
-find . -type f -exec mv '{}' '{}'.jpg \;
+find . -type f -exec mv '{}' '{}'.html \;
 ```
 
 # loop over filenames from file and execute other shell script
