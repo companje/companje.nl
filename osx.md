@@ -2,6 +2,10 @@
 title: Mac OSX
 ---
 
+# SD Memory Card Formatter for Mac
+<https://www.sdcard.org/downloads/formatter_4/eula_mac/index.html>
+
+
 # MediaKit reports not enough space on device for requested operation
 This worked for me:
 (watch out: it formats the disk! make sure to select the right disk)
