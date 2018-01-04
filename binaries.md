@@ -1,1 +1,6 @@
-binaries.md
+---
+title: Binaries
+---
+
+# links
+<binvis.io>
