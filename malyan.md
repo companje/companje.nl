@@ -290,3 +290,5 @@ Copy lcd.bin to clean formatted microSD card. Move extruder head to trigger both
 not tried yet
 http://192.168.1.108/set?cmd={V:} 
 
+# SD card
+The SDCard that came with the printer is formatted FAT16 and has about 128MB
