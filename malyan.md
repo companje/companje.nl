@@ -295,5 +295,6 @@ http://192.168.1.108/set?cmd={V:}
 * I tried with a Transcend Premium 300x 16GB card formatted FAT32. The display shows: "No files"
 * I tried to format it exFAT but same result.
 * I tried to resize SD card to 4GB FAT using Windows DISKPART: http://www.instructables.com/id/Format-USB-Flash-Drive-to-FATFAT16-not-FAT32/. Same result.
-* 
+* according to Monoprice website: "Note:  If you choose to purchase an SD card, please make sure that it is not labeled HC (High Capacity) as it may not be compatible with the printer. This means that the card must be smaller than 4GB in size.". My 16GB card has the HC label. May be this is a problem even when it's resized to a smaller capacity.
+
 
