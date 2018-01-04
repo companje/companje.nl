@@ -292,5 +292,6 @@ http://192.168.1.108/set?cmd={V:}
 
 # SD card
 The SDCard that came with the printer is formatted FAT16 and has about 128MB.
+I tried with a Transcend Premium 300x 16GB card formatted FAT32. The display shows: "No files"
 
 
