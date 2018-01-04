@@ -297,5 +297,6 @@ http://192.168.1.108/set?cmd={V:}
 * I tried to resize SD card to 4GB FAT using Windows DISKPART: http://www.instructables.com/id/Format-USB-Flash-Drive-to-FATFAT16-not-FAT32/. Same result.
 * according to Monoprice website: "Note:  If you choose to purchase an SD card, please make sure that it is not labeled HC (High Capacity) as it may not be compatible with the printer. This means that the card must be smaller than 4GB in size.". My 16GB card has the HC label. May be this is a problem even when it's resized to a smaller capacity.
 * next attempt: Use Disk Utility to create a diskimage from the original SD card to another (2GB) SD-card. It downsizes this card. They should be identical now but the printer still reports 'No files'.
+* related [reddit thread](https://www.reddit.com/r/MPSelectMiniOwners/comments/7kohmz/this_might_have_been_asked_not_in_sticky_post/)
 
 
