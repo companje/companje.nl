@@ -3,4 +3,5 @@ title: Binaries
 ---
 
 # links
-<binvis.io>
+* https://codisec.com/binary-visualization-explained
+* http://binvis.io
