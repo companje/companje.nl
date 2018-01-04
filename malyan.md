@@ -299,4 +299,6 @@ http://192.168.1.108/set?cmd={V:}
 * next attempt: Use Disk Utility to create a diskimage from the original SD card to another (2GB) SD-card. It downsizes this card. They should be identical now but the printer still reports 'No files'.
 * related [reddit thread](https://www.reddit.com/r/MPSelectMiniOwners/comments/7kohmz/this_might_have_been_asked_not_in_sticky_post/)
 
+# Monoprice Select Mini 3D Printer KB
+<https://docs.google.com/document/d/1HJaLIcUD4oiIUYu6In7Bxf7WxAOiT3n48RvOe5pvSHk/edit#heading=h.55rkuyw7uqlw>
 
