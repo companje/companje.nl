@@ -21,7 +21,8 @@ wget -i ftp://domain.com/folder/*
 
 ==recursive rip a page or site==
 ```bash
-wget -r http://site.url
+wget -r http://site
+wget -r --no-parent http://site
 ```
 
 ==basic auth==
