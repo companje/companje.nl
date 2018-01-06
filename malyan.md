@@ -260,8 +260,8 @@ W   Deletes WiFi SSID and password
 
 # Download from remote server
 ```
-M564 url.gcode   # download file from server
-M565 url.gcode   # download and print
+M564 IPADDRESS/file.gcode   # download file from server
+M565 IPADDRESS/file.gcode   # download and print
 ```
 
 # Testing Doodle3D Sketch on Malyan M200
