@@ -262,6 +262,8 @@ W   Deletes WiFi SSID and password
 ```
 M564 IPADDRESS/file.gcode   # download file from server
 M565 IPADDRESS/file.gcode   # download and print
+test: http://192.168.1.70/set?code=M565%20http://149.210.157.74/small.g
+#(not working, why?)
 ```
 
 # Testing Doodle3D Sketch on Malyan M200
