@@ -304,3 +304,9 @@ http://192.168.1.108/set?cmd={V:}
 # Monoprice Select Mini 3D Printer KB
 <https://docs.google.com/document/d/1HJaLIcUD4oiIUYu6In7Bxf7WxAOiT3n48RvOe5pvSHk/edit#heading=h.55rkuyw7uqlw>
 
+# reverse engineering display
+<https://hackaday.com/2017/06/20/reverse-engineering-the-monoprice-printer/#more-262422>
+UART 500000 bps (500 kilobaud)
+
+
+
