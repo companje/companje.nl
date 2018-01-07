@@ -309,6 +309,7 @@ http://192.168.1.108/set?cmd={V:}
 - UART 500000 bps (500 kilobaud)
 - esptool.py to backup (4MB flash) and flash firmware. press knob on boot. (not tried yet)
 - uses PlatformIO as Arduino IDE
+(todo: https://hackaday.io/project/12696-monoprice-select-mini-electro-mechanical-upgrades)
 
 
 
