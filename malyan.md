@@ -306,7 +306,7 @@ http://192.168.1.108/set?cmd={V:}
 
 # reverse engineering display
 <https://hackaday.com/2017/06/20/reverse-engineering-the-monoprice-printer/#more-262422>
-- UART 500000 bps (500 kilobaud)
+- UART 500kbps
 - esptool.py to backup (4MB flash) and flash firmware. press knob on boot. (not tried yet)
 - uses PlatformIO as Arduino IDE
 (todo: https://hackaday.io/project/12696-monoprice-select-mini-electro-mechanical-upgrades)
