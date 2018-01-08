@@ -1,1 +1,6 @@
-mono.md
+---
+title: Mono
+---
+
+# mono on osx
+brew install mono
