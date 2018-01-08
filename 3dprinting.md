@@ -2,6 +2,9 @@
 title: 3D Printing
 ---
 
+# goed filmpje:
+<https://www.youtube.com/watch?v=bcTzyx35odY>
+
 # Tweakers review cheap 3D printers:
 <https://tweakers.net/reviews/5599/vier-3d-printers-van-grofweg-300-euro-hoe-goed-zijn-de-goedkoopste-printers.html>
 
