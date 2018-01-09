@@ -314,3 +314,6 @@ http://192.168.1.108/set?cmd={V:}
 # ESP touch / Smart Config
 * [Cordova Plugin for EspTouch](https://github.com/xumingxin7398/cordovaEsptouch)
 
+# traffic
+(8 megabytes) / (500 kbps) = 2.13333333 minutes
+
