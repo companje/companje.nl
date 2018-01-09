@@ -309,7 +309,8 @@ http://192.168.1.108/set?cmd={V:}
 - UART 500kbps
 - esptool.py to backup (4MB flash) and flash firmware. press knob on boot. (not tried yet)
 - uses PlatformIO as Arduino IDE
-(todo: https://hackaday.io/project/12696-monoprice-select-mini-electro-mechanical-upgrades)
+- (todo: <https://hackaday.io/project/12696-monoprice-select-mini-electro-mechanical-upgrades>)
+- (notes: <https://gist.github.com/metaquanta/6103fb77116d931e9e4b527088f49ad9>)
 
 # ESP touch / Smart Config
 * [Cordova Plugin for EspTouch](https://github.com/xumingxin7398/cordovaEsptouch)
