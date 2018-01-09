@@ -311,5 +311,6 @@ http://192.168.1.108/set?cmd={V:}
 - uses PlatformIO as Arduino IDE
 (todo: https://hackaday.io/project/12696-monoprice-select-mini-electro-mechanical-upgrades)
 
-
+# ESP touch / Smart Config
+* [Cordova Plugin for EspTouch](https://github.com/xumingxin7398/cordovaEsptouch)
 
