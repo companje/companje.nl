@@ -312,6 +312,7 @@ http://192.168.1.108/set?cmd={V:}
 - (todo: <https://hackaday.io/project/12696-monoprice-select-mini-electro-mechanical-upgrades>)
 - (notes: <https://gist.github.com/metaquanta/6103fb77116d931e9e4b527088f49ad9>)
 - Robin's firmware install via PlatformIO <https://github.com/robin7331/malyan-m200-display-firmware> (This is a WiP. It's not yet ready to upload to your printer!)
+- Esptool.py: https://github.com/espressif/esptool
 
 # ESP touch / Smart Config
 * [Cordova Plugin for EspTouch](https://github.com/xumingxin7398/cordovaEsptouch)
