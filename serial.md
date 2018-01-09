@@ -14,4 +14,4 @@ title: Serial communication
 # Tools
 * overview: <http://www.rau-deaver.org/MacTerminals.html>
 * SerialTools <https://itunes.apple.com/us/app/serialtools/id611021963?mt=8> for osx
-* <http://www.hhdsoftware.com/dispatch/fspm/download/serial-monitor|Device Monitoring Studio> (Windows, werkt ook in Parallels op OSX) 2wk trial daarna +/-$50
+* <http://www.hhdsoftware.com/dispatch/fspm/download/serial-monitor> Device Monitoring Studio (Windows, werkt ook in Parallels op OSX) 2wk trial daarna +/-$50
