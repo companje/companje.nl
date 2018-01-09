@@ -10,3 +10,6 @@ mcs hello.cs
 mono hello.exe
 ```
 
+# Xamarin api docs
+https://developer.xamarin.com/api
+
