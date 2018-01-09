@@ -5,8 +5,8 @@ title: OpenWrt
 # TP-Link MR-3020 v3
 * The new V3 version of the TP-Link MR-3020 has a different chipset than the previous v1.9. It has a MediaTek MT7628 SoC with MIPS architecture and probably runs a fork of OpenWrt when shipped. 
 * There are 2 testpins close to the processor which are the Serial pins. Serial bootlog at 115200bps: <https://gist.github.com/companje/f636daaf57a90a3436f1749885269081>
-* [MT7628 Datasheet]
-<img src="img/IMG_9547.jpg" style="width: 400px;"/>
+* [MT7628 Datasheet](http://vonger.cn/upload/MT7628_Full.pdf)
+* <img src="img/IMG_9547.jpg" style="width: 400px;"/>
 
 # backup script for saving settings and home folder in failsafe mode
 1. start the wifibox in failsafe mode
