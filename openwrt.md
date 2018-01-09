@@ -4,6 +4,7 @@ title: OpenWrt
 
 # TP-Link MR-3020 v3
 The new V3 version of the MR-3020 has a different chipset. It still runs MIPS and probably a fork of OpenWrt. There are 2 testpins close to the processor which are the Serial pins.
+Serial bootlog at 115200bps: <https://gist.github.com/companje/f636daaf57a90a3436f1749885269081>
 
 
 # backup script for saving settings and home folder in failsafe mode
