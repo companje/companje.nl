@@ -8,7 +8,6 @@ title: OpenWrt
 * [MT7628 Datasheet](file:///Users/rick/Downloads/MT7628-MediaTek.pdf)
 <img src="img/IMG_9547.jpg" style="width: 400px;"/>
 
-
 # backup script for saving settings and home folder in failsafe mode
 1. start the wifibox in failsafe mode
 2. set your local IP to 192.168.1.2
