@@ -311,7 +311,7 @@ http://192.168.1.108/set?cmd={V:}
 - uses PlatformIO as Arduino IDE
 - (todo: <https://hackaday.io/project/12696-monoprice-select-mini-electro-mechanical-upgrades>)
 - (notes: <https://gist.github.com/metaquanta/6103fb77116d931e9e4b527088f49ad9>)
-- <https://github.com/robin7331/malyan-m200-display-firmware>
+- Robin's firmware install via PlatformIO <https://github.com/robin7331/malyan-m200-display-firmware>
 
 # ESP touch / Smart Config
 * [Cordova Plugin for EspTouch](https://github.com/xumingxin7398/cordovaEsptouch)
