@@ -320,3 +320,7 @@ http://192.168.1.108/set?cmd={V:}
 # traffic
 (8 megabytes) / (500 kbps) = 2.13333333 minutes
 
+# forget wifi
+```
+http://10.0.0.140/set?cmd={W:}
+```
