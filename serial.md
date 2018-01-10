@@ -15,3 +15,4 @@ title: Serial communication
 * overview: <http://www.rau-deaver.org/MacTerminals.html>
 * SerialTools <https://itunes.apple.com/us/app/serialtools/id611021963?mt=8> for osx
 * <http://www.hhdsoftware.com/dispatch/fspm/download/serial-monitor> Device Monitoring Studio (Windows, werkt ook in Parallels op OSX) 2wk trial daarna +/-$50
+* Serial for Mac <https://www.decisivetactics.com/products/serial/> 7 days free, then $29.99. Use custom speeds like 500000 bps with 7 databits.
