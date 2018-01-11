@@ -333,3 +333,5 @@ sudo dd if=~/printer.img of=/dev/disk3
 http://10.0.0.140/set?cmd={W:}
 ```
 
+# auto print
+
