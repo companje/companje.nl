@@ -305,7 +305,9 @@ http://192.168.1.108/set?cmd={V:}
 sudo dd if=/dev/disk3 of=~/printer.img
 ```
 restore:
+```bash
 sudo dd if=~/printer.img of=/dev/disk3
+```
 
 # Monoprice Select Mini 3D Printer KB
 <https://docs.google.com/document/d/1HJaLIcUD4oiIUYu6In7Bxf7WxAOiT3n48RvOe5pvSHk/edit#heading=h.55rkuyw7uqlw>
