@@ -302,7 +302,10 @@ http://192.168.1.108/set?cmd={V:}
 * related [reddit thread](https://www.reddit.com/r/MPSelectMiniOwners/comments/7kohmz/this_might_have_been_asked_not_in_sticky_post/)
 * backup sd card:
 ```bash
-
+sudo dd if=/dev/disk3 of=~/printer.img
+```
+restore:
+sudo dd if=~/printer.img of=/dev/disk3
 
 # Monoprice Select Mini 3D Printer KB
 <https://docs.google.com/document/d/1HJaLIcUD4oiIUYu6In7Bxf7WxAOiT3n48RvOe5pvSHk/edit#heading=h.55rkuyw7uqlw>
