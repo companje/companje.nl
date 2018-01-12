@@ -266,6 +266,8 @@ M564 IPADDRESS/file.gcode   # download file from server
 M565 IPADDRESS/file.gcode   # download and print
 not working test: http://192.168.1.70/set?code=M565%20http://149.210.157.74/small.g
 not working test: http://192.168.1.70/set?code=M565%20/149.210.157.74/small.g
+I received a new firmware version (v158.2) from Malyan where this problem is solved :
+Now this works: `http://192.168.1.70/set?code=M564%20149.210.157.74/vaasje.g`
 ```
 
 # Testing Doodle3D Sketch on Malyan M200
