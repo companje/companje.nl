@@ -330,6 +330,9 @@ sudo dd if=~/printer.img of=/dev/disk3
 # traffic
 (8 megabytes) / (500 kbps) = 2.13333333 minutes
 
+(8 MB) / (20 (KB / s)) = 6.66666667 minutes
+
+
 # forget wifi
 ```
 http://10.0.0.140/set?cmd={W:}
