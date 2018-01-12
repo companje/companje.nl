@@ -196,6 +196,10 @@ G1 X45.818 Y42.600 E0.35050
 G1 X46.870 Y41.930 E0.50606
 ;...
 ```
+or:
+```
+(M109 S195\nG21\nG90\nM82\nM107\nG28 X0 Y0\nG28 Z0\nG1 Z15.0 F6000\nG92 E0\nG1 F200 E3\nG92 E0\nG1 F6000\n)
+```
 
 # end gcode for the demo print 'cat.gcode' on the SD card
 ```gcode
