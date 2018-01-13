@@ -48,6 +48,6 @@ title: R
 > a <- 1:10
 > a
 [1]  1  2  3  4  5  6  7  8  9 10
-
-
 ```
+[read more](http://www.sr.bham.ac.uk/~ajrs/R/r-getting_started.html)
+
