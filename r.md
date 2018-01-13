@@ -52,6 +52,13 @@ title: R
 [read more](http://www.sr.bham.ac.uk/~ajrs/R/r-getting_started.html)
 
 ```r
-
+> a <- read.table("http://www.sr.bham.ac.uk/~ajrs/R/datasets/file.dat", header=T)
+> a
+  r    x    y
+1 1 4.20 14.2
+2 2 2.40 64.8
+3 3 8.76 63.4
+4 4 5.90 32.2
+5 5 3.40 89.6
 ```
 
