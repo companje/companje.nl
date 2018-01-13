@@ -62,3 +62,12 @@ title: R
 5 5 3.40 89.6
 ```
 
+> id<-196
+> data<-read.table(paste("http://meetjestad.net/data?type=sensors&ids=",id,"&format=csv", sep=""), sep="\t", header=T)
+> data
+      id           timestamp longitude latitude temperature humidity supply
+1    196 2017-11-26 16:44:46   0.00000   0.0000     18.1250  48.6875   3.28
+2    196 2017-11-26 17:19:50   0.00000   0.0000     18.6875  50.3750   3.29
+#...
+
+
