@@ -24,6 +24,8 @@ title: R
 [1] 78.53982
 
 >install.packages("ggplot2")
-
-
 ```
+
+>c(1,2,3)
+[1] 1 2 3
+
