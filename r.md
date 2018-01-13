@@ -35,5 +35,11 @@ title: R
 > length(x)
 [1] 3
 
+# evaluate expression for each element in x:
+> y <- 2*x
+> y
+[1] 2 4 6
+
+
 
 ```
