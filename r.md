@@ -24,8 +24,16 @@ title: R
 [1] 78.53982
 
 >install.packages("ggplot2")
-```
 
->c(1,2,3)
+# vector with 'c'omponents (members)
+>c(1,2,3)  
 [1] 1 2 3
 
+> x <- c(1,2,3)
+> x
+[1] 1 2 3
+> length(x)
+[1] 3
+
+
+```
