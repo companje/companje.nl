@@ -20,6 +20,9 @@ title: R
 >r <- 5
 > r
 [1] 5
+> pi * r^2
+[1] 78.53982
 
+>install.packages("ggplot2")
 
 ```
