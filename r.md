@@ -45,6 +45,7 @@ title: R
 > x*y
 [1]  5 10 15
 
+> demo(graphics)
 
 
 ```
