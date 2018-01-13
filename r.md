@@ -6,6 +6,7 @@ title: R
 * tryr.codeschool.com
 * <http://www.cyclismo.org/tutorial/R/input.html>
 * <http://www.r-tutor.com/r-introduction>
+* <http://www.sr.bham.ac.uk/~ajrs/R/r-getting_started.html>
 
 
 # ggplot2 cheatsheet
