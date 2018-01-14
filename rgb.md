@@ -9,6 +9,8 @@ see also [[pgm]]
 
 ====RGB 565====
 16 bits color
+
+"MEDIASUBTYPE_565 uses five bits for the red and blue components, and six bits for the green component. This format reflects the fact that human vision is most sensitive to the green portions of the visible spectrum."
 * <https://msdn.microsoft.com/en-us/library/windows/desktop/dd390989(v=vs.85).aspx>
 
 decode:
