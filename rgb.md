@@ -9,4 +9,4 @@ see also [[pgm]]
 ====RGB 565====
 16 bits color
 * <https://msdn.microsoft.com/en-us/library/windows/desktop/dd390989(v=vs.85).aspx>
-* 
+
