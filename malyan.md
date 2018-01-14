@@ -349,3 +349,8 @@ http://10.0.0.140/set?cmd={W:}
 M566  Rename cache.gc
 ```
 
+# display
+* might be HX8357 or compatible
+* <https://github.com/Bodmer/TFT_HX8357>
+* 16 bits color aka RGB565
+
