@@ -353,4 +353,4 @@ M566  Rename cache.gc
 * might be HX8357 or compatible
 * <https://github.com/Bodmer/TFT_HX8357>
 * 16 bits color aka RGB565
-
+* 320 x 480
