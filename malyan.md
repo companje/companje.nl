@@ -344,4 +344,8 @@ http://10.0.0.140/set?cmd={W:}
 # auto print
 'auto00.g' should start when holding knob on mainmenu. Not tested yet.
 
-# 
+# rename
+```
+M566  Rename cache.gc
+```
+
