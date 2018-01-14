@@ -4,7 +4,8 @@ title: RGB files
 see also [[pgm]]
 
 ====Analyse RGB file with Processing====
-%gist(a70fe3b13e6269b1238f)%
+* <https://gist.github.com/a70fe3b13e6269b1238f>
+* <https://github.com/companje/RGB-File-Analyzer>
 
 ====RGB 565====
 16 bits color
