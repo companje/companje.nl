@@ -3,7 +3,7 @@ title: Movies
 ---
 
 # TODO======
-* [Warren Buffett How To Turn A $500 Investment Into $400M Dollars - SKIP TO 3:25](https://www.youtube.com/watch?v=kcYPvbOV_Ss) (tip v Nico)
+* [How To Turn A $500 Investment Into $400M Dollars - SKIP TO 3:25](https://www.youtube.com/watch?v=kcYPvbOV_Ss) (tip v Nico)
 * Fargo (tip v Nico)
 * https://www.youtube.com/watch?v=LLRweyZ1KpA (ARKit iOS)
 * https://www.youtube.com/watch?v=BOrg2oc3-rQ
