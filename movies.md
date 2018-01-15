@@ -3,6 +3,7 @@ title: Movies
 ---
 
 # TODO======
+* [3D Printers on Kickstarter - Where are they now?](https://www.youtube.com/watch?v=s9deNcysgts)
 * [How To Turn A $500 Investment Into $400M Dollars](https://www.youtube.com/watch?v=kcYPvbOV_Ss) (SKIP TO 3:25) (tip v Nico)
 * Fargo (tip v Nico)
 * https://www.youtube.com/watch?v=LLRweyZ1KpA (ARKit iOS)
