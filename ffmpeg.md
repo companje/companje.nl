@@ -2,6 +2,11 @@
 title: ffmpeg
 ---
 
+# fade in and out
+```bash
+ffmpeg -i 1.mp4 -y -vf fade=in:0:25,fade=out:375:25 inout.mp4
+```
+
 # convert *.mjpeg to mp4
 ```bash
 #!/bin/bash
