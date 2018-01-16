@@ -2,6 +2,9 @@
 title: ffmpeg
 ---
 
+# image fade in and out to movie
+ffmpeg -loop 1 -i frame.png -frames:v 400 -vcodec mpeg4 -vf fade=in:0:25,fade=out:375:25  -y -q:v 0 output.mp4
+
 # create video with x frames from image
 ```bash
 ffmpeg -loop 1 -i frame.png -vframes 400 -vcodec mpeg4 output.mp4
