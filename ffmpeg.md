@@ -7,6 +7,12 @@ title: ffmpeg
 ffmpeg -i 1.mp4 -y -vf fade=in:0:25,fade=out:375:25 inout.mp4
 ```
 
+# fade two videos and make same framerate
+```bash
+ffmpeg -r 25  -i 1.mp4 -y -vf 'fade=in:0:25,fade=out:375:25' -vcodec mpeg4 -q:v 0 -r 25 1-inout.mp4
+ffmpeg -r 25  -i 2.mp4 -y -vf 'fade=in:0:25,fade=out:375:25' -vcodec mpeg4 -q:v 0 -r 25 2-inout.mp4
+```
+
 # convert *.mjpeg to mp4
 ```bash
 #!/bin/bash
