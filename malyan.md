@@ -222,7 +222,7 @@ G90                         ;absolute positioning
 ```
 
 # Malyan's wiki
-http://www.wiki.malyansys.com/doku.php
+<http://www.wiki.malyansys.com/doku.php>
 
 # Malyan's firmware sourcecode on github
 https://github.com/MalyanSystem
