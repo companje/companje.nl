@@ -357,3 +357,69 @@ M566 newname.gc
 * <https://github.com/Bodmer/TFT_HX8357>
 * 16 bits color ([RGB565](rgb))
 
+# websocket test
+```html
+<form id="frmConnect" action="#" onsubmit="connect(txtIP.value)">
+  <input type="text" placeholder="ip address" id="txtIP" value="10.0.0.109"/>
+  <input type="submit" id="btnConnect" value="Connect"/>
+</form>
+
+<form id="frmSend" action="#" onsubmit="send(txtCmd.value)" hidden>
+  <input type="text" placeholder="command" id="txtCmd"/>
+  <input type="submit" value="Send"/>
+</form>
+
+<textarea cols="60" rows="20" id="txtLog"></textarea>
+
+<script>
+
+var ws;
+
+function connect(ip) {
+  ws = new WebSocket("ws://"+ip+":81");
+  
+  ws.onmessage = function (event) {
+    txtLog.value+="< " + event.data;
+  }
+  
+  ws.onopen = function () {
+    frmConnect.hidden = true;
+    frmSend.hidden = false;
+    txtLog.value += "Connected to " + ip + "\n";
+  }
+}
+
+function send(cmd) {
+  if (ws) ws.send(cmd);
+  txtLog.value += "> " + cmd + "\n";
+  txtCmd.select();
+}
+
+</script>
+```
+
+#  Access-Control-Allow-Origin - test script
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Malyan M200 CORS problem</title>
+</head>
+<body>
+  <input type="text" id="ip" placeholder="ip address">
+  <button onclick="inquiry(ip.value)">Inquiry</button>
+  
+  <script>
+  function inquiry(ip) {
+    var xhr = new XMLHttpRequest();
+    xhr.onload = function() { 
+      console.log(xhr.response)
+    };
+    xhr.open('GET', 'http://' + ip + '/inquiry');
+    xhr.send();
+  };
+  </script>
+
+</body>
+</html>
+```
