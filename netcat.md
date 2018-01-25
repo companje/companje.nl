@@ -2,22 +2,23 @@
 title: netcat
 ---
 
-==upload file with curl to netcat server==
-  nc -l localhost 8000
-  curl -F "text=default" -F "file1=@a.html" -F "file1=@a.txt" localhost:8000
-
-
-==to receive data from Globe4D driver==
+# upload file with curl to netcat server
+```bash
+nc -l localhost 8000
+curl -F "text=default" -F "file1=@a.html" -F "file1=@a.txt" localhost:8000
 ```
+
+# to receive data from Globe4D driver
+```bash
 nc -lu -p 12345
 ```
 
-==netcat for windows==
+# netcat for windows
 part of nmap project (nmap.org).
 Same syntax: `ncat -lu 192.168.2.123 8888`
 
 
-==read line from netcat==
+# read line from netcat
 ```bash
 while:
 do
@@ -41,15 +42,15 @@ do
 done
 ```
 
-==tips==
+# tips
 * http://www.homecomputerlab.com/netcat
 
-==quit netcat client after receiving certain string==
+# quit netcat client after receiving certain string
   nc localhost 9000 | grep -q "Hoi"
 (somehow the word 'Hoi' needs to be followed by two linebreaks)
 
 in a while loop:
-```
+```bash
 while :
 do
   echo listening...
@@ -60,19 +61,19 @@ do
 done
 ```
 
-==listen to port==
-```
+# listen to port
+```bash
 nc -lu -p 7777
 ```
 
-```
+```bash
 nc -lu 192.168.2.123 8888
 ```
 
-==send UDP==
-```
+# send UDP
+```bash
 echo "hello" > /dev/udp/10.87.24.174/8888
 ```
-```
+```bash
 ls > /dev/udp/10.87.24.174/8888
 ```
