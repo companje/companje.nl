@@ -211,10 +211,12 @@ gobjdump
 * Singlemizer (not tested yet)
 
 # keyboard repeat rate / speed
-```bash
+<del>```bash
 defaults write NSGlobalDomain KeyRepeat -int 0
 ```
 try 0, 1 or 2: the lower the faster
+</del>
+* <https://support.apple.com/kb/PH25373?locale=en_US&viewlocale=en_US>
 
 # unpack a .pkg file
 * https://www.macupdate.com/app/mac/16357/unpkg
