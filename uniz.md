@@ -2,7 +2,10 @@
 title: Uniz 3D Slash Printer
 ---
 
-# Unofficial guide (essential!)
+# Official manual
+https://www.robotshop.com/media/files/pdf2/manual.pdf
+
+# Unofficial guide
 <https://www.facebook.com/notes/slash-users/unofficial-guide-to-the-operation-of-uniz-slash-by-users-for-users/1499082030136533/>
 
 # Software
