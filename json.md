@@ -2,9 +2,9 @@
 title: JSON
 ---
 
-# format json on osx terminal
-```bash
-brew install js
+# jq
+```
+brew install jq
 ```
 
 # online json editor
