@@ -15,14 +15,14 @@ element.click();
 document.body.removeChild(element);
 ```
 
- Chart.js =====
+# Chart.js =====
 Simple yet flexible JavaScript charting for designers & developers
 * http://www.chartjs.org/
 
- GPU Accelerated JavaScript =====
+# GPU Accelerated JavaScript =====
 *http://gpu.rocks/
 
-Parallel processing====
+#Parallel processing====
 Interessante technieken voor als we met de app meer parallel willen gaan doen, zoals die floodfill:
 http://www.htmlgoodies.com/html5/client/using-web-workers-to-improve-performance-of-image-manipulation.html
 https://developer.mozilla.org/en-US/docs/Web/API/Worker/terminate
@@ -30,7 +30,7 @@ De toekomst ziet er nog beter uit:
 https://hacks.mozilla.org/2016/01/webgl-off-the-main-thread/
 https://hacks.mozilla.org/2016/05/a-taste-of-javascripts-new-parallel-primitives/
 
-Local Storage=====
+#Local Storage=====
 Klein browser storage onderzoekje afgerond, conclusies en links:
 
 ​*Local storage*​: Limited from 2 MB (android browser) to 10 MB (besides opera there is no option to expand this). There is no nice way to check the available space (left). Bad performance & synchronous. 
@@ -50,7 +50,7 @@ http://caniuse.com/#search=indexeddb
 https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Browser_storage_limits_and_eviction_criteria
 https://developers.google.com/web/updates/2011/11/Quota-Management-API-Fast-Facts
 
-reducers=====
+#reducers=====
 * http://devdocs.io/javascript/global_objects/array/reduce
 <code javascript>
 [0, 1, 2, 3, 4].reduce(function(previousValue, currentValue, index, array) {
@@ -58,10 +58,10 @@ reducers=====
 });
 ```
 
-immutable=====
+#immutable=====
 * immutable.js
 
-Printable bulletlist=====
+#Printable bulletlist=====
 <code javascript>
 <div id="data">
 # Section 1
@@ -147,22 +147,22 @@ Printable bulletlist=====
 
 </script>
 ```
-React.js=====
+#React.js=====
 see [[reactjs]]
 
-Peter's presentation======
+#Peter's presentation======
 * [[https://docs.google.com/presentation/d/1AqDrZH5RyiYpTeoCbevKUHNh_YaPX05vOjLBL8FFv8E/edit#slide=id.p|Peter's presentation]]
 
-Babel playground=====
+#Babel playground=====
 https://babeljs.io/repl/
 
-blogpost React on ES6 plus=====
+#blogpost React on ES6 plus=====
 http://babeljs.io/blog/2015/06/07/react-on-es6-plus/
 
-ES6 / ES7 presentation video=====
+#ES6 / ES7 presentation video=====
 https://www.youtube.com/watch?v=6AytbSdWBKg
 
-Javascript in 2015=====
+#Javascript in 2015=====
 https://www.youtube.com/watch?v=iukBMY4apvI
 * http://voxel.js
 * [[http://curran.github.io/screencasts/jsModulesAndBuildTools/examples/viewer|voorbeelden van formats en tools]]
@@ -196,7 +196,7 @@ function removeShortPaths(minLength,minPoints) {
 ====objectInfo====
   console.log(JSON.stringify(result, null, 4));
 
-future of javascript (ES6)=====
+#future of javascript (ES6)=====
 talk at FOSDEM 15: Hannes Verschore (http://H4writer.com)
 
 ====compilers====
@@ -340,7 +340,7 @@ img.then(function() {
 //Promise.all...... ?
 ```
 
-inheritance with prototypes=====
+#inheritance with prototypes=====
 <code javascript>
 var Animal = function(name) {
   this.name= name;
@@ -361,15 +361,15 @@ var Dog = function(name,color) {
   this.color = color; //where to declare color?
 }
 ```
- ECMAScript 6 =====
+# ECMAScript 6 =====
 * http://stackoverflow.com/questions/6506519/ecmascriptharmony-es6-to-javascript-compiler
 * http://peter.michaux.ca/articles/javascript-is-dead-long-live-javascript
 * https://github.com/google/traceur-compiler/wiki/LanguageFeatures
 
-FileReader=====
+#FileReader=====
 * [[https://developer.mozilla.org/en-US/docs/Web/API/FileReader.readAsDataURL|readAsDataURL!!!]]
 
-libraries & frameworks=====
+#libraries & frameworks=====
 * [[http://trackingjs.com|tracking.js, video processing/tracking library]]
 * [[https://code.google.com/p/dat-gui/|dat.GUI]] A lightweight graphical user interface for changing variables in JavaScript.
 * [[http://somajs.github.io/|soma.js]]
@@ -381,33 +381,33 @@ libraries & frameworks=====
 * [[https://raw.githubusercontent.com/mrdoob/three.js/master/examples/js/renderers/CSS3DRenderer.js|CSS3DRenderer.js for three.js]]
 * [[https://chili-research.epfl.ch/AR.js/chilitags.js/|chillitags]] AR library
 
-yeoman=====
+#yeoman=====
 Yeoman helps you start new projects, prescribing best practices and tools to help you stay productive.
 * http://yeoman.io/
 
- online IDEs =====
+# online IDEs =====
 * http://codepen.io/
 * http://sketchpad.cc/
 * http://www.openprocessing.org/
 * http://jsfiddle.net/
 
- creative coding framework =====
+# creative coding framework =====
 * http://soulwire.github.io/sketch.js/
 
-webworkers=====
+#webworkers=====
 * http://www.w3schools.com/html/html5_webworkers.asp
 
-EcmaScript 6=====
+#EcmaScript 6=====
 Zeer interessant praatje over de toekomst van Javascript, de nieuwe versie: EcmaScript 6. Dingen als generators, arrow functions, template strings. Veel hiervan is nu al bruikbaar door compilers als Traceur.  
 https://www.youtube.com/watch?v=mPq5S27qWW8
 
-Over ES6 compilers===== 
+#Over ES6 compilers===== 
 * http://stackoverflow.com/questions/6506519/ecmascriptharmony-es6-to-javascript-compiler
 * https://github.com/google/traceur-compiler
-safely access nested properties in object=====
+#safely access nested properties in object=====
 *http://stackoverflow.com/questions/18178406/access-javascript-nested-objects-safely
 
-assertType function=====
+#assertType function=====
 <code javascript>
 function assertType(variable,typename) {
   if (typeof variable ===== typename) return true;
@@ -426,7 +426,7 @@ function assert(a,b) {
 ```
 
 
-Scaling down an image to fit in a element of a certain size=====
+#Scaling down an image to fit in a element of a certain size=====
 <code javascript>
   var iw = img[0].naturalWidth;
   var ih = img[0].naturalHeight;
@@ -448,30 +448,30 @@ Scaling down an image to fit in a element of a certain size=====
   img.height(ih*scale);
 ```
 
-lectures=====
+#lectures=====
 * https://www.destroyallsoftware.com/talks
 
-JavaScript closure inside loops – simple practical example=====
+#JavaScript closure inside loops – simple practical example=====
 * http://stackoverflow.com/questions/750486/javascript-closure-inside-loops-simple-practical-example
 
 
-Access-Control-Allow-Origin=====
+#Access-Control-Allow-Origin=====
 ```
 header("Access-Control-Allow-Origin: *");
 ```
 
-more=====
+#more=====
 * http://doodle3d.com/help/javascript-optimization
 * http://msdn.microsoft.com/en-us/scriptjunkie/ee819093
 * http://raphaeljs.com/
 * paperjs
 
-classes (the old way)=====
+#classes (the old way)=====
 http://doodle3d.com/help/simple-class-pattern
 En de pagina's in het algemeen onder:
 http://doodle3d.com/help/javascript
 
-disable dragging=====
+#disable dragging=====
 <code javascript>
 function disableDragging() {
   $(document).bind("dragstart", function(event) {
@@ -481,7 +481,7 @@ function disableDragging() {
 }
 ```
 
-getParameterByName=====
+#getParameterByName=====
 <code javascript>
 function getParameterByName(name) {
     var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
