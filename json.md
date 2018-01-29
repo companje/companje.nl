@@ -3,7 +3,9 @@ title: JSON
 ---
 
 # format json on osx terminal
-`brew install js`
+```bash
+brew install js
+```
 
 # online json editor
 <http://www.jsoneditoronline.org/>
