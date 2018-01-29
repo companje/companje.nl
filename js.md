@@ -3,6 +3,18 @@ title: Javascript
 layout: default
 ---
 
+# Download
+```js
+//download
+var element = document.createElement('a');
+element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+element.setAttribute('download', "payments.csv");
+element.style.display = 'none';
+document.body.appendChild(element);
+element.click();
+document.body.removeChild(element);
+```
+
 ===== Chart.js =====
 Simple yet flexible JavaScript charting for designers & developers
 * http://www.chartjs.org/
