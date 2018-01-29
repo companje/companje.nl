@@ -22,7 +22,7 @@ Simple yet flexible JavaScript charting for designers & developers
 # GPU Accelerated JavaScript 
 *http://gpu.rocks/
 
-# Parallel processing====
+# Parallel processing
 Interessante technieken voor als we met de app meer parallel willen gaan doen, zoals die floodfill:
 http://www.htmlgoodies.com/html5/client/using-web-workers-to-improve-performance-of-image-manipulation.html
 https://developer.mozilla.org/en-US/docs/Web/API/Worker/terminate
@@ -172,12 +172,12 @@ https://www.youtube.com/watch?v=iukBMY4apvI
 * atom
 * `jspm install npm:voxel-demo`
 
-====rendering====
+# rendering
 * http://www.graphycalc.com/
 * http://ego.deanmcnamee.com/pre3d/
 * http://canonical.org/~kragen/sw/torus.js
 
-====Array filter
+# Array filter
 <code javascript>
 function removeShortPaths(minLength,minPoints) {
   if (!minLength) minLength = 10;
@@ -190,20 +190,20 @@ function removeShortPaths(minLength,minPoints) {
 }
 ```
 
-====compile c code to javascript
+# compile c code to javascript
 * http://kripken.github.io/emscripten-site/
 
-====objectInfo====
+# objectInfo
   console.log(JSON.stringify(result, null, 4));
 
 # future of javascript (ES6)
 talk at FOSDEM 15: Hannes Verschore (http://H4writer.com)
 
-====compilers====
+# compilers
 * traceur
 * 6to5
 
-===generators====
+===generators
 generate a sequence, one item at a time. a function that can be paused in the middle
 <code javascript>
 function *foo() {
@@ -247,7 +247,7 @@ function *fibonacci() {
 }
 ```
 
-====classes====
+# classes
 (with inheritance)
 <code javascript>
 class Animal() {
@@ -264,7 +264,7 @@ class Animal() {
 .......
 ```
 
-====arrow function====
+# arrow function
 (alternative for 'self' and/or 'bind')
 <code javascript>function Archer() {
 this.arrows = 100;
@@ -274,7 +274,7 @@ this.arrows--;
 .....
 ```
 
-====destructuring====
+# destructuring
 lists:
 <code javascript>
 var [a,b] = [1,2];
@@ -301,7 +301,7 @@ var [a] = []
 a===undefined
 ```
 
-====modules====
+# modules
 ///lib.js
 var privateProperty =1 ;
 export var publicProperty = 2
@@ -321,7 +321,7 @@ module loader:
 System.import('some_module')
 //returns a promise? that loads the module async
 
-====promises====
+# promises
 <code javascript>
 function executor(resolve, reject) {
   ////
