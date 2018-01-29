@@ -1,20 +1,20 @@
 ---
-title: e XCode
+title: XCode
 ---
 
-=====see feedback from build phases=====
+# see feedback from build phases
 Cmd+8  
 filter by time: left bottom clock icon
 
-=====warnings=====
+# warnings
 To generate warnings in XCode when a non-void function lacks to return a value enable the return type warning:
 ```
 -Wreturn-type
 ```
 
-=====zie ook======
+# zie ook
 * [[osx]]
 * [[ios]]
 
-=====shortcut keys=====
+# shortcut keys
 `⇧ + ⌘ + O`  (letter 'O'): Open Quickly
