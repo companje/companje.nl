@@ -15,7 +15,7 @@ element.click();
 document.body.removeChild(element);
 ```
 
-#  Chart.js =====
+# Chart.js =====
 Simple yet flexible JavaScript charting for designers & developers
 * http://www.chartjs.org/
 
