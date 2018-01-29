@@ -19,7 +19,7 @@ document.body.removeChild(element);
 Simple yet flexible JavaScript charting for designers & developers
 * http://www.chartjs.org/
 
-#  GPU Accelerated JavaScript =====
+# GPU Accelerated JavaScript =====
 *http://gpu.rocks/
 
 # Parallel processing====
