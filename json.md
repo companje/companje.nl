@@ -7,9 +7,8 @@ title: JSON
 
 # online json editor
 http://www.jsoneditoronline.org/
-
-<code javascript>
-    var url = "http://192.168.0.165/?jsoncallback=?";
+```js
+var url = "http://192.168.0.165/?jsoncallback=?";
 ```
 
 # json formatter
