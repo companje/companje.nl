@@ -5,7 +5,6 @@ title: JSON
 # brutal javascript convert json to csv
 ```js 
 $(document).ready(function () {
-
   var csv = [];
   csv.push(["date","time","status","country","amount","method","username","name","mollie_customer"]);
 
