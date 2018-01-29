@@ -18,4 +18,4 @@ var url = "http://192.168.0.165/?jsoncallback=?";
 * http://jsonlint.com/
 
 # online yaml to json converter with colors
-*http://nodeca.github.io/js-yaml/
+* <http://nodeca.github.io/js-yaml/
