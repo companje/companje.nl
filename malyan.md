@@ -425,7 +425,7 @@ function send(cmd) {
 ```
 
 # raw communication codes
-commands and responses are send both ways at 500kbps with 7 databits
+commands and responses are send both ways at 500kbps (gcode with 8 databits, control commands with 7 databits?)
 gcode data is uploaded with 8 databits.
 
 {P:X} cancel
