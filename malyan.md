@@ -425,6 +425,9 @@ function send(cmd) {
 ```
 
 # raw communication codes
+commands and responses are send both ways at 500kbps with 7 databits
+gcode data is uploaded with 8 databits.
+
 {P:X} cancel
 {C:T0000} set nozzle temp
 {C:P000} set bed temp
