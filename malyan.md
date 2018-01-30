@@ -456,4 +456,6 @@ gcode data is uploaded with 8 databits.
 {TQ:025P} progress
 {TT:000001} ???
 
+response when uploading looks like 6bits data:
+{h01}{h01}{h01}{h01}{h01}{h01}{h01}{h01}{h01}{h01}{h01}{h01}{h01};{h13}{h19}{h13}:{h1B}{h07}{h1D}0{h12}{h14}{h05}{h04}=
 
