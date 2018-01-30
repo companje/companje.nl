@@ -428,7 +428,7 @@ function send(cmd) {
 {P:X} cancel
 {C:T0000} nozzle temp
 {C:P000} bed temp
-{S:I} sd init?
+{S:I} inquiry? / sd init?
 {S:L} sd list?
 
 {FILE:.gcode}
