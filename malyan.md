@@ -252,8 +252,8 @@ P:P Pause print
 P:R Resume print
 P:M Print cache.gc
 
-C T0000 Set T0 temperature
-C P000  Set hotbed temperature
+C:T0000 Set T0 temperature
+C:P000  Set hotbed temperature
 
 e:e Return printing status
 e:M Return mac address
@@ -423,3 +423,11 @@ function send(cmd) {
 </body>
 </html>
 ```
+
+# command codes
+{P:X} cancel
+{C:T0000} nozzle temp
+{C:P000} bed temp
+{S:I} sd init?
+{S:L} sd list?
+
