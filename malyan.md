@@ -445,3 +445,11 @@ function send(cmd) {
 {FILE:Doodle3D.gcode}
 {SYS:OK}
 
+{TQ:025P
+{TT:000001
+{T0:018/000
+{T1:000/000
+{TP:017/000
+{TQ:025P
+{TT:000001
+
