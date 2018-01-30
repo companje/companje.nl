@@ -424,7 +424,7 @@ function send(cmd) {
 </html>
 ```
 
-# raw communicatio codes
+# raw communication codes
 {P:X} cancel
 {C:T0000} nozzle temp
 {C:P000} bed temp
