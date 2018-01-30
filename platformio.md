@@ -4,7 +4,7 @@ title: PlatformIO
 
 # mkspiffs tool location
 ```
-~.platformio/packages/tool-mkspiffs/mkspiffs
+~/.platformio/packages/tool-mkspiffs/mkspiffs
 ```
 
 # A Better Arduino IDE - Getting Started with PlatformIO
