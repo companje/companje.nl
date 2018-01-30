@@ -431,3 +431,17 @@ function send(cmd) {
 {S:I} sd init?
 {S:L} sd list?
 
+{FILE:.gcode}
+{FILE:test.gcode}
+{FILE:cache.gc}
+{FILE:doodle.gcode}
+{FILE:log.txt}
+{FILE:ster-min-ster.g}
+{FILE:G28}
+{FILE:vaas-dun.g}
+{FILE:vaas-groot.gcode}
+{FILE:MM_support test.gcode}
+{DIR:wifi}
+{FILE:Doodle3D.gcode}
+{SYS:OK}
+
