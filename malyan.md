@@ -426,10 +426,13 @@ function send(cmd) {
 
 # raw communication codes
 {P:X} cancel
-{C:T0000} nozzle temp
-{C:P000} bed temp
+{C:T0000} set nozzle temp
+{C:P000} set bed temp
 {S:I} inquiry? / sd init?
 {S:L} sd list?
+
+{B:0} ?
+
 
 {FILE:.gcode}
 {FILE:test.gcode}
