@@ -458,15 +458,17 @@ response when uploading looks like 6bits data:
 
 # 'bricked' after updating motion controller:
 Fix on OSX:
+```
 diskutil list
 diskutil info disk#
 sudo diskutil unmount /dev/disk#
 sudo newfs_msdos -F 32 -v 3DPRINTER -b 512 /dev/disk#
 diskutil mount disk#
 diskutil info disk#
-
-
-Reformat the card with windows. Make sure you set it to 512byte sectors and fat32 then try again.
+```
+First my File System was MS-DOS FAT16 and Allocation Block Size was 16384 Bytes
+Now it is MS-DOS FAT32 with Allocation Block Size 512 Bytes.
+Thanks to https://mpselectmini.com
 
 
 
