@@ -455,12 +455,3 @@ gcode data is uploaded with 8 databits.
 
 response when uploading looks like 6bits data:
 {h01}{h01}{h01}{h01}{h01}{h01}{h01}{h01}{h01}{h01}{h01}{h01}{h01};{h13}{h19}{h13}:{h1B}{h07}{h1D}0{h12}{h14}{h05}{h04}=
-
-# 'bricked' after updating motion controller
-
-
-Reformat the card with windows. Make sure you set it to 512byte sectors and fat32 then try again.
-
-
-
-
