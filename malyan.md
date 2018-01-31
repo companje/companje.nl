@@ -292,11 +292,8 @@ Header set Access-Control-Allow-Headers "Origin, X-Requested-With, Content-Type,
 <http://wiki.malyansys.com/doku.php>
 Update method:
 
-Mothion conroller
+Motion conroller
 Copy update.bin to clean formatted microSD card. Create empty file named “fcupdate.flg”. Insert card and power on printer to update.
-
-UI conroller
-Copy lcd.bin to clean formatted microSD card. Move extruder head to trigger both X&Y. Power on printer with holding button of wifi module(center button for M200), if extruder fan start to turn indicate update started. Please wait 2 minute for update then fan will stop.
 
 # Version
 not tried yet
