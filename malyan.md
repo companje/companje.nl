@@ -468,7 +468,7 @@ diskutil info disk#
 ```
 First my File System was MS-DOS FAT16 and Allocation Block Size was 16384 Bytes
 Now it is MS-DOS FAT32 with Allocation Block Size 512 Bytes.
-Thanks to https://mpselectmini.com
+Thanks to MatthewUpp.
 
 
 
