@@ -457,7 +457,7 @@ response when uploading looks like 6bits data:
 {h01}{h01}{h01}{h01}{h01}{h01}{h01}{h01}{h01}{h01}{h01}{h01}{h01};{h13}{h19}{h13}:{h1B}{h07}{h1D}0{h12}{h14}{h05}{h04}=
 
 # 'bricked' after updating motion controller:
-Fix on OSX:
+Fix on OSX (replace # by correct value):
 ```
 diskutil list
 diskutil info disk#
