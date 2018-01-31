@@ -1,6 +1,8 @@
 ---
 title: MQTT 
 ---
+"a publish-subscribe-based messaging protocol"
+
 
 * <https://test.mosquitto.org/>
 * <https://simplifiedthinking.co.uk/2015/10/03/install-mqtt-server/>
