@@ -9,7 +9,7 @@ mysql -u root -p
 
 # export table to CSV file
 ```sql
-  SELECT * FROM uren INTO OUTFILE '~/Documents/backup/rick.csv' FIELDS ENCLOSED BY '"' TERMINATED BY ';' ESCAPED BY '"' LINES TERMINATED BY '
+SELECT * FROM uren INTO OUTFILE '~/Documents/backup/rick.csv' FIELDS ENCLOSED BY '"' TERMINATED BY ';' ESCAPED BY '"' LINES TERMINATED BY '
 ';
 ```
 
@@ -27,15 +27,17 @@ or
   mysql -u DB_USER -p -h localhost DB_NAME < /tmp/dump.sql
 ```
 
-# MySQL data files on CentOS=
+# MySQL data files on CentOS
+```bash
+/var/lib/mysql/
+
+# Location of MySQL files on Mac OSX installed with Homebrew=
+/usr/local/var/mysql
+/usr/local/Cellar/mysql/5.7.12
 ```
-  /var/lib/mysql/
-  
-  # Location of MySQL files on Mac OSX installed with Homebrew=
-  /usr/local/var/mysql
-  /usr/local/Cellar/mysql/5.7.12
-  # MariaDB=
-```
+
+# MariaDB
+
 installed with `brew install mariadb`
 
 To connect:
