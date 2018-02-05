@@ -1,5 +1,5 @@
 ---
-title: = MySQL =
+title: MySQL
 ---
 
 # ERROR 1045 (28000): Access denied for user...
