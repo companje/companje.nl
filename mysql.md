@@ -30,8 +30,10 @@ mysql -u DB_USER -p -h localhost DB_NAME < /tmp/dump.sql
 # MySQL data files on CentOS
 ```bash
 /var/lib/mysql/
+```
 
 # Location of MySQL files on Mac OSX installed with Homebrew
+```
 /usr/local/var/mysql
 /usr/local/Cellar/mysql/5.7.12
 ```
