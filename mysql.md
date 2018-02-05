@@ -28,7 +28,7 @@ mysql -u DB_USER -p -h localhost DB_NAME < /tmp/dump.sql
 ```
 
 # MySQL data files on CentOS
-```bash
+```
 /var/lib/mysql/
 ```
 
