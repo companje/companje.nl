@@ -24,7 +24,7 @@ or
 
 # Import SQL file 
 ```bash
-  mysql -u DB_USER -p -h localhost DB_NAME < /tmp/dump.sql
+mysql -u DB_USER -p -h localhost DB_NAME < /tmp/dump.sql
 ```
 
 # MySQL data files on CentOS
