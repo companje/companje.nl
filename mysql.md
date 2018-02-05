@@ -118,7 +118,6 @@ show columns from uren;
 ```bash
 mysql.server start
 ```
-
 * ERROR! The server quit without updating PID file (/usr/local/var/mysql/rick.local.pid).''
 
 # install mysql using macports=
