@@ -2,7 +2,7 @@
 title: = MySQL =
 ---
 
-# ERROR 1045 (28000): Access denied for user...=
+# ERROR 1045 (28000): Access denied for user...
 ```bash
 mysql -u root -p
 ```
