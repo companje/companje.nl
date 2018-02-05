@@ -2,7 +2,7 @@
 title: Movies
 ---
 
-# TODO======
+# TODO
 * [Facebook Ads Beginner to EXPERT in One Video](https://youtu.be/iR6ATUw0BIU)
 * https://www.youtube.com/watch?v=zKvl-emwt9Y&feature=youtu.be (tinkercad)
 * end of the fucking world - serie netfix tip v sylvain/nico
@@ -23,96 +23,96 @@ title: Movies
 * life (tip v Jeroen)
 * DONE: hotfuzz (tip v Casper)
 
-# Find my phone==
+# Find my phone
 * DONE http://thenextweb.com/mobile/2016/12/16/film-student-tricked-thief-lifting-phone-spied-weeks/
 
-# tip v radio==
+# tip v radio
 * The Circle (11 May 2017)
 
-# tip v Jeroen en Peter==
+# tip v Jeroen en Peter
 * DONE: Arrival
 
-# tip v David==
+# tip v David
 * [[https://www.youtube.com/watch?v=SGJ5cZnoodY|Shenzhen: The Silicon Valley of Hardware (Full Documentary) | Future Cities | WIRED]]
-# tip van Peter==
+# tip van Peter
 * dr Strange (in 3d bios kijken)
 * https://www.youtube.com/watch?v=SGJ5cZnoodY
 
-# tip van Dirk (lezing kivi)==
+# tip van Dirk (lezing kivi)
 * https://www.youtube.com/watch?v=r-gLOwilm_A
 
-# tip van Jeroen==
+# tip van Jeroen
 * UP - animatiefilm van een man die met ballonnen aan z'n huis de wereld rond vliegt
 
-# tip van Peter==
+# tip van Peter
 * In de docu Racing Extinction zit rond 11:00 een korte maar hele mooie wereld geschiedenis animatie. Misschien interessant om te kijken wie die hebben gemaakt?
 * DONE https://blog.sketchfab.com/add-another-layer-realism-depth-field/
 
-# tip van Hilde==
+# tip van Hilde
 * https://www.youtube.com/watch?v=fxbCHn6gE3U
 * [[https://www.youtube.com/watch?v=gUlc1-e11EE|Ronja de Roversdochter]]
 
-# tip van Gerard==
+# tip van Gerard
 * DONE: [[http://www.npo.nl/zoeken?utf8=%E2%9C%93&q=matterhorn|Matterhorn]]
 * jim van der woude jiskefet amnesty
 
-# draait nu in het Eye==
+# draait nu in het Eye
 https://www.eyefilm.nl/film/the-land-of-the-enlightened-0?program_id=11784667
 
-# tip van mezelf uit nz 2005==
+# tip van mezelf uit nz 2005
 * goodbye pork pie
 * Whale Rider
 * Once we were warriors
 
-# tip van Hilde==
+# tip van Hilde
 * Puberruil XL 10 jaar - Nico vs Akwasi
 * DONE The Grand Budapest Hotel
 
-# tip van Mesut==
+# tip van Mesut
 * DONE Castaway on the moon
 * Memories of a murderer
 * DONE: Somewhere Else Tomorrow (tip!)
 
-# tip from Kris Black==
+# tip from Kris Black
 * Weird Science (80s classic)
 
-# live coding tips van peter==
+# live coding tips van peter
 * [[https://vimeo.com/20241649|docu]]
 * [[https://www.youtube.com/watch?v=GSGKEy8vHqg|Vet voorbeeld van live coding: Andrew Sorensen at TEDxQUT]]
 
-# mad men==
+# mad men
 [[http://www.imdb.com/title/tt0804503/|Mad Men]]
 
-# tips van Marijn==
+# tips van Marijn
 * Marsch of the pinguïns
 * Chimpansee film Bert Haanstra
 
-# Casper==
+# Casper
 * The Inside Job (docu bankencrisis)
 
-# tip van iedereen==
+# tip van iedereen
 * DONE: Cabin in the woods
 
-# tip van Toon==
+# tip van Toon
 * DONE: Mr Robot (serie over hacker)
 
-# tip van Arne==
+# tip van Arne
 * citizen4 over Edward Snowden
 
-# tip van ramon==
+# tip van ramon
 * Print the Legend 
 
-# tips van peter==
+# tips van peter
 * https://decorrespondent.nl/3210/De-oorlog-in-Syrie-uitgelegd-in-vijf-minuten/308948940960-f6545b45
 * [[https://www.youtube.com/watch?v=TK1mBqKvIyU|Sonic PI TED lezing]]
 * DONE: kung fury
 * DONE: The Martian
 * The Big Short
 
-# tip v gerard==
+# tip v gerard
 * nanelle (zus van mozart)
 
-# tips van sylvain==
+# tips van sylvain
 * wolf
 * !simon
 * !broken circle breakdown
@@ -122,10 +122,10 @@ https://www.eyefilm.nl/film/the-land-of-the-enlightened-0?program_id=11784667
 * DONE: serie: black mirror
 * whiplash
 
-# tip van pedeka==
+# tip van pedeka
 * DONE: kingsman
 
-# tips van Ralph==
+# tips van Ralph
 * DONE: predestination
 * zero theorem
 * under the skin (langzaam, duister, grauw)
@@ -139,29 +139,29 @@ https://www.eyefilm.nl/film/the-land-of-the-enlightened-0?program_id=11784667
 * Jiro dreams of sushi
 * springbreakers
 
-#  tip van Nico ==
+#  tip van Nico 
 * nightcrawler
 
-# tip van sasj==
+# tip van sasj
 Sonic Highways docu over foofighters.
 
-# NL==
+# NL
 * nena
 * DONE: aanmodderfakker
 * hemel en aarde
 
-# Diversen==
+# Diversen
 * the anchorman
 * tip uit de Estafette Loper: gezinsfilm 'Un film de wouf' met Renault Estafette(s)
 * DONE: Her (tip van Nanda)
 * DONE: En man som heter Ove (tip van Jos)
 
-# Films van Tom Tykwer==
+# Films van Tom Tykwer
 * http://nl.wikipedia.org/wiki/Tom_Tykwer
 * [[https://www.youtube.com/watch?v=D4Xcp9F5Nuc|the international]]
 * [[https://www.youtube.com/watch?v=UW4OE1egbHs|a hologram for the king]]
 
-# Mooi==
+# Mooi
 * DONE Mr Nobody
 * DONE Le tout nouveau testament
 * DONE Hanna
