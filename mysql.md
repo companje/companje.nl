@@ -15,11 +15,11 @@ SELECT * FROM uren INTO OUTFILE '~/Documents/backup/rick.csv' FIELDS ENCLOSED BY
 
 # make backup of SQL database
 ```bash
-  mysqldump -uroot db_name > backup.sql
+mysqldump -uroot db_name > backup.sql
 ```
 or
 ```bash
-  mysqldump -u YourUser -pUserPassword YourDatabaseName > wantedsqlfile.sql
+mysqldump -u YourUser -pUserPassword YourDatabaseName > wantedsqlfile.sql
 ```
 
 # Import SQL file 
@@ -42,16 +42,16 @@ installed with `brew install mariadb`
 
 To connect:
 ```bash
-    mysql -uroot
+  mysql -uroot
 ```
 
 To have launchd start mariadb at login:
 ```bash
-    ln -sfv /usr/local/opt/mariadb/*.plist ~/Library/LaunchAgents
+  ln -sfv /usr/local/opt/mariadb/*.plist ~/Library/LaunchAgents
 ```
 Then to load mariadb now:
 ```bash
-  launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mariadb.plist
+launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mariadb.plist
 ```
 Or, if you don't want/need launchctl, you can just run:
 ```bash
@@ -123,7 +123,7 @@ mysql.server start
 * ERROR! The server quit without updating PID file (/usr/local/var/mysql/rick.local.pid).''
 
 # install mysql using macports=
- * http://2tbsp.com/content/install_and_configure_mysql_5_macports
+* http://2tbsp.com/content/install_and_configure_mysql_5_macports
 
 # problem: No such file or directory=
 * als php niet kan connecten met database controleer dan of php mysql uberhaupt kan vinden.
