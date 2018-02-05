@@ -31,7 +31,7 @@ mysql -u DB_USER -p -h localhost DB_NAME < /tmp/dump.sql
 ```bash
 /var/lib/mysql/
 
-# Location of MySQL files on Mac OSX installed with Homebrew=
+# Location of MySQL files on Mac OSX installed with Homebrew
 /usr/local/var/mysql
 /usr/local/Cellar/mysql/5.7.12
 ```
@@ -61,60 +61,60 @@ mysql.server start
 # copy mysql database from one server to another
 see [[linux]]
 
-# mysql client for osx=
+# mysql client for osx
 * http://www.sequelpro.com/
 
-# format date from timestamp in mysql=
+# format date from timestamp in mysql
 ```sql
 SELECT DATE_FORMAT(FROM_UNIXTIME(beginDate),"%e-%m-%Y %H:%i")
 ```
 [[http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_date-format|more info]]
 
-# change mysql password=
+# change mysql password
 ```bash
 mysqladmin -u root password root
 ```
 
-# connect to mysql database=
+# connect to mysql database
 ```bash
 mysql -u rick -pXXXXXX
 mysql -u globe4d_user -pXXXX
 ```
 
-# create database=
+# create database
 ```sql
 create database databasename;
 ```
 
-# show grants=
+# show grants
 ```sql
 show grants;
 ```
 
-# ERROR 1044 (42000): Access denied for user=
+# ERROR 1044 (42000): Access denied for user
 het zou kunnen dat je op de server met mysql probeert te verbinden met je 'gewone' user en dat die geen toegang heeft. Vaak wordt er voor je database een aparte user gebruikt bijvoorbeeld 'globe4d_user' met z'n eigen wachtwoord.
 
-# show databases=
+# show databases
 ```sql
 show databases;
 ```
 
-# use database=
+# use database
 ```sql
 use db_name;
 ```
 
-# show tables=
+# show tables
 ```sql
 show tables;
 ```
 
-# show columns=
+# show columns
 ```sql
 show columns from uren;
 ```
 
-# problem=
+# problem
 * ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/tmp/mysql.sock' (2)
 * try to start the mysql server:
 ```bash
@@ -122,10 +122,10 @@ mysql.server start
 ```
 * ERROR! The server quit without updating PID file (/usr/local/var/mysql/rick.local.pid).''
 
-# install mysql using macports=
+# install mysql using macports
 * http://2tbsp.com/content/install_and_configure_mysql_5_macports
 
-# problem: No such file or directory=
+# problem: No such file or directory
 * als php niet kan connecten met database controleer dan of php mysql uberhaupt kan vinden.
 
 # PHP Warning:  mysqli::mysqli(): [2002] No such file or directory (trying to connect via unix:///var/mysql/mysql.sock) in
