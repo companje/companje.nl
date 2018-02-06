@@ -2,6 +2,21 @@
 title: Doodle3D
 ---
 
+# loglite for WiFi-Box
+```
+loglite -h
+
+Usage: loglite.lua [file-to-tail] [filter-set]
+  If no arguments are supplied, or if the first one is `-', stdin is used as input.
+  If no filter set is supplied, a set named `default' will be looked for.
+  Filter sets can be defined in a file `loglite-filters.lua' in your home directory.
+
+  Available filter sets in /root/loglite-filters.lua: default, firmware, print3d, printstart, serial, test
+
+loglite /tmp/wifibox.log
+```
+
+
 # signin from cmd line WiFi-Box
 ```
 /www/cgi-bin/d3dapi p=/network/signin
