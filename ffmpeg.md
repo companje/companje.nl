@@ -10,7 +10,7 @@ brew reinstall ffmpeg --with-opus
 
 # for web?
 ```bash
-ffmpeg -i IN.mov -an -strict experimental -vcodec libx264  -f mp4 -crf 22 OUT.mp4
+ffmpeg -i IN.mov -an -strict experimental -vcodec libx264 -f mp4 -crf 22 OUT.mp4
 ```
 
 # image fade in and out to movie
