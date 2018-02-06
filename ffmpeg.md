@@ -3,13 +3,13 @@ title: ffmpeg
 ---
 
 # blur
-```
+```bash
 ffmpeg -i intro.mov -vf "boxblur=5:1" intro-blur.mov
 ```
 
 # reinstall with libraries
 If you already have ffmpeg installed, but not with the other libraries, use the reinstall command.
-```
+```bash
 brew reinstall ffmpeg --with-opus
 ```
 
