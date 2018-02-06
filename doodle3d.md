@@ -18,9 +18,9 @@ loglite /tmp/wifibox.log
 
 or...
 
-tail -f /tmp/wifibox.log
+`tail -f /tmp/wifibox.log`
 
-keep in mind the current loglevel. You can change this (probably using the API).
+(keep in mind the current loglevel. You can change this (probably using the API).
 
 
 # signin from cmd line WiFi-Box
