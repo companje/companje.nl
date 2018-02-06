@@ -2,6 +2,11 @@
 title: MySQL
 ---
 
+# set mysql for root from '' to something on OSX with XAMPP
+```bash
+/Applications/XAMPP/bin/mysqladmin --user=root password "something"
+```
+
 # ERROR 1045 (28000): Access denied for user...
 ```bash
 mysql -u root -p
