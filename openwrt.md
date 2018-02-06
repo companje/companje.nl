@@ -35,7 +35,7 @@ config wifi-iface
         option device   radio0
         option network  lan
         option mode     ap
-        option ssid     Doodle3D-6C-Rood
+        option ssid     ...
         option encryption psk2
         option key      ...
 ```
