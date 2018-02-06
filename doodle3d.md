@@ -30,7 +30,7 @@ or...
 ```
 
 this is the wget command that gets executed during signin:
-```
+```bash
 wget -q -T 2 -t 1 -O - "http://connect.doodle3d.com/api/signin.php?wifiboxid=Doodle3D-6C-Rood&localip=192.168.5.101"
 ```
 result:
