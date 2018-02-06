@@ -2,6 +2,11 @@
 title: Doodle3D
 ---
 
+# signin from cmd line WiFi-Box
+```
+/www/cgi-bin/d3dapi p=/network/signin
+```
+
 # ignore Access Control
 be able to quit a print started from another IP
 change the file: `/usr/share/lua/wifibox/util/access.lua`
