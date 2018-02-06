@@ -2,6 +2,16 @@
 title: PHP
 ---
 
+# bare bone upload script
+```
+<?php
+if (isset($_FILES["file"])) {
+  move_uploaded_file($_FILES["file"]["tmp_name"], "files/" . date('Y-m-d-h-i-s') . ".d3sketch");
+}
+?>
+
+```
+
 # php serve
 ```
 php -S localhost:8000
