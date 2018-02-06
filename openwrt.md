@@ -2,6 +2,26 @@
 title: OpenWrt
 ---
 
+# lan client
+```
+config interface 'loopback'
+        option ifname 'lo'
+        option proto 'static'
+        option ipaddr '127.0.0.1'
+        option netmask '255.0.0.0'
+
+config globals 'globals'
+        option ula_prefix 'fd96:d76f:5a52::/48'
+
+config interface 'lan'
+        option ifname 'eth0'
+        option force_link '1'
+        option type 'bridge'
+        option proto 'dhcp'
+        option ip6assign '60'
+```
+
+
 # TP-Link MR-3020 v3
 * The new V3 version of the TP-Link MR-3020 has a different chipset than the previous v1.9. It has a MediaTek MT7628 SoC with MIPS architecture and probably runs a fork of OpenWrt when shipped. 
 * There are 2 testpins close to the processor which are the Serial pins. Serial bootlog at 115200bps: <https://gist.github.com/companje/f636daaf57a90a3436f1749885269081>
