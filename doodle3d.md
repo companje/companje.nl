@@ -2,6 +2,7 @@
 title: Doodle3D
 ---
 
+
 # loglite for WiFi-Box
 ```
 loglite -h
@@ -27,6 +28,16 @@ or...
 ```
 /www/cgi-bin/d3dapi p=/network/signin
 ```
+
+this is the wget command that gets executed during signin:
+```
+wget -q -T 2 -t 1 -O - "http://connect.doodle3d.com/api/signin.php?wifiboxid=Doodle3D-6C-Rood&localip=192.168.5.101"
+```
+result:
+```
+{"status":"success","data":{"remoteip":"143.179.54.52","localip":"192.168.5.101","wifiboxid":"Doodle3D-6C-Rood","timestamp":1517950018}}
+```
+
 
 # ignore Access Control
 be able to quit a print started from another IP
