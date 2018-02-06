@@ -6,7 +6,7 @@ title: PHP
 ```
 <?php
 if (isset($_FILES["file"])) {
-  move_uploaded_file($_FILES["file"]["tmp_name"], "files/" . date('Y-m-d-h-i-s') . ".d3sketch");
+  move_uploaded_file($_FILES["file"]["tmp_name"], "files/" . date('Y-m-d-H-i-s') . ".d3sketch");
 }
 ?>
 
