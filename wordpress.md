@@ -2,6 +2,11 @@
 title: Wordpress
 ---
 
+
+# WordPress development environment on Mac with Brew, Nginx, PHP 7, PHP-FPM, MariaDB, phpMyAdmin and more
+<https://gist.github.com/remcotolsma/a04ed7165f04a307c02808e45c0596f3>
+Dit zou nog wel eens kunnen werken. Nog uitproberen.
+
 ===== WP-CLI =====
 WP-CLI is a set of command-line tools for managing WordPress installations. You can update plugins, configure multisite installs and much more, without using a web browser.
 http://wp-cli.org/
