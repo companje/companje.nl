@@ -2,6 +2,13 @@
 title: MySQL
 ---
 
+# install (without password)
+```
+brew install mysql
+brew services start mysql
+mysql -uroot
+```
+
 # set mysql for root from '' to something on OSX with XAMPP
 ```bash
 /Applications/XAMPP/bin/mysqladmin --user=root password "something"
