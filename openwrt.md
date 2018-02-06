@@ -3,6 +3,7 @@ title: OpenWrt
 ---
 
 # lan client
+/etc/config/network
 ```
 config interface 'loopback'
         option ifname 'lo'
@@ -19,6 +20,24 @@ config interface 'lan'
         option type 'bridge'
         option proto 'dhcp'
         option ip6assign '60'
+```
+/etc/config/wireless
+```
+config wifi-device  radio0
+        option type     mac80211
+        option channel  11
+        option hwmode   11g
+        option path     'platform/ar933x_wmac'
+        option htmode   HT20
+        option disabled 0
+
+config wifi-iface
+        option device   radio0
+        option network  lan
+        option mode     ap
+        option ssid     Doodle3D-6C-Rood
+        option encryption psk2
+        option key      ...
 ```
 
 
