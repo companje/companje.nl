@@ -2,6 +2,12 @@
 title: ffmpeg
 ---
 
+# reinstall with libraries
+If you already have ffmpeg installed, but not with the other libraries, use the reinstall command.
+```
+brew reinstall ffmpeg --with-opus
+```
+
 # for web?
 ```bash
 ffmpeg -i IN.mov -an -strict experimental -vcodec libx264  -f mp4 -crf 22 OUT.mp4
