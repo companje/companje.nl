@@ -2,6 +2,11 @@
 title: ffmpeg
 ---
 
+# for web?
+```bash
+ffmpeg -i IN.mov -an -strict experimental -vcodec libx264  -f mp4 -crf 22 OUT.mp4
+```
+
 # image fade in and out to movie
 ```bash
 ffmpeg -loop 1 -i frame.png -frames:v 400 -vcodec mpeg4 -vf fade=in:0:25,fade=out:375:25  -y -q:v 0 output.mp4
