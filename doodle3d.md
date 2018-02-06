@@ -2,6 +2,8 @@
 title: Doodle3D
 ---
 
+# legacy help
+<http://legacy.doodle3d.com/help/>
 
 # loglite for WiFi-Box
 ```
