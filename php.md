@@ -4,8 +4,8 @@ title: PHP
 
 # log
 ```php
-  $log = time() . "\t" . $_GET["localip"] . "\t" . $_GET["..."] . "\t" . getenv('REMOTE_ADDR') . "\t\n";
-  file_put_contents("log/log.txt", $log, FILE_APPEND);
+$log = date('Y-m-d-H-i-s') . "\t" . $_GET["localip"] . "\t" . $_GET["wifiboxid"] . "\t" . getenv('REMOTE_ADDR') . "\t\n";
+file_put_contents("log/log.txt", $log, FILE_APPEND);
 ```
 
 # bare bone upload script
