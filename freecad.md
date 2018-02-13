@@ -8,3 +8,6 @@ title: FreeCAD
 # Sheet metal plugin
 * https://www.freecadweb.org/wiki/Sandbox:Sheet_Metal
 
+# 3D navigation
+* Set '3D navigation' to 'touchpad' in Preferences
+
