@@ -14,3 +14,6 @@ title: FreeCAD
 # Draw a rectangle
 * https://www.youtube.com/watch?v=AxqtJ-306HE
 
+# Extrude
+* use the 'Draft' workbench to extrude a face
+
