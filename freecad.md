@@ -11,3 +11,5 @@ title: FreeCAD
 # 3D navigation
 * Set '3D navigation' to 'touchpad' in Preferences
 
+# Draw a rectangle
+* https://www.youtube.com/watch?v=AxqtJ-306HE
