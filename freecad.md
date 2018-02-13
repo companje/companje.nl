@@ -15,6 +15,6 @@ title: FreeCAD
 * https://www.youtube.com/watch?v=AxqtJ-306HE
 
 # Extrude
-* use the 'Draft' workbench to extrude a face
+* 1. use the 'Draft' workbench and 'Trim or Extend' to extrude a face
+* 2. or in 'Part' workbench 
 more ways to extrude: https://www.youtube.com/watch?v=jlmd5_lnwXM
-* in 'Part'
