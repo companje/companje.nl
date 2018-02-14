@@ -2,6 +2,14 @@
 title: .htaccess
 ---
 
+# force download
+```apache
+<FilesMatch "\.d3sketch$">
+        ForceType application/octet-stream
+        Header set Content-Disposition attachment
+</FilesMatch>
+```
+
 # (pre-compressed) gzip 
 ```apache
 AddEncoding gzip .gz
