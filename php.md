@@ -5,7 +5,7 @@ title: PHP
 # list files ordered (newest first) as json
 ```php
 header('Content-type: application/json');
-$files = glob("files/*.d3sketch");
+$files = glob("*.d3sketch");
 usort($files, create_function('$a,$b', 'return filemtime($b) - filemtime($a);'));
 echo json_encode($files);
 ```
