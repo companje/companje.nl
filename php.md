@@ -5,7 +5,7 @@ title: PHP
 # list files as json
 ```php
 header('Content-type: application/json');
-echo json_encode(glob("files/*.d3sketch"));
+echo json_encode(glob("*.png"));
 ```
 
 # log
