@@ -2,6 +2,12 @@
 title: PHP
 ---
 
+# list files as json
+```php
+header('Content-type: application/json');
+echo json_encode(glob("files/*.d3sketch"));
+```
+
 # log
 ```php
 $log = date('Y-m-d-H-i-s') . "\t" . $_GET["localip"] . "\t" . $_GET["wifiboxid"] . "\t" . getenv('REMOTE_ADDR') . "\t\n";
