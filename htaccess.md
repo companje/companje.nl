@@ -2,6 +2,11 @@
 title: .htaccess
 ---
 
+# (pre-compressed) gzip 
+```apache
+AddEncoding gzip .gz
+```
+
 # Access-Control-Allow-Origin * with X-Requested-With
 ```apache
 Header set Access-Control-Allow-Origin "*"
