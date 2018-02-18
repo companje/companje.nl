@@ -2,6 +2,9 @@
 title: Duplicate files
 ---
 
+# DeltaWalker
+File and Folder Comparison and Synchronization: <https://www.deltawalker.com/>
+
 # install fdupes on mac
 ```bash
 brew install fdupes
