@@ -3,6 +3,7 @@ title: Movies
 ---
 
 # TODO
+* altered carbon (tip v casper) bladerunnerachtig
 * https://www.youtube.com/watch?v=_GVAjZ2mXH4&index=2&list=PLNuold7vrn7EwR1Ml_83lV0YJbTBqstnU (Watersnoodmuseum)
 * [Facebook Ads Beginner to EXPERT in One Video](https://youtu.be/iR6ATUw0BIU)
 * https://www.youtube.com/watch?v=zKvl-emwt9Y&feature=youtu.be (tinkercad)
