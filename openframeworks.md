@@ -2,16 +2,16 @@
 title: openFrameworks
 ---
 
-====cannot convert parameter 1 from 'char' to 'LPCWSTR'====
+# cannot convert parameter 1 from 'char' to 'LPCWSTR'
 [[http://stackoverflow.com/questions/3924926/cannot-convert-parameter-1-from-char-to-lpcwstr|stackoverflow]]: in Visual Studio project properties set 'Character Set' to 'not set'.
 
-====recent problem with ofVideoPlayer====
+# recent problem with ofVideoPlayer
 https://github.com/openframeworks/openFrameworks/issues/5114
 
-====cheap tricks video====
+# cheap tricks video
 http://petewerner.blogspot.nl/2014/01/cheap-tricks-interactive-dance-floor.html
 
-====read 16bit raw image into ofImage=====
+# read 16bit raw image into ofImage=
 <code cpp>
 ofImage heightmap;
 ofFile file("terra8M.raw", ofFile::ReadOnly, true);
@@ -34,10 +34,10 @@ heightmap.save("output.png");
 
 ```
 
-=====openFrameworks code style guide=====
+# openFrameworks code style guide=
 * https://github.com/openframeworks/openFrameworks/wiki/oF-code-style
 
-=====loading 16 bits grayscale images seems to be broken after version 008x====
+# loading 16 bits grayscale images seems to be broken after version 008x
 https://github.com/openframeworks/openFrameworks/issues/3249
 I modified some code in `putBmpIntoPixels` to be able to load 16 bits grayscale images:
 
@@ -58,12 +58,12 @@ I modified some code in `putBmpIntoPixels` to be able to load 16 bits grayscale 
 		bmp = bmpConverted;
 ```
 
-=====enable errors to force checking return values=====
+# enable errors to force checking return values=
 ```
 -Werror=return-type
 ```
 
-=====ofSetupScreenOrtho=====
+# ofSetupScreenOrtho=
 ```cpp
 //--------------------------------------------------------------
 void ofApp::draw(){
@@ -73,10 +73,10 @@ void ofApp::draw(){
 }
 ```
 
-=====Projectgenerator on Linux: error projectgenerator not found=====
+# Projectgenerator on Linux: error projectgenerator not found=
 first run `compilePG.sh`
 
-=====Projectgenerator on Linux: terminate called after throwing an instance of std::regex_error=====
+# Projectgenerator on Linux: terminate called after throwing an instance of std::regex_error=
 ```
 Command failed: /bin/sh -c "projectGenerator"  -o"/home/globe4d/Documents/of0092" -a" " -p"linux64" "/home/globe4d/Documents/of0092/apps/myApps/mySketch"
 terminate called after throwing an instance of 'std::regex_error'
@@ -96,28 +96,28 @@ gcc -v
 ```
 then run `compilePG.sh` again.
 
-=====Logitech C920 with IR blocker removed and red filter added. OpenCV code using BackgroundSubtractorMOG2=====
+# Logitech C920 with IR blocker removed and red filter added. OpenCV code using BackgroundSubtractorMOG2=
 see [[logitech]]
 %gist(0ab635af72b7d0ef4421)%
 
-=====projectGenerator=====
+# projectGenerator=
 cmdline command:
 ```
 "/Users/rick/Documents/openFrameworks/of0092/projectGenerator-osx/projectGenerator.app/Contents/Resources/app/app/projectGenerator"  -o"/Users/rick/Documents/openFrameworks/of0092" -a"ofxCv,ofxOpenCv" -p"osx" "/Users/rick/Documents/openFrameworks/of0092/apps/myApps/cvBgTest2"
 ```
 
-=====Segmentation Fault 11 with projectGenerator=====
+# Segmentation Fault 11 with projectGenerator=
 I got a Segmentation Fault 11 when I changed the `scripts/templates/osx` Xcode project. I removed ofApp.cpp and ofApp.h but that resulted in a lot of recursive calls in the `xcodeProject.cpp::addInclude` function.
 I worked around this by manually removing the xml elements of `ofApp.h` and `ofApp.cpp` in `project.pbxproj` within the `emptyExample.xcodeproject` folder.
 
-=====extending ofBaseVideoDraws in of009=====
+# extending ofBaseVideoDraws in of009=
 %gist(a006644bad4d187f0003)%
 
-=====inherit from ofBaseDrawsVideo class=====
+# inherit from ofBaseDrawsVideo class=
 In XCode when pressing Cmd+8 then click on Clock icon on bottom you get detailed info about build error message. It shows which functions you need to implement:
 (::screen_shot_2016-02-23_at_12.02.44.png?nolink|)
 
-=====what means 'const' after method definition?=====
+# what means 'const' after method definition?=
 When you define a method like this in your class:
 ```
 bool isReady() const
@@ -126,7 +126,7 @@ It means that it "will return a bool but it will not change the logic state of y
 So by supplying const you promise the compiler you won't change any data inside your class instance.
 
 
-=====Member function '...' not viable:=====
+# Member function '...' not viable:=
 ```
 Member function 'drawGlobe' not viable: 'this' argument has type 'const Globe', but function is not marked const
 ```
@@ -134,7 +134,7 @@ Member function 'drawGlobe' not viable: 'this' argument has type 'const Globe', 
 ???
 
 
-=====Field type '...' is an abstract class=====
+# Field type '...' is an abstract class=
 In openFrameworks 009 the declarations of some ofBase classes has changed. For example when your class inherits from  ofBaseDraws you need to add the `const` term after your function definition:
 ```
   float getWidth() const { return 640; }
@@ -143,16 +143,16 @@ In openFrameworks 009 the declarations of some ofBase classes has changed. For e
   void draw(float x, float y, float w, float h) const { /*...*/ }
 ```
 
-=====opencv2/opencv.hpp file not found=====
+# opencv2/opencv.hpp file not found=
 When you add `ofxCv` to your openFrameworks project make sure to also add `ofxOpenCv`. Because this adds the `opencv2` folder to your project.
 
-=====openFrameworks 009 on ElementaryOS=====
+# openFrameworks 009 on ElementaryOS=
 * https://forum.openframeworks.cc/t/cannot-install-of-0-9-0-on-elementary-os-freya-ubuntu-14-04/21616
 
-=====ArcText (curved text on circular path) with openFrameworks 009=====
+# ArcText (curved text on circular path) with openFrameworks 009=
 %gist(2defbb27726017b710e2)%
 
-=====make Debug openFrameworks 009=====
+# make Debug openFrameworks 009=
   make Debug
 then:
   make RunDebug
@@ -162,7 +162,7 @@ or:
   r
  
 
-=====openframeworks 009=====
+# openframeworks 009=
 * installing MSYS2 for openFrameworks 009.
 * follow the steps at http://openframeworks.cc/setup/msys2/
   * you might need to set the HOME environment variable to your home folder (C:\Users\YOUR_USERNAME) to be able to access your files from the MSYS2 shell.

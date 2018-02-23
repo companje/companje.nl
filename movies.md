@@ -3,7 +3,7 @@ title: Movies
 ---
 
 # TODO
-* https://www.youtube.com/watch?v=aircAruvnKk
+* https://www.youtube.com/watch?v=aircAruvnKk (neural network tip v casper)
 * three blue one brown (tip v casper): wiskunde
 * altered carbon (tip v casper) bladerunnerachtig
 * https://www.youtube.com/watch?v=_GVAjZ2mXH4&index=2&list=PLNuold7vrn7EwR1Ml_83lV0YJbTBqstnU (Watersnoodmuseum)
