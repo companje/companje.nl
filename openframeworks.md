@@ -167,5 +167,4 @@ or:
   * you might need to set the HOME environment variable to your home folder (C:\Users\YOUR_USERNAME) to be able to access your files from the MSYS2 shell.
   * there's a typo in the line `cd your_oF_directory/scripts/win_cb/msys2`. Remove the win_cb part.
 * when the tutorial says: "Open a **MINGW32** shell" it means run the following batch file (from the Start Menu):
-```
-C:\Windows\System32
+
