@@ -170,6 +170,6 @@ or:
 
 
 # ....
-bestand 
+file truncated???
 
 
