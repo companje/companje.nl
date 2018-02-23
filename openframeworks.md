@@ -12,7 +12,7 @@ https://github.com/openframeworks/openFrameworks/issues/5114
 http://petewerner.blogspot.nl/2014/01/cheap-tricks-interactive-dance-floor.html
 
 # read 16bit raw image into ofImage=
-<code cpp>
+```cpp
 ofImage heightmap;
 ofFile file("terra8M.raw", ofFile::ReadOnly, true);
 ofBuffer raw(file);
