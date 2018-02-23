@@ -3,7 +3,7 @@ title: openFrameworks
 ---
 
 # cannot convert parameter 1 from 'char' to 'LPCWSTR'
-http://stackoverflow.com/questions/3924926/cannot-convert-parameter-1-from-char-to-lpcwstr): in Visual Studio project properties set 'Character Set' to 'not set'.
+(http://stackoverflow.com/questions/3924926/cannot-convert-parameter-1-from-char-to-lpcwstr): in Visual Studio project properties set 'Character Set' to 'not set'.
 
 # recent problem with ofVideoPlayer
 https://github.com/openframeworks/openFrameworks/issues/5114
