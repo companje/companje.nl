@@ -161,7 +161,6 @@ or:
   gdb Project_debug
   r
  
-
 # openframeworks 009=
 * installing MSYS2 for openFrameworks 009.
 * follow the steps at http://openframeworks.cc/setup/msys2/
