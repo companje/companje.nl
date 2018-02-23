@@ -168,3 +168,8 @@ or:
   * there's a typo in the line `cd your_oF_directory/scripts/win_cb/msys2`. Remove the win_cb part.
 * when the tutorial says: "Open a **MINGW32** shell" it means run the following batch file (from the Start Menu):
 
+
+# ....
+bestand afgebroken???
+
+
