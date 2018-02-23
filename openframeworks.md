@@ -3,7 +3,7 @@ title: openFrameworks
 ---
 
 # cannot convert parameter 1 from 'char' to 'LPCWSTR'
-(http://stackoverflow.com/questions/3924926/cannot-convert-parameter-1-from-char-to-lpcwstr): in Visual Studio project properties set 'Character Set' to 'not set'.
+[stackoverflow](http://stackoverflow.com/questions/3924926/cannot-convert-parameter-1-from-char-to-lpcwstr): in Visual Studio project properties set 'Character Set' to 'not set'.
 
 # recent problem with ofVideoPlayer
 https://github.com/openframeworks/openFrameworks/issues/5114
@@ -85,7 +85,7 @@ Aborted (core dumped)
 solution? https://github.com/openframeworks/openFrameworks/issues/4575
 
 ipv 'test' kan ik beter 'ppa' doen zegt peter. daar staat gcc-4.9 ook bij.
-```
+```bash
 sudo add-apt-repository ppa:ubuntu-toolchain-r/ppa   # this one worked for me: ppa:ubuntu-toolchain-r/test
 sudo apt-get update
 sudo apt-get install g++-4.9
@@ -118,7 +118,7 @@ In XCode when pressing Cmd+8 then click on Clock icon on bottom you get detailed
 
 # what means 'const' after method definition?=
 When you define a method like this in your class:
-```
+```cpp
 bool isReady() const
 ```
 It means that it "will return a bool but it will not change the logic state of your object. So this is your getter."
@@ -135,7 +135,7 @@ Member function 'drawGlobe' not viable: 'this' argument has type 'const Globe', 
 
 # Field type '...' is an abstract class=
 In openFrameworks 009 the declarations of some ofBase classes has changed. For example when your class inherits from  ofBaseDraws you need to add the `const` term after your function definition:
-```
+```cpp
   float getWidth() const { return 640; }
   float getHeight() const { return 480; }
   void draw(float x, float y) const { /*...*/ }
