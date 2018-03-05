@@ -9,4 +9,5 @@ title: Fusion 360
 <http://help.autodesk.com/view/fusion360/ENU/?learn=sketch>
 
 # Shortcuts
+- rightclick: marking menu
 - s: open sketch toolbox
