@@ -108,6 +108,17 @@ launchctl start nl.companje.screenshots
 * <https://developer.apple.com/library/content/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html#//apple_ref/doc/uid/10000172i-SW7-BCIEDDBJ>
 * <http://www.launchd.info>
 
+# Run 3 minutes past midnight (or later when computer was a sleep at that time)
+```xml
+   <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>00</integer>
+        <key>Minute</key>
+        <integer>03</integer>
+    </dict>
+```
+
 # Use Automator for making Symbolic Links
 1 Create an Application
 2 add task `Run Shell Script` with 'pass input as arguments'
