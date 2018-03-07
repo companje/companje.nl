@@ -3,7 +3,8 @@ title: Movies
 ---
 
 # TODO
-* Altered Carbon tip v Casper (duister, future)
+* https://youtu.be/_Cp-BGQfpHQ (tip v Quinten)
+* DONE Altered Carbon tip v Casper (duister, future)
 * https://www.youtube.com/watch?v=aircAruvnKk (neural network tip v casper)
 * three blue one brown (tip v casper): wiskunde
 * altered carbon (tip v casper) bladerunnerachtig
