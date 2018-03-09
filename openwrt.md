@@ -2,6 +2,9 @@
 title: OpenWrt
 ---
 
+# lede mr3020 extroot
+* https://forum.lede-project.org/t/tl-mr3020-lede-extroot/8311/12
+
 # lan client
 /etc/config/network
 ```
