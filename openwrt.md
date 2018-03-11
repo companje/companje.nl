@@ -187,7 +187,6 @@ wifi
 
 # Connect
 ```bash
-#root@OpenWrt:~# cat connect
 ssid=....
 key=...
 uci set wireless.@wifi-iface[0].ssid=$ssid
