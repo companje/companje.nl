@@ -197,7 +197,7 @@ uci set wireless.@wifi-iface[0].encryption=psk2
 uci set network.lan.ipaddr=192.168.5.1
 uci delete wireless.@wifi-device[0].disabled
 uci set network.wan=interface
-uci set network.wan.proto=dhcp #get ip from router
+uci set network.wan.proto=dhcp
 uci commit
 wifi
 
