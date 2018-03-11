@@ -190,7 +190,7 @@ wifi
 #root@OpenWrt:~# cat connect
 set -x
 uci set wireless.@wifi-iface[0].ssid=$ssid
-uci set wireless.@wifi-iface[0].key=$ke
+uci set wireless.@wifi-iface[0].key=$key
 uci set wireless.@wifi-iface[0].network=wan
 uci set wireless.@wifi-iface[0].mode=sta
 uci set wireless.@wifi-iface[0].encryption=psk2
