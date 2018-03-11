@@ -432,10 +432,10 @@ uci commit
 ```
 
 # settings from Doodle3D WiFi-Box
-* [[https://gist.github.com/companje/c2cc92a513bd5aae5f0ec54aaefded60#file-wireless|/etc/config/wireless]]
-* [[https://gist.github.com/companje/c2cc92a513bd5aae5f0ec54aaefded60#file-network|/etc/config/network]]
-* [[https://gist.github.com/companje/c2cc92a513bd5aae5f0ec54aaefded60#file-dhcp|/etc/config/dhcp]]
-* [[https://gist.github.com/companje/c2cc92a513bd5aae5f0ec54aaefded60#file-firewall|/etc/config/firewall]]
+* <https://gist.github.com/companje/c2cc92a513bd5aae5f0ec54aaefded60#file-wireless> /etc/config/wireless
+* <https://gist.github.com/companje/c2cc92a513bd5aae5f0ec54aaefded60#file-network> /etc/config/network
+* <https://gist.github.com/companje/c2cc92a513bd5aae5f0ec54aaefded60#file-dhcp> /etc/config/dhcp
+* <https://gist.github.com/companje/c2cc92a513bd5aae5f0ec54aaefded60#file-firewall> /etc/config/firewall
 
 # Disabling default route and DNS server for lan network interface
 This way you don't have to set the order of WiFi and Ethernet.
