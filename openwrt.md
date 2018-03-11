@@ -2,6 +2,9 @@
 title: OpenWrt
 ---
 
+# uHTTPd
+"By default, uHTTPd is bind to 0.0.0.0 which also includes the WAN port of your router."
+
 # easy-extroot image
 * https://yunofun.wordpress.com/2015/10/31/easy-extroot-for-tplink-mr-3020-router-chaoscalmer-version/
 
