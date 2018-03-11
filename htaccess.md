@@ -2,6 +2,11 @@
 title: .htaccess
 ---
 
+# list files directoryIndex
+```apache
+Options +Indexes
+```
+
 # force download
 ```apache
 <FilesMatch "\.d3sketch$">
