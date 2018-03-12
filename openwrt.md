@@ -2,6 +2,11 @@
 title: OpenWrt
 ---
 
+# tcpdump
+```
+tcpdump -i wlan0 -vvv -ttt -p -U
+```
+
 # uHTTPd
 "By default, uHTTPd is bind to 0.0.0.0 which also includes the WAN port of your router."
 
