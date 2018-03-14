@@ -5,8 +5,8 @@ title: React
 * see also [[d3]] for visualisations with D3 in React
 * see also [[redux]]
 * <http://reactcheatsheet.com/>
-* [[<https://facebook.github.io/react/docs/tutorial.html|tutorial]]>
-* [[<https://www.youtube.com/watch?v=NpMnRifyGyw]]>
+* <https://facebook.github.io/react/docs/tutorial.html>
+* <https://www.youtube.com/watch?v=NpMnRifyGyw>
 * download and install React dev tools for Chrome (and open your page in a new tab)
 * <https://facebook.github.io/react/docs/thinking-in-react.html>
 * <https://github.com/ptmt/react-native-desktop>
