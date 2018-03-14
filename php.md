@@ -23,7 +23,6 @@ file_put_contents("log/log.txt", $log, FILE_APPEND);
 ```
 
 # bare bone upload script
-```
 ```php
 if (isset($_FILES["file"])) {
   move_uploaded_file($_FILES["file"]["tmp_name"], "files/" . date('Y-m-d-H-i-s') . ".d3sketch");
