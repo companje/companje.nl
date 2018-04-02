@@ -2,6 +2,13 @@
 title: Webpack
 ---
 
+===== dev server toegang buiten localhost =====
+```
+"scripts": {
+    "start": "webpack-dev-server -w --host 0.0.0.0",
+...
+```
+
 ===== webpack-cli =====
 De nieuwe `webpack-cli` maakt starteb met webpack makkelijk met een init commando: `webpack-cli init`
 https://github.com/webpack/webpack-cli

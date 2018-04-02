@@ -2,6 +2,9 @@
 title: iOS
 ---
 
+# Configuring Web Applications
+* https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html
+
 =====maggap - make iOS apps=====
 * https://github.com/MacGapProject/MacGap1
 

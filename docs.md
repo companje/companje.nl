@@ -2,25 +2,31 @@
 title: Google Docs
 ---
 
-=====polling spreadsheet with script=====
+# join, unique, filter, countunique
+```
+=JOIN(", " ; (UNIQUE(FILTER(LOG!C:C;LOG!D:D=A2))))
+=COUNTUNIQUE(filter(log!C:C;log!D:D=A2))
+```
+
+# polling spreadsheet with script
 * http://stackoverflow.com/questions/30628894/how-do-i-make-a-sidebar-display-values-from-cells
 
-=====add dates=====
+# add dates
 add 12 months to date
 ```
-=edate(A11;12)
+=EDATE(A11;12)
 ```
 
-=====unique / sort / proper=====
+# unique / sort / proper
 you can use this as a nice data validator
-  =sort(PROPER(unique(Inkomsten!D3:D)))
+  =SORT(PROPER(UNIQUE(INKOMSTEN!D3:D)))
 
-=====UrlFetchApp.fetch=====
-<code javascript>
+# UrlFetchApp.fetch
+```js
   var text = UrlFetchApp.fetch(URL).getContentText();
 ```
 
-<code php>
+```php
 header("Content-type: text/plain");
 
 define('DB_NAME', '...');
@@ -43,33 +49,33 @@ if ($row = mysql_fetch_assoc(mysql_query("SELECT post_id,meta_value FROM wp_post
 }
 ```
 
-=====tips=====
+# tips
 http://woorkup.com/2010/02/19/10-useful-google-spreadsheet-formulas-you-must-know/
 
-=====unique() and continue() functions=====
+# unique() and continue() functions
 ```
 =UNIQUE(A:A)
 =CONTINUE(B1; 2; 1)
 ...etc..
 ```
 
-=====append row=====
+# append row
 ```sheet.appendRow(['hello',true,5.5,new Date()]);```
 
-=====fetch from url=====
+# fetch from url
 ```var text = UrlFetchApp.fetch("http://companje.nl").getContentText();```
 
-=====documentation=====
+# documentation
 * https://developers.google.com/apps-script/
 
-=====spreadsheet as csv=====
+# spreadsheet as csv
 * https://docs.google.com/spreadsheet/pub?key=0Ag0qaBCRDtdydEV2eHVIZWRwRkRRY0l0d2o0eWtzZ1E&output=csv
 
-=====scripting with csv=====
+# scripting with csv
 * https://developers.google.com/apps-script/articles/docslist_tutorial#section2
 
-=====advanced scripting=====
-<code javascript>
+# advanced scripting
+```js
 
 function onOpen() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
@@ -95,13 +101,13 @@ function soortValidator() {
 function btwBerekening() {
   var range = SpreadsheetApp.getActiveRange();
 
-  if (range.getColumnIndex()=====6 && range.getNumColumns()=====1) range.setFormula("=(R[0]C[3]/(R[0]C[1]*100+100))*100");
-  else if (range.getColumnIndex()=====8 && range.getNumColumns()=====1) range.setFormula("=R[0]C[-1]*R[0]C[-2]");
+  if (range.getColumnIndex()# 6 && range.getNumColumns()# 1) range.setFormula("=(R[0]C[3]/(R[0]C[1]*100+100))*100"
+  else if (range.getColumnIndex()# 8 && range.getNumColumns()# 1) range.setFormula("=R[0]C[-1]*R[0]C[-2]"
   else Browser.msgBox("Selecteer één van de volgende kolommen: excl. BTW óf BTW bedrag.");
 }
 
 function layoutKolommen() {
-  if (SpreadsheetApp.getActiveSheet().getName()====="Overzicht") {
+  if (SpreadsheetApp.getActiveSheet().getName()# "Overzicht")
     Browser.msgBox("'Layout verbeteren' is bedoeld voor Inkomsten en Uitgaven bladen");
     return;
   }
@@ -130,8 +136,8 @@ function layoutKolommen() {
 }
 ```
 
-=====new insights=====
-<code javascript>
+# new insights
+```js
 function onOpen() {
   var sheet = SpreadsheetApp.getActiveSpreadsheet();
   var entries = [ {name: "Upload Rabobank bestand...", functionName: "upload"} ];
@@ -180,7 +186,7 @@ function importCsv(filename) {
     var day = csv[i][2].substr(6,2);
     var isodate= year+"-"+month+"-"+day;
     var quarter = "K"+Math.ceil(month/3);        
-    var credit=(csv[i][3]====="C");
+    var credit=(csv[i][3]# "C"
     var amount=csv[i][4].replace(".",",");
     var name=csv[i][6];
     var invoicenr="";
@@ -259,8 +265,8 @@ function CSVToArray(strData, strDelimiter) {
 }*/
 ```
 
-=====2015 versie=====
-<code javascript>
+# 2015 versie
+```javascript
 function onOpen() {
   var sheet = SpreadsheetApp.getActiveSpreadsheet();
   var entries = [ {name: "Upload Rabobank bestand...", functionName: "upload"} ];
@@ -378,8 +384,8 @@ function CSVToArray(strData, strDelimiter) {
 }
 ```
 
-===== Bugfix when description is undefined (May 27 2015)=====
-<code javascript>
+#  Bugfix when description is undefined (May 27 2015)
+```javascript
 function onOpen() {
   var sheet = SpreadsheetApp.getActiveSpreadsheet();
   var entries = [ {name: "Upload Rabobank bestand...", functionName: "upload"} ];
