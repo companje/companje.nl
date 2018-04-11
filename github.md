@@ -2,6 +2,10 @@
 title: Github
 ---
 
+# when using two-factor authentication 
+you need an personal access token to use git on the cmd line:
+https://github.com/settings/tokens
+
 # use image in markdown
 ```
 ![](doc/images/my-image.jpg)
