@@ -14,5 +14,5 @@ sudo diskutil eraseDisk FAT32 RASPBIAN MBRFormat /dev/diskX
 Burn images to SD cards & USB drives, safely and easily.
 * https://etcher.io/
 
- 
-
+# Boot Camp Assistant
+zit standaard in Mac OS. Kun je gebruiken om een Windows ISO naar een SD-kaart of USB-stick te kopieren.
