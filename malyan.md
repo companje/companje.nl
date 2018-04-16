@@ -424,7 +424,7 @@ function send(cmd) {
 # raw communication codes
 commands and responses are send both ways at 500kbps (gcode with 8 databits, control commands with 7 databits?)
 gcode data is uploaded with 8 databits.
-
+```
 {P:X} cancel
 {C:T0000} set nozzle temp
 {C:P000} set bed temp
@@ -452,6 +452,7 @@ gcode data is uploaded with 8 databits.
 {TP:017/000} temp bed
 {TQ:025P} progress
 {TT:000001} ???
+```
 
 response when uploading looks like 6bits data:
 {h01}{h01}{h01}{h01}{h01}{h01}{h01}{h01}{h01}{h01}{h01}{h01}{h01};{h13}{h19}{h13}:{h1B}{h07}{h1D}0{h12}{h14}{h05}{h04}=
