@@ -2,6 +2,10 @@
 title: Mac OSX
 ---
 
+# Prepare Mac for standalone exhibition
+http://figure53.com/docs/qlab/v3/general/preparing-your-mac/
+
+
 # SD Memory Card Formatter for Mac
 <https://www.sdcard.org/downloads/formatter_4/eula_mac/index.html>
 
