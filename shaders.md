@@ -3,6 +3,14 @@ title: Shaders
 ---
 Zie ook [[OpenGL]]
 
+# Tutorials
+"There are several resources, such as online tutorials and forums, books, and web coding sandboxes (for example Shader Toy, GLSL Sandbox, and Vertex Shader Art), that can be recommended for learning GLSL programming."
+* https://processing.org/tutorials/pshader/
+* https://www.shadertoy.com/
+* http://glslsandbox.com/
+* https://www.vertexshaderart.com/
+
+
 # The Book of Shaders
 * https://thebookofshaders.com
 
