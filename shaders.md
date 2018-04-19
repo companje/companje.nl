@@ -10,7 +10,6 @@ Zie ook [[OpenGL]]
 * http://glslsandbox.com/
 * https://www.vertexshaderart.com/
 
-
 # The Book of Shaders
 * https://thebookofshaders.com
 
