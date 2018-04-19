@@ -3,6 +3,9 @@ title: Shaders
 ---
 Zie ook [[OpenGL]]
 
+# texOffset in Processing
+"texOffset uniform. This uniform is set automatically by Processing and contains the vector (1/width, 1/height), with width and height being the resolution of the texture. ""
+
 # Tutorials
 "There are several resources, such as online tutorials and forums, books, and web coding sandboxes (for example Shader Toy, GLSL Sandbox, and Vertex Shader Art), that can be recommended for learning GLSL programming."
 * https://processing.org/tutorials/pshader/
