@@ -2,6 +2,9 @@
 title: Mac OSX
 ---
 
+# custom resolution
+"To access all supported resolutions for your external display, press and hold the Option key on your keyboard and then click the “Scaled” option again."
+
 # Prepare Mac for standalone exhibition
 http://figure53.com/docs/qlab/v3/general/preparing-your-mac/
 
