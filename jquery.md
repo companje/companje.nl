@@ -1,5 +1,5 @@
 ---
-title: =========jQuery=========
+title: jQuery
 ---
 
 #  jChartFX 
