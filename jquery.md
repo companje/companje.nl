@@ -27,7 +27,7 @@ $.get("ajax/test.html", function(data) {
 http://blog.ponyfoo.com/2013/07/09/getting-over-jquery
 
 =====Hello World=====
-<code jquery>
+```jquery
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 
@@ -35,7 +35,6 @@ http://blog.ponyfoo.com/2013/07/09/getting-over-jquery
 $(document).ready(function() {
   alert("Hello World");
 })
-</script>
 ```
 
 =====parsing html table (not finished)=====
