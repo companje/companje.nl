@@ -2,6 +2,9 @@
 title: OpenWrt
 ---
 
+# kun je php gebruiken?
+Ja! als je eerst ruimte maakt met exroot kun je daarna stappen volgen op openwrt.org
+
 # tcpdump
 ```
 tcpdump -i wlan0 -vvv -ttt -p -U
