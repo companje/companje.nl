@@ -9,14 +9,14 @@ http://www.jchartfx.com/
 * http://www.sitepoint.com/top-5-jquery-ui-alternatives/
 
 #  POST 
-```jquery
+```js
 $.post( "ajax/test.html", function( data ) {
   $( ".result" ).html( data );
 });
 ```
 
 #  GET 
-```jquery
+```js
 $.get("ajax/test.html", function(data) {
   $(".result").html(data);
   alert("Load was performed.");
@@ -27,7 +27,7 @@ $.get("ajax/test.html", function(data) {
 http://blog.ponyfoo.com/2013/07/09/getting-over-jquery
 
 # Hello World
-```jquery
+```js
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 
 <script>
@@ -37,7 +37,7 @@ $(document).ready(function() {
 ```
 
 # parsing html table (not finished)
-```jquery
+```js
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 
 <script>
@@ -68,7 +68,7 @@ $(document).ready(function() {
 * http://zombie.labnotes.org/
 
 # this & children
-```jquery
+```js
 //$(e.currentTarget)  ===== $(this)
 $(this).children(".description").text()
 ```
@@ -76,7 +76,7 @@ $(this).children(".description").text()
 * http://webdesignerwall.com/tutorials/jquery-tutorials-for-designers
 * http://view.jqueryui.com/grid/grid-editing/todo-app.html
 
-```jquery
+```js
 <script id="todo-list-item" type="text/x-jquery-tmpl">
   <li (if done)class="done"(/if)>
     <label>
@@ -88,7 +88,7 @@ $(this).children(".description").text()
 ```
 
 # hover menuitems in wordpress
-```jquery
+```js
 jQuery(document).ready(function() {
 
   jQuery(".menu-item img").hover(
