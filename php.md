@@ -2,6 +2,11 @@
 title: PHP
 ---
 
+# string replace for each item in array
+```php
+$files = str_replace('a', 'b', $files);
+```
+
 # list files ordered (newest first) as json
 ```php
 header('Content-type: application/json');
