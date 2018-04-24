@@ -2,31 +2,31 @@
 title: =========jQuery=========
 ---
 
-===== jChartFX =====
+#  jChartFX 
 http://www.jchartfx.com/
 
-===== jQuery alternatives =====
+#  jQuery alternatives 
 * http://www.sitepoint.com/top-5-jquery-ui-alternatives/
 
-===== POST =====
-<code jquery>
+#  POST 
+```jquery
 $.post( "ajax/test.html", function( data ) {
   $( ".result" ).html( data );
 });
 ```
 
-===== GET =====
-<code jquery>
+#  GET 
+```jquery
 $.get("ajax/test.html", function(data) {
   $(".result").html(data);
   alert("Load was performed.");
 });
 ```
 
-=====Getting over jQuery=====
+# Getting over jQuery
 http://blog.ponyfoo.com/2013/07/09/getting-over-jquery
 
-=====Hello World=====
+# Hello World
 ```jquery
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
@@ -37,8 +37,8 @@ $(document).ready(function() {
 })
 ```
 
-=====parsing html table (not finished)=====
-<code jquery>
+# parsing html table (not finished)
+```jquery
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 
 <script>
@@ -63,13 +63,13 @@ $(document).ready(function() {
 <div id="result">Loading...</div>
 ```
 
-=====headless browser=====
+# headless browser
 * http://stackoverflow.com/questions/5940557/how-can-i-use-jquery-on-server-side-javascript
 * http://phantomjs.org/
 * http://zombie.labnotes.org/
 
-=====this & children=====
-<code jquery>
+# this & children
+```jquery
 //$(e.currentTarget)  ===== $(this)
 $(this).children(".description").text()
 ```
@@ -77,7 +77,7 @@ $(this).children(".description").text()
 * http://webdesignerwall.com/tutorials/jquery-tutorials-for-designers
 * http://view.jqueryui.com/grid/grid-editing/todo-app.html
 
-<code jquery>
+```jquery
 <script id="todo-list-item" type="text/x-jquery-tmpl">
   <li (if done)class="done"(/if)>
     <label>
@@ -88,8 +88,8 @@ $(this).children(".description").text()
 </script>
 ```
 
-=====hover menuitems in wordpress=====
-<code jquery>
+# hover menuitems in wordpress
+```jquery
 jQuery(document).ready(function() {
 
   jQuery(".menu-item img").hover(
