@@ -4,7 +4,7 @@ title: PHP
 
 # string replace for each item in array
 ```php
- = str_replace('a', 'b', $array);
+$out = str_replace('a', 'b', $array);
 ```
 
 # list files ordered (newest first) as json
