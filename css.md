@@ -1,35 +1,41 @@
 ---
-title: =====CSS=====
+title: CSS
 ---
 
 nog lezen: https://www.mozilla.org/en-US/developer/css-grid/
 
+# nth-child
+```
+iframe:nth-child(1) { border: 5px solid yellow; }
+iframe:nth-child(2) { border: 5px solid black; }
+...
+```
 
-==width/height of viewport==
-<code css>
+# width/height of viewport
+```css
 img {
   width: 50vw;
   height: 50vh;
   /*object-fit: cover; */
 }
 ```
-==web==
+# web
 see [[web]]
 
 
-==css tricks==
+# css tricks
 * http://css-tricks.com/snippets/html/base64-encode-of-1x1px-transparent-gif/
 
-==flexbox==
+# flexbox
 * http://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
-==use css3 features if supported==
-<code javascript>
-var css3_support = (document.createElement("detect").style.objectFit === ""); //'objectFit' or other css3 tag
+# use css3 features if supported
+```javascript
+var css3_support = (document.createElement("detect").style.objectFit === ""); //'objectFit' or other css3 t
 document.getElementsByTagName("html")[0].className += (css3_support ? " css3" : " nocss3");
 ```
 
-<code css>
+```css
 .css3 img { 
   /* css3 support */
 }
@@ -41,44 +47,44 @@ img {
 }
 ```
 
-==css names in javascript==
+# css names in javascript
 "background-color" becomes "backgroundColor", and "list-style-type" becomes "listStyleType"
 
-==detect css3==
+# detect css3
 * http://www.sitepoint.com/detect-css3-property-browser-support/
 
-==initial==
+# initial
   h1 {
     color: initial; 
   }
 
-==Foundation==
+# Foundation
 * http://foundation.zurb.com/index.html
 * [[http://foundation.zurb.com/learn/video-started-with-foundation.html|video]]
 
-==Goed boek==
+# Goed boek
 (tip van Peter): http://www.cssmastery.com/
 
-==Center==
-*http://bluerobot.com/web/css/center1.html
-*http://css-discuss.incutio.com/wiki/Centering_Block_Element
-*http://dorward.me.uk/www/centre/
+# Center
+* http://bluerobot.com/web/css/center1.html
+* http://css-discuss.incutio.com/wiki/Centering_Block_Element
+* http://dorward.me.uk/www/centre/
 
-==attribute selectors==
+# attribute selectors
 * http://css-tricks.com/attribute-selectors/
-<code css>
+```css
 td[bgcolor="#00ffff"] {
 	border:5px solid green;
 }
 ```
 
-==input type text==
-<code css>
+# input type text
+```css
 input[type="text"] 
 ```
 
-==multiple columns==
-<code css>
+# multiple columns
+```css
 .template-front-page .intro {
 	-moz-column-count:2; /* Firefox */
 	-webkit-column-count:2; /* Safari and Chrome */
@@ -90,17 +96,17 @@ input[type="text"]
 }
 ```
 
-==position:relative==
+# position:relative
 * http://jsfiddle.net/DsTeK/2/
 
-==style only children not descendants==
-<code css>
+# style only children not descendants
+```css
 li.page_item.current_page_item > a {
 }
 ```
 
-==center div's vertically==
-<code css>
+# center div's vertically
+```css
 .className{
 	position:absolute;
 	left:50%;
