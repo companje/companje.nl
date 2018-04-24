@@ -5,7 +5,7 @@ title: CSS
 nog lezen: https://www.mozilla.org/en-US/developer/css-grid/
 
 # nth-child
-```
+```css
 iframe:nth-child(1) { border: 5px solid yellow; }
 iframe:nth-child(2) { border: 5px solid black; }
 ...
