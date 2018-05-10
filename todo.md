@@ -2,6 +2,8 @@
 title: TODO - things to watch, read or listen
 ---
 
+Tip v Peter: Kende jij Simone Giertz al eigenlijk? https://www.youtube.com/watch?v=c0bsKc4tiuY
+
 # 3D
 * https://3dprint.com/16788/pango-3d-print/
 
