@@ -2,66 +2,66 @@
 title: TODO - things to watch, read or listen
 ---
 
-=====3D=====
+# 3D
 * https://3dprint.com/16788/pango-3d-print/
 
-=====analytics=====
+# analytics
 * https://analyticsacademy.withgoogle.com/course/4
 
-=====onderwijs tools bekijken (tip v Sander Gordijn)======
+# onderwijs tools bekijken (tip v Sander Gordijn)=
 http://onderwijs.tools/?p=808
 
-=====bekijken=====
+# bekijken
 * https://readme.io
 * https://whsjs.io/#/
 
-=====lezen: waarom-je-smartphone-er-zo-snel-mee-ophoudt=====
+# lezen: waarom-je-smartphone-er-zo-snel-mee-ophoudt
 DONE: https://decorrespondent.nl/5509/waarom-je-smartphone-er-zo-snel-mee-ophoudt/530217979984-cc554e22
 
-=====Virtual Cameras on Khan Academy=====
+# Virtual Cameras on Khan Academy
 https://www.khanacademy.org/partner-content/pixar/virtual-cameras/virtual-cameras-1/v/virtual-cameras?utm_source=Sailthru&utm_medium=email&utm_campaign=Pixar%20in%20a%20Box%20Virtual%20Cameras%20Message%20To%20Learners%20Final%20Send&utm_term=All%20Users
 
-=====Platform studies (books from MIT)=====
+# Platform studies (books from MIT)
 * https://mitpress.mit.edu/books/series/platform-studies
 
-=====write your own OS=====
+# write your own OS
 *  http://mikeos.sourceforge.net/write-your-own-os.html
 
-===== Other =====
+#  Other 
 * http://hackertyper.com/
 * Nash: https://m.youtube.com/watch?v=oM1SflhJDoc
 * http://www.tnmoc.org
 * [[https://www.3dhubs.com/talk/thread/how-make-your-own-filament-recycling-old-3d-prints-part-2|3D hubs artikel over hoe je Filament kan recyclen]]
 
 
-=====video bloggers=====
+# video bloggers
 * https://www.youtube.com/user/jeriellsworth
 * https://www.youtube.com/user/EEVblog
 * https://vimeo.com/scanlime
 
-=====kijken / lezen=====
+# kijken / lezen
 * peter: https://youtu.be/RvFcWXrSlHE)
 * peter: [[https://medium.com/javascript-scene/how-to-build-a-high-velocity-development-team-4b2360d34021|How to Build a High Velocity Development Team — JavaScript Scene]]
 * peter: https://medium.com/@3dhubs/five-things-we-learned-from-building-a-global-3d-printing-network-f2ad23146ff3
 
-=====peter: paper prototyping=====
+# peter: paper prototyping
 * Voorbeeld sessie: https://www.youtube.com/watch?v=9wQkLthhHKA (met kind) (7 min)
 * Korte lezing over prototyping https://www.youtube.com/watch?v=lgEm67KLIIM (tip: zet speed iets hoger)
 * Een filmpje met highlights van een test: https://youtu.be/kAWRLEtNBvI
 * Kort filmpje over paper prototyping: https://www.youtube.com/watch?v=JC9B0gIhcrQ
 
-=====lezen=====
+# lezen
 * http://techcrunch.com/2015/07/05/the-netherlands-a-look-at-the-worlds-high-tech-startup-capital/
 
-=====peter=====
+# peter
 Om een idee te krijgen van hoe hardware ontwikkeling bij andere kleine bedrijfjes / startups ging kan ik de volgende twee blogs aanraden:
 - https://pinocc.io/blog/
 - http://behind.airtame.com/
 Bijv: 
 - https://pinocc.io/blog/open-source-hardware/hardware-is-hard/
 - https://pinocc.io/blog/open-source-hardware-business/testing-before-shipping/
-- http://behind.airtame.com/post/100096574596/an-update-from-our-manufacturing-facility-whilst
-=====todo=====
+
+- http://behind.airtame.com/post/100096574596/an-update-from-our-manufacturing-facility-whilst# todo
 * https://vimeo.com/scanlime
 * DONE: [[https://vimeo.com/110257380|Coastermelt Part 1 from Micah Scot]]
 * [[http://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html|What Every Computer Scientist Should Know About Floating-Point Arithmetic]]
@@ -86,10 +86,10 @@ Vorlon.js (msdn blog post) (andyet blog post)
 Begrijp alleen nog niet wanneer dat interessant is, of dat handiger is dan GapDebug. Misschien is het vooral handig als je WindowsPhone dingen wilt doen. 
 Zie ook: https://github.com/phonegap/phonegap/wiki/Debugging-in-PhoneGap
 
-=====3D theory=====
+# 3D theory
 * rendering a torus 'theory': [[http://canonical.org/~kragen/sw/torus.js]]!!!
 
-=====About work in the future:=====
+# About work in the future:
 * http://robotswillstealyourjob.com/
 * http://tegenlicht.vpro.nl/afleveringen/2014-2015/gratis-geld.html
 * Rutger Bregman over basisinkomen: https://www.youtube.com/watch?v=aIL_Y9g7Tg0
@@ -97,7 +97,7 @@ Zie ook: https://github.com/phonegap/phonegap/wiki/Debugging-in-PhoneGap
 * https://decorrespondent.nl/1161/Dit-unieke-onderzoek-laat-zien-wat-er-gebeurt-als-je-een-arme-indiaan-zomaar-6000-dollar-per-jaar-geeft/111741345936-f25e6f1d
 * http://kiosk.decorrespondent.nl/products/rutger-bregman-gratis-geld-voor-iedereen-boek
 
-=====other======
+# other=
 
 * [[https://github.com/tosqa/Plotter/issues/1|warning/info messages]]
 * CommonJS, Browsify en NPM en vooral de combinatie ertussen: http://ampersandjs.com/learn/npm-browserify-and-modules
@@ -119,22 +119,22 @@ Zie ook: https://github.com/phonegap/phonegap/wiki/Debugging-in-PhoneGap
 * DONE: https://www.youtube.com/watch?v=peoZJRtnPiA
 * DONE: http://enablingthefuture.org/
 
-===== Network Service Discovery in the browser =====
+#  Network Service Discovery in the browser 
 Network Service Discovery is a specification, an API that might be implemented in browsers. We should probably implement this when this becomes available, this could be more robust than our current connect.doodle3d.com system. It's makes the detour through the internet unnecessary. When it's available our current system could still be used as a backup.
 * http://www.w3.org/TR/discovery-api/#zeroconf-mdns-dns-sd
 * https://bugzilla.mozilla.org/show_bug.cgi?id=914579
 * https://www.youtube.com/watch?v=dujaAWwGVB4
 
 Abstract
-This specification defines a mechanism for an HTML document to discover and subsequently communicate with HTTP-based services advertised via common discovery protocols within the current network.
-===== openFrameworks community survey =====
+This specification defines a mechanism for an HTML document to discover and subsequently communicate with HTTP-based 
+services advertised via common discovery protocols within the current network.#  openFrameworks community survey 
 * http://blog.openframeworks.cc/post/104672042124/2014-community-survey
 
-===== Hacker News =====
+#  Hacker News 
 * https://news.ycombinator.com/
 * https://news.ycombinator.com/shownew
 
-===== Programming =====
+#  Programming 
 * DONE: [[https://www.youtube.com/watch?v=CMdHDHEuOUE|Google and NASA's Quantum Artificial Intelligence Lab
 ]] (6 min)
 * DONE: [[https://www.youtube.com/watch?v=mPq5S27qWW8|toekomst van Javascript, de nieuwe versie: EcmaScript 6. Dingen als generators, arrow functions, template strings. Veel hiervan is nu al bruikbaar door compilers als Traceur.]] (31 min)
@@ -144,7 +144,7 @@ This specification defines a mechanism for an HTML document to discover and subs
 * DONE [[https://github.com/google/traceur-compiler|traceur-compiler on github]]
 * DONE: [[APL]] [[http://nl.wikipedia.org/wiki/APL_(programmeertaal)|op wikipedia]], [[http://www.dyalog.com/|dyalog]], [[https://www.youtube.com/watch?v=_DTpQ4Kk2wA|APL demo 1975]], [[https://www.youtube.com/watch?hl=en-GB&gl=GB&fmt=18&v=a9xAKttWgP4|game of life in APL]]
 
-===== 3D printing, design & making=====
+#  3D printing, design & making
 * DONE: [[https://www.youtube.com/watch?v=k0DNnyknWKM&feature=youtu.be&list=PLOcrXzpA0W83uyr5LX-U47F3V5IfAZ-UP|Let’s build our own personalized open textile production line]]
 
 
@@ -169,7 +169,7 @@ This specification defines a mechanism for an HTML document to discover and subs
 * DONE: http://minicut2d.com/ (https://www.youtube.com/watch?v=Fd5DYLPdb1s)
 * DONE: http://www.cel-robox.com/
 
-===== other =====
+#  other 
 * DONE: https://www.facebook.com/video.php?v=10153454679638986&fref=nf
 * DONE: [[http://on.ted.com/q0GjH|TED Will Marshall: Tiny satellites show us the Earth as it changes in near-real-time]] tip van Peter voor op Globe4D
 * [[https://decorrespondent.nl/1795/De-ingeloste-beloften-na-16-jaar-Google-nul-resultaten/82746121810-f2344d8d|Google beloftes, artikel uit De Correspondent]]
@@ -179,21 +179,21 @@ This specification defines a mechanism for an HTML document to discover and subs
 * DONE: [[http://www.ted.com/talks/jeremy_howard_the_wonderful_and_terrifying_implications_of_computers_that_can_learn|TED talk via Peter over Machine Learning]]
 * http://blog.scoutapp.com/articles/2009/07/31/understanding-load-averages
 
-=====Smart Config=====
+# Smart Config
 * DONE: Rick, hier een stukje hoe Texas Instruments [[cc3000|Smart Config]] werkt. het zou heel mooi zijn als we dit b.v. achter de schermen kunnen laten werken voordat we ueberhaubt verbinding maken. (Volgens mij werkt dit zelfs als de printer een Accesspoint is namelijk, omdat dit op de UDP/IP laag gebeurd). Haalbaarheid etc is een tweede, maar lees het eens door, zeker niet oninteressant.
 * DONE: http://processors.wiki.ti.com/index.php/CC3000_Smart_Config
-* DONE: http://electronics.stackexchange.com/questions/61704/how-does-ti-cc3000-wifi-smart-config-work
-===== Fosdem =====
+
+* DONE: http://electronics.stackexchange.com/questions/61704/how-does-ti-cc3000-wifi-smart-config-work#  Fosdem 
 * http://fosdem.org: Fosdem '15 conference (weekend van 31 jan)
 
-===== Getting over jQuery =====
+#  Getting over jQuery 
 * http://ponyfoo.com/articles/getting-over-jquery
 * http://microjs.com/#ajax
 
-===== Business =====
+#  Business 
 Tips van Nico: see [[business]]
 * https://www.youtube.com/watch?v=HHjgK6p4nrw (guy kawasaki, leuke speech tip v Nico)
 
-===== Books =====
+#  Books 
 * Eriksson & Sundquist - Het Hongerig Vuur
 * Eric von Hippel - Democratizing Innovation
