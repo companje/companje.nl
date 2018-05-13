@@ -16,7 +16,7 @@ ssh -o StrictHostKeyChecking=no root@10.0.0.195
 SSHFS lijkt ook redelijk bruikbaar zonder gui te gebruiken. Mogelijk zelfs wel stabieler: http://doodle3d.com/help/remote-disk-mount
 
 # sshfs with debug info
-```
+```bash
 mkdir local-folder
 sshfs -odebug,sshfs_debug,loglevel=debug user@server:/ local-folder
 ...
@@ -24,7 +24,9 @@ umount local-folder
 ```
 
 # add self to authorized_keys oneliner
-  cat ~/.ssh/id_rsa.pub | ssh SERVER 'cat >> ~/.ssh/authorized_keys'
+```bash
+cat ~/.ssh/id_rsa.pub | ssh SERVER 'cat >> ~/.ssh/authorized_keys'
+```
 
 # ssh agent forwarding
 De volgende tutorial omschrijft duidelijk hoe je ssh agent forwarding kan instellen. Hiermee kan je (via ssh) op een ander apparaat een git pull doen met jou eigen ssh key. 
@@ -36,7 +38,9 @@ Het vereist wel dat de remote een ssh url is. Dit kan je bijv. doen door het te 
 https://www.youtube.com/watch?v=CwYSvvGaiWU
 
 # ssh-keygen more secure key
+```bash
   ssh-keygen -t rsa -b 4096 -C "name@domain.com"
+```
 
 # connection to .... closed
 check if user belongs to 'ssh' group (and decide if you want this :-)
