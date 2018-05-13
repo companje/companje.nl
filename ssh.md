@@ -2,6 +2,11 @@
 title: ========= SSH =========
 ---
 
+# create SSH tunnel
+```bash
+ssh -NL 8157:localhost:8888 paperspace@74.82.31.122
+```
+
 # update key in known_hosts
 ```bash
 ssh-keygen -R SERVER_IPADDRESS
