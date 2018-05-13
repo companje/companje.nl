@@ -99,7 +99,6 @@ cat /tmp/id_rsa.pub >> ~/.ssh/authorized_keys
 
 hmm.. het lijkt dat je de id_dsa.pub moet toevoegen
 
-```bash
 op de client:
 ```bash
 ssh-keygen -t dsa -f $HOME/.ssh/id_dsa -P ''
