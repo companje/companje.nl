@@ -2,7 +2,7 @@
 title: Jupyter Notebook
 ---
 
-http://jupyter.org/ (tip v Simon)
+<http://jupyter.org/ (tip v Simon)
 
 # run
 ```bash
