@@ -64,10 +64,14 @@ Enter ~.
 ```
 
 # ssh tunnel
-```bashssh -L 8080:localhost:80 192.168.0.1```
+```bash
+ssh -L 8080:localhost:80 192.168.0.1
+```
 
 # restart ssh daemon
-```/etc/init.d/sshd restart```
+```bash
+/etc/init.d/sshd restart
+```
 
 You need to do this after manually adding a user to the sshd_config file ([[http://fixunix.com/ssh/74233-ssh-login-error-permission-denied-please-try-again.html|see this thread]])
 
