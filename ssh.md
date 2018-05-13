@@ -47,7 +47,7 @@ check if user belongs to 'ssh' group (and decide if you want this :-)
 
 # disable host strict checking
 in ''~/.ssh/config''
-```
+```bash
 Host wifibox
   User root
   Hostname 192.168.5.1
