@@ -7,7 +7,7 @@ title: ========= SSH =========
 ssh-keygen -R SERVER_IPADDRESS
 ```
 
-# ignore StrictHostKeyChecking for once 
+# ignore StrictHostKeyChecking for once b
 ```
 ssh -o StrictHostKeyChecking=no root@10.0.0.195
   
