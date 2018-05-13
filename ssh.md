@@ -3,10 +3,13 @@ title: ========= SSH =========
 ---
 
 # update key in known_hosts
+```bash
 ssh-keygen -R SERVER_IPADDRESS
+```
 
 # ignore StrictHostKeyChecking for once 
-  ssh -o StrictHostKeyChecking=no root@10.0.0.195
+```
+ssh -o StrictHostKeyChecking=no root@10.0.0.195
   
   # sshfs
 SSHFS lijkt ook redelijk bruikbaar zonder gui te gebruiken. Mogelijk zelfs wel stabieler: http://doodle3d.com/help/remote-disk-mount
