@@ -8,9 +8,10 @@ ssh-keygen -R SERVER_IPADDRESS
 ```
 
 # ignore StrictHostKeyChecking for once 
-```
+```bash
 ssh -o StrictHostKeyChecking=no root@10.0.0.195
-  
+```
+
   # sshfs
 SSHFS lijkt ook redelijk bruikbaar zonder gui te gebruiken. Mogelijk zelfs wel stabieler: http://doodle3d.com/help/remote-disk-mount
 
