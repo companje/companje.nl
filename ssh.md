@@ -2,8 +2,6 @@
 title: ========= SSH =========
 ---
 
-see also: [[linux]], [[git]]
-
 # update key in known_hosts
 ssh-keygen -R SERVER_IPADDRESS
 
