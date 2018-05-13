@@ -1,5 +1,5 @@
 ---
-title: ========= SSH =========
+title: SSH
 ---
 
 # create SSH tunnel
