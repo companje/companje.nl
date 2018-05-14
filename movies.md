@@ -7,7 +7,6 @@ title: Movies
 * DONE Altered Carbon tip v Casper (duister, future)
 * https://www.youtube.com/watch?v=aircAruvnKk (neural network tip v casper)
 * three blue one brown (tip v casper): wiskunde
-* altered carbon (tip v casper) bladerunnerachtig
 * https://www.youtube.com/watch?v=_GVAjZ2mXH4&index=2&list=PLNuold7vrn7EwR1Ml_83lV0YJbTBqstnU (Watersnoodmuseum)
 * [Facebook Ads Beginner to EXPERT in One Video](https://youtu.be/iR6ATUw0BIU)
 * https://www.youtube.com/watch?v=zKvl-emwt9Y&feature=youtu.be (tinkercad)
