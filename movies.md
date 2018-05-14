@@ -3,6 +3,7 @@ title: Movies
 ---
 
 # TODO
+* tully (nu in bios, van regiseurs van Juno)
 * https://youtu.be/_Cp-BGQfpHQ (tip v Quinten)
 * DONE Altered Carbon tip v Casper (duister, future)
 * https://www.youtube.com/watch?v=aircAruvnKk (neural network tip v casper)
