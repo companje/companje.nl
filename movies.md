@@ -3,6 +3,7 @@ title: Movies
 ---
 
 # TODO
+* 12 monkeys serie
 * tully (nu in bios, van regiseurs van Juno)
 * https://youtu.be/_Cp-BGQfpHQ (tip v Quinten)
 * DONE Altered Carbon tip v Casper (duister, future)
@@ -11,7 +12,7 @@ title: Movies
 * https://www.youtube.com/watch?v=_GVAjZ2mXH4&index=2&list=PLNuold7vrn7EwR1Ml_83lV0YJbTBqstnU (Watersnoodmuseum)
 * [Facebook Ads Beginner to EXPERT in One Video](https://youtu.be/iR6ATUw0BIU)
 * https://www.youtube.com/watch?v=zKvl-emwt9Y&feature=youtu.be (tinkercad)
-* end of the fucking world - serie netfix tip v sylvain/nico
+* DONE end of the fucking world - serie netfix tip v sylvain/nico
 * De Storm - tip v Frans
 * [3D Printers on Kickstarter - Where are they now?](https://www.youtube.com/watch?v=s9deNcysgts)
 * [How To Turn A $500 Investment Into $400M Dollars](https://www.youtube.com/watch?v=kcYPvbOV_Ss) (SKIP TO 3:25) (tip v Nico)
@@ -21,7 +22,7 @@ title: Movies
 * https://youtu.be/xhQ7d3BK3KQ
 * 20th century woman - tip van Dominic
 * guardians of the galaxy 2
-* Swiss army man (tip v Nico)
+* DONE Swiss army man (tip v Nico)
 * goed filmpje over neural networks: https://youtu.be/ILsA4nyG7I0
 * Ghost in the shell (kijken in Kinepolis)
 * DONE: Toffe korte video over machine learning: https://youtu.be/qv6UVOQ0F44
@@ -33,7 +34,7 @@ title: Movies
 * DONE http://thenextweb.com/mobile/2016/12/16/film-student-tricked-thief-lifting-phone-spied-weeks/
 
 # tip v radio
-* The Circle (11 May 2017)
+* DONE The Circle (11 May 2017)
 
 # tip v Jeroen en Peter
 * DONE: Arrival
