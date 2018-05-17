@@ -22,6 +22,7 @@ ln -s  /Applications/GitHub\ Desktop.app/Contents/MacOS/GitHub\ Desktop  ~/bin/g
 ```bash 
 git filter-branch --tree-filter 'rm bin/data/images/BalloonChair-Field.psd' HEAD
 ```
+
 # github software errors on windows
 ```
 WARNING: git command could not be found. Please create an alias or add it to your PATH.
