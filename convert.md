@@ -11,7 +11,10 @@ convert -debug cache -limit area 1GB  /Users/rick/Downloads/Mars_MGS_MOLA_DEM_mo
 ```bash
 convert -size 10x65535  -rotate -90  gradient:red-green  redgreen.png
 ```
-
+# lookup colors in palette
+```bash
+convert -interpolate bilinear /Users/rick/Downloads/mars-8k-16bpp-bump.tiff redgreen.png -clut -depth 8 out.png
+```
 
 # Convert multiple jpg's into bmp's
 ```bash
