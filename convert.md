@@ -16,6 +16,8 @@ convert -size 10x65535  -rotate -90  gradient:red-green  redgreen.png
 convert -interpolate bilinear /Users/rick/Downloads/mars-8k-16bpp-bump.tiff redgreen.png -clut -depth 8 out.png
 ```
 
+-------
+
 # Convert multiple jpg's into bmp's
 ```bash
 for i in *.jpg; do sips -s format bmp $i --out ../clouds-201509-bmp/$i.bmp;done
