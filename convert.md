@@ -10,6 +10,8 @@ convert -debug cache -limit area 1GB  /Users/rick/Downloads/Mars_MGS_MOLA_DEM_mo
 # 2 create redgreen gradient palette 64k wide
 ```bash
 convert -size 10x65535  -rotate -90  gradient:red-green  redgreen.png
+# black-yellow
+convert -size 1x65535 -rotate -90   gradient:black-yellow blackyellow.png
 ```
 # 3 lookup colors in palette (not sure yet if it solves my problem)
 ```bash
