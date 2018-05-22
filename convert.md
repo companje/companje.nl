@@ -7,7 +7,7 @@ title: Convert images
 convert -debug cache -limit area 1GB  /Users/rick/Downloads/Mars_MGS_MOLA_DEM_mosaic_global_463m.tif -sample 4096x2048 test.tiff
 ```
 
-
+#
 
 # Convert multiple jpg's into bmp's
 ```bash
