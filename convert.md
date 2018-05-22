@@ -7,10 +7,11 @@ title: Convert images
 convert -debug cache -limit area 1GB  /Users/rick/Downloads/Mars_MGS_MOLA_DEM_mosaic_global_463m.tif -sample 4096x2048 test.tiff
 ```
 
-# create palette 64k wide
+# create redgreen gradient palette 64k wide
 ```bash
 convert -size 10x65535  -rotate -90  gradient:red-green  redgreen.png
 ```
+
 
 # Convert multiple jpg's into bmp's
 ```bash
