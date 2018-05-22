@@ -13,6 +13,8 @@ first height, then width!
 ```
 
 # create gradient
-  convert -size 100x300 gradient:#000-#f00 gradient:#f00-#ff0 gradient:#ff0-#fff gradient:#fff-#0ff gradient:#0ff-#00f gradient:#00f-#000 -append lut.png
-  
+```bash
+convert -size 100x300 gradient:#000-#f00 gradient:#f00-#ff0 gradient:#ff0-#fff gradient:#fff-#0ff gradient:#0ff-#00f gradient:#00f-#000 -append lut.png
+```
+
 * more info http://www.imagemagick.org/Usage/canvas/#gradient_colorspace
