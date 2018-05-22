@@ -10,7 +10,8 @@ for i in *.jpg; do sips -s format bmp $i --out ../clouds-201509-bmp/$i.bmp;done
 first height, then width!
 ```bash
   for i in *.jpg; do sips -z 1024 2048 $i --out ../clouds-201509-2k/$i;done
-  
+```
+
 # create gradient
   convert -size 100x300 gradient:#000-#f00 gradient:#f00-#ff0 gradient:#ff0-#fff gradient:#fff-#0ff gradient:#0ff-#00f gradient:#00f-#000 -append lut.png
   
