@@ -30,7 +30,11 @@ done
 pdftk input.pdf cat 1-3 5 output bijlage1.pdf
 ```
 # concat
+```bash
 pdftk offerte.pdf bijlage1.pdf bijlage2.pdf bijlage3.pdf output combi.pdf
+```
 
 # qpdf
-  qpdf --linearize input.pdf output.pdf
+```bash
+qpdf --linearize input.pdf output.pdf
+```
