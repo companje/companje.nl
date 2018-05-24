@@ -2,6 +2,13 @@
 title: Convert images
 ---
 
+# convert DDS to PNG
+```bash
+convert Mars-normalmap_8k.dds Mars-normalmap_8k.png
+```
+
+-------
+
 # 1 resize (sample) very large image file
 ```bash
 convert -debug cache -limit area 1GB  /Users/rick/Downloads/Mars_MGS_MOLA_DEM_mosaic_global_463m.tif -sample 4096x2048 test.tiff
