@@ -2,6 +2,12 @@
 title: Convert images
 ---
 
+# convert from 16bit to red+green channel
+```bash
+convert Mars_8k_16bit.tif -depth 24 mars24.rgb
+convert -size 8192x4096 -depth 8 rgb:mars24.rgb mars_redgreen.png
+```
+
 # convert DDS to PNG
 ```bash
 convert Mars-normalmap_8k.dds Mars-normalmap_8k.png
