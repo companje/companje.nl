@@ -18,6 +18,12 @@ convert -size 1x65535 -rotate -90   gradient:black-yellow blackyellow.png
 convert -interpolate bilinear /Users/rick/Downloads/mars-8k-16bpp-bump.tiff redgreen.png -clut -depth 8 out.png
 ```
 
+# works:
+```bash
+convert -size 1x65535 -rotate -90   gradient:black-yellow blackyellow.png
+convert -interpolate bilinear Mars_8k_Disp_v001.tif blackyellow.png -clut -depth 8 out.png
+```
+
 -------
 
 # Convert multiple jpg's into bmp's
