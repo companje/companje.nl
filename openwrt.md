@@ -6,6 +6,10 @@ title: OpenWrt
 ```bash
 opkg list_installed
 ```
+or as one string of package names:
+```bash
+echo $(opkg list_installed | awk '{ print $1 }')
+```
 
 # show devices
 ```bash
