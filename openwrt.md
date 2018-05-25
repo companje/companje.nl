@@ -2,11 +2,16 @@
 title: OpenWrt
 ---
 
+# show devices
+```bash
+cat /sys/kernel/debug/usb/devices
+```
+
 # kun je php gebruiken?
 Ja! als je eerst ruimte maakt met exroot kun je daarna stappen volgen op openwrt.org
 
 # tcpdump
-```
+```bash
 tcpdump -i wlan0 -vvv -ttt -p -U
 ```
 
