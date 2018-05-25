@@ -2,6 +2,11 @@
 title: OpenWrt
 ---
 
+# list installed packages
+```bash
+opkg list_installed
+```
+
 # show devices
 ```bash
 cat /sys/kernel/debug/usb/devices
