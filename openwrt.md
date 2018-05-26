@@ -4,7 +4,7 @@ title: OpenWrt
 
 # add alias in /etc/profile
 ```bash
-alias nr=/etc/init.d/network reload
+alias nr="/etc/init.d/network reload"
 ```
 
 # list installed packages
