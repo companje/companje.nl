@@ -23,6 +23,8 @@ cat /sys/kernel/debug/usb/devices
 
 # kun je php gebruiken?
 Ja! als je eerst ruimte maakt met exroot kun je daarna stappen volgen op openwrt.org
+* https://openwrt.org/docs/guide-user/services/webserver/php
+* https://openwrt.org/docs/guide-user/services/webserver/uhttpd
 
 # tcpdump
 ```bash
