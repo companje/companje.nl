@@ -2,6 +2,11 @@
 title: OpenWrt
 ---
 
+# add alias in /etc/profile
+```bash
+alias nr=/etc/init.d/network reload
+```
+
 # list installed packages
 ```bash
 opkg list_installed
