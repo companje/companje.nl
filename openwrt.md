@@ -26,6 +26,11 @@ Ja! als je eerst ruimte maakt met exroot kun je daarna stappen volgen op openwrt
 * https://openwrt.org/docs/guide-user/services/webserver/php
 * https://openwrt.org/docs/guide-user/services/webserver/uhttpd
 * uncomment `list interpreter ".php=/usr/bin/php-cgi"` in /etc/config
+```bash
+opkg update && opkg install zoneinfo-europe
+opkg install rsync
+opkg install php5-mod-json
+```
 
 # tcpdump
 ```bash
