@@ -25,7 +25,7 @@ cat /sys/kernel/debug/usb/devices
 Ja! als je eerst ruimte maakt met exroot kun je daarna stappen volgen op openwrt.org
 * https://openwrt.org/docs/guide-user/services/webserver/php
 * https://openwrt.org/docs/guide-user/services/webserver/uhttpd
-
+* uncomment `list interpreter “.php=/usr/bin/php-cgi”` in /etc/config
 # tcpdump
 ```bash
 tcpdump -i wlan0 -vvv -ttt -p -U
