@@ -2,17 +2,26 @@
 title: wget
 ---
 
+# recursive download images
+```bash
+wget -nd -r -A jpeg,jpg,bmp,gif,png http://www.domain.com
+```
+
 # output to stdout
 ```bash
 wget http://connect.doodle3d.com/api/signin.php -O -
 ```
 
 # wildcards
-  wget http://site.com/c={a..z}
-  wget http://site.com/c={3000..4000}
+```bash
+wget http://site.com/c={a..z}
+wget http://site.com/c={3000..4000}
+```
 
 # don't download if file exists
-  wget -nc   # or --no-clobber: skip downloads that would download to existing files.
+```bash
+wget -nc   # or --no-clobber: skip downloads that would download to existing files.
+```
 
 # download url's from file
 ```bash
