@@ -3,6 +3,9 @@ title: Shaders
 ---
 Zie ook [[OpenGL]]
 
+# GLSL preview in Atom
+https://atom.io/packages/glsl-preview
+
 # texOffset in Processing
 "texOffset uniform. This uniform is set automatically by Processing and contains the vector (1/width, 1/height), with width and height being the resolution of the texture. "
 
