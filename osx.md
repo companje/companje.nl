@@ -2,6 +2,9 @@
 title: Mac OSX
 ---
 
+# Etcher
+You can burn ISO's with Etcher: <https://etcher.io>
+
 # custom resolution
 "To access all supported resolutions for your external display, press and hold the Option key on your keyboard and then click the “Scaled” option again."
 
