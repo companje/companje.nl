@@ -2,6 +2,9 @@
 title: wget
 ---
 
+# don't follow redirect, keep connection open, tee to file
+wget --max-redirect 0  http://hetutrechtsarchief.nl/collectie/beeldmateriaal/catalogusnummer/{1..1000} 2>&1 | tee file.txt
+
 # recursive download images
 ```bash
 wget -nd -r -A jpeg,jpg,bmp,gif,png http://www.domain.com
