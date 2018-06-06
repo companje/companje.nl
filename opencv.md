@@ -2,7 +2,7 @@
 title: OpenCV
 ---
 
-3Optical Flow====
+Optical Flow====
 ofxCv / Flow:
 * use Farneback for a dense flow field, 
 * use PyrLK for specific features
