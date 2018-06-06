@@ -2,6 +2,9 @@
 title: openFrameworks
 ---
 
+# OF 0.10.0 - error clang: error: no such file or directory: '../../../libs/rtAudio/lib/osx/rtAudio.a'
+This error happens on OSX with 'Case Sensitive' file system. The file on disk is actually called 'rtaudio.a'
+
 # cannot convert parameter 1 from 'char' to 'LPCWSTR'
 [stackoverflow](http://stackoverflow.com/questions/3924926/cannot-convert-parameter-1-from-char-to-lpcwstr): in Visual Studio project properties set 'Character Set' to 'not set'.
 
