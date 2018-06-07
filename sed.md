@@ -2,6 +2,8 @@
 title: sed
 ---
 
+see bash
+
 # prefix and postfix to each line
 ```bash
 ls | sed 's/.*/hoi&?doei/'
