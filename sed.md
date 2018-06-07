@@ -2,4 +2,4 @@
 title: sed
 ---
 
-see linux
+see bash
