@@ -2,6 +2,18 @@
 title: Bash
 ---
 
+# prefix and postfix to each line
+```bash
+ls | sed 's/.*/hoi&?doei/'
+#hoiids-unique.txt?doei
+#hoiids.txt?doei
+```
+
+# remove whitespace
+```bash
+tr -d ' ' < ids-unique.txt
+```
+
 # for loop sequence with step
 ```bash
 for i in `seq 0 1000 13000`; do echo $i; done
