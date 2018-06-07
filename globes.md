@@ -2,6 +2,7 @@
 title: (Virtual) Globes
 ---
 see [[maps]]
+* https://vimeo.com/269196267 (crowdfunding pufferfish)
 * http://www.globalgeology.com/
 * https://worldview.gallery/
 * https://en.wikipedia.org/wiki/WorldWide_Telescope
