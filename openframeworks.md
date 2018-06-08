@@ -2,6 +2,11 @@
 title: openFrameworks
 ---
 
+# scale image without smoothing/anti aliasing
+```cpp
+image.getTextureReference().setTextureMinMagFilter(GL_NEAREST, GL_NEAREST);
+```
+
 # OF 0.10.0 - error clang: error: no such file or directory: '../../../libs/rtAudio/lib/osx/rtAudio.a'
 This error happens on OSX with 'Case Sensitive' file system. The file on disk is actually called 'rtaudio.a'
 
