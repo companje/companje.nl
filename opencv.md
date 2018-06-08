@@ -2,6 +2,9 @@
 title: OpenCV
 ---
 
+# Subtract vs absdiff
+Subtract can be useful instead of absdiff if you want only difference when something 'appears or moves' and not when it 'disappears'
+
 # Optical Flow
 * use Farneback for a dense flow field, 
 * use PyrLK for specific features
