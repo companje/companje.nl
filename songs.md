@@ -2,6 +2,7 @@
 title: Songs
 layout: default
 ---
+  * S10 - Psychoses (ft Victoire)
   * Famke Louise - Op me monnie
   * tony ronald - help (get me some help)
   * KX Classics The Edge (https://tunein.com/radio/KX-Classics---The-Edge-s287569/)
