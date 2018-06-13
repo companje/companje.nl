@@ -2,6 +2,11 @@
 title: Mac OSX
 ---
 
+# launchctl as alternative for ps
+```bash
+launchctl list | grep couchdb
+```
+
 # Etcher
 You can burn ISO's with Etcher: <https://etcher.io>
 
