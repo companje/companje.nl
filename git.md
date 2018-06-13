@@ -21,6 +21,8 @@ ln -s  /Applications/GitHub\ Desktop.app/Contents/MacOS/GitHub\ Desktop  ~/bin/g
 (for example when you already deleted it but github keeps complaining about LFS large files)
 ```bash 
 git filter-branch --tree-filter 'rm bin/data/images/BalloonChair-Field.psd' HEAD
+# better working solution:
+git filter-branch --index-filter 'git rm -r --cached --ignore-unmatch ./MarsGlobeWithTitles.zip' HEAD
 ```
 
 # github software errors on windows
