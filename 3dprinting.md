@@ -10,6 +10,7 @@ title: 3D Printing
 
 # links
 * 3D apps: <https://www.myminifactory.com/software/>
+* <https://www.selva3d.com/>
 * <https://github.com/sympli/autodraw-sketch (autodraw plugin for sketch)>
 * <https://hackernoon.com/launching-on-product-hunt-what-works-and-what-doesnt-guide-case-study-776c77d56e26>
 * <https://3dorchard.com/app>
