@@ -9,6 +9,7 @@ title: Windows
 cd %windir%/system32/oobe/”
 msoobe
 ```
+to restart the account creation wizard 
 
 # cmder.net
 Portable console emulator for Windows
