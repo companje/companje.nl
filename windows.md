@@ -4,9 +4,9 @@ title: Windows
 
 # Windows Could Not Complete The Installation 
 * https://www.drivereasy.com/knowledge/windows-could-not-complete-the-installation-solved
-* shift+F10 gives Command Prompt from where you can:
+* shift+F10 gives Command Prompt from where you can run:
 ```
-cd %windir%/system32/oobe/”
+cd %windir%/system32/oobe/
 msoobe
 ```
 to restart the account creation wizard 
