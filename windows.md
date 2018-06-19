@@ -17,7 +17,8 @@ lusrmgr.msc
 cd %windir%/system32/oobe/
 msoobe
 ```
-to restart the account creation wizard 
+to restart the account creation wizard
+(haven't been able to fix my install btw)
 
 # cmder.net
 Portable console emulator for Windows
