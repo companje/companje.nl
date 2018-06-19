@@ -2,6 +2,14 @@
 title: Windows
 ---
 
+# Local Users and Groups Manager
+```
+lusrmgr.msc
+```
+
+# System Administrator command line shortcuts to popular MMCs
+<http://www.primemsp.com/content/msc_Shortcuts.aspx>
+
 # Windows Could Not Complete The Installation 
 * https://www.drivereasy.com/knowledge/windows-could-not-complete-the-installation-solved
 * shift+F10 gives Command Prompt from where you can run:
