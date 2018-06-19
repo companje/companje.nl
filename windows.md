@@ -2,6 +2,14 @@
 title: Windows
 ---
 
+# Windows Could Not Complete The Installation 
+* https://www.drivereasy.com/knowledge/windows-could-not-complete-the-installation-solved
+* shift+F10 gives Command Prompt from where you can:
+```
+cd %windir%/system32/oobe/”
+msoobe
+```
+
 # cmder.net
 Portable console emulator for Windows
 <http://cmder.net>
