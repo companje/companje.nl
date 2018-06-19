@@ -2,7 +2,7 @@
 title: jekyll
 ---
 
-# liquid cheat sheet
+# jekyll/liquid cheat sheet
 * <https://devhints.io/jekyll>
 
 # remote debugging jekyll on github
