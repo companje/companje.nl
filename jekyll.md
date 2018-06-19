@@ -5,6 +5,7 @@ title: jekyll
 # remote debugging jekyll on github
 "You can configure a third-party service such as Travis CI to display error messages after each commit." [help.github.com](https://help.github.com/articles/viewing-jekyll-build-error-messages/#configuring-a-third-party-service-to-display-jekyll-build-error-messages
 )
+* this website in Travis: <https://travis-ci.org/companje/companje.github.io?utm_source=email&utm_medium=notification>
 
 # bundle install
 ```bash
