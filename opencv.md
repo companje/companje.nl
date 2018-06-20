@@ -2,6 +2,9 @@
 title: OpenCV
 ---
 
+# see also
+[[openFrameworks]], [[Processing]]
+
 # Subtract vs absdiff
 Subtract can be useful instead of absdiff if you want only difference when something 'appears or moves' and not when it 'disappears'
 
