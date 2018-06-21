@@ -196,7 +196,7 @@ var draw = function() {
 ```
 
 # Starfield 2D perspective 
-```java
+```js
 class Star extends PVector {
   float speed;
   
@@ -236,7 +236,7 @@ void draw() {
 ```
 
 # Mandelbrot set 
-```java
+```js
 // Interactive Mandelbrot Set
 // Inspired by Daniel Shiffman's Processing example.
 // by Rick Companje - www.companje.nl - 6 december 2009
