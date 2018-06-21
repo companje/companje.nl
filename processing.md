@@ -2,6 +2,12 @@
 title: Processing
 ---
 
+# Disable smoothing for images
+```java
+hint(DISABLE_TEXTURE_MIPMAPS);
+((PGraphicsOpenGL)g).textureSampling(2);
+```
+
 # PVector 3D rotation
 ```js
 void applyRotation(PVector src, PVector axis, float angle) {
