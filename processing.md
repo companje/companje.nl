@@ -2,6 +2,21 @@
 title: Processing
 ---
 
+# Rotate PImage 180 degrees
+Rotating 180 degrees is easy. Just swap the first and last pixel and everything in between.
+```java
+void rotate180(PImage img) {
+  img.loadPixels();
+  int wh = img.width * img.height;
+  for (int i=0; i<wh/2; i++) {
+    color tmp = img.pixels[i];
+    img.pixels[i] = img.pixels[wh-i-1];
+    img.pixels[wh-i-1] = tmp;
+  }
+  img.updatePixels();
+}
+```
+
 # Enable / Disable DEPTH_TEST
 ```java
 hint(DISABLE_DEPTH_TEST);
