@@ -18,7 +18,7 @@ void rotate180(PImage img) {
 ```
 
 # Enable / Disable DEPTH_TEST
-```java
+```js
 hint(DISABLE_DEPTH_TEST);
 fill(255, 255, 0);
 ellipse(mouseX, mouseY, 10, 10);
@@ -26,7 +26,7 @@ hint(ENABLE_DEPTH_TEST);
 ```
 
 # Disable smoothing for images
-```java
+```js
 hint(DISABLE_TEXTURE_MIPMAPS);
 ((PGraphicsOpenGL)g).textureSampling(2);
 ```
