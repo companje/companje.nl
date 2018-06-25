@@ -6,3 +6,4 @@ title: Webcams
 * Logitech BRIO: https://www.logitech.com/nl-nl/product/brio
 * Hacking the Logitech C920 & C930e Webcams (lenses): https://www.mgraves.org/2017/04/hacking-the-logitech-c920-c930e-webcams/
 * CS lenses: http://amzn.to/2opNFc1
+* node package om UVC control te doen (werkt): https://www.npmjs.com/package/uvc-control
