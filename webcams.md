@@ -8,4 +8,4 @@ title: Webcams
 * CS lenses: http://amzn.to/2opNFc1
 * node package om UVC control te doen (getest en werkt op mac): https://www.npmjs.com/package/uvc-control
 
-* Instructions video C920 Kurokesu: https://youtu.be/nESATVNA33o
+* Instructions video C920 Kurokesu: <https://youtu.be/nESATVNA33o>
