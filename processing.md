@@ -2,6 +2,9 @@
 title: Processing
 ---
 
+# Play video file backwards
+"(Note that not all video formats support backwards playback. For example, the theora codec does support backward playback, but not so the H264 codec, at least in its current version.)"
+
 # Rotate PImage 180 degrees
 Rotating 180 degrees is easy. Just swap the first and last pixel and everything in between.
 ```js
