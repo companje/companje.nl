@@ -2,6 +2,9 @@
 title: Apache 
 ---
 
+# /etc/apache2/sites-enabled
+in this folder (`/etc/apache2/sites-enabled`) small .conf files per site are placed.
+
 # find apache2.conf
 ```bash
 /usr/sbin/apache2 -V | grep SERVER_CONFIG_FILE
