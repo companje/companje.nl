@@ -2,6 +2,11 @@
 title: Apache 
 ---
 
+# find apache2.conf
+```bash
+/usr/sbin/apache2 -V | grep SERVER_CONFIG_FILE
+```
+
 # create Virtual Hosts on Ubuntu
 <https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-14-04-lts>
 ```bash
