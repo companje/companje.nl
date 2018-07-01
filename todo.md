@@ -2,6 +2,8 @@
 title: TODO - things to watch, read or listen
 ---
 
+* Docu over archeologische vonsten Noord Zuidlijn (via mailing Fabrique): https://belowthesurface.amsterdam/nl/pagina/documentaire
+
 * Tip v Peter: Simone Giertz: https://www.youtube.com/watch?v=c0bsKc4tiuY (TED talk)
 
 # 3D
