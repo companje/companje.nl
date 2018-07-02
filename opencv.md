@@ -5,6 +5,10 @@ title: OpenCV
 # see also
 [[openFrameworks]], [[Processing]]
 
+# Notes on findContours
+  * Source image is modified by this function. 
+  * Also, the function does not take into account 1-pixel border of the image (it's filled with 0's and used for neighbor analysis in the algorithm), therefore the contours touching the image border will be clipped.
+
 # Subtract vs absdiff
 Subtract can be useful instead of absdiff if you want only difference when something 'appears or moves' and not when it 'disappears'
 
