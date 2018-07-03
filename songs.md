@@ -2,7 +2,7 @@
 title: Songs
 layout: default
 ---
-  * 
+  * Album: Studio One - Rocksteady
   * S.Mos - Cotton Club Stomp
   * Ken Boothe - Home Home Home
   * S10 - Psychoses (ft Victoire)
