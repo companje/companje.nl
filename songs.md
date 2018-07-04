@@ -2,6 +2,7 @@
 title: Songs
 layout: default
 ---
+  * Nightcore - Happy Ending
   * Nightcore - Monsters
   * Nightcore - Pixel Party
   * Album: Studio One Rocksteady
