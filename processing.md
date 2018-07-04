@@ -2,7 +2,7 @@
 title: Processing
 ---
 
-# opencv js
+# opencv minMaxLoc
 ```js
 MinMaxLocResult minMaxResult = Core.minMaxLoc(opencv.getGray());
 
