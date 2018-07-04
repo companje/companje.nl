@@ -2,6 +2,13 @@
 title: Processing
 ---
 
+# opencv js
+```js
+MinMaxLocResult minMaxResult = Core.minMaxLoc(opencv.getGray());
+
+Imgproc.threshold(opencv.getGray(), opencv.getGray(), mouseX, (int)minMaxResult.maxVal, Imgproc.THRESH_TOZERO);
+```
+
 # opencv subtract
 ```js
 void subtract(Mat mat1, Mat mat2) {
