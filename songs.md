@@ -2,6 +2,7 @@
 title: Songs
 layout: default
 ---
+  * Nightcore - Running Away
   * Nightcore - Happy Ending
   * Nightcore - Monsters
   * Nightcore - Pixel Party
