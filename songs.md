@@ -2,6 +2,8 @@
 title: Songs
 layout: default
 ---
+  * Nightcore - Monsters
+  * Nightcore - Pixel Party
   * Album: Studio One Rocksteady
   * S.Mos - Cotton Club Stomp
   * Ken Boothe - Home Home Home
