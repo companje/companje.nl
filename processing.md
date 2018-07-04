@@ -2,6 +2,15 @@
 title: Processing
 ---
 
+# opencv subtract
+```js
+void subtract(Mat mat1, Mat mat2) {
+  Mat dst = opencv.imitate(mat1);
+  Core.subtract(mat1, mat2, dst);
+  dst.assignTo(mat1);
+}
+```
+
 # Play video file backwards
 "(Note that not all video formats support backwards playback. For example, the theora codec does support backward playback, but not so the H264 codec, at least in its current version.)"
 
