@@ -2,6 +2,7 @@
 title: Songs
 layout: default
 ---
+  * Nightcore - Something Right
   * Nightcore - Running Away
   * Nightcore - Happy Ending
   * Nightcore - Monsters
