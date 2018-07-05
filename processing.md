@@ -2,6 +2,9 @@
 title: Processing
 ---
 
+# good example background learning with accumulateWeighted
+https://github.com/sgjava/install-opencv/blob/master/opencv-java/src/com/codeferm/opencv/MotionDetect.java
+
 # opencv minMaxLoc
 ```js
 MinMaxLocResult minMaxResult = Core.minMaxLoc(opencv.getGray());
