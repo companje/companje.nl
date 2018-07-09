@@ -5,7 +5,7 @@ title: OpenWrt
 # sysupgrade form url
 this seems to work but it actually doesn't install anything
 ```
-# doesNOTwork: sysupgrade -v -n http://vps.companje.nl/openwrt/latest.bin
+# does-not-work: sysupgrade -v -n http://vps.companje.nl/openwrt/latest.bin
 ```
 the alternative (downloading with wget to /tmp) works well:
 ```
