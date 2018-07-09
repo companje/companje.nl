@@ -2,6 +2,11 @@
 title: OpenWrt
 ---
 
+# store credentials / password
+```
+git config credential.helper store
+```
+
 # sysupgrade form url
 this seems to work but it actually doesn't install anything
 ```bash
