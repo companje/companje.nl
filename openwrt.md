@@ -4,11 +4,11 @@ title: OpenWrt
 
 # sysupgrade form url
 this seems to work but it actually doesn't install anything
-```
+```bash
 # does-not-work: sysupgrade -v -n http://vps.companje.nl/openwrt/latest.bin
 ```
 the alternative (downloading with wget to /tmp) works well:
-```
+```bash
 cd /tmp && wget  http://vps.companje.nl/openwrt/latest.bin && sysupgrade -v -n latest.bin
 ```
 
