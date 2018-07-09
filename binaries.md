@@ -2,6 +2,7 @@
 title: Binaries
 ---
 
+# see [binwalk] for firmware binaries
 # binvis.io
 * <http://binvis.io>
 
