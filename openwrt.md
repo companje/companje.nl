@@ -6,6 +6,7 @@ title: OpenWrt
 ```
 git config credential.helper store
 ```
+just that...
 
 # sysupgrade form url
 this seems to work but it actually doesn't install anything
