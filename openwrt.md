@@ -47,7 +47,7 @@ Ja! als je ruimte hebt of eerst ruimte maakt met exroot kun je daarna stappen vo
 opkg install php7 php7-cgi
 vi /etc/config/uhttpd
   list interpreter ".php=/usr/bin/php-cgi"
-  option index_page 'index.php'
+  option index_page 'index.html index.php'
 ```
 
 * https://openwrt.org/docs/guide-user/services/webserver/php
