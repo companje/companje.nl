@@ -2,7 +2,7 @@
 title: OpenWrt
 ---
 
-# WR710n - Manual Method Using Serial Console and TFTP (Experts)
+# WR710n - (re)install firmware - Manual Method Using Serial Console and TFTP (Experts)
 * follow these steps (except..) <https://openwrt.org/toh/tp-link/tl-mr3020#manual_method_using_serial_console_and_tftp_experts>
 * !! replace 3c0000 by 7c0000  (WR710 has 8MB flash instead of 4MB)
 
