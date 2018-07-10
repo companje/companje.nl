@@ -38,7 +38,16 @@ cat /sys/kernel/debug/usb/devices
 ```
 
 # kun je php gebruiken?
-Ja! als je eerst ruimte maakt met exroot kun je daarna stappen volgen op openwrt.org
+Ja! als je ruimte hebt of eerst ruimte maakt met exroot kun je daarna stappen volgen op openwrt.org
+```bash
+opkg install php7 php7-cgi
+vi /etc/config/uhttpd
+```
+```
+ list interpreter ".php=/usr/bin/php-cgi"
+ option index_page 'index.php'
+```
+
 * https://openwrt.org/docs/guide-user/services/webserver/php
 * https://openwrt.org/docs/guide-user/services/webserver/uhttpd
 * uncomment `list interpreter ".php=/usr/bin/php-cgi"` in /etc/config
