@@ -15,7 +15,12 @@ app.get('/', (req, res) => res.send('Usage: /1'));
 
 app.get('/:page', function(req, res) {
   var index = req.params["page"] * pageSize;
-  res.send(ids.slice(index, index + pageSize));
+  
+  res.send(ids.slice(index, index + pageSize).map(id => {
+    return {
+      id: id
+    }
+  })); 
 });
 
 fs.readFile('data/ids-no-download.txt', 'utf8', function (err,data) {
