@@ -5,17 +5,22 @@ layout: default
 
 # serve textfile as paginated array
 ```javascript
+var cors = require('cors');
 var fs = require('fs');
 const express = require('express')
 const app = express()
 var ids;
 var pageSize = 10;
 
+app.use(cors());
+
 app.get('/', (req, res) => res.send('Usage: /1'));
 
 app.get('/:page', function(req, res) {
   var index = req.params["page"] * pageSize;
   
+  //res.header('Access-Control-Allow-Origin', '*') ;
+
   res.send(ids.slice(index, index + pageSize).map(id => {
     return {
       id: id
@@ -28,6 +33,8 @@ fs.readFile('data/ids-no-download.txt', 'utf8', function (err,data) {
   ids = data.split("\n");
   app.listen(3000, () => console.log('Serve API on port 3000 with '+ids.length+' items'));
 });
+
+
 ```
 
 result:
