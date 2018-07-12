@@ -2,6 +2,12 @@
 title: OpenWrt
 ---
 
+# uci show (to check for errors)
+```
+uci show firewall
+# > uci: Parse error (EOF with unterminated ') at line 127, byte 2283
+```
+
 # iwinfo
 ```bash
 opkg update
