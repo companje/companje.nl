@@ -1725,10 +1725,14 @@ wifi
 http://wiki.openwrt.org/doc/techref/hotplug
 
 # scan for wifi networks
-```bashiwlist wlan0 scan | grep ESSID  | cut -c 27- | tr -d '"'```
+```bash
+iwlist wlan0 scan | grep ESSID  | cut -c 27- | tr -d '"'
+```
 
 # get current wifi configuration
-```bashiwconfig wlan0```
+```bash
+iwconfig wlan0
+```
 
 # ideale setup voor doodle3d box zou zijn
 - eerst proberen te verbinden met een het laatst verbonden netwerk
