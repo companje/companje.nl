@@ -3,6 +3,44 @@ title: NodeJS
 layout: default
 ---
 
+# serve textfile as paginated array
+```javascript
+var fs = require('fs');
+const express = require('express')
+const app = express()
+var ids;
+var pageSize = 10;
+
+app.get('/', (req, res) => res.send('Usage: /1'));
+
+app.get('/:page', function(req, res) {
+  var index = req.params["page"] * pageSize;
+  res.send(ids.slice(index, index + pageSize));
+});
+
+fs.readFile('data/ids-no-download.txt', 'utf8', function (err,data) {
+  if (err) return console.log(err);
+  ids = data.split("\n");
+  app.listen(3000, () => console.log('Serve API on port 3000 with '+ids.length+' items'));
+});
+```
+
+result:
+```
+[
+"f7daecfe-c684-5c18-9374-14005ceb992c",
+"189bdd36-0fb2-51cf-a2a2-e49d55688f1f",
+"32237189-2792-55f8-8765-ef3ddf1c8fc5",
+"0e9a560b-11b2-59af-9717-f6058d3412ac",
+"8ea7eedf-facc-5e38-bbc2-9f003f59fe46",
+"6945af22-a81f-5f2b-bf38-0658847d8a33",
+"e45e1be6-7d03-596a-a95b-4281480958d3",
+"1a15e70d-ac5d-5e92-9d56-e82d3311b8e6",
+"d6d64213-9a8f-5a50-9e41-6b59b0a58766",
+"849ca4e2-d158-552d-8622-1234ac3664ed"
+]
+```
+
 # test2
 ## Debuggen via Chrome Dev Console
 ```bash
