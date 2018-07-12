@@ -19,8 +19,6 @@ app.get('/', (req, res) => res.send('Usage: /1'));
 app.get('/:page', function(req, res) {
   var index = req.params["page"] * pageSize;
   
-  //res.header('Access-Control-Allow-Origin', '*') ;
-
   res.send(ids.slice(index, index + pageSize).map(id => {
     return {
       id: id
@@ -28,12 +26,11 @@ app.get('/:page', function(req, res) {
   })); 
 });
 
-fs.readFile('data/ids-no-download.txt', 'utf8', function (err,data) {
+fs.readFile('data/uids-no-download-niet-compleet.txt', 'utf8', function (err,data) {
   if (err) return console.log(err);
   ids = data.split("\n");
   app.listen(3000, () => console.log('Serve API on port 3000 with '+ids.length+' items'));
 });
-
 
 ```
 
