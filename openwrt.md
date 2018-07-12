@@ -2,6 +2,27 @@
 title: OpenWrt
 ---
 
+# iwinfo
+```bash
+opkg update
+opkg install iwinfo
+iwinfo wlan0 info
+```
+```
+wlan0     ESSID: "......."
+          Access Point: 18:D6:C7:A7:06:64
+          Mode: Client  Channel: 10 (2.457 GHz)
+          Tx-Power: 18 dBm  Link Quality: 48/70
+          Signal: -62 dBm  Noise: -90 dBm
+          Bit Rate: 39.0 MBit/s
+          Encryption: WPA2 PSK (CCMP)
+          Type: nl80211  HW Mode(s): 802.11bgn
+          Hardware: unknown [Generic MAC80211]
+          TX power offset: unknown
+          Frequency offset: unknown
+          Supports VAPs: yes  PHY name: phy0
+```
+
 # WR710n - unbrick with TFTP
 * follow these steps (except..) <https://openwrt.org/toh/tp-link/tl-mr3020#manual_method_using_serial_console_and_tftp_experts>
 * !! replace 3c0000 by 7c0000  (WR710 has 8MB flash instead of 4MB)
