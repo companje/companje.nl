@@ -3,6 +3,9 @@ title: NodeJS
 layout: default
 ---
 
+# import many JSON files to a new CouchDB database
+see [couchdb]
+
 # serve textfile as paginated array
 ```javascript
 var cors = require('cors');
