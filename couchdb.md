@@ -2,7 +2,8 @@
 title: CouchDB
 ---
 
-# import 
+# import many JSON files to a new CouchDB database
+```javascript
 var fs = require('fs');
 var walk = require('walk');
 
@@ -55,5 +56,7 @@ couch.createDatabase(dbName).then(() => {
 // }, err => {
 //   console.log("ERR: dropDatabase",err);
 // });
+```
+
 
 
