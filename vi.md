@@ -21,14 +21,14 @@ or
 gg
 ```
 
-# insert text
+# insert text in front of cursor
 ```
 i
 ```
 
-# insert text
+# append/insert text after cursor
 ```
-i
+a
 ```
 
 # edit (overwrite) text
