@@ -26,7 +26,10 @@ gg
 i
 ```
 
-
+# insert text
+```
+i
+```
 
 # edit (overwrite) text
 ```
