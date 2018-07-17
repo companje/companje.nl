@@ -46,7 +46,7 @@ Simple yet flexible JavaScript charting for designers & developers
 * http://www.chartjs.org/
 
 # GPU Accelerated JavaScript 
-*http://gpu.rocks/
+* http://gpu.rocks/
 
 # Parallel processing
 Interessante technieken voor als we met de app meer parallel willen gaan doen, zoals die floodfill:
