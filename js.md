@@ -1,7 +1,12 @@
 ---
 title: Javascript
-layout: default
 ---
+
+# Date/time as string
+```js
+new Date().toJSON()
+"2018-07-17T21:15:44.914Z"
+```
 
 # disable ipad zoom gesture
 https://stackoverflow.com/questions/37808180/disable-viewport-zooming-ios-10-safari
