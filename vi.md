@@ -14,7 +14,8 @@ G
 
 # goto begin of file
 ```
-1
+1G
+
 ```
 gg
 ```
