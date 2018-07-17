@@ -7,3 +7,12 @@ title: Vi text editor
 G
 ```
 
+# goto begin of file
+```
+gg
+```
+
+# jump to line number 100
+```
+100G
+```
