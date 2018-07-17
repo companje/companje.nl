@@ -21,3 +21,12 @@ or
 gg
 ```
 
+# insert text
+```
+i
+```
+
+# edit (overwrite) text
+```
+R
+```
