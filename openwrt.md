@@ -2,6 +2,36 @@
 title: OpenWrt
 ---
 
+# OpenWrt on TP-Link TL-WR902AC V3
+Peter Lundkvist March 17, 2018, 5:47 p.m.:
+TP-Link TL-WR902AC v3 is a pocket-size dual-band (AC750) router
+based on MediaTek MT7628N + MT7650E.
+
+Specification:
+- MediaTek MT7628N/N (580 Mhz)
+- 64 MB of RAM
+- 8 MB of FLASH
+- 2T2R 2.4 GHz and 1T1R 5 GHz
+- 1x 10/100 Mbps Ethernet
+
+* MT7650 ac chip isn't not supported by LEDE/OpenWrt at the moment.
+  Therefore 5Ghz won' work.
+
+Flash instruction:
+
+The only way to flash LEDE image in TL-WR902AC v3 is to use
+tftp recovery mode in U-Boot:
+
+1. Configure PC with static IP 192.168.0.66/24 and tftp server.
+2. Rename "openwrt-ramips-mt76x8-tplink_tl-wr902ac-v3-squashfs-tftp-recovery.bin"
+   to "tp_recovery.bin" and place it in tftp server directory.
+3. Connect PC with the LAN port, press the reset button, power up
+   the router and keep button pressed for around 6-7 seconds, until
+   device starts downloading the file.
+4. Router will download file from server, write it to flash and reboot
+
+
+
 # uci show (to check for errors)
 ```
 uci show firewall
