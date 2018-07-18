@@ -7,7 +7,7 @@ LEDE 18.06.0-rc1 release: https://downloads.openwrt.org/releases/18.06.0-rc1/tar
 development snapshot: https://downloads.lede-project.org/snapshots/targets/ramips/mt76x8/openwrt-ramips-mt76x8-tplink_tl-wr902ac-v3-squashfs-tftp-recovery.bin
 
 -----
-
+https://patchwork.ozlabs.org/patch/887325/
 Peter Lundkvist March 17, 2018, 5:47 p.m.:
 TP-Link TL-WR902AC v3 is a pocket-size dual-band (AC750) router
 based on MediaTek MT7628N + MT7650E.
