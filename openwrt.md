@@ -2,6 +2,14 @@
 title: OpenWrt
 ---
 
+# cron
+```bash
+crontab -e
+*/5 * * * * echo "every 5 minutes" >> /tmp/tick.txt
+/etc/init.d/cron start
+/etc/init.d/cron enable
+```
+
 # OpenWrt on TP-Link TL-WR902AC V3
 LEDE 18.06.0-rc1 release: https://downloads.openwrt.org/releases/18.06.0-rc1/targets/ramips/mt76x8/openwrt-18.06.0-rc1-ramips-mt76x8-tplink_tl-wr902ac-v3-squashfs-tftp-recovery.bin
 development snapshot: https://downloads.lede-project.org/snapshots/targets/ramips/mt76x8/openwrt-ramips-mt76x8-tplink_tl-wr902ac-v3-squashfs-tftp-recovery.bin
