@@ -2,6 +2,9 @@
 title: 3D Printing
 ---
 
+# Silhouette Alta delta 3D printer
+* https://www.silhouetteamerica.com/shop/alta/SILHOUETTE-ALTA-4T-W
+
 # goed filmpje:
 <https://www.youtube.com/watch?v=bcTzyx35odY>
 
