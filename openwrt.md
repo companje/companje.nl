@@ -126,7 +126,7 @@ vi /etc/config/uhttpd
 ```bash
 opkg update && opkg install zoneinfo-europe
 opkg install rsync
-opkg install 7-mod-json
+opkg install php7-mod-json
 ```
 
 # tcpdump
