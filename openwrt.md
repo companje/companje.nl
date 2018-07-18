@@ -3,6 +3,11 @@ title: OpenWrt
 ---
 
 # OpenWrt on TP-Link TL-WR902AC V3
+LEDE 18.06.0-rc1 release: https://downloads.openwrt.org/releases/18.06.0-rc1/targets/ramips/mt76x8/openwrt-18.06.0-rc1-ramips-mt76x8-tplink_tl-wr902ac-v3-squashfs-tftp-recovery.bin
+development snapshot: https://downloads.lede-project.org/snapshots/targets/ramips/mt76x8/openwrt-ramips-mt76x8-tplink_tl-wr902ac-v3-squashfs-tftp-recovery.bin
+
+-----
+
 Peter Lundkvist March 17, 2018, 5:47 p.m.:
 TP-Link TL-WR902AC v3 is a pocket-size dual-band (AC750) router
 based on MediaTek MT7628N + MT7650E.
@@ -29,7 +34,6 @@ tftp recovery mode in U-Boot:
    the router and keep button pressed for around 6-7 seconds, until
    device starts downloading the file.
 4. Router will download file from server, write it to flash and reboot
-
 
 
 # uci show (to check for errors)
