@@ -2,6 +2,18 @@
 title: PHP
 ---
 
+# anonymous function instead of create_function (php7)
+the old way:
+```php
+usort($files, create_function('$a,$b', 'return filemtime($b) - filemtime($a);'));
+```
+the new way:
+```php
+usort($files, function($a, $b) {
+  return filemtime($b) - filemtime($a);
+});
+```
+
 # string replace for each item in array
 ```php
 $out = str_replace('a', 'b', $array);
