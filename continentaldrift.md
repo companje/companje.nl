@@ -1,4 +1,5 @@
 ---
-title: see [[platetectonics|Plate Tectonics]]
+title: Continental Drift
 ---
 
+see [[platetectonics]
