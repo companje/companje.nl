@@ -2,6 +2,9 @@
 title: jekyll
 ---
 
+# liquid templating language for jekyll
+https://shopify.github.io/liquid/
+
 # jekyll/liquid cheat sheet
 * <https://devhints.io/jekyll>
 
