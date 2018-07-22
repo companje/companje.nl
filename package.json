@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "bundle exec jekyll serve --livereload --profile --incremental --verbose",
+    "start": "bundle exec jekyll serve --live-reload --profile --incremental --verbose",
     "build": "bundle exec jekyll build --incremental",
     "upload": "rsync -av _site/ companje.nl:/home/rick/www"
   },
