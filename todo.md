@@ -2,10 +2,9 @@
 title: TODO - things to watch, read or listen
 ---
 
-*<https://help.ubuntu.com/community/SwitchingToUbuntu/FromWindows|Switching to Ubuntu from Windows>
-*<http://www.kitchenbudapest.hu/hu/projects/landprint>
-*<http://technology.newscientist.com/article/dn12798-multitouch-display-can-see-objects-too.html|LED's als sensor>
-
+* <https://help.ubuntu.com/community/SwitchingToUbuntu/FromWindows|Switching to Ubuntu from Windows>
+* <http://www.kitchenbudapest.hu/hu/projects/landprint>
+* <http://technology.newscientist.com/article/dn12798-multitouch-display-can-see-objects-too.html|LED's als sensor>
 
 * Website/docu over archeologische vonsten Noord Zuidlijn (via mailing Fabrique): https://belowthesurface.amsterdam/nl/pagina/documentaire
 
