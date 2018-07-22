@@ -2,4 +2,4 @@
 title: Continental Drift
 ---
 
-see [[platetectonics]
+see [[platetectonics]]
