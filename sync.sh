@@ -1,1 +1,1 @@
-rsync -av . rick@companje.nl:/home/rick/www
+rsync -av _site rick@companje.nl:/home/rick/www
