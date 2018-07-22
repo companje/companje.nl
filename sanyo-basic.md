@@ -1,6 +1,8 @@
 ---
-title: Omdat het [[Luciferspel]] één van de allereerste spelletjes was die ik schreef voor mijn destijds al 10 jaar oude [[Sanyo MBC 555]] computer in [[1994]], heb ik een soort van nep-emulator gemaakt zodat je het luciferspel kunt spelen precies zo als ie toen ook werkte.
+title: Luciferspel
 ---
+
+Omdat het [[Luciferspel]] één van de allereerste spelletjes was die ik schreef voor mijn destijds al 10 jaar oude [[Sanyo MBC 555]] computer in [[1994]], heb ik een soort van nep-emulator gemaakt zodat je het luciferspel kunt spelen precies zo als ie toen ook werkte.
 
 <code>BASIC [MS-DOS] Ver 1.32 41384 Bytes free </code>
 
