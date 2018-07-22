@@ -1,11 +1,12 @@
 {
   "name": "companje.github.io",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "bundle exec jekyll serve --profile --incremental --verbose"
+    "start": "bundle exec jekyll serve --profile --incremental --verbose",
+    "build": "bundle exec jekyll build --incremental",
+    "upload": "bundle exec jekyll serve --profile --incremental --verbose"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,6 @@
   "homepage": "https://github.com/companje/companje.github.io#readme",
   "dependencies": {
     "jekyll": "^3.0.0-beta1"
-  }
+  },
+  "description": ""
 }
