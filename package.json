@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "bundle exec jekyll serve --profile --incremental --verbose",
     "build": "bundle exec jekyll build --incremental",
-    "upload": "bundle exec jekyll serve --profile --incremental --verbose"
+    "upload": ""
   },
   "repository": {
     "type": "git",
