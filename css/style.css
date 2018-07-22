@@ -9,7 +9,7 @@ body {
   background-size: cover;
   } 
 
-.page-link {
+/*.page-link {
   color: red;
   text-decoration: underline;
 }
@@ -17,4 +17,4 @@ body {
 .page-link:hover {
   color: black;
   font-weight: bold;
-}
+}*/
