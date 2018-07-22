@@ -20,7 +20,7 @@ Opvallend is dat deze Basic versie met aantal vreemde extra commando’s is uitg
 
 == Directory listing (1999) ==
 
-<code>
+```
  Map van G:\1999\1999\Programmeerwerk\Sanyo Basic
  10-03-1983  00:00                34 AUTOEXEC.BAT
  28-09-1994  01:41               640 BAL.BAS
