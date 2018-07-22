@@ -94,4 +94,4 @@ Opvallend is dat deze Basic versie met aantal vreemde extra commando’s is uitg
  06-09-1994  00:02               879 WOORDEN.GLG
  10-03-1983  02:53             4.608 WOORDL.BAS
                72 bestand(en)          180.632 bytes
-</code>
+```
