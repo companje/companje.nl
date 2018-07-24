@@ -2,10 +2,4 @@
 title: Bellenbord VCXL
 ---
 
-
-# logs bekijken
-* http://HOSTNAME:8081/api/v1/status
-
-
-
-inlog
+zie: https://github.com/companje/RaspberryDoorbell/blob/master/README.md
