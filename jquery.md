@@ -2,6 +2,11 @@
 title: jQuery
 ---
 
+# jquery find parent with class
+```js
+.closest()
+```
+
 #  jChartFX 
 http://www.jchartfx.com/
 
