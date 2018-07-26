@@ -6,7 +6,6 @@ title: PHP
 https://pp19dd.com/2010/12/php-glob-files-by-date/
 ```php
 $files = glob( "../../../feed21/*.xml" );
-
 // Sort files by modified time, latest to earliest
 // Use SORT_ASC in place of SORT_DESC for earliest to latest
 array_multisort(
