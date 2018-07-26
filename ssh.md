@@ -30,7 +30,10 @@ umount local-folder
 
 # add self to authorized_keys oneliner
 ```bash
-cat ~/.ssh/id_rsa.pub | ssh wifibox 'cat >> ~/.ssh/authorized_keys'
+cat ~/.ssh/id_rsa.pub | ssh SERVER 'cat >> ~/.ssh/authorized_keys'
+
+#openwrt / wifibox
+cat ~/.ssh/id_rsa.pub | ssh wifibox 'cat >> /etc/dropbear/authorized_keys'
 ```
 
 # ssh agent forwarding
