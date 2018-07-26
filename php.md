@@ -2,6 +2,21 @@
 title: PHP
 ---
 
+# PHP glob files by date
+https://pp19dd.com/2010/12/php-glob-files-by-date/
+```php
+$files = glob( "../../../feed21/*.xml" );
+ 
+// Sort files by modified time, latest to earliest
+// Use SORT_ASC in place of SORT_DESC for earliest to latest
+array_multisort(
+  array_map( 'filemtime', $files ),
+  SORT_NUMERIC,
+  SORT_DESC,
+  $files
+);
+```
+
 # anonymous function instead of create_function (php7)
 the old way:
 ```php
