@@ -2,8 +2,15 @@
 title: Raspbery Pi
 ---
 
+# SSH into Model A
+https://www.reddit.com/r/raspberry_pi/comments/2oqs2a/how_can_i_ssh_into_the_a_model/
+"By default, the A+ has no way to get onto a network. You need to add a Wifi adapter."
+
+
+
+
 # Raspberri pi internal WiFi
-ATTENTION: please note that the raspberry pi 3 internal wifi does currently not support the wifi channels 12 and 13
+please note that the raspberry pi 3 internal wifi does currently not support the wifi channels 12 and 13
 
 ==OS distro for full screen webpage==
 * https://github.com/guysoft/FullPageOS
