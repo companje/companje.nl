@@ -3,7 +3,8 @@ title: Convert images
 ---
 
 # convert pdf to png high quality
-```bashconvert -trim -density 150 -trim INPUT.pdf -quality 100 -flatten -sharpen 0x1.0 OUTPUT.png
+```bash
+convert -trim -density 150 -trim INPUT.pdf -quality 100 -flatten -sharpen 0x1.0 OUTPUT.png
 ```
 
 # convert from 16bit to red+green channel
