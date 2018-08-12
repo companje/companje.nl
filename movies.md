@@ -3,6 +3,7 @@ title: Movies
 ---
 
 # TODO
+* david bohm
 * The internet's own boy: Aaron Swartz
 * All Watched Over by Machines of Loving Grace
 * Een nieuwe morgen (Je kan alles Spinvis liedje)
