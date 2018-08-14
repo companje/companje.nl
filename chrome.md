@@ -3,7 +3,7 @@ title: Chrome
 ---
 
 # remove cookies for specific website
-<chrome://settings/content/cookies
+<chrome://settings/content/cookies>
 
 # Open html file from terminal
   open -a "Google Chrome" index.html
