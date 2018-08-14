@@ -2,10 +2,13 @@
 title: Chrome
 ---
 
-=====Open html file from terminal=====
+# remove cookies for specific website
+chrome://settings/content/cookies
+
+# Open html file from terminal
   open -a "Google Chrome" index.html
   
-====='Store as global variable' in Console=====
+# 'Store as global variable' in Console
 (::screen_shot_2015-08-12_at_19.58.17.png?400|)
 
 * [[https://chrome.google.com/webstore/detail/chrome-dev-editor-develop/pnoffddplpippgcfjdhbmhkofpnaalpg/|Chrome Dev Editor]]
@@ -15,16 +18,16 @@ title: Chrome
 * JSONview
 * http://www.forensicswiki.org/wiki/Google_Chrome#Configuration
 
-=====colors=====
+# colors
 In Chrome & Firefox (with Firebug 11.2+) you can add CSS in console.log messages
   console.log('%c Oh my heavens! ', 'background: #222; color: #bada55');
 
-=====documentation=====
+# documentation
 * https://developer.chrome.com/devtools/docs/console
 
-=====printf formatting=====
+# printf formatting
   console.error("Error: %s (%i)", "Server is  not responding",500);
   
-=====breakpoints in code zetten=====
+# breakpoints in code zetten
   debugger;
   
