@@ -3,6 +3,7 @@ title: Movies
 ---
 
 # TODO
+* 
 * Bankerot serie (restaurant, Deens, tip van Karen)
 * david bohm
 * The internet's own boy: Aaron Swartz
