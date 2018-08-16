@@ -4,7 +4,7 @@ title: Raspbery Pi
 
 # Raspberry PI in Virtual Box
 * hmm.. https://www.youtube.com/watch?v=CeUDAIPKBGQ
-
+* https://www.youtube.com/watch?v=GubtqMjJgDI
 
 # SSH into Model A
 https://www.reddit.com/r/raspberry_pi/comments/2oqs2a/how_can_i_ssh_into_the_a_model/
