@@ -3,7 +3,7 @@ title: Movies
 ---
 
 # TODO
-* Bankerot serie (deens, tip van Karen)
+* Bankerot serie (restaurant, Deens, tip van Karen)
 * david bohm
 * The internet's own boy: Aaron Swartz
 * All Watched Over by Machines of Loving Grace
