@@ -2,6 +2,11 @@
 title: ffmpeg
 ---
 
+# convert for Whatsapp
+```bash
+ffmpeg -i Flocking.mp4 -c:v libx264 -profile:v baseline -level 3.0 -pix_fmt yuv420p FlockingWhatsapp.mp4
+```
+
 # blur
 ```bash
 ffmpeg -i intro.mov -vf "boxblur=5:1" intro-blur.mov
