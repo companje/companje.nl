@@ -7,7 +7,6 @@ title: ffmpeg
 ffmpeg -i INPUT -vb 20M OUTPUT.mp4
 ```
 
-
 # convert for Whatsapp
 ```bash
 ffmpeg -i Flocking.mp4 -c:v libx264 -profile:v baseline -level 3.0 -pix_fmt yuv420p FlockingWhatsapp.mp4
