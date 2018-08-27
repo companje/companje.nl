@@ -4,6 +4,24 @@ title: CSS
 
 nog lezen: https://www.mozilla.org/en-US/developer/css-grid/
 
+# blend mode multiply
+```html
+<html>
+ <head>
+  <style>
+  h2 { 
+    mix-blend-mode: multiply;
+  }
+  </style>
+ </head>
+
+ <body>
+  <h1>TOGETHER</h1>
+  <h2>TOGETHER</h2>
+</body>
+</html>
+```
+
 # nth-child
 ```css
 iframe:nth-child(1) { border: 5px solid yellow; }
