@@ -4,7 +4,7 @@ title: ffmpeg
 
 # high quality bitrate
 ```bash
-ffmpeg -i INPUT -vb 20M OUTPUT.mp4
+ffmpeg -i INPUT -vb 20M -vcodec mpeg4 OUTPUT.mp4
 ```
 
 # convert for Whatsapp
