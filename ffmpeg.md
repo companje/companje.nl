@@ -5,6 +5,7 @@ title: ffmpeg
 # higher quality
 ```bash
 ffmpeg -i INPUT -vb 20M -q:v 0 -vcodec libx264 OUTPUT.mp4
+```
 
 # high quality bitrate
 ```bash
