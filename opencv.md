@@ -13,8 +13,8 @@ title: OpenCV
 Subtract can be useful instead of absdiff if you want only difference when something 'appears or moves' and not when it 'disappears'
 
 # Optical Flow
-* use Farneback for a dense flow field, 
-* use PyrLK for specific features
+* use Farneback for a dense flow field, (voor een dense flow field met een vector per row/col)
+* use PyrLK for specific features (voor feature herkenning. kan objecten volgen)
 
 # Thresholding
 * http://docs.opencv.org/3.1.0/d7/d4d/tutorial_py_thresholding.html#gsc.tab=0
