@@ -12,6 +12,7 @@ title: Fusion 360
 - rightclick: marking menu
 - s: open sketch toolbox
 
-# NaAxis Cube settings
+# Navigate the canvas
+Axis Cube settings:
 Preferences > General > Default modeling orientation: y-up
 
