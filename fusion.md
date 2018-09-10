@@ -20,3 +20,7 @@ Preferences > General > Default modeling orientation: y-up
 Pan - middle mouse
 Zoom - scroll
 Orbit - shift middle mouse
+
+# Components
+Een component bestaat uit Origin, Bodies en Sketches
+
