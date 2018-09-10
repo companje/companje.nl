@@ -12,4 +12,7 @@ title: Fusion 360
 - rightclick: marking menu
 - s: open sketch toolbox
 
-# Z-as instellen op je kubus
+# Axis Cube settings
+Preferences > General > Default modeling orientation: y-up
+
+
