@@ -25,7 +25,5 @@ Orbit - shift middle mouse
 
 # Components
 Een component bestaat uit Origin, Bodies en Sketches
-
-# In Sketch kun je een getekende lijn omzetten naar hulp lijn door op de lijn te klikken en dan rechtsklik Normal/Construction
-
-# Modify > Combine voor samenvoegen bodies
+*  In Sketch kun je een getekende lijn omzetten naar hulp lijn door op de lijn te klikken en dan rechtsklik Normal/Construction
+* Modify > Combine voor samenvoegen bodies evt tot nieuw component
