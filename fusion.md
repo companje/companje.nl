@@ -16,3 +16,7 @@ title: Fusion 360
 Axis Cube settings:
 Preferences > General > Default modeling orientation: y-up
 
+# Mouse
+Pan - middle mouse
+Zoom - scroll
+Orbit - shift middle mouse
