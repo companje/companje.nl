@@ -29,3 +29,4 @@ Orbit - shift middle mouse
 * Modify > Combine voor samenvoegen bodies evt tot nieuw component
 
 Huiswerk:
+- the hour of making - lessen tekenen in fusion: 
