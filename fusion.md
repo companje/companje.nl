@@ -29,4 +29,6 @@ Orbit - shift middle mouse
 * Modify > Combine voor samenvoegen bodies evt tot nieuw component
 
 Huiswerk:
-- the hour of making - lessen tekenen in fusion: 
+zie: https://wiki.zb45.nl/index.php?title=Cursus_Fusion_360
+
+- the hour of making - filmpjes kijken: https://www.instructables.com/class/Beginner-3D-Printing-Class/
