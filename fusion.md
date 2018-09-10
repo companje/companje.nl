@@ -11,6 +11,8 @@ title: Fusion 360
 # Shortcuts
 - rightclick: marking menu
 - s: open sketch toolbox
+- m: move/copy
+
 
 # Navigate the canvas
 Axis Cube settings:
