@@ -41,5 +41,5 @@ zie: https://wiki.zb45.nl/index.php?title=Cursus_Fusion_360
 * je kunt een Body projecteren op een nieuwe Sketch om zodoende als het ware een kopie te maken. En het is handig om een Offset Plane te maken waar je Sketch dan op zit.
 * sketch dimensions: 'd'
 * met Modify > Combine kun je ook Cut doen
-
+* om een projectie voor de dxf te maken maak je een nieuwe sketch op de midplane van een body. Daarop doe je een projectie maar niet met 'p' maar via Sketch > Project > Intersect 
 
