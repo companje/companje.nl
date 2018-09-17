@@ -35,3 +35,5 @@ zie: https://wiki.zb45.nl/index.php?title=Cursus_Fusion_360
 
 # Les 2
 * als je bijv een box hebt getekent kun je wel op een van de faces een sketch maken (via Sketch > Create Sketch)
+* parameter waardes instellen bij Modify > Change Parameters
+* maten / constraints instellen en parameters toekennen. Bijv via Sketch Dimensions
