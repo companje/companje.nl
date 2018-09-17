@@ -32,3 +32,6 @@ Huiswerk:
 zie: https://wiki.zb45.nl/index.php?title=Cursus_Fusion_360
 
 - the hour of making - filmpje 1 bekijken: https://www.youtube.com/watch?v=RtKdGo-_YQ4 (https://www.instructables.com/class/Beginner-3D-Printing-Class/)
+
+# Les 2
+* als je bijv een box hebt getekent kun je wel op een van de faces een sketch maken (via Sketch > Create Sketch)
