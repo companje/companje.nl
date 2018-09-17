@@ -37,3 +37,4 @@ zie: https://wiki.zb45.nl/index.php?title=Cursus_Fusion_360
 * als je bijv een box hebt getekent kun je wel op een van de faces een sketch maken (via Sketch > Create Sketch)
 * parameter waardes instellen bij Modify > Change Parameters
 * maten / constraints instellen en parameters toekennen. Bijv via Sketch Dimensions
+* offset plane kun je verplaatsen in je tijdlijn naar bijv het begin zodat je bij sketch redefine sketch plane kunt.
