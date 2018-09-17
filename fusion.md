@@ -31,4 +31,4 @@ Orbit - shift middle mouse
 Huiswerk:
 zie: https://wiki.zb45.nl/index.php?title=Cursus_Fusion_360
 
-- the hour of making - filmpjes kijken: https://www.instructables.com/class/Beginner-3D-Printing-Class/
+- the hour of making - filmpje 1 bekijken: https://www.youtube.com/watch?v=RtKdGo-_YQ4 (https://www.instructables.com/class/Beginner-3D-Printing-Class/)
