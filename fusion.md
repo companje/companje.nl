@@ -40,3 +40,4 @@ zie: https://wiki.zb45.nl/index.php?title=Cursus_Fusion_360
 * offset plane kun je verplaatsen in je tijdlijn naar bijv het begin zodat je bij sketch redefine sketch plane kunt.
 * je kunt een Body projecteren op een nieuwe Sketch om zodoende als het ware een kopie te maken. En het is handig om een Offset Plane te maken waar je Sketch dan op zit.
 
+
