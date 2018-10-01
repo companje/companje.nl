@@ -2,8 +2,7 @@
 title: Apache 
 ---
 
-# Error: mysite.com does not exist
-when using a2ensite
+# Error: mysite.com does not existwhen using a2ensite
 
 cause:
 ```sudo a2ensite mysite.com```
