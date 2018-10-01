@@ -2,6 +2,17 @@
 title: Apache 
 ---
 
+# Error: mysite.com does not exist
+when using a2ensite
+
+cause:
+```sudo a2ensite mysite.com```
+
+solution:
+add `.conf` to the filename!
+
+a2ensite is simply a perl script that only works with filenames ending .conf
+
 # /etc/apache2/sites-enabled
 in this folder (`/etc/apache2/sites-enabled`) small .conf files per site are placed.
 
