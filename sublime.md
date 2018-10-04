@@ -3,6 +3,10 @@ title: SublimeText2
 ---
 A light-weight full feature text/code editor for OSX, Windows and Linux
 
+# Javascript Intenter
+* install ```formatjs```
+* set shortcut in user key bindings: ```{ "keys":["super+shift+r"], "command": "js_format"}```
+
 # subl:// protocol handler
 https://support.shotgunsoftware.com/hc/en-us/articles/219031308-Launching-applications-using-custom-browser-protocols
 
