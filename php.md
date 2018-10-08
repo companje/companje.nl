@@ -17,7 +17,7 @@ header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: Content-Type,Accept");
 header('Content-Type: application/json');
 $data = json_decode(file_get_contents("php://input"));
-echo $data->from;
+echo json_encode($data);
 ```
 
 # PHP glob files by date
