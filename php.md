@@ -3,8 +3,16 @@ title: PHP
 ---
 
 # receive JSON from P5.js
+p5js:
+```js
 
+```
+
+php:
 ```php
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: Content-Type,Accept");
+header('Content-Type: application/json');
 $data = json_decode(file_get_contents("php://input"));
 echo $data->from;
 ```
