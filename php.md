@@ -5,7 +5,10 @@ title: PHP
 # receive JSON from P5.js
 p5js:
 ```js
-
+var data = { from: 'Rick', msg: 'Hello' }
+httpPost('loopback.php', data, function(res) {
+  console.log("response: ",res);
+});
 ```
 
 php:
