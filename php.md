@@ -2,6 +2,13 @@
 title: PHP
 ---
 
+# receive JSON from P5.js
+
+```php
+$data = json_decode(file_get_contents("php://input"));
+echo $data->from;
+```
+
 # PHP glob files by date
 https://pp19dd.com/2010/12/php-glob-files-by-date/
 ```php
