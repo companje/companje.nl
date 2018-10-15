@@ -1,6 +1,10 @@
 ---
 title: Retro Computing / Retro Coding
 ---
+* sony reclame 1989: https://www.instagram.com/p/Bo8ITXOi3B0
+
+-------
+
 * http://blog.tynemouthsoftware.co.uk/2013_09_01_archive.html
 * https://archive.org/details/softwarelibrary_msdos_games/v2
 * http://vcfmw.org/index.html
