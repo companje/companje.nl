@@ -14,7 +14,7 @@ layout: default
   * S.Mos - Cotton Club Stomp
   * Ken Boothe - Home Home Home
   * S10 - Psychoses (ft Victoire)
-  * Famke Louise - Op me monnie
+  * Famke Louise
   * tony ronald - help (get me some help)
   * KX Classics The Edge (https://tunein.com/radio/KX-Classics---The-Edge-s287569/)
   * Unity - TheFatRat
