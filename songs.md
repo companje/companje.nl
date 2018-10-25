@@ -2,6 +2,7 @@
 title: Songs
 layout: default
 ---
+  * Soichi Terada - Ape Escape 3
   * Le LE - Skinny Jeans
   * Nightcore - Something Right
   * Nightcore - Running Away
