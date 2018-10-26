@@ -6,7 +6,6 @@ title: PHP
 ```php
 header("Content-disposition: attachment; filename='$filename'");
 header("Content-type: application/json");
-
 $json = file_get_contents($db . $id . "/sketch");
 die($json);
 ```
