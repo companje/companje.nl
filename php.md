@@ -2,6 +2,7 @@
 title: PHP
 ---
 
+
 # get querystring
 ```php
 if ($_SERVER['QUERY_STRING']=='123') {
