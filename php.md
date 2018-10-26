@@ -2,7 +2,10 @@
 title: PHP
 ---
 
-#
+# make safe filename
+```php
+$filename = preg_replace( '/[^a-z0-9]+/', '-', strtolower($json->name . " by " . $json->author)) . ".ext";
+```
 
 # get querystring
 ```php
