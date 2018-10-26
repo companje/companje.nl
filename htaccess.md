@@ -2,6 +2,18 @@
 title: .htaccess
 ---
 
+# redirect to index.php in paged/ folder
+```apache
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /paged/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /paged/index.php [L]
+</IfModule>
+```
+
 # list files directoryIndex
 ```apache
 Options +Indexes
