@@ -2,6 +2,11 @@
 title: PHP
 ---
 
+# get querystring
+```php
+if ($_SERVER['QUERY_STRING']=='123') {
+```
+
 # receive JSON from P5.js
 p5js:
 ```js
