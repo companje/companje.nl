@@ -13,11 +13,11 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /paged/index.php [L]
 </IfModule>
 ```
-then use:
-
+then to extract /:page use:
+```php
 preg_match('/^\/(.*)/',$_SERVER["REDIRECT_URL"], $matches, PREG_OFFSET_CAPTURE);
 $page = explode("/",$matches[1][0])[1];
-
+```
 
 # list files directoryIndex
 ```apache
