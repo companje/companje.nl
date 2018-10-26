@@ -13,6 +13,8 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /paged/index.php [L]
 </IfModule>
 ```
+then use:
+
 
 # list files directoryIndex
 ```apache
