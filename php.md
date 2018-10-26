@@ -2,7 +2,15 @@
 title: PHP
 ---
 
-# force downl
+# force download
+```php
+header("Content-disposition: attachment; filename='$filename'");
+header("Content-type: application/json");
+
+$json = file_get_contents($db . $id . "/sketch");
+die($json);
+```
+
 # make safe filename
 ```php
 $filename = preg_replace( '/[^a-z0-9]+/', '-', strtolower($json->name . " by " . $json->author)) . ".ext";
