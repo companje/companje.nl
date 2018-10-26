@@ -14,7 +14,9 @@ RewriteRule . /paged/index.php [L]
 </IfModule>
 ```
 then use:
+preg_match('/^\/(.*)/',$_SERVER["REDIRECT_URL"], $matches, PREG_OFFSET_CAPTURE);
 
+$page = explode("/",$matches[1][0])[1];
 
 # list files directoryIndex
 ```apache
