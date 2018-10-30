@@ -2,6 +2,11 @@
 title: ffmpeg
 ---
 
+# export raw image sequence rgb24
+```bash
+ffmpeg -i airtraffic-2k-400f.mp4 -vcodec rawvideo -pix_fmt rgb24 -f image2 -y raw/image%d.raw
+```
+
 # higher quality
 ```bash
 ffmpeg -i INPUT -vb 20M -q:v 0 -vcodec libx264 OUTPUT.mp4
