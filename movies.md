@@ -3,6 +3,7 @@ title: Movies
 ---
 
 # TODO
+* Dokters van morgen doku NPO - tip v ma
 * Drain The Oceans - https://www.nationalgeographic.com/tv/drain-the-oceans/ (tip v Ruud (Toon))
 * Bankerot serie (restaurant, Deens, tip van Karen)
 * david bohm
