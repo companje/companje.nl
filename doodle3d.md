@@ -1,77 +1,10 @@
 ---
 title: Doodle3D
+layout: default
+permalink: doodle3d
+tags: ['projects']
 ---
 
-# legacy help
-<http://legacy.doodle3d.com/help/>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/225388406" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
-# loglite for WiFi-Box
-```
-loglite -h
-
-Usage: loglite.lua [file-to-tail] [filter-set]
-  If no arguments are supplied, or if the first one is `-', stdin is used as input.
-  If no filter set is supplied, a set named `default' will be looked for.
-  Filter sets can be defined in a file `loglite-filters.lua' in your home directory.
-
-  Available filter sets in /root/loglite-filters.lua: default, firmware, print3d, printstart, serial, test
-
-loglite /tmp/wifibox.log
-```
-
-or...
-
-`tail -f /tmp/wifibox.log`
-
-(keep in mind the current loglevel. You can change this (probably using the API).
-
-
-# signin from cmd line WiFi-Box
-```
-/www/cgi-bin/d3dapi p=/network/signin
-```
-
-this is the wget command that gets executed during signin:
-```bash
-wget -q -T 2 -t 1 -O - "http://connect.doodle3d.com/api/signin.php?wifiboxid=Doodle3D-6C-Rood&localip=192.168.5.101"
-```
-result:
-```
-{"status":"success","data":{"remoteip":"143.179.54.52","localip":"192.168.5.101","wifiboxid":"Doodle3D-6C-Rood","timestamp":1517950018}}
-```
-
-
-# ignore Access Control
-be able to quit a print started from another IP
-change the file: `/usr/share/lua/wifibox/util/access.lua`
-after `function M.hasControl(ip)` add the following line:
-```
-	        if true then return true end;
-```
-
-# doodle3d firmware readme
-https://github.com/Doodle3D/Doodle3D-firmware
-```
-d3dapi p=/network/scan r=GET
-```
-
-# adding a 3D-printer to Doodle3D
-* http://doodle3d.com/help/adding-3d-printer
-# notes @ DaVinci exhibition
-* http://connect.doodle3d.com/api/list.php
-* http://wifibox/d3dapi/network/signin
-* http://192.168.7.216/d3dapi/network/alive?_=1417511804341
-* http://192.168.7.216/
-* http://wifibox/d3dapi/network/status
-* http://wifibox/d3dapi/info/status
-* last number of IP's from left to right: 132, 194, 110, 164
-
-# bootscripts Doodle3D
-Print3D already has scripts, that where created for the WiFi-Box. It seems to use inotifyd, I'm not sure if that is something we can reuse. 
-
-* [print3d_init](https://github.com/Doodle3D/print3d/blob/master/src/script/print3d_init). A init script that starts the print3d-manager as a deamon. 
-* [print3d-manager](https://github.com/Doodle3D/print3d/blob/master/src/script/print3d-manager.sh). Uses inotifyd to start `print3d-new-device` when a new device is connected. 
-* [print3d-new-device](https://github.com/Doodle3D/print3d/blob/master/src/script/print3d-new-device.sh). Figures out whether to start print3d in a seemingly crude way. If appropriate it tries to start print3d-runner
-* [print3d-runner.sh](https://github.com/Doodle3D/print3d/blob/master/src/script/print3d-runner.sh). Starts the print3d deamon. 
-# Help system
-* we might want to try: http://www.helpscout.net. It is used by 3dverkstan.
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/208530609" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>

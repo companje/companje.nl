@@ -1,5 +1,0 @@
----
-title: Graphs
----
-
-See math

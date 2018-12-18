@@ -1,5 +1,7 @@
 ---
 title: ffmpeg
+permalink: /ffmpeg
+tags: ['notes','software']
 ---
 
 # export raw image sequence rgb24

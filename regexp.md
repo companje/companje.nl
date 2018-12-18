@@ -2,6 +2,14 @@
 title: Regular Expressions
 ---
 
+# good introduction
+* https://dl.icewarp.com/online_help/203030104.htm
+
+# find date(s) in a string
+```js
+str.match(/\d{2}(\D)\d{2}\1\d{4}/g)
+//finds one or more instances of dates in this format: 03-04-2018 
+```
 # add brackets around auto links in md files in [SublimeText](SublimeText)
 ```
 Find: http://.*

@@ -1,25 +1,78 @@
-/* Your custom styles */
+/* Required height of parents of the Full Page Carousel for proper displaying carousel itself */
+html,
+body,
+.view {
+  height: 100%; }
 
-body { 
-  background-color: black;
-  background: url('/img/chalk.jpg') no-repeat center center fixed;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  } 
+/* Full Page Carousel itself*/
+.carousel {
+  height: 100%; }
+  .carousel .carousel-inner {
+    height: 100%; }
+    .carousel .carousel-inner .carousel-item,
+    .carousel .carousel-inner .active {
+      height: 100%; }
 
-/*.page-link {
-  color: red;
-  text-decoration: underline;
+/* Navbar animation */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.top-nav-collapse {
+  background-color: #1C2331; }
+
+/* Adding color to the Navbar on mobile */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #1C2331; } }
+
+/* Footer color for sake of consistency with Navbar */
+.page-footer {
+  background-color: #1C2331; }
+
+canvas {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1000;
 }
 
-.page-link:hover {
-  color: black;
+.grayeffect {
+  filter: gray; /* IE5+ */
+  -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+  -webkit-transition: all .2s; /* ease-in-out;  */
+}
+
+.grayeffect:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1.01);
+}
+
+.display-4 {
   font-weight: bold;
-}*/
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-right: 5px;
+  padding-left: 5px;
+}
 
 .badge a {
   color: black;
   font-weight: normal;
+}
+
+.ricktitle {
+  padding-right: 5px;
+  padding-left: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-size-adjust: auto;
+}
+
+.overlay a {
+  color: white;
+}
+
+.card img[alt$="fullwidth"]{
+  width:  100%;
+  display: block;
 }

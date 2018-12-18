@@ -2,6 +2,23 @@
 title: Bash
 ---
 
+# use expr, for, seq and wget
+```bash
+xxcols=20
+numRecords=1957
+orgRecordsPerPage=4
+newRecordsPerPage=$(expr $orgRecordsPerPage '*' $xxcols)
+out=all3.html
+
+rm $out
+for i in `seq 0 $newRecordsPerPage $numRecords`; 
+do
+  echo -ne "\\rDownloading $(expr $i '*' 100 '/' $numRecords)%"
+  wget --quiet -O - "XXXX xxstart=$i&xxcols=$xxcols" >> $out
+done
+echo \ndone
+```
+
 # prefix and postfix to each line
 ```bash
 ls | sed 's/.*/hoi&?doei/'

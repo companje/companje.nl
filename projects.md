@@ -1,5 +1,10 @@
 ---
-title: Projects
+title: projects
+layout: default
+tags: ['test']
 ---
 
-Zie category [[Projects:]]
+
+* [Globe4D](/globe4d)
+* [Doodle3D](/doodle3d)
+

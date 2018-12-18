@@ -3,6 +3,8 @@ title: Movies
 ---
 
 # TODO
+* Salaris du pur (film tip v Jos oude zw vrachtwagens met gevaarlijke lading)
+* https://www.youtube.com/watch?v=GCTuirkcRwo
 * Dokters van morgen doku NPO - tip v ma
 * Drain The Oceans - https://www.nationalgeographic.com/tv/drain-the-oceans/ (tip v Ruud (Toon))
 * Bankerot serie (restaurant, Deens, tip van Karen)
