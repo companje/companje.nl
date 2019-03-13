@@ -2,6 +2,16 @@
 title: Convert images
 ---
 
+# Convert 16 bit grayscale png to 16 bits raw
+```
+stream -map r -storage-type short earth-elevation.png earth-elevation.raw
+```
+
+# contrast-stretch / normalize 
+```
+convert earth-elevation.png -depth 16 -normalize earth.png
+```
+
 # convert pdf to png high quality
 ```bash
 convert           \
