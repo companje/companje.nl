@@ -2,7 +2,7 @@
 title: Museums
 ---
 
-=== Museums exhibiting my work===
+#  Museums exhibiting my work=
 *[[Perot Museum of Nature & Science]] (Dallas, USA, 2011)
 *[[Sterrenwacht Leiden]] (Leiden, Netherlands, 2011)
 *[[Technoseum]], (Mannheim, 2011)
@@ -15,7 +15,7 @@ title: Museums
 *[[Museum voor Beeld en Geluid]] (Hilversum, Netherlands, 2006)
 *[[Rijksmuseum Amsterdam]] (Amsterdam, Netherlands, 2004)
 
-===Museums visited===
+# Museums visited=
 *Paris: Cité des sciences
 *Los Angeles: Science Centre
 *Los Angeles: Museum of Natural History
@@ -41,6 +41,6 @@ title: Museums
 *TomTits Experiment
 *..... nog verder aanvullen
 
-===Musea waar ik zeker nog naar toe moet===
+# Musea waar ik zeker nog naar toe moet=
 *[[Phaeno]] in [[Wolfsburg]]
 *..... nog verder aanvullen

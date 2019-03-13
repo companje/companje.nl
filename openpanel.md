@@ -53,7 +53,7 @@ title: OpenPanel
   HEAD / HTTP/1.0
   <extra carriage return>
 
-===== OpenPanel GUI render error with ItemGrid=====
+#  OpenPanel GUI render error with ItemGrid
 I found a workaround for this issue by adding the following html/css to /var/openpanel/http/index.html. It's an ugly hack but it works for me.
 <code css>
 <style>
@@ -63,7 +63,7 @@ position: initial !important;
 </style>
 ```
 
-===== OpenPanel install your own SSL certificate for the admin panel =====
+#  OpenPanel install your own SSL certificate for the admin panel 
   * buy a certificate (in my case I ordered one through TransIP (Comodo Positive SSL 12,50 p/y. Request it, store the passphrase on a safe place, confirm the email, go back to transip to download the certificate).
   * upload two files to your home dir: `certificate.crt` and `certificate.key`
   * convert the encrypted key file to RSA format (right?): `openssl rsa  -in certificate.key`  (use the passphrase)
@@ -76,14 +76,12 @@ position: initial !important;
   * remove `certificate.crt` and `certificate.key` from your home folder
   * reboot
 
-==== OpenPanel set SSL certificate for default HTTPS site (‘It works! page’ in /var/www) ====
-  * cd /etc  * /apache2/conf.d
+#  OpenPanel set SSL certificate for default HTTPS site (‘It works! page’ in /var/www)   * cd /etc  * /apache2/conf.d
   * `nano openpanel.conf`
   * set SSLCertificateFile and SSLCertificateKeyFile to resp. /etc/ssl/certs/certificate-companje-nl.pem and /etc/ssl/private/ssl-cert-companje-nl-rsa.key (Where RSA.key file is created with 'openssl rss -in encrypted-certificate.key > ssl-cert-companje-nl-rsa.key’. First download your certificates (in my case from TransIP after requesting it from Comodo.
   * sudo /etc/init.d/apache2 restart
 
-==== configure openpanel email aliasses via openpanel-cli====
-http://documentation.openpanel.com/index.php/OpenPanel-CLI_Administration_Guide
+#  configure openpanel email aliasses via openpanel-clihttp://documentation.openpanel.com/index.php/OpenPanel-CLI_Administration_Guide
 ```
 openpanel-cli
 configure domain cult-lab.nl

@@ -18,7 +18,7 @@ https://medium.freecodecamp.org/part-1-react-app-from-scratch-using-webpack-4-56
 * <https://facebook.github.io/react/docs/interactivity-and-dynamic-uis.html>
 * <http://babeljs.io/blog/2015/06/07/react-on-es6-plus/>
 
-===== propTypes =====
+#  propTypes 
 Het is ook handig de mogelijke proptypes te omschrijven. dit kan bijv zo:
 ```
 class Input {
@@ -32,5 +32,4 @@ Hiervoor moet je nog wel stage 0 enablen in de babel config, dit kan door in de 
 
 zie ook: <https://facebook.github.io/react/docs/reusable-components.html>
 
-==== Bind a component's onClick event ====
-<https://github.com/peteruithoven/todo/blob/master/src/components/Input.js#L11>
+#  Bind a component's onClick event <https://github.com/peteruithoven/todo/blob/master/src/components/Input.js#L11>

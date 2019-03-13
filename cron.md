@@ -2,8 +2,8 @@
 title: Cron jobs
 ---
 
-=====editor the list of cronjobs=====
+# editor the list of cronjobs
   crobtab -e
   
-=====restart cron service======
+# restart cron service=
   sudo service cron restart

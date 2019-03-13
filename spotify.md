@@ -2,7 +2,7 @@
 title: Spotify
 ---
 
-===== Search API =====
+#  Search API 
 [[https://developer.spotify.com/web-api/search-item/|documentation]]
 ```bash
   curl -X GET "https://api.spotify.com/v1/search?q=Gorki+-+Mia&type=artist,track" -H "Accept: application/json"
@@ -13,7 +13,7 @@ grep "spotify:track:" spotify.json | cut -c 16-51
 grep "spotify:track:" spotify.json | head -n 1 | cut -c 16-51    # only first result
 ```
 
-=====shell script for playlists=====
+# shell script for playlists
 https://gist.github.com/companje/3b229c4eb22a4d8199a5
 ```bash
 function spotify() {

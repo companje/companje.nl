@@ -2,7 +2,7 @@
 title: CAD / CAM
 ---
 
-===== Design tools =====
+#  Design tools 
 * http://formit360.autodesk.com/app/
 * freecad
 * [[http://makerclub.org/]]
@@ -40,38 +40,36 @@ title: CAD / CAM
 * sparkmechanical
 * http://modio3d.com/
 
-====education=====
+# education
 * http://www.maakonderwijs.nl/
 * 3dkanjers
 * makersempire.com
 
-==== Scripting ====
-* https://www.madewithcode.com/projects
+#  Scripting * https://www.madewithcode.com/projects
 * http://daid.mine.nu/~daid/3d/
 * http://fablabamersfoort.nl/svg
 * http://openjscad.org
 * http://www.implicitcad.org/
 
-==== Online print platforms / hardware ====
-* http://authentise.com/
+#  Online print platforms / hardware * http://authentise.com/
 * http://www.secured3d.com/
 * http://www.printtopeer.com/
 * http://chilipeppr.com/
 * http://jscut.org/
 * http://octoprint.org/
 
-==from pointcloud to mesh==
+# from pointcloud to mesh
 from Wikipedia: There are many techniques for converting a point cloud to a 3D surface. Some approaches, like Delaunay triangulation, alpha shapes, and ball pivoting, build a network of triangles over the existing vertices of the point cloud, while other approaches convert the point cloud into a volumetric distance field and reconstruct the implicit surface so defined through a marching cubes algorithm.[2]
 
-==Voxelbuilder==
+# Voxelbuilder
 Ook een leuk 3D ontwerp programmaatje: 
 http://voxelbuilder.com/
 (Werkt met Canvas, werkt dus ook op oudere iPhones en iPad's)
 
-==openjscad.org==
+# openjscad.org
 * openjscad.org
 * [[https://github.com/Spiritdude/OpenJSCAD.org/wiki/User-Guide|Guide]]
 Ondersteund drag en drop van stl, amf en openscad bestanden. OpenjsCad gebruikt trouwens ook dat csg.js, waar bijv. ook http://shapesmith.net/ gebruikt van maakt.
 
-==machines==
+# machines
 * http://5axismaker.com/

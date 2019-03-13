@@ -398,7 +398,7 @@ Bij het inserten van UTF-8 tekst in een MySQL datebase dien je eerst een utf8_de
   $event->description = utf8_decode($tweet->text);
 ```
 
-=====Als de tijd niet goed staat in PHP staat misschien je timezone verkeerd=====
+# Als de tijd niet goed staat in PHP staat misschien je timezone verkeerd
 ```php
 setlocale(LC_ALL, "nl_NL");
 date_default_timezone_set("Europe/Amsterdam");

@@ -9,7 +9,7 @@ De workshops zijn vooralsnog op een vaste plek en op een vaste tijd: op woensdag
  
 (blog:2008:03:dewar.jpg)
 
-===== TOGO =====
+#  TOGO 
 De eerste sessie is op woensdag 27 februari 2008. Rick Companje zal dan een introductie geven in Processing, een veelzijdige programmeertaal, met een eenvoudige gebruiksaanwijzing waarin je snel ideeen kunt uitwerken, of zoals de website van Processing vermeldt:
 
 "Processing is an open source programming language and environment for people who want to program images, animation, and interactions. It is used by students, artists, designers, researchers, and hobbyists for learning, prototyping, and production. It is created to teach fundamentals of computer programming within a visual context and to serve as a software sketchbook and professional production tool. Processing is developed by artists and designers as an alternative to proprietary software tools in the same domain."
@@ -17,17 +17,17 @@ De eerste sessie is op woensdag 27 februari 2008. Rick Companje zal dan een intr
 We zullen deze taal gebruiken om wegwijs te worden in een aantal basis programmeertechnieken. Het is ook een uitstekende opstap naar andere programmeertalen als java of C++. Het enige wat je voor deze workshop mee moet nemen is een laptop. Halverwege de avond wordt er gekookt of gesnackt.
 
 
-===== TODO =====
+#  TODO 
 Inventarisatie van onderwerpen die aan bod zouden kunnen komen in een TOKO sessie:
 
-=== gestructureerd programmeren ===
+#  gestructureerd programmeren =
     * processing
     * ide's
     * pointers/by ref, arrays, classes
     * callbacks, events, streams
     * toolkits: gui ala fltk, gtk, openframeworks, processing, opengl, etc 
 
-== software specials ==
+#  software specials 
     * dataset conversie
     * grafisch werk: matrix transformaties
     * 3d programmeren
@@ -38,13 +38,13 @@ Inventarisatie van onderwerpen die aan bod zouden kunnen komen in een TOKO sessi
     * crossplatform: linux, mac, windows
     * compiler optimalisatie 
 
-=== hardware ===
+#  hardware =
     * mcu-programmeren
     * rfid
     * theremin
     * foutzoeken in elektronica 
 
-=== basic skills ===
+#  basic skills =
     * flash, action script
     * photoshop
     * webdesign, sql, php, javascript, html
@@ -52,7 +52,7 @@ Inventarisatie van onderwerpen die aan bod zouden kunnen komen in een TOKO sessi
 
 
 
- ===== TOKO sessie 1 =====
+  TOKO sessie 1 
 27-2-2008
 In deze sessie heb ik een introductie gegeven over Processing, een veelzijdige programmeertaal, met een eenvoudige gebruiksaanwijzing waarin je snel ideeen kunt uitwerken, of zoals de website van Processing vermeldt:
 
@@ -62,11 +62,11 @@ In deze sessie heb ik een introductie gegeven over Processing, een veelzijdige p
 
 
 
-===== TOKO sessie 2 =====
+#  TOKO sessie 2 
 5-3-2008
 Deze sessie ging over een aantal concepten die handig zijn bij gestructureerd programmeren (arrays, pointers, classes) en de vormen die ze aannemen in verschillende programmeertalen (processing/java, c/c++, pascal/delphi, php...).
 
 This time we went into structural programming. We started with assembly code (by Maarten) soon followed by pointers (by Harmen) and ended with object oriented programming in c++ (by me) and did a lot in between.
 
-===== TOKO sessie 3 =====
+#  TOKO sessie 3 
 About existing libraries/toolkits (for ie. C++ or Processing) and how they help you not to re-invent the wheel.

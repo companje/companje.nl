@@ -2,11 +2,11 @@
 title: Connman
 ---
 
-==check network status==
+# check network status
   connmanctl technologies
   connmanctl services
   
-==ctl==
+# ctl
   connmanctl
     help
     tether wifi on

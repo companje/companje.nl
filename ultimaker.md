@@ -1,24 +1,24 @@
 ---
-title: =====Ultimaker=====
+title: Ultimaker
 ---
 
 See [[3DPrinting]]
 
-==stillere fan==
+# stillere fan
 "dit is de fan: http://www.ebay.com/itm/Lufter-5V-0-38W-25x25x6mm-3-7m-h-23dBA-Sunon-MC25060V2-A99-/231085070846?hash=item35cdbe59fe
 (en dit is de bijbehorende thread: https://ultimaker.com/en/community/6442-feature-request-allow-to-turn-off-fan-behind-extruder)"
 
-==cura-build==
+# cura-build
 * `git clone https://github.com/Ultimaker/cura-build`
 * set `PYTHONPATH=/usr/local/lib/python3/dist-packages`
 * https://github.com/trigrab/cura-build/commit/354befb7933626bb34ca2972e9fb1ea71743ba8c
 * https://github.com/Ultimaker/cura-build/issues/9
 
-==cura-build on osx 10.11==
+# cura-build on osx 10.11
 * https://github.com/Ultimaker/cura-build/issues/30
 
 
-==doodle3d startcode/endcode for Doodle3D Ultimaker 2/2go==
+# doodle3d startcode/endcode for Doodle3D Ultimaker 2/2go
 ```
 ;Generated with Doodle3D (ultimaker2)
 M10000
@@ -65,18 +65,18 @@ M117 Done                 ;display message (20 characters to clear whole screen)
 ```
 
 
-==help==
+# help
 * https://ultimaker.com/nl/support/view/11703-extrusion-problems
 * https://ultimaker.com/nl/support/view/223-atomic-method
 
-==boutjes en moertjes==
+# boutjes en moertjes
 * http://rvspaleis.nl
 
-==build marlin firmware==
+# build marlin firmware
 * http://daid.mine.nu/~daid/marlin_build/
 * http://wiki.ultimaker.com/Marlin_firmware_for_the_Ultimaker
 
-==Cura==
+# Cura
 * http://daid.github.com/Cura/
 
 * firmware backuppen:
@@ -100,5 +100,5 @@ avrdude -c stk500v2 -b115200 -p atmega2560 -P /dev/tty.usbmodem621 -D -Uflash:w:
 avrdude -c stk500v1 -b57600 -p atmega1280 -P /dev/tty.usbserial-A9005d8c -D -Uflash:w:firmware.hex:i
 ```
 
-==PLA==
+# PLA
 * www.faberdashery.co.uk

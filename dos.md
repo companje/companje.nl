@@ -1,4 +1,5 @@
 ---
-title: see [[msdos]]
+title: DOS
 ---
 
+see [MS-DOS](msdos)

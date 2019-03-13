@@ -2,7 +2,7 @@
 title: Commodore64
 ---
 
-=====draw blocks with light-pen in low-res mode=====
+# draw blocks with light-pen in low-res mode
 <code gwbasic>
 10 POKE 53280,0: POKE 53281,1
 20 PRINT "{Shift+CLR}"
@@ -28,18 +28,18 @@ title: Commodore64
 260 RETURN
 ```
 
-=====modulo=====
+# modulo
 use backslash
 
-=====toggle upper/lower case=====
+# toggle upper/lower case
 Shift+CommodoreKey
 
-=====clear screen=====
+# clear screen
   print chr$(47)
 or
   print "(Shift+CLR)"
 
-=====print at location ROW,COL=====
+# print at location ROW,COL
 prints "X" at row=5, col=10
 ```
 5 print chr$(147)
@@ -49,14 +49,14 @@ prints "X" at row=5, col=10
 40 sys 65520
 ```
 
-=====read X,Y coord of light-pen=====
+# read X,Y coord of light-pen
 use a bright background with dark border
   10 POKE 53280,0: POKE 53281,1
 read values from 53267 and 53268 for X and Y ([[http://www.c64-wiki.com/index.php/Light_pen#Programmer.27s_How-To-section|read more]])
   20 PRINT PEEK(53267)" "PEEK(53268)
   30 GOTO 20
 
-=====serial communication in both directions at 1200 baud=====
+# serial communication in both directions at 1200 baud
 (send CAPITALS from the PC because the character-set of the c64 is different)
 ```
 10 OPEN 5,2,2,CHR$(8)
@@ -67,7 +67,7 @@ read values from 53267 and 53268 for X and Y ([[http://www.c64-wiki.com/index.ph
 CHR$(6) = 400 baud    (= bin 00000110)
 CHR$(8) = 1200 baud  (= bin 00001000)
 
-=====tips van johan vandenbran.de=====
+# tips van johan vandenbran.de
 * https://github.com/cc65/cc65
 *http://lallafa.de/blog/c64-projects/macvice/
 *https://www.google.nl/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#sourceid=chrome-psyapi2&ie=UTF-8&q=vice%20osx
@@ -77,24 +77,24 @@ CHR$(8) = 1200 baud  (= bin 00001000)
 *coolterm
 *http://jderogee.tripod.com/
 
-=====background color=====
+# background color
   POKE 53281,15
   
-=====invert colors=====
+# invert colors
   POKE 53280,0: POKE 53281,1
 
-=====tips=====
+# tips
 * http://www.infinite-loop.at/Power64/Documentation/Power64-ReadMe/AA-C64_BASIC.html
 
-=====arduino to user port=====
+# arduino to user port
 * [[https://www.youtube.com/watch?v=DLYXUgH9rAI|NL filmpje]]
 * [[http://www.hardwarebook.info/C64_RS232_User_Port|user port schema]]
 * [[http://www.c64-wiki.com/index.php/User_Port|user port schema 2]]
 
-=====read joystick=====
+# read joystick
   PEEK(56320)
 
-=====save file to disk=====
+# save file to disk
   SAVE "FILENAME",8
 or
   DSAVE "FILENAME"
@@ -102,33 +102,33 @@ overwrite:
   DSAVE "@:FILENAME"
 video: https://www.youtube.com/watch?v=F1rjCxT2w4c
 
-=====delete a file from disk=====
+# delete a file from disk
   OPEN 15,8,15
   PRINT#15 "S0:FILENAME"
   CLOSE 15
   
-=====reference guide=====
+# reference guide
 [[http://www.commodorefree.com/magazine/information/Commodore%2064%20Reference%20Guide.pdf|reference guide]]
 
-=====list files=====
+# list files
   LOAD "$",8
   LIST
 of
   F7 (met de Final Cartridge III)
   
-=====final cardridge iii=====
+# final cardridge iii
 http://en.wikipedia.org/wiki/The_Final_Cartridge_III
 tip: druk RUN/STOP in tijdens het indrukken van de Reset knop, dan kom je in basic en kun je de functietoetsen gebruiken waarmee je met F5 een disk runt en met F7 een dir listing opvraagt.
 
-=====run first program on disk=====
+# run first program on disk
   load"*",8,1 
 indien nodig gevolgd door:
   run
 of
   DLOAD
 
-=====format disk=====
+# format disk
   OPEN1,8,15,"N:NEW DISK,00":CLOSE1 
   
-=====dirmaster3=====
+# dirmaster3
 *[[http://style64.org/dirmaster|dirmaster3]]

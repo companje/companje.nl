@@ -11,35 +11,34 @@ title: Retro Computing / Retro Coding
 * [[https://www.pinterest.com/blakespot/keyboards/|Pinterest pagina met bijzondere toetsenborden]]
 * http://kaput.retroarchive.org/
 
-===== Pioneers =====
+#  Pioneers 
 * [[http://obsolescence.wix.com/obsolescence#!kim-uno-summary/c1uuh|"...Steve Wozniak, Jim Butterfield and Peter Jennings"]]
 
-=====Movies=====
+# Movies
 * [[https://www.youtube.com/watch?v=XXBxV6-zamM|Micro Men 2009 BBC]]
 * Triumph of the nerds [[https://www.youtube.com/watch?v=HuBXbvl1Sg4|part 1]], [[https://www.youtube.com/watch?v=PWylb_5IOw0|part 2]], [[https://www.youtube.com/watch?v=VjDofliudFY|part 3]]
 
-=====Emulators=====
+# Emulators
 * MESS emulator - http://sdlmame.lngn.net/
 * vette emulators: http://www.pcjs.org/
 
-=====ROMs=====
+# ROMs
 * roms: https://ia601808.us.archive.org/zipview.php?zip=/2/items/MESS-0.149.BIOS.ROMs/MESS-0.149.BIOS.ROMs.zip
 
-=====Terminal Emulators=====
+# Terminal Emulators
 * https://github.com/Swordfish90/cool-retro-term
 
-=====Retro Kits & community=====
+# Retro Kits & community
 * http://www.brielcomputers.com/wordpress/
 * [[http://obsolescence.wix.com/obsolescence#!kim-uno-summary/c1uuh|Kim-1]]
 * [[http://www.retrobrewcomputers.org/doku.php|RetroBrew / N8VEM project / community]]
 
-=====Monitor and keyboard controller=====
+# Monitor and keyboard controller
 http://searle.hostei.com/grant/MonitorKeyboard/index.html
 
-=====Events====
-* [[http://www.vintage.org/2015/east/|VCF East X]] (US)
+# Events* [[http://www.vintage.org/2015/east/|VCF East X]] (US)
 
-=====Museums & verzamelaars=====
+# Museums & verzamelaars
 * http://www.computer-museum.nl/
 * http://www.computermuseum.nl/
 * http://hblankes.home.xs4all.nl/Museum/
@@ -53,19 +52,19 @@ http://searle.hostei.com/grant/MonitorKeyboard/index.html
 * http://obsolescence.wix.com/obsolescence (Oscar, NL)
 * http://obsolescenceguaranteed.blogspot.ch/ (NL)
 
-=====Communities=====
+# Communities
 * http://awesomespace.nl/
 * http://retrocomputerdag.nl
 * http://www.philipsradios.nl/
 
-=====Overig=====
+# Overig
 * http://retro.hansotten.nl/
 * http://home.claranet.nl/users/pb0aia/
 
-=====CMOC compiler=====
+# CMOC compiler
 [[http://perso.b2b2c.ca/sarrazip/dev/cmoc.html|tip van Johan o.a. voor Vectrex]]
 
-=====My computer collection=====
+# My computer collection
 * [[altair|Altair 8800]] (self made replica)
 * [[superbrain|Intertec SuperBrain]]
 * [[holborn|Holborn 6100]]
@@ -81,15 +80,15 @@ http://searle.hostei.com/grant/MonitorKeyboard/index.html
 * [[Otrona]] keyboard
 * more...
 
-=====Wanted=====
+# Wanted
 * Delay line memory (like https://ub.fnwi.uva.nl/computermuseum/tyco.php)
 * [[Tektronix 4010]]
 * [[VT-05]]
 * [[pdp|PDP8 / PDP11]]
 
-=====My pong collection=====
+# My pong collection
 * Blaupunkt TV-Action FM100 Color
 * ...
 
-=====TV's=====
+# TV's
 * Indesit TV

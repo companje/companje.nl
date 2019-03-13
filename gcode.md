@@ -57,7 +57,7 @@ M10004 X1 Y56 W128 H8
 M10003 X1 Y56 W10 H8
 ```
 
-=====current start/end gcode for Ultimaker Original=====
+# current start/end gcode for Ultimaker Original
 startcode:
 ```gcode
 M104 S200
@@ -91,13 +91,13 @@ G90 ;absolute positioning
 M104 S0
 ```
 
-=====documentation=====
+# documentation
 * http://reprap.org/wiki/G-code
 
-=====binary gcode by repetier=====
+# binary gcode by repetier
 * https://github.com/repetier/Repetier-Firmware/blob/master/repetier%20communication%20protocol.txt
 
-=====tools=====
+# tools
 * http://sourceforge.net/projects/pycam/
 * http://tmpvar.com/project/gcode-simulator/
 * http://wiki.linuxcnc.org/cgi-bin/wiki.pl?Simple_LinuxCNC_G-Code_Generators

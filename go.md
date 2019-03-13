@@ -2,5 +2,5 @@
 title: Go
 ---
 
-==docs==
+# docs
 * http://learnxinyminutes.com/docs/go/

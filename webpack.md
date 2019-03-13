@@ -2,19 +2,18 @@
 title: Webpack
 ---
 
-===== dev server toegang buiten localhost =====
+#  dev server toegang buiten localhost 
 ```
 "scripts": {
     "start": "webpack-dev-server -w --host 0.0.0.0",
 ...
 ```
 
-===== webpack-cli =====
+#  webpack-cli 
 De nieuwe `webpack-cli` maakt starteb met webpack makkelijk met een init commando: `webpack-cli init`
 https://github.com/webpack/webpack-cli
 
-==== init ====
-...peter... nieuw bash scriptje toegevoegd aan `/usr/local/bin` met:
+#  init ...peter... nieuw bash scriptje toegevoegd aan `/usr/local/bin` met:
 ```
 atom -a . # add project folder to atom
 mkdir src
@@ -30,7 +29,7 @@ webpack-cli init
 Vereist: 
 `npm install -g webpack-dev-server json webpack-cli `
 
-=== Webpack and Rollup: the same but different ===
+#  Webpack and Rollup: the same but different =
  https://medium.com/webpack/webpack-and-rollup-the-same-but-different-a41ad427058c
 Medium
 Webpack and Rollup: the same but different – webpack – Medium

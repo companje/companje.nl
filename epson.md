@@ -3,7 +3,7 @@ layout: default
 title: EPSON
 ---
 
-===== EPSON printer =====
+#  EPSON printer 
 * http://www.youtube.com/watch?v=AmRRiEFgr1Y
 * http://www.epson.nl/nl/nl/viewcon/corporatesite/support/index?gatewayto=ProductHome.aspx%3Flng=nl-NL%26amp;data=VkjUmbBFNN3FlA6jOW0tJY4pminC5v8f8XDLwi3eQJAU003D
 * http://www.epson.nl/nl/nl/viewcon/corporatesite/support/index?gatewayto=ProductHome.aspx%3Flng=nl-NL%26amp;data=VkjUmbBFNN3FlA6jOW0tJY4pminC5v8f8XDLwi3eQJAU003D%26amp;tc=6#62

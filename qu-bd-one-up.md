@@ -8,12 +8,12 @@ See [[3dprinting]]
 * [[http://www.fabric8r.com/forums/showthread.php?1308-Customizing-Marlin-Firmware-for-the-One-Up-and-Two-Up|Uploading customized firmware]]
 * [[http://www.fabric8r.com/forums/showthread.php?1247-Assembly-videos-and-other-resources|Assembly videos and other resources]]
 
-=====firmware info=====
+# firmware info
 M119:
 ```FIRMWARE_NAME:Marlin V1; Sprinter/grbl mashup for gen6 FIRMWARE_URL:https://github.com/ErikZalm/Marlin/ PROTOCOL_VERSION:1.0 MACHINE_TYPE:RapidBot3 EXTRUDER_COUNT:1 UUID:00000000-0000-0000-0000-000000000000
 ```
 ---------
-=====after firmware update=====
+# after firmware update
 https://github.com/QU-BD/Up-Marlin
 ```
 FIRMWARE_NAME: Up-Marlin 1.1 (Marlin derivative) FIRMWARE_URL:https://github.com/QU-BD/Up-Marlin PROTOCOL_VERSION:1.0 MACHINE_TYPE:QUBD One-Up EXTRUDER_COUNT:1 UUID:00000000-0000-0000-0000-000000000000

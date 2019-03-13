@@ -5,16 +5,16 @@ title: Lean
 * https://www.hotjar.com/
 * [[onlinetools]]
 
-==hosting==
+# hosting
 * https://cloud.google.com/
 
-==social media==
+# social media
 * https://www.thunderclap.it/
 * https://buffer.com/app
 
-==Customer support==
+# Customer support
 * https://www.zendesk.com/
 * http://www.desk.com
 
-==landing pages==
+# landing pages
 * http://unbounce.com/

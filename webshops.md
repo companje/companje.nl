@@ -2,7 +2,7 @@
 title: Webshops
 ---
 
-=====gadget & hobby & elektronica webshops=====
+# gadget & hobby & elektronica webshops
 * https://www.vanallesenmeer.nl/ (NL)
 * http://www.reichelt.de/
 * http://www.banggood.com/
@@ -16,6 +16,6 @@ title: Webshops
 * http://floris.cc (Breda)
 * http://nl.mouser.com/ (Eindhoven)
 
-=====e-commerce solutions=====
+# e-commerce solutions
 * http://pasary.com/ 
 * http://shopify.com

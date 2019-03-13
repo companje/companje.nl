@@ -60,7 +60,7 @@ export VERSIONER_PYTHON_PREFER_32_BIT=yes
   * Ctrl+Shift+D = document settings (always set default units to mm)
   * Ctrl+G = group
   * + en - = in en uitzoomen
-  * # = grid aan/uitzetten
+  * #  grid aan/uitzetten
   * | = snap to guides aan/uitzetten
 
 # Stroke venster aanzetten

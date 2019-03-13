@@ -245,7 +245,7 @@ talk at FOSDEM 15: Hannes Verschore (http://H4writer.com)
 * traceur
 * 6to5
 
-===generators
+# generators
 generate a sequence, one item at a time. a function that can be paused in the middle
 <code javascript>
 function *foo() {

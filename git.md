@@ -45,8 +45,7 @@ https://help.github.com/articles/syncing-a-fork/
 #  Splitting a subfolder out into a new repository
 * https://help.github.com/articles/splitting-a-subfolder-out-into-a-new-repository/
 
-==== Remove sensitive data ====
-* https://help.github.com/articles/remove-sensitive-data/
+#  Remove sensitive data * https://help.github.com/articles/remove-sensitive-data/
 
 # fatal: unable to access 'C:\Users\User/.gitconfig': Permission denied
 the HOME env variable might be wrong. Try 

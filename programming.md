@@ -2,10 +2,10 @@
 title: Programming Languages
 ---
 
-==Articles==
+# Articles
 * https://medium.com/@thi.ng/the-jacob-s-ladder-of-coding-4b12477a26c1#.iobrtpj0n
 
-==Some used languages==
+# Some used languages
 *[[Batch]]
 *[[Sanyo Basic]]
 *[[QBasic]]
@@ -23,7 +23,7 @@ title: Programming Languages
 *[[js|Javascript]]
 *[[Visual Basic]]
 
-==Want to learn==
+# Want to learn
 *[[https://www.rust-lang.org/]]
 *[[http://www.ponylang.org/]]
 *[[https://golang.org/]]

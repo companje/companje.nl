@@ -1,8 +1,8 @@
 ---
-title: =====Illustrator=====
+title: Illustrator
 ---
 
-==Shortcut keys==
+# Shortcut keys
 |''F7''|Show/hide Layers|
 |''Cmd+Y''|Outline View|
 |'', . /''|wisselen tussen 3 soorten fills (solid, gradient, transparent)|
@@ -22,6 +22,6 @@ title: =====Illustrator=====
 |''shift+O''|open artboard settings|
 |Cmd+Shift+B|handles aan/uit o.a. om Free Transform te kunnen doen|
 
-==Tips==
+# Tips
  * Op de paper-size in te stellen kun je bij Document Properties -> Edit ArtBoards gebruiken. Klinkt als een omslachtige methode dus misschien is er een betere.
  * Als je iets geselecteerd hebt met de Direct Selection Tool (a) dan kun je met Cmd op het geheel een soort Free Transform doen.

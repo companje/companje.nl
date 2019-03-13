@@ -1,8 +1,8 @@
 ---
-title: =====Photoshop=====
+title: Photoshop
 ---
 
-==Paths==
+# Paths
 * hold spacebar while drawing a path (for example an ellipse) to move it
 * ''A'' for ''Path Selection Tool'' or ''Shift+A'' to toggle between ''Path Selection Tool'' and ''Direct Selection Tool'' to select points.
 * ''Ctrl+T'' = ''Free Transform Path''
@@ -15,7 +15,7 @@ title: =====Photoshop=====
 * ''Path Operations'' in ''Path Properties'' are very useful: Combine, Subtract, Intersect, Exclude.
 * nice tutorial from Lynda.com: https://www.youtube.com/watch?v=bt5nw8fco74
 
-==SVG export from Photoshop==
+# SVG export from Photoshop
 Starting from Photoshop CC 14.2, you can create SVG files directly from Photoshop:
 
 * Create a file named ''generator.json'' with the content below in your user home folder.
@@ -34,13 +34,13 @@ Content for ''generator.json'':
 Source: http://stackoverflow.com/questions/5413719/photoshop-custom-shape-to-svg-path-string
 Source: http://creativedroplets.com/generate-svg-with-photoshop-cc-beta/
 
-==Panels==
+# Panels
 * You can have larger thumbnails in your panels by using ''Panel Options'' from the panel's toolbar.
 
 
 
-==inside stroke==
+# inside stroke
 use ''Stroke'' -> ''Inside Blending Option'' to create thicker lines for example for country borders
 
-==create replace black background by transparent==
+# create replace black background by transparent
 * http://graphicdesign.stackexchange.com/questions/2549/photoshop-cs5-setting-a-black-background-to-transparent

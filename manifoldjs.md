@@ -24,6 +24,6 @@ ERROR: Failed to create the base application. The Cordova project could not be c
 One or more errors occurred when generating the application. For more information, run manifoldjs with the diagnostics level set to debug (e.g. manifoldjs [...] -l debug)
 ```
 
-==ERROR: Failed to retrieve manifest from site.==
+# ERROR: Failed to retrieve manifest from site.
 This error is generated when HTTP response is not 200 OK. For example in case of 401 or 403 (Authentication).
 https://github.com/manifoldjs/ManifoldJS/blob/510145f8c8c623d869174354cf2abe514d536395/lib/manifestTools.js#L67

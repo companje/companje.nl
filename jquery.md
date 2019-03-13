@@ -57,7 +57,7 @@ $(document).ready(function() {
       console.log($(this).html());//.replace(/n/g, '&nbsp;'));
       console.log($(this));
       });
-      console.log("==========================");
+      console.log("=");
     });
   });
 
@@ -74,7 +74,7 @@ $(document).ready(function() {
 
 # this & children
 ```js
-//$(e.currentTarget)  ===== $(this)
+//$(e.currentTarget)   $(this)
 $(this).children(".description").text()
 ```
 

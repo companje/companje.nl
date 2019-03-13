@@ -2,17 +2,17 @@
 title: Vectrex
 ---
 
-==about the 6809 processor==
+# about the 6809 processor
 * https://en.wikipedia.org/wiki/Motorola_6809
 * http://techheap.packetizer.com/processors/6809/6809Instructions.html
 * http://techheap.packetizer.com/processors/6809/6809.html
 
-==cmoc compiler for 6809==
+# cmoc compiler for 6809
 * http://sarrazip.com/dev/cmoc.html
 * http://perso.b2b2c.ca/sarrazip/dev/cmoc-vectrex.html
 
-==hello world==
-<code c>
+# hello world
+```cpp
 #include <vectrex/bios.h>
 
 int main() { 
@@ -23,16 +23,17 @@ int main() {
 }
 ```
 
+compile:
 ```bash
 cmoc --vectrex hello_world.c
 ```
 
-==emulators==
+# emulators
 * http://www.vectrex.fr/ParaJVE/
 * https://github.com/jhawthorn/vecx
 
-==bios==
+# bios
 * http://www.playvectrex.com/designit/chrissalo/bios.htm
 
-==vector generators==
+# vector generators
 * http://www.zektor.com/zvg/index.html

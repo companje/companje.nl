@@ -2,8 +2,7 @@
 title: taskwarrior
 ---
 
-===== download =====
+#  download 
 * https://taskwarrior.org/download/
 
-==== get started ====
-* https://taskwarrior.org/docs/start.html
+#  get started * https://taskwarrior.org/docs/start.html

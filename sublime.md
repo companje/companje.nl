@@ -1,7 +1,12 @@
 ---
-title: SublimeText2
+title: SublimeText
 ---
 A light-weight full feature text/code editor for OSX, Windows and Linux
+
+# undo on all open files
+```lua
+len([v.run_command("revert") for v in window.views()])
+```
 
 # Javascript Intenter
 * install ```formatjs```
@@ -10,26 +15,27 @@ A light-weight full feature text/code editor for OSX, Windows and Linux
 # subl:// protocol handler
 https://support.shotgunsoftware.com/hc/en-us/articles/219031308-Launching-applications-using-custom-browser-protocols
 
+met de Apple Script Editor -> Export as .app:
+```applescript
+on open location this_URL
+  do shell script "~/bin/sublimeTextLauncher.sh '" & this_URL & "'"
+end open location
+```
+Show Package Contents -> add to info.plist:
 ```xml
 <key>CFBundleIdentifier</key>
 <string>nl.companje.SublimeTextLauncher</string>
 <key>CFBundleURLTypes</key>
 <array>
-	<dict>
-	<key>CFBundleURLName</key>
-	<string>SublimeText Launcher</string>
-	<key>CFBundleURLSchemes</key>
-	<array>
-		<string>subl</string>
-	</array>
+  <dict>
+  <key>CFBundleURLName</key>
+  <string>SublimeText Launcher</string>
+  <key>CFBundleURLSchemes</key>
+  <array>
+    <string>subl</string>
+  </array>
 </dict>
 </array>
-```
-
-```applescript
-on open location this_URL
-  do shell script "~/bin/sublimeTextLauncher.sh '" & this_URL & "'"
-end open location
 ```
 
 
@@ -52,8 +58,7 @@ end open location
 * https://github.com/sublimehq/Packages/blob/master/Makefile/Make.sublime-build
 * http://docs.sublimetext.info/en/latest/file_processing/build_systems.html
 
-# Disable Hex view for binary files====
-Add to settings:
+# Disable Hex view for binary filesAdd to settings:
   "enable_hexadecimal_encoding": false
 
 # On Linux
@@ -86,8 +91,13 @@ In Preferences->Settings User change add:
 
 # use sublime from terminal in osx
 See [[http://www.sublimetext.com/docs/2/osx_command_line.html|this page]]
-```
+```bash
 ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
+```
+and add ~/bin to your path for example:
+```bash
+# ~/.bash_profile
+export PATH=~/bin:$PATH
 ```
 
 # compile c++ files

@@ -5,7 +5,7 @@ title: C++
 see also [[openFrameworks]]
 see also [[arduino]]
 
-=====Passing values to member classes=====
+# Passing values to member classes
 main.ino:
 <code cpp>
 #include "Slider.h"
@@ -44,7 +44,7 @@ class Sensor {
 ```
 
 
-=====union=====
+# union
 <code c>
 union
 {
@@ -57,7 +57,7 @@ union
 };
 ```
 
-=====read & write string=====
+# read & write string
 <code c>
 //--------------------------------------------------------------
 string loadString(string filename) {
@@ -75,16 +75,16 @@ void saveString(string filename, string str) {
 }
 ```
 
-=====vies maar wel leuk=====
+# vies maar wel leuk
 <code c>
 #include "stdio.h"
 
 int main() {
-        1=====0 && printf("hoi");
+        10 && printf("hoi");
 }
 ```
 
-=====read contents of a file=====
+# read contents of a file
 <code c>
 ifstream f("filename.txt",ios::in);
 stringstream buf;
@@ -92,7 +92,7 @@ buf << f.rdbuf();
 string str = buf.str();
 ```
 
-=====popen() as alternative to system()=====
+# popen() as alternative to system()
 <code c>
 string ofxExecute(string cmd) {
     string result;
@@ -106,7 +106,7 @@ string ofxExecute(string cmd) {
 * [[http://www.lix.polytechnique.fr/Labo/Leo.Liberti/public/computing/prog/c/C/FUNCTIONS/popen.html|info]]
 
 
-=====join vector to string=====
+# join vector to string
 <code cpp>
 template<typename T> string join(const vector<T>& vec, string t=",") {
     stringstream ss;
@@ -118,7 +118,7 @@ template<typename T> string join(const vector<T>& vec, string t=",") {
 }
 ```
 
-=====ostringstream=====
+# ostringstream
 <code cpp>
 ostringstream s;
 s << doodle.vshape;
@@ -130,13 +130,13 @@ printf("%s",s.str().c_str());
  ```
 
 
-=====DEFAULTLIB  warnings with CodeBlocks/MinGW=====
+# DEFAULTLIB  warnings with CodeBlocks/MinGW
 /DEFAULTLIB is a directive that is Visual Studio specific. It is added by the compiler if source contains
 ```#pragma comment(linker,"/DEFAULTLIB:something")```
 It is meant to be processed by the microsoft linker when creating final executable - microsoft linker understands the directive. MinGW does not understand it
 * source: http://bugs.mysql.com/bug.php?id=45318
 
-=====sort std::vector=====
+# sort std::vector
 <code c>
 bool triggerSortByDate(const Trigger& a, const Trigger& b) {
     return a.triggerDate < b.triggerDate;
@@ -146,7 +146,7 @@ std::sort(myvector.begin(), myvector.end(), triggerSortByDate);
 ```
 (never return -1 as a false)
 
-=====loop over std::map=====
+# loop over std::map
 <code c>
 for (map<int,Event>::iterator it=events.begin(); it!=events.end(); it++) {
     Event &e = events[it->first];
@@ -154,7 +154,7 @@ for (map<int,Event>::iterator it=events.begin(); it!=events.end(); it++) {
 }
 ```
 
-=====calling a function in the global namespace from within a class=====
+# calling a function in the global namespace from within a class
 <code c>
 #include <iostream>
 #include <string>
@@ -199,16 +199,16 @@ int main() {
 }
 ```
 
-=====opvragen welke functies een compiled library bevat=====
+# opvragen welke functies een compiled library bevat
 nm' in je terminal om van een compiled library (bijv freeimage.a) info opvragen over welke functies er aan te roepen zijn.
 zoeken met grep in de output: nm | grep -i "vet"
 -i van grep is voor case insensitive
 
-=====andere tools=====
+# andere tools
 c++filt
 otool kijken met welke dynamische libraries jouw applicatie linkt
 
-=====nice way of struct initializing=====
+# nice way of struct initializing
 <code c>
 typedef struct {
   string name; 
@@ -222,10 +222,10 @@ City newyork = { "new york", 40+47/60., -73 + 58/60. };
 return (ofxLatLon){lat,lon};
 ```
 
-=====good graphics and math stuff=====
+# good graphics and math stuff
 * http://www.iquilezles.org/www/
 
-=====foreach macro with reference (and silly endfor)=====
+# foreach macro with reference (and silly endfor)
 <code c>
 #define foreach(t,v) for(typeof(v.begin()) p=v.begin(); p!=v.end(); p++) { typeof(*p) &t=*p; 
 #define endfor }
@@ -237,30 +237,30 @@ foreach (t,triangles) {
 } endfor
 ```
 
-=====foreach macro with pointer p=====
+# foreach macro with pointer p
 <code c>
 #define foreach(p,v) for(typeof(v.begin()) p=v.begin(); p!=v.end(); p++)
 ```
 
-=====get pointer as a reference to the object it's pointing to=====
+# get pointer as a reference to the object it's pointing to
 <code c>
 #define ref(a,b) &a=*b
 ```
 
-=====typeof to make a reference=====
+# typeof to make a reference
 <code c>
 Triangle t;    
 typeof(t) &i = t;
 cout << i.v << endl;
 ```
 
-=====goede uitleg over references=====
+# goede uitleg over references
 http://www.parashift.com/c++-faq-lite/references.html
 
-=====std::vector=====
+# std::vector
 back() is the same as *end() 
 
-=====interessante operator cast=====
+# interessante operator cast
 <code c>
 ClassName::operator bool() {
   return ....

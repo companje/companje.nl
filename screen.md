@@ -10,20 +10,20 @@ https://kb.iu.edu/d/acuy
 screen -D ....
 ```
 
-=====keys=====
+# keys
 Kill = Ctrl+A k
 Detach = Ctrl+A d
 
-=====Resume a detached screen session=====
+# Resume a detached screen session
   screen -r
   
-=====man page=====
+# man page
 https://www.gnu.org/software/screen/manual/screen.html
 
-=====connect to hostmodule=====
+# connect to hostmodule
   screen /dev/tty.usbserial
   
-=====reset=====
+# reset
 ```
 reset
 ```

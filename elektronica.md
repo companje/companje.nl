@@ -4,7 +4,7 @@ title: Elektronica
 
 see [[electronics]]
 
-==condensatoren==
+# condensatoren
 * http://www.justradios.com/uFnFpF.html
 
 *http://reichelt.de

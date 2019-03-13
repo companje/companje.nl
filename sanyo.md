@@ -11,11 +11,11 @@ title: Sanyo MBC-550/555
 * Weird thing: when I remove the index sensor this has no effect on the readings on TP9 and TP10. There's 10us between the pulses.
 * 'Precompensation adjustment': Connect input of a scope to TP1 on System Board. Set scope sweep to 1uSec, voltage to 2V and trigger to positive slope. Adjust Precompensation Control (RV1) for 2uSec from the rising edge of the first pulse to the rising edge of the second pulse. RESULT: 2uSec 500kHz.
 
-==Test pins on mainboard==
+# Test pins on mainboard
 * TP1: Precompensation adjustment test. Should measure 2 uSec / 500 kHz. Adjust RV1 to fix.
 * TP2: ??
 
-==Drive Track Program==
+# Drive Track Program
 The following Basic program can be used to select Driva A or B, select side 0 or 1 and step the Drive Head to a specific track. To stop the program, press the BREAK key.
 <code gwbasic>
 10 INPUT "ENTER DRIVE (A OR B)"; D$
@@ -36,15 +36,15 @@ The following Basic program can be used to select Driva A or B, select side 0 or
 160 A$=INKEY$: OUT 8,228: IF A$="" THEN 160 ELSE 70
 ```
 
-==wordstar manual==
+# wordstar manual
 http://www.textfiles.com/bitsavers/pdf/microPro/Wordstar_3.3/Wordstar_3.3_Reference_Manual_1983.pdf
 
-==debug.com==
+# debug.com
 * fill memory with 0's: `e 0 ffff 0`
 * `rcx` sets cx register. This register is used in debug.com to store the amount of bytes to write to the loaded (or newly created file).
 ```
 
-==create a program with debug.com==
+# create a program with debug.com
 A> debug test.com
 - e 100
   B8 {space} 00 {space} 4C {space} CD {space} 21 {enter}
@@ -55,8 +55,8 @@ A> debug test.com
 -q
 ```
 
-==asm.com==
+# asm.com
 * http://www.datapackrat.com/86dos/index.shtml
 
-==technical info==
+# technical info
 * http://www.seasip.info/VintagePC/sanyo.html

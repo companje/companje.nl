@@ -7,7 +7,7 @@ title: Wordpress
 <https://gist.github.com/remcotolsma/a04ed7165f04a307c02808e45c0596f3>
 Dit zou nog wel eens kunnen werken. Nog uitproberen.
 
-===== WP-CLI =====
+#  WP-CLI 
 WP-CLI is a set of command-line tools for managing WordPress installations. You can update plugins, configure multisite installs and much more, without using a web browser.
 http://wp-cli.org/
 
@@ -41,7 +41,7 @@ $ wp plugin update --all
 Segmentation fault: 11
 ```
 
-=====database (woocommerce) reports======
+# database (woocommerce) reports=
 <code php>
 <?php
 header("Content-type: text/plain");
@@ -70,30 +70,30 @@ while ($row = mysql_fetch_assoc($result)) {
 }
 ```
 
-====="connection refused" in WooCommerce=====
+# "connection refused" in WooCommerce
 when testing locally without HTTPS you can disable SSL otherwise all pages with personal info are served through HTTPS.
 * Disable `Force secure checkout` in `WooCommerce > Settings > Checkout`
 
-=====site url=====
+# site url
   define('WP_HOME','http://site');
   define('WP_SITEURL','http://site');
   
-=====fix permissions on OSX=====
+# fix permissions on OSX
   cd ~/Sites/yoursite
   sudo chown -R _www .
   sudo chmod -R g+w .
   
-=====Sync DB's=====
+# Sync DB's
 not tested: https://github.com/wp-sync-db/wp-sync-db
 
-=====Query Monitor debug plugin=====
+# Query Monitor debug plugin
 https://wordpress.org/plugins/query-monitor/
 
-=====wordpress on localhost lamp doesn't let me install plugins=====
+# wordpress on localhost lamp doesn't let me install plugins
 add this to wp-config.php. But don't use this on production servers.
   define('FS_METHOD','direct');
 
-===== Themes =====
+#  Themes 
 * http://www.kriesi.at/
 * [[http://themeforest.net/item/dante-responsive-multipurpose-wordpress-theme/6175269|Dante]]
 * http://lifesplash.nl/
@@ -101,11 +101,11 @@ add this to wp-config.php. But don't use this on production servers.
 * http://wpshower.com/demo/?preview_theme=imbalance-2
 * http://www.adonit.net/jot/pro/ (not wordpress I think)
 
-===== Facebook Page Photo Gallery plugin not showing thumbnails ====
+#  Facebook Page Photo Gallery plugin not showing thumbnails 
 From https://wordpress.org/support/topic/thumbnails-didnt-load-any-more: Since WordPress 4.0 the thumbnails didn't load any more. So began searching for the loading of thumbnails in your code and tried commented out line 7 and 8 of single-album.php and line 3 and 4 of single-album-ajax.php and added
   $picture = $photo->picture;
 
-===== Set file permissions =====
+#  Set file permissions 
 https://wordpress.org/support/topic/auto-upgradeupdate-on-mac-os-x
 On Mac OS X (Leopard), the Apache HTTP Server runs under the user account, _www which belongs to the group _www. To allow WordPress to configure wp-config.php during installation, update files during upgrades, and update the .htaccess file for pretty permalinks, give the server write permission on the files.
 

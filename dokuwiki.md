@@ -2,16 +2,16 @@
 title: dokuwiki
 ---
 
-===== markdown plugin =====
+#  markdown plugin 
 * https://www.dokuwiki.org/plugin:markdowku
 
-=====Update plugin=====
+# Update plugin
 after running an update you might need to 'touch' doku.php to get rid of the 'upgrade now' message. If this doesn't work remove data/cache/messages.txt
 
-=====TagCloud script=====
+# TagCloud script
 TagCloud script see [[d3]]
 
-===== PageList script =====
+#  PageList script 
 <code php>
 <?php
 class CommandPluginExtension_pagelist extends CommandPluginExtension {

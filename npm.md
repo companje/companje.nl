@@ -23,12 +23,12 @@ $ npm list -g --depth=0
 sudo npm install -g npm
 ```
 
-# npm check for updates==
+# npm check for updates
 ```
 npm outdated
 ```
 
-# npm update packages==
+# npm update packages
 ```
 npm update
 ```  

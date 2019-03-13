@@ -57,8 +57,7 @@ Check Start->Shutdown->... Hibernate should be gone.
   # Element not found (when fixing boot problems)
   bcdboot c:\windows /l en-us /s C:\
 
-# kill not responding windows====
-  taskkill /f /fi "status eq not responding"
+# kill not responding windows  taskkill /f /fi "status eq not responding"
 
 # Windows 8 startup folder
 ```

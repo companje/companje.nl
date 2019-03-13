@@ -33,7 +33,7 @@ Zoals je ziet is voor zoiets als het onderstaande de grove benadering prima vold
 
 (http://www.companje.nl/wp-content/uploads/2007/11/cool-sine-3559.png)
 
-=== Externe links ===
+#  Externe links =
 *http://home.wanadoo.nl/rule-off/wis/reeksen.htm
 *http://lab.polygonal.de/
 *http://lab.polygonal.de/wp-content/articles/fast_trig/fastTrig.as

@@ -7,14 +7,14 @@ title: JSPM
 * my exercises are in the 'Doodle3D/react-jspm' folder 
 * `jspm dl-loader --latest`
 
-=====Error 'Spawn EMFILE'=====
+# Error 'Spawn EMFILE'
 command: `jspm install react`.
 error: 'Spawn EMFILE'
 solution:
   ulimit -n        #returns 256 on my Mac
   ulimit -n 1024   #increased the max number of open files.
   
-=====steps=====
+# steps
   npm install
   jspm install
   

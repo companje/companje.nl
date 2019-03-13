@@ -1,9 +1,4 @@
 ---
 title: notes
-layout: default
-tags: ['test']
+layout: sitemap
 ---
-
-all notes..n
-
-[ffmpeg](/ffmpeg)

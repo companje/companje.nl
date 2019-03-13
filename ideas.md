@@ -16,5 +16,5 @@ title: Ideas
 *De hoeveelheid beweging in een reeks beeld om de snelheid van het filmpje te bepalen. Als er veel gebeurd gaat het filmpje trager. Als er weinig gebeurd versneld het filmpje. Uiteraard moet dit geleidelijk / smooth gaan. 
 *De NS omroeper stem samplen en daarmee synthen met een [[http://www.youtube.com/watch?v=q9tmbrG7D-o|Auduino]]
 
-====== Links to this page ======
+#  Links to this page =
 (backlinks>.)

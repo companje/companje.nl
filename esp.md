@@ -1,4 +1,5 @@
 ---
-title: see [[esp8266]]
+title: ESP
 ---
+see [ESP8266](/esp8266)
 

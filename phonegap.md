@@ -2,16 +2,16 @@
 title: Phonegap
 ---
 
-=====macgap - make iOS apps=====
+# macgap - make iOS apps
 * https://github.com/MacGapProject/MacGap1
 
-=====crosswalk=====
+# crosswalk
 * https://www.npmjs.com/package/cordova-android-crosswalk
 
-=====hooks=====
+# hooks
 * http://devgirl.org/2013/11/12/three-hooks-your-cordovaphonegap-project-needs/
 
-=====statusbar plugin=====
+# statusbar plugin
 * http://plugins.cordova.io/#/package/org.apache.cordova.statusbar
 * Try out the different statusbar possibilities and read explanation: http://devgirl.org/2014/07/31/phonegap-developers-guid/
 
@@ -21,10 +21,10 @@ title: Phonegap
 <preference name="StatusBarStyle" value="lightcontent" />
 ```
 
-=====Bonjour (ios)=====
+# Bonjour (ios)
 * https://github.com/rossmartin/BonjourPlugin
 
-=====ZeroConf (android)=====
+# ZeroConf (android)
 * only for Android???
 * https://github.com/vstirbu/ZeroConf
 * [[http://www.tildesoft.com/|Bonjour Browser]]
@@ -48,15 +48,15 @@ ZeroConf.watch("_3dprinter._tcp.local.", function(result) {
 });
 ```
 
-=====android run=====
+# android run
   phonegap run android --device
 
-=====angular directive with templateUrl=====
+# angular directive with templateUrl
 be careful with templateUrl's in angular directives. iPhone (and probably Android) is case-sensitive. So not exactly matching templateUrl's don't show up on iPhone but do show up on OSX!
 
 make sure to delete files in www/ and platforms/.../www/ folder since overwriting file WebLink.html with Weblink.html will keep the same file!
 
-=====Overscroll / webview bounce background color=====
+# Overscroll / webview bounce background color
 * https://github.com/EddyVerbruggen/iOSWebViewColor-PhoneGap-Plugin
 or disable:
 ```
@@ -73,16 +73,16 @@ in native Objective C code in MainViewController.m
   theWebView.backgroundColor = UIColorFromRGB(0xF1EFF0);
 ```
 
-=====get rid of 'Started backup to iCloud! Please be careful...'=====
+# get rid of 'Started backup to iCloud! Please be careful...'
 in config.xml:
   <preference name="BackupWebStorage" value="local"/>
 
-=====libobjc.A.dylib`objc_msgSend + 6, name = 'WebThread', stop reason = EXC_BAD_ACCESS=====
+# libobjc.A.dylib`objc_msgSend + 6, name = 'WebThread', stop reason = EXC_BAD_ACCESS
 * I tried to turn on 'zombies' with Cmd+Alt+R -> diagnostics...... Then use Cmd+I to run the app in Instruments. Choose 'Zombies' as template and press the REC button. It gives the error '''An Objective-C message was sent to a deallocated 'UIViewAnimationState' object (zombie) at address: 0x167a5c60. ''' It seems to be a problem with phonegap: read more: https://groups.google.com/forum/#!topic/phonegap/YyIvESnRVGs
 * see this issue for a workaround (update: problem came back): https://github.com/Doodle3D/UltimakerApp/issues/28
 * http://www.codza.com/how-to-debug-exc_bad_access-on-iphone
 
-=====splashscreen notation in config.xml=====
+# splashscreen notation in config.xml
 Don't use '''gap:''' in front of '''splash''' because that doesn't work!
 ```
 <splash gap:platform="ios" src="assets/screen/ios/Default-568h@2x~iphone.png" width="640" height="1136" />
@@ -94,10 +94,10 @@ Don't use '''gap:''' in front of '''splash''' because that doesn't work!
 <splash gap:platform="ios" src="assets/screen/ios/Default~iphone.png" width="320" height="480" />
 ```
 
-=====log verbose=====
+# log verbose
   phonegap -d build ios > build.log
 
-=====toolchain info=====
+# toolchain info
 ```
 sw_vers -productVersion
 ios-deploy -V
@@ -107,11 +107,11 @@ gcc --version
 lldb --version
 ```
 
-=====Unable to mount developer disk image=====
+# Unable to mount developer disk image
 no solution yet.
 see my issue: https://github.com/phonegap/ios-deploy/issues/73
 
-=====couldn't understand kern.osversion `14.0.0'=====
+# couldn't understand kern.osversion `14.0.0'
 To solve this I removed ios-deploy. But then I wasn't able to re-install it with npm because the make command failed.
 
   sudo npm install -g ios-deploy
@@ -126,20 +126,20 @@ The solution was to disable the llvm-gcc42 compiler installed by macports ('''ty
 
 now it works
 
-=====create a true empty phonegap project=====
+# create a true empty phonegap project
 * http://stackoverflow.com/questions/24151325/error-project-directory-could-not-be-found-with-phonegap
 
-=====icons and splashscreens=====
+# icons and splashscreens
 * http://docs.build.phonegap.com/en_US/configuring_icons_and_splash.md.html
 
-=====Writing plugins=====
+# Writing plugins
 * [[http://cordova.apache.org/docs/en/2.5.0/guide_plugin-development_index.md.html|javascript part]]
 * [[http://cordova.apache.org/docs/en/2.5.0/guide_plugin-development_ios_index.md.html#Developing%20a%20Plugin%20on%20iOS|iOS part]]
 
-=====Books=====
+# Books
 * http://phonegap.com/book/
 
-=====Error: CDVPlugin class CDVLogger (pluginName: Console) does not exist.=====
+# Error: CDVPlugin class CDVLogger (pluginName: Console) does not exist.
 first remove platform/ios folder then:
   cordova platforms add ios
   cordova plugin rm org.apache.cordova.console
@@ -151,24 +151,24 @@ hmm.. en als dat niet werkt dan: plugins map en platforms map verwijderen en dan
   phonegap local plugin add org.apache.cordova.statusbar
   phonegap build ios
 
-=====cordova.js aan het eind van je index.html=====
+# cordova.js aan het eind van je index.html
   <script src="cordova.js"></script>
 
-=====tutorial=====
+# tutorial
 * http://ccoenraets.github.io/cordova-tutorial/
 
-=====forward console.log to xcode=====
+# forward console.log to xcode
   phonegap local plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-console.git
   phonegap build ios
   
-=====stop lldb=====
+# stop lldb
   killall  lldb
   
-=====hangs on (lldb) connect=====
+# hangs on (lldb) connect
 update ios-deploy....?
   npm update -g ios-deploy
   
-=====init=====
+# init
 ```
 phonegap create MyApp -i com.myapp.app -n MyApp
 cd MyApp
@@ -179,38 +179,38 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 phonegap build android
 ```
 
-=====don't backup to iCloud=====
+# don't backup to iCloud
   <preference name="BackupWebStorage" value="local" />
 
-=====list plugins=====
+# list plugins
   phonegap plugin list
   
-=====add/remove plugin=====
+# add/remove plugin
 * http://docs.phonegap.com/en/3.0.0/guide_cli_index.md.html
 
-=====debug=====
+# debug
 http://debug.build.phonegap.com/
 
-=====nice slideshow=====
+# nice slideshow
 *http://don.github.io/slides/2013-02-16-snow-mobile/#
 
-=====error Abort trap: 6 ios-deploy=====
+# error Abort trap: 6 ios-deploy
 error
   .........platforms/ios/cordova/run: line 138: 58950 Abort trap: 6           ios-deploy -d -b "$DEVICE_APP_PATH"
 fix:
   npm install -g ios-deploy
 
-=====Run=====
+# Run
   phonegap run ios
   phonegap build ios
   phonegap remote build ios
 
-=====in app browser=====
+# in app browser
    phonegap local plugin add https://git-wip-us.apache.org/repos/asf/cordova-plugin-inappbrowser.git
 * [[http://cordova.apache.org/docs/en/3.0.0/cordova_inappbrowser_inappbrowser.md.html|InAppBrowser]]
 * [[https://build.phonegap.com/plugins/2|Child Browser]]
 
-=====InAppBrowser=====
+# InAppBrowser
 <code javascript>
 function openInternalBrowser(id) {
   var ref = window.open('http://10.0.0.161', '_blank', 'location=yes,transitionstyle=fliphorizontal');
@@ -227,22 +227,22 @@ function openExternalBrowser(id) {
 }
 ```
 
-=====phonegap remote build ios - PhoneGap 3.5.0 not supported....=====
+# phonegap remote build ios - PhoneGap 3.5.0 not supported....
 Solution from [[http://community.phonegap.com/nitobi/topics/phonegap_3_5_0_not_supported_is_there_a_fix_for_this_or_a_way_around_it|here]]. In your ''www/config.xml'' file add the following:
   <preference name="phonegap-version" value="3.4.0" />
 
-=====certificate help=====
+# certificate help
 http://docs.build.phonegap.com/en_US/signing_signing-ios.md.html
 
-=====combine gulp & phonegap=====
+# combine gulp & phonegap
 * http://danielhough.co.uk/blog/gulp-browserify-phonegap-ripple/
 * http://blog.dynamicprogrammer.com/2014/05/06/refactoring-the-js-code-structure-part-4.html
 
-=====Phonegap App=====
+# Phonegap App
 http://app.phonegap.com/
   phonegap serve
   
-=====emulate.phonegap.com =====
+# emulate.phonegap.com 
 http://emulate.phonegap.com/
 
  

@@ -2,27 +2,27 @@
 title: Atom Editor
 ---
 
-==Select Next: Cmd+D==
+# Select Next: Cmd+D
 ```
 Cmd+D
 ```
 
-==add project==
+# add project
 ```
 atom -a .
 ```
 
-==install packages via CLI==
+# install packages via CLI
   apm install glsl-preview
   
-==shortcuts==
+# shortcuts
 ```
 Cmd P
 Cmd Shift P
 Cmd ,
 ```
 
-==packages==
+# packages
   * https://atom.io/packages/linter
   * https://atom.io/packages/linter-eslint
   * https://atom.io/packages/linter-jsonlint

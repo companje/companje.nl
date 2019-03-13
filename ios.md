@@ -5,16 +5,16 @@ title: iOS
 # Configuring Web Applications
 * https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html
 
-=====maggap - make iOS apps=====
+# maggap - make iOS apps
 * https://github.com/MacGapProject/MacGap1
 
-=====warning 'Implicit declaration of function'=====
+# warning 'Implicit declaration of function'
 This was caused by a missing import statement in my fork of org.apache.cordova.wifiinfo. See [[https://github.com/companje/org.apache.cordova.wifiinfo/commit/e416e337e674336013248b0ac493362d23660a36|github]]
 
-=====install iOS docs in Dash=====
+# install iOS docs in Dash
 First: To install OS X/iOS docsets you need to open Xcode and go to Preferences > Downloads > Documentation.
 
-=====get name of currently connected WiFi network=====
+# get name of currently connected WiFi network
 <code objc>
   CFArrayRef myArray = CNCopySupportedInterfaces();
   CFDictionaryRef myDict = CNCopyCurrentNetworkInfo(CFArrayGetValueAtIndex(myArray, 0));
@@ -23,7 +23,7 @@ First: To install OS X/iOS docsets you need to open Xcode and go to Preferences 
   NSLog(@"%@",SSID);
 ```
 
-=====open Settings from your app=====
+# open Settings from your app
   [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"prefs:root=WIFI"]];
   [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
 * http://stackoverflow.com/questions/8246070/ios-launching-settings-restrictions-url-scheme  
@@ -36,16 +36,16 @@ if ([[UIApplication sharedApplication] canOpenURL:url]) {
 }
 ```
 
-=====Reflector App=====
+# Reflector App
 * [[http://www.airsquirrels.com/reflector/|via AirPlay het beeld van je telefoon naar je computer streamen]]
 
-=====iPhone 6 sensor hacks=====
+# iPhone 6 sensor hacks
 * http://www.redmondpie.com/video-demo-shows-off-a-very-cool-iphone-trick-that-you-likely-dont-know-about/
 
-=====libobjc.A.dylib`objc_msgSend:=====
+# libobjc.A.dylib`objc_msgSend:
 see [[phonegap]]
 
-=====URL handling (in .plist)=====
+# URL handling (in .plist)
 ```
     <key>CFBundleURLTypes</key>
     <array>
@@ -60,7 +60,7 @@ see [[phonegap]]
     </array>
 ```
 
-=====file handling (in .plist)=====
+# file handling (in .plist)
 ```    
     <key>UTExportedTypeDeclarations</key>
     <array>
@@ -105,23 +105,23 @@ see [[phonegap]]
     </array>
 ```
 
-=====How to obtain Certificate Signing Request=====
+# How to obtain Certificate Signing Request
   - [[http://stackoverflow.com/questions/12126496/how-to-obtain-certificate-signing-request|Create a certificate with 'Keychain Access']]
   - [[https://developer.apple.com/account/ios/certificate/certificateCreate.action|Upload the CertificateSigningRequest file to Apple's Dev center]]
   - [[https://developer.apple.com/account/ios/profile/profileDownload.action|Create a mobile provisioning profile]]
 
-=====disable select in webpages with css=====
+# disable select in webpages with css
 <code css>
 -webkit-user-select: none;
 ```
 
-=====disable glow effect for home screen icons of webpages=====
+# disable glow effect for home screen icons of webpages
 <code html>
 <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-72x72-precomposed.png" />
 ```
 more info: http://mathiasbynens.be/notes/touch-icons
 
-=====anti-aliasing on ios with openFrameworks=====
+# anti-aliasing on ios with openFrameworks
 <code c>
 int main(){
     ofAppiPhoneWindow * iOSWindow = new ofAppiPhoneWindow();
@@ -132,44 +132,44 @@ int main(){
 }
 ```
 
-=====openFramworks for ios setup info=====
+# openFramworks for ios setup info
 * http://www.openframeworks.cc/setup/iphone/
 
-=====in-app email=====
+# in-app email
 * http://blog.mugunthkumar.com/coding/iphone-tutorial-in-app-email/
 
-=====in-app purchase=====
+# in-app purchase
 * [[http://stackoverflow.com/questions/11200549/upgrade-free-app-to-paid-with-in-app-purchase|stackoverflow on upgrade-free-app-to-paid-with-in-app-purchase]]
 * [[http://www.raywenderlich.com/2797/introduction-to-in-app-purchases|Introduction]]
 * [[http://www.raywenderlich.com/21081/introduction-to-in-app-purchases-in-ios-6-tutorial|Introduction IOS6]]
 * openFrameworks [[http://forum.openframeworks.cc/index.php?topic=11197.15|ofxInAppProduct]]
 
-=====line smoothing=====
+# line smoothing
 * http://answers.oreilly.com/topic/1669-how-to-render-anti-aliased-lines-with-textures-in-ios-4/
 
-=====cross compiling=====
+# cross compiling
 http://shift.net.nz/2010/09/compiling-freetype-for-iphoneios/
 
-=====problem=====
+# problem
 ```file is universal but does not contain a(n) armv7 slice for architecture armv7```
 try to remove armv7s from the build settings
 
-=====crash logs=====
+# crash logs
 ```
 ~/Library/Logs/CrashReporter/MobileDevice/
 ```
 
-=====ld: symbol(s) not found for architecture armv7=====
+# ld: symbol(s) not found for architecture armv7
 dit betekent dat er een sourcefile (.m / .mm of .cpp) niet gevonden kan worden of niet wordt mee-gecompiled. Ook al zit deze misschien wel in je projectree.
 Oplossing: ga naar je Project settings klik op de juiste Target en ga dan naar ''Compile sources''. Sleep de ontbrekende source file hier naar toe.
 
-=====enable redpark serial cable in your iOS project=====
+# enable redpark serial cable in your iOS project
 Be sure to add 'Supported external accessory protocol' = 'com.redpark.hobdb9' to your project's .plist file
 
-=====Undefined symbols ...  _OBJC_CLASS_$_EAAccessoryManager=====
+# Undefined symbols ...  _OBJC_CLASS_$_EAAccessoryManager
 Add ''ExternalAccessory.framework'' to your project's Target Linked Libraries.
 
-=====snippets of basic usage of redparkWrapper=====
+# snippets of basic usage of redparkWrapper
 <code objc>
 //
 //  ViewController.h

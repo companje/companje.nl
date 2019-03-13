@@ -22,12 +22,6 @@
                   <!--Title-->
                   <h1 class="card-title">{{ page.title }}</h1>
 
-                  <!-- tags: {{ page.tags | join: ',' }} -->
-                  |
-                  {% for tag in page.tags %}
-                     <a href="/{{ tag }}">{{tag}}</a> |
-                  {% endfor %}
-
                   <!--Text-->
                   <p class="card-text">{{ content | replace: '<h1', '<h2' | replace: '</h1>', '</h2>' }}</p>
                   <!-- <a href="#" class="btn btn-indigo">Button</a> -->

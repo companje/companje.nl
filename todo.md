@@ -156,7 +156,7 @@ services advertised via common discovery protocols within the current network.# 
 * DONE: [[https://www.youtube.com/watch?v=k0DNnyknWKM&feature=youtu.be&list=PLOcrXzpA0W83uyr5LX-U47F3V5IfAZ-UP|Let’s build our own personalized open textile production line]]
 
 
-==reviews==
+# reviews
 * DONE: http://printers.reviewed.com/features/robox-takes-the-3d-printer-crown
 * DONE: http://www.tomsguide.com/us/best-3d-printers,review-2236.html
 * DONE: http://www.cel-robox.com/
@@ -167,13 +167,13 @@ services advertised via common discovery protocols within the current network.# 
 * DONE: [[http://3dprint.com/24581/mosaic-manufacturing-color-3d/|Multi-Colored 3D Printing from a Single Extruder]]
 * [[http://dl.companje.nl/Makermovement - Artikel uit Volkskrant.pdf|volkskrant artikel over the Maker Movement]]
 
-==future of design tools==
+# future of design tools
 * DONE: http://www.inside3dp.com/design-software-stuck-80s-much-longer/
 * DONE: Een samenvatting van suggesties waar design software heen zou moeten gaan. Er zitten links in naar een aantal zeer gave sketch/moddeling interfaces
 * DONE: Zie: Paper http://www.fiftythree.com/paper
 * DONE: Umake: https://www.youtube.com/watch?v=zD5NRPk_7g4 - Je kunt hierbij niet rechtstreeks naar een 3D vorm maar dat zou zeer  gaaf zijn, Umake komt al aardig in de buurt.
 
-==other==
+# other
 * DONE: http://minicut2d.com/ (https://www.youtube.com/watch?v=Fd5DYLPdb1s)
 * DONE: http://www.cel-robox.com/
 

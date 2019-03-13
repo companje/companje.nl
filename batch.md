@@ -3,7 +3,7 @@ title: Batch files
 ---
 
 
-===== passing arguments using set  =====
+#  passing arguments using set  
 29 maart 2009
 <code>
 @echo off

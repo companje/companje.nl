@@ -2,13 +2,13 @@
 title: SVG
 ---
 
-=====SVGnest=====
+# SVGnest
 * [[https://github.com/Jack000/SVGnest|SVGnest (SVG’s efficiënt stapelen voor de lasercutter)]]
 
-=====Optimize SVG's=====
+# Optimize SVG's
 http://petercollingridge.appspot.com/svg-editor
 
-=====Tips van Peter=====
+# Tips van Peter
 Algemeen:
 http://www.webdesignerdepot.com/2015/01/the-ultimate-guide-to-svg/
 http://tympanus.net/codrops/2013/11/27/svg-icons-ftw/
@@ -36,22 +36,21 @@ SVG's als CSS background-image:
 http://caniuse.com/#feat=svg-css
 http://www.smashingmagazine.com/2012/01/resolution-independence-with-svg/ (edited)
 
-=====Elastic SVG elements====
-* http://tympanus.net/Development/ElasticSVGElements/button.html
+# Elastic SVG elements* http://tympanus.net/Development/ElasticSVGElements/button.html
 
-=====Clipart=====
+# Clipart
 * https://openclipart.org/
 
-=====Online SVG editors=====
+# Online SVG editors
 * [[http://www.janvas.com/site/home_en.php|Janvas]]
 * [[http://www.drawsvg.org/|DrawSVG]]
 * [[http://svg-edit.googlecode.com/svn-history/r1771/trunk/editor/svg-editor.html|svg-edit]] ([[https://code.google.com/p/svg-edit|googlecode]])
 * !!! [[http://editor.method.ac/|editor.method.ac]] ([[https://github.com/duopixel/Method-Draw|github]])
 
-=====SVG coordinate system interactive=====
+# SVG coordinate system interactive
 * http://sarasoueidan.com/demos/interactive-svg-coordinate-system/index.html
 
-=====Links=====
+# Links
 * http://snapsvg.io/
 * http://svgjs.com/
 * http://documentup.com/wout/svg.js#plugins
@@ -62,19 +61,19 @@ http://www.smashingmagazine.com/2012/01/resolution-independence-with-svg/ (edite
 * http://doodle3d.com/help/svg
 * https://sketch.io/sketchpad/
 
-=====interactive svg with gestures on iPad=====
+# interactive svg with gestures on iPad
 * http://techblog.floorplanner.com/interactive-svg-on-the-ipad/
 * http://lab.floorplanner.com/ipad/touch.svg
 * http://interactjs.io/
 
-=====animated lines=====
+# animated lines
 * http://jakearchibald.com/2013/animated-line-drawing-svg/
 * http://css-tricks.com/svg-line-animation-works/
 * http://24ways.org/2013/animating-vectors-with-svg/
 * http://product.voxmedia.com/2013/11/25/5426880/polygon-feature-design-svg-animations-for-fun-and-profit
 * http://tympanus.net/codrops/2013/12/30/svg-drawing-animation/
 
-===== Creating WordArt font for Doodle3D=====
+#  Creating WordArt font for Doodle3D
   * Type the following string in InkScape, with a height of about 37.346 pixels:
 ```!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~```
   * Object > Object to path

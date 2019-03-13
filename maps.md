@@ -22,5 +22,5 @@ title: Maps
 * http://battles.nodegoat.net/viewer.p/23/385/scenario/1/geo/fullscreen
 * http://www.supinemusic.net/Files%20for%20Cloud%20projects/Cinema%204D/plugins/Planet%20X%20Generator%20R12/presets//
 
-==klimaat==
+# klimaat
 https://commons.wikimedia.org/wiki/File:K%C3%B6ppen-vereinfacht.svg

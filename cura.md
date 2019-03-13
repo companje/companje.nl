@@ -3,5 +3,5 @@ title: Cura
 ---
 See [[Ultimaker]]
 
-=====settings=====
+# settings
 windows: `C:\Users\user\AppData\Local

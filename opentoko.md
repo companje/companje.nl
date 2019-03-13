@@ -14,5 +14,5 @@ De workshops zijn niet gesubsidieerd. We vragen iedereen om een donatie te doen 
 \
 OpenToko.org is een initiatief van [[Rick Companje]], [[Diana Wildschut]] and [[Harmen Zijp]].
 
-====== Links to this page ======
+#  Links to this page =
 (backlinks>.)

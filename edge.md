@@ -2,15 +2,14 @@
 title: Edge Animate
 ---
 
-===== $ does not refer to jQuery in newer versions of Edge Animate=====
+#  $ does not refer to jQuery in newer versions of Edge Animate
 In newer versions of Adobe Edge, the $ symbol is a **limited** implementation of jQuery. If you want full jQuery add an external script to your library. (ie. from https://code.jquery.com/jquery-2.1.1.min.js)
 [[http://www.adobe.com/devnet-docs/edgeanimate/api/current/index.html#edge_jquery|Read more]]
 
-===== audio =====
+#  audio 
   sym.$("oinkbeest-intro")[0].play();
 
-=====show/hide/composition/stage/symbol====
-<code javascript>
+# show/hide/composition/stage/symbol<code javascript>
 // hide this symbol
 sym.getSymbolElement().hide();
 
@@ -19,11 +18,10 @@ sym.getComposition().getStage().$("Symbol_2").show();
 sym.getComposition().getStage().getSymbol("Symbol_2").play();
 ```
 
-=====upload======
+# upload=
 * http://stackoverflow.com/questions/793014/jquery-trigger-file-input
 
-=====Javascript error in event handler! Event Type = element====
-in case of these kind of unhelpful errors use an exception handler to get the actual error.
+# Javascript error in event handler! Event Type = elementin case of these kind of unhelpful errors use an exception handler to get the actual error.
 <code javascript>
 try {
   sym.$("upload").trigger("click");
@@ -32,7 +30,7 @@ try {
 }
 ```
 
-===== functions in symbols =====
+#  functions in symbols 
 <code javascript>
 //on stage timeline:
 sym.getSymbol("Pinguins").zingen();
@@ -43,16 +41,15 @@ sym.zingen = function() {
 }
 ```
 
-=====javascript API=====
+# javascript API
  * http://www.adobe.com/devnet-docs/edgeanimate/api/current/index.html
 
-=====access nested symbols from action=====
+# access nested symbols from action
 <code javascript>
 sym.getSymbol("Pinguins").getSymbol("Pinguin1").getSymbol("Snavel").play("zingen");
 ``` 
   
-=====use html5 webcam video in edge animate====
-<code javascript>
+# use html5 webcam video in edge animate<code javascript>
 console.log('enable webcam');
 
 var getUserMedia = function(t, onsuccess, onerror) {
@@ -115,28 +112,28 @@ function saveImage(){
 ```
 
 
-=====edge animate=====
+# edge animate
 * http://tv.adobe.com/watch/adobe-edge-preview/what-is-edge-animate/
 
-===== cheat sheet =====
+#  cheat sheet 
 * http://download.macromedia.com/pub/learn/start/start_animate_cheatsheet.pdf
 
-===== edge inspect =====
+#  edge inspect 
 * https://creative.adobe.com/nl/products/inspect
 
-===== Edge Commons =====
+#  Edge Commons 
 Dirty Little Helpers for Edge Animate
 * http://www.edgedocks.com/edgecommons
 
-===== Edge Reflow =====
+#  Edge Reflow 
 http://html.adobe.com/edge/reflow/photoshop-plug-in.html
 
-===== Edge Animate =====
+#  Edge Animate 
 * all files in the 'media' folder of your project will be automatically visible in the library
 * filmpje: http://www.edgedocks.com/content/2014/03/adding-audio-scripts-and-responsive-scaling-edge-animate
 * ''\'' key: scale timeline to fit
 
-===== Random stars =====
+#  Random stars 
 <code java>
 for (var i=0; i<40; i++) {
   var x = Math.floor(Math.random()*1920)+"px";

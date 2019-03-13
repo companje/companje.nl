@@ -2,8 +2,7 @@
 title: HTTP
 ---
 
-====Easy webserver: mongoose====
-  brew install mongoose
+# Easy webserver: mongoose  brew install mongoose
 if will serve the files in the folder where it's started from:
   cd Downloads
   mongoose

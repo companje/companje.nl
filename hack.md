@@ -2,13 +2,13 @@
 title: Hack
 ---
 
-===== Find cool things =====
+#  Find cool things 
 * [[https://news.ycombinator.com|Hacker News]]
 * [[https://news.ycombinator.com/shownew|Hacker News - Show New]]
 
-===== Communities =====
+#  Communities 
 * https://github.com/hckrs/hckrs.io
 
-===== Various cool things =====
+#  Various cool things 
 * http://arkt.is/
 * https://www.wikipendium.no/

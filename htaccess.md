@@ -52,7 +52,7 @@ AuthType Basic
 require valid-user
 ```
 
-== redirect ==
+#  redirect 
 ```apache
 RewriteEngine On
 

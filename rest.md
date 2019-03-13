@@ -2,7 +2,7 @@
 title: REST
 ---
 
-===== Generating REST API documentation =====
+#  Generating REST API documentation 
 There are some tools to generate Rest api documentation. Usually this works by defining the api in a yaml like language and a html page can be generated from this.
   * Swagger. Result demo. Editor UI creator.
   * RAML. spec tutorial. on documenting.

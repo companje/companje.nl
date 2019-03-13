@@ -92,7 +92,7 @@ Some very usefull info about ssh keys etc: http://help.github.com/ssh-issues/
 # Create id_rsa files with ssh-keygen
 just run ''ssh-keygen''
 
-# Adding your public key to the serveremember your git user's password=====
+# Adding your public key to the serveremember your git user's password
 ```bash
 scp ~/.ssh/id_rsa.pub user@remote.example.com:/tmp/id_rsa.pub
 mkdir ~/.ssh

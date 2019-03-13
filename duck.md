@@ -3,7 +3,7 @@ title: Harig badeendje
 ---
 (:blog:2011:02:duck512.gif|)
 
-=====Processing code=====
+# Processing code
 <html>
 <pre style='color:#000000;background:#ffffff;'>PImage img <span style='color:#808030; '>=</span> loadImage<span style='color:#808030; '>(</span><span style='color:#800000; '>"</span><span style='color:#0000e6; '>duck.jpg</span><span style='color:#800000; '>"</span><span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
 

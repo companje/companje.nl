@@ -13,13 +13,13 @@ lldb myExecutable
 > frame variable
 ```
 
-=====run with arguments=====
+# run with arguments
 ```bash
 lldb myExecutable
 > run -o"/Users/rick/Documents/openFrameworks/of0092" -a"ofxCv,ofxOpenCv" -p"osx" "/Users/rick/Documents/openFrameworks/of0092/apps/myApps/cvBgTest9"
 ```
 
-=====stacktrace=====
+# stacktrace
 ```
 > bt
 ```

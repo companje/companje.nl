@@ -8,5 +8,5 @@ fix:
 sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
 ```
 
-===== Issue Workflow =====
+#  Issue Workflow 
 *https://wiki.apache.org/cordova/IssueWorkflow
