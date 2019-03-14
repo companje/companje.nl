@@ -3,12 +3,24 @@ title: Convert images
 ---
 
 # Convert 16 bit grayscale png to 16 bits raw
-```
+```bash
 stream -map r -storage-type short earth-elevation.png earth-elevation.raw
+```
+or
+```bash
+convert input.png output.gray
+```
+
+# Convert 16 bit grayscale png to 2 separate 8 bits png's
+there must be a better way...
+```bash
+convert input16bits.png 16.gray
+convert -size 4096x2048 -endian MSB 16bits.gray -depth 8 8bits-hi.png
+convert -size 4096x2048 -endian LSB 16bits.gray -depth 8 8bits-lo.png
 ```
 
 # contrast-stretch / normalize 
-```
+```bash
 convert earth-elevation.png -depth 16 -normalize earth.png
 ```
 
@@ -26,6 +38,7 @@ convert           \
 ```
 
 # convert from 16bit to red+green channel
+(somehow this doesn't work for me anymore)
 ```bash
 convert Mars_8k_16bit.tif -depth 24 mars24.rgb
 convert -size 8192x4096 -depth 8 rgb:mars24.rgb mars_redgreen.png

@@ -2,6 +2,9 @@
 title: Songs
 layout: default
 ---
+  * Johan - Oceans
+  * Smashing Pumpkins - Today
+  * Grimes - We Appreciate Power (Radio Edit)
   * We were evergreen - Baby Blue
   * Merol
   * Soichi Terada - Ape Escape 3
