@@ -11,7 +11,17 @@ ffmpeg -i video1.mov -i video2.mov -i video3.mov -filter_complex "\
  [2:v]scale=960:-1[right]; \
  [left][right]hstack[bottom]; \
  [0:v][bottom]vstack \
-" -s hd720 -q:v 0 -r 15 -vcodec mpeg4 output.mp4
+" -s hd720 -q:v 0 -vcodec mpeg4 output.mp4
+```
+
+# stack videos vertical + horizontal
+```bash
+ffmpeg -i video1.mov -i video2.mov -i video3.mov -filter_complex "\
+ [1:v]scale=960:-1[top]; \
+ [2:v]scale=960:-1[bottom]; \
+ [top][bottom]vstack[right]; \
+ [0:v][right]hstack \
+" -s hd720 -q:v 0 -vcodec mpeg4 output.mp4
 ```
 
 # export raw image sequence rgb24
