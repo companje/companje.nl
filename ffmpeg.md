@@ -4,6 +4,14 @@ permalink: /ffmpeg
 tags: ['notes','software']
 ---
 
+# stack videos horizontal + vertical
+ffmpeg -i video1.mov -i video2.mov -i video3.mov -filter_complex "\
+ [1:v]scale=960:-1[left]; \
+ [2:v]scale=960:-1[right]; \
+ [left][right]hstack[bottom]; \
+ [0:v][bottom]vstack \
+" -s hd720 -q:v 0 -r 15 -vcodec mpeg4 output.mp4
+
 # export raw image sequence rgb24
 ```bash
 ffmpeg -i airtraffic-2k-400f.mp4 -vcodec rawvideo -pix_fmt rgb24 -f image2 -y raw/image%d.raw
