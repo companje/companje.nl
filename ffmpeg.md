@@ -9,6 +9,26 @@ tags: ['notes','software']
 for foo in *.m4a; do ffmpeg -i "$foo" "${foo%.m4a}.mp3"; done
 ```
 
+# stack videos horizontal + vertical
+```bash
+ffmpeg -i video1.mov -i video2.mov -i video3.mov -filter_complex "\
+ [1:v]scale=960:-1[left]; \
+ [2:v]scale=960:-1[right]; \
+ [left][right]hstack[bottom]; \
+ [0:v][bottom]vstack \
+" -s hd720 -q:v 0 -vcodec mpeg4 output.mp4
+```
+
+# stack videos vertical + horizontal
+```bash
+ffmpeg -i video1.mov -i video2.mov -i video3.mov -filter_complex "\
+ [1:v]scale=960:-1[top]; \
+ [2:v]scale=960:-1[bottom]; \
+ [top][bottom]vstack[right]; \
+ [0:v][right]hstack \
+" -s hd720 -q:v 0 -vcodec mpeg4 output.mp4
+```
+
 # export raw image sequence rgb24
 ```bash
 ffmpeg -i airtraffic-2k-400f.mp4 -vcodec rawvideo -pix_fmt rgb24 -f image2 -y raw/image%d.raw
