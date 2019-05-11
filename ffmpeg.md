@@ -4,6 +4,11 @@ permalink: /ffmpeg
 tags: ['notes','software']
 ---
 
+# convert multiple audio files to mp3
+```bash
+for foo in *.m4a; do ffmpeg -i "$foo" "${foo%.m4a}.mp3"; done
+```
+
 # export raw image sequence rgb24
 ```bash
 ffmpeg -i airtraffic-2k-400f.mp4 -vcodec rawvideo -pix_fmt rgb24 -f image2 -y raw/image%d.raw

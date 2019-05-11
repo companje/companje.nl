@@ -3,6 +3,11 @@ title: npm - node package manager
 ---
 see [[nodejs]]
 
+# Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+```
+sudo chown -R rick:admin /usr/local/lib/node_modules
+```
+
 # list all global packages without deps
 ```bash
 $ npm list -g --depth=0
