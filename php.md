@@ -2,6 +2,21 @@
 title: PHP
 ---
 
+# thumbnail from video using ffmpeg
+```php
+$time = $_GET["time"];
+$tmp = tempnam("/tmp", "thumb").".jpg";
+$id = $_GET["id"];
+
+if (!is_numeric($id)) die("id");
+if (!preg_match('/\\d{2}\\:\\d{2}\\:\\d{2}/', $time)) die("time");
+
+shell_exec("ffmpeg -i thumbs/$id.mp4 -ss $time -vframes 1 $tmp 2>&1");
+
+header("Content-type: image/jpeg");
+imagejpeg(imagecreatefromjpeg($tmp));
+```
+
 # force download
 ```php
 header("Content-disposition: attachment; filename='$filename'");
