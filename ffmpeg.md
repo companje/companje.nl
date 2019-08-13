@@ -4,6 +4,12 @@ permalink: /ffmpeg
 tags: ['notes','software']
 ---
 
+# make 10x10 contact sheet of video frames
+```bash
+# make 10x10 tile from each 586th frame (scaled)
+ffmpeg -i 140001.mp4 -filter:v "scale=195:-1,select=(gte(n\,586))*not(mod(n\,586)),tile=10x10" -frames:v 1 -vsync vfr -y tile.jpg
+```
+
 # stack videos horizontal + vertical
 ```bash
 ffmpeg -i video1.mov -i video2.mov -i video3.mov -filter_complex "\
