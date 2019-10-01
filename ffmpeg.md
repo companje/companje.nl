@@ -5,13 +5,18 @@ tags: ['notes','software']
 ---
 
 # convert for Whatsapp, scale and remove duplicate frames
-```
+```bash
 ffmpeg -i INPUT.MOV  -c:v libx264 -profile:v baseline -level 3.0 -pix_fmt yuv420p -s 500x500 -vf mpdecimate,setpts=N/FRAME_RATE/TB -q:v 1 OUTPUT.MOV
 ```
 
 # convert multiple audio files to mp3
 ```bash
 for foo in *.m4a; do ffmpeg -i "$foo" "${foo%.m4a}.mp3"; done
+```
+
+# make 10x10 tile from each 586th frame (scaled)
+```bash
+ffmpeg -i 140001.mp4 -filter:v "scale=195:-1,select=(gte(n\,586))*not(mod(n\,586)),tile=10x10" -frames:v 1 -vsync vfr -y tile.jpg
 ```
 
 # stack videos horizontal + vertical
