@@ -2,6 +2,8 @@
 title: Songs
 layout: default
 ---
+  * Ethel Smith - tico tico (Hammond Organ)
+  * Red River Rock
   * Johan - Oceans
   * Smashing Pumpkins - Today
   * Grimes - We Appreciate Power (Radio Edit)

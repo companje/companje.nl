@@ -4,6 +4,11 @@ permalink: /ffmpeg
 tags: ['notes','software']
 ---
 
+# convert for Whatsapp, scale and remove duplicate frames
+```
+ffmpeg -i INPUT.MOV  -c:v libx264 -profile:v baseline -level 3.0 -pix_fmt yuv420p -s 500x500 -vf mpdecimate,setpts=N/FRAME_RATE/TB -q:v 1 OUTPUT.MOV
+```
+
 # convert multiple audio files to mp3
 ```bash
 for foo in *.m4a; do ffmpeg -i "$foo" "${foo%.m4a}.mp3"; done
