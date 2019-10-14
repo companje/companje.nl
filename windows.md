@@ -37,8 +37,11 @@ http://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool
 MinGW / Bash voor Windows: Cmder.exe
 
 # automatisch inloggen op Windows
-  
-  Win+R -> netplwiz# Windows USB/DVD Download Tool
+```
+Win+R -> netplwiz
+```
+
+# Windows USB/DVD Download Tool
 (voor het branden van een Windows ISO file naar USB stick)
 * http://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool
 
