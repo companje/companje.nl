@@ -1,7 +1,8 @@
 <?php
-ini_set('display_errors', 'On');
+// ini_set('display_errors', 'On');
 
-if ($_SERVER['HTTP_X_GITHUB_EVENT'] == 'push') {
+if ( $_POST['payload'] ) {
+//if ($_SERVER['HTTP_X_GITHUB_EVENT'] == 'push') {
   var_dump(shell_exec('git pull'));
   die();
 }
