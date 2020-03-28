@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
   <!-- css -->
@@ -12,8 +11,8 @@
   <link href="/css/mdb.min.css" rel="stylesheet">
   <link href="/css/prism.css" rel="stylesheet" />
   <link href="/css/style.css" rel="stylesheet">
-  <link href="css/-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+  <link href="/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/css/jquery.fancybox.min.css" rel="stylesheet"/>
 
   <title>Rick Companje - <?php echo $pageTitle; ?></title>
   
