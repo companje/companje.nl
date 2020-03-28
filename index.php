@@ -1,5 +1,6 @@
 <?php
-shell_exec('git pull');
+//shell_exec('git pull');
+echo exec('git pull');
 
 require __DIR__ . '/vendor/autoload.php';
 
