@@ -2,6 +2,12 @@
 title: Songs
 layout: default
 ---
+  * Ben Christophers - Good day for the hopeless
+  * Patrick Watson - Daydreamer
+  * Sufan Stevens - Chicago
+  * Thomas Dypdahl - Maury the pawn
+  * Adem - Everything you need
+  * Adem - These are your friends
   * Trom Freund - Copper Moon
   * Muse - Unintended
   * Ethel Smith - tico tico (Hammond Organ)
