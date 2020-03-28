@@ -1,6 +1,9 @@
 <?php
+ini_set('display_errors', 'On');
+
 if ($_SERVER['HTTP_X_GITHUB_EVENT'] == 'push') {
-  shell_exec('ls > hoi.txt');
+  var_dump(shell_exec('git pull'));
+  die();
 }
 
 require __DIR__ . '/vendor/autoload.php';
