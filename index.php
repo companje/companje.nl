@@ -1,8 +1,6 @@
-2
+4
 <?php
-//shell_exec('git pull');
-echo exec('script.sh');
-die();
+var_dump(exec('git pull  2>&1'));
 
 require __DIR__ . '/vendor/autoload.php';
 
