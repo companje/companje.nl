@@ -1,4 +1,4 @@
-1
+2
 <?php
 //shell_exec('git pull');
 echo exec('git pull');
