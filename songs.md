@@ -2,6 +2,7 @@
 title: Songs
 layout: default
 ---
+  * Trom Freund - Copper Moon
   * Muse - Unintended
   * Ethel Smith - tico tico (Hammond Organ)
   * Red River Rock
