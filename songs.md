@@ -2,6 +2,9 @@
 title: Songs
 layout: default
 ---
+  * Ozark Henry - Indian Summer
+  * Howlin' moon - Smoke stack lightning
+  * Eva de roovere - op een hoopje
   * Ben Christophers - Good day for the hopeless
   * Patrick Watson - Daydreamer
   * Sufan Stevens - Chicago
@@ -9,6 +12,7 @@ layout: default
   * Adem - Everything you need
   * Adem - These are your friends
   * Trom Freund - Copper Moon
+  
   * Muse - Unintended
   * Ethel Smith - tico tico (Hammond Organ)
   * Red River Rock
