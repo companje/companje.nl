@@ -1,4 +1,4 @@
-5
+6
 <?php
 var_dump(shell_exec('git pull  2>&1'));
 
