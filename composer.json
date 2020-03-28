@@ -1,0 +1,6 @@
+{
+    "require": {
+        "erusev/parsedown": "^1.7",
+        "mnapoli/front-yaml": "^1.6"
+    }
+}

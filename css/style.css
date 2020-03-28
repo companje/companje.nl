@@ -76,3 +76,12 @@ canvas {
   width:  100%;
   display: block;
 }
+
+body { 
+  background-color: white;
+  background: url('/img/chalk.jpg') no-repeat center center fixed;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
