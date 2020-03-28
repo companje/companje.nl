@@ -1,7 +1,8 @@
 2
 <?php
 //shell_exec('git pull');
-echo exec('git pull');
+echo exec('script.sh');
+die();
 
 require __DIR__ . '/vendor/autoload.php';
 
