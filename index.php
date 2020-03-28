@@ -1,6 +1,6 @@
 <?php
 // ini_set('display_errors', 'On');
-die("test");
+// die("test");
 
 if (isset($_SERVER['HTTP_X_GITHUB_EVENT'])) {
   // if ( $_POST['payload'] ) {
