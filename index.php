@@ -2,8 +2,9 @@
 // ini_set('display_errors', 'On');
 die("test");
 
-if ( $_POST['payload'] ) {
-//if ($_SERVER['HTTP_X_GITHUB_EVENT'] == 'push') {
+if (isset($_SERVER['HTTP_X_GITHUB_EVENT'])) {
+  // if ( $_POST['payload'] ) {
+  //if ($_SERVER['HTTP_X_GITHUB_EVENT'] == 'push') {
   var_dump(shell_exec('git pull'));
   die();
 }
