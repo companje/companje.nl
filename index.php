@@ -1,4 +1,6 @@
 <?php
+ini_set('display_errors', 'On');
+
 if ($_SERVER['HTTP_X_GITHUB_EVENT'] == 'push') {
   shell_exec('git pull');
   die();
