@@ -1,7 +1,7 @@
 9
 <?php
 if ($_SERVER['HTTP_X_GITHUB_EVENT'] == 'push') {
-  shell_exec('git pull  2>&1');
+  shell_exec('git pull');
   die();
 }
 
