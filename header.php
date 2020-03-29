@@ -11,7 +11,7 @@
   <link href="/css/mdb.min.css" rel="stylesheet">
   <link href="/css/prism.css" rel="stylesheet" />
   <link href="/css/style.css" rel="stylesheet">
-  <link href="/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="/css/jquery.fancybox.min.css" rel="stylesheet"/>
 
   <title>Rick Companje - <?php echo $pageTitle; ?></title>
