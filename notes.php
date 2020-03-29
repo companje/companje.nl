@@ -20,9 +20,8 @@ include "header.php"
                 <?php
                 foreach (glob("pages/*.md") as $p) {
                   $pg = preg_replace("/pages\/(.*).md/",'$1',$p)
-                  ?><span class="badge"><a href="<?=$pg?>"><?=$pg?></a></span><?
-                }
-                ?>
+                  ?><span class="badge"><a href="<?=$pg?>"><?=$pg?></a></span>
+                <?php } ?>
 
             </div>
 
