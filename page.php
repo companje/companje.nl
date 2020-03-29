@@ -1,4 +1,4 @@
-<?
+<?php
 $url = "pages/$page.md";
 $pages = glob("pages/*.md");
 
@@ -43,5 +43,5 @@ include "header.php"
 
 </main>
 
-<? include "footer.php" ?>
+<?php include "footer.php" ?>
 

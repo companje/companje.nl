@@ -193,4 +193,4 @@ include "header.php"
 </main>
 <!--Main layout-->
 
-<? include "footer.php" ?>
+<?php include "footer.php" ?>

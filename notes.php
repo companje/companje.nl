@@ -17,7 +17,7 @@ include "header.php"
               <!--Title-->
               <h1 class="card-title">Notes</h1>
 
-                <?
+                <?php
                 foreach (glob("pages/*.md") as $p) {
                   $pg = preg_replace("/pages\/(.*).md/",'$1',$p)
                   ?><span class="badge"><a href="<?=$pg?>"><?=$pg?></a></span><?
@@ -34,4 +34,4 @@ include "header.php"
 
 </main>
 
-<? include "footer.php" ?>
+<?php include "footer.php" ?>
