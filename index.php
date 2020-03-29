@@ -1,6 +1,6 @@
 <?php
-ini_set('display_errors', 'On');
-ini_set( "short_open_tag", 1 );
+//ini_set('display_errors', 'On');
+//ini_set( "short_open_tag", 1 );
 
 if ($_SERVER['HTTP_X_GITHUB_EVENT'] == 'push') {
   shell_exec('git pull');
