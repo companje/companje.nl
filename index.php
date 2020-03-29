@@ -1,6 +1,9 @@
-6
+8
 <?php
-var_dump(shell_exec('git pull  2>&1'));
+if ($_SERVER['HTTP_X_GITHUB_EVENT'] == 'push') {
+  shell_exec('git pull  2>&1');
+  die();
+}
 
 require __DIR__ . '/vendor/autoload.php';
 
