@@ -1,5 +1,5 @@
 ---
-title: Bash
+title: Bash...
 ---
 
 # use expr, for, seq and wget
