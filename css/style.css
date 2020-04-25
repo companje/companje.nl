@@ -87,5 +87,5 @@ body {
 }
 
 li p {
-  margin: 0 0 0 0;
+  display: inline;
 }
