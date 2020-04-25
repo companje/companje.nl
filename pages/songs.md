@@ -3,6 +3,10 @@ title: Songs
 layout: default
 ---
 
+* Neil Young - Helpless
+* Joni Mitchell - Circle Game 
+* Jackson Browne - For A Dancer
+* Counting Crows - Raining in Baltimore
 * Ozark Henry - Indian Summer
 * Howlin' moon - Smoke stack lightning
 * Eva de roovere - op een hoopje
