@@ -86,6 +86,7 @@ body {
   background-size: cover;
 }
 
-li p {
-  display: inline;
+.card .card-body p {
+  margin-bottom: 0px;
 }
+  
