@@ -4,9 +4,15 @@ permalink: /ffmpeg
 tags: ['notes','software']
 ---
 
+# convert for Whatsapp
+crf 30 is lower quality. default is 23. (see: https://trac.ffmpeg.org/wiki/Encode/H.264)
+```bash
+ffmpeg -i Flocking.mp4 -crf 30 -c:v libx264 -profile:v baseline -level 3.0 -pix_fmt yuv420p FlockingWhatsapp.mp4
+```
+
 # convert for Whatsapp, scale and remove duplicate frames
 ```bash
-ffmpeg -i INPUT.MOV  -c:v libx264 -profile:v baseline -level 3.0 -pix_fmt yuv420p -s 500x500 -vf mpdecimate,setpts=N/FRAME_RATE/TB -q:v 1 OUTPUT.MOV
+ffmpeg -i INPUT.MOV -c:v libx264 -profile:v baseline -level 3.0 -pix_fmt yuv420p -s 500x500 -vf mpdecimate,setpts=N/FRAME_RATE/TB -q:v 1 OUTPUT.MOV
 ```
 
 # convert multiple audio files to mp3
@@ -52,11 +58,6 @@ ffmpeg -i INPUT -vb 20M -q:v 0 -vcodec libx264 OUTPUT.mp4
 # high quality bitrate
 ```bash
 ffmpeg -i INPUT -vb 20M -vcodec mpeg4 OUTPUT.mp4
-```
-
-# convert for Whatsapp
-```bash
-ffmpeg -i Flocking.mp4 -c:v libx264 -profile:v baseline -level 3.0 -pix_fmt yuv420p FlockingWhatsapp.mp4
 ```
 
 # blur
