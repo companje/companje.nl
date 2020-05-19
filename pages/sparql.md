@@ -24,6 +24,7 @@ SELECT distinct ?trefwoord WHERE {
 ```
 
 # Alle veldnamen maar alleen binnen 1 specifieke GRAPH
+```sparql
 PREFIX RiCo: <https://www.ica.org/standards/RiC/ontology#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX v: <https://archief.io/veld#>
