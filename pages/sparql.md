@@ -21,6 +21,7 @@ PREFIX v: <https://archief.io/veld#>
 SELECT distinct ?trefwoord WHERE {
   ?sub v:tr ?trefwoord
 } 
+```
 
 # Alle veldnamen maar alleen binnen 1 specifieke GRAPH
 PREFIX RiCo: <https://www.ica.org/standards/RiC/ontology#>
