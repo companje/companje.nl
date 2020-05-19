@@ -1,6 +1,4 @@
-# SPARQL
-
-## Alle vervaardigers
+# Alle vervaardigers
 ```sparql
 PREFIX v: <https://archief.io/veld#>
 SELECT distinct ?obj WHERE {
@@ -8,7 +6,7 @@ SELECT distinct ?obj WHERE {
 } 
 ```
 
-## Alle straatnamen met daarachter bijbehorende plaats
+# Alle straatnamen met daarachter bijbehorende plaats
 ```sparql
 PREFIX v: <https://archief.io/veld#>
 SELECT distinct ?straat, ?plaats WHERE {
@@ -17,14 +15,14 @@ SELECT distinct ?straat, ?plaats WHERE {
 } 
 ```
 
-## Alle trefwoorden
+# Alle trefwoorden
 ```sparql
 PREFIX v: <https://archief.io/veld#>
 SELECT distinct ?trefwoord WHERE {
   ?sub v:tr ?trefwoord
 } 
 
-## Alle veldnamen maar alleen binnen 1 specifieke GRAPH
+# Alle veldnamen maar alleen binnen 1 specifieke GRAPH
 PREFIX RiCo: <https://www.ica.org/standards/RiC/ontology#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX v: <https://archief.io/veld#>
@@ -36,22 +34,22 @@ SELECT distinct ?veldnaam WHERE {
 } 
 ```
 
-## Alle vervaardigers (van alleen Beeldbank Waterlands Archief) gesorteerd op aantal afbeeldingen
+# Alle vervaardigers (van alleen Beeldbank Waterlands Archief) gesorteerd op aantal afbeeldingen
 ```sparql
 PREFIX v: <https://archief.io/veld#>
 SELECT count(*) as ?aantal, ?vervaardiger WHERE {
   GRAPH <https://data.netwerkdigitaalerfgoed.nl/MI2RDF/mi2rdf/graphs/BEELDBANK_14_131_MAISI_EXP-8066> {
- 	 ?sub v:CXTWD_VERVAARDIGER ?vervaardiger
+   ?sub v:CXTWD_VERVAARDIGER ?vervaardiger
   }
 } ORDER BY DESC(?aantal)
 ```
 
-## Alle velden v:tr én v:TR met UNION
+# Alle velden v:tr én v:TR met UNION
 ```sparql
 PREFIX v: <https://archief.io/veld#>
 SELECT count(*) as ?aantal, ?waarde WHERE {
   GRAPH <https://data.netwerkdigitaalerfgoed.nl/MI2RDF/mi2rdf/graphs/BEELDBANK_14_131_MAISI_EXP-8066> {
- 	 
+   
     { ?sub v:TR ?waarde } union { ?sub v:tr ?waarde } 
 
   }
@@ -66,8 +64,8 @@ PREFIX soort: <https://archief.io/soort#>
 
 SELECT count(*) as ?aantal, ?naam WHERE {
   GRAPH <https://data.netwerkdigitaalerfgoed.nl/MI2RDF/mi2rdf/graphs/BEELDBANK_14_131_MAISI_EXP-8066> {
- 	 ?sub v:aet soort:psafb .
-	 ?sub RiCo:title ?naam
+   ?sub v:aet soort:psafb .
+   ?sub RiCo:title ?naam
   }
 } ORDER BY DESC(?aantal)
 ```
