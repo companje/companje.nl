@@ -1,3 +1,15 @@
+# Alle verschillende licenties
+```sparql
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX v: <https://archief.io/veld#>
+
+SELECT distinct(?licentie) WHERE {
+  ?sub ?pred ?obj .
+  ?sub v:fnc_lic ?licentie 
+} LIMIT 10
+```
+
 # Alle vervaardigers
 ```sparql
 PREFIX v: <https://archief.io/veld#>
