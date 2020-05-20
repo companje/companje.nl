@@ -35,16 +35,17 @@ SELECT distinct ?trefwoord WHERE {
 } 
 ```
 
-# Alle veldnamen maar alleen binnen 1 specifieke GRAPH
+# Alle veldnamen maar alleen binnen 1 specifieke GRAPH (en evt binnen Deelcollectie)
 ```sparql
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX v: <https://archief.io/veld#>
 
 SELECT distinct ?veldnaam WHERE {
   GRAPH <https://data.netwerkdigitaalerfgoed.nl/MI2RDF/mi2rdf/graphs/HUA-beeldbank-april2020-9bestanden> {
+    # ?sub v:Deelcollectie "Nederlandse Spoorwegen" .	
     ?sub ?veldnaam ?obj
   }
 } ORDER BY ?veldnaam
+
 ```
 
 # Alle vervaardigers (van alleen Beeldbank Waterlands Archief) gesorteerd op aantal afbeeldingen
