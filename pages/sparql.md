@@ -26,13 +26,18 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX soort: <https://archief.io/soort#>
 PREFIX v: <https://archief.io/veld#>
 
-SELECT ?Catalogusnummer, ?oudnummer {
-  { ?sub v:nummer ?Catalogusnummer ; v:oudnummer_1 ?oudnummer}
-  UNION
-  { ?sub v:nummer ?Catalogusnummer ; v:oudnummer_2 ?oudnummer} 
-  UNION
-  { ?sub v:nummer ?Catalogusnummer ; v:oudnummer_3 ?oudnummer} 
+SELECT  ?Catalogusnummer, ?oudnummer WHERE {  # subselect voor SORT icm OFFSET
+  SELECT ?Catalogusnummer, ?oudnummer  {
+    { ?sub v:nummer ?Catalogusnummer ; v:oudnummer_1 ?_oudnummer}
+    UNION
+    { ?sub v:nummer ?Catalogusnummer ; v:oudnummer_2 ?_oudnummer} 
+    UNION
+    { ?sub v:nummer ?Catalogusnummer ; v:oudnummer_3 ?_oudnummer}
+    BIND(REPLACE(?_oudnummer,"\n","") as ?oudnummer) # remove linefeed from ?_oudnumber
+  }
+  ORDER BY ?oudnummer
 }
+
 LIMIT 10000
 OFFSET 0
 ```
