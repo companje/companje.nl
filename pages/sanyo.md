@@ -61,3 +61,36 @@ A> debug test.com
 
 # technical info
 * http://www.seasip.info/VintagePC/sanyo.html
+
+# Game IO
+* https://github.com/phillipmacon/m.a.m.e/blob/master/src/devices/bus/a2gameio/gameio.cpp
+```
+ Apple II Game I/O Connector
+    This 16-pin DIP socket is described in the Apple II Reference
+    Manual (January 1978) as "a means of connecting paddle controls,
+    lights and switches to the APPLE II for use in controlling video
+    games, etc." The connector provides for four analog "paddle"
+    input signals (0-150KΩ resistance) which are converted to
+    digital pulses by a NE558 quad timer on the main board. The
+    connector also provides several digital switch inputs and
+    "annunciator" outputs, all LS/TTL compatible. Apple joysticks
+    provide active high switches (though at least one third-party
+    product treats them as active low) and Apple main boards have no
+    pullups on these inputs, which thus read 0 if disconnected.
+    While pins 9 and 16 are unconnected on the Apple II, they provide
+    additional digital output and input pins respectively on the Sanyo
+    MBC-550/555 (which uses 74LS123 monostables instead of a NE558).
+    The Apple IIgs also recognizes a switch input 3, though this is
+    placed on pin 9 of the internal connector rather than 16.
+    ...
+                                ____________
+                   +5V   1 |*           | 16  (SW3)
+                   SW0   2 |            | 15  AN0
+                   SW1   3 |            | 14  AN1
+                   SW2   4 |            | 13  AN2
+                  /STB   5 |  GAME I/O  | 12  AN3
+                  PDL0   6 |            | 11  PDL3
+                  PDL2   7 |            | 10  PDL1
+                   GND   8 |            |  9  (AN4/SW3)
+                            ------------
+```
