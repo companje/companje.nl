@@ -17,7 +17,7 @@ title: Sanyo MBC-550/555
 
 # Drive Track Program
 The following Basic program can be used to select Driva A or B, select side 0 or 1 and step the Drive Head to a specific track. To stop the program, press the BREAK key.
-<code gwbasic>
+```gwbasic
 10 INPUT "ENTER DRIVE (A OR B)"; D$
 20 INPUT "ENTER SIDE (0 OR 1)"; S
 30 IF S=0 THEN Y=0 ELSE Y=4
@@ -45,6 +45,7 @@ http://www.textfiles.com/bitsavers/pdf/microPro/Wordstar_3.3/Wordstar_3.3_Refere
 ```
 
 # create a program with debug.com
+```
 A> debug test.com
 - e 100
   B8 {space} 00 {space} 4C {space} CD {space} 21 {enter}
