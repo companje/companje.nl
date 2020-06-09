@@ -12,8 +12,8 @@ alias pip=/usr/local/bin/pip3
 # Guide to Python function decorators=
 http://thecodeship.com/patterns/guide-to-python-function-decorators/
 
-# 4 interessante stukjes Python=
-```
+# 4 interessante stukjes Python
+```python
 def logUser(name, age, length):
     print('name: ', name)
     print('age: ', age)
@@ -24,7 +24,7 @@ user = ('alex', 29, 1.75)
 logUser(*user)
 ```
 
-```
+```python
 def logUser(name, age, length):
     print('name: ', name)
     print('age: ', age)
@@ -35,7 +35,7 @@ user = {'age':28, 'length':1.75, 'name':'alex'}
 logUser(**user)
 ```
 
-```
+```python
 def log(*args):
     print(args)
     message = ""
@@ -46,7 +46,7 @@ def log(*args):
 log('hallo', '2134', 'fsfdsf')
 ```
 
-```
+```python
 def logUser(**kwargs):
     print('name: ', kwargs['name'])
     print('age: ', kwargs['age'])
@@ -63,7 +63,7 @@ http://kivy.org/#home
 
 # ImportError: No module named NK.gui.app
 In NinjaKittens folder:
-```
+```bash
 export PYTHONPATH=.
 ```
 
@@ -72,17 +72,17 @@ export PYTHONPATH=.
 
 # libxml / libxml2 / lxml 
 untested:
-```
+```bash
 brew install libxml2
 ```
 or
-```
+```bash
 sudo port install py25-lxml
 ```
 
 # install easy_install
 http://pypi.python.org/pypi/setuptools#downloads
-```
+```bash
 sh setuptools-0.6c9-py2.4.egg --prefix=~
 ```
 
