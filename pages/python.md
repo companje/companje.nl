@@ -2,11 +2,18 @@
 title: Python
 ---
 
+# Python 3 as default on Mac
+See: https://opensource.com/article/19/5/python-3-default-mac
+```bash
+alias python=/usr/local/bin/python3
+alias pip=/usr/local/bin/pip3
+```
+
 # Guide to Python function decorators=
 http://thecodeship.com/patterns/guide-to-python-function-decorators/
 
 # 4 interessante stukjes Python=
-<code python>
+```
 def logUser(name, age, length):
     print('name: ', name)
     print('age: ', age)
@@ -16,7 +23,8 @@ def logUser(name, age, length):
 user = ('alex', 29, 1.75)
 logUser(*user)
 ```
-<code python>
+
+```
 def logUser(name, age, length):
     print('name: ', name)
     print('age: ', age)
@@ -26,7 +34,8 @@ def logUser(name, age, length):
 user = {'age':28, 'length':1.75, 'name':'alex'}
 logUser(**user)
 ```
-<code python>
+
+```
 def log(*args):
     print(args)
     message = ""
@@ -36,7 +45,8 @@ def log(*args):
 
 log('hallo', '2134', 'fsfdsf')
 ```
-<code python>
+
+```
 def logUser(**kwargs):
     print('name: ', kwargs['name'])
     print('age: ', kwargs['age'])
