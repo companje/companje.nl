@@ -2,8 +2,14 @@
 title: Google Docs
 ---
 
-# join, unique, filter, countunique
+Automatische links in spreadsheet kolom voor elke regel
+'place this in the header cell above a column, that way you will still be able to sort the sheet
+```vba
+=ArrayFormula(if(A1:A<>"",hyperlink("https://....."&A1:A,"title:"&A1:A),))
 ```
+
+# join, unique, filter, countunique
+```vba
 =JOIN(", " ; (UNIQUE(FILTER(LOG!C:C;LOG!D:D=A2))))
 =COUNTUNIQUE(filter(log!C:C;log!D:D=A2))
 ```
@@ -13,13 +19,15 @@ title: Google Docs
 
 # add dates
 add 12 months to date
-```
+```vba
 =EDATE(A11;12)
 ```
 
 # unique / sort / proper
 you can use this as a nice data validator
-  =SORT(PROPER(UNIQUE(INKOMSTEN!D3:D)))
+```vba
+=SORT(PROPER(UNIQUE(INKOMSTEN!D3:D)))
+```
 
 # UrlFetchApp.fetch
 ```js
@@ -53,17 +61,21 @@ if ($row = mysql_fetch_assoc(mysql_query("SELECT post_id,meta_value FROM wp_post
 http://woorkup.com/2010/02/19/10-useful-google-spreadsheet-formulas-you-must-know/
 
 # unique() and continue() functions
-```
+```vba
 =UNIQUE(A:A)
 =CONTINUE(B1; 2; 1)
 ...etc..
 ```
 
 # append row
-```sheet.appendRow(['hello',true,5.5,new Date()]);```
+```js
+sheet.appendRow(['hello',true,5.5,new Date()]);
+```
 
 # fetch from url
-```var text = UrlFetchApp.fetch("http://companje.nl").getContentText();```
+```js
+var text = UrlFetchApp.fetch("http://companje.nl").getContentText();
+```
 
 # documentation
 * https://developers.google.com/apps-script/
