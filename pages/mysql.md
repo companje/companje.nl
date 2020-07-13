@@ -9,6 +9,10 @@ brew services start mysql
 mysql -uroot
 ```
 
+# ERROR 1698 (28000): Access denied for user 'rick'@'localhost'
+mysql> GRANT ALL ON *.* to rick@localhost IDENTIFIED BY 'password';
+
+
 # set mysql for root from '' to something on OSX with XAMPP
 ```bash
 /Applications/XAMPP/bin/mysqladmin --user=root password "something"
