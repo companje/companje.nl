@@ -2,6 +2,11 @@
 title: Google Docs
 ---
 
+# lookup 
+```vba
+=LOOKUP(B2;Trefwoordsoorten!A:A;Trefwoordsoorten!C:C)
+```
+
 Automatische links in spreadsheet kolom voor elke regel
 'place this in the header cell above a column, that way you will still be able to sort the sheet
 ```vba
