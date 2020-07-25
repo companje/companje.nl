@@ -2,6 +2,24 @@
 title: Python
 ---
 
+# enumerate for loop
+```python
+for i, col in enumerate(header):
+   print(i,col)
+```
+
+# regex
+```python
+import re
+s = re.sub(r"[\"\n\r\\]", "", s) # strip double quotes "
+s = re.sub(r"<[^>]*>", "", s); # strip pseudo html tags
+```
+
+# join
+```python
+print("; ".join(item) + " .")
+```
+
 # Python 3 as default on Mac
 See: https://opensource.com/article/19/5/python-3-default-mac
 ```bash
