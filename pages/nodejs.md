@@ -3,6 +3,20 @@ title: NodeJS
 layout: default
 ---
 
+# documentatie.org resolver (set documentatie.org in /etc/hosts)
+```javascript
+const express = require('express')
+const app     = express()
+
+app.get('*', (req, res) => {
+  res.redirect('https://data.netwerkdigitaalerfgoed.nl/hetutrechtsarchief/UDS/browser?resource='
+    + encodeURIComponent("http://" + req.host + req.url))
+})
+
+const server = app.listen(80, () => {})
+```
+
+
 # import many JSON files to a new CouchDB database
 see [couchdb]
 
