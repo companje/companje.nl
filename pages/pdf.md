@@ -2,6 +2,11 @@
 title: PDF
 ---
 
+# convert pdf to multiple jpg's (lowres somehow)
+```bash
+convert /Users/rick/Documents/Adresboeken/MMUTRA01_001427001-1860.pdf tmp%d.jpg
+```
+
 # pdf to jpg
 http://pdf2jpg.net/
 
