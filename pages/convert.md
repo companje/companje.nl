@@ -3,7 +3,7 @@ title: Convert images
 ---
 
 # Convert to thumbs
-```
+```bash
 mogrify -resize x400 *.jpg   # all jpg's in folder are resized to height 400px (overwriting originals)
 ```
 
