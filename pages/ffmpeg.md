@@ -1,7 +1,7 @@
 ---
 title: ffmpeg
 permalink: /ffmpeg
-tags: ['notes','software']
+tags: ['notes','software','video']
 ---
 
 # convert for Whatsapp
