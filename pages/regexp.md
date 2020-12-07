@@ -2,6 +2,11 @@
 title: Regular Expressions
 ---
 
+# zoek alle GUID's in een tekst
+```regex
+[\da-z]{32}
+```
+
 # good introduction
 * https://dl.icewarp.com/online_help/203030104.htm
 
