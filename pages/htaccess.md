@@ -3,9 +3,11 @@ title: .htaccess
 ---
 
 # CORS
+```apache
 <Files "*.json">
 Header add Access-Control-Allow-Origin "*"
 </Files>
+```
 
 # redirect to index.php in paged/ folder
 ```apache
