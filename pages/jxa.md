@@ -6,6 +6,7 @@ title: JXA - Javascript for Automation
 # Apple Photos JXA script for organising photos into albums
 * add this code to a new 'Quick Action' in 'Automator' and assign a keyboard shortcut to it for ideal workflow.
 * Het kan handig zijn om niet in Automator het script te schrijven maar in de ScriptEditor. Dan kun je iets makkelijker loggen enzo. Met Cmd+R runnen. Comments verschijnen in grijs.
+* Keyboard shortcut: 1) Maak nieuwe 'Service' in Automator -> no input -> Run Javascript. 2) Vervolgens bij Preferences -> Keyboard Shortcuts -> Services een shortcut toekennen.
 
 ```js
 //Create a new ‘Quick Action’ in ‘Automator’, then 'Add JavaScript' and assign a keyboard shortcut to it for ideal workflow.
