@@ -9,8 +9,8 @@ sox ipv ffmpeg
 sox input.mp3 output.mp3 --show-progress speed 0.5
 ```
 
-# --show-progress
-show progress
+# show progress
+--show-progress
 
 # remove silence at the end of an mp3
 ```bash
