@@ -98,6 +98,35 @@ echo ------------------------------------------------------ >> $txt
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+  <key>Label</key>
+  <string>nl.companje.screenshots</string>
+  
+  <key>ProgramArguments</key>
+  <array>
+  <string>/usr/bin/open</string>
+  <string>-W</string>
+  <string>/Applications/AutoScreenshot.app</string>
+  </array>
+
+  <key>StartInterval</key>
+  <integer>10</integer>
+
+  <key>StandardOutPath</key>
+  <string>/Users/rickcompanje/Screenshots/log.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/Users/rickcompanje/Screenshots/log.log</string>
+
+  <key>Debug</key>
+  <true/>
+</dict>
+</plist>
+
+<!--
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
     <key>Label</key>
     <string>nl.companje.screenshots</string>
     <key>ProgramArguments</key>
@@ -108,6 +137,7 @@ echo ------------------------------------------------------ >> $txt
     <integer>10</integer>
 </dict>
 </plist>
+-->
 ```
 
 Install:
