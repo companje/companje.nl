@@ -91,12 +91,10 @@ include "header.php"
         <div class="col-md-4 mb-3">
 
           <div class="grayeffect view overlay z-depth-1-half">
-            <a href="/timeline">
               <img src="img/rijks.jpg" class="img-fluid" alt="">
               <div class="flex-center mask">
                 <p class="display-4 white-text">Timeline</p>
               </div>
-            </a>
           </div>
 
         </div>
