@@ -1,0 +1,5 @@
+---
+title: tesseract
+---
+
+see [[/OCR]]
