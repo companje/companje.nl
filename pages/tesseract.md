@@ -2,4 +2,4 @@
 title: tesseract
 ---
 
-see [OCR](OCR)
+see [ocr](ocr)
