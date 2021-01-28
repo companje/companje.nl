@@ -10,9 +10,10 @@ title: OCR
 brew install ocrad
 convert 14.16.12.png img.ppm
 ocrad img.ppm > output.txt
-
-# or
 ```
+
+# or 
+```bash
 brew install netpbm
 pngtopnm filename.png | ocrad
 ```
