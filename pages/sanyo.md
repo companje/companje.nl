@@ -1,8 +1,9 @@
 ---
 title: Sanyo MBC-550/555
 ---
-* wellicht deze bestellen: http://www.deviceside.com/fc5025.html
+* wellicht deze bestellen: http://www.deviceside.com/fc5025.html (nee niet, mailcontact gehad. Werkt alleen voor 1.2MB diskdrives)
 * http://www.seasip.info/VintagePC/sanyo.html
+* 
 * Capacitor C9 on the board may need to be dealt with if disk access is slow or erratic (it was installed backwards at the factory)."
 * http://www.vintage-computer.com/vcforum/showthread.php?24281-Teac-FD-54A
 * "The PC floppy cable (assuming that you don't have any drives with a READY/ line on pin 34) can be a bit problematical to fabricate. On the other hand, if you can find a Teac FD235HF with the appropriate jumpers or a FD235F (which does have a READY/ line), you're in business, sort of." [[http://www.vintage-computer.com/vcforum/archive/index.php/t-23641.html?s=382f5103d732b9ff22b19f0dcba42069|source]]
@@ -11,6 +12,9 @@ title: Sanyo MBC-550/555
 * index sensor measures optically the hole in the floppy disk. It marks the start of the current track. Read 'index sensor adjustment' in Sams Computer Facts about the Sanyo. I measure 208ms (milliseconds) for one turn of the disk. Around 5 turns a second and 300 turns per minute. Which is right according to 'spindle speed adjustment' part.
 * Weird thing: when I remove the index sensor this has no effect on the readings on TP9 and TP10. There's 10us between the pulses.
 * 'Precompensation adjustment': Connect input of a scope to TP1 on System Board. Set scope sweep to 1uSec, voltage to 2V and trigger to positive slope. Adjust Precompensation Control (RV1) for 2uSec from the rising edge of the first pulse to the rising edge of the second pulse. RESULT: 2uSec 500kHz.
+
+# Info about segments:offsets
+* https://thestarman.pcministry.com/asm/debug/Segments.html
 
 # Test pins on mainboard
 * TP1: Precompensation adjustment test. Should measure 2 uSec / 500 kHz. Adjust RV1 to fix.
@@ -55,6 +59,14 @@ A> debug test.com
 -w
 -q
 ```
+
+```
+-rcx
+6
+-n filename
+-w
+```
+more info about Debug: https://thestarman.pcministry.com/asm/debug/debug.htm
 
 # asm.com
 * http://www.datapackrat.com/86dos/index.shtml
