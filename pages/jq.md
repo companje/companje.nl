@@ -5,7 +5,8 @@ title: jq (sed for json)
 # live testing jq queries
 https://jqplay.org/
 
-interesting post: <http://www.compciv.org/recipes/cli/jq-for-parsing-json>
+# interesting post
+<http://www.compciv.org/recipes/cli/jq-for-parsing-json>
 
 # format json
 ```bash
