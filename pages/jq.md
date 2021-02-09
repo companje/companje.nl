@@ -4,7 +4,7 @@ title: jq (sed for json)
 
 # 2 columns
 ```bash
-jq --raw-output '.results.bindings[] | .sub.value + "," + .label.value'
+jq --raw-output '.results.bindings[] | .sub.value + "," + .label.value' < rce-cht.json > rce-cht.csv```
 ```
 
 # live testing jq queries
