@@ -2,6 +2,19 @@
 title: Bash
 ---
 
+# curl & grep
+```
+i=1320000
+z=1355000
+
+while [ $i -le $z ]
+do
+  curl -s ".......index.php?rec=$i" | grep Volledige | cut -c 59- | sed -e "s/ target=\"_blank\">/,\"/" -e "s/<\/a><br>/\",$i/" 
+
+  ((i++))
+done
+```
+
 # use expr, for, seq and wget
 ```bash
 xxcols=20
