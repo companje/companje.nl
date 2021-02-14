@@ -41,6 +41,15 @@ The following Basic program can be used to select Driva A or B, select side 0 or
 160 A$=INKEY$: OUT 8,228: IF A$="" THEN 160 ELSE 70
 ```
 
+# edlin
+```
+edlin autoexec.bat
+i
+  line of text
+  ^Z
+e
+```
+
 # wordstar manual
 http://www.textfiles.com/bitsavers/pdf/microPro/Wordstar_3.3/Wordstar_3.3_Reference_Manual_1983.pdf
 
