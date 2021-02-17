@@ -10,6 +10,11 @@ mysql -uroot
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'newrootpassword';
 ```
 
+# problem with secure-file-priv 
+1. Look for "my.cnf" file which is located at /usr/local/etc
+2. add secure-file-priv = "" into my.cnf
+3. restart mysql using /usr/local/opt/mysql/support-files/mysql.server restart
+
 # ERROR 1698 (28000): Access denied for user 'rick'@'localhost'
 mysql> GRANT ALL ON *.* to rick@localhost IDENTIFIED BY 'password';
 
