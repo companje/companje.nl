@@ -7,6 +7,7 @@ title: MySQL
 brew install mysql
 brew services start mysql
 mysql -uroot
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'newrootpassword';
 ```
 
 # ERROR 1698 (28000): Access denied for user 'rick'@'localhost'
