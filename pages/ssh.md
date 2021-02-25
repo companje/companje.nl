@@ -2,8 +2,15 @@
 title: SSH
 ---
 
-# SFTP - FATAL ERROR: Connection reset by peer Error: Could not connect to server sftp
-check logfile
+# SFTP
+* [[https://wiki.filezilla-project.org/Command-line_arguments_(Client)]]
+```
+sftp root@192.168.5.1:22
+```
+error: /usr/libexec/sftp-server: not found
+
+## SFTP - FATAL ERROR: Connection reset by peer Error: Could not connect to server sftp
+check logfile:
 ```
 tail -f /var/log/auth.log
 ```
