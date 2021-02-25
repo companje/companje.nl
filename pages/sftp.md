@@ -2,4 +2,5 @@
 title: sftp
 ---
 
-* see [[/ssh]]
+* see [ssh](/ssh)
+* 
