@@ -2,6 +2,12 @@
 title: SSH
 ---
 
+# SFTP - FATAL ERROR: Connection reset by peer Error: Could not connect to server sftp
+check logfile
+```
+tail -f /var/log/auth.log
+```
+
 # create SSH tunnel
 ```bash
 ssh -NL 8157:localhost:8888 paperspace@74.82.31.122
