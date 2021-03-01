@@ -2,6 +2,11 @@
 title: PHP
 ---
 
+# php.ini
+```bash
+php --ini
+```
+
 # thumbnail from video using ffmpeg
 ```php
 $time = $_GET["time"];
