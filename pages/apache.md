@@ -2,6 +2,14 @@
 title: Apache 
 ---
 
+
+# let's encrypt
+```bash
+sudo certbot --apache
+```
+* ubuntu 20.04  https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-20-04 
+* ubuntu 18.04 https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-18-04 
+
 # 'Error: mysite.com does not exist' when using a2ensite
 
 cause:
