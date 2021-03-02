@@ -3,7 +3,7 @@ title: Bash
 ---
 
 # curl & grep
-```
+```bash
 i=1320000
 z=1355000
 
