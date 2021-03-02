@@ -2,6 +2,11 @@
 title: jq (sed for json)
 ---
 
+# unusually named fields at top-level (use [""])
+```bash
+jq --raw-output '.["@graph"][].straatnaam' vleu-con_strn_2299_flexis.json > straatnamen.txt
+```
+
 # 2 columns
 ```bash
 jq --raw-output '.results.bindings[] | .sub.value + "," + .label.value' < rce-cht.json > rce-cht.csv```
