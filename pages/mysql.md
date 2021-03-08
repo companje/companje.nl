@@ -2,8 +2,11 @@
 title: MySQL
 ---
 
+# OSX gui client
+Sequal Ace (AppStore) vs Sequal Pro
+
 # install (without password)
-```
+```bash
 brew install mysql
 brew services start mysql
 mysql -uroot
