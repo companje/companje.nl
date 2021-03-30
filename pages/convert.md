@@ -2,6 +2,12 @@
 title: Convert images
 ---
 
+# resize to certain filesize
+will take 4 to 8 times longer
+```bash
+convert INPUT -define jpeg:extent=2MB OUTPUT
+```
+
 # Convert to thumbs
 ```bash
 mogrify -resize x400 *.jpg   # all jpg's in folder are resized to height 400px (overwriting originals)
