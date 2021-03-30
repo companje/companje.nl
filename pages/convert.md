@@ -2,6 +2,11 @@
 title: Convert images
 ---
 
+# resize to longest axis 2048
+```bash
+mogrify -resize 2048 *.jpg
+```
+
 # resize to certain filesize
 will take 4 to 8 times longer
 ```bash
