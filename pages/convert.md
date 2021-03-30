@@ -2,7 +2,7 @@
 title: Convert images
 ---
 
-# resize to longest axis 2048
+# resize (and replace) to longest axis 2048
 ```bash
 mogrify -resize 2048 *.jpg
 ```
