@@ -2,6 +2,25 @@
 title: Python
 ---
 
+# from CSV to JSON without pandas
+```python
+#!/usr/bin/env python 
+
+import csv
+import json
+
+data = []
+
+with open("INPUT.csv") as f:
+    reader = csv.DictReader(f, delimiter=";")
+
+    for row in reader:
+        data.append(row)
+
+with open("OUTPUT.json", "w") as f:
+    json.dump(data, f, indent=4)
+```
+    
 # enumerate for loop
 ```python
 for i, col in enumerate(header):
