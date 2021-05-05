@@ -2,6 +2,11 @@
 title: Bash
 ---
 
+# remove empty folders
+```bash
+find DIR -type d -empty -delete
+```
+
 # curl & grep
 ```bash
 i=1320000
