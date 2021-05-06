@@ -2,8 +2,7 @@
 title: Apache 
 ---
 
-SSLCertificateFile: file '/etc/letsencrypt/live/.....' does not exist or is empty
-
+# SSLCertificateFile: file '/etc/letsencrypt/live/.....' does not exist or is empty
 Solution:
 ```bash
 sudo chmod 755 /etc/letsencrypt/archive
