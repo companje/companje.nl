@@ -2,6 +2,15 @@
 title: Apache 
 ---
 
+SSLCertificateFile: file '/etc/letsencrypt/live/.....' does not exist or is empty
+
+Solution:
+```bash
+sudo chmod 755 /etc/letsencrypt/archive
+sudo chmod 755 /etc/letsencrypt/live/
+apachectl configtest
+```
+Syntax OK
 
 # let's encrypt
 ```bash
