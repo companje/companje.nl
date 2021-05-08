@@ -2,6 +2,11 @@
 title: Bash
 ---
 
+# disk use sort by size
+```bash
+du -hs * | sort -h
+```
+
 # remove empty folders
 ```bash
 find DIR -type d -empty -delete
