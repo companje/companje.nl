@@ -2,6 +2,15 @@
 title: Bash
 ---
 
+# nested while loop
+```bash
+while read DB_NAME; do  
+  while read ID; do
+    echo $DB_NAME/$ID
+  done < sketches_dbs/$DB_NAME
+done < sketches-dbs.txt
+```
+
 # disk use sort by size
 ```bash
 du -hs * | sort -h
