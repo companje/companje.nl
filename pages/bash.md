@@ -233,7 +233,7 @@ for i in *.JPG; do
 done
 ```
 
-#list files recursive with full path
+# list files recursive with full path
 ```bash
   find .
 ```
@@ -281,9 +281,8 @@ Use tee command to redirect the content to file:
   telnet google.com 80 | tee outfile
 Then grep the file
 
-# notes from BEAA talk by Johan at 26 june
-Bash
-```
+# notes from BEAA talk by Johan at 26 june - Bash
+```bash
 all chmod a+r  
 user chmod u+w
 group chmod g-x
@@ -292,71 +291,71 @@ chmod 755
 ```
 
 # shell expansion
-```
-  {a..z}{0..9} = a1 a2 a3 … z7 z8 z9
-  /pad/naar/{file1,file2} == /pad/naar/file{1,2}
-  echo ~  toont home dir
-  echo ~- toont vorige
-  echo ~+ volgende
+```bash
+{a..z}{0..9} = a1 a2 a3 … z7 z8 z9
+/pad/naar/{file1,file2} == /pad/naar/file{1,2}
+echo ~  toont home dir
+echo ~- toont vorige
+echo ~+ volgende
 
-  $(command) == `command`
+$(command) == `command`
 
-  echo $((2+2))
-  A=test; echo A; echoe $(A:=foo}
-  echo *
-  echo Do*
-  echo {a..z}
+echo $((2+2))
+A=test; echo A; echoe $(A:=foo}
+echo *
+echo Do*
+echo {a..z}
 
-  cp bestand{,.bak}
+cp bestand{,.bak}
 
 sterretje kan ook midden in pad
-  sudo ls /home/*/Maildir/new
-  sudo ls /home/user{1,2,3}/Maildir/new
-  mkdir {2012..2014}-{1..12} && ls
-  ls -la `whereis ls`
-````
+sudo ls /home/*/Maildir/new
+sudo ls /home/user{1,2,3}/Maildir/new
+mkdir {2012..2014}-{1..12} && ls
+ls -la `whereis ls`
+```
 
 # shell expansion vindt plaats voor het commando wordt uitgevoerd
-```
-  mkdir tmp && cd tmp
-  >cp
-  >foobar
-  * test
-  ls
+```bash
+mkdir tmp && cd tmp
+>cp
+>foobar
+* test
+ls
 
-  echo ls ${foo:=*}
-  echo “ls ${foo:=*}”
-  echo ‘ls ${foo:=*}’  (wordt niks mee gedaan, komt koud als string naar de terminal
+echo ls ${foo:=*}
+echo “ls ${foo:=*}”
+echo ‘ls ${foo:=*}’  (wordt niks mee gedaan, komt koud als string naar de terminal
 
-  || is exclusieve OR. 1 van de 2 moet waar zijn andere mag niet waar zijn
+|| is exclusieve OR. 1 van de 2 moet waar zijn andere mag niet waar zijn
 
-  [ is eigenlijk een alias naar test
-  man test voor hulp over de if control structures.
+[ is eigenlijk een alias naar test
+man test voor hulp over de if control structures.
 
-  cat nonexistingfile && echo 123
-  cat nonexistingfile || echo 123
+cat nonexistingfile && echo 123
+cat nonexistingfile || echo 123
 ```
 
 # history
 ```bash
-  !123 voert bepaald history commando uit
-  !-2 voert twee-na-laatste commando uit
-  !begintmet
-  !?bevat
-  control+R
-  fc (fix command) opent je laatste commando in vi en voert ‘m uit na :q.
-  sudo !! voert laatste commando uit met sudo ervoor
+!123 voert bepaald history commando uit
+!-2 voert twee-na-laatste commando uit
+!begintmet
+!?bevat
+control+R
+fc (fix command) opent je laatste commando in vi en voert ‘m uit na :q.
+sudo !! voert laatste commando uit met sudo ervoor
 
-  lsof -p $$ (lijst van alle open bestanden maar alleen die door jouw PID geopend zijn)
+lsof -p $$ (lijst van alle open bestanden maar alleen die door jouw PID geopend zijn)
 
-  ls &> file
+ls &> file
 ```
 
 # inhoud van een file gebruiken als std input
 ```bash
-  mysql database <<<“SELECT * FROM TABLE”
+mysql database <<<“SELECT * FROM TABLE”
 
-  mysql database < <(sql_generator)
+mysql database < <(sql_generator)
 ```
 je koppelt hier de std out van het ene commando aan de std in van het andere commando. Dit is hetzelfde als pipe
 
