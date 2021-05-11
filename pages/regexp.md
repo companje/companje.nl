@@ -2,6 +2,15 @@
 title: Regular Expressions
 ---
 
+# Alles na de laatste slash (filename)
+```regex
+[^/]+$)
+```
+# Alles voor de laatste slash (pad)
+```regex
+.*\/
+```
+
 # zoek alle GUID's in een tekst
 ```regex
 [\da-z]{32}
