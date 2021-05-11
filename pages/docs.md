@@ -2,6 +2,9 @@
 title: Google Docs
 ---
 
+# regex
+see also [regex](/regexp)
+
 # lookup 
 ```vba
 =LOOKUP(B2;Trefwoordsoorten!A:A;Trefwoordsoorten!C:C)
