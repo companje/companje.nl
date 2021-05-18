@@ -42,6 +42,15 @@ The following Basic program can be used to select Driva A or B, select side 0 or
 ```
 
 # edlin
+https://www.computerhope.com/edlin.htm
+```
+1l  # list from line one
+1   # edit line 1
+5i  # insert line(s) before line 5
+q   # exit without saving
+e   # save and exit
+```
+
 ```
 edlin autoexec.bat
 i
