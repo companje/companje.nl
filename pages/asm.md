@@ -12,6 +12,7 @@ nasm -f bin first.asm -o first.com
 ## hello world
 from: https://github.com/nanochess
 ```asm
+  org 0x100
 start:
   mov bx,string
 repeat:
