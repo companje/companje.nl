@@ -2,7 +2,7 @@
 title: Sanyo MBC-550/555
 ---
 
-# GOTEK
+## GOTEK
 Goed nieuws! Gotek met FlashFloppy firmware werkt super op de Sanyo MBC-555. https://gotek.nl/
 in FF.CFG 
 ```
@@ -14,7 +14,7 @@ nav-mode = indexed   # voor 0001-msdos211.img etc
 indexed-prefix = ""
 ```
 
-# Diversen
+## Diversen
 * wellicht deze bestellen: http://www.deviceside.com/fc5025.html (nee niet, mailcontact gehad. Werkt alleen voor 1.2MB diskdrives)
 * http://www.seasip.info/VintagePC/sanyo.html
 * 
@@ -27,17 +27,17 @@ indexed-prefix = ""
 * Weird thing: when I remove the index sensor this has no effect on the readings on TP9 and TP10. There's 10us between the pulses.
 * 'Precompensation adjustment': Connect input of a scope to TP1 on System Board. Set scope sweep to 1uSec, voltage to 2V and trigger to positive slope. Adjust Precompensation Control (RV1) for 2uSec from the rising edge of the first pulse to the rising edge of the second pulse. RESULT: 2uSec 500kHz.
 
-# DISKCOPY
+## DISKCOPY
 Als een diskette bad sectors heeft kun je geen DISKCOPY gebruiken. Je kunt in veel gevallen wel met COPY de bestanden overzetten. Eventueel kun je met DEBUG de sectors 1 voor laden en wegschrijven (l 0 0 5 1 -> w 0 0 0 5 1). 
 
-# Info about segments:offsets
+## Info about segments:offsets
 * https://thestarman.pcministry.com/asm/debug/Segments.html
 
-# Test pins on mainboard
+## Test pins on mainboard
 * TP1: Precompensation adjustment test. Should measure 2 uSec / 500 kHz. Adjust RV1 to fix.
 * TP2: ??
 
-# Drive Track Program
+## Drive Track Program
 The following Basic program can be used to select Driva A or B, select side 0 or 1 and step the Drive Head to a specific track. To stop the program, press the BREAK key.
 ```gwbasic
 10 INPUT "ENTER DRIVE (A OR B)"; D$
@@ -58,7 +58,7 @@ The following Basic program can be used to select Driva A or B, select side 0 or
 160 A$=INKEY$: OUT 8,228: IF A$="" THEN 160 ELSE 70
 ```
 
-# edlin
+## EDLIN
 https://www.computerhope.com/edlin.htm
 ```
 1l  # list from line one
@@ -76,14 +76,15 @@ i
 e
 ```
 
-# wordstar manual
+## wordstar manual
 http://www.textfiles.com/bitsavers/pdf/microPro/Wordstar_3.3/Wordstar_3.3_Reference_Manual_1983.pdf
 
-# debug.com
+## debug.com
 * fill memory with 0's: `e 0 ffff 0`
 * `rcx` sets cx register. This register is used in debug.com to store the amount of bytes to write to the loaded (or newly created file).
+* `l 0 0 5 1` load sector 5 of drive 0 at currentSeg:0000
 
-# create a program with debug.com
+## create a program with debug.com (ms-dos 1.25 without assemble command)
 ```
 A> debug test.com
 - e 100
@@ -103,13 +104,14 @@ A> debug test.com
 ```
 more info about Debug: https://thestarman.pcministry.com/asm/debug/debug.htm
 
-# asm.com
-* http://www.datapackrat.com/86dos/index.shtml
+## asm.com
+* asm.com seems not to work well on Sanyo: http://www.datapackrat.com/86dos/index.shtml
+* TinyASM works better. See: https://github.com/nanochess/tinyasm/
 
-# technical info
+## technical info
 * http://www.seasip.info/VintagePC/sanyo.html
 
-# Game I/O
+## Game I/O
 * https://github.com/phillipmacon/m.a.m.e/blob/master/src/devices/bus/a2gameio/gameio.cpp
 ```
  Apple II Game I/O Connector
