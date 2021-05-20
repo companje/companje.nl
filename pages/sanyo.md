@@ -15,7 +15,8 @@ indexed-prefix = ""
 ```
 
 ## Diversen
-* wellicht deze bestellen: http://www.deviceside.com/fc5025.html (nee niet, mailcontact gehad. Werkt alleen voor 1.2MB diskdrives)
+* wellicht deze bestellen: http://www.deviceside.com/fc5025.html (nee niet, mailcontact gehad. Werkt alleen voor 1.2MB diskdrives, en dan ook nog eens readonly.)
+* 
 * http://www.seasip.info/VintagePC/sanyo.html
 * 
 * Capacitor C9 on the board may need to be dealt with if disk access is slow or erratic (it was installed backwards at the factory)."
