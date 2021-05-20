@@ -4,8 +4,8 @@ title: Sanyo MBC-550/555
 
 ## GOTEK
 Goed nieuws! Gotek met FlashFloppy firmware werkt super op de Sanyo MBC-555. https://gotek.nl/
-in FF.CFG 
-```
+```ini
+# in FF.CFG 
 interface = shugart
 host = pc-dos
 pin02 = auto
