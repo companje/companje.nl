@@ -13,6 +13,7 @@ pin34 = auto
 nav-mode = indexed   # voor 0001-msdos211.img etc
 indexed-prefix = ""
 ```
+![[Screenshot 2021-05-21 at 00.09.05-sanyo-mbc555-gotek.jpg]]
 
 ## Diversen
 * wellicht deze bestellen: http://www.deviceside.com/fc5025.html (nee niet, mailcontact gehad. Werkt alleen voor 1.2MB diskdrives, en dan ook nog eens readonly.)
