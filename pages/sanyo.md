@@ -2,6 +2,12 @@
 title: Sanyo MBC-550/555
 ---
 
+## samdisk
+https://simonowen.com/samdisk/
+```bash
+./samdisk IMAGE.td0  /Volumes/FLASHFLOPPY/IMAGE.dsk
+```
+
 ## GOTEK
 Goed nieuws! Gotek met FlashFloppy firmware werkt super op de Sanyo MBC-555. https://gotek.nl/
 ```ini
