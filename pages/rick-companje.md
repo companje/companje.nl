@@ -23,8 +23,6 @@ Rick Companje (1979) onderzoekt de ruimte tussen kunst, wetenschap en technologi
 Rick's werk wordt wereldwijd tentoongesteld in musea, op conferenties en op festivals waaronder NEMO Science Center, ACM Siggraph, Wired Nextfest, Laval Virtual, TodaysArt en Cinekid. Zie ook [[http://globe4d.com]].
 
 # Contact 
-Address: Schutstraat 89, Utrecht
-Phone: +31(0)6-2851 6908
 E-Mail: rick at companje.nl
 
 # Testimonial MSc. Media Technology 
