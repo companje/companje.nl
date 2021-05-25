@@ -1,3 +1,6 @@
+# Ivar's SPARQL queries
+* https://www.notion.so/SPARQL-queries-d771418872824af6842cfb27f89fd987#14c3cde3bad242f98497d52098787292
+
 # Query via CURL als text/csv
 ```bash
 # er zijn op het moment van schrijven +100.000 afbeeldingen in de beeldbank waarvan 
