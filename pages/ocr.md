@@ -3,7 +3,7 @@ title: OCR
 ---
 
 # compressed pdf
-* first compress images using mogrify
+* first compress images using mogrify -quality 40
 * use tesseract with 'filelist.txt'
 
 # ...
