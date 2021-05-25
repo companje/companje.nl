@@ -1,8 +1,14 @@
 ---
 title: OCR
 ---
+
+# compressed pdf
+* first compress images using mogrify
+* use tesseract with 'filelist.txt'
+
+# ...
 * http://www.free-ocr.com/
-* http://projectnaptha.com javascript library en chrome addon voor OCR van plaatjes (tip v Simon)
+* http://projectnaptha.com javascript library en chrome addon voor OCR van plaatjes - tip v Simon (d3d)
 * tesseract
 
 # OCRAD
