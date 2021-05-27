@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# get text after last /
+```python
+str.rpartition("/")[-1]
+```
+
 # from CSV to JSON without pandas
 ```python
 #!/usr/bin/env python 
