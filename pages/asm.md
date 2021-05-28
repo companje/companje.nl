@@ -9,11 +9,15 @@ title: Assembler
 nasm -f bin first.asm -o first.com
 ```
 
-## disassemble com file
+## disassemble with ndisasm
 "To disassemble a DOS .COM file correctly, a disassembler must assume that the first instruction in the file is loaded at address 0x100, rather than at zero."
 ```bash
 ndisasm -o100h filename.com
 ```
+
+it will *not* understand .EXE files like debug will. It just disassembles.
+
+
 
 ## hello world
 from: https://github.com/nanochess
