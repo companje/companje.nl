@@ -4,7 +4,7 @@ title: Sanyo MBC-550/555
 
 ## Time Bandit BANDIT.EXE crack
 this is a first step. Skipping disk access at start.
-```
+```bat
 debug BANDIT.EXE
 -g 8ee8
 -g =8ef3
