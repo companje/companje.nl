@@ -2,6 +2,19 @@
 title: Python
 ---
 
+# read from multiple files supplied as arguments
+for example `./script.py *.JSON`
+```python
+#!/usr/bin/env python3
+import json,csv,sys,glob
+from sys import argv
+
+for filename in argv[1:]:
+  with open(filename) as json_file:
+    data = json.load(json_file)
+    #...
+```
+
 # get text after last /
 ```python
 str.rpartition("/")[-1]
