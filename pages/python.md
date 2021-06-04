@@ -5,9 +5,14 @@ title: Python
 ## split / map / list comprehension
 ```python
 # input: 2737,1248 2787,1256 ...
+
+# split by space and comma
 coords = [coord.split(",") for coord in coords.split(" ")]
 # output: [['2737', '1248'], ['2787', '1256'],...]
-# how to cast to numbers?
+
+# cast to int
+coords = [(int(float(a)), int(float(b))) for a,b in coords]
+# output: [(2737, 1248), (2787, 1256), ...]
 ```
 
 ## PageXML to CSV
