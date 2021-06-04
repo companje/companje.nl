@@ -7,6 +7,7 @@ title: Python
 # input: 2737,1248 2787,1256 ...
 coords = [coord.split(",") for coord in coords.split(" ")]
 # output: [['2737', '1248'], ['2787', '1256'],...]
+# how to cast to numbers?
 ```
 
 ## PageXML to CSV
