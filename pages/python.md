@@ -2,10 +2,10 @@
 title: Python
 ---
 
-# PageXML to CSV
+## PageXML to CSV
 * https://github.com/hetutrechtsarchief/pagexml2csv
 
-# read from multiple files supplied as arguments
+## read from multiple files supplied as arguments
 for example `./script.py *.JSON`
 ```python
 #!/usr/bin/env python3
@@ -18,12 +18,12 @@ for filename in argv[1:]:
     #...
 ```
 
-# get text after last /
+## get text after last /
 ```python
 str.rpartition("/")[-1]
 ```
 
-# from CSV to JSON without pandas
+## from CSV to JSON without pandas
 ```python
 #!/usr/bin/env python 
 
@@ -42,35 +42,35 @@ with open("OUTPUT.json", "w") as f:
     json.dump(data, f, indent=4)
 ```
     
-# enumerate for loop
+## enumerate for loop
 ```python
 for i, col in enumerate(header):
    print(i,col)
 ```
 
-# regex
+## regex
 ```python
 import re
 s = re.sub(r"[\"\n\r\\]", "", s) # strip double quotes "
 s = re.sub(r"<[^>]*>", "", s); # strip pseudo html tags
 ```
 
-# join
+## join
 ```python
 print("; ".join(item) + " .")
 ```
 
-# Python 3 as default on Mac
+## Python 3 as default on Mac
 See: https://opensource.com/article/19/5/python-3-default-mac
 ```bash
 alias python=/usr/local/bin/python3
 alias pip=/usr/local/bin/pip3
 ```
 
-# Guide to Python function decorators=
+## Guide to Python function decorators=
 http://thecodeship.com/patterns/guide-to-python-function-decorators/
 
-# 4 interessante stukjes Python
+## 4 interessante stukjes Python
 ```python
 def logUser(name, age, length):
     print('name: ', name)
@@ -113,22 +113,22 @@ def logUser(**kwargs):
 logUser(age=28, length=1.75, name='alex')
 ```
 
-# SimpleHTTPServer
+## SimpleHTTPServer
   python -m SimpleHTTPServer 8000
   
-# kivy
+## kivy
 http://kivy.org/#home
 
-# ImportError: No module named NK.gui.app
+## ImportError: No module named NK.gui.app
 In NinjaKittens folder:
 ```bash
 export PYTHONPATH=.
 ```
 
-# gui
+## gui
 * http://kivy.org
 
-# libxml / libxml2 / lxml 
+## libxml / libxml2 / lxml 
 untested:
 ```bash
 brew install libxml2
@@ -138,22 +138,22 @@ or
 sudo port install py25-lxml
 ```
 
-# install easy_install
+## install easy_install
 http://pypi.python.org/pypi/setuptools#downloads
 ```bash
 sh setuptools-0.6c9-py2.4.egg --prefix=~
 ```
 
-# Mogelijke oplossing voor problemen met Python op OSX Lion
+## Mogelijke oplossing voor problemen met Python op OSX Lion
 * http://www.niconomicon.net/blog/2011/10/09/2120.wrestling.python.snow.leopard
 * http://stackoverflow.com/questions/6886578/how-to-install-pycairo-1-10-on-mac-osx-with-default-python
 
-# version
+## version
 ```bash
 python --version
 ```
 
-# location of python
+## location of python
 ```bash
 type python
 ```
@@ -162,7 +162,7 @@ or
 which python
 ```
 
-# info about executable
+## info about executable
 ```bash
 file /usr/local/bin/python
 ```
