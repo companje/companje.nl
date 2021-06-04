@@ -2,6 +2,13 @@
 title: Python
 ---
 
+## split / map / list comprehension
+```python
+# input: 2737,1248 2787,1256 ...
+coords = [coord.split(",") for coord in coords.split(" ")]
+# output: [['2737', '1248'], ['2787', '1256'],...]
+```
+
 ## PageXML to CSV
 * https://github.com/hetutrechtsarchief/pagexml2csv
 
