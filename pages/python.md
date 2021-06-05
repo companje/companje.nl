@@ -2,6 +2,14 @@
 title: Python
 ---
 
+## DictWriter
+```python
+writer = csv.DictWriter(sys.stdout, fieldnames=["id","image", "etc..."], delimiter=',', quoting=csv.QUOTE_ALL, dialect='excel')
+writer.writeheader()
+#...
+writer.writerow(item)
+```
+
 ## split / map / list comprehension
 ```python
 # input: 2737,1248 2787,1256 ...
