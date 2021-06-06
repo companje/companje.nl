@@ -1,3 +1,10 @@
+## 
+
+## remove path (everything after last slash)
+```
+let name = /[^/]*$/.exec(fileName)[0];
+```
+
 ## microtemplate
 ```js
 // micro templating, sort-of
@@ -18,6 +25,11 @@ function microTemplate( src, data ) {
 ```js
 new Date().toJSON()
 "2018-07-17T21:15:44.914Z"
+```
+
+## (just) Date as string
+```js
+new Date().toISOString().split('T')[0]
 ```
 
 # disable ipad zoom gesture
