@@ -2,8 +2,21 @@
 title: Javascript
 ---
 
-## everything after last slash
+## webdev cheatsheet van Hay
+https://www.haykranen.nl/devcheats/web/
+
+## getJson(url)
+tip van Hay
+```js
+async function getJson(url) {
+	const req = await window.fetch(url); //
+	const json = await req.json();
+	return json;
+}
 ```
+
+## everything after last slash
+```js
 let name = /[^/]*$/.exec(fileName)[0];
 ```
 
