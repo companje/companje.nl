@@ -2,7 +2,7 @@
 title: Javascript
 ---
 
-## remove path (everything after last slash)
+## everything after last slash
 ```
 let name = /[^/]*$/.exec(fileName)[0];
 ```
