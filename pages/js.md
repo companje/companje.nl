@@ -1,4 +1,6 @@
-## 
+---
+title: Javascript
+---
 
 ## remove path (everything after last slash)
 ```
