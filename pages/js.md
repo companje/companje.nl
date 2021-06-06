@@ -2,7 +2,7 @@
 title: Javascript
 ---
 
-# microtemplate
+## microtemplate
 ```js
 // micro templating, sort-of
 function microTemplate( src, data ) {
