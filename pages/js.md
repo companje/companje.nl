@@ -1,7 +1,3 @@
----
-title: Javascript
----
-
 ## microtemplate
 ```js
 // micro templating, sort-of
