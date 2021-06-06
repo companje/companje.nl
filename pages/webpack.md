@@ -2,6 +2,13 @@
 title: Webpack
 ---
 
+## html-webpack-template
+- https://github.com/jaketrent/html-webpack-template
+```js
+headHtmlSnippet: '<style>div.app-spinner {position: fixed;top:50%;left:50%;}</style >',
+bodyHtmlSnippet: '<custom-element></custom-element>',
+```
+
 ## Snowpack
 tip v Sylvain: snowpack alternatief webpack en parcel
 
