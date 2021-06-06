@@ -2,6 +2,9 @@
 title: Webpack
 ---
 
+# Snowpack
+tip v Sylvain: snowpack alternatief webpack en parcel
+
 #  dev server toegang buiten localhost 
 ```
 "scripts": {
