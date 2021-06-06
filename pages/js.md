@@ -2,8 +2,11 @@
 title: Javascript
 ---
 
+## Optional chaining (?.)
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining
+
 ## webdev cheatsheet van Hay
-https://www.haykranen.nl/devcheats/web/
+- https://www.haykranen.nl/devcheats/web/
 
 ## getJson(url)
 tip van Hay
