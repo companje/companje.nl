@@ -90,7 +90,7 @@ https://developers.google.com/web/updates/2011/11/Quota-Management-API-Fast-Fact
 
 # reducers
 * http://devdocs.io/javascript/global_objects/array/reduce
-<code javascript>
+```
 [0, 1, 2, 3, 4].reduce(function(previousValue, currentValue, index, array) {
   return previousValue + currentValue;
 });
@@ -100,8 +100,6 @@ https://developers.google.com/web/updates/2011/11/Quota-Management-API-Fast-Fact
 * immutable.js
 
 # Printable bulletlist
-<code javascript>
-<div id="data">
 # Section 1
 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 - Nam eu ligula eu felis placerat consectetur quis eu arcu. 
@@ -111,8 +109,8 @@ https://developers.google.com/web/updates/2011/11/Quota-Management-API-Fast-Fact
 -  In mollis est nec tempor scelerisque. 
 - Nulla augue velit, commodo in feugiat et, suscipit vitae nisi. Quisque augue justo.
 - tincidunt quis mattis sit amet, tincidunt et felis.
-</div>
 
+```
 <style>
   div#data {
     display: none;
@@ -185,6 +183,7 @@ https://developers.google.com/web/updates/2011/11/Quota-Management-API-Fast-Fact
 
 </script>
 ```
+
 # React.js
 see [[reactjs]]
 
@@ -216,7 +215,7 @@ https://www.youtube.com/watch?v=iukBMY4apvI
 * http://canonical.org/~kragen/sw/torus.js
 
 # Array filter
-<code javascript>
+```
 function removeShortPaths(minLength,minPoints) {
   if (!minLength) minLength = 10;
   if (!minPoints) minPoints = 1;
@@ -243,7 +242,7 @@ talk at FOSDEM 15: Hannes Verschore (http://H4writer.com)
 
 # generators
 generate a sequence, one item at a time. a function that can be paused in the middle
-<code javascript>
+```js
 function *foo() {
    console.log("running");
    var x = yield 1;
@@ -287,7 +286,7 @@ function *fibonacci() {
 
 # classes
 (with inheritance)
-<code javascript>
+```
 class Animal() {
   constructor() {
     this.cuteness = 0
@@ -304,7 +303,8 @@ class Animal() {
 
 # arrow function
 (alternative for 'self' and/or 'bind')
-<code javascript>function Archer() {
+```
+function Archer() {
 this.arrows = 100;
 setInterval( () => {
 this.arrows--;
@@ -314,7 +314,7 @@ this.arrows--;
 
 # destructuring
 lists:
-<code javascript>
+```
 var [a,b] = [1,2];
 
 var [a,b, ...c] = [1,2,3,4,5]
@@ -340,6 +340,7 @@ a===undefined
 ```
 
 # modules
+```js
 ///lib.js
 var privateProperty =1 ;
 export var publicProperty = 2
@@ -358,9 +359,10 @@ import (publicFunction  as libfunc } from 'lib'
 module loader: 
 System.import('some_module')
 //returns a promise? that loads the module async
+```
 
 # promises
-<code javascript>
+```js
 function executor(resolve, reject) {
   ////
 
@@ -379,7 +381,7 @@ img.then(function() {
 ```
 
 # inheritance with prototypes
-<code javascript>
+```
 var Animal = function(name) {
   this.name= name;
 }
@@ -392,8 +394,9 @@ Dog.prototype.bark = function() {
   //do bark
 }
 ```
+
 call the Animal super constructor from the Dog constructor
-<code javascript>
+```js
 var Dog = function(name,color) {
   Animal.call(this,name);
   this.color = color; //where to declare color?
@@ -446,7 +449,7 @@ https://www.youtube.com/watch?v=mPq5S27qWW8
 *http://stackoverflow.com/questions/18178406/access-javascript-nested-objects-safely
 
 # assertType function
-<code javascript>
+```
 function assertType(variable,typename) {
   if (typeof variable  typename) return true;
   var s = [].splice.call(arguments,2).join(' ');
@@ -454,8 +457,9 @@ function assertType(variable,typename) {
   return false;
 }
 ```
+
 This one is better:
-<code javascript>
+```
 function assert(a,b) {
   var a = Array.prototype.slice.call(a);
   var c = Array.prototype.slice.call(arguments,2).join('.');
@@ -463,9 +467,8 @@ function assert(a,b) {
 }
 ```
 
-
 # Scaling down an image to fit in a element of a certain size
-<code javascript>
+```js
   var iw = img[0].naturalWidth;
   var ih = img[0].naturalHeight;
   var scale = 1;
@@ -510,7 +513,7 @@ En de pagina's in het algemeen onder:
 http://doodle3d.com/help/javascript
 
 # disable dragging
-<code javascript>
+```js
 function disableDragging() {
   $(document).bind("dragstart", function(event) {
     console.log("dragstart");
@@ -520,7 +523,7 @@ function disableDragging() {
 ```
 
 # getParameterByName
-<code javascript>
+```js
 function getParameterByName(name) {
     var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
     return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
