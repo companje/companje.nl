@@ -2,6 +2,11 @@
 title: PHP
 ---
 
+# php frameworks
+- https://flightphp.com/
+- https://www.slimframework.com/
+- https://docs.guzzlephp.org/en/stable/
+
 # php.ini
 ```bash
 php --ini
