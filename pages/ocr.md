@@ -2,6 +2,15 @@
 title: OCR
 ---
 
+## tesserat in Python
+```python
+#!/usr/bin/env python3
+
+from PIL import Image
+import pytesseract
+print(pytesseract.image_to_data('filelist.txt'))
+```
+
 ## compressed pdf
 * first compress images using mogrify -quality 40
 * use tesseract with 'filelist.txt'
