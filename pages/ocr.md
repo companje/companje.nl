@@ -2,7 +2,7 @@
 title: OCR
 ---
 
-## tesserat in Python
+## tesseract in Python
 ```python
 #!/usr/bin/env python3
 
