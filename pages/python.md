@@ -2,6 +2,32 @@
 title: Python
 ---
 
+## BoundingBox
+found here: https://techoverflow.net/2017/02/23/computing-bounding-box-for-a-list-of-coordinates-in-python/
+and fixed a bug.
+
+```python
+class BoundingBox(object):
+    def __init__(self, points):
+        self.minx, self.miny = float("inf"), float("inf")
+        self.maxx, self.maxy = float("-inf"), float("-inf")
+        for x, y in points:
+            self.minx = min(x,self.minx)
+            self.maxx = max(x,self.maxx)
+            self.miny = min(y,self.miny)
+            self.maxy = max(y,self.maxy)
+    @property
+    def width(self):
+        return self.maxx - self.minx
+    @property
+    def height(self):
+        return self.maxy - self.miny
+    def __repr__(self):
+        return "BoundingBox(minX={}, minY={}, maxX={}, maxY={})".format(
+            self.minx, self.miny, self.maxx, self.maxy)
+```
+
+
 ## DictWriter
 ```python
 writer = csv.DictWriter(sys.stdout, fieldnames=["id","image", "etc..."], delimiter=',', quoting=csv.QUOTE_ALL, dialect='excel')
