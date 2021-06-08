@@ -2,6 +2,12 @@
 title: Python
 ---
 
+## recursive findall using xPath .//
+```python
+for textline in xml.findall('.//TextLine'):  
+  #...
+```
+
 ## BoundingBox
 found here: https://techoverflow.net/2017/02/23/computing-bounding-box-for-a-list-of-coordinates-in-python/
 and fixed a bug.
