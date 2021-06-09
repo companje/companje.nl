@@ -6,7 +6,7 @@ tags: ['notes','software','video']
 
 # replace audio of a video keeping length of the shortest
 ```bash
-ffmpeg -i IMG_8327.TRIM.mp4 -i Motions.mp3 -c:v copy -map 0:v:0 -map 1:a:0 -shortest new.mp4
+ffmpeg -i IMG_8327.mp4 -i Motions.mp3 -c:v copy -map 0:v:0 -map 1:a:0 -shortest new.mp4
 ```
 
 # convert for Whatsapp
