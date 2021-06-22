@@ -1,3 +1,23 @@
+# CSV bestand met aantal keer dat een Wikidata item per jaar voorkomt in de dataset van HUA
+Er wordt geen rekening gehouden met tijdsperiodes of onzekere datums
+```bash
+# Onderstaande loop voert meerdere queries 
+# (in blokken van 10.000 resultaten) uit op de triplestore van Het Utrechts Archief.
+# de output kun je redirecten naar 1 groot csv bestand.
+
+echo > data.csv
+
+for i in `seq 0 10000 200000`
+do
+ query='PREFIX%20wd%3A%20%3Chttp%3A%2F%2Fwww.wikidata.org%2Fentity%2F%3E%0APREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0A%0ASELECT%20%3Fwd%2C%20%3Fyear%2C%20count%28%3Fyear%29%20as%20%3Faantal%20WHERE%20%7B%0A%20%20%3Fsub%20dct%3Aspatial%20%3Fwd%20.%0A%20%20%3Fsub%20dct%3Adate%20%3Fyear%20.%0A%20%20filter%20regex%28%3Fwd%2C%20%22wikidata%22%29%0A%7D%20%0A%23order%20by%20desc%28%3Faantal%29%0Alimit%2010000%0Aoffset%20'$i
+
+ echo $query
+ echo
+
+ curl https://data.netwerkdigitaalerfgoed.nl/_api/datasets/hetutrechtsarchief/Dataset/services/Dataset/sparql -X POST --data query=$query -H "Accept: text/csv" | awk 'FNR>1' >> data.csv  # zorgt dat de header telkens worden weggefilterd
+done
+```
+
 # Ivar's SPARQL queries
 * https://www.notion.so/SPARQL-queries-d771418872824af6842cfb27f89fd987#14c3cde3bad242f98497d52098787292
 
