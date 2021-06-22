@@ -1,7 +1,7 @@
 ## CSV bestand met aantal keer dat een Wikidata item per jaar voorkomt in de dataset van HUA
 Onderstaande loop voert meerdere queries uit
 (in blokken van 10.000 resultaten) uit op de triplestore van Het Utrechts Archief.
-de output kun je redirecten naar 1 groot csv bestand.
+De output kun je redirecten naar 1 groot csv bestand.
 Er wordt geen rekening gehouden met tijdsperiodes of onzekere datums
 ```bash
 echo > data.csv
