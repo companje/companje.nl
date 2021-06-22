@@ -1,4 +1,4 @@
-# CSV bestand met aantal keer dat een Wikidata item per jaar voorkomt in de dataset van HUA
+## CSV bestand met aantal keer dat een Wikidata item per jaar voorkomt in de dataset van HUA
 Er wordt geen rekening gehouden met tijdsperiodes of onzekere datums
 ```bash
 # Onderstaande loop voert meerdere queries 
@@ -18,10 +18,10 @@ do
 done
 ```
 
-# Ivar's SPARQL queries
+## Ivar's SPARQL queries
 * https://www.notion.so/SPARQL-queries-d771418872824af6842cfb27f89fd987#14c3cde3bad242f98497d52098787292
 
-# Query via CURL als text/csv
+## Query via CURL als text/csv
 ```bash
 # er zijn op het moment van schrijven +100.000 afbeeldingen in de beeldbank waarvan 
 # een of meerdere 'oude nummers' bekend zijn. Onderstaande loop voert meerdere queries 
@@ -51,7 +51,7 @@ marked $output_base.md > $output_base.html
 markdown-pdf $output_base.md 
 ```
 
-# Opvragen 'oudnummer_*' en via UNION als losse triples
+## Opvragen 'oudnummer_*' en via UNION als losse triples
 ```sparql
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -75,7 +75,7 @@ LIMIT 10000
 OFFSET 0
 ```
 
-# Lekker bezig voor Wikimedia
+## Lekker bezig voor Wikimedia
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -109,7 +109,7 @@ SELECT * WHERE {
 #OFFSET 20000
 ```
 
-# Alle verschillende licenties
+## Alle verschillende licenties
 ```sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -121,7 +121,7 @@ SELECT distinct(?licentie) WHERE {
 } LIMIT 10
 ```
 
-# Alle vervaardigers
+## Alle vervaardigers
 ```sparql
 PREFIX v: <https://archief.io/veld#>
 SELECT distinct ?obj WHERE {
@@ -129,7 +129,7 @@ SELECT distinct ?obj WHERE {
 } 
 ```
 
-# Alle straatnamen met daarachter bijbehorende plaats
+## Alle straatnamen met daarachter bijbehorende plaats
 ```sparql
 PREFIX v: <https://archief.io/veld#>
 SELECT distinct ?straat, ?plaats WHERE {
@@ -138,7 +138,7 @@ SELECT distinct ?straat, ?plaats WHERE {
 } 
 ```
 
-# Alle trefwoorden
+## Alle trefwoorden
 ```sparql
 PREFIX v: <https://archief.io/veld#>
 SELECT distinct ?trefwoord WHERE {
@@ -146,7 +146,7 @@ SELECT distinct ?trefwoord WHERE {
 } 
 ```
 
-# Alle veldnamen maar alleen binnen 1 specifieke GRAPH (en evt binnen Deelcollectie)
+## Alle veldnamen maar alleen binnen 1 specifieke GRAPH (en evt binnen Deelcollectie)
 ```sparql
 PREFIX v: <https://archief.io/veld#>
 
@@ -159,7 +159,7 @@ SELECT distinct ?veldnaam WHERE {
 
 ```
 
-# Alle vervaardigers (van alleen Beeldbank Waterlands Archief) gesorteerd op aantal afbeeldingen
+## Alle vervaardigers (van alleen Beeldbank Waterlands Archief) gesorteerd op aantal afbeeldingen
 ```sparql
 PREFIX v: <https://archief.io/veld#>
 SELECT count(*) as ?aantal, ?vervaardiger WHERE {
@@ -169,7 +169,7 @@ SELECT count(*) as ?aantal, ?vervaardiger WHERE {
 } ORDER BY DESC(?aantal)
 ```
 
-# Alle velden v:tr én v:TR met UNION
+## Alle velden v:tr én v:TR met UNION
 ```sparql
 PREFIX v: <https://archief.io/veld#>
 SELECT count(*) as ?aantal, ?waarde WHERE {
@@ -181,7 +181,7 @@ SELECT count(*) as ?aantal, ?waarde WHERE {
 } ORDER BY DESC(?aantal)
 ```
 
-# Persoon op afbeelding gesorteerd op aantal
+## Persoon op afbeelding gesorteerd op aantal
 ```sparql
 PREFIX RiCo: <https://www.ica.org/standards/RiC/ontology#>
 PREFIX v: <https://archief.io/veld#>
