@@ -14,7 +14,7 @@ do
  echo $query
  echo
 
- curl https://data.netwerkdigitaalerfgoed.nl/_api/datasets/hetutrechtsarchief/Dataset/services/Dataset/sparql -X POST --data query=$query -H "Accept: text/csv" | awk 'FNR>1' >> data.csv  # zorgt dat de header telkens worden weggefilterd
+ curl https://data.netwerkdigitaalerfgoed.nl/_api/datasets/hetutrechtsarchief/Dataset/services/Dataset/sparql -X POST --data query=$query -H "Accept: text/csv" | awk 'FNR>1' >> data.csv  # awk zorgt dat de header telkens worden weggefilterd
 done
 ```
 
