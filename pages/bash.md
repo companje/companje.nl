@@ -2,6 +2,11 @@
 title: Bash
 ---
 
+# remove .DS_Store files recursively
+```bash
+find . -type f -name .DS_Store -delete
+```
+
 # nested while loop
 ```bash
 while read DB_NAME; do  
