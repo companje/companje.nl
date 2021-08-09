@@ -2,6 +2,9 @@
 title: Google Docs
 ---
 
+# download shared spreadsheet as csv
+* https://docs.google.com/spreadsheets/d/1gJRrqqBQP17iH_Vs5t3dE4nZSUcavhkJMhVxF12L19E/export?format=csv
+
 # regex
 see also [regex](/regexp)
 
