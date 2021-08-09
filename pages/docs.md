@@ -3,7 +3,10 @@ title: Google Docs
 ---
 
 # download shared spreadsheet as csv
-* https://docs.google.com/spreadsheets/d/1gJRrqqBQP17iH_Vs5t3dE4nZSUcavhkJMhVxF12L19E/export?format=csv
+- [ ] CSV automatisch als Export wanneer ge-shared: https://docs.google.com/spreadsheets/d/1gJRrqqBQP17iH_Vs5t3dE4nZSUcavhkJMhVxF12L19E/export?format=csv
+- [ ] CSV via Publish to Web: https://docs.google.com/spreadsheets/d/e/2PACX-1vTV0ddS6dyYl4LzvLGSfRru32Ty158yCp_8lsvzhFov-MAvyBIO5-o1KWLs44a0oZ83D3JgQKCO8LAN/pub?gid=0&single=true&output=csv
+- [ ] JSON via Publish to Web: https://spreadsheets.google.com/feeds/list/1gJRrqqBQP17iH_Vs5t3dE4nZSUcavhkJMhVxF12L19E/od6/public/values?alt=json
+
 
 # regex
 see also [regex](/regexp)
