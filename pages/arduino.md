@@ -2,6 +2,9 @@
 title: Arduino / AVR
 ---
 
+# print to thermal printer
+see [[thermalprinter]]
+
 # about Timers
 * https://sites.google.com/site/qeewiki/books/avr-guide/timers-on-the-atmega328
 
