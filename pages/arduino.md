@@ -17,6 +17,7 @@ see [[thermalprinter]]
 * http://forum.arduino.cc/index.php?topic=325378.0
 * https://github.com/rossumur/Zorkduino
 * http://martin.hinner.info/vga/pal.html (PAL info)
+
 # MIDI input
 * http://www.notesandvolts.com/2012/01/fun-with-arduino-midi-input-basics.html
 
@@ -27,7 +28,7 @@ see [[thermalprinter]]
 https://learn.sparkfun.com/tutorials/serial-communication
 
 # serial readLine
-<code c>
+```c
 char buf[100];
 
 bool readLine(char *buf) {
@@ -55,6 +56,7 @@ void update() {
   }
 }
 ```
+
 # MACRO for printing multiple arguments with sprintf
 ```c
 #define ECHO(s,x...) { char buf[100]; sprintf(buf,s,x); Serial.println(buf);}
@@ -114,7 +116,7 @@ avrdude -cstk500v1 -b57600 -p m328p -P /dev/tty.usbserial-A600JGJZ -D -Uflash:w:
 ```
 
 # detect arduino bootloader
-<code python>
+```python
 if self.sendMessage([0x10, 0xc8, 0x64, 0x19, 0x20, 0x00, 0x53, 0x03, 0xac, 0x53, 0x00, 0x00]) != [0x10, 0x00]:
 ```
 
