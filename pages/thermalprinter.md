@@ -1,6 +1,19 @@
 ---
-title: Thermal Printer
+title: Thermal Printer (bijv Epson TM-T88ii)
 ---
+
+# reference guide
+http://www.i-o.cz/user/upload/TM88%20III/l7O-TM-T88II_TechnicalRefGuide.pdf
+
+# ESC/POS
+```c
+normalSize = {0x1B, 0x21, 0x03}
+bold = {0x1B, 0x21, 0x08}
+boldMedium = {0x1B, 0x21, 0x20}
+boldLarge = {0x1B, 0x21, 0x10}
+```
+
+# Hebben & Houden
 ```cpp
 #include <SD.h>
 
