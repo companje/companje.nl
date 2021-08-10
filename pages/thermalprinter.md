@@ -1,8 +1,7 @@
 ---
 title: Thermal Printer
 ---
-<code cpp>
-
+```cpp
 #include <SD.h>
 
 void setup() {
@@ -17,30 +16,17 @@ void setup() {
   Serial.print("!2");
   Serial.println("HEBBEN&HOUDEN");
   Serial.print("!");
-  Serial.println("Hilde Peters
-");
+  Serial.println("Hilde Peters");
 
   File f = SD.open("hilde.txt");
   if (f) {
     while (f.available()) {
       char c = f.read();
       Serial.write(c);
-      if (c=='
-') delay(625);
+      if (c==' ... ') delay(625);
     }
     f.close();
-    Serial.print("
-
-
-
-
-
-
-
-
-
-
-");
+    Serial.print(" ... ");
   }  
 }
 
