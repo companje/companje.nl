@@ -162,7 +162,8 @@ zie [[wifly]]
 
 # watchdog arduino
 Ik heb pas zelf een [[http://en.wikipedia.org/wiki/Watchdog_timer|watchdog timer]] gebouwd voor Arduino met de TimerOne library zie ik nu. Maar het kan ook met standaard avr functies. Zie [[http://lifeboat.co.nz/arduino/sensor_water_working_v1.pde|dit voorbeeld]].
-```
+
+```c
 #include <avr/wdt.h>
 ...
 wdt_enable(WDTO_8S); //start watchdog set for max 8 seconds
