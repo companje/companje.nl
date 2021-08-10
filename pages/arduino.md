@@ -186,7 +186,7 @@ Dit heb ik uitgezocht met lsof | grep -i 'tmp' (list open files).
 
 # avrdude
 op windows (afkomstig uit Ultimaker marlin firmware upload.bat):
-```winbatch
+```batch
 @echo off
 set /p COMPORT=Which COM port to use for uploading (ex: COM5)? 
 mode %COMPORT%: DTR=on > NUL
