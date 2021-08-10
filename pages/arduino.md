@@ -186,7 +186,7 @@ Dit heb ik uitgezocht met lsof | grep -i 'tmp' (list open files).
 
 # avrdude
 op windows (afkomstig uit Ultimaker marlin firmware upload.bat):
-<code winbatch>
+```winbatch
 @echo off
 set /p COMPORT=Which COM port to use for uploading (ex: COM5)? 
 mode %COMPORT%: DTR=on > NUL
@@ -196,8 +196,10 @@ pause
 ```
 
 # avrdude commando
+```bash
 ./avrdude -c arduino -b115200 -p ATMEGA328P -P /dev/tty.usbmodem411 -C avrdude.conf -D -Uflash:w:firmware.hex:i
-
+```
+  
 # avrdude: parallel port access not available
 ```
 avrdude: parallel port access not available in this configuration
