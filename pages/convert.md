@@ -2,6 +2,12 @@
 title: Convert images
 ---
 
+# convert 16 bit grayscale to 2x 8 bits channel/file
+```bash
+convert 16_bit_unsigned_int.tif -endian MSB -depth 8 8_bit_hi.png
+convert 16_bit_unsigned_int.tif -endian LSB -depth 8 8_bit_lo.png
+```
+
 # resize (and replace) to longest axis 2048
 ```bash
 mogrify -resize 2048 *.jpg
