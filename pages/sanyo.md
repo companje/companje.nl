@@ -2,6 +2,12 @@
 title: Sanyo MBC-550/555
 ---
 
+## debug search
+```
+debug basic.exe
+s 1c67:ffff ffff e4 18   # searches for the bytes e4 and 18
+```
+
 ## Time Bandit BANDIT.EXE crack
 this is a first step. Skipping disk access at start.
 ```bat
