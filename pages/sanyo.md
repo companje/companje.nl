@@ -3,7 +3,7 @@ title: Sanyo MBC-550/555
 ---
 
 ## debug search
-```
+```bat
 debug basic.exe
 s 1c67:ffff ffff e4 18   # searches for the bytes e4 and 18
 ```
