@@ -2,6 +2,11 @@
 title: Convert images
 ---
 
+# separate channels to different (grayscale) files
+```bash
+convert rgb.png -separate %d.png
+```
+
 # convert 16 bit grayscale to 2x 8 bits channel/file
 ```bash
 convert 16_bit_unsigned_int.tif -endian MSB -depth 8 8_bit_hi.png
