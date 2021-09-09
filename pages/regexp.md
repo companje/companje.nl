@@ -3,7 +3,7 @@ title: Regular Expressions
 ---
 
 # in sublimetext middelste groep van 3 groepen vinden
-dit vind dus alleen B (A)(B)(C)
+dit vind dus alleen B in (A)(B)(C)
 ```regex
 (?<=lastname%2Fp%2Fvalue%2F)(.*)(?=%2Fq%2F)
 ```
