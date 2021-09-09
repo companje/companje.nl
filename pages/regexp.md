@@ -6,6 +6,7 @@ title: Regular Expressions
 dit vind dus alleen B in (A)(B)(C)
 ```regex
 (?<=lastname%2Fp%2Fvalue%2F)(.*)(?=%2Fq%2F)
+(?<=birthdate%2Fp%2Fvalue%2F)(.*)(?=%2Fr)
 ```
 
 # Alles na de laatste slash (filename)
