@@ -2,6 +2,32 @@
 title: Python
 ---
 
+## dictreader with custom delimiter and fieldnames
+```python
+reader = csv.DictReader(f, delimiter=";", fieldnames=["fname","prefix","sname","bdate","publish","file_id","remark"])
+```
+
+## filter
+```python
+filteredList = filter(lambda item: item["publish"] == "ja", list(reader))
+```
+
+## sort with 'itemgetter'
+```python
+from operator import itemgetter
+#...
+sortedList = sorted(filteredList, key=itemgetter('sname')) 
+```
+
+## map
+```python
+lines = map(lambda item: 
+    '<a href="https://crowd.hetutrechtsarchief.nl/' + item["file_id"] + '">' +
+    ' '.join(filter(None,[item["fname"],item["prefix"],item["sname"]])) + # filter(None,..) is to get rid of double spaces
+    "</a><br>"
+  ,sortedList)
+```
+
 ## utf-8 with BOM
 ```python
 print(u'\ufeff',end='') # write UTF8 BOM signature without linebreak
