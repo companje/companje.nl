@@ -2,6 +2,11 @@
 title: Python
 ---
 
+## join
+```python
+' '.join(filter(None,[item["fname"],item["prefix"],item["sname"]])) + # filter(None,..) is to get rid of double spaces
+```
+
 ## dictreader with custom delimiter and fieldnames
 ```python
 reader = csv.DictReader(f, delimiter=";", fieldnames=["fname","prefix","sname","bdate","publish","file_id","remark"])
@@ -21,11 +26,7 @@ sortedList = sorted(filteredList, key=itemgetter('sname'))
 
 ## map
 ```python
-lines = map(lambda item: 
-    '<a href="https://crowd.hetutrechtsarchief.nl/' + item["file_id"] + '">' +
-    ' '.join(filter(None,[item["fname"],item["prefix"],item["sname"]])) + # filter(None,..) is to get rid of double spaces
-    "</a><br>"
-  ,sortedList)
+lines = map(lambda item: item["name"], sortedList)
 ```
 
 ## utf-8 with BOM
