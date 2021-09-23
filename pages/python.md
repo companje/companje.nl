@@ -2,6 +2,11 @@
 title: Python
 ---
 
+## utf-8 with BOM
+```python
+print(u'\ufeff',end='') # write UTF8 BOM signature without linebreak
+```
+
 ## recursive findall using xPath .//
 ```python
 for textline in xml.findall('.//TextLine'):  
