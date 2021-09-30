@@ -2,6 +2,11 @@
 title: Convert images
 ---
 
+# crop
+```bash
+convert test.jpg -crop 1870x290+0+150 x.jpg
+```
+
 # separate channels to different (grayscale) files
 ```bash
 convert rgb.png -separate %d.png
