@@ -2,6 +2,11 @@
 title: Convert images
 ---
 
+# blacken
+```bash
+convert INPUT.jpg -fill "black" -draw "rectangle 0,440,3000,4200" -draw "rectangle 0,0,3000,180" -draw "rectangle 1870,0,3000,440" ../black/NL-OUTPUT.jpg
+```
+
 # crop
 ```bash
 convert test.jpg -crop 1870x290+0+150 x.jpg
