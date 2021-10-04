@@ -2,6 +2,17 @@
 title: Processing
 ---
 
+# shell / exec / wait until complete
+```java
+//if you want to wait until it's completed, something like this:
+
+ Process p = exec("/usr/bin/say", "waiting until done");
+ try {
+   int result = p.waitFor();
+   println("the process returned " + result);
+ } catch (InterruptedException e) { }
+``` 
+ 
 # good example background learning with accumulateWeighted
 https://github.com/sgjava/install-opencv/blob/master/opencv-java/src/com/codeferm/opencv/MotionDetect.java
 
