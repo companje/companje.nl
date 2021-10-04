@@ -2,6 +2,11 @@
 title: Bash
 ---
 
+# set cwd to the script's folder
+```bash
+cd `dirname $0`
+```
+
 # remove .DS_Store files recursively
 ```bash
 find . -type f -name .DS_Store -delete
