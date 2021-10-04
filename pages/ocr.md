@@ -2,6 +2,22 @@
 title: OCR
 ---
 
+# print parameters
+```bash
+tesseract --print-parameters
+```
+
+#  just supply multiple 'parameter'/'config' files.
+those files are in 'tessdata' folder. can be found with `find / -name tessdata`
+in my case on OSX : 
+`./usr/local/Cellar/tesseract-lang/4.0.0/share/tessdata`
+`./usr/local/Cellar/tesseract/4.1.1/share/tessdata`
+`./usr/local/share/tessdata`
+
+```bash 
+tesseract INPUT.JPG OUTPUT_BASE -l nld tsv get.images
+```
+ 
 ## tesseract in Python
 ```python
 #!/usr/bin/env python3
