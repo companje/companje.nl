@@ -17,6 +17,12 @@ in my case on OSX :
 ```bash 
 tesseract INPUT.JPG OUTPUT_BASE -l nld tsv get.images
 ```
+
+# get.images gives the intermediate/input image useful for debugging
+```bash 
+tesseract INPUT.JPG OUTPUT_BASE -l nld tsv get.images
+```
+it writes to: `tessinput.tif`
  
 ## tesseract in Python
 ```python
