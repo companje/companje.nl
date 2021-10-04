@@ -23,6 +23,35 @@ tesseract INPUT.JPG OUTPUT_BASE -l nld tsv get.images
 tesseract INPUT.JPG OUTPUT_BASE -l nld tsv get.images
 ```
 it writes to: `tessinput.tif`
+
+more config files:
+```
+alto
+ambigs.train
+api_config
+bigram
+box.train
+box.train.stderr
+digits
+get.images
+hocr
+inter
+kannada
+linebox
+logfile
+lstm.train
+lstmbox
+lstmdebug
+makebox
+pdf
+quiet
+rebox
+strokewidth
+tsv
+txt
+unlv
+wordstrbox
+```
  
 ## tesseract in Python
 ```python
