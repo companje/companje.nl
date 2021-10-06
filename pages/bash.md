@@ -2,6 +2,11 @@
 title: Bash
 ---
 
+# default value for parameter
+```bash
+var=${2:-6}    # $2 parameter gets defaulted to 6
+```
+
 # set cwd to the script's folder
 ```bash
 cd `dirname $0`
