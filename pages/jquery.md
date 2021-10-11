@@ -2,6 +2,11 @@
 title: jQuery
 ---
 
+# get URL parameter (not jQuery)
+```js
+minr = new URLSearchParams(window.location.search).get("minr")
+```
+
 # siblings
 ```js
 $("#system-message-container").siblings("div").find("ol");
