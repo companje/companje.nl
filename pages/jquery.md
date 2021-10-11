@@ -2,6 +2,16 @@
 title: jQuery
 ---
 
+# siblings
+```js
+$("#system-message-container").siblings("div").find("ol");
+```
+
+# find div in next sibling
+```js
+$("#system-message-container").siblings("div").find("div").removeAttr("style");
+```
+
 # jquery find parent with class
 ```js
 .closest()
