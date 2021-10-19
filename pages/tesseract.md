@@ -4,4 +4,4 @@ title: tesseract
 
 see [ocr](ocr)
 
-[tesseract-parameters](tesseract parameters)
+[tesseract_parameters](tesseract_parameters)
