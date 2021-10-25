@@ -2,6 +2,20 @@
 title: Python
 ---
 
+## unpack values from csv row into variables
+```python
+#!/usr/bin/env python3
+
+import json,csv,sys,glob
+from sys import argv
+
+with open("TESTSERVER-aktenummers-bestandsnamen.csv") as f:
+  reader = csv.DictReader(f)   #"CODE","ID","WAARDE","BESTANDSNAAM"
+  for row in reader:
+    (code, id, aktenummer, bestandsnaam) = row.values()
+    print(code,id,aktenummer,bestandsnaam)
+```
+
 ## join
 ```python
 ' '.join(filter(None,[item["fname"],item["prefix"],item["sname"]])) + # filter(None,..) is to get rid of double spaces
