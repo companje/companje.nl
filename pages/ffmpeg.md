@@ -4,6 +4,16 @@ permalink: /ffmpeg
 tags: ['notes','software','video']
 ---
 
+# convert to rgb565
+```bash
+ffmpeg -i INPUT.mp4 -vcodec rawvideo -f rawvideo -pix_fmt rgb565 -y OUTPUT-rgb565.raw
+```
+
+# png sequence into movie
+```bash
+ffmpeg -pattern_type glob -i "*.png" -vcodec mpeg4 -q:v 0 tmp.mp4
+```
+
 # replace audio of a video keeping length of the shortest
 ```bash
 ffmpeg -i IMG_8327.mp4 -i Motions.mp3 -c:v copy -map 0:v:0 -map 1:a:0 -shortest new.mp4
