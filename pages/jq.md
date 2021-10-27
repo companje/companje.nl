@@ -2,6 +2,11 @@
 title: jq (sed for json)
 ---
 
+# count items in array
+```bash
+jq --raw-output '.["aktes"] | length' 2437.json
+```
+
 # join array
 ```bash
 jq --raw-output '.["@graph"][] | [.id, .orde, .vleu_huisnummer, (try .relaties|join("|")) ] | @csv' vleu-ab-bouwvergunning_1_2299_flexis.json > bouwvergunningen.txt
