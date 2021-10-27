@@ -5,6 +5,7 @@ $pages = glob("pages/*.md");
 if (!in_array($url,$pages)) {
   //header("Location: https://github.com/companje/companje.github.io/new/master");
   header("Location: https://github.com/companje/companje.nl/tree/master/pages");
+  die();
 }
 
 $md = file_get_contents($url);
