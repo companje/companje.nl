@@ -2,6 +2,23 @@
 title: Bash
 ---
 
+# combine images vertically and create filename with 0's padding
+```bash
+folder="folder/"
+
+for number in `seq 1 1 370`;
+do
+  temp_num="00000$number"
+  padded="${temp_num:(-5)}"
+
+  input1=$number-1.tif
+  input2=$number.tif
+  result=NL-UtHUA_0046_00_00727_00J_$padded.jpg
+
+  convert "$folder$input1" "$folder$input2" -clone 0 -delete 0 -gravity North -append $result
+done
+```
+
 # default value for parameter
 ```bash
 var=${2:-6}    # $2 parameter gets defaulted to 6
