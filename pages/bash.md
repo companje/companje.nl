@@ -2,6 +2,16 @@
 title: Bash
 ---
 
+# open Github Desktop from command line with current folder
+```bash
+alias github="open . -a \"Github Desktop\""
+```
+
+# reload .zshrc
+```bash
+. ~/.zshrc
+```
+
 # find large folders
 ```bash
 du -a | sort -n -r
