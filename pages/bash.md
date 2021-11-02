@@ -2,6 +2,11 @@
 title: Bash
 ---
 
+# find large folders
+```bash
+du -a | sort -n -r
+```
+
 # combine images vertically and create filename with 0's padding
 ```bash
 folder="folder/"
