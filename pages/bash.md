@@ -3,6 +3,7 @@ title: Bash
 ---
 
 # open Github Desktop from command line with current folder
+(add this to .zshrc)
 ```bash
 alias github="open . -a \"Github Desktop\""
 ```
