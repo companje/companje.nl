@@ -3,9 +3,7 @@ title: Processing
 ---
 
 # replaceAll
-```
 https://www.javatpoint.com/java-string-replaceall
-```
 
 # shell / exec / wait until complete
 ```java
