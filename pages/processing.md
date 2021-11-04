@@ -2,6 +2,11 @@
 title: Processing
 ---
 
+# replaceAll
+```
+https://www.javatpoint.com/java-string-replaceall
+```
+
 # shell / exec / wait until complete
 ```java
 //if you want to wait until it's completed, something like this:
