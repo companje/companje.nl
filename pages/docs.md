@@ -2,6 +2,16 @@
 title: Google Docs
 ---
 
+# Custom Function met URL Fetch
+```js
+function MY_MATCH(lastname, bdate_iso) {
+ let url = "https://URL?lastname="+lastname+"%2Fq%2Fperson_search_birthdate%2Fp%2Fvalue%2F"+bdate_iso+"%2Fresults%2Ccount%3Fcount%3D24%26offset%3D0"
+ var res = UrlFetchApp.fetch(url);
+ json = JSON.parse(res.getContentText())
+ return json["data"][0].items.length!=0;
+}
+```
+
 # lijst met oplopende datums
 type een datum in en sleep het blauwe blokje van de cel naar beneden.
 
