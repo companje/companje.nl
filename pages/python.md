@@ -2,6 +2,9 @@
 title: Python
 ---
 
+## tuples!
+https://www.studytonight.com/python/tuples-in-python
+
 ## unpack values from csv row into variables
 ```python
 #!/usr/bin/env python3
