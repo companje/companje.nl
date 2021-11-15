@@ -2,6 +2,12 @@
 title: Python
 ---
 
+## 
+```python
+from ast import literal_eval as make_tuple
+(coords, text, conf) = make_tuple("[([[22, 15], [373, 15], [373, 89], [22, 89]], 'Aaldering =', 0.46745234890467213)]")
+```
+
 ## tuples!
 https://www.studytonight.com/python/tuples-in-python
 
