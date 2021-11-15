@@ -168,7 +168,7 @@ fi
 
 # script install itself as executable
 ```bash
-ln -s `realpath $0` ~/bin/flash > 2&>null #installs this script as executable 'flash'
+ln -s `realpath $0` ~/bin/flash > 2&>/dev/null #installs this script as executable 'flash'
 ```
 
 # logging
