@@ -2,6 +2,13 @@
 title: Javascript
 ---
 
+## findIndex
+```js
+onImageClick(id) {
+    this.index = this.events.findIndex(event => event.id === id)
+}
+```
+
 ## Optional chaining (?.)
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining
 
