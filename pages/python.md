@@ -2,6 +2,11 @@
 title: Python
 ---
 
+## defaultdict
+```python
+my_dict = defaultdict(lambda: 0)
+```
+
 ## 
 ```python
 from ast import literal_eval as make_tuple
