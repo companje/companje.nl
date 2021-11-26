@@ -2,6 +2,13 @@
 title: Python
 ---
 
+## dictreader
+```
+f = open(f"data/file.csv", "r", encoding="utf-8-sig")
+reader = csv.DictReader(f, delimiter=',')
+data = [dict(d) for d in reader]
+f.close()
+```
 ## defaultdict
 ```python
 my_dict = defaultdict(lambda: 0)
