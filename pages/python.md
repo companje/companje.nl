@@ -7,7 +7,7 @@ title: Python
 my_dict = defaultdict(lambda: 0)
 ```
 
-## 
+## tuple
 ```python
 from ast import literal_eval as make_tuple
 (coords, text, conf) = make_tuple("[([[22, 15], [373, 15], [373, 89], [22, 89]], 'Aaldering =', 0.46745234890467213)]")
