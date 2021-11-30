@@ -2,6 +2,55 @@
 title: Apache 
 ---
 
+# create subdomain (bash script)
+```bash
+#!/bin/bash
+
+if [[ $# -eq 0 ]] ; then
+    echo 'Usage: sudo ./createSubdomain.sh subdomain.mysite.nl'
+    exit 0
+fi
+
+mkdir -p "/var/www/$1/public_html/"
+mkdir "/var/log/apache2/$1"
+
+chown rick:www-data "/var/www/$1/public_html/"
+
+conf=/etc/apache2/sites-available/$1.conf
+
+touch $conf
+
+echo "" > $conf
+echo "<VirtualHost *:80>" >> $conf
+echo "    ServerAdmin me@mysite.nl" >> $conf
+echo "    ServerName $1" >> $conf
+echo "    DocumentRoot /var/www/$1/public_html/" >> $conf
+echo "    ErrorLog /var/log/apache2/$1/error.log" >> $conf
+echo "    CustomLog /var/log/apache2/$1/access.log combined" >> $conf
+echo "</VirtualHost>" >> $conf
+
+echo "<Directory /var/www/$1/public_html/>" >> $conf
+echo "    Options Indexes FollowSymLinks" >> $conf
+echo "    AllowOverride All" >> $conf
+echo "    Require all granted" >> $conf
+echo "</Directory>" >> $conf
+
+a2ensite $1.conf
+
+apachectl configtest
+
+systemctl reload apache2
+
+
+rm ~/$1 #remove symbolic link
+
+ln -s /var/www/$1/public_html/  ~/$1
+
+echo $1 >> ~/$1/index.html
+
+sudo certbot -d $1
+```
+
 # SSLCertificateFile: file '/etc/letsencrypt/live/.....' does not exist or is empty
 Solution:
 ```bash
