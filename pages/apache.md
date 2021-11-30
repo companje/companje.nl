@@ -6,8 +6,6 @@ title: Apache
 ```bash
 #!/bin/bash
 
-# set -x
-
 if [[ $# -eq 0 ]] ; then
     echo 'Usage: sudo ./createSubdomain.sh subdomain.mysite.nl'
     exit 1
