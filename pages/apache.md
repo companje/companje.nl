@@ -6,10 +6,23 @@ title: Apache
 ```bash
 #!/bin/bash
 
+# set -x
+
 if [[ $# -eq 0 ]] ; then
     echo 'Usage: sudo ./createSubdomain.sh subdomain.mysite.nl'
-    exit 0
+    exit 1
 fi
+
+if [[ $1 != *.hualab.nl ]] ; then
+    echo 'Error: not a valid subdomain: $1'
+    exit 1
+fi
+
+if [ -d /var/www/$1 ]; then
+    echo "Error: already exists: $1"
+    exit 1
+fi
+
 
 mkdir -p "/var/www/$1/public_html/"
 mkdir "/var/log/apache2/$1"
@@ -42,10 +55,11 @@ apachectl configtest
 systemctl reload apache2
 
 
-rm ~/$1 #remove symbolic link. ln -s fails when already exists
+rm ~/$1 #remove symbolic link
+
 ln -s /var/www/$1/public_html/  ~/$1
 
-echo $1 >> ~/$1/index.html
+echo $1 > ~/$1/index.html
 
 sudo certbot -d $1
 ```
