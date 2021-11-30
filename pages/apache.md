@@ -42,8 +42,7 @@ apachectl configtest
 systemctl reload apache2
 
 
-rm ~/$1 #remove symbolic link
-
+rm ~/$1 #remove symbolic link. ln -s fails when already exists
 ln -s /var/www/$1/public_html/  ~/$1
 
 echo $1 >> ~/$1/index.html
