@@ -2,6 +2,11 @@
 title: Python
 ---
 
+## enumerate
+```python
+for img_index, img_file_name in enumerate(img_file_names):
+```
+
 ## dictreader
 ```python
 f = open(f"data/file.csv", "r", encoding="utf-8-sig")
