@@ -6,6 +6,7 @@ title: Bash
 (add this to .zshrc)
 ```bash
 alias github="open . -a \"Github Desktop\""
+alias code="open . -a \"Visual Studio Code\""
 ```
 
 # reload .zshrc
