@@ -11,6 +11,11 @@ if [[ $# -eq 0 ]] ; then
     exit 1
 fi
 
+if [ `id -u` -ne 0 ]; then
+    echo "Error: Please run this script with 'sudo'"
+    exit 1
+fi
+
 if [[ $1 != *.hualab.nl ]] ; then
     echo 'Error: not a valid subdomain: $1'
     exit 1
@@ -60,6 +65,7 @@ ln -s /var/www/$1/public_html/  ~/$1
 echo $1 > ~/$1/index.html
 
 sudo certbot -d $1
+
 ```
 
 # SSLCertificateFile: file '/etc/letsencrypt/live/.....' does not exist or is empty
