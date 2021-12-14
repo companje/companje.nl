@@ -2,6 +2,11 @@
 title: Processing
 ---
 
+# exit
+```java
+System.exit(1)
+```
+
 # replaceAll
 https://www.javatpoint.com/java-string-replaceall
 
