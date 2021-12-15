@@ -2,6 +2,9 @@
 title: Mac OSX
 ---
 
+# Add Quick Actions to Finder
+use Automator to create a new Quick Action. It is automatically added to the contextmenu in Finder.
+
 # launchctl as alternative for ps
 ```bash
 launchctl list | grep couchdb
