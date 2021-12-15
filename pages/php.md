@@ -2,6 +2,57 @@
 title: PHP
 ---
 
+# get objects in json
+```php
+function loadData() {
+  return json_decode(file_get_contents("data.json"));
+}
+
+function sendData($data) {
+  header("Content-type: application/json");
+  echo json_encode($data);
+}
+
+function getPersons() {
+  return loadData()->persons;
+}
+
+function getPerson($personId) { //main info of a person
+  $p = array_values(array_filter(getPersons(), function($item) use ($personId) { return $item->id == $personId; }));
+  if ($p) return $p[0];
+}
+
+function getEvents($personId) { //the events of a person
+  $events = loadData()->events;
+  return array_values(array_filter($events, function($item) use ($personId) { return $item->personId == $personId; }));
+}
+```
+
+# flight
+```php
+require 'vendor/autoload.php';
+
+//....
+
+Flight::route('/', function(){
+  echo '';
+});
+
+Flight::route('/persons', function(){
+  sendData(getPersons());
+});
+
+Flight::route('/persons/@personId', function($personId){
+  sendData(getPerson($personId));
+});
+
+Flight::route('/persons/@personId/events', function($personId){
+  sendData(getEvents($personId));
+});
+
+Flight::start();
+```
+
 # php frameworks
 - https://flightphp.com/
 - https://www.slimframework.com/
