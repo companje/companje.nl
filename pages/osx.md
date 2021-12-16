@@ -595,8 +595,7 @@ nog uitzoeken: launchd en lingon
 [[http://hints.macworld.com/article.php?story=20090903085255430|link]]
 
 # swap alt+windows key on external keyboard
-* [[http://www.gearhack.com/Forums/DisplayComments.php?file=Computer/Mac%20OS/Swapping_the_Windows_Key_and_the_Alt_Key_on_Mac_OS_X|link]]
-* http://www.bohemianalps.com/blog/2008/x11-control2command/
+"If your keyboard has Alt and Windows mixed up relative to that space bar, you can remap them in System Preferences. Go to System Preferences > Keyboard & Mouse and click Modifier Keys... Use the following dialog to map your keys into place. Often this involves nothing more than switching the Command and Option keys"
 
 # searching in files recursively
 ```bash
