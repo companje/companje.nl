@@ -2,6 +2,9 @@
 title: OpenCV
 ---
 
+# sample images in opencv github repo
+https://github.com/opencv/opencv/tree/master/samples/data
+
 # see also
 [[openFrameworks]], [[Processing]]
 
