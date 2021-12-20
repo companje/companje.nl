@@ -2,6 +2,16 @@
 title: OpenCV
 ---
 
+# set focus to image window opencv
+```python
+cv2.namedWindow('img',cv2.WINDOW_NORMAL)
+cv2.setWindowProperty('img',cv2.WND_PROP_FULLSCREEN,cv2.WINDOW_FULLSCREEN)
+cv2.setWindowProperty('img',cv2.WND_PROP_FULLSCREEN,cv2.WINDOW_NORMAL)
+cv2.imshow('img', img)
+cv2.waitKey()
+cv2.destroyWindow('img')
+```
+
 # sample images in opencv github repo
 https://github.com/opencv/opencv/tree/master/samples/data
 
