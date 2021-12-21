@@ -3,6 +3,9 @@ title: SublimeText
 ---
 A light-weight full feature text/code editor for OSX, Windows and Linux
 
+#  
+~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+
 # undo on all open files
 ```lua
 len([v.run_command("revert") for v in window.views()])
