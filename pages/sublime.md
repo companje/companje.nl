@@ -3,9 +3,10 @@ title: SublimeText
 ---
 A light-weight full feature text/code editor for OSX, Windows and Linux
 
-# config files including build-system
+# config files including build-system OSX
 ```
-~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+escaped: ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
+not escaped: ~/Library/Application Support/Sublime Text 3/Packages/User
 ```
 
 # undo on all open files
