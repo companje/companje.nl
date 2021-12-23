@@ -2,6 +2,12 @@
 title: Python
 ---
 
+## which python?
+```
+ls -l /usr/local/bin/python3
+ls -l /usr/local/bin/python
+```
+
 ## create image tiles / sprite sheet with python, opencv and numpy
 ```python
 import cv2
