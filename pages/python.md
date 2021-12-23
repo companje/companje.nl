@@ -2,6 +2,23 @@
 title: Python
 ---
 
+## create an empty image
+```python
+import cv
+import numpy as np
+
+height=1000
+width=1000
+
+img = np.zeros((height,width,3), np.uint8)
+
+img[:,0:width//2] = (255,0,0)      # (B, G, R)
+img[:,width//2:width] = (0,255,0)
+
+cv2.imshow("test", img)
+cv2.waitKey()
+```
+
 ## info about current python and system settings
 ```python
 import sys
