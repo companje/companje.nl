@@ -2,6 +2,42 @@
 title: Python
 ---
 
+## create image tiles / sprite sheet with python, opencv and numpy
+```python
+import cv2
+import numpy as np
+
+margin=5
+cols=5
+rows=10
+
+stamp = cv2.imread("50p.jpeg")
+stamp_h,stamp_w = stamp.shape[:2]
+
+height=stamp_h*rows + (margin*rows+1)
+width=stamp_w*cols + (margin*cols+1)
+
+img = np.ones((height,width,3), np.uint8) * 255 # white
+
+for row in range(0,rows):
+  for col in range(0,cols):
+    print(row,col)
+
+    x=col*stamp_w + (col+1)*margin
+    y=row*stamp_h + (row+1)*margin
+
+    img[y:y+stamp_h,x:x+stamp_w] = stamp
+
+cv2.imwrite("sheet.jpg", img)
+
+
+cv2.namedWindow("test",cv2.WINDOW_NORMAL)
+cv2.setWindowProperty("test",cv2.WND_PROP_FULLSCREEN,cv2.WINDOW_FULLSCREEN)
+cv2.setWindowProperty("test",cv2.WND_PROP_FULLSCREEN,cv2.WINDOW_NORMAL)
+cv2.imshow("test", img)
+cv2.waitKey()
+```
+
 ## create an empty image
 ```python
 import cv
