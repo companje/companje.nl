@@ -2,6 +2,14 @@
 title: Python
 ---
 
+## info about current python and system settings
+```
+import sys
+print(sys.version)
+print(sys.executable)
+print(sys.path)
+```
+
 ## enumerate
 ```python
 for img_index, img_file_name in enumerate(img_file_names):
