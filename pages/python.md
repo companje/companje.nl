@@ -84,7 +84,8 @@ f.close()
 
 ## defaultdict
 ```python
-my_dict = defaultdict(lambda: 0)
+my_dict = defaultdict(lambda: 0)   # maakt een dict met default waarde 0 aan voor items
+other_dict = defaultdict(list)     # maakt een dict met default waarde een list []
 ```
 
 ## tuple
