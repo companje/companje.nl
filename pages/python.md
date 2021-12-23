@@ -2,11 +2,13 @@
 title: Python
 ---
 
-## problem with scipy dependency
+## problem with scipy dependency when installing easyocr through pip
 it helped to install scipy using brew instead of pip
 ```
 brew install scipy
+pip install easyocr
 ```
+
 
 ## which python?
 ```
