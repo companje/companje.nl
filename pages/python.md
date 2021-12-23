@@ -2,6 +2,12 @@
 title: Python
 ---
 
+## problem with scipy dependency
+it helped to install scipy using brew instead of pip
+```
+brew install scipy
+```
+
 ## which python?
 ```
 ls -l /usr/local/bin/python3
