@@ -3,7 +3,7 @@ title: Python
 ---
 
 ## info about current python and system settings
-```
+```python
 import sys
 print(sys.version)
 print(sys.executable)
