@@ -2,6 +2,9 @@
 title: Convert images
 ---
 
+# 16bit grayscale to separate 8 bit color channels (with Python)
+https://gist.github.com/companje/85e94ea96629ddaf1219f137b225fd69
+
 # combine images vertically and create filename with 0's padding
 ```bash
 folder="folder/"
