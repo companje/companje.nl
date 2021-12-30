@@ -1,3 +1,20 @@
+## everything that has as location a quadrangle instance EXCLUDE everything with a lunar coordinate
+```sparql
+SELECT distinct ?item ?itemLabel ?itemDescription ?typeLabel ?pic ?dt ?lq ?lqLabel WHERE {
+  ?lq wdt:P31 wd:Q56551180 .  # instance of quadrangle on the moon
+  ?item wdt:P276 ?lq  .       # anything that has as location a quadrangle instance 
+  ?item wdt:P31 ?type .
+  OPTIONAL { ?item wdt:P18 ?pic } .
+  OPTIONAL { ?item wdt:P619 ?dt } .
+  
+  MINUS { SELECT ?item WHERE { ?item wdt:P8981 ?coord . } } # EXCLUDE everything with a lunar coordinate
+  
+  FILTER (?type NOT IN ( wd:Q13406463 ) )  # excude Wikipedia articles
+
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en" . }
+}
+```
+
 ## CSV bestand met aantal keer dat een Wikidata item per jaar voorkomt in de dataset van HUA
 Onderstaande loop voert meerdere queries uit
 (in blokken van 10.000 resultaten) uit op de triplestore van Het Utrechts Archief.
