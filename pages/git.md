@@ -2,6 +2,13 @@
 title: Git
 ---
 
+# github cli
+```bash
+brew install gh
+gh auth login
+gh repo clone USER/REPO
+```
+
 # git optimized for github
 https://hub.github.com
 
