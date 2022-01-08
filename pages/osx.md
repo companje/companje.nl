@@ -2,6 +2,11 @@
 title: Mac OSX
 ---
 
+# networkQuality
+```bash
+networkQuality
+```
+
 # How to see hidden files in macOS
 open the Finder and press Command + Shift +
 
