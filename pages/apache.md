@@ -17,7 +17,7 @@ if [ `id -u` -ne 0 ]; then
 fi
 
 if [[ $1 != *.hualab.nl ]] ; then
-    echo 'Error: not a valid subdomain: $1'
+    echo 'Error: not a valid subdomain: $1 on hualab.nl'
     exit 1
 fi
 
