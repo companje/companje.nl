@@ -7,6 +7,7 @@ title: Bash
 ```bash
 alias github="open . -a \"Github Desktop\""
 alias code="open . -a \"Visual Studio Code\""
+alias subl="open . -a \"Sublime Text\""
 ```
 
 # reload .zshrc
