@@ -4,7 +4,7 @@ title: Sanyo MBC-550/555
 
 ## ms-dos int services
 * http://spike.scu.edu.au/~barry/interrupts.html#ah57
-* 
+
 ## debug search
 ```bat
 debug basic.exe
