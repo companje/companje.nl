@@ -21,6 +21,7 @@ debug BANDIT.EXE
 
 ## samdisk
 https://simonowen.com/samdisk/
+(samdisk-388-osx works on Macbook Air M1)
 ```bash
 ./samdisk IMAGE.td0  /Volumes/FLASHFLOPPY/IMAGE.dsk
 ```
