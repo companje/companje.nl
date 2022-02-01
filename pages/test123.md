@@ -6,4 +6,4 @@ title: test123
 ![Engelbart|50](https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg)
 
 ## test4
-![[Pasted image 20220202003401.png]]
+![](Pasted%20image%2020220202003601.png)
