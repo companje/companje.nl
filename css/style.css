@@ -90,3 +90,6 @@ body {
   margin-bottom: 0px;
 }
   
+.card-body img {
+  max-width: 500px;
+}
