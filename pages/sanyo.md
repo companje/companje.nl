@@ -3,7 +3,7 @@ title: Sanyo MBC-550/555
 ---
 
 ## logistic map
-<img width="500" src="https://github.com/companje/companje.nl/blob/c791f06b5dfc07868881dcf87eb3a422f8693004/img/retrocomputing/logistic-map.jpg">
+<img width="500" src="/img/retrocomputing/logistic-map.jpg">
 
 ## ms-dos int services
 * http://spike.scu.edu.au/~barry/interrupts.html#ah57
