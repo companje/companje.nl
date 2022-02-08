@@ -2,6 +2,18 @@
 title: Python
 ---
 
+## semi transparent rectangle opencv python
+```python
+def rechthoek(img, leftTop, rightBottom):
+	(x1, y1) = leftTop
+	(x2, y2) = rightBottom
+	sub_img = img[y1:y2, x1:x2]
+	white_rect = np.ones(sub_img.shape, dtype=np.uint8)
+	white_rect[:,:] = (255,255,0)
+	res = cv2.addWeighted(sub_img, 0.8, white_rect, 0.2, 1.0)
+	img[y1:y2, x1:x2] = res
+```
+
 ## problem with scipy dependency when installing easyocr through pip
 it helped to install scipy using brew instead of pip
 ```
