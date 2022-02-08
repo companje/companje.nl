@@ -8,7 +8,7 @@ networkQuality
 ```
 
 # How to see hidden files in macOS
-open the Finder and press Command + Shift +
+open the Finder and press Command + Shift + .
 
 # Add Quick Actions to Finder
 use Automator to create a new Quick Action. It is automatically added to the contextmenu in Finder.
