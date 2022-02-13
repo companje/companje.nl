@@ -2,6 +2,12 @@
 title: Processing
 ---
 
+# join integer array to comma separated string
+```java
+int p[] = {downX,downY,mouseX-downX,mouseY-downY}; 
+println(join(nf(p, 0),","));
+```
+
 # exit
 ```java
 System.exit(1)
