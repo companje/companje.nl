@@ -2,6 +2,11 @@
 title: Python
 ---
 
+## recursive filelist by type
+```python
+file_paths = glob.glob(folder + '/**/*.jpg', recursive=True)
+```
+
 ## semi transparent rectangle opencv python
 ```python
 def rechthoek(img, leftTop, rightBottom, color=(255,255,0), opacity=.2):
