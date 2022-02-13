@@ -2,6 +2,11 @@
 title: Python
 ---
 
+## get filename from path
+```python
+file_name = os.path.basename(file_path)
+```
+
 ## recursive filelist by type
 ```python
 file_paths = glob.glob(folder + '/**/*.jpg', recursive=True)
