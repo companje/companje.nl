@@ -2,6 +2,12 @@
 title: Python
 ---
 
+## get key and value for the items in a dict
+```python
+for k,v in scores.items():
+  print(k,v)
+```
+
 ## get the object with the max value in a dict
 ```python
 model = max(scores, key = scores.get) 
