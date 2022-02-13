@@ -2,6 +2,13 @@
 title: Python
 ---
 
+## get the object with the max value in a dict
+```python
+model = max(scores, key = scores.get) 
+# equivalent to: 
+model = max(scores, key = lambda k : scores.get(k))  
+```
+
 ## get filename from path
 ```python
 file_name = os.path.basename(file_path)
