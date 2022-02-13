@@ -2,6 +2,11 @@
 title: Python
 ---
 
+## inline print for each result
+```python
+[ print(result) for result in results ]
+```
+
 ## get key and value for the items in a dict
 ```python
 for k,v in scores.items():
