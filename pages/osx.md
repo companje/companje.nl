@@ -2,6 +2,11 @@
 title: Mac OSX
 ---
 
+# recursively remove .DS_Store files
+```bash
+find . -name '.DS_Store' -type f -delete
+```
+
 # networkQuality
 ```bash
 networkQuality
