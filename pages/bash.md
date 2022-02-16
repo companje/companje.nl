@@ -2,6 +2,11 @@
 title: Bash
 ---
 
+# get size of all PNG's recursively
+```bash
+find . -name '*.png' -exec du -sch {} + | tail -1
+```
+
 # open Github Desktop from command line with current folder
 (add this to .zshrc)
 ```bash
