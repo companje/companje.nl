@@ -2,7 +2,12 @@
 title: Bash
 ---
 
-# get size of all PNG's recursively
+# get number of files per extension recursively
+```bash
+find . -type f | rev | cut -d. -f1 | rev  | tr '[:upper:]' '[:lower:]' | sort | uniq -c | sort -rn
+```
+
+# get size of all PNG's or other filetype recursively
 ```bash
 find . -name '*.png' -exec du -sch {} + | tail -1
 ```
