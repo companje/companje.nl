@@ -2,9 +2,6 @@
 title: Python
 ---
 
-## test
-test
-
 ## inline print for each result
 ```python
 [ print(result) for result in results ]
