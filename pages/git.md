@@ -2,6 +2,9 @@
 title: Git
 ---
 
+# git lfs
+https://git-lfs.github.com/
+
 # permanently remove a file from repo and history
 ```bash
 git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch FILENAME' --prune-empty --tag-name-filter cat -- --all
