@@ -2,6 +2,12 @@
 title: Python
 ---
 
+## python csv 'list' reader
+```python
+file = open("file.csv")
+reader = csv.reader(file)
+```
+
 ## inline print for each result
 ```python
 [ print(result) for result in results ]
