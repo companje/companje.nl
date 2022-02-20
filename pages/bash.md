@@ -4,7 +4,7 @@ title: Bash
 
 # find folders recursively ending with '.build' and delete them
 ```bash
-find 2012 -type d -name "*.build" -delete
+find 2012 -type d -name "*.build" -exec rm -rf {} +
 ```
 
 # get number of files per extension recursively
