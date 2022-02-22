@@ -2,6 +2,28 @@
 title: Python
 ---
 
+## combine 2 cvs (database tables) to 1 json file with hierarchy
+```
+#!/usr/bin/env python3
+
+import csv, json
+
+uitvoergegevens = { row["ID"]:row for row in csv.DictReader(open("uitvoergegevens.csv", encoding="cp1252")) }
+uitvoervelden = { row["ID"]:row for row in csv.DictReader(open("uitvoervelden.csv", encoding="cp1252")) }
+
+for row in uitvoervelden.values():
+
+	ugn = uitvoergegevens[row["UGN_ID"]]
+
+	if "uitvoervelden" not in ugn:
+		ugn["uitvoervelden"] = []
+	else:
+		ugn["uitvoervelden"].append(row)
+
+json.dump(uitvoergegevens, open("result.json", "w"), indent=2)
+```
+
+
 ## read CSV file as dictionary with primary key
 ```python
 uitvoergegevens = { row["ID"]:row for row in csv.DictReader(open("uitvoergegevens.csv", encoding="cp1252")) }
