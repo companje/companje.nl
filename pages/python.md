@@ -2,7 +2,7 @@
 title: Python
 ---
 
-## read CSV file as dictionary by key
+## read CSV file as dictionary with primary key
 ```python
 uitvoergegevens = { row["ID"]:row for row in csv.DictReader(open("uitvoergegevens.csv", encoding="cp1252")) }
 uitvoervelden = { row["ID"]:row for row in csv.DictReader(open("uitvoervelden.csv", encoding="cp1252")) }
