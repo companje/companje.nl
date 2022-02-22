@@ -3,7 +3,7 @@ title: Python
 ---
 
 ## combine 2 cvs (database tables) to 1 json file with hierarchy
-```
+```python
 #!/usr/bin/env python3
 
 import csv, json
