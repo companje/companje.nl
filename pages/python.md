@@ -2,6 +2,12 @@
 title: Python
 ---
 
+## read CSV file as dictionary by key
+```python
+uitvoergegevens = { row["ID"]:row for row in csv.DictReader(open("uitvoergegevens.csv", encoding="cp1252")) }
+uitvoervelden = { row["ID"]:row for row in csv.DictReader(open("uitvoervelden.csv", encoding="cp1252")) }
+```
+
 ## csv2xlsx - csv to excel
 ```python
 #!/usr/bin/env python3
