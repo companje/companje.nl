@@ -206,6 +206,7 @@ f.close()
 
 ## defaultdict
 ```python
+from collections import defaultdict
 my_dict = defaultdict(lambda: 0)   # maakt een dict met default waarde 0 aan voor items
 other_dict = defaultdict(list)     # maakt een dict met default waarde een list []
 ```
