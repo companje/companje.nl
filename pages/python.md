@@ -2,6 +2,34 @@
 title: Python
 ---
 
+## find broken characters with context
+```python
+#!/usr/bin/env python3
+
+import re,csv
+from collections import defaultdict
+from operator import itemgetter
+
+results = defaultdict(list)
+
+for line in open("vreemde_tekens2-gemaakt-via-grep-commando.txt").readlines():
+
+    filepath = line.split(':')[0].strip()
+    data = "".join(line.split(':')[1:])
+
+    matches = re.findall(r'([a-zA-Z�]+)(�)([a-zA-Z�]+)',data)
+
+    for m in matches:
+        s = "".join(m)
+        results[s].append("http://test.documentatie.org/data/wp/"+filepath)
+
+writer = csv.writer(open("result.csv","w"))
+
+for k,v in results.items():
+    k2 = re.sub(r"�","",k)
+    writer.writerow([k,k2,v[0],len(v)])
+```
+
 ## find hexstring in files recursively
 ```python
 #!/usr/bin/env python3
