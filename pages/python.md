@@ -2,6 +2,24 @@
 title: Python
 ---
 
+## find hexstring in files recursively
+```python
+#!/usr/bin/env python3
+
+import glob, re
+
+files = glob.glob('../test.documentatie.org-met-lfs/test.documentatie.org/data/wp/**/*.htm*', recursive=True)
+
+for filename in files:
+    
+    with open(filename, "rb") as f:
+
+        f1 = re.search(b'\xEF\xBF\xBD', f.read())
+
+        if f1:
+            print(filename,"\t",f1)
+```
+
 ## combine 2 cvs (database tables) to 1 json file with hierarchy
 ```python
 #!/usr/bin/env python3
