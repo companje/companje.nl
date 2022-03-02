@@ -2,6 +2,22 @@
 title: PHP
 ---
 
+# ODBC
+```php
+ini_set('display_errors', 'On');
+
+$mdbFilename="db6.mdb";
+$driver="MDBTools";
+//$connection = odbc_connect("odbc:Driver=MDBTools;Dbq=$mdbFilename;", "", "");
+
+$dataSourceName = "odbc:Driver=$driver;DBQ=$mdbFilename;";
+$connection = new \PDO($dataSourceName);
+
+$query="select * from afbeelding";
+$result = $connection->query($query)->fetchAll(\PDO::FETCH_ASSOC);
+print_r($result);
+```
+  
 # get objects in json
 ```php
 function loadData() {
