@@ -2,6 +2,11 @@
 title: Bash
 ---
 
+# show hex code(s) of character
+```bash
+echo -n "é" | od -A n -t x1
+```
+
 # find all words in files containing one or more � characters
 ```bash
 grep -Gonr [0-9a-zA-Z�]*�[0-9a-zA-Z�]* | tr \: \;
