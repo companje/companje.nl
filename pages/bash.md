@@ -2,7 +2,7 @@
 title: Bash
 ---
 
-# find occurances of � in files
+# find all words in files containing one or more � characters
 ```bash
 grep -Gonr [0-9a-zA-Z�]*�[0-9a-zA-Z�]* | tr \: \;
 ```
