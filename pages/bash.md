@@ -2,6 +2,11 @@
 title: Bash
 ---
 
+# find occurances of � in files
+```bash
+grep -Gonr [0-9a-zA-Z�]*�[0-9a-zA-Z�]* | tr \: \;
+```
+
 # find folders recursively ending with '.build' and delete them
 ```bash
 find 2012 -type d -name "*.build" -exec rm -rf {} +
