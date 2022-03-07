@@ -3,7 +3,7 @@ title: Python
 ---
 
 ## maak spreadsheet met flexvelden als kolommen per archiefeenheid
-```
+```python
 #!/usr/bin/env python3
 import csv,re
 from collections import defaultdict
