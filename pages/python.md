@@ -2,6 +2,36 @@
 title: Python
 ---
 
+## replace broken words based on lookup table
+```python
+#!/usr/bin/env python3
+
+import re,csv
+from collections import defaultdict
+import os.path
+
+reader = csv.DictReader(open("Gekke tekens.csv"), delimiter=',')
+lijst = [dict(d) for d in reader]
+
+for line in open("vreemde_tekens2-gemaakt-via-grep-commando.txt").readlines():
+
+    filepath = "../test.documentatie.org-met-lfs/test.documentatie.org/data/wp/"+line.split(':')[0].strip()
+    basename = os.path.basename(filepath)
+
+    if not os.path.isfile(filepath):
+        print("NOT FOUND",filepath)
+        continue
+
+    with open(filepath) as infile:
+        data = infile.read()
+        
+        for li in lijst:
+            data = data.replace(li["fout"],li["gecorrigeerd"])        
+
+        with open("tmp/"+basename,'w',encoding="utf-8") as outfile:
+            outfile.write(data)
+```
+	
 ## find broken characters with context
 ```python
 #!/usr/bin/env python3
