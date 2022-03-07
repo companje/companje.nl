@@ -2,6 +2,46 @@
 title: Python
 ---
 
+## maak spreadsheet met flexvelden als kolommen per archiefeenheid
+```
+#!/usr/bin/env python3
+import csv,re
+from collections import defaultdict
+
+filename = "alle-personen.csv"
+output_filename = "output.csv"
+fixed = ["ID","GUID","CODE","BESTANDSNAAM"]
+flex_key = "PROMPT"
+flex_value = "WAARDE"
+
+header = fixed.copy()
+items = defaultdict(dict)
+
+for row in csv.DictReader(open(filename)):
+
+	row["WAARDE"] = row["WAARDE"].replace("\n"," ") # replace line breaks by spaces
+
+	# create or get item
+	item = items[row["ID"]]
+
+	# add fixed fields
+	for k,v in row.items():
+		if k in fixed:
+			item[k] = v
+
+	# add flex fields
+	item[row[flex_key]] = row[flex_value]
+		
+	# update header
+	header.append(row[flex_key]) if row[flex_key] not in header else None
+```
+
+# output to csv
+writer = csv.DictWriter(open(output_filename,"w"), fieldnames=header) #, delimiter=',', quoting=csv.QUOTE_ALL, dialect='excel')
+writer.writeheader()
+writer.writerows(items.values())
+
+
 ## replace broken words based on lookup table
 ```python
 #!/usr/bin/env python3
