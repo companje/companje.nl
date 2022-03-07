@@ -34,13 +34,12 @@ for row in csv.DictReader(open(filename)):
 		
 	# update header
 	header.append(row[flex_key]) if row[flex_key] not in header else None
-```
 
 # output to csv
 writer = csv.DictWriter(open(output_filename,"w"), fieldnames=header) #, delimiter=',', quoting=csv.QUOTE_ALL, dialect='excel')
 writer.writeheader()
 writer.writerows(items.values())
-
+```
 
 ## replace broken words based on lookup table
 ```python
