@@ -5,7 +5,10 @@ title: Python
 ## parse and format date
 ```python
 import datetime
-dt = datetime.datetime.strptime(person["bdate"], '%d-%m-%Y').strftime('%Y-%m-%d')
+try:
+  isodate = datetime.datetime.strptime(datum, '%d-%m-%Y').strftime('%Y-%m-%d')
+except ValueError:
+  pass # just skip invalid/incomplete dates
 ```
 
 ## maak spreadsheet met flexvelden als kolommen per archiefeenheid
