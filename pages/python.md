@@ -4,6 +4,7 @@ title: Python
 
 ## parse and format date
 ```python
+import datetime
 dt = datetime.datetime.strptime(person["bdate"], '%d-%m-%Y').strftime('%Y-%m-%d')
 ```
 
