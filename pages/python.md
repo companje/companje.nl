@@ -2,6 +2,11 @@
 title: Python
 ---
 
+## parse and format date
+```python
+dt = datetime.datetime.strptime(person["bdate"], '%d-%m-%Y').strftime('%Y-%m-%d')
+```
+
 ## maak spreadsheet met flexvelden als kolommen per archiefeenheid
 ```python
 #!/usr/bin/env python3
