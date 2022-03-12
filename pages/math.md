@@ -2,6 +2,9 @@
 title: Math
 ---
 
+# Solve algrebra equations step by step
+https://www.mathpapa.com/algebra-calculator.html
+
 # Grafiek calculator
 https://www.desmos.com/calculator/xykhidbkbg
 
