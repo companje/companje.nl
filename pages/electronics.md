@@ -3,7 +3,7 @@ title: Electronics
 ---
 
 # Weerstand in Serie en Parallel
-```java
+```js
 void setup() {
   int weerstanden[] = { 470, 1200, 33, 1800};
   println("parallel: " + weerstandParallel(weerstanden) + " ohm");
