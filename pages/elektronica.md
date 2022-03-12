@@ -2,4 +2,4 @@
 title: Elektronica
 ---
 
-see [[electronics]](electronics)
+see [electronics](electronics)
