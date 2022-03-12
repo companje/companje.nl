@@ -4,6 +4,27 @@ title: Electronics
 
 see [[elektronica]]
 
+# Weerstand in Serie en Parallel
+```
+void setup() {
+  int weerstanden[] = { 470, 1200, 33, 1800};
+  println("parallel: " + weerstandParallel(weerstanden) + " ohm");
+  println("serie: " + weerstandSerie(weerstanden) + " ohm");
+}
+
+int weerstandSerie(int[] rr) {
+  int sum = 0;
+  for (int r : rr) sum+=r;
+  return sum;
+}
+
+int weerstandParallel(int[] rr) {
+  float sum = 0;
+  for (int r : rr) sum+=1./r;
+  return round(1/sum);
+}
+```
+
 # Capacitors
 *[[https://www.youtube.com/watch?feature=player_embedded&v=M2tJpEMIkWM|waarom je bij elke chip een klein condensatortje moet plaatsen]]
 
