@@ -5,7 +5,7 @@ title: Electronics
 see [[elektronica]]
 
 # Weerstand in Serie en Parallel
-```
+```java
 void setup() {
   int weerstanden[] = { 470, 1200, 33, 1800};
   println("parallel: " + weerstandParallel(weerstanden) + " ohm");
