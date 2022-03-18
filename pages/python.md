@@ -6,6 +6,8 @@ title: Python
 ```python
 #!/usr/bin/env python3
 
+# on Sanyo: type file.asm > aux
+
 import serial
 
 ser = serial.Serial('/dev/tty.usbmodem1301',1200)
