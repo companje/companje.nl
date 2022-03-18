@@ -2,6 +2,21 @@
 title: Python
 ---
 
+## serial
+```python
+#!/usr/bin/env python3
+
+import serial
+
+ser = serial.Serial('/dev/tty.usbmodem1301',1200)
+
+while True:
+    x = ser.read()
+    print(x.decode('ascii'), end="")
+
+ser.close()
+```
+
 ## parse and format date
 ```python
 import datetime
