@@ -2,8 +2,11 @@
 title: Sanyo MBC-550/555
 ---
 
-## 10 print
-test
+## Sanyo MBC550 - John Elliott 27 January 2016
+https://www.seasip.info/VintagePC/sanyo.html#serhw
+
+## int 14h Serial
+* https://www.plantation-productions.com/Webster/www.artofasm.com/DOS/ch13/CH13-3.html#HEADING3-1
 
 ## ms-dos int services
 * http://spike.scu.edu.au/~barry/interrupts.html#ah57
