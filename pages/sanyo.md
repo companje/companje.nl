@@ -5,7 +5,7 @@ title: Sanyo MBC-550/555
 ## Sanyo MBC550 - John Elliott 27 January 2016
 * https://www.seasip.info/VintagePC/sanyo.html#serhw
 
-## int 14h Serial
+## int 14h Serial, int 16h keyboard etc
 * https://www.plantation-productions.com/Webster/www.artofasm.com/DOS/ch13/CH13-3.html#HEADING3-1
 
 ## ms-dos int services
