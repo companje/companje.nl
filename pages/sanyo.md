@@ -2,6 +2,9 @@
 title: Sanyo MBC-550/555
 ---
 
+## interrupt controller info
+* https://en.wikibooks.org/wiki/X86_Assembly/Programmable_Interrupt_Controller
+
 ## Sanyo MBC550 - John Elliott 27 January 2016
 * https://www.seasip.info/VintagePC/sanyo.html#serhw
 
