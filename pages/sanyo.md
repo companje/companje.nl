@@ -4,6 +4,9 @@ title: Sanyo MBC-550/555
 
 <img src="https://user-images.githubusercontent.com/156066/160270847-03ebfc54-547e-4a9a-813f-6114f2f6213b.jpg" alt="Sanyo-MBC-555-Rick-Companje" width="400" align="right">
 
+## libdsk
+nog onderzoeken: http://www.seasip.info/Unix/LibDsk/
+
 ## debug
 ```
 -l 100 1 0 1  # load onto address 100h from 2nd drive (1) the first sector (0) and only one sector
