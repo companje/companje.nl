@@ -6,7 +6,7 @@ title: Sanyo MBC-550/555
 
 ## debug
 ```
--l 100 1 0 1  # load onto address 100 from 2nd drive (1) the first sector (0) and only one sector
+-l 100 1 0 1  # load onto address 100h from 2nd drive (1) the first sector (0) and only one sector
 -n A:tmp.com
 -rcx
 100
