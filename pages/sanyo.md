@@ -4,6 +4,16 @@ title: Sanyo MBC-550/555
 
 <img src="https://user-images.githubusercontent.com/156066/160270847-03ebfc54-547e-4a9a-813f-6114f2f6213b.jpg" alt="Sanyo-MBC-555-Rick-Companje" width="400" align="right">
 
+## debug
+```
+-l 100 1 0 1  # load onto address 100 from 2nd drive (1) the first sector (0) and only one sector
+-n A:tmp.com
+-rcx
+100
+-w
+writing 0200h bytes (512 bytes)
+```
+
 ## interrupt controller info
 * https://en.wikibooks.org/wiki/X86_Assembly/Programmable_Interrupt_Controller
 
