@@ -2,6 +2,8 @@
 title: Sanyo MBC-550/555
 ---
 
+![Sanyo-MBC-555-Rick-Companje](https://user-images.githubusercontent.com/156066/160270847-03ebfc54-547e-4a9a-813f-6114f2f6213b.jpg)
+
 ## interrupt controller info
 * https://en.wikibooks.org/wiki/X86_Assembly/Programmable_Interrupt_Controller
 
