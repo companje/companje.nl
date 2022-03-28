@@ -2,6 +2,13 @@
 title: Python
 ---
 
+## defaultdict with numbers
+```python
+aets = defaultdict(lambda: 0)
+for ....
+  aets[row["CODE"]] += 1
+```
+
 ## serial
 ```python
 #!/usr/bin/env python3
