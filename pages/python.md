@@ -2,6 +2,25 @@
 title: Python
 ---
 
+## parallel
+```python
+from joblib import Parallel, delayed
+
+def DoSomething(filename, param2, param2):
+  #...
+
+results = Parallel(n_jobs=8)(
+  delayed(DoSomething)(filename, param2, param3)
+  for filename in tqdm(filenames)
+)
+```
+
+## get number of processor cores
+```python
+import psutil as psutil
+print(psutil.cpu_count(logical=True))
+```
+
 ## progress bar
 ```python
 from tqdm import tqdm
