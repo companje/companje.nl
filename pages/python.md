@@ -2,6 +2,16 @@
 title: Python
 ---
 
+## request
+```python
+from urllib.request import urlopen
+import urllib.parse
+#...
+request = urlopen(url)
+data = json.load(request)
+json.dump(data, open(cache_filename,"w"), indent=4)
+```
+
 ## defaultdict with numbers
 ```python
 aets = defaultdict(lambda: 0)
