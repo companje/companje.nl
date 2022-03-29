@@ -2,6 +2,14 @@
 title: Python
 ---
 
+## progress bar
+```python
+from tqdm import tqdm
+#...
+for filename in tqdm(filenames)
+  #...
+```
+
 ## request
 ```python
 from urllib.request import urlopen
