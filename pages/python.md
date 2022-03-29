@@ -2,7 +2,7 @@
 title: Python
 ---
 
-## parallel
+## parallel processing
 ```python
 from joblib import Parallel, delayed
 
