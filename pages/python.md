@@ -2,6 +2,9 @@
 title: Python
 ---
 
+## unieke waarden per kolom in csv
+* zie gist: https://gist.github.com/companje/72ddf8f4ddba271580af2a55f62bcfad
+ 
 ## parallel processing
 ```python
 from joblib import Parallel, delayed
