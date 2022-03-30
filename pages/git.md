@@ -2,6 +2,11 @@
 title: Git
 ---
 
+# git diff ignore line endings
+```bash
+git diff --ignore-cr-at-eol
+```
+
 # git lfs
 https://git-lfs.github.com/
 
