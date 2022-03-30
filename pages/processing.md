@@ -2,6 +2,71 @@
 title: Processing
 ---
 
+# Processing port of https://tixy.land
+```java
+void setup() {
+  size(512, 512);
+  frameRate(30);
+}
+
+void draw() {
+  background(0);
+  scale(2);
+
+  float t = frameCount*.025;
+  for (int y=0, i=0; y<16; y++) {
+    for (int x=0; x<16; x++, i++) {
+
+      float c = sin(y/8.+t);
+      //float c = random(1)<.1 ? 1 : 0;
+      //float c = random(1);
+      //float c = sin(t);
+      //float c = i/256.;
+      //float c = x/16.;
+      //float c = y/16.;
+      //float c = y-7.5;
+      //float c = y-t*4;
+      //int w[] = {-1,0,1}; float c = w[i%3];
+      //float c = sin(t-sqrt(pow(x-7.5,2)+pow(y-6,2)));
+      //float c = sin(y/8.+t);
+      //float c = y-x;
+      //float c = ((y>x)&&(14-x<y)) ? 1 : 0;
+      //float c = i%4 - y%4;
+      //float c = (x%4!=0 && y%4!=0) ? 1 : 0;
+      //float c = (x>3 & y>3 & x<12 & y<12) ? 1 : 0;
+      //float c = (x>t & y>t & x<15-t & y<15-t) ? 1 : 0;
+      //float c = (y-6) * (x-6);
+      //float c = (int(y-4*t)|0) * (int(x-2-t)|0);
+      //float c = int(4*t)&i&x&y;
+      //float c = ((int(t*10) & int(1<<x))>0 && y==8) ? 1 : 0;
+      //float c = random(2)-1;
+      //float c = cos(t+i+x*y);
+      //float c = sin(x/2.) - sin(x-t) - y+6;
+      //float c = (x-8)*(y-8) - sin(t)*64;
+      //float c = -.4/(sqrt(pow(x-t%10,2)+pow(y-t%8,2))-t%2*9);
+      //float c = sin(t-sqrt(x*x+y*y));
+      //float c = y-t*3+9+3*cos(x*3-t)-5*sin(x*7);
+      //float c = 1/32.*tan(t/64*x*tan(i-x));
+      //float c = (x==0 | x==15 | y==0 | y==15) ? 1 : 0;
+      //float c = sin(2*atan((y-7.5)/(x-7.5))+5*t);
+      //float c = (x-y)/24. - sin(t);
+      //float c = sin(t*5) * tan(t*7);
+      //float c = pow(x-5,2) + pow(y-5,2) - 99*sin(t);
+
+      //XXXXXXXXXXXXXX int w[] = {5463,2194,2386}; float c = w[int(y+t*9)&7]&1<<x-1;
+      //XXXXXXXXXXXXXX float c = pow((int(x-8)/y+t*5)&1,int(1./y*8)&1)*y/5.;
+      //XXXXXXXXXXXXXX float c=y*y%5.9+1; c=~(int(x+t*50/c)&15)/c;
+      //XXXXXXXXXXXXXX VUmeter float c = (int(((x&y)<9)?1:0) & int((y>4)?1:0)) + sin(8*t+x*x)+x/4;
+      //XXXXXXXXXXXXXX cross needs 2 colors float c = (y==x) || (15-x==y)?-1:0;
+
+      strokeWeight(abs(constrain(c, -1, 1))*16);
+      stroke(c>0 ? 255 : color(255, 80, 80));
+      point(x*16+8, y*16+8);
+    }
+  }
+}
+```
+
 # join integer array to comma separated string
 ```java
 int p[] = {downX,downY,mouseX-downX,mouseY-downY}; 
