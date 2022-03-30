@@ -53,6 +53,7 @@ void draw() {
       //float c = sin(t*5) * tan(t*7);
       //float c = pow(x-5,2) + pow(y-5,2) - 99*sin(t);
 
+      //not working yet:
       //XXXXXXXXXXXXXX int w[] = {5463,2194,2386}; float c = w[int(y+t*9)&7]&1<<x-1;
       //XXXXXXXXXXXXXX float c = pow((int(x-8)/y+t*5)&1,int(1./y*8)&1)*y/5.;
       //XXXXXXXXXXXXXX float c=y*y%5.9+1; c=~(int(x+t*50/c)&15)/c;
