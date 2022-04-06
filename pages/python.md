@@ -2,6 +2,16 @@
 title: Python
 ---
 
+## usage
+```python
+from sys import argv
+
+if len(argv)!=3:
+  sys.exit("Usage: "+os.path.basename(argv[0])+" {INPUT_CSV} {OUTPUT_FILE}")
+input_filename = argv[1]
+output_filename = argv[2]
+```
+
 ## unieke waarden per kolom in csv
 * zie gist: https://gist.github.com/companje/72ddf8f4ddba271580af2a55f62bcfad
  
