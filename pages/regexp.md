@@ -2,7 +2,7 @@
 title: Regular Expressions
 ---
 
-replace all non-alphanumeric characters by spaces
+# replace all non-alphanumeric characters by spaces
 ```
 =trim(regexreplace(REGEXREPLACE(join(" ",B2,D2,E2,F2),"[^a-zA-Z0-9\-]"," "),"\s+"," "))
 ```
