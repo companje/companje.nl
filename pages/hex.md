@@ -5,7 +5,7 @@ title: Hex editors
 <fieldset>
   <legend>Hex calculator</legend>
   <div class="row">
-    <div class="col-3">Dec:<input id='dec' type="text" value="13" onchange="hex.value=this.value.toString(16);"></div>
+    <div class="col-3">Dec:<input id='dec' type="text" value="13" onchange="hex.value=parseInt(this.value).toString(16);"></div>
     <div class="col-3">Hex:<input id='hex' type="text" value="0D"></div>
   </div>
 </fieldset>
