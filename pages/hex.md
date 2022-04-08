@@ -2,10 +2,11 @@
 title: Hex editors
 ---
 
-Decimal:
-<input type="text" value="13">
-Hex:
-<input type="text" value="0D">
+
+<div class="row">
+  <div class="col-6">Dec:<input type="text" value="13"></div>
+  <div class="col-6">Hex:<input type="text" value="0D"></div>
+</div>
 
 * hexfiend (tip v Casper)
 * prima maar antieke hex viewer/editor: [[http://www.chmaas.handshake.de/delphi/freeware/xvi32/xvi32.htm#download|xvi32]]
