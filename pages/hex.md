@@ -5,7 +5,7 @@ title: Hex editors
 ## hex calculator
 <div class="row" style='background:#ddd'>
   <div class="col-3">Dec:<input id='dec' type="text" value="13" onchange="hex.value=parseInt(this.value).toString(16);"></div>
-  <div class="col-3">Hex:<input id='hex' type="text" value="0D" onchange="dec.value=parseInt(this.value, 16)></div>
+  <div class="col-3">Hex:<input id='hex' type="text" value="0D" onchange="dec.value=parseInt(this.value, 16)"></div>
 </div>
 
 * hexfiend (tip v Casper)
