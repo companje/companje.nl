@@ -4,8 +4,8 @@ title: Hex editors
 
 
 <div class="row">
-  <div class="col-6">Dec:<input type="text" value="13"></div>
-  <div class="col-6">Hex:<input type="text" value="0D"></div>
+  <div class="col-3">Dec:<input type="text" value="13"></div>
+  <div class="col-3">Hex:<input type="text" value="0D"></div>
 </div>
 
 * hexfiend (tip v Casper)
