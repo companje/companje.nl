@@ -2,7 +2,7 @@
 title: Hex editors
 ---
 
-<fieldset>
+<fieldset style='border:1px solid black'>
   <legend>Hex calculator</legend>
   <div class="row">
     <div class="col-3">Dec:<input id='dec' type="text" value="13" onchange="hex.value=parseInt(this.value).toString(16);"></div>
