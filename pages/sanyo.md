@@ -9,7 +9,7 @@ title: Sanyo MBC-550/555
 * mamedev documentation: https://docs.mamedev.org/_files/MAME.pdf
 
 ## segments and offsets
-"The 8086 has 20-bit addressing, but only 16-bit registers. To generate 20-bit addresses, it combines a segment with an offset. "
+"The 8086 has 20-bit addressing, but only 16-bit registers. To generate 20-bit addresses, it combines a segment with an offset. " SEGMENT*16+OFFSET
 
 ## qemu
 not for Sanyo but emulator for x86 in general:
