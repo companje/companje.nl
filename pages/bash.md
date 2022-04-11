@@ -2,6 +2,11 @@
 title: Bash
 ---
 
+# remove extension
+```bash
+base="${filename%.*}"
+```
+
 # show hex code(s) of character
 ```bash
 echo -n "é" | od -A n -t x1
