@@ -2,7 +2,7 @@
 title: Mac OSX
 ---
 
-# kill
+# kill Excel
 ```bash
 killall -9 "Microsoft Excel" 2>/dev/null
 ```
