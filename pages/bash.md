@@ -2,6 +2,11 @@
 title: Bash
 ---
 
+# terminate script after error
+```bash
+set -e
+```
+
 # remove extension
 ```bash
 base="${filename%.*}"
