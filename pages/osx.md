@@ -3,7 +3,9 @@ title: Mac OSX
 ---
 
 # kill
+```bash
 killall -9 "Microsoft Excel" 2>/dev/null
+```
 
 # recursively remove .DS_Store files
 ```bash
