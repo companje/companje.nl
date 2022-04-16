@@ -2,6 +2,9 @@
 title: Assembler
 ---
 
+# online 8086 emulator
+* https://yjdoc2.github.io/8086-emulator-web/
+
 # poging disassemble basic.exe (sanyo) met ndisasm
 ```bash
 ndisasm -b16 -e1264 BASIC.EXE > tmp.lst
