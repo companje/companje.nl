@@ -3,7 +3,7 @@ title: DOSBOX
 ---
 
 ## edit autoexec.bat
-see autoexec section in `~/Library/Preferences/DOSBox 0.73 Preferences`
+see autoexec section in `subl ~/Library/Preferences/DOSBox\ 0.74-3-3\ Preferences`
 
 ## mount
 ```bat
