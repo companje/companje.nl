@@ -2,6 +2,9 @@
 title: DOSBOX
 ---
 
+## edit autoexec.bat
+see autoexec section in `~/Library/Preferences/DOSBox 0.73 Preferences`
+
 ## mount
 ```bat
 intro mount
