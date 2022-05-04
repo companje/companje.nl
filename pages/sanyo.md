@@ -4,6 +4,9 @@ title: Sanyo MBC-550/555
 
 <img src="https://user-images.githubusercontent.com/156066/160270847-03ebfc54-547e-4a9a-813f-6114f2f6213b.jpg" alt="Sanyo-MBC-555-Rick-Companje" width="400" align="right">
 
+# My own emulator and bootsector experiments
+* https://github.com/companje/Sanyo-MBC-550-555-experiments
+
 ## Mame
 * sanyo mbc55x.cpp class in Mame: https://github.com/mamedev/mame/blob/master/src/mame/drivers/mbc55x.cpp
 * mamedev documentation: https://docs.mamedev.org/_files/MAME.pdf
