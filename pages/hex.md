@@ -4,8 +4,9 @@ title: Hex editors
 
 ## hex calculator
 <div class="row" style='background:#ddd'>
-  <div class="col-3"><label for='dec'>Dec:</label><input name='dec' id='dec' type="text" value="13" onchange="hex.value='0x'+eval(this.value).toString(16);"></div>
-  <div class="col-3"><label for='hex'>Hex:</label><input id='hex' type="text" value="0x0D" onchange="dec.value=eval(this.value)"></div>
+  <div class="col-3"><label for='dec'>Expression:</label><input name='expr' id='expr' type="text" value="0x0D-5" onchange="dec.value=eval(this.value); hex.value='0x'+eval(this.value).toString(16);"></div>  
+  <div class="col-3"><label for='dec'>Dec:</label><input name='dec' id='dec' type="text" value=""></div>
+  <div class="col-3"><label for='dec'>Hex:</label><input name='hex' id='hex' type="text" value=""></div>
 </div>
 
 ## two's complement
