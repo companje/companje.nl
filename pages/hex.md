@@ -10,7 +10,7 @@ title: Hex editors
 
 ## two's complement
 ```java
-println((al&127)-129);
+println((al&127)-128);
 ```
 
 ## tips
