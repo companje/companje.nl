@@ -8,6 +8,11 @@ title: Hex editors
   <div class="col-3"><label for='hex'>Hex:</label><input id='hex' type="text" value="0D" onchange="dec.value=parseInt(this.value, 16)"></div>
 </div>
 
+## two's complement
+```java
+println((al&127)-129);
+```
+
 ## tips
 * hexfiend (tip v Casper)
 * prima maar antieke hex viewer/editor: [[http://www.chmaas.handshake.de/delphi/freeware/xvi32/xvi32.htm#download|xvi32]]
