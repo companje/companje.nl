@@ -4,6 +4,10 @@ title: Sanyo MBC-550/555
 
 <img src="https://user-images.githubusercontent.com/156066/160270847-03ebfc54-547e-4a9a-813f-6114f2f6213b.jpg" alt="Sanyo-MBC-555-Rick-Companje" width="400" align="right">
 
+# tixyboot.asm
+A tribute to Martin Kleppe's beautiful https://tixy.land as well as a tribute to the Sanyo MBC-550/555 PC (1984) which forced me to be creative with code since 1994.
+<img src="https://github.com/companje/Sanyo-MBC-550-555-experiments/blob/main/tixyboot.asm/screengrab.gif?raw=true" width="400">
+
 # My own emulator and bootsector experiments
 * https://github.com/companje/Sanyo-MBC-550-555-experiments
 
