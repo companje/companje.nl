@@ -4,7 +4,7 @@ title: Processing
 
 # Dithering
 * https://gist.github.com/companje/86645c4183c9073ceb7639f1c37b7905
-* 
+
 # Tixy.pde - a processing.org tribute to Martin Kleppe's https://tixy.land
 * https://gist.github.com/companje/18342a399492fbec4292effff90ebc35
 
