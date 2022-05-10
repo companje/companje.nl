@@ -4,6 +4,11 @@ permalink: /ffmpeg
 tags: ['notes','software','video']
 ---
 
+# scale and rotate video
+```bash
+... -vf "scale=2048:1024,transpose=3" ...
+```
+
 # scale video while converting to rgb565
 ```bash
 ffmpeg -i INPUT-2000x1000.mov -vcodec rawvideo -f rawvideo -r 18 -pix_fmt rgb565 -y -vf scale=2048:1024 OUTPUT-2k.565.raw
