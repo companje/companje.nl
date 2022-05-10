@@ -2,6 +2,12 @@
 title: Bash
 ---
 
+# split
+Split a text file into files with 50 lines each: 
+```bash
+split --lines=50 foo.txt
+```
+
 # terminate script after error
 ```bash
 set -e
