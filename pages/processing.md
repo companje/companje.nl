@@ -2,6 +2,11 @@
 title: Processing
 ---
 
+# listFiles
+```java
+File[] files = new File(folder).listFiles();
+```
+
 # Dithering
 * https://gist.github.com/companje/86645c4183c9073ceb7639f1c37b7905
 
