@@ -2,6 +2,28 @@
 title: Processing
 ---
 
+# WordWrap
+- https://www.rosettacode.org/wiki/Word_wrap
+```java
+String word_wrap(String text, int LineWidth) {
+  StringTokenizer st=new StringTokenizer(text);
+  int SpaceLeft=LineWidth;
+  int SpaceWidth=1;
+  String result = "";
+  while (st.hasMoreTokens()) {
+    String word=st.nextToken();
+    if ((word.length()+SpaceWidth)>SpaceLeft) {
+      result += "\n"+word+" ";
+      SpaceLeft=LineWidth-word.length();
+    } else {
+      result += word+" ";
+      SpaceLeft-=(word.length()+SpaceWidth);
+    }
+  }
+  return result;
+}
+```
+
 # listFiles
 ```java
 File[] files = new File(folder).listFiles();
