@@ -13,15 +13,28 @@ String word_wrap(String text, int LineWidth) {
   while (st.hasMoreTokens()) {
     String word=st.nextToken();
     if ((word.length()+SpaceWidth)>SpaceLeft) {
-      result += "\n"+word+" ";
+      result = trim(result) + "\n"+trim(word)+" ";
       SpaceLeft=LineWidth-word.length();
     } else {
-      result += word+" ";
+      result += trim(word)+" ";
       SpaceLeft-=(word.length()+SpaceWidth);
     }
   }
   return result;
 }
+```
+
+# Count lines
+```java
+int count_lines(String text) {
+  int lines = 0;
+  for (int i=0; i<text.length(); i++) {
+    if (text.charAt(i)=='\n')
+      lines++;
+  }
+  return lines+1;
+}
+
 ```
 
 # listFiles
