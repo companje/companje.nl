@@ -4,6 +4,25 @@ title: Sanyo MBC-550/555
 
 <img src="https://user-images.githubusercontent.com/156066/160270847-03ebfc54-547e-4a9a-813f-6114f2f6213b.jpg" alt="Sanyo-MBC-555-Rick-Companje" width="400" align="right">
 
+# sanyo mbc-555 VRAM emulation in Processing/Java
+```java
+PImage getVRAM() {
+  PImage img = createImage(576, 200, RGB);
+  img.loadPixels();
+  for (int y=0, bit=0, j=0; y<img.height; y++) {
+    for (int x=0; x<img.width; x++, bit=128>>(x%8), j++) {
+      int i=int(y/4)*img.width/2+(y%4)+int(x/8)*4;
+      int r = (mem[RED+i] & bit)>0 ? 255 : 0;
+      int g = (mem[GREEN+i] & bit)>0 ? 255 : 0;
+      int b = (mem[BLUE+i] & bit)>0 ? 255 : 0;
+      img.pixels[j] = color(r, g, b);
+    }
+  }
+  img.updatePixels();
+  return img;
+}
+```
+
 # tixyboot.asm
 A tribute to Martin Kleppe's beautiful https://tixy.land as well as a tribute to the Sanyo MBC-550/555 PC (1984) which forced me to be creative with code since 1994.
 
