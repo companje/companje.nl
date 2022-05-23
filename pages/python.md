@@ -2,6 +2,11 @@
 title: Python
 ---
 
+## string padding
+```python
+mystring.rjust(10, '0')) 
+```
+
 ## any
 ```python
 contains_thans = any(thans_spelling in raw_country_str for thans_spelling in ["thans", "th.", "th "])
