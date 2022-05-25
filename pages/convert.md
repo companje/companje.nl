@@ -4,7 +4,7 @@ title: Convert images
 
 # cmyk pdf to rgb jpg sequence
 ```bash
-convert -colorspace sRGB input.pdf output%d.jpg
+convert -colorspace sRGB input.pdf output/%d.jpg
 ```
 
 # 16bit grayscale to separate 8 bit color channels (with Python)
