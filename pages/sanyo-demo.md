@@ -5,7 +5,7 @@ De originele sourcecode van DEMO.BAS op de bijgeleverde [[Sanyo Basic]] diskette
 
 (:sanyo_mbc-550_demo_image.jpeg)
  
-```basic
+```gwbasic
 100 ' *** PROGRAM NAME "DEMO.BAS" REV 1.0 (9/27/1983)***
 1000  COLOR 3,0: CLS:DIM A(17),B(17)
 1010 LOCATE 10,15:INPUT "DO YOU USE A COLOR DISPLAY MONITOR ? (Y/N) ",Y$
