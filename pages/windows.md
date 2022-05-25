@@ -3,7 +3,7 @@ title: Windows
 ---
 
 # MSVCP140.dll missing
-* https://www.microsoft.com/en-us/download/details.aspx?id=48145
+* Microsoft Visual C++ 2015 Redistributable Update 3 RC: https://www.microsoft.com/en-us/download/details.aspx?id=48145
 
 # Local Users and Groups Manager
 ```
