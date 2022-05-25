@@ -2,6 +2,9 @@
 title: Windows
 ---
 
+# MSVCP140.dll missing
+* https://www.microsoft.com/en-us/download/details.aspx?id=48145
+
 # Local Users and Groups Manager
 ```
 lusrmgr.msc
