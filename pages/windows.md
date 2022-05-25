@@ -2,7 +2,7 @@
 title: Windows
 ---
 
-# MSVCP140.dll missing
+# MSVCP140.dll or VCRuntime140.dll missing
 * Microsoft Visual C++ 2015 Redistributable Update 3 RC: https://www.microsoft.com/en-us/download/details.aspx?id=48145
 
 # Local Users and Groups Manager
