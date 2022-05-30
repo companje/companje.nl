@@ -2,6 +2,15 @@
 title: Processing
 ---
 
+# listFiles (listDir)
+```java
+  File[] files = new File(dataPath(imageFolder.replaceAll("data/",""))).listFiles();
+  filenames = new String[files.length];
+  for (int i=0; i<filenames.length; i++) {
+    filenames[i] = files[i].getName(); 
+  }
+```
+
 # WordWrap
 - https://www.rosettacode.org/wiki/Word_wrap
 ```java
