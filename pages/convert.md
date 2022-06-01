@@ -2,6 +2,11 @@
 title: Convert images
 ---
 
+# set jpg quality to 80%
+```bash
+mogrify -quality 80% *.jpg
+```
+
 # cmyk pdf to rgb jpg sequence
 ```bash
 convert -colorspace sRGB input.pdf output/%d.jpg
