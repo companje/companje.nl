@@ -2,9 +2,9 @@
 title: Convert images
 ---
 
-# set jpg quality to 80%
+# batch set jpg quality to 80%
 ```bash
-mogrify -quality 80% *.jpg
+mogrify -quality 80% *.jpg 
 ```
 
 # cmyk pdf to rgb jpg sequence
