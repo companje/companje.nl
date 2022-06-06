@@ -1,6 +1,27 @@
 ---
 title: Assembler
 ---
+# di=(y*COLS+x)*4
+```asm
+setup:
+    mov ax,0x0c00
+    push ax
+    pop es       ; es=0x0c00  vram (Sanyo MBC555)
+    xor di,di    ; di=0
+
+    mov bx,20    ; bx=xpos
+    mov ax,5     ; ax=ypos
+setDotXY:        ; output: di=(y*COLS+x)*4
+    mov cx,COLS 
+    mul cx       ; y*COLS
+    add ax,bx    ; +x
+    shl ax,1     ; *2
+    shl ax,1     ; *2
+    xchg ax,di   
+.setDot:         ; es:di = ax
+    mov ax,0xffff
+    times 2 stosw  
+```
 
 # twt86
 * http://twt86.co/?c=xSQgswcIBKfALQWRAkFeAkD8AoCcAEt18ooE%2BdLY6%2BE%3D#
