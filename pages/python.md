@@ -2,6 +2,12 @@
 title: Python
 ---
 
+## uuid / guid
+```python
+import uuid
+print(uuid.uuid4().hex)
+```
+
 ## string padding
 ```python
 mystring.rjust(10, '0')) 
