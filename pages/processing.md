@@ -3,7 +3,7 @@ title: Processing
 ---
 
 # noSmooth for images / nearest neighbour scaling
-```js
+```javascript
 PImage img;
 
 void setup() {
