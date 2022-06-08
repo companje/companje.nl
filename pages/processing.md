@@ -2,6 +2,22 @@
 title: Processing
 ---
 
+# noSmooth for images / nearest neighbour scaling
+```java
+PImage img;
+
+void setup() {
+  size(500,500,P2D);
+  img = createImage(127,127,RGB);
+  ((PGraphicsOpenGL)g).textureSampling(3);
+  img.set(10,10,color(255));
+}
+
+void draw() {
+  image(img,0,0,width,height);
+}
+```
+
 # listFiles (listDir)
 ```java
   File[] files = new File(dataPath(imageFolder.replaceAll("data/",""))).listFiles();
