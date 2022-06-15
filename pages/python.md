@@ -2,6 +2,9 @@
 title: Python
 ---
 
+## fuzzy matching in strings
+https://gist.github.com/companje/93f6061629ac27a2027a77888effd6ad
+
 ## yield
 The yield statement suspends function’s execution and sends a value back to the caller, but retains enough state to enable function to resume where it is left off. When resumed, the function continues execution immediately after the last yield run. This allows its code to produce a series of values over time, rather than computing them at once and sending them back like a list. https://www.geeksforgeeks.org/use-yield-keyword-instead-return-keyword-python/
 
