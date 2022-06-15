@@ -5,10 +5,11 @@ title: Sanyo MBC-550/555
 <img src="https://user-images.githubusercontent.com/156066/160270847-03ebfc54-547e-4a9a-813f-6114f2f6213b.jpg" alt="Sanyo-MBC-555-Rick-Companje" width="400" align="right">
 
 # receive data from Python
+on Sanyo: ```type file.asm > aux```
+
 ```python
 #!/usr/bin/env python3
 
-# on Sanyo: type file.asm > aux
 import serial
 
 ser = serial.Serial('/dev/tty.usbmodem1301',1200)
