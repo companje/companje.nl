@@ -2,6 +2,8 @@
 title: Python
 ---
 
+## difflib
+https://docs.python.org/3/library/difflib.html (tip van Lars)
 ## fuzzy matching in strings
 https://gist.github.com/companje/93f6061629ac27a2027a77888effd6ad
 
