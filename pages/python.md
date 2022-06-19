@@ -3,7 +3,7 @@ title: Python
 ---
 
 ## get duration of films in folder
-```
+```python
 #!/usr/bin/env python3
 import json,csv,re,glob,os,tqdm
 import datetime
