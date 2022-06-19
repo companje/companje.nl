@@ -2,6 +2,40 @@
 title: Python
 ---
 
+## get duration of films in folder
+```
+#!/usr/bin/env python3
+import json,csv,re,glob,os,tqdm
+import datetime
+from time import strftime
+from time import gmtime
+from os.path import exists
+from pathlib import Path
+from tqdm import tqdm
+
+def get_duration_ffprobe(filename):
+	import subprocess, json
+	result = subprocess.check_output(
+		f'ffprobe -v quiet -show_streams -select_streams v:0 -of json "{filename}"',
+		shell=True).decode()
+	fields = json.loads(result)['streams'][0]
+	return fields['duration']
+
+# GET DURATION OF ALL FILMS
+movie_folder = "MOVIE_FOLDER/"
+
+files = glob.glob(movie_folder+"*.mp4", recursive=False)
+
+writer = csv.DictWriter(open("film-duration.csv","w"), fieldnames=["name","duration"]) #, delimiter=',', quoting=csv.QUOTE_ALL, dialect='excel')
+writer.writeheader()
+
+for filename in tqdm(files):
+	row = {}
+	row["name"] = os.path.basename(filename)
+	row["duration"] = strftime("%H:%M:%S:00", gmtime(float(get_duration_ffprobe(filename))))
+	writer.writerow(row)
+```
+
 ## difflib
 https://docs.python.org/3/library/difflib.html (tip van Lars)
 ## fuzzy matching in strings
