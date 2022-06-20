@@ -10,7 +10,13 @@ def get_points(points_string):
 def get_bounds(points):
     x = min(points)[0], max(points)[0]
     y = min(points)[1], max(points)[1]
-    return ((x[0],y[0]), (x[1],y[1]))
+    return ((x[0],y[0],x[1],y[1]))
+
+def is_overlapping_1D(line1, line2): # line: (xmin, xmax)
+    return line1[0] <= line2[1] and line2[0] <= line1[1] # box (xmin, ymin, xmax, ymax)
+
+def is_overlapping_2d(box1, box2):
+    return is_overlapping_1D([box1[0],box1[2]],[box2[0],box2[2]]) and is_overlapping_1D([box1[1],box1[3]],[box2[1],box2[3]])
 
 points_string = "93,1349 93,1502 162,1502 162,1349"
 print(get_points(points_string))
