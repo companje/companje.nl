@@ -2,6 +2,20 @@
 title: Python
 ---
 
+## parse points and get bounds
+```python
+def get_points(points_string):
+    return [tuple(map(int,coords.split(','))) for coords in points_string.split(" ")] 
+
+def get_bounds(points):
+    x = min(points)[0], max(points)[0]
+    y = min(points)[1], max(points)[1]
+    return ((x[0],y[0]), (x[1],y[1]))
+
+points_string = "93,1349 93,1502 162,1502 162,1349"
+print(get_points(points_string))
+```
+
 ## get duration of films in folder
 ```python
 #!/usr/bin/env python3
