@@ -5,7 +5,9 @@ title: Python
 ## namedtuple
 ```python
 Point = namedtuple('Point', 'x y')
-center = Point(10,10)
+center = Point(10,10) # center is a namedtuple, that can be accessed either using x and y or an index (0,1)
+print(center.x)
+
 ```
 
 ## parse points and get bounds
