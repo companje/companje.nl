@@ -2,6 +2,12 @@
 title: Python
 ---
 
+## namedtuple
+```python
+Point = namedtuple('Point', 'x y')
+center = Point(10,10)
+```
+
 ## parse points and get bounds
 ```python
 def get_points(points_string):
