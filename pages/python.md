@@ -2,6 +2,12 @@
 title: Python
 ---
 
+## total seconds from time
+```python
+# must be a better way...
+dt = datetime.strptime(film["STARTTIJD"][:8],"%H:%M:%S").time()
+startOffset = dt.hour * 3600 + dt.minute * 60 + dt.second
+```
 ## namedtuple
 ```python
 Point = namedtuple('Point', 'x y')
