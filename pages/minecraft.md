@@ -1,3 +1,5 @@
+# Minecraft (on geocraft.nl)
+
 ## debug mode
 ```
 Fn+Alt+F3
