@@ -1,4 +1,4 @@
-# Minecraft (on geocraft.nl)
+# (on geocraft.nl)
 
 ## debug mode
 ```
@@ -15,3 +15,14 @@ Fn+Alt+F3
 /home huis
 ```
 
+## warp
+```
+warp Utrecht
+```
+
+## warp to address
+```
+gc Street Housenumber City
+gc Postalcode Housenumber
+gc lat,lon
+```
