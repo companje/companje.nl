@@ -26,3 +26,7 @@ gc Street Housenumber City
 gc Postalcode Housenumber
 gc lat,lon
 ```
+
+## 'Grab' block
+in Options change 'Middle mouse' to 'g' to grab a block
+
