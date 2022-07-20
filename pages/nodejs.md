@@ -3,6 +3,11 @@ title: NodeJS
 layout: default
 ---
 
+# install and run nodemon
+```
+npx nodemon
+```
+
 # documentatie.org resolver (set documentatie.org in /etc/hosts)
 ```javascript
 const express = require('express')
