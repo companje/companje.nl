@@ -12,3 +12,10 @@ title: Hack
 #  Various cool things 
 * http://arkt.is/
 * https://www.wikipendium.no/
+
+# Tools
+* Wireshark
+* binwalk
+* tcpdump -qns 0 -A -r  myfirst.pcapng > result.txt
+* nc -u SERVER PORT
+* Wapppalyzer
