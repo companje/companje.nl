@@ -20,3 +20,4 @@ title: Hack
 * nc -u SERVER PORT
 * Wapppalyzer
 * tsk_recover
+* https://gchq.github.io/CyberChef
