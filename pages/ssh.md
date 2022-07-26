@@ -2,7 +2,7 @@
 title: SSH
 ---
 
-# elliptic curve
+# create key (elliptic curve)
 ```bash
 ssh-keygen -t ed25519 -a 420 -f ~/.ssh/demo.ed25519 -C "my key for today"
 ```
@@ -12,6 +12,8 @@ ssh-keygen -t ed25519 -a 420 -f ~/.ssh/demo.ed25519 -C "my key for today"
 Host smtp imap www
   Hostname %h.example.com
   User myusername
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/demo.ed25519
 ```
 
 # SFTP
