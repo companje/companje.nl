@@ -18,6 +18,6 @@ title: Hack
 * binwalk
 * tcpdump -qns 0 -A -r  myfirst.pcapng > result.txt
 * nc -u SERVER PORT
-* Wapppalyzer
+* Wappalyzer
 * tsk_recover
 * https://gchq.github.io/CyberChef
