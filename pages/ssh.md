@@ -2,9 +2,16 @@
 title: SSH
 ---
 
+# hostname aliases
+```
+Host smtp imap www
+  Hostname %h.example.com
+  User myusername
+```
+
 # SFTP
 * https://wiki.filezilla-project.org/Command-line_arguments_(Client)
-```
+```bash
 sftp root@192.168.5.1:22
 ```
 error: /usr/libexec/sftp-server: not found
