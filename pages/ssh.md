@@ -16,6 +16,12 @@ Host smtp imap www
   IdentityFile ~/.ssh/demo.ed25519
 ```
 
+# ssh-agent / ssh-add
+set password bij ssh-keygen is erg belangrijk. Om te voorkomen dat de private key op je eigen computer in verkeerde handen komt. maar moet je dan nog steeds telkens een passphrase invoeren? Ja, maar daar is een oplossing voor: ssh-agent (gebruik ssh-add  ~/.ssh/demo.ed25519  om key toevoegen aan ssh-agent). die bewaart in een lopend process en stelt het beschikbaar via een socket aan ssh.
+
+# remote autocomplete
+na opname in authorized_keys (en ssh-agent?) krijg je remote autocomplete. je kunt bijv bij scp op tab drukken voor completion.
+
 # SFTP
 * https://wiki.filezilla-project.org/Command-line_arguments_(Client)
 ```bash
