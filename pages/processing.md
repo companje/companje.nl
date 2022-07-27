@@ -2,6 +2,24 @@
 title: Processing
 ---
 
+# system info / sysinfo
+```java
+println( "__SYS INFO :");
+println( "System     : " + System.getProperty("os.name") + "  " + System.getProperty("os.version") + "  " + System.getProperty("os.arch") );
+println( "JAVA       : " + System.getProperty("java.home")  + " rev: " +javaVersionName);
+//println( System.getProperty("java.class.path") );
+//println( "\n" + isGL() + "\n" );
+println( "OPENGL     : VENDOR " + PGraphicsOpenGL.OPENGL_VENDOR+" RENDERER " + PGraphicsOpenGL.OPENGL_RENDERER+" VERSION " + PGraphicsOpenGL.OPENGL_VERSION+" GLSL_VERSION: " + PGraphicsOpenGL.GLSL_VERSION);
+println( "user.home  : " + System.getProperty("user.home") );
+println( "user.dir   : " + System.getProperty("user.dir") );
+println( "user.name  : " + System.getProperty("user.name") );
+println( "sketchPath : " + sketchPath() );
+println( "dataPath   : " + dataPath("") );
+println( "dataFile   : " + dataFile("") );
+//println( "frameRate  : target "+nf(rset, 0, 1)+" actual "+nf(r, 0, 1));
+println( "canvas     : width "+width+" height "+height+" pix "+(width*height));
+```
+
 # noSmooth for images / nearest neighbour scaling
 ```javascript
 PImage img;
