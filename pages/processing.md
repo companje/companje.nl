@@ -3,6 +3,7 @@ title: Processing
 ---
 
 # system info / sysinfo
+source: from: https://discourse.processing.org/t/processing-in-style-with-java-11/13776/24
 ```java
 println( "__SYS INFO :");
 println( "System     : " + System.getProperty("os.name") + "  " + System.getProperty("os.version") + "  " + System.getProperty("os.arch") );
