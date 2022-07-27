@@ -2,6 +2,11 @@
 title: Processing
 ---
 
+# removeIf
+```java
+lines.removeIf(o -> (((TextLine)o).cell == null)); //remove all lines that are not assigned to a cell
+```
+
 # system info / sysinfo
 source: from: https://discourse.processing.org/t/processing-in-style-with-java-11/13776/24
 ```java
