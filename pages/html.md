@@ -4,7 +4,7 @@ title: HTML
 
 # watch static html/js page
 ```bash
-npx browser-sync start --server --files "*.html, js/*.js"
+npx browser-sync start --server --files "*.html, *.js"
 ```
 
 # slider
