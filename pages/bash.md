@@ -7,11 +7,6 @@ title: Bash
 killall -9 "Microsoft Excel" 2>/dev/null
 ```
 
-# exit when any of the following command fails
-```bash
-set -e 
-```
-
 # read / input variable (with default value)
 ```bash
 default_top_code=Test-1965.01
@@ -25,7 +20,7 @@ Split a text file into files with 50 lines each:
 split --lines=50 foo.txt
 ```
 
-# terminate script after error
+# exit / terminate script after error
 ```bash
 set -e
 ```
