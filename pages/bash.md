@@ -2,6 +2,11 @@
 title: Bash
 ---
 
+# exit when any of the following command fails
+```bash
+set -e 
+```
+
 # read / input variable (with default value)
 ```bash
 default_top_code=Test-1965.01
