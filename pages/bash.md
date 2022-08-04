@@ -2,6 +2,11 @@
 title: Bash
 ---
 
+# Terminate all Excel instances
+```bash
+killall -9 "Microsoft Excel" 2>/dev/null
+```
+
 # exit when any of the following command fails
 ```bash
 set -e 
