@@ -20,7 +20,8 @@ Split a text file into files with 50 lines each:
 split --lines=50 foo.txt
 ```
 
-# exit / terminate script after error
+# exit / terminate script after error / when any of the following command fails
+
 ```bash
 set -e
 ```
