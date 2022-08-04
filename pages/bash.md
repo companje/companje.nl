@@ -3,7 +3,7 @@ title: Bash
 ---
 
 # read / input variable (with default value)
-```
+```bash
 default_top_code=Test-1965.01
 read -p "Wat is de code van de toegang [$default_top_code]: " top_code
 top_code=${name:-$default_top_code}
