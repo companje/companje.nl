@@ -2,6 +2,13 @@
 title: Bash
 ---
 
+# read / input variable (with default value)
+```
+default_top_code=Test-1965.01
+read -p "Wat is de code van de toegang [$default_top_code]: " top_code
+top_code=${name:-$default_top_code}
+```
+
 # split
 Split a text file into files with 50 lines each: 
 ```bash
