@@ -2,6 +2,11 @@
 title: Python
 ---
 
+## write stderr to file
+```python
+sys.stderr = open("stderr.log","w")
+```
+
 ## total seconds from time
 ```python
 # must be a better way...
