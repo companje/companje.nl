@@ -2,6 +2,13 @@
 title: Python
 ---
 
+## split geo point
+```python
+parts = doc["centroide_ll"].split(" ")
+lat = parts[1].replace(")","")
+lon = parts[0].replace("POINT(","")
+```
+
 ## urlencode
 ```python
 print(urllib.parse.quote_plus(query))
