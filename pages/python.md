@@ -2,6 +2,11 @@
 title: Python
 ---
 
+## urlencode
+```python
+print(urllib.parse.quote_plus(query))
+```
+
 ## write stderr to file
 ```python
 sys.stderr = open("stderr.log","w")
