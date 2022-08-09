@@ -2,6 +2,16 @@
 title: Python
 ---
 
+## read csv as dict etc
+```
+def csv2dict(filename):
+	return csv.DictReader(open(csv_folder+filename, encoding="utf-8-sig"), delimiter=";")
+
+def csv2lut(filename):
+	return { row["Unieke waarde (niet aanpassen)"]:row["Correctie (hier corrigeren)"] 
+		for row in csv2dict(filename) }
+```
+
 ## split geo point
 ```python
 parts = doc["centroide_ll"].split(" ")
