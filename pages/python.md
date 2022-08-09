@@ -3,7 +3,7 @@ title: Python
 ---
 
 ## read csv as dict etc
-```
+```python
 def csv2dict(filename):
 	return csv.DictReader(open(csv_folder+filename, encoding="utf-8-sig"), delimiter=";")
 
