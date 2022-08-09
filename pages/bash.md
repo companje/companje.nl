@@ -21,9 +21,13 @@ split --lines=50 foo.txt
 ```
 
 # exit / terminate script after error / when any of the following command fails
-
 ```bash
 set -e
+```
+somehow this did not work (anymore?) so here is an alternative:
+```bash
+./script.py || exit
+echo this won't be printed if script.py gives an error
 ```
 
 # remove extension
