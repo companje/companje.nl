@@ -105,17 +105,18 @@ ffmpeg -i IN.mov -an -strict experimental -vcodec libx264 -f mp4 -crf 22 OUT.mp4
 ```bash
 ffmpeg -loop 1 -i frame.png -frames:v 400 -vcodec mpeg4 -vf fade=in:0:25,fade=out:375:25  -y -q:v 0 output.mp4
 ```
-or: video of 45 seconds: fade starts at 40s, duration of fade is 5s. For video as well as for audio.
-```bash
- ffmpeg -i INPUT.mp4 -vf "fade=t=out:st=40:d=5" -af "afade=t=out:st=40:d=5" OUTPUT-faded.mp4
-```
 
 # create video with x frames from image
 ```bash
 ffmpeg -loop 1 -i frame.png -vframes 400 -vcodec mpeg4 output.mp4
 ```
 
-# fade in and out
+# fade in and fade out
+video of 45 seconds: fade starts at 40s, duration of fade is 5s. For video as well as for audio.
+```bash
+ ffmpeg -i INPUT.mp4 -vf "fade=t=out:st=40:d=5" -af "afade=t=out:st=40:d=5" OUTPUT-faded.mp4
+```
+or
 ```bash
 ffmpeg -i 1.mp4 -y -vf fade=in:0:25,fade=out:375:25 inout.mp4
 ```
