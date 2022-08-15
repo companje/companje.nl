@@ -2,6 +2,15 @@
 title: Python
 ---
 
+## set label for tqdm progress bar
+```python
+pbar = tqdm(straten) # list
+
+for i,straat in enumerate(pbar):
+  straatnaam = straat["straatnaam"]
+  pbar.set_description(f"{i} {straatnaam}")
+```
+
 ## geo coordinaat opvragen van (het middelpunt van) een straat via BAG openbare_ruimte_ID op wikidata.
 ```python
 query="""SELECT ?straat ?straatLabel ?punt ?woonplaats ?woonplaatsLabel WHERE {
