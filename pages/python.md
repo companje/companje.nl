@@ -2,6 +2,19 @@
 title: Python
 ---
 
+## geo coordinaat opvragen van (middelpunten van) een straat via BAG openbare_ruimte_ID op wikidata.
+```python
+query="""SELECT ?straat ?straatLabel ?punt ?woonplaats ?woonplaatsLabel WHERE {
+?straat wdt:P625 ?punt .
+?straat wdt:P131 ?woonplaats . 
+?straat wdtn:P5207  <http://bag.basisregistraties.overheid.nl/bag/id/openbare-ruimte/"""+straat_id+"""> .
+SERVICE wikibase:label { bd:serviceParam wikibase:language "nl". } }"""
+
+url = "https://query.wikidata.org/sparql"
+response = requests.get(url, params={'query' : query}, headers={'Accept' : 'application/sparql-results+json'})
+data = response.json()
+```
+
 ## read csv as dict etc
 ```python
 def csv2dict(filename):
