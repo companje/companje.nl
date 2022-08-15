@@ -36,9 +36,11 @@ def csv2lut(filename):
 
 ## split geo point
 ```python
-parts = doc["centroide_ll"].split(" ")
-lat = parts[1].replace(")","")
-lon = parts[0].replace("POINT(","")
+def split_geo_point(s):
+	parts = s.split(" ").lower()
+	lat = parts[1].replace(")","")
+	lon = parts[0].replace("point(","")
+	return (lat,lon)
 ```
 
 ## urlencode
