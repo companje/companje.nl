@@ -37,7 +37,7 @@ def csv2lut(filename):
 ## split geo point
 ```python
 def split_geo_point(s):
-	parts = s.split(" ").lower()
+	parts = s.lower().split(" ")
 	lat = parts[1].replace(")","")
 	lon = parts[0].replace("point(","")
 	return (lat,lon)
