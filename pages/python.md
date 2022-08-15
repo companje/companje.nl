@@ -2,7 +2,7 @@
 title: Python
 ---
 
-## geo coordinaat opvragen van (middelpunten van) een straat via BAG openbare_ruimte_ID op wikidata.
+## geo coordinaat opvragen van (het middelpunt van) een straat via BAG openbare_ruimte_ID op wikidata.
 ```python
 query="""SELECT ?straat ?straatLabel ?punt ?woonplaats ?woonplaatsLabel WHERE {
 ?straat wdt:P625 ?punt .
