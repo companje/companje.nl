@@ -26,7 +26,8 @@ select ?zoekveld ?match ?x {
 }
 limit 10
 ```
-https://triplydb.com/academy/-/queries/geo-within-query/5
+source: https://triplydb.com/academy/-/queries/geo-within-query/5
+
 
 ## everything that has as location a quadrangle instance EXCLUDE everything with a lunar coordinate
 ```sparql
