@@ -32,7 +32,7 @@ ffmpeg -i IMG_8327.mp4 -i Motions.mp3 -c:v copy -map 0:v:0 -map 1:a:0 -shortest 
 # convert for Whatsapp
 crf 30 is lower quality. default is 23. (see: https://trac.ffmpeg.org/wiki/Encode/H.264)
 ```bash
-ffmpeg -i Flocking.mp4 -crf 30 -c:v libx264 -profile:v baseline -level 3.0 -pix_fmt yuv420p FlockingWhatsapp.mp4
+ffmpeg -i Flocking.mp4    -crf 23 -c:v libx264 -profile:v baseline -level 3.0 -pix_fmt yuv420p     FlockingWhatsapp.mp4
 ```
 
 # convert for Whatsapp, scale and remove duplicate frames
