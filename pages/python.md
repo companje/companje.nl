@@ -2,6 +2,11 @@
 title: Python
 ---
 
+## join list to string ignore blanks
+```python
+' '.join(filter(None, strings))
+```
+
 ## set label for tqdm progress bar
 ```python
 pbar = tqdm(straten) # list
