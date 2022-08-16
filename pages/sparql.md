@@ -1,5 +1,6 @@
 ## geof:sfWithin (filter results with a boundingbox)
 source: https://triplydb.com/academy/-/queries/geo-within-query/5
+
 data:
 ```turtle
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
