@@ -1,5 +1,6 @@
 ## geof:sfWithin (filter results with a boundingbox)
 source: https://triplydb.com/academy/-/queries/geo-within-query/5
+data:
 ```turtle
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix def: <https://hetutrechtsarchief.nl/def/> .
@@ -9,6 +10,7 @@ hua:D8884A3B2E6CA8F6E0538F04000A374B
   a def:Adresvermelding ;
   geo:asWKT "POINT (9.1825624999999995 45.4652869999999965)"^^geo:wktLiteral .
 ```
+query:
 ```sparql
 PREFIX def: <https://hetutrechtsarchief.nl/def/>
 prefix geo: <http://www.opengis.net/ont/geosparql#>
