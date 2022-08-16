@@ -1,3 +1,30 @@
+## geof:sfWithin (filter results with a boundingbox)
+```turtle
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix def: <https://hetutrechtsarchief.nl/def/> .
+@prefix hua: <https://hetutrechtsarchief.nl/id/> .
+
+hua:D8884A3B2E6CA8F6E0538F04000A374B
+  a def:Adresvermelding ;
+  geo:asWKT "POINT (9.1825624999999995 45.4652869999999965)"^^geo:wktLiteral .
+```
+```sparql
+PREFIX def: <https://hetutrechtsarchief.nl/def/>
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix geof: <http://www.opengis.net/def/function/geosparql/>
+
+select ?zoekveld ?match ?x {
+  
+  ?x a def:Adresvermelding ; 
+     geo:asWKT ?match.
+
+  bind('Polygon((10 45, 10 46, 9 46, 9 45, 10 45))'^^geo:wktLiteral as ?zoekveld)
+
+  filter(geof:sfWithin(?match, ?zoekveld))
+}
+limit 10
+```
+
 ## everything that has as location a quadrangle instance EXCLUDE everything with a lunar coordinate
 ```sparql
 SELECT distinct ?item ?itemLabel ?itemDescription ?typeLabel ?pic ?dt ?lq ?lqLabel WHERE {
