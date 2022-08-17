@@ -2,6 +2,14 @@
 title: Processing
 ---
 
+# mouseWheel
+```java
+void mouseWheel(MouseEvent event) {
+  progress += event.getCount() *.00001;
+  progress = constrain(progress, 0, 1);
+}
+
+```
 # removeIf
 ```java
 lines.removeIf(o -> (((TextLine)o).cell == null)); //remove all lines that are not assigned to a cell
