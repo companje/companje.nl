@@ -5,7 +5,7 @@ title: Sanyo MBC-550/555
 <img src="https://user-images.githubusercontent.com/156066/160270847-03ebfc54-547e-4a9a-813f-6114f2f6213b.jpg" alt="Sanyo-MBC-555-Rick-Companje" width="400" align="right">
 
 # decode Michtron PIC image file with Processing
-```
+```java
 //load and check width
 bytes = loadBytes("IMAGE.PIC");
 w = (bytes[1]<<8) + (bytes[0] & 0xff);
