@@ -6,15 +6,18 @@ title: Sanyo MBC-550/555
 
 # decode Michtron PIC image file with Processing
 ```java
+size(640,400);
+noStroke();
+
 //load and check width
-bytes = loadBytes("IMAGE.PIC");
-w = (bytes[1]<<8) + (bytes[0] & 0xff);
-h = (bytes[3]<<8) + (bytes[2] & 0xff);
+byte bytes[] = loadBytes("SATURN.PIC");
+int w = (bytes[1]<<8) + (bytes[0] & 0xff);
+int h = (bytes[3]<<8) + (bytes[2] & 0xff);
 
 //check and fix width if needed
-int bytesPerChannel = (bytes.length-4)/3;
-if (w*h/8<bytesPerChannel) 
-  w = (int(w+8)/8)*8;
+//int bytesPerChannel = (bytes.length-4)/3;
+//if (w*h/8<bytesPerChannel) 
+//  w = (int(w+8)/8)*8;
   
 //draw
 for (int i=0, x=0, y=0, n=w*h/8; i<n; i++) {
@@ -26,7 +29,10 @@ for (int i=0, x=0, y=0, n=w*h/8; i<n; i++) {
     rect(x, y*2, 1, 1.75); //double height, with slight vertical raster line in between the lines
   }
 }
+
+get(0,0,w,int(h*1.75)).save("SATURN.PNG");
 ```
+![SATURN](https://user-images.githubusercontent.com/156066/185075825-8ee7b504-55c3-4246-bd89-2f91893d62e6.PNG)
 
 # receive data from Python
 on Sanyo: ```type file.asm > aux```
