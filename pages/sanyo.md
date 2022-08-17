@@ -23,7 +23,7 @@ for (int i=0, x=0, y=0, n=w*h/8; i<n; i++) {
     int gg=(bytes[i+1*n+4]&j)/j<<8;
     int bb=(bytes[i+0*n+4]&j)/j<<8;
     fill(rr, gg, bb);
-    rect(x*pw, y*ph, pw, ph-.25);
+    rect(x, y*2, 1, 1.75); //double height, with slight vertical raster line in between the lines
   }
 }
 ```
