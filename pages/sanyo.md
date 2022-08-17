@@ -4,6 +4,30 @@ title: Sanyo MBC-550/555
 
 <img src="https://user-images.githubusercontent.com/156066/160270847-03ebfc54-547e-4a9a-813f-6114f2f6213b.jpg" alt="Sanyo-MBC-555-Rick-Companje" width="400" align="right">
 
+# decode Michtron PIC image file with Processing
+```
+//load and check width
+bytes = loadBytes("IMAGE.PIC");
+w = (bytes[1]<<8) + (bytes[0] & 0xff);
+h = (bytes[3]<<8) + (bytes[2] & 0xff);
+
+//check and fix width if needed
+int bytesPerChannel = (bytes.length-4)/3;
+if (w*h/8<bytesPerChannel) 
+  w = (int(w+8)/8)*8;
+  
+//draw
+for (int i=0, x=0, y=0, n=w*h/8; i<n; i++) {
+  for (int j=128; j>0; j/=2, x=(x+1)%w, y=i/(w/8)) {
+    int rr=(bytes[i+2*n+4]&j)/j<<8;
+    int gg=(bytes[i+1*n+4]&j)/j<<8;
+    int bb=(bytes[i+0*n+4]&j)/j<<8;
+    fill(rr, gg, bb);
+    rect(x*pw, y*ph, pw, ph-.25);
+  }
+}
+```
+
 # receive data from Python
 on Sanyo: ```type file.asm > aux```
 
