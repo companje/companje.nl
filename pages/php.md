@@ -2,6 +2,43 @@
 title: PHP
 ---
 
+# POST
+```php
+$img = file_get_contents('x.jpg');
+$b64 = base64_encode($img);
+
+$header = "accept: */*\r\n".
+  //...
+  "content-type: application/json\r\n";
+
+$data = array(
+  "x" => array(
+    "y" => array(
+      "z" => 123
+    ),
+  ),
+  "a" => array(
+    "base64" => $b64
+  )
+);
+
+$options = array(
+  'http' => array( // use key 'http' even if you send the request to https://...
+    'header'  => $header,
+    'method'  => 'POST',
+    'content' => json_encode($data) //http_build_query($data)    
+  ),
+);
+
+$context  = stream_context_create($options);
+$result = file_get_contents($url, false, $context);
+if ($result === FALSE) die("Error");
+
+$json = json_decode($result);
+$status = $json->status;
+$id = $json->id;
+```
+
 # ODBC
 ```php
 ini_set('display_errors', 'On');
