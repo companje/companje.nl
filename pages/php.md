@@ -2,7 +2,7 @@
 title: PHP
 ---
 
-# POST
+# HTTP POST base64 encoded image and wait for processing
 ```php
 $img = file_get_contents('x.jpg');
 $b64 = base64_encode($img);
