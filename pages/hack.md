@@ -21,3 +21,4 @@ title: Hack
 * Wappalyzer
 * tsk_recover
 * https://gchq.github.io/CyberChef
+* url fuzzer
