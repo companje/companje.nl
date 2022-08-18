@@ -1,0 +1,4 @@
+```
+build:
+	php index.php
+```
