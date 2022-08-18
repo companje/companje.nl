@@ -1,3 +1,10 @@
+# select case select
+```sql
+case when MY_FUNC(persoon.id, 'ROL')='Bruid' 
+     then concat('  ',persoon.beschrijving)
+     else persoon.beschrijving end "Persoon"
+```       
+
 # for every record replace part of the value
 ```sql
 UPDATE adressen
