@@ -117,7 +117,7 @@ SELECT  ?Catalogusnummer, ?oudnummer WHERE {  # subselect voor ORDER BY icm OFFS
   }
   ORDER BY ?oudnummer
 }
-
+ 
 LIMIT 10000
 OFFSET 0
 ```
