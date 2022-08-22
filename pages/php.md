@@ -2,6 +2,18 @@
 title: PHP
 ---
 
+# SQLite
+```php
+$db = new SQLite3('database.db');
+$sql = "SELECT * FROM Kadaster";
+$results = $db->query($sql);
+  $data = array();
+  while ($row = $results->fetchArray(SQLITE3_ASSOC)) {
+    array_push($data, $row);
+  }
+  echo json_encode($data);
+```
+
 # HTTP POST base64 encoded image and wait for processing
 ```php
 $img = file_get_contents('x.jpg');
