@@ -4,7 +4,7 @@ title: PHP
 
 # SQLite
 ```php
-$db = new SQLite3('database.db');
+$db = new SQLite3('kadaster.db');
 $sql = "SELECT * FROM Kadaster";
 $results = $db->query($sql);
   $data = array();
