@@ -6,11 +6,9 @@ title: Python
 ```python
 #!/usr/bin/env python3
 
-import glob
+from pathlib import Path
 
 folder = "/Volumes/archiefbestanden$/Kadaster/DVD's/"
-
-from pathlib import Path
 
 for path in Path(folder).rglob('*'):
     print(path)
