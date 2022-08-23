@@ -2,6 +2,20 @@
 title: Python
 ---
 
+## list all files recursive
+```python
+#!/usr/bin/env python3
+
+import glob
+
+folder = "/Volumes/archiefbestanden$/Kadaster/DVD's/"
+
+from pathlib import Path
+
+for path in Path(folder).rglob('*'):
+    print(path)
+```
+
 ## join list to string ignore blanks
 ```python
 ' '.join(filter(None, strings))
