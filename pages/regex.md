@@ -3,7 +3,7 @@ title: Regular Expressions
 ---
 
 # non greedy img src url's in textfile in SublimeText
-" was escaped in textfile by \". In regex you need to escape the \ as well
+" was escaped in textfile by \\". In regex you need to escape the \ as well
 ```regex
 src=\\".*?\\"
 ```
