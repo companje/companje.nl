@@ -21,6 +21,10 @@ wget -nd -r -A jpeg,jpg,bmp,gif,png http://www.domain.com
 ```bash
 wget http://connect.doodle3d.com/api/signin.php -O -
 ```
+## output folder / output directory
+```bash
+wget --directory-prefix=FOLDER URL
+```
 
 ## wildcards
 ```bash
