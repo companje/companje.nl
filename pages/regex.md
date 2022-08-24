@@ -2,6 +2,11 @@
 title: Regular Expressions
 ---
 
+# non greedy img src url's in textfile in SublimeText
+```regex
+src=\\".*?\\"
+```
+
 # everything before the first digit
 ```python
 result = re.findall(r'^[^\d]*',address)
