@@ -7,6 +7,10 @@ title: Regular Expressions
 ```regex
 src=\\".*?\\"
 ```
+only the middle group:
+```regex
+(?<=src=\\")(.*?)(?=\\")
+```
 
 # everything before the first digit
 ```python
