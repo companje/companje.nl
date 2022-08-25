@@ -2,6 +2,11 @@
 title: PHP
 ---
 
+# restart PHP FPM after changing php.ini file
+```bash
+sudo /etc/init.d/php7.3-fpm restart
+```
+
 # SQLite
 ```php
 $db = new SQLite3('kadaster.db');
