@@ -117,15 +117,6 @@ Header append Cache-Control "no-cache"
 </FilesMatch>
 ```
 
-# htaccess auth
-```apache
-AuthType Basic
-AuthUserFile FOLDER/.htpasswd
-<limit GET POST>
-  require valid-user
-</limit>
-```
-
 # create SHA encrypted password for htpasswd
 ```bash
 htpasswd -s FOLDER/.htpasswd USERNAME
