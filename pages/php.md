@@ -2,6 +2,22 @@
 title: PHP
 ---
 
+# generate Excel Spreadsheet
+```php
+$spreadsheet = new Spreadsheet();
+$sheet = $spreadsheet->getActiveSheet();
+$sheet->fromArray(["a","b","c"],NULL,'A1'); //header
+//...
+//foreach col
+  $sheet->getCellByColumnAndRow($col, $row)->setValue("value");
+//
+header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+header('Content-Disposition: attachment; filename="result.xlsx"');
+$writer = new Xlsx($spreadsheet);
+$writer->save('php://output');
+die();
+```
+
 # restart PHP FPM after changing php.ini file
 ```bash
 sudo /etc/init.d/php7.3-fpm restart
