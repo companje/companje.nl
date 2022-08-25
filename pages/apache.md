@@ -2,6 +2,11 @@
 title: Apache 
 ---
 
+# restart php-fpm
+```bash
+sudo /etc/init.d/php7.3-fpm restart
+```
+
 # create subdomain (bash script)
 ```bash
 #!/bin/bash
