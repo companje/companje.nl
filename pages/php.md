@@ -3,7 +3,16 @@ title: PHP
 ---
 
 # generate Excel Spreadsheet
+fierst install PhpSpreadsheet by:
+```bash
+composer require phpoffice/phpspreadsheet
+```
+
 ```php
+require 'vendor/autoload.php';
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
+//...
 $spreadsheet = new Spreadsheet();
 $sheet = $spreadsheet->getActiveSheet();
 $sheet->fromArray(["a","b","c"],NULL,'A1'); //header
