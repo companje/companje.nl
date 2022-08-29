@@ -3,7 +3,7 @@ title: Python
 ---
 
 ## list used packages in Python script with versions
-```
+```python
 import pkg_resources
 for i in pkg_resources.working_set:
   print(i.key + "==" + i.version)
