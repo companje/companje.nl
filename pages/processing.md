@@ -100,6 +100,7 @@ File[] files = new File(folder).listFiles();
 ```
 
 # Dithering
+* https://tannerhelland.com/2012/12/28/dithering-eleven-algorithms-source-code.html
 * https://gist.github.com/companje/86645c4183c9073ceb7639f1c37b7905
 * https://ditherit.com/
 * 
