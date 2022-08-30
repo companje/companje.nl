@@ -2,6 +2,23 @@
 title: Processing
 ---
 
+# scaleInto (resize image into other image nearest neighbour
+```java
+PImage scaleInto(PImage img, PImage img2) { //scale img into img2
+  img2.loadPixels();
+  img.loadPixels();
+  for (int y=0; y<img2.height; y++) {
+    for (int x=0; x<img2.width; x++) {
+      int xx = int(float(x)/img2.width*img.width);
+      int yy = int(float(y)/img2.height*img.height);
+      img2.pixels[y*img2.width+x] = img.pixels[yy*img.width+xx];
+    }
+  }
+  img2.updatePixels();
+  return img2;
+}
+```
+
 # mouseWheel
 ```java
 void mouseWheel(MouseEvent event) {
