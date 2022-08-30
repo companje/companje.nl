@@ -52,11 +52,12 @@ Header set Access-Control-Allow-Headers "Origin, X-Requested-With, Content-Type,
 
 # Basic Auth
 ```apache
-AuthName "Login"
-AuthGroupFile /dev/null
-AuthUserFile /domains/....../.htpasswd
 AuthType Basic
-require valid-user
+AuthName "Restricted Files"
+AuthUserFile /FOLDER/.htpasswd
+<limit GET POST>
+  require valid-user
+</limit>
 ```
 
 #  redirect 
