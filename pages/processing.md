@@ -2,7 +2,7 @@
 title: Processing
 ---
 
-# scaleInto (resize image into other image nearest neighbour
+# scaleInto (resize image into other image nearest neighbour)
 ```processing
 PImage scaleInto(PImage img, PImage img2) { //scale img into img2
   img2.loadPixels();
