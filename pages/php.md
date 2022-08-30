@@ -2,6 +2,40 @@
 title: PHP
 ---
 
+# disable buffering (realtime output of executed script)
+```php
+ini_set('output_buffering', 'off');        // Turn off output buffering
+ini_set('zlib.output_compression', false); // Turn off PHP output compression
+ini_set('implicit_flush', true);           // Implicitly flush the buffer(s)
+ob_implicit_flush(true); 
+while (ob_get_level() > 0) {               // Clear, and turn off output buffering
+    $level = ob_get_level();               // Get the curent level
+    ob_end_clean();                        // End the buffering
+    if (ob_get_level() == $level) break;   // If the current level has not changed, abort
+}
+if (function_exists('apache_setenv')) {
+    apache_setenv('no-gzip', '1');         //disable apache compression
+    apache_setenv('dont-vary', '1');       //disable apache output buffering
+}
+
+//....
+
+$process = proc_open($cmd, 
+    array(
+      0 => array("pipe", "r"), 
+      1 => array("pipe", "w"), 
+      2 => array("pipe", "w")
+    ),
+    $pipes, realpath('./'), array());
+    
+if (is_resource($process)) {
+    while ($s = fgets($pipes[1])) {
+        print "<p>".$s."</p>";
+        flush();
+    }
+}
+```
+
 # generate Excel Spreadsheet
 fierst install PhpSpreadsheet by:
 ```bash
