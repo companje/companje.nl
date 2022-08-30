@@ -2,6 +2,12 @@
 title: Python
 ---
 
+## on ubuntu when pip python packages end up in ~/.local/lib/python3.6/site-packages/
+change user to root before pip install
+```
+sudo su
+```
+
 ## list used packages in Python script with versions
 ```python
 import pkg_resources
