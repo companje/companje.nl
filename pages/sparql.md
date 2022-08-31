@@ -1,3 +1,52 @@
+## request saved query in jsonld form from triply with paging (limit/pageSize, offset/page)
+zie ook: https://triply.cc/blog/2021-03-new-features
+
+Supported RDF media types: application/n-triples, application/n-quads, application/trig, text/turtle, application/ld+json, application/json, application/x-triply+json. 
+
+Supported RDF extensions: nt, nq, trig, ttl, jsonld, json, triply. Adding an extension to the end of the url overrides header-based content negotiation.
+
+```python
+import requests, json
+url = "https://api.data.netwerkdigitaalerfgoed.nl/queries/hetutrechtsarchief/wo2-all-documents/run.json?pageSize=10000&page=2"
+
+response = requests.get(url)
+# response = requests.get(url, headers={"Accept":"application/ld+json"})
+
+data = response.json()
+
+print(json.dumps(data,indent=2))
+```
+https://api.data.netwerkdigitaalerfgoed.nl/queries/hetutrechtsarchief/wo2-all-documents/run.json?pageSize=5&page=2
+
+
+## sparql construct test
+```sparql
+PREFIX wgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX sordef: <https://data.kkg.kadaster.nl/sor/model/def/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX def: <https://hetutrechtsarchief.nl/def/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+CONSTRUCT {
+  ?doc rdf:type def:Document ;
+     rdfs:label ?doc_label ;
+     def:adres ?adres ;
+     foaf:depiction ?depiction ;
+     def:typeBron ?bron ;
+     def:adres ?adres .
+  ?adres rdf:type sordef:Nummeraanduiding ;
+     rdfs:label ?adres_label ;
+     wgs84:asWKT ?geo .
+}
+WHERE {
+  ?doc a def:Document .
+  OPTIONAL { ?doc rdfs:label ?doc_label }
+  OPTIONAL { ?doc def:adresvermelding/sordef:Nummeraanduiding ?adres }
+}
+limit 10000 offset 1
+```
+
 ## geof:sfWithin (filter results with a boundingbox)
 data:
 ```turtle
