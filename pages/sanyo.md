@@ -4,6 +4,9 @@ title: Sanyo MBC-550/555
 
 <img src="https://user-images.githubusercontent.com/156066/160270847-03ebfc54-547e-4a9a-813f-6114f2f6213b.jpg" alt="Sanyo-MBC-555-Rick-Companje" width="400" align="right">
 
+# CALL
+* http://www.antonis.de/qbebooks/gwbasman/call.html
+* 
 # BASIC manual Sanyo MBC-555
 * https://hwiegman.home.xs4all.nl/downloads/mbc550_series.pdf
 
