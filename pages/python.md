@@ -2,6 +2,17 @@
 title: Python
 ---
 
+## requests
+```python
+import requests, json
+
+response = requests.get(URL)
+# response = requests.get(URL, headers={"Accept":"application/ld+json"})
+
+data = response.json()
+print(json.dumps(data,indent=2))
+```
+
 ## on ubuntu when pip python packages end up in ~/.local/lib/python3.6/site-packages/
 change user to root before pip install
 ```
