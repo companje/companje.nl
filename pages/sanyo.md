@@ -4,6 +4,13 @@ title: Sanyo MBC-550/555
 
 <img src="https://user-images.githubusercontent.com/156066/160270847-03ebfc54-547e-4a9a-813f-6114f2f6213b.jpg" alt="Sanyo-MBC-555-Rick-Companje" width="400" align="right">
 
+# run Mame for Sanyo MBC-555
+ROM in roms/mbc55x/mbc55x-v120.rom
+```bash
+./mame -verbose -window mbc55x -nomaximize -resolution0 900x600  \
+-flop1 /Users/rick/Sanyo/mame/mbc55x/0069\ -\ originele\ Sanyo\ MS-DOS\ 1.25\ bootdisk\ met\ BASIC.img
+```
+
 # CALL
 * http://www.antonis.de/qbebooks/gwbasman/call.html
 * 
