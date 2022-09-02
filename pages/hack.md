@@ -14,6 +14,7 @@ title: Hack
 * https://www.wikipendium.no/
 
 # Tools
+* https://hexed.it/ (online hexviewer)
 * Wireshark
 * binwalk
 * tcpdump -qns 0 -A -r  myfirst.pcapng > result.txt
