@@ -1,1 +1,1 @@
-see [[sanyo]]
+see [sanyo](/sanyo)
