@@ -7,7 +7,7 @@ title: Sanyo MBC-550/555
 # run Mame for Sanyo MBC-555
 ROM in roms/mbc55x/mbc55x-v120.rom
 ```bash
-./mame -verbose -window mbc55x -nomaximize -resolution0 900x600  \
+./mame mbc55x -verbose -window -nomaximize -resolution0 900x600  \
 -flop1 /Users/rick/Sanyo/mame/mbc55x/0069\ -\ originele\ Sanyo\ MS-DOS\ 1.25\ bootdisk\ met\ BASIC.img
 ```
 
