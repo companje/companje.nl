@@ -5,14 +5,13 @@ title: Sanyo MBC-550/555
 <img src="https://user-images.githubusercontent.com/156066/160270847-03ebfc54-547e-4a9a-813f-6114f2f6213b.jpg" alt="Sanyo-MBC-555-Rick-Companje" width="400" align="right">
 
 # run Mame for Sanyo MBC-555
-ROM in roms/mbc55x/mbc55x-v120.rom
-```bash
-./mame mbc55x -verbose -window -nomaximize -resolution0 900x600  \
--flop1 /Users/rick/Sanyo/mame/mbc55x/0069\ -\ originele\ Sanyo\ MS-DOS\ 1.25\ bootdisk\ met\ BASIC.img
-```
+* ROM in roms/mbc55x/mbc55x-v120.rom
 * Fn+DEL (to enable UI interface controls) then TAB to show menu
+* make mame for (just) Sanyo: ```make SUBTARGET=mbc55xtest SOURCE=src/mame/sanyo/mbc55x.cpp```
 * make mame tools: ```make TOOLS=1 REGENIE=1```
-
+```bash
+./mbc55xtest mbc55x -ramsize 256K -verbose -skip_gameinfo -effect scanlines -window -nomaximize -resolution0 800x600 -flop1 floppies/disk-a.img
+```
 # BASIC CALL function
 * http://www.antonis.de/qbebooks/gwbasman/call.html
 
