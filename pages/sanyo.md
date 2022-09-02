@@ -11,6 +11,7 @@ ROM in roms/mbc55x/mbc55x-v120.rom
 -flop1 /Users/rick/Sanyo/mame/mbc55x/0069\ -\ originele\ Sanyo\ MS-DOS\ 1.25\ bootdisk\ met\ BASIC.img
 ```
 * Fn+DEL (to enable UI interface controls) then TAB to show menu
+* make mame tools: ```make TOOLS=1 REGENIE=1```
 
 # BASIC CALL function
 * http://www.antonis.de/qbebooks/gwbasman/call.html
