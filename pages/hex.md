@@ -10,6 +10,9 @@ title: Hex editors
   <div class="col-3"><label for='dec'>Bin:</label><input name='bin' id='bin' type="text" value=""></div>
 </div>
 
+## online hex viewer
+* https://hexed.it/
+
 ## two's complement
 ```java
 println((al&127)-128);
