@@ -10,6 +10,7 @@ ROM in roms/mbc55x/mbc55x-v120.rom
 ./mame mbc55x -verbose -window -nomaximize -resolution0 900x600  \
 -flop1 /Users/rick/Sanyo/mame/mbc55x/0069\ -\ originele\ Sanyo\ MS-DOS\ 1.25\ bootdisk\ met\ BASIC.img
 ```
+* Fn+DEL (to enable UI interface controls) then TAB to show menu
 
 # BASIC CALL function
 * http://www.antonis.de/qbebooks/gwbasman/call.html
