@@ -13,7 +13,7 @@ ROM in roms/mbc55x/mbc55x-v120.rom
 
 # CALL
 * http://www.antonis.de/qbebooks/gwbasman/call.html
-* 
+
 # BASIC manual Sanyo MBC-555
 * https://hwiegman.home.xs4all.nl/downloads/mbc550_series.pdf
 
