@@ -11,7 +11,7 @@ ROM in roms/mbc55x/mbc55x-v120.rom
 -flop1 /Users/rick/Sanyo/mame/mbc55x/0069\ -\ originele\ Sanyo\ MS-DOS\ 1.25\ bootdisk\ met\ BASIC.img
 ```
 
-# CALL
+# BASIC CALL function
 * http://www.antonis.de/qbebooks/gwbasman/call.html
 
 # BASIC manual Sanyo MBC-555
