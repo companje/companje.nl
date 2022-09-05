@@ -2,7 +2,7 @@
 title: Python
 ---
 
-## which python uses syblime?
+## which python uses sublime?
 ```
 #!/usr/bin/env python3
 
