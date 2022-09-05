@@ -2,6 +2,19 @@
 title: Python
 ---
 
+## which python uses syblime?
+```
+#!/usr/bin/env python3
+
+import sys
+print(sys.executable)
+sys.exit()
+```
+in my case:
+```
+/usr/local/opt/python@3.10/bin/python3.10
+```
+
 ## requests
 ```python
 import requests, json
