@@ -3,7 +3,7 @@ title: Python
 ---
 
 ## which python uses sublime?
-```
+```python
 #!/usr/bin/env python3
 
 import sys
