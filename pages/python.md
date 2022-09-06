@@ -3,6 +3,7 @@ title: Python
 ---
 
 ## markup html with BeautifulSoup
+https://beautiful-soup-4.readthedocs.io/en/latest/
 ```python
 from bs4 import BeautifulSoup
 soup = BeautifulSoup(html, 'html.parser')
