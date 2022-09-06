@@ -1,6 +1,10 @@
 ---
 title: Python
 ---
+## download and save image
+```python
+urllib.request.urlretrieve(URL, local_filename)
+```
 
 ## markup html with BeautifulSoup
 https://beautiful-soup-4.readthedocs.io/en/latest/
