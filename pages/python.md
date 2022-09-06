@@ -2,6 +2,13 @@
 title: Python
 ---
 
+## markup html with BeautifulSoup
+```python
+from bs4 import BeautifulSoup
+soup = BeautifulSoup(html, 'html.parser')
+print(soup.prettify())
+```
+
 ## which python uses sublime?
 ```python
 #!/usr/bin/env python3
