@@ -17,7 +17,7 @@ for link in soup.find_all('a'):
 ```
 
 get text of div with class:
-```
+```python
 copyright = soup.find("div", class_="copyright-authoryear").get_text().strip()
 ```
 
