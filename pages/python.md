@@ -10,6 +10,12 @@ soup = BeautifulSoup(html, 'html.parser')
 print(soup.prettify())
 ```
 
+get all links:
+```python
+for link in soup.find_all('a'):
+    print(link.get('href'))
+```
+
 ## which python uses sublime?
 ```python
 #!/usr/bin/env python3
