@@ -15,6 +15,11 @@ in my case:
 /usr/local/opt/python@3.10/bin/python3.10
 ```
 
+## use pip for specific python version
+```bash
+/usr/local/opt/python@3.10/bin/python3.10 -m pip install bs4
+```
+
 ## requests
 ```python
 import requests, json
