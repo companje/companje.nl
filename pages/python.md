@@ -16,6 +16,11 @@ for link in soup.find_all('a'):
     print(link.get('href'))
 ```
 
+get text of div with class:
+```
+copyright = soup.find("div", class_="copyright-authoryear").get_text().strip()
+```
+
 ## which python uses sublime?
 ```python
 #!/usr/bin/env python3
