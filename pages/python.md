@@ -319,7 +319,7 @@ except ValueError:
   pass # just skip invalid/incomplete dates
 ```
 
-## maak spreadsheet met flexvelden als kolommen per archiefeenheid
+## maak spreadsheet met velden als kolommen per eenheid
 ```python
 #!/usr/bin/env python3
 import csv,re
