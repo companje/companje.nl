@@ -8,6 +8,10 @@ Sanyo MBC-555
 # Panel mounted switches for drive selection
 ![IMG_8359](https://user-images.githubusercontent.com/156066/190622182-a80b7757-808f-47d2-b0a2-368dac2b7d0b.jpeg)
 <img width="1443" alt="Screenshot 2022-09-16 at 12 12 41" src="https://user-images.githubusercontent.com/156066/190617011-8e396784-b571-4402-b703-3166797d6445.png">
+* check if I can replace the physical USB switch with a chip controlled by an Arduino: 
+  * https://www.ti.com/product/TS5V330C
+  * https://hackaday.com/2017/05/17/a-few-of-our-favorite-chips-4051-analog-mux/
+  * https://nl.farnell.com/on-semiconductor/fsusb42umx/switch-usb-2-2-port-smd-umlp-10/dp/1495467?ost=fsusb42umx
 
 # run Mame for Sanyo MBC-555
 * ROM in roms/mbc55x/mbc55x-v120.rom
