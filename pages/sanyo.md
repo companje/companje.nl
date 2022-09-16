@@ -12,7 +12,7 @@ Sanyo MBC-555
   * https://www.ti.com/product/TS5V330C
   * https://hackaday.com/2017/05/17/a-few-of-our-favorite-chips-4051-analog-mux/
   * https://nl.farnell.com/on-semiconductor/fsusb42umx/switch-usb-2-2-port-smd-umlp-10/dp/1495467?ost=fsusb42umx
-  * https://www.tme.eu/en/details/pi5c3257qe/analog-multiplexers-and-switches/diodes-incorporated/ (deze zou leverbaar en geschikt moeten zijn)
+  * https://www.tme.eu/en/details/pi5c3257qe/analog-multiplexers-and-switches/diodes-incorporated/ (deze zou leverbaar en geschikt moeten zijn. Datasheet: https://www.tme.eu/Document/67211692f5b32aa4a424cdbb7a0b36ac/PI5C3257.pdf)
 
 # run Mame for Sanyo MBC-555
 * ROM in roms/mbc55x/mbc55x-v120.rom
