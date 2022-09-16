@@ -3,8 +3,10 @@ title: Sanyo MBC-550/555
 ---
 
 <img src="https://user-images.githubusercontent.com/156066/160270847-03ebfc54-547e-4a9a-813f-6114f2f6213b.jpg" alt="Sanyo-MBC-555-Rick-Companje" width="400">
+Sanyo MBC-555
 
-# Panel mounted switches
+# Panel mounted switches for drive selection
+![IMG_8359](https://user-images.githubusercontent.com/156066/190622182-a80b7757-808f-47d2-b0a2-368dac2b7d0b.jpeg)
 <img width="1443" alt="Screenshot 2022-09-16 at 12 12 41" src="https://user-images.githubusercontent.com/156066/190617011-8e396784-b571-4402-b703-3166797d6445.png">
 
 # run Mame for Sanyo MBC-555
