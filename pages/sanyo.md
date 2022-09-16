@@ -4,6 +4,9 @@ title: Sanyo MBC-550/555
 
 <img src="https://user-images.githubusercontent.com/156066/160270847-03ebfc54-547e-4a9a-813f-6114f2f6213b.jpg" alt="Sanyo-MBC-555-Rick-Companje" width="400" align="right">
 
+# Panel mounted switches
+<img width="1443" alt="Screenshot 2022-09-16 at 12 12 41" src="https://user-images.githubusercontent.com/156066/190617011-8e396784-b571-4402-b703-3166797d6445.png">
+
 # run Mame for Sanyo MBC-555
 * ROM in roms/mbc55x/mbc55x-v120.rom
 * Fn+DEL (to enable UI interface controls) then TAB to show menu
