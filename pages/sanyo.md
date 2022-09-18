@@ -5,6 +5,48 @@ title: Sanyo MBC-550/555
 <img src="https://user-images.githubusercontent.com/156066/160270847-03ebfc54-547e-4a9a-813f-6114f2f6213b.jpg" alt="Sanyo-MBC-555-Rick-Companje" width="400">
 Sanyo MBC-555
 
+# 3 bit grayscale dithering on monochrome monitor
+```
+PImage img = loadImage("input/"+filename);
+img.resize(width, 200);
+img.filter(GRAY);
+img = applyDithering(img, 8); //8 levels of brightness
+img = grayTo3bitIntensity(img);
+savePIC(img, "data/output/"+filename.replace(".jpg", ".pic"));
+///
+void savePIC(PImage img, String filename) {
+  byte bytes[] = new byte[img.width*img.height*3/8+4];
+  bytes[0] = byte(img.width & 255);
+  bytes[1] = byte(img.width >> 8);
+  bytes[2] = byte(img.height & 255);
+  bytes[3] = byte(img.height >> 8);
+
+  for (int i=0, x=0, y=0, n=img.width*img.height/8; i<n; i++) {
+    for (int j=128; j>0; j/=2, x=(x+1)%img.width, y=i/(img.width/8)) {
+      color c = img.get(x, y);
+      bytes[i+4+2*n] |= byte(j * red(c)/255);
+      bytes[i+4+1*n] |= byte(j * green(c)/255);
+      bytes[i+4+0*n] |= byte(j * blue(c)/255);
+    }
+  }
+  saveBytes(filename, bytes);
+}
+
+PImage grayTo3bitIntensity(PImage img) {
+  PImage img2 = img.get();
+  color c[] = {color(0), color(0,0,255),color(0,255,0),color(0,255,255),color(255,0,0),color(255,0,255),color(255,255,0),color(255,255,255)};
+  int lut[] = {0,1,4,2,5,3,6,7};
+  img.loadPixels();
+  for (int y = 0; y<img.height; y++) {
+    for (int x = 0; x<img.width; x++) {
+      int index = int(brightness(img.pixels[y*img.width+x])/32); //32=256/8 because 8 colors in 3 bit
+      img2.set(x,y,c[lut[index]]);
+    }
+  }
+  return img2;
+}
+```
+
 # Panel mounted switches for drive selection
 ![IMG_8359](https://user-images.githubusercontent.com/156066/190622182-a80b7757-808f-47d2-b0a2-368dac2b7d0b.jpeg)
 <img width="1443" alt="Screenshot 2022-09-16 at 12 12 41" src="https://user-images.githubusercontent.com/156066/190617011-8e396784-b571-4402-b703-3166797d6445.png">
