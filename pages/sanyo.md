@@ -6,7 +6,7 @@ title: Sanyo MBC-550/555
 Sanyo MBC-555
 
 # 3 bit grayscale dithering on monochrome monitor
-```
+```processing
 PImage img = loadImage("input/"+filename);
 img.resize(width, 200);
 img.filter(GRAY);
