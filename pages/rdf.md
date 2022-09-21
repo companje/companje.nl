@@ -9,5 +9,5 @@ jsonld normalize INPUT.json > result.nq
 # Raptor
 ```bash
 npm install -g raptor
-rapper -i nquads result.nq -o turtle result.nq > result.ttl
+rapper -i rdfxml 1001.rdf -o turtle > 1001.ttl
 ```
