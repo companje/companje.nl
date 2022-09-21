@@ -93,33 +93,13 @@ https://github.com/rupa/z
 
 
 # Make automatic screenshots
-`~/Documents/screenshots-auto/screenshot.sh`
-```bash
+1) in Automator create an app called and save it in /Applications/AutoScreenshot.app. The app contains the following shell script:
+```
 vardate=$(date +%Y\-%m\-%d); 
 vartime=$(date +%H.%M.%S);
-folder=~/screenshots/$vardate
-mkdir -p $folder
-screencapture -t png -x $folder/$vartime.png;
+screencapture -t jpg -x "/Users/USERNAME/Screenshots/Screenshot-auto $vardate at $vartime.jpg"
 ```
-
-or add screenshot directly to mjpeg file:
-```bash
-folder=$(dirname "$0")
-vardate=$(date +%Y\-%m\-%d); 
-
-screencapture -t tif -x /tmp/tmp.tif
-/usr/local/bin/ffmpeg -i /tmp/tmp.tif -y /tmp/tmp.mjpeg
-cat /tmp/tmp.mjpeg >> $folder/$vardate.mjpeg
-
-#OCR text
-txt=$folder/txt/$vardate.txt
-echo ------------------------------------------------------ >> $txt
-echo $vardate $vartime                                      >> $txt
-echo ------------------------------------------------------ >> $txt
-/usr/local/bin/pngtopnm /tmp/tmp.png | /usr/local/bin/ocrad >> $txt
-```
-
-`~/Library/LaunchAgents/RicksAutoScreenshots.plist`
+2) create the file `/Users/rickcompanje/Library/LaunchAgents/nl.companje.screenshots.plist` with the following contents:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -148,26 +128,8 @@ echo ------------------------------------------------------ >> $txt
   <true/>
 </dict>
 </plist>
-
-<!--
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-    <key>Label</key>
-    <string>nl.companje.screenshots</string>
-    <key>ProgramArguments</key>
-    <array>
-        <string>/Users/rick/Documents/screenshots-auto/screenshot.sh</string>
-    </array>
-    <key>StartInterval</key>
-    <integer>10</integer>
-</dict>
-</plist>
--->
 ```
-
-Install:
+3) Install and run the launchd process
 ```bash
 # launchctl unload nl.companje.screenshots.plist
 launchctl load nl.companje.screenshots.plist
