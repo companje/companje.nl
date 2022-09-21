@@ -94,7 +94,7 @@ https://github.com/rupa/z
 
 # Make automatic screenshots
 1) in Automator create an app called and save it in /Applications/AutoScreenshot.app. The app contains the following shell script:
-```
+```bash
 vardate=$(date +%Y\-%m\-%d); 
 vartime=$(date +%H.%M.%S);
 screencapture -t jpg -x "/Users/USERNAME/Screenshots/Screenshot-auto $vardate at $vartime.jpg"
