@@ -14,7 +14,19 @@ SET straat = REPLACE(straat, 'https://data.kkg.kadaster.nl/id/openbareRuimte/', 
 # regexp_like
 ```sql
 regexp_like(beschrijving, '^1221-1|^1221-2|^1221-3|^1221|^1232|^1394|^1395|^1396|^1397|^463|^481')
-
-regexp_replace(REGEXP_SUBSTR(besch.beschrijving, '(\()(\d*)\)'), '\(|\)','') "AantalFotos", 
 ```
 
+# regex_substr
+```sql
+REGEXP_SUBSTR(besch.beschrijving, '(\()(\d*)\)')
+```
+
+# regexp_replace
+```sql
+regexp_replace(besch.beschrijving, 'xxx', '')
+```
+
+# regexp_replace with substr / groups
+```sql
+regexp_replace(REGEXP_SUBSTR(besch.beschrijving, '(\()(\d*)\)'), '\(|\)','') "AantalFotos"
+```
