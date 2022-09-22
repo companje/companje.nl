@@ -3,6 +3,7 @@ see also [docs](/docs)
 # Vlookup with Search Key in Multiple Column Range
 https://infoinspired.com/google-docs/spreadsheet/vlookup-find-a-search-key-in-multiple-columns-matrix-in-google-sheets/
 (won’t work in Excel)
+
 ![matrix-to-two-columns](https://user-images.githubusercontent.com/156066/191735496-97868c5f-d1e8-480d-93db-dd30ac78e735.jpg)
 ```
 =ArrayFormula(split(flatten(B2:D7&"|"&A2:A7);"|"))
