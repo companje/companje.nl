@@ -1,7 +1,7 @@
 see also [docs](/docs)
 
 # transpose comma separated values in multiple rows to one long list of items
-``
+```
 =transpose(split(join(",";D:D);","))
 ```
 
