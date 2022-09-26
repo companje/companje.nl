@@ -5,6 +5,7 @@ rico:hasIdentifier id:609C5B99657D4642E0534701000A17FD   # bij rico:hasIdentifie
 ```
 
 # run shacl validator
+part of jena (install jena on mac with `brew install yena`)
 ```bash
 shacl validate -s ../recordset.ttl -d example-RiC-O-maart2022.ttl
 ```
