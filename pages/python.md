@@ -1,6 +1,12 @@
 ---
 title: Python
 ---
+
+## strip trailing numbers comma and whitespace
+```python
+s = s.strip().lower().rstrip(" 1234567890,")
+```
+
 ## download and save image
 ```python
 urllib.request.urlretrieve(URL, local_filename)
