@@ -5,6 +5,11 @@ title: Sanyo MBC-550/555
 <img src="https://user-images.githubusercontent.com/156066/160270847-03ebfc54-547e-4a9a-813f-6114f2f6213b.jpg" alt="Sanyo-MBC-555-Rick-Companje" width="400">
 Sanyo MBC-555
 
+# black & white ordered dithering
+4x8 bits (4 lines, 8 bits per line). in total 8 chars
+grays: db 0,0,0,0, 136,0,34,0, 170,0,170,0, 170,17,170,68, 170,85,170,85, 85,238,85,187, 119,255,221,255, 255,255,255,255
+<img width="644" alt="ordered-dithering-black-white" src="https://user-images.githubusercontent.com/156066/193271595-1b238df0-80f1-4101-8205-6babedb8365a.png">
+
 # 3 bit grayscale dithering on monochrome monitor
 ```processing
 PImage img = loadImage("input/"+filename);
