@@ -2,6 +2,10 @@
 title: Mac OSX
 ---
 
+# Apple Notes
+by doubleclicking on the modification date of the note you can see the creationdate
+<img width="692" alt="Screenshot 2022-09-30 at 09 47 49" src="https://user-images.githubusercontent.com/156066/193219266-fadf9bde-024b-44dc-83c9-15da6bbf9d27.png">
+
 # see which applications have which network ports open
 https://apple.stackexchange.com/questions/117644/how-can-i-list-my-open-network-ports-with-netstat
 ```bash
