@@ -2,6 +2,11 @@
 title: Python
 ---
 
+## sort by integer without itemgetter
+```python
+relaties = sorted(relaties, key=lambda item:int(item['aantal']), reverse=True)
+```
+
 ## strip trailing numbers comma and whitespace
 ```python
 s = s.strip().lower().rstrip(" 1234567890,")
