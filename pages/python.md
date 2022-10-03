@@ -2,7 +2,7 @@
 title: Python
 ---
 
-## sort by integer without itemgetter
+## sort by integer without itemgetter but wit lambda function
 ```python
 relaties = sorted(relaties, key=lambda item:int(item['aantal']), reverse=True)
 ```
