@@ -2,6 +2,11 @@
 title: Python
 ---
 
+## ignore 'illegal' unicode chars in string (?)
+```python
+str(data["Text"].encode("ascii", "ignore"))
+```
+
 ## sort by integer without itemgetter but wit lambda function
 ```python
 relaties = sorted(relaties, key=lambda item:int(item['aantal']), reverse=True)
