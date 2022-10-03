@@ -5,6 +5,9 @@ title: Sanyo MBC-550/555
 <img src="https://user-images.githubusercontent.com/156066/160270847-03ebfc54-547e-4a9a-813f-6114f2f6213b.jpg" alt="Sanyo-MBC-555-Rick-Companje" width="400">
 Sanyo MBC-555
 
+# Repair story by Mike @ Leaded Solder 
+https://www.leadedsolder.com/2022/08/23/sanyo-mbc555-power-supply-swap-pickup.html
+
 # black & white ordered dithering
 ```asm
 ;from dark to light: 4x8 bits (4 lines, 8 bits per line). in total 8 chars.
