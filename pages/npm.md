@@ -3,6 +3,14 @@ title: npm - node package manager
 ---
 see [[nodejs]]
 
+# eslint-plugin-vue ... The engine "node" is incompatible with this module. Expected version ...
+I needed version 16 of node instead of 14.x
+```
+brew install node@16
+echo 'export PATH="/usr/local/opt/node@16/bin:$PATH"' >> ~/.zshrc
+# then open new shell
+```
+
 # Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
 ```
 sudo chown -R rick:admin /usr/local/lib/node_modules
