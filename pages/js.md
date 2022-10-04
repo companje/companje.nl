@@ -2,6 +2,11 @@
 title: Javascript
 ---
 
+## delete from array using filter
+```js
+this.friends = this.friends.filter((friend) => friend.id !== id);
+```
+
 ## findIndex
 ```js
 onImageClick(id) {
