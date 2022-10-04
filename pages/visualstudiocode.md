@@ -7,4 +7,4 @@
 `Cmd+K S`
 
 # open current file in Finder
-`Cmd+Alt+R`
+`Cmd+Alt+R` (you might need to delete the keybindings for toggle RegEx)
