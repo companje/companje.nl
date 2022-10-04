@@ -1,4 +1,2 @@
-# Visual Studio Code
-
-## indenting/formatting 
+# indenting/formatting 
 install 'Prettier' extension
