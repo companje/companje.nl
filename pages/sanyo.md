@@ -7,6 +7,7 @@ Sanyo MBC-555
 
 # Repair story by Mike @ Leaded Solder 
 https://www.leadedsolder.com/2022/08/23/sanyo-mbc555-power-supply-swap-pickup.html
+tip: https://github.com/keirf/Greaseweazle
 
 # black & white ordered dithering
 ```asm
