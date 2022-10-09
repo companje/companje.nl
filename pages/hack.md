@@ -2,6 +2,10 @@
 title: Hack
 ---
 
+# radare2
+* https://github.com/radareorg/radare2
+* https://reverseengineering.stackexchange.com/questions/3949/disassembling-an-unknown-dos-mz-executable-using-radare2
+
 #  Find cool things 
 * [[https://news.ycombinator.com|Hacker News]]
 * [[https://news.ycombinator.com/shownew|Hacker News - Show New]]
