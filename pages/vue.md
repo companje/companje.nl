@@ -2,6 +2,9 @@
 title: Vue
 ---
 
+# TheHeader and other components prefixed with The
+when you have a component that is only used once it is recommemended (see vue styleguide) to prefix it with 'The'
+
 # multiple elements in directly in template
 in vue3 (not in vue2) you don't need a root element in a template. you can use a `<h2>` and a `<p>` directly in the `<template>` without wrapping them with a `<div>` or something. this is a feature called <em>fragments</em>.
 
