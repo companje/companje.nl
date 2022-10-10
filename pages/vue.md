@@ -2,6 +2,11 @@
 title: Vue
 ---
 
+# dynamic components
+```xml
+<component :is="selectedComponent">hoi</component>
+```
+
 # slot props
 slot props pass data from a component to the parent of the component. this way you can have a v-for in a component and have the parent use the data and pass in custom styling/data.
 
