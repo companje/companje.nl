@@ -3,7 +3,7 @@ title: Vue
 ---
 
 # dynamic components with keep-alive 
-(vue keeps data and won't destroy it when changing component:is)
+when using `keep-alive` vue keeps data and won't destroy it when changing component:is
 ```xml
 <keep-alive>
   <component :is="selectedComponent">hoi</component>
