@@ -6,7 +6,7 @@ title: Vue
 slot props pass data from a component to the user of the component. this way you can have a v-for in a component and have the parent use the data and pass in custom styling/data.
 
 the component:
-```vue
+```xml
 <template>
   <ul>
     <li v-for="goal in goals" :key="goal">
@@ -17,7 +17,7 @@ the component:
 ```
 
 the parent:
-```vue
+```xml
 <the-component>
   <template #default="slotProps">
     <h2>{{slotProps.myItem}}
