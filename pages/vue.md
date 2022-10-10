@@ -2,6 +2,9 @@
 title: Vue
 ---
 
+# teleport
+`<teleport to='body'>` just like `<keep-alive>`. teleports for example a dialog from a component to the body.
+
 # dynamic components with keep-alive 
 when using `keep-alive` vue keeps data and won't destroy it when changing component:is
 ```xml
