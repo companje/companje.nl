@@ -2,6 +2,10 @@
 title: Vue
 ---
 
+# slots 
+```<template v-slot:header>``` can be replaced with ```<template #header></template>```
+```
+
 # "export 'App' was not found in './App.vue'
 make sure you don't have { } around App at import. It should be like this:
 ```js
