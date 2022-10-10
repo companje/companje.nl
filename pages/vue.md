@@ -3,7 +3,7 @@ title: Vue
 ---
 
 # multiple elements in directly in template
-in vue3 (not in vue2) you don't need a root element in a template. you can use a `<h2>` and a `<p>` directly in the `<template>` without wrapping them with a `<div>` or something
+in vue3 (not in vue2) you don't need a root element in a template. you can use a `<h2>` and a `<p>` directly in the `<template>` without wrapping them with a `<div>` or something. this is a feature called <em>fragments</em>.
 
 # teleport
 wrap a custom dialog with `<teleport to='body'>` to teleport for the dialog from a component to the body.
