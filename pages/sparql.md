@@ -1,3 +1,10 @@
+## order by random
+```
+...
+BIND(SHA512(CONCAT(STR(RAND()), STR(?s))) AS ?random) . # order by random to get a varried sample set within the first 10.000 results
+} ORDER BY ?random
+```
+
 ## request saved query in jsonld form from triply with paging (limit/pageSize, offset/page)
 zie ook: https://triply.cc/blog/2021-03-new-features
 
