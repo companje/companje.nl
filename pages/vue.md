@@ -2,9 +2,12 @@
 title: Vue
 ---
 
-# dynamic components
+# dynamic components with keep-alive 
+(vue keeps data and won't destroy it when changing component:is)
 ```xml
-<component :is="selectedComponent">hoi</component>
+<keep-alive>
+  <component :is="selectedComponent">hoi</component>
+</keep-alive>
 ```
 
 # slot props
