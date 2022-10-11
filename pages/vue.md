@@ -2,6 +2,11 @@
 title: Vue
 ---
 
+# vue-router
+```
+npm i --save vue-router
+```
+
 # v-model on own component
 add this to the component
 ```javascript
