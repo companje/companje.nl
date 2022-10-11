@@ -6,7 +6,7 @@ title: Vue
 add this to the component
 ```javascript
 {
-  prop: [ "model-value"],
+  prop: [ "modelValue"],
   emits: [ "update:modelValue" ]
 }
 ```
