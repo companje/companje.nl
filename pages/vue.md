@@ -7,7 +7,11 @@ title: Vue
 watch: {
     $route(newRoute) {
       console.log(newRoute)
-      this.loadTeamMembers();   
+      this.teamId=newRoute.params.teamId
+    },
+    teamId(newId) {
+      console.log('teamId changed?',newId)
+      this.loadTeamMembers(newId);
     },
 },
 ```
