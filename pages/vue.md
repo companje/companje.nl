@@ -2,6 +2,11 @@
 title: Vue
 ---
 
+# catchAll route
+```javascript
+{ path: '/:notFoundOrCatchAllOrAnyOtherText(.*)', redirect: '/' }
+```
+
 # redirect route
 ```javascript
 routes: [
