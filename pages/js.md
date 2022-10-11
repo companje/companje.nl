@@ -2,6 +2,18 @@
 title: Javascript
 ---
 
+## download text/json data as file
+```javascript
+const text = JSON.stringify(geoJson);
+var element = document.createElement('a');
+element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+element.setAttribute('download', "output.json");
+element.style.display = 'none';
+document.body.appendChild(element);
+element.click();
+document.body.removeChild(element);
+```
+
 ## delete from array using filter
 ```js
 this.friends = this.friends.filter((friend) => friend.id !== id);
