@@ -6,8 +6,13 @@ title: Vue
 add this to the component
 ```javascript
 {
-  prop: [ "modelValue"],
-  emits: [ "update:modelValue" ]
+  props: [ "modelValue"],
+  emits: [ "update:modelValue" ],
+  methods: {
+    activateButton(opt) {
+      this.$emit('update:modelValue', opt);
+    },
+  },
 }
 ```
 usage:
