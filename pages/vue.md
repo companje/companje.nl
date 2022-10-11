@@ -2,8 +2,17 @@
 title: Vue
 ---
 
-# vue-router
+# watch the route updating
 ```
+watch: {
+    $route(newRoute) {
+      console.log(newRoute)
+      this.loadTeamMembers();    },
+  },
+```
+
+# vue-router
+```bash
 npm i --save vue-router
 ```
 
