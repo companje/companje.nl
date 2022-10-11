@@ -3,12 +3,13 @@ title: Vue
 ---
 
 # watch the route updating
-```
+```javascript
 watch: {
     $route(newRoute) {
       console.log(newRoute)
-      this.loadTeamMembers();    },
-  },
+      this.loadTeamMembers();   
+    },
+},
 ```
 
 # vue-router
