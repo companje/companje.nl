@@ -2,6 +2,19 @@
 title: Vue
 ---
 
+# v-model on own component
+add this to the component
+```javascript
+{
+  prop: [ "model-value"],
+  emits: [ "update:modelValue" ]
+}
+```
+usage:
+```xml
+<your-component v-model="rating"></your-component>
+```
+  
 # TheHeader and other components prefixed with The
 when you have a component that is only used once it is recommemended (see vue styleguide) to prefix it with 'The'
 
