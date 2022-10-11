@@ -2,6 +2,10 @@
 title: Vue
 ---
 
+# named router views
+you can have multiple router-views at the same time
+* https://www.udemy.com/course/vuejs-2-the-complete-guide/learn/lecture/21879376#overview
+
 # catchAll route
 ```javascript
 { path: '/:notFoundOrCatchAllOrAnyOtherText(.*)', redirect: '/' }
