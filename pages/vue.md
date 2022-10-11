@@ -2,6 +2,9 @@
 title: Vue
 ---
 
+# scroll behaviour
+* https://www.udemy.com/course/vuejs-2-the-complete-guide/learn/lecture/21879382#overview
+
 # named router views
 you can have multiple router-views at the same time
 * https://www.udemy.com/course/vuejs-2-the-complete-guide/learn/lecture/21879376#overview
