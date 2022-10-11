@@ -2,6 +2,18 @@
 title: Vue
 ---
 
+# redirect route
+```javascript
+routes: [
+    { path: '/', redirect: '/teams'  },
+    { path: '/teams', component: TeamsList },
+```
+or with alias (but url doesn't change)
+```javascript
+routes: [
+    { path: '/teams', component: TeamsList, alias:'/' },
+```
+
 # watch the route updating
 ```javascript
 watch: {
