@@ -2,6 +2,21 @@
 title: Python
 ---
 
+## parse macOCR result
+```python
+for raw_line in open(INPUT_MACOCR_RESULT).readlines():
+    line_tuple = make_tuple(raw_line)
+    bounding_box = [tuple([int(coordinate) for coordinate in coordinates]) for coordinates in line_tuple[0]]
+    ocr_text = line_tuple[1]
+    confidence = line_tuple[2]
+
+    print({
+        "box": bounding_box,
+        "text": ocr_text,
+        "confidence": confidence
+    })
+```
+
 ## ignore 'illegal' unicode chars in string (?)
 ```python
 str(data["Text"].encode("ascii", "ignore"))
