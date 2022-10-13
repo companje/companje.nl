@@ -2,6 +2,13 @@
 title: Processing
 ---
 
+# onderzoeken voor OscMessage tegen crashen tussen thread en main loop
+```java
+import java.util.concurrent.ConcurrentHashMap;
+ConcurrentHashMap<Integer, ...> midiData = new ConcurrentHashMap<Integer, ...>();
+```
+
+
 # scaleInto (resize image into other image nearest neighbour)
 ```processing
 PImage scaleInto(PImage img, PImage img2) { //scale img into img2
