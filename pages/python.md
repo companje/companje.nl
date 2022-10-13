@@ -4,18 +4,17 @@ title: Python
 
 ## parse macOCR result
 ```python
-# ([[2031, 266], [2652, 266], [2652, 328], [2031, 328]], 'negentienhonderd eenenzeventig,', 0.5)
-for raw_line in open(INPUT_MACOCR_RESULT).readlines():
-    line_tuple = make_tuple(raw_line)
-    bounding_box = [tuple([int(coordinate) for coordinate in coordinates]) for coordinates in line_tuple[0]]
-    ocr_text = line_tuple[1]
-    confidence = line_tuple[2]
+raw_line = "([[2031, 266], [2652, 266], [2652, 328], [2031, 328]], 'negentienhonderd eenenzeventig,', 0.5)"
+line_tuple = make_tuple(raw_line)
+bounding_box = [tuple([int(coordinate) for coordinate in coordinates]) for coordinates in line_tuple[0]]
+ocr_text = line_tuple[1]
+confidence = line_tuple[2]
 
-    print({
-        "box": bounding_box,
-        "text": ocr_text,
-        "confidence": confidence
-    })
+print({
+  "box": bounding_box,
+  "text": ocr_text,
+  "confidence": confidence
+})
 ```
 
 ## ignore 'illegal' unicode chars in string (?)
