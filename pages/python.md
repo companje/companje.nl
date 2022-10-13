@@ -254,6 +254,7 @@ contains_thans = any(thans_spelling in raw_country_str for thans_spelling in ["t
 
 ## usage
 ```python
+import sys,os
 from sys import argv
 
 if len(argv)!=3:
