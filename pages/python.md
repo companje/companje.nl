@@ -13,7 +13,7 @@ def read_ocr(filename): # txt macOCR format
             "confidence": line_tuple[2]
         })
 
-ocr_items = list(read_ocr(INPUT_MACOCR_RESULT))
+ocr_items = list(read_ocr(INPUT_MACOCR))
 ```
 
 ## ignore 'illegal' unicode chars in string (?)
