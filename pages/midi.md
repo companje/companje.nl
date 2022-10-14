@@ -3,7 +3,7 @@ title: Midi
 ---
 
 * On Mac you can install a synth as described here: https://github.com/frescobaldi/frescobaldi/wiki/MIDI-playback-on-Mac-OS-X: for example: SimpleSynth or FluidSynth. For FluidSynth you need a SoundFont (for example from here: https://musescore.org/en/handbook/3/soundfonts-and-sfz-files#list)
-* "I never really use the midi module, usually I use the mixer. Are you sure you need the midi module?" [link]([url](https://stackoverflow.com/questions/33577001/pygame-midi-midiexception-device-id-invalid-out-of-range))
+* "I never really use the midi module, usually I use the mixer. Are you sure you need the midi module?" [link](https://stackoverflow.com/questions/33577001/pygame-midi-midiexception-device-id-invalid-out-of-range)
 
 
 * python toolkit + uitleg over midi: https://github.com/vishnubob/python-midi
