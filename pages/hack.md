@@ -27,3 +27,4 @@ title: Hack
 * tsk_recover
 * https://gchq.github.io/CyberChef
 * url fuzzer
+* https://www.autopsy.com/
