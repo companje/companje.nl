@@ -5,3 +5,4 @@
 * https://datavizproject.com/
 * https://datavizcatalogue.com/
 * https://datavizcatalogue.com/blog/chart-selection-guide/
+* https://hackernoon.com/my-top-13-javascript-diagram-libraries-g2a53z6u
