@@ -7,9 +7,9 @@ title: Python
 from liquid import Liquid
 tpl = Liquid("templates/template.xml", liquid_from_file=True) 
 data = {
-"ID": item["index"],
-"ParentID": item["parentIndex"],
-"Text": item["text"]
+  "ID": item["index"],
+  "ParentID": item["parentIndex"],
+  "Text": item["text"]
 }
 result = tpl.render(**data)
 print(result)
