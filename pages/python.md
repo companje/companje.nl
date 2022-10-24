@@ -2,6 +2,19 @@
 title: Python
 ---
 
+## liquid templates
+```python
+from liquid import Liquid
+tpl = Liquid("templates/template.xml", liquid_from_file=True) 
+data = {
+"ID": item["index"],
+"ParentID": item["parentIndex"],
+"Text": item["text"]
+}
+result = tpl.render(**data)
+print(result)
+```
+
 ## parse macOCR result
 ```python
 def read_ocr(filename): # txt macOCR format
