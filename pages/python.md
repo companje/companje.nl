@@ -2,6 +2,11 @@
 title: Python
 ---
 
+## ensure ascii=False
+```python
+print(json.dumps(data,indent=2,ensure_ascii=False))
+```
+
 ## liquid templates
 ```python
 from liquid import Liquid
