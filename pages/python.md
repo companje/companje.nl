@@ -2,6 +2,11 @@
 title: Python
 ---
 
+## list to dict
+```python
+dict(zip(["x","y","w","h"], list_with_four_values)),
+```
+
 ## cast array to namedTuple
 "You can do Row(*A) which using argument unpacking." [source](https://stackoverflow.com/questions/15324547/convert-list-to-namedtuple)
 ```python
