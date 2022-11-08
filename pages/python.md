@@ -4,7 +4,7 @@ title: Python
 
 ## list to dict
 ```python
-dict(zip(["x","y","w","h"], list_with_four_values)),
+dict(zip(["x","y","w","h"], list_with_four_values))
 ```
 
 ## cast array to namedTuple
