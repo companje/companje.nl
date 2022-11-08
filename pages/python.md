@@ -2,6 +2,15 @@
 title: Python
 ---
 
+## named tuples
+```python
+from collections import namedtuple
+Point = namedtuple('Point', ['x', 'y'])
+#Rect = namedtuple('Rect', ['x', 'y', 'w', 'h'])
+a = Point(1,2)
+print(a.x)
+```
+
 ## list to dict
 ```python
 dict(zip(['x','y','w','h'], get_bounds(box_points)))
