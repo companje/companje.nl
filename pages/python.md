@@ -2,6 +2,18 @@
 title: Python
 ---
 
+## cast array to namedTuple
+"You can do Row(*A) which using argument unpacking." [source](https://stackoverflow.com/questions/15324547/convert-list-to-namedtuple)
+```python
+from collections import namedtuple
+input_array = [1705, 155, 106, 38]
+Rect = namedtuple('Rect', ['x', 'y', 'w', 'h'])
+bounds = Rect(*input_array)
+print(bounds)
+# output: Rect(x=1705, y=155, w=106, h=38)
+```
+
+
 ## ensure ascii=False
 ```python
 print(json.dumps(data,indent=2,ensure_ascii=False))
