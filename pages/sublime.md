@@ -3,6 +3,14 @@ title: SublimeText
 ---
 A light-weight full feature text/code editor for OSX, Windows and Linux
 
+# use specific python version for running python script
+make a custom `my_build.sublime-build` file in the 'User' folder that can be accessed through 'Browse Packages...'
+```json
+{
+   "cmd": ["/Users/rickcompanje/.pyenv/shims/python3", "$file", ""]
+}
+```
+
 # config files including build-system OSX
 ```
 escaped: ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
