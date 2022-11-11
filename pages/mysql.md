@@ -2,6 +2,9 @@
 title: MySQL
 ---
 
+# sudo mysql.server start
+sudo mysql.server start
+
 # OSX gui client
 Sequal Ace (AppStore) vs Sequal Pro
 
