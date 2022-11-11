@@ -2,9 +2,13 @@
 title: MySQL
 ---
 
+
 # sudo mysql.server start
 ```
 sudo mysql.server start
+
+mysql -uroot -p
+#Enter password: (your local mysql password)
 ```
 
 # OSX gui client
