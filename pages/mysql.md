@@ -4,7 +4,7 @@ title: MySQL
 
 
 # sudo mysql.server start
-```
+```bash
 sudo mysql.server start
 
 mysql -uroot -p
