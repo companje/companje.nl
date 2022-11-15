@@ -2,6 +2,12 @@
 title: Python
 ---
 
+## trim items when splitting
+```python
+items = [x.strip() for x in line["organisaties"].split(';')]
+# ['ARP', 'CHU', 'KVP'] instead of ['ARP', ' CHU', ' KVP']
+```
+
 ## oracle sql through jdbc
 ```bash
 pip install cx_oracle
