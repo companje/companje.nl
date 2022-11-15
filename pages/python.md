@@ -14,7 +14,7 @@ xnummers = []
 
 for path in Path(folderroot).rglob('*.jpg'):
 
-r = re.findall(r"(?:X)(\d+)",path.name)
+	r = re.findall(r"(?:X)(\d+)",path.name)
 	if r:
 		xnummers.append({"nummer":int(r[0]), "path":path})
 
