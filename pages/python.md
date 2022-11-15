@@ -4,25 +4,21 @@ title: Python
 
 ## list all valid xnummers recursively
 ```python
-#!/usr/bin/env python3
-import sys,csv,os,re
-from pathlib import Path
+def listdir_valid_xnummers_to_csv():
+	folderroot = "/Volumes/beeldbestanden$/Presentatie/Xnegatieven/"
+	xnummers = []
 
-folderroot = "/Volumes/beeldbestanden$/Presentatie/Xnegatieven/"
+	for path in Path(folderroot).rglob('*.jpg'):
+		r = re.findall(r"(?:X)(\d+)",path.name)
+		if r:
+			path_without_root = str(path).replace(folderroot,'') # let op! str(path) !
+			xnummers.append({"nummer":int(r[0]), "path":path_without_root})
 
-xnummers = []
+	xnummers = sorted(xnummers, key=lambda item:item['nummer'])
 
-for path in Path(folderroot).rglob('*.jpg'):
-
-	r = re.findall(r"(?:X)(\d+)",path.name)
-	if r:
-		xnummers.append({"nummer":int(r[0]), "path":path})
-
-xnummers = sorted(xnummers, key=lambda item:item['nummer'])
-
-writer = csv.DictWriter(open("all-valid-xnummers.csv","w"), fieldnames=["nummer","path"])
-writer.writeheader()
-writer.writerows(xnummers)
+	writer = csv.DictWriter(open("all-valid-xnummers.csv","w"), fieldnames=["nummer","path"])
+	writer.writeheader()
+	writer.writerows(xnummers)
 ```
 
 ## pathlib / os.path
