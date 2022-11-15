@@ -2,6 +2,23 @@
 title: Python
 ---
 
+## oracle sql through jdbc
+```bash
+pip install cx_oracle
+#and download the [instant client](https://www.oracle.com/database/technologies/instant-client/macos-intel-x86-downloads.html)
+```
+
+```python
+import cx_Oracle
+lib_dir = os.path.join(os.environ.get("HOME"), "Downloads", "instantclient_19_8")
+cx_Oracle.init_oracle_client(lib_dir=lib_dir)
+dsn = cx_Oracle.makedsn(IP_OR_HOSTNAME,'1521',service_name=SERVICE_NAME)
+connection = cx_Oracle.connect(os.environ["user"], os.environ["pass"], dsn)
+cur = connection.cursor()
+for row in cur.execute("select * from TABLE;"):
+  print(row)
+```
+
 ## list all valid xnummers recursively
 ```python
 def listdir_valid_xnummers_to_csv():
