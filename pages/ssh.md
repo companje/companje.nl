@@ -2,6 +2,10 @@
 title: SSH
 ---
 
+# locale warnings on MacOS / iTerm
+Solution: Go to iterm2 Preferences -> Profiles -> Terminal and disable option Set locale variables automatically.
+* https://docs.spryker.com/docs/scos/dev/troubleshooting/troubleshooting-spryker-in-vagrant-issues/macos-issues/mac-osx-iterm2-locale-error.html#description
+
 
 # ssh-agent / ssh-add
 set password bij ssh-keygen is erg belangrijk. Om te voorkomen dat de private key op je eigen computer in verkeerde handen komt. maar moet je dan nog steeds telkens een passphrase invoeren? Ja, maar daar is een oplossing voor: ssh-agent (gebruik ssh-add  ~/.ssh/demo.ed25519  om key toevoegen aan ssh-agent). die bewaart in een lopend process en stelt het beschikbaar via een socket aan ssh.
