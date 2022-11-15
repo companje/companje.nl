@@ -2,6 +2,11 @@
 title: Bash
 ---
 
+# find exec copy
+```bash
+find . -name "*text.xml" -exec cp {} DEST_FOLDER \;
+```
+
 # Terminate all Excel instances
 ```bash
 killall -9 "Microsoft Excel" 2>/dev/null
