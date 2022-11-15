@@ -2,10 +2,9 @@
 title: Python
 ---
 
-#!/usr/bin/env python3
-
-# list all valid xnummers recursively
+## list all valid xnummers recursively
 ```python
+#!/usr/bin/env python3
 import sys,csv,os,re
 from pathlib import Path
 
