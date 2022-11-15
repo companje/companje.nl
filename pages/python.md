@@ -2,6 +2,14 @@
 title: Python
 ---
 
+## try except
+```python
+try:  
+    1 / 0 
+except Exception as e: 
+    print(e)
+```
+
 ## named tuples
 ```python
 from collections import namedtuple
