@@ -2,7 +2,7 @@
 title: SSH
 ---
 
-# locale warnings on MacOS / iTerm
+# locale warnings through SSH on MacOS / iTerm
 ```
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
