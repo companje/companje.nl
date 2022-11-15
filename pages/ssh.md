@@ -2,8 +2,15 @@
 title: SSH
 ---
 
+
+
+   
 # locale warnings through SSH on MacOS / iTerm
 ```
+WARNING! Your environment specifies an invalid locale.
+ The unknown environment variables are:
+   LC_CTYPE=UTF-8 LC_ALL=
+
 locale: Cannot set LC_CTYPE to default locale: No such file or directory
 locale: Cannot set LC_ALL to default locale: No such file or directory
 : warning: Setting locale failed.
