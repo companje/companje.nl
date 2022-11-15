@@ -2,6 +2,16 @@
 title: Python
 ---
 
+## pathlib / os.path
+```python
+import os
+from pathlib import Path
+
+for path in Path(folderroot).rglob('*.jpg'):
+	folder = os.path.basename(os.path.dirname(path))
+	print(folder, path.name)
+```
+
 ## try except
 ```python
 try:  
