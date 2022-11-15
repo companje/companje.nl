@@ -22,7 +22,7 @@ for row in cur.execute("select * from TABLE;"):
 ## list all valid xnummers recursively
 ```python
 def listdir_valid_xnummers_to_csv():
-	folderroot = "/Volumes/beeldbestanden$/Presentatie/Xnegatieven/"
+	folderroot = "/Volumes/SHARE$/FOLDER"
 	xnummers = []
 
 	for path in Path(folderroot).rglob('*.jpg'):
