@@ -10,6 +10,12 @@ except Exception as e:
     print(e)
 ```
 
+with traceback:
+```python
+import traceback
+traceback.print_exc()
+```
+
 ## named tuples
 ```python
 from collections import namedtuple
