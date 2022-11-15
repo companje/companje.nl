@@ -13,7 +13,7 @@ import cx_Oracle
 lib_dir = os.path.join(os.environ.get("HOME"), "Downloads", "instantclient_19_8")
 cx_Oracle.init_oracle_client(lib_dir=lib_dir)
 dsn = cx_Oracle.makedsn(IP_OR_HOSTNAME,'1521',service_name=SERVICE_NAME)
-connection = cx_Oracle.connect(os.environ["user"], os.environ["pass"], dsn)
+connection = cx_Oracle.connect(os.environ["USER"], os.environ["PASS"], dsn)
 cur = connection.cursor()
 for row in cur.execute("select * from TABLE;"):
   print(row)
