@@ -14,10 +14,9 @@ xnummers = []
 
 for path in Path(folderroot).rglob('*.jpg'):
 
-	r = re.findall(r"X\d+",path.name)
+r = re.findall(r"(?:X)(\d+)",path.name)
 	if r:
-		xnummer = int(r[0][1:]) # X1234  [1:] skips X
-		xnummers.append({"nummer":xnummer, "path":path})
+		xnummers.append({"nummer":int(r[0]), "path":path})
 
 xnummers = sorted(xnummers, key=lambda item:item['nummer'])
 
