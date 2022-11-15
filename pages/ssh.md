@@ -3,6 +3,19 @@ title: SSH
 ---
 
 # locale warnings on MacOS / iTerm
+```
+locale: Cannot set LC_CTYPE to default locale: No such file or directory
+locale: Cannot set LC_ALL to default locale: No such file or directory
+: warning: Setting locale failed.
+: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_TERMINAL = "iTerm2",
+	LC_CTYPE = "UTF-8",
+	LANG = "C.UTF-8"
+    are supported and installed on your system.
+: warning: Falling back to a fallback locale ("C.UTF-8").
+```
 Solution: Go to iterm2 Preferences -> Profiles -> Terminal and disable option Set locale variables automatically.
 * https://docs.spryker.com/docs/scos/dev/troubleshooting/troubleshooting-spryker-in-vagrant-issues/macos-issues/mac-osx-iterm2-locale-error.html#description
 
