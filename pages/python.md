@@ -2,6 +2,31 @@
 title: Python
 ---
 
+#!/usr/bin/env python3
+
+# list all valid xnummers recursively
+```python
+import sys,csv,os,re
+from pathlib import Path
+
+folderroot = "/Volumes/beeldbestanden$/Presentatie/Xnegatieven/"
+
+xnummers = []
+
+for path in Path(folderroot).rglob('*.jpg'):
+
+	r = re.findall(r"X\d+",path.name)
+	if r:
+		xnummer = int(r[0][1:]) # X1234  [1:] skips X
+		xnummers.append({"nummer":xnummer, "path":path})
+
+xnummers = sorted(xnummers, key=lambda item:item['nummer'])
+
+writer = csv.DictWriter(open("all-valid-xnummers.csv","w"), fieldnames=["nummer","path"])
+writer.writeheader()
+writer.writerows(xnummers)
+```
+
 ## pathlib / os.path
 ```python
 import os
