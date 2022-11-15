@@ -4,7 +4,8 @@ title: Python
 
 ## trim items when splitting
 ```python
-items = [x.strip() for x in line["organisaties"].split(';')]
+input_string='ARP; CHU; KVP'
+items = [x.strip() for x in input_string.split(';')]
 # ['ARP', 'CHU', 'KVP'] instead of ['ARP', ' CHU', ' KVP']
 ```
 
