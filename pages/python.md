@@ -5,8 +5,8 @@ title: Python
 ## oracle sql through jdbc
 ```bash
 pip install cx_oracle
-#and download the [instant client](https://www.oracle.com/database/technologies/instant-client/macos-intel-x86-downloads.html)
 ```
+* and download the [instant client](https://www.oracle.com/database/technologies/instant-client/macos-intel-x86-downloads.html)
 
 ```python
 import cx_Oracle
