@@ -1,5 +1,10 @@
 see also [docs](/docs)
 
+# replace
+```javascript
+lower(REGEXREPLACE(REGEXREPLACE( REGEXREPLACE(REGEXREPLACE(Trefwoorden!C2:C; "[–’+=&?|,\.() ""$/':;]"; "-") ;"-+";"-"); "[^a-zA-Z0-9\-]";"");"^-|-$"; ""))
+```
+
 # Vlookup with Search Key in Multiple Column Range
 https://infoinspired.com/google-docs/spreadsheet/vlookup-find-a-search-key-in-multiple-columns-matrix-in-google-sheets/
 (won’t work in Excel)
