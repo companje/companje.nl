@@ -1,7 +1,7 @@
 * https://www.easyrdf.org/converter
 
 # tools
-* prefix.cc
+* https://prefix.cc
 * https://prefix.zazuko.com/
 
 # jsonld
