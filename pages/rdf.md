@@ -1,5 +1,9 @@
 * https://www.easyrdf.org/converter
 
+# tools
+* prefix.cc
+* https://prefix.zazuko.com/
+
 # jsonld
 ```bash
 npm install -g jsonld-cli
