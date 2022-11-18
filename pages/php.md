@@ -2,6 +2,11 @@
 title: PHP
 ---
 
+# permanent redirect
+```php
+header("Location: https://NEWSITE", true, 301);
+```
+
 # disable buffering (realtime output of executed script)
 ```php
 ini_set('output_buffering', 'off');        // Turn off output buffering
