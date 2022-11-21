@@ -2,6 +2,18 @@
 title: Python
 ---
 
+## pandas groupby to tabs/sheets in Excel
+```
+df = pd.read_csv("overzicht.csv") 
+
+writer = pd.ExcelWriter('output.xlsx', engine='xlsxwriter')
+
+for state, frame in df.groupby("AET"):
+	frame.to_excel(writer, sheet_name=state)
+
+writer.save()
+```
+
 ## xlsxwriter with pandas
 * https://xlsxwriter.readthedocs.io/working_with_pandas.html
 
