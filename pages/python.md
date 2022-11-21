@@ -1,6 +1,12 @@
 ---
 title: Python
 ---
+
+## format with 'repr'
+```python
+print(f"{state!r}")
+```
+
 ## pandas groupby (count)
 ```python
 df = pd.read_csv("overzicht.csv") # sep=',', engine='python', header=0, usecols=["tip", "sex", "time"]), index_col=["sex", "tip"], nrows=5, skiprows = [1,12], 
