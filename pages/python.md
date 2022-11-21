@@ -2,10 +2,11 @@
 title: Python
 ---
 
-## format with 'repr' or 'str'
+## format with 'repr', 'str' or 'ascii'
 ```python
 print(f"{state!r}")
 print(f"{state!s}")
+print(f"{state!a}")
 ```
 
 ## pandas groupby (count)
