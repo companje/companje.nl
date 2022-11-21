@@ -3,6 +3,7 @@ build:
 	php index.php
 ```
 
+# run python, kill excel, reopen excel, move and enlarge window
 ```makefile
 build:
 	./maak-overzicht.py
