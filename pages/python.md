@@ -2,14 +2,18 @@
 title: Python
 ---
 
-## pandas groupby to tabs/sheets in Excel
+## pandas groupby to tabs/sheets in Excel with table
 ```python
 df = pd.read_csv("overzicht.csv") 
 
-writer = pd.ExcelWriter('output.xlsx', engine='xlsxwriter')
+writer = pd.ExcelWriter('test.xlsx', engine='xlsxwriter')
 
-for state, frame in df.groupby("AET"):
-	frame.to_excel(writer, sheet_name=state)
+for aet, frame in df.groupby("AET"):
+	frame.to_excel(writer, sheet_name=aet, startrow=1, header=False, index=False)
+	
+	column_settings = [{'header': column} for column in frame.columns]
+	(max_row, max_col) = frame.shape
+	writer.sheets[aet].add_table(0, 0, max_row, max_col - 1, {'columns': column_settings})
 
 writer.save()
 ```
