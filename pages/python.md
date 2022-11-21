@@ -2,6 +2,9 @@
 title: Python
 ---
 
+## xlsxwriter with pandas
+* https://xlsxwriter.readthedocs.io/working_with_pandas.html
+
 ## format with 'repr', 'str' or 'ascii'
 ```python
 print(f"{state!r}")
