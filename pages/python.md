@@ -3,7 +3,7 @@ title: Python
 ---
 
 ## pandas groupby to tabs/sheets in Excel
-```
+```python
 df = pd.read_csv("overzicht.csv") 
 
 writer = pd.ExcelWriter('output.xlsx', engine='xlsxwriter')
