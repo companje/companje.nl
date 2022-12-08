@@ -2,6 +2,11 @@
 title: PHP
 ---
 
+# strip footer using regex
+```php
+$html = preg_replace('/<footer.*<\/footer>/s', "", $html);
+```
+
 # permanent redirect
 ```php
 header("Location: https://NEWSITE", true, 301);
