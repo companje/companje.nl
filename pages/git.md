@@ -2,6 +2,11 @@
 title: Git
 ---
 
+# list files not under version control
+```bash
+git ls-files --others --ignored --exclude-from=.gitignore
+```
+
 # git diff ignore line endings
 ```bash
 git diff --ignore-cr-at-eol
