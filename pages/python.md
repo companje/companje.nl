@@ -15,7 +15,7 @@ for aet, frame in df.groupby("AET"):
 	(max_row, max_col) = frame.shape
 	writer.sheets[aet].add_table(0, 0, max_row, max_col - 1, {'columns': column_settings})
 
-writer.save()
+writer.close()
 ```
 
 ## xlsxwriter with pandas
