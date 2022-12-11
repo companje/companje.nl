@@ -2,6 +2,19 @@
 title: Python
 ---
 
+# output_rows to excel using pandas
+```python
+print("writing Excel file")
+excel_writer = pd.ExcelWriter(config.EXCEL_OUTPUT_FILE, engine='xlsxwriter')
+df = pd.DataFrame(output_rows)
+df.to_excel(excel_writer, sheet_name="Sheet1", startrow=1, header=False, index=False)
+excel_writer.sheets['Sheet1'].set_column(0,20, 25) # for cols 0 to 20 set width=25
+(max_row, max_col) = df.shape
+column_settings = [{'header': column} for column in df.columns]
+excel_writer.sheets['Sheet1'].add_table(0, 0, max_row, max_col - 1, {'columns': column_settings})
+excel_writer.close()
+```
+
 ## pandas groupby to tabs/sheets in Excel with table
 ```python
 df = pd.read_csv("overzicht.csv") 
