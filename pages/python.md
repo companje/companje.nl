@@ -8,7 +8,7 @@ result = list(set(['a','b','a']))
 # result = ['a','b']
 ```
 
-# create csv from a list of tuples (that was created from a dict)
+# create csv from a list of tuples
 ```python
 plaatsnamen = [("Utrecht",5), ("Amersfoort",2)]
 writer = csv.writer(open("output.csv","w"))
