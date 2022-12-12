@@ -9,7 +9,7 @@ import sys
 from rapidfuzz import fuzz
 import rapidfuzz.process as fuzzy
 
-def alle_datums_20e_eeuw_als_tekst():
+def alle_datums_20e_eeuw_als_tekst():  # returns a dict {string:datetime}
     maanden = ["januari","februari","maart","april","mei","juni","juli","augustus","september","oktober","november","december"]
 
     getallen_1tm99 = ["één","twee","drie","vier","vijf","zes","zeven","acht","negen","tien","elf","twaalf","dertien","veertien","vijftien","zestien","zeventien","achttien","negentien","twintig","eenentwintig","tweeëntwintig","drieëntwintig","vierentwintig","vijfentwintig","zesentwintig","zevenentwintig","achtentwintig","negenentwintig","dertig","eenendertig","tweeëndertig","drieëndertig","vierendertig","vijfendertig","zesendertig","zevenendertig","achtendertig","negenendertig","veertig","eenenveertig","tweeënveertig","drieënveertig","vierenveertig","vijfenveertig","zesenveertig","zevenenveertig","achtenveertig","negenenveertig","vijftig","eenenvijftig","tweeënvijftig","drieënvijftig","vierenvijftig","vijfenvijftig","zesenvijftig","zevenenvijftig","achtenvijftig","negenenvijftig","zestig","eenenzestig","tweeënzestig","drieënzestig","vierenzestig","vijfenzestig","zesenzestig","zevenenzestig","achtenzestig","negenenzestig","zeventig","eenenzeventig","tweeënzeventig","drieënzeventig","vierenzeventig","vijfenzeventig","zesenzeventig","zevenenzeventig","achtenzeventig","negenenzeventig","tachtig","eenentachtig","tweeëntachtig","drieëntachtig","vierentachtig","vijfentachtig","zesentachtig","zevenentachtig","achtentachtig","negenentachtig","negentig","eenennegentig","tweeënnegentig","drieënnegentig","vierennegentig","vijfennegentig","zesennegentig","zevenennegentig","achtennegentig","negenennegentig"]
