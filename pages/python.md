@@ -5,7 +5,7 @@ title: Python
 # create csv from a list of tuples (that was created from a dict)
 ```python
 plaatsnamen = [("Utrecht",5), ("Amersfoort",2)]
-writer = csv.writer(open(config.PLAATSNAMEN_OUTPUT_FILE,"w"))
+writer = csv.writer(open("output.csv","w"))
 writer.writerow(['plaatsnaam','aantal'])
 writer.writerows(plaatsnamen)
 ```
