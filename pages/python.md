@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# sort dict
+```python
+plaatsnamen = dict(sorted(plaatsnamen.items(), key=lambda item: item[1], reverse=True))
+```
+
 # fuzzy match and convert a Dutch written/spelled date from the 20th century:
 ```python
 from datetime import datetime, timedelta
