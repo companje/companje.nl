@@ -29,8 +29,8 @@ def fuzzy_extract(input_str, compare_strs): #(result, match_pct, idx)
     return fuzzy.extractOne(input_str, compare_strs, scorer=fuzz.ratio)
 
 datums = alle_datums_20e_eeuw_als_tekst()
-
-result,_,_ = fuzzy_extract("dertien januari negentienhonderd negenennegentig", datums.keys())
+#result,_,_ = fuzzy_extract("dertien januari negentienhonderd negenennegentig", datums.keys())
+result,_,_ = fuzzy_extract("dertasdfien januaasdfri negeasdfntienahonderd negenenneasdfgentig", datums.keys())
 
 print(result)
 print(datums[result])
