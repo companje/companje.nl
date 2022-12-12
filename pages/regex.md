@@ -2,7 +2,7 @@
 title: Regular Expressions
 ---
 
-# non greedy match
+# non greedy match in python
 ```python
 matches = re.findall(r'(geboren op )(.*?)( te)(.*?)(,)',text) # non greedy
 ```
