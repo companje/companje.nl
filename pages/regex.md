@@ -2,6 +2,11 @@
 title: Regular Expressions
 ---
 
+# non greedy match
+```python
+matches = re.findall(r'(geboren op )(.*?)( te)(.*?)(,)',text) # non greedy
+```
+
 # nice visual regex debugger
 * https://www.debuggex.com/
 
