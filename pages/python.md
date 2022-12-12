@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# defaultdict in defaultdict (test)
+```python
+all_first_names_and_occurences_dict = defaultdict(lambda: defaultdict(lambda: 0))
+```
+
 # output_rows to excel using pandas
 ```python
 print("writing Excel file")
