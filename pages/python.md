@@ -2,6 +2,12 @@
 title: Python
 ---
 
+# make a list unique
+```python
+result = list(set(['a','b','a']))
+# result = ['a','b']
+```
+
 # create csv from a list of tuples (that was created from a dict)
 ```python
 plaatsnamen = [("Utrecht",5), ("Amersfoort",2)]
