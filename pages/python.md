@@ -2,6 +2,12 @@
 title: Python
 ---
 
+# create csv from a list of tuples (that was created from a dict)
+plaatsnamen = [("Utrecht",5), ("Amersfoort",2)]
+writer = csv.writer(open(config.PLAATSNAMEN_OUTPUT_FILE,"w"))
+writer.writerow(['plaatsnaam','aantal'])
+writer.writerows(plaatsnamen)
+
 # sort dict
 ```python
 plaatsnamen = dict(sorted(plaatsnamen.items(), key=lambda item: item[1], reverse=True))
