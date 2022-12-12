@@ -2,6 +2,40 @@
 title: Python
 ---
 
+# fuzzy match and convert a Dutch written/spelled date from the 20th century:
+```python
+from datetime import datetime, timedelta
+import sys
+from rapidfuzz import fuzz
+import rapidfuzz.process as fuzzy
+
+def alle_datums_20e_eeuw_als_tekst():
+    maanden = ["januari","februari","maart","april","mei","juni","juli","augustus","september","oktober","november","december"]
+
+    getallen_1tm99 = ["één","twee","drie","vier","vijf","zes","zeven","acht","negen","tien","elf","twaalf","dertien","veertien","vijftien","zestien","zeventien","achttien","negentien","twintig","eenentwintig","tweeëntwintig","drieëntwintig","vierentwintig","vijfentwintig","zesentwintig","zevenentwintig","achtentwintig","negenentwintig","dertig","eenendertig","tweeëndertig","drieëndertig","vierendertig","vijfendertig","zesendertig","zevenendertig","achtendertig","negenendertig","veertig","eenenveertig","tweeënveertig","drieënveertig","vierenveertig","vijfenveertig","zesenveertig","zevenenveertig","achtenveertig","negenenveertig","vijftig","eenenvijftig","tweeënvijftig","drieënvijftig","vierenvijftig","vijfenvijftig","zesenvijftig","zevenenvijftig","achtenvijftig","negenenvijftig","zestig","eenenzestig","tweeënzestig","drieënzestig","vierenzestig","vijfenzestig","zesenzestig","zevenenzestig","achtenzestig","negenenzestig","zeventig","eenenzeventig","tweeënzeventig","drieënzeventig","vierenzeventig","vijfenzeventig","zesenzeventig","zevenenzeventig","achtenzeventig","negenenzeventig","tachtig","eenentachtig","tweeëntachtig","drieëntachtig","vierentachtig","vijfentachtig","zesentachtig","zevenentachtig","achtentachtig","negenentachtig","negentig","eenennegentig","tweeënnegentig","drieënnegentig","vierennegentig","vijfennegentig","zesennegentig","zevenennegentig","achtennegentig","negenennegentig"]
+
+    current_date = datetime(1900, 1, 1)
+    dagen = {}
+    while current_date.year < 2000:
+        dag = getallen_1tm99[current_date.day-1]
+        maand = maanden[current_date.month-1]
+        jaar = "negentienhonderd "+getallen_1tm99[current_date.year-1900-1]
+
+        dagen[f"{dag} {maand} {jaar}"] = current_date
+        current_date += timedelta(days=1)
+    return dagen
+
+def fuzzy_extract(input_str, compare_strs): #(result, match_pct, idx)
+    return fuzzy.extractOne(input_str, compare_strs, scorer=fuzz.ratio)
+
+datums = alle_datums_20e_eeuw_als_tekst()
+
+result,_,_ = fuzzy_extract("dertien januari negentienhonderd negenennegentig", datums.keys())
+
+print(result)
+print(datums[result])
+```
+
 # defaultdict in defaultdict (test)
 ```python
 all_first_names_and_occurences_dict = defaultdict(lambda: defaultdict(lambda: 0))
