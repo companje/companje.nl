@@ -6,7 +6,7 @@
 * https://rubenschalk.github.io/onlinemap
 * https://rubenschalk.github.io/historicalmaps/
 * https://www.uu.nl/en/special-collections
-* uu.nl/en/georeferencing
+* https://uu.nl/en/georeferencing
 * https://utrechtinperspectief.nl/
 
 <img width="777" alt="Screenshot 2022-12-13 at 15 27 22" src="https://user-images.githubusercontent.com/156066/207359929-cf1910df-0d89-41df-a754-afcab4589534.png">
