@@ -2,6 +2,28 @@
 title: Python
 ---
 
+# point finding functions
+```python
+def get_points_left(point, points):
+    if points:
+        return list(filter(lambda p: p[0]<point[0], points))
+
+def get_points_below(point, points):
+    if points:
+        return list(filter(lambda p: p[1]>point[1], points))
+
+def get_points_left_below(point, points):
+    if points:
+        return get_points_left(point, get_points_below(point, points))
+
+def closest_point(point, points):
+    if points:
+        return points[distance.cdist([point], points).argmin()]
+
+#example:
+p2 = closest_point(p1, get_points_left_below(p, points))
+```
+
 # template matching with opencv
 ```python
 def match(img, template):
