@@ -2,6 +2,19 @@
 title: Python
 ---
 
+# template matching with opencv
+```python
+def match(img, template):
+  result = cv2.matchTemplate(img, template, cv2.TM_CCORR_NORMED)
+  min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(result)
+  lt = (x1,y1) = max_loc
+  rb = (x2,y2) = (x1+tw,y1+th)
+  return (lt,rb)
+  
+lt,rb = match(img, template)
+cv2.rectangle(img, lt, rb, color=0, thickness=-1)
+```
+
 # cv2.rectangle
 ```
 cv2.rectangle(img, lt, rb, color=(b,g,r), thickness=10)
