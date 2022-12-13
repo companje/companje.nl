@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# cv2.rect
+```
+cv2.rectangle(img, lt, rb, color=(b,g,r), thickness=10)
+```
+
 # make a list unique
 ```python
 result = list(set(['a','b','a']))
