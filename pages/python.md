@@ -3,7 +3,7 @@ title: Python
 ---
 
 # fuzzy regex
-```
+```python
 match = regex.search(f"(negentienhonderd){{e<=3}}", item["text"], regex.BESTMATCH)
 ```
 
