@@ -1,3 +1,17 @@
+## show map of all things that have a coordinate within 5km of Utrecht (Q803)
+```sparql
+PREFIX geof: <http://www.opengis.net/def/geosparql/function/>
+#defaultView:Map
+SELECT ?place ?placeLabel (SAMPLE(?location) as ?localisation) WHERE {
+  wd:Q803 wdt:P625 ?utrecht.
+  ?place wdt:P17 wd:Q55 . #NL
+  ?place wdt:P625 ?location.
+  FILTER((geof:distance(?location, ?utrecht)) <5)
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "nl". }
+}
+group by ?place ?placeLabel
+```
+
 ## VALUES
 ```sparql
 ...  
