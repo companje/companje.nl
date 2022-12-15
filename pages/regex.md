@@ -2,6 +2,9 @@
 title: Regular Expressions
 ---
 
+# fuzzy regex
+see python
+
 # non greedy match in python
 ```python
 matches = re.findall(r'(geboren op )(.*?)( te)(.*?)(,)',text) # non greedy
