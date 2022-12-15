@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# fuzzy regex
+```
+match = regex.search(f"(negentienhonderd){{e<=3}}", item["text"], regex.BESTMATCH)
+```
+
 # point finding functions
 ```python
 def get_points_left(point, points):
