@@ -1,5 +1,14 @@
-## order by random
+## VALUES
+```sparql
+...  
+  values (?zoekterm) {
+    ("Keijzerstraat") 
+    ("Drift")
+  }
 ```
+
+## order by random
+```sparql
 ...
 BIND(SHA512(CONCAT(STR(RAND()), STR(?s))) AS ?random) . # order by random to get a varried sample set within the first 10.000 results
 } ORDER BY ?random
