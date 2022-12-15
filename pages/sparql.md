@@ -1,3 +1,14 @@
+## SAMPLE to limit/distinct results somehow
+```sparql
+SELECT  ?item (SAMPLE(?localisation) AS ?localisation) WHERE {
+  ?item wdt:P131 wd:Q803.
+  ?item wdt:P625 ?localisation.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "nl". }
+}
+GROUP BY ?item
+```
+
+
 ## show map of all things that have a coordinate within 5km of Utrecht (Q803) using GEOSPARQL
 ```sparql
 PREFIX geof: <http://www.opengis.net/def/geosparql/function/>
