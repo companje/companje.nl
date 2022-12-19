@@ -2,6 +2,13 @@
 title: Python
 ---
 
+# install package with sudo as root
+this way also for example the wwwdata user can use the package
+```bash
+sudo su
+sudo pip3 install mypackage
+```
+
 # fuzzy regex
 ```python
 match = regex.search(f"(negentienhonderd){{e<=3}}", item["text"], regex.BESTMATCH)
