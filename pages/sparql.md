@@ -30,7 +30,7 @@ GROUP BY ?item ?itemLabel
     ("Drift")
   }
 ```
-
+ 
 ## order by random
 ```sparql
 ...
