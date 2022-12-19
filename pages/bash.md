@@ -2,6 +2,11 @@
 title: Bash
 ---
 
+# output stdout and stderr to same output file
+```bash
+normalizer --normalize --replace --force "$1" > normalizer.log 2>&1
+```
+
 # find exec copy
 ```bash
 find . -name "*text.xml" -exec cp {} DEST_FOLDER \;
