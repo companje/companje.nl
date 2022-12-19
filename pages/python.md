@@ -3,7 +3,7 @@ title: Python
 ---
 
 # install package with sudo as root
-this way also for example the wwwdata user can use the package
+this way also for example the wwwdata user can use the package. not sure if it's safe.
 ```bash
 sudo su
 sudo pip3 install mypackage
