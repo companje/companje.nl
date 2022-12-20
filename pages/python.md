@@ -2,6 +2,14 @@
 title: Python
 ---
 
+# read formula from cells in Excel
+```python
+from openpyxl import load_workbook
+wb = load_workbook(filename = 'HUA-Sabine-Fuzzy-Matches-score-vanaf-50pct-19-april-2022.xlsx')
+sheet = wb['Sheet1']
+for row in range(1,10):
+	status = sheet.cell(row=row, column=1).value
+```
 # install package with sudo as root
 this way also for example the wwwdata user can use the package. not sure if it's safe.
 ```bash
