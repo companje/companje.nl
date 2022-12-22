@@ -1,3 +1,13 @@
+# date field condition
+```sql
+select * from TABLE where dt >= DATE '2022-12-22'
+```
+
+# rownum (oracle)
+```sql
+where ROWNUM<5000
+```
+
 # select case select
 ```sql
 case when MY_FUNC(persoon.id, 'ROL')='Bruid' 
