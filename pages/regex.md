@@ -2,6 +2,12 @@
 title: Regular Expressions
 ---
 
+# get domain
+```python
+domain = re.findall(r"^.+?[^\/:](?=[?\/]|$)",link)
+#ie. http://dspace.library.uu.nl
+```
+
 # fuzzy regex
 see python
 
