@@ -2,6 +2,9 @@
 title: Mac OSX
 ---
 
+# enable zoom with Control + Mouse/trackpadd scroll
+<img width="703" alt="Screenshot 2022-12-27 at 21 18 05" src="https://user-images.githubusercontent.com/156066/209718245-f47ebbeb-dda2-4127-a6e9-1847af9c6011.png">
+
 # Apple Notes
 by doubleclicking on the modification date of the note you can see the creationdate
 <img width="692" alt="Screenshot 2022-09-30 at 09 47 49" src="https://user-images.githubusercontent.com/156066/193219266-fadf9bde-024b-44dc-83c9-15da6bbf9d27.png">
