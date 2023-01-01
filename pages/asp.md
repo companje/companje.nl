@@ -18,7 +18,8 @@ IIS > your site > ASP > Debugging Properties > Send Errors To Browser: True
 ```
 
 # HTTP Error 401.3 - Unauthorized
-solution: Edit permissions of site in IIS Manager. Add IUSR with the default rights (read&execute, list folder contents, read)
+solution: Edit permissions of site in IIS Manager. Add *IUSR* with the default rights (read&execute, list folder contents, read)
+(you might need to add IIS_IUSRS too?).
 
 # ASP Error: ADODB.Connection error '800a0e7a' Provider cannot be found. It may not be properly installed. Also error code 126 in ODBC connection.
 Solution "Enable 32-bit applications" needs to be enabled in the connection pool for the website, within IIS Manager 7.
