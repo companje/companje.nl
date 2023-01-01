@@ -7,6 +7,7 @@ Start /w pkgmgr /iu:IIS-WebServerRole;IIS-WebServer;IIS-CommonHttpFeatures;IIS-S
 
 # add site
 ```batch
+set path=%path%;%systemroot%\system32\inetsrv\
 appcmd add site /name:xyz2020 /id:2 /physicalPath:c:\xyz2020 /bindings:http/*:80:xyz.youdomain.nl 
 ```
 
