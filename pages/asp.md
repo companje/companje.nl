@@ -29,10 +29,6 @@ Advanced / Enable 32-Bit Applications: True
 ```vbscript
 <pre>
 <%
-function print(msg)
-    response.write(msg & vbCrlf)
-end function
-
 db_path = Server.mapPath("db.mdb")
 set conn = Server.CreateObject("ADODB.Connection")
 conn.mode = adModeRead
@@ -40,13 +36,11 @@ conn.open "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & db_path & ";"
 set rs = Server.CreateObject("ADODB.Recordset")
 rs.open "select * from tabelObject", conn
 
-print(rs.recordCount)
-
 do until rs.EOF
     for each x in rs.fields
-        if x.value<>"" then print(x.name & " = " & x.value)
+        if x.value<>"" then response.write(x.name & " = " & x.value & vbCrlf)
     next
-    print("<hr>")
+    response.write("<hr>")
     rs.moveNext
 loop
 %>
