@@ -11,6 +11,9 @@ set path=%path%;%systemroot%\system32\inetsrv\
 appcmd add site /name:xyz2020 /id:2 /physicalPath:c:\xyz2020 /bindings:http/*:80:xyz.youdomain.nl 
 ```
 
+# show errors
+IIS > your site > ASP > Debugging Properties > Send Errors To Browser: True
+
 # HTTP Error 401.3 - Unauthorized
 solution: Edit permissions of site in IIS Manager. Add IUSR with the default rights (read&execute, list folder contents, read)
 
