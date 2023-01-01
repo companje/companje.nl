@@ -33,6 +33,7 @@ db_path = Server.mapPath("db.mdb")
 set conn = Server.CreateObject("ADODB.Connection")
 conn.mode = adModeRead
 conn.open "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & db_path & ";"
+
 set rs = Server.CreateObject("ADODB.Recordset")
 rs.open "select * from tabelObject", conn
 
