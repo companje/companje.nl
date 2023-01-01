@@ -26,7 +26,7 @@ IIS / Application Pools / YourPool / Advanced Settings
 Advanced / Enable 32-Bit Applications: True
 ```
 # read rows and fields from Access database
-```asp
+```vbscript
 <pre>
 <%
 function print(msg)
