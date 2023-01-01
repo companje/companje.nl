@@ -25,7 +25,32 @@ Solution "Enable 32-bit applications" needs to be enabled in the connection pool
 IIS / Application Pools / YourPool / Advanced Settings
 Advanced / Enable 32-Bit Applications: True
 ```
+# read rows and fields from Access database
+```asp
+<pre>
+<%
+function print(msg)
+    response.write(msg & vbCrlf)
+end function
 
+db_path = Server.mapPath("db.mdb")
+set conn = Server.CreateObject("ADODB.Connection")
+conn.mode = adModeRead
+conn.open "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & db_path & ";"
+set rs = Server.CreateObject("ADODB.Recordset")
+rs.open "select * from tabelObject", conn
+
+print(rs.recordCount)
+
+do until rs.EOF
+    for each x in rs.fields
+        if x.value<>"" then print(x.name & " = " & x.value)
+    next
+    print("<hr>")
+    rs.moveNext
+loop
+%>
+```
 
 
 
