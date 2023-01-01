@@ -11,6 +11,9 @@ set path=%path%;%systemroot%\system32\inetsrv\
 appcmd add site /name:xyz2020 /id:2 /physicalPath:c:\xyz2020 /bindings:http/*:80:xyz.youdomain.nl 
 ```
 
+# HTTP Error 401.3 - Unauthorized
+solution: Edit permissions of site. Add IUSR with the default rights (read&execute, list folder contents, read)
+
 # ASP Error: ADODB.Connection error '800a0e7a' Provider cannot be found. It may not be properly installed. Also error code 126 in ODBC connection.
 Solution "Enable 32-bit applications" needs to be enabled in the connection pool for the website, within IIS Manager 7.
 ```text
