@@ -47,7 +47,11 @@ do until rs.EOF
 loop
 %>
 ```
-
+# Response Buffer Limit Exceeded
+you could change the Response Buffer from 4MB to 64MB
+```text
+IIS > your site > ASP > Behavior > Limits Properties > Response Buffering Limit: 67108864
+```
 
 
 
