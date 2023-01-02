@@ -2,6 +2,9 @@
 title: Vue
 ---
 
+# vue3 with prismic
+* https://www.youtube.com/watch?v=Yd2V-bRBl-o
+* 
 # scroll behaviour
 * https://www.udemy.com/course/vuejs-2-the-complete-guide/learn/lecture/21879382#overview
 
