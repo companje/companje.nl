@@ -2,6 +2,18 @@
 title: Python
 ---
 
+# how to retrieve in Python multiple json files from a REST server when the next_page attribute is supplied by the server?
+```
+import requests, json
+url = "YOUR_API_URL"
+while url:
+    response = requests.get(url)
+    data = response.json()
+    page = data.get("page")
+    json.dump(data, open(f"page{page}.json","w"), indent=4)
+    url = data.get("next_page")
+```
+
 # read formula from cells in Excel
 ```python
 from openpyxl import load_workbook
