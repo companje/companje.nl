@@ -2,6 +2,12 @@
 title: .htaccess
 ---
 
+# redirect all traffic to new domain
+```apache
+RewriteEngine On
+RewriteRule ^(.*)$ https://gekomenomteblijven.nl/ [R=301]
+```
+
 # .htaccess: Invalid command 'ExpiresActive', perhaps misspelled or defined by a module not included in the server configuration
 ```bash
 ln -s /etc/apache2/mods-available/expires.load /etc/apache2/mods-enabled/
