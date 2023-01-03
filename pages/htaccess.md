@@ -2,6 +2,13 @@
 title: .htaccess
 ---
 
+# .htaccess: Invalid command 'ExpiresActive', perhaps misspelled or defined by a module not included in the server configuration
+```bash
+ln -s /etc/apache2/mods-available/expires.load /etc/apache2/mods-enabled/
+# or
+sudo a2enmod expires
+```
+
 # Directory index
 ```apache
 DirectoryIndex first.html
