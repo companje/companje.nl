@@ -1,3 +1,17 @@
+# show file/folder permissions as octal numbers
+```bash
+stat -c "%a %n" *
+```
+output:
+```
+664 footer.php
+775 images
+775 include
+664 index.php
+664 info.php
+664 logout.php
+```
+
 # mount NAS / Netgear ReadyNAS in Linux
 * https://technostuff.blogspot.com/2012/06/how-to-mount-disk-used-by-readynas.html
 
