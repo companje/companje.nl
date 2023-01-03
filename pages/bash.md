@@ -2,6 +2,11 @@
 title: Bash
 ---
 
+# see which groups your linux user account belongs to
+```bash
+groups
+```
+
 # output stdout and stderr to same output file
 ```bash
 normalizer --normalize --replace --force "$1" > normalizer.log 2>&1
