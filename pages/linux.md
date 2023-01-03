@@ -7,6 +7,8 @@ https://www.drupal.org/docs/7/install/step-3-create-settingsphp-and-the-files-di
 # see which groups your linux user account belongs to
 ```bash
 groups
+#or
+id
 ```
 
 # output stdout and stderr to same output file
