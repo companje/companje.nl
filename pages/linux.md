@@ -1,3 +1,9 @@
+# recursive file and folder permissions rw for user and group
+```bash
+sudo find . -type d -exec chmod 775 {} +
+sudo find . -type f -exec chmod 664 {} +
+```
+
 # show file/folder permissions as octal numbers
 ```bash
 stat -c "%a %n" *
