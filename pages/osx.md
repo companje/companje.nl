@@ -104,8 +104,11 @@ https://github.com/rupa/z
 ```bash
 vardate=$(date +%Y\-%m\-%d); 
 vartime=$(date +%H.%M.%S);
-screencapture -t jpg -x "/Users/USERNAME/Screenshots/Screenshot-auto $vardate at $vartime.jpg"
+FOLDER=/Users/rick/Screenshots/Screenshot-auto/$vardate
+mkdir -p $FOLDER
+screencapture -t jpg -x "$FOLDER/Screenshot-auto $vardate at $vartime.jpg"
 ```
+
 2) create the file `~/Library/LaunchAgents/nl.companje.screenshots.plist` with the following contents:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
