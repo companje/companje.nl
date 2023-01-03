@@ -106,7 +106,7 @@ vardate=$(date +%Y\-%m\-%d);
 vartime=$(date +%H.%M.%S);
 screencapture -t jpg -x "/Users/USERNAME/Screenshots/Screenshot-auto $vardate at $vartime.jpg"
 ```
-2) create the file `/Users/rickcompanje/Library/LaunchAgents/nl.companje.screenshots.plist` with the following contents:
+2) create the file `~/Library/LaunchAgents/nl.companje.screenshots.plist` with the following contents:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
