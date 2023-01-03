@@ -139,6 +139,7 @@ screencapture -t jpg -x "/Users/USERNAME/Screenshots/Screenshot-auto $vardate at
 3) Install and run the launchd process
 ```bash
 # launchctl unload nl.companje.screenshots.plist
+cd ~/Library/LaunchAgents/
 launchctl load nl.companje.screenshots.plist
 launchctl start nl.companje.screenshots
 # tail /var/log/system.log
