@@ -2,6 +2,11 @@
 title: .htaccess
 ---
 
+# Directory index
+```apache
+DirectoryIndex first.html
+```
+
 # CORS
 ```apache
 <Files "*.json">
