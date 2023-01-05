@@ -1,3 +1,8 @@
+# ignore &'s in sql values
+`sql
+set define off
+```
+
 # date field condition
 ```sql
 select * from TABLE where dt >= DATE '2022-12-22'
