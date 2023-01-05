@@ -2,6 +2,9 @@
 title: Nano (text editor)
 ---
 
+# show line number for current line
+`Ctrl + C`
+
 # show line numbers
 start nano with `-l` argument
 
