@@ -1,5 +1,5 @@
 # ignore &'s in sql values
-`sql
+```sql
 set define off
 ```
 
