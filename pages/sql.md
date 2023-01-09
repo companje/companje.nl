@@ -1,3 +1,8 @@
+# changes on a certain day
+```sql
+where aew.dt >= DATE '2023-01-05' and  aew.dt < DATE '2023-01-06'
+```
+
 # ignore &'s in sql values
 ```sql
 set define off
