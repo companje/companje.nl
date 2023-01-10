@@ -2,8 +2,13 @@
 title: SSH
 ---
 
-
-
+# port in ssh config
+```
+Host dev
+    HostName example.com
+    User fred
+    Port 2322
+```
    
 # locale warnings through SSH on MacOS / iTerm
 ```
