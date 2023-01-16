@@ -2,6 +2,32 @@
 title: Arduino / AVR
 ---
 
+# Keypad op 
+- [NodeMCU-8266 - ESP-12S](https://www.tinytronics.nl/shop/en/development-boards/microcontroller-boards/with-wi-fi/ai-thinker-nodemcu-8266-esp-12s)
+- [Keypad 3x4 Matrix - Membrane](https://www.tinytronics.nl/shop/en/switches/manual-switches/keypads/keypad-3x4-matrix-membrane)
+![pin-layout](https://user-images.githubusercontent.com/156066/212722340-ae45dd83-2825-4b39-9ed1-b9f464d6dfbc.jpg)
+
+```arduino
+#include <Arduino.h>
+#include <Keypad.h>
+
+char keys[4][3] = { { '1', '2', '3' }, { '4', '5', '6' }, { '7', '8', '9' }, { '*', '0', '#' } };
+
+byte rows[4] = { D1,D6,D5,D3 }; // pad pins 2,7,6,4
+byte cols[3] = { D2,D0,D4 };    // pad pins 3,1,5
+
+Keypad keypad = Keypad(makeKeymap(keys), rows, cols, 4, 3);
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  char key = keypad.getKey();
+  if (key) Serial.println(key);
+}
+```
+
 # print to thermal printer
 see <a href='/thermalprinter'>thermalprinter</a>
 
