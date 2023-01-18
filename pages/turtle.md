@@ -1,1 +1,1 @@
-see [turtle](/turtle)
+see [rdf](/rdf)
