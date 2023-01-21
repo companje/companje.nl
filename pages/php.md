@@ -2,6 +2,20 @@
 title: PHP
 ---
 
+# Query MS Access database with PHP
+```
+ini_set('display_errors', 'On');
+
+$mdbFilename="db6.mdb";
+$driver="MDBTools";
+$dataSourceName = "odbc:Driver=$driver;DBQ=$mdbFile$
+$connection = new \PDO($dataSourceName);
+
+$query="select * from afbeelding";
+$result = $connection->query($query)->fetchAll(\PDO$
+print_r($result);
+```
+
 # strip footer using regex
 ```php
 $html = preg_replace('/<footer.*<\/footer>/s', "", $html);
