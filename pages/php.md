@@ -3,7 +3,7 @@ title: PHP
 ---
 
 # Query MS Access database with PHP
-```
+```php
 ini_set('display_errors', 'On');
 
 $mdbFilename="db6.mdb";
