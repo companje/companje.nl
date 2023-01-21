@@ -3,7 +3,7 @@ title: PHP
 ---
 
 # Query MS Access database with PHP using PDO+ODBC
-On windows 11 with IIS 8 I first needed to install AccessDatabaseEngine_x64.exe from Microsoft to get rid of the following Error: "Data source name not found and no default driver specified"
+On windows 11 with IIS 8 I first needed to install `AccessDatabaseEngine_x64.exe` from Microsoft to get rid of the following Error: "Data source name not found and no default driver specified"
 
 ```php
 $mdbFile='C:\db6.mdb';
