@@ -5,16 +5,14 @@ title: PHP
 # Query MS Access database with PHP using PDO+ODBC 
 ```php
 $mdbFile='C:\db6.mdb';
-$connection = new PDO("odbc:Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=".$mdbFile);
+$pdo = new PDO("odbc:Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=".$mdbFile);
 
-$query="select top 10 * from afbeelding";
+$sql="select top 10 * from afbeelding";
+$stm = $pdo->query($sql);
+$rows = $stm->fetchAll(PDO::FETCH_CLASS | PDO::FETCH_CLASSTYPE);
 
-$result = $connection->query($query)->fetchAll();
-//or per row:  foreach ($db->query($sql) as $row) {
-
-print("<textarea style='width:100%;height:100%'>");
-print_r($result);
-print("</textarea>");
+header("Content-type: application/json");
+echo json_encode($rows);
 ```
 
 # strip footer using regex
