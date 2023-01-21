@@ -2,18 +2,19 @@
 title: PHP
 ---
 
-# Query MS Access database with PHP
+# Query MS Access database with PHP using PDO+ODBC 
 ```php
-ini_set('display_errors', 'On');
+$mdbFile='C:\db6.mdb';
+$connection = new PDO("odbc:Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=".$mdbFile);
 
-$mdbFilename="db6.mdb";
-$driver="MDBTools";
-$dataSourceName = "odbc:Driver=$driver;DBQ=$mdbFile$
-$connection = new \PDO($dataSourceName);
+$query="select top 10 * from afbeelding";
 
-$query="select * from afbeelding";
-$result = $connection->query($query)->fetchAll(\PDO$
+$result = $connection->query($query)->fetchAll();
+//or per row:  foreach ($db->query($sql) as $row) {
+
+print("<textarea style='width:100%;height:100%'>");
 print_r($result);
+print("</textarea>");
 ```
 
 # strip footer using regex
