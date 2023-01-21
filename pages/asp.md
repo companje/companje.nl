@@ -1,5 +1,17 @@
 ASP / ASP classic
 
+# set 404 page in web.config
+```xml
+<configuration>
+    <system.webServer>
+        <httpErrors errorMode="Custom" defaultResponseMode="File" >
+         <remove statusCode="404" />
+         <error statusCode="404" path="404.html" />
+       </httpErrors>
+        <defaultDocument>
+...
+```
+
 # install IIS with ASP classic on Windows Server 12
 (also works fine on Windows 11)
 ```batch
