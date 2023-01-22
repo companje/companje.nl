@@ -2,6 +2,9 @@
 title: Mac OSX
 ---
 
+# hfsexplorer
+Schijven met Mac OS Extended filesystem lezen op Windows: hfsexplorer
+
 # enable zoom with Control + Mouse/trackpad scroll
 <img width="703" alt="Screenshot 2022-12-27 at 21 18 05" src="https://user-images.githubusercontent.com/156066/209718245-f47ebbeb-dda2-4127-a6e9-1847af9c6011.png">
 
