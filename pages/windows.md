@@ -2,6 +2,10 @@
 title: Windows
 ---
 
+# hfsexplorer
+Schijven met Mac OS Extended filesystem lezen op Windows: hfsexplorer
+
+
 # MSVCP140.dll or VCRuntime140.dll missing
 * Microsoft Visual C++ 2015 Redistributable Update 3 RC: https://www.microsoft.com/en-us/download/details.aspx?id=48145
 * en als dat niet helpt dan...
