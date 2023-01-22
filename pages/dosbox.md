@@ -2,6 +2,9 @@
 title: DOSBOX
 ---
 
+## preferences file on windows
+C:\Users\USERNAME\AppData\Local\DOSBox
+
 ## edit autoexec.bat
 see autoexec section in `subl ~/Library/Preferences/DOSBox\ 0.74-3-3\ Preferences`
 
