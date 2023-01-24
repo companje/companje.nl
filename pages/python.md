@@ -203,7 +203,7 @@ for row in cur.execute("select * from TABLE;"):
 ```
 
 via dotenv:
-```
+```python
 import cx_Oracle
 from dotenv import load_dotenv
 load_dotenv()    
