@@ -202,6 +202,21 @@ for row in cur.execute("select * from TABLE;"):
   print(row)
 ```
 
+via dotenv:
+```
+import cx_Oracle
+from dotenv import load_dotenv
+load_dotenv()    
+
+def oracle_get_cursor():
+    lib_dir = os.path.join(os.environ["ORACLE_LIB_DIR"])
+    cx_Oracle.init_oracle_client(lib_dir=lib_dir)
+    dsn = cx_Oracle.makedsn(os.environ["ORACLE_IP"],'1521',service_name=os.environ["ORACLE_SERVICE_NAME"])
+    connection = cx_Oracle.connect(os.environ["ORACLE_USER"], os.environ["ORACLE_PASS"], dsn)
+    cur = connection.cursor()
+    return cur
+```
+
 ## list all valid xnummers recursively
 ```python
 def listdir_valid_xnummers_to_csv():
