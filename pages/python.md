@@ -217,6 +217,15 @@ def oracle_get_cursor():
     return cur
 ```
 
+query result as dictionary (single result):
+```python
+def get_bestandsnaam(cur, id):
+    cur.execute(f"SELECT * FROM bestanden WHERE id={id}")
+    cur.rowfactory = lambda *args: dict(zip([d[0].lower() for d in cur.description], args))
+    row = cur.fetchone()
+    return row["bestandsnaam"]
+```
+
 ## list all valid xnummers recursively
 ```python
 def listdir_valid_xnummers_to_csv():
