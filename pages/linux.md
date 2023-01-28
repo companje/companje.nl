@@ -1,4 +1,4 @@
-# login as user
+# login as user www-data
 ```bash
 sudo -u www-data bash
 ```
