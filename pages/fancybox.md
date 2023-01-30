@@ -11,16 +11,12 @@
   <body>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script>
-    //strip ? from querystring
-    const url = location.search.indexOf("?")!=0 ? "" : location.search.substring(1)
-
-    //open image in querystring in fancybox
-    const fancybox = new Fancybox([
-        {
-            src: url,
-            type: "image",
-        },
-    ]);
+    if (location.search.indexOf("?")==0) {
+      const fancybox = new Fancybox([{
+            src: location.search.substring(1), //skip questionmark from querystring
+            type: "image"
+      }]);
+    }
     </script>
   </body>
 </html>
