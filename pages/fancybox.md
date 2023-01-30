@@ -11,7 +11,7 @@
   <body>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script>
-    if (location.search.indexOf("?")==0) {
+    if (location.search.indexOf("?")==0) { //if has querystring
       const fancybox = new Fancybox([{
             src: location.search.substring(1), //skip questionmark from querystring
             type: "image"
