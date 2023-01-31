@@ -1,3 +1,22 @@
+# run multiple saved multipage sparql queries and write result as json per query
+```python
+#!/usr/bin/env python3
+import requests, json, csv
+api = "https://api.data.netwerkdigitaalerfgoed.nl/queries/hetutrechtsarchief/"
+
+queries = ["wo2-documenten", "wo2-brontypes", "wo2-personen", "wo2-adressen-per-document", "wo2-adressen", "wo2-persoon-op-adres-per-document"]
+
+for query in queries:
+    rows = []
+    for i in range(1,5): # max 5 pages... must be a better way
+        url = api+query+"/run.json?pageSize=10000&page="+str(i)
+        response = requests.get(url)
+        data = response.json()
+        rows = rows + data
+
+    json.dump(rows, open(f"{query}.json","w"), indent=2)
+```
+    
 ## show map of all things that have a coordinate within 5km of Utrecht (Q803) using GEOSPARQL
 ```sparql
 PREFIX geof: <http://www.opengis.net/def/geosparql/function/>
