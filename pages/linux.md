@@ -2,7 +2,7 @@
 ```bash
 sudo -u www-data bash
 ```
-
+ 
 # recursive file and folder permissions rw for user and group
 ```bash
 sudo find . -type d -exec chmod 775 {} +
