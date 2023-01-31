@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# concat two lists
+```python
+result = list1 + list2
+```
+
 # json2csv (where json is a list of 'flat' dicts)
 ```python
 #!/usr/bin/env python3
