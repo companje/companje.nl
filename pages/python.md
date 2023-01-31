@@ -3,7 +3,7 @@ title: Python
 ---
 
 # get all keys used in a list of dicts
-```
+```python
 all_keys = set()
 for row in data:
 	for key in row.keys():
