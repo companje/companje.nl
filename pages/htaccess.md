@@ -2,10 +2,17 @@
 title: .htaccess
 ---
 
+# add www to your domain name when there isn't a subdomain
+```apache
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^[^.]+\.[^.]+$
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [L,R=301]
+```
+
 # redirect all traffic to new domain
 ```apache
 RewriteEngine On
-RewriteRule ^(.*)$ https://gekomenomteblijven.nl/ [R=301]
+RewriteRule ^(.*)$ https://newdomain.nl/ [R=301]
 ```
 
 # .htaccess: Invalid command 'ExpiresActive', perhaps misspelled or defined by a module not included in the server configuration
