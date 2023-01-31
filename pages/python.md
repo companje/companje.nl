@@ -1,7 +1,15 @@
 ---
 title: Python
 ---
-test2
+
+# get all keys used in a list of dicts
+```
+all_keys = set()
+for row in data:
+	for key in row.keys():
+	    all_keys.add(key)
+print(all_keys)    
+```
 
 # how to retrieve in Python multiple json files from a REST server when the next_page attribute is supplied by the server?
 ```python
