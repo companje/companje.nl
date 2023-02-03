@@ -1,4 +1,4 @@
-# remove files (recursively) ending with ~
+# recursively remove files ending with ~
 ```bash
 find . -type f -name '*~' -exec rm -f {} +
 ```
