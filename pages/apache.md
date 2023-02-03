@@ -2,6 +2,11 @@
 title: Apache 
 ---
 
+# accesslog file analyze
+```bash
+goaccess combined.access.log -o report.html --log-format=COMBINED
+```
+
 # restart php-fpm
 ```bash
 sudo /etc/init.d/php7.3-fpm restart
