@@ -1,3 +1,11 @@
+# zcat combined wit cat
+```bash
+( zcat < access.log.*.gz && cat access.log ) > all.log
+# same as:
+zcat < access.log.*.gz > all.log
+cat access.log >> all.log
+```
+
 # recursively remove files ending with ~
 ```bash
 find . -type f -name '*~' -exec rm -f {} +
