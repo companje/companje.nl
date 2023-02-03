@@ -1,3 +1,8 @@
+# remove files ending with ~
+```bash
+find . -type f -name '*~' -exec rm -f {} +
+```
+
 # login as user www-data
 ```bash
 sudo -u www-data bash
