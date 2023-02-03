@@ -6,7 +6,7 @@ title: Python
 ```python
 # from: 2023-01-24T10:32:01+01:00
 # to: 2023-01-24 10:32
-datetime.datetime.strptime(r.group('dateandtime'), "%d/%b/%Y:%H:%M:%S %z").strftime("%Y-%m-%d %H:%M")
+datetime.datetime.strptime(date_str, "%d/%b/%Y:%H:%M:%S %z").strftime("%Y-%m-%d %H:%M")
 ```
 
 # parse access.log files to json
