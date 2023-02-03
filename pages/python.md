@@ -2,6 +2,24 @@
 title: Python
 ---
 
+# parse access.log files to json
+see: https://coderwall.com/p/snn1ag/regex-to-parse-your-default-nginx-access-logs
+```python
+#!/usr/bin/env python3
+import json,re
+result = []
+
+for line in open('all.log').readlines():
+    r = re.match(r'(?P<ipaddress>\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}) - - \[(?P<dateandtime>.*)\] \"(?P<httpstatus>(GET|POST) .+ HTTP\/1\.1)\" (?P<returnstatus>\d{3} \d+) (\".*\")(?P<browserinfo>.*)\"',line)
+    if r != None:
+        result.append({'IP address': r.group('ipaddress'), 'Time Stamp': r.group('dateandtime'), 
+            'HTTP status': r.group('httpstatus'), 'Return status': 
+            r.group('returnstatus'), 'Browser Info': r.group('browserinfo')})
+
+with open('data.json', 'w') as fp:
+    json.dump(result, fp, indent=2) 
+```
+
 # concat two lists
 ```python
 result = list1 + list2
