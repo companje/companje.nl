@@ -9,22 +9,33 @@ title: Python
 datetime.datetime.strptime(date_str, "%d/%b/%Y:%H:%M:%S %z").strftime("%Y-%m-%d %H:%M")
 ```
 
-# parse access.log files to json
+# parse access.log files to csv
 see: https://coderwall.com/p/snn1ag/regex-to-parse-your-default-nginx-access-logs
 ```python
 #!/usr/bin/env python3
-import json,re
+import json,re,csv,datetime
+
 result = []
 
 for line in open('all.log').readlines():
+    # if not re.findall(r'GET /\d{1,2} ', line): # filter on GET /1, GET /2 etc.
+    #     continue
+
     r = re.match(r'(?P<ipaddress>\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}) - - \[(?P<dateandtime>.*)\] \"(?P<httpstatus>(GET|POST) .+ HTTP\/1\.1)\" (?P<returnstatus>\d{3} \d+) (\".*\")(?P<browserinfo>.*)\"',line)
     if r != None:
-        result.append({'IP address': r.group('ipaddress'), 'Time Stamp': r.group('dateandtime'), 
+        result.append({'IP address': r.group('ipaddress'), 'Time Stamp': 
+            datetime.datetime.strptime(r.group('dateandtime'), "%d/%b/%Y:%H:%M:%S %z").strftime("%Y-%m-%d %H:%M"),
             'HTTP status': r.group('httpstatus'), 'Return status': 
             r.group('returnstatus'), 'Browser Info': r.group('browserinfo')})
 
-with open('data.json', 'w') as fp:
-    json.dump(result, fp, indent=2) 
+# print(result)
+with open('output.csv', 'w', encoding='utf8') as file:
+    writer = csv.DictWriter(file, result[0].keys())
+    writer.writeheader()
+    writer.writerows(result)
+    
+#with open('data.json', 'w') as fp:
+#    json.dump(result, fp, indent=2) 
 ```
 
 # concat two lists
