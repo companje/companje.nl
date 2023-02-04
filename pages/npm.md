@@ -6,6 +6,11 @@ see [[nodejs]]
 # instal nvm
 Visit https://nvm.sh and use the curl command to install it.
 
+# nvm use LTS version of NodeJS
+```bash
+nvm install --lts
+```
+
 # eslint-plugin-vue ... The engine "node" is incompatible with this module. Expected version ...
 I needed version 16 of node instead of 14.x
 ```
