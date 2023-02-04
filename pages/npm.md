@@ -3,6 +3,9 @@ title: npm - node package manager
 ---
 see [[nodejs]]
 
+# instal nvm
+Visit https://nvm.sh and use the curl command to install it.
+
 # eslint-plugin-vue ... The engine "node" is incompatible with this module. Expected version ...
 I needed version 16 of node instead of 14.x
 ```
