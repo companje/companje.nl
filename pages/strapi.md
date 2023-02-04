@@ -8,5 +8,11 @@
 
 npx create-strapi-app@latest my-project --quickstart
   
-
+# run develop
+to be able to create new content types start strapi in develop mode
+```bash
+npm run develop
+# http://localhost:1337/admin
+# http://localhost:1337
+```
 
