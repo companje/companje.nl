@@ -3,7 +3,7 @@ title: MySQL
 ---
 
 
-# error: An error occurred when reading the file, ... (Autodetect - Unicode (UTF-8)).
+# error: An error occurred when reading the file [...] Autodetect - Unicode (UTF-8)
 solution "select Western (Mac OS Roman) as the encoding format for the file to import without issue."
 source: https://dba.stackexchange.com/questions/111549/cannot-locally-import-utf-8-encoded-sql-database-on-mac
 
