@@ -2,6 +2,9 @@
 title: Apache 
 ---
 
+# GOOD tutorial about running apache and php both from homebrew
+* https://wpbeaches.com/installing-configuring-apache-on-macos-using-homebrew/
+
 # accesslog file analyze
 ```bash
 goaccess combined.access.log -o report.html --log-format=COMBINED
