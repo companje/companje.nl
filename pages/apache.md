@@ -5,6 +5,15 @@ title: Apache
 # GOOD tutorial about running apache and php both from homebrew
 * https://wpbeaches.com/installing-configuring-apache-on-macos-using-homebrew/
 
+# variables
+```bash
+httpd -V
+#output:
+#...
+# -D SERVER_CONFIG_FILE="/usr/local/etc/httpd/httpd.conf"
+#...
+```
+
 # accesslog file analyze
 ```bash
 goaccess combined.access.log -o report.html --log-format=COMBINED
