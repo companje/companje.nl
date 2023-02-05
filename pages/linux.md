@@ -1,3 +1,5 @@
+test2
+
 # zcat combined wit cat
 ```bash
 ( zcat < access.log.*.gz && cat access.log ) > all.log
