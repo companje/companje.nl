@@ -16,3 +16,6 @@ npm run develop
 # http://localhost:1337
 ```
 
+# install import/export plugin
+https://market.strapi.io/plugins/strapi-plugin-import-export-entries
+
