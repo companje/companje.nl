@@ -2,6 +2,17 @@
 title: SSH
 ---
 
+# Offering public key: .ssh/id_rsa, but still asking password
+Why am I still getting a password prompt with ssh with public key authentication? Make sure .ssh folder is:
+```bash
+chmod -R 0700 .ssh
+```
+
+# check ssh log file
+```bash
+tail -100 /var/log/auth.log
+```
+
 # port in ssh config
 ```
 Host dev
