@@ -1,7 +1,16 @@
 # recursive title lookup for titles
 ```sql
-SELECT LISTAGG((SELECT beschrijving FROM appels_beschrijvingen b WHERE b.id=a.id),' ... ')
-FROM appels a
+SELECT LISTAGG(a.title, '...')
+FROM apples a
+CONNECT BY PRIOR parent_id = id
+START WITH id=123123
+ORDER BY level DESC
+```
+
+or with a subselect to get apple titles from another table:
+```sql
+SELECT LISTAGG((SELECT title FROM apple_descriptions b WHERE b.id=a.id),' ... ')
+FROM apples a
 CONNECT BY PRIOR parent_id = id
 START WITH id=123123
 ORDER BY level DESC
