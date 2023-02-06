@@ -2,6 +2,22 @@
 title: Python
 ---
 
+# tweepy
+```python
+import tweepy,json
+client = tweepy.Client("Bearer Token")
+user_id=123123123
+tweet_fields = ["attachments","author_id","context_annotations","conversation_id","created_at","entities","geo","id","in_reply_to_user_id","lang","referenced_tweets","reply_settings","source","text","withheld"]
+tweets = []
+
+# user tweets
+#   similar for client.get_liked_tweets
+for tweet in tweepy.Paginator(client.get_users_tweets,id=user_id, tweet_fields=tweet_fields, max_results=100).flatten(limit=1500):
+    tweets.append(tweet.data)
+with open('tweets.json', 'w') as f:
+    json.dump(tweets, f, indent=2)
+```
+
 # parse and format date
 ```python
 # from: 2023-01-24T10:32:01+01:00
