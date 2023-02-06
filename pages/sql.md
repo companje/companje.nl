@@ -1,6 +1,6 @@
 # recursive title lookup for titles
 ```sql
-SELECT LISTAGG(a.title, '...')
+SELECT LISTAGG(a.id, '...')
 FROM apples a
 CONNECT BY PRIOR parent_id = id
 START WITH id=123123
