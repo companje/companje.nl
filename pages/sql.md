@@ -16,6 +16,16 @@ START WITH id=123123
 ORDER BY level DESC
 ```
 
+or with a join to retrieve titles from the titles table:
+```sql
+select listagg(t.title, '...')
+from apples a
+join apple_titles t on t.id=a.id
+connect by prior a.parent_id = a.id
+start with a.id=724423
+order by level desc
+```
+
 # oracle version
 ```sql
 select * from v$version;
