@@ -26,6 +26,15 @@ start with a.id=724423
 order by level desc
 ```
 
+order by (within group)
+```sql
+SELECT LISTAGG(b.title, ' ... ') WITHIN GROUP (ORDER BY level DESC)  "context"
+FROM apples a
+JOIN apple_titles b ON b.id=a.id
+CONNECT BY PRIOR a.parent_id = a.id
+START WITH a.id=724423
+```
+
 # oracle version
 ```sql
 select * from v$version;
