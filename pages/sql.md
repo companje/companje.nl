@@ -1,3 +1,12 @@
+# recursive title lookup for titles
+```sql
+SELECT LISTAGG((SELECT beschrijving FROM appels_beschrijvingen b WHERE b.id=a.id),' ... ')
+FROM appels a
+CONNECT BY PRIOR parent_id = id
+START WITH id=123123
+ORDER BY level DESC
+```
+
 # oracle version
 ```sql
 select * from v$version;
