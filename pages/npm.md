@@ -3,6 +3,11 @@ title: npm - node package manager
 ---
 see [[nodejs]]
 
+# opensslErrorStack: 'error:03000086:digital envelope routines::initialization error' ERR_OSSL_EVP_UNSUPPORTED
+```bash
+export NODE_OPTIONS=--openssl-legacy-provider
+```
+
 # instal nvm
 Visit https://nvm.sh and use the curl command to install it.
 
