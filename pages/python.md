@@ -72,19 +72,12 @@ result = list1 + list2
 import os,glob,csv,json,sys
 from sys import argv
 
-def get_all_keys(list_of_dicts):
-    all_keys = set()
-    for row in list_of_dicts:
-        for key in row.keys():
-            all_keys.add(key)
-    return all_keys
-
 if len(argv)<3:
     sys.exit(f"Usage: {argv[0]} input.json output.csv")
 
 with open(argv[1]) as json_file, open(argv[2],'w') as csv_file:
     data = json.load(json_file)
-    all_keys = get_all_keys(data)
+    all_keys = set(key for row in data for key in row.keys())
     writer = csv.DictWriter(csv_file, all_keys)
     writer.writeheader()
     writer.writerows(data)
