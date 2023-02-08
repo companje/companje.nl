@@ -2,6 +2,11 @@
 title: wget
 ---
 
+## don't re-retrieve files unless newer than local
+```
+  -N,  --timestamping
+```                                  
+
 ## download site recursive
 ```bash
 wget -e robots=off -r -np --page-requisites --convert-links https://SITE
