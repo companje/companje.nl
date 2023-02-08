@@ -69,13 +69,12 @@ result = list1 + list2
 ```python
 #!/usr/bin/env python3
 
-import os,glob,csv,json,sys
-from sys import argv
+import sys,csv,json
 
-if len(argv)<3:
-    sys.exit(f"Usage: {argv[0]} input.json output.csv")
+if len(sys.argv)<3:
+    sys.exit(f"Usage: {sys.argv[0]} input.json output.csv")
 
-with open(argv[1]) as json_file, open(argv[2],'w') as csv_file:
+with open(sys.argv[1]) as json_file, open(sys.argv[2],'w') as csv_file:
     data = json.load(json_file)
     all_keys = set(key for row in data for key in row.keys())
     writer = csv.DictWriter(csv_file, all_keys)
