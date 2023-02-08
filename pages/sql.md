@@ -1,4 +1,4 @@
-# recursive title lookup for titles
+# recursive title lookup for titles (TRAVERSING!)
 ```sql
 SELECT LISTAGG(a.id, '...')
 FROM apples a
