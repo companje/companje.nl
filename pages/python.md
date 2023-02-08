@@ -69,7 +69,8 @@ result = list1 + list2
 ```python
 #!/usr/bin/env python3
 
-import os,glob,csv,json
+import os,glob,csv,json,sys
+from sys import argv
 
 def get_all_keys(list_of_dicts):
     all_keys = set()
@@ -78,16 +79,15 @@ def get_all_keys(list_of_dicts):
             all_keys.add(key)
     return all_keys
 
-for json_file in glob.glob(os.path.join('.', '*.json')):
-    print(json_file)
-    data = json.load(open(json_file, 'rt', encoding='utf8'))
+if len(argv)<3:
+    sys.exit(f"Usage: {argv[0]} input.json output.csv")
 
+with open(argv[1]) as json_file, open(argv[2],'w') as csv_file:
+    data = json.load(json_file)
     all_keys = get_all_keys(data)
-
-    with open(json_file.replace('.json', '.csv'), 'w', encoding='utf8') as file:
-        writer = csv.DictWriter(file, all_keys)
-        writer.writeheader()
-        writer.writerows(data)
+    writer = csv.DictWriter(csv_file, all_keys)
+    writer.writeheader()
+    writer.writerows(data)
 ```
 
 # get all keys used in a list of dicts
