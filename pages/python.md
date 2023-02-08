@@ -65,7 +65,7 @@ with open('output.csv', 'w', encoding='utf8') as file:
 result = list1 + list2
 ```
 
-# json2csv (where json is a list of 'flat' dicts)
+# json2csv (where json is an array of 'flat' objects)
 ```python
 #!/usr/bin/env python3
 
