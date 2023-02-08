@@ -2,6 +2,9 @@
 title: Python
 ---
 
+# pipx
+https://pypa.github.io/pipx/
+
 # tweepy
 ```python
 import tweepy,json
