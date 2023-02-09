@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# replace spaces by '_' from all keys in a dict
+```python
+item = { x.replace(' ', '_'): v for x, v in item.items() }
+```
+
 # pipx
 pipx is a tool to help you install and run end-user applications written in Python. It's roughly similar to macOS's brew, JavaScript's npx, and Linux's apt.
 
