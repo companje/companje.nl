@@ -4,7 +4,7 @@ title: SublimeText
 
 # Select all text between quotes/brackets?
 (multiline select until next quote)
-```Control Shift Space``` !!!!!
+```Ctrl+Shift+Space``` !!!!!
 
 # use specific python version for running python script
 make a custom `my_build.sublime-build` file in the 'User' folder that can be accessed through 'Browse Packages...'
