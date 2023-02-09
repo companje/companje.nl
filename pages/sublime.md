@@ -1,6 +1,12 @@
 ---
 title: SublimeText
 ---
+
+
+# Select all text between quotes/brackets?
+(multiline select until next quote)
+```Control Shift Space``` !!!!!
+
 A light-weight full feature text/code editor for OSX, Windows and Linux
 
 # use specific python version for running python script
