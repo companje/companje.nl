@@ -395,6 +395,10 @@ print(json.dumps(data,indent=2,ensure_ascii=False))
 ```
 
 ## liquid templates
+```bash
+pip install liquidpy
+```
+
 ```python
 from liquid import Liquid
 tpl = Liquid("templates/template.xml", liquid_from_file=True) 
