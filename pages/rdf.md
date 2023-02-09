@@ -1,5 +1,11 @@
 * https://www.easyrdf.org/converter
 
+# Validate Turtle file
+```bash
+npm install -g turtle-validator
+ttl FILE.ttl
+```
+
 # tools
 * https://prefix.cc
 * https://prefix.zazuko.com/
