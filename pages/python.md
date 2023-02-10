@@ -411,6 +411,17 @@ result = tpl.render(**data)
 print(result)
 ```
 
+custom filters in liquidpy 'wild' mode
+```liquid
+{% addfilter md5 %}
+import hashlib
+def md5(s):
+    return hashlib.md5(s.encode()).hexdigest()
+{% endaddfilter %}
+```
+
+
+
 ## parse macOCR result
 ```python
 def read_ocr(filename): # txt macOCR format
