@@ -10,7 +10,7 @@ if (!is_numeric($id)) die404();
 $url = "https://www.wikidata.org/w/api.php?action=wbgetclaims&property=P18&format=json&entity=Q".$id;
 $json=json_decode(file_get_contents($url));
 $filename = $json->claims->P18[0]->mainsnak->datavalue->value ;
-if ($filename) header("Location: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/".$filename."&width=100", true, 301);
+if ($filename) header("Location: https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/".$filename."&width=100", true, 301);
 else die404();
 ```
 
