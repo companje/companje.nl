@@ -4,7 +4,7 @@ title: PHP
 
 #
 ```php
-function die404($msg) { http_response_code(404); die($msg); }
+function die404() { http_response_code(404); die($msg); }
 $id = substr($_GET["id"],1);
 if (!is_numeric($id)) die404();
 $url = "https://www.wikidata.org/w/api.php?action=wbgetclaims&property=P18&format=json&entity=Q".$id;
