@@ -2,6 +2,18 @@
 title: PHP
 ---
 
+#
+```php
+function die404($msg) { http_response_code(404); die($msg); }
+$id = substr($_GET["id"],1);
+if (!is_numeric($id)) die404();
+$url = "https://www.wikidata.org/w/api.php?action=wbgetclaims&property=P18&format=json&entity=Q".$id;
+$json=json_decode(file_get_contents($url));
+$filename = $json->claims->P18[0]->mainsnak->datavalue->value ;
+if ($filename) header("Location: "https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/".$filename."&width=100", true, 301);
+else die404();
+```
+
 # Query MS Access database with PHP using PDO+ODBC
 On windows 11 with IIS 8 I first needed to install `AccessDatabaseEngine_x64.exe` from Microsoft to get rid of the following Error: "Data source name not found and no default driver specified"
 
