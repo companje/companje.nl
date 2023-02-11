@@ -11,7 +11,11 @@ $json = json_decode(file_get_contents($url));
 
 if (isset($json->claims) && isset($json->claims->P18)) {
   $filename = $json->claims->P18[0]->mainsnak->datavalue->value ;
-  header("Location: https://commons.wikimedia.org/w/index.php?title=Special:Redirect/file/".$filename."&width=100", true, 301);
+  $url = "https://commons.wikimedia.org/wiki/Special:Redirect?wptype=file&wpvalue=".urlencode($filename)."&width=100";
+  ini_set( 'user_agent', 'CoolBot/0.0 (https://example.org/coolbot/; coolbot@example.org)' );
+  header("Access-Control-Allow-Origin: *");
+  header("Content-type: image/jpeg");
+  echo file_get_contents($url);
 } else die(http_response_code(404));
 ```
 
