@@ -1,3 +1,23 @@
+# wikidata query using wikibase:around service to get items around a geopoint
+```sparql
+#defaultView:Map
+SELECT DISTINCT ?img ?distance ?place ?placeLabel ?location WHERE {
+
+   SERVICE wikibase:around { 
+     ?item wdt:P625 ?location . 
+     ?item wdt:P131 wd:Q803. # place is in Utrecht
+     ?item wdt:P18 ?img . # must have image
+     
+     # That are in a circle with a centre of with a point
+     bd:serviceParam wikibase:center "Point(5.104219854148524,52.10037982790537)"^^geo:wktLiteral   . 
+     bd:serviceParam wikibase:radius ".2" .  # 200m
+     bd:serviceParam wikibase:distance ?distance .
+   } .
+   SERVICE wikibase:label {   bd:serviceParam wikibase:language "en" . }
+}
+ORDER BY ?distance
+```
+
 # bind a single value to a variable
 ```sparql
 BIND( wd:Q30 AS ?country )
