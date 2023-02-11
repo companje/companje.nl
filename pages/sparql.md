@@ -1,3 +1,8 @@
+# bind a single value to a variable
+```sparql
+BIND( wd:Q30 AS ?country )
+```
+
 # run multiple saved multipage sparql queries and write result as json per query
 ```python
 #!/usr/bin/env python3
