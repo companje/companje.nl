@@ -2,7 +2,7 @@
 title: PHP
 ---
 
-#
+# get thumbnail by wikidata ID
 ```php
 $id = substr($_GET["id"],1);
 if (!is_numeric($id)) die(http_response_code(404));
