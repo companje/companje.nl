@@ -1,3 +1,6 @@
+# sudo: unable to resolve host debian: Name or service not known
+add the hostname of your machine to the /etc/hosts file. In this case ```127.0.0.1       debian```
+
 # zcat combined wit cat
 ```bash
 ( zcat < access.log.*.gz && cat access.log ) > all.log
