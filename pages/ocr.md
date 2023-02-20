@@ -2,6 +2,13 @@
 title: OCR
 ---
 
+# Text Recognition API
+OCR command line utility for macOS 10.15+. Utilizes the [VNRecognizeTextRequest](https://developer.apple.com/documentation/vision/vnrecognizetextrequest) API.
+
+* https://github.com/straussmaximilian/ocrmac/blob/main/ocrmac/ocrmac.py
+* https://developer.apple.com/documentation/vision/recognizing_text_in_images#overview
+* https://github.com/ughe/macocr/
+
 # print parameters
 ```bash
 tesseract --print-parameters
