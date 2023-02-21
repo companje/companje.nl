@@ -2,6 +2,11 @@
 title: AI / Machine learning
 type: other
 ---
+
+# handig tooltje voor rechthoeken markeren voor maken van trainingsdata
+* https://www.makesense.ai/ 
+
+# wekinator
 * http://www.wekinator.org/
 
 # Google AI
