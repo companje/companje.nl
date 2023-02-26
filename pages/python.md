@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# remove double line breaks with optional whitespace in between
+```python
+s = re.sub(r"\n\s*\n", "\n", s)
+```
+
 # replace spaces by '_' from all keys in a dict
 ```python
 item = { x.replace(' ', '_'): v for x, v in item.items() }
