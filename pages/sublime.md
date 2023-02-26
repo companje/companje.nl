@@ -2,6 +2,9 @@
 title: SublimeText
 ---
 
+# scope info
+`Option+Cmd+P`
+
 # Select all text between quotes/brackets?
 (multiline select until next quote)
 ```Ctrl+Shift+Space``` !!!!!
