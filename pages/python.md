@@ -2,6 +2,16 @@
 title: Python
 ---
 
+# item get
+```python
+if "Achternaam" in item and item["Achternaam"]=="Bicker":
+```
+vs.
+```python
+if item.get("Achternaam")=="Bicker":
+````
+
+
 # remove double line breaks with optional whitespace in between
 ```python
 s = re.sub(r"\n\s*\n", "\n", s)
