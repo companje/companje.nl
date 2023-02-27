@@ -3,6 +3,7 @@ title: Songs
 layout: default
 ---
 
+* Bombay Bicycle Club - Lights Out, Words Gone
 * Tricky, Nneka - Noting Matters
 * Cranberries - Animal Instinct
 * S10 - De Diepte
