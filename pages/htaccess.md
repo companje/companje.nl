@@ -2,6 +2,11 @@
 title: .htaccess
 ---
 
+# redirect folder to other domain in root htaccess
+```apache
+RewriteRule ^FOLDER.*$ https://DOMAIN [R=301,L]
+```
+
 # add www to your domain name when there isn't a subdomain
 ```apache
 RewriteEngine On
