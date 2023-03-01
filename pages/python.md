@@ -2,6 +2,18 @@
 title: Python
 ---
 
+```
+page = 1
+url = f"{API_URL}&page={page}"
+while url:
+    print(url)
+    response = requests.get(url)
+    json.dump(response.json(), open(f"data/page{page}.json","w"), indent=2)
+    next = response.links.get("next")
+    url = next["url"] if next else ""
+    page += 1
+```
+
 # get next link url from http response header 
 ```python
 response = requests.get(url)
