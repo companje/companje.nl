@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# sort dict by value descending
+```
+soort = dict(sorted(soort.items(), key=lambda x:x[1], reverse=True))
+```
+
 # default dict with int instead of lambda:0
 ```python
 soort = defaultdict(int)
