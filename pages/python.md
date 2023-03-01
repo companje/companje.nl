@@ -2,6 +2,25 @@
 title: Python
 ---
 
+# list amount of each 'Soort' across different json files
+```python
+from collections import defaultdict
+from pathlib import Path
+import json
+
+soort = defaultdict(int)
+input_files = list(Path("data/json").rglob("*.json"))
+
+for input_file_path in input_files:
+    with open(input_file_path,"r") as file:    
+        for item in json.load(file):
+            soort[item.get("Soort")] += 1
+
+soort = dict(sorted(soort.items(), key=lambda x:x[1], reverse=True))
+
+print(json.dumps(soort,indent=2,ensure_ascii=False))
+```
+
 # sort dict by value descending
 ```python
 soort = dict(sorted(soort.items(), key=lambda x:x[1], reverse=True))
