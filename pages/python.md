@@ -2,6 +2,9 @@
 title: Python
 ---
 
+# RDF / turtle / jsonLD
+see [RDF](/rdf)
+
 # Download multiple pages of JSON from (omeka-s) API
 ```python
 page = 1
