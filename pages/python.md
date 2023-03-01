@@ -2,6 +2,13 @@
 title: Python
 ---
 
+# json dumps http request response header
+```python
+import requests, json
+response = requests.get(url)
+print(json.dumps(dict(response.headers),indent=2))
+```
+
 # item get
 ```python
 if "Achternaam" in item and item["Achternaam"]=="Bicker":
