@@ -2,7 +2,8 @@
 title: Python
 ---
 
-```
+# Download multiple pages of JSON from (omeka-s) API
+```python
 page = 1
 url = f"{API_URL}&page={page}"
 while url:
