@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# default dict with int instead of lambda:0
+```python
+soort = defaultdict(int)
+```
+
 # RDF / turtle / jsonLD
 see [RDF](/rdf)
 
