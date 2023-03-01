@@ -3,7 +3,7 @@ title: Python
 ---
 
 # sort dict by value descending
-```
+```python
 soort = dict(sorted(soort.items(), key=lambda x:x[1], reverse=True))
 ```
 
