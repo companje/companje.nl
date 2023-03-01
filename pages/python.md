@@ -2,6 +2,15 @@
 title: Python
 ---
 
+# get next link url from http response header 
+```python
+response = requests.get(url)
+next = response.links.get("next")
+if next:
+	print(next["url"])
+```
+
+
 # json dumps http request response header
 ```python
 import requests, json
