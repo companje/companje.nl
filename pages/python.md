@@ -20,6 +20,17 @@ soort = dict(sorted(soort.items(), key=lambda x:x[1], reverse=True))
 
 print(json.dumps(soort,indent=2,ensure_ascii=False))
 ```
+according to ChatGPT this code can written shorter as, thanks:
+```python
+import json
+import pandas as pd
+from pathlib import Path
+
+input_files = list(Path("data/json").rglob("*.json"))
+df = pd.concat([pd.read_json(file) for file in input_files])
+soort = df["Soort"].value_counts().to_dict()
+print(json.dumps(soort,indent=2,ensure_ascii=False))
+```
 
 # sort dict by value descending
 ```python
