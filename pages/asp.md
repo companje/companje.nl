@@ -5,6 +5,7 @@ ASP / ASP classic
 <configuration>
     <system.webServer>
         <httpErrors errorMode="Custom" defaultResponseMode="File" >
+         <!-- als je Detailed informatie wilt bijv wat de fout precies is dan moet je hierboven 'Detailed' invullen0-->
          <remove statusCode="404" />
          <error statusCode="404" path="404.html" />
        </httpErrors>
