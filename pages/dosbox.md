@@ -2,6 +2,15 @@
 title: DOSBOX
 ---
 
+## scale window
+https://superuser.com/questions/1425244/increase-dosbox-windowed-size
+run "DOSBox 0.74 Options.bat"
+the script starts notepad with configuration file: here change
+```
+windowresolution=1600x800
+output=ddraw
+```
+
 ## preferences file on windows
 C:\Users\USERNAME\AppData\Local\DOSBox
 
