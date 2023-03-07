@@ -2,6 +2,13 @@
 title: Regular Expressions
 ---
 
+# swap values of lat/lon coordinate in Google Sheets
+```
+from:  5.11699542 52.09363001
+to:   52.09363001, 5.11699542
+=REGEXREPLACE(A1,"(\-?\d+\.\d+)\s+(\-?\d+\.\d+)","$2, $1")
+```
+
 # get domain
 ```python
 domain = re.findall(r"^.+?[^\/:](?=[?\/]|$)",link)
