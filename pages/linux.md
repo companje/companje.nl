@@ -1,3 +1,8 @@
+# replace http://proxy by https://proxy using sed
+```
+sed 's/http:\/\/proxy/https:\/\/proxy/' INPUT.TXT > OUTPUT.TXT
+```
+
 # sudo: unable to resolve host debian: Name or service not known
 add the hostname of your machine to the /etc/hosts file. In this case ```127.0.0.1       debian```
 
