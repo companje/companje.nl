@@ -2,7 +2,7 @@
 title: Python
 ---
 
-# get version of installed modules with pip:
+# get version of installed modules with pip
 ```bash
 pip list
 ```
