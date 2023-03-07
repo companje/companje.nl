@@ -1,6 +1,6 @@
 # replace http://proxy by https://proxy using sed
 ```
-sed 's/http:\/\/proxy/https:\/\/proxy/' INPUT.TXT > OUTPUT.TXT
+sed 's/p:\/\/proxy/ps:\/\/proxy/' INPUT.TXT > OUTPUT.TXT
 ```
 
 # sudo: unable to resolve host debian: Name or service not known
