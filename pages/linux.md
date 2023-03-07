@@ -1,4 +1,4 @@
-# replace http://proxy by https://proxy using sed
+# replace p://proxy by ps://proxy using sed
 ```
 sed 's/p:\/\/proxy/ps:\/\/proxy/' INPUT.TXT > OUTPUT.TXT
 ```
