@@ -2,6 +2,16 @@
 title: Python
 ---
 
+# get version of installed modules with pip:
+```bash
+pip list
+```
+
+# update module with pip
+```bash
+pip install --upgrade openai
+```
+
 # list amount of each 'Soort' across different json files
 ```python
 from collections import defaultdict
