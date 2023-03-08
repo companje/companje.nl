@@ -1,3 +1,14 @@
+# grouping by predicate
+```sparql
+SELECT ?predicate (COUNT(?predicate) AS ?count)
+WHERE {
+  ?subject a ?type .
+  ?subject ?predicate ?object .
+}
+GROUP BY ?predicate
+```
+
+
 # wikidata query using wikibase:around service to get items around a geopoint
 ```sparql
 #defaultView:Map
