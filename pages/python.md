@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# print SSL version
+```python
+import ssl; print(ssl.OPENSSL_VERSION)
+```
+
 # get version of installed modules with pip
 ```bash
 pip list
