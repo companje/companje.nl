@@ -1,3 +1,15 @@
+# grouping by rdf:type
+```sparql
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?type ?label (COUNT(?type) AS ?count)
+WHERE {
+  ?subject a ?type .
+  ?type rdfs:label ?label
+}
+GROUP BY ?type ?label
+ORDER BY DESC(?count)
+```
+
 # grouping by predicate
 ```sparql
 SELECT ?predicate (COUNT(?predicate) AS ?count)
