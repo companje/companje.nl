@@ -2,10 +2,10 @@
 ```sparql
 SELECT ?predicate (COUNT(?predicate) AS ?count)
 WHERE {
-  ?subject a ?type .
   ?subject ?predicate ?object .
 }
 GROUP BY ?predicate
+ORDER BY DESC(?count)
 ```
 
 
