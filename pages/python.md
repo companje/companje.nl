@@ -2,6 +2,9 @@
 title: Python
 ---
 
+# selected python version...
+/Applications/Xcode.app/Contents/Developer/usr/bin/python3.9
+
 # print SSL version
 ```python
 import ssl; print(ssl.OPENSSL_VERSION)
