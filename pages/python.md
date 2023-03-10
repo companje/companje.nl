@@ -7,17 +7,29 @@ title: Python
 #!/usr/bin/env python3
 import requests,json,xmltodict
 
-url = "...."
+base_url = "...........?verb=ListRecords"
+url = base_url + "&metadataPrefix=oai_a2a&set=............"
+page = 0
 
-response = requests.get(url)
+while url:
+    print(url)
+    response = requests.get(url)
 
-with open("tmp.xml","w") as f:
-	f.write(response.text)
+    with open(f"data/xml/page-{page}.xml","w") as f:
+        f.write(response.text)
 
-d = xmltodict.parse(response.text)
-json.dump(d,open("tmp.json","w"),indent=2)
+    d = xmltodict.parse(response.text)
+    json.dump(d,open(f"data/json/page-{page}.json","w"),indent=2)
 
-print(d["OAI-PMH"]["ListRecords"]["resumptionToken"])
+    resumption_token = d["OAI-PMH"]["ListRecords"]["resumptionToken"]["#text"]
+
+    if resumption_token:
+        url = base_url + "&resumptionToken=" + resumption_token
+        page += 1
+    else:
+        print("end?")
+        break
+
 ```
 
 # selected python version...
