@@ -3,7 +3,7 @@ title: Python
 ---
 
 # selected python version...
-/Applications/Xcode.app/Contents/Developer/usr/bin/python3.9
+`/Applications/Xcode.app/Contents/Developer/usr/bin/python3.9`
 
 # print SSL version
 ```python
