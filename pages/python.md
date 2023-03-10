@@ -3,6 +3,8 @@ title: Python
 ---
 
 # harvest OAI-PMH and save as xml and json (using resumptionToken)
+see also [systemd](/systemd)
+
 ```python
 #!/usr/bin/env python3
 import requests,json,xmltodict
