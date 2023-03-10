@@ -1,12 +1,25 @@
 # folder
 ```BASH
-sudo systemctl --failed # welke services zijn niet goed gestart
+cd /etc/systemd/system
+```
 
-sudo systemctl daemon-reload  # als de code veranderd is, hierna nog wel een restart doen
+# which services didn't startup
+```
+sudo systemctl --failed
+```
 
-sudo journalctl -u charge_check.service -b   # logs
+# when your code has changed
+```bash
+sudo systemctl daemon-reload 
+sudo systemctl restart mfxml2json   # name of your service
+```
 
+# logs
+```bash
+sudo journalctl -u charge_check.service -b
+```
+
+# log tail -f
+```
 sudo journalctl  -u mfxml2json.service -f
-
-sudo systemctl daemon-reload && sudo systemctl restart mfxml2json
 ```
