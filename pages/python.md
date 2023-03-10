@@ -2,7 +2,7 @@
 title: Python
 ---
 
-# harvest OAI-PMH and save as xml and json (single request)
+# harvest OAI-PMH and save as xml and json (using resumptionToken)
 ```python
 #!/usr/bin/env python3
 import requests,json,xmltodict
