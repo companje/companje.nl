@@ -2,6 +2,24 @@
 title: Python
 ---
 
+# harvest OAI-PMH and save as xml and json (single request)
+```python
+#!/usr/bin/env python3
+import requests,json,xmltodict
+
+url = "...."
+
+response = requests.get(url)
+
+with open("tmp.xml","w") as f:
+	f.write(response.text)
+
+d = xmltodict.parse(response.text)
+json.dump(d,open("tmp.json","w"),indent=2)
+
+print(d["OAI-PMH"]["ListRecords"]["resumptionToken"])
+```
+
 # selected python version...
 `/Applications/Xcode.app/Contents/Developer/usr/bin/python3.9`
 
