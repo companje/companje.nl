@@ -41,7 +41,7 @@ def run():
 if __name__ == "__main__":
     from waitress import serve
     print("URL:PORT")
-    serve(app, host="URL", port=PORT)
+    serve(app, host=URL, port=PORT)
 ```
 
 # harvest OAI-PMH and save as xml and json (using resumptionToken)
