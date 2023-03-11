@@ -2,6 +2,14 @@
 title: Python
 ---
 
+# call a remote function running with Flask
+```bash
+URL=http://URL
+INPUT_FILE=INPUT.txt
+OUTPUT_FILE=OUTPUT.json
+curl -J -X POST -F "file=@$INPUT_FILE" $URL > $OUTPUT_FILE
+```
+
 # harvest OAI-PMH and save as xml and json (using resumptionToken)
 see also [systemd](/systemd)
 
