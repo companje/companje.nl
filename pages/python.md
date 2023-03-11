@@ -10,6 +10,40 @@ OUTPUT_FILE=OUTPUT.json
 curl -J -X POST -F "file=@$INPUT_FILE" $URL > $OUTPUT_FILE
 ```
 
+# remote function implementation on server with Flask
+```python
+#!/usr/bin/env python3
+from flask import Flask,request,send_file
+import json
+
+app = Flask(__name__)
+
+@app.route("/")
+def index():
+    return "ok"
+
+@app.route('/run', methods=['POST'])
+def run():
+    input_file_path = '/tmp/INPUT.txt'
+    output_file_path = '/tmp/OUTPUT.json'
+    f = request.files['file']
+    f.save(input_file_path)
+
+    with \
+        open(input_file_path, 'r', encoding="utf-8") as input_file, \
+        open(output_file_path, 'w') as output_file:
+            output = CONVERT_FILE_FUNCTION(input_file.read())
+            json.dump(output, output_file, indent=2, ensure_ascii=False)
+
+    result_file = open(output_file_path,'rb')
+    return send_file(result_file, as_attachment=True, download_name='result.json')
+
+if __name__ == "__main__":
+    from waitress import serve
+    print("URL:PORT")
+    serve(app, host="URL", port=PORT)
+```
+
 # harvest OAI-PMH and save as xml and json (using resumptionToken)
 see also [systemd](/systemd)
 
