@@ -2,6 +2,12 @@
 title: Python
 ---
 
+# filter out keys that are not in expected_keys
+```python
+expected_keys = ["filename", "aktenummer", "overlijdensdatum"]
+data = dict(filter(lambda x: x[0] in expected_keys, data.items()))
+```
+
 # call a remote function running with Flask
 ```bash
 URL=http://URL
