@@ -4,6 +4,7 @@ title: Python
 
 # filter out keys that are not in expected_keys
 ```python
+data = {"filename": "x", "aktenummer": "y", "overlijdensdatum": "z", "achternaam overledene": "FILTERED OUT"}
 expected_keys = ["filename", "aktenummer", "overlijdensdatum"]
 data = dict(filter(lambda x: x[0] in expected_keys, data.items()))
 ```
