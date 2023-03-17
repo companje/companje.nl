@@ -2,6 +2,12 @@
 title: Apache 
 ---
 
+# Error: Undefined constant PDO::MYSQL_ATTR_USE_BUFFERED_QUERY 
+```bash
+sudo apt-get install php8.1-mysql
+sudo apachectl restart
+```
+
 # GOOD tutorial about running apache and php both from homebrew
 * https://wpbeaches.com/installing-configuring-apache-on-macos-using-homebrew/
 
