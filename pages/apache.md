@@ -4,7 +4,7 @@ title: Apache
 
 # Error: Undefined constant PDO::MYSQL_ATTR_USE_BUFFERED_QUERY 
 ```bash
-sudo apt-get install php8.1-mysql
+sudo apt-get install php8.2-mysql
 sudo apachectl restart
 ```
 
