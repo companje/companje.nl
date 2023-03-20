@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# zorg dat de letter A of B altijd gevolgd wordt door een spatie wanneer het direct gevolgd wordt door een cijfer.
+```python
+re.sub(r"(A|B)(\d)", r"\1 \2", input_string)
+```
+
 # fuzzy lookup for dates in different Dutch formats
 ```python
 dates = get_all_dates(datetime(1800,1,1))
