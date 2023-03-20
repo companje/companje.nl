@@ -68,6 +68,10 @@ data = {"filename": "x", "aktenummer": "y", "overlijdensdatum": "z", "achternaam
 expected_keys = ["filename", "aktenummer", "overlijdensdatum"]
 data = dict(filter(lambda x: x[0] in expected_keys, data.items()))
 ```
+or for multiple items:
+```python
+items = [ dict(filter(lambda x: x[0] in expected_keys, item.items())) for item in items ]
+```
 
 # call a remote function running with Flask
 ```bash
