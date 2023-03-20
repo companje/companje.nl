@@ -2,6 +2,23 @@
 title: Python
 ---
 
+# fuzzy lookup for dates in different Dutch formats
+```python
+dates = get_all_dates(datetime(1800,1,1))
+
+lut  = { get_dutch_date_with_dashes(date):date for date in dates }
+lut |= { get_dutch_date_with_written_month(date):date for date in dates }
+lut |= { get_dutch_date_fully_written(date):date for date in dates }
+
+a = fuzzy_extract("5-10_1950t", lut.keys())
+b = fuzzy_extract("5 oktber 1950", lut.keys())
+c = fuzzy_extract("vijftn tober negentsnhonerd viftg", lut.keys())
+
+print(lut[a[0]], a)
+print(lut[b[0]], b)
+print(lut[c[0]], c)
+```
+
 # get all dates in a range as a list
 with list comprehension and typed
 ```python
