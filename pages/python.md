@@ -2,6 +2,21 @@
 title: Python
 ---
 
+# re-create items based on expected keys with specific field order using list comprehension
+```python
+expected_keys = ["filename", "x", "y" ] # etc
+items = [{key: item[key] for key in expected_keys if key in item} for item in items]
+
+# without list comprehension:
+# new_items = []
+# for item in items:
+#     new_item = {}
+#     for key in expected_keys:
+#         if key in item:
+#             new_item[key] = item[key]
+#     new_items.append(new_item)
+```
+
 # zorg dat de letter A of B altijd gevolgd wordt door een spatie wanneer het direct gevolgd wordt door een cijfer.
 ```python
 re.sub(r"(A|B)(\d)", r"\1 \2", input_string)
