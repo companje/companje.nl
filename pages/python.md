@@ -2,6 +2,12 @@
 title: Python
 ---
 
+# merge two dicts with '|' operator
+```python
+datums = get_alle_datums_als_tekst(datetime(1800,1,1))
+datums |= get_alle_datums(datetime(1800,1,1))
+```
+
 # filter out keys that are not in expected_keys
 ```python
 data = {"filename": "x", "aktenummer": "y", "overlijdensdatum": "z", "achternaam overledene": "FILTERED OUT"}
