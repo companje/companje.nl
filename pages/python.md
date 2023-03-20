@@ -2,6 +2,21 @@
 title: Python
 ---
 
+# splits achternaam op tussenvoegsel en achternaam
+```python
+    # split achternaam / tussenvoegsel
+    for rol in ["overledene","vader","moeder","partner"]:
+        achternaam = item.get(f"achternaam {rol}")
+
+        patroon = re.compile(r"^(van der|van den|van de|van het|van 't|van|der|de)", re.IGNORECASE)
+        tussenvoegsel = patroon.findall(achternaam)
+        achternaam = patroon.sub("", achternaam)
+
+        if tussenvoegsel:
+            item[f"tussenvoegsel {rol}"] = (" ".join(tussenvoegsel)).lower()
+        item[f"achternaam {rol}"] = achternaam.strip()
+```
+
 # re-create items based on expected keys with specific field order using list comprehension
 ```python
 expected_keys = ["filename", "x", "y" ] # etc
