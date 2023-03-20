@@ -2,6 +2,23 @@
 title: Python
 ---
 
+# get all dates in a range as a list
+with list comprehension and strong types
+```python
+def get_all_dates(start_date: datetime = datetime(1900, 1, 1), end_date: datetime = datetime.now()) -> List[datetime]:
+    return [start_date + timedelta(days=d) for d in range((end_date - start_date).days+1)]
+```
+without:
+```python
+def get_all_dates(start_date=datetime(1900, 1, 1), end_date=datetime.now()):
+    dates = []
+    date = start_date
+    while date < end_date:
+        dates.append(date)
+        date += timedelta(days=1)
+    return dates  
+```
+
 # merge two dicts with '|' operator
 ```python
 datums = get_alle_datums_als_tekst(datetime(1800,1,1))
