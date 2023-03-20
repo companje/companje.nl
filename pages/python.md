@@ -3,7 +3,7 @@ title: Python
 ---
 
 # get all dates in a range as a list
-with list comprehension and strong types
+with list comprehension and typed
 ```python
 def get_all_dates(start_date: datetime = datetime(1900, 1, 1), end_date: datetime = datetime.now()) -> List[datetime]:
     return [start_date + timedelta(days=d) for d in range((end_date - start_date).days+1)]
@@ -17,6 +17,26 @@ def get_all_dates(start_date=datetime(1900, 1, 1), end_date=datetime.now()):
         dates.append(date)
         date += timedelta(days=1)
     return dates  
+```
+
+# format Dutch dates
+```python
+def get_dutch_date_with_dashes(date): # 05-12-1979  met voorloop nul
+    return date.strftime("%d-%m-%Y")
+
+def get_dutch_date_written_month(date): # 5 december 1979  zonder voorloop nul bij dag
+    locale.setlocale(locale.LC_TIME, "nl_NL")
+    return date.strftime("%-d %B %Y")
+
+def get_dutch_date_fully_written(date): #vijftien december negentienhonderd negenzeventig
+    locale.setlocale(locale.LC_TIME, "nl_NL")
+    numbers_str = ["één","twee","drie","vier","vijf","zes","zeven","acht","negen","tien","elf","twaalf","dertien","veertien","vijftien","zestien","zeventien","achttien","negentien","twintig","eenentwintig","tweeëntwintig","drieëntwintig","vierentwintig","vijfentwintig","zesentwintig","zevenentwintig","achtentwintig","negenentwintig","dertig","eenendertig","tweeëndertig","drieëndertig","vierendertig","vijfendertig","zesendertig","zevenendertig","achtendertig","negenendertig","veertig","eenenveertig","tweeënveertig","drieënveertig","vierenveertig","vijfenveertig","zesenveertig","zevenenveertig","achtenveertig","negenenveertig","vijftig","eenenvijftig","tweeënvijftig","drieënvijftig","vierenvijftig","vijfenvijftig","zesenvijftig","zevenenvijftig","achtenvijftig","negenenvijftig","zestig","eenenzestig","tweeënzestig","drieënzestig","vierenzestig","vijfenzestig","zesenzestig","zevenenzestig","achtenzestig","negenenzestig","zeventig","eenenzeventig","tweeënzeventig","drieënzeventig","vierenzeventig","vijfenzeventig","zesenzeventig","zevenenzeventig","achtenzeventig","negenenzeventig","tachtig","eenentachtig","tweeëntachtig","drieëntachtig","vierentachtig","vijfentachtig","zesentachtig","zevenentachtig","achtentachtig","negenentachtig","negentig","eenennegentig","tweeënnegentig","drieënnegentig","vierennegentig","vijfennegentig","zesennegentig","zevenennegentig","achtennegentig","negenennegentig"]
+    day = numbers_str[date.day-1]
+    century = int(date.year/100)
+    year_within_century = int(date.year%100)
+    century_str = numbers_str[century-1]
+    year_within_century_str = numbers_str[year_within_century-1] if year_within_century else ""
+    return (f"{day} {date.strftime('%B')} {century_str}honderd {year_within_century_str}").strip()
 ```
 
 # merge two dicts with '|' operator
