@@ -2,6 +2,17 @@
 title: Javascript
 ---
 
+## reducer
+```javascript
+keys = ['a','b','c']
+values = [1,2,3]
+const data = keys.reduce((obj, key, index) => {
+  obj[key] = values[index];
+  return obj;
+}, {});
+# result: { a:1, b:2, c:3 }
+```
+
 ## download text/json data as file
 ```javascript
 const text = JSON.stringify(geoJson);
