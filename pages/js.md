@@ -10,7 +10,7 @@ const data = keys.reduce((obj, key, index) => {
   obj[key] = values[index];
   return obj;
 }, {});
-# result: { a:1, b:2, c:3 }
+// result: { a:1, b:2, c:3 }
 ```
 
 ## download text/json data as file
@@ -483,114 +483,4 @@ var Dog = function(name,color) {
 * [[http://www.soundstep.com/blog/experiments/jstracking/js/libs/matrix.js|matrix.js]]
 * [[http://fhtr.org/JSARToolKit/|jsARtoolkit]]
 * [[https://github.com/kig/magi|magi / glMatrix.js]] - High performance matrix and vector operations for WebGL
-* [[https://raw.githubusercontent.com/mrdoob/three.js/master/examples/js/libs/tween.min.js|tween.js]]
-* [[https://raw.githubusercontent.com/mrdoob/three.js/master/examples/js/renderers/CSS3DRenderer.js|CSS3DRenderer.js for three.js]]
-* [[https://chili-research.epfl.ch/AR.js/chilitags.js/|chillitags]] AR library
-
-# yeoman
-Yeoman helps you start new projects, prescribing best practices and tools to help you stay productive.
-* http://yeoman.io/
-
-#  online IDEs 
-* http://codepen.io/
-* http://sketchpad.cc/
-* http://www.openprocessing.org/
-* http://jsfiddle.net/
-
-#  creative coding framework 
-* http://soulwire.github.io/sketch.js/
-
-# webworkers
-* http://www.w3schools.com/html/html5_webworkers.asp
-
-# EcmaScript 6
-Zeer interessant praatje over de toekomst van Javascript, de nieuwe versie: EcmaScript 6. Dingen als generators, arrow functions, template strings. Veel hiervan is nu al bruikbaar door compilers als Traceur.  
-https://www.youtube.com/watch?v=mPq5S27qWW8
-
-# Over ES6 compilers 
-* http://stackoverflow.com/questions/6506519/ecmascriptharmony-es6-to-javascript-compiler
-* https://github.com/google/traceur-compiler
-# safely access nested properties in object
-*http://stackoverflow.com/questions/18178406/access-javascript-nested-objects-safely
-
-# assertType function
-```
-function assertType(variable,typename) {
-  if (typeof variable  typename) return true;
-  var s = [].splice.call(arguments,2).join(' ');
-  console.error(s+': Unexpected type: '+typeof variable+', expected: '+typename);
-  return false;
-}
-```
-
-This one is better:
-```
-function assert(a,b) {
-  var a = Array.prototype.slice.call(a);
-  var c = Array.prototype.slice.call(arguments,2).join('.');
-  for (var i in b) if (typeof a[i]!=b[i]) throw new TypeError(c+" argument["+i+"] should be "+b[i]+" ");
-}
-```
-
-# Scaling down an image to fit in a element of a certain size
-```js
-  var iw = img[0].naturalWidth;
-  var ih = img[0].naturalHeight;
-  var scale = 1;
-
-  //scale based on aspectratio
-  if (iw>ih) {
-    scale = canvas.width() / iw;
-  } else {
-    scale = canvas.height() / ih;
-  }
-
-  //scale further down if still too high
-  if (ih*scale > canvas.height()) {
-    scale = canvas.height() / ih;
-  }
-
-  img.width(iw*scale);
-  img.height(ih*scale);
-```
-
-# lectures
-* https://www.destroyallsoftware.com/talks
-
-# JavaScript closure inside loops – simple practical example
-* http://stackoverflow.com/questions/750486/javascript-closure-inside-loops-simple-practical-example
-
-
-# Access-Control-Allow-Origin
-```
-header("Access-Control-Allow-Origin: *");
-```
-
-# more
-* http://doodle3d.com/help/javascript-optimization
-* http://msdn.microsoft.com/en-us/scriptjunkie/ee819093
-* http://raphaeljs.com/
-* paperjs
-
-# classes (the old way)
-http://doodle3d.com/help/simple-class-pattern
-En de pagina's in het algemeen onder:
-http://doodle3d.com/help/javascript
-
-# disable dragging
-```js
-function disableDragging() {
-  $(document).bind("dragstart", function(event) {
-    console.log("dragstart");
-    event.preventDefault();
-  });
-}
-```
-
-# getParameterByName
-```js
-function getParameterByName(name) {
-    var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
-    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
-}
-```
+* [[https://ra
