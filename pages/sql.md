@@ -1,6 +1,6 @@
 # order by in a group_concat (mysql)
 ```sql
-    select 
+select 
     node.nid "ID", 
     #...
     group_concat(rel.field_location_target_id order by rel.delta) "locaties"
