@@ -2,6 +2,50 @@
 title: PHP
 ---
 
+# echo mysql query as CSV
+```php
+<?php
+ini_set('display_errors', 'On');
+// error_reporting(0);
+error_reporting(E_ALL & ~E_NOTICE);
+$r = array();
+
+require('../../sites/default/settings.php');
+
+if(isset($databases)) {
+  $db = $databases['default']['default'];
+
+  $dsn = 'mysql:host=localhost;charset=utf8mb4;dbname='.$db['database'];
+  $username = $db['username'];
+  $password = $db['password'];
+
+  try {
+      $db = new PDO($dsn, $username, $password);
+  } catch (PDOException $e) {
+      echo 'Connection failed: ' . $e->getMessage();
+  }
+
+  $query = <<<SQL
+    select *
+    from table
+  ;
+  SQL;
+  $stmt = $db->prepare($query);
+  $stmt->execute();
+  $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+  header('Content-Type: text/plain; charset=utf-8');
+  $fp = fopen('php://output', 'w');
+  $header = array_keys($results[0]);
+  fputcsv($fp, $header);
+  foreach ($results as $row) {
+      fputcsv($fp, $row);
+  }
+  fclose($fp);
+}
+?>
+```
+
 # get thumbnail by wikidata ID
 ```php
 $id = substr($_GET["id"],1);
