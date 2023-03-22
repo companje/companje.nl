@@ -6,7 +6,7 @@ select
     group_concat(rel.field_location_target_id order by rel.delta) "locaties"
 from node 
     #...
-    left join field_revision_field_location rel on rel.entity_id = node.nid
+left join field_revision_field_location rel on rel.entity_id = node.nid
 where node.type='series'
 group by 
     node.nid,
