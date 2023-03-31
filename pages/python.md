@@ -2,6 +2,12 @@
 title: Python
 ---
 
+# voeg dashes toe aan GUID 
+```python
+def guid_dashed(s):
+  return "{" + (f"{s[:8]}-{s[8:12]}-{s[12:16]}-{s[16:20]}-{s[20:]}") + "}"
+```
+
 # splits achternaam op tussenvoegsel en achternaam
 ```python
     # split achternaam / tussenvoegsel
