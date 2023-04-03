@@ -1,3 +1,10 @@
+# via 'CONNECT BY PRIOR' alle 'dieper liggende record' vinden op basis van de ID van een bovenliggend record
+```sql
+SELECT * FROM appels
+START WITH ID = 1305602
+CONNECT BY PRIOR ID = ParentID;
+```
+
 # order by in a group_concat (mysql)
 ```sql
 select 
