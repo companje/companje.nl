@@ -4,6 +4,10 @@ title: PHP
 
 # echo mysql query as CSV
 ```php
+require "query_to_csv.php";
+query_to_csv("select x from y");
+#
+#
 function query_to_csv($query) {
   ini_set('display_errors', 'On');
   // error_reporting(0);
