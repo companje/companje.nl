@@ -4,63 +4,41 @@ title: PHP
 
 # echo mysql query as CSV
 ```php
-<?php
-ini_set('display_errors', 'On');
-// error_reporting(0);
-error_reporting(E_ALL & ~E_NOTICE);
-$r = array();
+function query_to_csv($query) {
+  ini_set('display_errors', 'On');
+  // error_reporting(0);
+  error_reporting(E_ALL & ~E_NOTICE);
+  $r = array();
 
-require('../../sites/default/settings.php');
+  require('../../sites/default/settings.php');
 
-if(isset($databases)) {
-  $db = $databases['default']['default'];
+  if(isset($databases)) {
+    $db = $databases['default']['default'];
 
-  $dsn = 'mysql:host=localhost;charset=utf8mb4;dbname='.$db['database'];
-  $username = $db['username'];
-  $password = $db['password'];
+    $dsn = 'mysql:host=localhost;charset=utf8mb4;dbname='.$db['database'];
+    $username = $db['username'];
+    $password = $db['password'];
 
-  try {
-      $db = new PDO($dsn, $username, $password);
-  } catch (PDOException $e) {
-      echo 'Connection failed: ' . $e->getMessage();
+    try {
+        $db = new PDO($dsn, $username, $password);
+    } catch (PDOException $e) {
+        echo 'Connection failed: ' . $e->getMessage();
+    }
+
+    $stmt = $db->prepare($query);
+    $stmt->execute();
+    $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+    header('Content-Type: text/plain; charset=utf-8');
+    $fp = fopen('php://output', 'w');
+    $header = array_keys($results[0]);
+    fputcsv($fp, $header);
+    foreach ($results as $row) {
+        fputcsv($fp, $row);
+    }
+    fclose($fp);
   }
-
-  $query = <<<SQL
-    select *
-    from table
-  ;
-  SQL;
-  $stmt = $db->prepare($query);
-  $stmt->execute();
-  $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-  header('Content-Type: text/plain; charset=utf-8');
-  $fp = fopen('php://output', 'w');
-  $header = array_keys($results[0]);
-  fputcsv($fp, $header);
-  foreach ($results as $row) {
-      fputcsv($fp, $row);
-  }
-  fclose($fp);
 }
-?>
-```
-
-# get thumbnail by wikidata ID
-```php
-$id = substr($_GET["id"],1);
-if (!is_numeric($id)) die(http_response_code(404));
-$url = "https://www.wikidata.org/w/api.php?action=wbgetclaims&property=P18&format=json&entity=Q".$id;
-$json = json_decode(file_get_contents($url));
-
-if (isset($json->claims) && isset($json->claims->P18)) {
-  $filename = $json->claims->P18[0]->mainsnak->datavalue->value ;
-  $url = "https://commons.wikimedia.org/wiki/Special:Redirect?wptype=file&wpvalue=".urlencode($filename)."&width=100";
-  ini_set( 'user_agent', 'CoolBot/0.0 (https://example.org/coolbot/; coolbot@example.org)' );
-  header("Access-Control-Allow-Origin: *");
-  header("Content-type: image/jpeg");
-  echo file_get_contents($url);
-} else die(http_response_code(404));
 ```
 
 # Query MS Access database with PHP using PDO+ODBC
