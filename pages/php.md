@@ -4,10 +4,25 @@ title: PHP
 
 # echo mysql query as CSV
 ```php
+<?php
 require "query_to_csv.php";
-query_to_csv("select x from y");
-#
-#
+query_to_csv(<<<SQL
+  select 
+      locatie.nid "ID", 
+      locatie.title "Naam",
+      link.field_link_url "Link_URL",
+      (replace(file_managed.uri,"public:/","xxxxxxxxx")) "Logo_URL"
+  from node locatie
+  join field_data_field_link link on link.entity_id=locatie.nid and link.bundle='logo'
+  left join file_usage on file_usage.id=locatie.nid
+  left join file_managed on file_managed.fid=file_usage.fid    
+  where locatie.type='logo'
+  and file_usage.type='node'
+SQL);
+?>
+```
+
+```php
 #query_to_csv.php
 function query_to_csv($query) {
   ini_set('display_errors', 'On');
