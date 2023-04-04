@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# file exists
+```
+if os.path.exists(filename):
+```
+
 # voeg dashes toe aan GUID 
 ```python
 def guid_dashed(s):
