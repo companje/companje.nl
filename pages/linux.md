@@ -1,3 +1,8 @@
+# backup with date in filename
+```
+mysqldump -uroot -p drupal > db-backup-$(date +%Y-%m-%d).sql
+```
+
 # replace p://proxy by ps://proxy using sed
 ```
 sed 's/p:\/\/proxy/ps:\/\/proxy/' INPUT.TXT > OUTPUT.TXT
