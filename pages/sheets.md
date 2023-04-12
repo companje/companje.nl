@@ -1,5 +1,10 @@
 see also [docs](/docs)
 
+# make column with unique values from a matrix
+```
+=SORT(UNIQUE(FLATTEN(A2:E)))
+```
+
 # replace
 ```javascript
 lower(REGEXREPLACE(REGEXREPLACE( REGEXREPLACE(REGEXREPLACE(Trefwoorden!C2:C; "[–’+=&?|,\.() ""$/':;]"; "-") ;"-+";"-"); "[^a-zA-Z0-9\-]";"");"^-|-$"; ""))
