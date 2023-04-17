@@ -2,6 +2,18 @@
 title: PHP
 ---
 
+# always cast numbers to string in CSV
+```
+$results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+//...
+fputcsv($fp, $header);
+foreach ($results as $row) {
+    $row = array_map(function($value) { return '"' . $value . '"'; }, $row); //cast to strings
+    fputcsv($fp, $row, ',', "'");
+}
+fclose($fp);
+```
+
 # echo mysql query as CSV
 ```php
 <?php
