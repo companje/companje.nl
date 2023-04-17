@@ -2,8 +2,13 @@
 title: PHP
 ---
 
-# always cast numbers to string in CSV
+# PHP Fatal error: Uncaught Error: Class "Normalizer" not found in /usr/share/php/Symfony/Component/Console/Helper/Helper.php:65
+```bash
+sudo apt install php8.1-intl  # with version number!
 ```
+
+# always cast numbers to string in CSV
+```php
 $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 //...
 fputcsv($fp, $header);
