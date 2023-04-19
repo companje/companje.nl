@@ -1,3 +1,6 @@
+# get properties as JSON data for a wikidataID
+* https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q1&sitefilter=nlwiki&props=sitelinks/urls&origin=*&format=json
+
 # grouping by rdf:type
 ```sparql
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
