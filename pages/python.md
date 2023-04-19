@@ -2,8 +2,47 @@
 title: Python
 ---
 
-# file exists
+# Download all prismic documents and images
+```python
+#!/usr/bin/env python3
+
+import os,re,requests,json,urllib,hashlib
+from urllib.parse import urlparse
+from collections import defaultdict
+
+url = "https://XXXXXX.cdn.prismic.io/api/v2/documents/search?ref=XXXXXXXX"
+
+while url:
+    response = requests.get(url)
+    data = response.json()
+    page = data.get("page")
+    results = data.get("results")
+    json.dump(data, open(f"page{page}.json","w"), indent=4)
+
+    for result in results:
+        for field in result["data"]:
+            
+            if result["data"][field] and type(result["data"][field])==dict and "url" in result["data"][field]:
+                url = result["data"][field]["url"]
+            
+                parsed_url = urlparse(url)
+                path = parsed_url.path
+                ext = os.path.splitext(path)[1]
+
+                filename = "images/" + hashlib.md5(url.encode()).hexdigest() + ext
+
+                print(field, filename)
+                
+                if not os.path.exists(filename):
+                    urllib.request.urlretrieve(url, filename) # save 
+
+    url = data.get("next_page")
+
+    # break
 ```
+
+# file exists
+```python
 if os.path.exists(filename):
 ```
 
