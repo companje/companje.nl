@@ -2,6 +2,28 @@
 title: Python
 ---
 
+# Groeperen met Pandas
+```python
+import pandas as pd
+df = pd.read_excel('data/all-rows.xlsx')
+
+df = df[df['CODE'].isin(["1202.xx","1202.xx",........])]
+
+groepen = df.groupby(['Straatnaam', 'Huisnummer'])
+groepen = groepen.filter(lambda x: len(x) > 1)
+groepen = groepen.groupby(['Straatnaam', 'Huisnummer'])
+
+with open("tmp.tsv","w") as out:
+    for naam, groep in groepen:
+        print(" ".join(naam),file=out)
+        for index, rij in groep.iterrows():
+            rij = rij.fillna('')
+            print(rij["ID"], rij["CODE"], " ", rij['Achternaam'],  rij['Voorna(a)m(en)'], rij['Geboortedatum'], rij["xxxx"], rij["Overslaan in uitvoer"], rij["Externe Identifier"], rij["Bron overlijden"], rij["GUID"], sep='\t',file=out )
+        print("\n",file=out)
+```
+
+
+
 # Download all prismic documents and images
 ```python
 #!/usr/bin/env python3
