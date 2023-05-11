@@ -2,6 +2,73 @@
 title: Python
 ---
 
+# Render AltoXML data to JPG for quality check
+```
+from pathlib import Path
+import os,cv2
+from alto import parse_file, String
+import numpy as np
+from PIL import Image, ImageDraw, ImageFont
+from tqdm import tqdm
+
+# BASE_FOLDER = "xxxx 2010-2022 50119/"
+BASE_FOLDER = "xxxx 2010-2022 14215/"
+IMAGE_FOLDER = BASE_FOLDER+"JPG"
+ALTO_FOLDER = BASE_FOLDER+"Alto-XML"
+OUTPUT_FOLDER = BASE_FOLDER+"output"
+
+def list_files(folder, scheme): 
+    return list(Path(folder).rglob(scheme))
+
+def list_image_files():
+    return list_files(IMAGE_FOLDER,"*.jpg")
+
+def list_alto_files():
+    return list_files(ALTO_FOLDER,"*.xml")
+
+def get_alto_file(file_id):
+    return Path(str(make_path(ALTO_FOLDER, file_id, ".xml")).replace(".xml","_alto.xml"))
+
+def get_image_file(file_id):
+    return make_path(ALTO_FOLDER, file_id, ".jpg")
+
+def get_output_file(file_id):
+    return make_path(OUTPUT_FOLDER, file_id, ".jpg")
+
+def get_id_from_path(path):
+    return Path(os.path.basename(os.path.dirname(path))).joinpath(path.stem)
+
+def make_path(base_folder, id, suffix):
+    file = Path(base_folder).joinpath(id).with_suffix(suffix)
+    file_folder = file.parent
+    file_folder.mkdir(parents=True, exist_ok=True)
+    return file
+
+#######################
+
+font = ImageFont.truetype("arial.ttf", 24)
+for image_file in tqdm(list_image_files()[:5]):
+    img = Image.open(str(image_file))
+    draw = ImageDraw.Draw(img)
+    file_id = get_id_from_path(image_file)
+    alto_file = get_alto_file(file_id)
+    output_file = get_output_file(file_id)
+    alto = parse_file(str(alto_file))
+    for line in alto.extract_text_lines():
+        for word in line.strings:
+            if isinstance(word, String):
+                (x,y) = p1 = tuple(int(num) for num in (word.hpos,word.vpos))
+                (w,h) = tuple(int(num) for num in (word.width,word.height))
+                p2 = (x+w,y+h)
+                draw.rectangle((x, y, x+w, y+h), outline="blue")
+                draw.text((x, y+h-10), word.content, font=font, fill="red")
+
+    nieuwe_breedte = int(img.width * 0.5)
+    nieuwe_hoogte = int(img.height * 0.5)
+    img = img.resize((nieuwe_breedte, nieuwe_hoogte))
+    img.save(str(output_file))
+```
+
 # Groeperen met Pandas
 ```python
 import pandas as pd
@@ -21,8 +88,6 @@ with open("tmp.tsv","w") as out:
             print(rij["ID"], rij["CODE"], " ", rij['Achternaam'],  rij['Voorna(a)m(en)'], rij['Geboortedatum'], rij["xxxx"], rij["Overslaan in uitvoer"], rij["Externe Identifier"], rij["Bron overlijden"], rij["GUID"], sep='\t',file=out )
         print("\n",file=out)
 ```
-
-
 
 # Download all prismic documents and images
 ```python
