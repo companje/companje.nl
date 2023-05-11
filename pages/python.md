@@ -3,7 +3,7 @@ title: Python
 ---
 
 # Render AltoXML data to JPG for quality check
-```
+```python
 from pathlib import Path
 import os,cv2
 from alto import parse_file, String
