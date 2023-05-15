@@ -1,3 +1,21 @@
+# Parent Tree
+```sparql
+PREFIX schema: <https://schema.org/>
+PREFIX id: <https://hetutrechtsarchief.nl/id/>
+PREFIX rico: <https://www.ica.org/standards/RiC/ontology#>
+
+SELECT ?node ?parent ?nodeLabel ?parentLabel { 
+  values (?node) { (id:609C5B9947B74642E0534701000A17FD) }
+  {
+    select distinct ?node ?parent ?nodeLabel ?parentLabel where {
+      ?node rico:isOrWasIncludedIn* ?parent .
+	  ?parent rico:isOrWasIncludedIn/schema:name ?parentLabel .
+      ?parent schema:name ?nodeLabel .
+    }
+  } 
+}
+```
+
 # get properties as JSON data for a wikidataID
 * https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q1&sitefilter=nlwiki&props=sitelinks/urls&origin=*&format=json
 
