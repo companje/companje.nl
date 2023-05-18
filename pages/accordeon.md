@@ -3,6 +3,8 @@
 * https://github.com/taniarascia/accordion
 
 # Synthesia alternative in Processing
+![Screenshot 2023-05-18 at 10 31 12](https://github.com/companje/companje.nl/assets/156066/b598a014-9ad5-49d2-a815-69d767a1ac0f)
+
 ```processing
 import javax.sound.midi.*;
 import java.io.*;
