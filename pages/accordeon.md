@@ -1,5 +1,5 @@
 
-# 🪗 Play the accordion with your computer keyboard!
+# 🪗 Play the accordion with your computer keyboard
 * https://github.com/taniarascia/accordion
 
 # Synthesia alternative in Processing
