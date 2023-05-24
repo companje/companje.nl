@@ -1,3 +1,8 @@
+# nodig als je meerdere langere teksten aan elkaar wilt plakken met group_concat. staat standaard op 1024
+```php
+$db->prepare("SET GLOBAL group_concat_max_len=100000;")->execute();
+```
+
 # create slug from title
 ```sql
 CONCAT('story/',LOWER(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(tv.field_cast_video_title, ' ', '-'), ',', ''), '.', ''), ':', ''), '/', '-'),'''',''),'---','-'),'--','-')))) "url_alias",
