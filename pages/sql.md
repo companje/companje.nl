@@ -1,3 +1,8 @@
+# create slug from title
+```sql
+CONCAT('story/',LOWER(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(tv.field_cast_video_title, ' ', '-'), ',', ''), '.', ''), ':', ''), '/', '-'),'''',''),'---','-'),'--','-')))) "url_alias",
+```
+
 # via 'CONNECT BY PRIOR' alle 'dieper liggende record' vinden op basis van de ID van een bovenliggend record
 ```sql
 SELECT * FROM appels
