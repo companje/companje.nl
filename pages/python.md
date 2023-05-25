@@ -2,6 +2,29 @@
 title: Python
 ---
 
+# copy all files from textfile to folder without hierarchy
+```python
+import os
+import shutil
+from tqdm import tqdm
+
+def copy_files_to_destination(file_path, destination):
+    with open(file_path, 'r') as file:
+        files = list(file.readlines())
+        for line in tqdm(files):
+            absolute_path = line.strip()
+            if os.path.isfile(absolute_path):
+                file_name = os.path.basename(absolute_path)
+                dest_path = os.path.join(destination, file_name)
+                shutil.copy(absolute_path, dest_path)
+                #print(f"Bestand gekopieerd: {absolute_path} naar {dest_path}")
+
+source_file = 'xmls.txt'
+destination_folder = 'xml/'
+
+copy_files_to_destination(source_file, destination_folder)
+```
+
 # Render AltoXML data to JPG for quality check
 ```python
 from pathlib import Path
