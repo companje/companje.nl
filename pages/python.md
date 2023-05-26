@@ -2,6 +2,67 @@
 title: Python
 ---
 
+# parse number sequence
+```python
+#40630837,"1939","165-172 : ill."
+#40630838,"1996","4-8 : ill., plgr., tek."
+#40630839,"1996","10-13 : portr."
+#40630843,"1996","18"
+#40631828,"1969","41-49"
+#40631829,"1969","51-60"
+#40631836,"1969","99-119"
+#40631846,"1970","68-70"
+#40631847,"1970","93-102 : ill."
+#40632861,"1931","38-40"
+#40632864,"1931","42-44; 57-59"
+#40633811,"1943","1-3"
+#40633813,"1943","4-7"
+#40633814,"1943","9-13; 18"
+
+import csv,re,sys
+
+def get_number_list(last_column):
+    numbers = []
+    last_column = last_column.replace(", ","; ") # ,->;
+    last_column = last_column.replace(": ","; ") # :->;
+    for range_str in last_column.split(';'):     # multiple numbers/sequences separated by ;
+        range_str = range_str.strip()            # trim
+        range_str = range_str.replace("[","")    # [num] means manually determined page number 
+        range_str = range_str.replace("]","") 
+        
+        if '-' in range_str: # sequence
+            m = re.findall("(\d+)\s*-+\s*(\d+)",range_str)
+            if m and len(m)==1:
+                m=m[0]
+                if len(m)==2:
+                    start = int(m[0])
+                    end = int(m[1])
+                    numbers.extend(range(start, end + 1))
+                else:
+                    print("WARNING 1",last_column)
+            else:
+                print("WARNING 2",last_column)
+        else:
+            range_str = re.sub(r" .*","",range_str) # remove everything after first space (CHECKME!)
+            
+            if range_str.isdigit():  # single number
+                numbers.append(int(range_str))
+            else:
+                print("WARNING 3",last_column, "HUIDIGE STUK:",range_str)
+    return numbers
+
+with open('artikelen.csv', 'r') as file:
+    reader = csv.reader(file)
+    next(reader)  # skip header
+
+    for row in reader:
+        last_column = row[-1]
+        try:
+            numbers = get_number_list(last_column)
+        except Exception as e:
+            print(e,row);
+        print(row, numbers)
+```
 # copy all files from textfile to folder without hierarchy
 ```python
 import os
