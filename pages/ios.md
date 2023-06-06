@@ -15,7 +15,7 @@ This was caused by a missing import statement in my fork of org.apache.cordova.w
 First: To install OS X/iOS docsets you need to open Xcode and go to Preferences > Downloads > Documentation.
 
 # get name of currently connected WiFi network
-<code objc>
+```objc
   CFArrayRef myArray = CNCopySupportedInterfaces();
   CFDictionaryRef myDict = CNCopyCurrentNetworkInfo(CFArrayGetValueAtIndex(myArray, 0));
   NSDictionary *ssidList = (__bridge NSDictionary*)myDict;
@@ -29,7 +29,7 @@ First: To install OS X/iOS docsets you need to open Xcode and go to Preferences 
 * http://stackoverflow.com/questions/8246070/ios-launching-settings-restrictions-url-scheme  
 * as of iOS8 you can open the built-in Settings app with
 
-```
+```objc
 NSURL *url = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
 if ([[UIApplication sharedApplication] canOpenURL:url]) {
    [[UIApplication sharedApplication] openURL:url];
@@ -46,7 +46,7 @@ if ([[UIApplication sharedApplication] canOpenURL:url]) {
 see [[phonegap]]
 
 # URL handling (in .plist)
-```
+```plist
     <key>CFBundleURLTypes</key>
     <array>
       <dict>
@@ -61,7 +61,7 @@ see [[phonegap]]
 ```
 
 # file handling (in .plist)
-```    
+```plist
     <key>UTExportedTypeDeclarations</key>
     <array>
       <dict>
@@ -111,18 +111,18 @@ see [[phonegap]]
   - [[https://developer.apple.com/account/ios/profile/profileDownload.action|Create a mobile provisioning profile]]
 
 # disable select in webpages with css
-<code css>
+```css
 -webkit-user-select: none;
 ```
 
 # disable glow effect for home screen icons of webpages
-<code html>
+```html
 <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-72x72-precomposed.png" />
 ```
 more info: http://mathiasbynens.be/notes/touch-icons
 
 # anti-aliasing on ios with openFrameworks
-<code c>
+```c
 int main(){
     ofAppiPhoneWindow * iOSWindow = new ofAppiPhoneWindow();
     iOSWindow->enableAntiAliasing(4);
@@ -155,7 +155,7 @@ http://shift.net.nz/2010/09/compiling-freetype-for-iphoneios/
 try to remove armv7s from the build settings
 
 # crash logs
-```
+```bash
 ~/Library/Logs/CrashReporter/MobileDevice/
 ```
 
@@ -170,7 +170,7 @@ Be sure to add 'Supported external accessory protocol' = 'com.redpark.hobdb9' to
 Add ''ExternalAccessory.framework'' to your project's Target Linked Libraries.
 
 # snippets of basic usage of redparkWrapper
-<code objc>
+```objc
 //
 //  ViewController.h
 //
@@ -189,7 +189,7 @@ Add ''ExternalAccessory.framework'' to your project's Target Linked Libraries.
 @end
 ```
 
-<code objc>
+```objc
 //
 //  ViewController.m
 //
