@@ -5,7 +5,6 @@ title: iOS
 # icon sizes
 ```xml
 <platform name="ios">
-	<icon src="res/icon/ios/icon@2x.png" width="20" height="20" />
 	<icon src="res/icon/ios/icon-20.png" width="20" height="20" />
 	<icon src="res/icon/ios/icon-20@2x.png" width="40" height="40" />
 	<icon src="res/icon/ios/icon-20@3x.png" width="60" height="60" />
@@ -22,15 +21,23 @@ title: iOS
 	<icon src="res/icon/ios/icon-60.png" width="60" height="60" />
 	<icon src="res/icon/ios/icon-60@2x.png" width="120" height="120" />
 	<icon src="res/icon/ios/icon-60@3x.png" width="180" height="180" />
+	<icon src="res/icon/ios/icon-66.png" width="66" height="66" />
 	<icon src="res/icon/ios/icon-72.png" width="72" height="72" />
 	<icon src="res/icon/ios/icon-72@2x.png" width="144" height="144" />
 	<icon src="res/icon/ios/icon-76.png" width="76" height="76" />
 	<icon src="res/icon/ios/icon-76@2x.png" width="152" height="152" />
 	<icon src="res/icon/ios/icon-83.5@2x.png" width="167" height="167" />
 	<icon src="res/icon/ios/icon-86@2x.png" width="172" height="172" />
+	<icon src="res/icon/ios/icon-92.png" width="92" height="92" />
 	<icon src="res/icon/ios/icon-98@2x.png" width="196" height="196" />
+	<icon src="res/icon/ios/icon-102.png" width="102" height="102" />
+	<icon src="res/icon/ios/icon-108.png" width="108" height="108" />
+	<icon src="res/icon/ios/icon-216.png" width="216" height="216" />
+	<icon src="res/icon/ios/icon-234.png" width="234" height="234" />
+	<icon src="res/icon/ios/icon-258.png" width="258" height="258" />
 	<icon src="res/icon/ios/icon-1024.png" width="1024" height="1024" />
-	<icon src="res/icon/ios/icon.png" width="20" height="20" />
+	<icon src="res/icon/ios/icon.png" width="57" height="57" />
+	<icon src="res/icon/ios/icon@2x.png" width="114" height="114" />
 </platform>
 ```
 
