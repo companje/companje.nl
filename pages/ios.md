@@ -2,6 +2,58 @@
 title: iOS
 ---
 
+# icon sizes
+```xml
+<icon src="icon-20.png" width="20" height="20" />
+<icon src="icon-20@2x.png" width="40" height="40" />
+<icon src="icon-24.png" width="24" height="24" />
+<icon src="icon-27.5@2x.png" width="55" height="55" />
+<icon src="icon-29.png" width="29" height="29" />
+<icon src="icon-29@2x.png" width="58" height="58" />
+<icon src="icon-40.png" width="40" height="40" />
+<icon src="icon-40@2x.png" width="80" height="80" />
+<icon src="icon-44@2x.png" width="44" height="44" />
+<icon src="icon-50.png" width="50" height="50" />
+<icon src="icon-60.png" width="60" height="60" />
+<icon src="icon-60@2x.png" width="120" height="120" />
+<icon src="icon-72.png" width="72" height="72" />
+<icon src="icon-72@2x.png" width="144" height="144" />
+<icon src="icon-76.png" width="76" height="76" />
+<icon src="icon-76@2x.png" width="152" height="152" />
+<icon src="icon-83.5@2x.png" width="167" height="167" />
+<icon src="icon-86@2x.png" width="172" height="172" />
+<icon src="icon-98@2x.png" width="196" height="196" />
+<icon src="icon-1024.png" width="1024" height="1024" />
+<icon src="icon.png" width="20" height="20" />
+<icon src="icon2x.png" width="20" height="20" />
+```
+
+# icon resize script
+```bash
+convert bron-icon.png -resize 20x20 icon-20.png
+convert bron-icon.png -resize 40x40 icon-20@2x.png
+convert bron-icon.png -resize 24x24 icon-24.png
+convert bron-icon.png -resize 55x55 icon-27.5@2x.png
+convert bron-icon.png -resize 29x29 icon-29.png
+convert bron-icon.png -resize 58x58 icon-29@2x.png
+convert bron-icon.png -resize 40x40 icon-40.png
+convert bron-icon.png -resize 80x80 icon-40@2x.png
+convert bron-icon.png -resize 44x44 icon-44@2x.png
+convert bron-icon.png -resize 50x50 icon-50.png
+convert bron-icon.png -resize 60x60 icon-60.png
+convert bron-icon.png -resize 120x120 icon-60@2x.png
+convert bron-icon.png -resize 72x72 icon-72.png
+convert bron-icon.png -resize 144x144 icon-72@2x.png
+convert bron-icon.png -resize 76x76 icon-76.png
+convert bron-icon.png -resize 152x152 icon-76@2x.png
+convert bron-icon.png -resize 167x167 icon-83.5@2x.png
+convert bron-icon.png -resize 172x172 icon-86@2x.png
+convert bron-icon.png -resize 196x196 icon-98@2x.png
+convert bron-icon.png -resize 1024x1024 icon-1024.png
+convert bron-icon.png -resize 20x20 icon.png
+convert bron-icon.png -resize 20x20 icon2x.png
+```
+
 # Configuring Web Applications
 * https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html
 
