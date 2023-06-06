@@ -4,6 +4,7 @@ title: iOS
 
 # icon sizes
 ```xml
+<!-- this list is not complete / valid -->
 <platform name="ios">
 	<icon src="res/icon/ios/icon-20.png" width="20" height="20" />
 	<icon src="res/icon/ios/icon-20@2x.png" width="40" height="40" />
