@@ -12,8 +12,8 @@ title: Jupyter Notebook
 api_key = "" #@param {type: "string"}
 ```
 
-<http://jupyter.org/> (tip v Simon (doodle3d))
-
+# Jupyter
+<http://jupyter.org/> (tip v Simon (2016) (doodle3d))
 (used in workshop ML4A)
 
 # run
