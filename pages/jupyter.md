@@ -2,6 +2,16 @@
 title: Jupyter Notebook
 ---
 
+# Google Colab
+```python
+#@title Importeer libraries
+#....
+
+#@markdown ---
+#@markdown ###Voer je OpenAI API key in
+api_key = "" #@param {type: "string"}
+```
+
 <http://jupyter.org/> (tip v Simon (doodle3d))
 
 (used in workshop ML4A)
