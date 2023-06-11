@@ -2,6 +2,11 @@
 title: Windows
 ---
 
+# list all folders recursively
+```batch
+dir k:\MYFOLDER /ad /b /s > "P:\DESTINATION.txt"
+```
+
 # Cannot delete partition in Windows 10
 https://www.diskpart.com/windows-10/cannot-delete-partition-windows-10-1881.html
 ![delete-partition-force](https://user-images.githubusercontent.com/156066/214096600-545e7701-ed60-49dc-9d36-1150f1fed337.png)
