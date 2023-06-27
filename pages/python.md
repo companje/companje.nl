@@ -2,6 +2,13 @@
 title: Python
 ---
 
+# show all sqlite tables
+```python
+res = cursor.execute("SELECT name FROM sqlite_master")
+result = res.fetchone()
+print(result)
+```
+
 # parse number sequence
 ```python
 #40630837,"1939","165-172 : ill."
