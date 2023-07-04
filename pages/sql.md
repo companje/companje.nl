@@ -1,3 +1,8 @@
+# case / if
+```sql
+CASE WHEN a IS NOT NULL THEN 'ja' ELSE 'nee' END AS "gescand"
+```
+
 # nodig als je meerdere langere teksten aan elkaar wilt plakken met group_concat. staat standaard op 1024
 ```php
 $db->prepare("SET GLOBAL group_concat_max_len=100000;")->execute();
