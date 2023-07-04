@@ -1,3 +1,8 @@
+# date
+```sql
+where dt>to_date('01-JAN-22','DD-MON-YY')
+```
+
 # case / if
 ```sql
 CASE WHEN a IS NOT NULL THEN 'ja' ELSE 'nee' END AS "gescand"
