@@ -1,6 +1,6 @@
 # date
 ```sql
-where dt>to_date('01-JAN-22','DD-MON-YY')
+where dt>to_date('01-07-2023','DD-MM-YYYY')
 ```
 
 # case / if
