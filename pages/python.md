@@ -3,6 +3,13 @@ title: Python
 ---
 # crop images
 ```python
+#!/usr/bin/env python3
+
+import sys,os
+from tqdm import tqdm
+from pathlib import Path
+from PIL import Image
+
 folder_names = tqdm(["a","b","c"])
 
 for folder in folder_names:
