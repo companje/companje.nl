@@ -2,6 +2,12 @@
 title: Python
 ---
 
+# load json
+```python
+with open(input_file_path,"r") as file:    
+  data = json.load(file):
+```
+
 # ocr on Mac
 ```python
 #!/Applications/Xcode.app/Contents/Developer/usr/bin/python3
