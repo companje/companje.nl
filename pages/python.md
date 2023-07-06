@@ -5,7 +5,7 @@ title: Python
 # load json
 ```python
 with open(input_file_path,"r") as file:    
-  data = json.load(file):
+  data = json.load(file)
 ```
 
 # ocr on Mac
