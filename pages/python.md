@@ -2,6 +2,78 @@
 title: Python
 ---
 
+# ocr on Mac
+```python
+#!/Applications/Xcode.app/Contents/Developer/usr/bin/python3
+
+import config,json,os,subprocess,ocr2json
+from tqdm import tqdm
+from joblib import Parallel, delayed
+
+import Quartz,Vision
+from Cocoa import NSURL
+from Foundation import NSDictionary
+from wurlitzer import pipes # needed to capture system-level stderr
+
+def ocr(image_filename):
+    input_url = NSURL.fileURLWithPath_(image_filename)
+    with pipes() as (out, err):
+        input_image = Quartz.CIImage.imageWithContentsOfURL_(input_url)
+    (width,height) = input_image.extent().size
+    vision_options = NSDictionary.dictionaryWithDictionary_({})
+    vision_handler = Vision.VNImageRequestHandler.alloc().initWithCIImage_options_(
+        input_image, vision_options
+    )
+
+    request = Vision.VNRecognizeTextRequest.alloc().init().autorelease()
+    request.setRecognitionLevel_(Vision.VNRequestTextRecognitionLevelAccurate) #VNRequestTextRecognitionLevelFast
+    request.setRecognitionLanguages_(["nl-NL"])
+    error = vision_handler.performRequests_error_([request], None)
+
+    results = []
+    for item in request.results():
+        bbox = item.boundingBox()
+        w, h = bbox.size.width, bbox.size.height
+        x, y = bbox.origin.x, bbox.origin.y
+        results.append({
+            "x":int(x*width),
+            "y":int(height - y*height - h*height),
+            "w":int(w*width),
+            "h":int(h*height),
+            "conf":item.confidence(),
+            "text":item.text()
+        })
+    return results
+
+def do_ocr(image_file_path, progress):
+    file_id = config.get_id_from_path(image_file_path)
+    json_file_path = config.make_path(base_folder=config.DEEDS_OCR_JSON_FOLDER, id=file_id, suffix=".json")
+
+    if not os.path.exists(json_file_path):
+        data = ocr(str(image_file_path))
+        if data and len(data)>0:
+            json.dump(data, open(json_file_path,"w"), indent=2)
+        print(json_file_path,str(int(progress*1000)/10.)+"%")
+
+
+def run():
+    print("run ocr_per_akte")
+
+    if not os.path.exists(config.DEEDS_OCR_JSON_FOLDER):
+        os.mkdir(config.DEEDS_OCR_JSON_FOLDER)
+
+    file_paths = config.get_deeds_image_file_paths()
+    results = Parallel(n_jobs=1, prefer="threads")(
+      delayed(do_ocr)(image_file_path,i/len(file_paths))
+      for i,image_file_path in enumerate(file_paths)
+    )
+
+
+if __name__ == '__main__':
+    run()
+
+```
+
 # show all sqlite tables
 ```python
 res = cursor.execute("SELECT name FROM sqlite_master")
