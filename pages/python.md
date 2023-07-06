@@ -1,6 +1,33 @@
 ---
 title: Python
 ---
+# crop images
+```python
+folder_names = tqdm(["a","b","c"])
+
+for folder in folder_names:
+folder_names.set_description(f"{folder}")
+images = sorted(list(Path(f"../xx/{folder}/").rglob("*.jpg")))
+file_names = tqdm(images,leave=False)
+
+for image in file_names:
+    filename = str(image)
+    file_names.set_description(f"{filename}")
+
+    img = Image.open(filename)
+    w, h = img.size
+
+    for naam,y1,y2 in [ ("boven",0,1500), ("onder", 1500,h)]:
+	output_filename = filename.replace("..", naam)
+	output_folder = os.path.dirname(output_filename)
+	if not os.path.exists(output_filename):
+	    if y2>y1: 
+		crop = img.crop((0, y1, w, y2))
+	    else:
+		crop = img
+	    os.makedirs(output_folder, exist_ok=True)
+	    crop.save(output_filename)
+```
 
 # load json
 ```python
