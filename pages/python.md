@@ -1,6 +1,39 @@
 ---
 title: Python
 ---
+
+# parallel
+```python
+def check(row):
+  return row
+
+results = Parallel(n_jobs=-1)(delayed(check)(row) for row in tqdm(rows))
+print(results)
+```
+
+# image check
+```python
+# do image check
+w = h = ""
+if not file_exists:
+    image_info = "bestand niet gevonden"
+elif os.path.getsize(abs_path)==0:
+    image_info = "bestand is leeg"
+else:
+    try:
+        im = Image.open(output_file_path)            
+        im.verify() #I perform also verify, don't know if he sees other types o defects
+        im.close() #reload is necessary in my case
+        im = Image.open(output_file_path) 
+        im.transpose(Image.FLIP_LEFT_RIGHT)
+        im.close()
+        image_info = "ok"
+        w, h = im.size
+    except Exception as e: 
+        image_info = f"fout in afbeelding: {e}"
+        passass
+```
+
 # crop images
 ```python
 #!/usr/bin/env python3
