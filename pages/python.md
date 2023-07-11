@@ -2,6 +2,23 @@
 title: Python
 ---
 
+# copy file and rebuild structure
+```python
+def check(row): #check/process single file
+    rel_path = re.sub(r"X:[\\/]yyy[\\/]","",row["path"]).replace("\\","/")
+    abs_path = "/Volumes/xxx$/yyy/" + rel_path
+    file_exists = os.path.exists(abs_path) and os.path.isfile(abs_path)
+    if file_exists:
+        # kopieer bestand naar lokaal en maak directories aan
+        output_folder = "output/" + os.path.dirname(rel_path)
+        basename = os.path.basename(rel_path)
+        if not os.path.exists(output_folder):
+            os.makedirs(output_folder)
+        output_file_path = os.path.join(output_folder,basename)
+        if not os.path.exists(output_file_path):
+            shutil.copy2(abs_path, output_file_path)
+```
+
 # parallel
 ```python
 def check(row):
