@@ -255,7 +255,7 @@ with open('artikelen.csv', 'r') as file:
             print(e,row);
         print(row, numbers)
 ```
-# copy all files from textfile to folder without hierarchy
+# copy all files from textfile to folder without hierarchy / folder structure
 ```python
 import os
 import shutil
