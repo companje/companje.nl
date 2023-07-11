@@ -2,6 +2,20 @@
 title: Python
 ---
 
+# write (filtered) rows to Excel with pandas
+```python
+#write result as Excel
+excel_writer = pd.ExcelWriter("probleem-bestandskoppelingen.xlsx", engine='xlsxwriter')
+df = pd.DataFrame(results)
+df = df[df['info'] != 'ok'] # filter alles weg met 'ok' in de kolom 'info'
+df.to_excel(excel_writer, sheet_name="Sheet1", startrow=1, header=False, index=False)
+(max_row, max_col) = df.shape
+sheet = excel_writer.sheets['Sheet1']
+[sheet.set_column(i,i,w) for i,w in enumerate([20,10,50,10,12,50,10,10,50])] # set column widths
+sheet.add_table(0, 0, max_row, max_col-1, {'columns': [{'header': col} for col in df.columns]})
+excel_writer.close()
+```
+
 # copy file and rebuild structure
 ```python
 def check(row): #check/process single file
@@ -21,6 +35,8 @@ def check(row): #check/process single file
 
 # parallel
 ```python
+from joblib import Parallel, delayed
+
 def check(row):
   return row
 
@@ -30,6 +46,8 @@ print(results)
 
 # image check
 ```python
+from PIL import Image
+
 # do image check
 w = h = ""
 if not file_exists:
