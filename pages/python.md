@@ -1329,6 +1329,7 @@ from joblib import Parallel, delayed
 
 def DoSomething(filename, param2, param2):
   #...
+  return result
 
 results = Parallel(n_jobs=8)(
   delayed(DoSomething)(filename, param2, param3)
