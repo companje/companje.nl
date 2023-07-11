@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# read csv with DictReader
+```python
+rows = list(csv.DictReader(open("urls-lijst-van-picturae-verrijkt-met-sql.csv"), delimiter=","))
+```
+
 # write (filtered) rows to Excel with pandas
 ```python
 #write result as Excel
