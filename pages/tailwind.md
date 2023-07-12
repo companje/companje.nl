@@ -1,3 +1,3 @@
 * tailwind
 * daisyUI (components)
-* masonry (grid component)
+* react-masonry-css (grid component)
