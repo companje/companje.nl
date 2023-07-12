@@ -1,0 +1,2 @@
+* tailwind
+* daisyUI (components)
