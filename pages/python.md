@@ -2,6 +2,39 @@
 title: Python
 ---
 
+# incremental update of sqlite database from CSV file
+```python
+#!/usr/bin/env python3
+import csv,sqlite3
+from tqdm import tqdm
+import argparse
+
+parser=argparse.ArgumentParser()
+parser.add_argument("--csv", help="input csv file with format: ID,GUID", required=True)
+args=parser.parse_args()
+
+csv_file = args.csv
+db_file = 'database.db'
+table_name = 'guids'
+
+conn = sqlite3.connect(db_file)
+cursor = conn.cursor()
+cursor.execute(f"CREATE TABLE IF NOT EXISTS {table_name} (ID INTEGER, GUID TEXT)")
+cursor.execute(f"CREATE INDEX IF NOT EXISTS idx_id ON {table_name} (ID)")
+cursor.execute(f"CREATE INDEX IF NOT EXISTS idx_guid ON {table_name} (GUID)")
+
+num_rows = sum(1 for _ in open(csv_file))
+
+with open(csv_file, 'r') as file:
+    csv_data = csv.reader(file)
+    next(csv_data) # skip header
+    for i, row in tqdm(enumerate(csv_data, start=1), total=num_rows):
+        cursor.execute(f"REPLACE INTO {table_name} (ID, GUID) VALUES (?, ?)", (int(row[0]), row[1]))
+
+conn.commit()
+conn.close()
+```
+
 # read csv with DictReader
 ```python
 rows = list(csv.DictReader(open("urls-lijst-van-picturae-verrijkt-met-sql.csv"), delimiter=","))
