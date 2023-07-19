@@ -1,7 +1,6 @@
 ---
 title: npm - node package manager
 ---
-see [[nodejs]]
 
 # opensslErrorStack: 'error:03000086:digital envelope routines::initialization error' ERR_OSSL_EVP_UNSUPPORTED
 ```bash
