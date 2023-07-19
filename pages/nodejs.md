@@ -3,6 +3,14 @@ title: NodeJS
 layout: default
 ---
 
+# nvm
+* Kan nvm aanraden (Simon)
+```bash
+nvm install 14
+nvm use 14
+npm i
+```
+
 # install and run nodemon
 ```
 npx nodemon
