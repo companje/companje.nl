@@ -3,6 +3,11 @@ title: NodeJS
 layout: default
 ---
 
+# add node_modules/.bin to PATH to use local modules
+```bash
+export PATH="$(pwd)/node_modules/.bin:$PATH"
+```
+
 # nvm
 * Kan nvm aanraden (Simon)
 ```bash
