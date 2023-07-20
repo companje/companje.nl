@@ -2,6 +2,42 @@
 title: Python
 ---
 
+# copy 1000 random files from a csv
+```python
+#!/usr/bin/env python3
+
+import shutil,os
+import pandas as pd
+
+df = pd.read_csv("../test-omgekeerde-kaartjes/output.csv") 
+
+# filter alle kaarten weg van waar niet zeker van is dat ze goed zijn
+df = df[df['verkeerd_om'] == 'False'] 
+
+# neem een random sample van 1000 stuks
+# altijd dezelfde sample door de 'random_state=42'. 
+# hierdoor hoeft de output map niet eerst leeg gemaakt te worden
+# mocht je dat wel willen dan kan dat met # shutil.rmtree("output/")
+random_items = df.sample(n=1000, random_state=42)
+
+# kopiëer 1000 eerder gecropte bestanden ('crops/boven') naar de output/ map
+for index,item in random_items.iterrows():
+    input_path = item["filename"].replace("../","../crops/boven/")
+    rel_path = item["filename"].replace("../","")
+    output_folder = "output/" + os.path.dirname(rel_path)
+    basename = os.path.basename(rel_path)
+
+    # maak map aan indien nodig
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
+
+    # kopiëren indien nodig
+    output_file_path = os.path.join(output_folder,basename)
+    print(input_path," >>> ", output_folder)
+    if not os.path.exists(output_file_path):
+        shutil.copy2(input_path, output_file_path)
+```
+
 # incremental update of sqlite database from CSV file
 ```python
 #!/usr/bin/env python3
