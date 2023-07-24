@@ -1,3 +1,8 @@
+# insert
+```sql
+insert into TABEL (a_id,t_id,dtm) values(123,456, systimestamp);
+```
+
 # date
 ```sql
 where dt>to_date('01-07-2023','DD-MM-YYYY')
