@@ -8,6 +8,11 @@ insert into TABEL (a_id,t_id,dtm) values(123,456, systimestamp);
 where dt>to_date('01-07-2023','DD-MM-YYYY')
 ```
 
+# record met wijzigingsdatum vandaag
+```sql
+where u.dt>=trunc(sysdate)
+```
+
 # case / if
 ```sql
 CASE WHEN a IS NOT NULL THEN 'ja' ELSE 'nee' END AS "gescand"
