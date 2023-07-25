@@ -2,6 +2,56 @@
 title: Python
 ---
 
+# jinja2
+```python
+#!/usr/bin/env python3
+
+import json,re,sys
+from jinja2 import Environment, FileSystemLoader
+
+env = Environment(loader=FileSystemLoader("templates"))
+
+def ref(id):
+    return items_by_id[id] 
+
+def guid_from_id(id):
+    if not id:
+        return ""
+    return id[4:]
+
+def dump(item):
+    if not item:
+        return ""
+    return "#"+json.dumps(item,indent=2).replace("\n","\n#")
+
+def escape_key_name(s): # for ninja2/Liquid templates
+    s = re.sub(r"@","",s) # @id @type etc
+    s = re.sub(r".*:","",s) # remove prefix:
+    return s
+
+def escape_key_names(item):
+  try:
+    result = { escape_key_name(x): v for x, v in item.items() } # renames keynames to use in template
+  except Exception as e:
+    print(item)
+    sys.exit(1)
+  return result
+
+env.filters['guid'] = guid_from_id
+env.filters['ref'] = ref
+env.filters['dump'] = dump
+
+data = json.load(open("data.json"))
+items = data["@graph"][:4]
+items = [escape_key_names(item) for item in items]
+items_by_id = { item["id"]:item for item in items }
+
+for item in items:
+    # print(item)
+    tmpl = env.get_template(item["type"].replace("aet:","")+".ttl")
+    print(tmpl.render(**item))
+```
+
 # copy 1000 random files from a csv
 ```python
 #!/usr/bin/env python3
