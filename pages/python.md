@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# various pip install libraries
+```bash
+pip install opencv-python
+```
+
 # jinja2
 ```python
 #!/usr/bin/env python3
