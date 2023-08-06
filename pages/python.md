@@ -2,7 +2,7 @@
 title: Python
 ---
 
-# opencv - channels, stretch, colorize (false color palette)
+# opencv - mask, crop, channels, stretch, colorize with lut
 ```python
 import cv2
 import numpy as np
