@@ -14,7 +14,7 @@ height,width = frame.shape[:2]
 (cx,cy),r = (321, 279),226 # for frame.png
 names="red","green","blue",
 g=[202,129,185] # range start per channel
-a, b, c = [0]*3, [0]*3, [0]*3 # maak 3 lege lists met ruimte voor 3 items
+a,b,c = [None]*3, [None]*3, [None]*3 # maak 3 lege lists met ruimte voor 3 items
 
 def stretch(img,minv,maxv):
     alpha = 255/(maxv-minv)
