@@ -2,6 +2,75 @@
 title: Python
 ---
 
+# opencv - channels, stretch, colorize (false color palette)
+```python
+import cv2
+import numpy as np
+
+palette_image = cv2.imread('palette256.png')
+palette_lut = palette_image[0,:,:]
+frame = cv2.imread("frame.png")
+height,width = frame.shape[:2]
+(cx,cy),r = (321, 279),226 # for frame.png
+names="red","green","blue",
+g=[202,129,185] # range start per channel
+a, b, c = [0]*3, [0]*3, [0]*3 # maak 3 lege lists met ruimte voor 3 items
+
+def stretch(img,minv,maxv):
+    alpha = 255/(maxv-minv)
+    return cv2.convertScaleAbs(img, alpha=alpha, beta = -minv*alpha)  
+
+while(True):
+    mask = np.zeros((height, width), dtype=np.uint8)
+    cv2.circle(mask, (cx,cy), r, 255, -1)
+    masked = cv2.bitwise_and(frame, frame, mask=mask)
+    cropped = masked[cy-r:cy+r, cx-r:cx+r]
+    h,w,_ = cropped.shape
+
+    for i in range(3): # 3 channels
+        a[i] = cropped[:,:,i]
+        b[i] = stretch(a[i],g[i],255)
+        c[i] = palette_lut[b[i].astype(int)]
+
+        cv2.imshow(f"{names[i]}", a[i]); cv2.moveWindow(f"{names[i]}", i*w, 0)
+        cv2.imshow(f"{names[i]}_stretched", b[i]); cv2.moveWindow(f"{names[i]}_stretched", i*w, h)
+        cv2.imshow(f"{names[i]}_colored", c[i]); cv2.moveWindow(f"{names[i]}_colored", i*w, 2*h)
+
+    key = cv2.waitKey(1) & 0xFF
+    if key == 27:
+        break
+    elif key==ord('-'):
+        radius -= 1;
+    elif key==ord('='):
+        radius += 1;
+    elif key==ord('x'):
+        center[0] += 1;
+    elif key==ord('X'):
+        center[0] -= 1;
+    elif key==ord('y'):
+        center[1] += 1;
+    elif key==ord('Y'):
+        center[1] -= 1;
+    elif key==ord('r'):
+        g[0] += 1;
+    elif key==ord('R'):
+        g[0] -= 1;
+    elif key==ord('g'):
+        g[1] += 1;
+    elif key==ord('G'):
+        g[1] -= 1;
+    elif key==ord('b'):
+        g[2] += 1;
+    elif key==ord('B'):
+        g[2] -= 1;
+    elif key == ord(' '):
+        for i in range(3):
+            print(f"{names[i]}={g[i]}")
+        print("center",center,"radius",radius)
+
+cv2.destroyAllWindows()
+```
+
 # various pip install libraries
 ```bash
 pip install opencv-python
