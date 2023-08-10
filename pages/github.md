@@ -6,7 +6,7 @@ title: Github
 ```bash
 #!/bin/bash
 
-ORG_NAME="YOUR_ORGANISATIOON"
+ORG_NAME="YOUR_ORGANISATION"
 TOKEN="ghp_......"
 
 REPO_LIST=$(curl -s -H "Authorization: token $TOKEN" \
