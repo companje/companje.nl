@@ -1,3 +1,9 @@
+# list / delete broken symlinks
+```bash
+find . -type l ! -exec test -e {} \; -print
+#find . -type l ! -exec test -e {} \; -delete
+```
+
 # backup with date in filename
 ```
 mysqldump -uroot -p drupal > db-backup-$(date +%Y-%m-%d).sql
