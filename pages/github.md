@@ -2,6 +2,22 @@
 title: Github
 ---
 
+# List Public repos (parse with jq)
+```bash
+#!/bin/bash
+
+ORG_NAME="YOUR_ORGANISATIOON"
+TOKEN="ghp_......"
+
+REPO_LIST=$(curl -s -H "Authorization: token $TOKEN" \
+    "https://api.github.com/orgs/$ORG_NAME/repos?type=Public&per_page=100" \
+    | jq -r '.[].name') 
+
+for REPO_NAME in $REPO_LIST; do
+    echo $REPO_NAME
+done
+```
+
 # Backup organisation repositories
 ```bash
 #!/bin/bash
