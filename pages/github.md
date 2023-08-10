@@ -29,7 +29,7 @@ ORG_NAME="YOUR_ORGANISATION"
 REPO_NAMES=(\
 	"repo1" \
 	"repo2" \
-  "repo3")
+	"repo3")
 
 # delete each repos
 for REPO_NAME in "${REPO_NAMES[@]}"; do
