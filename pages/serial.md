@@ -3,6 +3,7 @@ title: Serial communication
 ---
 
 # links
+* minicom op linux
 * zie ook ftdi, usbserial, ios
 * <http://www.hw-group.com/products/hercules/index_de.html>
 * max232 board from goodluckbuy: <http://www.goodluckbuy.com/jy-r2t-v1-2-rs232-serial-port-converter-w-cable.html> JY-R2T V1.2 Rs232 Serial Port Converter w/ Cable
