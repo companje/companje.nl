@@ -2,6 +2,33 @@
 title: Python
 ---
 
+# draw centered fullscreen chessboard
+```python
+import cv2
+import numpy as np
+
+image_width = 3840
+image_height = 2400
+
+img = np.zeros((image_height, image_width, 3), dtype=np.uint8)
+
+square_size = image_height // 8
+for y in range(8):
+    for x in range(8):
+         if (x + y) % 2 == 0:              
+            x1 = (image_width//2-image_height//2) + x*square_size
+            y1 = y*square_size
+            x2 = x1+square_size
+            y2 = y1+square_size
+            img[y1:y2, x1:x2] = (255,255,255)
+
+cv2.namedWindow('img', cv2.WINDOW_NORMAL)
+cv2.setWindowProperty('img', cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
+cv2.imshow('img', img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+```
+
 # opencv - mask, crop, channels, stretch, colorize with lut
 ```python
 import cv2
