@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# random integer
+```python
+random.randint(1, 10)
+```
+
 # draw centered fullscreen chessboard
 ```python
 import cv2
