@@ -5,11 +5,11 @@ title: OpenCV
 # mouse
 ```python
 def mouse_callback(event, x, y, flags, param):
-    if event == cv2.EVENT_LBUTTONDOWN:  # Linker muisknop ingedrukt
+    if event == cv2.EVENT_LBUTTONDOWN:
         print(f"LEFT ({x}, {y})")
-    elif event == cv2.EVENT_RBUTTONDOWN:  # Rechter muisknop ingedrukt
+    elif event == cv2.EVENT_RBUTTONDOWN:
         print(f"RIGHT ({x}, {y})")
-    elif event == cv2.EVENT_MOUSEMOVE:  # Muis beweegt
+    elif event == cv2.EVENT_MOUSEMOVE:
         print(f"MOVE ({x}, {y})")
 
 ## ...
