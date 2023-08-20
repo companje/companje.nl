@@ -2,6 +2,30 @@
 title: OpenCV
 ---
 
+# homography
+```python
+import cv2
+import numpy as np
+
+# Lees de puntparen in (LET OP OMGEWISSELT)
+dst_points = np.loadtxt("data/src_points.txt")
+src_points = np.loadtxt("data/dst_points.txt")
+
+# Bereken de projectieve transformatiematrix (homografie)
+homography_matrix, _ = cv2.findHomography(src_points, dst_points)
+
+print(homography_matrix)
+
+# Pas de homografie toe op een afbeelding
+src = cv2.imread("data/vis_200.png")
+dst = cv2.warpPerspective(src, homography_matrix, (src.shape[1], src.shape[0]))
+
+cv2.imshow("src", src)
+cv2.imshow("dst", dst)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+```
+
 # mouse
 ```python
 def mouse_callback(event, x, y, flags, param):
