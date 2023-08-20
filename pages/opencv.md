@@ -2,6 +2,11 @@
 title: OpenCV
 ---
 
+# new rgb image
+```python
+img = np.zeros((480, 640, 3), dtype=np.uint8)
+```
+
 # set focus to image window opencv
 ```python
 cv2.namedWindow('img',cv2.WINDOW_NORMAL)
