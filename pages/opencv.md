@@ -2,6 +2,20 @@
 title: OpenCV
 ---
 
+# mouse
+```python
+def mouse_callback(event, x, y, flags, param):
+    if event == cv2.EVENT_LBUTTONDOWN:  # Linker muisknop ingedrukt
+        print(f"LEFT ({x}, {y})")
+    elif event == cv2.EVENT_RBUTTONDOWN:  # Rechter muisknop ingedrukt
+        print(f"RIGHT ({x}, {y})")
+    elif event == cv2.EVENT_MOUSEMOVE:  # Muis beweegt
+        print(f"MOVE ({x}, {y})")
+
+## ...
+cv2.setMouseCallback("img", mouse_callback)
+```
+
 # new rgb image
 ```python
 img = np.zeros((480, 640, 3), dtype=np.uint8)
