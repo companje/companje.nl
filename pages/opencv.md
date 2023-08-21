@@ -2,6 +2,11 @@
 title: OpenCV
 ---
 
+# convert gray to rgb
+```python
+rgb = cv2.cvtColor(gray, cv2.COLOR_GRAY2RGB)
+```
+
 # homography
 ```python
 import cv2
