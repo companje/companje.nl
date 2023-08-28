@@ -2,6 +2,9 @@
 title: Windows
 ---
 
+# automatic login Windows 11
+https://www.askvg.com/fix-users-must-enter-a-user-name-and-password-to-use-this-computer-checkbox-missing-in-windows-10/
+
 # list all folders recursively
 ```batch
 dir k:\MYFOLDER /ad /b /s > "P:\DESTINATION.txt"
