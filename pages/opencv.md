@@ -2,6 +2,11 @@
 title: OpenCV
 ---
 
+# replace pixels with value 0 by value 255 using numpy
+```python
+    img[img == 0] = 255
+```
+
 # convert gray to rgb
 ```python
 rgb = cv2.cvtColor(gray, cv2.COLOR_GRAY2RGB)
