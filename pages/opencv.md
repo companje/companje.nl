@@ -11,6 +11,14 @@ output_image = np.copy(gray)
 gray[no_neighbor_mask] = 0
 ```
 
+# remove lonely pixels
+```python
+kernel = np.array([[1, 1, 1],[1, 0, 1],[1, 1, 1]])
+convolved_image = convolve2d(gray, kernel, mode='same', boundary='wrap')
+no_neighbor_mask = convolved_image == 0
+gray[no_neighbor_mask] = 0
+```
+
 # replace pixels with value 0 by value 255 using numpy
 ```python
 img[img == 0] = 255
