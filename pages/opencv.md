@@ -2,9 +2,18 @@
 title: OpenCV
 ---
 
+# filter pixels based on number of neighbours
+```python
+_, labeled_image = cv2.connectedComponents(gray)
+unique_labels, label_counts = np.unique(labeled_image, return_counts=True)
+no_neighbor_mask = label_counts[labeled_image] < 4
+output_image = np.copy(gray)
+gray[no_neighbor_mask] = 0
+```
+
 # replace pixels with value 0 by value 255 using numpy
 ```python
-    img[img == 0] = 255
+img[img == 0] = 255
 ```
 
 # convert gray to rgb
