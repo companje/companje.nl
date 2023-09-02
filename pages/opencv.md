@@ -2,6 +2,16 @@
 title: OpenCV
 ---
 
+# arrow keys
+```python
+key = cv2.waitKeyEx(0)  
+if key == 27:
+    break
+elif key == 2555904: #right
+    print("right")
+elif key == 2424832: #left
+    print("left")
+```
 # filter pixels based on number of neighbours
 ```python
 _, labeled_image = cv2.connectedComponents(fg)
