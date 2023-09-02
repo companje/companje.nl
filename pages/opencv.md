@@ -4,11 +4,9 @@ title: OpenCV
 
 # filter pixels based on number of neighbours
 ```python
-_, labeled_image = cv2.connectedComponents(gray)
+_, labeled_image = cv2.connectedComponents(fg)
 unique_labels, label_counts = np.unique(labeled_image, return_counts=True)
-no_neighbor_mask = label_counts[labeled_image] < 4
-output_image = np.copy(gray)
-gray[no_neighbor_mask] = 0
+fg[label_counts[labeled_image] < 4] = 0
 ```
 
 # remove lonely pixels
