@@ -19,6 +19,12 @@ unique_labels, label_counts = np.unique(labeled_image, return_counts=True)
 fg[label_counts[labeled_image] < 4] = 0
 ```
 
+# sharpen
+```python
+kernel = np.array([[-1,-1,-1], [-1,9,-1], [-1,-1,-1]])
+gray = cv2.filter2D(gray, -1, kernel)
+```
+
 # remove lonely pixels
 ```python
 kernel = np.array([[1, 1, 1],[1, 0, 1],[1, 1, 1]])
