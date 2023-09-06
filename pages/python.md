@@ -2,6 +2,12 @@
 title: Python
 ---
 
+# build exe file
+```bash
+pip install pyinstaller
+pyinstaller --add-data 'data;data' .\YourScript.py   # with data folder
+```
+
 # random integer
 ```python
 random.randint(1, 10)
