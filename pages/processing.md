@@ -4,6 +4,8 @@ title: Processing
 
 # loop over HasmMap
 ```java
+HashMap<String, PImage> imageUniforms = new HashMap();
+//...
 for (java.util.Map.Entry me : imageUniforms.entrySet()) {
           String id = (String)me.getKey();
           PImage img = (PImage)me.getValue();
