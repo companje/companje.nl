@@ -2,6 +2,14 @@
 title: Processing
 ---
 
+# loop over HasmMap
+```java
+for (java.util.Map.Entry me : imageUniforms.entrySet()) {
+          String id = (String)me.getKey();
+          PImage img = (PImage)me.getValue();
+          //...
+```
+
 # onderzoeken voor OscMessage tegen crashen tussen thread en main loop
 ```java
 import java.util.concurrent.ConcurrentHashMap;
