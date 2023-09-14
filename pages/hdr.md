@@ -1,4 +1,2 @@
-# HDR
-
-## HDR merger online tool
-- www.conversion-tool.com/hdrmerger
+# HDR merger online tool
+- https://www.conversion-tool.com/hdrmerger
