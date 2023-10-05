@@ -8,6 +8,7 @@ tags: ['notes','software','video']
 thanks to: https://stackoverflow.com/a/51618079/6068235
 ```bash
 for i in *.jpg; do echo file \'$i\'; done > list.txt
+ffmpeg -f concat -i list.txt -vcodec mpeg4 -q:v 0 akte2.mp4
 
 for i in *.png; do echo file \'$i\'; echo duration 0.03333; done > list.txt
 ```
