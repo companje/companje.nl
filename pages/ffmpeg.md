@@ -7,6 +7,8 @@ tags: ['notes','software','video']
 # create list file for ffmpeg (with duration added)
 thanks to: https://stackoverflow.com/a/51618079/6068235
 ```bash
+for i in *.jpg; do echo file \'$i\'; done > list.txt
+
 for i in *.png; do echo file \'$i\'; echo duration 0.03333; done > list.txt
 ```
 
