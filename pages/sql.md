@@ -1,3 +1,8 @@
+# random record from a aggregation
+```
+    MAX(scn.guid) KEEP (DENSE_RANK FIRST ORDER BY DBMS_RANDOM.VALUE) AS random_sample
+```
+
 # insert
 ```sql
 insert into TABEL (a_id,t_id,dtm) values(123,456, systimestamp);
