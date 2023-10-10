@@ -1,6 +1,6 @@
 # random record from a aggregation
-```
-    MAX(scn.guid) KEEP (DENSE_RANK FIRST ORDER BY DBMS_RANDOM.VALUE) AS random_sample
+```sql
+MAX(scn.guid) KEEP (DENSE_RANK FIRST ORDER BY DBMS_RANDOM.VALUE) AS random_sample
 ```
 
 # insert
