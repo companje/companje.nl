@@ -1,1 +1,1 @@
-* https://ytmp3.nu/UGhs/
+* https://ytmp3.nu/
