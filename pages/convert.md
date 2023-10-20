@@ -2,6 +2,12 @@
 title: Convert images
 ---
 
+# create a side by side image:
+https://stackoverflow.com/questions/20737061/merge-images-side-by-side-horizontally
+```bash
+convert +append  LEFT.jpg RIGHT.jpg COMBI.png
+```
+
 # batch set jpg quality to 80%
 ```bash
 mogrify -quality 80% *.jpg 
