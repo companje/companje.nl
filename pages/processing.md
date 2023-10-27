@@ -2,7 +2,7 @@
 title: Processing
 ---
 
-# Zoomable Window (multiple)
+# Multiple Zoomable Windows
 * https://gist.github.com/companje/727074098eb256b0765f20c288f55477
 
 # loop over HasmMap
