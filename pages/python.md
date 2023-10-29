@@ -2,6 +2,42 @@
 title: Python
 ---
 
+# image areas in html to json
+```python
+from bs4 import BeautifulSoup
+import json
+
+with open("index.html", "r", encoding="utf-8") as file:
+    html = file.read()
+
+soup = BeautifulSoup(html, 'html.parser')
+area_tags = soup.find_all('area')
+
+json_output = []
+
+for area in area_tags:
+    area_dict = {}
+    area_dict['TITLE'] = area.get('title')
+    area_dict['ID'] = area.get('id')
+    area_dict['REL'] = area.get('rel')
+    area_dict['HREF'] = area.get('href')
+    area_dict['DATA_X_ABS'] = area.get('data-x-abs')
+    area_dict['DATA_Y_ABS'] = area.get('data-y-abs')
+    area_dict['TARGET'] = area.get('target')
+    area_dict['CLASS'] = area.get('class')
+    area_dict['SHAPE'] = area.get('shape')
+    
+    coords = area.get('coords')
+    if coords:
+        coords_list = list(map(int, coords.split(',')))
+        area_dict['COORDS'] = coords_list
+
+    json_output.append(area_dict)
+
+json_str = json.dumps(json_output, indent=4)
+print(json_str)
+```
+
 # build exe file
 ```bash
 pip install pyinstaller
