@@ -2,6 +2,9 @@
 title: Git
 ---
 
+# download a folder from a repo
+* https://download-directory.github.io/
+
 # list files not under version control
 ```bash
 git ls-files --others --ignored --exclude-from=.gitignore
