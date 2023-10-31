@@ -2,6 +2,12 @@
 title: Github
 ---
 
+# clone private repo 1 level deep, master branch
+```bash
+gh auth login # choose: 'preferred protocol for Git operations? HTTPS'
+git clone --depth 1 --branch master https://github.com/companje/PRIVATE-REPO.git
+```
+
 # List Public repos (parse with jq)
 ```bash
 #!/bin/bash
