@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# maak lookup table
+```python
+lut_technieken = { item["INHOUD"]:item["ID"] for item in csv.DictReader(open("con_technieken.csv")) }
+```
+
 # image areas in html to json
 ```python
 from bs4 import BeautifulSoup
