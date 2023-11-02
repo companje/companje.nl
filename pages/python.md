@@ -2,7 +2,7 @@
 title: Python
 ---
 
-# store recursively filepaths in a dict by filename
+# store filepaths (recursively) in a dict by filename
 ```python
 alto_files_by_filename = {os.path.basename(path): path for path in Path(alto_folder).rglob("*.xml")}
 ```
