@@ -1,5 +1,36 @@
 ASP / ASP classic
 
+# output result of database query as JSON
+```vbscript
+<!--#include virtual="/scripts/aspJSON1.19.asp" -->
+<pre>
+<%
+db_path = Request.ServerVariables("APPL_PHYSICAL_PATH") + "DB.mdb"
+set conn = Server.CreateObject("ADODB.Connection")
+set rs = Server.CreateObject("ADODB.Recordset")
+conn.mode = adModeRead
+conn.open "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & db_path & ";"
+rs.open "select Iduds, Zplaat, trefwoord from TABLE where Zplaat<>'' and Zplaat<>'.'", conn
+
+itemIndex = 0
+set json = new aspJSON
+with json.data
+  do until rs.EOF
+    .Add itemIndex, json.Collection()
+    with .item(itemIndex)
+      for each x in rs.fields
+        if x.value<>"" then .Add x.name, x.value
+      next
+    end With
+    itemIndex = itemIndex + 1
+    rs.moveNext
+  loop
+end with
+
+response.write json.JSONoutput()         
+%>
+```
+
 # set 404 page in web.config
 ```xml
 <configuration>
