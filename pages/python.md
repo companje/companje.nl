@@ -2,6 +2,39 @@
 title: Python
 ---
 
+# merge files from 2 folders to an output folder
+```python
+#!/usr/bin/env python3
+
+from pathlib import Path
+import os,shutil
+
+alto_folder = "XX/input/"
+alto_files_by_filename = {os.path.basename(path): path for path in Path(alto_folder).rglob("*.xml")}
+image_filepaths = list(Path(f"1001/").rglob("*.jpg"))
+
+for image_path in image_filepaths :
+    # recreate folder structure from images
+    image_folder = os.path.dirname(image_path)
+    image_filename = os.path.basename(image_path)
+    dst_folder =  Path("output/" + image_folder)
+    dst_folder.mkdir(parents=True, exist_ok=True) 
+    dst_image_path = os.path.join(dst_folder, image_filename)
+
+    # copy images
+    if not os.path.exists(dst_image_path):
+        print("copy",image_path,"to",dst_image_path)
+        shutil.copy2(image_path, dst_folder)
+
+    # copy and rename alto files
+    alto_filename = image_filename.replace(".jpg",".xml")
+    alto_filepath = alto_files_by_filename.get(alto_filename)
+    if alto_filepath: # skip non-existing alto files
+        new_alto_filename = alto_filename.replace(".xml","_alto.xml")
+        dst_alto_filepath = os.path.join(dst_folder, new_alto_filename)
+        shutil.copy2(alto_filepath, dst_alto_filepath)
+```
+
 # store filepaths (recursively) in a dict by filename
 ```python
 alto_files_by_filename = {os.path.basename(path): path for path in Path(alto_folder).rglob("*.xml")}
