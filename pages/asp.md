@@ -3,7 +3,6 @@ ASP / ASP classic
 # output result of database query as JSON
 ```asp
 <!--#include virtual="/scripts/aspJSON1.19.asp" -->
-<pre>
 <%
 db_path = Request.ServerVariables("APPL_PHYSICAL_PATH") + "DB.mdb"
 set conn = Server.CreateObject("ADODB.Connection")
