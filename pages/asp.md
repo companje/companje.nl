@@ -1,7 +1,7 @@
 ASP / ASP classic
 
 # output result of database query as JSON
-```vbscript
+```asp
 <!--#include virtual="/scripts/aspJSON1.19.asp" -->
 <pre>
 <%
@@ -27,7 +27,9 @@ with json.data
   loop
 end with
 
-response.write json.JSONoutput()         
+response.ContentType = "application/json"
+response.addHeader "Content-Disposition", "filename=zoekplaten.json"
+response.write json.JSONoutput()
 %>
 ```
 
