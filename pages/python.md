@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# store recursively filepaths in a dict by filename
+```
+alto_files_by_filename = {os.path.basename(path): path for path in Path(alto_folder).rglob("*.xml")}
+```
+
 # maak lookup table
 ```python
 lut_technieken = { item["INHOUD"]:item["ID"] for item in csv.DictReader(open("con_technieken.csv")) }
