@@ -2,6 +2,10 @@
 title: MySQL
 ---
 
+# install on linux
+```bash
+sudo apt-get install mysql-server
+```
 
 # An error occurred when reading the file ... Autodetect - Unicode (UTF-8)
 solution "select Western (Mac OS Roman) as the encoding format for the file to import without issue."
