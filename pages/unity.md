@@ -2,4 +2,5 @@
 title: Unity3D
 ---
 
-* Flappy Bird tutorial in Unity: http://studentguru.gr/b/dt008/archive/2014/07/02/a-flappy-bird-clone-in-unity-source-code-included
+* [SLOPE MOVEMENT, SPRINTING & CROUCHING - Unity Tutorial]([url](https://www.youtube.com/watch?v=xCxSjgYTw9c)https://www.youtube.com/watch?v=xCxSjgYTw9c)
+* [FIRST PERSON MOVEMENT in 10 MINUTES - Unity Tutorial]([url](https://www.youtube.com/watch?v=f473C43s8nE)https://www.youtube.com/watch?v=f473C43s8nE)
