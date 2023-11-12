@@ -2,6 +2,12 @@
 title: Python
 ---
 
+# pretty print
+```python
+from pprint import pprint
+pprint(data)
+```
+
 # merge files from 2 folders to an output folder
 ```python
 #!/usr/bin/env python3
