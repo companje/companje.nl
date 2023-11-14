@@ -2,6 +2,16 @@
 title: Python
 ---
 
+# merge list with z_values with 2D nparray
+```python
+z_values = [img[int(y), int(x), 2] for x, y in points]
+points = np.column_stack((points[:, 0], points[:, 1], z_values))
+```
+shorter:
+```python
+points = np.column_stack((points, img[points[:, 1].astype(int), points[:, 0].astype(int), 2]))
+```
+
 # pretty print
 ```python
 from pprint import pprint
