@@ -3,6 +3,12 @@ title: Shaders
 ---
 Zie ook [[OpenGL]]
 
+# shader toy
+* https://www.shadertoy.com
+
+# vertex shader art
+* https://vertexshaderart.com/
+
 # GLSL preview in Atom
 https://atom.io/packages/glsl-preview
 
