@@ -442,6 +442,7 @@ with open(input_file_path,"r") as file:
 ```
 
 # ocr on Mac
+<a name='mac-ocr'></a>
 ```python
 #!/Applications/Xcode.app/Contents/Developer/usr/bin/python3
 
