@@ -441,8 +441,8 @@ with open(input_file_path,"r") as file:
   data = json.load(file)
 ```
 
-# ocr on Mac
 <a name='mac-ocr'></a>
+# ocr on Mac
 ```python
 #!/Applications/Xcode.app/Contents/Developer/usr/bin/python3
 
