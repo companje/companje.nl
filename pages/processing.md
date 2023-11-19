@@ -2,6 +2,18 @@
 title: Processing
 ---
 
+# backface culling
+```java
+void setup() {
+  pgl = (PJOGL) beginPGL();
+//...
+
+void draw() {
+  pgl.enable( PGL.CULL_FACE );
+  pgl.cullFace( PGL.FRONT );
+//...
+```
+
 # Multiple Zoomable Windows
 * https://gist.github.com/companje/727074098eb256b0765f20c288f55477
 
