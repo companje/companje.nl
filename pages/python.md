@@ -8,7 +8,7 @@ find item with code=="FT"
 item = next((item for item in data if item.get("code") == "FT"), None)
 ```
 as function:
-```
+```python
 def get_item(items, key, value):
     return next((item for item in items if item.get(key) == value), None)
 ```
