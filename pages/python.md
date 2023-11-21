@@ -2,6 +2,12 @@
 title: Python
 ---
 
+# get item by id+value in json array
+find item with code=="FT"
+```python
+item = next((item for item in data if item.get("code") == "FT"), None)
+```
+
 # merge list with z_values with 2D nparray
 ```python
 z_values = [img[int(y), int(x), 2] for x, y in points]
