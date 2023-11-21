@@ -2,6 +2,12 @@
 title: Convert images
 ---
 
+# scale up using nearest neighbour interpolation
+https://graphicdesign.stackexchange.com/a/41189
+```bash
+convert from.png -interpolate Nearest -filter point -resize 800% to.png
+```
+
 # create a side by side image:
 https://stackoverflow.com/questions/20737061/merge-images-side-by-side-horizontally
 ```bash
