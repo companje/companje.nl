@@ -5,7 +5,7 @@ title: Python
 # pretty print
 ```python
 from pprint import pprint 
-print(data
+print(data)
 ```
 
 # get all <link rel='next'> pages
