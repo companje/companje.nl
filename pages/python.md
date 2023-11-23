@@ -2,6 +2,12 @@
 title: Python
 ---
 
+# pretty print
+```python
+from pprint import pprint 
+print(data
+```
+
 # get all <link rel='next'> pages
 ```python
 from bs4 import BeautifulSoup
