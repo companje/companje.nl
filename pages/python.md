@@ -2,6 +2,22 @@
 title: Python
 ---
 
+# get all <link rel='next'> pages
+```python
+from bs4 import BeautifulSoup
+import requests
+
+url = "https://www.website.org/topics/"
+
+while url:
+    print(url)
+    response = requests.get(url)
+    soup = BeautifulSoup(response.text, 'html.parser')
+    url = soup.find("link", rel="next")
+    if url:
+        url = url.get("href")
+```
+
 # get item by id+value in json array
 find item with code=="FT"
 ```python
