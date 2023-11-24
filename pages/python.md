@@ -2,6 +2,37 @@
 title: Python
 ---
 
+# Count entities (in many json-files) grouped by entity_type
+```python
+#!/usr/bin/env python3
+import json
+from pathlib import Path
+from collections import defaultdict
+
+entities_by_type = { }
+
+for filename in list(Path(f"data/").rglob("*.json")):
+    try:
+       data = json.load(open(filename))
+       for item in data["gpt-result"]:
+            for value in data["gpt-result"][item]:
+                value = str(value).strip()
+
+                if not item in entities_by_type:
+                    entities_by_type[item] = defaultdict(int)
+
+                entities_by_type[item][value] += 1
+
+    except Exception as e:
+       print(e,filename)
+
+# sort by count within entity_type
+for t in entities_by_type:
+   entities_by_type[t] = dict(sorted(entities_by_type[t].items(), key=lambda x:x[1], reverse=True))
+
+json.dump(entities_by_type, open("entities.json","w"),indent=2,ensure_ascii=False)
+```
+
 # Call GPT-4 API for Namd Entity Recognition (NER)
 ```python
 #!/usr/bin/env python3
