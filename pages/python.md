@@ -2,6 +2,23 @@
 title: Python
 ---
 
+# escape URI part
+```python
+def escape_URI_part(s):
+  # spreadsheet: [–’&|,\.() ""$/':;]"; "-") ;"-+";"-"); "[.-]$"; ""))
+  s = re.sub(r"[_–’+?&=|,\.() \"$/']", "-", s) # replace different characters by a dash
+  s = re.sub(r"-+", "-", s) # replace multiple dashes by 1 dash
+  s = re.sub(r"[^a-zA-Z0-9\-]", "", s) # strip anything else now that is not a alpha or numeric character or a dash
+  s = re.sub(r"^-|-$", "", s) # prevent starting or ending with . or -
+  if len(s)==0:
+    # raise ValueError("makeSafeURIPart results in empty string")
+    # log.warning("makeSafeURIPart results in empty string")
+    # fix this by replacing by 'x' for example
+    import random
+    s="unknown"+str(int(random.randint(10000, 99999)))
+  return s.lower()
+```
+
 # pretty print
 ```python
 from pprint import pprint 
