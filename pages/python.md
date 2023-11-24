@@ -2,6 +2,42 @@
 title: Python
 ---
 
+# Call GPT-4 API for Namd Entity Recognition (NER)
+```python
+#!/usr/bin/env python3
+
+import json,csv,os,openai,sys
+
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
+for row in list(csv.DictReader(open("beschrijvingen-platte-lijst.csv")))[0:1000]:
+    filename = "data/" + row["GUID"] + ".json"
+    if os.path.exists(filename):
+        continue
+
+    response = openai.ChatCompletion.create(
+        # model="gpt-3.5-turbo",
+        model="gpt-4-1106-preview",
+        response_format={ "type": "json_object" },
+        messages=[ {"role": "system", "content": "You can recognize named-entities and return these in JSON as strings grouped by entity-type: { 'persons':[], 'organisations':[], 'locations':[], 'topics':[], 'events':[], 'dates':[]"},
+                   {"role": "user", "content": row["context"] } ]
+    )
+
+    try:
+        if response:
+            response["text"] = json.loads(response["choices"][0]["message"]["content"])
+    except Exception as e:
+        print(e,response)
+        pass
+
+    try:
+        json.dump({"item":row, "gpt-result":response["text"]},open(filename,"w"), indent=2, ensure_ascii=False)
+        print(filename, response["text"])
+    except Exception as e:
+        print(e,row["GUID"],response)
+
+    print(filename)
+```
 # escape URI part
 ```python
 def escape_URI_part(s):
