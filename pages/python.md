@@ -2,6 +2,45 @@
 title: Python
 ---
 
+# lookup hierarchy from id's in CSV file and output new CSV
+```python
+#!/usr/bin/env python3
+import csv
+
+items = list(csv.DictReader(open("beschrijvingen-met-parent-guids.csv")))
+items_by_guid = {}
+
+#build lut
+for row in items:
+    row["parents"] = row["parents"].split(" ")
+    items_by_guid[row["GUID"]] = row
+
+#solve refs
+for item in items_by_guid.values():
+    item["parents"] = [ items_by_guid[p_guid] for p_guid in item["parents"] if not item==items_by_guid[p_guid]]
+
+# als er een inleiding gevonden wordt direct onder een rubriek
+# dan deze inleiding toevoegen aan de rubriek omschrijving
+for item in items:
+    if item["aet"]=="inl" and item["parents"][-1]["aet"]=="rub":
+        item["parents"][-1]["omschr"] += f"\n{item['omschr']}"
+
+# clean up
+for item in items:
+    item["omschr"] = item["omschr"].replace(">tr.",">getrouwd met: ")
+    item["omschr"] = item["omschr"].replace("<BR>","\n")
+    
+header = ["guid","text"]
+writer = csv.DictWriter(open("items-with-context.csv","w",encoding="utf-8"), fieldnames=header, delimiter=';', quoting=csv.QUOTE_ALL, dialect='excel')
+writer.writeheader()
+
+for item in items:
+    writer.writerow({
+        "guid": item["GUID"], 
+        "text": "\n".join([p["omschr"] for p in item["parents"]] + [item["omschr"]])
+    })
+```
+
 # Count entities (in many json-files) grouped by entity_type
 ```python
 #!/usr/bin/env python3
