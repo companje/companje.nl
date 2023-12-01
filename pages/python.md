@@ -158,6 +158,12 @@ def get_item(items, key, value):
     return next((item for item in items if item.get(key) == value), None)
 ```
 
+find multiple values:
+```python
+def get_items(items, key, values):
+    return [ next((item for item in items if item.get(key) == value), None) for value in values]
+```
+
 # merge list with z_values with 2D nparray
 ```python
 z_values = [img[int(y), int(x), 2] for x, y in points]
