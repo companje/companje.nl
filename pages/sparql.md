@@ -1,3 +1,27 @@
+# HackaLOD 2023 sparql query Utrecht Time Machine
+```sparql
+select distinct ?work ?workLabel ?depicts ?depictsLabel ?part ?partLabel ?coords ?heading ?image
+where {
+  {
+    ?work wdt:P31/wdt:P279* wd:Q110304307 ;
+          wdt:P180 wd:Q803 ;
+          p:P180 ?statement .
+    ?statement ps:P180 ?depicts.
+    }
+
+  optional { ?statement pq:P2677 ?part. }
+  optional { ?work wdt:P18 ?image. }
+  optional { ?work wdt:P1259 ?coords. }
+  optional { ?work wdt:P7787 ?heading. }
+  optional { ?work wdt:P170 ?creatorLabel. }
+  optional { ?work wdt:P571 ?inceptionFull. }
+  bind(year(?inceptionFull) as ?inception)
+  filter (bound(?coords) && bound(?heading)) #alleen mét coords en heading
+  
+  service wikibase:label { bd:serviceParam wikibase:language "en" .}
+}
+```
+
 # Parent Tree
 ```sparql
 PREFIX schema: <https://schema.org/>
