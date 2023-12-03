@@ -2,6 +2,62 @@
 title: Python
 ---
 
+# SMF SimpleMachines Forum Export / Backup to JSON
+```python
+import mysql.connector, json
+
+def get_column_names(db_name, table_name):
+    query = f"SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = '{db_name}' AND TABLE_NAME = '{table_name}'"
+    cursor.execute(query)
+    return [row["COLUMN_NAME"] for row in cursor]
+
+db_name = 'your_db'
+db_user = 'root'
+db_pass = ''
+conn = mysql.connector.connect(user=db_user, password=db_pass, host='127.0.0.1', database=db_name)
+cursor = conn.cursor(dictionary=True)
+
+board_columns = get_column_names(db_name,'smf_boards')
+topic_columns = get_column_names(db_name,'smf_topics')
+message_columns = get_column_names(db_name,'smf_messages')
+
+cursor.execute("""
+SELECT * FROM smf_messages m
+JOIN smf_topics t ON t.id_topic = m.id_topic
+JOIN smf_boards b ON b.id_board = t.id_board
+ORDER BY b.id_board, t.id_topic, m.id_msg
+""")
+
+structure = {}
+
+for row in cursor:
+    board_id = row['id_board']
+    topic_id = row['id_topic']
+
+    # make board data
+    board_data = {col: row[col] for col in board_columns}
+
+    # make topic data
+    topic_data = {col: row[col] for col in topic_columns}
+
+    # add board toe if not exits
+    if board_id not in structure:
+        structure[board_id] = {'board_data': board_data, 'topics': {}}
+
+    # add topic if not exists
+    if topic_id not in structure[board_id]['topics']:
+        structure[board_id]['topics'][topic_id] = {'topic_data': topic_data, 'messages': []}
+
+    # make message data and add tot topics
+    message_data = {col: row[col] for col in message_columns}
+    structure[board_id]['topics'][topic_id]['messages'].append(message_data)
+
+cursor.close()
+conn.close()
+
+json.dump(structure, open("result.json","w"), indent=2, ensure_ascii=False)
+```
+
 # lookup hierarchy from id's in CSV file and output new CSV
 ```python
 #!/usr/bin/env python3
