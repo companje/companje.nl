@@ -2,6 +2,14 @@
 title: MySQL
 ---
 
+# install on osx
+```bash
+brew install mysql
+brew services start mysql
+mysql -u root # test
+# now use Sequal Ace
+```
+
 # install on linux
 ```bash
 sudo apt-get install mysql-server
