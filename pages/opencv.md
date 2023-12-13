@@ -103,7 +103,7 @@ https://github.com/opencv/opencv/tree/master/samples/data
 [[openFrameworks]], [[Processing]]
 
 # Notes on findContours
-  * Source image is modified by this function. 
+  * <del>Source image is modified by this function. </del>
   * Also, the function does not take into account 1-pixel border of the image (it's filled with 0's and used for neighbor analysis in the algorithm), therefore the contours touching the image border will be clipped.
 
 # Subtract vs absdiff
