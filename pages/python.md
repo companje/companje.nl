@@ -2,7 +2,7 @@
 title: Python
 ---
 
-# read PageXML without metadata using regex (hack)
+# read PageXML without metadata using regex
 ```python
 def get_pagexml_without_metadata(xml_file):
     return re.sub("<Metadata>.*?</Metadata>", "", open(xml_file).read(), flags=re.DOTALL)
