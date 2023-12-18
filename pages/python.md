@@ -2,6 +2,38 @@
 title: Python
 ---
 
+# flatten folder structure for jpg's and PageXML's:
+```python
+#!/usr/bin/env python3
+
+from pathlib import Path
+import os,sys,re,shutil
+
+input_base = "/Users/rick/Loghi (vervolg)/Resultaat fase 2/fase-2_output/"
+output_base = "output/"
+
+# toegang_inv_base = "702.2244"  # extra submap gemaakt voor alle deelbeschrijvingen
+toegang_inv_base = "702.121"  # extra submap gemaakt voor alle deelbeschrijvingen
+
+for img_path in Path(input_base + toegang_inv_base).rglob("*.jpg"):
+        
+    img_folder = os.path.dirname(img_path)
+    img_filename = os.path.basename(img_path)
+    toegang_inv = os.path.basename(img_folder)
+    page_path = img_folder + "/page/" + img_filename.replace(".jpg",".xml")
+
+    result = re.split(r'\.', toegang_inv, maxsplit=1) # let op maxsplit
+    toegang, inv = result
+
+    #JPGs
+    Path(output_base + toegang_inv_base).mkdir(parents=True, exist_ok=True)
+    shutil.copy2(img_path, output_base + toegang_inv_base)
+        
+    #pageXMLs
+    Path(output_base + toegang_inv_base + "/page/" ).mkdir(parents=True, exist_ok=True)
+    shutil.copy2(page_path, output_base + toegang_inv_base + "/page/")
+```
+
 # read PageXML without metadata using regex
 ```python
 def get_pagexml_without_metadata(xml_file):
