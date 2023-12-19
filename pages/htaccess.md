@@ -2,6 +2,15 @@
 title: .htaccess
 ---
 
+# 404 handler
+```apache
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.+\.jpg)$ HANDLER.php [L,QSA]
+</IfModule>
+```
+
 # redirect folder to other domain in root htaccess
 ```apache
 RewriteRule ^FOLDER.*$ https://DOMAIN [R=301,L]
