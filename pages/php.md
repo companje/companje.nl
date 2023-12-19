@@ -2,6 +2,17 @@
 title: PHP
 ---
 
+# pass through jpg
+see also htaccess
+```php
+$guid = pathinfo(basename($_SERVER["REDIRECT_URL"]), PATHINFO_FILENAME);
+
+if (strlen($guid)==32) {
+  header("Content-type: image/jpeg");
+  readfile("https://SERVER/$guid");
+};
+```
+
 # PHP Fatal error: Uncaught Error: Class "Normalizer" not found in /usr/share/php/Symfony/Component/Console/Helper/Helper.php:65
 ```bash
 sudo apt install php8.1-intl  # with version number!
