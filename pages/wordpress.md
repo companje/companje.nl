@@ -2,6 +2,10 @@
 title: Wordpress
 ---
 
+# "The Link You Followed Has Expired"
+* ‘The link you followed has expired’ error usually occurs when you are trying to upload a WordPress theme or a plugin that is bigger than the file size limits"
+* check current max size at Media > Add New Media File. (in my case 8MB)
+* https://www.wpbeginner.com/wp-tutorials/how-to-fix-the-link-you-followed-has-expired-error-in-wordpress/
 
 # WordPress development environment on Mac with Brew, Nginx, PHP 7, PHP-FPM, MariaDB, phpMyAdmin and more
 <https://gist.github.com/remcotolsma/a04ed7165f04a307c02808e45c0596f3>
