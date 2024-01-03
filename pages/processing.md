@@ -2,6 +2,26 @@
 title: Processing
 ---
 
+# PDF
+```java
+import processing.pdf.*;
+PGraphicsPDF pdf;
+
+void setup() {
+  println("start");
+  size(1748, 2480); //scaling factor = 11,81109799  >>> 1748 / 11,81109799 = 148mm
+  pdf = (PGraphicsPDF)beginRecord(PDF, "boek.pdf");
+
+  for (int i=0; i<5; i++) {
+    background(random(255), random(255), random(255));
+    pdf.nextPage();
+  }
+  endRecord();
+  println("done");
+  exit();
+}
+```
+
 # backface culling
 ```java
 void setup() {
