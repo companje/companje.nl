@@ -1566,6 +1566,7 @@ items = [x.strip() for x in input_string.split(';')]
 pip install cx_oracle
 ```
 * and download the [instant client](https://www.oracle.com/database/technologies/instant-client/macos-intel-x86-downloads.html)
+* open the dylibs with Terminal.app to Allow execution
 
 ```python
 import cx_Oracle
