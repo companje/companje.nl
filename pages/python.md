@@ -1597,7 +1597,8 @@ def oracle_get_cursor():
 query result as dictionary (single result):
 ```python
 def get_bestandsnaam(cur, id):
-    cur.execute(f"SELECT * FROM bestanden WHERE id={id}")
+    #cur.execute(f"SELECT * FROM bestanden WHERE id={id}") # NOT SAFE
+    cur.execute("""select * from bestanden where id = :id""", id=41590334) # MORE SAFE
     cur.rowfactory = lambda *args: dict(zip([d[0].lower() for d in cur.description], args))
     row = cur.fetchone()
     return row["bestandsnaam"]
