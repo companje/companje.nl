@@ -1,5 +1,9 @@
 see also [docs](/docs)
 
+# kwartaal
+```
+="K"&int(INT(mid(G16;6;2))/4)+1
+```
 # make column with unique values from a matrix
 ```
 =SORT(UNIQUE(FLATTEN(A2:E)))
