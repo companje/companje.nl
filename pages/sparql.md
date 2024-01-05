@@ -1,3 +1,26 @@
+# custom functions in RDFLIB to call from SPARQL
+```python
+#!/usr/bin/env python3
+
+from rdflib import Graph, URIRef, Literal
+from rdflib.plugins.sparql.operators import custom_function
+
+g = Graph()
+
+@custom_function(URIRef("http://example.org/myCustomFunction"))
+def myCustomFunction(a,b):
+    return Literal(a+b)
+
+query = """
+SELECT ?result WHERE {
+    BIND(<http://example.org/myCustomFunction>(5,6) AS ?result)
+}
+"""
+
+for row in g.query(query):
+    print(f"Result: {row.result}")
+```
+
 # HackaLOD 2023 sparql query Utrecht Time Machine
 ```sparql
 select distinct ?work ?workLabel ?depicts ?depictsLabel ?part ?partLabel ?coords ?heading ?image
