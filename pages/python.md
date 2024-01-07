@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# filename without directory and without extension
+```python
+os.path.splitext(os.path.basename(csv_path))[0]
+```
+
 # flatten folder structure for jpg's and PageXML's:
 ```python
 #!/usr/bin/env python3
