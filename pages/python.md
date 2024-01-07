@@ -2,6 +2,13 @@
 title: Python
 ---
 
+# ip adres
+```python
+import socket
+hostname = socket.gethostname()
+ip_adres = socket.gethostbyname(hostname)
+```
+
 # filename without directory and without extension
 ```python
 os.path.splitext(os.path.basename(csv_path))[0]
