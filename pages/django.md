@@ -1,5 +1,8 @@
 https://djangoproject.com
 
+# docs
+* template language reference: https://docs.djangoproject.com/en/5.0/ref/templates/language/
+
 # install and run
 ```bash
 python3 -m pip install django
