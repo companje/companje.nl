@@ -1,3 +1,8 @@
+copy files of certain type recursively
+```bash
+find INPUT_FOLDER -name "*.xml" | cpio -pdm OUTPUT_FOLDER
+```
+
 # list / delete broken symlinks
 ```bash
 find . -type l ! -exec test -e {} \; -print
