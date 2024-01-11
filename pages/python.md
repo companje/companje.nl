@@ -2,6 +2,17 @@
 title: Python
 ---
 
+# spacy
+```
+import spacy
+text = open("X.txt").read()
+nlp = spacy.load("nl_core_news_sm")
+doc = nlp(text)
+# print(doc.text)
+for token in doc:
+    print(token.text, token.pos_, token.dep_)
+```
+
 # ip adres
 ```python
 import socket
