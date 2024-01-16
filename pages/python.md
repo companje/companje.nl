@@ -3,7 +3,7 @@ title: Python
 ---
 
 # spacy
-```
+```python
 import spacy
 text = open("X.txt").read()
 nlp = spacy.load("nl_core_news_sm")
