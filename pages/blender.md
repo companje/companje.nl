@@ -5,6 +5,7 @@
 * eerst je plane een paar keer subdividen
 * Wrap Method: Project
 * Negative / Positive
+* Offset: bijv 0.03m
 
 # Video Texture 
 https://www.youtube.com/watch?v=ZqsDjCVBkiw 
