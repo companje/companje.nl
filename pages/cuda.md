@@ -1,5 +1,6 @@
 # install CUDA
 * https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64&target_version=11&target_type=exe_local
+* https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#configuration
 
 # install pytorch with CUDA
 ```bash
