@@ -3,6 +3,8 @@
 * Addon "Import-Export: Import Images as Planes”
 * Modifier: Shrinkwrap
 * eerst je plane een paar keer subdividen
+* Wrap Method: Project
+* Negative / Positive
 
 # Video Texture 
 https://www.youtube.com/watch?v=ZqsDjCVBkiw 
