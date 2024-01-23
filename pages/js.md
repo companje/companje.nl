@@ -3,6 +3,7 @@ title: Javascript
 ---
 
 ## contentEditable bookmarklet
+<a href='javascript:document.querySelectorAll("*").forEach(e=>e.contentEditable = true);'>Edit</a>
 ```html
 <a href='javascript:document.querySelectorAll("*").forEach(e=>e.contentEditable = true);'>Edit</a>
 ```
