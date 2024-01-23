@@ -2,6 +2,11 @@
 title: Javascript
 ---
 
+## contentEditable bookmarklet
+```html
+<a href='javascript:document.querySelectorAll("*").forEach(e=>e.contentEditable = true);'>Edit</a>
+```
+
 ## reducer
 ```javascript
 keys = ['a','b','c']
