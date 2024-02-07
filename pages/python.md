@@ -2,6 +2,17 @@
 title: Python
 ---
 
+# upload file via requests
+```python
+@app.route('/')
+def upload(url,token,filename):
+    headers = { "Authorization": f"Bearer {token}" }
+    data = { "mergeGraphs": "true" }
+    files = { "file": (os.path.basename(filename), open(filename,'rb'), 'application/zip') }
+    response = requests.post(url, headers=headers, data=data, files=files)
+    return response.json()
+```
+
 # streaming subprocess data through flask
 https://stackoverflow.com/a/15354403/6068235
 ```python
