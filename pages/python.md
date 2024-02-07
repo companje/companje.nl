@@ -2,6 +2,29 @@
 title: Python
 ---
 
+# streaming subprocess data through flask
+```python
+import flask
+import subprocess
+
+app = flask.Flask(__name__)
+
+@app.route('/yield')
+def index():
+    def inner():
+        proc = subprocess.Popen(
+            ['sh upload.sh'],             #call something with a lot of output so we can see it
+            shell=True,
+            stdout=subprocess.PIPE
+        )
+
+        for line in iter(proc.stdout.readline,''):
+            yield f"{line.decode('utf8')}<br/>\n"
+
+    return flask.Response(inner(), mimetype='text/html')  # text/html is required for most browsers to show th$
+
+app.run(debug=True, port=8080, host='0.0.0.0')
+```
 # spacy
 ```python
 import spacy
