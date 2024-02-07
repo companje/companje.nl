@@ -3,6 +3,7 @@ title: Python
 ---
 
 # streaming subprocess data through flask
+https://stackoverflow.com/a/15354403/6068235
 ```python
 import flask
 import subprocess
