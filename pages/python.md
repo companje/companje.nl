@@ -4,7 +4,6 @@ title: Python
 
 # upload file via requests
 ```python
-@app.route('/')
 def upload(url,token,filename):
     headers = { "Authorization": f"Bearer {token}" }
     data = { "mergeGraphs": "true" }
