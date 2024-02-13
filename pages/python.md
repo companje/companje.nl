@@ -2,6 +2,45 @@
 title: Python
 ---
 
+# merge two csv's
+ik heb twee CSV's met de volgende headers:
+
+1) org_row,filename,straatnaam,afbeelding,oude straatnaam
+2) "uuid","name","width","height","link"
+
+Ik wil graag een nieuwe CSV met de onderstaande velden waarbij de sleutelkolommen 'filename' en 'name' gebruikt kunnen worden om te matchen
+2) "uuid","name","width","height","link","straatnaam"
+
+response from ChatGPT 3.5. In 1x goed!
+```python
+import csv
+
+def merge_csv(csv1_path, csv2_path, output_path):
+    data1 = {}
+    with open(csv1_path, 'r') as csv1_file:
+        reader1 = csv.DictReader(csv1_file)
+        for row in reader1:
+            data1[row['filename']] = row['straatnaam']
+
+    with open(output_path, 'w', newline='') as output_file:
+        fieldnames = ["uuid", "name", "width", "height", "link", "straatnaam"]
+        writer = csv.DictWriter(output_file, fieldnames=fieldnames)
+        writer.writeheader()
+
+        with open(csv2_path, 'r') as csv2_file:
+            reader2 = csv.DictReader(csv2_file)
+            for row in reader2:
+                street_name = data1.get(row['name'], '')
+                row['straatnaam'] = street_name
+                writer.writerow(row)
+
+if __name__ == "__main__":
+    csv1_path = "bestand1.csv"
+    csv2_path = "bestand2.csv"
+    output_path = "samengevoegd.csv"
+    merge_csv(csv1_path, csv2_path, output_path)
+```
+
 # format turtle file (or convert any rdf to formatted turtle)
 ```python
 from rdflib import Graph
