@@ -5,9 +5,8 @@ title: Python
 # format turtle file (or convert any rdf to formatted turtle)
 ```python
 from rdflib import Graph
-ttl_path = "INPUT.ttl"
 g = Graph()
-g.parse(ttl_path)
+g.parse("INPUT.ttl")
 print(g.serialize(format='ttl',encoding="utf-8").decode(), file=open("OUTPUT.ttl","w"))
 ```
 
