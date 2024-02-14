@@ -4,7 +4,7 @@ title: Fusion 360
 
 # Fusion 360 texture map sphere
 https://www.youtube.com/watch?v=Xf0zy7AdNIU
-<img width="1800" alt="Screenshot 2024-02-01 at 07 35 17" src="https://github.com/companje/companje.nl/assets/156066/c92ef6d1-0b28-4e9d-980c-597f6b1840bb">
+<img width="100%" alt="Screenshot 2024-02-01 at 07 35 17" src="https://github.com/companje/companje.nl/assets/156066/c92ef6d1-0b28-4e9d-980c-597f6b1840bb">
 
 # tutorials
 <http://help.autodesk.com/view/fusion360/ENU>
