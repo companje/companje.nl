@@ -1,5 +1,5 @@
 # How is StoryMaps different than ArcGIS StoryMaps?
-* StoryMaps: is a new product that is not part of the ArcGIS System. It’s designed for anyone who wants to share stories about topics they are passionate about like their favorite food, sports, music, places, friends and family.
+* **StoryMaps**: is a new product that is not part of the ArcGIS System. It’s designed for anyone who wants to share stories about topics they are passionate about like their favorite food, sports, music, places, friends and family.
 * **ArcGIS StoryMaps** is for organisations to share their GIS-related stories with citizens, as internal presentations, etc. It is integrated into the ArcGIS System.</blockquote>
 
 # Voorbeelden van ArcGIS StoryMaps
