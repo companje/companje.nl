@@ -3,7 +3,7 @@ title: Processing
 ---
 
 # Load WorldMap .OBJ with adjusted perspective
-```
+```python
 PShape globe;
 float w,h,eyeZ;
 
