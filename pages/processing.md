@@ -2,6 +2,37 @@
 title: Processing
 ---
 
+# Load WorldMap .OBJ with adjusted perspective
+```
+PShape globe;
+float w,h,eyeZ;
+
+void setup() {
+  fullScreen(P3D);
+  
+  w = width;
+  h = height;
+  eyeZ = 1460; // = h/2 + offset
+  
+  globe = loadShape("1519/159.obj");
+  globe.scale(h/2);
+  globe.rotateX(PI);
+}
+
+void draw() {
+  background(0);
+  
+  perspective(atan(h/2/eyeZ)*2, w/h, eyeZ, eyeZ*2);
+  camera(0, 0, -eyeZ, 0, 0, 0, 0, 1, 0);
+  scale(-1,1,1);
+
+  rotateY(mouseX*.01); //-frameCount*.0025);
+  rotateX(mouseY*.01); //-frameCount*.0025);
+  
+  shape(globe);
+}
+```
+
 # PDF
 ```java
 import processing.pdf.*;
