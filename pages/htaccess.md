@@ -2,6 +2,14 @@
 title: .htaccess
 ---
 
+# URI redirect for RDF resolve
+```apache
+RewriteEngine On
+RewriteBase /id/
+RewriteCond %{REQUEST_URI} ^/id/(.+)$
+RewriteRule ^(.+)$ https://data.netwerkdigitaalerfgoed.nl/hetutrechtsarchief/Test-Amerongen/browser?resource=https://hetutrechtsarchief.nl%{REQUEST_URI} [R=302,L]
+```
+
 # 404 handler
 ```apache
 <IfModule mod_rewrite.c>
