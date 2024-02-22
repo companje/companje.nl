@@ -2,6 +2,25 @@
 title: Python
 ---
 
+# csv to excel using pandas with filter and groupby
+```python
+import pandas as pd
+
+df = pd.read_csv('input.csv')
+df = df[~df['flexveld'].isin(['Aangemaakt door', 'Aangemaakt op', 'Gewijzigd door', 'Gewijzigd op'])]
+
+for name, group in df.groupby('aet_omschrijving'):
+    writer = pd.ExcelWriter(f'output/{name}.xlsx', engine='xlsxwriter')
+    group.to_excel(writer, index=False, sheet_name='Sheet1')
+    workbook = writer.book
+    worksheet = writer.sheets['Sheet1']
+    worksheet.set_column('A:B', 30)
+    (max_row, max_col) = df.shape
+    column_settings = [{'header': column} for column in df.columns]
+    writer.sheets['Sheet1'].add_table(0, 0, max_row, max_col - 1, {'columns': column_settings})
+    writer.close()
+```
+
 # merge two csv's
 ik heb twee CSV's met de volgende headers:
 
