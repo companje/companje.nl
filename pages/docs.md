@@ -2,6 +2,9 @@
 title: Google Docs
 ---
 
+# See also Slides
+* https://companje.nl/slides
+  
 # Custom Function met URL Fetch
 ```js
 function MY_MATCH(lastname, bdate_iso) {
