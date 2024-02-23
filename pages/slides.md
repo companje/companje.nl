@@ -4,7 +4,7 @@ function parseDutchDateWithFullMonths(dutchDate) {
   const monthMap = {
     jan: 0, januari: 0, feb: 1, februari: 1, mrt: 2, maart: 2, apr: 3, april: 3, mei: 4, jun: 5, juni: 5, 
     jul: 6, juli: 6, aug: 7, augustus: 7, sep: 8, september: 8, okt: 9, oktober: 9, nov: 10, november: 10, 
-    dec: 11, december: };
+    dec: 11, december: 11};
   const parts = dutchDate.match(/(\d+)\s+(\w+)\s+(\d+)/);
   if (parts) {
     const day = parseInt(parts[1], 10);
@@ -16,7 +16,7 @@ function parseDutchDateWithFullMonths(dutchDate) {
     const date = new Date(year, month, day);
     return date;
   } else {
-    return throw new Error('Invalid Dutch date format');
+    throw new Error('Invalid Dutch date format');
   }
 }
 
@@ -59,12 +59,30 @@ function makeSafeFilename(formattedDate) {
   return formattedDate.replace(/[\s\/\\?%*:|"<>]/g, '_');
 }
 
+function createFileIfNotExists(folder, fileName, content) {
+  var files = folder.getFilesByName(fileName);
+  if (!files.hasNext()) {
+    console.log("saving",fileName)
+    return folder.createFile(content);
+  } else {
+    console.log("bestaat al",fileName)
+    return  files.next();
+  }
+}
+
 function saveAllImagesPerSlide() {
+  var startSlide = 314;
+
   var folder = createFolderByPath("MijnAfbeeldingen")
   var presentation = SlidesApp.getActivePresentation();
   var slides = presentation.getSlides();
   
   slides.forEach(function(slide, index) {
+    if (index<startSlide) {
+      console.log("skip",index);
+      return;
+    }
+
     var images = slide.getImages();
     var shapes = slides[index].getShapes();
     var formattedDate;
@@ -75,7 +93,7 @@ function saveAllImagesPerSlide() {
         if (shapes[j].getTop()<10 && shapes[j].getLeft()<10) {
           let txt = shapes[j].getText().asString();
           formattedDate = formatDate(txt);
-          console.log("found date",formattedDate)
+          console.log(index, "found date",formattedDate)
           break; //found date!
         }
       }
@@ -95,7 +113,8 @@ function saveAllImagesPerSlide() {
         }, '');
         var shortHash = hashString.substring(0, 16);
         var filename = makeSafeFilename(formattedDate) + "_" + shortHash + ".jpg";
-        var file = folder.createFile(blob.setName(filename));
+        // var file = folder.createFile(blob.setName(filename));
+        createFileIfNotExists(folder, filename, blob.setName(filename))
       }
     });
   });
