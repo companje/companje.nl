@@ -2,6 +2,28 @@
 title: Python
 ---
 
+# use Flask to render a CSV as a table using a template
+```python
+import csv
+from flask import Flask, render_template
+
+app = Flask(__name__,template_folder="./")
+
+def process_csv(csv_file):
+    data = []
+    with open(csv_file, newline='', encoding='utf-8') as csvfile:
+        return list(csv.DictReader(csvfile))
+
+@app.route('/')
+def index():
+    csv_file = 'input.csv'  # Replace with your CSV file path
+    data = process_csv(csv_file)
+    return render_template('template.html', data=data)
+
+if __name__ == '__main__':
+    app.run(debug=True)
+```
+
 # csv to excel using pandas with filter and groupby
 ```python
 import pandas as pd
