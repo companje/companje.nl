@@ -2,8 +2,17 @@
 title: Processing
 ---
 
+# draw a circle on the surface of a sphere
+```processing
+PVector axis = PVector.cross(lens, new PVector(0, 0, -1), null);
+float angle = PVector.angleBetween(lens, new PVector(0, 0, 1));
+rotate(angle, axis.x, axis.y, axis.z);
+translate(0, 0, height/2-3);
+circle(0, 0, 100);
+```
+
 # Load WorldMap .OBJ with adjusted perspective
-```python
+```processing
 PShape globe;
 float w,h,eyeZ;
 
