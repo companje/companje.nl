@@ -1,4 +1,9 @@
-copy files of certain type recursively
+# cat files of certain type recursively
+```bash
+find . -type f -name "*.ttl" -exec cat {} \; > alles.txt
+```
+
+# copy files of certain type recursively
 ```bash
 find INPUT_FOLDER -name "*.xml" | cpio -pdm OUTPUT_FOLDER
 ```
