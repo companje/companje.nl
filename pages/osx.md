@@ -2,6 +2,11 @@
 title: Mac OSX
 ---
 
+# stop spotlight indexer
+```bash
+sudo mdutil -i off
+```
+
 # hfsexplorer
 Schijven met Mac OS Extended filesystem lezen op Windows: hfsexplorer
 
