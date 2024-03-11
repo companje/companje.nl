@@ -12,3 +12,9 @@ CONSTRUCT {
 }
 ```
 
+# COALESCE
+```sparql
+BIND(CONCAT(COALESCE(?nummer,""),COALESCE(?code,"")) AS ?nummer_en_code)
+```
+
+
