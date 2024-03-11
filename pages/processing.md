@@ -13,6 +13,12 @@ void setup() {
   osc = new OscP5(this, 12000); //to receive OSC data from driver
 }
 
+void draw() {
+  lines.clear();
+  oscUpdate();
+  //...
+}
+
 void oscEvent(OscMessage message) {
   synchronized(oscMessages) {
     oscMessages.add(message);
