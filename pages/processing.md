@@ -2,6 +2,39 @@
 title: Processing
 ---
 
+# synchronised with oscP5
+```processing
+import oscP5.*;
+import netP5.*;
+OscP5 osc;
+ArrayList<OscMessage> oscMessages = new ArrayList();
+
+void setup() {
+  osc = new OscP5(this, 12000); //to receive OSC data from driver
+}
+
+void oscEvent(OscMessage message) {
+  synchronized(oscMessages) {
+    oscMessages.add(message);
+  }
+}
+
+void oscUpdate() {
+  synchronized(oscMessages) {
+    for (OscMessage msg : oscMessages) {
+      if (msg.addrPattern().equals("drag")) {
+        int px = msg.get(0).intValue();
+        int py = msg.get(1).intValue();
+        int x = msg.get(2).intValue();
+        int y = msg.get(3).intValue();
+        lines.add(new Line(px, py, x, y));
+      }
+    }
+    oscMessages.clear();
+  }
+}
+```
+
 # draw a circle on the surface of a sphere
 ```processing
 PVector axis = PVector.cross(lens, new PVector(0, 0, -1), null);
