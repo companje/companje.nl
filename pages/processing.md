@@ -8,6 +8,7 @@ import oscP5.*;
 import netP5.*;
 OscP5 osc;
 ArrayList<OscMessage> oscMessages = new ArrayList();
+ArrayList<Line> lines = new ArrayList();
 
 void setup() {
   osc = new OscP5(this, 12000); //to receive OSC data from driver
@@ -16,7 +17,7 @@ void setup() {
 void draw() {
   lines.clear();
   oscUpdate();
-  //...
+  //... do something with lines
 }
 
 void oscEvent(OscMessage message) {
