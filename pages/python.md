@@ -1,6 +1,7 @@
 ---
 title: Python
 ---
+![plant](https://github.com/companje/companje.nl/assets/156066/cef63579-30a8-4cec-8ef5-960fd4adf5aa)
 
 # use Flask to render a CSV as a table using a template
 ```python
