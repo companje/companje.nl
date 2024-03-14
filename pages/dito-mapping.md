@@ -29,4 +29,5 @@ fn:datering(a)          # takes a date or date period and formats it as ISO 8601
 fn:get_first_year(a)    # get first year from a date range: 1800-1900 returns 1800
 fn:get_last_year(a)     # get last year from a date range: 1800-1900 returns 1900
 fn:date(a)              # formats a single date to ISO 8601
+fn:fullname(?voornaam, ?tussenvoegsel, ?achternaam)
 ```
