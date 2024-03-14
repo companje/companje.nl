@@ -12,6 +12,11 @@ CONSTRUCT {
 }
 ```
 
+# Imageserver
+```sparql
+BIND(fn:image_server(?doc,'thumb') AS ?thumbnail)
+```
+
 # COALESCE
 ```sparql
 BIND(CONCAT(COALESCE(?nummer,""),COALESCE(?code,"")) AS ?nummer_en_code)
