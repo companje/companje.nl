@@ -2,6 +2,7 @@
 title: Songs
 layout: default
 ---
+* Ladytron - Discotraxx
 * Ash - Oh Yeah
 * The Libertines - Shiver
 * The Last Dinner Party - Feminine Urge
