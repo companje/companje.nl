@@ -2,6 +2,7 @@
 title: Songs
 layout: default
 ---
+* KOMPROMAT, Vitalic & Rebeka Warrior - Einfach Da Sein
 * Ladytron - Discotraxx
 * Ash - Oh Yeah
 * The Libertines - Shiver
