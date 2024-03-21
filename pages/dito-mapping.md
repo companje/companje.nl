@@ -8,6 +8,15 @@
 BIND(IRI(CONCAT(STR(?doc), "/rubriek_",fn:escape(?nummer_code))) AS ?b_rubriek)
 ```
 
+# inventarisnummer
+```sparql
+    BIND(IRI(CONCAT(STR(?doc), "/inventarisnummer",fn:escape(?inventarisnummer))) AS ?b_inventarisnummer)
+...
+    ?b_inventarisnummer a rico:Identifier ;
+      rico:hasIdentifierType def:Inventarisnummer ;
+      rico:textualValue ?inventarisnummer ;
+    .
+```
 # boilerplate
 ```sparql
 CONSTRUCT {
