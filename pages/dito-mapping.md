@@ -1,3 +1,21 @@
+# BINDs voor bnodes en labels
+```
+BIND(fn:bnode(?doc,"dossiernr_kvk",?dossiernr_kvk) AS ?b_dossiernr_kvk)  
+BIND(fn:bnode(?doc,"inventarisnummer",?inventarisnummer) AS ?b_inventarisnummer)  
+BIND(fn:bnode(?doc,"jaar_sluiting",?jaar_sluiting) AS ?b_jaar_sluiting)  
+BIND(fn:bnode(?doc,"standplaats_kvk",?standplaats_kvk) AS ?b_standplaats_kvk)
+BIND(fn:bnode(?doc,"vestigingsplaats",?vestigingsplaats) AS ?b_vestigingsplaats)
+
+BIND(CONCAT("Inventarisnummer: ",?inventarisnummer) AS ?lbl_inventarisnummer)
+BIND(CONCAT("Jaar van sluiting: ",?jaar_sluiting) AS ?lbl_jaar_sluiting)
+BIND(CONCAT("Dossiernr KvK: ",?dossiernr_kvk) AS ?lbl_dossiernr_kvk)  
+BIND(CONCAT("Standplaats KvK: ",?standplaats_kvk) AS ?lbl_standplaats_kvk)
+BIND(CONCAT("Vestigingsplaats: ",?vestigingsplaats) AS ?lbl_vestigingsplaats)
+
+BIND (STRDT(?jaar_sluiting, xsd:year) AS ?jaar_sluiting) # waarom kan dit niet met xsd:year?
+```
+
+
 # identifier
 ```sparql
 ?b_rubriek a rico:Identifier ;
