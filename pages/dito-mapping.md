@@ -1,3 +1,13 @@
+# identifier
+```
+?b_rubriek a rico:Identifier ;
+  rico:hasIdentifierType def:RubriekCode ;
+  rico:textualValue ?nummer_code;
+.
+...
+BIND(IRI(CONCAT(STR(?doc), "/rubriek_",fn:escape(?nummer_code))) AS ?b_rubriek)
+```
+
 # boilerplate
 ```sparql
 CONSTRUCT {
