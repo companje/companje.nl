@@ -1,3 +1,9 @@
+# voorbeeld bnode en label
+```sparql
+BIND(fn:bnode(?doc,"inventarisnummer",?inventarisnummer) AS ?b_inventarisnummer)  
+BIND(CONCAT("Inventarisnummer: ",?inventarisnummer) AS ?lbl_inventarisnummer)
+```
+
 # BINDs voor bnodes en labels
 ```sparql
 BIND(fn:bnode(?doc,"dossiernr_kvk",?dossiernr_kvk) AS ?b_dossiernr_kvk)  
