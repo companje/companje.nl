@@ -1,5 +1,5 @@
 # identifier
-```
+```sparql
 ?b_rubriek a rico:Identifier ;
   rico:hasIdentifierType def:RubriekCode ;
   rico:textualValue ?nummer_code;
