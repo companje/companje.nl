@@ -1,5 +1,5 @@
 # BINDs voor bnodes en labels
-```
+```sparql
 BIND(fn:bnode(?doc,"dossiernr_kvk",?dossiernr_kvk) AS ?b_dossiernr_kvk)  
 BIND(fn:bnode(?doc,"inventarisnummer",?inventarisnummer) AS ?b_inventarisnummer)  
 BIND(fn:bnode(?doc,"jaar_sluiting",?jaar_sluiting) AS ?b_jaar_sluiting)  
