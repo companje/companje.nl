@@ -2,8 +2,8 @@
 ```sparql
   # construct
   ?b_vertaling a sdo:Text ;
-		sdo:text ?vertaling ;
-  	sdo:additionalType def:Vertaling ;
+    sdo:text ?vertaling ;
+    sdo:additionalType def:Vertaling ;
   .
   # where
   OPTIONAL { ?doc tsc:vertaling ?vertaling }
