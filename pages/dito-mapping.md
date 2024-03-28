@@ -60,9 +60,10 @@ CONSTRUCT {
   ?doc a sdo:ArchiveComponent .
   ?doc sdo:isPartOf ?isPartOf .
   ?doc rdfs:label ?label .
-       
+  ?doc sdo:additionalType aet:tscni .
+
 } WHERE { 
-	?doc a aet:scnni .
+  ?doc a aet:tscni .
   ?doc mf:is_part_of ?isPartOf .
   ?doc mf:beschrijving ?label .
 }
