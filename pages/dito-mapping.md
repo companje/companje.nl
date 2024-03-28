@@ -1,3 +1,16 @@
+# voorbeeld met bnode met alleen naam van het veld
+```sparql
+  # construct
+  ?b_vertaling a sdo:Text ;
+		sdo:text ?vertaling ;
+  	sdo:additionalType def:Vertaling ;
+  .
+  # where
+  OPTIONAL { ?doc tsc:vertaling ?vertaling }
+  BIND(fn:bnode1(?doc,"vertaling") AS ?b_vertaling)
+```
+
+
 # voorbeeld bnode en label
 ```sparql
 BIND(fn:bnode(?doc,"inventarisnummer",?inventarisnummer) AS ?b_inventarisnummer)  
