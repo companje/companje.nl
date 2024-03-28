@@ -1,6 +1,7 @@
 # voorbeeld inventarisnummer bnode
 ```sparql
-  CONSTRUCT {
+...
+
   ?b_inventarisnummer a rico:Identifier ;
     rico:hasIdentifierType def:Inventarisnummer ;
     rdfs:label ?lbl_inventarisnummer ;
@@ -11,9 +12,10 @@
      OPTIONAL { 
       ?doc hasc:inventarisnummer ?inventarisnummer ;
       BIND(fn:bnode1(?doc,"inventarisnummer") AS ?b_inventarisnummer) 
-			BIND(CONCAT("Inventarisnummer: ",?inventarisnummer) AS ?lbl_inventarisnummer)
+      BIND(CONCAT("Inventarisnummer: ",?inventarisnummer) AS ?lbl_inventarisnummer)
     }
 ```
+
 # voorbeeld met bnode met alleen naam van het veld
 ```sparql
   # construct
