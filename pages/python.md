@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# write unique values from one column to a textfile
+```python
+print("\n".join(sorted(set(item["NTNI"] for item in items))), file=open("data/ntni.txt","w"))
+```
+
 # use Flask to render a CSV as a table using a template
 ```python
 import csv
