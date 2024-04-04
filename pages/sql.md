@@ -1,3 +1,20 @@
+# query to retrieve archival context + get folder of scans for an arbitrary id
+
+```sql
+SELECT
+  (select nummer||code from A where id=a.a_id_top) "toegang",
+  code||nummer "inventarisnummer", 
+  WAARDE(a.id, 'INHOUD') "beschrijving",
+  (SELECT bes.padnaam from a_relaties rel join a_bestanden bes on bes.a_id=rel.a_id2 where rel.a_id=a.id and rst_id=54) "pad",
+  (SELECT LISTAGG(TRIM(beschrijving), ' > ') WITHIN GROUP (ORDER BY LEVEL DESC) FROM a_b START WITH id = a.a_id CONNECT BY PRIOR a_id = id) AS "context"
+  
+FROM A a
+WHERE regexp_like(WAARDE(a.id,'INHOUD'), '1971|1972|1973')
+START WITH id in (3274759,30211990) -- id's van willekeurige rubrieken of items in een willekeurige toegang met willekeurige opbouw.
+CONNECT BY PRIOR id = a_id;
+```
+
+
 # random record from a aggregation
 ```sql
 MAX(scn.guid) KEEP (DENSE_RANK FIRST ORDER BY DBMS_RANDOM.VALUE) AS random_sample
