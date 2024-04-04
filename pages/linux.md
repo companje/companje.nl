@@ -1,3 +1,13 @@
+# find all files starting with a dot
+```bash
+find . -type f -name ".*"
+```
+
+# delete all files starting with a dot
+```bash
+find . -type f -name ".*" -delete
+```
+
 # cat files of certain type recursively
 ```bash
 find . -type f -name "*.ttl" -exec cat {} \; > alles.txt
