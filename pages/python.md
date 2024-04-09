@@ -2,6 +2,12 @@
 title: Python
 ---
 
+# repeat items in list
+```python
+colors = [akte_color]*3 + [overledene_color]*5
+#result: ['#f8e5d0', '#f8e5d0', '#f8e5d0', '#d2e2f1', '#d2e2f1', '#d2e2f1', '#d2e2f1', '#d2e2f1']
+```
+
 # write unique values from one column to a textfile
 ```python
 print("\n".join(sorted(set(item["NTNI"] for item in items))), file=open("data/ntni.txt","w"))
