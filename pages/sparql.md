@@ -1,4 +1,6 @@
 # convert CSV with SPARQL CONSTRUCT result to Turtle
+(instead you can download 'Results' from Triply which is already in .nt format)
+
 ```python
 import csv
 from rdflib import Graph, URIRef, Literal
