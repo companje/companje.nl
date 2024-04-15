@@ -2,7 +2,7 @@
 title: See [[maps]]
 ---
 
-geopandas
+# geopandas
 ```python
 import geopandas as gpd
 
