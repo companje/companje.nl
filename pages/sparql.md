@@ -1,3 +1,22 @@
+# convert CSV with SPARQL CONSTRUCT result to Turtle
+```python
+import csv
+from rdflib import Graph, URIRef, Literal
+
+csv_file = open("data/sparql-construct/Query 2.csv")
+ttl_file = open("data/sparql-construct/Query 2.ttl", "w")
+
+g = Graph()
+
+for row in csv.DictReader(csv_file):
+  sub = URIRef(row["subject"])
+  pred = URIRef(row["predicate"])
+  obj = URIRef(row["object"]) if row["object"].startswith(("http://", "https://")) else Literal(row["object"])
+  g.add((sub, pred, obj))
+
+ttl_file.write(g.serialize(format="turtle"))
+```
+
 # custom functions in RDFLIB to call from SPARQL
 ```python
 #!/usr/bin/env python3
