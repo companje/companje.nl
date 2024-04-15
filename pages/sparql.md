@@ -1,5 +1,5 @@
 # convert CSV with SPARQL CONSTRUCT result to Turtle
-(instead you can download 'Response' from Triply which is already in .nt format)
+(instead you can download 'Response' from Triply which is already in .nt format).
 
 ```python
 import csv
