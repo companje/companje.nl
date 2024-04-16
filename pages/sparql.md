@@ -1,3 +1,10 @@
+# md5 hash
+```sparql
+select * where {
+  bind(md5("1444: St Pieter (MG))") AS ?hash)
+}
+```
+
 # convert CSV with SPARQL CONSTRUCT result to Turtle
 (instead you can download 'Response' from Triply which is already in .nt format).
 
