@@ -1,3 +1,20 @@
+# personen afgeleid van een record waarbij er geen geboorte event aan het record is gekoppeld
+```sparql
+prefix schema: <http://schema.org/>
+prefix prov: <http://www.w3.org/ns/prov#>
+
+select (count(?persoon) as ?count) where {
+  ?persoon a schema:Person .
+  ?persoon prov:wasDerivedFrom ?record .
+  
+  FILTER NOT EXISTS { 
+    ?event prov:wasDerivedFrom ?record .
+    ?event a <https://data.niod.nl/WO2_Thesaurus/events/6360> .
+  }
+  
+}
+```
+
 # aantal per type
 ```sparql
 prefix schema: <http://schema.org/>
