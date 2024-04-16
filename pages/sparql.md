@@ -1,3 +1,13 @@
+# aantal per type
+```sparql
+prefix schema: <http://schema.org/>
+
+select ?type (count(?type) as ?count) where {
+  ?s a ?type .
+}
+GROUP BY ?type
+```
+
 # md5 hash
 ```sparql
 select * where {
