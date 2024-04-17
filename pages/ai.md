@@ -3,6 +3,13 @@ title: AI / Machine learning
 type: other
 ---
 
+# audio
+* https://suno.com/
+* https://www.udio.com/
+
+# beeld
+* https://dreamstudio.ai/
+
 # handig tooltje voor rechthoeken markeren voor maken van trainingsdata
 * https://www.makesense.ai/ 
 
