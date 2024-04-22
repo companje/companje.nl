@@ -2,6 +2,12 @@
 title: Mac OSX
 ---
 
+# close open port
+```bash
+sudo lsof -i :8080
+kill 99548 # replace by processID
+```
+
 # stop spotlight indexer
 ```bash
 sudo mdutil -i off
