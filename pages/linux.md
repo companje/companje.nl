@@ -1,3 +1,6 @@
+# close open ports on osx
+see [[osx]]
+
 # find all files starting with a dot
 ```bash
 find . -type f -name ".*"
