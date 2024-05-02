@@ -2,6 +2,9 @@
 title: Mac OSX
 ---
 
+# m-cli - Swiss Army Knife for macOS
+* https://github.com/rgcr/m-cli
+
 # close open port
 ```bash
 sudo lsof -i :8080
