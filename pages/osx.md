@@ -2,6 +2,9 @@
 title: Mac OSX
 ---
 
+# displacer (cli program for arranging screens)
+* https://github.com/jakehilborn/displayplacer
+
 # m-cli - Swiss Army Knife for macOS
 * https://github.com/rgcr/m-cli
 
