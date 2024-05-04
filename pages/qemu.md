@@ -13,5 +13,6 @@ after installation you can start qemu with the msdos.disk as follows:
 ```bash
 qemu-system-i386 -hda msdos.disk -m 64 -L .
 ```
+see https://gunkies.org/wiki/Installing_MS-DOS_on_Qemu
 
 
