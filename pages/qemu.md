@@ -1,5 +1,5 @@
-```bash
 # Install MS-DOS 6.22 on MacOS with QEMU
+```bash
 qemu-img create -f qcow msdos.disk 2G  # create image for virtual harddisk
 qemu-system-i386 -hda msdos.disk -m 64 -L . -fda dos622_1.img -boot a
 ```
