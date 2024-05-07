@@ -1,3 +1,4 @@
+# List documents within collection and nrOfNew pages (not transcribed yet)
 ```python
 import requests,json,os,sys
 
@@ -26,5 +27,5 @@ for doc in documents_info:
     documents_response = requests.get(f"{base_url}/collections/{collection_id}/{doc_id}/fulldoc", headers = headers)
     doc_info = documents_response.json()["md"]
     title = doc_info["title"]
-    print(title)
+    print(title, doc_info["nrOfNew"]))
 ```
