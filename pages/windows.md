@@ -2,6 +2,11 @@
 title: Windows
 ---
 
+# open wifi networks
+```batch
+rundll32 van.dll,RunVAN
+```
+
 # automatic login Windows 11
 https://www.askvg.com/fix-users-must-enter-a-user-name-and-password-to-use-this-computer-checkbox-missing-in-windows-10/
 
