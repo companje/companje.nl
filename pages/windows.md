@@ -10,13 +10,14 @@ rundll32 van.dll,RunVAN
 # automatic login Windows 11
 * https://www.askvg.com/fix-users-must-enter-a-user-name-and-password-to-use-this-computer-checkbox-missing-in-windows-10/
 
-option 1) go to ```ms-settings:signinoptions``` and turn of 'Make your device password less'. If that option is missing...
+option 1) go to ```ms-settings:signinoptions``` and turn of 'Make your device password less'.
 
-option 2) edit the registry:
+option 2) If option 1 is missing... Edit the registry:
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\PasswordLess\Device
 ```
-set value from 2 to 0 and reopen ```netplwiz```
+set value from 2 to 0 and reopen ```netplwiz```.
+
 
 
 # list all folders recursively
