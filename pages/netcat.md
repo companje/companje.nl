@@ -2,6 +2,16 @@
 title: netcat
 ---
 
+# send/receive messages
+server:
+```
+nc -lu -p 9999
+```
+client:
+```
+nc -u 192.168.0.101 9999
+```
+
 # upload file with curl to netcat server
 ```bash
 nc -l localhost 8000
