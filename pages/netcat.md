@@ -2,6 +2,10 @@
 title: netcat
 ---
 
+# ncat on MacOS
+first download nmap for Mac. 
+run a UDP server: ncat -lu -p 9999
+
 # send/receive messages
 server:
 ```
