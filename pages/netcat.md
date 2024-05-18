@@ -9,8 +9,9 @@ nc -lu -p 9999
 ```
 client:
 ```
-nc -u 192.168.0.101 9999
+nc -u 192.168.0.101 9999  # type lines terminal
 ```
+
 
 # upload file with curl to netcat server
 ```bash
