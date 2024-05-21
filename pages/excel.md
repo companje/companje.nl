@@ -20,10 +20,9 @@ values = {
 workbook = xlwt.Workbook()
 worksheet = workbook.add_sheet('Sheet1')
 
-# Vul het werkblad met de waarden uit de dictionary
 for cell, value in values.items():
-    col = ord(cell[0]) - 65  # kolom index
-    row = int(cell[1:]) - 1  # rij index
+    col = ord(cell[0]) - 65
+    row = int(cell[1:]) - 1
     if isinstance(value, str) and value.startswith('='):
         worksheet.write(row, col, xlwt.Formula(value[1:]))  # Verwijder '=' voor xlwt Formula
     else:
