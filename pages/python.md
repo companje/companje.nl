@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# Error: WARNING: pip is configured with locations that require TLS/SSL, however the ssl module in Python is not available.
+```bash
+brew --prefix openssl@1.1
+```
+
 # repeat items in list
 ```python
 colors = [akte_color]*3 + [overledene_color]*5
