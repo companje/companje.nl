@@ -1,3 +1,8 @@
+# controleren op vermeldingen van (BNODE( in alle sparql templates
+```bash
+grep -r "(BNODE(" .
+```
+
 # trefwoorden in gebruik
 ```sparql
 PREFIX dcterms: <http://purl.org/dc/terms/>
