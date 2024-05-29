@@ -2,6 +2,11 @@
 title: Sox
 ---
 
+# play
+```bash
+play file.mp3
+```
+
 # Halveren snelheid audio mp3 voor ongedaan maken cassette high speed dubbing
 sox ipv ffmpeg
 
