@@ -1,6 +1,6 @@
 see also [docs](/docs)
 
-# toggle formula view / value view
+# toggle formula / value view
 ```
 Ctrl + `
 ```
