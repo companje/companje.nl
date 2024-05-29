@@ -1,5 +1,10 @@
 see also [docs](/docs)
 
+# toggle formula view / value view
+```
+Ctrl + `
+```
+
 # kwartaal
 ```
 ="K"&int(INT(mid(G16;6;2))/4)+1
