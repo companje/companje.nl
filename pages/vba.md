@@ -1,6 +1,6 @@
 
 # Play wave file
-```vb
+```basic
 Declare Function sndPlaySound32 Lib "winmm.dll" Alias "sndPlaySoundA" (ByVal lpszSoundName As String, ByVal uFlags As Long) As Long
 
 Sub PlayWavFile()
