@@ -2,7 +2,21 @@
 title: Excel
 ---
 
-# save dict as Excel 97 file
+# Serial Communication in Excel 97
+```
+MSCOMM32.OCX
+https://www.ocxme.com/files/mscomm32_ocx
+Install the .OCX:  Place 32-bit OCXs in the '/Windows/SysWOW64' directory and 64-bit OCXs in the '/Windows/System32' directory.
+regsvr32 mscomm32.ocx
+
+[HKEY_CLASSES_ROOT\Licenses\4250E830-6AC2-11cf-8ADB-00AA00C00905]
+@="kjljvjjjoquqmjjjvpqqkqmqykypoqjquoun"
+
+and restart excel 97
+```
+
+
+# save python dict as Excel 97 file
 ```python
 import xlwt
 
