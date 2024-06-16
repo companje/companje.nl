@@ -1,3 +1,25 @@
+# alle UDS trefwoorden met het aantal verwijzingen
+```sparql
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT distinct ?uri ?label (COUNT(?uri) AS ?count)
+WHERE {
+  {
+    ?uri ?p ?o .
+    ?uri rdfs:label ?label .
+    FILTER(STRSTARTS(STR(?uri), "http://documentatie.org/id/trefwoord/"))
+  }
+  UNION
+  {
+    ?s ?p ?uri .
+    ?uri rdfs:label ?label .
+    FILTER(STRSTARTS(STR(?uri), "http://documentatie.org/id/trefwoord/"))
+  }
+}
+GROUP BY ?uri ?label
+order by desc(?count)
+```
+
 # personen afgeleid van een record waarbij er geen geboorte event aan het record is gekoppeld
 ```sparql
 prefix schema: <http://schema.org/>
