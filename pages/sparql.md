@@ -1,3 +1,27 @@
+# luchtfoto rgb layer in triply geo plugin
+```sparql
+prefix dct: <http://purl.org/dc/terms/>
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix pos: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+select * where {
+  ?s dct:spatial ?p .
+  ?p pos:lat ?lat .
+  ?p pos:long ?long .
+  ?p rdfs:label ?pointTooltip .
+  bind(STRDT(CONCAT("Point(",?long," ",?lat,")"),geo:wktLiteral) AS ?point)
+  # BIND("https://service.pdok.nl/kadaster/kadastralekaart/wms/v5_0?request=GetCapabilities&service=WMS" AS ?mapEndpoint)
+  # bind("https://services.rce.geovoorziening.nl/wms?" as ?mapEndpoint)
+  bind("https://service.pdok.nl/hwh/luchtfotorgb/wms/v1_0" as ?mapEndpoint)
+  bind("test <b>...</b>"^^rdf:HTML as ?pointLabel)
+  bind("yellow" as ?pointColor)  
+} 
+```
+![Screenshot 2024-06-17 at 02 05 12](https://github.com/companje/companje.nl/assets/156066/14b28f1c-305b-418e-99e6-b962e0b1e07e)
+
+
 # alle UDS trefwoorden met het aantal verwijzingen
 ```sparql
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
