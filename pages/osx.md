@@ -2,6 +2,13 @@
 title: Mac OSX
 ---
 
+# alias
+```bash
+alias subl="open . -a \"Sublime Text\""
+alias github="open . -a \"Github Desktop\""
+alias code="open . -a \"Visual Studio Code\""
+```
+
 # displacer (cli program for arranging screens)
 * https://github.com/jakehilborn/displayplacer
 
