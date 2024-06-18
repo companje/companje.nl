@@ -2,6 +2,29 @@
 title: Python
 ---
 
+# update query with subselect from excel sheet
+```python
+import pandas as pd
+
+data = pd.read_excel('Regesten toegang 218-1.xlsx')
+
+for index, row in data.iterrows():
+    guid = row['guid']
+    waarde = row['Datering (oorspr)'].replace("'", "''")
+
+    sql = f"""
+UPDATE ... awe
+SET awe.WAARDE = '{waarde}'
+WHERE awe.fvd_id = 3859 AND awe.ahd_id IN (
+    SELECT reg.id
+    FROM ... reg
+    WHERE reg.guid = '{guid}'
+);
+"""
+    print(sql)
+```  
+
+
 # Error: WARNING: pip is configured with locations that require TLS/SSL, however the ssl module in Python is not available.
 ```bash
 brew --prefix openssl@1.1
