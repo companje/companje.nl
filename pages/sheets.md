@@ -1,5 +1,11 @@
 see also [docs](/docs)
 
+
+# FILTER
+```
+=FILTER('sheet2'!$E:$E;'sheet2'!$D:$D=C1))
+```
+
 # toggle formula / value view
 ```
 Ctrl + `
