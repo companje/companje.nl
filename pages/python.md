@@ -2,6 +2,23 @@
 title: Python
 ---
 
+# update query from CSV
+```python
+import csv
+
+with open("result.sql","w") as output_file:
+
+    for row in csv.DictReader(open("input.csv",encoding="utf-8-sig"),delimiter=";"):
+        id = row['id']
+
+        beginjaar = row['Beginjaar']
+        eindjaar = row['Eindjaar']
+        openbaar_vanaf = row['Openbaar vanaf']
+
+        sql=f"update ... set beginjaar='{beginjaar}', eindjaar='{eindjaar}', openbaar_vanaf='{openbaar_vanaf}' where id={id};"
+        print(sql,file=output_file)
+```
+
 # update query with subselect from excel sheet
 ```python
 import pandas as pd
