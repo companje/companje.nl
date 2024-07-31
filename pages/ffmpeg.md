@@ -4,6 +4,13 @@ permalink: /ffmpeg
 tags: ['notes','software','video']
 ---
 
+
+
+# filmpje afkappen na 2:08 minuten
+```bash
+ffmpeg -i input.mp4 -t 00:02:08 -c copy output.mp4
+```
+
 # create list file for ffmpeg (with duration added)
 thanks to: https://stackoverflow.com/a/51618079/6068235
 ```bash
