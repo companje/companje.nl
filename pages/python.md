@@ -2,6 +2,15 @@
 title: Python
 ---
 
+# create ID lookup table from >1000 GUIDs
+```python
+print ("select guid,id from A where 1=0")
+for row in csv.DictReader(open("data/spreadsheet.csv",encoding="utf-8-sig"),delimiter=";"):
+  guid = row['Guid']        
+  print(f"OR guid='{guid}'")
+print(";")
+```
+
 # update query from CSV
 ```python
 import csv
