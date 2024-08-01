@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# mkdir / makedirs
+```python
+os.makedirs(output_dir, exist_ok=True)
+```
+
 # create query for a lookup table from >1000 GUIDs with many OR statements
 ```python
 print ("select guid,id from A where 1=0")
