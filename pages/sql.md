@@ -1,5 +1,13 @@
-# query to retrieve archival context + get folder of scans for an arbitrary id
+# create ID lookup table from >1000 GUIDs
+```python
+print ("select guid,id from A where 1=0")
+for row in csv.DictReader(open("data/spreadsheet.csv",encoding="utf-8-sig"),delimiter=";"):
+  guid = row['Guid']        
+  print(f"OR guid='{guid}'")
+print(";")
+```
 
+# query to retrieve archival context + get folder of scans for an arbitrary id
 ```sql
 SELECT
   (select nummer||code from A where id=a.a_id_top) "toegang",
