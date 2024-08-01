@@ -1,4 +1,4 @@
-# create ID lookup table from >1000 GUIDs
+# create query for a lookup table from >1000 GUIDs with many OR statements
 ```python
 print ("select guid,id from A where 1=0")
 for row in csv.DictReader(open("data/spreadsheet.csv",encoding="utf-8-sig"),delimiter=";"):
