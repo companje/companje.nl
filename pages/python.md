@@ -2,6 +2,9 @@
 title: Python
 ---
 
+# mooi voorbeeld van argparse
+* https://python-sounddevice.readthedocs.io/en/0.3.14/_downloads/49f259d60e5b087b6e1e380bbfddc3da/rec_unlimited.py
+
 # mkdir / makedirs
 ```python
 os.makedirs(output_dir, exist_ok=True)
