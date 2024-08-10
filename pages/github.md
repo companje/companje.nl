@@ -2,6 +2,11 @@
 title: Github
 ---
 
+# search your own gists
+```
+user:@me sphere
+```
+
 # clone private repo 1 level deep, master branch
 ```bash
 gh auth login # choose: 'preferred protocol for Git operations? HTTPS'
