@@ -2,6 +2,12 @@
 title: Excel
 ---
 
+# xlookup
+nieuwe versie van vlookup
+```
+=XLOOKUP([@bplace];Sheet2!A:A; Sheet2!B:B; 0)
+```
+
 # Serial Communication in Excel 97
 ```
 MSCOMM32.OCX
