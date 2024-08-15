@@ -1,5 +1,10 @@
 see also [docs](/docs)
 
+# MATCH
+als een item in een lijst voorkomt dan een X en anders niks
+```
+=IF(ISNUMBER(MATCH(B2; covers!A:A; 0)); "X"; "")
+```
 
 # FILTER
 ```
