@@ -2,6 +2,7 @@
 title: Songs
 layout: default
 ---
+* Miike Snow - I Was A Sailor
 * Yannis & The Yaw - Rain Can't Reach Us (feat. Tony Allen)
 * Honeyglaze - Don't
 * Postal Service - Sleeping in
