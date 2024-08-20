@@ -972,6 +972,7 @@ with open(input_file_path,"r") as file:
 pip3 install pyobjc-framework-Vision
 pip3 install pyobjc-framework-Quartz
 pip3 install wurlitzer
+```
 
 no subproces:
 ```python
