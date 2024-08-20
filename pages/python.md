@@ -968,6 +968,49 @@ with open(input_file_path,"r") as file:
 
 <a name='mac-ocr'></a>
 # ocr on Mac
+```bash
+pip3 install pyobjc-framework-Vision
+pip3 install pyobjc-framework-Quartz
+pip3 install wurlitzer
+
+no subproces:
+```python
+import Quartz,Vision,json,csv
+from Cocoa import NSURL
+from Foundation import NSDictionary
+from wurlitzer import pipes # needed to capture system-level stderr
+
+def ocr(image_filename):
+    input_url = NSURL.fileURLWithPath_(image_filename)
+    with pipes() as (out, err):
+        input_image = Quartz.CIImage.imageWithContentsOfURL_(input_url)
+    (width,height) = input_image.extent().size
+    vision_options = NSDictionary.dictionaryWithDictionary_({})
+    vision_handler = Vision.VNImageRequestHandler.alloc().initWithCIImage_options_(
+        input_image, vision_options
+    )
+
+    request = Vision.VNRecognizeTextRequest.alloc().init().autorelease()
+    request.setRecognitionLevel_(Vision.VNRequestTextRecognitionLevelAccurate) #VNRequestTextRecognitionLevelFast
+    request.setRecognitionLanguages_(["nl-NL"])
+    error = vision_handler.performRequests_error_([request], None)
+
+    results = []
+    for item in request.results():
+        bbox = item.boundingBox()
+        w, h = bbox.size.width, bbox.size.height
+        x, y = bbox.origin.x, bbox.origin.y
+        results.append({
+            "x":int(x*width),
+            "y":int(height - y*height - h*height),
+            "w":int(w*width),
+            "h":int(h*height),
+            "conf":item.confidence(),
+            "text":item.text()
+        })
+    return results
+```
+
 ```python
 #!/Applications/Xcode.app/Contents/Developer/usr/bin/python3
 
