@@ -1,3 +1,14 @@
+# Run current Python file with Cmd+Enter
+keybindings.json
+```json
+[
+  {
+    "key": "cmd+enter",
+    "command": "python.execInTerminal"
+  }
+]
+```
+
 # Cmd+Shift+P > Preferences Open Keyboard Shortcut (JSON)
 ```json
 [
