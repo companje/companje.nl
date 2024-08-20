@@ -974,7 +974,7 @@ pip3 install pyobjc-framework-Quartz
 pip3 install wurlitzer
 ```
 
-no subproces:
+no subproces (not parallel):
 ```python
 import Quartz,Vision,json,csv
 from Cocoa import NSURL
@@ -1012,6 +1012,7 @@ def ocr(image_filename):
     return results
 ```
 
+in parallel:
 ```python
 #!/Applications/Xcode.app/Contents/Developer/usr/bin/python3
 
