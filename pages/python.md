@@ -2,6 +2,54 @@
 title: Python
 ---
 
+# download crops with iiif
+```python
+import csv,os
+import urllib
+from urllib.request import urlretrieve
+from tqdm import tqdm
+
+aktes_per_scan = {row["nummer"]:int(row["aantal aktes"]) for row in csv.DictReader(open("data/aantal-aktes-op-scan-per-inv.csv"),delimiter=",") }
+iiif = "https://files.transkribus.eu/iiif/2/"
+
+def download(url, nummer, filename, suffix):
+    folder = f"scans/{nummer}"
+    filepath = folder + "/" + filename.replace(".jpg",f"_{suffix}.jpg")
+    os.makedirs(folder, exist_ok=True)
+    if not os.path.exists(filepath):
+        print(url,filepath)
+        urllib.request.urlretrieve(url, filepath)
+    else:
+        print(f"exists: {url}")
+
+for row in tqdm(list(csv.DictReader(open("data/alle-scans-met-x-voor-overslaan.csv"),delimiter=",")),leave=True):
+    id = row["iiif id"]
+    nummer = row["nummer"]
+    filename = row["filename"]
+    aantal = aktes_per_scan[nummer]
+    skip = row["overslaan"]!=""
+
+    if skip or aantal==0:
+        print(f"skip: {iiif}{id}/full/1600,/0/default.jpg")
+        continue
+
+    if aantal==4:
+        download(f"{iiif}{id}/pct:0,0,50,50/1000,/0/default.jpg",nummer,filename,1)
+        download(f"{iiif}{id}/pct:0,50,50,50/1000,/0/default.jpg",nummer,filename,2)
+        download(f"{iiif}{id}/pct:50,0,100,50/1000,/0/default.jpg",nummer,filename,3)
+        download(f"{iiif}{id}/pct:50,50,100,50/1000,/0/default.jpg",nummer,filename,4)
+
+    if aantal==6:
+        download(f"{iiif}{id}/pct:0,3,50,33/1000,/0/default.jpg",nummer,filename,1)
+        download(f"{iiif}{id}/pct:0,33,50,33/1000,/0/default.jpg",nummer,filename,2)
+        download(f"{iiif}{id}/pct:0,66,50,33/1000,/0/default.jpg",nummer,filename,3)
+        download(f"{iiif}{id}/pct:50,3,50,33/1000,/0/default.jpg",nummer,filename,4)
+        download(f"{iiif}{id}/pct:50,33,50,33/1000,/0/default.jpg",nummer,filename,5)
+        download(f"{iiif}{id}/pct:50,66,50,33/1000,/0/default.jpg",nummer,filename,6)
+        
+    tqdm.write("")
+```
+
 # mooi voorbeeld van argparse
 * https://python-sounddevice.readthedocs.io/en/0.3.14/_downloads/49f259d60e5b087b6e1e380bbfddc3da/rec_unlimited.py
 
