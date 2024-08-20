@@ -2,6 +2,14 @@
 title: Python
 ---
 
+# csv.DictWriter (csv.writer)
+```python
+with open("output.csv", mode='w', newline='') as file:
+    writer = csv.DictWriter(file, fieldnames=["x", "y", "w", "h", "conf", "text"])
+    writer.writeheader()
+    writer.writerows(data)
+```
+
 # download crops with iiif
 ```python
 import csv,os
