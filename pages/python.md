@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# get inventarisnummer from filename
+```python
+match = re.search(r'(?<=NL-UtHUA_)(.*)(?=_.*)', filename)
+```
+
 # csv.DictReader from URL
 ```python
 with urllib.request.urlopen(url) as response:
