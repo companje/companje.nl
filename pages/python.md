@@ -5,6 +5,8 @@ title: Python
 # get inventarisnummer from filename
 ```python
 match = re.search(r'(?<=NL-UtHUA_)(.*)(?=_.*)', filename)
+if match:
+  nummer = match.group(1)
 ```
 
 # csv.DictReader from URL
