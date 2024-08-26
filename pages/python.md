@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# csv.DictReader from URL
+```python
+with urllib.request.urlopen(url) as response:
+  return csv.DictReader(response.read().decode('utf-8').splitlines())
+```
 # csv.DictWriter (csv.writer)
 ```python
 with open("output.csv", mode='w', newline='') as file:
