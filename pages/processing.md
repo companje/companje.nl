@@ -2,6 +2,48 @@
 title: Processing
 ---
 
+# IDE adjustments on MacOS with Karabiner-Elements
+
+## right Alt-key same as left Alt-key
+add Simple Modification `right_option > left_option`
+
+## Complex Modifications > Add your own rule
+```json
+{
+    "description": "Cmd+L to select entire line in Processing IDE",
+    "manipulators": [
+        {
+            "conditions": [
+                {
+                    "bundle_identifiers": [
+                        "^org\\.processing\\.four$"
+                    ],
+                    "type": "frontmost_application_if"
+                }
+            ],
+            "from": {
+                "key_code": "l",
+                "modifiers": { "mandatory": ["command"] }
+            },
+            "to": [
+                {
+                    "key_code": "left_arrow",
+                    "modifiers": ["command"]
+                },
+                {
+                    "key_code": "left_arrow",
+                    "modifiers": ["command"]
+                },
+                {
+                    "key_code": "right_arrow",
+                    "modifiers": ["shift", "command"]
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
+```
 # synchronised with oscP5
 ```processing
 import oscP5.*;
