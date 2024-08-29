@@ -4,10 +4,10 @@ title: Processing
 
 # IDE adjustments on MacOS with Karabiner-Elements
 
-## right Alt-key same as left Alt-key
+** right Alt-key same as left Alt-key **
 add Simple Modification `right_option > left_option`
 
-## Complex Modifications > Add your own rule
+** Complex Modifications > Add your own rule **
 ```json
 {
     "description": "Cmd+L to select entire line in Processing IDE",
