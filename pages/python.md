@@ -6,7 +6,7 @@ title: Python
 ```python
 for img in row["images"]:
   images_by_vh_id[img["image_id_vh"]] = img["image_name"]
-#...
+
 with open("data/images_by_vh_id.csv", mode='w', newline='') as file:
   writer = csv.writer(file)
   writer.writerow(['image_id_vh', 'image_name'])
