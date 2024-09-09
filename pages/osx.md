@@ -2,6 +2,9 @@
 title: Mac OSX
 ---
 
+# Cmd+F1 mirror/extend
+Op een Mac kun je de sneltoets Command (⌘) + F1 gebruiken om te schakelen tussen beeldschermduplicatie (mirroring) en uitgebreid bureaublad (extending) als je een extern beeldscherm hebt aangesloten.
+
 # alias
 ```bash
 alias subl="open . -a \"Sublime Text\""
