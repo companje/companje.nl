@@ -1,3 +1,6 @@
+# Quick Find/Select All
+```Cmd+Shift+L```
+
 # Run current Python file with Cmd+Enter
 keybindings.json
 ```json
