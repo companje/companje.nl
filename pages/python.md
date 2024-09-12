@@ -2,6 +2,16 @@
 title: Python
 ---
 
+# modify clipboard: for example escape all lines on the clipboard
+```python
+import pyperclip
+
+text = pyperclip.paste()
+updated_text = "\n".join([line.lower() for line in text.splitlines()])
+
+pyperclip.copy(updated_text)
+```
+
 # csv.writer to write lut
 ```python
 for img in row["images"]:
