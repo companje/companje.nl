@@ -3,6 +3,7 @@ title: Songs
 layout: default
 ---
 
+* Tapetoy - Naive
 * Tame Impala - Let it happen
 * Miike Snow - I Was A Sailor
 * Yannis & The Yaw - Rain Can't Reach Us (feat. Tony Allen)
