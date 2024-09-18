@@ -2,6 +2,9 @@
 title: Windows
 ---
 
+# WinDirStat
+alternatief voor SequioaView
+
 # don't ask password after sleep
 on battery: `powercfg /SETDCVALUEINDEX SCHEME_CURRENT SUB_NONE CONSOLELOCK 0`.
 on net power: `powercfg /SETACVALUEINDEX SCHEME_CURRENT SUB_NONE CONSOLELOCK 0`.
