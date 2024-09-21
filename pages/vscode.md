@@ -1,3 +1,6 @@
+# Block select
+```Shift+Option + mouse```
+
 # Quick Find/Select All
 ```Cmd+Shift+L```
 
