@@ -3,6 +3,7 @@ title: Songs
 layout: default
 ---
 
+* Kryp Tina - Love You Like A ...
 * Tapetoy - Naive
 * Tame Impala - Let it happen
 * Miike Snow - I Was A Sailor
