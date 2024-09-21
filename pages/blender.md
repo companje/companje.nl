@@ -64,7 +64,7 @@ om textures te kunnen zien
 * https://docs.blender.org/manual/en/latest/modeling/meshes/tools/loop.html
 
 # Donut tutorial
-* Blender
+* https://www.youtube.com/watch?v=B0J27sf9N1Y&list=PLjEaoINr3zgEPv5y--4MKpciLaoQYZB1Z
 * 'n' for properties
 * Lock Camera to View
 * Ctrl+1 = add Subdivide Surface Modifier
