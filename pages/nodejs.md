@@ -3,6 +3,12 @@ title: NodeJS
 layout: default
 ---
 
+# error:03000086:digital envelope routines::initialization error
+```
+export SET NODE_OPTIONS=--openssl-legacy-provider
+npm run serve
+```
+
 # add node_modules/.bin to PATH to use local modules
 ```bash
 export PATH="$(pwd)/node_modules/.bin:$PATH"
