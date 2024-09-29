@@ -1,6 +1,6 @@
-# Sanyo MBC-555 boot code in ROM disassembled
-
 See also: [Sanyo](/sanyo)
+
+# ROM bootcode disassembly
 
 ```nasm
 ; Disassembling the Sanyo MBC-555 bootcode in ROM (by hand)
