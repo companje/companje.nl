@@ -19,7 +19,7 @@ https://www.leadedsolder.com/2022/08/23/sanyo-mbc555-power-supply-swap-pickup.ht
 tip: https://github.com/keirf/Greaseweazle
 
 # black & white ordered dithering
-```asm
+```nasm
 ;from dark to light: 4x8 bits (4 lines, 8 bits per line). in total 8 chars.
 grays: db 0,0,0,0, 136,0,34,0, 170,0,170,0, 170,17,170,68, 170,85,170,85, 85,238,85,187, 119,255,221,255, 255,255,255,255
 ```
