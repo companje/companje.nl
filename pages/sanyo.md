@@ -2,8 +2,12 @@
 title: Sanyo MBC-550/555
 ---
 
-# Sanyo BOOT ROM disassembly (by hand)
-* see [[Sanyo-MBC555-ROM]]
+# Sanyo boot code in ROM disassembly
+* clears the screen, inits CRT, keyboard, loads bootsector from floppy and jumps to it
+* `FFFF:0000` jump to code in ROM
+* `FE00:1E00` start of code in ROM
+* `0038:0000` start of loaded code in floppy bootsector
+* Details: <a href="/Sanyo-MBC555-ROM">Sanyo MBC-555 boot code in ROM disassembled</a>
 
 <img src="https://user-images.githubusercontent.com/156066/160270847-03ebfc54-547e-4a9a-813f-6114f2f6213b.jpg" alt="Sanyo-MBC-555-Rick-Companje" width="400">
 Sanyo MBC-555
