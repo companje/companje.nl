@@ -1,5 +1,7 @@
 # Sanyo MBC-555 boot code in ROM disassembled
 
+[Sanyo](/sanyo)
+
 ```nasm
 ; Disassembling the Sanyo MBC-555 bootcode in ROM (by hand)
 ; Rick Companje, The Netherlands, May 2022 + Sept 2024
