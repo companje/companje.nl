@@ -1,6 +1,6 @@
 # Sanyo MBC-555 floppy bootsector disassembly
 
-```asm
+```nasm
 ; Disassembling the Sanyo MBC-555 MS-DOS 2.11 floppy bootsector
 ; Rick Companje, The Netherlands, March 28th, 2022
 ; reconstructed using ndisasm 
