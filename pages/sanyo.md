@@ -2,6 +2,9 @@
 title: Sanyo MBC-550/555
 ---
 
+# Sanyo BOOT ROM disassembly (by hand)
+* see [[Sanyo-MBC555-ROM]]
+
 <img src="https://user-images.githubusercontent.com/156066/160270847-03ebfc54-547e-4a9a-813f-6114f2f6213b.jpg" alt="Sanyo-MBC-555-Rick-Companje" width="400">
 Sanyo MBC-555
 
