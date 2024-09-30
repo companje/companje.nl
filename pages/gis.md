@@ -2,6 +2,12 @@
 title: See [[maps]]
 ---
 
+# GDAL
+* install GDAL on Mac: https://formulae.brew.sh/formula/gdal
+
+# load .TAB file with geopandas
+It seems that it also needs the MapInfo .ID, .IND, .DAT, .MAP files. Even for simple TAB files that don't have those.
+
 # geopandas
 ```python
 import geopandas as gpd
