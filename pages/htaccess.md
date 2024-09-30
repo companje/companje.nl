@@ -2,6 +2,19 @@
 title: .htaccess
 ---
 
+# htaccess and client sided routing
+```apache
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Stuur alles naar index.html, behalve bestaande bestanden en mappen
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ index.html [L]
+</IfModule>
+```
+
 # URI redirect for RDF resolve
 ```apache
 RewriteEngine On
