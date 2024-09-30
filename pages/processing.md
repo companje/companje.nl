@@ -2,6 +2,53 @@
 title: Processing
 ---
 
+# OpenCV remap in Processing with 16bits grayscale TIFF's
+```java
+import gab.opencv.*;
+import processing.video.*;
+import org.opencv.core.*;
+import org.opencv.imgproc.Imgproc;
+import org.opencv.imgcodecs.Imgcodecs;
+
+Capture video;
+PImage img;
+OpenCV opencv;
+Mat mapX, mapY, remapImg;
+
+void setup() {
+  size(640, 480);
+
+  video = new Capture(this, "pipeline:autovideosrc");
+  video.start();
+
+  opencv = new OpenCV(this, video);
+
+  mapX = Imgcodecs.imread("/Users/rick/Documents/Processing/remap_test/data/gx800_map_x.tif", Imgcodecs.IMREAD_ANYDEPTH);
+  mapY = Imgcodecs.imread("/Users/rick/Documents/Processing/remap_test/data/gx800_map_y.tif", Imgcodecs.IMREAD_ANYDEPTH);
+
+  if (mapX.empty() || mapY.empty()) {
+    println("Kon de TIFF bestanden niet laden.");
+    exit();
+  }
+
+  mapX.convertTo(mapX, CvType.CV_32FC1);
+  mapY.convertTo(mapY, CvType.CV_32FC1);
+}
+
+void draw() {
+  opencv.loadImage(video);
+  remapImg = new Mat();
+  Imgproc.remap(opencv.getGray(), remapImg, mapX, mapY, Imgproc.INTER_LINEAR);
+  opencv.setGray(remapImg);
+
+  image(opencv.getSnapshot(), 0, 0);
+}
+
+void captureEvent(Capture c) {
+  c.read();
+}
+```
+
 # IDE adjustments on MacOS with Karabiner-Elements
 
 ** right Alt-key same as left Alt-key **
