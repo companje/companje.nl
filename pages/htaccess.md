@@ -8,7 +8,7 @@ title: .htaccess
   RewriteEngine On
   RewriteBase /
 
-  # Stuur alles naar index.html, behalve bestaande bestanden en mappen
+  # forward everything to index.html, except existing files and folders
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule ^ index.html [L]
