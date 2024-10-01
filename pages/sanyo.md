@@ -4,6 +4,9 @@ title: Sanyo MBC-550/555
 
 <img src="https://user-images.githubusercontent.com/156066/160270847-03ebfc54-547e-4a9a-813f-6114f2f6213b.jpg" alt="Sanyo-MBC-555-Rick-Companje" width="200" align="right">
 
+# Mount a .DSK file on Mac
+rename it to .DMG and open it. Now you can copy the files.
+
 # Sanyo MBC-555 boot code in ROM disassembly
 * clears the screen, inits CRT, keyboard, loads bootsector from floppy and jumps to it
 * `FFFF:0000` jump to code in ROM
