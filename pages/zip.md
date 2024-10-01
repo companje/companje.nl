@@ -2,6 +2,11 @@
 title: ZIP / 7z etc. compression
 ---
 
+## uncompressed archive exclude folders
+```
+7zz a -mx0 -bb1 '-xr!.dropbox' '-xr!.dropbox.cache' "Snapshot.7z" /Volumes/Data/Dropbox
+```
+
 ## add to (uncompressed) archive with 7zip
 ```
 a = add
