@@ -6,6 +6,7 @@ title: Sanyo MBC-550/555
 
 # Mount a .DSK file on Mac
 rename it to .DMG and open it. Now you can copy the files.
+(does not work for MS-DOS v1.25)
 
 # Sanyo MBC-555 boot code in ROM disassembly
 * clears the screen, inits CRT, keyboard, loads bootsector from floppy and jumps to it
