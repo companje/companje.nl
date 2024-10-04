@@ -9,18 +9,21 @@ put this in autoexec.bat to get an extra drive in RAM.
 ```batch
 ramdisk 64
 rem OPTIONAL copy diskcopy.com e:
-path e:
-```
+path e: 
+```
+
 you need this in config.sys:
 ```
 device=ramdrv.sys
 ```
 and you need these files on your msdos 2.11 floppy:
+```
 RAMDISK.COM
 RAMDRV.SYS
 DISKCOPY.COM (optional)
 CONFIG.SYS
 AUTOEXEC.BAT
+```
 
 # Mame save screenshot
 * F12 - Saves screenshot to subfolder in 'snap'. for example: ./snap/mbc55x/0000.png'
