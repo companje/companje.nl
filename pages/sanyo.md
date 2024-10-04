@@ -4,6 +4,14 @@ title: Sanyo MBC-550/555
 
 <img src="https://user-images.githubusercontent.com/156066/160270847-03ebfc54-547e-4a9a-813f-6114f2f6213b.jpg" alt="Sanyo-MBC-555-Rick-Companje" width="200" align="right">
 
+# RAMDISK
+put this in autoexec.bat to get an extra drive in RAM.
+```batch
+ramdisk 64
+copy diskcopy.com e:
+path e:
+```
+
 # Mame save screenshot
 * F12 - Saves screenshot to subfolder in 'snap'. for example: ./snap/mbc55x/0000.png'
 * Shift F12 - saves movie file in same location
