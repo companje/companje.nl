@@ -4,14 +4,13 @@ title: Sanyo MBC-550/555
 
 <img src="https://user-images.githubusercontent.com/156066/160270847-03ebfc54-547e-4a9a-813f-6114f2f6213b.jpg" alt="Sanyo-MBC-555-Rick-Companje" width="200" align="right">
 
-# Time Bandit - Greaseweazle flux 
+# Time Bandit raw flux file
 write this flux file (https://github.com/companje/companje.nl/raw/refs/heads/master/downloads/bandit.scp) to an empty floppy to play the classic Time Bandit game on your Sanyo MBC-550/555. You need a Greaseweazle device and software for this: https://github.com/keirf/greaseweazle/
 ```
 gw write bandit.scp --tracks="c=0-39:step=2"
 ```
-<img src="https://github.com/user-attachments/assets/3f9f401e-e7e0-447b-94e4-920afa7f47ea" height="150">
 <img src="https://github.com/user-attachments/assets/83f37143-a29a-4712-b4b2-1cafa2ae4827" height="150">
-
+<img src="https://github.com/user-attachments/assets/3f9f401e-e7e0-447b-94e4-920afa7f47ea" height="150">
 
 # RAMDISK
 put this in autoexec.bat to get an extra drive in RAM.
