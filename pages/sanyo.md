@@ -9,6 +9,9 @@ write this flux file (https://github.com/companje/companje.nl/raw/refs/heads/mas
 ```
 gw write bandit.scp --tracks="c=0-39:step=2"
 ```
+<img src="https://github.com/user-attachments/assets/3f9f401e-e7e0-447b-94e4-920afa7f47ea" width="150">
+<img src="https://github.com/user-attachments/assets/83f37143-a29a-4712-b4b2-1cafa2ae4827" width="150">
+
 
 # RAMDISK
 put this in autoexec.bat to get an extra drive in RAM.
