@@ -6,11 +6,15 @@ title: Sanyo MBC-550/555
 
 # Time Bandit raw flux file
 write this [flux file](https://github.com/companje/companje.nl/raw/refs/heads/master/downloads/bandit.scp) (19,2MB) using [Greaseweazle](https://github.com/keirf/greaseweazle/) to an empty floppy to play the classic Time Bandit game on your Sanyo MBC-550/555.
-```
+```batch
 gw write bandit.scp --tracks="c=0-39:step=2"
 ```
 <img src="https://github.com/user-attachments/assets/83f37143-a29a-4712-b4b2-1cafa2ae4827" height="150">
 <img src="https://github.com/user-attachments/assets/3f9f401e-e7e0-447b-94e4-920afa7f47ea" height="150">
+
+# Run Time Bandit on Gotek with Flashfloppy 3.42 and HFE_v3 disk image
+
+
 
 # RAMDISK
 put this in autoexec.bat to get an extra drive in RAM.
@@ -21,11 +25,11 @@ path e:
 ```
 
 you need this in config.sys:
-```
+```batch
 device=ramdrv.sys
 ```
 and you need these files on your msdos 2.11 floppy:
-```
+```batch
 RAMDISK.COM
 RAMDRV.SYS
 DISKCOPY.COM (optional)
