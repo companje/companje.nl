@@ -1,5 +1,5 @@
 # Time Bandit flux file for Sanyo MBC-550/555 (Option 1)
-write this [bandit.scp](https://github.com/companje/companje.nl/raw/refs/heads/master/downloads/bandit.scp) flux file that was created with Greaseweazle to an empty floppy to play the classic Time Bandit game on your Sanyo MBC-550/555. You need a Greaseweazle device for this: https://github.com/keirf/greaseweazle/
+write this [bandit.scp](https://github.com/companje/companje.nl/raw/refs/heads/master/downloads/bandit.scp) flux file that was created with Greaseweazle to an empty floppy to play the classic Time Bandit game on your Sanyo MBC-550/555. You need a Greaseweazle device to write the disk: https://github.com/keirf/greaseweazle/
 ```batch
 gw write bandit.scp --tracks="c=0-39:step=2"
 ```
