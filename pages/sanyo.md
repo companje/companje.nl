@@ -2,8 +2,6 @@
 title: Sanyo MBC-550/555
 ---
 
-<img src="https://user-images.githubusercontent.com/156066/160270847-03ebfc54-547e-4a9a-813f-6114f2f6213b.jpg" alt="Sanyo-MBC-555-Rick-Companje" width="200" align="right">
-
 # Time Bandit raw flux file
 write this [flux file](https://github.com/companje/companje.nl/raw/refs/heads/master/downloads/bandit.scp) (19,2MB) using [Greaseweazle](https://github.com/keirf/greaseweazle/) to an empty floppy to play the classic Time Bandit game on your Sanyo MBC-550/555.
 ```batch
@@ -275,6 +273,8 @@ https://simonowen.com/samdisk/
 ```
 
 ## GOTEK
+<img src="https://user-images.githubusercontent.com/156066/160270847-03ebfc54-547e-4a9a-813f-6114f2f6213b.jpg" alt="Sanyo-MBC-555-Rick-Companje" width="200" align="right">
+
 Goed nieuws! Gotek met FlashFloppy firmware werkt super op de Sanyo MBC-555. https://gotek.nl/
 ```ini
 # in FF.CFG 
