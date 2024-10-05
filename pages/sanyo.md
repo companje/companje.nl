@@ -2,6 +2,9 @@
 title: Sanyo MBC-550/555
 ---
 
+# HxC Floppy Emulator / Floppy image file converter
+See [[hxc]]
+
 # Time Bandit raw flux file
 write this [flux file](https://github.com/companje/companje.nl/raw/refs/heads/master/downloads/bandit.scp) (19,2MB) using [Greaseweazle](https://github.com/keirf/greaseweazle/) to an empty floppy to play the classic Time Bandit game on your Sanyo MBC-550/555.
 ```batch
