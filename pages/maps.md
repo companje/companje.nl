@@ -1,6 +1,11 @@
 ---
 title: Maps
 ---
+
+# 2024
+* https://oculi-mundi.com/maps-are-too-exciting-digital-innovations-in-mapping
+
+# eerder
 * meteorite landings: https://data.nasa.gov/Space-Science/Meteorite-Landings/gh4g-9sfh
 * [[http://qgis.org/en/site/about/index.html|QGIS]]
 * https://www.shipmap.org/
