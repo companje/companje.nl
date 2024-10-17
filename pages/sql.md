@@ -1,5 +1,5 @@
 # query om alle padnamen van scans onder een bepaalde rubriek te krijgen met een bepaald jaartal
-```
+```sql
 select get_omschrijving(id,243), bes.padnaam from appels a
 join relaties rel on rel.ahd_id=a.id and rel.rs_id=54 
 join bestanden bes on bes.id=rel.id2
