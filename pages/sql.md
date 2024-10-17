@@ -1,3 +1,18 @@
+# query om alle padnamen van scans onder een bepaalde rubriek te krijgen met een bepaald jaartal
+```
+select get_omschrijving(id,243), bes.padnaam from appels a
+join relaties rel on rel.ahd_id=a.id and rel.rs_id=54 
+join bestanden bes on bes.id=rel.id2
+where a.top_id=1076945 -- 463
+and get_waarde(a.id, 'DATERING')='1923'
+and a.aet_id=243 --BS register
+and a.id in (
+    SELECT id FROM appels alles_onder_de_rubriek_geboorten
+    START WITH ID = 1076976
+    CONNECT BY PRIOR ID = parent_id
+);
+```
+
 # create query for a lookup table from >1000 GUIDs with many OR statements
 ```python
 print ("select guid,id from A where 1=0")
