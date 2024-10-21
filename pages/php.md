@@ -2,6 +2,11 @@
 title: PHP
 ---
 
+# PHP Fatal error: Allowed memory size of bytes 
+```
+ini_set('memory_limit', '200M');
+```
+
 # pass through jpg
 see also htaccess
 ```php
