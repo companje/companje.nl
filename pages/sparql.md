@@ -1,3 +1,27 @@
+# Wikimedia Commons images around a coordinate
+https://commons-query.wikimedia.org/
+```sparql
+#Images taken 1km around a center
+#defaultView:Map{"hide":["?coor"]}
+# query by Jura1, 2020-11-12
+SELECT ?fileLabel ?fileDescription ?image ?coor
+WHERE 
+{
+  hint:Query hint:optimizer "None".
+  SERVICE <https://query.wikidata.org/sparql> { wd:Q34928987 wdt:P625 ?center }  # Wikidata item with coordinates
+  SERVICE wikibase:around {
+      ?file wdt:P1259 ?coor.
+      bd:serviceParam wikibase:center ?center .
+      bd:serviceParam wikibase:radius ".2". # 1 kilometer around
+  }  
+  ?file schema:contentUrl ?url .
+  bind(iri(concat("http://commons.wikimedia.org/wiki/Special:FilePath/", wikibase:decodeUri(substr(str(?url),53)))) AS ?image)  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+}
+```
+
+
+
 # luchtfoto rgb layer in triply geo plugin
 ```sparql
 prefix dct: <http://purl.org/dc/terms/>
@@ -193,7 +217,7 @@ ORDER BY DESC(?count)
 # wikidata query using wikibase:around service to get items around a geopoint
 ```sparql
 #defaultView:Map
-SELECT DISTINCT ?img ?distance ?place ?placeLabel ?location WHERE {
+SELECT DISTINCT ?img ?distance ?item ?itemLabel ?location WHERE {
 
    SERVICE wikibase:around { 
      ?item wdt:P625 ?location . 
