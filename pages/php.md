@@ -2,6 +2,31 @@
 title: PHP
 ---
 
+# unpack JSON blobs in CSV and store as JSON
+```php
+<?php
+ini_set('memory_limit', '200M');
+
+$rows = [];
+$separator = ",";
+
+if (($file = fopen($argv[1], "r")) !== FALSE) {
+  if (fgets($file, 4) !== "\xef\xbb\xbf") rewind($file); //Skip BOM if present
+  $header = fgetcsv($file, 0, $separator, "\"", "\\"); // read and skip header
+
+  while (($data = fgetcsv($file, 0, $separator, "\"" , "\\")) !== FALSE) {
+    $row = array_combine($header, $data);
+    $row["answers"] = json_decode($row["answers"]);
+    $row["merged"] = json_decode($row["merged"]);
+    $rows[] = $row;
+  }
+  fclose($file);
+}
+
+echo(json_encode($rows,JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
+?>
+```
+
 # PHP Fatal error: Allowed memory size of bytes 
 ```
 ini_set('memory_limit', '200M');
