@@ -6,6 +6,7 @@ type: other
 # audio
 * https://suno.com/
 * https://www.udio.com/
+* https://vocalremover.org/
 
 # beeld
 * https://dreamstudio.ai/
