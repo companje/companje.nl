@@ -2,6 +2,12 @@
 title: Mac OSX
 ---
 
+# hdiutil: attach failed - Resource temporarily unavailable
+```bash
+hdiutil info
+hdiutil detach /Volumes/disk4
+```
+
 # Cmd+F1 mirror/extend
 Op een Mac kun je de sneltoets Command (⌘) + F1 gebruiken om te schakelen tussen beeldschermduplicatie (mirroring) en uitgebreid bureaublad (extending) als je een extern beeldscherm hebt aangesloten.
 
