@@ -1,6 +1,7 @@
 ---
 title: Sanyo MBC-550/555
 ---
+# Sanyo MBC-550/555
 
 # Ports (hex)
 * 00: PIC
