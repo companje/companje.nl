@@ -2,6 +2,31 @@
 title: Sanyo MBC-550/555
 ---
 
+# ports (hex)
+* 00: PIC
+* 02: PIC
+* 08: disk command/status
+* 0A: disk track
+* 0C: disk sector
+* 0E: disk data
+* 10: video page
+* 18: joystick
+* 1a: printer data
+* 1C: parallel/drive control
+* 1e: PPI control
+* 20: timer channel 0
+* 22: timer channel 1
+* 24: timer channel 2
+* 26: timer control
+* 28: (serial header) serial 
+* 29: (serial header)
+* 2a: (serial header) serial 
+* 2b: (serial header)
+* 30: CRTC address
+* 32: CRTC data
+* 38: keyboard data
+* 3A: keyboard command/status
+
 # HxC Floppy Emulator / Floppy image file converter
 See [hxc](hxc)
 
