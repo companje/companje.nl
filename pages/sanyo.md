@@ -2,7 +2,7 @@
 title: Sanyo MBC-550/555
 ---
 
-# ports (hex)
+# Ports (hex)
 * 00: PIC
 * 02: PIC
 * 08: disk command/status
