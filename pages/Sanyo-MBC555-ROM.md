@@ -13,7 +13,7 @@ _FE00_1E00:
   mov al,0x04
   out 0x10,al           ; Video RAM page select
   mov al,0xFF
-  mov 0x3a,al           ; keyboard
+  out 0x3a,al           ; keyboard
   mov al,0x30
   out 0x3a,al           ; keyboard
   
