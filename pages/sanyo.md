@@ -416,6 +416,8 @@ more info about Debug: https://thestarman.pcministry.com/asm/debug/debug.htm
 * http://www.seasip.info/VintagePC/sanyo.html
 
 ## Game I/O
+* http://www.built-to-spec.com/blog/2009/09/10/using-a-pc-joystick-with-the-arduino/
+* https://www.epanorama.net/documents/joystick/pc_joystick.html
 * https://github.com/phillipmacon/m.a.m.e/blob/master/src/devices/bus/a2gameio/gameio.cpp
 ```
  Apple II Game I/O Connector
