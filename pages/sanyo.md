@@ -3,6 +3,11 @@ title: Sanyo MBC-550/555
 ---
 # Sanyo MBC-550/555
 
+# mame in debug mode
+* start with `-debug`
+* F11 step into
+* F4 run to cursor
+
 # Ports (hex)
 * 00: PIC
 * 02: PIC
