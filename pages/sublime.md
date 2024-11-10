@@ -2,6 +2,12 @@
 title: SublimeText
 ---
 
+# prevent debug info in output window on build
+in `run-script.sublime-build`
+```
+	"quiet": true
+```
+
 # scope info
 `Option+Cmd+P`
 
