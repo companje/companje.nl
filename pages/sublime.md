@@ -5,7 +5,10 @@ title: SublimeText
 # prevent debug info in output window on build
 in `run-script.sublime-build`
 ```
+{
+	"shell_cmd": "./build.sh",
 	"quiet": true
+}
 ```
 
 # scope info
