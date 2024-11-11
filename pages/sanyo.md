@@ -7,6 +7,7 @@ title: Sanyo MBC-550/555
 * start with `-debug`
 * F11 step into
 * F4 run to cursor
+* `-debugscript autostart.txt` containing `g` for 'go'
 
 # Ports (hex)
 * 00: PIC
