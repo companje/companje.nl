@@ -7,6 +7,10 @@ nieuwe versie van vlookup
 ```
 =XLOOKUP([@bplace];Sheet2!A:A; Sheet2!B:B; 0)
 ```
+als klikbare links
+```
+=HYPERLINK(XLOOKUP([@Bestandsnaam]&".jpg"; Links!B:B;Links!E:E; "x" ))
+```
 
 # Serial Communication in Excel 97
 ```
