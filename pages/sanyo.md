@@ -3,6 +3,59 @@ title: Sanyo MBC-550/555
 ---
 # Sanyo MBC-550/555
 
+# draw picture
+The image format is optimized for the Sanyo's videomemory. color planes are separated. 
+In the case of a 32x16 picture: 64 bytes red, 64 bytes green, 64 bytes blue. 16px vertical means 2 rows. 32px means 4 cols. The order in the image file is 32 bytes for the 1st row, then 32 bytes for the second row.
+```nasm
+push cs
+pop ds      ; ds=cs
+
+mov si, img
+mov bh,4 ; cols 
+mov bl,4 ; rows
+call draw_pic
+hlt
+
+draw_pic:
+  mov ax, RED
+  call draw_channel
+  mov ax, GREEN
+  call draw_channel
+  mov ax, BLUE
+  call draw_channel
+  ret
+draw_channel:
+  mov es,ax
+  xor di,di
+  xor cx,cx
+  mov cl,bl        ; rows (bl)
+rows_loop:
+  push cx
+  xor cx,cx
+  mov cl,bh        ; cols (bh)
+cols_loop:
+  movsw
+  movsw
+  loop cols_loop
+  add di,COLS*4 - 4*4
+  pop cx
+  loop rows_loop
+  ret
+```
+
+# clear green channel
+```nasm
+clear_green_channel:
+  mov ax,GREEN
+  mov es,ax
+  xor di,di
+  mov cx,0x2000
+  xor ax,ax
+  rep stosw
+  ret
+```
+
+
 # mame in debug mode
 * start with `-debug`
 * F11 step into
