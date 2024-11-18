@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# pandas replace nan by ""
+```
+df = df.fillna("") # vervang alle nan's door "" in het hele dataframe
+```
+
 # modify clipboard: for example escape all lines on the clipboard
 ```python
 import pyperclip
