@@ -6,6 +6,7 @@ title: Sanyo MBC-550/555
 # draw picture
 The image format is optimized for the Sanyo's videomemory. color planes are separated. 
 In the case of a 32x16 picture: 64 bytes red, 64 bytes green, 64 bytes blue. 16px vertical means 2 rows. 32px horizontal means 4 cols. The order in the image file is 32 bytes for the 1st row, then 32 bytes for the second row.
+![beker](https://github.com/user-attachments/assets/9e645a9e-6ebb-4023-ae2f-f8e90eb19555)
 ```nasm
 push cs
 pop ds      ; ds=cs
@@ -41,6 +42,20 @@ cols_loop:
   pop cx
   loop rows_loop
   ret
+
+img: 
+  db 0,112,127,112,255,255,255,255,245,250,253,250,0,14,254,14
+  db 56,28,7,0,255,127,255,255,253,250,245,255,28,56,224,0
+  db 0,0,0,0,15,3,3,3,240,192,192,128,0,0,0,0
+  db 0,0,0,0,3,7,63,127,192,176,212,234,0,0,0,0
+  db 0,96,117,96,255,255,255,255,160,208,232,208,0,4,234,4
+  db 48,24,7,0,255,127,127,191,232,208,224,215,8,16,224,0
+  db 0,0,0,0,15,3,3,3,160,192,128,128,0,0,0,0
+  db 0,0,0,0,3,7,63,127,128,144,196,226,0,0,0,0
+  db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+  db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+  db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+  db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 ```
 
 # clear green channel
