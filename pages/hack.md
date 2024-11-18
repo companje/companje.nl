@@ -2,6 +2,9 @@
 title: Hack
 ---
 
+# Frida
+* https://frida.re/docs/home/
+
 # radare2
 * https://github.com/radareorg/radare2
 * https://reverseengineering.stackexchange.com/questions/3949/disassembling-an-unknown-dos-mz-executable-using-radare2
