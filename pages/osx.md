@@ -2,6 +2,11 @@
 title: Mac OSX
 ---
 
+# move all png's to layout/ folder keeping folder structure
+```bash
+find . -type f -name "*.png" -exec sh -c 'mkdir -p "layout/$(dirname "$1")" && mv "$1" "layout/$1"' _ {} \;
+```
+
 # hdiutil: attach failed - Resource temporarily unavailable
 ```bash
 hdiutil info
