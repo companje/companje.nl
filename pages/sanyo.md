@@ -5,7 +5,7 @@ title: Sanyo MBC-550/555
 
 # draw picture
 The image format is optimized for the Sanyo's videomemory. color planes are separated. 
-In the case of a 32x16 picture: 64 bytes red, 64 bytes green, 64 bytes blue. 16px vertical means 2 rows. 32px means 4 cols. The order in the image file is 32 bytes for the 1st row, then 32 bytes for the second row.
+In the case of a 32x16 picture: 64 bytes red, 64 bytes green, 64 bytes blue. 16px vertical means 2 rows. 32px horizontal means 4 cols. The order in the image file is 32 bytes for the 1st row, then 32 bytes for the second row.
 ```nasm
 push cs
 pop ds      ; ds=cs
