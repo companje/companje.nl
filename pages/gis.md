@@ -2,6 +2,9 @@
 title: See [[maps]]
 ---
 
+# Coordinate Systems MapInfo
+* https://docs.precisely.com/docs/sftw/stratus/mapinfo_stratus_uploader_guide/en/supported%20projections.pdf
+
 # convert MapInfo TAB (EPSG28992 RD) to geojson (ESP4326 wsg84)
 ```python
 import os
