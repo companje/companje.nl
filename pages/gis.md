@@ -2,6 +2,10 @@
 title: See [[maps]]
 ---
 
+# Query HISGIS Utrecht <1832 Gerechten
+https://data.netwerkdigitaalerfgoed.nl/hetutrechtsarchief/-/queries/Gerechten-HISGIS/
+![Screenshot 2024-11-25 at 21 23 50](https://github.com/user-attachments/assets/39738156-17e8-4f14-b302-22dc4e2c8c13)
+
 # Zoeken naar achtergrondkaarten in het nationaalgeoregister
 * https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/search 
 
