@@ -2,6 +2,9 @@
 title: See [[maps]]
 ---
 
+# Zoeken naar achtergrondkaarten in het nationaalgeoregister
+* https://www.nationaalgeoregister.nl/geonetwork/srv/dut/catalog.search#/search 
+
 # Coordinate Systems MapInfo
 * https://docs.precisely.com/docs/sftw/stratus/mapinfo_stratus_uploader_guide/en/supported%20projections.pdf
 
