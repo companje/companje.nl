@@ -1,5 +1,5 @@
 # HISGIS Utrecht <1832 Gerechten
-zie [GIS](/gis)
+* https://data.netwerkdigitaalerfgoed.nl/hetutrechtsarchief/-/queries/Gerechten-HISGIS/
 ![Screenshot 2024-11-25 at 21 23 50](https://github.com/user-attachments/assets/643b051b-ed56-4357-b7ec-3c0730eb4202)
 
 
