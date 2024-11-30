@@ -5,7 +5,7 @@ title: Sanyo MBC-550/555
 
 # getImageFromBytes
 ```java
-PImage getImageFromBytes(byte[] bytes, int w, int h) { //w,h in pixels - 3 channel image
+PImage getImageFromBytes(byte[] bytes, int w, int h) { //w,h in pixels - 3 channel 3 bit image
   PImage img = createImage(w, h, RGB);
   img.loadPixels();
   for (int y=0, bit=0, j=0; y<h; y++) {
