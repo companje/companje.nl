@@ -8,7 +8,7 @@ title: Sanyo MBC-550/555
 PImage getImageFromBytes(byte[] bytes, int w, int h) { //w,h in pixels - 3 channel 3 bit image
   PImage img = createImage(w, h, RGB);
   img.loadPixels();
-  for (int y=0, bit=0, j=0; y<h; y++) {
+  for (int y=0, bit=128, j=0; y<h; y++) {
     for (int x=0; x<w; x++, bit=128>>(x%8), j++) {
       int i = int(y/4)*(w/2)+(y%4)+int(x/8)*4;
       int r = (bytes[i+0*w/8*h] & bit)>0 ? 255 : 0;
