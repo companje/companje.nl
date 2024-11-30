@@ -3,6 +3,25 @@ title: Sanyo MBC-550/555
 ---
 # Sanyo MBC-550/555
 
+# getImageFromBytes
+```java
+PImage getImageFromBytes(byte[] bytes, int w, int h) { //w,h in pixels - 3 channel image
+  PImage img = createImage(w, h, RGB);
+  img.loadPixels();
+  for (int y=0, bit=0, j=0; y<h; y++) {
+    for (int x=0; x<w; x++, bit=128>>(x%8), j++) {
+      int i = int(y/4)*(w/2)+(y%4)+int(x/8)*4;
+      int r = (bytes[i+0*w/8*h] & bit)>0 ? 255 : 0;
+      int g = (bytes[i+1*w/8*h] & bit)>0 ? 255 : 0;
+      int b = (bytes[i+2*w/8*h] & bit)>0 ? 255 : 0;
+      img.pixels[j] = color(r, g, b);
+    }
+  }
+  img.updatePixels();
+  return img;
+}
+```
+
 # draw picture
 The image format is optimized for the Sanyo's videomemory. color planes are separated. 
 In the case of a 32x16 picture: 64 bytes red, 64 bytes green, 64 bytes blue. 16px vertical means 2 rows. 32px horizontal means 4 cols. The order in the image file is 32 bytes for the 1st row, then 32 bytes for the second row.
