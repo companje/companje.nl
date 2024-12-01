@@ -4,8 +4,9 @@ title: Sanyo MBC-550/555
 # Sanyo MBC-550/555
 
 # mame debugger
-```
-dump memory.dmp,0,fffff
+```bash
+dump memory.dmp,0,fffff   # hex
+save memory.bin,0,fffff   # bin
 ```
 
 # visual dump of the current memory in MAME
