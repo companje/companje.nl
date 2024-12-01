@@ -2,6 +2,11 @@
 title: Mac OSX
 ---
 
+# get info about a homebrew package
+```bash
+brew info NAME
+```
+
 # move all png's to layout/ folder keeping folder structure
 ```bash
 find . -type f -name "*.png" -exec sh -c 'mkdir -p "layout/$(dirname "$1")" && mv "$1" "layout/$1"' _ {} \;
