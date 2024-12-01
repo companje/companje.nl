@@ -3,6 +3,11 @@ title: Sanyo MBC-550/555
 ---
 # Sanyo MBC-550/555
 
+# mame debugger
+```
+dump memory.dmp,0,fffff
+```
+
 # visual dump of the current memory in MAME
 ![Screenshot 2024-12-01 at 07 57 19](https://github.com/user-attachments/assets/f1d826e5-1b80-406e-836f-7f6a2e7e088f)
 
