@@ -173,7 +173,7 @@ AUTOEXEC.BAT
 rename it to .DMG and open it. Now you can copy the files.
 (does not work for MS-DOS v1.25)
 
-# Sanyo MBC-555 boot code in ROM disassembly
+# Sanyo MBC-555 boot code / BIOS in ROM disassembly
 * clears the screen, inits CRT, keyboard, loads bootsector from floppy and jumps to it
 * `FFFF:0000` jump to code in ROM
 * `FE00:1E00` start of code in ROM
