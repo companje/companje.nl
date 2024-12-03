@@ -3,6 +3,20 @@ title: Sanyo MBC-550/555
 ---
 # Sanyo MBC-550/555
 
+# set cursor / calc DI
+```asm
+calc_di:          ; input bl,bh [0,0,71,49]
+  mov ax,144      ; 2*72 cols
+  mul bh          ; bh*=144 resultaat in AX
+  shl ax,1        ; verdubbel AX
+  mov di,ax       ; di=ax (=bh*288)
+  shl bl,1        ; bl*=2
+  shl bl,1        ; bl*=2
+  mov bh,0
+  add di,bx       ; di+=bl
+  ret
+```
+
 # mame debugger
 ```bash
 dump memory.dmp,0,fffff   # hex
