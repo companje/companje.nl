@@ -4,7 +4,7 @@ title: Sanyo MBC-550/555
 # Sanyo MBC-550/555
 
 # set cursor / calc DI
-```asm
+```nasm
 calc_di:          ; input bl,bh [0,0,71,49]
   mov ax,144      ; 2*72 cols
   mul bh          ; bh*=144 resultaat in AX
