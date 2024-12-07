@@ -3,6 +3,25 @@ title: Sanyo MBC-550/555
 ---
 # Sanyo MBC-550/555
 
+# xy-loop with one label
+```nasm
+draw4x12:               ; bx should be zero when called
+  push bx
+  call calc_di_from_bx
+  mov bh,4              ; width in cols (1 col = 8px)
+  mov bl,4              ; height in rows (1 row = 4px)
+  call draw_pic
+  pop bx
+  add bl,4
+  cmp bl,4*8
+  jl draw4x12
+  mov bl,0
+  add bh,4
+  cmp bh,4*12
+  jl draw4x12
+  ret  
+```
+
 # animated characters from TimeBandit by Michtron
 ![timebandit-animations](https://github.com/user-attachments/assets/645d75db-b0bf-4b7e-bda7-f7e0737dd316)
 
