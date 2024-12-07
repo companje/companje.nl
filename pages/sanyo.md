@@ -3,6 +3,38 @@ title: Sanyo MBC-550/555
 ---
 # Sanyo MBC-550/555
 
+# keyboard test
+```nasm
+cpu 8086
+org 0
+
+GREEN equ 0x1c00
+
+setup:
+  mov al,0xFF
+  out 0x3a,al           ; keyboard
+  mov al,0x30
+  out 0x3a,al           ; keyboard
+
+  mov al, 5
+  out 10h, al               ; select address 0x1c000 as green video page
+  
+  mov ax,GREEN      
+  mov es,ax
+  xor di,di
+  
+draw:
+  in al,0x38  ;get data byte
+  stosb
+
+  cmp di,14400
+  jb draw
+  xor di,di
+  jmp draw
+
+times (180*1024)-($-$$) db 0
+```
+
 # xy-loop with one label
 ```nasm
 draw4x12:               ; bx should be zero when called
