@@ -3,7 +3,7 @@ title: Sanyo MBC-550/555
 ---
 # Sanyo MBC-550/555
 
-# animated characters from TimeBandit by Bill Dunlevy and Harry Lafnear
+# animated characters from TimeBandit by Michtron
 ![timebandit-animations](https://github.com/user-attachments/assets/645d75db-b0bf-4b7e-bda7-f7e0737dd316)
 
 # set cursor / calc DI
