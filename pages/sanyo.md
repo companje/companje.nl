@@ -1,7 +1,6 @@
 ---
 title: Sanyo MBC-550/555
 ---
-# Sanyo MBC-550/555
 
 # keyboard test
 <img src="https://github.com/user-attachments/assets/54f8ce2d-6d18-4736-bba4-a323b368ab23" align="right">
