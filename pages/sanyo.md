@@ -2,6 +2,9 @@
 title: Sanyo MBC-550/555
 ---
 
+# Expression parser
+Work in progress expression parser: https://companje.nl/parse
+
 # keyboard test
 <img src="https://github.com/user-attachments/assets/54f8ce2d-6d18-4736-bba4-a323b368ab23" align="right">
 
