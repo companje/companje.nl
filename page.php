@@ -14,6 +14,9 @@ $md = file_get_contents($url);
 $parser = new Mni\FrontYAML\Parser();
 $document = $parser->parse($md);
 $yaml = $document->getYAML();   //ignored for now
+
+die("test");
+
 $html = $document->getContent();
 
 $html = preg_replace('#<h1([^>]*)>(.*)</h1>#m','<h2$1>$2</h2>', $html); //h1 to h2
