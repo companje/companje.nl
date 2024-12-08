@@ -259,8 +259,10 @@ _fps() {
 }
 alias fps=_fps
 ```
-# set volume of audio 
-  ffmpeg -i input.wav -af "volume=0.5" output.wav
+# set volume of audio
+```bash
+ffmpeg -i input.wav -af "volume=0.5" output.wav
+```
 # gifenc (with speed) 
 ```bash
 palette="/tmp/palette.png"
