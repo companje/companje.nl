@@ -2,7 +2,7 @@
 
 ```(t,i,x,y) => "creative code golfing"```
 
-A minimalist coding environment. Control 16x16 points with a single JavaScript function. By @aemkei
+A minimalist coding environment. Control 16x16 points with a single JavaScript function. By [@aemkei](https://x.com/@aemkei)
 
 ## The original tixy.land by Martin Kleppe @aemkei
 https://tixy.land
