@@ -15,7 +15,7 @@ $parser = new Mni\FrontYAML\Parser();
 $document = $parser->parse($md);
 $yaml = $document->getYAML();   //ignored for now
 
-vardump($yaml);
+var_dump($yaml);
 
 die("test");
 
