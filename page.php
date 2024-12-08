@@ -38,7 +38,7 @@ include "header.php"
             <div class="card-body">
 
               <!--Title-->
-              <h1 class="card-title"><?=title?></h1>
+              <h1 class="card-title"><?=$title?></h1>
 
               <?=$html?>
 
