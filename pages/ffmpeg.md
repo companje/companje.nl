@@ -284,7 +284,7 @@ or
 ```
 
 # etc 
-```
+```bash
   ffmpeg -r 7.5 -f concat -i list.txt -vcodec mpeg4 -g 1 -q:v 0 -s 2048x1024 -r 1 -y output2.mov
 ```
 
