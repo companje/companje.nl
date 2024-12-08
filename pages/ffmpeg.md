@@ -275,13 +275,18 @@ ffmpeg -v warning -i $1 -i $palette -lavfi "$filters [x]; [x][1:v] paletteuse" -
 ```
 # calculate framerate to get a desired number of frames 
 say you have 2500 frames. You want to get 300 frames. 2500/300=8.3. Use 8.3 as input framerate and use 1 as output framerate. (or 83 as input framerate and 10 as output framerate)
-
+```bash
   ffmpeg -r 8.3 -i input.mp4 -vcodec mpeg4 -q:v 0 -r 1 output.mp4
+```
 or
+```bash
   ffmpeg -r 83 -i input.mp4 -vcodec mpeg4 -q:v 0 -r 10 output.mp4
+```
 
 # etc 
+```
   ffmpeg -r 7.5 -f concat -i list.txt -vcodec mpeg4 -g 1 -q:v 0 -s 2048x1024 -r 1 -y output2.mov
+```
 
 # HQ animated gifs with custom palette 
 * http://blog.pkh.me/p/21-high-quality-gif-with-ffmpeg.html
@@ -317,7 +322,9 @@ ffmpeg -f concat -i list.txt -c copy output.mov
 more settings: http://superuser.com/questions/556029/how-do-i-convert-a-video-to-gif-using-ffmpeg-with-reasonable-quality/556031#556031
 
 # convert image sequence to movie 
+```bash
   ffmpeg -i output/frame%d.jpg -g 1 -y -q:v 0 -r 10  output.mp4
+```
 
 # lossless skip first x seconds of mp3 
 ```bash
