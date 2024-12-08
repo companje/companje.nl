@@ -1,12 +1,12 @@
 # tixy.land
+tixy.land by Martin Kleppe @aemkei
 
 ```(t,i,x,y) => "creative code golfing"```
 
 A minimalist coding environment. Control 16x16 points with a single JavaScript function. By [@aemkei](https://x.com/@aemkei)
 
-## The original tixy.land by Martin Kleppe @aemkei
 https://tixy.land
-<div></div>
+<div></div><div></div>
 <iframe width="800" height="800" src="https://tixy.land/"></iframe>
 
 ## 8086/8088 assembly port of tixy.land in 512 bytes bootsector code on the Sanyo MBC-550/555
