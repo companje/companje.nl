@@ -93,3 +93,10 @@ body {
 .card-body img {
   max-width: 500px;
 }
+
+h2 {
+  border-top: 2px solid black; /* Geeft een border bovenaan */
+  padding-top: 10px; /* Spacing binnen de tag, boven de tekst */
+  margin-top: 20px; /* Spacing buiten de tag, boven de border */
+  margin-bottom: 10px; /* Spacing buiten de tag, onder de border */
+}
