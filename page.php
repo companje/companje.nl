@@ -15,9 +15,8 @@ $parser = new Mni\FrontYAML\Parser();
 $document = $parser->parse($md);
 $yaml = $document->getYAML();   //ignored for now
 
-var_dump($yaml);
+$title = isset($data['title']) ? $data['title'] : $page ;
 
-die("test");
 
 $html = $document->getContent();
 
@@ -39,7 +38,7 @@ include "header.php"
             <div class="card-body">
 
               <!--Title-->
-              <h1 class="card-title"><?=$page?></h1>
+              <h1 class="card-title"><?=title?></h1>
 
               <?=$html?>
 
