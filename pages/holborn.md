@@ -2,7 +2,7 @@
 title: Holborn
 ---
 
-![84351278-B53B-4984-870F-EBE70814EC06_1_105_c](https://github.com/user-attachments/assets/61134997-1f52-4555-8172-400568d49b53)
+![holborn-6100-altair8800-replica-lear-siegler-ADM-3A-terimal](https://github.com/user-attachments/assets/25316aaf-1a5a-4b7b-85a6-2fa091f1d2b6)
 
 * https://technischmuseum.nl/devices/Holborn%20computers/Holborn%20computers.html
 * https://technischmuseum.nl/devices/Holborn%206100/Holborn%206100.html
