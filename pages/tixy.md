@@ -6,7 +6,7 @@ A minimalist coding environment. Control 16x16 points with a single JavaScript f
 
 ## The original tixy.land by Martin Kleppe @aemkei
 * https://tixy.land
-<iframe width="100%" src="https://tixy.land/"></iframe>
+<iframe width="800" height="800" src="https://tixy.land/"></iframe>
 
 ## 8086/8088 assembly port of tixy.land in 512 bytes bootsector code on the Sanyo MBC-550/555
 * https://github.com/companje/tixy.boot
