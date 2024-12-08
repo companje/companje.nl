@@ -2,8 +2,8 @@
 title: Sanyo MBC-550/555
 ---
 
-# Expression parser
-Work in progress expression parser: https://companje.nl/parse
+# animated characters from TimeBandit by Michtron
+![timebandit-animations](https://github.com/user-attachments/assets/645d75db-b0bf-4b7e-bda7-f7e0737dd316)
 
 # keyboard test
 <img src="https://github.com/user-attachments/assets/54f8ce2d-6d18-4736-bba4-a323b368ab23" align="right">
@@ -39,6 +39,9 @@ draw:
 times (180*1024)-($-$$) db 0
 ```
 
+# Expression parser
+Work in progress expression parser: https://companje.nl/parse
+
 # xy-loop with one label
 ```nasm
 draw4x12:               ; bx should be zero when called
@@ -57,9 +60,6 @@ draw4x12:               ; bx should be zero when called
   jl draw4x12
   ret  
 ```
-
-# animated characters from TimeBandit by Michtron
-![timebandit-animations](https://github.com/user-attachments/assets/645d75db-b0bf-4b7e-bda7-f7e0737dd316)
 
 # set cursor / calc DI
 ```nasm
