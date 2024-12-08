@@ -408,11 +408,6 @@ if exist combined.mov (
 )
 ```
 
-# in case of segmentation faults you might need to add -vcoded 
-```bash
-ffmpeg -i Globe4D-energy-related-content.mov -sameq -s 512x256 -vcodec mpeg4 Globe4D-energy-related-content-512.mov
-```
-
 # combine multiple movies with ffmpeg 
 ```bash
 #!/bin/bash
