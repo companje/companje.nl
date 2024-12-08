@@ -15,7 +15,7 @@ $parser = new Mni\FrontYAML\Parser();
 $document = $parser->parse($md);
 $yaml = $document->getYAML();   //ignored for now
 
-$title = isset($data['title']) ? $data['title'] : $page ;
+$title = isset($yaml['title']) ? $yaml['title'] : $page ;
 
 
 $html = $document->getContent();
