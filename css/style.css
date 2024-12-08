@@ -100,3 +100,7 @@ h2 {
   margin-top: 20px; /* Spacing buiten de tag, boven de border */
   margin-bottom: 10px; /* Spacing buiten de tag, onder de border */
 }
+
+p {
+  margin-bottom: 1em;
+}
