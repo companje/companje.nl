@@ -2,6 +2,12 @@
 title: Hex editors
 ---
 
+## hexed.it
+* https://hexed.it/
+
+## binvis
+* https://bizarre-binary.github.io/
+
 ## hex calculator
 <div class="row" style='background:#ddd'>
   <div class="col-3"><label for='dec'>Expression:</label><input name='expr' id='expr' type="text" value="0x0D-5" onchange="dec.value=eval(this.value); hex.value='0x'+eval(this.value).toString(16);bin.value='0b'+eval(this.value).toString(2).padStart(8, 0);"></div>  
