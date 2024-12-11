@@ -2,6 +2,9 @@
 title: Hack
 ---
 
+# binocle
+* https://github.com/sharkdp/binocle
+* 
 # Frida
 * https://frida.re/docs/home/
 
