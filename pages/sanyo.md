@@ -27,8 +27,8 @@ with open(input_binary_file, 'rb') as bin_file, \
 Changing the line length to 16 and replacing the zeros by spaces and the ones by blocks immediately shows the characters.
 ```python
 binary_string = binary_string.replace("0"," ").replace("1","█")
-  for i in range(0, len(binary_string), 16):
-    print(binary_string[i:i+16], file=text_file)
+for i in range(0, len(binary_string), 16):
+     print(binary_string[i:i+16], file=text_file)
 ```   
 
 
