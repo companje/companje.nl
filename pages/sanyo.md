@@ -7,8 +7,7 @@ It took me quite some time to find the font in the binary file. I was expecting 
 
 ![Finding the font in TimeBandit for Sanyo MBC-550/555](https://github.com/user-attachments/assets/063ed157-d692-4100-b3e6-28401727158c)
 
-I used following Python script to convert the EXE to a textfile with just zeros and ones, 800 bytes per line to minimize linebreaks. Then I could use the find function in my texteditor to find parts of the letter in binary. For example 10010011001.
-
+I used following Python script to convert the EXE to a textfile with just zeros and ones, 800 bytes per line to minimize linebreaks.
 ```python
 input_binary_file = "bandit-without-code.exe"
 output_text_file = "bandit-without-code.txt"
@@ -21,7 +20,8 @@ with open(input_binary_file, 'rb') as bin_file, \
   for i in range(0, len(binary_string), 800):
     print(binary_string[i:i+800], file=text_file)
 ```
-
+ Then I could use the find function in my texteditor to find parts of the letter in binary. For example 10010011001.
+![Screenshot 2024-12-12 at 22 00 00](https://github.com/user-attachments/assets/6ce7f787-2c44-4909-a8f4-a4fd91a4bfeb)
 
 # animated characters from TimeBandit by Michtron
 ![timebandit-animations](https://github.com/user-attachments/assets/645d75db-b0bf-4b7e-bda7-f7e0737dd316)
