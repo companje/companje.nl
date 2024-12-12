@@ -3,7 +3,7 @@ title: Sanyo MBC-550/555
 ---
 
 # finding the font in TimeBandit
-It took me quite some time to find the font in the binary file. I was expecting a similar way of storing the pixels as for the sprites: 32x16 in steps of 4 bytes per cell with 4 cells in a row repeated 4 times. And that for 3 color channels. However, the font is only one channel and it is stored as 16 bits per line with 11 lines:
+It took me quite some time to find the font in the binary file. I was expecting a similar way of storing the pixels as for the sprites: 32x16 in steps of 4 bytes per cell with 4 cells in a row repeated 4 times. And that for 3 color channels. However, the font is only one channel and it is stored as 16 bits (lowest 5 bits 0) per line with 11 lines:
 
 ![Finding the font in TimeBandit for Sanyo MBC-550/555](https://github.com/user-attachments/assets/063ed157-d692-4100-b3e6-28401727158c)
 
