@@ -2,6 +2,28 @@
 title: Sanyo MBC-550/555
 ---
 
+# finding the font in TimeBandit
+It took me quite some time to find the font in the binary file. I was expecting a similar way of storing the pixels as for the sprites: 32x16 in steps of 4 bytes per cell with 4 cells in a row repeated 4 times. And that for 3 color channels. However, the font is only one channel and it is stored as 16 bits per line with 11 lines:
+
+![Finding the font in TimeBandit for Sanyo MBC-550/555](https://github.com/user-attachments/assets/063ed157-d692-4100-b3e6-28401727158c)
+
+I used following Python script to convert the EXE to a textfile with just zeros and ones, 800 bytes per line to minimize linebreaks. Then I could use the find function in my texteditor to find parts of the letter in binary. For example 10010011001.
+
+```python
+input_binary_file = "bandit-without-code.exe"
+output_text_file = "bandit-without-code.txt"
+
+with open(input_binary_file, 'rb') as bin_file, \
+     open(output_text_file, 'w') as text_file:
+  
+  binary_string = ''.join(format(byte, '08b') for byte in bin_file.read())
+  binary_string = binary_string.replace("0"," ").replace("1","█")
+
+  for i in range(0, len(binary_string), 800):
+    print(binary_string[i:i+800], file=text_file)
+```
+
+
 # animated characters from TimeBandit by Michtron
 ![timebandit-animations](https://github.com/user-attachments/assets/645d75db-b0bf-4b7e-bda7-f7e0737dd316)
 
