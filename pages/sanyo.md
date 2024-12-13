@@ -32,7 +32,7 @@ for i in range(0, len(binary_string), 16):
      print(binary_string[i:i+16], file=text_file)
 ```
 
-![Screenshot 2024-12-13 at 10 14 26](https://github.com/user-attachments/assets/cd42a719-5651-4c7d-a0fa-bcea39125e16)
+![Screenshot 2024-12-13 at 10 14 26](https://github.com/user-attachments/assets/5b4c54c1-b4dc-4d3b-bd76-b8c3cbc68b91)
 
 characters:
 ```
