@@ -40,6 +40,28 @@ characters:
 # animated characters from TimeBandit by Michtron
 ![timebandit-animations](https://github.com/user-attachments/assets/645d75db-b0bf-4b7e-bda7-f7e0737dd316)
 
+# position of code and data in BANDIT.EXE
+```
+offset=0x0000, count=0x0014  //MZ header
+offset=0x0297, count=0x0081  //code
+offset=0x0338, count=0x08A8  //FONT
+offset=0x08D1, count=0x0293  //code
+offset=0x0C30, count=0x3000  //sprites: key till bandit
+offset=0x3C20, count=0x002E  //strings: 0+NCN@NLNONRNUNFNI01
+offset=0x3C4E, count=0x1E00  //sprites: donut till scorpion
+offset=0x627A, count=0x0018  //string 1234567890123456789012345
+offset=0x6CF0, count=0x062F  //strings
+offset=0x7393, count=0x03BF  //strings trees, cacti, the timegates ...
+offset=0x7753, count=0x03D8  //strings
+offset=0x7E0A, count=0x0678  //strings
+offset=0x84A1, count=0x0477  //code
+offset=0x8BBB, count=0x048F  //strings
+offset=0x90DB, count=0x003F  //code
+offset=0x914A, count=0x1E4C  //code
+offset=0xAF96, count=0x0012  //string?
+```
+
+
 # keyboard test
 <img src="https://github.com/user-attachments/assets/54f8ce2d-6d18-4736-bba4-a323b368ab23" align="right">
 
