@@ -31,6 +31,10 @@ for i in range(0, len(binary_string), 16):
      print(binary_string[i:i+16], file=text_file)
 ```   
 
+characters:
+```
+!"#$%&'()*+,-./0123456789:;{CUP_SYMBOL}={LIVES_SYMBOL}?@ABCDEFGHIJKLMNOPQRSTUVWXYZ
+```
 
 # animated characters from TimeBandit by Michtron
 ![timebandit-animations](https://github.com/user-attachments/assets/645d75db-b0bf-4b7e-bda7-f7e0737dd316)
