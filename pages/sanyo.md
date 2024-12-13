@@ -35,9 +35,7 @@ characters:
 ```
 !"#$%&'()*+,-./0123456789:;{CUP_SYMBOL}={LIVES_SYMBOL}?@ABCDEFGHIJKLMNOPQRSTUVWXYZ
 ```
-<img height="36" src="https://github.com/user-attachments/assets/760a968d-1476-4940-afa0-03d43684eeb0">
-
-
+<img style=" width: 2088px; height: 36px; image-rendering: pixelated" src="https://github.com/user-attachments/assets/760a968d-1476-4940-afa0-03d43684eeb0">
 
 # animated characters from TimeBandit by Michtron
 ![timebandit-animations](https://github.com/user-attachments/assets/645d75db-b0bf-4b7e-bda7-f7e0737dd316)
