@@ -33,7 +33,7 @@ for i in range(0, len(binary_string), 16):
 
 characters:
 ```
-!"#$%&'()*+,-./0123456789:;{CUP_SYMBOL}={LIVES_SYMBOL}?@ABCDEFGHIJKLMNOPQRSTUVWXYZ
+!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ
 ```
 <img style="height: 24px; image-rendering: pixelated" src="https://github.com/user-attachments/assets/760a968d-1476-4940-afa0-03d43684eeb0">
 
