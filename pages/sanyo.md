@@ -24,12 +24,13 @@ with open(input_binary_file, 'rb') as bin_file, \
 ![Screenshot 2024-12-12 at 22 00 00](https://github.com/user-attachments/assets/6ce7f787-2c44-4909-a8f4-a4fd91a4bfeb)
 
 <img align="right" height="250" src="https://github.com/user-attachments/assets/565e48f7-cb6d-4323-bbc1-849c995d076d">
-Changing the line length to 16 and replacing the zeros by spaces and the ones by blocks immediately shows the characters.
+Changing the line length to 16 and replacing the zeros by spaces and the ones by blocks immediately shows the characters in your texteditor.
 ```python
 binary_string = binary_string.replace("0"," ").replace("1","█")
 for i in range(0, len(binary_string), 16):
      print(binary_string[i:i+16], file=text_file)
 ```
+![Screenshot 2024-12-13 at 10 14 26](https://github.com/user-attachments/assets/cd42a719-5651-4c7d-a0fa-bcea39125e16)
 
 characters:
 ```
