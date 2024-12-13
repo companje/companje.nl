@@ -41,7 +41,7 @@ characters:
 ![timebandit-animations](https://github.com/user-attachments/assets/645d75db-b0bf-4b7e-bda7-f7e0737dd316)
 
 # position of code and data in BANDIT.EXE
-```
+```java
 offset=0x0000, count=0x0014  //MZ header
 offset=0x0297, count=0x0081  //code
 offset=0x0338, count=0x08A8  //FONT
