@@ -3,6 +3,10 @@ title: AI / Machine learning
 type: other
 ---
 
+# coding
+* https://codeium.com/windsurf
+* aider
+
 # audio
 * https://suno.com/
 * https://www.udio.com/
