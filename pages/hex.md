@@ -5,6 +5,9 @@ title: Hex editors
 ## hexed.it
 * https://hexed.it/
 
+## binocle
+* https://github.com/sharkdp/binocle
+* 
 ## binvis
 * https://bizarre-binary.github.io/
 
