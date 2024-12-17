@@ -7,7 +7,7 @@ title: Hex editors
 
 ## binocle
 * https://github.com/sharkdp/binocle
-* 
+
 ## binvis
 * https://bizarre-binary.github.io/
 
