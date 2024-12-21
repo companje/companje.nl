@@ -40,7 +40,7 @@ characters:
 ```
 <img style="height: 24px; image-rendering: pixelated" src="https://github.com/user-attachments/assets/760a968d-1476-4940-afa0-03d43684eeb0">
 
-# draw_char_to_vram in Processing
+# draw_char_to_vram in Processing (on the grid)
 ```java
 draw_char_to_vram(chrA, 0,0);
 
@@ -53,6 +53,34 @@ void draw_char_to_vram(byte[] bytes, int si_offset, int di_offset) { //this only
     int dl = 128 >> (x%8);
     memory[R+di] ^= (bytes[si] & dl);  //XOR
     //println("x="+x,"y="+y,"---","di="+di, "dl="+dl);
+  }
+}
+```
+# draw
+```java
+draw_char_xy(chrA, 0, 0, 16, 12); //width must be multiple of 8
+draw_char_xy(chrB, 12, 0, 16, 12); //width must be multiple of 8
+
+void draw_char_xy(byte[] bytes, int ox, int oy, int w, int h) { // draw anywhere! 'off the grid'
+  for (int b = bytes.length*8-1; b>=0 ; b--) { //in case of 24 bytes (16x12 pixels) b=bit index 0..192   //16 bits (2 bytes) per line (12 lines)
+    //2*12 = 24 destination bytes affected when horizontally 'on the grid'
+    //3*12 = 36 bytes affected when horiztonally 'off the grid'
+
+    int x = (b % w) + ox; // x position including offset
+    int y = (b / w) + oy; // y position including offset
+
+    int src_byte_index = b/8; // source index
+    int src_bit_index = b%8;
+    boolean bit_value = (bytes[src_byte_index] & (128>>src_bit_index)) != 0;
+
+    int dst_byte_index = (y / 4) * (4 * COLS) + (y % 4) + (x / 8) * 4; // destination index
+    int dst_bit_index = x%8;
+
+    if (bit_value) {
+      memory[R + dst_byte_index] ^= 128>>dst_bit_index; // Set the bit
+    } else {
+      memory[R + dst_byte_index] &= ~(128>>dst_bit_index); // Clear the bit
+    }
   }
 }
 ```
