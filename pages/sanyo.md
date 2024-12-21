@@ -85,6 +85,182 @@ void draw_char_xy(byte[] bytes, int ox, int oy, int w, int h) { // draw anywhere
 }
 ```
 
+# Assembly code to draw a 12x12 bitmap char anywhere on the screen.
+It can be optimized a lot. It's rather slow but it does work! Next step is to optimize it with nested loops. Then add gradient masks.
+```nasm
+%include "sanyo.asm"
+
+char_index: db 0
+hello1: db "RICKYBOYII",0
+
+draw_string:  ; input si=string offset
+  mov word [draw_char.ox],0
+  mov word [draw_char.oy],0
+  mov word [draw_char.width],16
+  mov word [draw_char.height],12
+
+.lp
+  push si ; string offset
+  lodsb
+  or al,al
+  jz .done
+
+  mov byte [draw_char.char],al
+  call draw_char
+  inc byte [char_index]
+  add word [draw_char.ox],12
+  pop si
+  inc si
+  jmp .lp
+.done
+  pop si
+  ret
+
+setup:
+  mov ax,RED
+  mov es,ax
+  mov si,hello1
+  call draw_string
+  hlt
+
+%include "func.asm"
+
+%include "assets.asm"
+
+times (180*1024)-($-$$) db 0
+```
+## func.asm
+```nasm
+draw_char: 
+jmp .__________
+    ; public
+    .char db 'A'
+    .ox dw 0
+    .oy dw 0
+    .width dw 16
+    .height dw 12
+
+    ; private
+    .bpdiv8 dw 0
+    .bpmod8 dw 0
+    .bpdivw dw 0
+    .bpmodw dw 0
+    .x dw 0
+    .y dw 0
+    .ydiv4 dw 0
+    .ymod4 dw 0
+    .xdiv8 dw 0
+    .xmod8 dw 0
+    .src_bit dw 0
+    .dst_bit dw 0
+    .__________
+
+    ;bp=width*height
+    mov ax,[.width]
+    mov bx,[.height]
+    xor dx,dx
+    mul bx
+    mov bp,ax
+    dec bp            ; n=length*8-1 (zero based)
+
+    ; --- prepare di
+    mov di,0
+
+    ; --- prepare si
+    xor ah,ah
+    mov al,[.char]
+    sub al,32
+    mov cx,24
+    mul cx
+    mov si,ax
+    add si,font
+
+.loop_bits:
+    
+    ; --- bpdiv8, bpmod8
+    mov ax,bp         ; bp = current bit index 0..192 (in case of 16x12)
+    xor dx,dx
+    mov cx,8
+    div cx            ; ax=bp/8, dx=bp%8
+    mov [.bpmod8],dx
+    mov [.bpdiv8],ax
+
+    ; --- bpdivw, bpmodw
+    mov ax,bp         ; bp = current bit index 0..192 (in case of 16x12)
+    xor dx,dx
+    mov cx,[.width]
+    div cx            ; ax=bp/w, dx=bp%w
+    mov [.bpmodw],dx
+    mov [.bpdivw],ax
+
+    ; --- int x,y
+    add dx,[.ox]      ; (b % w) + ox
+    add ax,[.oy]      ; (b / w) + oy
+    mov [.x],dx
+    mov [.y],ax
+
+    ; --- ydiv4, ymod4
+    mov ax,[.y]
+    xor dx,dx
+    mov cx,4
+    div cx
+    mov [.ydiv4],ax
+    mov [.ymod4],dx
+
+    ; --- xdiv8, xmod8
+    mov ax,[.x]
+    xor dx,dx
+    mov cx,8
+    div cx
+    mov [.xdiv8],ax
+    mov [.xmod8],dx
+
+    ; --- DI = (y/4) * (4*COLS) + (y%4) + ((x/8)*4);
+    mov ax,[.ydiv4]
+    xor dx,dx
+    mov cx,4*COLS
+    mul cx
+    add ax,[.ymod4]
+    mov cx,[.xdiv8]
+    times 2 shl cx,1   ; *=4
+    add ax,cx
+    mov di,ax          ; destination index
+
+    ; --- dst_bit = 128>>xmod8
+    mov ax,128
+    mov cx,[.xmod8]
+    shr ax,cl
+    mov [.dst_bit],ax  ; destination bit mask
+
+    ; --- src_bit = 128>>bpmod8
+    mov ax,128
+    mov cx,[.bpmod8]
+    shr ax,cl
+    mov [.src_bit],ax  ; source bit mask
+
+    ; --- if [si + bpdiv8] & [.src_bit]
+    mov bx,[.bpdiv8]   ; source index
+    test [si + bx],ax
+    mov byte al,[.dst_bit]  ; load bit mask into al
+    jz .clr
+.set
+    or byte [es:di],al
+    jmp .while
+.clr  
+    not al  
+    and byte [es:di],al
+.while
+    ;loop while(bp-->0)
+    dec bp
+    or bp,bp
+    jnz .loop_bits
+
+    ret
+
+; ───────────────────────────────────────────────────────────────────────────
+```
+
+
 # animated characters from TimeBandit by Michtron
 ![timebandit-animations](https://github.com/user-attachments/assets/645d75db-b0bf-4b7e-bda7-f7e0737dd316)
 
