@@ -56,7 +56,7 @@ void draw_char_to_vram(byte[] bytes, int si_offset, int di_offset) { //this only
   }
 }
 ```
-# draw
+# draw char/bitmap anywhere
 ```java
 draw_char_xy(chrA, 0, 0, 16, 12); //width must be multiple of 8
 draw_char_xy(chrB, 12, 0, 16, 12); //width must be multiple of 8
