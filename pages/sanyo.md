@@ -87,6 +87,7 @@ void draw_char_xy(byte[] bytes, int ox, int oy, int w, int h) { // draw anywhere
 
 # Assembly code to draw a 12x12 bitmap char anywhere on the screen.
 It can be optimized a lot. It's rather slow but it does work! Next step is to optimize it with nested loops. Then add gradient masks.
+Here is a version that is at least twice as fast: https://gist.github.com/companje/b7bdbed737ee4709b3d50b027e8e5c43
 ```nasm
 %include "sanyo.asm"
 
