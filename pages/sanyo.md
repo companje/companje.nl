@@ -44,7 +44,7 @@ characters:
 ```java
 draw_char_to_vram(chrA, 0,0);
 
-void draw_char_to_vram(byte[] bytes, int si_offset, int di_offset) {
+void draw_char_to_vram(byte[] bytes, int si_offset, int di_offset) { //this only works 'on the grid' (every 8 pixels) 
   for (int b=0; b<bytes.length*8; b++) { // b=which bit 0..192 //2 bytes per line (12 lines)
     int x = b%16;
     int y = b/16;
