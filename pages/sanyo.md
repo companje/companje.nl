@@ -40,6 +40,23 @@ characters:
 ```
 <img style="height: 24px; image-rendering: pixelated" src="https://github.com/user-attachments/assets/760a968d-1476-4940-afa0-03d43684eeb0">
 
+# draw_char_to_vram in Processing
+```java
+draw_char_to_vram(chrA, 0,0);
+
+void draw_char_to_vram(byte[] bytes, int si_offset, int di_offset) {
+  for (int b=0; b<bytes.length*8; b++) { // b=which bit 0..192 //2 bytes per line (12 lines)
+    int x = b%16;
+    int y = b/16;
+    int si = si_offset + b/8;
+    int di = di_offset + (y/4)*(4*COLS) + (y%4) + (x/8)*4;
+    int dl = 128 >> (x%8);
+    memory[R+di] ^= (bytes[si] & dl);  //XOR
+    //println("x="+x,"y="+y,"---","di="+di, "dl="+dl);
+  }
+}
+```
+
 # animated characters from TimeBandit by Michtron
 ![timebandit-animations](https://github.com/user-attachments/assets/645d75db-b0bf-4b7e-bda7-f7e0737dd316)
 
