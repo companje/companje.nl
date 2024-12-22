@@ -1,4 +1,5 @@
 * https://www.aseprite.org
+* veel overeenkomsten met keys in Photoshop
 * shift+S toggle snap to grid
 * shift+N new layer
 * V move/select, also for auto select layer when the autoselect checkbox is selected
