@@ -2,6 +2,12 @@
 title: Sanyo MBC-550/555
 ---
 
+# gradient TimeBandit font.
+The effect of the colorful font in TimeBandit on the Sanyo MBC-550/555 can be achieved by introducing 2 colors. color1 for the top 3 lines, color2 for the bottom 4 lines an a checkboard pattern mixing color1 and color2.
+
+<img style="height: 24px; image-rendering: pixelated" src="https://github.com/user-attachments/assets/0507cd75-bc48-457d-8e7b-6e376a94adb1">
+
+
 # finding the font in TimeBandit
 It took me quite some time to find the font in the binary file. I was expecting a similar way of storing the pixels as for the sprites: 32x16 in steps of 4 bytes per cell with 4 cells in a row repeated 4 times. And that for 3 color channels. However, the font is only one channel and it is stored as 16 bits (the lowest 5 bits are 0) per line with 12 lines (the last line is always 0):
 
