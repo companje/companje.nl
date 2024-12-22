@@ -422,7 +422,13 @@ cols_loop:
   movsw
   movsw
   loop cols_loop
-  add di,COLS*4 - 4*4
+  add di,COLS*4
+
+  mov ax,0
+  mov al,bh
+  times 2 shl ax,1
+  sub di,ax       ; di-=4*bh
+
   pop cx
   loop rows_loop
   ret
