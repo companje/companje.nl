@@ -5,6 +5,8 @@ title: Sanyo MBC-550/555
 # Gradient TimeBandit font
 The effect of the colorful font in TimeBandit on the Sanyo MBC-550/555 can be achieved by introducing 2 colors. color1 for the top 3 lines, color2 for the bottom 4 lines an a checkboard pattern mixing color1 and color2. The checkboard pattern is created using a XOR.
 
+NB. Since the font is 12x12 instead of 16x12 (or 16x16) things are so much more difficult. The sprites are all on the grid (72 or 80 cols by 50 rows), the font however, is not on the grid. It uses 12 bits instead of 16. Once could say: 2 chars form always one sprite of (24x12) or (24x16). This would be a lot faster in rendering but less flexible. The current solution below can draw a bitmap (including a char) anywhere on the screen. It's rather slow but not slower than the original game I think.
+
 * [app.asm](https://github.com/companje/Sanyo-MBC-550-555-experiments/blob/main/TimeBanditFont/app.asm)
 * [functions.asm](https://github.com/companje/Sanyo-MBC-550-555-experiments/blob/main/TimeBanditFont/functions.asm)
 
