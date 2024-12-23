@@ -8,6 +8,7 @@
 * Cmd+Shift+J layer via cut
 * Alt+Shift+arrows move selection
 * change brush size: -/=
+* alt key for eyedropper tool
 
 # videos
 * https://youtu.be/iWvfaiiVuDI
