@@ -21,35 +21,31 @@
 
 # save BIN file for Sanyo MBC-555
 ```lua
+local white = app.pixelColor.rgba(255, 255, 255, 255)
 local sprite = app.activeSprite
--- local outputFile = "./bitmap.bin"
 local filePath = app.fs.filePath(sprite.filename)
 local fileName = app.fs.fileTitle(sprite.filename)
-local outputFile = filePath .. "/" .. fileName .. "_binary_bitmap.bin"
+if filePath=="" then filePath = "." end
 
+local outputFile = filePath .. "/" .. fileName .. ".bin"
 local file = io.open(outputFile, "wb")
 local image = Image(sprite)
 local w = image.width
 local h = image.height
-local i = 0
-local x = 0
 
-for i=0, w*h/8-1 do
-    local j = 128
-    local byte = 0
-
-    for b=0,7 do
-        local y = i//(w//8)
-        local c = image:getPixel(x,y)
-            
-        if c~=4294967295 then
-            byte = byte | j
+for y = 0, h-1, 4 do
+    for x = 0, w-1, 8 do
+        for i = 0, 3 do
+            local byte = 0
+            for b = 0, 7 do
+                local c = image:getPixel(x+b, y+i)
+                if c == white then
+                    byte = byte | (1 << (7-b))
+                end
+            end
+            file:write(string.char(byte))
         end
-
-        x = (x+1) % w
-        j = j//2
-    end
-    file:write(string.char(byte))
+    end    
 end
 
 file:close()
