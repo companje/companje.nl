@@ -10,6 +10,11 @@
 * change brush size: -/=
 * alt key for eyedropper tool
 
+# lua script via commandline
+```bash
+/Applications/Aseprite.app/Contents/MacOS/aseprite -b 8x4-nibble-font.aseprite --script /Users/rick/Library/Application\ Support/Aseprite/scripts/sprite.lua
+```
+
 # videos
 * https://youtu.be/iWvfaiiVuDI
 * https://youtu.be/59Y6OTzNrhk
