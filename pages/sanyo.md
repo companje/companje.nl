@@ -2,6 +2,10 @@
 title: Sanyo MBC-550/555
 ---
 
+# my own 4 lines high pixelfont
+<img style="width:928px; height: 16px; image-rendering: pixelated" src="https://github.com/user-attachments/assets/df54d4f9-01d1-4c20-a84a-0fe5b3107529">
+
+
 # Export graphic from Asesprite to .BIN file
 LUA script for Aseprite:
 ```lua
