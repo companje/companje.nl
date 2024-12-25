@@ -21,9 +21,14 @@
 
 # save BIN file for Sanyo MBC-555
 ```lua
-local outputFile = "./bitmap.bin"
+local sprite = app.activeSprite
+-- local outputFile = "./bitmap.bin"
+local filePath = app.fs.filePath(sprite.filename)
+local fileName = app.fs.fileTitle(sprite.filename)
+local outputFile = filePath .. "/" .. fileName .. "_binary_bitmap.bin"
+
 local file = io.open(outputFile, "wb")
-local image = Image(app.activeSprite)
+local image = Image(sprite)
 local w = image.width
 local h = image.height
 local i = 0
