@@ -91,7 +91,7 @@ body {
 }
   
 .card-body img {
-  max-width: 500px;
+  max-width: 928px; /*arbitrary*/
 }
 
 h2 {
