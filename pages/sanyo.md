@@ -2,6 +2,38 @@
 title: Sanyo MBC-550/555
 ---
 
+# Export graphic from Asesprite to .BIN file
+LUA script for Aseprite:
+```lua
+local white = app.pixelColor.rgba(255, 255, 255, 255)
+local sprite = app.activeSprite
+local filePath = app.fs.filePath(sprite.filename)
+local fileName = app.fs.fileTitle(sprite.filename)
+if filePath=="" then filePath = "." end
+
+local outputFile = filePath .. "/" .. fileName .. ".bin"
+local file = io.open(outputFile, "wb")
+local image = Image(sprite)
+local w = image.width
+local h = image.height
+
+for y = 0, h-1, 4 do
+    for x = 0, w-1, 8 do
+        for i = 0, 3 do
+            local byte = 0
+            for b = 0, 7 do
+                local c = image:getPixel(x+b, y+i)
+                if c == white then
+                    byte = byte | (1 << (7-b))
+                end
+            end
+            file:write(string.char(byte))
+        end
+    end    
+end
+file:close()
+```
+
 # Gradient TimeBandit font
 The effect of the colorful font in TimeBandit on the Sanyo MBC-550/555 can be achieved by introducing 2 colors. color1 for the top 3 lines, color2 for the bottom 4 lines an a checkboard pattern mixing color1 and color2. The checkboard pattern is created using a XOR.
 
