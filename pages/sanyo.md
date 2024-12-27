@@ -7,6 +7,37 @@ title: Sanyo MBC-550/555
 <img style="width:928px; height: 16px; image-rendering: pixelated" src="https://github.com/user-attachments/assets/df54d4f9-01d1-4c20-a84a-0fe5b3107529">
 </div>
 
+but there is a problem... the cells in the video RAM are 8x4, the font is also 8x4, so it fits perfectly, however there's no space in between the lines, so the text bleeds and is unreadible. It's possible to add a spacing line by splitting a char over two cells and get off the grid vertically, but the whole idea of the 8x4 font is to stick to one cell. A possible solution is to use color to be able to separate the lines visually:
+
+![Screenshot 2024-12-27 at 01 10 54](https://github.com/user-attachments/assets/6aae8701-47f5-4d19-92a4-600550031551)
+
+```nasm
+draw_string:
+  mov dx,BLUE
+  mov bx,RED
+  mov si,font
+  mov cx,59
+.lp
+  movsw
+  lodsw
+  stosw
+  push ds
+  mov ds,bx
+  mov [di-2],ax  ; copy green channel of bottom 2 lines in cell to red creating yellow
+  mov ds,dx
+  mov [di-1],ah  ; ; copy green channel of bottom line in cell to creating white
+  pop ds
+  loop .lp
+  ret
+
+setup:
+  mov ax,GREEN
+  mov es,ax
+  mov di,0
+  call draw_string ; draws font-table twice
+  call draw_string
+  hlt
+```
 
 # Export graphic from Asesprite to .BIN file
 LUA script for Aseprite:
