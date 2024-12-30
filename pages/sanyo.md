@@ -2,6 +2,9 @@
 title: Sanyo MBC-550/555
 ---
 
+# Binary Visualisation of BANDIT.EXE
+<iframe width="1800" height="841" src="https://www.youtube.com/embed/QiccGjhkpa8" title="TimeBandit for Sanyo MBC 550/555 - Binary Visualisation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 # my own 4 lines high pixelfont
 <div style="padding: 10px; background-color: black">
 <img style="width:928px; height: 16px; image-rendering: pixelated" src="https://github.com/user-attachments/assets/df54d4f9-01d1-4c20-a84a-0fe5b3107529">
