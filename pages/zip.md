@@ -2,7 +2,7 @@
 title: ZIP / 7z etc. compression
 ---
 
-## maak een 7z bestand (no compression) van elke map
+## maak een 7z bestand (no compression) van elke submap
 ```bash
 for dir in */; do 7zz a -mx0  "${dir%/}.7z" "$dir"; done
 ```
