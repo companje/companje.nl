@@ -2,6 +2,39 @@
 title: Sanyo MBC-550/555
 ---
 
+# Prepare atan & atan2 in assembler. First in Java/Processing
+```java
+//DIT WERKT!!!!!!!!!!!!
+int scale = 10;
+
+int myAtan(int x) {
+  if (abs(x) > scale) {
+    if (x > 0) {
+      return 90 - myAtan(scale*scale / x);
+    } else {
+      return -90 - myAtan(scale*scale / x);
+    }
+  }
+
+  int result = 0;
+  int term = x;
+  int x2 = (x * x) / scale;
+  int sign = 1;
+
+  for (int i = 1; i < 50; i += 2) { // taylor series
+    result += (sign * term) / i;
+    term = (term * x2) / scale;
+    sign *= -1;
+  }
+  return result * 180 / int(PI*scale);
+}
+
+int myAtan2(int y, int x) {
+  if (x == 0) return y > 0 ? 90 : y < 0 ? -90 : 0;
+  return myAtan((y * scale) / x) + (x > 0 ? 0 : y < 0 ? -180 : 180);
+}
+```
+
 # Binary Visualisation of BANDIT.EXE
 <iframe width="900" height="420" src="https://www.youtube.com/embed/QiccGjhkpa8" title="TimeBandit for Sanyo MBC 550/555 - Binary Visualisation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
