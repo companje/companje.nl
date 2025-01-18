@@ -2,11 +2,11 @@
 title: Sanyo MBC-550/555
 ---
 
-# custom atan & atan2 in degrees
+# custom integer atan & atan2 in degrees
 ```java
 int atan(int z) {
-  if (z>111) {
-    ax = 12321;
+  if (z>111) {   // if z>scale
+    ax = 12321;  // 12321 = 111*111 (squared scale)
     ax /= z;
     bx = atan(ax);   //recursion
     ax = 90;
@@ -43,7 +43,6 @@ int atan2(int y, int x) {
   else if (x < 0 && y < 0) ax-=180;
   else if (x == 0 && y > 0) ax=90;
   else if (x == 0 && y < 0) ax=-90;
-  
   return ax;
 }
 ```
