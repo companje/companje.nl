@@ -47,6 +47,40 @@ int atan2(int y, int x) {
 }
 ```
 
+# Velocity flags
+Use Zero-flag and Sign-flag to create rudimentary atan2 function with 45 degrees accuracy (8 directions)
+```nasm
+; velocity flags
+  mov ax,[ship.vel.x]
+  or ax,0
+  pushf
+  pop ax
+  mov cl,6
+  shr al,cl
+  xchg al,bl
+  mov ax,[ship.vel.y]
+  or ax,0
+  pushf
+  pop ax
+  mov cl,4
+  shr al,cl
+  or ax,bx
+  and ax,15
+  mov word [ship.vel.flags],ax
+
+  ; 0=down-right
+  ; 1=down
+  ; 2=down-left
+  ; 3=################
+  ; 4=right
+  ; 5=#### IDLE ####
+  ; 6=left
+  ; 4=###############
+  ; 8=up-right
+  ; 9=up
+  ; 10=up-left
+```
+
 # Binary Visualisation of BANDIT.EXE
 <iframe width="900" height="420" src="https://www.youtube.com/embed/QiccGjhkpa8" title="TimeBandit for Sanyo MBC 550/555 - Binary Visualisation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
