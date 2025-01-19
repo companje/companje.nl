@@ -25,7 +25,7 @@ or ax, 0100h            ; Set the Trap Flag (TF) in AX
 push ax                 ; Push the modified FLAGS back onto the stack
 popf                    ; Pop the modified FLAGS back into FLAGS register
 sti  
-
+```
 
 # custom integer atan & atan2 in degrees
 ```java
