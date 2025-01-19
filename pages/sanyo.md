@@ -7,7 +7,7 @@ title: Sanyo MBC-550/555
 ; register interrupt
 mov ax,0
 mov ds,ax ; segment 0
-mov word [INT_NUMBER*4+0],INT_Callback     ; address in CS segment
+mov word [INT_NUMBER*4+0],intX_handler     ; address in CS segment
 mov word [INT_NUMBER*4+2],cs
 
 ; raise int1: Division by zero / Division error
