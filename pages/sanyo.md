@@ -2,6 +2,31 @@
 title: Sanyo MBC-550/555
 ---
 
+# debugging with interrupts
+```nasm
+; register interrupt
+mov ax,0
+mov ds,ax ; segment 0
+mov word [INT_NUMBER*4+0],INT_Callback     ; address in CS segment
+mov word [INT_NUMBER*4+2],cs
+
+; raise int1: Division by zero / Division error
+mov cx,0
+div cx
+
+; raise int3: For one byte interrupt.
+int3
+
+; raise int1 - Single Step debugging
+cli                     ; Disable interrupts
+pushf                   ; Push FLAGS onto the stack
+pop ax                  ; Pop FLAGS into AX
+or ax, 0100h            ; Set the Trap Flag (TF) in AX
+push ax                 ; Push the modified FLAGS back onto the stack
+popf                    ; Pop the modified FLAGS back into FLAGS register
+sti  
+
+
 # custom integer atan & atan2 in degrees
 ```java
 int atan(int z) {
