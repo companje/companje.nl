@@ -14,7 +14,7 @@ mov word [INT_NUMBER*4+2],cs
 mov cx,0
 div cx
 
-; raise int3: For one byte interrupt.
+; raise int3: for convenient one byte interrupt.
 int3
 
 ; raise int1 - Single Step debugging
