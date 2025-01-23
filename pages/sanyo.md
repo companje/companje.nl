@@ -2,7 +2,7 @@
 title: Sanyo MBC-550/555
 ---
 
-# Working atan and atan2 functions in assembly! Hoeray!
+# Working atan and atan2 functions in assembly! Hooray!
 ```nasm
 atan2: ; input bx=y, ax=x
   cmp ax,0
