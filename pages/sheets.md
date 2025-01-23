@@ -1,5 +1,11 @@
 see also [docs](/docs)
 
+# extract number after last underscore
+```
+# NL-UtHUA_34-4_154
+=REGEXEXTRACT(A392, "_([^_]+)$")
+```
+
 # MATCH
 als een item in een lijst voorkomt dan een X en anders niks
 ```
