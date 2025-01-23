@@ -1,3 +1,11 @@
+# context with titles connect by prior 
+```sql
+SELECT LISTAGG(get_description(a.id,a.type_id), ' ... ') WITHIN GROUP (ORDER BY level DESC)  "context"
+FROM archivalrecords a
+CONNECT BY PRIOR a.type_id = a.id
+START WITH a.id=123123123
+```
+
 # query om alle padnamen van scans onder een bepaalde rubriek te krijgen met een bepaald jaartal
 ```sql
 select get_omschrijving(id,243), bes.padnaam from appels a
