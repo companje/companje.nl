@@ -2,6 +2,9 @@
 title: Electronics
 ---
 
+# Buy awesome things directly from makers
+* http://tindie.com/
+
 # Weerstand in Serie en Parallel
 ```js
 import java.util.*;
