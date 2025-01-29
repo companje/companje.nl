@@ -2,6 +2,9 @@
 title: Processing
 ---
 
+# Sphere with mouse and rotate to Lat Lon with Apache Math3 library
+* https://gist.github.com/companje/67a5261a664e560f4505c20e5cfc5d95
+
 # OpenCV remap in Processing with 16bits grayscale TIFF's
 ```java
 import gab.opencv.*;
