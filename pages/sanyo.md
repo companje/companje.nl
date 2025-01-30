@@ -2,6 +2,46 @@
 title: Sanyo MBC-550/555
 ---
 
+# audio/sound
+<iframe width="900" height="420" src="https://youtu.be/LcbkdIsNju4" title="Sanyo-MBC-555-sound" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+```nasm
+play:             ; bx=note, dx=duration
+   push ax
+   push bx
+   push cx
+   push dx
+   mov cx,bx
+   mov ax,0x35
+.a xor al,8       ; toggle 'break' bit
+   out 0x3a,al    ; USART
+.b dec ah
+   jnz .c
+   dec dx
+   jz .d
+.c loop .b
+   mov cx,bx      ; reset note
+   jmp .a
+.d xor al,8       ; toggle 'control' bit
+   cmp al,0x35    ; 'break' now on?
+   jnz .e         ; jump if not
+   out 0x3A,al    ; reset USART
+.e pop dx
+   pop cx
+   pop bx
+   pop ax
+   ret
+
+playEffect:
+  mov bx,bp
+  mov bx,[sound+bx]
+  sub bx,ax   ; ax = note offset for tone height
+  call play
+  inc bp
+  inc bp
+  loop playEffect
+  ret
+```
+
 # Working atan and atan2 functions in assembly! Hooray!
 ```nasm
 atan2: ; input bx=y, ax=x
