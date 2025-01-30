@@ -41,6 +41,7 @@ playEffect:
   loop playEffect
   ret
 ```
+See also Soft Sector magazine December 1984
 
 # Working atan and atan2 functions in assembly! Hooray!
 ```nasm
