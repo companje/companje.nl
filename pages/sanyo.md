@@ -3,7 +3,7 @@ title: Sanyo MBC-550/555
 ---
 
 # audio/sound
-<iframe width="900" height="420" src="https://youtu.be/embed/LcbkdIsNju4" title="Sanyo-MBC-555-sound" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="900" height="420" src="https://youtu.be/LcbkdIsNju4" title="Sanyo-MBC-555-sound" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ```nasm
 play:             ; bx=note, dx=duration
    push ax
