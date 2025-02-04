@@ -3,7 +3,7 @@ title: Sanyo MBC-550/555
 ---
 
 # stretch bits from AL to AX
-```asm
+```nasm
 stretch_bits: ;input al=byte (10011001), bit duplication result in ax: 1100001111000011
   push cx
   push bx
