@@ -2,6 +2,27 @@
 title: Sanyo MBC-550/555
 ---
 
+# stretch bits from AL to AX
+```asm
+stretch_bits: ;input al=byte (10011001), bit duplication result in ax: 1100001111000011
+  push cx
+  push bx
+  mov bl, al
+  xor ax, ax
+  mov cx, 8
+.lp:
+  shl ax, 1
+  shl ax, 1
+  shl bl, 1
+  jnc .no1
+  or ax, 3
+.no1:
+  loop .lp
+  pop bx
+  pop cx
+  ret
+```
+
 # audio/sound
 <iframe width="900" height="420" src="https://www.youtube.com/embed/LcbkdIsNju4" title="Sanyo MBC-550/555 sound in 8088 assembly" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ```nasm
