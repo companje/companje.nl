@@ -2,6 +2,11 @@
 title: Mac OSX
 ---
 
+# echo to stderr
+```
+>&2 echo test 
+```
+
 # disk usage
 ```
 brew install ncdu
