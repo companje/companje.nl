@@ -2,6 +2,11 @@
 title: Mac OSX
 ---
 
+# disk usage
+```
+brew install ncdu
+```
+
 # get info about a homebrew package
 ```bash
 brew info NAME
