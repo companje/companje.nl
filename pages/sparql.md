@@ -1,3 +1,30 @@
+# values & filter combined
+```sparql
+prefix id: <https://hisgis.hualab.nl/id/>
+prefix def: <https://hisgis.hualab.nl/def/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix hh: <https://hisgis.hualab.nl/id/hoogheemraadschap/>
+
+select distinct ?perceel ?bezitter_naam ?geo ?geoColor where {
+  ?perceel geo:asWKT ?geo .
+  ?perceel def:hoogheemraadschap ?hoogheemraadschap .
+  ?perceel def:bezitsregistratie ?bezitsregistratie .
+  ?bezitsregistratie def:namen ?bezitter_naam .
+  
+  VALUES (?hoogheemraadschap) { 
+    (hh:Lekdijk_Bovendams)
+    (hh:Lekdijk_Benedendams) }
+  
+  FILTER (REGEX(?bezitter_naam, "Schaik|Schaick", "i")).
+  
+  bind(
+    if(?hoogheemraadschap = hh:Lekdijk_Bovendams, "red",
+    if(?hoogheemraadschap = hh:Lekdijk_Benedendams, "blue",
+    "default")) as ?geoColor)
+}
+```
+
 # LD-Frames
 * https://docs.triply.cc/generics/JSON-LD-frames/
 * * https://w3c.github.io/json-ld-framing/
