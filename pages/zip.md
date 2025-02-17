@@ -2,6 +2,11 @@
 title: ZIP / 7z etc. compression
 ---
 
+## backup map zonder compressie op windows
+```
+"c:\program files\7-zip\7z.exe" a -tzip -mx0 -bb1 -xr!".git" "backups/backup.zip" "bronmap"
+```
+
 ## maak een 7z bestand (no compression) van elke submap
 ```bash
 for dir in */; do 7zz a -mx0  "${dir%/}.7z" "$dir"; done
