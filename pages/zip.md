@@ -3,7 +3,7 @@ title: ZIP / 7z etc. compression
 ---
 
 ## backup map zonder compressie op windows
-```
+```batch
 "c:\program files\7-zip\7z.exe" a -tzip -mx0 -bb1 -xr!".git" "backups/backup.zip" "bronmap"
 ```
 
