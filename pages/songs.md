@@ -3,6 +3,7 @@ title: Songs
 layout: default
 ---
 
+* Housewife - Life Of The Party
 * Jake Bugg - I Wrote the Book
 * Katy J Pearson - Save Me
 * mood bored - wet faced & ugly
