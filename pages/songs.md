@@ -3,6 +3,7 @@ title: Songs
 layout: default
 ---
 
+* Jake Bugg - I Wrote the Book
 * Katy J Pearson - Save Me
 * mood bored - wet faced & ugly
 * The Knife - Listen Now
