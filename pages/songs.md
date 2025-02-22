@@ -9,7 +9,7 @@ layout: default
 * Kryp Tina - Love You Like A ...
 * Tapetoy - Naive
 * Tame Impala - Let it happen
-* Miike Snow - I Was A Sailor
+* Mike Snow - I Was A Sailor
 * Yannis & The Yaw - Rain Can't Reach Us (feat. Tony Allen)
 * Honeyglaze - Don't
 * Postal Service - Sleeping in
