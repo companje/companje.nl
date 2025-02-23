@@ -2,6 +2,14 @@
 title: Mac OSX
 ---
 
+# launchctl
+Dit was het! Dit moet in mn plist. Hoe dat icm met pm2 ga ik later uitzoeken.
+<key>ProcessType</key>
+<string>Interactive</string>
+<key>ThrottleInterval</key>
+<integer>0</integer>
+```
+
 # echo to stderr
 ```
 >&2 echo test 
