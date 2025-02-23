@@ -10,7 +10,6 @@ Dit was het! Dit moet in mn plist. Hoe dat icm met pm2 ga ik later uitzoeken.
 <key>ThrottleInterval</key>
 <integer>0</integer>
 ```
-```
 
 # echo to stderr
 ```
