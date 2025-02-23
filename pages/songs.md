@@ -3,6 +3,7 @@ title: Songs
 layout: default
 ---
 
+* Simpleton - Pleasure To Meet You
 * Kavinsky - Nightcall
 * Housewife - Life Of The Party
 * Jake Bugg - I Wrote the Book
