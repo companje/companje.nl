@@ -3,13 +3,13 @@ title: Python
 ---
 
 # change order of date parts: 1610-09-08 to 08-09-1610 
-```
+```python
 def to_dutch_date(d): # YYYY-MM-DD to DD-MM-YYYY
   return "-".join(reversed(d.split("-")))
 ```
 
 # pandas replace nan by ""
-```
+```python
 df = df.fillna("") # vervang alle nan's door "" in het hele dataframe
 ```
 
