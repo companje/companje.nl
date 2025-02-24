@@ -2,9 +2,9 @@
 title: Python
 ---
 # set gray image into rgb image channels
-```
-screen = np.stack([frame] * 3, axis=-1)
 ```python
+screen = np.stack([frame] * 3, axis=-1)
+```
 or
 ```python
 screen[:, :, :] = frame[:, :, None]
