@@ -1,7 +1,15 @@
 ---
 title: Python
 ---
-
+# set gray image into rgb image channels
+```
+screen = np.stack([frame] * 3, axis=-1)
+```python
+or
+```python
+screen[:, :, :] = frame[:, :, None]
+```
+  
 # change order of date parts: 1610-09-08 to 08-09-1610 
 ```python
 def to_dutch_date(d): # YYYY-MM-DD to DD-MM-YYYY
