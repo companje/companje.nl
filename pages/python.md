@@ -1,6 +1,45 @@
 ---
 title: Python
 ---
+
+# Sorteer AKTES binnen elke NTNI op Scannaam en bepaal een akte_nummer
+```python
+for ntni in ntnis.values():
+  ntni["aktes"].sort(key=lambda row: row["images"])
+  for i, akte in enumerate(ntni["aktes"], 1):
+      akte["akte_nummer"] = i
+```
+
+# get_invnr_from_filename
+```python
+def get_invnr_from_filename(filename, toegang):
+  m = re.findall(r"NL-UtHUA_"+toegang+"_(\d+)_",filename)
+  return m[0] if m else None
+```
+
+# merge_keys in dict
+```python
+def merge_keys(data, keys, dst_key, separator=","):
+  data[dst_key] = separator.join([data[k] for k in keys])
+  for k in keys:
+    del data[k]
+```
+
+# get first scan number
+```python
+# in: NL-UtHUA_34-4_137_000042|NL-UtHUA_34-4_137_000043|NL-UtHUA_34-4_137_000044
+# out: 42
+def get_first_scan_number(akte, toegang):
+  m = re.findall(r"NL-UtHUA_"+toegang+"_(\d+)_(\d+)",akte["images"])
+  return int(m[0][1]) if m else None
+```
+
+# rename key in dict
+```
+def rename_key(data, key_name, new_key_name):
+  data[new_key_name] = data[key_name]
+  del data[key_name]
+```  
 # set gray image into rgb image channels
 ```python
 screen = np.stack([frame] * 3, axis=-1)
