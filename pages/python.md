@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# opencv scale down .5
+```python
+scaled_frame = cv2.pyrDown(frame)
+```
+
 # Sorteer AKTES binnen elke NTNI op Scannaam en bepaal een akte_nummer
 ```python
 for ntni in ntnis.values():
