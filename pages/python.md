@@ -35,7 +35,7 @@ def get_first_scan_number(akte, toegang):
 ```
 
 # rename key in dict
-```
+```python
 def rename_key(data, key_name, new_key_name):
   data[new_key_name] = data[key_name]
   del data[key_name]
