@@ -2,6 +2,16 @@
 title: Python
 ---
 
+# mutable default arguments to simulate static variable within a function
+```
+def get_framerate(prev_time=[0], fps=[30]):
+    current_time = cv2.getTickCount()
+    elapsed = (current_time - prev_time[0]) / cv2.getTickFrequency()
+    prev_time[0] = current_time
+    fps[0] = (1.0 / elapsed * 0.1) + (fps[0] * 0.9)
+    return fps[0]
+```
+
 # opencv scale down .5
 ```python
 scaled_frame = cv2.pyrDown(frame)
