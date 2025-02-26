@@ -3,7 +3,8 @@ title: Python
 ---
 
 # mutable default arguments to simulate static variable within a function
-```
+```python
+# framerate moving average
 def get_framerate(prev_time=[0], fps=[30]):
     current_time = cv2.getTickCount()
     elapsed = (current_time - prev_time[0]) / cv2.getTickFrequency()
