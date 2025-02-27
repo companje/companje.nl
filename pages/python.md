@@ -4,7 +4,8 @@ title: Python
 
 # incremental id
 ```python
-def get_incrementeal_id(id=[0]): # using mutable default arguments this function returns a new number every time it's called
+# using mutable default arguments, this function returns a new number every time it's called
+def get_incrementeal_id(id=[0]):
   id[0]+=1
   return id[0]
 ```
