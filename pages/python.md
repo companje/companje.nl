@@ -2,6 +2,13 @@
 title: Python
 ---
 
+# load template only once (cache) using mutable default arguments
+```python
+def get_template(name, tpl={}):
+  filename = f"data/templates/{name}.xml"
+  return tpl[name] if name in tpl else Liquid(filename, liquid_from_file=True)
+```
+
 # incremental id
 ```python
 # using mutable default arguments, this function returns a new number every time it's called
