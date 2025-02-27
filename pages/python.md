@@ -2,6 +2,13 @@
 title: Python
 ---
 
+# incremental id
+```python
+def get_incrementeal_id(id=[0]): # using mutable default arguments this function returns a new number every time it's called
+  id[0]+=1
+  return id[0]
+```
+
 # mutable default arguments to simulate static variable within a function
 ```python
 # framerate moving average
