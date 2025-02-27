@@ -6,7 +6,9 @@ title: Python
 ```python
 def get_template(name, tpl={}):
   filename = f"data/templates/{name}.xml"
-  return tpl[name] if name in tpl else Liquid(filename, liquid_from_file=True)
+  if not name in tpl:
+    tpl[name] = Liquid(filename, liquid_from_file=True)
+  return tpl[name]
 ```
 
 # incremental id
