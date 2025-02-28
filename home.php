@@ -55,11 +55,20 @@ include "header.php"
           <!-- Grid column -->
           <div class="col-lg-6 col-md-6 mb-3">
 
-            <div class="grayeffect view overlay z-depth-1-half">
+            <!--<div class="grayeffect view overlay z-depth-1-half">
               <a data-fancybox="gallery" href="https://player.vimeo.com/video/225388406">
                 <img src="img/transform-printer.jpg" class="img-fluid" alt="">
                 <div class="flex-center mask">
                   <p class="display-4 white-text">Doodle3D</p>
+                </div>
+              </a>
+            </div>-->
+
+             <div class="grayeffect view overlay z-depth-1-half">
+              <a data-fancybox="gallery" href="https://player.vimeo.com/video/1060453403">
+                <img src="img/cyberdeck-excel97.jpg" class="img-fluid" alt="">
+                <div class="flex-center mask">
+                  <p class="display-4 white-text">Cyberdeck Excel97</p>
                 </div>
               </a>
             </div>
