@@ -2,6 +2,20 @@
 title: Python
 ---
 
+# limit framerate in opencv using mutable default argument
+```
+def limit_frame_rate(fps=30, start_time=[0]):
+    # functie die gebruik maakt van een mutable default argument 
+    # (start_time=[0]) om de framerate te reguleren.
+    frame_time = 1 / fps
+    end_time = cv2.getTickCount()
+    elapsed_time = (end_time - start_time[0]) / cv2.getTickFrequency()
+    remaining_time = frame_time - elapsed_time
+    if remaining_time > 0:
+        time.sleep(remaining_time)
+    start_time[0] = cv2.getTickCount()
+```
+
 # load template only once (cache) using mutable default arguments
 ```python
 def get_template(name, tpl={}):
