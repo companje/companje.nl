@@ -3,7 +3,7 @@ title: Python
 ---
 
 # limit framerate in opencv using mutable default argument
-```
+```python
 def limit_frame_rate(fps=30, start_time=[0]):
     # functie die gebruik maakt van een mutable default argument 
     # (start_time=[0]) om de framerate te reguleren.
