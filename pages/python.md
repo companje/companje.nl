@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# converteer np array naar integers
+```python
+arr = np.int0(arr)
+```
+
 # Ursina voor 3D!
 * https://www.ursinaengine.org/
 * zie [ursina](ursina)
