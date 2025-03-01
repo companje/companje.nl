@@ -4,7 +4,7 @@ title: Python
 
 # converteer np array naar integers
 ```python
-arr = np.int0(arr)
+arr = np.intp(arr)
 ```
 
 # Ursina voor 3D!
