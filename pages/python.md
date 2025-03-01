@@ -4,6 +4,23 @@ title: Python
 
 # Ursina voor 3D!!
 * https://www.ursinaengine.org/
+```python
+from ursina import *
+app = Ursina()
+window.fullscreen = True
+
+dome = Entity(
+    model='dome.obj',
+    texture='data/earth.jpg',
+    scale=1,
+    double_sided = True
+)
+
+def update():
+    dome.rotation_y += time.dt * 25
+
+app.run()
+```
 
 # limit framerate in opencv using mutable default argument
 ```python
