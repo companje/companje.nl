@@ -16,6 +16,11 @@ Dit was het! Dit moet in mn plist. Hoe dat icm met pm2 ga ik later uitzoeken.
 >&2 echo test 
 ```
 
+# pipe errors to file
+```
+something 2&> file.txt
+```
+
 # disk usage
 ```
 brew install ncdu
