@@ -2,7 +2,7 @@
 title: Webcams
 ---
 
-* Webcam Settings, v1.5 voor Mac. via AppStore. Betaald. Werkt
+* Webcam Settings, v1.5 voor Mac. gekocht via AppStore (2013). Werkt nog steeds
 
 * post van Kyle: https://twitter.com/kcimc/status/1001943106634346496
 * Logitech BRIO: https://www.logitech.com/nl-nl/product/brio
