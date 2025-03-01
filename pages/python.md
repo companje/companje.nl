@@ -2,8 +2,10 @@
 title: Python
 ---
 
-# Ursina voor 3D!!
+# Ursina voor 3D!
 * https://www.ursinaengine.org/
+* zie [ursina](ursina)
+  
 ```python
 from ursina import *
 app = Ursina()
