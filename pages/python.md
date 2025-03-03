@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# remove all empty lines from a string
+```python
+def strip_empty_lines(s):
+  return "\n".join(line for line in s.splitlines() if line.strip())
+```
 # converteer np array naar integers
 ```python
 arr = np.intp(arr)
