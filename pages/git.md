@@ -2,6 +2,13 @@
 title: Git
 ---
 
+# doorzoek alle code in alle branches
+```bash
+for branch in $(git branch -a | sed 's/^[* ]*//'); do
+    git grep "assert" $branch
+done
+```
+
 # download a folder from a repo
 * https://download-directory.github.io/
 
