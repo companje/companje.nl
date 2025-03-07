@@ -4,7 +4,10 @@ permalink: /ffmpeg
 tags: ['notes','software','video']
 ---
 
-
+# alpha sequence over fixed background
+```bash
+ffmpeg -framerate 30 -pattern_type glob -i "2992/*.png" -i bluemarble_3k.jpg -filter_complex "[0:v]format=rgba[fg];[1:v]format=rgb24[bg];[bg][fg]overlay=0:0" -c:v libx264 -pix_fmt yuv420p output.mp4
+```
 
 # filmpje afkappen na 2:08 minuten
 ```bash
