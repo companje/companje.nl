@@ -3,6 +3,7 @@ title: Songs
 layout: default
 ---
 
+* Eosine - Digitaline
 * Simpleton - Pleasure To Meet You
 * Kavinsky - Nightcall
 * Housewife - Life Of The Party
