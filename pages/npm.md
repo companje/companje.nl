@@ -2,6 +2,12 @@
 title: npm - node package manager
 ---
 
+# select node version in package.json
+```
+"prestart": "source ~/.nvm/nvm.sh && nvm use 18",
+"start": "ng serve --host 0.0.0.0",
+```
+ 
 # opensslErrorStack: 'error:03000086:digital envelope routines::initialization error' ERR_OSSL_EVP_UNSUPPORTED
 ```bash
 export NODE_OPTIONS=--openssl-legacy-provider
