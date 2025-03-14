@@ -2,6 +2,8 @@
 title: Maps
 ---
 
+* https://www.earthspacelab.com/app/seasons/
+
 # 2024
 * https://oculi-mundi.com/maps-are-too-exciting-digital-innovations-in-mapping
 * https://overpass-turbo.eu/
