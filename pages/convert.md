@@ -2,6 +2,11 @@
 title: Convert images
 ---
 
+# convert all png's to jpg
+```bash
+mogrify -format jpg *.png
+```
+
 # scale up using nearest neighbour interpolation
 https://graphicdesign.stackexchange.com/a/41189
 ```bash
