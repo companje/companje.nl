@@ -2,6 +2,25 @@
 title: SSH
 ---
 
+# Github Deploy keys
+* Genereer een SSH key op je computer
+* Voeg de publieke sleutel toe aan GitHub repo bij Settings > Deploy Keys
+* Voeg nieuwe Host toe in ssh config
+```
+  Host github-readonly
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/readonly_pull_key
+```
+* clone of update de remote origin:
+```
+git clone git@github-readonly:org/repo.git    # let op: github-readonly is hier de naam van de Host uit ssh config!
+```
+of
+```
+git remote set-url origin git@github-readonly:org/repo.git   # let op: github-readonly is hier de naam van de Host uit ssh config!
+```
+
 # Offering public key: .ssh/id_rsa, but still asking password
 Why am I still getting a password prompt with ssh with public key authentication? Make sure .ssh folder is:
 ```bash
