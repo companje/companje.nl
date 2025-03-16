@@ -2,6 +2,18 @@
 title: Processing
 ---
 
+# call git pull from Processing
+```java
+StringList stdout = new StringList();
+StringList stderr = new StringList();
+int result = exec(stdout, stderr, "git", "-C", sketchPath(), "pull");
+println("Exit code: " + result);
+println("stdout:");
+println(stdout);
+println("stderr:");
+println(stderr);
+```
+
 # Sphere with mouse and rotate to Lat Lon with Apache Math3 library
 * https://gist.github.com/companje/67a5261a664e560f4505c20e5cfc5d95
 
