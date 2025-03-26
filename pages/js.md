@@ -2,6 +2,9 @@
 title: Javascript
 ---
 
+## empty cache and hard reload
+right click the reload button in the browser
+
 ## contentEditable bookmarklet
 <a href='javascript:document.querySelectorAll("*").forEach(e=>e.contentEditable = true);'>Edit</a>
 ```html
