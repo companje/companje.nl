@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# immutable merge (met aaa key on top)
+```python
+persoon = {"aaa": "PBR"} | persoon
+```
+
 # remove all empty lines from a string
 ```python
 def strip_empty_lines(s):
