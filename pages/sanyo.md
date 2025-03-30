@@ -1285,3 +1285,8 @@ more info about Debug: https://thestarman.pcministry.com/asm/debug/debug.htm
                    GND   8 |            |  9  (AN4/SW3)
                             ------------
 ```
+* red - 5V
+* black - GND
+* green - button
+* white - y-axis
+* blue - x-axis
