@@ -1287,6 +1287,6 @@ more info about Debug: https://thestarman.pcministry.com/asm/debug/debug.htm
 ```
 * red - 5V
 * black - GND
-* green - button
+* green - button (connected to 5V when pressed)
 * white - y-axis
 * blue - x-axis
