@@ -2,6 +2,23 @@
 title: Electronics
 ---
 
+# Weerstanden
+100 Ω	Bruin - Zwart - Bruin - Goud
+220 Ω	Rood - Rood - Bruin - Goud
+330 Ω	Oranje - Oranje - Bruin - Goud
+470 Ω	Geel - Violet - Bruin - Goud
+1 kΩ	Bruin - Zwart - Rood - Goud
+2.2 kΩ	Rood - Rood - Rood - Goud
+3.3 kΩ	Oranje - Oranje - Rood - Goud
+4.7 kΩ	Geel - Violet - Rood - Goud
+10 kΩ	Bruin - Zwart - Oranje - Goud
+22 kΩ	Rood - Rood - Oranje - Goud
+47 kΩ	Geel - Violet - Oranje - Goud
+100 kΩ	Bruin - Zwart - Geel - Goud
+220 kΩ	Rood - Rood - Geel - Goud
+470 kΩ	Geel - Violet - Geel - Goud
+1 MΩ	Bruin - Zwart - Groen - Goud
+  
 # Buy awesome things directly from makers
 * http://tindie.com/
 
