@@ -3,6 +3,7 @@ title: Electronics
 ---
 
 # Weerstanden
+<span style="font-weight: bold">
 | resistance  | first | second | third |
 | ------------- | ------------- | ------------- | ------------- |
 |100 Ω |<span style="color:brown">Bruin</span>|Zwart|<span style="color:brown">Bruin</span>|
@@ -20,7 +21,7 @@ title: Electronics
 |220 kΩ | <span style="color:red">Rood</a>|<span style="color:red">Rood</a>|<span style="color:yellow">Geel</span>|
 |470 kΩ | <span style="color:yellow">Geel</span>|<span style="color:violet">Violet</span>|<span style="color:yellow">Geel</span>|
 |1 MΩ | <span style="color:brown">Bruin</span>|Zwart|<span style="color:green">Groen</span>|
-
+</span>
 
   
 # Buy awesome things directly from makers
