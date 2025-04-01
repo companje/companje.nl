@@ -3,21 +3,24 @@ title: Electronics
 ---
 
 # Weerstanden
-* 100 Ω <span style="color:brown">Bruin</a> - Zwart - <span style="color:brown">Bruin</a>
-* 220 Ω Rood - Rood - <span style="color:brown">Bruin</a>
-* 330 Ω Oranje - Oranje - <span style="color:brown">Bruin</a>
-* 470 Ω Geel - Violet - <span style="color:brown">Bruin</a>
-* 1 kΩ  <span style="color:brown">Bruin</a> - Zwart - Rood
-* 2.2 kΩ  Rood - Rood - Rood
-* 3.3 kΩ  Oranje - Oranje - Rood
-* 4.7 kΩ  Geel - Violet - Rood
-* 10 kΩ <span style="color:brown">Bruin</a> - Zwart - Oranje
-* 22 kΩ Rood - Rood - Oranje
-* 47 kΩ Geel - Violet - Oranje
-* 100 kΩ  <span style="color:brown">Bruin</a> - Zwart - Geel
-* 220 kΩ  Rood - Rood - Geel
-* 470 kΩ  Geel - Violet - Geel
-* 1 MΩ  <span style="color:brown">Bruin</a> - Zwart - Groen
+| resistance  | first | second | third |
+| ------------- | ------------- | ------------- | ------------- |
+|100 Ω |<span style="color:brown">Bruin</span>|Zwart|<span style="color:brown">Bruin</span>|
+|220 Ω |<span style="color:red">Rood</a>|<span style="color:red">Rood</a>|<span style="color:brown">Bruin</span>|
+|330 Ω |<span style="color:orange">Oranje</span>|<span style="color:orange">Oranje</span>|<span style="color:brown">Bruin</span>|
+|470 Ω |<span style="color:yellow">Geel</span>|<span style="color:violet">Violet</span>|<span style="color:brown">Bruin</span>|
+|1 kΩ | <span style="color:brown">Bruin</span>|Zwart|<span style="color:red">Rood</a>|
+|2.2 kΩ | <span style="color:red">Rood</a>|<span style="color:red">Rood</a>|<span style="color:red">Rood</a>|
+|3.3 kΩ | <span style="color:orange">Oranje</span>|<span style="color:orange">Oranje</span>|<span style="color:red">Rood</a>|
+|4.7 kΩ | <span style="color:yellow">Geel</span>|<span style="color:violet">Violet</span>|<span style="color:red">Rood</a>|
+|10 kΩ |<span style="color:brown">Bruin</span>|Zwart|<span style="color:orange">Oranje</span>|
+|22 kΩ |<span style="color:red">Rood</a>|<span style="color:red">Rood</a>|<span style="color:orange">Oranje</span>|
+|47 kΩ |<span style="color:yellow">Geel</span>|<span style="color:violet">Violet</span>|<span style="color:orange">Oranje</span>|
+|100 kΩ | <span style="color:brown">Bruin</span>|Zwart|<span style="color:yellow">Geel</span>|
+|220 kΩ | <span style="color:red">Rood</a>|<span style="color:red">Rood</a>|<span style="color:yellow">Geel</span>|
+|470 kΩ | <span style="color:yellow">Geel</span>|<span style="color:violet">Violet</span>|<span style="color:yellow">Geel</span>|
+|1 MΩ | <span style="color:brown">Bruin</span>|Zwart|<span style="color:green">Groen</span>|
+
 
   
 # Buy awesome things directly from makers
