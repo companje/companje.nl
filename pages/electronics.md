@@ -3,21 +3,22 @@ title: Electronics
 ---
 
 # Weerstanden
-* 100 Ω Bruin - Zwart - Bruin - Goud
-* 220 Ω Rood - Rood - Bruin - Goud
-* 330 Ω Oranje - Oranje - Bruin - Goud
-* 470 Ω Geel - Violet - Bruin - Goud
-* 1 kΩ  Bruin - Zwart - Rood - Goud
-* 2.2 kΩ  Rood - Rood - Rood - Goud
-* 3.3 kΩ  Oranje - Oranje - Rood - Goud
-* 4.7 kΩ  Geel - Violet - Rood - Goud
-* 10 kΩ Bruin - Zwart - Oranje - Goud
-* 22 kΩ Rood - Rood - Oranje - Goud
-* 47 kΩ Geel - Violet - Oranje - Goud
-* 100 kΩ  Bruin - Zwart - Geel - Goud
-* 220 kΩ  Rood - Rood - Geel - Goud
-* 470 kΩ  Geel - Violet - Geel - Goud
-* 1 MΩ  Bruin - Zwart - Groen - Goud
+* 100 Ω <span style="color:brown">Bruin</a> - Zwart - <span style="color:brown">Bruin</a>
+* 220 Ω Rood - Rood - <span style="color:brown">Bruin</a>
+* 330 Ω Oranje - Oranje - <span style="color:brown">Bruin</a>
+* 470 Ω Geel - Violet - <span style="color:brown">Bruin</a>
+* 1 kΩ  <span style="color:brown">Bruin</a> - Zwart - Rood
+* 2.2 kΩ  Rood - Rood - Rood
+* 3.3 kΩ  Oranje - Oranje - Rood
+* 4.7 kΩ  Geel - Violet - Rood
+* 10 kΩ <span style="color:brown">Bruin</a> - Zwart - Oranje
+* 22 kΩ Rood - Rood - Oranje
+* 47 kΩ Geel - Violet - Oranje
+* 100 kΩ  <span style="color:brown">Bruin</a> - Zwart - Geel
+* 220 kΩ  Rood - Rood - Geel
+* 470 kΩ  Geel - Violet - Geel
+* 1 MΩ  <span style="color:brown">Bruin</a> - Zwart - Groen
+
   
 # Buy awesome things directly from makers
 * http://tindie.com/
