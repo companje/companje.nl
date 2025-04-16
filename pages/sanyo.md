@@ -2,6 +2,47 @@
 title: Sanyo MBC-550/555
 ---
 
+# Play audio sample with constant delay
+```python
+%include "sanyo.asm"
+
+setup:
+  mov si,sound
+  mov cx,8000
+  call play
+  hlt
+
+play:
+  lodsb               ; laad byte in AL
+  mov bl,8            ; 8 bits
+  mov bh,1            ; bitmask = bit 0
+.nextbit:
+  push ax
+  mov ah,al
+  mov al,0
+  and ah,bh
+  jz .sendbit
+  mov al,8            ; bit 3 aan
+.sendbit:
+  out 0x3A,al
+  push cx
+  mov cx,24
+.wait: loop .wait
+  pop cx
+  pop ax
+  shl bh,1
+  dec bl
+  jnz .nextbit
+  loop play
+  ret
+
+; %include "8bit-ramp_up_sound.inc"
+; %include "8bit-ramp_down_sound.inc"
+%include "8bit-1khz.inc"
+
+times (180*1024)-($-$$) db 0
+```
+
 # stretch bits from AL to AX
 ```nasm
 stretch_bits: ;input al=byte (10011001), bit duplication result in ax: 1100001111000011
