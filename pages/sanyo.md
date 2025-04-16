@@ -38,9 +38,9 @@ play:
 
 ; %include "8bit-ramp_up_sound.inc"
 ; %include "8bit-ramp_down_sound.inc"
-%include "8bit-1khz.inc"
+; %include "8bit-1khz.inc"
 
-times (180*1024)-($-$$) db 0
+sound: db 15,15,15,15,15,15, ......... ; 1kHz
 ```
 
 # stretch bits from AL to AX
