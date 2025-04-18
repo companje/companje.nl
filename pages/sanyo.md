@@ -3,7 +3,7 @@ title: Sanyo MBC-550/555
 ---
 
 # Interrupt handlers
-* [Sanyo Interrupt handlers](sanyo_interrupts)
+* <a href="/sanyo_interrupts">Sanyo interrupt handlers</a>
 
 # Play audio sample with constant delay
 ```python
