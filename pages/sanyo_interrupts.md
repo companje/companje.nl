@@ -17,10 +17,10 @@ IR3 251(FB) USART Rx Ready (keyboard)
 IR4 252(FC) Printer Ready
 IR5 253(FD) Floppy disk controller
 IR6 254(FE) 8087 digital data processor
-User interrupt (external bus IR7) (*1) - *1 Negative logic
-IR7 255(FF)
+IR7 255(FF) User interrupt (external bus IR7) (*1) - *1 Negative logic
 
-The priorities of pins are fixed to the order of IRO
+
+The priorities of pins are fixed to the order of IR0
 (high) to IR7 (low).
 Operation Command Word (OCW) 1 changes the priorities.
 Of IRO to IR7, only IR1 to IR3 are associated with BIOS.
@@ -44,7 +44,7 @@ NOTE: to use interrupt, master the operations of 8088
 and 8259A beforehand.
 ```
 
-## Manually typed in using DEBUG.COM in MS-DOS version 1.25
+## interrupt handlers
 ```nasm
 int_0x00: ; 0320:1576 Division Error (Division by zero)
   push si
