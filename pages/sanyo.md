@@ -4,7 +4,7 @@ title: Sanyo MBC-550/555
 
 # iret for all interrupts
 ```nasm
-; set all interrupt handlers at 0040:0040
+; set all interrupt handlers to 0040:0040
   mov di,0
   mov es,di
   mov cx,0x200
