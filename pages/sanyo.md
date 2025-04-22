@@ -2,6 +2,22 @@
 title: Sanyo MBC-550/555
 ---
 
+# iret for all interrupts
+```nasm
+; set all interrupt handlers at 0040:0040
+  mov di,0
+  mov es,di
+  mov cx,0x200
+  mov ax,0x0040
+  rep stosw
+
+; store iret at 0040:0040
+  mov di,0x40
+  mov es,di
+  mov al,0xcf
+  stosb
+```
+
 # Timer (with polling, no interrupt)
 ```nasm
 %include "sanyo.asm"
