@@ -61,7 +61,7 @@ update:
 # Interrupt handlers
 * <a href="/sanyo_interrupts">Sanyo interrupt handlers</a>
 
-# Play audio sample with constant delay
+# Play audio sample with delay loop
 ```nasm
 %include "sanyo.asm"
 
