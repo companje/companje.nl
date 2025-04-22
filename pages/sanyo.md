@@ -2,6 +2,46 @@
 title: Sanyo MBC-550/555
 ---
 
+# Timer (with polling, no interrupt)
+```nasm
+%include "sanyo.asm"
+
+ticks EQU 787 ; 100Hz (10ms)
+
+setup:
+  ; 8253 Timer
+  ; Send Control Word (0x34 = 00110100) to port 0x26
+  ;   Channel 0 (bits 7-6 = 00)
+  ;   Access mode: lobyte/hibyte (bits 5-4 = 11)
+  ;   Mode 2: rate generator (bits 3-1 = 010)
+  ;   Binary mode (bit 0 = 0)
+  mov al, 0x34
+  out 0x26, al
+
+  mov al, ticks & 0xff
+  out 0x20, al        ; lobyte
+  
+  mov al, ticks >> 8
+  out 0x20, al        ; hibyte
+
+update:
+  ; Polling the current value of the Timer 0
+
+  mov al, 0x00        ; Command: latch counter 0
+  out 0x26, al        ; Command register on 0x26
+
+  in al, 0x20         ; read lobyte of counter 0
+  xchg ah,al          ; store al in ah
+
+  in al, 0x20         ; read hibyte of counter 0
+  xchg al,ah          ; swap hi and lo byte
+
+  set_cursor 1,1
+  print_ax
+
+  jmp update
+```
+
 # Interrupt handlers
 * <a href="/sanyo_interrupts">Sanyo interrupt handlers</a>
 
