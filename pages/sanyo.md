@@ -2,6 +2,14 @@
 title: Sanyo MBC-550/555
 ---
 
+# lodsb with variable
+```nasm
+; lodsb
+mov bx,[playhead]
+mov al,[bx]
+inc word [playhead]
+```
+  
 # iret for all interrupts
 ```nasm
 ; set all interrupt handlers to 0040:0040
