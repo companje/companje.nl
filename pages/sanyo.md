@@ -2,6 +2,12 @@
 title: Sanyo MBC-550/555
 ---
 
+# write to video RAM from basic
+```basic
+10 def seg=&h3c00
+20 poke 0,255
+```
+
 # lodsb with variable
 ```nasm
 ; lodsb
