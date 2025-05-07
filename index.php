@@ -4,7 +4,7 @@
 
 
 if (isset($_SERVER['HTTP_X_GITHUB_EVENT']) && $_SERVER['HTTP_X_GITHUB_EVENT'] == 'push') {
-  shell_exec('git pull');
+  // shell_exec('git pull');
   file_put_contents("test.txt", "test");
   die();
 }
