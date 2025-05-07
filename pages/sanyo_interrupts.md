@@ -1,4 +1,4 @@
-# Sanyo MBC-55x Interrupts.
+# Sanyo MBC-55x Interrupts
 
 I/O Interrupt Controller 8259A
 from the manual:
