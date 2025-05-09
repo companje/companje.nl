@@ -3,6 +3,7 @@ title: Songs
 layout: default
 ---
 
+* µ Ziq - µ Ziq Theme (Black Mirror Plaything)
 * Eosine - Digitaline
 * Simpleton - Pleasure To Meet You
 * Kavinsky - Nightcall
