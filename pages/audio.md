@@ -1,3 +1,6 @@
+# bfxr
+* https://www.bfxr.net/
+
 # Chord player
 * https://www.onemotion.com/chord-player/
 
