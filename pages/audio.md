@@ -1,3 +1,6 @@
+# AI
+see [AI](/ai)
+
 # bfxr
 * https://www.bfxr.net/
 
