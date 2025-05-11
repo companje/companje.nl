@@ -2,6 +2,12 @@
 title: Sanyo MBC-550/555
 ---
 
+# crt 'scroll'?
+```basic
+out 48,13: out 50, a and 255
+out 48,12: out 50, (a/255) and 255
+```
+
 # write to video RAM from basic
 ```basic
 10 def seg=&h3c00
