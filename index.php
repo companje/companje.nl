@@ -11,7 +11,8 @@ if (isset($_SERVER['HTTP_X_GITHUB_EVENT']) && $_SERVER['HTTP_X_GITHUB_EVENT'] ==
 
 require __DIR__ . '/vendor/autoload.php';
 
-$page = trim($_SERVER['REQUEST_URI'], '/');
+//$page = trim($_SERVER['REQUEST_URI'], '/');
+$page = trim(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), '/');
 
 switch ($page) {
   case "": include "home.php"; break;
