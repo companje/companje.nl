@@ -1,5 +1,10 @@
 see [sanyo](/sanyo)
 
+# capture movie
+```bash
+mame ....... -aviwrite screendump.avi
+```
+
 # mame debugger lua script console
 * https://docs.mamedev.org/luascript/index.html#luascript-console
 
