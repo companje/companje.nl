@@ -8,7 +8,7 @@ type: other
 * aider
 
 # audio
-* [moises.ai](moises.ai) !! track separation
+* https://moises.ai !! track separation
 * https://suno.com/
 * https://www.udio.com/
 * https://vocalremover.org/
