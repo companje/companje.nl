@@ -1,3 +1,6 @@
+# 1bitdragon
+https://1bitdragon.com/ (nog onderzoeken)
+
 # AI
 see [AI](/ai)
 
