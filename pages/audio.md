@@ -1,6 +1,9 @@
+# Beepola (ZX beeper tracker)
+* https://freestuff.grok.co.uk/beepola/
+
 # 1bitdragon
-https://1bitdragon.com/ (nog onderzoeken)
-y
+* https://1bitdragon.com/ (betaald, nog onderzoeken, volgens mij niet echt 1 bit maar wel doodle achtige interface)
+
 # AI
 see [AI](/ai)
 
