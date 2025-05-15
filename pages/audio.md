@@ -2,7 +2,10 @@
 * https://freestuff.grok.co.uk/beepola/
 
 # 1bitdragon
-* https://1bitdragon.com/ (betaald, nog onderzoeken, volgens mij niet echt 1 bit maar wel doodle achtige interface)
+* https://1bitdragon.com (payed, doodle style)
+
+# audio to sheet music
+* Klangio (payed)
 
 # AI
 see [AI](/ai)
