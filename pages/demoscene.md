@@ -3,6 +3,9 @@
 * [BACK TO THE PET - a demo for Commodore PET - by shiru8bit](https://www.youtube.com/watch?v=3FFPCuDqi_g)
 * [8088 MPH](https://www.youtube.com/watch?v=yHXx3orN35Y)
 
+## Revision 2025 results
+* https://www.pouet.net/party_results.php?which=1550&when=2025&font=1
+
 ## PET
 * [BACK TO THE PET - a demo for Commodore PET - by shiru8bit](https://www.youtube.com/watch?v=3FFPCuDqi_g)
 * https://youtu.be/ytob8TCMcjk
