@@ -1,3 +1,6 @@
+# Online pitch detector
+* https://www.onlinemictest.com/tuners/pitch-detector/
+
 # SunVox
 * https://www.warmplace.ru/soft/sunvox/
 
