@@ -2,6 +2,14 @@
 title: Processing
 ---
 
+# copy to clipboard
+```java
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+//
+Toolkit.getDefaultToolkit().getSystemClipboard().setContents(new StringSelection(s), null);
+```
+
 # call git pull from Processing
 ```java
 StringList stdout = new StringList();
