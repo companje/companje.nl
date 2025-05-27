@@ -1,3 +1,55 @@
+# Update 'hierarchy' metadata field
+```python
+import requests,json,csv,sys
+from tqdm import tqdm
+
+auth = 'Bearer .............. '
+url = 'https://transkribus.eu/TrpServer/rest/collections/1904438/list'
+
+headers = {
+    'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8',
+    'Connection': 'keep-alive',
+    'Origin': 'https://app.transkribus.org',
+    'Referer': 'https://app.transkribus.org/',
+    'Sec-Fetch-Dest': 'empty',
+    'Sec-Fetch-Mode': 'cors',
+    'Sec-Fetch-Site': 'cross-site',
+    'Sec-GPC': '1',
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36',
+    'accept': 'application/json, text/plain, */*',
+    'authorization': auth,
+    'content-type': 'application/json',
+    'sec-ch-ua': '"Brave";v="135", "Not-A.Brand";v="8", "Chromium";v="135"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"macOS"'
+}
+
+def listDocuments(colId):
+    url = f'https://transkribus.eu/TrpServer/rest/collections/{colId}/list'
+    return requests.get(url, headers=headers).json()
+
+def setDocumentHierarchy(doc, hierarchy):
+    colId = doc["mainColId"]
+    docId = doc["docId"]
+    url = f'https://transkribus.eu/TrpServer/rest/collections/{colId}/{docId}/metadata'
+    data = {
+        "type": "trpDocMetadata",
+        "docId": docId,
+        "title": doc["title"],
+        "hierarchy": hierarchy  #doc["collectionList"]["colList"][0]["colName"]
+    }
+    response = requests.post(url, headers=headers, json=data)
+
+    if response.status_code!=200:
+        print("Error",response.response.text)
+        sys.exit()
+
+###############################################
+
+for doc in tqdm(listDocuments(colId = 1904438)):
+    setDocumentHierarchy(doc, "34-4 - Notarissen in de stad Utrecht 1560-1905")
+```
+
 # List documents within collection and nrOfNew pages (not transcribed yet)
 ```python
 import requests,json,os,sys
