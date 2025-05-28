@@ -4,21 +4,21 @@ title: Sanyo MBC-550/555
 
 # double buffering
 ```nasm
-  mov ax,0x0c00
-  mov bx,0b01010101
-  call draw_frame
+mov ax,0x0c00
+mov bx,0b01010101
+call draw_frame
 
-  mov al,4
-  out 0x10,al
-  call delay
+mov al,4
+out 0x10,al
+call delay
 
-  mov ax,0x1c00
-  mov bx,-1
-  call draw_frame
+mov ax,0x1c00
+mov bx,-1
+call draw_frame
 
-  mov al,5
-  out 0x10,al
-  call delay
+mov al,5
+out 0x10,al
+call delay
 ```
 
 # CRT HD68A45
