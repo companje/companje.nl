@@ -2,6 +2,23 @@
 title: Sanyo MBC-550/555
 ---
 
+# CRT HD68A45
+```
+; https://cpctech.cpcwiki.de/docs/hd6845s/hd6845sp.htm
+iosys: db 0x70,0x50,0x59,0x48,0x41,0x00,0x32,0x38,0x00,0x03,0,0,0,0,0,0
+crt80: db 0x65,0x50,0x53,0x48,0x69,0x02,0x64,0x64,0x00,0x03,0,0,0,0,0,0
+crt72: db 0x70,0x48,0x55,0x4A,0x41,0x00,0x32,0x38,0x00,0x03,0,0,0,0,0,0
+;           |    |    |    |    |    |    |    |    |    |__Cursor Start Raster Register (R10) (3 / 3)
+;           |    |    |    |    |    |    |    |    |__Maximum Raster Address Register    (R9) (0 / 0)
+;           |    |    |    |    |    |    |    |__Interlace and Skew Register (R8)   (0x64=100 / 0x38=56)   
+;           |    |    |    |    |    |    |__Vertical Displayed Register      (R6) V:(0x64=100 / 0x32=50)
+;           |    |    |    |    |    |__Vertical Total Adjust Register        (R5) V:(0x02=2   / 0x00=0)
+;           |    |    |    |    |__Vertical Total Register                    (R4) V:(0x41=65  / 0x69=105)
+;           |    |    |    |__Sync Width Register                             (R3)   (0x48=72  / 0x4a=74)
+;           |    |    |__Horizontal Sync Position Register                    (R2) H:(0x53=83  / 0x55=85)
+;           |    |__Horizontal Displayed Register                             (R1) H:(0x48=72  / 0x50=80)
+;           |__Horizontal Total Register                                      (R0) H:(0x65=101 / 0x70=112)
+```
 # crt 'scroll'?
 ```basic
 out 48,13: out 50, a and 255
