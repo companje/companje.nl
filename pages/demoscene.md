@@ -1,3 +1,6 @@
+## LoveByte’s Tiny Code Christmas
+[LoveByte’s Tiny Code Christmas](https://tcc.lovebyte.party/) is an event to help you take your first steps in demoscene sizecoding with Lua based fantasy consoles like TIC-80 and PICO-8.
+
 ## Inspiration
 * [Area 5150](https://youtu.be/fWDxdoRTZPc)
 * [BACK TO THE PET - a demo for Commodore PET - by shiru8bit](https://www.youtube.com/watch?v=3FFPCuDqi_g)
