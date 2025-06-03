@@ -1,3 +1,12 @@
+# class frequency
+```sparql
+select (count(?o) as ?c) ?o where {
+  ?s a ?o.
+} 
+group by ?o
+order by desc(?c) 
+```
+
 # values & filter combined
 ```sparql
 prefix id: <https://hisgis.hualab.nl/id/>
