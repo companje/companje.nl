@@ -1,3 +1,6 @@
+# 'w'
+wisselen tussen verschillende manieren van selecteren
+
 # Project texture on to surface
 * https://www.youtube.com/watch?v=QM2SSExYTaE
 * Addon "Import-Export: Import Images as Planes”
