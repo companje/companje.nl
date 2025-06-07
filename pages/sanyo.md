@@ -33,6 +33,7 @@ calc_bit_for_pixel:
   ret
 ```
 # Sine and Cosine function using 64 bytes quarter sine table without conditional jumps
+; range input 0..255, output 0..255
 ```nasm
 cos:
   add al,64
