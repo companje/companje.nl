@@ -32,8 +32,10 @@ calc_bit_for_pixel:
   mov dl,al
   ret
 ```
-# Sine function using 64 bytes quarter sine table without conditional jumps
+# Sine and Cosine function using 64 bytes quarter sine table without conditional jumps
 ```nasm
+cos:
+  add al,64
 sin:
   mov cl,6
   mov dl,al        ; dl=angle 0..255
