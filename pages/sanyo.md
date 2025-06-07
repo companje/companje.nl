@@ -2,18 +2,33 @@
 title: Sanyo MBC-550/555
 ---
 
-# TBA
-```
-___________________________________________
- ▗▄▄▖ ▗▄▖ ▗▖  ▗▖▗▖  ▗▖▗▄▖ ▗▖  ▗▖ ▗▄▖ ▗▖  ▗▖
-▐▌   ▐▌ ▐▌▐▛▚▖▐▌ ▝▚▞▘▐▌ ▐▌▐▛▚▞▜▌▐▌ ▐▌▐▛▚▖▐▌
- ▝▀▚▖▐▛▀▜▌▐▌ ▝▜▌  ▐▌ ▐▌ ▐▌▐▌  ▐▌▐▛▀▜▌▐▌ ▝▜▌ 
-▗▄▄▞▘▐▌ ▐▌▐▌  ▐▌  ▐▌ ▝▚▄▞▘▐▌  ▐▌▐▌ ▐▌▐▌  ▐▌ 
-───────────────────────────────────────────
-_256_bytes_oLdSchool_iNtRo_for OUTLINE 2025
-grEeTz tO superrogue, zeroZshadow, plex
-───────────────────────────────────────────
-a TIXY.LAND tribute on Sanyo MBC-555 0x03.nl
+# Sine function using 64 bytes quarter sine table without conditional jumps
+```nasm
+sin:
+  mov cl,6
+  mov dl,al        ; dl=angle 0..255
+  shr dl,cl        ; angle/6 = quadrant 0..3
+  mov dh,dl        ; dh=copy of quadrant
+  and dh,1         ; dh=1 if quadrant is odd 1 or 3
+  mov bl,dh        ; bl=dh
+  shl bl,cl        ; r = bl<<6
+  mov ch,dl        ; gt1
+  shr ch,1
+  sub bl,dh        ; s (0 of 63)
+  and al,63        ; i
+  xor al,bl        ; i^bl
+  mov bx,qsin
+  xlat
+  neg ch
+  xor al,ch
+  neg ch,
+  add al,ch
+  add al,128
+  ret
+
+; ------------------------------------
+
+qsin: db 0,3,6,9,12,15,18,21,24,27,30,33,36,39,42,45,48,51,54,57,59,62,65,67,70,73,75,78,80,82,85,87,89,91,94,96,98,100,102,103,105,107,108,110,112,113,114,116,117,118,119,120,121,122,123,123,124,125,125,126,126,126,126,126
 ```
 
 # double buffering
