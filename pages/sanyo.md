@@ -34,6 +34,18 @@ calc_bit_for_pixel:
 ```
 # Sine and Cosine function using 64 bytes quarter sine table without conditional jumps
 range: input 0..255, output 0..255
+
+based on this idea:
+```java
+int sine256(int angle) {
+  int q = angle >> 6;
+  int i = angle & 63;
+  int ii = i ^ (-(q & 1) & 63);
+  int k = 1 | (-(q >> 1) & -2);
+  return 128 + k * qsin[ii];
+}
+```
+
 ```nasm
 cos:
   add al,64
