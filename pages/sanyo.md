@@ -33,8 +33,7 @@ calc_bit_for_pixel:
   ret
 ```
 # Sine and Cosine function using 64 bytes quarter sine table without conditional jumps
-![sine](https://github.com/user-attachments/assets/42fc9567-117d-4fc2-87f0-8a3d947f4bd9)
-![circle](https://github.com/user-attachments/assets/39b9ff2b-fa4f-4cfb-8b18-805cb2ef4a1d)
+![circle-1](https://github.com/user-attachments/assets/08f7619e-1546-411e-bb06-72a88eced0ef)
 
 Processing:
 ```java
