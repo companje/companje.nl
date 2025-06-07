@@ -14,7 +14,7 @@ sin:
   shl bl,cl        ; r = bl<<6
   mov ch,dl        ; gt1
   shr ch,1
-  sub bl,dh        ; s (0 of 63)
+  sub bl,dh        ; s (0 or 63)
   and al,63        ; i
   xor al,bl        ; i^bl
   mov bx,qsin
