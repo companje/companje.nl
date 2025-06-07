@@ -33,7 +33,8 @@ calc_bit_for_pixel:
   ret
 ```
 # Sine and Cosine function using 64 bytes quarter sine table without conditional jumps
-range: input 0..255, output 0..255
+![sine](https://github.com/user-attachments/assets/42fc9567-117d-4fc2-87f0-8a3d947f4bd9)
+![circle](https://github.com/user-attachments/assets/39b9ff2b-fa4f-4cfb-8b18-805cb2ef4a1d)
 
 Processing:
 ```java
@@ -46,6 +47,7 @@ int sine256(int angle) {
 }
 ```
 Assembly:
+range: input 0..255, output 0..255
 ```nasm
 cos:
   add al,64
