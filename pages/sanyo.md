@@ -8,27 +8,28 @@ calc_bit_for_pixel:
   ;input BX,DX = x,y
   ;output DI = (y\4)*(4*COLS) + (y%4) + (x\8)*4
   ;output DL = 2^(7-(x % 8))
-  push cx
+  ;or [es:di],dl  ; set pixel
   mov ax,dx        ; y
-  xor dx,dx        ; dx=0
-  mov cl,4         
-  div cx           ; ax=y/4, dx=y%4
+  mov cx,3
+  and dx,cx        ; dx=y%4
+  dec cl
+  shr ax,cl        ; ax=y/4        
   mov di,dx        ; vram offset (dx=y%4)
   mov cx,4*COLS    
   mul cx           ; ax*=(4*COLS)
   add di,ax        ; di+=ax
   mov ax,bx        ; x
-  xor dx,dx        ; dx=0
-  mov cx,8         
-  div cx           ; 8 bits per col
-  mov cx,2 
-  shl ax,cl        ; ax*=4       
+  mov dx,ax
+  and dx,7         ; %=8
+  mov cl,3
+  shr ax,cl        ; /=8      
+  dec cl
+  shl ax,cl        ; *=4
   add di,ax        ; di+=(x/8)*4
   mov al,128       ; highest bit
   mov cl,dl        ; dl contains x%8
   shr al,cl        ; shift right number of bits to the correct pixel in char
   mov dl,al
-  pop cx
   ret
 ```
 # Sine function using 64 bytes quarter sine table without conditional jumps
