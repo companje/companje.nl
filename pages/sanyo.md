@@ -2,6 +2,46 @@
 title: Sanyo MBC-550/555
 ---
 
+# Outline 2025
+```
+___________________________________________
+ ▗▄▄▖ ▗▄▖ ▗▖  ▗▖▗▖  ▗▖▗▄▖ ▗▖  ▗▖ ▗▄▖ ▗▖  ▗▖2
+▐▌   ▐▌ ▐▌▐▛▚▖▐▌ ▝▚▞▘▐▌ ▐▌▐▛▚▞▜▌▐▌ ▐▌▐▛▚▖▐▌
+ ▝▀▚▖▐▛▀▜▌▐▌ ▝▜▌  ▐▌ ▐▌ ▐▌▐▌  ▐▌▐▛▀▜▌▐▌ ▝▜▌ 
+▗▄▄▞▘▐▌ ▐▌▐▌  ▐▌  ▐▌ ▝▚▄▞▘▐▌  ▐▌▐▌ ▐▌▐▌  ▐▌
+───────────────p r e s e n t s─────────────
+_256_bytes_oLdSkool_iNtRo_for OUTLINE 2025
+TIXY in 256 bytes  Sanyo MBC-555 bootsector
+grTz 2 aem1k,nanochess,superogue,zeroZshadow
+───────────────────────────────────────────
+
+I love my Sanyo MBC-555 computer from 1983. 
+It's a NOT-so-IBM-compatible 8088 PC. It has
+no real ROM-BIOS and a very inconvenient 
+VRAM mapping. It shipped with MS-DOS 1.25,
+Sanyo BASIC and DEBUG.COM. That got me into
+8088 assembly programming back in the days (1993).
+My version of DEBUG had no 'assemble'-command,
+so I had to enter my progams as HEX values.
+
+My contrib to Outline 2025 is a 256 byte
+Oldskool Intro inspired by tixy.land by aem1k.
+It runs in the bootsector of the Sanyo
+without BIOS or OS.
+
+During the party I had to reduce my code 
+from 512 to 256 to join the compo. 
+Thanks for all the help and fun!
+
+Thank you:
+- aem1k to come up with https://tixy.land!
+- nanochess for writing 2 great books about bootsector games
+- superogue and others at Outline 2025 for the warm welcome to the DemoScene
+- zeroZshadow for diving really into the code with me and implementing great improvements
+
+Best wishes,
+Sanyoman2 aka RickyboyII
+```
 # calc_bit_for_pixel
 ```nasm
 calc_bit_for_pixel:
