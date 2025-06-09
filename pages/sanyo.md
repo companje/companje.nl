@@ -41,6 +41,8 @@ Thank you:
 
 Best wishes,
 Sanyoman2 aka RickyboyII
+https://github.com/tixy.boot
+
 ```
 # calc_bit_for_pixel
 ```nasm
