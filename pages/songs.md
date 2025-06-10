@@ -2,6 +2,11 @@
 title: Songs
 layout: default
 ---
+* Deire - Scorch
+* Deire - My turn
+* Deire - Angles
+* Deire - Loss
+* Deire - Raincoat
 * Deire - Muse 1
 * Deire - Fugitive
 * Grof Geschut - Moe
