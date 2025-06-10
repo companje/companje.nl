@@ -2,6 +2,7 @@
 title: Songs
 layout: default
 ---
+* Irma Thomas - Anyone Who Knows What Love Is (Will Understand) (15 Million Merits)
 * Adrianne Lenker - Zombie Girl
 * Kraftwerk - Home Computer
 * t.A.T.u - Not Gonna Get Us
