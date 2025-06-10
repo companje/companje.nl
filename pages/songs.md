@@ -2,6 +2,7 @@
 title: Songs
 layout: default
 ---
+* Deire - Muse 1
 * Deire - Fugitive
 * Grof Geschut - Moe
 * Mariecke Borger - Meet Again
