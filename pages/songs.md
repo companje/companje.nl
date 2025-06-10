@@ -2,8 +2,9 @@
 title: Songs
 layout: default
 ---
-* kraftwerk - home computer
-* t.A.T.u - Not gonna get us
+* Adrianne Lenker - Zombie Girl
+* Kraftwerk - Home Computer
+* t.A.T.u - Not Gonna Get Us
 * September - Cry for you
 * we have explosives - future sound of london (Black Mirror Plaything)
 * µ Ziq - µ Ziq Theme (Black Mirror Plaything)
