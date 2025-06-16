@@ -1,3 +1,16 @@
+# count classes
+```sparql
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix id: <https://hisgis.hualab.nl/id/>
+
+select ?o (min(?label) as ?voorbeeld) (count(?o) as ?count) where {
+  ?s a ?o.
+  optional { ?s rdfs:label ?label }
+} group by ?o ?labels ?olabel
+order by desc(?count)
+```
+
 # group concat
 ```sparql
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
