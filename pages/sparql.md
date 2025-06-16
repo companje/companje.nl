@@ -1,3 +1,14 @@
+# group concat
+```sparql
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select distinct ?s (group_concat(?label;separator=" / ") as ?labels) where {
+  ?s a <https://hisgis.hualab.nl/id/kwartier> .
+  ?s rdfs:label ?label .
+}
+group by ?s
+order by ?s
+```
+
 # class frequency
 ```sparql
 select (count(?o) as ?c) ?o where {
