@@ -2,6 +2,46 @@
 title: CSS
 ---
 
+# grid
+```css
+/*
+ <div class="grid">
+    <div class="item"><img src="afbeelding1.jpg" alt=""></div>
+    <div class="item"><img src="afbeelding2.jpg" alt=""></div>
+    ...
+</div>
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+.item {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+```
+
+
+# grid
 nog lezen: https://www.mozilla.org/en-US/developer/css-grid/
 
 # nth-child
