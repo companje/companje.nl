@@ -3,6 +3,9 @@ title: AI / Machine learning
 type: other
 ---
 
+# websites
+* https://framer.com
+
 # coding
 * https://codeium.com/windsurf
 * aider
