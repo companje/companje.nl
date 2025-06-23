@@ -2,6 +2,8 @@
 title: Songs
 layout: default
 ---
+
+* Cut Worms - Ballad of the Texas King
 * Deire - Scorch
 * Deire - My turn
 * Deire - Angles
