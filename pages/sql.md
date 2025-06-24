@@ -1,3 +1,8 @@
+# default value if NULL
+```sql
+where COALESCE(bepaal_X(ove.id,'CONTROLE_AFGEROND'),'?')<>'ja'
+```
+
 # context with titles connect by prior 
 ```sql
 SELECT LISTAGG(get_description(a.id,a.type_id), ' ... ') WITHIN GROUP (ORDER BY level DESC)  "context"
