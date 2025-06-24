@@ -1,6 +1,6 @@
 # default value if NULL
 ```sql
-where COALESCE(bepaal_X(ove.id,'CONTROLE_AFGEROND'),'?')<>'ja'  --cannot be empty string
+where COALESCE(bepaal_X(ove.id,'CONTROLE_AFGEROND'),'?')<>'ja'  --? cannot be empty string
 ```
 
 # context with titles connect by prior 
