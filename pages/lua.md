@@ -2,6 +2,9 @@
 title: Lua
 ---
 
+# '#' operator
+means 'length'
+
 # check args
 ```lua
 if (table.getn(arg) == 0) then
