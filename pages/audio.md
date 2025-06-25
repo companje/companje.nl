@@ -1,3 +1,13 @@
+# MilkyTracker
+* https://milkytracker.org/ (also MacOS)
+needs:
+```bash
+xattr -d com.apple.quarantine /Applications/Milkytracker.app
+```
+
+# ModArchive
+* https://modarchive.org/
+
 # Nyquist
 see [nyquist](/nyquist)
 
