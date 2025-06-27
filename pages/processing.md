@@ -2,6 +2,11 @@
 title: Processing
 ---
 
+# nearest neighbour scaling in Processing!
+```java
+((PGraphicsOpenGL) g).textureSampling(2);
+```
+
 # copy to clipboard
 ```java
 import java.awt.Toolkit;
