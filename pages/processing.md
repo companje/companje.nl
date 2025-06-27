@@ -2,7 +2,7 @@
 title: Processing
 ---
 
-# nearest neighbour scaling in Processing!
+# nearest neighbour scaling in Processing with P2D!
 ```java
 ((PGraphicsOpenGL) g).textureSampling(2);
 ```
