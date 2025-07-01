@@ -8,7 +8,7 @@ GROUP BY ?class
 ORDER BY DESC(?aantalInkomendeRelaties)
 ```
 
-# aantal uitgaande relaties per class ??
+# aantal uitgaande (?) relaties per class
 ```sparql
 SELECT ?class (COUNT(*) AS ?aantalInkomendeRelaties) WHERE {
   ?subject ?predicate ?object .
