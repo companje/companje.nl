@@ -1,3 +1,23 @@
+# aantal inkomende relaties per class
+```sparql
+SELECT ?class (COUNT(*) AS ?aantalInkomendeRelaties) WHERE {
+  ?subject ?predicate ?object .
+  ?object a ?class .
+}
+GROUP BY ?class
+ORDER BY DESC(?aantalInkomendeRelaties)
+```
+
+# aantal uitgaande relaties per class ??
+```sparql
+SELECT ?class (COUNT(*) AS ?aantalInkomendeRelaties) WHERE {
+  ?subject ?predicate ?object .
+  ?subject a ?class .
+}
+GROUP BY ?class
+ORDER BY DESC(?aantalInkomendeRelaties)
+```
+
 # make 0, 1 or 2 hops to find item with geometry
 ```sparql
 PREFIX def: <https://X.nl/def/>
