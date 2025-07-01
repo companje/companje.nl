@@ -1,3 +1,31 @@
+# make 0, 1 or 2 hops to find item with geometry
+```sparql
+PREFIX def: <https://X.nl/def/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+
+SELECT * WHERE {
+  ?s ?p <https://X.nl/id/sub_bisschop_haanhaver> .
+
+  {
+    ?s (geo:hasGeometry/geo:asWKT) ?geo .
+    BIND(STR(?s) AS ?geoLabel)
+  }
+  UNION
+  {
+    ?mid ?any ?s .
+    ?mid (geo:hasGeometry/geo:asWKT) ?geo .
+    BIND(STR(?mid) AS ?geoLabel)
+  }
+  UNION
+  {
+    ?mid1 ?any1 ?s .
+    ?mid2 ?any2 ?mid1 .
+    ?mid2 (geo:hasGeometry/geo:asWKT) ?geo .
+    BIND(STR(?mid2) AS ?geoLabel)
+  }
+}
+```
+
 # count classes
 ```sparql
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
