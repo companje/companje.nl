@@ -1,3 +1,13 @@
+# per subject van een bepaalde class het aantal alle inkomende relaties
+```sparql
+SELECT ?bezitter (COUNT(*) AS ?aantalInkomendeRelaties) WHERE {
+  ?bezitter a <https://hisgis.hualab.nl/id/bezitter> .
+  ?subject ?predicate ?bezitter .
+}
+GROUP BY ?bezitter
+ORDER BY DESC(?aantalInkomendeRelaties)
+```
+
 # aantal inkomende relaties per class
 ```sparql
 SELECT ?class (COUNT(*) AS ?aantalInkomendeRelaties) WHERE {
