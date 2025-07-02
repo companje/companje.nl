@@ -3,7 +3,7 @@ title: Sanyo MBC-550/555
 ---
 
 # beat + snare
-```asm
+```nasm
 push ax  ; at boottime (after ROM bios) ax=0xff00.
 pop ds
 
