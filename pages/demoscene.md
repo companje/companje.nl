@@ -1,5 +1,6 @@
 ## Memories
-* http://www.sizecoding.org/wiki/Memories
+* https://youtu.be/Imquk_3oFf4?list=RDImquk_3oFf4
+* * http://www.sizecoding.org/wiki/Memories
 
 ## LoveByte’s Tiny Code Christmas
 [LoveByte’s Tiny Code Christmas](https://tcc.lovebyte.party/) is an event to help you take your first steps in demoscene sizecoding with Lua based fantasy consoles like TIC-80 and PICO-8.
