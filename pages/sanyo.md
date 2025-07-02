@@ -2,6 +2,17 @@
 title: Sanyo MBC-550/555
 ---
 
+# beat + snare
+```asm
+push ax  ; at boottime (after ROM bios) ax=0xff00.
+pop ds
+
+.lp
+lodsb
+out 0x3a,al
+jmp .lp
+```
+
 # Outline 2025
 ```
 ___________________________________________
