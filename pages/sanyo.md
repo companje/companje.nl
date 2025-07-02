@@ -4,7 +4,7 @@ title: Sanyo MBC-550/555
 
 # play WAV file
 ```nasm
-%include "sanyo.asm"   # if more than 512 bytes load extra sectors
+%include "sanyo.asm"   ; WAV file is probably more than 512 bytes, so load extra sectors
 
 count EQU 11500
 threshold EQU 30
