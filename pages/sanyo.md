@@ -2,7 +2,7 @@
 title: Sanyo MBC-550/555
 ---
 
-# play WAV file
+# play WAV file (8khz mono)
 ```nasm
 %include "sanyo.asm"   ; WAV file is probably more than 512 bytes, so load extra sectors
 
