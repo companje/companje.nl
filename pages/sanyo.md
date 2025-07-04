@@ -2,6 +2,39 @@
 title: Sanyo MBC-550/555
 ---
 
+# keyboard
+```nasm
+init_keys:
+  mov al,0
+  out 0x3a,al           ; keyboard \force state/
+  out 0x3a,al           ; keyboard \force state/
+  mov al,0xFF
+  out 0x3a,al           ; keyboard \reset/
+  out 0x3a,al           ; keyboard \mode/
+  mov al,0x37
+  out 0x3a,al           ; keyboard \set command
+  ret
+
+check_keys:
+  in al,0x3a        ; get keyboard status
+  mov ah,al
+  and al,0b00001000 ; keep only 1 for 'ctrl'
+  mov [cs:key.ctrl],al
+  test ah,2         ; keypressed flag is in ah, not in al anymore
+  jz .return
+  in al,0x38        ; get data byte from keyboard  
+  mov [cs:key.code],al
+  mov al,0x37
+  out 0x3a,al       ; drop key?  
+  or al,1           ; set zero flag to false to indicate a keypress
+  mov ax,[cs:key]   ; ctrl status in ah, keycode in al, ZF low means a key was pressed
+.return ret
+
+key:
+  .code db 0
+  .ctrl db 0
+```
+
 # play WAV file (8khz mono)
 ```nasm
 %include "sanyo.asm"   ; WAV file is probably more than 512 bytes, so load extra sectors
