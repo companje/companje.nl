@@ -47,7 +47,7 @@ play:             ; bx=note/pulse_width, dx=duration
    out 0x3A,al    ; reset USART
 .e ret
 
-song:
+song: ; Wonderfull Days intro
 db G3,C4,E4,C4
 db G3,C4,E4,C4
 db G3,B3,D4,B3
