@@ -7,6 +7,7 @@ title: Sounds / music
 * https://incompetech.com/music/royalty-free/music.html
 
 # C - G - Am - Em - F - C - F - G
+https://www.youtube.com/watch?v=CZdnL4YmbUk
 ```nasm
 dw C4,E4,G4, C5,E5,G5   ;C
 dw C4,E4,G4, C5,E5,G5   ;C
@@ -34,6 +35,7 @@ dw G3,B3,D4, G4,B4,D5   ;G
 ```
 
 # zelfde maar andersom terug
+https://www.youtube.com/watch?v=CZdnL4YmbUk
 ; C - G - Am - Em - F - C - F - G
 
 ; C
@@ -75,7 +77,7 @@ dw C4,A3 ; linker hand
 dw G3,B3,D4 ; linker hand
 dw G4,B4,D5,G5,D5,B4,  G4 ; rechter hand
 dw D4,B3 ; linker hand
-
+```
 
 
 # Wonderful days intro
