@@ -29,7 +29,7 @@ update:
   mov si,song
   jmp update
 
-play:             ; bx=note, dx=duration
+play:             ; bx=note/pulse_width, dx=duration
    mov cx,bx
    mov ax,0x35
 .a xor al,8       ; toggle 'break' bit
