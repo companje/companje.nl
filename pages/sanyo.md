@@ -334,10 +334,11 @@ ticks EQU 787 ; 100Hz (10ms)
 setup:
   ; 8253 Timer
   ; Send Control Word (0x34 = 00110100) to port 0x26
-  ;   Channel 0 (bits 7-6 = 00)
-  ;   Access mode: lobyte/hibyte (bits 5-4 = 11)
-  ;   Mode 2: rate generator (bits 3-1 = 010)
-  ;   Binary mode (bit 0 = 0)
+  ;   bit 7-6=00  : Channel 0 
+  ;   bit 5-4=11  : Access mode lobyte/hibyte
+  ;   bit 3-1=010 : Mode 2: rate generator
+  ;   bit 0=0     : Binary mode
+
   mov al, 0x34
   out 0x26, al
 
