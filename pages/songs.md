@@ -3,6 +3,7 @@ title: Songs
 layout: default
 ---
 
+* Strongboi - Honey Thighs
 * Cut Worms - Ballad of the Texas King
 * Deire - Scorch
 * Deire - My turn
