@@ -1,3 +1,19 @@
+# URI's zonder inkomende relaties (met subselect ivm performance)
+```sparql
+PREFIX sdo: <https://schema.org/>
+
+SELECT DISTINCT ?s WHERE {
+  {
+    SELECT DISTINCT ?s WHERE {
+      ?s sdo:url ?o
+    }
+  }
+  FILTER NOT EXISTS {
+    ?x ?y ?s
+  }
+}
+```
+
 # per subject van een bepaalde class het aantal alle inkomende relaties
 ```sparql
 SELECT ?bezitter (COUNT(*) AS ?aantalInkomendeRelaties) WHERE {
