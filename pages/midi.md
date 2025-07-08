@@ -2,7 +2,7 @@
 title: Midi
 ---
 
-* Tools: Reaper, MuseScore, 
+* Tools: Reaper, [MuseScore](/musescore), 
 * MidiEditor
 * [MidiMonitor](https://www.snoize.com/midimonitor/)
 * On Mac you can install a synth as described here: https://github.com/frescobaldi/frescobaldi/wiki/MIDI-playback-on-Mac-OS-X: for example: SimpleSynth or FluidSynth. For FluidSynth you need a SoundFont (for example from here: https://musescore.org/en/handbook/3/soundfonts-and-sfz-files#list)
