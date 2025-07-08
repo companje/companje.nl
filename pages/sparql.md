@@ -1,4 +1,5 @@
 # URI's zonder inkomende relaties (met subselect ivm performance)
+>> let op: deze URI's moeten wel zelf een gedeelde property hebben zoals sdo:url
 ```sparql
 PREFIX sdo: <https://schema.org/>
 
