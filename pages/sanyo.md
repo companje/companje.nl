@@ -267,8 +267,10 @@ Thank you:
 Best wishes,
 Sanyoman2 aka RickyboyII
 https://github.com/tixy.boot
-
 ```
+
+<iframe width="900" height="420" src="https://www.youtube.com/embed/rehGOEu1WIs" title="TIXY in 256 bytes  Sanyo MBC-555 bootsector for Outline 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 # calc_bit_for_pixel
 ```nasm
 calc_bit_for_pixel:
