@@ -1,3 +1,6 @@
+# understanding sound
+* https://www.forgottencomputer.com/retro/sound/
+
 # MilkyTracker
 * https://milkytracker.org/ (also MacOS)
 needs:
