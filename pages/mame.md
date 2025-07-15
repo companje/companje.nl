@@ -1,5 +1,8 @@
 see [sanyo](/sanyo)
 
+# log all excecuted instructions
+put this is autostart.txt: `trace log.txt`
+
 # capture movie
 ```bash
 mame ....... -aviwrite screendump.avi
