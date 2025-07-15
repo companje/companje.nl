@@ -1,7 +1,12 @@
 see [sanyo](/sanyo)
 
+# set breakpoint
+```
+bpset 0x3F2
+```
+
 # log all excecuted instructions
-put this is autostart.txt: `trace log.txt`
+put this is for example in autostart.txt: `trace log.txt`
 
 # capture movie
 ```bash
