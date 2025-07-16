@@ -2,6 +2,34 @@
 title: Sanyo MBC-550/555
 ---
 
+# draw 8x4px (12 bytes) from SI to DI 
+<img width="393" height="295" alt="colored 8x4px cells" src="https://github.com/user-attachments/assets/9e2710d5-3b89-465e-b4f4-e9c8347e7ea3" />
+
+```nasm
+RED   equ 0xf000
+GREEN equ 0x1c00
+BLUE  equ 0xf400
+
+draw_cell:        ; draw 8x4px (12 bytes) from SI to DI
+  mov bx,di       ; dit zou sneller kunnen zijn dan push/pop. Wel meer bytes.
+  mov ax,RED
+  mov es,ax
+  movsw
+  movsw
+  mov ah,GREEN>>8 ; save 1 byte because AL is already 0
+  mov es,ax
+  mov di,bx
+  movsw
+  movsw
+  mov ah,BLUE>>8
+  mov es,ax
+  mov di,bx
+  movsw
+  movsw
+  mov di,bx
+  ret
+```
+
 # nested for-loop
 ```nasm
 setup:
