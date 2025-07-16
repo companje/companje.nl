@@ -1,6 +1,5 @@
 # midi
-* https://musiclab.chromeexperiments.com/
-* https://lmms.io/
+see [midi](/midi)
 
 # understanding sound
 * https://www.forgottencomputer.com/retro/sound/
