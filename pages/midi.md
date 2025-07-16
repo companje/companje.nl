@@ -2,6 +2,11 @@
 title: Midi
 ---
 
+* https://musiclab.chromeexperiments.com/
+* https://lmms.io/
+
+
+
 * Tools: Reaper, [MuseScore](/musescore), 
 * MidiEditor
 * [MidiMonitor](https://www.snoize.com/midimonitor/)
