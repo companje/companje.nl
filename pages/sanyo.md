@@ -2,6 +2,35 @@
 title: Sanyo MBC-550/555
 ---
 
+# nested for-loop
+```nasm
+setup:
+  push cs
+  pop ds
+  mov ax,0x0800 ; green
+  mov es,ax
+
+draw:
+  mov cx,199
+  .y: 
+    mov dx,cx
+    push cx
+    mov cx,575
+    .x:
+      push dx
+      push cx
+      mov bx,cx
+      call calc_bit_for_pixel
+      pop cx
+      pop dx
+      or byte [es:di],dl
+    loop .x
+  pop cx
+  loop .y
+
+hlt
+```
+
 # working interrupt handler
 ```nasm
 ticks EQU 20000 
