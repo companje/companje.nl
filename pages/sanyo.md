@@ -4,7 +4,6 @@ title: Sanyo MBC-550/555
 
 # Minksy circle (66 bytes)
 ![minksy-circle](https://github.com/user-attachments/assets/971e2769-99e0-47c9-a1ef-683cf2a6fd82)
-`ffmpeg -i input.avi -y -vf "fps=10,scale=576:400:flags=lanczos,format=gray,lut=y='gte(val\,25)*255',format=rgb24,colorchannelmixer=rr=0:gg=1:bb=0" output.gif`
 
 ```nasm
 setup:
@@ -51,6 +50,8 @@ draw:
 d: dw 202
 x: dw 1100
 y: dw 1
+
+; make GIF: ffmpeg -i input.avi -y -vf "fps=10,scale=576:400:flags=lanczos,format=gray,lut=y='gte(val\,25)*255',format=rgb24,colorchannelmixer=rr=0:gg=1:bb=0" output.gif
 ```
 
 in Processing:
