@@ -51,6 +51,34 @@ x: dw 1100
 y: dw 1
 ```
 
+in Processing:
+```java
+int d = 202;
+int x = 1100;
+int y = 1;
+int ax, bx, cx, dx;
+
+void draw() {
+  cx = 2<<13;
+
+  ax = d*y; //32 bit
+  ax = ax / cx;
+  stack.push(ax);
+
+  ax = d*x;
+  ax = ax / cx;
+
+  y-=ax;
+  ax = stack.pop();
+  x+=ax;
+
+  bx=(x>>5) + 288;
+  dx=(y>>5) + 100;
+
+  point(bx, dx);
+}
+```
+
 # draw 8x4px (12 bytes) from SI to DI 
 <img width="393" height="295" alt="colored 8x4px cells" src="https://github.com/user-attachments/assets/9e2710d5-3b89-465e-b4f4-e9c8347e7ea3" />
 
