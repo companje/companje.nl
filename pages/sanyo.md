@@ -61,7 +61,7 @@ int ax, bx, cx, dx;
 void draw() {
   cx = 2<<13;
 
-  ax = d*y; //32 bit
+  ax = d*y; //32 bit DX:AX
   ax = ax / cx;
   stack.push(ax);
 
