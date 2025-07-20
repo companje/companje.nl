@@ -48,7 +48,7 @@ draw:
   jmp draw
 
 d: dw 202
-x: dw 1100
+x: dw 1100 ; 306
 y: dw 1
 
 ; make GIF: ffmpeg -i input.avi -y -vf "fps=10,scale=576:400:flags=lanczos,format=gray,lut=y='gte(val\,25)*255',format=rgb24,colorchannelmixer=rr=0:gg=1:bb=0" output.gif
