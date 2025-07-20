@@ -8,7 +8,7 @@ title: Sanyo MBC-550/555
 setup:
   push cs
   pop ds
-  mov ah,8   ; only in MAME green segment=0x0800
+  mov ah,8   ; green segment=0x0800
   mov es,ax
 
 draw: 
