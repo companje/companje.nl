@@ -2,8 +2,8 @@
 title: Sanyo MBC-550/555
 ---
 
-<img style="float:right" src="https://github.com/user-attachments/assets/971e2769-99e0-47c9-a1ef-683cf2a6fd82" alt="minksy-circle">
 # Minksy circle (66 bytes)
+<img style="float:right" src="https://github.com/user-attachments/assets/971e2769-99e0-47c9-a1ef-683cf2a6fd82" alt="minksy-circle">
 ```nasm
 setup:
   push cs
