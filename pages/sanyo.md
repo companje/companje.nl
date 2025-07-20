@@ -2,6 +2,55 @@
 title: Sanyo MBC-550/555
 ---
 
+# Minksy circle
+![minksy-circle](https://github.com/user-attachments/assets/971e2769-99e0-47c9-a1ef-683cf2a6fd82)
+
+setup:
+  push cs
+  pop ds
+  mov ah,8   ; only in MAME green segment=0x0800
+  mov es,ax
+
+draw: 
+  mov cx,2<<13
+  mov bx,[d]
+  
+  mov ax,[y]
+  cwd
+  imul bx
+  idiv cx
+
+  push ax
+  
+  mov ax,[x]
+  cwd
+  imul bx
+  idiv cx
+
+  sub [y],ax ; y-=b
+  pop ax
+  add [x],ax ; x+=a
+
+  mov cl,5
+  mov bx,[x]
+  sar bx,cl  
+  add bx,288
+
+  inc cl ; aspect ratio
+  mov dx,[y]
+  sar dx,cl
+  add dx,100
+ 
+  call calc_bit_for_pixel
+  or [es:di],dl
+  
+  jmp draw
+
+d: dw 202
+x: dw 1100
+y: dw 1
+
+
 # draw 8x4px (12 bytes) from SI to DI 
 <img width="393" height="295" alt="colored 8x4px cells" src="https://github.com/user-attachments/assets/9e2710d5-3b89-465e-b4f4-e9c8347e7ea3" />
 
