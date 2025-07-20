@@ -83,7 +83,7 @@ void draw() {
 ```
 
 # draw 8x4px (12 bytes) from SI to DI 
-<img width="393" height="295" alt="colored 8x4px cells" src="https://github.com/user-attachments/assets/9e2710d5-3b89-465e-b4f4-e9c8347e7ea3" />
+<img class="float-xl-right" width="393" height="295" alt="colored 8x4px cells" src="https://github.com/user-attachments/assets/9e2710d5-3b89-465e-b4f4-e9c8347e7ea3" />
 
 ```nasm
 RED   equ 0xf000
