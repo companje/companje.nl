@@ -33,7 +33,7 @@ draw:
 
   mov cl,5
   mov bx,[x]
-  sar bx,cl  
+  sar bx,cl      ; use SAR instead of SHR to work with negative numbers
   add bx,288
 
   inc cl ; aspect ratio
