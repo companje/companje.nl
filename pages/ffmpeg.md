@@ -4,6 +4,11 @@ permalink: /ffmpeg
 tags: ['notes','software','video']
 ---
 
+# make monochrome GIF
+```bash
+ffmpeg -i input.avi -y -vf "fps=10,scale=576:400:flags=lanczos,format=gray,lut=y='gte(val\,25)*255',format=rgb24,colorchannelmixer=rr=0:gg=1:bb=0" output.gif
+```
+
 # alpha sequence over fixed background
 ```bash
 ffmpeg -framerate 30 -pattern_type glob -i "2992/*.png" -i bluemarble_3k.jpg -filter_complex "[0:v]format=rgba[fg];[1:v]format=rgb24[bg];[bg][fg]overlay=0:0" -c:v libx264 -pix_fmt yuv420p output.mp4
