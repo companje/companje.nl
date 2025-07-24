@@ -7,7 +7,7 @@ where COALESCE(bepaal_X(ove.id,'CONTROLE_AFGEROND'),'?')<>'ja'  --? cannot be em
 ```sql
 SELECT LISTAGG(get_description(a.id,a.type_id), ' ... ') WITHIN GROUP (ORDER BY level DESC)  "context"
 FROM archivalrecords a
-CONNECT BY PRIOR a.type_id = a.id
+CONNECT BY PRIOR a.parent_id = a.id
 START WITH a.id=123123123
 ```
 
