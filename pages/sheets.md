@@ -1,5 +1,10 @@
 see also [docs](/docs)
 
+# converteer naar Tabel
+```
+Cmd + Alt + T
+```
+
 # extract number after last underscore
 ```
 # NL-UtHUA_34-4_154
