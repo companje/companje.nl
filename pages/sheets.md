@@ -1,5 +1,10 @@
 see also [docs](/docs)
 
+# zero padding
+```
+=TEXT(A1, "000")
+```
+
 # converteer naar Tabel
 ```
 Cmd + Alt + T
