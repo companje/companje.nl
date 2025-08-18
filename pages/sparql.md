@@ -1,3 +1,29 @@
+# Omliggende Percelen
+```sparql
+prefix geo: <http://www.opengis.net/ont/geosparql#>
+prefix geof: <http://www.opengis.net/def/function/geosparql/>
+prefix id: <https://hisgis.hualab.nl/id/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix def: <https://hisgis.hualab.nl/def/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix uom: <http://www.opengis.net/def/uom/OGC/1.0/>
+
+select ?g1 ?g2 ?g2Tooltip ?g1Tooltip ?g1Color ?g1Label where {
+  ?p1 geo:asWKT ?g1 .
+  ?p2 geo:asWKT ?g2 .
+  ?p2 a id:perceel .
+  optional { ?p2 def:naam/rdfs:label ?g2Tooltip . }
+  optional { ?p1 def:naam/rdfs:label ?g1Tooltip . }
+  bind ("green" as ?g1Color)
+  bind (   strdt(concat("yy<a href='",str(?p1),"'>link</a>xx"),rdf:HTML) as ?g1Label )
+
+  VALUES (?p1) { (id:perceel-14854) }
+  # FILTER(geof:sfTouches(?g1, ?g2) )
+  BIND( geof:distance(?g1, ?g2, uom:metre) AS ?afstand_m )
+  FILTER( ?afstand_m <= 100 )
+} limit 200
+```
+
 # URI's zonder inkomende relaties (met subselect ivm performance)
 * let op: deze URI's moeten wel zelf een gedeelde property hebben zoals sdo:url
 ```sparql
