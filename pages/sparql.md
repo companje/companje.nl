@@ -27,7 +27,8 @@ select ?g1 ?g2 ?g2Tooltip ?g1Tooltip ?g1Color ?g1Label where {
 # URI's zonder inkomende relaties (met subselect ivm performance)
 * let op: deze URI's moeten wel zelf een gedeelde property hebben zoals sdo:url
 ```sparql
-PREFIX sdo: <https://schema.org/>
+
+PREFIX sdo: <https://schema.org/> 
 
 SELECT DISTINCT ?s WHERE {
   {
