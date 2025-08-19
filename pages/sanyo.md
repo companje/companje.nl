@@ -2,6 +2,50 @@
 title: Sanyo MBC-550/555
 ---
 
+# Frequency vs Duty Cycle
+<iframe width="900" height="420" src="https://www.youtube.com/embed/166pJNWayM4" title="Frequency vs Duty Cycle" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+```nasm
+calc_cycle_widths:
+    ; calculates pulse_width and space_width for 1 cycle
+    ; input: [freq], [duty_cycle]
+    ; output: cx=pulse_width, dx=space_width
+    ; cycle_time equ F2C * 4 / freq  (= (F2C/freq)*4)
+    ; pulse_width equ cycle_time * duty_cycle / 100
+    ; space_width equ cycle_time - pulse_width
+    mov ax,F2C & 0xFFFF          ; 32 bit
+    mov dx,F2C >> 16
+    div word [freq]              ; ax is now cycle_time
+    push ax
+    mul word [duty_cycle]        ; ax is now cycle_time * duty_cycle
+    mov cx,100
+    div cx        ; ax is now pulse_width
+    mov [pulse_width],ax
+    pop word [space_width]
+    sub [space_width],ax
+    ret
+
+play_half_cycle:
+    out 0x3a,al
+    xor al,8               ; toggle break bit
+    mov cx, [pulse_width] 
+    xchg cx, [space_width] ; swap cx,dx every half cycle
+    mov [pulse_width], cx
+.d: loop .d
+    ret
+
+calc_num_cycles:
+    ; input [duration],[freq], output=[cycles]
+    ; num_cycles equ freq * duration / 1000
+    mov ax,[duration]
+    cwd
+    mul word [freq]
+    mov cx,1000
+    div cx
+    mov word [cycles],ax
+    ret
+```
+
 # Minksy circle (66 bytes)
 <img class="float-xl-right" src="https://github.com/user-attachments/assets/971e2769-99e0-47c9-a1ef-683cf2a6fd82" alt="minksy-circle">
 
