@@ -17,12 +17,29 @@ https://data.netwerkdigitaalerfgoed.nl/hetutrechtsarchief/-/queries/Gerechten-HI
 import os
 import geopandas as gpd
 
-input_folder = 'input.TAB'
+input_filename = 'input.TAB'
 output_filename = 'output.geojson'
 
-gdf = gpd.read_file(tab_path)
+gdf = gpd.read_file(input_filename)
 gdf = gdf.to_crs(epsg=28992) # first to RD ... needed to prevent weird offset
 gdf = gdf.to_crs(epsg=4326) # wgs84
+gdf.to_file(output_filename, driver='GeoJSON')
+```
+
+# convert MapInfo TAB (force EPSG28992 RD) to ESP4326 wsg84 geojson 
+```python
+import os
+import geopandas as gpd
+
+input_filename = './Utrecht/Zuilen/MapInfo/Zuilen_Opstallen.TAB'
+output_filename = 'Zuilen_Opstallen.geojson'
+
+gdf = gpd.read_file(input_filename)
+print(gdf.crs)          
+print(gdf.head()) 
+gdf = gdf.set_crs(epsg=28992, allow_override=True)
+print(gdf.crs)
+gdf = gdf.to_crs(epsg=4326)
 gdf.to_file(output_filename, driver='GeoJSON')
 ```
 
