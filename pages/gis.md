@@ -1,6 +1,5 @@
----
-title: See [[maps]]
----
+# see also
+* [[/maps]]
 
 # Query HISGIS Utrecht <1832 Gerechten
 https://data.netwerkdigitaalerfgoed.nl/hetutrechtsarchief/-/queries/Gerechten-HISGIS/
