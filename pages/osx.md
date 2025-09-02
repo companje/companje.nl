@@ -2,6 +2,11 @@
 title: Mac OSX
 ---
 
+# shutdown
+```bash
+sudo shutdown -h now
+```
+
 # launchctl
 Dit was het! Dit moet in mn plist. Hoe dat icm met pm2 ga ik later uitzoeken.
 ```
