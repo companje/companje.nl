@@ -10,6 +10,8 @@ voor een fijne dev-workflow doe eerst het volgende:
 * vervolgens kun je in SublimeText bijv. een shellscript met `open script.jsx` runnen bij Cmd+B.
 * dan wordt de code direct uitgevoerd in Illustrator.
 
+in de onderstaande code worden eerst het icoon en de title gemaakt. Dan worden die in een eigen groep gezet. En de groep wordt vervolgens gepositioneerd en geroteerd.
+
 ```js
 #target illustrator
 
