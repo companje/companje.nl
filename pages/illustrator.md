@@ -3,6 +3,13 @@ title: Illustrator
 ---
 
 # JSX code for generating a circular pattern with icons and titles
+voor een fijne dev-workflow doe eerst het volgende:
+* Maak een JSX-bestand met de volgende inhoud: app.preferences.setBooleanPreference("ShowExternalJSXWarning", false)
+* Ga naar Bestand > Scripts > Ander script en kies het zojuist opgeslagen JSX-bestand.
+* daarna kun je JSX bestand koppelen om altijd met Illustrator te openen.
+* vervolgens kun je in SublimeText bijv. een shellscript met `open script.jsx` runnen bij Cmd+B.
+* dan wordt de code direct uitgevoerd in Illustrator.
+
 ```js
 #target illustrator
 
