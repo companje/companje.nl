@@ -1,3 +1,15 @@
+# alle archiefstukken onder een bepaalde rubriek
+```sql
+select a.id
+from archiefstukken a
+where a.soort_id in (4,5) --eb,db
+and a.id in (
+    SELECT id FROM archiefstukken
+    START WITH ID = 2968896 -- rubriek 1.2.2.7 taakuitvoering overzee
+    CONNECT BY PRIOR ID = parent_id
+);
+```
+
 # default value if NULL
 ```sql
 where COALESCE(bepaal_X(ove.id,'CONTROLE_AFGEROND'),'?')<>'ja'  --? cannot be empty string
