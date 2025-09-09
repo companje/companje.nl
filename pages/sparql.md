@@ -1,4 +1,4 @@
-# Alles met een coordinaat op Mercurius op Wikidata
+# Alles met een coordinaat en evt een afbeelding op Mercurius op Wikidata
 ```sparql
 SELECT ?s ?typeLabel ?sLabel ?coord ?img
 WHERE {
