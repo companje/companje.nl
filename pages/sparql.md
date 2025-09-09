@@ -1,3 +1,15 @@
+# Alles met een coordinaat op Mercurius op Wikidata
+```sparql
+SELECT ?s ?typeLabel ?sLabel ?coord ?img
+WHERE {
+  ?s wdt:P31 ?type ;
+     wdt:P376 wd:Q308 ;
+     wdt:P625 ?coord .
+  OPTIONAL { ?s wdt:P18 ?img }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en,nl". }
+}
+```
+
 # Omliggende Percelen
 ```sparql
 prefix geo: <http://www.opengis.net/ont/geosparql#>
