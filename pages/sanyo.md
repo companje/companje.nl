@@ -3,7 +3,7 @@ title: Sanyo MBC-550/555
 ---
 
 # Logistic map / bifurcation diagram
-<img alt="Logistic map / bifurcation diagram" src="https://github.com/user-attachments/assets/627c742e-4d55-4744-b9cb-abac1c05af95" style="float:right">
+<img alt="Logistic map / bifurcation diagram" src="https://github.com/user-attachments/assets/627c742e-4d55-4744-b9cb-abac1c05af95" style="float:right; max-width:400px">
 
 ```basic
 5 MINY=99: MAXY=-99
