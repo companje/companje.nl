@@ -2,6 +2,28 @@
 title: Sanyo MBC-550/555
 ---
 
+# Logistic map / bifurcation diagram
+<img alt="Logistic map / bifurcation diagram" src="https://github.com/user-attachments/assets/627c742e-4d55-4744-b9cb-abac1c05af95" style="float:right">
+
+```basic
+5 MINY=99: MAXY=-99
+10 CLS
+20 S=1/600: A=1: N=50
+30 FOR X=0 TO 1 STEP S
+40 A=X*1.6+2.4: Y=.6
+50 FOR I=0 TO N
+60 Y=A*Y*(1-Y)
+61 IF Y<MINY THEN MINY=Y
+62 IF Y>MAXY THEN MAXY=Y
+70 XX=X*639
+80 YY=Y*199
+90 C=COLOR(XX,YY)+1
+100 IF C=3 THEN C=4 ELSE IF C>6 THEN C=6
+110 PSET(XX,YY),C
+120 NEXT I,X
+130 PRINT MINY,MAXY
+```
+
 # Frequency vs Duty Cycle
 <iframe width="900" height="420" src="https://www.youtube.com/embed/166pJNWayM4" title="Frequency vs Duty Cycle" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
