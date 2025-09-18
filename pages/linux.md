@@ -1,3 +1,8 @@
+# start camera from ssh, show on connected screen
+```bash
+DISPLAY=:0 mplayer tv:// -tv driver=v4l2:device=/dev/video0
+```
+
 # close open ports on osx
 see [[osx]]
 
