@@ -2,6 +2,23 @@
 title: Sanyo MBC-550/555
 ---
 
+# BradN about quirks on bannister.org forum
+<blockquote>
+BradN: "Properly emulating this system might be trickier than you think - not only is the video weird but everything else is weird in some way too (only exception being the add-in CGA card, but those can have an extra 256KB RAM so in a way they can be weird as well!)
+
+Some of the quirks that may be a little tricky:
+
+Reading non-existant memory returns the last byte read by the video circuitry due to bus capacitance. This is the only practical way to achieve vsync feedback without slaving the timer chip to count (with 100% accuracy to prevent drift) video position.
+
+There are multiple dip switch settings to control how the composite monochrome signal is generated from the 3 color planes.
+
+The speaker is wired to the transmit pin of the keyboard's serial UART. Emulating sanyo's buzz is easy, but emulating a 1 bit DAC running at 78.6KHz (approx 3.5 bit 6600Hz PCM if using 12 bits per sample) that can be achieved with a low pass filter right before the speaker is probably not so easy. Yes, you heard it right, Sanyo apparently unintentially designed this machine to have a pretty good sound capability by using synchronous mode on the 8251. Up to 1.33 samples can be buffered at a time in that scheme (compare to buffering 1/2 of a sample in a PC speaker driver using PWM, or 1/12 of a sample for PC speaker using an exact 1 bit DAC equivalent), and a RAM upgraded machine with 512KB has enough memory to play a recognizable song of a bit over 3 minutes length! Also emulating the keyboard receive when the 8251 is set in that mode would be a minor complication.
+
+The memory bus is available only once every 4 cycles - I don't think this is the same as 3 wait states, but that would be a close if not exact approximation, since the system is so bus starved most of the time.
+
+If anyone can make an emulator that properly handles these things and the rest of the hardware, I've got a $100 bill for you at least. (I'll accept some sloppiness in the floppy emulation, but it should at least handle the actual data tracks and not just sectors - that chip is a nightmare to program for, I can only imagine emulating)"
+</blockquote>
+
 # Logistic map / bifurcation diagram
 <img alt="Logistic map / bifurcation diagram" src="https://github.com/user-attachments/assets/627c742e-4d55-4744-b9cb-abac1c05af95" style="float:right; max-width:500px">
 
