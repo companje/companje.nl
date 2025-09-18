@@ -2,7 +2,7 @@
 title: Sanyo MBC-550/555
 ---
 
-# BradN about quirks on bannister.org forum
+# BradN about the MBC-555 quirks on bannister.org forum
 <blockquote>
 BradN: "Properly emulating this system might be trickier than you think - not only is the video weird but everything else is weird in some way too (only exception being the add-in CGA card, but those can have an extra 256KB RAM so in a way they can be weird as well!)
 
