@@ -8,6 +8,7 @@ layout: default
 * Santigold - Disperate Youth
 * Strongboi - Honey Thighs
 * Cut Worms - Ballad of the Texas King
+* Sophie Straat - Let me tell you something 'bout my country
 * Deire - Scorch
 * Deire - My turn
 * Deire - Angles
