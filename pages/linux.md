@@ -1,3 +1,31 @@
+# auto start python script with gui
+```bash
+sudo nano /etc/systemd/system/touchdriver.service
+```
+edit:
+```conf
+[Unit]
+Description=TouchDriverPy (testen met GUI)
+After=graphical.target
+
+[Service]
+WorkingDirectory=/home/rick/Globe4D/TouchDriverPy
+ExecStart=/usr/local/bin/nodemon -e py --exec /home/rick/Globe4D/TouchDriverPy/.venv/bin/python t>
+Restart=always
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/rick/.Xauthority
+
+[Install]
+WantedBy=graphical.target
+```
+start:
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable touchdriver.service
+sudo systemctl restart touchdriver.service
+sudo reboot
+```
+
 # start camera from ssh, show on connected screen
 ```bash
 DISPLAY=:0 mplayer tv:// -tv driver=v4l2:device=/dev/video0
