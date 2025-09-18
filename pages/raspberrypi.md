@@ -2,6 +2,9 @@
 title: Raspbery Pi
 ---
 
+# See Also
+[[/linux]]
+
 # Raspberry PI pico
 "...the Pico can be powered from 5V, but it works at 3.3V, so leaving software and hardware emulation aside for now, you'd need level shifters on almost every pin."
 
