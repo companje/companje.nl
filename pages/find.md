@@ -2,6 +2,11 @@
 title: Find
 ---
 
+# delete
+```bash
+find .  -iname "*.db" -delete
+```
+
 # find jpg's case insensitive
 ```bash
 find . -iname "*.jpg"
