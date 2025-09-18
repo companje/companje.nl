@@ -10,7 +10,7 @@ After=graphical.target
 
 [Service]
 WorkingDirectory=/home/rick/Globe4D/TouchDriverPy
-ExecStart=/usr/local/bin/nodemon -e py --exec /home/rick/Globe4D/TouchDriverPy/.venv/bin/python t>
+ExecStart=/usr/local/bin/nodemon -e py --exec /home/rick/Globe4D/TouchDriverPy/.venv/bin/python test.py
 Restart=always
 Environment=DISPLAY=:0
 Environment=XAUTHORITY=/home/rick/.Xauthority
