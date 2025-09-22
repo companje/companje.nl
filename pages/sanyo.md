@@ -166,6 +166,42 @@ void draw() {
 }
 ```
 
+more readible version in Processing:
+```java
+int d = 202;
+int x = 1100;
+int y = 1;
+
+void setup() {
+  size(640, 200);
+  background(0);
+  stroke(255);
+}
+
+void draw() {
+  for (int i=0; i<100; i++) draw2();
+}
+
+void draw2() {
+  int a = d*y; //32 bit
+  a>>=14;
+
+  int b = d*x;
+  b>>=14;
+
+  y-=b;
+  x+=a;
+
+  int xx=x>>5;
+  int yy=y>>5;
+
+  xx+=320;
+  yy+=100;
+
+  point(xx, yy);
+}
+```
+
 # draw 8x4px (12 bytes) from SI to DI 
 <img class="float-xl-right" width="393" height="295" alt="colored 8x4px cells" src="https://github.com/user-attachments/assets/9e2710d5-3b89-465e-b4f4-e9c8347e7ea3" />
 
