@@ -1,10 +1,11 @@
----
+``---
 title: Python
 ---
 
 # python uit de .venv starten
 ```
 .venv/bin/python
+.venv/bin/python -m pip install tqdm
 ```
 
 # immutable merge (met aaa key on top)
