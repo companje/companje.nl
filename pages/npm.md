@@ -2,6 +2,11 @@
 title: npm - node package manager
 ---
 
+# nodemon for python
+```bash
+nodemon -e py --exec python main.py
+```
+
 # select node version in package.json
 ```
 "prestart": "source ~/.nvm/nvm.sh && nvm use 18",
