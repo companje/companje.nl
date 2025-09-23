@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# python uit de .venv starten
+```
+.venv/python
+```
+
 # immutable merge (met aaa key on top)
 ```python
 persoon = {"aaa": "PBR"} | persoon
