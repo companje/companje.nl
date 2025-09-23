@@ -1,3 +1,9 @@
+# 'Best fit'
+hoe kan ik via IIIF een afbeelding opvragen waarbij de maximale hoogte 300 is en de maximale breedte 400?
+```
+.../full/!400,300/0/default.jpg
+```
+
 # Tify viewer
 * https://github.com/tify-iiif-viewer/tify
 * example: https://www.openarchieven.nl/transcripties/view/NL-HaNA_1.05.05_5_0013
