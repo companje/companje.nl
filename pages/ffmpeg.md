@@ -4,6 +4,16 @@ permalink: /ffmpeg
 tags: ['notes','software','video']
 ---
 
+# crossfade 2 PNG's
+```bash
+ffmpeg -loop 1 -framerate 30 -t 5 -i temp-precip-2020-current-4096.png \
+       -loop 1 -framerate 30 -t 5 -i temp-precip-2070-rcp85-4096.png \
+       -f lavfi -t 5 -i "color=c=white:s=4096x2048" \
+       -f lavfi -t 5 -i "color=c=white:s=4096x2048" \
+       -filter_complex "[0:v]format=rgba[fg1];[1:v]format=rgba[fg2];[2:v][fg1]overlay=shortest=1[bg1];[3:v][fg2]overlay=shortest=1[bg2];[bg1][bg2]xfade=transition=fade:duration=1:offset=2,format=yuv420p" \
+       -c:v libx264 -pix_fmt yuv420p -movflags +faststart -y output.mp4
+```
+
 # make monochrome GIF
 ```bash
 ffmpeg -i input.avi -y -vf "fps=10,scale=576:400:flags=lanczos,format=gray,lut=y='gte(val\,25)*255',format=rgb24,colorchannelmixer=rr=0:gg=1:bb=0" output.gif
