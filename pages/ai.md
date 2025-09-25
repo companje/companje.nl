@@ -3,6 +3,9 @@ title: AI / Machine learning
 type: other
 ---
 
+# voice cloning
+* werkt echt goed! https://www.minimax.io/audio/voices-cloning
+
 # websites
 * https://framer.com
 
