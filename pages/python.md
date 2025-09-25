@@ -2,6 +2,19 @@
 title: Python
 ---
 
+# operators
+```python
+import operator
+from pathlib import Path
+
+def supported_operators(obj):
+    return [op for op in dir(operator) if hasattr(type(obj), f"__{op}__")]
+
+print("str:", supported_operators("abc"))
+print("int:", supported_operators(123))
+print("Path:", supported_operators(Path("x")))
+```
+
 # python uit de .venv starten
 ```
 .venv/bin/python
