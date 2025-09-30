@@ -1,5 +1,11 @@
 see also [docs](/docs)
 
+# download sheet using "Chart Tools datasource protocol"
+```java
+String id = "copy paste this from your url in edit mode"; 
+String url = "https://docs.google.com/spreadsheets/d/"+id+"/gviz/tq?tqx=out:csv&gid=0";
+```  
+
 # zero padding
 ```
 =TEXT(A1, "000")
