@@ -1,3 +1,8 @@
+## Bubble Universe
+* https://github.com/ZXDunny/SpecBAS-Demos/blob/master/Graphics/bubble_universe3
+* https://www.youtube.com/watch?v=G5aOBh7qQe8
+* https://x.com/yuruyurau/status/1226846058728177665
+
 ## Memories
 * https://youtu.be/Imquk_3oFf4?list=RDImquk_3oFf4
 * http://www.sizecoding.org/wiki/Memories
