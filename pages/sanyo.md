@@ -2,6 +2,9 @@
 title: Sanyo MBC-550/555
 ---
 
+# sin, cos, calc_di_dl_for_pixel (also for negative values), circle
+* [centered circle](/sanyo-centered-circle)
+
 # BradN in 2010 about the MBC-555 quirks on bannister.org forum
 https://forums.bannister.org/ubbthreads.php?ubb=showflat&Number=87
 <blockquote>
