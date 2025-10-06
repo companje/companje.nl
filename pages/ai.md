@@ -3,6 +3,9 @@ title: AI / Machine learning
 type: other
 ---
 
+# text to speach
+* https://elevenlabs.io/
+
 # voice cloning
 * werkt echt goed! https://www.minimax.io/audio/voices-cloning
 
