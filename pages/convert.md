@@ -4,7 +4,7 @@ title: Convert images
 
 # convert all png's to jpg
 ```bash
-mogrify -format jpg *.png
+mogrify -verbose -format jpg *.png
 ```
 
 # scale up using nearest neighbour interpolation
