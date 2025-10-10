@@ -2,6 +2,11 @@
 title: Convert images
 ---
 
+# scale up images in folder
+```
+mogrify -path OUTPUT_FOLDER -resize 400% *.jpg
+```
+
 # convert all png's to jpg
 ```bash
 mogrify -verbose -format jpg *.png
