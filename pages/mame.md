@@ -1,8 +1,11 @@
 see [sanyo](/sanyo)
 
-# set breakpoint
+# set breakpoint (at bootsector start) and trace instructions and value of DI
 ```
-bpset 0x3F2
+bpset 0038
+g
+trace trace.txt, :maincpu, noloop, {tracelog "DI=%04X\n", di}
+g
 ```
 
 # log all excecuted instructions
