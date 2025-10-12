@@ -1,3 +1,8 @@
+# for every line containing a : in textfile prefix the line with _
+```bash
+sed -i '' '/:/ s/^/x/' trace.txt
+```
+
 # auto start python script with gui
 ```bash
 sudo nano /etc/systemd/system/touchdriver.service
