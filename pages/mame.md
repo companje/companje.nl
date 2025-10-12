@@ -1,10 +1,12 @@
 see [sanyo](/sanyo)
 
-# set breakpoint (at bootsector start) and trace instructions and value of DI
+# set breakpoint (at bootsector code start) and trace instructions and value of DI, then quit at HLT location
 ```
-bpset 0038
+focus :maincpu
+bpset 00380
 g
-trace trace.txt, :maincpu, noloop, {tracelog "DI=%04X\n", di}
+trace trace.txt, :maincpu, noloop, {tracelog "  DI=%04Xh\n", di} 
+bpset 0038A, , {quit}
 g
 ```
 
