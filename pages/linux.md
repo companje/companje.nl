@@ -1,4 +1,4 @@
-# for every line containing a : in textfile prefix the line with _
+# for every line containing : in textfile prefix the line with _
 ```bash
 sed -i '' '/:/ s/^/x/' trace.txt
 ```
