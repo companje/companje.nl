@@ -2,6 +2,7 @@
 title: Maps
 ---
 
+* david rumsey https://www.davidrumsey.com/
 * world history: https://worldhist.org/
 * https://www.earthspacelab.com/app/seasons/
 
