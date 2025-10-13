@@ -2,6 +2,7 @@
 title: Maps
 ---
 
+* world history: https://worldhist.org/
 * https://www.earthspacelab.com/app/seasons/
 
 # 2024
