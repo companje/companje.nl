@@ -3,6 +3,18 @@ title: Raspbery Pi
 ---
 See Also: [linux](/linux)
 
+# hq camera
+```python
+pipeline = (
+    "libcamerasrc ! "
+    "video/x-raw,format=RGBx,width=640,height=480,framerate=30/1 ! "
+    "videoconvert ! "
+    "video/x-raw,format=BGR ! "
+    "appsink drop=true max-buffers=1 sync=false"
+)
+cap = cv2.VideoCapture(pipeline, cv2.CAP_GSTREAMER)
+```
+
 # remove IR blocking filter from HQ Camera
 * https://www.youtube.com/watch?v=6FHRcZMVTWc
 
