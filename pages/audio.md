@@ -1,3 +1,6 @@
+# mercury
+* https://mercury-playground.pages.dev/
+
 # beepbox
 * http://beepbox.co/
 
