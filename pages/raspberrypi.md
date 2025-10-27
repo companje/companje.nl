@@ -3,6 +3,38 @@ title: Raspbery Pi
 ---
 See Also: [linux](/linux)
 
+# pi cam
+```python
+import cv2, time
+import numpy as np
+from picamera2 import Picamera2
+
+i=0
+picam2 = Picamera2()
+cfg = picam2.create_preview_configuration(main={"format":"RGB888","size":(640,480)})
+picam2.configure(cfg)
+picam2.set_controls({"ExposureTime": 30000, "AnalogueGain": 1.0})
+picam2.start()
+time.sleep(0.3)
+
+while True:
+    frame = picam2.capture_array()
+    gray = cv2.cvtColor(frame, cv2.COLOR_RGB2GRAY)
+   
+    cv2.imshow("gray",gray)
+    # cv2.imwrite(f"jpg_new/frame{i}.jpg",gray)
+    i+=1
+
+    k = cv2.waitKey(1) & 0xFF
+    if k == 27: break
+    if k == ord('+'): thr = min(thr+1,255)
+    if k == ord('-'): thr = max(thr-1,0)
+
+cv2.destroyAllWindows()
+picam2.stop()
+```
+
+
 # hq camera
 ```python
 pipeline = (
