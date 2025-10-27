@@ -4,6 +4,11 @@ permalink: /ffmpeg
 tags: ['notes','software','video']
 ---
 
+# H.264 lossless!
+```
+ffmpeg -framerate 30 -i frames/frame%04d.jpg -c:v libx264 -preset veryslow -crf 0 -pix_fmt yuv444p frames_lossless.mp4
+```
+
 # crossfade 2 PNG's
 ```bash
 ffmpeg -loop 1 -framerate 30 -t 5 -i temp-precip-2020-current-4096.png \
