@@ -1,1 +1,1 @@
-see [[/raspberrypi]]
+see [raspberrypi](/raspberrypi)
