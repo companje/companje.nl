@@ -3,6 +3,38 @@ title: Raspbery Pi
 ---
 See Also: [linux](/linux)
 
+# stream pi cam via flask
+```python
+import cv2, time
+from flask import Flask, Response
+from picamera2 import Picamera2
+
+picam2 = Picamera2()
+cfg = picam2.create_preview_configuration(main={"format":"RGB888","size":(640,480)})
+picam2.configure(cfg)
+picam2.set_controls({"ExposureTime": 30000, "AnalogueGain": 1.0})
+picam2.start()
+time.sleep(0.3)
+
+app = Flask(__name__)
+
+def frames():
+    while True:
+        frame = picam2.capture_array()
+        gray = cv2.cvtColor(frame, cv2.COLOR_RGB2GRAY)
+        ok, buf = cv2.imencode(".jpg", gray, [int(cv2.IMWRITE_JPEG_QUALITY), 80])
+        if not ok:
+            continue
+        yield b"--frame\r\nContent-Type: image/jpeg\r\n\r\n" + buf.tobytes() + b"\r\n"
+
+@app.route("/video")
+def video():
+    return Response(frames(), mimetype="multipart/x-mixed-replace; boundary=frame")
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8000, threaded=True)
+```
+
 # pi cam
 ```python
 import cv2, time
