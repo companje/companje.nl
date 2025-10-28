@@ -3,6 +3,13 @@ title: Raspbery Pi
 ---
 See Also: [linux](/linux)
 
+# fixed IP for wired connection
+```bash
+sudo nmcli con mod "Wired connection 1" ipv4.addresses 192.168.42.42/24 ipv4.gateway 192.168.42.1 ipv4.dns "1.1.1.1 8.8.8.8" ipv4.method manual
+nmcli connection show
+sudo nmcli con up "Wired connection 1"
+```
+
 # stream pi cam via flask
 ```python
 import cv2, time
