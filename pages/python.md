@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# nodemon for python
+```
+nodemon -e py --exec python main.py
+```
+
 # operators
 ```python
 import operator
