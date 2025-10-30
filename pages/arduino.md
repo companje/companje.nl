@@ -2,6 +2,56 @@
 title: Arduino / AVR
 ---
 
+# MPR121 touch sensor multiple boards with mapping
+```cpp
+#include <MPR121.h>
+#include <MPR121_Datastream.h>
+#include <Wire.h>
+
+MPR121_type sensor0;
+MPR121_type sensor1;
+
+int indexes[10][2] = {
+  /* btn0: */ { /*sensor:*/ 0, /*pin:*/ 0 },
+  /* btn1: */ { /*sensor:*/ 0, /*pin:*/ 1 },
+  /* btn2: */ { /*sensor:*/ 1, /*pin:*/ 4 },
+  /* btn3: */ { /*sensor:*/ 1, /*pin:*/ 3 },
+  /* btn4: */ { /*sensor:*/ 1, /*pin:*/ 1 },
+  /* btn5: */ { /*sensor:*/ 1, /*pin:*/ 0 },
+  /* btn6: */ { /*sensor:*/ 1, /*pin:*/ 2 },
+  /* btn7: */ { /*sensor:*/ 0, /*pin:*/ 2 },
+  /* btn8: */ { /*sensor:*/ 0, /*pin:*/ 3 },
+  /* btn9: */ { /*sensor:*/ 0, /*pin:*/ 4 }  
+};
+
+int values[] = { 0 };
+
+void setup() {
+  Serial.begin(115200);
+  Serial.println("START");
+  sensor0.begin(0x5A); //I2C address
+  sensor1.begin(0x5C); //I2C address
+}
+
+void loop() {
+  sensorA.updateFilteredData();
+  sensorB.updateFilteredData();
+
+  for (int i = 0; i < 10; i++) {
+    int sensor = indexes[i][0];
+    int pin = indexes[i][1];
+
+    Serial.print(i);
+    Serial.print(":");
+    Serial.print((sensor == 0 ? sensor0 : sensor1).getFilteredData(pin));
+    Serial.print(" ");
+  }
+  Serial.println();
+
+  delay(1);
+}
+```
+
 # Keypad op NodeMCU ESP8266 
 - [NodeMCU-8266 - ESP-12S](https://www.tinytronics.nl/shop/en/development-boards/microcontroller-boards/with-wi-fi/ai-thinker-nodemcu-8266-esp-12s)
 - [Keypad 3x4 Matrix - Membrane](https://www.tinytronics.nl/shop/en/switches/manual-switches/keypads/keypad-3x4-matrix-membrane)
