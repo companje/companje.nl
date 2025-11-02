@@ -1,3 +1,8 @@
+# set time zone
+```bash
+sudo timedatectl set-timezone Europe/Amsterdam
+```
+
 # for every line containing : in textfile prefix the line with _
 ```bash
 sed -i '' '/:/ s/^/x/' trace.txt
