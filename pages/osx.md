@@ -2,6 +2,11 @@
 title: Mac OSX
 ---
 
+# auto start Mac on Power
+```bash
+sudo pmset autorestart 1
+```
+
 # shutdown
 ```bash
 sudo shutdown -h now
