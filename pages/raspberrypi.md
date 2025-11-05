@@ -3,6 +3,79 @@ title: Raspbery Pi
 ---
 See Also: [linux](/linux)
 
+# stream cam
+```python
+from http import server
+import io, threading, socketserver
+from picamera2 import Picamera2
+from picamera2.encoders import MJPEGEncoder, Quality
+from picamera2.outputs import FileOutput
+
+PAGE = b"""<html><body><img src="/stream.mjpg"></body></html>"""
+
+class StreamingOutput(io.BufferedIOBase):
+    def __init__(self):
+        self.frame = None
+        self.condition = threading.Condition()
+    def write(self, buf):
+        with self.condition:
+            self.frame = buf
+            self.condition.notify_all()
+
+class StreamingHandler(server.BaseHTTPRequestHandler):
+    def do_GET(self):
+        if self.path == '/':
+            content = PAGE
+            self.send_response(200)
+            self.send_header('Content-Type', 'text/html')
+            self.send_header('Content-Length', len(content))
+            self.end_headers()
+            self.wfile.write(content)
+        elif self.path == '/stream.mjpg':
+            self.send_response(200)
+            self.send_header('Age', 0)
+            self.send_header('Cache-Control', 'no-cache, private')
+            self.send_header('Pragma', 'no-cache')
+            self.send_header('Content-Type', 'multipart/x-mixed-replace; boundary=FRAME')
+            self.end_headers()
+            try:
+                while True:
+                    with output.condition:
+                        output.condition.wait()
+                        frame = output.frame
+                    self.wfile.write(b'--FRAME\r\n')
+                    self.send_header('Content-Type', 'image/jpeg')
+                    self.send_header('Content-Length', len(frame))
+                    self.end_headers()
+                    self.wfile.write(frame)
+                    self.wfile.write(b'\r\n')
+            except Exception:
+                pass
+        else:
+            self.send_error(404)
+
+class StreamingServer(socketserver.ThreadingMixIn, server.HTTPServer):
+    allow_reuse_address = True
+    daemon_threads = True
+
+picam2 = Picamera2()
+config = picam2.create_video_configuration(main={"size": (320, 320)})
+
+picam2.configure(config)
+output = StreamingOutput()
+
+try:
+    picam2.start_recording(MJPEGEncoder(), FileOutput(output), quality=Quality.VERY_HIGH)
+    address = ('0.0.0.0', 8000)
+    server = StreamingServer(address, StreamingHandler)
+    server.serve_forever()
+except KeyboardInterrupt:
+    pass
+finally:
+    picam2.stop_recording()
+    picam2.close()
+```
+
 # fixed IP for wired connection
 ```bash
 sudo nmcli con mod "Wired connection 1" ipv4.addresses 192.168.42.42/24 ipv4.gateway 192.168.42.1 ipv4.dns "1.1.1.1 8.8.8.8" ipv4.method manual
