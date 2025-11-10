@@ -3,6 +3,9 @@ title: AI / Machine learning
 type: other
 ---
 
+# video frame interpolation
+* http://picwand.ai/
+
 # text to speach
 * https://elevenlabs.io/
 
