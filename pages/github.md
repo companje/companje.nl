@@ -2,6 +2,18 @@
 title: Github
 ---
 
+# deploy key
+* https://github.com/USER/REPO/settings/keys/new
+* make a new Host in ~/.ssh/config
+```
+  Host github-<repo>
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_ed25519_<repo>
+  IdentitiesOnly yes
+```
+* `git clone git@github-<repo>:<owner>/<repo>.git`
+
 # search your own gists
 ```
 user:@me sphere
