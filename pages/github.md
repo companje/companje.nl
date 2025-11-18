@@ -6,10 +6,10 @@ title: Github
 * https://github.com/USER/REPO/settings/keys/new
 * make a new Host in ~/.ssh/config
 ```
-  Host github-<repo>
+  Host github
   HostName github.com
   User git
-  IdentityFile ~/.ssh/id_ed25519_<repo>
+  IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
 ```
 * `git clone git@github-<repo>:<owner>/<repo>.git`
