@@ -2,6 +2,28 @@
 title: Python
 ---
 
+# convert mfxml json to csv
+```python
+import json
+import csv
+
+with open("data/INPUT.json", "r", encoding="utf-8") as f:
+    data = json.load(f)
+
+rows = []
+for ahd in data["MFEXPORT"]["AHD"]:
+    row = {k: v for k, v in ahd.items() if k != "AWE"}
+    for awe in ahd.get("AWE", []):
+        row[awe["NAAM"]] = awe["WAARDE"]
+    rows.append(row)
+
+fields = sorted({key for r in rows for key in r.keys()})
+with open("OUTPUT.csv", "w", newline="", encoding="utf-8") as f:
+    writer = csv.DictWriter(f, fieldnames=fields)
+    writer.writeheader()
+    writer.writerows(rows)
+```
+	
 # nodemon for python
 ```
 nodemon -e py --exec python main.py
