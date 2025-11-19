@@ -3,8 +3,9 @@ title: Github
 ---
 
 # deploy key
-* https://github.com/USER/REPO/settings/keys/new
-* make a new Host in ~/.ssh/config
+* step 1: `ssh-keygen`
+* step 2: add your public key to https://github.com/USER/REPO/settings/keys/new
+* step 3: make a new Host in ~/.ssh/config
 ```
   Host github
   HostName github.com
@@ -12,7 +13,7 @@ title: Github
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
 ```
-* `git clone git@github-<repo>:<owner>/<repo>.git`
+* step 4: `git clone git@github-<repo>:<owner>/<repo>.git`
 
 # search your own gists
 ```
