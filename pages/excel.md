@@ -2,6 +2,34 @@
 title: Excel
 ---
 
+# match / index (with strip non-digits)
+```
+=INDEX(sheet_table!$A$2:$A$18;
+  MATCH(
+    1;
+    (sheet_table!$B$2:$B$18=D2)*
+    (sheet_table!$C$2:$C$18<=NUMBERVALUE(REGEXEXTRACT(E2;"\d+")))*
+    (sheet_table!$D$2:$D$18>=NUMBERVALUE(REGEXEXTRACT(E2;"\d+")));
+    0
+  )
+)
+```
+
+
+```
+familienaam	voorvoegsel	voornaam	wijk	bladzij
+Stubbe		Geertruida Gerarda	A	1
+
+--------------------------
+
+inv	wijk	blad_start	blad_eind	huis_start	huis_eind
+7466	A	1	339	1	350
+7467	A	339	647	350	701
+7468	A	647	1165	701	1233
+7469	B	1	568	1	610
+```
+
+
 # xlookup
 nieuwe versie van vlookup
 ```
