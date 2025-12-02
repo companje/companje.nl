@@ -1,3 +1,13 @@
+# Repeat last command in Terminal from editor in keybindings.json (Cmd+Shift+P keybindings json)
+```json
+    {
+    "key": "cmd+enter",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": { "text": "\u001b[A\u000D" },
+    "when": "editorTextFocus"
+    }
+```
+
 # Block select
 ```Shift+Option + mouse```
 
