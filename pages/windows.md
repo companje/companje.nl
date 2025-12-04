@@ -2,6 +2,14 @@
 title: Windows
 ---
 
+# Skip online account / use local account Windows 11 during install
+On the first run of the system, when it asks for the language or keyboard layout, do the following:
+
+Use the keyboard shortcut Shift + F10. A Command Prompt window should show up.
+Type and enter "oobe\bypassnro".
+The computer will restart and the option should be present.
+source: https://learn.microsoft.com/en-us/answers/questions/4093576/create-a-local-account-during-setup
+
 # WinDirStat
 alternatief voor SequioaView
 
