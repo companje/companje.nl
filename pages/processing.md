@@ -2,6 +2,18 @@
 title: Processing
 ---
 
+# callback function on PApplet
+put this in some class
+```java
+try {
+        app.getClass().getMethod("render", PGraphics.class).invoke(app, pg[i]);
+      }
+      catch (Exception e) {
+        println(e);
+        app.die(null,null);
+      }
+```
+
 # nearest neighbour scaling in Processing with P2D!
 ```java
 ((PGraphicsOpenGL) g).textureSampling(2);
