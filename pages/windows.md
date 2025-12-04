@@ -10,6 +10,9 @@ Type and enter "oobe\bypassnro".
 The computer will restart and the option should be present.
 source: https://learn.microsoft.com/en-us/answers/questions/4093576/create-a-local-account-during-setup
 
+UPDATE: When already connected to WiFi, make sure to disable the WiFi by Shift+F10 > ncpa.cpl
+
+
 # WinDirStat
 alternatief voor SequioaView
 
