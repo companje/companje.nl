@@ -2,6 +2,12 @@
 title: Electronics
 ---
 
+# Shops
+* https://tme.eu
+* https://www.eleshop.nl/
+* https://tinytronics.nl
+* https://hobbyelektronica.nl
+  
 # Weerstanden
 | resistance  | first | second | third |
 | ------------- | ------------- | ------------- | ------------- |
