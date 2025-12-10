@@ -2,6 +2,11 @@
 title: Git
 ---
 
+# branch and checkout 
+```bash
+git checkout -b NEW_BRANCH
+```
+
 # doorzoek alle code in alle branches
 ```bash
 for branch in $(git branch -a | sed 's/^[* ]*//'); do
