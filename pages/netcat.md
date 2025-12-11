@@ -4,6 +4,9 @@ title: netcat
 
 # ncat on MacOS
 first download nmap for Mac. Then run a UDP server: `ncat -lu -p 9999`
+```
+nc -l 9000
+```
 
 # send/receive messages
 server:
