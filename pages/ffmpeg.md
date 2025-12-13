@@ -4,6 +4,11 @@ permalink: /ffmpeg
 tags: ['notes','software','video']
 ---
 
+# start_number for sequences
+```
+-start_number 1
+```
+
 # H.264 lossless!
 ```
 ffmpeg -framerate 30 -i frames/frame%04d.jpg -c:v libx264 -preset veryslow -crf 0 -pix_fmt yuv444p frames_lossless.mp4
