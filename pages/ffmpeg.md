@@ -4,8 +4,18 @@ permalink: /ffmpeg
 tags: ['notes','software','video']
 ---
 
-# start_number for sequences
+# concat two sequences and scale to same size
+```bash
+ffmpeg -framerate 30 -i "history/history%d.png" \
+       -framerate 30 -i "future/proxima-frame%d.png" \
+       -filter_complex "[0:v]format=rgb24,scale=2048:1024:flags=lanczos[v0]; \
+                        [1:v]format=rgb24,scale=2048:1024:flags=lanczos[v1]; \
+                        [v0][v1]concat=n=2:v=1:a=0,format=yuv420p[v]" \
+       -map "[v]" -r 30 -c:v mpeg4 -q:v 0 history-future.mp4
 ```
+
+# start_number for sequences
+```bash
 -start_number 1
 ```
 
