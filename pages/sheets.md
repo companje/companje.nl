@@ -1,5 +1,14 @@
 see also [docs](/docs)
 
+# XLOOKUP match mode
+* 0 - Exact match. If none found, return #N/A. This is the default.
+* -1 - Exact match. If none found, return the **next smaller item**.
+* 1 - Exact match. If none found, return the next larger item.
+* 2 - A wildcard match where *, ?, and ~ have special meaning.
+```
+=xlookup(G3;E:E;C:C;;-1)  # -1 next smaller item
+```
+
 # download sheet using "Chart Tools datasource protocol"
 ```java
 String id = "copy paste this from your url in edit mode"; 
