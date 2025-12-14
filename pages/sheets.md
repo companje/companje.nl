@@ -1,5 +1,16 @@
 see also [docs](/docs)
 
+# get cell background color
+```
+=bghex(CELL("address";A3))
+```
+```basic
+function BGHEX(ref) {
+  const sh = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  return sh.getRange(ref).getBackground();
+}
+```
+
 # XLOOKUP match mode
 * 0 - Exact match. If none found, return #N/A. This is the default.
 * -1 - Exact match. If none found, return the **next smaller item**.
