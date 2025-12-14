@@ -2,6 +2,11 @@
 title: Git
 ---
 
+# clone specific branch with depth 1 using deploy key with ssh config
+```
+git clone --depth 1 git@github:ORG/REPO -b BRANCH
+```
+
 # branch and checkout 
 ```bash
 git checkout -b NEW_BRANCH
