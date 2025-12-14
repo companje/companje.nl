@@ -13,7 +13,7 @@ title: Github
   IdentityFile ~/.ssh/id_ed25519
   IdentitiesOnly yes
 ```
-* step 4: `git clone git@github-<repo>:<owner>/<repo>.git`
+* step 4: `git clone git@github:<owner>/<repo>.git`
 
 # search your own gists
 ```
