@@ -2,6 +2,14 @@
 title: netcat
 ---
 
+# check if port is open
+```
+➜  ~ nc -vz 192.168.0.100 23
+Connection to 192.168.0.100 port 23 [tcp/telnet] succeeded!
+➜  ~ nc -vz 192.168.0.100 4352
+Connection to 192.168.0.100 port 4352 [tcp/pjlink] succeeded!
+```
+
 # ncat on MacOS
 first download nmap for Mac. Then run a UDP server: `ncat -lu -p 9999`
 ```
