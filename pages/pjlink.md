@@ -3,6 +3,11 @@
 telnet 192.168.0.100 4352
 ```
 
+# power status opvragen
+```
+%1POWR ?
+```
+
 # resolutie opvragen
 ```
 %2IRES
