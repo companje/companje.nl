@@ -7,6 +7,10 @@ telnet 192.168.0.100 4352
 ```
 %1POWR ?
 ```
+* 0 = Standby
+* 1 = Power on
+* 2 = Cooling down
+* 3 = Warming up
 
 # resolutie opvragen
 ```
