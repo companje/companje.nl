@@ -25,4 +25,4 @@ printf '%s' '%1POWR 1\r' | nc -w 1 192.168.0.100 4352
 ```
 
 # document containing info
-https://www.optoma.nl/uploads/manuals/W415-M-nl.pdf
+* https://www.optoma.nl/uploads/manuals/W415-M-nl.pdf
