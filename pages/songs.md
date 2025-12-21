@@ -3,7 +3,7 @@ title: Songs
 layout: default
 ---
 
-
+* Sin Cos Tan - Sooner Than Now
 * Pixies - Velouria
 * The Breeders - Canonball
 * Koto - Mind Machine
