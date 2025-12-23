@@ -2,8 +2,8 @@
 title: PDF
 ---
 
-# BeReal boek met Processing comprimeren
-PDF van 3GB. Kleiner te maken met Acrobat tot 100MB
+# Compress BeReal book (large PDF)
+3GB PDF tot 100MB with Acrobat.
 
 # ilovepdf
 * https://www.ilovepdf.com/nl
