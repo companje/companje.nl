@@ -5,6 +5,11 @@ title: PDF
 # Compress BeReal book (large PDF)
 3GB PDF tot 100MB with Acrobat.
 
+# img2pdf
+```
+img2pdf --verbose pages2022/*.jpeg -o output.pdf
+```
+
 # ilovepdf
 * https://www.ilovepdf.com/nl
 
