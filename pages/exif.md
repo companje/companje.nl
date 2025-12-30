@@ -2,6 +2,11 @@
 title: EXIF
 ---
 
+# edit date
+```bash
+exiftool -DateTimeOriginal="2016:02:05 08:00:00" FILENAME.JPG
+```
+
 # exiftool
 ```bash
 brew install exiftool
