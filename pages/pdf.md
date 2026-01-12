@@ -2,6 +2,9 @@
 title: PDF
 ---
 
+# pdf flipbook viewer
+* https://dearflip.com/pdf-viewer/
+* 
 # Compress BeReal book (large PDF)
 3GB PDF tot 100MB with Acrobat.
 
