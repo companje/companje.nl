@@ -1,8 +1,8 @@
 ---
 title: Markdown
 ---
+* marked output.md output.html (render markdown to html)
 * HedgeDoc - HedgeDoc lets you create real-time collaborative markdown notes.
-
 * http://jrmoran.com/playground/markdown-live-editor/
 * http://md.kaihatsubu.com/
 * [[https://github.com/rentzsch/markdownlive/downloads|markdownlive by Jonathan 'Wolf' Rentzsch]]
