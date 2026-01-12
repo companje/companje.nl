@@ -1,3 +1,16 @@
+# Alle rijksmonumenten in Utrecht op Wikidata
+```sparql
+SELECT ?item ?itemLabel ?loc
+WHERE 
+{
+  ?item wdt:P1435 wd:Q916333 . #rijksmonument
+  #?item wdt:P31 wd:Q79007 . #street
+  ?item wdt:P131 wd:Q803 . #utrecht
+  ?item wdt:P625 ?loc . #geolocatie
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+```
+
 # Alles met een coordinaat en evt een afbeelding op Mercurius op Wikidata
 ```sparql
 SELECT ?s ?typeLabel ?sLabel ?coord ?img
