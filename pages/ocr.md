@@ -2,6 +2,11 @@
 title: OCR
 ---
 
+# ocrmypdf
+```bash
+ocrmypdf --language nld --deskew --rotate-pages output.pdf  scans_ocr.pdf
+```
+
 # Text Recognition API
 OCR command line utility for macOS 10.15+. Utilizes the [VNRecognizeTextRequest](https://developer.apple.com/documentation/vision/vnrecognizetextrequest) API.
 
