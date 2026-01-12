@@ -4,6 +4,9 @@ title: OCR
 
 # OCRmyPDF-AppleOCR
 * https://github.com/mkyt/OCRmyPDF-AppleOCR
+```
+ocrmypdf --force-ocr --plugin ocrmypdf_appleocr --appleocr-recognition-mode accurate INPUT.pdf OUTPUT.pdf
+```
 
 # ocrmypdf
 ```bash
