@@ -6,7 +6,7 @@ title: PDF
 * https://dearflip.com/pdf-viewer/
  
 # Compress BeReal book (large PDF)
-3GB PDF tot 100MB with Acrobat.
+* 3GB PDF tot 100MB with Acrobat.
 
 # img2pdf
 ```
