@@ -2,6 +2,12 @@
 title: Python
 ---
 
+# global pip command (?)
+```
+PY="$(brew --prefix ocrmypdf)/libexec/bin/python"
+"$PY" -m pip install -U ocrmypdf-appleocr
+```
+
 # convert mfxml json to csv
 ```python
 import json
