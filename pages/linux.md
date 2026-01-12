@@ -246,6 +246,10 @@ var=${2:-6}    # $2 parameter gets defaulted to 6
 ```bash
 cd `dirname $0`
 ```
+you might need to add quotes for folders with spaces
+```
+cd "$(dirname "$0")"
+```
 
 # remove .DS_Store files recursively
 ```bash
