@@ -2,6 +2,9 @@
 title: OCR
 ---
 
+# OCRmyPDF-AppleOCR
+* https://github.com/mkyt/OCRmyPDF-AppleOCR
+
 # ocrmypdf
 ```bash
 ocrmypdf --language nld --deskew --rotate-pages output.pdf  scans_ocr.pdf
