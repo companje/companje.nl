@@ -2,6 +2,9 @@
 title: jq (sed for json)
 ---
 
+# zie ook 'jd'
+* [jd](/jd)
+
 # count items in array
 ```bash
 jq --raw-output '.["aktes"] | length' 2437.json
