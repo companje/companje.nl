@@ -2,6 +2,11 @@
 title: Python
 ---
 
+# PYTHONFAULTHANDLER
+```
+PYTHONFAULTHANDLER=1 uv run etc.py
+```
+
 # tqdm.write as alternative for print during progress indicator
 ```python
 tqdm.write(msg)
