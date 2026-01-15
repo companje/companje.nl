@@ -2,8 +2,13 @@
 title: Python
 ---
 
-# global pip command (?)
+# tqdm.write as alternative for print during progress indicator
+```python
+tqdm.write(msg)
 ```
+
+# global pip command (?)
+```bash
 PY="$(brew --prefix ocrmypdf)/libexec/bin/python"
 "$PY" -m pip install -U ocrmypdf-appleocr
 ```
