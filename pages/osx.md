@@ -2,6 +2,13 @@
 title: Mac OSX
 ---
 
+# computername / hostname
+```
+sudo scutil --set ComputerName "My-Mac"
+sudo scutil --set LocalHostName "My-Mac"
+sudo scutil --set HostName "My-Mac" # this one might not have been set before.
+```
+
 # auto start Mac on Power
 ```bash
 sudo pmset autorestart 1
