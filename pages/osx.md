@@ -2,6 +2,71 @@
 title: Mac OSX
 ---
 
+# crop to new file (filename-001 etc.) in Preview 
+```
+on run {input, parameters}
+	tell application "Preview"
+		if (count of documents) = 0 then error "No image open in Preview."
+		set d to front document
+		set p to path of d
+		if p is missing value then error "Save the image first (no file path)."
+		set srcPosix to POSIX path of p
+	end tell
+	
+	set folderPosix to do shell script "dirname " & quoted form of srcPosix
+	set baseNoExt to do shell script "b=$(basename " & quoted form of srcPosix & "); echo \"${b%.*}\""
+	
+	set n to 1
+	repeat
+		set outName to baseNoExt & "-" & my pad3(n) & ".png"
+		set outPath to folderPosix & "/" & outName
+		if my fileExists(outPath) is false then exit repeat
+		set n to n + 1
+	end repeat
+	
+	tell application "Preview" to activate
+	tell application "System Events"
+		tell process "Preview"
+			keystroke "c" using {command down}
+		end tell
+	end tell
+	delay 0.1
+	
+	set tiffData to (the clipboard as TIFF picture)
+	
+	set tmpPath to do shell script "mktemp /tmp/previewcropXXXXXX.tiff"
+	set tmpFile to POSIX file tmpPath
+	
+	set fref to open for access tmpFile with write permission
+	set eof of fref to 0
+	write tiffData to fref
+	close access fref
+	
+	do shell script "sips -s format png " & quoted form of tmpPath & " --out " & quoted form of outPath & " >/dev/null"
+	do shell script "rm -f " & quoted form of tmpPath
+	
+	beep 1
+	display notification outName with title "Saved crop"
+	
+	return input
+end run
+
+on fileExists(posixPath)
+	try
+		do shell script "test -e " & quoted form of posixPath
+		return true
+	on error
+		return false
+	end try
+end fileExists
+
+on pad3(n)
+	if n < 10 then return "00" & n
+	if n < 100 then return "0" & n
+	return n as text
+end pad3
+```
+
 # computername / hostname
 ```
 sudo scutil --set ComputerName "My-Mac"
