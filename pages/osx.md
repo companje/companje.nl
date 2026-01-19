@@ -3,7 +3,7 @@ title: Mac OSX
 ---
 
 # SMB file sharing on Mac
-* don't forget to go to Options > Windows - Enable SMB Sharing
+* don't forget to go to Sharing > File Sharing > Options button! > Windows - Enable SMB Sharing
 
 # crop to new file (filename-001 etc.) in Preview 
 ```
