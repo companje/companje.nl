@@ -2,7 +2,7 @@
 title: netcat
 ---
 
-# receive from Globe4D on port 8888
+# receive from Globe4D on Mac port 8888
 ```
 nc -lu 8888
 ```
