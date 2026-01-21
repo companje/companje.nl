@@ -2,6 +2,11 @@
 title: netcat
 ---
 
+# receive from Globe4D on port 8888
+```
+nc -lu 8888
+```
+
 # check if port is open
 ```
 ➜  ~ nc -vz 192.168.0.100 23
