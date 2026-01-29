@@ -3,6 +3,7 @@ title: Songs
 layout: default
 ---
 
+* Four Tet - Daughter
 * Wet Leg – mangetout
 * Alvvays - In Undertow
 * Moderat - A New Error (zie 1 sept '13)
