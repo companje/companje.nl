@@ -9,7 +9,7 @@ title: SublimeText
 * in dezelfde map maak ` Default.sublime-commands` (voor `Count Duplicates` in `Command Palette Cmd+Shift+P` )
 
 Default.sublime-commands:
-```
+```json
 [
   {
     "caption": "Count Duplicates: Count Duplicate Lines",
@@ -18,7 +18,7 @@ Default.sublime-commands:
 ]
 ```
 Main.sublime-menu
-```
+```json
 [
   {
     "id": "edit",
