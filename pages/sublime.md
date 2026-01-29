@@ -7,6 +7,7 @@ title: SublimeText
 * in `~/Library/Application Support/Sublime Text/Packages/User` maak `count_duplicates.py`
 * in dezelfde map maak `Main.sublime-menu` (voor `menu > Edit > Count Duplicates`)
 * in dezelfde map maak ` Default.sublime-commands` (voor `Count Duplicates` in `Command Palette Cmd+Shift+P` )
+
 Default.sublime-commands:
 ```
 [
@@ -15,6 +16,7 @@ Default.sublime-commands:
     "command": "count_duplicates"
   }
 ]
+```
 Main.sublime-menu
 ```
 [
