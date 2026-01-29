@@ -1,3 +1,8 @@
+# bestandspermissies als octale waarden (alternatief voor ls)
+```
+stat -c '%a %n' *
+```
+
 # set time zone
 ```bash
 sudo timedatectl set-timezone Europe/Amsterdam
