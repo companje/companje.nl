@@ -2,6 +2,35 @@
 title: SublimeText
 ---
 
+# zelf een plug-in maken (bijv voor dubbele regels tellen)
+* zie https://gist.github.com/Alex-Just/e9e100f2dc41c5b03827
+* in `~/Library/Application Support/Sublime Text/Packages/User` maak `count_duplicates.py`
+* in dezelfde map maak `Main.sublime-menu` (voor `menu > Edit > Count Duplicates`)
+* in dezelfde map maak ` Default.sublime-commands` (voor `Count Duplicates` in `Command Palette Cmd+Shift+P` )
+Default.sublime-commands:
+```
+[
+  {
+    "caption": "Count Duplicates: Count Duplicate Lines",
+    "command": "count_duplicates"
+  }
+]
+Main.sublime-menu
+```
+[
+  {
+    "id": "edit",
+    "children": [
+      { "caption": "-" },
+      {
+        "caption": "Count Duplicate Lines",
+        "command": "count_duplicates"
+      }
+    ]
+  }
+]
+```
+
 # prevent debug info in output window on build
 in `run-script.sublime-build`
 ```
