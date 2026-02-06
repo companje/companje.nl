@@ -1,5 +1,16 @@
 # oxigraph
 zie [oxigraph](/oxigraph)
+select from multiple named graphs: by default only the default graph is queried. Use FROM to query from multiple graphs at the same time.
+```
+SELECT ?s ?p ?o
+  FROM <https://kvan-todb.hualab.nl/graph/folder_summary>
+  FROM <https://kvan-todb.hualab.nl/graph/macocr>
+  FROM <https://kvan-todb.hualab.nl/graph/records>
+  FROM <https://kvan-todb.hualab.nl/graph/visuele_beschrijving>
+WHERE {
+  ?s ?p ?o
+}
+```
 
 # named graphs opvragen (oxigraph)
 ```sparql
