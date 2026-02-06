@@ -1,5 +1,5 @@
 # oxigraph
-zie ook [oxigraph](/oxigraph)
+zie [oxigraph](/oxigraph)
 
 # named graphs opvragen (oxigraph)
 ```sparql
