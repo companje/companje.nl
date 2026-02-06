@@ -1,3 +1,6 @@
+# oxigraph
+zie ook [oxigraph](/oxigraph)
+
 # named graphs opvragen (oxigraph)
 ```sparql
 SELECT DISTINCT ?g
