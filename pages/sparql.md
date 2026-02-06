@@ -1,3 +1,14 @@
+# named graphs opvragen (oxigraph)
+```sparql
+SELECT DISTINCT ?g
+WHERE {
+  GRAPH ?g {
+    ?s ?p ?o
+  }
+}
+ORDER BY ?g
+```
+
 # Alle rijksmonumenten in Utrecht op Wikidata
 ```sparql
 SELECT ?item ?itemLabel ?loc
