@@ -1,3 +1,17 @@
+# unieke gerechtsnamen per bezitsvermelding
+```sparql
+prefix id: <https://hisgis.hualab.nl/id/>
+prefix def: <https://hisgis.hualab.nl/def/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select ?reg 
+  (group_concat(distinct ?gerecht;separator=" / ") as ?gerecht_concat) where {
+  ?perceel a id:perceel .
+  ?perceel def:gerecht/rdfs:label ?gerecht .
+  ?perceel def:bezitsregistratie ?reg .
+  
+} group by ?reg
+```
+
 # oxigraph
 zie [oxigraph](/oxigraph)
 select from multiple named graphs: by default only the default graph is queried. Use FROM to query from multiple graphs at the same time.
