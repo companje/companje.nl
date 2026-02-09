@@ -1,12 +1,14 @@
-# unieke gerechtsnamen per bezitsvermelding
+# unieke gerechtsnamen per bezitsvermelding binnen provincie utrecht
 ```sparql
 prefix id: <https://hisgis.hualab.nl/id/>
 prefix def: <https://hisgis.hualab.nl/def/>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 select ?reg 
-  (group_concat(distinct ?gerecht;separator=" / ") as ?gerecht_concat) where {
+  (group_concat(distinct ?gerecht_label;separator=" / ") as ?gerecht_concat) where {
   ?perceel a id:perceel .
-  ?perceel def:gerecht/rdfs:label ?gerecht .
+  ?perceel def:gerecht ?gerecht .
+  ?gerecht rdfs:label ?gerecht_label .
+  ?gerecht def:provincie id:provincie\/ut .
   ?perceel def:bezitsregistratie ?reg .
   
 } group by ?reg
