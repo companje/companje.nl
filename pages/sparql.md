@@ -14,6 +14,33 @@ select ?reg
 } group by ?reg
 ```
 
+en nu ook nog met bezitsvermeldingen die direct naar een gerecht verwijzen zonder perceel ertussen:
+```sparql
+prefix id: <https://hisgis.hualab.nl/id/>
+prefix def: <https://hisgis.hualab.nl/def/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+select ?reg 
+  (group_concat(distinct ?gerecht_label;separator=" / ") as ?gerecht_concat) 
+where {
+
+  {
+    ?perceel a id:perceel .
+    ?perceel def:gerecht ?gerecht .
+    ?perceel def:bezitsregistratie ?reg .
+  }
+  UNION
+  {
+    ?reg def:gerecht ?gerecht .
+  }
+
+  ?gerecht rdfs:label ?gerecht_label .
+  ?gerecht def:provincie id:provincie\/ut .
+
+}
+group by ?reg
+```
+
 # oxigraph
 zie [oxigraph](/oxigraph)
 select from multiple named graphs: by default only the default graph is queried. Use FROM to query from multiple graphs at the same time.
