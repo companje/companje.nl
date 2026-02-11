@@ -4,6 +4,16 @@ permalink: /ffmpeg
 tags: ['notes','software','video']
 ---
 
+# beste oplossing voor hoge kwaliteit lage compressie (bijv voor screenshots sequence)
+```bash
+ffmpeg -y \
+  -framerate 30 \
+  -pattern_type glob -i "$INPUT_DIR/*.jpg" \
+  -vf mpdecimate,setpts=N/FRAME_RATE/TB \
+  -c:v libx264 -preset slow -crf 18 -pix_fmt yuv420p -profile:v high -level 4.2 -movflags +faststart \
+  "$OUTPUT_FILE"
+```
+
 # concat two sequences and scale to same size
 ```bash
 ffmpeg -framerate 30 -i "history/history%d.png" \
