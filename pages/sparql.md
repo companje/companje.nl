@@ -1,3 +1,16 @@
+# alles wat een def:bezitsregistratie heeft waarbij de IRI wordt opgesplitst in voor/na OF voor-na
+```sparql
+prefix def: <https://hisgis.hualab.nl/def/>
+select ?soort ?id ?reg where {
+  ?sub def:bezitsregistratie ?reg . # <https://hisgis.hualab.nl/id/bezitsregistratie/1505_matthijs_jansz> .
+
+  bind (replace (str(?sub),"https://hisgis.hualab.nl/id/","") as ?_id)
+
+  BIND(CONCAT(STRBEFORE(?_id, "/"),STRBEFORE(?_id, "-"))  AS ?soort)
+  BIND(CONCAT(STRAFTER(?_id, "/"),STRAFTER(?_id, "-"))  AS ?id)
+} 
+```
+
 # unieke gerechtsnamen per bezitsvermelding binnen provincie utrecht
 ```sparql
 prefix id: <https://hisgis.hualab.nl/id/>
