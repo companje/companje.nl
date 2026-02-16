@@ -2,6 +2,10 @@
 ```
 11434
 ```
+misschien op Windows nog expliciet open zetten in de firewall als er vanaf buiten bij wilt: 
+```batch
+netsh advfirewall firewall add rule name="Ollama" dir=in action=allow protocol=TCP localport=11434
+```
 
 # run
 bijv:
