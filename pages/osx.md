@@ -1,6 +1,11 @@
 ---
-title: Mac OSX
+title: MacOS
 ---
+
+# remove hidden flag
+```bash
+chflags nohidden
+```
 
 # SMB file sharing on Mac
 * don't forget to go to Sharing > File Sharing > Options button! > Windows - Enable SMB Sharing
