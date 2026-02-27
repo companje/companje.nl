@@ -2,6 +2,13 @@
 title: Windows
 ---
 
+# Set up touchscreens (ie. Waveshare) on Windows
+* See https://www.waveshare.com/wiki/7.9inch_HDMI_LCD#Features
+* Control Panel
+* Hardware and Sound
+* Calibrate the screen for pen or touch input
+* in the dialog press the Setup button
+
 # kiosk mode / disable touch event gestures
 * https://help.lumoplay.com/hc/en-us/articles/38046673771539-Disable-edge-swipe-gestures-on-a-Windows-touchscreen
 ```
