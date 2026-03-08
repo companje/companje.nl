@@ -1,3 +1,13 @@
+# install oxigraph server
+```
+cargo install oxigraph-cli
+```
+
+# run on custom port
+```
+oxigraph serve --location data/DATABASE  --bind localhost:8012
+```
+
 # select from multiple named graphs
 by default only the default graph is queried. Use FROM to query from multiple graphs at the same time. see also [sparql](/sparql)
 ```sparql
