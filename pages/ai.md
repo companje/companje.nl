@@ -3,6 +3,9 @@ title: AI / Machine learning
 type: other
 ---
 
+# oMLX
+* https://omlx.ai/
+
 # video frame interpolation
 * http://picwand.ai/
 
