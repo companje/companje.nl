@@ -1,3 +1,7 @@
+# VSCode Remote SSH hangs VPS
+* https://medium.com/good-robot/use-visual-studio-code-remote-ssh-sftp-without-crashing-your-server-a1dc2ef0936d
+* Solution: Disable the built-in Extension: "@builtin TypeScript"
+
 # Repeat last command in Terminal from editor in keybindings.json (Cmd+Shift+P keybindings json)
 ```json
     {
