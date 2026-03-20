@@ -14,3 +14,6 @@ Aanpak op Mac:
       - scanimage --device-name "gt68xx:libusb:..." --format=png
         > test.png
 ```
+
+##  Canon ImageFORMULA P-208II
+werkt ook met sane
