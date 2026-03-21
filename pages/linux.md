@@ -1,5 +1,10 @@
-# bestandspermissies als octale waarden (alternatief voor ls)
+# copy verbose and without overwriting
+```bash
+cp -vn FROM TO
 ```
+
+# bestandspermissies als octale waarden (alternatief voor ls)
+```bash
 stat -c '%a %n' *
 ```
 
