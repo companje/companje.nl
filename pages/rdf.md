@@ -1,3 +1,9 @@
+# convert RDF XML to Turtle
+```bash
+brew install raptor
+rapper -i rdfxml -o turtle INPUT.rdf > OUTPUT.ttl
+```
+
 # Online Dataset graph viewer
 * https://spex.zazuko.com/
 
