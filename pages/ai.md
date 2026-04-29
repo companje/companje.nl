@@ -7,7 +7,7 @@ type: other
 Multi-modal AI tool to extract and summarize content
 * https://summarize.sh/
 
-# oMLX
+# oMLX (local AI on Mac)
 * https://omlx.ai/
 
 # video frame interpolation
