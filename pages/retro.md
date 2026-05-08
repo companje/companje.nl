@@ -1,6 +1,9 @@
 ---
 title: Retro Computing / Retro Coding
 ---
+
+* https://copy.sh/v86/ 
+
 * sony reclame 1989: https://www.instagram.com/p/Bo8ITXOi3B0
 
 -------
