@@ -1,5 +1,5 @@
 # samplab
-* samplab.com (mp3 to midi)
+* https://samplab.com (mp3 to midi)
 
 # mercury
 * https://mercury-playground.pages.dev/
