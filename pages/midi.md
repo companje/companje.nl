@@ -2,9 +2,10 @@
 title: Midi
 ---
 
-# Midi2ArduinoTone
+# Midi to Arduino Tone
 * https://tawsiftorabi.github.io/Midi2ArduinoTone/
-
+* https://arduinomidi.netlify.app/
+* 
 # Various
 * https://musiclab.chromeexperiments.com/
 * https://lmms.io/
