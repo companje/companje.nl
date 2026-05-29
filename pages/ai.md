@@ -27,7 +27,7 @@ Multi-modal AI tool to extract and summarize content
 * aider
 
 # audio
-* https://moises.ai !! track separation
+* https://moises.ai !! track separation (zie ook https://melody.ml)
 * https://suno.com/
 * https://www.udio.com/
 * https://vocalremover.org/
