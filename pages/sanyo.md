@@ -1853,8 +1853,8 @@ https://github.com/companje/tixy.boot
 ; is made up of 2 columns on row 1 and 2 columns on row 2...
 ;
 ; To run this code write the compiled code to the bootsector of a
-; Sanyo MBC-55x floppy or use an emulator like the one written
-; in Processing/Java in this repo.
+; Sanyo MBC-55x floppy or use an emulator like <del>the one written
+; in Processing/Java in this repo.</del> MAME.
 ;
 ; Add your own visuals by adding your own functions to the fx_table.
 ;
