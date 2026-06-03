@@ -2,6 +2,119 @@
 title: Sanyo MBC-550/555
 ---
 
+# Intel 8087 test on the Sanyo with init code from DSBIOS
+```nasm
+org 100h
+cpu 8086
+
+push cs
+pop ds
+
+mov dx, title
+mov ah, 09h
+int 21h
+
+mov dx, expr
+mov ah, 09h
+int 21h
+
+fninit
+int3
+fild dword [fpu_probe+1]
+int3
+fist dword [fpu_probe]
+int3
+cmp byte [fpu_probe], 5ah
+jne no_fpu
+
+fninit
+int3
+fld dword [float_a]
+int3
+fadd dword [float_b]
+int3
+fmul dword [ten_float]
+int3
+fistp word [result_x10]
+int3
+
+mov ax, [result_x10]
+cwd
+mov bx, 10
+idiv bx
+mov [frac_digit], dx
+
+call print_signed_ax
+
+mov dl, '.'
+mov ah, 02h
+int 21h
+
+mov dl, '0'
+add dl, [frac_digit]
+mov ah, 02h
+int 21h
+
+mov dx, crlf
+mov ah, 09h
+int 21h
+
+done:
+int 20h
+jmp done
+
+no_fpu:
+    mov dx, no_fpu_msg
+    mov ah, 09h
+    int 21h
+
+no_fpu_halt:
+    hlt
+    jmp no_fpu_halt
+
+print_signed_ax:
+    test ax, ax
+    jns print_unsigned_ax
+    push ax
+    mov dl, '-'
+    mov ah, 02h
+    int 21h
+    pop ax
+    neg ax
+
+print_unsigned_ax:
+    mov bx, 10
+    xor cx, cx
+
+.divide:
+    xor dx, dx
+    div bx
+    push dx
+    inc cx
+    test ax, ax
+    jnz .divide
+
+.digits:
+    pop dx
+    add dl, '0'
+    mov ah, 02h
+    int 21h
+    loop .digits
+    ret
+
+title db 13, 10, 'Sanyo MBC-550 8087 FPU test', 13, 10, '$'
+expr db '3.2 + 4.4 = $'
+crlf db 13, 10, '$'
+no_fpu_msg db 'no 8087 detected', 13, 10, '$'
+
+float_a dd 3.2
+float_b dd 4.4
+ten_float dd 10.0
+result_x10 dw 0
+frac_digit dw 0
+fpu_probe db 0, 5ah, 0, 0, 0
+```
+
 # Edits to MAME for better keyboard support (arrow keys, key-repeat, break)
 (my pull request was not accepted but I still think it's useful)
 * https://github.com/companje/mame/tree/sanyo_mbc55x
