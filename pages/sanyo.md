@@ -1834,7 +1834,7 @@ https://github.com/companje/tixy.boot
 
 <img src="https://github.com/companje/tixy.boot/blob/main/doc/screengrab.gif?raw=true" width="400">
 
-```asm
+```nasm
 ; tixyboot.asm by Rick Companje, 2021-2022, MIT licence
 ; a tribute to Martin Kleppe's beautiful https://tixy.land
 ; as well as a tribute to the Sanyo MBC-550/555 PC (1984)
