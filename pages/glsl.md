@@ -2,4 +2,4 @@
 title: GLSL
 ---
 
-see shaders
+see [shaders](/shaders)
