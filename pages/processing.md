@@ -2,6 +2,31 @@
 title: Processing
 ---
 
+# block effect
+```java
+void setup() {
+  size(400, 400);
+  background(0);
+  pixelDensity(2);
+  noStroke();
+}
+
+void draw() {
+  float p = float(keyPressed ? mouseY : mouseX)/width;
+  drawCell(p, mousePressed, keyPressed);
+}
+
+void drawCell(float p, boolean flip, boolean rotate) {
+  fill(flip ? 0 : 255);
+  if (rotate) rect(0, 0, width, p*height);
+  else rect(0, 0, p*width, height);
+  
+  fill(flip ? 255 : 0);
+  if (rotate) rect(0, p*height, width, height-p*height);
+  else rect(p*width, 0, width-p*width, height);
+}
+```
+
 # callback function on PApplet
 put this in some class
 ```java
