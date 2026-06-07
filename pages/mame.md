@@ -1,5 +1,13 @@
 see [sanyo](/sanyo)
 
+# globale roms/ map
+```
+~/Library/Application Support/mame/mame.ini
+```
+```
+rompath                   /Users/rick/Sanyo/mame0287/roms;roms
+```
+
 # set breakpoint (at bootsector code start) and trace instructions and value of DI, then quit at HLT location
 ```
 focus :maincpu
