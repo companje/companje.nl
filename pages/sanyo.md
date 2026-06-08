@@ -118,6 +118,9 @@ fpu_probe db 0, 5ah, 0, 0, 0
 # Edits to MAME for better keyboard support (arrow keys, key-repeat, break)
 (my pull request was not accepted but I still think it's useful)
 * https://github.com/companje/mame/tree/sanyo_mbc55x
+* Arrow keys now work
+* Break key on § (on Mac)
+* (Fn+Shift+Backspace for INSERT, I think this already worked)
 
 # sin, cos, calc_di_dl_for_pixel (also for negative values), circle
 * [centered circle](/sanyo-centered-circle)
