@@ -2,6 +2,13 @@
 title: Processing
 ---
 
+# trapezium function
+```java
+float trapezium(float t, float a, float b, float c, float d) {
+  return max(0, min(1, (t - a) / (b - a), (d - t) / (d - c) ));
+}
+```
+
 # block effect
 ```java
 void setup() {
