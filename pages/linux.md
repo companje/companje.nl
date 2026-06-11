@@ -1,3 +1,13 @@
+# binary compare
+```bash
+cmp FILE1 FILE2
+```
+
+# show first 16 bytes as hex
+```bash
+xxd -l 16 FILE
+```
+
 # rclone
 * https://rclone.org/
 
