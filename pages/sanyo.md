@@ -2,7 +2,7 @@
 title: Sanyo MBC-550/555
 ---
 
-# Bandit running in MAME
+# Time Bandit running in MAME
 ```
 Offset: 00008C4D | File1: 00 | File2: 55
 Offset: 00008C4E | File1: 00 | File2: F7
