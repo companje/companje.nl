@@ -3,7 +3,7 @@ title: Sanyo MBC-550/555
 ---
 
 # Time Bandit running in MAME
-```
+```bash
 cmp -l bandit.exe bandit_m.exe | gawk '{printf "Offset: %08X | File1: %02X | File2: %02X\n", $1-1, strtonum(0$2), strtonum(0$3)}'
 ```
 ```
