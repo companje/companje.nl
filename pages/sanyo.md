@@ -2,6 +2,26 @@
 title: Sanyo MBC-550/555
 ---
 
+# Bandit running in MAME
+```
+Offset: 00008C4D | File1: 00 | File2: 55
+Offset: 00008C4E | File1: 00 | File2: F7
+Offset: 00008C4F | File1: 00 | File2: 55
+Offset: 00008C50 | File1: 00 | File2: F6
+Offset: 00008C51 | File1: 00 | File2: 55
+Offset: 00008C52 | File1: 00 | File2: F5
+Offset: 00008C53 | File1: 00 | File2: 55
+Offset: 00008C54 | File1: 00 | File2: 55
+Offset: 00008C55 | File1: 00 | File2: 55
+Offset: 00008C56 | File1: 00 | File2: 55
+Offset: 00008C57 | File1: 00 | File2: 20
+Offset: 000090EB | File1: E8 | File2: F8
+Offset: 000090EC | File1: DA | File2: 90
+Offset: 000090ED | File1: 05 | File2: 90
+Offset: 000090EE | File1: 72 | File2: 90
+Offset: 000090EF | File1: FB | File2: 90
+Offset: 0000AD83 | File1: 8B | File2: C3
+```
 # Intel 8087 test on the Sanyo with init code from DSBIOS
 ```nasm
 org 100h
