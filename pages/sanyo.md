@@ -2,30 +2,60 @@
 title: Sanyo MBC-550/555
 ---
 
-# Time Bandit running in MAME
-(work in progress)
-```bash
-cmp -l bandit.exe bandit_m.exe | gawk '{printf "Offset: %08X | File1: %02X | File2: %02X\n", $1-1, strtonum(0$2), strtonum(0$3)}'
+# extract Time Bandit sprites
+```java
+byte bytes[];
+
+void setup() {
+  size(1280, 1000);
+  bytes = loadBytes("BANDIT.EXE");
+  noSmooth();
+}
+
+void draw() {
+  background(0);
+  scale(2, 5);
+  draw_sprites(0, 0, 3120, 64); ////sprites: sleutel tot poppetje
+  draw_sprites(5*64, 0, 15438, 40);   ////sprites: donut tot schorpioen
+}
+
+void draw_sprites(int xx, int yy, int offset, int count) {
+  int hspacing = 0; //4
+  int vspacing = 0; //2
+  for (int r=0; r<count; r++) {
+    int gridX = (r%8)*(32+hspacing);
+    int gridY = (r/8)*(16+vspacing);
+    int i=0;
+
+    for (int y=0; y<4; y++) {
+      for (int x=0; x<4; x++) { //x en y omgedraaid voor de test
+
+        for (int q=0; q<4; q++, i++) {
+          drawByte(
+            offset  + i + r*192,
+            xx + x*8 + gridX,
+            yy + y*4 + q + gridY);
+        }
+      }
+    }
+  }
+}
+
+void drawByte(int i, int x, int y) {
+  if (i<0 || i+128>bytes.length-1) return;
+
+  for (int xx=0; xx<8; xx++) {
+    int bit = 128>>xx;
+    int r = (bytes[128+i] & bit) > 0 ? 255 : 0;
+    int g = (bytes[64+i] & bit) > 0 ? 255 : 0;
+    int b = (bytes[0+i] & bit) > 0 ? 255 : 0;
+    stroke(r, g, b);
+    rect(x+xx, y, 1, 1);
+  }
+}
 ```
-```
-Offset: 00008C4D | File1: 00 | File2: 55
-Offset: 00008C4E | File1: 00 | File2: F7
-Offset: 00008C4F | File1: 00 | File2: 55
-Offset: 00008C50 | File1: 00 | File2: F6
-Offset: 00008C51 | File1: 00 | File2: 55
-Offset: 00008C52 | File1: 00 | File2: F5
-Offset: 00008C53 | File1: 00 | File2: 55
-Offset: 00008C54 | File1: 00 | File2: 55
-Offset: 00008C55 | File1: 00 | File2: 55
-Offset: 00008C56 | File1: 00 | File2: 55
-Offset: 00008C57 | File1: 00 | File2: 20
-Offset: 000090EB | File1: E8 | File2: F8
-Offset: 000090EC | File1: DA | File2: 90
-Offset: 000090ED | File1: 05 | File2: 90
-Offset: 000090EE | File1: 72 | File2: 90
-Offset: 000090EF | File1: FB | File2: 90
-Offset: 0000AD83 | File1: 8B | File2: C3
-```
+
+
 # Intel 8087 test on the Sanyo with init code from DSBIOS
 ```nasm
 org 100h
