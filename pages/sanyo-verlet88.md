@@ -1,3 +1,5 @@
+<img width="640" height="400" alt="verlets" src="https://github.com/user-attachments/assets/21b9c9f5-50ac-4b85-a547-521b260382ca" />
+
 ```nasm
 org 100h
 cpu 8086
@@ -19,7 +21,7 @@ ITERATIONS equ 4               ; constraint iterations per frame
 START_ROW  equ 1               ; initial chain row
 START_COL  equ 18              ; initial chain start column
 PIN_START_ROW equ 0            ; pinned point row
-PRE_FRAMES equ 1000            ; buffered animation frames
+PRE_FRAMES equ 150            ; buffered animation frames
 DELAY      equ 0x800           ; playback busy-wait
 
 setup:
@@ -70,7 +72,6 @@ prerender_frames:
     mov ax, [render_frame]
     call store_frame_positions
     inc word [render_frame]
-    call loader_update
     cmp word [render_frame], PRE_FRAMES
     jb .next
     ret
@@ -132,46 +133,80 @@ load_frame_positions:
     jb .next
     ret
 
+load_prev_frame_positions:
+    call set_frame_offset
+    mov bx, [frame_offset]
+    xor di, di
+.next:
+    mov al, [frame_rows + bx + di]
+    mov [prev_screen_rows + di], al
+    mov al, [frame_cols + bx + di]
+    mov [prev_screen_cols + di], al
+    inc di
+    cmp di, POINTS
+    jb .next
+    ret
+
+load_next_frame_positions:
+    call set_frame_offset
+    mov bx, [frame_offset]
+    xor di, di
+.next:
+    mov al, [frame_rows + bx + di]
+    mov [next_screen_rows + di], al
+    mov al, [frame_cols + bx + di]
+    mov [next_screen_cols + di], al
+    inc di
+    cmp di, POINTS
+    jb .next
+    ret
+
 draw_buffered_chain:
     call load_frame_positions
     call draw_screen_chain
     ret
 
-loader_update:
-    mov ax, [render_frame]
-    mov bx, 20
-    xor dx, dx
-    div bx                     ; AX = completed rows, 0..50
-    cmp ax, ROWS
-    jbe .target_ok
-    mov ax, ROWS
-.target_ok:
-    mov dl, al                 ; target row count
-.next:
-    mov al, [loader_rows]
-    cmp al, dl
-    jae .done
-    mov bh, al
-    xor bl, bl
-    call cell_offset
-    mov ax, 0xffff
-    mov cx, COLS * 2
-    rep stosw
-    inc byte [loader_rows]
-    jmp .next
-.done:
-    ret
-
 update_green_chain:
     mov ax, GREEN
     mov es, ax
-    mov word [draw_word], 0x0000
     mov ax, [play_frame]
-    call draw_buffered_chain
-
+    call load_prev_frame_positions
     mov ax, [next_frame]
+    call load_next_frame_positions
+    call draw_transition_chain
+    ret
+
+draw_transition_chain:
+    mov byte [draw_phase], 0
+    xor si, si
+.next:
+    mov word [draw_word], 0x0000
+    mov bh, [prev_screen_rows + si]
+    mov bl, [prev_screen_cols + si]
+    mov dh, [prev_screen_rows + si + 1]
+    mov dl, [prev_screen_cols + si + 1]
+    call draw_link
+
     mov word [draw_word], 0xffff
-    call draw_buffered_chain
+    mov bh, [next_screen_rows + si]
+    mov bl, [next_screen_cols + si]
+    mov dh, [next_screen_rows + si + 1]
+    mov dl, [next_screen_cols + si + 1]
+    call draw_link
+
+    inc si
+    cmp si, POINTS - 1
+    jb .next
+
+    mov word [draw_word], 0x0000
+    mov bh, [prev_screen_rows + POINTS - 1]
+    mov bl, [prev_screen_cols + POINTS - 1]
+    call draw_point
+
+    mov word [draw_word], 0xffff
+    mov bh, [next_screen_rows + POINTS - 1]
+    mov bl, [next_screen_cols + POINTS - 1]
+    call draw_point
     ret
 
 ; Initialize a vertical chain.
@@ -585,7 +620,6 @@ render_frame dw 0
 play_frame dw 0
 next_frame dw 0
 frame_offset dw 0
-loader_rows db 0
 pin_row  dw PIN_START_ROW << FP_SHIFT
 pin_col  dw START_COL << FP_SHIFT
 draw_word dw 0xffff
@@ -596,6 +630,10 @@ old_rows times POINTS dw 0
 old_cols times POINTS dw 0
 screen_rows times POINTS db 0
 screen_cols times POINTS db 0
+prev_screen_rows times POINTS db 0
+prev_screen_cols times POINTS db 0
+next_screen_rows times POINTS db 0
+next_screen_cols times POINTS db 0
 line_row     db 0
 line_col     db 0
 line_end_row db 0
@@ -615,5 +653,4 @@ move_col     dw 0
 move_row     dw 0
 frame_rows   times PRE_FRAMES * POINTS db 0
 frame_cols   times PRE_FRAMES * POINTS db 0
-
 ```
