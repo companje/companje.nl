@@ -2,6 +2,60 @@
 title: Sanyo MBC-550/555
 ---
 
+# write green block left top example
+```nasm
+org 100h
+RED equ 0xf000
+GREEN equ 0x3c00
+BLUE equ 0xf400
+
+setup:
+    push cs
+    pop ds
+
+    ; clear screen
+    mov ax,GREEN 
+    mov es,ax
+    mov cx,8000
+    xor di,di
+    xor ax,ax
+    rep stosw
+
+    ; write green block at left top
+    xor di,di
+    mov ax,-1
+    stosw
+    stosw
+
+    ;exit
+    int 20h
+```
+# build script
+```bash
+#!/bin/sh
+set -eu
+
+name=demo
+source_file=$name.asm
+output_file=$name.com
+list_file=$name.lst
+diskimage=MS-DOS-2.11.img
+
+nasm -w-label-orphan "$name.asm" -o "$name.com" -l "$name.lst"
+
+mcopy -o -i $diskimage $output_file ::$output_file
+
+killall -9 mame >/dev/null 2>&1 || true
+
+mame mbc55x \
+  -flop1 "$diskimage" \
+  -debug \
+  -debugscript autostart.txt \
+  -ramsize 256K -skip_gameinfo -window -nomaximize \
+  -resolution0 640x500 -prescale 2 \
+  -gamma 3
+```
+
 # extract Time Bandit sprites
 ```java
 byte bytes[];
