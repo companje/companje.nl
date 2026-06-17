@@ -2,6 +2,9 @@
 title: Sanyo MBC-550/555
 ---
 
+# verlet system
+* [verlet system](/sanyo-verlet88)
+  
 # write green block left top example
 ```nasm
 org 100h
