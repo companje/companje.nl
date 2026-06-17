@@ -1,6 +1,6 @@
 ## oldschool demo effects in typescript
 * https://seancode.com/demofx/
-* 
+
 ## HellMood
 * https://hellmood.111mb.de//wake_up_16b_writeup.html
 * https://hellmood.111mb.de/
