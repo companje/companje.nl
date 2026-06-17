@@ -3,6 +3,7 @@ title: Sanyo MBC-550/555
 ---
 
 # verlet system
+<img width="640" height="400" alt="verlets" src="https://github.com/user-attachments/assets/21b9c9f5-50ac-4b85-a547-521b260382ca" />
 * [verlet system](/sanyo-verlet88)
   
 # write green block left top example
