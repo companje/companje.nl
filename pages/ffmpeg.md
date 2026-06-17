@@ -4,11 +4,11 @@ permalink: /ffmpeg
 tags: ['notes','software','video']
 ---
 
-# AVI opname van Sanyo MBC-55x uit MAME (640x200) converteren naar GIF (monochroom)
+# AVI opname van Sanyo MBC-55x uit MAME (640x200, 3 bit color) converteren naar GIF
 ```bash
 ffmpeg -ss 10 -i /Users/rick/Sanyo/verlet2/verlet88/snap/output.avi -y -an \
--vf "fps=10,format=gray,lut=y='gte(val\,25)*255',scale=640:400:flags=neighbor,format=rgb24,colorchannelmixer=rr=0:gg=1:bb=0,split[s0][s1];[s0]palettegen=max_colors=2:reserve_transparent=0[p];[s1][p]paletteuse=dither=none" \
-verlets3.gif
+-vf "fps=10,scale=640:400:flags=neighbor,split[s0][s1];[s0]palettegen=max_colors=8:reserve_transparent=0[p];[s1][p]paletteuse=dither=none" \
+verlets_8colors.gif
 ```
 
 # beste oplossing voor hoge kwaliteit lage compressie (bijv voor screenshots sequence)
