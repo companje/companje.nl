@@ -3,8 +3,13 @@ title: Sanyo MBC-550/555
 ---
 
 # copy B.EXE from MS-DOS-1.25.IMG (160kb) to current folder
-```
+```bash
 mcopy -o -i MS-DOS-1.25.img ::B.EXE .
+```
+
+# mdir
+```bash
+mdir -i MS-DOS-1.25.img
 ```
 
 # Verlet integration physics system
