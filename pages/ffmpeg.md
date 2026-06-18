@@ -4,6 +4,32 @@ permalink: /ffmpeg
 tags: ['notes','software','video']
 ---
 
+# 4 png's naar GIF met zwarte achtergrond
+```bash
+ffmpeg \
+  -f concat \
+  -safe 0 \
+  -i frames.txt \
+  -filter_complex "\
+fps=10,format=rgba[fg];\
+color=black:s=100x100:r=10:d=0.4[bg];\
+[bg][fg]overlay=format=auto,split[s0][s1];\
+[s0]palettegen=max_colors=8:reserve_transparent=0[p];\
+[s1][p]paletteuse=dither=none" \
+  -y output.gif
+```
+```
+file 'sprite_94.png'
+duration 0.1
+file 'sprite_95.png'
+duration 0.1
+file 'sprite_96.png'
+duration 0.1
+file 'sprite_97.png'
+duration 0.1
+file 'sprite_97.png'
+```
+
 # AVI opname van Sanyo MBC-55x uit MAME (640x200, 3 bit color) converteren naar GIF
 ```bash
 ffmpeg -ss 10 -i /Users/rick/Sanyo/verlet2/verlet88/snap/output.avi -y -an \
