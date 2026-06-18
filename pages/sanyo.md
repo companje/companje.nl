@@ -12,6 +12,11 @@ mcopy -o -i MS-DOS-1.25.img ::B.EXE .
 mdir -i MS-DOS-1.25.img
 ```
 
+# copy B.EXE to MS-DOS-2.11.img
+```bash
+mcopy -i MS-DOS-2.11.img B.EXE ::
+```
+
 # Verlet integration physics system
 <img width="640" height="400" alt="verlets" src="https://github.com/user-attachments/assets/21b9c9f5-50ac-4b85-a547-521b260382ca" />
 * [verlet system](/sanyo-verlet88)
