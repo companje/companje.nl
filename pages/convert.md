@@ -2,6 +2,11 @@
 title: Convert images
 ---
 
+# resize nearest neighbour interpolation fill background with black
+```
+magick input.png -filter point -resize 400% -background black -alpha remove -alpha off output.png
+```
+
 # scale up images in folder
 ```
 mogrify -path OUTPUT_FOLDER -resize 400% *.jpg
