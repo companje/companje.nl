@@ -891,7 +891,7 @@ crt72: db 0x70,0x48,0x55,0x4A,0x41,0x00,0x32,0x38,0x00,0x03,0,0,0,0,0,0
 ```
 # crt 'scroll'?
 ```basic
-out 48,13: out 50, a and 255
+out 48,13: out 50, a and 255          '48=0x30 (address), 50=0x32 (data)
 out 48,12: out 50, (a/255) and 255
 ```
 
