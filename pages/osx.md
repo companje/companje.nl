@@ -2,6 +2,9 @@
 title: MacOS
 ---
 
+# SquirrelDisk
+alternatief voor GrandPerspective
+
 # remove hidden flag
 ```bash
 chflags nohidden
