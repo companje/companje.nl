@@ -3,6 +3,9 @@ title: AI / Machine learning
 type: other
 ---
 
+# Sora alternative
+* [Google Flow](https://labs.google/fx/nl/tools/flow)
+
 # summarize
 Multi-modal AI tool to extract and summarize content
 * https://summarize.sh/
