@@ -1,5 +1,10 @@
 see [sanyo](/sanyo)
 
+# start mame
+```
+mame mbc55x -resolution0 640x480 -window -skip_gameinfo -gamma 3 -contrast 1.5 -nofilter -flop1 DISK.IMG
+```
+
 # globale roms/ map
 ```
 ~/Library/Application Support/mame/mame.ini
