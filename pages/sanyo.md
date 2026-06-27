@@ -2,7 +2,7 @@
 title: Sanyo MBC-550/555
 ---
 
-test3
+test4
 
 # copy B.EXE from MS-DOS-1.25.IMG (160kb) to current working directory
 ```bash
