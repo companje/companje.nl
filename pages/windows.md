@@ -11,7 +11,7 @@ title: Windows
 
 # kiosk mode / disable touch event gestures
 * https://help.lumoplay.com/hc/en-us/articles/38046673771539-Disable-edge-swipe-gestures-on-a-Windows-touchscreen
-```
+```ini
 Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\LockDown\AllowEdgeSwipe]
@@ -25,7 +25,7 @@ Windows Registry Editor Version 5.00
 ```
 
 eventueel in combi met (maar niet zeker
-```
+```ini
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\EdgeUI]
 "DisableEdgeSwipe"=dword:00000001
 "DisableCharms"=dword:00000001
