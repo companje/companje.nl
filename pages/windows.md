@@ -11,7 +11,7 @@ title: Windows
 
 # kiosk mode / disable touch event gestures
 * https://help.lumoplay.com/hc/en-us/articles/38046673771539-Disable-edge-swipe-gestures-on-a-Windows-touchscreen
-```ini
+
 Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\PolicyManager\default\LockDown\AllowEdgeSwipe]
@@ -22,20 +22,16 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\EdgeUI]
 "AllowEdgeSwipe"=dword:00000000
-```
 
 eventueel in combi met (maar niet zeker
-```ini
 [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\EdgeUI]
 "DisableEdgeSwipe"=dword:00000001
 "DisableCharms"=dword:00000001
 "DisableTouchGestures"=dword:00000001
 
-
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\ImmersiveShell\EdgeUI]
 "AllowEdgeSwipe"=dword:00000000
 "AllowBottomEdgeSwipe"=dword:00000000
-```
 
 # Skip online account / use local account Windows 11 during install
 On the first run of the system, when it asks for the language or keyboard layout, do the following:
