@@ -4,6 +4,11 @@ permalink: /ffmpeg
 tags: ['notes','software','video']
 ---
 
+# contactsheet
+```bash
+ffmpeg -y -pattern_type glob -i '/tmp/wave_frame_*.png' -filter_complex tile=5x2 wave_contact.png
+```
+
 # 4 png's naar GIF met zwarte achtergrond
 ```bash
 ffmpeg \
