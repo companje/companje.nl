@@ -2,6 +2,10 @@
 title: Sanyo MBC-550/555
 ---
 
+# Time Bandit on the Sanyo MBC-550/555: Now running in MAME
+See also [Time Bandit](/time-bandit)
+<iframe width="892" height="669" src="https://www.youtube.com/embed/AWFCEqoao7A" title="Time Bandit on the Sanyo MBC-550/555: Now running in MAME" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 # copy B.EXE from MS-DOS-1.25.IMG (160kb) to current working directory
 ```bash
 mcopy -o -i MS-DOS-1.25.img ::B.EXE .
