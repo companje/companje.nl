@@ -15,7 +15,7 @@ June 2026
 
 <iframe width="892" height="669" src="https://www.youtube.com/embed/AWFCEqoao7A" title="Time Bandit on the Sanyo MBC-550/555: Now running in MAME" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<pre style="background:black; color: green">
+<pre style="background:black; color: GreenYellow; max-width: 500px">
 Video-Ram area 3C000-3FFFF
 
 IO.SYS version 1.00  (C) 2-13-1984 SANYO
