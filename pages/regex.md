@@ -116,6 +116,8 @@ this works in the SublimeText search function:
 * <http://regexr.com/>
 * <http://txt2re.com/>
 * <http://www.phpliveregex.com/> (php)
+* <https://phphub.net/regex/>
+* <https://extendsclass.com/regex-tester.html>
 
 #  expr 
 ```bash
