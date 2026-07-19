@@ -2,6 +2,13 @@
 title: Processing
 ---
 
+# iterate through array
+```java
+for (float x : new float[] { -62, 62 }) {
+  //...
+}
+```
+
 # trapezium function
 ```java
 float trapezium(float t, float a, float b, float c, float d) {
