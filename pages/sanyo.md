@@ -3,15 +3,17 @@ title: Sanyo MBC-550/555
 ---
 
 # dither gradients
-<table>
+<table border="1">
   <tr>
-    <td>256</td><td>64</td><td>20</td><td>16</td>
+    <td>256</td><td>64</td><td>20</td>
   </tr>
   <tr>
-    <td><img width="256" height="8" alt="vertical-gradient-256x8" src="https://github.com/user-attachments/assets/96efa798-686a-45aa-8aa8-60438db0a191" /></td>
-    <td><img width="8" height="64" alt="vertical-gradient-64x8" src="https://github.com/user-attachments/assets/7b635f6e-fd80-4cc8-ac2e-3194a3dcf9b7" /></td>
-    <td><img width="8" height="20" alt="vertical-gradient-20x8" src="https://github.com/user-attachments/assets/295b5c75-b808-4ac2-aa61-53591ab21467" /></td>
-    <td><img width="8" height="20" alt="vertical-gradient-16x8" src="https://github.com/user-attachments/assets/02d0ce95-50a9-42ce-ab5b-d83d0b3648ac" /></td>
+    <td><img width="64" height="8" alt="vertical-gradient-64x8" src="https://github.com/user-attachments/assets/98788ab8-bb35-4f1c-b474-098b1495e2b4" />
+</td>
+    <td><img width="256" height="8" alt="vertical-gradient-256x8" src="https://github.com/user-attachments/assets/3ee6f1b7-9111-40a8-9215-171f3a88db06" />
+</td>
+    <td><img width="20" height="8" alt="vertical-gradient-20x8" src="https://github.com/user-attachments/assets/e0acdc78-c5b3-4394-9ffd-d0cb85008428" />
+</td>
   </tr>
 </table>
 
