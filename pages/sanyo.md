@@ -8,7 +8,7 @@ title: Sanyo MBC-550/555
     <td>256×8</td><td>64×8</td><td>20×8</td>
   </tr>
   <tr>
-    <td><img style="image-rendering: pixelated;" width="256" height="8" alt="vertical-gradient-256x8" src="https://github.com/user-attachments/assets/3ee6f1b7-9111-40a8-9215-171f3a88db06" />
+    <td><img width="128" height="4" alt="material-ui-dithered-128x4" src="https://github.com/user-attachments/assets/abb767bb-8883-4866-8fa7-90e6ebd80261" />
 </td>
     <td><img style="image-rendering: pixelated;" width="64" height="8" alt="vertical-gradient-64x8" src="https://github.com/user-attachments/assets/98788ab8-bb35-4f1c-b474-098b1495e2b4" />
 </td>
