@@ -2,7 +2,7 @@
 title: Sanyo MBC-550/555
 ---
 
-# dither gradients
+# dithered gradients 8px height
 <table border="1">
   <tr>
     <td>256×8</td><td>64×8</td><td>20×8</td>
@@ -17,7 +17,7 @@ title: Sanyo MBC-550/555
   </tr>
 </table>
 
-# color gradients
+# dithered gradients 4px height
 <table border="1">
   <tr>
     <td>128×4</td><td>64×4</td><td>64×4</td>
