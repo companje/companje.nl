@@ -41,6 +41,10 @@ The observable/article [Decoding City in a Bottle](https://observablehq.com/@dar
 # dithered 3 bit color gradient height=1
 <img width="100%" style="image-rendering: pixelated;" alt="01-plasma-dither-palette" src="https://github.com/user-attachments/assets/c839c2fe-6aa4-4e3a-b814-8602001627b4" />
 
+# dithered 3 bit color gradient height=4
+<img width="256" height="4" alt="02-plasma-dither-palette-32-rendered" src="https://github.com/user-attachments/assets/2995a449-5f80-4720-9a4e-eddd72b2a3fa" style="image-rendering: pixelated;" />
+
+
 # Time Bandit on the Sanyo MBC-550/555: Now running in MAME
 See also [Time Bandit](/time-bandit)
 <iframe width="892" height="669" src="https://www.youtube.com/embed/AWFCEqoao7A" title="Time Bandit on the Sanyo MBC-550/555: Now running in MAME" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
