@@ -7,7 +7,7 @@ My version of [City in a Bottle](https://x.com/KilledByAPixel/status/15172946279
 <img width="320" height="200" alt="City-in-a-bottle" src="https://github.com/user-attachments/assets/d299d690-4d3a-4470-a273-d1180a91702d" />
 The observable/article [Decoding City in a Bottle](https://observablehq.com/@darabos/decoding-a-city-in-a-bottle) was really helpful to understand the inner workings of the raycasting effect. First I prototyped it in my Sanyo Processing VRAM assembly simulator, after that I could write the real assembly.
 
-<img width="2156" height="1096" alt="Screenshot 2026-07-21 at 22 19 12" src="https://github.com/user-attachments/assets/c73d5ecd-92eb-4a28-8f42-9e545bcc1cba" />
+<img width="100%" alt="Screenshot 2026-07-21 at 22 19 12" src="https://github.com/user-attachments/assets/c73d5ecd-92eb-4a28-8f42-9e545bcc1cba" />
 
 # dithered gradients 8px height
 <table border="1">
