@@ -14,7 +14,7 @@ The observable/article [Decoding City in a Bottle](https://observablehq.com/@dar
     <td>256×8</td><td>64×8</td><td>20×8</td>
   </tr>
   <tr>
-    <td><img width="256" height="8" alt="vertical-gradient-256x8" src="https://github.com/user-attachments/assets/bc406b31-0c50-48d4-b883-3423ab1c79da" />
+    <td><img style="transform-origin: top left;" width="256" height="8" alt="vertical-gradient-256x8" src="https://github.com/user-attachments/assets/bc406b31-0c50-48d4-b883-3423ab1c79da" />
 </td>
     <td><img style="image-rendering: pixelated;" width="64" height="8" alt="vertical-gradient-64x8" src="https://github.com/user-attachments/assets/98788ab8-bb35-4f1c-b474-098b1495e2b4" />
 </td>
