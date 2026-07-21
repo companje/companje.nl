@@ -5,7 +5,7 @@ title: Sanyo MBC-550/555
 # dither gradients
 <table border="1">
   <tr>
-    <td>256</td><td>64</td><td>20</td>
+    <td>256×8</td><td>64×8</td><td>20×8</td>
   </tr>
   <tr>
     <td><img width="64" height="8" alt="vertical-gradient-64x8" src="https://github.com/user-attachments/assets/98788ab8-bb35-4f1c-b474-098b1495e2b4" />
