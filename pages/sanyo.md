@@ -3,14 +3,17 @@ title: Sanyo MBC-550/555
 ---
 
 # dither gradients
-##256x8
-<img width="256" height="8" alt="vertical-gradient-256x8" src="https://github.com/user-attachments/assets/46719cb6-2649-486e-ad42-6f39cfc11371" />
-##64x8
-<img width="8" height="64" alt="vertical-gradient-64x8" src="https://github.com/user-attachments/assets/56eae2f4-82df-485b-9b8b-5451a9d3fc25" />
-##20x8
-<img width="8" height="20" alt="vertical-gradient-20x8" src="https://github.com/user-attachments/assets/dacb2859-9f74-46f7-bba5-1b726b5322e6" />
-##16x8
-<img width="8" height="20" alt="vertical-gradient-16x8" src="https://github.com/user-attachments/assets/6b8213ab-37f4-4c3c-bce4-cc021f492f7f" />
+<table>
+  <tr>
+    <td>256</td><td>64</td><td>20</td><td>16</td>
+  </tr>
+  <tr>
+    <td><img width="256" height="8" alt="vertical-gradient-256x8" src="https://github.com/user-attachments/assets/96efa798-686a-45aa-8aa8-60438db0a191" /></td>
+    <td><img width="8" height="64" alt="vertical-gradient-64x8" src="https://github.com/user-attachments/assets/7b635f6e-fd80-4cc8-ac2e-3194a3dcf9b7" /></td>
+    <td><img width="8" height="20" alt="vertical-gradient-20x8" src="https://github.com/user-attachments/assets/295b5c75-b808-4ac2-aa61-53591ab21467" /></td>
+    <td><img width="8" height="20" alt="vertical-gradient-16x8" src="https://github.com/user-attachments/assets/02d0ce95-50a9-42ce-ab5b-d83d0b3648ac" /></td>
+  </tr>
+</table>
 
 # Time Bandit on the Sanyo MBC-550/555: Now running in MAME
 See also [Time Bandit](/time-bandit)
