@@ -39,7 +39,7 @@ The observable/article [Decoding City in a Bottle](https://observablehq.com/@dar
 </table>
 
 # dithered 3 bit color gradient height=1
-<img width="100%" alt="01-plasma-dither-palette" src="https://github.com/user-attachments/assets/c839c2fe-6aa4-4e3a-b814-8602001627b4" />
+<img width="100%" style="image-rendering: pixelated;" alt="01-plasma-dither-palette" src="https://github.com/user-attachments/assets/c839c2fe-6aa4-4e3a-b814-8602001627b4" />
 
 # Time Bandit on the Sanyo MBC-550/555: Now running in MAME
 See also [Time Bandit](/time-bandit)
