@@ -37,12 +37,13 @@ The observable/article [Decoding City in a Bottle](https://observablehq.com/@dar
 </td>
   </tr>
 </table>
+
+# dithered 3 bit color gradient height=1
+<img width="100%" alt="01-plasma-dither-palette" src="https://github.com/user-attachments/assets/c839c2fe-6aa4-4e3a-b814-8602001627b4" />
+
 # Time Bandit on the Sanyo MBC-550/555: Now running in MAME
 See also [Time Bandit](/time-bandit)
 <iframe width="892" height="669" src="https://www.youtube.com/embed/AWFCEqoao7A" title="Time Bandit on the Sanyo MBC-550/555: Now running in MAME" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-# 3 bit dithered gradient height=1
-<img width="100%" alt="01-plasma-dither-palette" src="https://github.com/user-attachments/assets/c839c2fe-6aa4-4e3a-b814-8602001627b4" />
 
 # copy B.EXE from MS-DOS-1.25.IMG (160kb) to current working directory
 ```bash
