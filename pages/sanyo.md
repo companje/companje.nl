@@ -5,8 +5,7 @@ title: Sanyo MBC-550/555
 # City in a Bottle
 My version of [City in a Bottle](https://x.com/KilledByAPixel/status/1517294627996545024) in 8088 assembly for the Sanyo MBC-550. Unfortunately it's not realtime. It takes hours to render this on the Sanyo. I created this in July/August 2025 when I was on holiday in Iceland with my family.
 <img width="320" height="200" alt="City-in-a-bottle" src="https://github.com/user-attachments/assets/d299d690-4d3a-4470-a273-d1180a91702d" />
-The observable/article [Decoding City in a Bottle](https://observablehq.com/@darabos/decoding-a-city-in-a-bottle) was really helpful to understand the inner workings of the raycasting effect. First I prototyped it in my Sanyo Processing VRAM assembly simulator, after that I could write the real assembly.
-
+The observable/article [Decoding City in a Bottle](https://observablehq.com/@darabos/decoding-a-city-in-a-bottle) was really helpful to understand the inner workings of the raycasting effect. First I prototyped it in my Sanyo Processing VRAM assembly simulator, after that I could write the real assembly. Here's the [source code](https://github.com/companje/Sanyo-MBC-550-555-experiments/blob/main/CityInABottle-asm-2/app.asm).
 <img width="100%" alt="Screenshot 2026-07-21 at 22 19 12" src="https://github.com/user-attachments/assets/c73d5ecd-92eb-4a28-8f42-9e545bcc1cba" />
 
 # dithered gradients 8px height
