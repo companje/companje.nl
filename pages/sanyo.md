@@ -14,7 +14,7 @@ The observable/article [Decoding City in a Bottle](https://observablehq.com/@dar
     <td>256×8</td><td>64×8</td><td>20×8</td>
   </tr>
   <tr>
-    <td><img width="512" height="16" alt="vertical-gradient-256x8" src="https://github.com/user-attachments/assets/bc406b31-0c50-48d4-b883-3423ab1c79da" />
+    <td><img style="image-rendering: pixelated;" width="512" height="16" alt="vertical-gradient-256x8" src="https://github.com/user-attachments/assets/bc406b31-0c50-48d4-b883-3423ab1c79da" />
 </td>
     <td><img style="image-rendering: pixelated;" width="128" height="16" alt="vertical-gradient-64x8" src="https://github.com/user-attachments/assets/98788ab8-bb35-4f1c-b474-098b1495e2b4" />
 </td>
@@ -29,11 +29,11 @@ The observable/article [Decoding City in a Bottle](https://observablehq.com/@dar
     <td>128×4</td><td>64×4</td><td>64×4</td>
   </tr>
   <tr>
-    <td><img width="256" height="8" alt="material-ui-dithered-128x4" src="https://github.com/user-attachments/assets/abb767bb-8883-4866-8fa7-90e6ebd80261" />
+    <td><img style="image-rendering: pixelated;" width="256" height="8" alt="material-ui-dithered-128x4" src="https://github.com/user-attachments/assets/abb767bb-8883-4866-8fa7-90e6ebd80261" />
 </td>
-    <td><img width="128" height="8" alt="material-ui-dithered-64x4" src="https://github.com/user-attachments/assets/d2cc5797-a9a0-4ca6-a294-a854923792ec" />
+    <td><img style="image-rendering: pixelated;" width="128" height="8"  alt="material-ui-dithered-64x4" src="https://github.com/user-attachments/assets/d2cc5797-a9a0-4ca6-a294-a854923792ec" />
 </td>
-    <td><img width="256" height="8" alt="material-ui-grey-64x4" src="https://github.com/user-attachments/assets/c7fb784b-6fa2-4611-93a7-6c8fa643373e" />
+    <td><img style="image-rendering: pixelated;" width="256" height="8"  alt="material-ui-grey-64x4" src="https://github.com/user-attachments/assets/c7fb784b-6fa2-4611-93a7-6c8fa643373e" />
 </td>
   </tr>
 </table>
