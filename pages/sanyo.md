@@ -2,6 +2,16 @@
 title: Sanyo MBC-550/555
 ---
 
+# dither gradients
+##256x8
+<img width="256" height="8" alt="vertical-gradient-256x8" src="https://github.com/user-attachments/assets/46719cb6-2649-486e-ad42-6f39cfc11371" />
+##64x8
+<img width="8" height="64" alt="vertical-gradient-64x8" src="https://github.com/user-attachments/assets/56eae2f4-82df-485b-9b8b-5451a9d3fc25" />
+##20x8
+<img width="8" height="20" alt="vertical-gradient-20x8" src="https://github.com/user-attachments/assets/dacb2859-9f74-46f7-bba5-1b726b5322e6" />
+##16x8
+<img width="8" height="20" alt="vertical-gradient-16x8" src="https://github.com/user-attachments/assets/6b8213ab-37f4-4c3c-bce4-cc021f492f7f" />
+
 # Time Bandit on the Sanyo MBC-550/555: Now running in MAME
 See also [Time Bandit](/time-bandit)
 <iframe width="892" height="669" src="https://www.youtube.com/embed/AWFCEqoao7A" title="Time Bandit on the Sanyo MBC-550/555: Now running in MAME" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
