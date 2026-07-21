@@ -9,7 +9,7 @@ The observable/article [Decoding City in a Bottle](https://observablehq.com/@dar
 <img width="100%" alt="Screenshot 2026-07-21 at 22 19 12" src="https://github.com/user-attachments/assets/c73d5ecd-92eb-4a28-8f42-9e545bcc1cba" />
 
 # dithered gradients 8px height
-<table border="1">
+<table border="1" style="transform: scale(2);">
   <tr>
     <td>256×8</td><td>64×8</td><td>20×8</td>
   </tr>
@@ -24,7 +24,7 @@ The observable/article [Decoding City in a Bottle](https://observablehq.com/@dar
 </table>
 
 # dithered gradients 4px height
-<table border="1">
+<table border="1" style="transform: scale(2);">
   <tr>
     <td>128×4</td><td>64×4</td><td>64×4</td>
   </tr>
