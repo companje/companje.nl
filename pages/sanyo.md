@@ -8,7 +8,7 @@ My version of [City in a Bottle](https://x.com/KilledByAPixel/status/15172946279
 The observable/article [Decoding City in a Bottle](https://observablehq.com/@darabos/decoding-a-city-in-a-bottle) was really helpful to understand the inner workings of the raycasting effect. First I [prototyped](https://github.com/companje/Sanyo-MBC-550-555-experiments/tree/main/CityInABottle5) it in my assembly & VRAM simulator in Processing, after that I could write the real 8088 assembly. Here's the [source code](https://github.com/companje/Sanyo-MBC-550-555-experiments/blob/main/CityInABottle-asm-2/app.asm).
 <img width="100%" alt="Screenshot 2026-07-21 at 22 19 12" src="https://github.com/user-attachments/assets/c73d5ecd-92eb-4a28-8f42-9e545bcc1cba" />
 
-# dithered gradients 8px height
+# dithered gradients height=8
 <table border="1">
   <tr>
     <td>256×8</td><td>64×8</td><td>20×8</td>
@@ -23,7 +23,7 @@ The observable/article [Decoding City in a Bottle](https://observablehq.com/@dar
   </tr>
 </table>
 
-# dithered gradients 4px height
+# dithered gradients height=4
 <table border="1">
   <tr>
     <td>128×4</td><td>64×4</td><td>64×4</td>
