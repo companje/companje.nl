@@ -17,6 +17,20 @@ title: Sanyo MBC-550/555
   </tr>
 </table>
 
+# color gradients
+<table border="1">
+  <tr>
+    <td>128×4</td><td>64×4</td><td>64×4</td>
+  </tr>
+  <tr>
+    <td><img width="128" height="4" alt="material-ui-dithered-128x4" src="https://github.com/user-attachments/assets/3a636849-00cb-432c-8f3b-b7b89a04063b" />
+</td>
+    <td><img width="64" height="4" alt="material-ui-dithered-64x4" src="https://github.com/user-attachments/assets/d2cc5797-a9a0-4ca6-a294-a854923792ec" />
+</td>
+    <td><img width="128" height="4" alt="material-ui-grey-64x4" src="https://github.com/user-attachments/assets/c7fb784b-6fa2-4611-93a7-6c8fa643373e" />
+</td>
+  </tr>
+</table>
 # Time Bandit on the Sanyo MBC-550/555: Now running in MAME
 See also [Time Bandit](/time-bandit)
 <iframe width="892" height="669" src="https://www.youtube.com/embed/AWFCEqoao7A" title="Time Bandit on the Sanyo MBC-550/555: Now running in MAME" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
