@@ -53,7 +53,8 @@ The observable/article [Decoding City in a Bottle](https://observablehq.com/@dar
 
 
 # Time Bandit on the Sanyo MBC-550/555: Now running in MAME
-See also [Time Bandit](/time-bandit)
+See also [Time Bandit](/time-bandit) --- 
+
 In 2026, an old Sanyo MBC-550/555 owner wants to travel back in time and play Time Bandit again. The original floppy disk is no longer readable, the game does not yet run properly in MAME, and the Sanyo version is protected by a clever copy-protection scheme that kept it from being copied back in the day.
 
 This demo tells the story of a rare version of Time Bandit that was almost lost in time: a game written specifically for the Sanyo MBC-550/555 by Bill Dunlevy and Harry Lafnear of MichTron. It remembers the strange not-quite-IBM-compatible Sanyo machine, WordStar, Sanyo BASIC, MS-DOS, impossible old listings, and the feeling that someone had really made the effort to create a cool game for this unusual computer.
