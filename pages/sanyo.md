@@ -3,7 +3,7 @@ title: Sanyo MBC-550/555
 ---
 
 # City in a Bottle
-My version of [City in a Bottle](https://x.com/KilledByAPixel/status/1517294627996545024) in 8088 assembly for the Sanyo MBC-550. Unfortunately it's not realtime. It takes hours to render this on the Sanyo. I created this in July/August 2025 when I was on holiday in Iceland with my family.
+My version of [City in a Bottle](https://x.com/KilledByAPixel/status/1517294627996545024) in 8088 assembly for the Sanyo MBC-550. Unfortunately it's not realtime. It takes 27 seconds to render one frame on the Sanyo. I created this in July/August 2025 when I was on holiday in Iceland with my family.
 <img width="400" height="250" alt="City-in-a-bottle-640-400" src="https://github.com/user-attachments/assets/77bb190a-90e7-4ec9-ae2f-40b8a2b2f365" />
 The observable/article [Decoding City in a Bottle](https://observablehq.com/@darabos/decoding-a-city-in-a-bottle) was really helpful to understand the inner workings of the raycasting effect. First I [prototyped](https://github.com/companje/Sanyo-MBC-550-555-experiments/tree/main/CityInABottle5) it in my assembly & VRAM simulator in Processing, after that I could write the real 8088 assembly. Here's the [source code](https://github.com/companje/Sanyo-MBC-550-555-experiments/blob/main/CityInABottle-asm-2/app.asm).
 <img width="100%" alt="Screenshot 2026-07-21 at 22 19 12" src="https://github.com/user-attachments/assets/c73d5ecd-92eb-4a28-8f42-9e545bcc1cba" />
