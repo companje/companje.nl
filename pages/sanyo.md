@@ -2,6 +2,10 @@
 title: Sanyo MBC-550/555
 ---
 
+# Plasma
+Running a 'plasma' on my Sanyo was always one of my holy grails. I finally managed to create one that is visually attractive and also perfoms well because of interleaved/strided rendering ('diagonal interlacing').
+<img width="320" height="200" alt="plasma" src="https://github.com/user-attachments/assets/2f470aeb-b3cc-44b4-9a0f-3c6d95c5c465" />
+
 # City in a Bottle
 My version of [City in a Bottle](https://x.com/KilledByAPixel/status/1517294627996545024) in 8088 assembly for the Sanyo MBC-550. Unfortunately it's not realtime. It takes 27 seconds to render one frame on the Sanyo. I created this in July/August 2025 when I was on holiday in Iceland with my family.
 <img width="400" height="250" alt="City-in-a-bottle-640-400" src="https://github.com/user-attachments/assets/77bb190a-90e7-4ec9-ae2f-40b8a2b2f365" />
