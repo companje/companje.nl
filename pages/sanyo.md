@@ -54,7 +54,18 @@ The observable/article [Decoding City in a Bottle](https://observablehq.com/@dar
 
 # Time Bandit on the Sanyo MBC-550/555: Now running in MAME
 See also [Time Bandit](/time-bandit)
-<iframe width="892" height="669" src="https://www.youtube.com/embed/AWFCEqoao7A" title="Time Bandit on the Sanyo MBC-550/555: Now running in MAME" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+In 2026, an old Sanyo MBC-550/555 owner wants to travel back in time and play Time Bandit again. The original floppy disk is no longer readable, the game does not yet run properly in MAME, and the Sanyo version is protected by a clever copy-protection scheme that kept it from being copied back in the day.
+
+This demo tells the story of a rare version of Time Bandit that was almost lost in time: a game written specifically for the Sanyo MBC-550/555 by Bill Dunlevy and Harry Lafnear of MichTron. It remembers the strange not-quite-IBM-compatible Sanyo machine, WordStar, Sanyo BASIC, MS-DOS, impossible old listings, and the feeling that someone had really made the effort to create a cool game for this unusual computer.
+
+The story follows a modern investigation into the original executable: digging through handwritten 8088 assembly, uncovering sprites, treasures, maps, portals, overlays, multicolor fonts, flipped and mirrored level variants, hidden sectors, checksums, and the locks behind the copy protection. It is a small tribute to Time Bandit, to the Sanyo MBC-550/555, and to the people who created them.
+
+Maybe no one has ever truly finished this vast Sanyo version of Time Bandit, with its hundreds of levels and no way to save progress. But perhaps another Time Bandit from the future, armed with time, clues, DEBUG, and modern hardware, finally will.
+
+Thanks to Bill Dunlevy, Harry Lafnear, MichTron, and Sanyo.
+
+Greetings from The Netherlands, Sanyoman2 a.k.a. RickyboyII June 2026
+<iframe width="446" height="335" src="https://www.youtube.com/embed/AWFCEqoao7A" title="Time Bandit on the Sanyo MBC-550/555: Now running in MAME" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 # copy B.EXE from MS-DOS-1.25.IMG (160kb) to current working directory
 ```bash
