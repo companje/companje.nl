@@ -2,6 +2,18 @@
 title: Sanyo MBC-550/555
 ---
 
+# set baudrate
+```nasm
+BPS EQU 4800 ; BAUDRATE
+RSBR EQU 24H ; COUNTER 2
+RATE EQU 59658/((BPS/30)*16)
+
+MOV AX, RATE
+OUT RSBR, AL   ; LSB
+MOV AL,AH
+OUT RSBR, AL   ; MSB
+```
+
 # Plasma
 Running a 'plasma' on my Sanyo was always one of my holy grails. I finally managed to create one that is visually attractive and also perfoms well because of interleaved/strided rendering ('diagonal interlacing'). It uses a palette with 4 dither patterns giving the illusion of 32 colors instead of 8 on a resolution of 80x50 cells of 8x4 on 640x200.
 <img width="400" height="250" alt="Demoscene 3 bit RGB dithered plasma effect on Sanyo MBC-550/550" src="https://github.com/user-attachments/assets/2f470aeb-b3cc-44b4-9a0f-3c6d95c5c465" />
