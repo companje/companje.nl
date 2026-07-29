@@ -13,6 +13,8 @@ OUT RSBR, AL   ; LSB
 MOV AL,AH
 OUT RSBR, AL   ; MSB
 ```
+The default rate upon cold boot is 1200. Other baud rates must be set upon start up.
+Sanyo Basic may handle baud rates up to 1200. For baud rates over 1200, you must set them through assembler.
 
 # Plasma
 Running a 'plasma' on my Sanyo was always one of my holy grails. I finally managed to create one that is visually attractive and also perfoms well because of interleaved/strided rendering ('diagonal interlacing'). It uses a palette with 4 dither patterns giving the illusion of 32 colors instead of 8 on a resolution of 80x50 cells of 8x4 on 640x200.
