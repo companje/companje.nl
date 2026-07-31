@@ -2,6 +2,12 @@
 title: Processing
 ---
 
+# set locale
+```java
+import java.util.Locale;
+Locale.setDefault(new Locale("en", "US"));
+```
+
 # iterate through array
 ```java
 for (float x : new float[] { -62, 62 }) {
