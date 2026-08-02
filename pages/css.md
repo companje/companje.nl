@@ -2,6 +2,11 @@
 title: CSS
 ---
 
+# image rendering / nearest neighbour scaling
+```css
+image-rendering: pixelated;
+```
+
 # grid
 ```css
 /*
