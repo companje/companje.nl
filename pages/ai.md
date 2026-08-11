@@ -3,6 +3,10 @@ title: AI / Machine learning
 type: other
 ---
 
+# Loes.ai
+* https://loes.ai/
+* https://hostyourai.com/nl
+
 # Sora alternative
 * [Google Flow](https://labs.google/fx/nl/tools/flow)
 
