@@ -2,6 +2,30 @@
 title: Sanyo MBC-550/555
 ---
 
+# progressive fill
+```nasm
+setup:
+  push cs
+  pop ds
+
+  mov ax,GREEN_SEG    ; 800h
+  push ax
+  pop es
+
+  mov ax,0xAA55
+  mov bx,PLANE_BYTES  ; 14400
+  mov cx,ROW_BYTES    ; 288
+
+draw:
+  stosw
+  stosw
+  add di,cx
+  cmp di,bx
+  jl draw
+  sub di,bx
+  jmp draw
+```
+
 # set baudrate
 ```nasm
 BPS EQU 4800 ; BAUDRATE
