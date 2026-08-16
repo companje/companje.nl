@@ -42,7 +42,7 @@ ffmpeg -ss 10 -i /Users/rick/Sanyo/verlet2/verlet88/snap/output.avi -y -an \
 verlets_8colors.gif
 ```
 en voor 576x200:
-```
+```bash
 ffmpeg -ss 7 -y -i snap/output.avi -an -vf "fps=10,scale=640:400:flags=neighbor,crop=576:400:0:0,split[s0][s1];[s0]palettegen=max_colors=8:reserve_transparent=0[p];[s1][p]paletteuse=dither=none" \
   output.gif
 ```
