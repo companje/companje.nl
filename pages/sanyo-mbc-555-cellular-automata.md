@@ -1,6 +1,5 @@
 # Wolfram Cellular Automata (189 bytes)
 <img width="576" height="400" alt="Wolfram-Cellular-Automata" src="https://github.com/user-attachments/assets/497d8f43-37e7-497e-8f9f-522a1225e6d5" />
-[View source](/sanyo-mbc-555-cellular-automata)
 
 ```nasm
 GREEN_SEG   equ 1c00h ; 0800h in mame
