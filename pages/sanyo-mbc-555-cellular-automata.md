@@ -137,25 +137,12 @@ draw:
   mov [line_count],al
 .rebuild_rule:
   mov al,4
-  ; Reverse the eight rule bits so they match the a0..a7 lookup order.
-  mov ah,al
-  shl ah,1
-  and ah,0aah
-  xor al,ah
-  mov ah,al
-  shl ah,1
-  shl ah,1
-  and ah,0cch
-  xor al,ah
-  mov ah,al
-  mov cl,4
-  shl ah,cl
-  and ah,0f0h
-  xor al,ah
-  mov di,a
+  ; Treat the random byte directly as the eight algebraic rule masks.
+  ; This still covers every CA rule, but in a different order.
+  mov di,mask
   mov cx,8
 .expand_rule:
-  ; Expand each rule bit to a full-byte mask: 0 -> 00h, 1 -> FFh.
+  ; Expand each coefficient bit to a full-byte mask: 0 -> 00h, 1 -> FFh.
   shr al,1
   sbb ah,ah
   mov [di],ah
