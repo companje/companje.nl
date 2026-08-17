@@ -15,7 +15,7 @@ layout: default
 * Moderat - A New Error (zie 1 sept '13)
 * Royel Otis - Til The Morning
 * Sin Cos Tan - Sooner Than Now
-* Pixies - Velouria <!-- youtube: nc0Mv4Iyxvc -->
+* Pixies - Velouria
 * The Breeders - Canonball
 * Koto - Mind Machine
 * Lov3less - Better For Me
