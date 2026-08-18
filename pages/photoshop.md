@@ -2,6 +2,9 @@
 title: Photoshop
 ---
 
+# default Nearest Neighbour interpolation
+* Change in Settings (Cmd+K): General > Image Interpolation = Nearest Neighbour (hard edges)
+
 # Paths
 * hold spacebar while drawing a path (for example an ellipse) to move it
 * ''A'' for ''Path Selection Tool'' or ''Shift+A'' to toggle between ''Path Selection Tool'' and ''Direct Selection Tool'' to select points.
