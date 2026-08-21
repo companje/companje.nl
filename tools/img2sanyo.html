@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Afbeelding naar PIC</title>
+  <style>
+    :root { color-scheme: dark; font-family: system-ui, sans-serif; background: #10151d; color: #eef4ff; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; }
+    main { box-sizing: border-box; width: min(680px, calc(100% - 32px)); padding: 32px; background: #18212d; border: 1px solid #304156; border-radius: 16px; box-shadow: 0 18px 60px #0008; }
+    h1 { margin: 0 0 8px; font-size: 1.65rem; }
+    p { color: #b9c8dc; line-height: 1.5; }
+    .controls { display: grid; gap: 16px; margin: 28px 0; }
+    label { display: grid; gap: 7px; font-weight: 650; }
+    input[type="file"] { color: #c8d7ea; }
+    .check { display: flex; align-items: center; gap: 9px; font-weight: 500; }
+    button { justify-self: start; border: 0; border-radius: 8px; padding: 11px 16px; background: #4da3ff; color: #061526; font: inherit; font-weight: 750; cursor: pointer; }
+    button:disabled { opacity: .5; cursor: not-allowed; }
+    #status { min-height: 1.5em; margin: 0; color: #a9c2df; }
+    #warning { margin: 16px 0 0; padding: 12px 14px; border: 1px solid #d69b38; border-radius: 8px; background: #3b2a10; color: #ffe0a5; line-height: 1.45; }
+    #warning a { color: #fff0c9; }
+    #swatches { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 10px; }
+    .swatch { width: 18px; height: 18px; box-sizing: border-box; border: 1px solid #ffffff99; border-radius: 3px; }
+    #palette-note { display: block; margin-top: 8px; font-size: .85rem; }
+    #preview { margin-top: 24px; }
+    #preview h2 { margin: 0 0 10px; font-size: 1rem; }
+    #preview canvas { display: block; width: 100%; height: auto; background: #000; image-rendering: pixelated; border: 1px solid #304156; border-radius: 8px; }
+    [hidden] { display: none !important; }
+    .note { font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Afbeelding naar PIC</h1>
+    <p>Converteert een PNG, JPG of GIF naar drie 1-bit RGB-bitplanes.</p>
+
+    <div class="controls">
+      <label>
+        Afbeeldingsbestand
+        <input id="file" type="file" accept="image/png,image/jpeg,image/gif,.png,.jpg,.jpeg,.gif">
+      </label>
+      <label class="check">
+        <input id="header" type="checkbox">
+        Voeg 4-byte header toe (breedte, hoogte)
+      </label>
+      <label id="background-control" hidden>
+        Achtergrondkleur voor aanvulling
+        <select id="background">
+          <option value="0,0,0">Zwart</option>
+          <option value="0,0,255">Blauw</option>
+          <option value="0,255,0">Groen</option>
+          <option value="0,255,255">Cyaan</option>
+          <option value="255,0,0">Rood</option>
+          <option value="255,0,255">Magenta</option>
+          <option value="255,255,0">Geel</option>
+          <option value="255,255,255">Wit</option>
+        </select>
+      </label>
+      <button id="download" type="button" disabled>Download .pic</button>
+    </div>
+
+    <p id="status" role="status">Kies een PNG, JPG of GIF van maximaal 640 × 200 pixels.</p>
+    <p id="padding-notice" role="status" hidden></p>
+    <div id="warning" role="alert" hidden><span id="warning-text"></span> Dither de afbeelding eerst op <a href="https://ditherit.com/" target="_blank" rel="noopener noreferrer">ditherit.com</a>.
+      <div id="swatches" aria-label="Aangetroffen RGB-kleuren"></div>
+      <span id="palette-note"></span>
+    </div>
+    <section id="preview" hidden>
+      <h2>Voorvertoning van de PIC-uitvoer</h2>
+      <canvas id="preview-canvas"></canvas>
+    </section>
+    <p class="note">Headerformaat: 2 bytes breedte gevolgd door 2 bytes hoogte, beide unsigned 16-bit little-endian. De data is per rij naar bytes gepakt, in de volgorde blauw, groen, rood.</p>
+  </main>
+
+  <script>
+    const MAX_WIDTH = 640;
+    const MAX_HEIGHT = 200;
+    const fileInput = document.querySelector('#file');
+    const headerInput = document.querySelector('#header');
+    const backgroundInput = document.querySelector('#background');
+    const backgroundControl = document.querySelector('#background-control');
+    const downloadButton = document.querySelector('#download');
+    const status = document.querySelector('#status');
+    const warning = document.querySelector('#warning');
+    const warningText = document.querySelector('#warning-text');
+    const swatches = document.querySelector('#swatches');
+    const paletteNote = document.querySelector('#palette-note');
+    const preview = document.querySelector('#preview');
+    const previewCanvas = document.querySelector('#preview-canvas');
+    const paddingNotice = document.querySelector('#padding-notice');
+    let imageData;
+    let baseFilename = 'image';
+
+    fileInput.addEventListener('change', async () => {
+      const file = fileInput.files[0];
+      imageData = undefined;
+      downloadButton.disabled = true;
+      warning.hidden = true;
+      preview.hidden = true;
+      backgroundControl.hidden = true;
+      paddingNotice.hidden = true;
+
+      if (!file) {
+        status.textContent = 'Kies een PNG, JPG of GIF van maximaal 640 × 200 pixels.';
+        return;
+      }
+      if (!['image/png', 'image/jpeg', 'image/gif'].includes(file.type)) {
+        status.textContent = 'Kies een PNG-, JPG- of GIF-bestand.';
+        return;
+      }
+
+      try {
+        const bitmap = await createImageBitmap(file);
+        if (bitmap.width > MAX_WIDTH || bitmap.height > MAX_HEIGHT) {
+          status.textContent = `Afbeelding is ${bitmap.width} × ${bitmap.height}; maximaal is ${MAX_WIDTH} × ${MAX_HEIGHT}.`;
+          bitmap.close();
+          return;
+        }
+
+        const canvas = document.createElement('canvas');
+        canvas.width = bitmap.width;
+        canvas.height = bitmap.height;
+        const context = canvas.getContext('2d', { willReadFrequently: true });
+        context.drawImage(bitmap, 0, 0);
+        bitmap.close();
+        imageData = context.getImageData(0, 0, canvas.width, canvas.height);
+        updatePaddingNotice();
+        const colorInfo = inspectColors(imageData);
+        warning.hidden = colorInfo.isThreeBitRgb;
+        warningText.textContent = `Deze afbeelding bevat ${colorInfo.count} RGB-kleuren en is geen 3-bit RGB-afbeelding.`;
+        renderPalette(colorInfo.colors, colorInfo.count);
+        renderPreview(imageData, ...getOutputDimensions(imageData));
+        baseFilename = file.name.replace(/\.(png|jpe?g|gif)$/i, '') || 'image';
+        downloadButton.disabled = false;
+        updateStatus();
+      } catch (error) {
+        status.textContent = 'De afbeelding kon niet worden ingelezen.';
+      }
+    });
+
+    backgroundInput.addEventListener('change', () => {
+      if (imageData) renderPreview(imageData, ...getOutputDimensions(imageData));
+    });
+
+    function getOutputDimensions({ width, height }) {
+      return [Math.ceil(width / 8) * 8, Math.ceil(height / 4) * 4];
+    }
+
+    function needsPadding({ width, height }) {
+      return width % 8 !== 0 || height % 4 !== 0;
+    }
+
+    function updatePaddingNotice() {
+      const mustPad = needsPadding(imageData);
+      backgroundControl.hidden = !mustPad;
+      paddingNotice.hidden = !mustPad;
+      if (mustPad) {
+        const [outputWidth, outputHeight] = getOutputDimensions(imageData);
+        paddingNotice.textContent = `De invoer voldoet niet aan de vereiste deelbaarheid. De uitvoer wordt aangevuld tot ${outputWidth} × ${outputHeight}; kies hieronder eventueel een opvulkleur.`;
+      }
+    }
+
+    function getBackgroundColor() {
+      return backgroundInput.value.split(',').map(Number);
+    }
+
+    function updateStatus() {
+      const [outputWidth, outputHeight] = getOutputDimensions(imageData);
+      const outputResolution = needsPadding(imageData)
+        ? ` (uitvoer: ${outputWidth} × ${outputHeight})`
+        : '';
+      status.textContent = `Gereed: ${imageData.width} × ${imageData.height}${outputResolution} pixels.`;
+    }
+
+    function inspectColors({ data }) {
+      const colors = new Set();
+      let isThreeBitRgb = true;
+      for (let pixel = 0; pixel < data.length; pixel += 4) {
+        const red = data[pixel];
+        const green = data[pixel + 1];
+        const blue = data[pixel + 2];
+        colors.add(`${red},${green},${blue}`);
+        if ((red !== 0 && red !== 255) ||
+            (green !== 0 && green !== 255) ||
+            (blue !== 0 && blue !== 255) ||
+            data[pixel + 3] !== 255) {
+          isThreeBitRgb = false;
+        }
+      }
+      return { colors: [...colors], count: colors.size, isThreeBitRgb };
+    }
+
+    function renderPalette(colors, count) {
+      const maximum = 64;
+      const fragment = document.createDocumentFragment();
+      for (const color of colors.slice(0, maximum)) {
+        const [red, green, blue] = color.split(',');
+        const swatch = document.createElement('span');
+        swatch.className = 'swatch';
+        swatch.style.backgroundColor = `rgb(${color})`;
+        swatch.title = `RGB(${red}, ${green}, ${blue})`;
+        fragment.append(swatch);
+      }
+      swatches.replaceChildren(fragment);
+      paletteNote.textContent = count > maximum
+        ? `De eerste ${maximum} van ${count} kleuren worden getoond.`
+        : 'Alle aangetroffen kleuren worden getoond.';
+    }
+
+    function renderPreview({ width, height, data }, outputWidth, outputHeight) {
+      previewCanvas.width = outputWidth;
+      previewCanvas.height = outputHeight;
+      const context = previewCanvas.getContext('2d');
+      const output = context.createImageData(outputWidth, outputHeight);
+      const [backgroundRed, backgroundGreen, backgroundBlue] = getBackgroundColor();
+
+      for (let pixel = 0; pixel < output.data.length; pixel += 4) {
+        output.data[pixel] = backgroundRed;
+        output.data[pixel + 1] = backgroundGreen;
+        output.data[pixel + 2] = backgroundBlue;
+        output.data[pixel + 3] = 255;
+      }
+
+      for (let y = 0; y < height; y++) {
+        for (let x = 0; x < width; x++) {
+          const sourcePixel = (y * width + x) * 4;
+          const targetPixel = (y * outputWidth + x) * 4;
+          output.data[targetPixel] = data[sourcePixel] >= 128 ? 255 : 0;
+          output.data[targetPixel + 1] = data[sourcePixel + 1] >= 128 ? 255 : 0;
+          output.data[targetPixel + 2] = data[sourcePixel + 2] >= 128 ? 255 : 0;
+        }
+      }
+
+      context.putImageData(output, 0, 0);
+      preview.hidden = false;
+    }
+
+    downloadButton.addEventListener('click', () => {
+      if (!imageData) return;
+
+      const { width, height, data } = imageData;
+      const [outputWidth, outputHeight] = getOutputDimensions(imageData);
+      const bytesPerRow = Math.ceil(outputWidth / 8);
+      const planeLength = bytesPerRow * outputHeight;
+      const headerLength = headerInput.checked ? 4 : 0;
+      const output = new Uint8Array(headerLength + planeLength * 3);
+      const [backgroundRed, backgroundGreen, backgroundBlue] = getBackgroundColor();
+
+      if (headerInput.checked) {
+        const view = new DataView(output.buffer);
+        view.setUint16(0, outputWidth, true);
+        view.setUint16(2, outputHeight, true);
+      }
+
+      for (let y = 0; y < outputHeight; y++) {
+        for (let x = 0; x < outputWidth; x++) {
+          const isSourcePixel = x < width && y < height;
+          const pixel = (y * width + x) * 4;
+          const byteOffset = headerLength + y * bytesPerRow + (x >> 3);
+          const bit = 0x80 >> (x & 7);
+          const red = isSourcePixel ? data[pixel] : backgroundRed;
+          const green = isSourcePixel ? data[pixel + 1] : backgroundGreen;
+          const blue = isSourcePixel ? data[pixel + 2] : backgroundBlue;
+
+          // B, G, R: dezelfde bitplanevolgorde als savePIC() in dither.pde.
+          if (blue >= 128) output[byteOffset] |= bit;
+          if (green >= 128) output[planeLength + byteOffset] |= bit;
+          if (red >= 128) output[planeLength * 2 + byteOffset] |= bit;
+        }
+      }
+
+      const blob = new Blob([output], { type: 'application/octet-stream' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      const filename = `${baseFilename}-${outputWidth}x${outputHeight}.pic`;
+      link.download = filename;
+      link.click();
+      URL.revokeObjectURL(url);
+      status.textContent = `${filename} gedownload (${output.length.toLocaleString('nl-NL')} bytes).`;
+    });
+  </script>
+</body>
+</html>
