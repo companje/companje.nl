@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="nl">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Afbeelding naar PIC</title>
+  <title>Image to PIC</title>
   <style>
     :root { color-scheme: dark; font-family: system-ui, sans-serif; background: #10151d; color: #eef4ff; }
     body { margin: 0; min-height: 100vh; display: grid; place-items: center; }
@@ -31,45 +31,45 @@
 </head>
 <body>
   <main>
-    <h1>Afbeelding naar PIC</h1>
-    <p>Converteert een PNG, JPG of GIF naar drie 1-bit RGB-bitplanes.</p>
+    <h1>Image to PIC</h1>
+    <p>Converts a PNG, JPG, or GIF into three 1-bit RGB bitplanes.</p>
 
     <div class="controls">
       <label>
-        Afbeeldingsbestand
+        Image file
         <input id="file" type="file" accept="image/png,image/jpeg,image/gif,.png,.jpg,.jpeg,.gif">
       </label>
       <label class="check">
         <input id="header" type="checkbox">
-        Voeg 4-byte header toe (breedte, hoogte)
+        Add 4-byte header (width, height)
       </label>
       <label id="background-control" hidden>
-        Achtergrondkleur voor aanvulling
+        Padding background color
         <select id="background">
-          <option value="0,0,0">Zwart</option>
-          <option value="0,0,255">Blauw</option>
-          <option value="0,255,0">Groen</option>
-          <option value="0,255,255">Cyaan</option>
-          <option value="255,0,0">Rood</option>
+          <option value="0,0,0">Black</option>
+          <option value="0,0,255">Blue</option>
+          <option value="0,255,0">Green</option>
+          <option value="0,255,255">Cyan</option>
+          <option value="255,0,0">Red</option>
           <option value="255,0,255">Magenta</option>
-          <option value="255,255,0">Geel</option>
-          <option value="255,255,255">Wit</option>
+          <option value="255,255,0">Yellow</option>
+          <option value="255,255,255">White</option>
         </select>
       </label>
       <button id="download" type="button" disabled>Download .pic</button>
     </div>
 
-    <p id="status" role="status">Kies een PNG, JPG of GIF van maximaal 640 × 200 pixels.</p>
+    <p id="status" role="status">Choose a PNG, JPG, or GIF up to 640 × 200 pixels.</p>
     <p id="padding-notice" role="status" hidden></p>
-    <div id="warning" role="alert" hidden><span id="warning-text"></span> Dither de afbeelding eerst op <a href="https://ditherit.com/" target="_blank" rel="noopener noreferrer">ditherit.com</a>.
-      <div id="swatches" aria-label="Aangetroffen RGB-kleuren"></div>
+    <div id="warning" role="alert" hidden><span id="warning-text"></span> Dither the image first at <a href="https://ditherit.com/" target="_blank" rel="noopener noreferrer">ditherit.com</a>.
+      <div id="swatches" aria-label="Detected RGB colors"></div>
       <span id="palette-note"></span>
     </div>
     <section id="preview" hidden>
-      <h2>Voorvertoning van de PIC-uitvoer</h2>
+      <h2>PIC output preview</h2>
       <canvas id="preview-canvas"></canvas>
     </section>
-    <p class="note">Headerformaat: 2 bytes breedte gevolgd door 2 bytes hoogte, beide unsigned 16-bit little-endian. De data is per rij naar bytes gepakt, in de volgorde blauw, groen, rood.</p>
+    <p class="note">Header format: 2 bytes for width followed by 2 bytes for height, both unsigned 16-bit little-endian. The data is packed into bytes per row, in blue, green, red order.</p>
   </main>
 
   <script>
@@ -101,18 +101,18 @@
       paddingNotice.hidden = true;
 
       if (!file) {
-        status.textContent = 'Kies een PNG, JPG of GIF van maximaal 640 × 200 pixels.';
+        status.textContent = 'Choose a PNG, JPG, or GIF up to 640 × 200 pixels.';
         return;
       }
       if (!['image/png', 'image/jpeg', 'image/gif'].includes(file.type)) {
-        status.textContent = 'Kies een PNG-, JPG- of GIF-bestand.';
+        status.textContent = 'Choose a PNG, JPG, or GIF file.';
         return;
       }
 
       try {
         const bitmap = await createImageBitmap(file);
         if (bitmap.width > MAX_WIDTH || bitmap.height > MAX_HEIGHT) {
-          status.textContent = `Afbeelding is ${bitmap.width} × ${bitmap.height}; maximaal is ${MAX_WIDTH} × ${MAX_HEIGHT}.`;
+          status.textContent = `Image is ${bitmap.width} × ${bitmap.height}; maximum is ${MAX_WIDTH} × ${MAX_HEIGHT}.`;
           bitmap.close();
           return;
         }
@@ -127,14 +127,14 @@
         updatePaddingNotice();
         const colorInfo = inspectColors(imageData);
         warning.hidden = colorInfo.isThreeBitRgb;
-        warningText.textContent = `Deze afbeelding bevat ${colorInfo.count} RGB-kleuren en is geen 3-bit RGB-afbeelding.`;
+        warningText.textContent = `This image contains ${colorInfo.count} RGB colors and is not a 3-bit RGB image.`;
         renderPalette(colorInfo.colors, colorInfo.count);
         renderPreview(imageData, ...getOutputDimensions(imageData));
         baseFilename = file.name.replace(/\.(png|jpe?g|gif)$/i, '') || 'image';
         downloadButton.disabled = false;
         updateStatus();
       } catch (error) {
-        status.textContent = 'De afbeelding kon niet worden ingelezen.';
+        status.textContent = 'The image could not be read.';
       }
     });
 
@@ -156,7 +156,7 @@
       paddingNotice.hidden = !mustPad;
       if (mustPad) {
         const [outputWidth, outputHeight] = getOutputDimensions(imageData);
-        paddingNotice.textContent = `De invoer voldoet niet aan de vereiste deelbaarheid. De uitvoer wordt aangevuld tot ${outputWidth} × ${outputHeight}; kies hieronder eventueel een opvulkleur.`;
+        paddingNotice.textContent = `The input dimensions do not meet the required divisibility. The output will be padded to ${outputWidth} × ${outputHeight}; optionally choose a padding color below.`;
       }
     }
 
@@ -167,9 +167,9 @@
     function updateStatus() {
       const [outputWidth, outputHeight] = getOutputDimensions(imageData);
       const outputResolution = needsPadding(imageData)
-        ? ` (uitvoer: ${outputWidth} × ${outputHeight})`
+        ? ` (output: ${outputWidth} × ${outputHeight})`
         : '';
-      status.textContent = `Gereed: ${imageData.width} × ${imageData.height}${outputResolution} pixels.`;
+      status.textContent = `Ready: ${imageData.width} × ${imageData.height}${outputResolution} pixels.`;
     }
 
     function inspectColors({ data }) {
@@ -203,8 +203,8 @@
       }
       swatches.replaceChildren(fragment);
       paletteNote.textContent = count > maximum
-        ? `De eerste ${maximum} van ${count} kleuren worden getoond.`
-        : 'Alle aangetroffen kleuren worden getoond.';
+        ? `Showing the first ${maximum} of ${count} colors.`
+        : 'Showing all detected colors.';
     }
 
     function renderPreview({ width, height, data }, outputWidth, outputHeight) {
@@ -262,7 +262,7 @@
           const green = isSourcePixel ? data[pixel + 1] : backgroundGreen;
           const blue = isSourcePixel ? data[pixel + 2] : backgroundBlue;
 
-          // B, G, R: dezelfde bitplanevolgorde als savePIC() in dither.pde.
+          // B, G, R: same bitplane order as savePIC() in dither.pde.
           if (blue >= 128) output[byteOffset] |= bit;
           if (green >= 128) output[planeLength + byteOffset] |= bit;
           if (red >= 128) output[planeLength * 2 + byteOffset] |= bit;
@@ -277,7 +277,7 @@
       link.download = filename;
       link.click();
       URL.revokeObjectURL(url);
-      status.textContent = `${filename} gedownload (${output.length.toLocaleString('nl-NL')} bytes).`;
+      status.textContent = `${filename} downloaded (${output.length.toLocaleString('en-US')} bytes).`;
     });
   </script>
 </body>
