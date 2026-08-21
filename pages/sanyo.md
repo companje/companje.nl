@@ -3,10 +3,9 @@ title: Sanyo MBC-550/555
 ---
 
 # Three useful templates for developing for Sanyo MBC-555
-* [SanyoSectorLoaderTemplate.zip](https://github.com/user-attachments/files/31303239/SanyoSectorLoaderTemplate.zip)
-* [SanyoProcessingTemplate.zip](https://github.com/user-attachments/files/31303237/SanyoProcessingTemplate.zip)
-* [SanyoBootsectorTemplate.zip](https://github.com/user-attachments/files/31303236/SanyoBootsectorTemplate.zip)
-
+* [SanyoSectorLoaderTemplate.zip (for multi-sector projects)](https://github.com/user-attachments/files/31303239/SanyoSectorLoaderTemplate.zip)
+* [SanyoBootsectorTemplate.zip (for 512 bytes projects)](https://github.com/user-attachments/files/31303236/SanyoBootsectorTemplate.zip)
+* [SanyoProcessingTemplate.zip (for prototyping in Processing)](https://github.com/user-attachments/files/31303237/SanyoProcessingTemplate.zip)
 
 # Wolfram Cellular Automata
 <img width="576" height="400" alt="Wolfram-Cellular-Automata" src="https://github.com/user-attachments/assets/497d8f43-37e7-497e-8f9f-522a1225e6d5" />
