@@ -2,6 +2,9 @@
 title: Sanyo MBC-550/555
 ---
 
+# My browser based tool to convert images to PIC format optimised for Sanyo's video memory.
+* http://companje.nl/tools/img2sanyo.html
+
 # Three useful templates for developing for Sanyo MBC-555
 * [SanyoSectorLoaderTemplate.zip (for multi-sector projects)](https://github.com/user-attachments/files/31303239/SanyoSectorLoaderTemplate.zip)
 * [SanyoBootsectorTemplate.zip (for 512 bytes projects)](https://github.com/user-attachments/files/31303236/SanyoBootsectorTemplate.zip)
