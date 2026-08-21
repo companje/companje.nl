@@ -1,18 +1,76 @@
-# R language
+---
+title: R
+---
 
-## R code for the UU georeferencing_workshop @ 13-12-2022
-* https://raw.githubusercontent.com/RubenSchalk/onlinemap/main/georeferencing_workshop.R
-* https://github.com/RubenSchalk/onlinemap
-* https://rubenschalk.github.io/onlinemap
-* https://rubenschalk.github.io/historicalmaps/
-* https://www.uu.nl/en/special-collections
-* https://uu.nl/en/georeferencing
-* https://utrechtinperspectief.nl/
+# links
+* tryr.codeschool.com
+* <http://www.cyclismo.org/tutorial/R/input.html>
+* <http://www.r-tutor.com/r-introduction>
+* <http://www.sr.bham.ac.uk/~ajrs/R/r-getting_started.html>
 
-<img width="777" alt="Screenshot 2022-12-13 at 15 27 22" src="https://user-images.githubusercontent.com/156066/207359929-cf1910df-0d89-41df-a754-afcab4589534.png">
 
-## wat betekent %>% in de taal R?
-volgens ChatGPT: "In R, %>% is een operator die wordt gebruikt om de output van de ene functie als invoer te geven aan de volgende functie in een ketting van berekeningen. Deze operator wordt ook wel de "pipe operator" genoemd, omdat hij doet denken aan de manier waarop water door een pijp wordt geleid."
+# ggplot2 cheatsheet
+* <http://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf>
 
-## wat betekent .N in de taal R?
-volgens ChatGPT: "In R, .N is een speciaal object dat de huidige waarde van het aantal rijen in een dataframe of tabel bevat. Dit object kan worden gebruikt binnen een functie om te controleren hoeveel rijen er zijn, bijvoorbeeld om een berekening te doen die afhankelijk is van het aantal rijen."
+# examples
+```r
+> 1+1
+[1] 2
+
+>r <- 5
+> r
+[1] 5
+> pi * r^2
+[1] 78.53982
+
+>install.packages("ggplot2")
+
+# vector with 'c'omponents (members)
+>c(1,2,3)  
+[1] 1 2 3
+
+> x <- c(1,2,3)
+> x
+[1] 1 2 3
+> length(x)
+[1] 3
+
+# evaluate expression for each element in x:
+> y <- 2*x
+> y
+[1] 2 4 6
+
+> x <- 5
+> y <- c(1,2,3)
+> x*y
+[1]  5 10 15
+
+> a <- 1:10
+> a
+[1]  1  2  3  4  5  6  7  8  9 10
+```
+[read more](http://www.sr.bham.ac.uk/~ajrs/R/r-getting_started.html)
+
+```r
+> a <- read.table("http://www.sr.bham.ac.uk/~ajrs/R/datasets/file.dat", header=T)
+> a
+  r    x    y
+1 1 4.20 14.2
+2 2 2.40 64.8
+3 3 8.76 63.4
+4 4 5.90 32.2
+5 5 3.40 89.6
+```
+
+> id<-196
+> data<-read.table(paste("http://meetjestad.net/data?type=sensors&ids=",id,"&format=csv", sep=""), sep="\t", header=T)
+> data
+      id           timestamp longitude latitude temperature humidity supply
+1    196 2017-11-26 16:44:46   0.00000   0.0000     18.1250  48.6875   3.28
+2    196 2017-11-26 17:19:50   0.00000   0.0000     18.6875  50.3750   3.29
+#...
+
+# <http://meetjestad.net/data/handleiding.r>
+
+
+
