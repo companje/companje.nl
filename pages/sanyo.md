@@ -2,7 +2,7 @@
 title: Sanyo MBC-550/555
 ---
 
-# I converted the SNAKE game I wrote 1996 to run on the Sanyo 
+# I converted my 1996 SNAKE to run on the Sanyo 
 * https://github.com/companje/SNAKE-for-Sanyo-MBC-555
 
 <img width="30%" alt="gnsake-menu" src="https://github.com/user-attachments/assets/166cc3ca-ba55-4d19-84a2-db884aaf9a6c" />
