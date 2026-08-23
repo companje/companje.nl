@@ -2,6 +2,29 @@
 title: Processing
 ---
 
+# pixel effect base
+```java
+PImage img;
+
+void setup() {
+  size(640, 400);
+  pixelDensity(1);
+  img = loadImage("image.png");
+}
+
+void draw() {
+  loadPixels();
+  img.loadPixels();
+  for (int y=0; y<height; y++) {
+    for (int x=0; x<width; x++) {
+      int i = y*width+x;
+      pixels[i] = img.pixels[i];
+    }
+  }
+  updatePixels();
+}
+```
+
 # set locale
 ```java
 import java.util.Locale;
