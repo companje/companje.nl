@@ -5,7 +5,7 @@ layout: default
 
 * Phoebe Bridgers - Lost Boys
 * Safri Duo - Played-A-Live
-* Joost Hofman - Boot in een flex (KAIN soundtrack)
+* Joost Hofman - Boot in een fles (KAIN soundtrack)
 * horsegiirL - Harvest Heartbreak (feat. BAUGRUPPE90)
 * Ninajirachi - Delete (horsegiirl_Remix)
 * Wet Leg - Chaise Longue
