@@ -7,6 +7,7 @@ layout: default
 * Kenya Grace - Strangers
 * Lorde - Royals
 * Bear's Den - The Clouds Of Pompeii
+* Wilma - Als je verliefd op 'n jongen bent
 * Iron & Wine - Autumn Town Leaves 
 * Jet - Are You Gonna Be My Girl
 * Santigold - L.E.S. Artistes
