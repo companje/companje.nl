@@ -3,6 +3,8 @@ title: Songs
 layout: default
 ---
 
+
+* Kenya Grace - Strangers
 * Lorde - Royals
 * Bear's Den - The Clouds Of Pompeii
 * Iron & Wine - Autumn Town Leaves 
