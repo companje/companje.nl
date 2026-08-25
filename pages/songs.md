@@ -3,6 +3,19 @@ title: Songs
 layout: default
 ---
 
+* Hayley Wiliams - Mirtazapine
+* Alan Walker - Faded
+* Camila Cabello (feat. Ed Sheeran) - Bam Bam 
+* Rondé - Electric Lover
+* Hiqpy - Nothing
+* The Pretty Reckless - When I Wake Up
+* Froukje & S10 - Hart In Brand
+* Kitschkrieg Feat. Blumengarten & Shirin David - Gut Genug
+* SERA - Head Held High
+* Taylor Swift - The Fate of Ophelia
+* CeCe Peniston - Finally
+* Froukje & S10 - Ik Haat Hem Voor Jou
+* Weezer - Ruling Me
 * Phoebe Bridgers - Lost Boys
 * Safri Duo - Played-A-Live
 * Joost Hofman - Boot in een fles (KAIN soundtrack)
