@@ -109,7 +109,7 @@ layout: default
 * S10 - Psychoses (ft Victoire)
 * Famke Louise
 * tony ronald - help (get me some help)
-* KX Classics The Edge (https://tunein.com/radio/KX-Classics---The-Edge-s287569/)
+* KX Classics The Edge
 * Unity - TheFatRat
 * Linde Schöne - Liefde van de vloer
 * N'to - Carrousel
