@@ -3,6 +3,30 @@ title: Songs
 layout: default
 ---
 
+* Lorde - Royals
+* Bear's Den - The Clouds Of Pompeii
+* Iron & Wine - Autumn Town Leaves 
+* Jet - Are You Gonna Be My Girl
+* Santigold - L.E.S. Artistes
+* Metric - Help I'm Alive
+* Lorde - Royals
+* Dover - Late At Night
+* Rogér Fakhr - Lady Rain
+* The Future Sound of London - We Have Explosive
+* Adrianne Lenker - Zombie Girl
+* Mariecke Borger - Meet Again
+* Best Coast - Feeling Ok
+* Donna Blue - Sunset Blvd
+* Men I Trust - Lauren
+* Cut Worms - Ballad of the Texas King
+* Jefferson Airplane - White Rabbit
+* Sigur Ros - Svefn-G-Englar
+* Mazzy Star - Into Dust
+* Lee Hazlewood & Suzi Jane Hokom - For a Day Like Today
+* Gipsy Kings - Volare (Nel Blu di Pinto di Blu)
+* Peter Bjorn And John - Young Folks
+* Bernadette Carroll - Laughing on the Outside
+* Janis Ian - At Seventeen
 * Hayley Wiliams - Mirtazapine
 * Alan Walker - Faded
 * Camila Cabello (feat. Ed Sheeran) - Bam Bam 
