@@ -2228,6 +2228,8 @@ PImage getVRAM() {
 ```
 
 # tixyboot.asm
+See also [tixyboot](/tixyboot)
+
 A tribute to Martin Kleppe's beautiful https://tixy.land as well as a tribute to the Sanyo MBC-550/555 PC (1984) which forced me to be creative with code since 1994.
 
 https://github.com/companje/tixy.boot
