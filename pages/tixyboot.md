@@ -1,9 +1,8 @@
 # tixyboot.asm
-A tribute to Martin Kleppe's beautiful https://tixy.land as well as a tribute to the Sanyo MBC-550/555 PC (1983) which forced me to be creative with code since 1994.
-
-https://github.com/companje/tixy.boot
+a 512 bytes bootsector version of tixy.land for the Sanyo MBC-555.
 
 <img src="https://github.com/companje/tixy.boot/blob/main/doc/screengrab.gif?raw=true" width="400">
+https://github.com/companje/tixy.boot
 
 ```nasm
 ; tixyboot.asm by Rick Companje, 2021-2022, MIT licence
