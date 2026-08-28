@@ -3,6 +3,7 @@ title: Sanyo MBC-550/555
 ---
 
 # I converted my 1996 SNAKE to run on the Sanyo 
+I wrote a SNAKE game in assembly in 1996 for my 386 computer. 30 years later I converted it to 8088 assembly to run on my Sanyo MBC-550.
 * https://github.com/companje/SNAKE-for-Sanyo-MBC-555
 
 <img width="30%" alt="gnsake-menu" src="https://github.com/user-attachments/assets/166cc3ca-ba55-4d19-84a2-db884aaf9a6c" />
