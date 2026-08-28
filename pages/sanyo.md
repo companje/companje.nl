@@ -3,7 +3,7 @@ title: Sanyo MBC-550/555
 ---
 
 # Twister effect
-<img width="112" height="64" alt="qt-recording-mono" src="https://github.com/user-attachments/assets/7f7b1ea4-fddb-4f7f-81b3-312e855401a0" />
+<img width="112" height="85" alt="qt-recording-mono" src="https://github.com/user-attachments/assets/7f7b1ea4-fddb-4f7f-81b3-312e855401a0" />
 
 
 # I converted my 1996 SNAKE to run on the Sanyo 
