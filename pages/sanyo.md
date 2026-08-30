@@ -4,7 +4,11 @@ title: Sanyo MBC-550/555
 
 # Twister effect
 <img width="112" height="85" alt="qt-recording-mono" src="https://github.com/user-attachments/assets/7f7b1ea4-fddb-4f7f-81b3-312e855401a0" />
-dithering: 8x2 from light to dark: {0xffff, 0x77dd, 0xaa55, 0x8822, 0x0000}
+
+# dithering 8x2 from light to dark
+```java
+{0xffff, 0x77dd, 0xaa55, 0x8822, 0x0000}
+```
 
 # I converted my 1996 SNAKE to run on the Sanyo 
 I wrote a SNAKE game in assembly in 1996 for my 386 computer. 30 years later I converted it to 8088 assembly to run on my Sanyo MBC-550.
