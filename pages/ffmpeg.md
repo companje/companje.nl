@@ -4,6 +4,13 @@ permalink: /ffmpeg
 tags: ['notes','software','video']
 ---
 
+# set play speed (for black/green GIF)
+```bash
+ffmpeg -i INPUT \
+-y -vf "fps=10,format=gray,lut=y='gte(val\,25)*255',format=rgb24,colorchannelmixer=rr=0:gg=1:bb=0,setpts=1*PTS" \
+OUTPUT.gif
+```
+
 # contactsheet
 ```bash
 ffmpeg -y -pattern_type glob -i '/tmp/wave_frame_*.png' -filter_complex tile=5x2 wave_contact.png
