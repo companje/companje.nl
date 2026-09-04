@@ -6,7 +6,7 @@ title: Sanyo MBC-550/555
 <img width="112" height="85" alt="qt-recording-mono" src="https://github.com/user-attachments/assets/7f7b1ea4-fddb-4f7f-81b3-312e855401a0" />
 
 # city.com
-<img width="224" height="238" alt="city" src="https://github.com/user-attachments/assets/706a2a8e-bc47-4e91-999d-b473e2ca7f72" />
+<img width="112" height="119" alt="city" src="https://github.com/user-attachments/assets/706a2a8e-bc47-4e91-999d-b473e2ca7f72" />
 
 # dithering 8x2 from light to dark
 ```java
