@@ -37,9 +37,10 @@ file 'sprite_97.png'
 
 # AVI opname van Sanyo MBC-55x uit MAME (640x200, 3 bit color) converteren naar GIF
 ```bash
-ffmpeg -ss 10 -i /Users/rick/Sanyo/verlet2/verlet88/snap/output.avi -y -an \
--vf "fps=10,scale=640:400:flags=neighbor,split[s0][s1];[s0]palettegen=max_colors=8:reserve_transparent=0[p];[s1][p]paletteuse=dither=none" \
-verlets_8colors.gif
+ffmpeg -i INPUT.AVI \
+-y -an -vf "fps=10,scale=640:400:flags=neighbor,split[s0][s1];[s0]palettegen=max_colors=8:reserve_transparent=0[p];[s1][p]paletteuse=dither=none" \
+OUTPUT.GIF
+#-ss 10
 ```
 en voor 576x200:
 ```bash
