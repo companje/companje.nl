@@ -5,9 +5,10 @@ tags: ['notes','software','video']
 ---
 
 # set play speed (for black/green GIF)
+2x slower: setpts=2*PTS
 ```bash
 ffmpeg -i INPUT \
--y -vf "fps=10,format=gray,lut=y='gte(val\,25)*255',format=rgb24,colorchannelmixer=rr=0:gg=1:bb=0,setpts=1*PTS" \
+-y -vf "fps=10,format=gray,lut=y='gte(val\,25)*255',format=rgb24,colorchannelmixer=rr=0:gg=1:bb=0,setpts=2*PTS" \
 OUTPUT.gif
 ```
 
