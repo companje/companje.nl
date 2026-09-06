@@ -200,8 +200,8 @@
       }
       if (backgroundInput.selectedOptions[0].disabled) backgroundInput.value = '0,0,0';
       formatNote.textContent = monochrome
-        ? 'Grijswaardenuitvoer: één 1-bit bitplane, per rij naar bytes gepakt. De optionele header bevat breedte en hoogte als unsigned 16-bit little-endian.'
-        : 'Kleurenuitvoer: drie 1-bit bitplanes, per rij naar bytes gepakt, in de volgorde blauw, groen, rood. De optionele header bevat breedte en hoogte als unsigned 16-bit little-endian.';
+        ? 'Grijswaardenuitvoer voor de Sanyo MBC-555: één 1-bit bitplane, geordend per blok van vier scanlines, daarna per 8-pixelkolom en ten slotte per scanline. De optionele header bevat breedte en hoogte als unsigned 16-bit little-endian.'
+        : 'Kleurenuitvoer voor de Sanyo MBC-555: drie 1-bit bitplanes in de volgorde blauw, groen, rood; elke plane is geordend per blok van vier scanlines, daarna per 8-pixelkolom en ten slotte per scanline. De optionele header bevat breedte en hoogte als unsigned 16-bit little-endian.';
     }
 
     function grayscaleValue(red, green, blue) {
@@ -309,7 +309,10 @@
         for (let x = 0; x < outputWidth; x++) {
           const isSourcePixel = x < width && y < height;
           const pixel = (y * width + x) * 4;
-          const byteOffset = headerLength + y * bytesPerRow + (x >> 3);
+          // De MBC-555 organiseert VRAM als 8×4-pixelcellen: vier bytes
+          // (één per scanline) per 8-pixelkolom, met 4 scanlines per rijblok.
+          // Dit geldt voor zowel de monochrome plane als elk RGB-bitplane.
+          const byteOffset = headerLength + (y >> 2) * bytesPerRow * 4 + (x >> 3) * 4 + (y & 3);
           const bit = 0x80 >> (x & 7);
           const red = isSourcePixel ? data[pixel] : backgroundRed;
           const green = isSourcePixel ? data[pixel + 1] : backgroundGreen;
