@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Image to PIC</title>
+  <title>Afbeelding naar PIC</title>
   <style>
     :root { color-scheme: dark; font-family: system-ui, sans-serif; background: #10151d; color: #eef4ff; }
     body { margin: 0; min-height: 100vh; display: grid; place-items: center; }
@@ -31,45 +31,49 @@
 </head>
 <body>
   <main>
-    <h1>Image to PIC</h1>
-    <p>Converts a PNG, JPG, or GIF into three 1-bit RGB bitplanes.</p>
+    <h1>Afbeelding naar PIC</h1>
+    <p>Converteert een PNG, JPG of GIF naar drie 1-bit RGB-bitplanes.</p>
 
     <div class="controls">
       <label>
-        Image file
+        Afbeeldingsbestand
         <input id="file" type="file" accept="image/png,image/jpeg,image/gif,.png,.jpg,.jpeg,.gif">
       </label>
       <label class="check">
         <input id="header" type="checkbox">
-        Add 4-byte header (width, height)
+        Voeg 4-byte header toe (breedte, hoogte)
+      </label>
+      <label class="check">
+        <input id="grayscale" type="checkbox">
+        Exporteer als 1-kanaals grijswaarden-PIC
       </label>
       <label id="background-control" hidden>
-        Padding background color
+        <span id="background-label">Achtergrondkleur voor aanvulling</span>
         <select id="background">
-          <option value="0,0,0">Black</option>
-          <option value="0,0,255">Blue</option>
-          <option value="0,255,0">Green</option>
-          <option value="0,255,255">Cyan</option>
-          <option value="255,0,0">Red</option>
+          <option value="0,0,0">Zwart</option>
+          <option value="0,0,255">Blauw</option>
+          <option value="0,255,0">Groen</option>
+          <option value="0,255,255">Cyaan</option>
+          <option value="255,0,0">Rood</option>
           <option value="255,0,255">Magenta</option>
-          <option value="255,255,0">Yellow</option>
-          <option value="255,255,255">White</option>
+          <option value="255,255,0">Geel</option>
+          <option value="255,255,255">Wit</option>
         </select>
       </label>
       <button id="download" type="button" disabled>Download .pic</button>
     </div>
 
-    <p id="status" role="status">Choose a PNG, JPG, or GIF up to 640 × 200 pixels.</p>
+    <p id="status" role="status">Kies een PNG, JPG of GIF van maximaal 640 × 200 pixels.</p>
     <p id="padding-notice" role="status" hidden></p>
-    <div id="warning" role="alert" hidden><span id="warning-text"></span> Dither the image first at <a href="https://ditherit.com/" target="_blank" rel="noopener noreferrer">ditherit.com</a>.
-      <div id="swatches" aria-label="Detected RGB colors"></div>
+    <div id="warning" role="alert" hidden><span id="warning-text"></span> Dither de afbeelding eerst op <a href="https://ditherit.com/" target="_blank" rel="noopener noreferrer">ditherit.com</a>.
+      <div id="swatches" aria-label="Aangetroffen RGB-kleuren"></div>
       <span id="palette-note"></span>
     </div>
     <section id="preview" hidden>
-      <h2>PIC output preview</h2>
+      <h2>Voorvertoning van de PIC-uitvoer</h2>
       <canvas id="preview-canvas"></canvas>
     </section>
-    <p class="note">Header format: 2 bytes for width followed by 2 bytes for height, both unsigned 16-bit little-endian. The data is packed into bytes per row, in blue, green, red order.</p>
+    <p id="format-note" class="note">Headerformaat: 2 bytes breedte gevolgd door 2 bytes hoogte, beide unsigned 16-bit little-endian. De data is per rij naar bytes gepakt, in de volgorde blauw, groen, rood.</p>
   </main>
 
   <script>
@@ -77,8 +81,10 @@
     const MAX_HEIGHT = 200;
     const fileInput = document.querySelector('#file');
     const headerInput = document.querySelector('#header');
+    const grayscaleInput = document.querySelector('#grayscale');
     const backgroundInput = document.querySelector('#background');
     const backgroundControl = document.querySelector('#background-control');
+    const backgroundLabel = document.querySelector('#background-label');
     const downloadButton = document.querySelector('#download');
     const status = document.querySelector('#status');
     const warning = document.querySelector('#warning');
@@ -88,8 +94,10 @@
     const preview = document.querySelector('#preview');
     const previewCanvas = document.querySelector('#preview-canvas');
     const paddingNotice = document.querySelector('#padding-notice');
+    const formatNote = document.querySelector('#format-note');
     let imageData;
     let baseFilename = 'image';
+    let isGrayscaleImage = false;
 
     fileInput.addEventListener('change', async () => {
       const file = fileInput.files[0];
@@ -99,20 +107,22 @@
       preview.hidden = true;
       backgroundControl.hidden = true;
       paddingNotice.hidden = true;
+      grayscaleInput.checked = false;
+      grayscaleInput.disabled = false;
 
       if (!file) {
-        status.textContent = 'Choose a PNG, JPG, or GIF up to 640 × 200 pixels.';
+        status.textContent = 'Kies een PNG, JPG of GIF van maximaal 640 × 200 pixels.';
         return;
       }
       if (!['image/png', 'image/jpeg', 'image/gif'].includes(file.type)) {
-        status.textContent = 'Choose a PNG, JPG, or GIF file.';
+        status.textContent = 'Kies een PNG-, JPG- of GIF-bestand.';
         return;
       }
 
       try {
         const bitmap = await createImageBitmap(file);
         if (bitmap.width > MAX_WIDTH || bitmap.height > MAX_HEIGHT) {
-          status.textContent = `Image is ${bitmap.width} × ${bitmap.height}; maximum is ${MAX_WIDTH} × ${MAX_HEIGHT}.`;
+          status.textContent = `Afbeelding is ${bitmap.width} × ${bitmap.height}; maximaal is ${MAX_WIDTH} × ${MAX_HEIGHT}.`;
           bitmap.close();
           return;
         }
@@ -126,20 +136,29 @@
         imageData = context.getImageData(0, 0, canvas.width, canvas.height);
         updatePaddingNotice();
         const colorInfo = inspectColors(imageData);
+        isGrayscaleImage = colorInfo.isGrayscale;
+        updateOutputMode();
         warning.hidden = colorInfo.isThreeBitRgb;
-        warningText.textContent = `This image contains ${colorInfo.count} RGB colors and is not a 3-bit RGB image.`;
+        warningText.textContent = `Deze afbeelding bevat ${colorInfo.count} RGB-kleuren en is geen 3-bit RGB-afbeelding.`;
         renderPalette(colorInfo.colors, colorInfo.count);
         renderPreview(imageData, ...getOutputDimensions(imageData));
         baseFilename = file.name.replace(/\.(png|jpe?g|gif)$/i, '') || 'image';
         downloadButton.disabled = false;
         updateStatus();
       } catch (error) {
-        status.textContent = 'The image could not be read.';
+        status.textContent = 'De afbeelding kon niet worden ingelezen.';
       }
     });
 
     backgroundInput.addEventListener('change', () => {
       if (imageData) renderPreview(imageData, ...getOutputDimensions(imageData));
+    });
+
+    grayscaleInput.addEventListener('change', () => {
+      if (!imageData) return;
+      updateOutputMode();
+      renderPreview(imageData, ...getOutputDimensions(imageData));
+      updateStatus();
     });
 
     function getOutputDimensions({ width, height }) {
@@ -156,7 +175,7 @@
       paddingNotice.hidden = !mustPad;
       if (mustPad) {
         const [outputWidth, outputHeight] = getOutputDimensions(imageData);
-        paddingNotice.textContent = `The input dimensions do not meet the required divisibility. The output will be padded to ${outputWidth} × ${outputHeight}; optionally choose a padding color below.`;
+        paddingNotice.textContent = `De invoer voldoet niet aan de vereiste deelbaarheid. De uitvoer wordt aangevuld tot ${outputWidth} × ${outputHeight}; kies hieronder eventueel een opvulkleur.`;
       }
     }
 
@@ -164,22 +183,50 @@
       return backgroundInput.value.split(',').map(Number);
     }
 
+    function usesGrayscaleOutput() {
+      return isGrayscaleImage || grayscaleInput.checked;
+    }
+
+    function updateOutputMode() {
+      grayscaleInput.checked = isGrayscaleImage || grayscaleInput.checked;
+      grayscaleInput.disabled = isGrayscaleImage;
+      const monochrome = usesGrayscaleOutput();
+      backgroundLabel.textContent = monochrome
+        ? 'Achtergrondwaarde voor aanvulling'
+        : 'Achtergrondkleur voor aanvulling';
+      for (const option of backgroundInput.options) {
+        const [red, green, blue] = option.value.split(',').map(Number);
+        option.disabled = monochrome && !(red === green && green === blue);
+      }
+      if (backgroundInput.selectedOptions[0].disabled) backgroundInput.value = '0,0,0';
+      formatNote.textContent = monochrome
+        ? 'Grijswaardenuitvoer: één 1-bit bitplane, per rij naar bytes gepakt. De optionele header bevat breedte en hoogte als unsigned 16-bit little-endian.'
+        : 'Kleurenuitvoer: drie 1-bit bitplanes, per rij naar bytes gepakt, in de volgorde blauw, groen, rood. De optionele header bevat breedte en hoogte als unsigned 16-bit little-endian.';
+    }
+
+    function grayscaleValue(red, green, blue) {
+      return red * 0.299 + green * 0.587 + blue * 0.114;
+    }
+
     function updateStatus() {
       const [outputWidth, outputHeight] = getOutputDimensions(imageData);
       const outputResolution = needsPadding(imageData)
-        ? ` (output: ${outputWidth} × ${outputHeight})`
+        ? ` (uitvoer: ${outputWidth} × ${outputHeight})`
         : '';
-      status.textContent = `Ready: ${imageData.width} × ${imageData.height}${outputResolution} pixels.`;
+      const mode = usesGrayscaleOutput() ? '1 kanaal (grijswaarden)' : '3 kanalen (RGB)';
+      status.textContent = `Gereed: ${imageData.width} × ${imageData.height}${outputResolution} pixels, ${mode}.`;
     }
 
     function inspectColors({ data }) {
       const colors = new Set();
       let isThreeBitRgb = true;
+      let isGrayscale = true;
       for (let pixel = 0; pixel < data.length; pixel += 4) {
         const red = data[pixel];
         const green = data[pixel + 1];
         const blue = data[pixel + 2];
         colors.add(`${red},${green},${blue}`);
+        if (red !== green || green !== blue) isGrayscale = false;
         if ((red !== 0 && red !== 255) ||
             (green !== 0 && green !== 255) ||
             (blue !== 0 && blue !== 255) ||
@@ -187,7 +234,7 @@
           isThreeBitRgb = false;
         }
       }
-      return { colors: [...colors], count: colors.size, isThreeBitRgb };
+      return { colors: [...colors], count: colors.size, isGrayscale, isThreeBitRgb };
     }
 
     function renderPalette(colors, count) {
@@ -203,8 +250,8 @@
       }
       swatches.replaceChildren(fragment);
       paletteNote.textContent = count > maximum
-        ? `Showing the first ${maximum} of ${count} colors.`
-        : 'Showing all detected colors.';
+        ? `De eerste ${maximum} van ${count} kleuren worden getoond.`
+        : 'Alle aangetroffen kleuren worden getoond.';
     }
 
     function renderPreview({ width, height, data }, outputWidth, outputHeight) {
@@ -213,11 +260,13 @@
       const context = previewCanvas.getContext('2d');
       const output = context.createImageData(outputWidth, outputHeight);
       const [backgroundRed, backgroundGreen, backgroundBlue] = getBackgroundColor();
+      const monochrome = usesGrayscaleOutput();
+      const backgroundValue = grayscaleValue(backgroundRed, backgroundGreen, backgroundBlue) >= 128 ? 255 : 0;
 
       for (let pixel = 0; pixel < output.data.length; pixel += 4) {
-        output.data[pixel] = backgroundRed;
-        output.data[pixel + 1] = backgroundGreen;
-        output.data[pixel + 2] = backgroundBlue;
+        output.data[pixel] = monochrome ? backgroundValue : backgroundRed;
+        output.data[pixel + 1] = monochrome ? backgroundValue : backgroundGreen;
+        output.data[pixel + 2] = monochrome ? backgroundValue : backgroundBlue;
         output.data[pixel + 3] = 255;
       }
 
@@ -225,9 +274,12 @@
         for (let x = 0; x < width; x++) {
           const sourcePixel = (y * width + x) * 4;
           const targetPixel = (y * outputWidth + x) * 4;
-          output.data[targetPixel] = data[sourcePixel] >= 128 ? 255 : 0;
-          output.data[targetPixel + 1] = data[sourcePixel + 1] >= 128 ? 255 : 0;
-          output.data[targetPixel + 2] = data[sourcePixel + 2] >= 128 ? 255 : 0;
+          const value = monochrome
+            ? (grayscaleValue(data[sourcePixel], data[sourcePixel + 1], data[sourcePixel + 2]) >= 128 ? 255 : 0)
+            : null;
+          output.data[targetPixel] = monochrome ? value : (data[sourcePixel] >= 128 ? 255 : 0);
+          output.data[targetPixel + 1] = monochrome ? value : (data[sourcePixel + 1] >= 128 ? 255 : 0);
+          output.data[targetPixel + 2] = monochrome ? value : (data[sourcePixel + 2] >= 128 ? 255 : 0);
         }
       }
 
@@ -243,7 +295,8 @@
       const bytesPerRow = Math.ceil(outputWidth / 8);
       const planeLength = bytesPerRow * outputHeight;
       const headerLength = headerInput.checked ? 4 : 0;
-      const output = new Uint8Array(headerLength + planeLength * 3);
+      const monochrome = usesGrayscaleOutput();
+      const output = new Uint8Array(headerLength + planeLength * (monochrome ? 1 : 3));
       const [backgroundRed, backgroundGreen, backgroundBlue] = getBackgroundColor();
 
       if (headerInput.checked) {
@@ -262,10 +315,14 @@
           const green = isSourcePixel ? data[pixel + 1] : backgroundGreen;
           const blue = isSourcePixel ? data[pixel + 2] : backgroundBlue;
 
-          // B, G, R: same bitplane order as savePIC() in dither.pde.
-          if (blue >= 128) output[byteOffset] |= bit;
-          if (green >= 128) output[planeLength + byteOffset] |= bit;
-          if (red >= 128) output[planeLength * 2 + byteOffset] |= bit;
+          if (monochrome) {
+            if (grayscaleValue(red, green, blue) >= 128) output[byteOffset] |= bit;
+          } else {
+            // B, G, R: dezelfde bitplanevolgorde als savePIC() in dither.pde.
+            if (blue >= 128) output[byteOffset] |= bit;
+            if (green >= 128) output[planeLength + byteOffset] |= bit;
+            if (red >= 128) output[planeLength * 2 + byteOffset] |= bit;
+          }
         }
       }
 
@@ -277,7 +334,7 @@
       link.download = filename;
       link.click();
       URL.revokeObjectURL(url);
-      status.textContent = `${filename} downloaded (${output.length.toLocaleString('en-US')} bytes).`;
+      status.textContent = `${filename} gedownload (${output.length.toLocaleString('nl-NL')} bytes).`;
     });
   </script>
 </body>
