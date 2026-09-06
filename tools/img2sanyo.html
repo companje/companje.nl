@@ -32,12 +32,12 @@
 <body>
   <main>
     <h1>Afbeelding naar PIC</h1>
-    <p>Converteert een PNG, JPG of GIF naar drie 1-bit RGB-bitplanes.</p>
+    <p>Converteert één of meer PNG-, JPG- of GIF-bestanden naar 1-bit PIC-bestanden.</p>
 
     <div class="controls">
       <label>
-        Afbeeldingsbestand
-        <input id="file" type="file" accept="image/png,image/jpeg,image/gif,.png,.jpg,.jpeg,.gif">
+        Afbeeldingsbestand(en)
+        <input id="file" type="file" multiple accept="image/png,image/jpeg,image/gif,.png,.jpg,.jpeg,.gif">
       </label>
       <label class="check">
         <input id="header" type="checkbox">
@@ -60,10 +60,10 @@
           <option value="255,255,255">Wit</option>
         </select>
       </label>
-      <button id="download" type="button" disabled>Download .pic</button>
+      <button id="download" type="button" disabled>Download .pic-bestand(en)</button>
     </div>
 
-    <p id="status" role="status">Kies een PNG, JPG of GIF van maximaal 640 × 200 pixels.</p>
+    <p id="status" role="status">Kies één of meer PNG-, JPG- of GIF-bestanden van maximaal 640 × 200 pixels.</p>
     <p id="padding-notice" role="status" hidden></p>
     <div id="warning" role="alert" hidden><span id="warning-text"></span> Dither de afbeelding eerst op <a href="https://ditherit.com/" target="_blank" rel="noopener noreferrer">ditherit.com</a>.
       <div id="swatches" aria-label="Aangetroffen RGB-kleuren"></div>
@@ -95,13 +95,12 @@
     const previewCanvas = document.querySelector('#preview-canvas');
     const paddingNotice = document.querySelector('#padding-notice');
     const formatNote = document.querySelector('#format-note');
-    let imageData;
-    let baseFilename = 'image';
+    let images = [];
     let isGrayscaleImage = false;
 
     fileInput.addEventListener('change', async () => {
-      const file = fileInput.files[0];
-      imageData = undefined;
+      const files = [...fileInput.files];
+      images = [];
       downloadButton.disabled = true;
       warning.hidden = true;
       preview.hidden = true;
@@ -110,54 +109,73 @@
       grayscaleInput.checked = false;
       grayscaleInput.disabled = false;
 
-      if (!file) {
-        status.textContent = 'Kies een PNG, JPG of GIF van maximaal 640 × 200 pixels.';
+      if (!files.length) {
+        status.textContent = 'Kies één of meer PNG-, JPG- of GIF-bestanden van maximaal 640 × 200 pixels.';
         return;
       }
-      if (!['image/png', 'image/jpeg', 'image/gif'].includes(file.type)) {
+      if (files.some(file => !['image/png', 'image/jpeg', 'image/gif'].includes(file.type))) {
         status.textContent = 'Kies een PNG-, JPG- of GIF-bestand.';
         return;
       }
 
       try {
-        const bitmap = await createImageBitmap(file);
-        if (bitmap.width > MAX_WIDTH || bitmap.height > MAX_HEIGHT) {
-          status.textContent = `Afbeelding is ${bitmap.width} × ${bitmap.height}; maximaal is ${MAX_WIDTH} × ${MAX_HEIGHT}.`;
+        for (const file of files) {
+          const bitmap = await createImageBitmap(file);
+          if (bitmap.width > MAX_WIDTH || bitmap.height > MAX_HEIGHT) {
+            const dimensions = `${bitmap.width} × ${bitmap.height}`;
+            bitmap.close();
+            images = [];
+            status.textContent = `${file.name} is ${dimensions}; maximaal is ${MAX_WIDTH} × ${MAX_HEIGHT}.`;
+            return;
+          }
+
+          const canvas = document.createElement('canvas');
+          canvas.width = bitmap.width;
+          canvas.height = bitmap.height;
+          const context = canvas.getContext('2d', { willReadFrequently: true });
+          context.drawImage(bitmap, 0, 0);
           bitmap.close();
-          return;
+          const data = context.getImageData(0, 0, canvas.width, canvas.height);
+          images.push({
+            imageData: data,
+            baseFilename: file.name.replace(/\.(png|jpe?g|gif)$/i, '') || 'image',
+            colorInfo: inspectColors(data),
+          });
         }
 
-        const canvas = document.createElement('canvas');
-        canvas.width = bitmap.width;
-        canvas.height = bitmap.height;
-        const context = canvas.getContext('2d', { willReadFrequently: true });
-        context.drawImage(bitmap, 0, 0);
-        bitmap.close();
-        imageData = context.getImageData(0, 0, canvas.width, canvas.height);
+        const [{ imageData }] = images;
+        if (images.some(image => image.imageData.width !== imageData.width || image.imageData.height !== imageData.height)) {
+          images = [];
+          status.textContent = 'Alle afbeeldingen moeten precies dezelfde afmetingen hebben.';
+          return;
+        }
         updatePaddingNotice();
-        const colorInfo = inspectColors(imageData);
-        isGrayscaleImage = colorInfo.isGrayscale;
+        isGrayscaleImage = images.every(image => image.colorInfo.isGrayscale);
         updateOutputMode();
-        warning.hidden = colorInfo.isThreeBitRgb;
-        warningText.textContent = `Deze afbeelding bevat ${colorInfo.count} RGB-kleuren en is geen 3-bit RGB-afbeelding.`;
-        renderPalette(colorInfo.colors, colorInfo.count);
+        const allThreeBitRgb = images.every(image => image.colorInfo.isThreeBitRgb);
+        warning.hidden = allThreeBitRgb;
+        const colorCount = new Set(images.flatMap(image => image.colorInfo.colors)).size;
+        warningText.textContent = allThreeBitRgb
+          ? ''
+          : `${images.length === 1 ? 'Deze afbeelding bevat' : 'De geselecteerde afbeeldingen bevatten samen'} ${colorCount} RGB-kleuren en ${images.length === 1 ? 'is' : 'zijn'} niet allemaal 3-bit RGB-afbeeldingen.`;
+        renderPalette([...new Set(images.flatMap(image => image.colorInfo.colors))], colorCount);
         renderPreview(imageData, ...getOutputDimensions(imageData));
-        baseFilename = file.name.replace(/\.(png|jpe?g|gif)$/i, '') || 'image';
         downloadButton.disabled = false;
         updateStatus();
       } catch (error) {
+        images = [];
         status.textContent = 'De afbeelding kon niet worden ingelezen.';
       }
     });
 
     backgroundInput.addEventListener('change', () => {
-      if (imageData) renderPreview(imageData, ...getOutputDimensions(imageData));
+      if (images.length) renderPreview(images[0].imageData, ...getOutputDimensions(images[0].imageData));
     });
 
     grayscaleInput.addEventListener('change', () => {
-      if (!imageData) return;
+      if (!images.length) return;
       updateOutputMode();
-      renderPreview(imageData, ...getOutputDimensions(imageData));
+      renderPreview(images[0].imageData, ...getOutputDimensions(images[0].imageData));
       updateStatus();
     });
 
@@ -170,6 +188,7 @@
     }
 
     function updatePaddingNotice() {
+      const imageData = images[0].imageData;
       const mustPad = needsPadding(imageData);
       backgroundControl.hidden = !mustPad;
       paddingNotice.hidden = !mustPad;
@@ -209,12 +228,14 @@
     }
 
     function updateStatus() {
+      const imageData = images[0].imageData;
       const [outputWidth, outputHeight] = getOutputDimensions(imageData);
       const outputResolution = needsPadding(imageData)
         ? ` (uitvoer: ${outputWidth} × ${outputHeight})`
         : '';
       const mode = usesGrayscaleOutput() ? '1 kanaal (grijswaarden)' : '3 kanalen (RGB)';
-      status.textContent = `Gereed: ${imageData.width} × ${imageData.height}${outputResolution} pixels, ${mode}.`;
+      const count = images.length;
+      status.textContent = `Gereed: ${count} ${count === 1 ? 'afbeelding' : 'afbeeldingen'} van ${imageData.width} × ${imageData.height}${outputResolution} pixels, ${mode}.`;
     }
 
     function inspectColors({ data }) {
@@ -287,9 +308,7 @@
       preview.hidden = false;
     }
 
-    downloadButton.addEventListener('click', () => {
-      if (!imageData) return;
-
+    function createPic(imageData) {
       const { width, height, data } = imageData;
       const [outputWidth, outputHeight] = getOutputDimensions(imageData);
       const bytesPerRow = Math.ceil(outputWidth / 8);
@@ -329,15 +348,37 @@
         }
       }
 
-      const blob = new Blob([output], { type: 'application/octet-stream' });
-      const url = URL.createObjectURL(blob);
-      const link = document.createElement('a');
-      link.href = url;
-      const filename = `${baseFilename}-${outputWidth}x${outputHeight}.pic`;
-      link.download = filename;
-      link.click();
-      URL.revokeObjectURL(url);
-      status.textContent = `${filename} gedownload (${output.length.toLocaleString('nl-NL')} bytes).`;
+      return { output, outputWidth, outputHeight };
+    }
+
+    downloadButton.addEventListener('click', () => {
+      if (!images.length) return;
+
+      const usedFilenames = new Map();
+      const downloads = images.map(({ imageData, baseFilename }) => {
+        const { output, outputWidth, outputHeight } = createPic(imageData);
+        const filenameBase = `${baseFilename}-${outputWidth}x${outputHeight}`;
+        const occurrence = (usedFilenames.get(filenameBase) || 0) + 1;
+        usedFilenames.set(filenameBase, occurrence);
+        return {
+          output,
+          filename: `${filenameBase}${occurrence === 1 ? '' : `-${occurrence}`}.pic`,
+        };
+      });
+
+      // Browsers may treat multiple saves as a download batch; users may need to
+      // allow this once in their browser's download prompt.
+      for (const { output, filename } of downloads) {
+        const url = URL.createObjectURL(new Blob([output], { type: 'application/octet-stream' }));
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = filename;
+        link.click();
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+      }
+
+      const byteCount = downloads.reduce((total, download) => total + download.output.length, 0);
+      status.textContent = `${downloads.length} ${downloads.length === 1 ? 'bestand' : 'bestanden'} aangeboden als download (${byteCount.toLocaleString('nl-NL')} bytes in totaal).`;
     });
   </script>
 </body>
