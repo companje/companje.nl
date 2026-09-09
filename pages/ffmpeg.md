@@ -4,6 +4,15 @@ permalink: /ffmpeg
 tags: ['notes','software','video']
 ---
 
+# increase brightness (ie. of iPhone video)
+```bash
+ffmpeg -i INPUT.mp4 \
+-vf "eq=brightness=0.08:contrast=1.03:saturation=1.02" \
+-c:v libx264 -crf 18 -preset slow \
+-c:a copy \
+OUTPUT.mp4
+```
+
 # set play speed (for black/green GIF)
 2x slower: setpts=2*PTS
 ```bash
