@@ -1,16 +1,16 @@
 see also [docs](/docs)
 
 # split throw-ratio range to two numeric columns
-```
+```javascript
 =split(SUBSTITUTE(SUBSTITUTE(J34;":1";"");".";","); " ~ ";false;false)
 
-input: 1.2:1 ~ 1.92:1
-output: 1,2   and   1,92
+// input: 1.2:1 ~ 1.92:1
+// output: 1,2   and   1,92
 ```
 
 
 # get cell background color
-```
+```javascript
 =bghex(CELL("address";A3))
 ```
 ```basic
