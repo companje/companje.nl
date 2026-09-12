@@ -7,3 +7,7 @@ mdir -i MS-DOS-1.25.img
 ```bash
 mcopy -i MS-DOS-2.11.img B.EXE ::
 ```
+# copy * from diskimage to local
+```bash
+copy -i IMAGE "::*" .
+```
