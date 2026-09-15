@@ -60,7 +60,7 @@
           <option value="255,255,255">Wit</option>
         </select>
       </label>
-      <button id="download" type="button" disabled>Download .pic-bestand(en)</button>
+      <button id="download" type="button" disabled>Download uitvoer</button>
     </div>
 
     <p id="status" role="status">Kies één of meer PNG-, JPG- of GIF-bestanden van maximaal 640 × 200 pixels.</p>
@@ -102,6 +102,7 @@
       const files = [...fileInput.files];
       images = [];
       downloadButton.disabled = true;
+      downloadButton.textContent = 'Download uitvoer';
       warning.hidden = true;
       preview.hidden = true;
       backgroundControl.hidden = true;
@@ -235,6 +236,7 @@
         : '';
       const mode = usesGrayscaleOutput() ? '1 kanaal (grijswaarden)' : '3 kanalen (RGB)';
       const count = images.length;
+      downloadButton.textContent = count === 1 ? 'Download .pic-bestand' : `Download ZIP (${count} bestanden)`;
       status.textContent = `Gereed: ${count} ${count === 1 ? 'afbeelding' : 'afbeeldingen'} van ${imageData.width} × ${imageData.height}${outputResolution} pixels, ${mode}.`;
     }
 
@@ -351,6 +353,88 @@
       return { output, outputWidth, outputHeight };
     }
 
+    function crc32(bytes) {
+      let crc = 0xffffffff;
+      for (const byte of bytes) {
+        crc ^= byte;
+        for (let bit = 0; bit < 8; bit++) crc = (crc >>> 1) ^ (crc & 1 ? 0xedb88320 : 0);
+      }
+      return (crc ^ 0xffffffff) >>> 0;
+    }
+
+    function writeUint16(bytes, offset, value) {
+      bytes[offset] = value & 0xff;
+      bytes[offset + 1] = (value >>> 8) & 0xff;
+    }
+
+    function writeUint32(bytes, offset, value) {
+      bytes[offset] = value & 0xff;
+      bytes[offset + 1] = (value >>> 8) & 0xff;
+      bytes[offset + 2] = (value >>> 16) & 0xff;
+      bytes[offset + 3] = (value >>> 24) & 0xff;
+    }
+
+    function createZip(files) {
+      const encoder = new TextEncoder();
+      const chunks = [];
+      const entries = [];
+      let offset = 0;
+
+      for (const { filename, output } of files) {
+        const name = encoder.encode(filename);
+        const crc = crc32(output);
+        const header = new Uint8Array(30 + name.length);
+        writeUint32(header, 0, 0x04034b50);
+        writeUint16(header, 4, 20);
+        writeUint16(header, 6, 0x0800); // UTF-8 bestandsnaam
+        writeUint16(header, 8, 0); // opgeslagen, zonder compressie
+        writeUint32(header, 14, crc);
+        writeUint32(header, 18, output.length);
+        writeUint32(header, 22, output.length);
+        writeUint16(header, 26, name.length);
+        header.set(name, 30);
+        chunks.push(header, output);
+        entries.push({ name, crc, size: output.length, offset });
+        offset += header.length + output.length;
+      }
+
+      const centralDirectoryOffset = offset;
+      for (const entry of entries) {
+        const header = new Uint8Array(46 + entry.name.length);
+        writeUint32(header, 0, 0x02014b50);
+        writeUint16(header, 4, 20);
+        writeUint16(header, 6, 20);
+        writeUint16(header, 8, 0x0800);
+        writeUint16(header, 10, 0);
+        writeUint32(header, 16, entry.crc);
+        writeUint32(header, 20, entry.size);
+        writeUint32(header, 24, entry.size);
+        writeUint16(header, 28, entry.name.length);
+        writeUint32(header, 42, entry.offset);
+        header.set(entry.name, 46);
+        chunks.push(header);
+        offset += header.length;
+      }
+
+      const end = new Uint8Array(22);
+      writeUint32(end, 0, 0x06054b50);
+      writeUint16(end, 8, entries.length);
+      writeUint16(end, 10, entries.length);
+      writeUint32(end, 12, offset - centralDirectoryOffset);
+      writeUint32(end, 16, centralDirectoryOffset);
+      chunks.push(end);
+      return new Blob(chunks, { type: 'application/zip' });
+    }
+
+    function downloadBlob(blob, filename) {
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = filename;
+      link.click();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }
+
     downloadButton.addEventListener('click', () => {
       if (!images.length) return;
 
@@ -366,19 +450,16 @@
         };
       });
 
-      // Browsers may treat multiple saves as a download batch; users may need to
-      // allow this once in their browser's download prompt.
-      for (const { output, filename } of downloads) {
-        const url = URL.createObjectURL(new Blob([output], { type: 'application/octet-stream' }));
-        const link = document.createElement('a');
-        link.href = url;
-        link.download = filename;
-        link.click();
-        setTimeout(() => URL.revokeObjectURL(url), 1000);
-      }
-
       const byteCount = downloads.reduce((total, download) => total + download.output.length, 0);
-      status.textContent = `${downloads.length} ${downloads.length === 1 ? 'bestand' : 'bestanden'} aangeboden als download (${byteCount.toLocaleString('nl-NL')} bytes in totaal).`;
+      if (downloads.length === 1) {
+        const [{ output, filename }] = downloads;
+        downloadBlob(new Blob([output], { type: 'application/octet-stream' }), filename);
+        status.textContent = `${filename} gedownload (${byteCount.toLocaleString('nl-NL')} bytes).`;
+      } else {
+        const filename = 'pic-bestanden.zip';
+        downloadBlob(createZip(downloads), filename);
+        status.textContent = `${filename} gedownload met ${downloads.length} PIC-bestanden (${byteCount.toLocaleString('nl-NL')} bytes aan PIC-data).`;
+      }
     });
   </script>
 </body>
