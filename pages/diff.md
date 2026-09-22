@@ -1,3 +1,8 @@
+# json diff
+```bash
+jd -color FILE_A FILE_B
+```
+
 # difftastic (side by side)
 ```bash
 brew install difftastic
