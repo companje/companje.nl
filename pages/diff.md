@@ -1,3 +1,6 @@
+# in SublimeText
+the Package SubMerge. Select two tabs, side by side and see diff in color
+
 # json diff
 ```bash
 jd -color FILE_A FILE_B
