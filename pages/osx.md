@@ -2,6 +2,14 @@
 title: MacOS
 ---
 
+# apple intelligence (local LLM + VLM)
+* Make sure Siri is not set to Dutch
+```
+fm respond --model system --no-stream \
+--instructions "$2" \
+--image "$1" \
+```
+
 # SquirrelDisk
 alternatief voor GrandPerspective
 
