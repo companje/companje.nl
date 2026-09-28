@@ -3,6 +3,7 @@ title: Songs
 layout: default
 ---
 
+* Nouvelle Vague - In a Manner of Speaking
 * Wannadies - You And Me Song
 * Keo - That's Me
 * The War on Drugs - Who's That
