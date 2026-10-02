@@ -1,3 +1,25 @@
+# beschrijving en archiefcontext by GUIDs
+```sql
+select 
+    stuk.nummer, stuk.id as stuk_id, stuk.guid as stuk_guid,
+    
+    (select guid from archiefstuk where parent_id=gescand_inv.id and rownum=1 ) as first_scan, 
+    
+    (SELECT LISTAGG(replace(replace(trim(replace(omschrijving(a.id,a.soort_id),'Inventaris')),'   ',' '),'  ',' '), ' / ') WITHIN GROUP (ORDER BY level DESC)  "context"
+        FROM archiefstuk a
+        CONNECT BY PRIOR a.parent_id = a.id
+        START WITH a.id=stuk.id) as stuk_context
+    
+    from archiefstuk stuk
+    
+    left join archiefstuk_relaties rel on rel.parent_id=stuk.id and rel.rel_soort=54 --stuk naar scan
+    left join archiefstuk gescand_inv on gescand_inv.id=rel.parent_id2
+    --left join archiefstuk scn on scn.parent_id=gescand_inv.parent_id
+    
+where stuk.guid in ('609C5B9DB3944642E0534701000A17FD',........) OR stuk.guid in (....) # etc...;
+```
+
+
 # alle archiefstukken onder een bepaalde rubriek
 ```sql
 select a.id
