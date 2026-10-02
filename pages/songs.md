@@ -3,6 +3,7 @@ title: Songs
 layout: default
 ---
 
+* Coparck - A Good Year For The Robots
 * Nouvelle Vague - In a Manner of Speaking
 * Wannadies - You And Me Song
 * Keo - That's Me
