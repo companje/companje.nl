@@ -1,4 +1,4 @@
-```
+```bash
 #!/bin/bash
 # macOS: zet de bestand-aanmaakdatum op de ingebedde opnamedatum.
 # Zonder argumenten: alleen TEST.MOV naast dit script.
