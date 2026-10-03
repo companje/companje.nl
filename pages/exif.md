@@ -2,6 +2,9 @@
 title: EXIF
 ---
 
+# set file creation date from EXIF
+see [set-movie-creation-date.sh](/set-movie-creation-date)
+
 # edit date
 ```bash
 exiftool -DateTimeOriginal="2016:02:05 08:00:00" FILENAME.JPG
