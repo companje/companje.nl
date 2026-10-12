@@ -3,6 +3,7 @@ title: Songs
 layout: default
 ---
 
+* Nightcore - Shine
 * Nightcore, Vital EDM - Cry For You
 * Ash - Girl From Mars
 * Coparck - A Good Year For The Robots
