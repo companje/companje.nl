@@ -3,6 +3,7 @@ title: Songs
 layout: default
 ---
 
+* Fontaines D.C. & ROSALÍA - Where Is Gone?
 * The Pretty Reckless - About You
 * Elvis Costello - I Want You
 * Nightcore - Shine
