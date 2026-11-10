@@ -2,6 +2,11 @@
 title: MacOS
 ---
 
+# change default extension for screenshots
+```
+defaults write com.apple.screencapture type jpg
+```
+
 # apple intelligence (local LLM + VLM)
 * Make sure Siri is not set to Dutch
 ```
