@@ -3,6 +3,7 @@ title: Songs
 layout: default
 ---
 
+* Paramore - Fast in my car
 * Fontaines D.C. & ROSALÍA - Where Is Gone?
 * The Pretty Reckless - About You
 * Elvis Costello - I Want You
