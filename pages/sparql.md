@@ -1,4 +1,4 @@
-# films opvragen van data.hualab.nl/films
+# films in boundingbox in year range opvragen van data.hualab.nl/films
 ```sparql
 PREFIX schema: <https://schema.org/>
 PREFIX film: <https://data.hualab.nl/def/film/>
