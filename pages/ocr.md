@@ -2,6 +2,9 @@
 title: OCR
 ---
 
+# paddleOCR
+* [PaddleOCR](https://github.com/PADDLEPADDLE/PADDLEOCR)
+
 # OCRmyPDF-AppleOCR
 * https://github.com/mkyt/OCRmyPDF-AppleOCR
 ```
