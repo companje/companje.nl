@@ -1,3 +1,35 @@
+# beeldbank opvragen in boundingbox in year range opvragen vanaf data.hualab.nl/beeldbank
+```sparql
+PREFIX schema: <https://schema.org/>
+PREFIX bb: <https://data.hualab.nl/def/beeldbank/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+
+SELECT DISTINCT ?identifier ?titel ?lat ?lon ?thumbnailUrl ?contentUrl
+WHERE {
+  VALUES (?startYear ?endYear) { (1900 2000) }
+
+  ?werk schema:identifier ?identifier ;
+        schema:name ?titel ;
+        bb:yearEarliest ?vroegst ;
+        bb:yearLatest ?laatst ;
+        schema:contentLocation/geo:hasGeometry ?punt ;
+        schema:associatedMedia ?media .
+
+  ?media schema:thumbnailUrl ?thumbnailUrl ;
+         schema:contentUrl ?contentUrl .
+
+  ?punt schema:latitude ?lat ;
+        schema:longitude ?lon .
+
+  FILTER(?vroegst <= ?endYear && ?laatst >= ?startYear)
+
+  FILTER(
+    ?lat >= 52.086156 && ?lat <= 52.095144 &&
+    ?lon >= 5.114108 && ?lon <= 5.128692
+  )
+}
+```
+
 # films in boundingbox in year range opvragen van data.hualab.nl/films
 ```sparql
 PREFIX schema: <https://schema.org/>
