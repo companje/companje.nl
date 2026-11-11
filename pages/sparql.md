@@ -1,3 +1,36 @@
+# films opvragen van data.hualab.nl/films
+```sparql
+PREFIX schema: <https://schema.org/>
+PREFIX film: <https://data.hualab.nl/def/film/>
+PREFIX geo: <http://www.opengis.net/ont/geosparql#>
+
+SELECT ?work ?titel ?yearEarliest ?yearLatest ?lat ?lon ?thumbnailUrl ?contentUrl
+WHERE {
+  ?work a ?type ;
+        schema:identifier ?identifier ;
+        schema:name ?titel ;
+        schema:contentLocation/geo:hasGeometry/schema:latitude ?lat ;
+        schema:contentLocation/geo:hasGeometry/schema:longitude ?lon ;
+        film:yearEarliest ?yearEarliest ;
+        film:yearLatest ?yearLatest .
+					
+  VALUES ?type { schema:Movie schema:Clip }
+  
+  VALUES (?startYear ?endYear) { (1960 1970) }
+  
+  FILTER(?yearEarliest <= ?endYear && ?yearLatest >= ?startYear)
+
+  FILTER(
+    ?lat >= 52.086156 && ?lat <= 52.095144 &&
+    ?lon >= 5.114108 && ?lon <= 5.128692
+  )
+
+  BIND(IRI(CONCAT("https://proxy.archieven.nl/thumb/39/",STR(?identifier))) AS ?thumbnailUrl)
+  BIND(IRI(CONCAT("https://iiif.hualab.nl/presentation/",STR(?identifier))) AS ?contentUrl)
+}
+```
+
+
 # alles wat een def:bezitsregistratie heeft waarbij de IRI wordt opgesplitst in voor/na OF voor-na
 ```sparql
 prefix def: <https://hisgis.hualab.nl/def/>
