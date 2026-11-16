@@ -1,3 +1,15 @@
+# text search met QLever
+```sparql
+PREFIX ql: <http://qlever.cs.uni-freiburg.de/builtin-functions/>
+
+SELECT DISTINCT ?subject ?predicate ?tekst WHERE {
+  ?subject ?predicate ?tekst .
+  ?record ql:contains-entity ?tekst .
+  ?record ql:contains-word "margareth*" .
+}
+LIMIT 50
+```
+
 # beeldbank opvragen in boundingbox in year range opvragen vanaf data.hualab.nl/beeldbank
 ```sparql
 PREFIX schema: <https://schema.org/>
