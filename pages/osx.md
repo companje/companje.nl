@@ -2,6 +2,11 @@
 title: MacOS
 ---
 
+# prevent sleep/sluimerstand
+```bash
+sudo pmset -a sleep 0
+```
+
 # set hostname
 ```bash
 sudo scutil --set HostName thuis
