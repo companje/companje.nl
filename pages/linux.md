@@ -1,3 +1,13 @@
+# renew DHCP lease
+```bash
+sudo ipconfig set en0 DHCP
+```
+
+# get hostname by ipadress
+```bash
+host 192.168.1.156
+```
+
 # binary compare
 ```bash
 cmp FILE1 FILE2
