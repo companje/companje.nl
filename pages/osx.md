@@ -2,6 +2,13 @@
 title: MacOS
 ---
 
+# set hostname
+```bash
+sudo scutil --set HostName thuis
+sudo scutil --set LocalHostName thuis
+sudo scutil --set ComputerName thuis
+```
+
 # change default extension for screenshots
 ```
 defaults write com.apple.screencapture type jpg
